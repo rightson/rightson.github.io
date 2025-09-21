@@ -7,7 +7,9 @@
 
 @import "reset";
 @import "variables";
-// Syntax highlighting @import is at the bottom of this file
+@import "highlights";
+@import "svg-icons";
+// All @use imports must be at the top
 
 /**************/
 /* BASE RULES */
@@ -285,5 +287,4 @@ footer {
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "highlights";
-@import "svg-icons";
+// @use statements have been moved to the top of the file
