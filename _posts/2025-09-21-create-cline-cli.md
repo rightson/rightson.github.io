@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Create Cline CLI"
+date: 2025-09-21 11:16:03 +0800
+categories: development cli
+---
+
 # Cline CLI
 
 Cline CLI brings the power of Cline's AI coding assistant to your terminal, offering the same capabilities as the VSCode extension in a command-line interface.
