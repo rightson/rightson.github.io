@@ -14,7 +14,7 @@
 - 必須確認正式文章頁實際顯示署名；僅設定 front matter 不代表完成。
 - 作者列由共用 `_includes/post-byline.html` 統一產生，文章或 agent 不得自行複製一份 byline。
 - 公開日期採自然語言顯示，例如 `2026 年 9 月 22 日`；不要在頁面顯示 `2026-09-22 17:35 +08:00` 這類機器格式，也不顯示時區。
-- 閱讀時間後固定提供「朗讀」連結；行動裝置使用系統分享面板將目前文章 URL 交給 Speechify，其他環境則複製 URL 並開啟 Speechify Web。此功能由共用 layout / JavaScript 提供，個別文章不得自行實作或移除。
+- 在支援系統分享功能的手機／平板上，閱讀時間後顯示「分享到 Speechify」；點擊後以系統 Share Sheet 分享目前文章 URL，再由使用者選擇 Speechify。桌機不顯示此入口，也不跳轉 Speechify Web。此功能由共用 layout / JavaScript 提供，個別文章不得自行實作或移除。
 
 ## 2. 僅保留四大公開分類
 
