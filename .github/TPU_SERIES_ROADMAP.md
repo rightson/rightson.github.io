@@ -23,6 +23,8 @@ The series should not become a product-spec chronology. Every article must answe
 - Publish exactly one primary topic per article.
 - Minimum article depth: **at least a 5-minute read**. Target roughly 2,500–4,500 Traditional Chinese characters excluding front matter and references; longer is acceptable when the topic requires it.
 - Every article must contain at least one concrete technical example, calculation, tensor shape, bandwidth/latency example, topology mapping, or compiler mapping.
+- Prefer **2–4 technically meaningful visual elements per article** when the topic supports them: architecture/block diagrams, dataflow diagrams, memory hierarchy, chip/package/board/rack relationships, topology, roofline/bandwidth charts, or tables. Avoid decorative stock imagery.
+- Every visual must include an explicit source citation in its caption. If using an original Google/paper figure, link the primary source. If redrawing a diagram, label it as `依據 ... 重繪/整理` and cite all primary sources used to construct it. Do not present an unsourced schematic as fact.
 - Prefer Google / Google Cloud / Google DeepMind primary sources and peer-reviewed architecture/system papers.
 - Clearly separate public facts, reported experimental results, and author inference.
 - Do not repeat an existing article unless new evidence materially changes the conclusion.
