@@ -11,32 +11,35 @@
 
     const speechifyLink = document.querySelector("[data-speechify-read]");
     if (speechifyLink) {
-      speechifyLink.addEventListener("click", async (event) => {
-        event.preventDefault();
-        const url =
-          document.querySelector('link[rel="canonical"]')?.href || location.href;
-        const shareData = {
-          title: document.querySelector(".article-header h1")?.textContent || document.title,
-          url,
-        };
+      const ua = navigator.userAgent || "";
+      const isIPadOS =
+        navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1;
+      const isMobile = /iPhone|iPad|iPod|Android/i.test(ua) || isIPadOS;
 
-        if (navigator.share) {
+      if (isMobile && navigator.share) {
+        speechifyLink.hidden = false;
+        speechifyLink.addEventListener("click", async (event) => {
+          event.preventDefault();
+          const url =
+            document.querySelector('link[rel="canonical"]')?.href || location.href;
+          const shareData = {
+            title:
+              document.querySelector(".article-header h1")?.textContent ||
+              document.title,
+            url,
+          };
+
           try {
             await navigator.share(shareData);
-            return;
           } catch (error) {
-            if (error?.name === "AbortError") return;
+            if (error?.name !== "AbortError") {
+              console.warn("Unable to open the system share sheet.", error);
+            }
           }
-        }
-
-        try {
-          await navigator.clipboard.writeText(url);
-        } catch (_) {
-          // Clipboard access can be unavailable in some browsers.
-        }
-        window.open("https://app.speechify.com/", "_blank", "noopener,noreferrer");
-      });
+        });
+      }
     }
+
     const toc = document.querySelector("[data-toc]");
     const headings = [...article.querySelectorAll("h2, h3")];
     const used = new Set(
