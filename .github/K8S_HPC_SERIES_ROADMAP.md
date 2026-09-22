@@ -23,11 +23,11 @@ Every article must answer:
 ## Editorial constraints
 
 - Read `AGENTS.md`, this roadmap and recent `_posts/` before writing.
-- Minimum depth: at least a **5-minute read**; target roughly 2,500–4,500 Traditional Chinese characters excluding front matter/references. Deep kernel/network/storage topics may be much longer.
-- Each post handles one primary topic but must explain the layers above and below it.
+- Minimum depth: at least a **10-minute read**; target roughly 5,000–8,000 Traditional Chinese characters excluding front matter/captions/references. Deep kernel/network/storage topics may be much longer; prefer narrower-and-deeper over broad-and-shallow.
+- Each post handles one primary topic but must explain the layers above and below it.\n- Narrative logic must begin from the underlying constraint or engineering contradiction, derive the required system properties, then introduce the concrete Kubernetes/Linux design. The natural progression is why → mechanism/how → concrete implementation/what → operational consequence, but published prose must not name this framework or use mechanical Why/How/What headings.\n- Each section should answer the unresolved question from the previous section and create the next necessary question. Avoid encyclopedia-style component lists and generic “key point 1/2/3” structure.\n- For every important abstraction, trace at least one layer downward to the mechanism that actually enforces it; for performance-critical topics, continue to kernel queues, syscalls, NUMA, NIC, storage protocol or hardware topology, then trace the constraint back upward into scheduler/control-plane design.
 - At least one concrete example, trace, syscall path, packet path, queueing model, topology mapping, YAML-to-kernel mapping, or performance calculation.
 - Prefer primary sources: Kubernetes docs/KEPs/source, Linux kernel docs/source, OCI/runc/containerd/CRI-O/CNI/CSI specs, IETF/RFC, IEEE, RDMA Consortium, NFS/SCSI/NVMe specifications, vendor architecture papers, peer-reviewed systems papers.
-- Use 2–4 technically useful visuals where appropriate: architecture, sequence, data path, kernel path, topology, performance/queueing diagram, or comparison table.
+- Use 3–5 technically useful visuals where appropriate: architecture, sequence, data path, kernel path, topology, performance/queueing diagram, trace, or comparison table. Figures should advance the argument rather than decorate it.
 - Every visual/table requires a caption and traceable source. Redrawn diagrams must say “依據 XXX 重繪/整理”.
 - Separate public fact, reported experiment, and author inference.
 - Never reduce HPC to “containers + autoscaling”. Explicitly account for topology, gang scheduling, license constraints, MPI collectives, RDMA, filesystem metadata, scratch I/O, NUMA, CPU pinning, hugepages, device locality, job preemption, checkpoint/restart and deterministic reproducibility.
