@@ -1,0 +1,6 @@
+<article class="post-card">
+  <div class="card-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y.%m.%d' }}</time>{% for category in post.categories limit: 2 %}<a class="category" href="{{ '/search/' | relative_url }}?category={{ category | url_encode }}">{{ site.data.category_labels[category] | default: category | escape }}</a>{% endfor %}</div>
+  <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+  <p>{{ post.description | default: post.excerpt | strip_html | normalize_whitespace | truncate: 150 | escape }}</p>
+  <a class="read-link" href="{{ post.url | relative_url }}">閱讀文章 <span aria-hidden="true">↗</span><span class="sr-only">：{{ post.title | escape }}</span></a>
+</article>

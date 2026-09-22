@@ -1,0 +1,8 @@
+{%- assign item = include.post -%}
+{%- if item.domain -%}{{- item.domain -}}
+{%- elsif item.categories contains 'eda' or item.categories contains 'r2g' -%}eda
+{%- elsif item.categories contains 'investment' or item.categories contains 'investing' or item.categories contains 'trading' or item.categories contains '投資' -%}investing
+{%- elsif item.categories contains 'networking' or item.categories contains 'optics' or item.categories contains '網路技術' -%}networking
+{%- elsif item.categories contains 'ai-industry' or item.categories contains 'ai-supply-chain' or item.categories contains 'ai-datacenter' or item.categories contains 'AI' -%}ai-industry
+{%- else -%}notes
+{%- endif -%}

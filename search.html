@@ -1,0 +1,7 @@
+---
+layout: default
+title: 搜尋文章
+permalink: /search/
+---
+<header class="page-heading"><p class="eyebrow">SEARCH THE NOTES</p><h1>找到你的下一個觀點</h1><p>搜尋標題、分類與文章全文，支援中文與英文關鍵字。</p></header>
+<section class="search-page" data-search data-index="{{ '/search.json' | relative_url }}"><form role="search" id="search-form"><label for="search-input">搜尋關鍵字</label><div class="search-field search-large"><input id="search-input" name="q" type="search" placeholder="例如：SYN、APR、光互連" autocomplete="off"><button type="submit">搜尋</button></div><div class="search-controls"><label for="domain-filter">主題</label><select id="domain-filter"><option value="">所有主題</option>{% for domain in site.data.domains %}<option value="{{ domain.key }}">{{ domain.title }}</option>{% endfor %}<option value="notes">其他筆記</option></select><label for="category-filter">標籤</label><select id="category-filter"><option value="">所有分類</option>{% assign categories = site.categories | sort %}{% for category in categories %}<option value="{{ category[0] | escape }}">{{ site.data.category_labels[category[0]] | default: category[0] | escape }}</option>{% endfor %}</select><button type="button" id="clear-search">清除條件</button></div></form><p id="search-status" role="status" aria-live="polite">正在載入文章索引…</p><div id="search-results" class="post-list"></div><noscript><p>全文搜尋需要 JavaScript。你也可以<a href="{{ '/categories/' | relative_url }}">依分類瀏覽所有文章</a>。</p></noscript></section>

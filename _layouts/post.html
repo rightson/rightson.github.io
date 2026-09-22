@@ -1,17 +1,6 @@
 ---
 layout: default
 ---
-
-<article class="post">
-  <h1>{{ page.title }}</h1>
-
-  <div class="entry">
-    {{ content }}
-  </div>
-
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
-  {% include disqus.html %}
-</article>
+<div class="article-top"><a href="{{ '/' | relative_url }}">← 所有文章</a></div>
+<article class="post"><header class="article-header"><div class="card-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y.%m.%d' }}</time><span data-reading-time></span></div><h1>{{ page.title | escape }}</h1><div class="article-tags">{% for category in page.categories %}<a class="category-chip" href="{{ '/search/' | relative_url }}?category={{ category | url_encode }}">{{ site.data.category_labels[category] | default: category | escape }}</a>{% endfor %}</div></header><div class="article-grid"><div class="entry" data-article>{{ content }}</div><aside class="toc" data-toc hidden><details open><summary>文章目錄</summary><nav aria-label="文章章節"><ol></ol></nav></details></aside></div><footer class="article-footer"><a href="{{ '/' | relative_url }}">← 返回文章列表</a><a href="{{ '/search/' | relative_url }}">搜尋更多文章 →</a></footer>{% include disqus.html %}</article>
+{% if page.previous or page.next %}<nav class="post-navigation" aria-label="前後文章">{% if page.previous %}<a href="{{ page.previous.url | relative_url }}"><span>上一篇</span>{{ page.previous.title | escape }}</a>{% endif %}{% if page.next %}<a href="{{ page.next.url | relative_url }}"><span>下一篇</span>{{ page.next.title | escape }}</a>{% endif %}</nav>{% endif %}

@@ -1,0 +1,10 @@
+---
+layout: default
+title: 文章分類
+permalink: /categories/
+---
+<header class="page-heading"><p class="eyebrow">FOUR LENSES, ONE CONNECTED WORLD</p><h1>四個視角，持續探索。</h1><p>從技術原理、設計實務到產業與市場，整理值得深入思考的問題。</p></header>
+<nav class="category-index" aria-label="主要分類">{% for domain in site.data.domains %}<a class="category-chip" href="#{{ domain.key }}">{{ domain.title }}</a>{% endfor %}<a class="category-chip" href="#notes">其他筆記</a></nav>
+<div class="category-groups">{% for domain in site.data.domains %}<section class="category-group" id="{{ domain.key }}"><p class="eyebrow">{{ domain.number }} / {{ domain.english }}</p><div class="section-heading"><h2>{{ domain.title }}</h2><a href="{{ '/search/' | relative_url }}?domain={{ domain.key }}">搜尋此主題 →</a></div><p class="group-description">{{ domain.description }}</p>{% assign count = 0 %}{% for post in site.posts %}{% capture key %}{% include domain-key.html post=post %}{% endcapture %}{% assign key = key | strip %}{% if key == domain.key %}{% assign count = count | plus: 1 %}{% include archive-row.html %}{% endif %}{% endfor %}{% if count == 0 %}<p class="empty-category">文章陸續整理中。</p>{% endif %}</section>{% endfor %}
+<section class="category-group" id="notes"><div class="section-heading"><h2>其他筆記</h2></div>{% for post in site.posts %}{% capture key %}{% include domain-key.html post=post %}{% endcapture %}{% assign key = key | strip %}{% if key == 'notes' %}{% include archive-row.html %}{% endif %}{% endfor %}</section></div>
+<section class="tag-archive"><header class="section-heading"><h2>依技術標籤查找</h2></header>{% assign categories = site.categories | sort %}<nav class="category-index" aria-label="技術標籤">{% for category in categories %}<a class="category-chip" href="{{ '/search/' | relative_url }}?category={{ category[0] | url_encode }}">{{ site.data.category_labels[category[0]] | default: category[0] | escape }} <span>{{ category[1].size }}</span></a>{% endfor %}</nav></section>
