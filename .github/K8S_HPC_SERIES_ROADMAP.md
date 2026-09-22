@@ -51,7 +51,8 @@ Primary references:
 
 ## Phase 1 — What Kubernetes actually is
 
-- [ ] 001. Kubernetes is a distributed reconciliation control plane, not merely a container scheduler
+- [ ] 001. Kubernetes is a distributed reconciliation control plane, not merely a container scheduler  
+  Post committed and Pages deployed; live-page verification pending: `_posts/2026-09-22-kubernetes-control-plane-hpc-foundation.md`
 - [ ] 002. Desired state vs current state: why reconciliation loops scale operational intent
 - [ ] 003. kube-apiserver: REST semantics, admission, storage, watches and the cluster's serialization point
 - [ ] 004. etcd: Raft, quorum, linearizable reads, MVCC, watch and compaction
@@ -409,7 +410,7 @@ Primary references:
 
 ## Daily selection policy
 
-1. Start with Phase 1 and follow conceptual prerequisites.
+1. Start with Phase 1 and follow conceptual prerequisites. If an item already has a public post path or matching `_posts/` article, do not rewrite it even if live-page verification is still pending; continue to the next unwritten topic.
 2. Interleave abstraction-level articles with low-level mechanism articles once fundamentals exist.
 3. Before a deep applied AI/EDA/Foundry article, ensure the required kernel/network/storage/scheduler prerequisites are already covered or explicitly linked.
 4. If a major Kubernetes/kernel/storage/network release materially changes the architecture, insert a new roadmap item rather than silently rewriting history.
