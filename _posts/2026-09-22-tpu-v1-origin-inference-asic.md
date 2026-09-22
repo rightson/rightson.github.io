@@ -43,6 +43,12 @@ Google 在 TPU v1 論文中特別強調 99th-percentile response time。CPU/GPU 
 
 所以第一代 TPU 的設計核心不是「比 GPU 多多少 ALU」，而是：**在 latency SLO 之內，能完成多少 inference。**
 
+
+<figure>
+  <img src="https://storage.googleapis.com/gweb-cloudblog-publish/images/tpu-15dly1.max-500x500.PNG" alt="第一代 TPU block diagram：Unified Buffer、Matrix Multiplier Unit、Accumulator、DDR3 與 host interface" style="max-width:100%;height:auto;">
+  <figcaption>圖 1｜第一代 TPU block diagram。可直接看到 24 MiB Unified Buffer、Matrix Multiplier Unit、accumulator 與 DDR3 weight memory 的資料路徑。來源：<a href="https://cloud.google.com/blog/products/ai-machine-learning/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu">Google Cloud, “An in-depth look at Google’s first Tensor Processing Unit (TPU)”</a>。</figcaption>
+</figure>
+
 ## 為什麼是 INT8：先把不需要的 precision 拿掉
 
 training 與 inference 的數值需求不同。
@@ -76,6 +82,12 @@ TPU v1 把這個優勢推到很極端：核心 Matrix Multiply Unit 是一個 **
 TPU 的 MatrixMultiply 指令可以把一個 `B × 256` 的 input，乘上一個 `256 × 256` 的 weight tile，輸出 `B × 256`。weight 從 array 上方載入，activation 從另一方向流入，partial sum 沿規律路徑累積。
 
 把它想成工廠輸送帶會比較精確：不是 65,536 個工人各自跑去倉庫拿零件，而是零件沿著固定路徑經過每一站，每一站只做自己那個 MAC。
+
+
+<figure>
+  <img src="https://storage.googleapis.com/gweb-cloudblog-publish/original_images/Systolic_Array_for_Neural_Network_2g8b7.GIF" alt="Systolic array 執行矩陣乘法的資料流動畫" style="max-width:100%;height:auto;">
+  <figcaption>圖 2｜Systolic array 中 input、weight 與 partial sum 以規律方式在相鄰 MAC 間流動，核心價值是資料重用而非單純堆疊乘法器。來源：<a href="https://cloud.google.com/blog/products/ai-machine-learning/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu">Google Cloud TPU architecture deep dive</a>。</figcaption>
+</figure>
 
 這帶來三個效果：
 
@@ -123,6 +135,13 @@ Google 當時最重要的是快速把 inference capacity 拉上來。如果第�
 - TPU 儘可能一次把整個 model 從 input 跑到 output，減少 host-device interaction。
 
 甚至 instruction fetch 都沒有設計成完整 processor 的樣子，而是由 host 把 TPU instructions 送進 instruction buffer。整顆 TPU 更接近一個大型、可程式化的 matrix coprocessor，而不是另一顆 CPU。
+
+
+<figure>
+  <img src="https://storage.googleapis.com/gweb-cloudblog-publish/images/tpu-2x0vv.max-600x600.PNG" alt="TensorFlow 到 TPU 的軟體堆疊：StreamExecutor API、user space driver、kernel driver 與 TPU" style="max-width:100%;height:auto;">
+  <figcaption>圖 3｜第一代 TPU 並非獨立主機，而是被既有 Google application / TensorFlow stack 驅動的 accelerator。來源：<a href="https://cloud.google.com/blog/products/ai-machine-learning/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu">Google Cloud TPU architecture deep dive</a>。</figcaption>
+</figure>
+
 
 這個決策揭露了一個很值得記住的系統原則：**第一代專用硬體的最佳架構，不一定是理論上最漂亮的架構，而是能最快嵌入既有 production system 的架構。**
 
