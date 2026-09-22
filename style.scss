@@ -498,6 +498,20 @@ p {
   margin: 18px 0 22px;
   overflow-wrap: anywhere;
 }
+.article-byline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 18px;
+  margin-bottom: 18px;
+  color: #69777d;
+  font-size: 13px;
+  line-height: 1.8;
+}
+.article-byline a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 .article-tags {
   display: flex;
   flex-wrap: wrap;

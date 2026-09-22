@@ -1,0 +1,53 @@
+name: Normalize post authors
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '_posts/**'
+      - 'scripts/normalize_post_authors.py'
+      - 'tests/test_post_authors.py'
+      - '.github/workflows/normalize-post-authors.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: normalize-post-authors
+  cancel-in-progress: false
+
+jobs:
+  normalize:
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install YAML parser
+        run: python -m pip install PyYAML==6.0.2
+      - name: Test and normalize authors
+        run: |
+          python -m unittest discover -s tests
+          python scripts/normalize_post_authors.py
+      - name: Commit author corrections
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          if git diff --quiet -- _posts; then
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- _posts
+          git commit -m 'Ensure canonical post author'
+          git pull --rebase origin "$DEFAULT_BRANCH"
+          git push origin "HEAD:$DEFAULT_BRANCH"
+          # GITHUB_TOKEN commits do not trigger Pages. The shared layout and
+          # Jekyll defaults already render the canonical author on the original
+          # publish, so the site never depends on this follow-up commit.
