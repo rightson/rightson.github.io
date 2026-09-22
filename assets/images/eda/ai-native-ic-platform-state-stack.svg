@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">AI-native IC design platform multi-level state stack</title>
+  <desc id="desc">A layered architecture from engineering intent through architecture and behavioral IR, RTL and constraints, netlist and physical database, to signoff evidence.</desc>
+  <rect width="1200" height="720" fill="#ffffff"/>
+  <text x="600" y="54" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#111827">AI-native IC Design Platform：狀態不是一份檔案，而是一組可驗證的多層表示</text>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="90" y="100" width="1020" height="76" rx="14" fill="#eef2ff" stroke="#6366f1" stroke-width="2"/>
+    <text x="120" y="132" font-size="22" font-weight="700" fill="#312e81">Intent / Objective</text>
+    <text x="120" y="158" font-size="17" fill="#374151">功能目標、PPA、可靠度、時程、可修改範圍、驗收條件</text>
+
+    <rect x="120" y="202" width="960" height="76" rx="14" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
+    <text x="150" y="234" font-size="22" font-weight="700" fill="#155e75">Architecture / Behavioral IR</text>
+    <text x="150" y="260" font-size="17" fill="#374151">階層、資料流、協定、演算法結構、HLS / DSL / compiler semantics</text>
+
+    <rect x="150" y="304" width="900" height="76" rx="14" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+    <text x="180" y="336" font-size="22" font-weight="700" fill="#166534">RTL + Constraints</text>
+    <text x="180" y="362" font-size="17" fill="#374151">Verilog/SystemVerilog、SDC、UPF、DFT intent、formal assumptions</text>
+
+    <rect x="180" y="406" width="840" height="76" rx="14" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+    <text x="210" y="438" font-size="22" font-weight="700" fill="#9a3412">Netlist / Physical Design State</text>
+    <text x="210" y="464" font-size="17" fill="#374151">gate netlist、floorplan、placement、CTS、route、RC、timing graph</text>
+
+    <rect x="210" y="508" width="780" height="76" rx="14" fill="#fdf2f8" stroke="#db2777" stroke-width="2"/>
+    <text x="240" y="540" font-size="22" font-weight="700" fill="#9d174d">Signoff Evidence</text>
+    <text x="240" y="566" font-size="17" fill="#374151">STA / SI / IR / EM / DRC / LVS / LEC / coverage / waiver provenance</text>
+
+    <path d="M600 176 L600 196" stroke="#6b7280" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M600 278 L600 298" stroke="#6b7280" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M600 380 L600 400" stroke="#6b7280" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M600 482 L600 502" stroke="#6b7280" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <text x="600" y="632" text-anchor="middle" font-size="20" font-weight="700" fill="#111827">Agent 的價值：在正確抽象層修改狀態，而不是直接猜底層 Tcl</text>
+    <text x="600" y="664" text-anchor="middle" font-size="17" fill="#4b5563">每一次 lowering 都必須留下 provenance；每一次 state transition 都必須有 deterministic evidence。</text>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+</svg>
