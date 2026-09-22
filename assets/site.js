@@ -8,6 +8,35 @@
       .length;
     document.querySelector("[data-reading-time]").textContent =
       `約 ${Math.max(1, Math.ceil(cjk / 400 + words / 220))} 分鐘閱讀`;
+
+    const speechifyLink = document.querySelector("[data-speechify-read]");
+    if (speechifyLink) {
+      speechifyLink.addEventListener("click", async (event) => {
+        event.preventDefault();
+        const url =
+          document.querySelector('link[rel="canonical"]')?.href || location.href;
+        const shareData = {
+          title: document.querySelector(".article-header h1")?.textContent || document.title,
+          url,
+        };
+
+        if (navigator.share) {
+          try {
+            await navigator.share(shareData);
+            return;
+          } catch (error) {
+            if (error?.name === "AbortError") return;
+          }
+        }
+
+        try {
+          await navigator.clipboard.writeText(url);
+        } catch (_) {
+          // Clipboard access can be unavailable in some browsers.
+        }
+        window.open("https://app.speechify.com/", "_blank", "noopener,noreferrer");
+      });
+    }
     const toc = document.querySelector("[data-toc]");
     const headings = [...article.querySelectorAll("h2, h3")];
     const used = new Set(
