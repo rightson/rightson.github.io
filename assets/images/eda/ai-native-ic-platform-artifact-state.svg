@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Typed artifact state and cache semantics for IC design</title>
+  <desc id="desc">An IC design artifact contains payload, provenance, quality state and evidence. The full artifact is hashed into an action key so degraded and clean states cannot share the same cache identity.</desc>
+  <rect width="1200" height="720" fill="#ffffff"/>
+  <text x="600" y="52" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#111827">把「品質狀態」放進 artifact，而不是藏在 log 或 orchestrator 記憶裡</text>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="90" y="120" width="430" height="390" rx="18" fill="#f9fafb" stroke="#4b5563" stroke-width="2"/>
+    <text x="305" y="160" text-anchor="middle" font-size="24" font-weight="700" fill="#111827">Typed Design Artifact</text>
+
+    <rect x="130" y="195" width="350" height="60" rx="12" fill="#eef2ff" stroke="#6366f1"/>
+    <text x="305" y="232" text-anchor="middle" font-size="18" fill="#312e81">Payload：RTL / netlist / ODB / reports</text>
+
+    <rect x="130" y="275" width="350" height="60" rx="12" fill="#ecfeff" stroke="#0891b2"/>
+    <text x="305" y="312" text-anchor="middle" font-size="18" fill="#155e75">Provenance：tool / version / params / parent</text>
+
+    <rect x="130" y="355" width="350" height="60" rx="12" fill="#fff7ed" stroke="#ea580c"/>
+    <text x="305" y="392" text-anchor="middle" font-size="18" fill="#9a3412">Quality State：clean / degraded / blocked</text>
+
+    <rect x="130" y="435" width="350" height="60" rx="12" fill="#fdf2f8" stroke="#db2777"/>
+    <text x="305" y="472" text-anchor="middle" font-size="18" fill="#9d174d">Evidence：WNS / DRC / coverage / validator</text>
+
+    <rect x="650" y="150" width="430" height="100" rx="16" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+    <text x="865" y="190" text-anchor="middle" font-size="22" font-weight="700" fill="#166534">Content Hash / Action Key</text>
+    <text x="865" y="220" text-anchor="middle" font-size="16" fill="#374151">hash(payload + provenance + quality state + evidence)</text>
+
+    <rect x="650" y="310" width="200" height="110" rx="16" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+    <text x="750" y="350" text-anchor="middle" font-size="21" font-weight="700" fill="#065f46">Clean Cache</text>
+    <text x="750" y="380" text-anchor="middle" font-size="16" fill="#374151">可重用</text>
+    <text x="750" y="402" text-anchor="middle" font-size="16" fill="#374151">可作 downstream input</text>
+
+    <rect x="880" y="310" width="200" height="110" rx="16" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+    <text x="980" y="350" text-anchor="middle" font-size="21" font-weight="700" fill="#9a3412">Degraded Cache</text>
+    <text x="980" y="380" text-anchor="middle" font-size="16" fill="#374151">可重播 / 可分析</text>
+    <text x="980" y="402" text-anchor="middle" font-size="16" fill="#374151">不可誤認為 clean</text>
+
+    <rect x="650" y="485" width="430" height="105" rx="16" fill="#fef2f2" stroke="#dc2626" stroke-width="2"/>
+    <text x="865" y="525" text-anchor="middle" font-size="22" font-weight="700" fill="#991b1b">關鍵效果</text>
+    <text x="865" y="555" text-anchor="middle" font-size="16" fill="#374151">狀態差異進入 hash → downstream action key 不同</text>
+    <text x="865" y="579" text-anchor="middle" font-size="16" fill="#374151">避免「失敗但可繼續」的結果污染正式 flow</text>
+
+    <path d="M520 315 C585 315 600 200 640 200" fill="none" stroke="#6b7280" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M865 250 L865 292" stroke="#6b7280" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M865 250 C820 275 770 285 750 300" fill="none" stroke="#6b7280" stroke-width="2"/>
+    <path d="M865 250 C910 275 960 285 980 300" fill="none" stroke="#6b7280" stroke-width="2"/>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+</svg>
