@@ -2,5 +2,5 @@
   <a rel="author" href="{{ site.post_author_url | escape }}">{{ site.post_author | escape }}</a>
   <span>發布於 <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y 年 %-m 月 %-d 日' }}</time></span>
   <span data-reading-time></span>
-  <a href="{{ page.url | absolute_url }}" data-speechify-read rel="nofollow" title="用 Speechify 朗讀這篇文章">朗讀</a>
+  <a href="{{ page.url | absolute_url }}" data-speechify-read rel="nofollow" title="分享到 Speechify" hidden>分享到 Speechify</a>
 </div>
