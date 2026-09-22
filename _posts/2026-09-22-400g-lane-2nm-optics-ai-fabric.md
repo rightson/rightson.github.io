@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "400G/lane 才是真正的拐點：2nm 光互連正在把 AI Fabric 推向 3.2T"
-date: 2026-09-22 12:18:00 +0800
+date: 2026-09-22 12:00:00 +0800
 categories: networking optics ai-datacenter
 ---
 
