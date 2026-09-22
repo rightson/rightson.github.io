@@ -12,6 +12,7 @@ defaults:
       path: ""
       type: posts
     values:
+      layout: post
       author: Scott Yo-Ru Chen
 github_username: rightson
 plugins:
