@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+  <rect width="1200" height="620" fill="white"/>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333"/>
+    </marker>
+  </defs>
+  <style>
+    .box{fill:#f7f7f7;stroke:#333;stroke-width:2;rx:12;ry:12}
+    .core{fill:#eaf2ff;stroke:#2458a6;stroke-width:2;rx:12;ry:12}
+    .node{fill:#eef8ee;stroke:#397a3b;stroke-width:2;rx:12;ry:12}
+    .txt{font-family:Arial,sans-serif;font-size:22px;fill:#111;text-anchor:middle}
+    .small{font-family:Arial,sans-serif;font-size:17px;fill:#333;text-anchor:middle}
+    .arrow{stroke:#333;stroke-width:2.5;fill:none;marker-end:url(#arrow)}
+    .feedback{stroke:#777;stroke-width:2;fill:none;stroke-dasharray:8 6;marker-end:url(#arrow)}
+  </style>
+  <text x="600" y="40" class="txt" font-weight="bold">Kubernetes reconciliation path: intent → cluster reality → observed state</text>
+  <rect x="35" y="95" width="190" height="95" class="box"/>
+  <text x="130" y="132" class="txt">Desired state</text><text x="130" y="165" class="small">YAML / API spec</text>
+  <rect x="285" y="95" width="200" height="95" class="core"/>
+  <text x="385" y="132" class="txt">kube-apiserver</text><text x="385" y="165" class="small">API + admission</text>
+  <rect x="545" y="95" width="150" height="95" class="core"/>
+  <text x="620" y="132" class="txt">etcd</text><text x="620" y="165" class="small">durable state</text>
+  <rect x="285" y="265" width="200" height="95" class="core"/>
+  <text x="385" y="302" class="txt">controllers</text><text x="385" y="335" class="small">reconcile loops</text>
+  <rect x="545" y="265" width="200" height="95" class="core"/>
+  <text x="645" y="302" class="txt">scheduler</text><text x="645" y="335" class="small">choose a node</text>
+  <rect x="805" y="265" width="170" height="95" class="node"/>
+  <text x="890" y="302" class="txt">kubelet</text><text x="890" y="335" class="small">node reconciler</text>
+  <rect x="805" y="435" width="330" height="115" class="node"/>
+  <text x="970" y="472" class="txt">Linux execution substrate</text>
+  <text x="970" y="505" class="small">CRI/OCI → namespaces → cgroups</text>
+  <text x="970" y="532" class="small">CPU / memory / NIC / storage</text>
+  <path d="M225 142 L285 142" class="arrow"/>
+  <path d="M485 142 L545 142" class="arrow"/>
+  <path d="M385 190 L385 265" class="arrow"/>
+  <path d="M620 190 C620 225 645 225 645 265" class="arrow"/>
+  <path d="M745 312 L805 312" class="arrow"/>
+  <path d="M890 360 L930 435" class="arrow"/>
+  <path d="M805 493 C690 493 560 460 485 335" class="feedback"/>
+  <text x="600" y="590" class="small">Observed status is fed back; controllers keep retrying until current state approaches desired state.</text>
+</svg>
