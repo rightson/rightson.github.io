@@ -1,4 +1,5 @@
 ---
+author: Scott Yo-Ru Chen
 layout: post
 title: "NVLink 6 真正的突破不是 3.6 TB/s，而是把故障恢復做成跨層控制迴路"
 date: 2026-09-23 05:30:00 +0800
