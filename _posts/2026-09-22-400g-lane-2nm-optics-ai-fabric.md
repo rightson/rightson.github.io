@@ -5,8 +5,6 @@ date: 2026-09-22 12:00:00 +0800
 categories: networking optics ai-datacenter
 ---
 
-# 400G/lane 才是真正的拐點：2nm 光互連正在把 AI Fabric 推向 3.2T
-
 今天真正值得注意的，不是「Marvell 做出 2nm optical DSP」這個製程新聞，而是 **400G/lane 正開始從實驗室能力走向可形成產品世代的技術基礎**。
 
 如果這條路成立，下一代 AI Data Center 的變化不只是 1.6T optics 升成 3.2T。真正改變的是整個 network cost model：switch radix、front-panel density、SerDes power、optical reach，以及 pluggable、LPO、CPO 之間的邊界，都會重新洗牌。
