@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Verifier-backed agent loop for IC design</title>
+  <desc id="desc">A closed loop in which an agent proposes a transformation, deterministic EDA engines execute it, artifacts and metrics are validated, and only validated state is promoted.</desc>
+  <rect width="1200" height="760" fill="#ffffff"/>
+  <text x="600" y="52" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#111827">Agent 不應直接擁有「完成」的定義：完成由 verifier 決定</text>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="80" y="130" width="220" height="110" rx="16" fill="#eef2ff" stroke="#6366f1" stroke-width="2"/>
+    <text x="190" y="170" text-anchor="middle" font-size="22" font-weight="700" fill="#312e81">Objective</text>
+    <text x="190" y="200" text-anchor="middle" font-size="16" fill="#374151">PPA / coverage / signoff</text>
+    <text x="190" y="223" text-anchor="middle" font-size="16" fill="#374151">constraints / guardrails</text>
+
+    <rect x="370" y="130" width="220" height="110" rx="16" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
+    <text x="480" y="170" text-anchor="middle" font-size="22" font-weight="700" fill="#155e75">Agent / Planner</text>
+    <text x="480" y="200" text-anchor="middle" font-size="16" fill="#374151">選 abstraction layer</text>
+    <text x="480" y="223" text-anchor="middle" font-size="16" fill="#374151">提出 transformation</text>
+
+    <rect x="660" y="130" width="220" height="110" rx="16" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+    <text x="770" y="170" text-anchor="middle" font-size="22" font-weight="700" fill="#9a3412">EDA Execution</text>
+    <text x="770" y="200" text-anchor="middle" font-size="16" fill="#374151">compiler / simulator</text>
+    <text x="770" y="223" text-anchor="middle" font-size="16" fill="#374151">synthesis / APR / signoff</text>
+
+    <rect x="920" y="130" width="200" height="110" rx="16" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+    <text x="1020" y="170" text-anchor="middle" font-size="22" font-weight="700" fill="#166534">Artifact</text>
+    <text x="1020" y="200" text-anchor="middle" font-size="16" fill="#374151">design state + metrics</text>
+    <text x="1020" y="223" text-anchor="middle" font-size="16" fill="#374151">provenance + logs</text>
+
+    <rect x="660" y="390" width="220" height="125" rx="16" fill="#fdf2f8" stroke="#db2777" stroke-width="2"/>
+    <text x="770" y="430" text-anchor="middle" font-size="22" font-weight="700" fill="#9d174d">Deterministic Verifier</text>
+    <text x="770" y="460" text-anchor="middle" font-size="16" fill="#374151">compile / sim / formal</text>
+    <text x="770" y="483" text-anchor="middle" font-size="16" fill="#374151">STA / DRC / LEC / QoR gate</text>
+
+    <rect x="370" y="390" width="220" height="125" rx="16" fill="#fefce8" stroke="#ca8a04" stroke-width="2"/>
+    <text x="480" y="430" text-anchor="middle" font-size="22" font-weight="700" fill="#854d0e">State Decision</text>
+    <text x="480" y="460" text-anchor="middle" font-size="16" fill="#374151">promote / retry / rollback</text>
+    <text x="480" y="483" text-anchor="middle" font-size="16" fill="#374151">escalate to human</text>
+
+    <path d="M300 185 L360 185" stroke="#6b7280" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M590 185 L650 185" stroke="#6b7280" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M880 185 L910 185" stroke="#6b7280" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M1020 250 C1020 330 890 340 815 382" fill="none" stroke="#6b7280" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M650 452 L600 452" stroke="#6b7280" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M480 390 C480 330 480 300 480 250" fill="none" stroke="#6b7280" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="105" y="595" width="990" height="92" rx="14" fill="#f9fafb" stroke="#9ca3af" stroke-width="1.5"/>
+    <text x="600" y="630" text-anchor="middle" font-size="20" font-weight="700" fill="#111827">可信任的 autonomy = probabilistic reasoning 被夾在 deterministic execution 與 deterministic evidence 之間</text>
+    <text x="600" y="662" text-anchor="middle" font-size="17" fill="#4b5563">Agent 可以探索；但只有通過驗證的 artifact 才能成為下一個可依賴的 design state。</text>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+</svg>
