@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
+  <rect width="1200" height="650" fill="white"/>
+  <style>
+    .cp{fill:#eaf2ff;stroke:#2458a6;stroke-width:2}
+    .dp{fill:#eef8ee;stroke:#397a3b;stroke-width:2}
+    .hw{fill:#fff4e5;stroke:#aa6b12;stroke-width:2}
+    .txt{font-family:Arial,sans-serif;font-size:22px;fill:#111;text-anchor:middle}
+    .small{font-family:Arial,sans-serif;font-size:17px;fill:#333;text-anchor:middle}
+    .line{stroke:#333;stroke-width:2}
+  </style>
+  <text x="600" y="42" class="txt" font-weight="bold">Kubernetes controls placement and lifecycle; HPC performance lives mostly below it</text>
+  <rect x="80" y="85" width="1040" height="125" rx="14" class="cp"/>
+  <text x="600" y="125" class="txt">Control plane</text>
+  <text x="600" y="160" class="small">API / admission / controller / scheduler / policy / quota / job lifecycle</text>
+  <text x="600" y="188" class="small">Decides what should run, where, with which declared resources.</text>
+  <rect x="80" y="260" width="1040" height="145" rx="14" class="dp"/>
+  <text x="600" y="300" class="txt">Node + kernel data path</text>
+  <text x="600" y="335" class="small">Linux scheduler · NUMA · cgroup · page cache · block layer · TCP/RDMA · IRQ/NAPI</text>
+  <text x="600" y="370" class="small">Determines latency, bandwidth, jitter and interference while the job actually runs.</text>
+  <rect x="80" y="455" width="300" height="120" rx="14" class="hw"/>
+  <rect x="450" y="455" width="300" height="120" rx="14" class="hw"/>
+  <rect x="820" y="455" width="300" height="120" rx="14" class="hw"/>
+  <text x="230" y="495" class="txt">CPU / GPU</text><text x="230" y="530" class="small">cores, cache, NUMA, PCIe</text>
+  <text x="600" y="495" class="txt">Network</text><text x="600" y="530" class="small">TCP, RDMA, NIC queues, fabric</text>
+  <text x="970" y="495" class="txt">Storage</text><text x="970" y="530" class="small">NVMe, SAN, NFS, parallel FS</text>
+  <line x1="600" y1="210" x2="600" y2="260" class="line"/>
+  <line x1="230" y1="405" x2="230" y2="455" class="line"/>
+  <line x1="600" y1="405" x2="600" y2="455" class="line"/>
+  <line x1="970" y1="405" x2="970" y2="455" class="line"/>
+  <text x="600" y="620" class="small">A scheduler can select locality; it cannot repeal physics, kernel queueing, filesystem semantics or fabric congestion.</text>
+</svg>
