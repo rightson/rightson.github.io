@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+  <rect width="1200" height="620" fill="white"/>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#333"/></marker></defs>
+  <style>.b{fill:#f7f7f7;stroke:#333;stroke-width:2;rx:12;ry:12}.m{fill:#eaf2ff;stroke:#2458a6;stroke-width:2;rx:12;ry:12}.w{fill:#fff4e5;stroke:#aa6b12;stroke-width:2;rx:12;ry:12}.t{font-family:Arial,sans-serif;font-size:22px;fill:#111;text-anchor:middle}.s{font-family:Arial,sans-serif;font-size:17px;fill:#333;text-anchor:middle}.l{stroke:#333;stroke-width:2.5;fill:none;marker-end:url(#a)}</style>
+  <text x="600" y="42" class="t" font-weight="bold">TPU v1: weight tile load and compute overlap</text>
+  <rect x="55" y="105" width="210" height="105" class="w"/><text x="160" y="145" class="t">Weight Memory</text><text x="160" y="178" class="s">8 GiB DDR3</text>
+  <rect x="330" y="105" width="205" height="105" class="w"/><text x="432" y="145" class="t">Weight FIFO</text><text x="432" y="178" class="s">4 × 64 KiB tiles</text>
+  <rect x="600" y="85" width="260" height="145" class="m"/><text x="730" y="125" class="t">Matrix Unit</text><text x="730" y="158" class="s">active 64 KiB weight tile</text><text x="730" y="188" class="s">+ second tile for double buffering</text>
+  <rect x="600" y="340" width="260" height="120" class="b"/><text x="730" y="382" class="t">Unified Buffer</text><text x="730" y="415" class="s">B × 256 activations</text>
+  <rect x="930" y="340" width="210" height="120" class="b"/><text x="1035" y="382" class="t">Accumulators</text><text x="1035" y="415" class="s">B × 256 outputs</text>
+  <path d="M265 157 L330 157" class="l"/><path d="M535 157 L600 157" class="l"/><path d="M730 340 L730 230" class="l"/><path d="M860 400 L930 400" class="l"/>
+  <text x="600" y="520" class="s">Loading one 64 KiB tile takes 256 cycles; double buffering overlaps the next tile load with current-tile compute.</text>
+  <text x="600" y="555" class="s">MatrixMultiply(B): (B×256) · (256×256) → (B×256), completed in B pipelined cycles once the tile is resident.</text>
+  <text x="600" y="592" class="s">Redrawn from Jouppi et al., ISCA 2017, and Google Cloud’s first-TPU architecture deep dive.</text>
+</svg>
