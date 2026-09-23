@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+<rect width="1400" height="760" fill="white"/>
+<style>.t{font-family:Arial,sans-serif;fill:#111}.h{font-size:30px;font-weight:700}.m{font-size:22px}.s{font-size:18px;fill:#444}.b{fill:#f7f7f7;stroke:#333;stroke-width:2}.c{fill:#eaf2ff;stroke:#2458a6;stroke-width:2}.g{fill:#edf8ed;stroke:#397a3b;stroke-width:2}.r{fill:#fff0f0;stroke:#b14a4a;stroke-width:2}.a{stroke:#333;stroke-width:2.5;fill:none;marker-end:url(#x)}.d{stroke:#777;stroke-width:2;fill:none;stroke-dasharray:8 6;marker-end:url(#x)}</style>
+<defs><marker id="x" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#333"/></marker></defs>
+<text x="700" y="45" text-anchor="middle" class="t h">Imperative sequence vs reconciliation</text>
+<text x="350" y="95" text-anchor="middle" class="t m">Imperative automation</text><text x="1050" y="95" text-anchor="middle" class="t m">Desired-state control loop</text>
+<rect x="90" y="135" width="220" height="80" rx="12" class="b"/><text x="200" y="182" text-anchor="middle" class="t m">run command A</text>
+<rect x="390" y="135" width="220" height="80" rx="12" class="b"/><text x="500" y="182" text-anchor="middle" class="t m">run command B</text>
+<path d="M310 175 L390 175" class="a"/>
+<rect x="220" y="285" width="260" height="90" rx="12" class="r"/><text x="350" y="323" text-anchor="middle" class="t m">state drifts later</text><text x="350" y="350" text-anchor="middle" class="t s">node failure / manual change</text>
+<path d="M500 215 C500 250 430 260 395 285" class="a"/>
+<text x="350" y="430" text-anchor="middle" class="t s">Past success is not a durable proof of current correctness.</text>
+<rect x="790" y="135" width="230" height="88" rx="12" class="c"/><text x="905" y="173" text-anchor="middle" class="t m">desired state</text><text x="905" y="200" text-anchor="middle" class="t s">spec / intent</text>
+<rect x="1080" y="135" width="230" height="88" rx="12" class="g"/><text x="1195" y="173" text-anchor="middle" class="t m">observed state</text><text x="1195" y="200" text-anchor="middle" class="t s">status / reality</text>
+<rect x="925" y="315" width="250" height="95" rx="12" class="c"/><text x="1050" y="352" text-anchor="middle" class="t m">reconcile()</text><text x="1050" y="382" text-anchor="middle" class="t s">compute next action</text>
+<rect x="925" y="500" width="250" height="95" rx="12" class="g"/><text x="1050" y="537" text-anchor="middle" class="t m">act on system</text><text x="1050" y="567" text-anchor="middle" class="t s">create / patch / delete / call backend</text>
+<path d="M905 223 C905 270 960 290 995 315" class="a"/><path d="M1195 223 C1195 270 1140 290 1105 315" class="a"/><path d="M1050 410 L1050 500" class="a"/><path d="M1175 547 C1280 547 1300 300 1205 223" class="d"/>
+<text x="1050" y="665" text-anchor="middle" class="t s">Correctness comes from repeatedly re-deriving action from durable intent + observable reality.</text>
+</svg>
