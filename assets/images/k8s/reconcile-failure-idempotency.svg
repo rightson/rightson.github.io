@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+<rect width="1400" height="760" fill="white"/><style>.t{font-family:Arial,sans-serif;fill:#111}.h{font-size:30px;font-weight:700}.m{font-size:22px}.s{font-size:17px;fill:#444}.b{fill:#f7f7f7;stroke:#333;stroke-width:2}.c{fill:#eaf2ff;stroke:#2458a6;stroke-width:2}.g{fill:#edf8ed;stroke:#397a3b;stroke-width:2}.r{fill:#fff0f0;stroke:#b14a4a;stroke-width:2}.a{stroke:#333;stroke-width:2.4;fill:none;marker-end:url(#x)}.d{stroke:#a33;stroke-width:2.5;fill:none;stroke-dasharray:8 6}</style><defs><marker id="x" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#333"/></marker></defs>
+<text x="700" y="45" text-anchor="middle" class="t h">Why retries must be idempotent: crash after side effect</text>
+<line x1="120" y1="180" x2="1280" y2="180" stroke="#333" stroke-width="2"/>
+<text x="120" y="150" class="t s">time</text>
+<rect x="120" y="230" width="200" height="90" rx="12" class="c"/><text x="220" y="268" text-anchor="middle" class="t m">reconcile #1</text><text x="220" y="295" text-anchor="middle" class="t s">observe: missing</text>
+<rect x="390" y="230" width="220" height="90" rx="12" class="g"/><text x="500" y="268" text-anchor="middle" class="t m">create external object</text><text x="500" y="295" text-anchor="middle" class="t s">side effect succeeds</text>
+<rect x="690" y="230" width="180" height="90" rx="12" class="r"/><text x="780" y="268" text-anchor="middle" class="t m">controller crash</text><text x="780" y="295" text-anchor="middle" class="t s">status not written</text>
+<rect x="950" y="230" width="200" height="90" rx="12" class="c"/><text x="1050" y="268" text-anchor="middle" class="t m">reconcile #2</text><text x="1050" y="295" text-anchor="middle" class="t s">retry later</text>
+<path d="M320 275 L390 275" class="a"/><path d="M610 275 L690 275" class="a"/><path d="M870 275 L950 275" class="a"/>
+<rect x="145" y="430" width="490" height="145" rx="12" class="r"/><text x="390" y="470" text-anchor="middle" class="t m">non-idempotent retry</text><text x="390" y="505" text-anchor="middle" class="t s">blindly create again → duplicate volume / job / reservation</text><text x="390" y="535" text-anchor="middle" class="t s">failure becomes corruption</text>
+<rect x="765" y="430" width="490" height="145" rx="12" class="g"/><text x="1010" y="470" text-anchor="middle" class="t m">idempotent reconciliation</text><text x="1010" y="505" text-anchor="middle" class="t s">re-observe external state → detect existing object → adopt/update</text><text x="1010" y="535" text-anchor="middle" class="t s">failure becomes extra work, not incorrect state</text>
+<path d="M1050 320 C1050 365 390 365 390 430" class="d"/><path d="M1050 320 L1010 430" class="a"/>
+<text x="700" y="660" text-anchor="middle" class="t s">A controller cannot assume exactly-once execution; it must tolerate duplicate work, restarts and stale observations.</text>
+</svg>
