@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+  <rect width="1200" height="620" fill="white"/>
+  <style>.t{font-family:Arial,sans-serif;font-size:22px;fill:#111}.s{font-family:Arial,sans-serif;font-size:17px;fill:#333}.axis{stroke:#222;stroke-width:2}.grid{stroke:#ccc;stroke-width:1}.bar{fill:#eaf2ff;stroke:#2458a6;stroke-width:2}.fill{fill:#fff4e5;stroke:#aa6b12;stroke-width:2}</style>
+  <text x="600" y="40" text-anchor="middle" class="t" font-weight="bold">Why matrix shape matters: fixed 256-wide hardware versus useful work</text>
+  <line x1="130" y1="500" x2="1110" y2="500" class="axis"/><line x1="130" y1="100" x2="130" y2="500" class="axis"/>
+  <text x="80" y="120" class="s">100%</text><text x="86" y="300" class="s">50%</text><text x="95" y="505" class="s">0%</text>
+  <line x1="130" y1="110" x2="1110" y2="110" class="grid"/><line x1="130" y1="300" x2="1110" y2="300" class="grid"/>
+  <rect x="210" y="400" width="150" height="100" class="fill"/><text x="285" y="535" class="s" text-anchor="middle">64-wide</text><text x="285" y="385" class="s" text-anchor="middle">25% columns useful</text>
+  <rect x="455" y="300" width="150" height="200" class="fill"/><text x="530" y="535" class="s" text-anchor="middle">128-wide</text><text x="530" y="285" class="s" text-anchor="middle">50% columns useful</text>
+  <rect x="700" y="110" width="150" height="390" class="bar"/><text x="775" y="535" class="s" text-anchor="middle">256-wide</text><text x="775" y="95" class="s" text-anchor="middle">100% columns useful</text>
+  <rect x="945" y="110" width="150" height="390" class="bar"/><text x="1020" y="535" class="s" text-anchor="middle">512-wide</text><text x="1020" y="95" class="s" text-anchor="middle">2 tiles, each full width</text>
+  <text x="600" y="580" class="s" text-anchor="middle">Conceptual utilization example: the 256×256 array rewards dimensions that tile cleanly; padding or narrow dimensions waste active MAC capacity.</text>
+</svg>
