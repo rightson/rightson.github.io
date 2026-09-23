@@ -45,9 +45,10 @@ The series should not become a product-spec chronology. Every article must answe
 
 ## Phase 1 — Why TPU existed
 
-- [ ] 01. TPU v1 origin: why Google built an inference ASIC instead of simply buying more CPUs/GPUs  
-  Article committed: `_posts/2026-09-22-tpu-v1-origin-inference-asic.md` — **do not rewrite**; mark `[x]` only after GitHub Pages deployment and public-page content are verified.
-- [ ] 02. TPU v1 datapath: how the 256×256 systolic array sustains 65,536 MACs
+- [x] 01. TPU v1 origin: why Google built an inference ASIC instead of simply buying more CPUs/GPUs  
+  Public post: `_posts/2026-09-22-tpu-v1-origin-inference-asic.md`
+- [x] 02. TPU v1 datapath: how the 256×256 systolic array sustains 65,536 MACs  
+  Public post: `_posts/2026-09-23-tpu-v1-systolic-array-dataflow.md`
 - [ ] 03. INT8 inference: why precision reduction changes silicon economics
 - [ ] 04. TPU v1 memory hierarchy: 24 MiB Unified Buffer, 4 MiB accumulators, Weight FIFO, and 8 GiB DDR3
 - [ ] 05. P99 latency versus throughput: why datacenter inference changes processor design
