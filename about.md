@@ -18,4 +18,4 @@ permalink: /about/
 
 ## 聯絡
 
-歡迎交流、指正：[rightson@gmail.com](mailto:rightson@gmail.com) · [GitHub](https://github.com/rightson)
+歡迎交流、指正：[rightson@gmail.com](mailto:rightson@gmail.com) · [GitHub](https://github.com/rightson) · [LinkedIn](https://www.linkedin.com/in/scott-yo-ru-chen-14711538/)
