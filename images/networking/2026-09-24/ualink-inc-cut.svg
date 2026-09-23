@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+  <rect width="1200" height="620" fill="white"/>
+  <style>
+    text { font-family: Arial, sans-serif; fill: #111; }
+    .title { font-size: 28px; font-weight: 700; }
+    .label { font-size: 20px; font-weight: 600; }
+    .small { font-size: 16px; }
+    .box { fill: #f5f5f5; stroke: #222; stroke-width: 2; rx: 10; }
+    .switch { fill: #e8eef5; stroke: #222; stroke-width: 2; rx: 10; }
+    .line { stroke: #222; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+    .cut { stroke: #777; stroke-width: 2; stroke-dasharray: 8 8; }
+  </style>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#222"/></marker></defs>
+  <text x="40" y="48" class="title">同一個 fan-in cut：Passive Forwarding vs In-Network Reduction</text>
+
+  <text x="90" y="105" class="label">Endpoint-only</text>
+  <rect x="80" y="450" width="110" height="60" class="box"/><text x="111" y="486" class="small">GPU 0</text>
+  <rect x="210" y="450" width="110" height="60" class="box"/><text x="241" y="486" class="small">GPU 1</text>
+  <rect x="340" y="450" width="110" height="60" class="box"/><text x="371" y="486" class="small">GPU 2</text>
+  <rect x="470" y="450" width="110" height="60" class="box"/><text x="501" y="486" class="small">GPU 3</text>
+  <rect x="210" y="285" width="240" height="80" class="switch"/><text x="260" y="333" class="label">Forwarding Switch</text>
+  <line x1="135" y1="450" x2="260" y2="365" class="line"/><line x1="265" y1="450" x2="300" y2="365" class="line"/><line x1="395" y1="450" x2="350" y2="365" class="line"/><line x1="525" y1="450" x2="400" y2="365" class="line"/>
+  <line x1="330" y1="285" x2="330" y2="180" class="line"/>
+  <line x1="60" y1="230" x2="590" y2="230" class="cut"/>
+  <text x="350" y="210" class="small">cut traffic ≈ 4B</text>
+  <rect x="245" y="110" width="170" height="55" class="box"/><text x="277" y="144" class="small">Next stage</text>
+
+  <text x="720" y="105" class="label">In-Network Reduction</text>
+  <rect x="660" y="450" width="110" height="60" class="box"/><text x="691" y="486" class="small">GPU 0</text>
+  <rect x="790" y="450" width="110" height="60" class="box"/><text x="821" y="486" class="small">GPU 1</text>
+  <rect x="920" y="450" width="110" height="60" class="box"/><text x="951" y="486" class="small">GPU 2</text>
+  <rect x="1050" y="450" width="110" height="60" class="box"/><text x="1081" y="486" class="small">GPU 3</text>
+  <rect x="790" y="285" width="240" height="80" class="switch"/><text x="828" y="318" class="label">Collective-aware</text><text x="855" y="345" class="small">partial reduce</text>
+  <line x1="715" y1="450" x2="840" y2="365" class="line"/><line x1="845" y1="450" x2="880" y2="365" class="line"/><line x1="975" y1="450" x2="930" y2="365" class="line"/><line x1="1105" y1="450" x2="980" y2="365" class="line"/>
+  <line x1="910" y1="285" x2="910" y2="180" class="line"/>
+  <line x1="640" y1="230" x2="1170" y2="230" class="cut"/>
+  <text x="930" y="210" class="small">cut traffic ≈ B</text>
+  <rect x="825" y="110" width="170" height="55" class="box"/><text x="857" y="144" class="small">Next stage</text>
+
+  <text x="60" y="570" class="small">B = 同一 tensor block 的資料量。此圖只表示會聚 cut 的流量差異，不代表 end-to-end all-reduce 總流量必然縮小 4 倍。</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
+  <rect width="1200" height="650" fill="white"/>
+  <style>
+    text { font-family: Arial, sans-serif; fill: #111; }
+    .title { font-size: 28px; font-weight: 700; }
+    .label { font-size: 19px; font-weight: 600; }
+    .small { font-size: 16px; }
+    .box { fill: #f6f6f6; stroke: #222; stroke-width: 2; rx: 10; }
+    .core { fill: #e8eef5; stroke: #222; stroke-width: 2; rx: 10; }
+    .line { stroke: #222; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+  </style>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#222"/></marker></defs>
+  <text x="40" y="48" class="title">Collective-aware Switch：真正新增的是 Execution State</text>
+
+  <rect x="60" y="110" width="210" height="80" class="box"/><text x="88" y="145" class="label">Establishment</text><text x="88" y="172" class="small">group / op / datatype</text>
+  <rect x="60" y="250" width="210" height="80" class="box"/><text x="88" y="285" class="label">Arrival Tracking</text><text x="88" y="312" class="small">chunk / participant</text>
+  <rect x="60" y="390" width="210" height="80" class="box"/><text x="88" y="425" class="label">Completion</text><text x="88" y="452" class="small">success / abort</text>
+
+  <rect x="410" y="160" width="370" height="300" class="core"/>
+  <text x="495" y="205" class="label">Switch Collective Context</text>
+  <text x="455" y="255" class="small">• collective / virtual-pod identity</text>
+  <text x="455" y="290" class="small">• operation + datatype</text>
+  <text x="455" y="325" class="small">• chunk / sequence identity</text>
+  <text x="455" y="360" class="small">• participant / arrival state</text>
+  <text x="455" y="395" class="small">• accumulator / partial result</text>
+  <text x="455" y="430" class="small">• destination + error state</text>
+
+  <rect x="920" y="110" width="220" height="80" class="box"/><text x="956" y="145" class="label">Forward / Combine</text><text x="956" y="172" class="small">line-rate datapath</text>
+  <rect x="920" y="250" width="220" height="80" class="box"/><text x="956" y="285" class="label">Retry / Recovery</text><text x="956" y="312" class="small">dedup / idempotency</text>
+  <rect x="920" y="390" width="220" height="80" class="box"/><text x="956" y="425" class="label">Security Context</text><text x="956" y="452" class="small">tenant / key boundary</text>
+
+  <line x1="270" y1="150" x2="410" y2="235" class="line"/><line x1="270" y1="290" x2="410" y2="310" class="line"/><line x1="270" y1="430" x2="410" y2="390" class="line"/>
+  <line x1="780" y1="235" x2="920" y2="150" class="line"/><line x1="780" y1="310" x2="920" y2="290" class="line"/><line x1="780" y1="390" x2="920" y2="430" class="line"/>
+
+  <text x="60" y="545" class="label">核心 invariant</text>
+  <text x="60" y="580" class="small">同一 collective 的每個 contribution 必須被計算一次且只有一次；所有 participant 最後看到同一個 valid result，或同一個 explicit failure。</text>
+</svg>

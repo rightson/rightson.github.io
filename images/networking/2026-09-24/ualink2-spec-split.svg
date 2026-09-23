@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
+  <rect width="1200" height="650" fill="white"/>
+  <style>
+    text { font-family: Arial, sans-serif; fill: #111; }
+    .title { font-size: 28px; font-weight: 700; }
+    .label { font-size: 20px; font-weight: 600; }
+    .small { font-size: 16px; }
+    .box { fill: #f5f5f5; stroke: #222; stroke-width: 2; rx: 10; }
+    .accent { fill: #e8eef5; stroke: #222; stroke-width: 2; rx: 10; }
+    .line { stroke: #222; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+  </style>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#222"/></marker></defs>
+  <text x="40" y="48" class="title">UALink 2.0：把不同 evolution cadence 拆成獨立介面</text>
+
+  <rect x="390" y="100" width="420" height="90" class="accent"/>
+  <text x="480" y="138" class="label">Common Specification 2.0</text>
+  <text x="455" y="168" class="small">memory semantics / collectives / security behavior</text>
+
+  <rect x="80" y="280" width="280" height="110" class="box"/>
+  <text x="132" y="320" class="label">DL / PL 2.0</text>
+  <text x="112" y="350" class="small">200G link, FEC, flow control</text>
+  <text x="112" y="375" class="small">PHY speed 可獨立演進</text>
+
+  <rect x="460" y="280" width="280" height="110" class="box"/>
+  <text x="495" y="320" class="label">Manageability 1.0</text>
+  <text x="503" y="350" class="small">gNMI / YANG / SAI</text>
+  <text x="527" y="375" class="small">Redfish / pod control</text>
+
+  <rect x="840" y="280" width="280" height="110" class="box"/>
+  <text x="900" y="320" class="label">Chiplet 1.x</text>
+  <text x="899" y="350" class="small">UCIe 3.0 alignment</text>
+  <text x="882" y="375" class="small">interface / flow control / mgmt</text>
+
+  <line x1="520" y1="190" x2="260" y2="280" class="line"/>
+  <line x1="600" y1="190" x2="600" y2="280" class="line"/>
+  <line x1="680" y1="190" x2="940" y2="280" class="line"/>
+
+  <rect x="300" y="480" width="600" height="90" class="accent"/>
+  <text x="380" y="520" class="label">同一個 scale-up system，不同層可以獨立升級</text>
+  <text x="370" y="550" class="small">PHY 追 SerDes；Common 追 collective；Chiplet 追 package；Manageability 追 operation model</text>
+
+  <line x1="220" y1="390" x2="430" y2="480" class="line"/>
+  <line x1="600" y1="390" x2="600" y2="480" class="line"/>
+  <line x1="980" y1="390" x2="770" y2="480" class="line"/>
+</svg>
