@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1080" viewBox="0 0 900 1080" role="img" aria-labelledby="title desc"><title id="title">從整合 release 到 R2G 的交接</title><desc id="desc">每一階段保存輸入與結果，錯配應退回受影響階段，而不是用成功return code放行。</desc><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#136d71"/></marker></defs><rect width="900" height="1080" fill="#fcfdfd"/><g font-family="Noto Sans CJK TC,Microsoft JhengHei,sans-serif" fill="#19354b">
+<text x="48" y="52" font-size="30" font-weight="700" fill="#19354b" text-anchor="start">03 / 每一段 R2G 都有交接證據</text>
+<text x="48" y="91" font-size="25" font-weight="400" fill="#536674" text-anchor="start">作者參考流程；實際順序與檢查依專案規範。</text>
+<rect x="48" y="133" width="728" height="131" rx="14" fill="#edf2f8" stroke="#afc1ce" stroke-width="2"/>
+<text x="72" y="172" font-size="29" font-weight="700" fill="#19354b" text-anchor="start">整合 release</text>
+<text x="72" y="211" font-size="24" font-weight="400" fill="#19354b" text-anchor="start">RTL／IP views／配置／SDC／UPF</text>
+<text x="72" y="246" font-size="24" font-weight="400" fill="#536674" text-anchor="start">檢查：版本、介面與前端驗證</text>
+<path d="M412 273 L412 299" fill="none" stroke="#136d71" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="436" y="294" font-size="21" font-weight="400" fill="#536674" text-anchor="start">保存結果與輸入版本</text>
+<rect x="48" y="312" width="728" height="131" rx="14" fill="#eaf3f3" stroke="#afc1ce" stroke-width="2"/>
+<text x="72" y="351" font-size="29" font-weight="700" fill="#19354b" text-anchor="start">Synthesis handoff</text>
+<text x="72" y="390" font-size="24" font-weight="400" fill="#19354b" text-anchor="start">Netlist／DFT 假設／timing context</text>
+<text x="72" y="425" font-size="24" font-weight="400" fill="#536674" text-anchor="start">檢查：缺失模型、約束及等價性</text>
+<path d="M412 452 L412 478" fill="none" stroke="#136d71" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="436" y="473" font-size="21" font-weight="400" fill="#536674" text-anchor="start">保存結果與輸入版本</text>
+<rect x="48" y="491" width="728" height="131" rx="14" fill="#edf2f8" stroke="#afc1ce" stroke-width="2"/>
+<text x="72" y="530" font-size="29" font-weight="700" fill="#19354b" text-anchor="start">Physical implementation</text>
+<text x="72" y="569" font-size="24" font-weight="400" fill="#19354b" text-anchor="start">Floorplan → Placement → CTS → Route</text>
+<text x="72" y="604" font-size="24" font-weight="400" fill="#536674" text-anchor="start">檢查：幾何、壅塞、時序與供電</text>
+<path d="M412 631 L412 657" fill="none" stroke="#136d71" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="436" y="652" font-size="21" font-weight="400" fill="#536674" text-anchor="start">保存結果與輸入版本</text>
+<rect x="48" y="670" width="728" height="131" rx="14" fill="#eaf3f3" stroke="#afc1ce" stroke-width="2"/>
+<text x="72" y="709" font-size="29" font-weight="700" fill="#19354b" text-anchor="start">Signoff evidence</text>
+<text x="72" y="748" font-size="24" font-weight="400" fill="#19354b" text-anchor="start">Timing／Physical／Power reports</text>
+<text x="72" y="783" font-size="24" font-weight="400" fill="#536674" text-anchor="start">檢查：corner、規則、模型與 waiver</text>
+<path d="M785 736 H826 V380 H785" fill="none" stroke="#136d71" stroke-width="3" stroke-dasharray="8 7" marker-end="url(#arrow)"/>
+<text x="817" y="868" font-size="22" font-weight="400" fill="#8a5425" text-anchor="end">錯配退回受影響階段</text>
+<path d="M412 810 L412 881" fill="none" stroke="#136d71" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="48" y="899" width="804" height="114" rx="14" fill="#eaf3f3" stroke="#afc1ce" stroke-width="2"/>
+<text x="72" y="939" font-size="30" font-weight="700" fill="#19354b" text-anchor="start">可交付 release</text>
+<text x="72" y="981" font-size="24" font-weight="400" fill="#19354b" text-anchor="start">GDS ＋ 設計版本 ＋ 驗收結果 ＋ 未決問題／核准</text>
+<text x="48" y="1052" font-size="23" font-weight="400" fill="#536674" text-anchor="start">軟體 boot／emulation 是另一條驗證分支，不能代替 signoff。</text>
+</g></svg>
