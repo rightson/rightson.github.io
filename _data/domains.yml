@@ -10,11 +10,11 @@
   description: 檢驗投資假設，關注估值、催化劑與風險。
 - key: networking
   number: '03'
-  title: 網路與互連
-  english: NETWORKING & INTERCONNECT
-  description: 從協定、交換晶片與光通訊，到 AI 資料中心的 scale-up／scale-out 互連。
+  title: 系統與網路
+  english: SYSTEMS & NETWORKING
+  description: 分散式系統、Kubernetes／HPC 叢集，到交換晶片、光通訊與 AI 資料中心互連。
 - key: eda
   number: '04'
-  title: 設計與運算平台
-  english: DESIGN & COMPUTE PLATFORMS
-  description: 晶片設計流程與時序約束、IC 設計平台工程，以及支撐它們的分散式與 HPC 運算系統。
+  title: 晶片設計
+  english: CHIP DESIGN
+  description: 時序約束與 STA、SYN/APR 與設計流程，以及 R2G／AI 原生 IC 設計平台。

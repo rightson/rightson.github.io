@@ -66,8 +66,8 @@
 | --- | --- | --- |
 | `ai-industry` | AI 技術與產業 | 加速器／TPU 架構、AI 基礎設施、AI 需求、供應鏈、技術瓶頸與產業經濟 |
 | `investing` | 投資與交易 | 投資假設、估值、催化劑、資金動向、交易與風險 |
-| `networking` | 網路與互連 | 網路協定、交換晶片、光通訊、scale-up／scale-out 互連、AI 資料中心網路 |
-| `eda` | 設計與運算平台 | STA/SDC、SYN/APR、設計流程、IC design platform／CAD 平台工程，以及 Kubernetes／HPC／分散式系統等運算平台 |
+| `networking` | 系統與網路 | 分散式系統、Kubernetes／HPC 叢集與控制面、網路協定、交換晶片、光通訊、scale-up／scale-out 互連、AI 資料中心網路 |
+| `eda` | 晶片設計 | STA/SDC、SYN/APR、驗證、設計流程、R2G、AI 原生 IC design platform／CAD 工程 |
 
 規則：
 
@@ -77,7 +77,8 @@
 - `domain` 用於內容分區，不應改變文章 URL。
 - 不新增第五個公開 domain。
 - 不用細碎 category/tag 製造分類噪音。首頁、分類頁與文章頁只對讀者顯示四大 domain；`categories` 僅用於既有 URL 與搜尋篩選。
-- 顯示順序依 `_data/domains.yml`：AI 技術與產業 → 投資與交易 → 網路與互連 → 設計與運算平台。
+- 顯示順序依 `_data/domains.yml`：AI 技術與產業 → 投資與交易 → 系統與網路 → 晶片設計。
+- Kubernetes／HPC 與分散式系統文章歸 `networking`，即使應用案例是 EDA；只有以晶片設計流程、時序或 IC 設計平台為核心的文章歸 `eda`。
 - 光互連技術機制通常屬 networking；光通訊公司估值／交易分析屬 investing。依文章核心問題決定，不按關鍵字機械分類。
 
 ---

@@ -10,7 +10,7 @@
 
 只有文章及所需圖檔成功寫入遠端預設分支後，才將 `[ ]` 改為 `[x]`，記錄 `_posts` 路徑及依 repo 規則推導的公開 URL。以遠端文章為完成證據；失敗不推進，同日／同序號重跑不重複發文。每次核對相關文章與本檔，不通讀整個 repo。
 
-文章沿用 `AGENTS.md` 必要欄位，增加 `series: distributed-systems`、`series_order: <篇號>`；使用 `domain: eda`（公開分類「設計與運算平台」）、單一 `categories: eda`，不增加公開分類。不署名：不設 `author`，正文不加作者列，也不重複 H1。每篇提供已存在的前篇／先備文章連結；不得假造尚未發布的下一篇連結。依需要維護已發布文章之導覽。
+文章沿用 `AGENTS.md` 必要欄位，增加 `series: distributed-systems`、`series_order: <篇號>`；使用 `domain: networking`（公開分類「系統與網路」）、單一 `categories: networking`，不增加公開分類。不署名：不設 `author`，正文不加作者列，也不重複 H1。每篇提供已存在的前篇／先備文章連結；不得假造尚未發布的下一篇連結。依需要維護已發布文章之導覽。
 
 採使用者指定的精簡發布方式：檢查內容、front matter、來源、圖文及遠端提交結果；不逐篇輪詢 Actions 或執行例行 HTTP 驗證，不下载／分析 Pages artifacts，不建立、下載或保存 ZIP／TAR 等壓縮封存檔，不新增驗證 workflow。只有明確發布異常時才針對故障除錯。回報遠端提交結果與推導網址，不把未實測的 HTTP 或部署狀態說成已驗證。
 
