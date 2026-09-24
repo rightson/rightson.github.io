@@ -8,14 +8,17 @@ This site uses native Jekyll layouts and GitHub Pages. No remote theme, JavaScri
 
 Continue adding Markdown files to `_posts/YYYY-MM-DD-slug.md` with `layout: post`, `title`, `date`, and `categories`. Do not change existing `categories`: Jekyll uses them in default post URLs.
 
-Add an optional `domain` to explicitly select one of the four editorial sections:
+Add an optional `domain` to explicitly select one of the seven editorial sections:
 
 | domain | Section |
 | --- | --- |
-| ai-industry | AI 技術與產業 |
+| ai-industry | 產業分析 |
 | investing | 投資與交易 |
-| networking | 系統與網路 |
-| eda | 晶片設計 |
+| eda | 電子設計自動化 |
+| timing | 靜態時序分析 |
+| architecture | 計算機架構 |
+| networking | 網路與互連 |
+| distributed-systems | 分散式系統 |
 
 `domain` does not change the article URL. Existing posts are classified using `_includes/domain-key.html`; unmatched posts appear under 其他筆記. A post has one primary domain and any number of category labels. Unknown category labels remain visible, so daily publishing does not require a code change. Chinese display labels can be added to `_data/category_labels.yml`.
 
@@ -31,7 +34,7 @@ categories: ai-supply-chain research
 
 ## Features
 
-- Homepage: newest-first articles and four persistent research sections.
+- Homepage: newest-first articles and seven persistent research sections.
 - `/categories/`: static section archives, usable without JavaScript.
 - `/search/`: client-side full-text search with AND matching across space-separated keywords, domain and category filters, and shareable URLs.
 - `/search.json`: automatically generated from published posts at build time.

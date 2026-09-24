@@ -1,20 +1,35 @@
 - key: ai-industry
   number: '01'
-  title: AI 技術與產業
-  english: AI TECHNOLOGY & INDUSTRY
-  description: 從加速器架構、AI 基礎設施到算力需求、供應鏈與技術瓶頸。
+  title: 產業分析
+  english: INDUSTRY ANALYSIS
+  description: AI 與半導體的需求、供應鏈、產能、政策與價值分配。
 - key: investing
   number: '02'
   title: 投資與交易
   english: INVESTING & TRADING
-  description: 檢驗投資假設，關注估值、催化劑與風險。
-- key: networking
-  number: '03'
-  title: 系統與網路
-  english: SYSTEMS & NETWORKING
-  description: 分散式系統、Kubernetes／HPC 叢集，到交換晶片、光通訊與 AI 資料中心互連。
+  description: 投資假設、估值、催化劑、資金動向與風險管理。
 - key: eda
+  number: '03'
+  title: 電子設計自動化
+  english: EDA
+  description: RTL-to-GDS 設計流程、SYN/APR、驗證，以及 IC 設計平台與 CAD 基礎設施。
+- key: timing
   number: '04'
-  title: 晶片設計
-  english: CHIP DESIGN
-  description: 時序約束與 STA、SYN/APR 與設計流程，以及 R2G／AI 原生 IC 設計平台。
+  title: 靜態時序分析
+  english: STATIC TIMING ANALYSIS
+  description: SDC 時序約束、clock 關係、setup／hold 與 timing closure。
+- key: architecture
+  number: '05'
+  title: 計算機架構
+  english: COMPUTER ARCHITECTURE
+  description: 加速器與處理器微架構、記憶體階層、資料流與效能模型。
+- key: networking
+  number: '06'
+  title: 網路與互連
+  english: NETWORKING & INTERCONNECTS
+  description: 網路協定、交換晶片、光通訊，以及 scale-up／scale-out 互連。
+- key: distributed-systems
+  number: '07'
+  title: 分散式系統
+  english: DISTRIBUTED SYSTEMS
+  description: 叢集管理與控制面、一致性、複寫、容錯，以及大規模服務設計。

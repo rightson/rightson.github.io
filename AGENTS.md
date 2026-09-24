@@ -41,7 +41,7 @@
 現有功能應保留：
 
 - 首頁依時間由新到舊顯示文章。
-- 四個固定研究 domain。
+- 七個固定研究 domain（見第 2 節）。
 - `/categories/` 靜態分類頁。
 - `/search/` 全文搜尋、AND keyword matching、domain/category filters 與 shareable query URL。
 - `/search.json` 由 published posts 自動產生。
@@ -58,28 +58,34 @@
 
 ---
 
-## 2. 四大公開分類與 URL 穩定性
+## 2. 七個公開分類與 URL 穩定性
 
-只保留四個主要 `domain`：
+分類名稱採學術會議與業界通用詞彙；每篇選一個主要 `domain`：
 
-| domain | 公開分類 | 內容 |
-| --- | --- | --- |
-| `ai-industry` | AI 技術與產業 | 加速器／TPU 架構、AI 基礎設施、AI 需求、供應鏈、技術瓶頸與產業經濟 |
-| `investing` | 投資與交易 | 投資假設、估值、催化劑、資金動向、交易與風險 |
-| `networking` | 系統與網路 | 分散式系統、Kubernetes／HPC 叢集與控制面、網路協定、交換晶片、光通訊、scale-up／scale-out 互連、AI 資料中心網路 |
-| `eda` | 晶片設計 | STA/SDC、SYN/APR、驗證、設計流程、R2G、AI 原生 IC design platform／CAD 工程 |
+| domain | 公開分類 | 內容 | 常見對應 |
+| --- | --- | --- | --- |
+| `ai-industry` | 產業分析 | AI／半導體需求、供應鏈、產能、政策、價值分配 | 產業研究 |
+| `investing` | 投資與交易 | 投資假設、估值、催化劑、資金動向、交易與風險 | 投資研究 |
+| `eda` | 電子設計自動化 | RTL-to-GDS flow、SYN/APR、驗證、DFT、IC 設計平台／CAD 基礎設施、AI for EDA | DAC、ICCAD |
+| `timing` | 靜態時序分析 | STA、SDC、clock 關係、setup／hold、timing closure、OCV／SI | TAU、STA |
+| `architecture` | 計算機架構 | 加速器（TPU／GPU／ASIC）、處理器微架構、記憶體階層、資料流、效能模型 | ISCA、MICRO、HPCA |
+| `networking` | 網路與互連 | 網路協定、交換晶片、光通訊、scale-up／scale-out 互連、資料中心網路 | SIGCOMM、NSDI、Hot Interconnects |
+| `distributed-systems` | 分散式系統 | 叢集管理（Kubernetes、Slurm）、控制面、一致性、複寫、容錯、大規模服務設計 | OSDI、SOSP、EuroSys |
 
 規則：
 
-- 每篇新文章只有一個 primary `domain`。
-- 新文章的 `categories` 原則上使用與 `domain` 相同的單一值，除非使用者當次明確指定其他既有 permalink 相容做法。
-- **既有文章的 `categories` 不可為了重新分類而修改。** Jekyll default post URL 會受 categories 影響，修改可能直接破壞外部連結。
+- 每篇新文章只有一個 primary `domain`，依文章的核心問題決定，不按關鍵字機械分類。
+- 新文章的 `categories` 原則上使用與 `domain` 相同的單一值。
+- **既有文章的 `categories` 不可為了重新分類而修改。** Jekyll default post URL 會受 categories 影響，修改可能直接破壞外部連結；重新分類只改 `domain`。
 - `domain` 用於內容分區，不應改變文章 URL。
-- 不新增第五個公開 domain。
-- 不用細碎 category/tag 製造分類噪音。首頁、分類頁與文章頁只對讀者顯示四大 domain；`categories` 僅用於既有 URL 與搜尋篩選。
-- 顯示順序依 `_data/domains.yml`：AI 技術與產業 → 投資與交易 → 系統與網路 → 晶片設計。
-- Kubernetes／HPC 與分散式系統文章歸 `networking`，即使應用案例是 EDA；只有以晶片設計流程、時序或 IC 設計平台為核心的文章歸 `eda`。
-- 光互連技術機制通常屬 networking；光通訊公司估值／交易分析屬 investing。依文章核心問題決定，不按關鍵字機械分類。
+- 新增或合併公開分類須經使用者明確同意，並同步 `_data/domains.yml`、`_includes/domain-key.html`、本表與相關 roadmap。
+- 不用細碎 category/tag 製造分類噪音。首頁、分類頁與文章頁只對讀者顯示 `domain`；`categories` 僅用於既有 URL 與搜尋篩選。
+- 顯示順序依 `_data/domains.yml`。
+- 邊界：
+  - STA／SDC／timing closure 歸 `timing`；flow、平台、驗證、SYN/APR 方法歸 `eda`。
+  - TPU／加速器的微架構與資料流歸 `architecture`；其商業、供應鏈或估值歸 `ai-industry`／`investing`。
+  - Kubernetes／HPC 叢集與控制面歸 `distributed-systems`，即使應用案例是 EDA；NVLink／UALink／光互連等資料路徑歸 `networking`。
+  - 光互連技術機制歸 `networking`；光通訊公司估值／交易分析歸 `investing`。
 
 ---
 

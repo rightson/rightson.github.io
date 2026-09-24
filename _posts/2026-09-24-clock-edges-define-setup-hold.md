@@ -2,7 +2,7 @@
 layout: post
 title: "Clock 的本質不是頻率，而是決定每條 Timing Path 要拿哪兩個 Edge 比較"
 date: 2026-09-24 11:31:48 +0800
-domain: eda
+domain: timing
 categories: eda
 description: "同樣是 10 ns clock，setup 與 hold 為什麼會得到完全不同的 timing relationship？從 launch/capture edge、Liberty timing arc 與 OpenSTA 的 max/min analysis，看懂 create_clock 真正建立的是一組時間關係，而不只是頻率。"
 ---

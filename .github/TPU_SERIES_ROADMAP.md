@@ -20,6 +20,7 @@ The series should not become a product-spec chronology. Every article must answe
 ## Editorial constraints
 
 - Read `AGENTS.md`, this roadmap, and recent `_posts/` before writing.
+- Front matter: `domain: architecture` (public section 「計算機架構」) and a single `categories: architecture`. Articles whose core question is TPU economics or supply chain belong to `ai-industry` or `investing` instead.
 - Publish exactly one primary topic per article.
 - Minimum article depth: **at least a 5-minute read**. Target roughly 2,500–4,500 Traditional Chinese characters excluding front matter and references; longer is acceptable when the topic requires it.
 - Every article must contain at least one concrete technical example, calculation, tensor shape, bandwidth/latency example, topology mapping, or compiler mapping.
