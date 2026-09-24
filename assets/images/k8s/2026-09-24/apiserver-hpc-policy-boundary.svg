@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="800" viewBox="0 0 1400 800">
+<rect width="1400" height="800" fill="white"/>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#333"/></marker></defs>
+<style>.b{fill:#f7f7f7;stroke:#333;stroke-width:2}.p{fill:#eaf2ff;stroke:#2458a6;stroke-width:2}.s{fill:#edf8ee;stroke:#397a3b;stroke-width:2}.h{fill:#fff3e6;stroke:#b66a00;stroke-width:2}.t{font:22px Arial,sans-serif;fill:#111;text-anchor:middle}.m{font:17px Arial,sans-serif;fill:#333;text-anchor:middle}.ar{stroke:#333;stroke-width:2.5;fill:none;marker-end:url(#a)}.d{stroke:#777;stroke-width:2;fill:none;stroke-dasharray:8 6;marker-end:url(#a)}</style>
+<text x="700" y="45" class="t" font-weight="bold">對 AI / EDA / Foundry，API server 應統一「誰能改變 intent」，而不是吞掉所有 data path</text>
+<rect x="55" y="105" rx="12" width="260" height="95" class="b"/><text x="185" y="142" class="t">Human / CI / Portal</text><text x="185" y="175" class="m">submit intent</text>
+<rect x="55" y="245" rx="12" width="260" height="95" class="b"/><text x="185" y="282" class="t">EDA Flow Controller</text><text x="185" y="315" class="m">SYN / APR / STA policy</text>
+<rect x="55" y="385" rx="12" width="260" height="95" class="b"/><text x="185" y="422" class="t">GPU / Storage Operator</text><text x="185" y="455" class="m">device / volume intent</text>
+<rect x="465" y="195" rx="16" width="470" height="215" class="p"/><text x="700" y="240" class="t">kube-apiserver boundary</text><text x="700" y="278" class="m">identity · authorization · admission · schema</text><text x="700" y="312" class="m">resourceVersion · audit · watch · persistence contract</text><text x="700" y="350" class="m">shared policy boundary for control-plane state</text>
+<rect x="1095" y="230" rx="12" width="240" height="115" class="s"/><text x="1215" y="270" class="t">etcd</text><text x="1215" y="305" class="m">durable cluster state</text>
+<path d="M315 152 L465 245" class="ar"/><path d="M315 292 L465 300" class="ar"/><path d="M315 432 L465 355" class="ar"/><path d="M935 300 L1095 288" class="ar"/>
+<rect x="405" y="535" rx="14" width="250" height="120" class="h"/><text x="530" y="575" class="t">Execution backends</text><text x="530" y="608" class="m">K8s Job / LSF / Slurm</text><text x="530" y="635" class="m">bare metal / VM</text>
+<rect x="750" y="535" rx="14" width="250" height="120" class="h"/><text x="875" y="575" class="t">Data path</text><text x="875" y="608" class="m">NFS / SAN / NVMe</text><text x="875" y="635" class="m">TCP / RDMA / MPI</text>
+<path d="M625 410 L550 535" class="d"/><path d="M775 410 L850 535" class="d"/>
+<text x="700" y="730" class="m">作者推論：Kubernetes 的價值在統一 control-plane mutation contract；LSF、RDMA、NFS/SAN 等 data/execution path 可保留各自最適機制。</text>
+</svg>
