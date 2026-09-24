@@ -14,14 +14,14 @@
   <link rel="icon" href="{{ '/assets/favicon-32.png' | relative_url }}?v=chip-dna-1" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="{{ '/assets/apple-touch-icon.png' | relative_url }}?v=chip-dna-1">
   <link rel="canonical" href="{{ page.url | absolute_url }}">
-  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}?v={{ site.github.build_revision | default: 'byline-20260922' }}-header-3">
+  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}?v={{ site.github.build_revision | default: 'byline-20260922' }}-header-4">
   <link rel="alternate" type="application/atom+xml" title="{{ site.title | escape }}" href="{{ '/feed.xml' | relative_url }}">
   <script src="{{ '/assets/site.js' | relative_url }}?v={{ site.github.build_revision | default: 'speechify-20260922' }}" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">跳至主要內容</a>
   <header class="site-header"><div class="shell header-inner">
-    <a class="brand" href="{{ '/' | relative_url }}" aria-label="Rightson 首頁"><span class="brand-mark" aria-hidden="true">R.</span><span>RIGHTSON<span class="brand-caption">RESEARCH & ENGINEERING</span></span></a>
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="Rightson 首頁"><img class="brand-mark" src="{{ '/assets/favicon.svg' | relative_url }}?v=chip-dna-1" alt="" width="42" height="42"><span>RIGHTSON<span class="brand-caption">RESEARCH & ENGINEERING</span></span></a>
     <nav aria-label="主要導覽">
       <a href="{{ '/' | relative_url }}" {% if page.layout == 'home' %}aria-current="page"{% endif %}>文章</a>
       <a href="{{ '/categories/' | relative_url }}" {% if page.url == '/categories/' %}aria-current="page"{% endif %}>分類</a>

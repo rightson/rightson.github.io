@@ -103,16 +103,10 @@ p {
   letter-spacing: 2px;
 }
 .brand-mark {
-  display: grid;
-  place-items: center;
-  background: var(--ink);
-  color: white;
-  width: 34px;
-  height: 34px;
-  font-family: var(--serif);
-  font-size: 22px;
-  letter-spacing: -2px;
-  padding-right: 4px;
+  display: block;
+  flex: none;
+  width: 42px;
+  height: 42px;
 }
 .brand-caption {
   display: block;
@@ -731,9 +725,8 @@ p {
     letter-spacing: 1.5px;
   }
   .brand-mark {
-    width: 28px;
-    height: 28px;
-    font-size: 18px;
+    width: 34px;
+    height: 34px;
   }
   .brand-caption {
     display: none;
