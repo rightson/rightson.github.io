@@ -78,7 +78,8 @@
 - 新文章的 `categories` 原則上使用與 `domain` 相同的單一值。
 - **既有文章的 `categories` 不可為了重新分類而修改。** Jekyll default post URL 會受 categories 影響，修改可能直接破壞外部連結；重新分類只改 `domain`。
 - `domain` 用於內容分區，不應改變文章 URL。
-- 新增或合併公開分類須經使用者明確同意，並同步 `_data/domains.yml`、`_includes/domain-key.html`、本表與相關 roadmap。
+- **分類變更前必須先向使用者提出方案並取得確認**，包括：新增、合併、拆分或更名公開分類、調整顯示順序，以及改變既有文章的 `domain`。確認後再同步 `_data/domains.yml`、`_includes/domain-key.html`、本表與相關 roadmap。
+- 新文章依本表與邊界規則選定 `domain`，不需逐篇詢問；若核心問題無法明確對應任一分類，先詢問，不自行新增分類。
 - 不用細碎 category/tag 製造分類噪音。首頁、分類頁與文章頁只對讀者顯示 `domain`；`categories` 僅用於既有 URL 與搜尋篩選。
 - 顯示順序依 `_data/domains.yml`。
 - 邊界：
