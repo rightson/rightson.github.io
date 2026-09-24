@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+<rect width="1400" height="760" fill="white"/>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#333"/></marker></defs>
+<style>.b{fill:#f7f7f7;stroke:#333;stroke-width:2}.p{fill:#eaf2ff;stroke:#2458a6;stroke-width:2}.w{fill:#fff3e6;stroke:#b66a00;stroke-width:2}.s{fill:#edf8ee;stroke:#397a3b;stroke-width:2}.t{font:22px Arial,sans-serif;fill:#111;text-anchor:middle}.m{font:17px Arial,sans-serif;fill:#333;text-anchor:middle}.ar{stroke:#333;stroke-width:2.5;fill:none;marker-end:url(#a)}.dash{stroke:#777;stroke-width:2;fill:none;stroke-dasharray:8 6;marker-end:url(#a)}</style>
+<text x="700" y="45" class="t" font-weight="bold">kube-apiserver：一次寫入必須穿過共同的 policy / validation / persistence boundary</text>
+<rect x="40" y="105" rx="12" width="180" height="95" class="b"/><text x="130" y="142" class="t">Client</text><text x="130" y="175" class="m">kubectl / controller</text>
+<rect x="270" y="105" rx="12" width="180" height="95" class="p"/><text x="360" y="142" class="t">TLS + AuthN</text><text x="360" y="175" class="m">who are you?</text>
+<rect x="500" y="105" rx="12" width="180" height="95" class="p"/><text x="590" y="142" class="t">AuthZ</text><text x="590" y="175" class="m">may you do this?</text>
+<rect x="730" y="105" rx="12" width="200" height="95" class="p"/><text x="830" y="142" class="t">Admission</text><text x="830" y="175" class="m">mutate / validate</text>
+<rect x="980" y="105" rx="12" width="180" height="95" class="p"/><text x="1070" y="142" class="t">Object validation</text><text x="1070" y="175" class="m">schema + invariants</text>
+<rect x="1210" y="105" rx="12" width="150" height="95" class="s"/><text x="1285" y="142" class="t">etcd</text><text x="1285" y="175" class="m">persist state</text>
+<path d="M220 152 L270 152" class="ar"/><path d="M450 152 L500 152" class="ar"/><path d="M680 152 L730 152" class="ar"/><path d="M930 152 L980 152" class="ar"/><path d="M1160 152 L1210 152" class="ar"/>
+<rect x="460" y="285" rx="12" width="480" height="110" class="w"/><text x="700" y="326" class="t">API Priority &amp; Fairness</text><text x="700" y="358" class="m">overload 時保留 concurrency / queueing fairness</text><text x="700" y="383" class="m">避免 noisy client 壓垮 control plane</text>
+<path d="M700 285 L700 225" class="dash"/>
+<rect x="95" y="485" rx="12" width="505" height="135" class="b"/><text x="347" y="525" class="t">Read path</text><text x="347" y="558" class="m">GET / LIST / WATCH 不進 admission mutation path</text><text x="347" y="589" class="m">可由 watch cache / etcd consistency semantics 服務</text>
+<rect x="800" y="485" rx="12" width="505" height="135" class="b"/><text x="1052" y="525" class="t">Write path</text><text x="1052" y="558" class="m">CREATE / UPDATE / PATCH / DELETE</text><text x="1052" y="589" class="m">共享同一組 access-control 與 admission 規則</text>
+<text x="700" y="705" class="m">圖示為邏輯責任鏈，而非 kube-apiserver 內部所有 filter 的逐函式呼叫順序。</text>
+</svg>
