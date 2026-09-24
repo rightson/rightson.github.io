@@ -88,7 +88,7 @@ p {
   background: var(--paper);
 }
 .header-inner {
-  min-height: 104px;
+  min-height: 68px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -97,8 +97,8 @@ p {
 .brand {
   display: flex;
   align-items: center;
-  gap: 14px;
-  font-size: 18px;
+  gap: 12px;
+  font-size: 16px;
   font-weight: 750;
   letter-spacing: 2px;
 }
@@ -107,10 +107,10 @@ p {
   place-items: center;
   background: var(--ink);
   color: white;
-  width: 44px;
-  height: 44px;
+  width: 34px;
+  height: 34px;
   font-family: var(--serif);
-  font-size: 29px;
+  font-size: 22px;
   letter-spacing: -2px;
   padding-right: 4px;
 }
@@ -128,100 +128,69 @@ p {
 }
 .site-header nav a {
   padding: 12px 0;
+  white-space: nowrap;
 }
 .site-header nav [aria-current] {
   color: var(--teal);
   box-shadow: 0 2px var(--teal);
 }
 .hero {
-  padding: 68px 0 52px;
-  display: grid;
-  grid-template-columns: 1fr 290px;
-  gap: 60px;
-  align-items: end;
+  padding: 36px 0 22px;
+  max-width: 760px;
 }
 .eyebrow {
   font-size: 10px;
   font-weight: 650;
   letter-spacing: 2px;
   color: var(--teal);
-  margin-bottom: 22px;
+  margin-bottom: 12px;
 }
 .hero h1 {
-  font-size: clamp(36px, 4.4vw, 56px);
-  letter-spacing: -1.5px;
-  line-height: 1.35;
-  font-weight: 600;
-  margin-bottom: 22px;
+  font-size: clamp(26px, 2.6vw, 34px);
+  letter-spacing: -0.6px;
+  line-height: 1.4;
+  font-weight: 650;
+  margin-bottom: 10px;
 }
 .hero h1 span {
+  display: block;
   color: var(--teal);
 }
 .hero-description {
   color: var(--muted);
-  font-size: 16px;
-  max-width: 560px;
+  font-size: 15px;
+  line-height: 1.75;
+  max-width: 720px;
   margin-bottom: 0;
 }
-.hero-note {
-  border-left: 1px solid var(--line);
-  padding: 12px 0 10px 28px;
-}
-.note-number {
-  font-size: 10px;
-  letter-spacing: 1.5px;
-  color: var(--muted);
-}
-.hero-note p {
-  font-size: 18px;
-  line-height: 1.8;
-  margin: 20px 0;
-}
-.hero-note a {
-  font-size: 12px;
-  color: var(--teal);
-}
-.domain-grid {
+.domain-nav {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 36px;
+}
+.domain-chip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 44px;
+  padding: 8px 14px;
   border: 1px solid var(--line);
-  margin-bottom: 60px;
   background: var(--white);
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.15s, border-color 0.15s;
 }
-.domain-card {
-  padding: 24px 22px;
-  border-right: 1px solid var(--line);
-  transition: background 0.15s;
-}
-.domain-card:last-child {
-  border: 0;
-}
-.domain-card:hover {
+.domain-chip:hover {
   background: #edf3ef;
-}
-.domain-overline {
-  font-size: 9px;
-  letter-spacing: 1px;
-  color: var(--teal);
-}
-.domain-card h2 {
-  font-size: 18px;
-  margin: 17px 0 12px;
-}
-.domain-card h2 span {
-  float: right;
-  font-size: 15px;
-  font-weight: 400;
-}
-.domain-card p {
-  font-size: 12px;
-  line-height: 1.8;
-  color: var(--muted);
-  margin-bottom: 20px;
+  border-color: var(--teal);
 }
 .domain-count {
-  font-size: 11px;
+  font-size: 12px;
+  font-weight: 500;
   color: var(--muted);
+  font-variant-numeric: tabular-nums;
 }
 .home-grid {
   display: grid;
@@ -707,12 +676,6 @@ p {
   display: none !important;
 }
 @media (max-width: 1050px) {
-  .domain-card {
-    padding: 20px 16px;
-  }
-  .domain-overline {
-    font-size: 8px;
-  }
   .home-grid {
     gap: 36px;
     grid-template-columns: minmax(0, 1fr) 240px;
@@ -720,27 +683,11 @@ p {
   .article-grid {
     gap: 32px;
   }
-  .domain-card h2 {
-    font-size: 16px;
-  }
 }
 @media (max-width: 900px) {
   .shell {
     padding-left: 26px;
     padding-right: 26px;
-  }
-  .hero {
-    gap: 30px;
-    grid-template-columns: 1fr 230px;
-  }
-  .domain-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .domain-card:nth-child(2) {
-    border-right: 0;
-  }
-  .domain-card:nth-child(-n + 2) {
-    border-bottom: 1px solid var(--line);
   }
   .article-grid {
     display: flex;
@@ -769,9 +716,6 @@ p {
   .home-sidebar .subscribe {
     display: none;
   }
-  .domain-card h2 {
-    font-size: 18px;
-  }
 }
 @media (max-width: 600px) {
   .shell {
@@ -779,69 +723,54 @@ p {
     padding-right: 20px;
   }
   .header-inner {
-    min-height: 116px;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 10px;
-    padding-top: 16px;
-    padding-bottom: 8px;
+    min-height: 56px;
+    gap: 12px;
   }
   .brand {
-    font-size: 16px;
+    gap: 9px;
+    font-size: 14px;
+    letter-spacing: 1.5px;
   }
   .brand-mark {
-    width: 36px;
-    height: 36px;
-    font-size: 24px;
+    width: 28px;
+    height: 28px;
+    font-size: 18px;
   }
   .brand-caption {
-    font-size: 8px;
+    display: none;
   }
   .site-header nav {
-    width: 100%;
-    gap: 0;
-    justify-content: space-between;
+    gap: 16px;
     font-size: 13px;
   }
   .site-header nav a {
     padding: 8px 0;
   }
   .hero {
-    display: block;
-    padding: 38px 0 32px;
+    padding: 22px 0 16px;
   }
   .hero h1 {
-    font-size: 38px;
+    font-size: 23px;
+    letter-spacing: -0.3px;
   }
   .hero-description {
-    font-size: 14px;
-  }
-  .hero-note {
-    display: none;
+    font-size: 13.5px;
+    line-height: 1.7;
   }
   .eyebrow {
     font-size: 9px;
-    letter-spacing: 1.4px;
-    margin-bottom: 18px;
+    letter-spacing: 1.2px;
+    margin-bottom: 10px;
   }
-  .domain-grid {
-    margin-bottom: 36px;
+  .domain-nav {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+    margin-bottom: 24px;
   }
-  .domain-card {
-    padding: 18px 13px;
-  }
-  .domain-card h2 {
-    font-size: 16px;
-    margin-top: 12px;
-  }
-  .domain-card p {
-    font-size: 11px;
-    margin-bottom: 12px;
-  }
-  .domain-overline {
-    font-size: 8px;
-    letter-spacing: 0.4px;
+  .domain-chip {
+    min-height: 40px;
+    padding: 6px 12px;
+    font-size: 13.5px;
   }
   .post-card {
     padding: 25px 0;
@@ -933,6 +862,14 @@ p {
   }
   .card-meta {
     font-size: 10px;
+  }
+}
+@media (max-width: 360px) {
+  .brand {
+    letter-spacing: 1px;
+  }
+  .site-header nav {
+    gap: 12px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
