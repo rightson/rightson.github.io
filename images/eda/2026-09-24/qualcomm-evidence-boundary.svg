@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 800" width="840" height="800" role="img" aria-labelledby="title desc">
+<title id="title">高通 AI CAD 的三組公開證據</title><desc id="desc">三個獨立資料點：2023 VCS ICO 客戶成果、2026 FunCovr.ai 研究分享、2026 Bedrock EDA 計畫。沒有證據證明三者已整合。</desc>
+<style>text{font-family:'Noto Sans CJK TC','PingFang TC','Microsoft JhengHei',sans-serif;fill:#193047}.h{font-size:34px;font-weight:700}.t{font-size:29px;font-weight:700}.b{font-size:26px}.s{font-size:24px;fill:#506577}.tag{font-size:23px;font-weight:700;fill:#17655d}</style>
+<rect width="840" height="800" rx="18" fill="#f4f7fa"/>
+<text x="32" y="54" class="h">公開證據 ≠ 完整整合架構</text>
+<text x="32" y="94" class="b">三種成熟度，不能互相替代</text>
+<rect x="32" y="124" width="776" height="150" rx="14" fill="white" stroke="#c7d3df"/>
+<text x="54" y="161" class="tag">2023 · 特定客戶案例</text><text x="54" y="201" class="t">VCS ICO：以回饋改善驗證探索</text>
+<text x="54" y="242" class="b">Project C：每個 block 的 grid usage −10–15%</text>
+<rect x="32" y="294" width="776" height="150" rx="14" fill="white" stroke="#c7d3df"/>
+<text x="54" y="331" class="tag">2026／09／03 · 研究發表與作者分享</text><text x="54" y="371" class="t">FunCovr.ai：對準驗證不足的邏輯</text>
+<text x="54" y="412" class="b">生成更有針對性的刺激；完整方法仍待公開</text>
+<rect x="32" y="464" width="776" height="150" rx="14" fill="white" stroke="#c7d3df"/>
+<text x="54" y="501" class="tag">2026／09／08 · 官方計畫</text><text x="54" y="541" class="t">AWS／Bedrock：深化 EDA 工作負載使用</text>
+<text x="54" y="582" class="b">未公布模型、整合拓撲或實測週期改善幅度</text>
+<rect x="32" y="648" width="776" height="120" rx="14" fill="#fff8eb" stroke="#b87c24" stroke-dasharray="8 6"/>
+<text x="54" y="691" class="t">待回答的整合問題</text>
+<text x="54" y="732" class="b">誰執行？誰驗收？如何控制權限與計算成本？</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 1180" width="840" height="1180" role="img" aria-labelledby="title desc">
+<title id="title">AI 提案與工程驗收分離的參考架構</title><desc id="desc">作者提出的架構：固定規格與 coverage model，AI 提案經權限預算審查，建立 RunSpec 後執行 EDA，產物通過身分和完整性核對再形成可信證據。證據回饋影響下一輪刺激，不准探索器自行變更驗收規則。</desc>
+<defs><marker id="a" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#365b7b"/></marker><marker id="g" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#18796a"/></marker></defs>
+<style>text{font-family:'Noto Sans CJK TC','PingFang TC','Microsoft JhengHei',sans-serif;fill:#193047}.h{font-size:33px;font-weight:700}.t{font-size:29px;font-weight:700}.b{font-size:26px}.s{font-size:24px}.a{fill:none;stroke:#365b7b;stroke-width:3;marker-end:url(#a)}.f{fill:none;stroke:#18796a;stroke-width:3;stroke-dasharray:8 6;marker-end:url(#g)}</style>
+<rect width="840" height="1180" rx="18" fill="#f4f7fa"/>
+<text x="30" y="52" class="h">模型提出候選，平台接納證據</text>
+<text x="30" y="92" class="b">作者參考設計｜非高通官方部署架構</text>
+<rect x="30" y="122" width="780" height="105" rx="14" fill="#fff8eb" stroke="#b87c24"/>
+<text x="52" y="163" class="t">獨立驗證契約：規格／coverage／assertions</text>
+<text x="52" y="203" class="b">版本固定；修訂另行審核，不隨探索結果放寬</text>
+<path d="M330 228V264" class="a"/><path d="M810 175H823V930H719" class="a"/>
+<rect x="90" y="266" width="630" height="112" rx="14" fill="#e8f1fc" stroke="#7098bb"/>
+<text x="114" y="306" class="t">模型／探索器</text><text x="114" y="347" class="b">讀取核准上下文 → 提出刺激與工具參數</text>
+<path d="M405 379V423" class="a"/>
+<rect x="90" y="425" width="630" height="112" rx="14" fill="white" stroke="#c7d3df"/>
+<text x="114" y="465" class="t">應用層：解析工具、審查權限與預算</text><text x="114" y="506" class="b">模型呼叫 ID → request key → run ID</text>
+<path d="M405 538V582" class="a"/>
+<rect x="90" y="584" width="630" height="112" rx="14" fill="white" stroke="#c7d3df"/>
+<text x="114" y="624" class="t">不可變 RunSpec ＋ 執行 adapter</text><text x="114" y="665" class="b">鎖定輸入版本／seed；去重與工作對帳</text>
+<path d="M405 697V741" class="a"/>
+<rect x="90" y="743" width="630" height="112" rx="14" fill="white" stroke="#c7d3df"/>
+<text x="114" y="783" class="t">EDA 工具執行</text><text x="114" y="824" class="b">排隊 → 模擬 → 輸出報告與完整產物清單</text>
+<path d="M405 856V900" class="a"/>
+<rect x="90" y="902" width="630" height="132" rx="14" fill="#e9f5f0" stroke="#51998b"/>
+<text x="114" y="941" class="t">獨立驗收</text><text x="114" y="982" class="b">核對版本／完整性 → pass、反例或不完整</text>
+<text x="114" y="1017" class="s">有效的反例也是可信證據；接納不等於 signoff</text>
+<path d="M90 970H49V324H88" class="f"/>
+<text x="30" y="1090" class="b">實線：受控執行／驗收規則</text>
+<text x="30" y="1134" class="b" style="fill:#18796a">虛線：coverage／反例回饋，只影響下一輪探索</text>
+</svg>

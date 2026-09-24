@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 1000" width="840" height="1000" role="img" aria-labelledby="title desc">
+<title id="title">驗證工作的狀態與故障恢復</title><desc id="desc">提交逾時先對帳，不盲目重送。執行結果先檢查產物清單與版本，錯版或舊 attempt 隔離。結果可信之後才分類為通過或反例。</desc>
+<defs><marker id="a" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#365b7b"/></marker><marker id="o" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#b87c24"/></marker></defs>
+<style>text{font-family:'Noto Sans CJK TC','PingFang TC','Microsoft JhengHei',sans-serif;fill:#193047}.h{font-size:33px;font-weight:700}.t{font-size:29px;font-weight:700}.b{font-size:26px}.s{font-size:24px}.a{fill:none;stroke:#365b7b;stroke-width:3;marker-end:url(#a)}.o{fill:none;stroke:#b87c24;stroke-width:3;stroke-dasharray:8 6;marker-end:url(#o)}</style>
+<rect width="840" height="1000" rx="18" fill="#f4f7fa"/>
+<text x="30" y="52" class="h">逾時不是失敗，綠燈不是證據</text>
+<text x="30" y="92" class="b">作者設計｜run 狀態與設計判決分開</text>
+<rect x="30" y="128" width="400" height="110" rx="14" fill="white" stroke="#c7d3df"/>
+<text x="52" y="169" class="t">提交要求</text><text x="52" y="209" class="b">request key 固定</text>
+<path d="M430 182H482" class="o"/>
+<rect x="484" y="128" width="326" height="188" rx="14" fill="#fff8eb" stroke="#b87c24"/>
+<text x="506" y="169" class="t">提交回覆遺失</text><text x="506" y="209" class="b">先查 registry／scheduler</text><text x="506" y="249" class="b">找到 → 沿用 job ID</text><text x="506" y="289" class="b">不明 → 保留待確認</text>
+<path d="M230 239V296" class="a"/>
+<rect x="30" y="298" width="400" height="110" rx="14" fill="white" stroke="#c7d3df"/>
+<text x="52" y="339" class="t">排隊／執行</text><text x="52" y="379" class="b">每個 attempt 獨立輸出</text>
+<path d="M230 409V466" class="a"/>
+<rect x="30" y="468" width="400" height="110" rx="14" fill="white" stroke="#c7d3df"/>
+<text x="52" y="509" class="t">產物完成</text><text x="52" y="549" class="b">公布 manifest，不共寫目錄</text>
+<path d="M230 579V636" class="a"/>
+<rect x="30" y="638" width="400" height="110" rx="14" fill="white" stroke="#c7d3df"/>
+<text x="52" y="679" class="t">核對輸入、版本、attempt</text><text x="52" y="719" class="b">完整且符合本輪契約？</text>
+<path d="M430 692H482" class="o"/>
+<rect x="484" y="606" width="326" height="182" rx="14" fill="#fff8eb" stroke="#b87c24"/>
+<text x="506" y="648" class="t">不符 → 隔離</text><text x="506" y="690" class="b">舊結果保留追溯</text><text x="506" y="730" class="b">不混入當前統計</text><text x="506" y="770" class="b">必要時另建新 run</text>
+<path d="M230 749V806" class="a"/>
+<rect x="30" y="808" width="780" height="112" rx="14" fill="#e9f5f0" stroke="#51998b"/>
+<text x="52" y="849" class="t">接納有效實驗結果</text><text x="52" y="889" class="b">設計判決：通過／發現反例；不是直接宣告 signoff</text>
+<text x="30" y="968" class="s">fencing 阻止舊 attempt 更新正式結果；取消舊工作仍需另外執行。</text>
+</svg>
