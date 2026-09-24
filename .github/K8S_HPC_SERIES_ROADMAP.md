@@ -47,6 +47,70 @@ Primary references:
 - https://kubernetes.io/blog/2026/09/03/kubernetes-v1-37-dra-updates/
 - https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v2.html
 
+## Series boundaries and deduplication — 2026-09-24
+
+Each topic has exactly one owning series; other series link to it instead of re-explaining it.
+
+- `DISTRIBUTED_SYSTEMS_SERIES_ROADMAP.md` (DS) owns generic distributed-systems mechanisms: consensus/replication, consistency models, idempotency, retries, leases/fencing, clocks and multi-tenant inference platform design. This series covers only the Kubernetes/etcd-specific behavior and links to DS.
+- `TPU_SERIES_ROADMAP.md` owns accelerator microarchitecture, collective-communication fundamentals and TPU-specific serving characteristics. This series owns the Kubernetes/Linux/RDMA/storage orchestration of AI workloads.
+- Item numbers are stable IDs. Removed numbers are not reused. Removed item → owning item:
+  - 011 → 001
+  - 051 → 050
+  - 121 → 006
+  - 129 → 128
+  - 156 → 155、275
+  - 162 → 002、157
+  - 163 → 274
+  - 165 → 004；通用共識見 DS05/DS06
+  - 166 → 008
+  - 167 → DS05、DS26
+  - 168 → 002；DS01、DS07
+  - 169 → 002
+  - 170 → 002、005
+  - 171 → 005
+  - 172 → DS08
+  - 173 → DS02、DS08
+  - 174 → DS05、DS26
+  - 175 → 273、277、285
+  - 176 → 274；DS03
+  - 177 → DS01、DS07
+  - 179 → DS02
+  - 180 → 186
+  - 191 → 035
+  - 197 → 008
+  - 203 → 195；DS02、DS26
+  - 207 → 003
+  - 213 → 023
+  - 221 → 045、139、149
+  - 222 → 085、089
+  - 223 → 139、149
+  - 224 → 128、131
+  - 226 → 114
+  - 229 → DS28
+  - 230 → 141、206
+  - 233 → 138
+  - 234 → 115
+  - 235 → 116
+  - 236 → 114、245
+  - 239 → 028、029
+  - 240 → 031、032、052
+  - 242 → 241
+  - 248 → 142
+  - 253 → 115
+  - 255 → 088、252
+  - 256 → 053
+  - 257 → 138
+  - 258 → 249
+  - 260 → 263
+  - 261 → 135、246
+  - 287 → 286
+  - 289 → 012、296
+  - 290 → 135、246
+  - 291 → 263
+  - 292 → 263
+  - 297 → 250
+- Phase 11 was removed entirely; 178 moved into Phase 13 (it is listed there under its original number).
+
 ---
 
 ## Phase 1 — What Kubernetes actually is
@@ -55,14 +119,13 @@ Primary references:
   Post committed and Pages deployed; live-page verification pending: `_posts/2026-09-22-kubernetes-control-plane-hpc-foundation.md`
 - [ ] 002. Desired state vs current state: why reconciliation loops scale operational intent
 - [ ] 003. kube-apiserver: REST semantics, admission, storage, watches and the cluster's serialization point
-- [ ] 004. etcd: Raft, quorum, linearizable reads, MVCC, watch and compaction
-- [ ] 005. kube-controller-manager: level-triggered control loops and idempotency
+- [ ] 004. etcd as Kubernetes' store: MVCC, watch, compaction and quorum sizing (generic Raft/replication → DS05/DS06)
+- [ ] 005. kube-controller-manager: built-in controllers, shared informers and leader election via Lease
 - [ ] 006. kube-scheduler: queue → filter → score → reserve → permit → bind
 - [ ] 007. kubelet: where declarative cluster intent becomes node-local process state
-- [ ] 008. Node heartbeats, Leases, taints and the failure-detection problem
+- [ ] 008. Node heartbeats, Leases, taints and the failure-detection → eviction → rescheduling path
 - [ ] 009. Pods: why Kubernetes schedules a resource-sharing envelope instead of individual processes
 - [ ] 010. Deployments/ReplicaSets/StatefulSets/DaemonSets/Jobs: different control semantics
-- [ ] 011. Why Kubernetes chose API objects and controllers over a monolithic orchestrator
 - [ ] 012. What Kubernetes deliberately does not solve: distributed databases, MPI semantics, filesystems and application correctness
 
 ## Phase 2 — From Pod YAML to Linux processes
@@ -110,8 +173,7 @@ Primary references:
 - [ ] 047. virtual memory: mmap, page faults, anonymous vs file-backed pages
 - [ ] 048. TLB, hugepages and page-table cost
 - [ ] 049. transparent huge pages: when THP helps and when it creates tail latency
-- [ ] 050. page cache and writeback: why “storage latency” often starts in memory
-- [ ] 051. dirty pages, flusher threads and writeback throttling
+- [ ] 050. page cache and writeback: dirty pages, flusher threads, writeback throttling and why “storage latency” starts in memory
 - [ ] 052. mmap-heavy EDA applications and container memory accounting
 - [ ] 053. memory bandwidth saturation: the bottleneck Kubernetes cannot schedule directly
 
@@ -155,7 +217,7 @@ Primary references:
 - [ ] 086. RDMA device plugin / DRA and Kubernetes resource allocation
 - [ ] 087. SR-IOV + RDMA: VF placement, NUMA and topology alignment
 - [ ] 088. MPI on Kubernetes: launcher, rank placement and network identity
-- [ ] 089. NCCL collectives: rings, trees and topology sensitivity
+- [ ] 089. NCCL on Kubernetes: topology detection and ring/tree selection (collective fundamentals → TPU 17)
 - [ ] 090. UCX: transport selection across TCP/RDMA/shared memory
 - [ ] 091. When TCP is enough and when RDMA changes the economics
 - [ ] 092. Tail latency and jitter sources from userspace to NIC
@@ -193,15 +255,13 @@ Primary references:
 
 ## Phase 8 — Scheduling: from Pods to HPC jobs
 
-- [ ] 121. Kubernetes scheduler framework internals
 - [ ] 122. scheduling queues and backoff
 - [ ] 123. predicates/filters: feasibility before optimization
 - [ ] 124. scoring plugins and multi-objective placement
 - [ ] 125. affinity, anti-affinity and topology spread
 - [ ] 126. taints/tolerations and dedicated HPC pools
 - [ ] 127. priorities and preemption
-- [ ] 128. PodGroup / gang scheduling: why distributed jobs must start together
-- [ ] 129. Workload-Aware Scheduling in Kubernetes v1.37
+- [ ] 128. PodGroup / gang scheduling and v1.37 Workload-Aware Scheduling: why distributed jobs must start together
 - [ ] 130. hierarchical queues and fair-share
 - [ ] 131. Kueue architecture: admission before Pod scheduling
 - [ ] 132. Volcano: batch/HPC scheduling extensions
@@ -211,9 +271,9 @@ Primary references:
 - [ ] 136. backfill scheduling and why it matters for expensive accelerators
 - [ ] 137. reservations, quotas and project accounting
 - [ ] 138. license-aware scheduling for EDA tools
-- [ ] 139. topology-aware GPU/NIC/CPU placement
+- [ ] 139. cluster-level topology-aware placement: rack, fabric and GPU/NIC locality across nodes
 - [ ] 140. bin packing versus fragmentation
-- [ ] 141. checkpoint-aware preemption
+- [ ] 141. checkpoint-aware preemption and the economics of preempting AI/HPC jobs
 - [ ] 142. deadline scheduling and tape-out-critical workloads
 
 ## Phase 9 — Devices, GPUs, FPGAs and accelerators
@@ -234,34 +294,12 @@ Primary references:
 
 - [ ] 154. CRDs: extending the API without forking Kubernetes
 - [ ] 155. controller-runtime: informer, cache, workqueue and reconcile
-- [ ] 156. informers and watches: scaling event-driven controllers
 - [ ] 157. workqueues: rate limiting, retries and eventual convergence
 - [ ] 158. finalizers and deletion semantics
 - [ ] 159. ownerReferences and garbage collection
 - [ ] 160. status/conditions: building observable state machines
 - [ ] 161. operators for stateful distributed systems
-- [ ] 162. idempotency and crash recovery in controllers
-- [ ] 163. control-plane backpressure and API rate limits
 - [ ] 164. designing a domain-specific HPC/EDA API on top of Kubernetes
-
-## Phase 11 — Distributed-systems foundations
-
-- [ ] 165. consensus: Raft and etcd quorum
-- [ ] 166. leases, heartbeats and failure detectors
-- [ ] 167. linearizability, serializability and stale reads
-- [ ] 168. idempotency and at-least-once delivery
-- [ ] 169. level-triggered vs edge-triggered control
-- [ ] 170. eventual consistency in controllers
-- [ ] 171. leader election
-- [ ] 172. distributed locks: why they are often overused
-- [ ] 173. split brain and fencing
-- [ ] 174. CAP theorem: useful boundaries and common misuse
-- [ ] 175. queueing theory for cluster control planes
-- [ ] 176. backpressure, admission control and overload collapse
-- [ ] 177. retries, exponential backoff and retry storms
-- [ ] 178. circuit breakers and bulkheads
-- [ ] 179. clock skew, monotonic time and distributed deadlines
-- [ ] 180. distributed tracing across control and data planes
 
 ## Phase 12 — Observability from kernel to cluster
 
@@ -275,7 +313,6 @@ Primary references:
 - [ ] 188. perf: CPU sampling and flame graphs
 - [ ] 189. ftrace and scheduler tracing
 - [ ] 190. bpftrace for production diagnosis
-- [ ] 191. PSI + cgroups as node pressure observability
 - [ ] 192. block I/O tracing: biosnoop/biolatency concepts
 - [ ] 193. TCP tracing: retransmits, RTT and socket queues
 - [ ] 194. correlating EDA job slowdown with CPU/NUMA/storage/network signals
@@ -284,26 +321,23 @@ Primary references:
 
 - [ ] 195. control-plane HA: API servers, etcd quorum and failure domains
 - [ ] 196. etcd backup/restore and disaster recovery
-- [ ] 197. node failure: detection, eviction and rescheduling
 - [ ] 198. graceful node shutdown
 - [ ] 199. PodDisruptionBudget and maintenance
 - [ ] 200. StatefulSet identity and ordered recovery
 - [ ] 201. storage attach/detach failure modes
 - [ ] 202. network partition scenarios
-- [ ] 203. split-brain prevention for stateful systems
 - [ ] 204. chaos testing versus controlled fault injection
 - [ ] 205. checkpoint/restart for HPC jobs
 - [ ] 206. MTTR versus recomputation cost in AI/EDA clusters
+- [ ] 178. circuit breakers and bulkheads between control plane and workloads
 
 ## Phase 14 — Security to the kernel boundary
 
-- [ ] 207. authentication, authorization and admission
 - [ ] 208. RBAC internals and authorization evaluation
 - [ ] 209. service accounts and projected tokens
 - [ ] 210. seccomp syscall filtering
 - [ ] 211. Linux capabilities
 - [ ] 212. SELinux/AppArmor confinement
-- [ ] 213. user namespaces and rootless Kubernetes
 - [ ] 214. privileged containers: what isolation is bypassed
 - [ ] 215. supply-chain security: image provenance and signing
 - [ ] 216. secrets: etcd encryption and node exposure
@@ -314,37 +348,22 @@ Primary references:
 
 - [ ] 219. Why AI clusters stress Kubernetes differently from web services
 - [ ] 220. distributed training lifecycle: admission → gang schedule → topology → collectives
-- [ ] 221. GPU/CPU/NIC/NUMA co-scheduling
-- [ ] 222. Kubernetes + NCCL + RDMA data path
-- [ ] 223. topology-aware placement for NVLink/RDMA fabrics
-- [ ] 224. Kueue/PodGroup for large training jobs
 - [ ] 225. checkpoint storage architecture for trillion-parameter training
-- [ ] 226. local NVMe caching for datasets/checkpoints
 - [ ] 227. inference serving: autoscaling versus accelerator saturation
-- [ ] 228. prefill/decode disaggregation on Kubernetes
-- [ ] 229. multi-tenant GPU inference
-- [ ] 230. AI job preemption and checkpoint economics
+- [ ] 228. prefill/decode disaggregation: when separating phases helps and how to orchestrate it on Kubernetes
 
 ## Phase 16 — EDA and IC design on Kubernetes
 
 - [ ] 231. Why traditional EDA farms use LSF/Slurm and shared POSIX storage
 - [ ] 232. EDA workload taxonomy: synthesis, APR, STA, DV, DFT and signoff
-- [ ] 233. License servers as a first-class scheduling resource
-- [ ] 234. millions of small files: metadata behavior of EDA flows
-- [ ] 235. NFS/SAN/Lustre/BeeGFS trade-offs for EDA
-- [ ] 236. local scratch + artifact promotion pattern
 - [ ] 237. Tcl/Makefile/LSF flows mapped into Kubernetes Jobs
 - [ ] 238. preserving deterministic tool environments with containers
-- [ ] 239. CPU pinning/NUMA for place-and-route
-- [ ] 240. memory-heavy STA/APR and memcg pitfalls
-- [ ] 241. GUI/X11/VNC/code-server access to EDA containers
-- [ ] 242. long-lived interactive engineering sessions vs batch Pods
-- [ ] 243. tool daemon/licensing/network dependencies
+- [ ] 241. interactive EDA sessions: GUI/X11/VNC/code-server and long-lived sessions versus batch Pods
+- [ ] 243. tool daemons and network dependencies of EDA flows (license scheduling → 138)
 - [ ] 244. checkpoint and restart around EDA stage boundaries
 - [ ] 245. artifact lineage and immutable run metadata
 - [ ] 246. K8s as control plane over existing LSF execution
 - [ ] 247. hybrid migration: which EDA workloads should not move first
-- [ ] 248. tape-out-critical reliability and priority isolation
 - [ ] 249. multi-project/foundry PDK security boundaries
 - [ ] 250. building an R2G control plane without replacing every execution backend
 
@@ -352,20 +371,13 @@ Primary references:
 
 - [ ] 251. Foundry HPC workload taxonomy: OPC, lithography simulation, extraction, TCAD, verification
 - [ ] 252. embarrassingly parallel vs tightly coupled semiconductor workloads
-- [ ] 253. massive shared filesystem metadata and namespace design
 - [ ] 254. petabyte-scale scratch and lifecycle management
-- [ ] 255. MPI/RDMA workloads in semiconductor simulation
-- [ ] 256. NUMA and memory-bandwidth-dominated simulation
-- [ ] 257. proprietary license scheduling
-- [ ] 258. sensitive PDK/data isolation in multi-tenant clusters
 - [ ] 259. air-gapped/on-prem Kubernetes constraints
-- [ ] 260. Kubernetes over bare metal with deterministic networking/storage
-- [ ] 261. coexistence with Slurm/LSF in foundry environments
 - [ ] 262. capacity planning for deadline-driven tape-out workloads
 
 ## Phase 18 — Bare-metal cluster architecture
 
-- [ ] 263. bare metal vs VM for HPC Kubernetes
+- [ ] 263. bare metal vs VM vs container isolation for HPC Kubernetes: when each boundary is required
 - [ ] 264. PXE/provisioning lifecycle and immutable node images
 - [ ] 265. firmware/BIOS settings for performance determinism
 - [ ] 266. NUMA, PCIe switches and accelerator topology
@@ -395,17 +407,11 @@ Primary references:
 ## Phase 20 — Economics and architectural synthesis
 
 - [ ] 286. utilization vs determinism: why maximum packing can reduce HPC throughput
-- [ ] 287. compute utilization is not application throughput
 - [ ] 288. storage/network contention as hidden scheduling dimensions
-- [ ] 289. control plane vs data plane: where Kubernetes should stop
-- [ ] 290. when Kubernetes should orchestrate Slurm/LSF instead of replacing them
-- [ ] 291. when VMs are still the better isolation boundary
-- [ ] 292. when bare metal is required
 - [ ] 293. platform abstraction vs performance transparency
 - [ ] 294. designing an HPC platform around evidence, not “cloud native” ideology
 - [ ] 295. AI vs EDA vs Foundry: why one scheduler policy cannot optimize all three
 - [ ] 296. the complete path: YAML → controller → scheduler → kubelet → kernel → NIC/storage → distributed job
-- [ ] 297. building a semiconductor-scale compute control plane
 - [ ] 298. the future: workload-aware scheduling, DRA, topology, eBPF and composable accelerators
 
 ## Daily selection policy

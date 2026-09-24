@@ -2,13 +2,10 @@
 layout: post
 title: "UALink 2.0 的分水嶺：Scale-up Switch 開始執行 Collective，而不只是搬資料"
 date: 2026-09-24 06:06:45 +0800
-author: Scott Yo-Ru Chen
 domain: networking
 categories: networking ualink
 description: "UALink 2.0 最重要的改變不是再提高 lane rate，而是把 collective 的一部分搬進 fabric。這會同時改寫頻寬效率、switch microarchitecture、correctness、security 與管理邊界。"
 ---
-
-作者：Scott Yo-Ru Chen
 
 我認為 UALink 2.0 最值得注意的地方，不是又多了一個「開放版 NVLink」，也不是單純把 scale-up bandwidth 繼續往上推。真正的分水嶺，是 **switch 開始理解 collective，並在資料還在 fabric 裡流動時就參與計算**。
 

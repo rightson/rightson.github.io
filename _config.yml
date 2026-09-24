@@ -5,15 +5,12 @@ description: 從網路與晶片設計出發，記錄對 AI 產業、投資與交
 url: https://rightson.github.io
 baseurl: ""
 timezone: Asia/Taipei
-post_author: Scott Yo-Ru Chen
-post_author_url: https://www.linkedin.com/in/scott-yo-ru-chen-14711538/
 defaults:
   - scope:
       path: ""
       type: posts
     values:
       layout: post
-      author: Scott Yo-Ru Chen
 github_username: rightson
 plugins:
   - jekyll-feed
@@ -26,5 +23,3 @@ sass:
     - color-functions
 exclude:
   - SITE_GUIDE.md
-  - scripts
-  - tests

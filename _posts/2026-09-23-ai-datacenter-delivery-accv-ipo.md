@@ -2,7 +2,6 @@
 layout: post
 title: "AI 資料中心把交付速度變成商品，ACCV 的積壓訂單還要過現金流這一關"
 date: 2026-09-23 07:54:00 +0800
-author: Scott Yo-Ru Chen
 domain: investing
 categories: investing
 description: "Accelevation 的 IPO 讓資料中心白區整合成為可投資標的。高成長與積壓訂單證明需求，但募資結構、毛利和現金轉換才決定這段 AI 支出能否留給股東。"

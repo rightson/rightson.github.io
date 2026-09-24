@@ -2,7 +2,6 @@
 layout: post
 title: "AI 推論需要更多 SSD，但利潤不會平均分給儲存供應鏈"
 date: 2026-09-23 07:18:24 +0800
-author: Scott Yo-Ru Chen
 domain: ai-industry
 categories: investment industry-demand ai-storage
 description: "AI 推論正在拆出不同的儲存需求。比 NAND 出貨量更值得追的是：誰能減少 GPU 等待，並把效能溢價轉成毛利與現金流。"

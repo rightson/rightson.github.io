@@ -2,13 +2,10 @@
 layout: post
 title: "AI 原生 IC Design Platform 的核心：不是更多 Agent，而是 Typed Design State"
 date: 2026-09-23 06:05:00 +0800
-author: Scott Yo-Ru Chen
 domain: eda
 categories: eda
 description: "當 AI 開始跨越 RTL、verification、synthesis、APR 與 signoff，真正的瓶頸不再是模型會不會呼叫工具，而是整個 IC design platform 是否有可驗證、可重播、可分層操作的設計狀態。"
 ---
-
-作者：Scott Yo-Ru Chen
 
 我認為 AI 驅動 IC Design Platform 接下來真正的分水嶺，不是再增加一批 design agent，也不是替每一套 EDA tool 補一個 MCP server。真正決定平台能不能從「好用的助理」走向「可信任的工程系統」的，是設計狀態本身能不能被機器清楚理解、修改、驗證與重播。
 

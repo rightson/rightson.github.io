@@ -2,7 +2,6 @@
 layout: post
 title: "外資仍在 AI 供應鏈內換手：測試與網通開始接棒，封裝與 ASIC 進入高檔消化"
 date: 2026-09-22 16:04:00 +0800
-author: Scott Yo-Ru Chen
 domain: investing
 categories: investing
 description: "外資沒有離開 AI，而是從已快速上漲的封裝、ASIC 與載板股，逐步轉向仍有基本面支撐但價格尚未充分反映的測試與網通環節。"

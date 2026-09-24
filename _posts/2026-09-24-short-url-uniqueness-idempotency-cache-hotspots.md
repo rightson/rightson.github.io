@@ -2,7 +2,6 @@
 layout: post
 title: "短網址真正難的不是 Base62：唯一鍵、重試與熱點才決定系統會不會失控"
 date: 2026-09-24 08:28:05 +0800
-author: Scott Yo-Ru Chen
 domain: networking
 categories: networking
 description: "從一個讀多寫少的短網址服務，推導唯一鍵、冪等建立、redirect cache 與熱點失效；重點不是用哪個資料庫，而是誰對唯一性與可見狀態負責。"

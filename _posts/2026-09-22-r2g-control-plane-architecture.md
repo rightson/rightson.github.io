@@ -1,12 +1,9 @@
 ---
-author: Scott Yo-Ru Chen
 layout: post
 title: "R2G 平台的核心不是 Agent：把晶片設計流程做成可調和、可重播的 Control Plane"
 date: 2026-09-22 12:58:00 +0800
 categories: eda r2g platform-engineering
 ---
-
-作者：Scott Yo-Ru Chen
 
 如果一條 RTL-to-GDS flow 會執行數小時到數天、跨越多個工具與多台機器、途中可能失敗、重跑、人工介入、修改 constraint、重新產生 artifact，那麼它本質上就不是一個「job」。它是一個長生命週期、帶狀態、會被持續修正的工程系統。
 

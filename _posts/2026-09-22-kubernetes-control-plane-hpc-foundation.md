@@ -2,7 +2,6 @@
 layout: post
 title: "Kubernetes 創始篇：它不是更好的 Batch Scheduler，而是一個把 Desired State 變成 Cluster Reality 的 Control Plane"
 date: 2026-09-22 13:40:00 +0800
-author: Scott Yo-Ru Chen
 domain: eda
 categories: eda
 description: "理解 Kubernetes 的起點，不是 Pod、Service 或 YAML，而是大規模系統為什麼需要把『想要什麼』與『現在是什麼』分離，再透過持續 reconciliation 把兩者拉近。從這個問題出發，才能看懂 API server、etcd、controller、scheduler、kubelet，以及它們與 Linux kernel、NUMA、RDMA、NFS/SAN 和 HPC workload 的真正邊界。"

@@ -1,12 +1,9 @@
 ---
-author: Scott Yo-Ru Chen
 layout: post
 title: "NVLink 6 真正的突破不是 3.6 TB/s，而是把故障恢復做成跨層控制迴路"
 date: 2026-09-23 05:30:00 +0800
 categories: networking nvlink resiliency distributed-systems
 ---
-
-作者：Scott Yo-Ru Chen
 
 我認為 NVLink 6 這一代最重要的變化，不是把 GPU-to-GPU bandwidth 從 1.8 TB/s 拉到 3.6 TB/s，而是 NVIDIA 開始把「故障恢復」視為一條從 PHY 一路延伸到 distributed runtime 的控制迴路。這個方向比單純增加頻寬更值得注意，因為當 72、數百甚至上千顆 accelerator 被綁成一個 scale-up domain，真正限制 goodput 的往往不再是 peak bandwidth，而是 rare error 被放大成 collective stall、process abort、model reload 甚至整個 rack drain 的機率。
 

@@ -2,7 +2,6 @@
 layout: post
 title: "TPU v1 真正的效率來自資料重用：256×256 Systolic Array 如何把記憶體存取變成 65,536 個 MAC 的流水線"
 date: 2026-09-23 19:43:00 +0800
-author: Scott Yo-Ru Chen
 domain: ai-industry
 categories: ai-industry
 description: "TPU v1 的 92 TOPS 不是單靠堆 65,536 個 MAC 得到的；真正關鍵是讓權重與 activation 在 256×256 systolic array 中被重複使用，並用 tile 與 double buffering 把資料搬移藏到計算後面。這篇從 MatrixMultiply(B)、pipeline、shape utilization 與 weight reuse 拆解第一代 TPU 的資料流。"

@@ -41,6 +41,40 @@ The series should not become a product-spec chronology. Every article must answe
   - https://docs.cloud.google.com/tpu/docs/tpu7x
   - https://cloud.google.com/blog/products/compute/tpu-8t-and-tpu-8i-technical-deep-dive
 
+## Series boundaries and deduplication — 2026-09-24
+
+Each topic has exactly one owning series; other series link to it instead of re-explaining it.
+
+- This series owns accelerator microarchitecture, memory hierarchy, ICI/OCS topology, collective-communication fundamentals, compiler mapping and TPU-specific workload characteristics.
+- `K8S_HPC_SERIES_ROADMAP.md` owns cluster orchestration: scheduling, checkpoint storage, RDMA/Ethernet congestion control and prefill/decode orchestration.
+- `DISTRIBUTED_SYSTEMS_SERIES_ROADMAP.md` (DS) owns the multi-tenant inference platform (admission control, dynamic/continuous batching, priority, retries) in DS28.
+- Item numbers are stable IDs. Removed numbers are not reused. Removed item → owning item:
+  - 16 → 99、100
+  - 41 → DS28
+  - 55 → 52
+  - 58 → 21、47
+  - 60 → 76
+  - 77 → 129
+  - 86 → 33、75、119
+  - 88 → 82
+  - 89 → 116
+  - 91 → 23
+  - 92 → 23
+  - 94 → K8s 075、084
+  - 95 → 20、134
+  - 102 → 45
+  - 104 → 24；K8s 225
+  - 106 → 96
+  - 108 → 05、107
+  - 109 → K8s 228
+  - 110 → 39
+  - 111 → 46、65
+  - 112 → DS28
+  - 113 → DS28
+  - 117 → 82
+  - 132 → 76
+  - 138 → 129
+
 ---
 
 ## Phase 1 — Why TPU existed
@@ -65,7 +99,6 @@ The series should not become a product-spec chronology. Every article must answe
 - [ ] 13. TPU v2 interconnect: when accelerator architecture became a distributed-system problem
 - [ ] 14. TPU v3: higher compute density, liquid cooling, and power as an architectural constraint
 - [ ] 15. From single device to TPU Pod: what changes when hundreds of accelerators train one model
-- [ ] 16. Data parallelism versus model parallelism on early TPU Pods
 
 ## Phase 3 — Scaling the pod
 
@@ -97,9 +130,8 @@ The series should not become a product-spec chronology. Every article must answe
 - [ ] 36. Matmul tensor shapes: batch, sequence, hidden dimension, heads, and TPU tiling
 - [ ] 37. Attention scaling: when the workload is compute-bound versus memory-bound
 - [ ] 38. Flash-style attention concepts and why data movement dominates long sequences
-- [ ] 39. KV cache: why inference turns into a memory-capacity and bandwidth problem
+- [ ] 39. KV cache: capacity, bandwidth and placement across SRAM, HBM and host memory
 - [ ] 40. Prefill versus decode: two fundamentally different workloads inside LLM inference
-- [ ] 41. Continuous batching: latency/throughput trade-offs in TPU serving
 - [ ] 42. Speculative decoding: shifting the bottleneck from autoregressive dependency to verification
 - [ ] 43. Quantized inference on modern TPU: weights, activations, KV cache, and accuracy trade-offs
 
@@ -119,15 +151,12 @@ The series should not become a product-spec chronology. Every article must answe
 - [ ] 52. v5e versus v5p: specialization inside one generation
 - [ ] 53. v5 memory hierarchy and the balance between MXU throughput and HBM
 - [ ] 54. v5 pod topology and collective performance
-- [ ] 55. Why one accelerator SKU no longer optimizes every AI workload
 
 ## Phase 8 — Trillium / sixth generation
 
 - [ ] 56. TPU v6e / Trillium: what changed relative to v5e
 - [ ] 57. Trillium compute and memory balance: where the extra performance is spent
-- [ ] 58. Trillium SparseCore: embedding-heavy recommendation and language workloads
 - [ ] 59. Trillium 2D torus and 256-chip pod: when smaller scale-up domains can be efficient
-- [ ] 60. Training and inference on one generation: where architecture converges and diverges
 
 ## Phase 9 — Ironwood / seventh generation
 
@@ -150,7 +179,6 @@ The series should not become a product-spec chronology. Every article must answe
 - [ ] 74. TPU 8 ICI evolution: why scale-up bandwidth keeps increasing
 - [ ] 75. Axion CPU integration: data preparation and orchestration as accelerator bottlenecks
 - [ ] 76. Training versus post-training versus serving: why the hardware requirements have diverged
-- [ ] 77. TPU v1 to TPU 8: how the bottleneck migrated from MACs to memory, network, and system latency
 
 ## Phase 11 — Packaging and silicon implementation
 
@@ -158,27 +186,20 @@ The series should not become a product-spec chronology. Every article must answe
 - [ ] 79. Interposer and package routing: bandwidth density versus cost and yield
 - [ ] 80. Chiplets: reticle limits, yield economics, die-to-die bandwidth, and latency
 - [ ] 81. Power delivery: why hundreds of kilowatts per rack begin at the package
-- [ ] 82. Thermal path: die → package → cold plate → facility water loop
+- [ ] 82. Thermal path and liquid cooling: die → package → cold plate → CDU → facility water loop
 - [ ] 83. Clocking and voltage: frequency, efficiency, and thermal-density trade-offs
 - [ ] 84. SRAM versus HBM versus off-package memory: latency/capacity/bandwidth hierarchy
 
 ## Phase 12 — Board, tray, rack, and host integration
 
 - [ ] 85. TPU board anatomy: accelerator, HBM, power stages, host links, and management
-- [ ] 86. Host CPU role: preprocessing, input pipeline, runtime, and failure handling
 - [ ] 87. Tray/rack integration: signal integrity, power, cooling, and serviceability
-- [ ] 88. Liquid cooling: why high-density AI racks cannot be understood as “just servers”
-- [ ] 89. Rack-level power delivery and redundancy
 - [ ] 90. Boot, health monitoring, firmware, and fleet management for TPU systems
 
 ## Phase 13 — Networking architecture
 
-- [ ] 91. ICI versus datacenter network: two networks solving different scaling problems
-- [ ] 92. Scale-up bandwidth versus scale-out bandwidth
 - [ ] 93. Collective traffic matrices: why AI traffic differs from web-service traffic
-- [ ] 94. Congestion and incast in distributed training
-- [ ] 95. Optical interconnect: where optics enters TPU scale-up and scale-out
-- [ ] 96. Network topology-aware placement: why scheduler decisions affect model FLOPs
+- [ ] 96. Topology-aware placement and slice fragmentation: why TPU topology, not chip count, is the allocation unit
 - [ ] 97. Cross-pod training: when the DCN becomes part of the model architecture
 - [ ] 98. Pathways: spanning many TPU slices and fault domains as one computation
 
@@ -187,28 +208,18 @@ The series should not become a product-spec chronology. Every article must answe
 - [ ] 99. Data parallelism: gradients, all-reduce, and scaling efficiency
 - [ ] 100. Tensor/model parallelism: splitting large matrix operations
 - [ ] 101. Pipeline parallelism: bubbles, microbatches, and stage balance
-- [ ] 102. Expert parallelism: sparse computation at cluster scale
 - [ ] 103. Multi-dimensional parallelism: combining DP/TP/PP/EP
-- [ ] 104. Checkpoint architecture: local storage, parallel file systems, and recovery time
-- [ ] 105. Stragglers and failure recovery: why large jobs lose efficiency
-- [ ] 106. Job scheduling and fragmentation: allocating TPU topology instead of just chip count
+- [ ] 105. Stragglers: why large synchronous jobs lose efficiency
 
 ## Phase 15 — Inference and serving system
 
-- [ ] 107. Tokens per second versus time-to-first-token versus inter-token latency
-- [ ] 108. Serving SLOs: why P99 returns to center stage twenty years after TPU v1
-- [ ] 109. Prefill/decode disaggregation: when separating phases helps
-- [ ] 110. KV-cache placement across SRAM, HBM, and external storage
-- [ ] 111. MoE serving: routing, hot experts, and network pressure
-- [ ] 112. Autoscaling TPU inference: batching, admission control, and capacity headroom
-- [ ] 113. Multi-tenant inference: isolation versus utilization
+- [ ] 107. Serving SLOs: tokens per second, time-to-first-token and inter-token latency
 - [ ] 114. Reasoning models: why longer sequential decode changes hardware balance
 
 ## Phase 16 — Datacenter architecture
 
 - [ ] 115. TPU Pod versus datacenter: where the accelerator system ends
-- [ ] 116. AI datacenter power architecture: utility → substation → UPS → rack → package
-- [ ] 117. Cooling architecture: water, CDU, cold plate, and heat rejection
+- [ ] 116. AI datacenter power architecture: utility → substation → UPS → rack power and redundancy → package
 - [ ] 118. Capacity planning: chips are useless without power, network, and cooling
 - [ ] 119. Storage/input pipeline: keeping trillion-token training jobs fed
 - [ ] 120. Datacenter failure domains and maintenance strategy
@@ -231,13 +242,11 @@ These articles compare mechanisms, not brand rankings.
 - [ ] 129. The complete TPU bottleneck history: compute → memory → communication → latency
 - [ ] 130. What determines TPU cost per trained token
 - [ ] 131. What determines TPU cost per generated token
-- [ ] 132. Why future accelerators may specialize by AI lifecycle stage
 - [ ] 133. Memory wall after HBM: SRAM, CXL-like expansion, compression, and recomputation
 - [ ] 134. Optical scale-up: when electrical links stop scaling economically
 - [ ] 135. 3D integration: logic-on-memory and thermal constraints
 - [ ] 136. Reliability at million-accelerator scale
 - [ ] 137. Co-designing model architecture with physical topology
-- [ ] 138. The TPU design loop: how each generation exposes the next bottleneck
 
 ## Daily selection policy
 

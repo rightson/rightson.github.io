@@ -2,7 +2,6 @@
 layout: post
 title: "Kubernetes 為什麼不把『執行成功』當成正確性：Reconciliation Loop 如何把故障變成可重試的狀態差"
 date: 2026-09-23 08:05:00 +0800
-author: Scott Yo-Ru Chen
 domain: eda
 categories: eda
 description: "Kubernetes 的可靠性不是來自每個步驟只執行一次，而是把 correctness 定義成 desired state 與 observable state 的差距，並持續重新計算下一個動作。這篇從 level-triggered control、list/watch、resourceVersion、Reflector、workqueue、idempotency，一路推到 EDA/HPC control plane 應如何設計。"

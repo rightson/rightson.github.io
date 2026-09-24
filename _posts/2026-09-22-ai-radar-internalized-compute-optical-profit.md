@@ -2,7 +2,6 @@
 layout: post
 title: "雲端商走向自研晶片，光互連供應商能留下多少利潤"
 date: 2026-09-22 17:35:00 +0800
-author: Scott Yo-Ru Chen
 domain: investing
 categories: investing
 description: "阿里巴巴想透過自研算力降低成本，Ciena 則希望把互連需求轉成更高獲利。兩條路線能否增加股東價值，要看省下的成本由誰保留，以及新增收入需要投入多少資本。"

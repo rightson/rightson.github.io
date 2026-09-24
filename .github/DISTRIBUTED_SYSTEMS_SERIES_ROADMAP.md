@@ -1,6 +1,5 @@
 # 分散式系統：從需求到可靠運作
 
-作者：Scott Yo-Ru Chen
 系列識別：`distributed-systems`。
 
 ## 進度與發布契約
@@ -11,9 +10,13 @@
 
 只有文章及所需圖檔成功寫入遠端預設分支後，才將 `[ ]` 改為 `[x]`，記錄 `_posts` 路徑及依 repo 規則推導的公開 URL。以遠端文章為完成證據；失敗不推進，同日／同序號重跑不重複發文。每次核對相關文章與本檔，不通讀整個 repo。
 
-文章沿用 `AGENTS.md` 必要欄位，增加 `series: distributed-systems`、`series_order: <篇號>`；使用 `domain: networking`、單一 `categories: networking`，不增加公開分類。作者放 `author: Scott Yo-Ru Chen`，由共用 layout 在開頭顯示 LinkedIn 署名，不重複作者列或 H1。每篇提供已存在的前篇／先備文章連結；不得假造尚未發布的下一篇連結。依需要維護已發布文章之導覽。
+文章沿用 `AGENTS.md` 必要欄位，增加 `series: distributed-systems`、`series_order: <篇號>`；使用 `domain: networking`、單一 `categories: networking`，不增加公開分類。不署名：不設 `author`，正文不加作者列，也不重複 H1。每篇提供已存在的前篇／先備文章連結；不得假造尚未發布的下一篇連結。依需要維護已發布文章之導覽。
 
 採使用者指定的精簡發布方式：檢查內容、front matter、來源、圖文及遠端提交結果；不逐篇輪詢 Actions 或執行例行 HTTP 驗證，不下载／分析 Pages artifacts，不建立、下載或保存 ZIP／TAR 等壓縮封存檔，不新增驗證 workflow。只有明確發布異常時才針對故障除錯。回報遠端提交結果與推導網址，不把未實測的 HTTP 或部署狀態說成已驗證。
+
+## 系列邊界與去重
+
+本系列是通用分散式機制的唯一擁有者：共識／複寫、一致性模型、冪等、重試、lease／fencing、時鐘及多租戶推論平台（DS28）。`K8S_HPC_SERIES_ROADMAP.md` 只寫 Kubernetes／etcd 特有行為，`TPU_SERIES_ROADMAP.md` 只寫加速器與 TPU 特有的工作負載特性；兩者遇到上述通用機制時連結本系列，不重寫。DS28 同時承接原 TPU 41、112、113 及 K8s 229 的範圍；硬體面的 KV cache 見 TPU 39，prefill／decode 編排見 K8s 228。
 
 ## 每篇的實質完成標準
 

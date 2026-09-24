@@ -2,7 +2,6 @@
 layout: post
 title: "沒有 Timing Constraint，工具其實不知道什麼叫做『太慢』"
 date: 2026-09-23 12:35:00 +0800
-author: Scott Yo-Ru Chen
 domain: eda
 categories: eda
 description: "SDC 的起點不是背 create_clock，而是理解 STA 為什麼需要設計者提供時間世界的邊界。從 timing path、arrival time、required time 與 slack 建立後續 constraint reasoning 的共同模型。"

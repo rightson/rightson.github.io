@@ -2,7 +2,6 @@
 layout: post
 title: "TPU 創始篇：Google 為什麼在 2013 年決定做一顆推論 ASIC？"
 date: 2026-09-22 13:40:00 +0800
-author: Scott Yo-Ru Chen
 domain: ai-industry
 categories: ai-industry
 description: "TPU v1 的真正起點不是追求最高 TOPS，而是 Google 發現：若語音搜尋大規模採用 DNN，既有 CPU 資料中心可能需要直接翻倍。這篇從 workload、P99 latency、INT8、systolic array、memory hierarchy 到 PCIe 整合，拆解第一代 TPU 為何長成這個樣子。"

@@ -2,7 +2,6 @@
 layout: post
 title: "AI 資金開始從高檔封測分岔：網通持續累積，記憶體接手大額回補"
 date: 2026-09-23 22:15:00 +0800
-author: Scott Yo-Ru Chen
 domain: investing
 categories: investing
 description: "外資仍大幅回流台股，但 AI 供應鏈內部已開始分化：瑞昱維持穩定累積，矽格買盤降速，京元電子轉賣；同時南亞科與力積電出現大額回補，記憶體正在成為新的資金承接區。"

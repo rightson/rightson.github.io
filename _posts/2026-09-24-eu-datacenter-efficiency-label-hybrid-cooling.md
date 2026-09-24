@@ -2,7 +2,6 @@
 layout: post
 title: "資料中心效率開始可比較，混合冷卻先解的是閒置資本"
 date: 2026-09-24 07:23:25 +0800
-author: Scott Yo-Ru Chen
 domain: ai-industry
 categories: ai-industry
 description: "歐盟準備把資料中心的耗電、用水、廢熱利用與電網彈性做成可比較標籤。這會讓冷卻與能源管理從後台成本，逐步進入選址、改造與資本回收的決策。"

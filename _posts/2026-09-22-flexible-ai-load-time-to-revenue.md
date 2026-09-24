@@ -1,5 +1,4 @@
 ---
-author: Scott Yo-Ru Chen
 layout: post
 title: "AI 缺電之後：可調度負載如何把接電時間變成投資優勢"
 date: 2026-09-22 12:40:00 +0800
