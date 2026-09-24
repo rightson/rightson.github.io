@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "UALink 2.0 的分水嶺：Scale-up Switch 開始執行 Collective，而不只是搬資料"
+title: "UALink 2.0 讓 Scale-up Switch 參與 Collective 計算：頻寬、正確性與管理邊界的改變"
 date: 2026-09-24 06:06:45 +0800
 domain: networking
 categories: networking ualink
-description: "UALink 2.0 最重要的改變不是再提高 lane rate，而是把 collective 的一部分搬進 fabric。這會同時改寫頻寬效率、switch microarchitecture、correctness、security 與管理邊界。"
+description: "UALink 2.0 把 collective 的一部分搬進 fabric。這會同時改寫頻寬效率、switch microarchitecture、correctness、security 與管理邊界。"
 ---
 
-我認為 UALink 2.0 最值得注意的地方，不是又多了一個「開放版 NVLink」，也不是單純把 scale-up bandwidth 繼續往上推。真正的分水嶺，是 **switch 開始理解 collective，並在資料還在 fabric 裡流動時就參與計算**。
+UALink 2.0 最大的變化發生在 switch：**它開始理解 collective，並在資料還在 fabric 裡流動時就參與計算**。這比「開放版 NVLink」或更高的 scale-up bandwidth 都更深地改變了系統設計。
 
 這件事看起來只是把 reduce、all-reduce、broadcast、reduce-scatter 從 accelerator software 往 switch 下推，但系統含義遠比「省一點頻寬」大。當 fabric 從 passive transport 變成 collective execution layer，switch 便開始承擔 operation state、datatype、ordering、completion、failure isolation，甚至 security context。從這一刻起，AI scale-up network 不再只是高速 I/O，而是一個受限、可驗證、可管理的 distributed computer。
 

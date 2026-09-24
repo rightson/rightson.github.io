@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "R2G 技術雷達：真正的核心是抽象層、可驗證執行與 Flow Graph"
+title: "R2G Agent 的三個收斂方向：高階抽象、以最終狀態評分與可重播 Flow Graph"
 date: 2026-09-22 12:11:00 +0800
 domain: eda
 categories: eda r2g agentic-ai
 ---
 
-今天最值得注意的，不是又多一個 EDA Agent，而是三個方向開始收斂：高階抽象能顯著提高 agent 的設計效率；production agent 必須以環境最終狀態而不是「工具有呼叫成功」來判分；OpenROAD 生態則正在把 MCP、可重播 flow graph、可觀測工具介面組成更完整的 agent-native substrate。
+近期的 EDA agent 研究有三個方向開始收斂：高階抽象能顯著提高 agent 的設計效率；production agent 必須以環境最終狀態而不是「工具有呼叫成功」來判分；OpenROAD 生態則正在把 MCP、可重播 flow graph、可觀測工具介面組成更完整的 agent-native substrate。
 
 這讓我對 R2G 的判斷更明確：真正值得長期投資的不是某一個 LLM 或 agent framework，而是把「工程意圖」轉成可執行、可驗證、可重播的 flow。
 

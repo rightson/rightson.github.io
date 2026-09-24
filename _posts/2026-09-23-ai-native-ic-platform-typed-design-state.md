@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "AI 原生 IC Design Platform 的核心：不是更多 Agent，而是 Typed Design State"
+title: "AI 原生 IC Design Platform 需要 Typed Design State：讓設計狀態可驗證、可重播、可分層操作"
 date: 2026-09-23 06:05:00 +0800
 domain: eda
 categories: eda
-description: "當 AI 開始跨越 RTL、verification、synthesis、APR 與 signoff，真正的瓶頸不再是模型會不會呼叫工具，而是整個 IC design platform 是否有可驗證、可重播、可分層操作的設計狀態。"
+description: "當 AI 開始跨越 RTL、verification、synthesis、APR 與 signoff，瓶頸會轉到 IC design platform 是否有可驗證、可重播、可分層操作的設計狀態。"
 ---
 
-我認為 AI 驅動 IC Design Platform 接下來真正的分水嶺，不是再增加一批 design agent，也不是替每一套 EDA tool 補一個 MCP server。真正決定平台能不能從「好用的助理」走向「可信任的工程系統」的，是設計狀態本身能不能被機器清楚理解、修改、驗證與重播。
+AI 驅動的 IC Design Platform 能不能從「好用的助理」走向「可信任的工程系統」，取決於設計狀態本身能不能被機器清楚理解、修改、驗證與重播。再增加一批 design agent，或替每一套 EDA tool 補一個 MCP server，都繞不過這個前提。
 
 今天三個訊號剛好從不同方向指向同一件事。UCLA 的 Zijian Ding 在 ICCAD 2026 invited paper 中顯示，讓同一類 coding agent 從 RTL 提升到 HLS 層操作，再回到 RTL refinement，11 個 benchmark 上相對 Direct RTL Design 取得 2.62× geometric-mean speedup；而單純 Agent-based HLS 也有 2.31×。這不是證明 HLS 永遠優於 RTL，因為論文同時顯示小型 kernel 上 direct RTL 仍可能較好，而且每組實驗只跑一次；真正重要的是「agent 操作哪一層表示」會直接改變它能利用的設計知識與探索效率。[來源：Zijian Ding, UCLA, ICCAD 2026](https://arxiv.org/abs/2609.21157)
 

@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Clock 的本質不是頻率，而是決定每條 Timing Path 要拿哪兩個 Edge 比較"
+title: "同一個 10 ns Clock，Setup 與 Hold 為什麼比較不同的 Edge"
 date: 2026-09-24 11:31:48 +0800
 domain: timing
 categories: eda
-description: "同樣是 10 ns clock，setup 與 hold 為什麼會得到完全不同的 timing relationship？從 launch/capture edge、Liberty timing arc 與 OpenSTA 的 max/min analysis，看懂 create_clock 真正建立的是一組時間關係，而不只是頻率。"
+description: "同樣是 10 ns clock，setup 與 hold 為什麼會得到完全不同的 timing relationship？從 launch/capture edge、Liberty timing arc 與 OpenSTA 的 max/min analysis，看懂 create_clock 建立的其實是一組時間關係。"
 ---
 
 昨天先建立了一個最小觀念：**delay 本身沒有 pass 或 fail，只有把 delay 放進 timing requirement 之後，slack 才有意義。** 下一步真正需要釐清的，是這個 requirement 從哪裡來。

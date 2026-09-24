@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "NVLink 6 真正的突破不是 3.6 TB/s，而是把故障恢復做成跨層控制迴路"
+title: "NVLink 6 把故障恢復做成跨層控制迴路：從 PHY retry 到 NCCL 彈性恢復"
 date: 2026-09-23 05:30:00 +0800
 domain: networking
 categories: networking nvlink resiliency distributed-systems
 ---
 
-我認為 NVLink 6 這一代最重要的變化，不是把 GPU-to-GPU bandwidth 從 1.8 TB/s 拉到 3.6 TB/s，而是 NVIDIA 開始把「故障恢復」視為一條從 PHY 一路延伸到 distributed runtime 的控制迴路。這個方向比單純增加頻寬更值得注意，因為當 72、數百甚至上千顆 accelerator 被綁成一個 scale-up domain，真正限制 goodput 的往往不再是 peak bandwidth，而是 rare error 被放大成 collective stall、process abort、model reload 甚至整個 rack drain 的機率。
+NVLink 6 把 GPU-to-GPU bandwidth 從 1.8 TB/s 拉到 3.6 TB/s，但這一代更有影響的變化，是 NVIDIA 開始把「故障恢復」視為一條從 PHY 一路延伸到 distributed runtime 的控制迴路。原因在於，當 72、數百甚至上千顆 accelerator 被綁成一個 scale-up domain，真正限制 goodput 的往往不再是 peak bandwidth，而是 rare error 被放大成 collective stall、process abort、model reload 甚至整個 rack drain 的機率。
 
 9 月 15 日 NVIDIA 公布 NVLink 6 的 multi-layer resiliency 細節：PHY 端用 lightweight FEC、Physical Layer Retry（PLR）與 UPHY recovery，把大多數錯誤壓在 sub-millisecond；link layer 用 credit-based flow control（CBFC）避免 buffer overflow 後才補救；control plane 用 NMX 的 contain-and-drain 與 HA 隔離故障；再往上，NCCL elasticity、Dynamo Shadow Engine 與 CUDA checkpoint 處理已經穿透硬體邊界的 failure。[NVIDIA 的原始技術說明](https://developer.nvidia.com/blog/how-nvidia-nvlink-6-delivers-multi-layer-resiliency-for-ai-factories/)把這些機制放在同一張 recovery-time stack 裡。
 

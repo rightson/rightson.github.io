@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "短網址真正難的不是 Base62：唯一鍵、重試與熱點才決定系統會不會失控"
+title: "短網址服務設計：唯一鍵、冪等重試與熱點快取如何決定系統穩定性"
 date: 2026-09-24 08:28:05 +0800
 domain: distributed-systems
 categories: networking
-description: "從一個讀多寫少的短網址服務，推導唯一鍵、冪等建立、redirect cache 與熱點失效；重點不是用哪個資料庫，而是誰對唯一性與可見狀態負責。"
+description: "從一個讀多寫少的短網址服務，推導唯一鍵、冪等建立、redirect cache 與熱點失效；關鍵在於由誰對唯一性與可見狀態負責，資料庫選型反而是次要問題。"
 series: distributed-systems
 series_order: 1
 ---

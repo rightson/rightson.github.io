@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Kubernetes 創始篇：它不是更好的 Batch Scheduler，而是一個把 Desired State 變成 Cluster Reality 的 Control Plane"
+title: "Kubernetes 創始篇：把 Desired State 持續收斂成 Cluster Reality 的 Control Plane"
 date: 2026-09-22 13:40:00 +0800
 domain: distributed-systems
 categories: eda
-description: "理解 Kubernetes 的起點，不是 Pod、Service 或 YAML，而是大規模系統為什麼需要把『想要什麼』與『現在是什麼』分離，再透過持續 reconciliation 把兩者拉近。從這個問題出發，才能看懂 API server、etcd、controller、scheduler、kubelet，以及它們與 Linux kernel、NUMA、RDMA、NFS/SAN 和 HPC workload 的真正邊界。"
+description: "理解 Kubernetes 可以從一個問題開始：大規模系統為什麼需要把『想要什麼』與『現在是什麼』分離，再透過持續 reconciliation 把兩者拉近。從這個問題出發，才能看懂 API server、etcd、controller、scheduler、kubelet，以及它們與 Linux kernel、NUMA、RDMA、NFS/SAN 和 HPC workload 的真正邊界。"
 ---
 
 如果今天有人問我：「EDA farm 要不要從 LSF 換成 Kubernetes？」我會先把這個問題拆掉。

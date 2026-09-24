@@ -4,7 +4,7 @@ title: "沒有 Timing Constraint，工具其實不知道什麼叫做『太慢』
 date: 2026-09-23 12:35:00 +0800
 domain: timing
 categories: eda
-description: "SDC 的起點不是背 create_clock，而是理解 STA 為什麼需要設計者提供時間世界的邊界。從 timing path、arrival time、required time 與 slack 建立後續 constraint reasoning 的共同模型。"
+description: "STA 需要設計者用 SDC 提供時間世界的邊界，工具才知道什麼叫做太慢。從 timing path、arrival time、required time 與 slack 建立後續 constraint reasoning 的共同模型。"
 ---
 
 一個 RTL design 可以在功能模擬中完全正確，卻仍然做不成一顆能在目標頻率工作的晶片。原因很直接：邏輯功能只回答「輸入經過電路之後會得到什麼」，但實體晶片還多了一個不可忽略的問題——**結果必須在什麼時候到。**

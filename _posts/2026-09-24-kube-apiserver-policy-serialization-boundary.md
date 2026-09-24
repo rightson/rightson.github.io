@@ -4,7 +4,7 @@ title: "kube-apiserver 為什麼必須成為共同入口：大型叢集先統一
 date: 2026-09-24 08:02:03 +0800
 domain: distributed-systems
 categories: eda
-description: "kube-apiserver 的價值不是收 YAML，而是把身份、授權、admission、版本衝突、watch 與 persistence 收斂成一套共同 mutation contract。這篇從 request path、resourceVersion、watch cache、APF，一路推到 AI/EDA/HPC control plane 為何需要共同的 policy boundary，但不該把 RDMA、NFS/SAN 或 LSF data path 硬塞進 Kubernetes。"
+description: "kube-apiserver 把身份、授權、admission、版本衝突、watch 與 persistence 收斂成一套共同 mutation contract。這篇從 request path、resourceVersion、watch cache、APF，一路推到 AI/EDA/HPC control plane 為何需要共同的 policy boundary，但不該把 RDMA、NFS/SAN 或 LSF data path 硬塞進 Kubernetes。"
 ---
 
 一個大型叢集最危險的狀況，往往不是 scheduler 選錯 node，而是**很多元件都能直接改變「系統現在是什麼」**。
