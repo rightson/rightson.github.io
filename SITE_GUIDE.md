@@ -12,10 +12,10 @@ Add an optional `domain` to explicitly select one of the four editorial sections
 
 | domain | Section |
 | --- | --- |
-| networking | 網路技術 |
-| eda | EDA 設計平台 |
-| ai-industry | AI 產業研究 |
+| ai-industry | AI 技術與產業 |
 | investing | 投資與交易 |
+| networking | 網路與互連 |
+| eda | 設計與運算平台 |
 
 `domain` does not change the article URL. Existing posts are classified using `_includes/domain-key.html`; unmatched posts appear under 其他筆記. A post has one primary domain and any number of category labels. Unknown category labels remain visible, so daily publishing does not require a code change. Chinese display labels can be added to `_data/category_labels.yml`.
 

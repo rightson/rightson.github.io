@@ -1,0 +1,1 @@
+{%- capture dk -%}{% include domain-key.html post=include.post %}{%- endcapture -%}{%- assign dk = dk | strip -%}{%- assign dd = site.data.domains | where: "key", dk | first -%}<a class="{{ include.class | default: 'category' }}" href="{{ '/categories/' | relative_url }}#{{ dk }}">{% if dd %}{{ dd.title }}{% else %}其他筆記{% endif %}</a>
