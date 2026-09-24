@@ -73,6 +73,43 @@
       wrapper.append(table);
     });
   }
+  const switcher = document.querySelector("[data-domain-switcher]");
+  if (switcher) {
+    const links = [...switcher.querySelectorAll('a[href^="#"]')];
+    const sections = links
+      .map((link) => document.getElementById(link.hash.slice(1)))
+      .filter(Boolean);
+    const setActive = (id) => {
+      links.forEach((link) => {
+        const active = link.hash === `#${id}`;
+        if (active) {
+          link.setAttribute("aria-current", "true");
+          const left = link.offsetLeft - switcher.offsetLeft;
+          if (left < switcher.scrollLeft ||
+              left + link.offsetWidth > switcher.scrollLeft + switcher.clientWidth)
+            switcher.scrollTo({ left: left - 16 });
+        } else link.removeAttribute("aria-current");
+      });
+    };
+    const update = () => {
+      const offset = switcher.getBoundingClientRect().bottom + 24;
+      let current = sections[0];
+      for (const section of sections)
+        if (section.getBoundingClientRect().top <= offset) current = section;
+      if (current) setActive(current.id);
+    };
+    let queued = false;
+    window.addEventListener("scroll", () => {
+      if (queued) return;
+      queued = true;
+      requestAnimationFrame(() => {
+        queued = false;
+        update();
+      });
+    }, { passive: true });
+    window.addEventListener("hashchange", update);
+    update();
+  }
   const search = document.querySelector("[data-search]");
   if (!search) return;
   const input = document.querySelector("#search-input");

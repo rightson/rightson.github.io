@@ -358,8 +358,35 @@ p {
   margin-left: 8px;
   color: var(--muted);
 }
+.domain-switcher {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+  gap: 8px;
+  margin: 0 -2px 20px;
+  padding: 10px 2px;
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+}
+.domain-switcher::-webkit-scrollbar {
+  display: none;
+}
+.domain-switcher .category-chip {
+  flex: none;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 7px 14px;
+}
+.domain-switcher [aria-current] {
+  background: var(--teal);
+  border-color: var(--teal);
+  color: var(--white);
+}
 .category-group {
-  scroll-margin-top: 28px;
+  scroll-margin-top: 40px;
   margin: 35px 0 48px;
 }
 .category-group .eyebrow {
