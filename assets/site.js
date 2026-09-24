@@ -96,6 +96,14 @@
       let current = sections[0];
       for (const section of sections)
         if (section.getBoundingClientRect().top <= offset) current = section;
+      const root = document.documentElement;
+      if (innerHeight + scrollY >= root.scrollHeight - 2) {
+        const target = sections.find(
+          (s) => `#${s.id}` === location.hash &&
+            s.getBoundingClientRect().top < innerHeight,
+        );
+        current = target || sections[sections.length - 1];
+      }
       if (current) setActive(current.id);
     };
     let queued = false;
