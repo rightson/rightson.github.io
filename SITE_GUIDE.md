@@ -1,5 +1,7 @@
 # Website maintenance
 
+> **Agent note:** `AGENTS.md` is the canonical operating and publishing guide for all agents. This file remains a human-oriented site overview. If the two differ, follow the user's current instruction first, then `AGENTS.md`, and update this guide to remove drift.
+
 This site uses native Jekyll layouts and GitHub Pages. No remote theme, JavaScript framework, external fonts, or search service is required. Post bodies and permalinks are unchanged.
 
 ## Publishing
