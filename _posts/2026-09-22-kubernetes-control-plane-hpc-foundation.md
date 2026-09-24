@@ -9,23 +9,23 @@ description: "理解 Kubernetes 可以從一個問題開始：大規模系統為
 
 如果今天有人問我：「EDA farm 要不要從 LSF 換成 Kubernetes？」我會先把這個問題拆掉。
 
-因為 **Kubernetes 最值得理解的地方，從來不是它能不能啟動 container，而是它重新定義了大型運算平台如何控制一個永遠在變動的系統。**
+Kubernetes 最值得理解的地方，是它重新定義了大型運算平台如何控制一個永遠在變動的系統；能不能啟動 container 反而是次要的。
 
-一個數千台甚至數萬台機器的 cluster，不可能長時間維持靜止。Node 會掛、process 會 crash、network 會 partition、disk 會變慢、image 會拉取失敗、GPU 會 unhealthy、工程師會同時提交新工作，controller 自己也可能 restart。只要規模夠大，「異常」就不再是例外，而是正常工作狀態的一部分。
+一個數千台甚至數萬台機器的 cluster，不可能長時間維持靜止。Node 會掛、process 會 crash、network 會 partition、disk 會變慢、image 會拉取失敗、GPU 會 unhealthy、工程師會同時提交新工作，controller 自己也可能 restart。只要規模夠大，「異常」就成為正常工作狀態的一部分，不再是例外。
 
 如果平台的基本模型仍然是：
 
 `收到命令 → 執行一串步驟 → 希望最後成功`
 
-那麼每一次中途失敗，都會逼系統回答一個很麻煩的問題：**到底執行到哪裡？哪些動作已經成功？哪些可以重做？哪些重做會造成重複副作用？**
+那麼每一次中途失敗，都會逼系統回答一個很麻煩的問題：到底執行到哪裡？哪些動作已經成功？哪些可以重做？哪些重做會造成重複副作用？
 
 規模越大，這種 procedural automation 越容易變成由大量 retry、cleanup、repair scripts 拼起來的狀態機。
 
-Kubernetes 選擇從另一個方向解決問題：不要把「如何一步一步做到」當成唯一真相，而是先把「系統應該長成什麼樣子」保存下來，然後讓很多小型 control loops 不斷觀察現況，持續把 current state 拉向 desired state。
+Kubernetes 選擇從另一個方向解決問題：先把「系統應該長成什麼樣子」保存下來，不再把「如何一步一步做到」當成唯一真相，然後讓很多小型 control loops 不斷觀察現況，持續把 current state 拉向 desired state。
 
 這個差異，比 container 本身重要得多。
 
-也正因如此，理解 Kubernetes 的正確路徑，不應該是先背 Pod、Deployment、Service，而是先回答：
+因此理解 Kubernetes 比較好的起點，是先回答下面這個問題，Pod、Deployment、Service 可以晚點再背：
 
 **一個大規模運算系統，為什麼最後會需要 desired state、reconciliation、shared state 與分散式 controllers？**
 
@@ -46,9 +46,9 @@ Kubernetes 選擇從另一個方向解決問題：不要把「如何一步一步
 
 script 重跑時，前兩個 instance 是否還存在？第三個是否已經建立成功但 response 丟失？第四個根本沒開始？如果直接重跑全部步驟，會不會變成六個 instance？
 
-真正困難的不是「create」這個 API，而是**失敗發生後，如何重新知道事實。**
+「create」這個 API 本身不難，難的是**失敗發生後，如何重新知道事實。**
 
-因此，大規模控制系統需要的第一個性質不是更複雜的 workflow engine，而是一個可持久化、可觀察的 system state。
+因此，大規模控制系統首先需要一個可持久化、可觀察的 system state；更複雜的 workflow engine 解決不了這件事。
 
 如果目標只寫成：
 
@@ -63,7 +63,7 @@ script 重跑時，前兩個 instance 是否還存在？第三個是否已經建
 
 如果 current 變成 5，就刪掉一個；如果 node 壞掉後 current 變成 3，就補一個。controller crash 之後重新啟動，也不需要恢復一條極長的 program counter，只要重新讀 state，再算一次差值。
 
-這就是 Kubernetes controller 模型最根本的價值。
+Kubernetes controller 模型的基本價值就在這裡。
 
 官方文件把 controller 描述成持續運作的 control loop：觀察 cluster state，然後讓 current state 靠近 desired state；API object 的 `spec` 通常就是 desired state 的表示。[Kubernetes Controllers](https://kubernetes.io/docs/concepts/architecture/controller/)
 
@@ -76,7 +76,7 @@ spec:
   replicas: 4
 ```
 
-真正的語義不是：
+它的語義不是：
 
 > 現在幫我 create 四個 Pod。
 
@@ -88,7 +88,7 @@ spec:
 
 前者是一個 command；後者是一個長期 invariant。
 
-## 一旦接受「狀態比命令重要」，Kubernetes 的架構就幾乎被推導出來了
+## 從「狀態比命令重要」推導 Kubernetes 的架構
 
 如果 desired state 必須在 controller crash 後仍然存在，那它不能只存在某個 process memory。
 
@@ -111,7 +111,7 @@ spec:
   <figcaption>圖 2｜Kubernetes reconciliation path。使用者寫入 desired state 後，API/etcd 保存 cluster state；controllers 與 scheduler 產生後續決策；kubelet 最後把 node state 向目標收斂。依據 <a href="https://kubernetes.io/docs/concepts/architecture/controller/">Kubernetes Controllers</a>、<a href="https://kubernetes.io/docs/concepts/overview/components/">Kubernetes Components</a> 與 <a href="https://kubernetes.io/docs/concepts/scheduling-eviction/scheduling-framework/">Scheduling Framework</a> 重繪整理。</figcaption>
 </figure>
 
-這張圖真正值得看的不是元件名稱，而是箭頭方向。
+這張圖值得看的是箭頭方向，元件名稱反而次要。
 
 Kubernetes 沒有一個元件從頭到尾「執行整個 Deployment」。Deployment controller 看到缺 Pod，只負責建立 Pod object；scheduler 看到未綁定的 Pod，只負責決定 node；kubelet 看到屬於自己的 Pod，只負責讓 node 上的 runtime state 接近 Pod spec。
 
@@ -121,7 +121,7 @@ Kubernetes 沒有一個元件從頭到尾「執行整個 Deployment」。Deploym
 
 在大規模系統裡，這通常比「所有事情必須在一次 transaction 中完成」更實際。
 
-## 所以 scheduler 並不是 Kubernetes 的中心
+## Scheduler 在 Kubernetes 裡只負責 placement
 
 這裡是從 HPC 世界切進 Kubernetes 最容易誤判的地方。
 
@@ -151,15 +151,15 @@ Kubernetes scheduler 做的事情其實更窄。
 
 這揭露了兩個系統的不同重心。
 
-Slurm 的第一級 abstraction 是 **job/resource allocation**。
+Slurm 的第一級 abstraction 是 job/resource allocation。
 
-Kubernetes 的第一級 abstraction 是 **persistent API state + reconciliation**。
+Kubernetes 的第一級 abstraction 是 persistent API state + reconciliation。
 
 兩者有重疊，但不是同一類問題的不同品牌實作。
 
 ## 為什麼 Kubernetes 要拆成很多 control loops，而不是一顆超級 scheduler？
 
-因為大型平台的決策根本不在同一個時間尺度。
+大型平台的決策並不在同一個時間尺度。
 
 一個 Pod placement 可能需要毫秒到秒。
 
@@ -188,7 +188,7 @@ HPC admission queue 可能讓一個 256-GPU job 等幾十分鐘甚至幾小時�
 
 Kubernetes 選擇讓不同 controllers 各自維護局部 invariant，再透過 API objects 交換 state。這讓系統可以新增新的 CRD/controller，而不必修改所有既有元件。
 
-這也是 Kubernetes 為什麼後來能從「container orchestration」擴展成 infrastructure control plane。
+Kubernetes 後來能從「container orchestration」擴展成 infrastructure control plane，也是靠這一點。
 
 只要某個外部資源具有三件事：
 
@@ -200,9 +200,9 @@ Kubernetes 選擇讓不同 controllers 各自維護局部 invariant，再透過 
 
 Volume、LoadBalancer、GPU、NIC、certificate、database cluster 可以如此；EDA flow execution、license pool、artifact lineage、甚至外部 LSF backend 也可以如此。
 
-這並不表示「全部都應該 Kubernetes 化」，而是表示它的控制模型具有很強的可組合性。
+這說明它的控制模型可組合性很強，並不表示「全部都應該 Kubernetes 化」。
 
-## API server 與 etcd 的角色，不只是「放 YAML 的資料庫」
+## API server 與 etcd：shared state 與增量觀察
 
 一旦所有 controllers 都靠 shared state 協作，shared state 就變成控制面的核心基礎設施。
 
@@ -210,7 +210,7 @@ Kubernetes 官方把 kube-apiserver 定義為 control plane front end，而 etcd
 
 但如果只把 etcd 想成 database，仍然低估了整個系統。
 
-controller 面臨的真正問題是：**如何持續知道哪些 objects 變了。**
+controller 要解決的問題是：**如何持續知道哪些 objects 變了。**
 
 最直覺的方法是 polling：
 
@@ -236,11 +236,11 @@ controller 先取得一個 snapshot 與 resourceVersion，之後接收增量事�
 
 即使同一事件重複送達，或 controller 在處理一半時 crash，重新起來仍然可以讀「最新 state」再算一次。只要 reconcile logic 具有 idempotency，整個系統就不必依賴一條完美、exactly-once 的事件歷史。
 
-這也是 Kubernetes 很重要的一個 distributed-systems 取捨：**盡量把 correctness 建立在可重新讀取的 state，而不是建立在永遠不丟失、永遠不重複的 event sequence。**
+這也是 Kubernetes 很重要的一個 distributed-systems 取捨：correctness 盡量建立在可重新讀取的 state 上，不依賴永遠不丟失、永遠不重複的 event sequence。
 
 後面談 informer、workqueue、controller-runtime、etcd MVCC 時，這個觀念會一直出現。
 
-## 到 scheduler bind 為止，其實都還只是「決定」
+## Scheduler bind 之後：kubelet、CRI 與 Linux kernel mechanisms
 
 接下來才是很多平台文章容易跳過的部分。
 
@@ -254,7 +254,7 @@ node-42 上的 kubelet 觀察到這個 Pod 屬於自己之後，才開始把 dec
 
 Kubernetes 使用 CRI 作為 kubelet 與 container runtime 之間的主要介面；今天常見 runtime 是 containerd 或 CRI-O。[Kubernetes Container Runtime Interface](https://kubernetes.io/docs/concepts/containers/cri/)
 
-再往下，OCI runtime 需要建立真正的 Linux process isolation：
+再往下，OCI runtime 需要建立實際的 Linux process isolation：
 
 - PID namespace 決定 process tree 看見什麼；
 - mount namespace 決定 filesystem view；
@@ -263,13 +263,13 @@ Kubernetes 使用 CRI 作為 kubelet 與 container runtime 之間的主要介面
 - capabilities / seccomp / LSM 決定 process 可以做什麼；
 - overlayfs 或其他 snapshotter 決定 image root filesystem 如何被組合。
 
-也就是說，**Kubernetes 沒有發明 container isolation；它是在大規模 cluster 上協調 Linux 已經存在的 kernel mechanisms。**
+**Kubernetes 沒有發明 container isolation；它是在大規模 cluster 上協調 Linux 已經存在的 kernel mechanisms。**
 
-這個邊界非常重要。
+這個邊界很重要。
 
-因為所有抽象在最後都會落到 kernel，而效能與隔離的真實行為也在那裡決定。
+所有抽象最後都會落到 kernel，效能與隔離的實際行為也在那裡決定。
 
-## 「4 CPU」到底是什麼？這就是抽象開始漏出物理世界的地方
+## 「4 CPU」在 kernel 裡代表什麼：cgroup、SMT 與 NUMA
 
 看一段非常普通的 spec：
 
@@ -283,7 +283,7 @@ resources:
 
 從 API 層看，這只是一個 resource quantity。
 
-但如果我們問一個 HPC engineer 真正在意的問題：
+但 HPC engineer 在意的是另一個問題：
 
 **這是不是代表我的 APR job 得到四顆專屬 physical cores？**
 
@@ -306,13 +306,13 @@ resources:
 
 如果要提高 determinism，就要再進一步使用 CPU Manager static policy、cpuset、Topology Manager、NUMA-aware device placement 等機制。
 
-這也說明為什麼 Kubernetes 的 abstraction 本身不是問題，**真正的問題是平台是否知道 abstraction 在哪裡開始不夠精確。**
+Kubernetes 的 abstraction 本身沒有錯；要看的是平台是否知道 abstraction 從哪裡開始不夠精確。
 
 對微服務來說，平均 CPU capacity 可能已足夠。
 
 對 Innovus、Fusion Compiler、STA、OPC、TCAD、MPI 或 latency-sensitive inference，cache locality、NUMA 與 memory bandwidth 可能比「CPU 數量」更重要。
 
-## 這也是為什麼 HPC 的 performance truth 往往不在 control plane
+## HPC 效能在 data path 形成：GPU/RDMA 與 NFS/SAN 的例子
 
 再看另一個例子。
 
@@ -348,7 +348,7 @@ EDA storage 也是同樣道理。
 
 `open → lookup → getattr → close`
 
-真正瓶頸可能在 metadata operations、directory lookup、NFS RPC latency、server-side lock / inode pressure，而不是 bulk throughput。
+瓶頸可能在 metadata operations、directory lookup、NFS RPC latency、server-side lock / inode pressure，bulk throughput 反而不是限制。
 
 另一種 workload 可能大量 mmap 大檔，瓶頸變成 page fault、page cache reclaim、writeback。
 
@@ -356,24 +356,24 @@ EDA storage 也是同樣道理。
 
 所以一句「我們 storage 很快」沒有意義。
 
-必須問：**哪一條 I/O path？哪一種 operation mix？哪一層正在排隊？**
+必須問：哪一條 I/O path？哪一種 operation mix？哪一層正在排隊？
 
 <figure>
   <img src="/assets/images/k8s/k8s-hpc-control-data-boundary.svg" alt="Kubernetes control plane 與 HPC node/kernel/data path 的分界" style="max-width:100%;height:auto;">
   <figcaption>圖 3｜Kubernetes 可以控制 placement、lifecycle 與 policy，但 HPC throughput / jitter 多數在 kernel 與 hardware data path 中形成。依據 <a href="https://kubernetes.io/docs/concepts/overview/components/">Kubernetes Components</a>、<a href="https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v2.html">Linux cgroup v2</a>、<a href="https://slurm.schedmd.com/overview.html">Slurm architecture</a> 的責任邊界重繪整理。</figcaption>
 </figure>
 
-這張圖其實可以用一句話概括：
+圖 3 的分工可以概括成：
 
 **Control plane 決定「應該怎麼安排」，data plane 決定「實際跑得多快」。**
 
 一個成熟的 HPC platform 必須同時理解兩者。
 
-## 所以「Kubernetes 能不能跑 HPC」本身就是錯的問題
+## 比「Kubernetes 能不能跑 HPC」更有用的問題
 
 幾乎所有 HPC workload 都可以被包進 container，也幾乎都可以想辦法被 Kubernetes 啟動。
 
-但這沒有回答真正的工程問題。
+但這沒有回答工程上要問的事。
 
 更好的問題是：
 
@@ -381,7 +381,7 @@ EDA storage 也是同樣道理。
 
 對不同 workload，答案完全不同。
 
-| Workload | 真正稀缺資源 | 關鍵約束 | Kubernetes 單靠 Pod 是否足夠？ |
+| Workload | 主要稀缺資源 | 關鍵約束 | Kubernetes 單靠 Pod 是否足夠？ |
 | --- | --- | --- | --- |
 | Web service | CPU / memory / replica | availability、autoscaling | 通常接近足夠 |
 | GPU inference | GPU、HBM、latency | batching、GPU partition、NUMA/NIC | 需要 device/topology awareness |
@@ -402,11 +402,11 @@ EDA storage 也是同樣道理。
 
 `Kubernetes Job | LSF | Slurm | bare metal | specialized appliance`
 
-這時 Kubernetes 式架構的價值不是「把所有東西變成 Pod」，而是建立一個一致的 control model。
+這時 Kubernetes 式架構的價值在於建立一個一致的 control model，不必「把所有東西變成 Pod」。
 
 ## 為什麼 AI 比 EDA 更容易先走到這一步？
 
-因為兩者的歷史包袱不同。
+兩者的歷史包袱不同。
 
 近代 AI infrastructure 大量是在 GPU cluster 成長過程中重新建置。GPU、checkpoint、dataset、serving endpoint、autoscaling、job admission，本來就適合 API-driven orchestration。
 
@@ -429,7 +429,7 @@ EDA 則不一樣。
 
 因此「containerize 成功」不等於「production migration 成功」。
 
-真正值得做的是先找 control plane 能創造價值、但不需要立刻重寫 data plane 的位置。
+比較值得先做的，是找出 control plane 能創造價值、但不需要立刻重寫 data plane 的位置。
 
 例如：
 
@@ -444,35 +444,33 @@ EDA 則不一樣。
 
 然後逐步決定哪些 workload 適合直接 Kubernetes native，哪些仍留在 LSF / Slurm。
 
-## 2026 的 Kubernetes 正在證明：原始 Pod scheduling 模型確實不夠描述 HPC
+## Kubernetes v1.37 的 workload-aware scheduling 與 DRA：補上 HPC 語義
 
-這不是抽象推論。
+原始 Pod scheduling 模型不夠描述 HPC，2026 的版本變化已經給出具體證據。
 
 Kubernetes v1.37 的 Workload-Aware Scheduling 已經把 Workload / PodGroup、gang scheduling 與 workload-aware preemption 推進到 Beta；對更複雜的多層 topology，還引入 CompositePodGroup。這些能力就是在回答 AI/ML 與複雜 batch workload「一個 Pod 一個 placement decision」不夠用的問題。[Kubernetes v1.37 Workload-Aware Scheduling](https://kubernetes.io/blog/2026/09/08/kubernetes-v1-37-advancing-workload-aware-scheduling/)
 
 同一個版本中，Dynamic Resource Allocation 持續擴展對 GPU、NIC 等裝置的表達能力，DRA extended-resource support 已進入 GA。[Kubernetes v1.37 DRA Updates](https://kubernetes.io/blog/2026/09/03/kubernetes-v1-37-dra-updates/)
 
-這些變化很有意思。
+這些變化的方向，是讓 Kubernetes 更懂 physical resources、group scheduling 與 topology，和「變得更 cloud native」關係不大。
 
-它們不是讓 Kubernetes「變得更 cloud native」，而是在讓它更懂 physical resources、group scheduling 與 topology。
-
-換句話說，Kubernetes 越往 AI/HPC 深處走，就越必須重新面對 HPC 世界早已熟悉的問題。
+Kubernetes 越往 AI/HPC 深處走，就越必須重新面對 HPC 世界早已熟悉的問題。
 
 Slurm 有 gang scheduling、backfill、topology-aware resource selection、task affinity；Kubernetes 現在也逐步補上 workload group、topology-aware scheduling、device allocation。
 
 兩條路正在靠近，但它們仍從不同 abstraction 起點出發。
 
-## 真正值得研究的是：Control plane 應該停在哪裡？
+## Control plane 應該停在哪裡？
 
 到這裡，Kubernetes 的核心輪廓就清楚很多了。
 
-它不是神奇地把 hardware heterogeneity 消失。
+它沒有讓 hardware heterogeneity 消失。
 
 它也不是比 LSF / Slurm 更聰明的一顆 scheduler。
 
-它真正強的地方，是提供一套可以持久化 intent、觀察 current state、讓多個 controllers 持續收斂、並且可以被擴充的 control-plane substrate。
+它強在提供一套可以持久化 intent、觀察 current state、讓多個 controllers 持續收斂、並且可以被擴充的 control-plane substrate。
 
-但一旦 workload 真正開始執行，世界立刻回到物理限制：
+但 workload 一旦開始執行，世界立刻回到物理限制：
 
 `CPU scheduler`
 `NUMA`
@@ -486,11 +484,11 @@ Slurm 有 gang scheduling、backfill、topology-aware resource selection、task 
 `NIC IRQ`
 `PCIe topology`
 
-成熟的平台不是想辦法把這些細節藏掉，而是知道**哪些細節可以抽象，哪些必須被提升成 scheduler 與 control-plane 可理解的 constraint。**
+成熟的平台不會試著把這些細節全部藏掉，它要知道**哪些細節可以抽象，哪些必須被提升成 scheduler 與 control-plane 可理解的 constraint。**
 
 這也是這個系列接下來要一路回答的問題。
 
-我們會沿著真正的 execution path 往下：
+我們會沿著實際的 execution path 往下：
 
 `Pod YAML`
 → `API server`
@@ -505,7 +503,7 @@ Slurm 有 gang scheduling、backfill、topology-aware resource selection、task 
 → `NFS / SAN / NVMe / parallel filesystem`
 → `AI / EDA / Foundry distributed workload`
 
-下一篇會選擇最直接的一條路：**一份 Pod YAML 到底如何變成 Linux 上真正存在的一群 processes。**
+下一篇會選擇最直接的一條路：一份 Pod YAML 到底如何變成 Linux 上實際存在的一群 processes。
 
 我們會從 API request 開始，依序追過 etcd state、scheduler binding、kubelet sync loop、CRI、containerd、OCI runtime，最後看到 namespace、cgroup 與 process 是怎麼真的出現在 kernel 裡。
 

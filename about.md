@@ -3,9 +3,7 @@ layout: page
 title: 關於這裡
 permalink: /about/
 ---
-這裡記錄我對網路技術、EDA 設計平台、AI 產業，以及投資與交易的觀察與思考。
-
-我習慣先理解問題的限制與原理，再檢視技術如何落地、產業如何變化，以及判斷是否有足夠證據支持。這些文章也是持續學習與修正想法的紀錄。
+工作筆記，主題是晶片設計、計算系統與網路，以及它們背後的產業與市場。
 
 ## 研究方向
 
@@ -17,8 +15,8 @@ permalink: /about/
 - **網路與互連**：網路協定、交換晶片、光通訊與 AI 資料中心互連。
 - **分散式系統**：叢集管理與控制面、一致性、容錯與大規模服務設計。
 
-希望能把來源事實、推論與仍待驗證的假設分清楚，讓每一個判斷都能被討論與檢驗。
+文中會標明哪些是來源事實、哪些是推論。有錯誤歡迎指正。
 
 ## 聯絡
 
-歡迎交流、指正：[rightson@gmail.com](mailto:rightson@gmail.com) · [GitHub](https://github.com/rightson) · [LinkedIn](https://www.linkedin.com/in/scott-yo-ru-chen-14711538/)
+[rightson@gmail.com](mailto:rightson@gmail.com) · [GitHub](https://github.com/rightson) · [LinkedIn](https://www.linkedin.com/in/scott-yo-ru-chen-14711538/)

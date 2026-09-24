@@ -7,9 +7,9 @@ categories: eda
 description: "kube-apiserver 把身份、授權、admission、版本衝突、watch 與 persistence 收斂成一套共同 mutation contract。這篇從 request path、resourceVersion、watch cache、APF，一路推到 AI/EDA/HPC control plane 為何需要共同的 policy boundary，但不該把 RDMA、NFS/SAN 或 LSF data path 硬塞進 Kubernetes。"
 ---
 
-一個大型叢集最危險的狀況，往往不是 scheduler 選錯 node，而是**很多元件都能直接改變「系統現在是什麼」**。
+大型叢集裡，scheduler 選錯 node 通常還能修正；更危險的狀況是很多元件都能直接改變「系統現在是什麼」。
 
-想像一個半導體設計平台：工程師從 portal 提交 APR，flow controller 依 project policy 補上 queue 與 license class；capacity controller 因機台壓力改資源需求；storage controller 建立 scratch volume；另一個 operator 因 node 維護把 workload 移走。若每個元件都能直接改 LSF job、資料庫、volume metadata 或某個共享狀態表，而沒有一個共同的版本、授權與驗證邊界，問題很快不再是「哪個 component 寫錯」，而是**你無法證明目前狀態到底是由哪一條合法決策路徑產生的**。
+想像一個半導體設計平台：工程師從 portal 提交 APR，flow controller 依 project policy 補上 queue 與 license class；capacity controller 因機台壓力改資源需求；storage controller 建立 scratch volume；另一個 operator 因 node 維護把 workload 移走。若每個元件都能直接改 LSF job、資料庫、volume metadata 或某個共享狀態表，而沒有一個共同的版本、授權與驗證邊界，問題很快會從「哪個 component 寫錯」變成：你無法證明目前狀態是由哪一條合法決策路徑產生的。
 
 Kubernetes 對這個問題的選擇很強硬：cluster state 的正常變更都必須經過 API。官方文件直接把 REST API 稱為 Kubernetes 的 fundamental fabric；component 之間與外部命令的操作都由 API server 處理，持久狀態再以 API resource 的形式寫入 etcd。[Kubernetes API Overview](https://kubernetes.io/docs/reference/using-api/)
 
@@ -17,7 +17,7 @@ Kubernetes 對這個問題的選擇很強硬：cluster state 的正常變更都�
 
 這個「共同入口」是邏輯上的，不代表只能跑一個 process。Kubernetes 明確設計 kube-apiserver 可以 horizontal scale，部署多個 instance 並由 load balancer 分流；一致的 durable state 則由 etcd backing store 提供。[Kubernetes Cluster Architecture](https://kubernetes.io/docs/concepts/architecture/)
 
-所以真正值得理解的是：**多個 API server instance 為什麼仍能呈現一套共同的 cluster truth？**
+因此要理解的問題是：多個 API server instance 為什麼仍能呈現一套共同的 cluster truth？
 
 ## 如果所有 controller 都直接寫 backend，reconciliation 也救不了你
 
@@ -41,7 +41,7 @@ kube-apiserver 就是把這四件事綁成一個 contract。
   <figcaption>圖 1｜kube-apiserver 的邏輯責任鏈：authentication、authorization、admission、object validation 與 persistence 共同形成 mutation boundary；讀取則有不同資料路徑。API Priority and Fairness 用來避免 overload 時低價值流量壓垮 control plane。依據 <a href="https://kubernetes.io/docs/concepts/security/controlling-access/">Controlling Access to the Kubernetes API</a>、<a href="https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/">Admission Control</a> 與 <a href="https://kubernetes.io/docs/concepts/cluster-administration/flow-control/">API Priority and Fairness</a> 重繪整理；圖示表達邏輯責任，不代表內部所有 filter 的逐函式呼叫順序。</figcaption>
 </figure>
 
-這條路徑看起來像一般企業 API gateway，但差異在於它不是只保護 API；**它保護的是 control plane 的 state transition。**
+這條路徑看起來像一般企業 API gateway，差別在於它保護的對象是 control plane 的 state transition，範圍比 API 本身更大。
 
 RBAC 只回答「這個 identity 能不能 update 這種 resource」。Admission 則可以看 object 內容，例如禁止某 namespace 的 workload 申請不允許的 runtime、要求特定 label、限制 privileged setting，或修改預設值。Kubernetes v1.30 起，ValidatingAdmissionPolicy 已 stable，可以直接用 CEL 在 API server 內宣告 validation，而不一定要把每個規則都做成外部 webhook。[Validating Admission Policy](https://kubernetes.io/docs/reference/access-authn-authz/validating-admission-policy/)
 
@@ -65,11 +65,11 @@ spec:
 
 如果 policy 規定某類 project 不得使用超過 1 TiB DRAM，或只有特定 flow identity 能指定 `tapeout-critical` priority，最好的 enforcement point 不是等 job 進 LSF 後再靠 script 猜，而是在 intent 被接受成 cluster state 之前就拒絕不合法 mutation。
 
-這就是 API boundary 相對於「共用一套 library」更強的地方。library 只能保證願意使用它的 client；API admission 保護的是所有走正常 API path 的 client。
+API boundary 相對於「共用一套 library」的優勢在此。library 只能保證願意使用它的 client；API admission 保護的是所有走正常 API path 的 client。
 
-Kubernetes 官方甚至另外列出 API server bypass risk：直接存取 kubelet 等旁路介面，可能繞過 admission 與 Kubernetes audit，這正反映了「共同入口」不是美學選擇，而是安全與一致性邊界。[Kubernetes API Server Bypass Risks](https://kubernetes.io/docs/concepts/security/api-server-bypass-risks/)
+Kubernetes 官方甚至另外列出 API server bypass risk：直接存取 kubelet 等旁路介面，可能繞過 admission 與 Kubernetes audit，可見「共同入口」承擔的是安全與一致性邊界。[Kubernetes API Server Bypass Risks](https://kubernetes.io/docs/concepts/security/api-server-bypass-risks/)
 
-## 真正困難的不是阻止非法寫入，而是阻止「合法但過期」的寫入
+## 合法但過期的寫入：resourceVersion 與 409 Conflict
 
 身份與 policy 解決後，distributed control plane 還有更棘手的問題：兩個 actor 都合法，而且都基於自己當下看到的正確狀態做決策，最後仍然可能互相覆蓋。
 
@@ -86,13 +86,13 @@ Kubernetes 不靠 distributed lock 解這個問題。對 PUT update，client 必
 
 這個設計非常適合 controller architecture，因為 reconcile 本來就預期可以 retry。與其先拿全域 lock、長時間持有，再冒 deadlock 或 lock holder failure 的風險，不如允許 actor 樂觀地工作，只在 commit 發現 collision 時重算。
 
-這裡也可以看出 `resourceVersion` 與一般「修改時間」完全不同。它不是給 UI 顯示用的 timestamp，而是 API consistency protocol 的一部分。Kubernetes 1.37 的 API Concepts 進一步規定，對 conformant 1.35+ API server，內建型別與 CRD 的 resourceVersion 在同一 API resource type 內必須可視為單調增加的十進位整數；但 client 仍應依 API 規則使用，而不是把它當全域 transaction ID。[Kubernetes API Concepts — Resource versions](https://kubernetes.io/docs/reference/using-api/api-concepts/)
+這裡也可以看出 `resourceVersion` 與一般「修改時間」完全不同。它是 API consistency protocol 的一部分，不能當成給 UI 顯示的 timestamp。Kubernetes 1.37 的 API Concepts 進一步規定，對 conformant 1.35+ API server，內建型別與 CRD 的 resourceVersion 在同一 API resource type 內必須可視為單調增加的十進位整數；但 client 仍應依 API 規則使用，而不是把它當全域 transaction ID。[Kubernetes API Concepts — Resource versions](https://kubernetes.io/docs/reference/using-api/api-concepts/)
 
-對 EDA/AI control plane，這個機制帶來一個重要設計原則：**不要讓多個 controller 共享可變 row，然後靠「大家應該不會同時寫」維持安全。** 如果 ownership 可以切成不同 field，Server-Side Apply / managed fields 會比整份 object replacement 更適合；若某個 mutation 真正依賴舊值，就讓它帶版本條件，衝突時重算，而不是假裝 concurrency 不存在。
+對 EDA/AI control plane，這個機制帶來一個設計原則：不要讓多個 controller 共享可變 row，再靠「大家應該不會同時寫」維持安全。如果 ownership 可以切成不同 field，Server-Side Apply / managed fields 會比整份 object replacement 更適合；若某個 mutation 確實依賴舊值，就讓它帶版本條件，衝突時重算。
 
 ## API server 既然是共同入口，為什麼不會自己變成大瓶頸？
 
-答案不是「它很快」，而是 Kubernetes 刻意讓讀取與變更通知不要全部落到 durable store。
+原因在於 Kubernetes 刻意讓讀取與變更通知不要全部落到 durable store，單靠 API server 本身的速度撐不住。
 
 在大型 cluster，scheduler、controller-manager、operator、CSI controller、CNI controller、autoscaler、監控與大量 custom controller 都會讀 API。如果每一個 LIST/WATCH 都直接做 etcd quorum read，etcd 很快會從 reliable backing store 變成整個 control plane 的 read fan-out engine。
 
@@ -105,9 +105,9 @@ Kubernetes 的解法是 watch cache。API server 維持一份反映 etcd state �
   <figcaption>圖 3｜kube-apiserver 透過 watch cache 把 durable persistence 與大規模 read/watch fan-out 分離。Kubernetes 1.37 對 most-recent read 的 cache consistency 有更完整支援。依據 <a href="https://kubernetes.io/docs/reference/using-api/api-concepts/">Kubernetes API Concepts</a> 重繪整理。</figcaption>
 </figure>
 
-這裡有一個很容易被忽略的系統設計：**etcd 是 source of truth，不代表每次讀取都必須直接讀 etcd。**
+這裡有一個容易被忽略的設計點：**etcd 是 source of truth，不代表每次讀取都必須直接讀 etcd。**
 
-只要 API server 能維持明確 consistency semantics，就可以用 memory cache 承擔高頻 read path，把 etcd 留給 durable ordering 與 persistence。這和 HPC storage 很像：metadata durability 在 shared filesystem，不代表每次 `stat()` 都應穿透到最慢的 durable media；cache 是否安全，取決於 coherence contract，而不是「有沒有 cache」。
+只要 API server 能維持明確 consistency semantics，就可以用 memory cache 承擔高頻 read path，把 etcd 留給 durable ordering 與 persistence。這和 HPC storage 很像：metadata durability 在 shared filesystem，不代表每次 `stat()` 都應穿透到最慢的 durable media；cache 是否安全取決於 coherence contract。
 
 對未來半導體 design platform 也一樣。若 platform object 有幾十萬個 run、artifact、resource claim，而 agent/controller 全靠輪詢 PostgreSQL 主庫，最後一定會把 source of truth 當 message bus 使用。更可擴展的設計通常是：durable state 保持權威性，但 read model、watch stream、cache 與 queue 承擔 fan-out。
 
@@ -123,15 +123,15 @@ Kubernetes 的 API Priority and Fairness（APF）就是為這個 failure mode �
 
 Tape-out 前一天，幾百個 block 同時重跑 STA/APR；或 AI 平台一次提交數百個 worker 的 distributed job。這些 workload intent 都重要，但它們不應該有能力餓死 node health、storage attach、scheduler binding 或 control-plane leader election。
 
-換句話說，**API fairness 其實是 control-plane admission scheduling。** 它排的不是 CPU core 或 GPU，而是「哪些 state transition request 可以先消耗 API server 的有限 concurrency」。這和後面真正的 workload scheduler 是不同層次的 scheduling problem。
+API fairness 可以看成 control-plane admission scheduling：它排程的資源是 API server 的有限 concurrency，決定哪些 state transition request 先被處理，和 CPU core 或 GPU 無關。這與後面的 workload scheduler 是不同層次的 scheduling problem。
 
-## 對 AI / EDA / Foundry，API server 最有價值的不是「都改成 Pod」
+## AI / EDA / Foundry 平台可以複用 API server 的哪一部分
 
 走到這裡，就可以重新看一個常見爭論：既有 LSF/Slurm + NFS/SAN 的 EDA farm，要不要全部 Kubernetes 化？
 
 如果把 Kubernetes 的價值等同於 Pod runtime，答案很容易變成二選一：不是把 job 全部 containerize，就是繼續留在 LSF。
 
-但 kube-apiserver 提供的其實是另一個更有價值的切入點：**先統一 intent 與 policy mutation boundary，再決定 execution backend 要不要換。**
+kube-apiserver 提供另一個切入點：**先統一 intent 與 policy mutation boundary，再決定 execution backend 要不要換。**
 
 例如 `AprRun` 被 API 接受之後，controller 可以根據 policy 選擇：
 
@@ -154,25 +154,25 @@ API server 不需要成為這些 data path 的代理。它只需要保存「這�
 
 他只宣告：`AprRun.spec.priority=tapeout-critical`。Admission 決定這個 identity 能不能這樣要求；scheduler/control-plane controller 再把這個 intent 映射成 LSF queue、Kubernetes PriorityClass 或 dedicated reservation。未來 backend 從 LSF 換成 Slurm，甚至某些 stage 搬到 Kubernetes，flow intent 不必跟著重寫。
 
-這種 abstraction 才有平台價值：**把 organization policy 與 backend implementation 分開，但又保留可以向下追到真實 execution 的 evidence。**
+這種 abstraction 的平台價值在於把 organization policy 與 backend implementation 分開，同時保留可以向下追到實際 execution 的 evidence。
 
-反過來，如果平台只是包一層 REST API，背後仍允許每個 flow script 直接 `bsub`、直接 mount 任意 NFS、直接改資料庫 row，那就沒有真正形成 control plane。它只有 portal，沒有 authority boundary。
+反過來，如果平台只是包一層 REST API，背後仍允許每個 flow script 直接 `bsub`、直接 mount 任意 NFS、直接改資料庫 row，那就沒有形成 control plane。它只有 portal，沒有 authority boundary。
 
 ## kube-apiserver 的限制也很清楚：它只能治理被表達成 API state 的東西
 
-共同入口很強，但不能神化。
+共同入口能保證的範圍有明確邊界。
 
 kube-apiserver 能保證的是 API object mutation 的 policy、versioning 與 observation contract。它不會讓 512 GiB APR job 自動得到 NUMA-local memory；不會因為 PVC 建立成功，就保證 NFS metadata latency 足夠；也不會因為 RDMA device 已被分配，就保證 PFC/ECN、NIC queue、IRQ affinity 與 PCIe locality 正確。
 
-換句話說，API server 可以把「我要 32 CPU、512 GiB、某種 storage/network capability」寫成可治理的 intent，但**真正的 performance correctness 最後仍然落在 kubelet、cgroup、Linux scheduler、NUMA、VFS、block layer、TCP/RDMA、NIC 與 storage fabric。**
+API server 可以把「我要 32 CPU、512 GiB、某種 storage/network capability」寫成可治理的 intent，但 performance correctness 最後仍然落在 kubelet、cgroup、Linux scheduler、NUMA、VFS、block layer、TCP/RDMA、NIC 與 storage fabric。
 
 這也是為什麼這個系列不能停在 CRD/operator。
 
 我們先建立了 reconciliation：系統為什麼要從 state difference 重算，而不是相信 command history。現在再建立 API boundary：多個 control loop 為什麼需要一套共同、可版本化、可驗證的 cluster truth。
 
-下一個問題就避不掉了：如果 durable truth 最後存在 etcd，**etcd 到底如何讓多個 API server 在 machine failure、network delay、leader change 下仍對寫入順序有共同答案？**
+接下來的問題是：如果 durable truth 最後存在 etcd，etcd 如何讓多個 API server 在 machine failure、network delay、leader change 下仍對寫入順序有共同答案？
 
-下一篇會進入 Raft、quorum、MVCC、revision、linearizable read、watch 與 compaction。到那時，`resourceVersion` 背後那個真正負責「哪一個 state transition 先發生」的分散式系統才會浮出來。
+下一篇會進入 Raft、quorum、MVCC、revision、linearizable read、watch 與 compaction，也就是 `resourceVersion` 背後負責決定「哪一個 state transition 先發生」的分散式系統。
 
 ## References
 

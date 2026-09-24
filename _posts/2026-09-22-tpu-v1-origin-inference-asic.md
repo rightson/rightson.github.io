@@ -7,25 +7,23 @@ categories: ai-industry
 description: "TPU v1 的起點是一個成本問題：Google 估算，若語音搜尋大規模採用 DNN，既有 CPU 資料中心可能需要直接翻倍。這篇從 workload、P99 latency、INT8、systolic array、memory hierarchy 到 PCIe 整合，拆解第一代 TPU 為何長成這個樣子。"
 ---
 
-今天回頭看 TPU，很容易把它理解成「Google 自己做的 GPU」。這個理解會錯過整條技術演化最重要的起點：**第一代 TPU 並不是為了打造一顆更通用的平行處理器，而是 Google 發現，神經網路推論一旦變成大規模線上服務，CPU 的成本結構會先崩掉。**
+今天回頭看 TPU，很容易把它理解成「Google 自己做的 GPU」。這個理解會錯過整條技術演化的起點：第一代 TPU 的動機來自成本。Google 發現，神經網路推論一旦變成大規模線上服務，CPU 的成本結構會先崩掉；打造一顆更通用的平行處理器從來不是目標。
 
-2017 年 Google 在 ISCA 公開第一代 TPU 的實測論文時，揭露了一個比 92 TOPS 更關鍵的背景：2013 年內部估算，如果使用者每天只做約三分鐘的語音搜尋，而語音辨識全面改採深度神經網路，既有資料中心的計算量可能需要接近翻倍。Google 因此啟動高優先級 ASIC 專案，目標不是做一顆漂亮的研究晶片，而是在極短時間內把 inference 的 cost-performance 提升一個數量級；從設計到部署只用了約 15 個月。[Google Research 原始論文](https://research.google/pubs/in-datacenter-performance-analysis-of-a-tensor-processing-unit/)｜[ISCA 2017 PDF](https://arxiv.org/pdf/1704.04760)
+2017 年 Google 在 ISCA 公開第一代 TPU 的實測論文時，揭露了一個比 92 TOPS 更關鍵的背景：2013 年內部估算，如果使用者每天只做約三分鐘的語音搜尋，而語音辨識全面改採深度神經網路，既有資料中心的計算量可能需要接近翻倍。Google 因此啟動高優先級 ASIC 專案，目標是在極短時間內把 inference 的 cost-performance 提升一個數量級；從設計到部署只用了約 15 個月。[Google Research 原始論文](https://research.google/pubs/in-datacenter-performance-analysis-of-a-tensor-processing-unit/)｜[ISCA 2017 PDF](https://arxiv.org/pdf/1704.04760)
 
-這個決策奠定了之後十年的 TPU 路線：先找出真正限制 AI system economics 的瓶頸，再讓硬體、compiler、memory、network 和資料中心一起往那個瓶頸收斂。
+這個決策奠定了之後十年的 TPU 路線：先找出實際限制 AI system economics 的瓶頸，再讓硬體、compiler、memory、network 和資料中心一起往那個瓶頸收斂。
 
-## TPU 的起點不是 FLOPS，而是資料中心容量
+## TPU 的起點：資料中心容量
 
-2013 年的 Google 面對的問題不是「矩陣乘法能不能更快」，而是「如果 DNN inference 滲透到 Search、Translate、speech 等大量服務，現有機房能不能承受」。
+2013 年的 Google 面對的問題是「如果 DNN inference 滲透到 Search、Translate、speech 等大量服務，現有機房能不能承受」，比「矩陣乘法能不能更快」範圍大得多。
 
-兩者差很多。
+如果只是單一模型速度不足，可以加 CPU、換 GPU、增加 batch size。但如果 workload 本身正在快速滲透所有產品，硬體效率直接變成資料中心的 CAPEX、電力、rack 數量和服務容量。此時，把每一次 inference 的成本下降 2 倍，效果會超出 benchmark 數字，可能等價於少蓋大量 server。
 
-如果只是單一模型速度不足，可以加 CPU、換 GPU、增加 batch size。但如果 workload 本身正在快速滲透所有產品，硬體效率直接變成資料中心的 CAPEX、電力、rack 數量和服務容量。此時，把每一次 inference 的成本下降 2 倍，不只是 benchmark 變快，而可能等價於少蓋大量 server。
-
-Google 的論文指出，第一代 TPU 服務的六個代表性 neural-network workloads，包括 MLP、LSTM 與 CNN，覆蓋當時約 95% 的 TPU inference workload。值得注意的是，CNN 當時只佔其中很小一部分；MLP 與 LSTM 才是實際資料中心的重要負載。這也是一個很好的提醒：**accelerator 應該依真實 workload distribution 設計，而不是依當時最熱門的論文模型設計。**
+Google 的論文指出，第一代 TPU 服務的六個代表性 neural-network workloads，包括 MLP、LSTM 與 CNN，覆蓋當時約 95% 的 TPU inference workload。其中 CNN 當時只佔很小一部分；MLP 與 LSTM 才是實際資料中心的重要負載。accelerator 應該依實際 workload distribution 設計，當時最熱門的論文模型不一定具代表性。
 
 TPU v1 因此沒有試圖成為萬用 accelerator。Google 把 training 留給現成 GPU，把第一顆 TPU 專注在 production inference。
 
-## 真正的 KPI 是 P99 latency，不是把 GPU 跑滿
+## 服務端 KPI：P99 latency 與 GPU 利用率
 
 線上 inference 有一個與 HPC 很不同的限制：使用者正在等答案。
 
@@ -40,7 +38,7 @@ Google 在 TPU v1 論文中特別強調 99th-percentile response time。CPU/GPU 
 - 不需要複雜的 CPU-style speculative machinery，把 transistor budget 留給 MAC array 與 SRAM。
 - execution 越可預測，scheduler 越容易估算 capacity，也越容易守住 SLO。
 
-所以第一代 TPU 的設計核心不是「比 GPU 多多少 ALU」，而是：**在 latency SLO 之內，能完成多少 inference。**
+所以第一代 TPU 的設計目標是在 latency SLO 之內完成盡量多的 inference，「比 GPU 多多少 ALU」並不是衡量標準。
 
 
 <figure>
@@ -56,9 +54,9 @@ training 與 inference 的數值需求不同。
 
 TPU v1 因而把主力資料路徑設計成 8-bit multiply。Google 當年的論文引用硬體成本比較指出，8-bit integer multiply 相對 16-bit floating-point multiply，可以顯著降低 energy 與 area。
 
-這件事的重要性不只是「INT8 比 FP16 小一半」。
+影響不止於「INT8 比 FP16 小一半」。
 
-假設晶片面積與功耗預算固定，單一 MAC 越便宜，就可以放越多 MAC；同時 SRAM 與資料搬移也能用更窄的 datapath。換句話說，quantization 不是單純 software optimization，而是直接改變 silicon economics。
+假設晶片面積與功耗預算固定，單一 MAC 越便宜，就可以放越多 MAC；同時 SRAM 與資料搬移也能用更窄的 datapath。因此 quantization 除了是 software optimization，也直接改變 silicon economics。
 
 TPU v1 把這個優勢推到很極端：核心 Matrix Multiply Unit 是一個 **256 × 256 的 MAC array**，總共有：
 
@@ -70,17 +68,17 @@ TPU v1 把這個優勢推到很極端：核心 Matrix Multiply Unit 是一個 **
 
 這就是論文所報告約 92 TOPS 的來源。
 
-92 TOPS 本身沒有神秘之處。真正的工程選擇是：Google 願意犧牲 general-purpose flexibility，換來 65,536 個低精度 MAC 可以在很小的控制成本下規律運轉。
+92 TOPS 本身沒有神秘之處。工程上的選擇在於 Google 願意犧牲 general-purpose flexibility，換來 65,536 個低精度 MAC 可以在很小的控制成本下規律運轉。
 
-## 256×256 systolic array：重點是少搬資料，不只是多做乘法
+## 256×256 systolic array：減少資料搬移
 
-如果只把 65,536 個乘法器堆在晶片上，還不會自然得到高效率。最大的敵人往往不是 arithmetic，而是 data movement。
+如果只把 65,536 個乘法器堆在晶片上，還不會自然得到高效率。能量與頻寬的主要消耗往往在 data movement，arithmetic 反而便宜。
 
-從 SRAM 讀一次資料所消耗的能量，可能比一次窄位元 multiply-add 高得多；更不用說從 off-chip DRAM 搬資料。於是 TPU v1 使用 systolic execution：資料像波一樣穿過規律排列的 processing elements，讓同一份 weight 或 activation 在 array 內被重複使用，而不是每次 MAC 都回 Unified Buffer 重新讀取。
+從 SRAM 讀一次資料所消耗的能量，可能比一次窄位元 multiply-add 高得多；更不用說從 off-chip DRAM 搬資料。於是 TPU v1 使用 systolic execution：資料像波一樣穿過規律排列的 processing elements，讓同一份 weight 或 activation 在 array 內被重複使用，不必每次 MAC 都回 Unified Buffer 重新讀取。
 
 TPU 的 MatrixMultiply 指令可以把一個 `B × 256` 的 input，乘上一個 `256 × 256` 的 weight tile，輸出 `B × 256`。weight 從 array 上方載入，activation 從另一方向流入，partial sum 沿規律路徑累積。
 
-把它想成工廠輸送帶會比較精確：不是 65,536 個工人各自跑去倉庫拿零件，而是零件沿著固定路徑經過每一站，每一站只做自己那個 MAC。
+把它想成工廠輸送帶會比較精確：零件沿著固定路徑經過每一站，每一站只做自己那個 MAC，65,536 個工人都不必各自跑去倉庫拿零件。
 
 
 <figure>
@@ -88,7 +86,7 @@ TPU 的 MatrixMultiply 指令可以把一個 `B × 256` 的 input，乘上一個
   <figcaption>圖 2｜Systolic array 中 input、weight 與 partial sum 以規律方式在相鄰 MAC 間流動，核心價值是資料重用而非單純堆疊乘法器。來源：<a href="https://cloud.google.com/blog/products/ai-machine-learning/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu">Google Cloud TPU architecture deep dive</a>。</figcaption>
 </figure>
 
-這帶來三個效果：
+這帶來幾個效果：
 
 1. 大量 MAC 可以共享資料流，降低 SRAM read/write 次數。
 2. control logic 可以非常小，因為資料與計算模式高度規律。
@@ -96,7 +94,7 @@ TPU 的 MatrixMultiply 指令可以把一個 `B × 256` 的 input，乘上一個
 
 論文公開的 floorplan 很能說明設計哲學：control 只佔很小比例，大片面積留給 Matrix Multiply Unit、Unified Buffer 與 accumulators。這幾乎就是 domain-specific accelerator 的視覺化定義。
 
-## 24 MiB Unified Buffer：TPU v1 其實已經在對抗 memory wall
+## 24 MiB Unified Buffer：TPU v1 與 memory wall
 
 TPU v1 常被記住的是 256×256 systolic array，但如果只看到 compute，會漏掉下一代 TPU 為什麼必然出現。
 
@@ -110,19 +108,19 @@ TPU v1 常被記住的是 256×256 systolic array，但如果只看到 compute�
 
 `8 GiB DDR3 Weight Memory → Weight FIFO → Matrix Unit`
 
-這是一個非常重要的架構分界。CPU 習慣讓 cache hierarchy 猜測什麼資料接下來會被使用；TPU 更傾向讓 software/compiler 明確安排資料的位置與搬移。代價是 compiler/runtime 必須更懂硬體，收益則是 predictability 與更低的硬體控制成本。
+這是一個重要的架構分界。CPU 習慣讓 cache hierarchy 猜測什麼資料接下來會被使用；TPU 更傾向讓 software/compiler 明確安排資料的位置與搬移。代價是 compiler/runtime 必須更懂硬體，收益則是 predictability 與更低的硬體控制成本。
 
-更有意思的是，Google 的實測顯示六個代表 workload 中有四個受到 memory bandwidth 限制。論文甚至估算，如果把 TPU 的 memory system 換成當時 K80 等級的 GDDR5 bandwidth，實際 TOPS 可以大幅增加。
+Google 的實測顯示六個代表 workload 中有四個受到 memory bandwidth 限制。論文甚至估算，如果把 TPU 的 memory system 換成當時 K80 等級的 GDDR5 bandwidth，實際 TOPS 可以大幅增加。
 
-也就是說，**第一代 TPU 在成功把 MAC 做得極度便宜之後，立刻撞上 memory wall。**
+第一代 TPU 把 MAC 做得極度便宜之後，立刻撞上 memory wall。
 
-這正是之後 TPU v2 開始採用 HBM、走向 training 的合理下一步，而不是單純把 systolic array 再放大。
+之後 TPU v2 採用 HBM、走向 training，是順著這個瓶頸的下一步；單純把 systolic array 再放大解決不了問題。
 
-## 為什麼它是 PCIe 卡，而不是重做整台伺服器
+## PCIe 卡形式與既有伺服器整合
 
 TPU v1 還有一個容易被忽略的設計決策：它是一張 PCIe Gen3 x16 coprocessor card，可以插進既有 server。
 
-這不是最理想的 accelerator integration，卻是極佳的 time-to-deployment 決策。
+就 accelerator integration 而言並非最理想，但從 time-to-deployment 看是很好的決策。
 
 Google 當時最重要的是快速把 inference capacity 拉上來。如果第一代 TPU 同時要求新 host CPU、新 motherboard、新 rack、新 network 與新的 programming model，整個專案可能來不及解決 2013 年看到的容量問題。
 
@@ -133,7 +131,7 @@ Google 當時最重要的是快速把 inference capacity 拉上來。如果第�
 - host 透過 PCIe 把指令送進 TPU；
 - TPU 儘可能一次把整個 model 從 input 跑到 output，減少 host-device interaction。
 
-甚至 instruction fetch 都沒有設計成完整 processor 的樣子，而是由 host 把 TPU instructions 送進 instruction buffer。整顆 TPU 更接近一個大型、可程式化的 matrix coprocessor，而不是另一顆 CPU。
+甚至 instruction fetch 都沒有設計成完整 processor 的樣子，由 host 把 TPU instructions 送進 instruction buffer。整顆 TPU 更接近一個大型、可程式化的 matrix coprocessor，和 CPU 相去甚遠。
 
 
 <figure>
@@ -142,9 +140,9 @@ Google 當時最重要的是快速把 inference capacity 拉上來。如果第�
 </figure>
 
 
-這個決策揭露了一個很值得記住的系統原則：**第一代專用硬體的最佳架構，不一定是理論上最漂亮的架構，而是能最快嵌入既有 production system 的架構。**
+這個決策反映出一個系統原則：第一代專用硬體的最佳架構，往往是能最快嵌入既有 production system 的那一個，理論上最漂亮的架構未必適用。
 
-## TPU v1 解決了 compute economics，卻故意留下很多問題
+## TPU v1 刻意留下的未解問題
 
 TPU v1 的成功不代表它已經是一個完整 AI supercomputer。
 
@@ -158,6 +156,6 @@ TPU v1 的成功不代表它已經是一個完整 AI supercomputer。
 
 到了 2026 年，Google 已經公開第八代 TPU，並第一次把同一世代分成偏 training 的 TPU 8t 與偏 inference / post-training 的 TPU 8i；第七代 Ironwood 則已在 Google Cloud GA。[Google Cloud TPU](https://cloud.google.com/tpu)｜[第八代 TPU architecture deep dive](https://cloud.google.com/blog/products/compute/tpu-8t-and-tpu-8i-technical-deep-dive)
 
-從 v1 到 TPU 8，最值得研究的不是 TOPS 增加了多少，而是**每一代 TPU 都在追逐上一代成功之後暴露出的下一個瓶頸。**
+從 v1 到 TPU 8，比 TOPS 增幅更值得追蹤的，是每一代 TPU 如何處理上一代成功之後暴露出的下一個瓶頸。
 
-下一篇就從這顆晶片最具代表性的結構進一步往下拆：**256×256 systolic array 到底如何讓 65,536 個 MAC 在每個 cycle 持續工作，以及 tile、weight reuse、accumulator 與 double buffering 如何共同決定實際效率。**
+下一篇就從這顆晶片最具代表性的結構往下拆：256×256 systolic array 如何讓 65,536 個 MAC 在每個 cycle 持續工作，以及 tile、weight reuse、accumulator 與 double buffering 如何共同決定實際效率。

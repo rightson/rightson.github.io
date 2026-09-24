@@ -9,11 +9,11 @@ series: distributed-systems
 series_order: 1
 ---
 
-短網址看起來幾乎沒有系統設計難度：存一筆 `slug → destination`，收到 `GET /slug` 後查表，再回一個 redirect。真正開始放大後，問題卻很快從「查一筆 key-value」變成三個完全不同的責任：誰保證 slug 永遠不會指向兩個目的地、誰保證建立請求重送十次仍只有一個結果，以及 cache 故障時誰有能力阻止幾十倍的回源流量把資料庫一起拖垮。
+短網址看起來幾乎沒有系統設計難度：存一筆 `slug → destination`，收到 `GET /slug` 後查表，再回一個 redirect。流量放大後，問題卻很快從「查一筆 key-value」變成三個完全不同的責任：誰保證 slug 永遠不會指向兩個目的地、誰保證建立請求重送十次仍只有一個結果，以及 cache 故障時誰有能力阻止幾十倍的回源流量把資料庫一起拖垮。
 
 這三件事不能交給同一個「高可用資料庫」模糊處理。唯一性需要一個權威寫入邊界；重試需要把「同一個意圖」變成可辨認的狀態；低延遲則必須允許大量讀取停留在非權威 cache。系統越大，越需要刻意把 correctness 與 acceleration 拆開。
 
-以下設計不是某個既有產品的公開架構，而是一個帶明確假設的工程模型。目標是看清楚：什麼狀態必須強一致，什麼狀態可以丟，什麼流量可以降級，以及一個看似單純的 redirect 如何演變成典型的分散式系統問題。
+以下設計是一個帶明確假設的工程模型，並非任何既有產品的公開架構。目標是看清楚：什麼狀態必須強一致，什麼狀態可以丟，什麼流量可以降級，以及一個看似單純的 redirect 如何演變成典型的分散式系統問題。
 
 ## 先把服務邊界縮到只剩兩件事
 
@@ -76,17 +76,17 @@ redirect 平均約：
 
 若尖峰約 10 倍，就是 23 萬 reads/s。
 
-這個比例先告訴我們一件事：第一個瓶頸大概率不是「建立連結的寫入吞吐」。幾千次每秒的寫入，即使放在具唯一索引與交易能力的單一主資料庫，也還有相當大的工程空間。真正會先把系統推向分散式的是讀流量、熱門 key，以及資料累積後索引工作集變大。
+這個比例先告訴我們一件事：第一個瓶頸大概率不是「建立連結的寫入吞吐」。幾千次每秒的寫入，即使放在具唯一索引與交易能力的單一主資料庫，也還有相當大的工程空間。會先把系統推向分散式的是讀流量、熱門 key，以及資料累積後索引工作集變大。
 
 再估儲存。若每筆 link row 含目的 URL、slug、owner、建立時間、狀態、版本及必要索引，粗估 300 bytes：
 
 `20M × 365 × 300 B ≈ 2.19 TB/year`
 
-就算乘上三份複寫，再算索引與空間放大到原始資料的 1.5 倍，也大約是 10 TB/year 等級。它不是小數字，但也不是需要一開始就建立全球多主資料庫的理由。反過來說，若 99% redirect 都命中 cache，23 萬 QPS 的尖峰只留下約 2,300 QPS 回到權威儲存；若 cache fleet 同時失效，回源卻會瞬間放大到原本的 100 倍。**短網址的主要容量風險因此不是平均資料量，而是 cache mode switch。**
+就算乘上三份複寫，再算索引與空間放大到原始資料的 1.5 倍，也大約是 10 TB/year 等級。這個量不小，但還不足以支撐一開始就建立全球多主資料庫。另一方面，若 99% redirect 都命中 cache，23 萬 QPS 的尖峰只留下約 2,300 QPS 回到權威儲存；若 cache fleet 同時失效，回源卻會瞬間放大到原本的 100 倍。因此短網址的主要容量風險來自 cache mode switch，平均資料量反而其次。
 
-AWS Builders' Library 將這類情況描述得很精準：cache 一開始只是降低延遲與成本，久了下游容量會逐漸依賴 cache hit ratio；一旦 cold cache 或 cache fleet 故障，原本的加速層就變成容量相依。[Caching challenges and strategies](https://aws.amazon.com/builders-library/caching-challenges-and-strategies/) 特別提醒，若沒有為 cache miss 模式保留足夠下游容量，cache 就不是單純 latency cache，而是 capacity cache。
+AWS Builders' Library 將這類情況描述得很精準：cache 一開始只是降低延遲與成本，久了下游容量會逐漸依賴 cache hit ratio；一旦 cold cache 或 cache fleet 故障，原本的加速層就變成容量相依。[Caching challenges and strategies](https://aws.amazon.com/builders-library/caching-challenges-and-strategies/) 特別提醒，若沒有為 cache miss 模式保留足夠下游容量，cache 就已從 latency cache 變成 capacity cache。
 
-這個分類會決定故障策略。若資料庫只能承受 5,000 QPS，而 redirect 平常是 200,000 QPS，那 cache 故障時「直接全部回源」根本不是降級，而是把局部故障轉成全站故障。
+這個分類會決定故障策略。若資料庫只能承受 5,000 QPS，而 redirect 平常是 200,000 QPS，那 cache 故障時「直接全部回源」等於把局部故障轉成全站故障。
 
 ## slug 產生器只能提出候選，唯一索引才有權宣布成功
 
@@ -100,9 +100,9 @@ AWS Builders' Library 將這類情況描述得很精準：cache 一開始只是�
 
 如果用隨機 7 字元 slug，很多設計會說「空間有 3.5 兆，碰撞幾乎不可能」。這句話少了使用量。
 
-若系統累積 10 億個有效 slug，空間占用率約 `1e9 / 3.52e12 = 0.028%`。對下一次隨機產生而言，撞到既有值的機率也是約 0.028%，平均約每 3,500 次建立就會遇到一次 collision。這不是災難，但已經遠遠不是「永遠不會發生」。如果累積到 100 億條，單次 collision 機率就接近 0.28%。
+若系統累積 10 億個有效 slug，空間占用率約 `1e9 / 3.52e12 = 0.028%`。對下一次隨機產生而言，撞到既有值的機率也是約 0.028%，平均約每 3,500 次建立就會遇到一次 collision。這不算災難，但離「永遠不會發生」已經很遠。如果累積到 100 億條，單次 collision 機率就接近 0.28%。
 
-真正可靠的設計因此不是把亂數位數拉到一個讓人心安的數字，而是：
+可靠的設計不靠把亂數位數拉到讓人心安的長度，流程是：
 
 1. generator 產生 candidate slug；
 2. 權威資料庫對 `slug` 設唯一約束；
@@ -111,9 +111,9 @@ AWS Builders' Library 將這類情況描述得很精準：cache 一開始只是�
 
 這裡資料庫 unique constraint 才是 uniqueness authority。亂數品質只影響 collision retry 的頻率與可猜測性，不負責 correctness。
 
-另一條路是取單調遞增 ID 再做 Base62。優點是沒有 collision retry，而且 slug 可以很短；缺點是直接暴露建立量與順序，也把 ID allocation 變成跨節點協調問題。可以使用區段預配、時間型 ID 或其他方法降低中央 allocator 壓力，但那其實已經進入下一層問題。這篇的建立 QPS 不高，因此我會先選「足夠大的 random slug + unique constraint」，把複雜度留給真正需要它的地方。
+另一條路是取單調遞增 ID 再做 Base62。優點是沒有 collision retry，而且 slug 可以很短；缺點是直接暴露建立量與順序，也把 ID allocation 變成跨節點協調問題。可以使用區段預配、時間型 ID 或其他方法降低中央 allocator 壓力，但那其實已經進入下一層問題。這篇的建立 QPS 不高，因此我會先選「足夠大的 random slug + unique constraint」，把複雜度留給需要它的地方。
 
-自訂 alias 則完全不同。`/apple` 不是「隨機 collision」，而是資源競爭。它必須直接走唯一索引，失敗就回 `409 Conflict`；不能偷偷改成 `/apple1`，因為那改變了呼叫者的語意。
+自訂 alias 則完全不同。`/apple` 的衝突屬於資源競爭，和隨機 collision 無關。它必須直接走唯一索引，失敗就回 `409 Conflict`；不能偷偷改成 `/apple1`，因為那改變了呼叫者的語意。
 
 ## 網路逾時最危險的地方，是你不知道剛才到底有沒有成功
 
@@ -148,7 +148,7 @@ idempotency
   UNIQUE (tenant_id, idempotency_key)
 ```
 
-真正重要的是：`idempotency` 記錄與 link 建立必須處在同一個原子提交邊界。不能先 insert link，稍後「best effort」補 idempotency row；也不能先記 key，再另外建立 link。AWS 在 [Making retries safe with idempotent APIs](https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/) 強調了同一件事：辨認 request token 與執行 mutation 的狀態必須具有 all-or-nothing 性質，否則服務仍會掉進「資源建立成功但 token 沒記到」或相反的裂縫。
+關鍵在於：`idempotency` 記錄與 link 建立必須處在同一個原子提交邊界。不能先 insert link，稍後「best effort」補 idempotency row；也不能先記 key，再另外建立 link。AWS 在 [Making retries safe with idempotent APIs](https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/) 強調了同一件事：辨認 request token 與執行 mutation 的狀態必須具有 all-or-nothing 性質，否則服務仍會掉進「資源建立成功但 token 沒記到」或相反的裂縫。
 
 ![建立連結時的冪等與碰撞邊界](/images/distributed-systems/2026-09-24/short-url-idempotency.svg)
 
@@ -175,13 +175,13 @@ insert idempotency(tenant, key, request_hash, slug, response)
 COMMIT
 ```
 
-同一個 key 如果被兩台 server 同時處理，應由 `(tenant_id, idempotency_key)` unique constraint 決定唯一 winner。loser 重新讀取已提交結果並回相同語義，而不是靠 process-local lock。這就是「狀態擁有者」的重要性：application mutex 只在單一 process 內有效；資料庫約束才看得到所有 writer。
+同一個 key 如果被兩台 server 同時處理，應由 `(tenant_id, idempotency_key)` unique constraint 決定唯一 winner。loser 重新讀取已提交結果並回相同語義，不依賴 process-local lock。原因在於狀態擁有者的範圍：application mutex 只在單一 process 內有效；資料庫約束才看得到所有 writer。
 
 idempotency record 要保留多久，則是 API contract。若只保留 24 小時，代表 24 小時後的相同 key 可以被當成新 intent；若希望同一 key 永遠代表同一資源，就必須把這個綁定保存得和 link 一樣久。不能一邊承諾永久冪等，一邊讓 dedup table 每天清空。
 
 還有一個容易忽略的情況：同一個 idempotency key，第二次 request 換了 URL。這不能直接回第一次結果，否則 caller 會以為新參數生效。最安全的契約是保存 canonicalized request hash；key 相同但內容不同就回 validation error。AWS 的文章也明確討論了這種「same request ID, different intent」。
 
-## redirect path 的第一原則：cache 可以消失，權威狀態不能倒過來依賴它
+## redirect path：可丟棄的 cache 與權威狀態的依賴方向
 
 讀取最簡單的路徑是 cache-aside：
 
@@ -205,9 +205,9 @@ expires_at
 cached_at
 ```
 
-cache eviction 不影響 correctness，只影響 latency 與下游 load。這個界線非常重要。Facebook 在 NSDI 2013 的 [Scaling Memcache at Facebook](https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/nishtala) 也明確把 memcache 放在非權威位置：cache miss 回到持久層；write 先修改 database，再刪除 stale cache。論文同時顯示，cache 一旦被用在極大規模，真正困難的不是 hash table，而是 stale set、thundering herd 與故障時回源行為。
+cache eviction 不影響 correctness，只影響 latency 與下游 load。這個界線非常重要。Facebook 在 NSDI 2013 的 [Scaling Memcache at Facebook](https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/nishtala) 也明確把 memcache 放在非權威位置：cache miss 回到持久層；write 先修改 database，再刪除 stale cache。論文同時顯示，cache 一旦被用在極大規模，難點會落在 stale set、thundering herd 與故障時回源行為，hash table 本身反而簡單。
 
-對不存在的 slug 也要做短時間 negative caching。公開短網址空間一定會被 crawler、scanner、拼字錯誤與惡意 enumeration 掃描。若每個 404 都打資料庫，一個簡單的 random scan 就能繞過 positive cache。negative cache 例如 5–30 秒，不需要長；它的目的不是把不存在狀態永久記住，而是把短時間重複 miss 擋在持久層前面。
+對不存在的 slug 也要做短時間 negative caching。公開短網址空間一定會被 crawler、scanner、拼字錯誤與惡意 enumeration 掃描。若每個 404 都打資料庫，一個簡單的 random scan 就能繞過 positive cache。negative cache 例如 5–30 秒，不需要長；它只負責把短時間重複 miss 擋在持久層前面，不用永久記住不存在狀態。
 
 但 cache hit ratio 不能只看整體平均。假設有一個熱門 slug 突然收到 80,000 QPS，其他流量合計 120,000 QPS。如果 shared cache 以 `hash(slug)` 單點路由，那這個 key 可能把單一 cache shard 打滿，即使整體 fleet CPU 只用 20%。Facebook 的論文就記錄過單一 key 可能占一台 memcached server 約 20% 的請求，並指出故障後若單純把 key 重新 hash 到剩餘節點，會把 hot key 壓力轉嫁給另一台 server，形成連鎖風險。
 
@@ -220,7 +220,7 @@ cache eviction 不影響 correctness，只影響 latency 與下游 load。這個
 
 這個做法犧牲了一點記憶體效率，卻把「一個 key 對應一個 cache owner」改成「越熱門的 key 越自然複製到更多 redirect process」。對 read-heavy redirect 服務，這通常比追求完美 cache memory utilization 更重要。
 
-## cache invalidation 真正的 bug 不是忘了 delete，而是 delete 之後舊資料又被塞回來
+## cache invalidation 的競態：delete 之後舊資料被回填
 
 假設一個連結因 abuse 被停用。寫入流程如果只是：
 
@@ -231,17 +231,17 @@ cache eviction 不影響 correctness，只影響 latency 與下游 load。這個
 
 在更新前，reader A cache miss，去 database 讀到舊的 `ACTIVE`。接著管理者把 database 改成 `DISABLED` 並 delete cache。最後 reader A 才把剛才讀到的舊 `ACTIVE` 寫回 cache。結果是「invalidate 成功之後，舊資料復活」。
 
-這就是 stale set。Nishtala 等人在 Facebook 的 memcache 設計中使用 lease：cache miss 時只讓持有特定 token 的 client 回填；如果期間發生 delete，lease 被 invalidated，舊 reader 即使晚到也無法再把 stale value 寫回。論文也用 lease 抑制 thundering herd，對同一 key 控制能取得 refill token 的 client；在其公開測量中，一組容易 herd 的 key，其 cache miss 導致的 peak database query rate 從 17K/s 降到 1.3K/s。[Scaling Memcache at Facebook](https://www.usenix.org/system/files/conference/nsdi13/nsdi13-final170.pdf)
+這種情況稱為 stale set。Nishtala 等人在 Facebook 的 memcache 設計中使用 lease：cache miss 時只讓持有特定 token 的 client 回填；如果期間發生 delete，lease 被 invalidated，舊 reader 即使晚到也無法再把 stale value 寫回。論文也用 lease 抑制 thundering herd，對同一 key 控制能取得 refill token 的 client；在其公開測量中，一組容易 herd 的 key，其 cache miss 導致的 peak database query rate 從 17K/s 降到 1.3K/s。[Scaling Memcache at Facebook](https://www.usenix.org/system/files/conference/nsdi13/nsdi13-final170.pdf)
 
 短網址不一定要複製 Facebook 的完整實作，但必須解決同一個時序問題。可採三種層級：
 
-**方案 A：短 TTL，接受有界 stale。**  
+方案 A：短 TTL，接受有界 stale。  
 最簡單。L1 只 cache 5 秒，shared cache 30 秒。停用後最差 30 秒仍可能 redirect。若產品容許，這是最低成本解。
 
-**方案 B：invalidation + refill lease/fencing。**  
+方案 B：invalidation + refill lease/fencing。  
 cache miss 取得 refill token；disable/update 會推進該 key 的 generation，使舊 token 失效。舊 reader 無法在 invalidation 後重新填入舊資料。這能把 stale window 壓到 event propagation 與正在執行請求的邊界。
 
-**方案 C：每次 redirect 都查權威狀態。**  
+方案 C：每次 redirect 都查權威狀態。  
 correctness 最直觀，卻幾乎放棄 cache 的容量價值。除非停用即時性是絕對要求，而且流量很小，否則這不是合理預設。
 
 我的選擇是 B 作為 shared cache 的 correctness boundary，加上短 L1 TTL。對安全停用事件，再主動 broadcast L1 invalidation。如此即使某節點漏掉事件，TTL 仍提供最終上限；若整個 invalidation bus 故障，也不會永久把 stale state 留住。
@@ -250,20 +250,20 @@ correctness 最直觀，卻幾乎放棄 cache 的容量價值。除非停用即�
 
 *圖：作者設計；stale set 與 lease 機制依據 Rajesh Nishtala 等人於 NSDI 2013 發表的 [Scaling Memcache at Facebook](https://www.usenix.org/system/files/conference/nsdi13/nsdi13-final170.pdf) 整理。*
 
-## cold cache 不是「變慢」，而是另一種負載模型
+## cold cache 下的負載模型
 
 再看第二個故障。
 
 正常尖峰 200,000 redirect QPS，整體 cache hit ratio 99%，database 約 2,000 QPS。某次 shared cache fleet 因設定錯誤全部 restart。若所有 redirect server 立即把 miss 送到 database，後端負載瞬間變成 200,000 QPS。
 
-這不是普通的 1% latency regression，而是服務模式從「99% RAM lookup」切換成「100% persistent lookup」。Google SRE 在 [Addressing Cascading Failures](https://sre.google/sre-book/addressing-cascading-failures/) 特別指出，cold cache 會讓原本便宜的請求突然變昂貴；若服務容量是按 warm-cache 狀態規劃，重新啟動本身就可能造成 outage。AWS 也建議對 miss 使用 request coalescing，避免同一 uncached resource 同時發出大量下游請求。
+這已超出普通的 1% latency regression：服務模式從「99% RAM lookup」切換成「100% persistent lookup」。Google SRE 在 [Addressing Cascading Failures](https://sre.google/sre-book/addressing-cascading-failures/) 特別指出，cold cache 會讓原本便宜的請求突然變昂貴；若服務容量是按 warm-cache 狀態規劃，重新啟動本身就可能造成 outage。AWS 也建議對 miss 使用 request coalescing，避免同一 uncached resource 同時發出大量下游請求。
 
 所以恢復策略不能是「讓所有 miss 自由回源」：
 
 1. L1 cache 即使 shared cache 重啟仍保留一部分熱門 key。
 2. 同一 process 對相同 slug 的 concurrent miss 做 singleflight/request coalescing。
 3. shared cache refill 也用 lease，讓同一 key 只有少數 request 回源。
-4. database 前設 admission control；超過安全 QPS 時，不是排出無限長 queue，而是快速拒絕部分 miss。
+4. database 前設 admission control；超過安全 QPS 時快速拒絕部分 miss，不排出無限長 queue。
 5. 對近期曾成功 cache 的 ACTIVE link，可在明確 bounded stale policy 下暫時 serve stale；對 `DISABLED`、過期與安全敏感狀態不可反向復活。
 6. cache fleet 回復時逐步導入流量並預熱，不把 100% request 一次灌入 cold nodes。
 
@@ -271,7 +271,7 @@ correctness 最直觀，卻幾乎放棄 cache 的容量價值。除非停用即�
 
 如果 link 建立後 immutable，而且 disable 最慢允許 30 秒生效，答案可以是「有限度地可以」。若該 cache entry 的 hard TTL 未超過 30 秒，服務權威 store 故障時仍回 redirect，availability 會高很多。但如果業務要求 abuse takedown 立即生效，stale serving 就與安全不變量衝突。此時寧可讓部分 redirect 失敗，也不能把已停用的惡意連結重新放出來。
 
-所以「可不可以 serve stale」不是 cache 技術問題，而是產品狀態語義問題。
+所以「可不可以 serve stale」要由產品狀態語義決定，cache 技術本身給不出答案。
 
 ## 301、302 與 CDN：省掉 origin QPS，也可能省掉你的控制權
 
@@ -285,15 +285,15 @@ correctness 最直觀，卻幾乎放棄 cache 的容量價值。除非停用即�
 
 第三，cache purge 變成 control plane 的一部分。只要產品允許停用，edge cache 就必須有 bounded TTL 或可靠 purge；否則「資料庫已 disabled」與「全球 client 仍繼續 redirect」可以同時為真。
 
-因此我不會用 HTTP status 當純粹效能選項。它其實在決定「誰掌握未來 redirect 的控制權」。基線設計用 `302`，並透過 [RFC 9111：HTTP Caching](https://www.rfc-editor.org/rfc/rfc9111.html) 定義的明確 freshness / Cache-Control 控制允許的 edge caching；若之後推出真正 immutable link，才提供可長期快取的 permanent mode。
+因此 HTTP status 不宜當成純粹的效能選項，它同時決定了誰掌握未來 redirect 的控制權。基線設計用 `302`，並透過 [RFC 9111：HTTP Caching](https://www.rfc-editor.org/rfc/rfc9111.html) 定義的明確 freshness / Cache-Control 控制允許的 edge caching；若之後推出確定 immutable 的 link，才提供可長期快取的 permanent mode。
 
-click event 也不應成為 redirect correctness 的同步依賴。redirect 成功後可以把 event 寫入 local buffer 或非同步 pipeline；analytics pipeline 壅塞時允許 drop、sample 或延後，不該讓使用者因為計數服務故障而無法跳轉。等到需要精確事件語義時，再處理 durable queue 與 consumer offset，而不是在第一版把所有副作用塞進 redirect transaction。
+click event 也不應成為 redirect correctness 的同步依賴。redirect 成功後可以把 event 寫入 local buffer 或非同步 pipeline；analytics pipeline 壅塞時允許 drop、sample 或延後，不該讓使用者因為計數服務故障而無法跳轉。等到需要精確事件語義時，再處理 durable queue 與 consumer offset；第一版不必把所有副作用塞進 redirect transaction。
 
 ## expiry 與 delete 不能只靠 TTL，因為「不存在」也有語義
 
-短網址還有一個容易被忽略的狀態：`EXPIRED`、`DISABLED` 與真正的 `NOT_FOUND` 不能全部壓成同一個 cache miss。
+短網址還有一個容易被忽略的狀態：`EXPIRED`、`DISABLED` 與從未存在的 `NOT_FOUND` 不能全部壓成同一個 cache miss。
 
-如果一筆 link 到期後直接從 database hard delete，後續 request 看到 404，看起來很乾淨；但這會失去幾個重要能力：無法判斷 slug 是否曾經被使用、無法阻止舊 slug 被重新分配給另一個目的地，也無法在 abuse investigation 或 audit 時追溯曾經存在的狀態。更危險的是，如果 slug 可以被回收，舊 email、QR code 或瀏覽器歷史中的同一短網址，幾個月後可能突然指向完全不同的網站。這不是 storage cleanup，而是 identifier reuse 改變了外部契約。
+如果一筆 link 到期後直接從 database hard delete，後續 request 看到 404，看起來很乾淨；但這會失去幾個重要能力：無法判斷 slug 是否曾經被使用、無法阻止舊 slug 被重新分配給另一個目的地，也無法在 abuse investigation 或 audit 時追溯曾經存在的狀態。更危險的是，如果 slug 可以被回收，舊 email、QR code 或瀏覽器歷史中的同一短網址，幾個月後可能突然指向完全不同的網站。identifier reuse 改變的是外部契約，影響遠超過 storage cleanup。
 
 因此基線設計把 slug 視為永久占用的 namespace。record 可進入：
 
@@ -302,25 +302,25 @@ click event 也不應成為 redirect correctness 的同步依賴。redirect 成�
 
 但不把 slug 重新配置給其他 destination。payload 可以在 retention policy 到期後縮成 tombstone，只保留 slug、final state、必要 audit metadata。RFC 9110 對 `410 Gone` 的語義是「資源已經有意永久不可用」；如果產品希望明確區分「從沒存在」與「曾存在但已移除」，可以讓 `NOT_FOUND → 404`、`DISABLED/EXPIRED tombstone → 410`，但這屬於對外 API 契約，不能因為清資料方便就臨時改動。
 
-這也改變 negative cache。404 可以短暫 cache，例如 10 秒，用來吸收 scanner；410 tombstone 卻可以 cache 更久，因為它已是權威終態。兩者都不是「查不到所以一樣」。一旦狀態有語義，cache key/value 就必須保留足以做正確判斷的資訊。
+這也改變 negative cache。404 可以短暫 cache，例如 10 秒，用來吸收 scanner；410 tombstone 卻可以 cache 更久，因為它已是權威終態。兩者雖然都「查不到」，意義並不相同。一旦狀態有語義，cache key/value 就必須保留足以做正確判斷的資訊。
 
-如果未來法規或隱私要求必須刪除 destination 本文，也可以保留不可逆 tombstone：slug digest、狀態與時間，而不是保留完整 URL。這讓「不可重新使用 identifier」與「刪除敏感內容」可以同時成立。
+如果未來法規或隱私要求必須刪除 destination 本文，也可以保留不可逆 tombstone：slug digest、狀態與時間，不保留完整 URL。這讓「不可重新使用 identifier」與「刪除敏感內容」可以同時成立。
 
-## 可用性不是讓所有元件都變成四個九，而是知道哪條路徑必須活著
+## 可用性設計：哪條路徑必須活著
 
 redirect 與 create 的 failure domain 不需要完全相同。建立服務掛掉 10 分鐘，既有短網址仍應該能跳轉；analytics pipeline 掛掉，不應該拖垮 redirect；管理介面掛掉，也不代表 data plane 要停止服務。
 
-因此我會把服務切成三種責任，而不是單純拆微服務：
+因此我會按責任把服務切成三塊，這和拆微服務是兩回事：
 
-- **redirect data plane**：只做 slug lookup、狀態判斷與 HTTP redirect，依賴 L1/shared cache 與權威 read path。
-- **mutation control plane**：create、disable、expiry management，負責唯一性、idempotency 與 invalidation。
-- **telemetry path**：click/event 記錄，允許延後、sample 或降級。
+- redirect data plane：只做 slug lookup、狀態判斷與 HTTP redirect，依賴 L1/shared cache 與權威 read path。
+- mutation control plane：create、disable、expiry management，負責唯一性、idempotency 與 invalidation。
+- telemetry path：click/event 記錄，允許延後、sample 或降級。
 
-這三條路徑可以一開始仍部署在同一個 binary，重點不是 process 數量，而是資源與失效依賴不能反向耦合。例如 analytics queue full 時，不允許 redirect thread block；create database connection pool 飽和，也不能吃光 redirect 的 connection/CPU budget。
+這三條路徑一開始仍可部署在同一個 binary；process 數量無關緊要，要守住的是資源與失效依賴不能反向耦合。例如 analytics queue full 時，不允許 redirect thread block；create database connection pool 飽和，也不能吃光 redirect 的 connection/CPU budget。
 
-同理，資料庫 replica 的角色也要清楚。若 redirect 允許讀 replica，replication lag 就會變成 correctness 的一部分：新建立的 slug 可能在 create 成功後短時間 404，剛停用的 link 也可能在 replica 仍顯示 ACTIVE。若產品要求 create 成功後立即可用，最簡單的做法不是喊「read-after-write consistency」，而是讓新 link 在一小段時間內直接走 authority、或把 create 成功結果同步寫入 cache，並且為該 cache entry 設定明確版本。若停用要求更強，則不能讓 lagging replica 在 invalidation 後重新填舊資料。
+同理，資料庫 replica 的角色也要清楚。若 redirect 允許讀 replica，replication lag 就會變成 correctness 的一部分：新建立的 slug 可能在 create 成功後短時間 404，剛停用的 link 也可能在 replica 仍顯示 ACTIVE。若產品要求 create 成功後立即可用，最簡單的做法是讓新 link 在一小段時間內直接走 authority、或把 create 成功結果同步寫入 cache，並且為該 cache entry 設定明確版本。若停用要求更強，則不能讓 lagging replica 在 invalidation 後重新填舊資料。
 
-因此 replica 並不是免費的 read scaling。每新增一條 read path，就要回答：它允許看到多舊的狀態？如果超過界線，誰能偵測並阻止它成為 cache refill source？這種問題比「有幾個 replica」更接近真正的可用性設計。
+因此 replica 並不是免費的 read scaling。每新增一條 read path，都要定義它允許看到多舊的狀態，以及超過界線時由誰偵測並阻止它成為 cache refill source。這兩個答案比「有幾個 replica」更影響可用性。
 
 ## partition key 其實已經藏在 API 裡
 
@@ -328,38 +328,38 @@ redirect 與 create 的 failure domain 不需要完全相同。建立服務掛�
 
 但建立 API 還有另一個 access pattern：依 `(tenant_id, idempotency_key)` 查重。若把 links 只依 `hash(slug)` 分片，idempotency lookup 就不能靠 slug 定位。最乾淨的做法是把 idempotency record 做成另一個小型權威表，依 `hash(tenant_id, idempotency_key)` 分區；transactional creation 如果跨兩個獨立 shard，就會重新引入 distributed transaction 問題。
 
-這也是為什麼不該過早 sharding。第一階段把 `links` 與 `idempotency` 留在同一個可交易的資料庫，先拿到最簡潔的原子性。只有當單一 writer、索引大小、IOPS 或 storage growth 真正接近界線，再考慮：
+所以不該過早 sharding。第一階段把 `links` 與 `idempotency` 留在同一個可交易的資料庫，先拿到最簡潔的原子性。只有當單一 writer、索引大小、IOPS 或 storage growth 實際接近界線，再考慮：
 
 - 預先配置 slug 所屬 shard，讓 idempotency 與 link 建立路由到同一 authority；
 - 或把「建立 request」先變成一筆 durable intent，再非同步配置 link；
 - 或接受跨 shard transaction 的協調成本。
 
-這些方案都比「上來就用分散式 KV」昂貴。分散式系統的成熟度不在元件數，而在是否知道哪個複雜度已經被需求逼出來。
+這些方案都比「上來就用分散式 KV」昂貴。判斷何時引入，要看哪個複雜度已經被需求逼出來，元件數本身說明不了什麼。
 
-## 第一次真正需要壓測的不是平均 QPS，而是偏斜與模式切換
+## 壓測重點：偏斜分布與模式切換
 
-這個服務上線前，我會把測試重點放在幾個分布，而不是只跑均勻 random load。
+這個服務上線前，我會把測試重點放在幾個分布，不只跑均勻 random load。
 
-**Zipf hot-key load。**  
+Zipf hot-key load。  
 讓前 0.1% slug 吃掉 30%–50% redirect，觀察單一 cache shard、單一 app node 的 queue、CPU、NIC、lock contention。平均 QPS 綠色不代表 hot partition 沒有崩。
 
-**cold-cache impulse。**  
-在 200k QPS 下清掉 shared cache，觀察 database admission control 是否真的把回源壓在安全範圍，而不是等待 connection pool 自己爆掉。Google SRE 對 cascading failure 的建議很核心：元件超過能力時應 fail early / shed load，而不是讓資源耗盡後整體 throughput 反而下降。
+cold-cache impulse。  
+在 200k QPS 下清掉 shared cache，觀察 database admission control 能否把回源壓在安全範圍，不是等 connection pool 自己爆掉。Google SRE 對 cascading failure 的建議是：元件超過能力時應 fail early / shed load，避免資源耗盡後整體 throughput 反而下降。
 
-**lost response after commit。**  
+lost response after commit。  
 刻意在 transaction commit 後、HTTP response 前斷線，確認 client retry 仍拿回相同 slug；同一 idempotency key 改 request body 時必須拒絕。
 
-**invalidation race。**  
+invalidation race。  
 讓 reader 在讀到舊 DB value 後暫停；另一條 thread 執行 disable + invalidate；再恢復 reader，確認舊 refill 被 generation/lease 拒絕。這個測試比「cache delete 成功」重要得多。
 
-**dependency brownout。**  
+dependency brownout。  
 讓 database latency 從 5 ms 漸進增加到 500 ms。確認 in-flight request 有上限、timeout 小於 caller deadline、retry 有 budget，不會因 timeout → retry → 更多 timeout 形成正回饋。Google SRE 對 retry amplification 的例子甚至指出，多層各自重試會乘法放大最下游嘗試次數；在 overload 時，重試本身就可能成為故障放大器。[Addressing Cascading Failures](https://sre.google/sre-book/addressing-cascading-failures/)
 
 服務日常最值得看的 SLI 也因此很具體：valid slug redirect success rate、p50/p99 redirect latency、L1/shared cache hit ratio、database lookup QPS、top hot-key share、cache refill coalescing ratio、idempotency replay rate、slug collision retry rate、invalidation propagation lag，以及 cache cold-start 時的 backend saturation。不要用「CPU 還有 40%」取代這些語義層指標。
 
 ## 安全邊界不能因為服務只是 redirect 就省略
 
-短網址天然會把真正目的地藏在可信任網域後面。OWASP 的 [Unvalidated Redirects and Forwards Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.html) 指出，攻擊者可以利用可信任 host 包裝惡意目的地，增加 phishing 成功率。短網址本來就允許使用者提供 destination，因此「完全禁止外部 redirect」不是可行答案，必須把 abuse control 當成產品能力。
+短網址天然會把實際目的地藏在可信任網域後面。OWASP 的 [Unvalidated Redirects and Forwards Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.html) 指出，攻擊者可以利用可信任 host 包裝惡意目的地，增加 phishing 成功率。短網址本來就允許使用者提供 destination，因此「完全禁止外部 redirect」不是可行答案，必須把 abuse control 當成產品能力。
 
 建立時至少要：
 
@@ -370,7 +370,7 @@ redirect 與 create 的 failure domain 不需要完全相同。建立服務掛�
 - 對建立 API 做 tenant-level rate limit，避免大量產生 spam links；
 - 若另有 crawler/preview/scanner 會主動抓取 destination，該元件必須與 redirect data path 隔離，並另外防 SSRF；redirect server 本身不需要為了跳轉去 fetch 目的站。
 
-安全要求再次回到 cache consistency：如果 `DISABLED` 是 abuse response，invalidation lag 就不是單純「資料新不新」，而是 security SLO。這也是我不接受無界 stale cache 的原因。
+安全要求再次回到 cache consistency：如果 `DISABLED` 是 abuse response，invalidation lag 就從「資料新不新」變成 security SLO，所以我不接受無界 stale cache。
 
 ## 什麼時候應該換掉這個設計
 
@@ -378,13 +378,13 @@ redirect 與 create 的 failure domain 不需要完全相同。建立服務掛�
 
 有三種條件會迫使架構改變。
 
-第一，建立量提升到單一 writer 或 index maintenance 已成為明確瓶頸。此時才值得把 ID allocation 與 write ownership 分散出去；random collision 不再是主要問題，跨 shard uniqueness 與 request routing 才是。
+建立量提升到單一 writer 或 index maintenance 已成為明確瓶頸。此時才值得把 ID allocation 與 write ownership 分散出去；random collision 不再是主要問題，跨 shard uniqueness 與 request routing 才是。
 
-第二，全球 redirect latency 要求進一步壓低，而且單區域 outage 不能影響既有 link。這會把權威資料複寫、edge state、停用傳播與 region failover 拉進來。讀取可以多區，寫入 authority 是否也多區則是另一個更昂貴的決定。
+全球 redirect latency 要求進一步壓低，而且單區域 outage 不能影響既有 link。這會把權威資料複寫、edge state、停用傳播與 region failover 拉進來。讀取可以多區，寫入 authority 是否也多區則是另一個更昂貴的決定。
 
-第三，產品要求「目的地可立即修改且全球秒級一致」。這會直接破壞目前用 TTL 吸收 stale 的簡單模型。cache version、invalidation ordering、edge purge 與寫後讀一致性都必須升級；如果還同時要求永久 redirect cache，就會出現語義衝突。
+產品若要求「目的地可立即修改且全球秒級一致」。這會直接破壞目前用 TTL 吸收 stale 的簡單模型。cache version、invalidation ordering、edge purge 與寫後讀一致性都必須升級；如果還同時要求永久 redirect cache，就會出現語義衝突。
 
-短網址之所以適合作為第一個完整系統，不是因為它簡單，而是因為它把很多重要邊界暴露得非常乾淨：ID generator 不等於 uniqueness authority，retry 不等於再次執行，cache 不等於資料庫副本，平均 QPS 不等於最壞負載，HTTP status 也不只是回應碼。
+短網址適合作為第一個完整系統，原因在於它把很多重要邊界暴露得很乾淨：ID generator 不等於 uniqueness authority，retry 不等於再次執行，cache 不等於資料庫副本，平均 QPS 不等於最壞負載，HTTP status 也不只是回應碼。
 
 下一個自然問題是：當「產生唯一 ID」本身也不能再依賴單一資料庫時，誰有權分配數字？如果多台 worker 同時發 ID、時鐘會倒退、process 會重啟，又要怎麼證明永遠不重複？這會把我們帶到分散式 ID 服務。
 

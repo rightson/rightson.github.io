@@ -11,7 +11,7 @@ description: "從 NVIDIA AutoDMP 的公開程式拆解 GPU 搜尋、候選 DEF �
 
 NVIDIA 的 **AutoDMP** 提供一個值得直接拆解的工程參考：GPU 上大量探索巨集與標準元件的佈局，保留不同取捨的候選，再送回既有實體設計流程驗收。第一作者 Anthony Agnesina、研究機構 NVIDIA，於 ISPD 2023 發表這項工作，並公開程式碼。它不是 NVIDIA 完整內部 CAD 平台，也不是 2026 年新發布的產品；可借鏡的是一個有實際程式入口與後端接法的設計探索系統。[研究與論文](https://research.nvidia.com/publication/2023-03_autodmp-automated-dreamplace-based-macro-placement)、[官方程式碼](https://github.com/NVlabs/AutoDMP)
 
-## 從 SoC 整合往下，真正難的是物理條件互相牽制
+## 從 SoC 整合往下：物理條件互相牽制
 
 假設一個 AI 加速器分區有多組運算單元、64 個 SRAM，以及連接它們的控制與資料路徑。邏輯整合完成，只代表連線與功能關係已經成立。把 SRAM 靠近運算單元可能減少線長，卻也可能擠掉標準元件的位置；替走線保留通道，又可能拉長某些關鍵路徑。這是本文的假設案例，不是 NVIDIA 某顆晶片的內部配置。
 
@@ -26,7 +26,7 @@ NVIDIA 的 **AutoDMP** 提供一個值得直接拆解的工程參考：GPU 上�
 
 ## 公開程式把接點放在 checkpoint，而不是一句自然語言指令
 
-先看真正的程式入口。`scripts/genFlow.py` 建立實驗目錄、準備 synthesis handoff，執行 PreDP，啟動調參工作，再把候選分別送進 PostDP。它區分是否使用經最佳化的 netlist，以及是否只保留 AutoDMP 的 macro placement；這些開關會改變後端如何接手，不能只視為方便命名的參數。[genFlow.py](https://github.com/NVlabs/AutoDMP/blob/866a1cb286a0c037ddf27feeeea1e12b68c9161c/scripts/genFlow.py)
+先看實際的程式入口。`scripts/genFlow.py` 建立實驗目錄、準備 synthesis handoff，執行 PreDP，啟動調參工作，再把候選分別送進 PostDP。它區分是否使用經最佳化的 netlist，以及是否只保留 AutoDMP 的 macro placement；這些開關會改變後端如何接手，不能只視為方便命名的參數。[genFlow.py](https://github.com/NVlabs/AutoDMP/blob/866a1cb286a0c037ddf27feeeea1e12b68c9161c/scripts/genFlow.py)
 
 `run_invs_AutoDMP.tcl` 的前段從 `syn_handoff` 取得 netlist 與 SDC，載入 library、MMMC、floorplan 等設定，匯出 Bookshelf 資料並保存 `preDP` checkpoint。後段重新載入該設計狀態，更新 constraint mode，讀入候選 DEF 的 component placement，修整巨集位置，接著完成供電網路、place-opt、CTS、routing 與 post-route optimization。[實體流程原碼](https://github.com/NVlabs/AutoDMP/blob/866a1cb286a0c037ddf27feeeea1e12b68c9161c/scripts/run_invs_AutoDMP.tcl)
 
@@ -42,7 +42,7 @@ NVIDIA 的 **AutoDMP** 提供一個值得直接拆解的工程參考：GPU 上�
 
 外層才是參數搜尋。AutoDMP 選取 16 個會影響求解結果的參數，以多目標 Bayesian optimization 探索。其 MOTPE 方法根據已有樣本的目標表現區分較好與較差區域，再調整下一批參數的取樣。也就是說，GPU 求解器處理龐大的座標空間，搜尋器處理較小的演算法設定空間，兩者不是同一種學習問題。[官方技術文章](https://developer.nvidia.com/blog/autodmp-optimizes-macro-placement-for-chip-design-with-ai-and-gpus/)
 
-這個分工可直接用來檢查自己的平台設計：真正需要探索的是 floorplan 的物理自由度、工具參數，還是設計架構本身？若把這些全部交給同一個 agent 隨意改，最後即使 PPA 改善，也很難辨認改善來自哪個決策。先限制一輪實驗只改一種可解釋的自由度，才有辦法累積可信的經驗。
+這個分工可直接用來檢查自己的平台設計：需要探索的是 floorplan 的物理自由度、工具參數，還是設計架構本身？若把這些全部交給同一個 agent 隨意改，最後即使 PPA 改善，也很難辨認改善來自哪個決策。先限制一輪實驗只改一種可解釋的自由度，才有辦法累積可信的經驗。
 
 ## 第一層留下不同取捨，第二層才回答工程結果
 
@@ -126,7 +126,7 @@ evaluation:
 
 以透明假設比較：有 80 組候選，每次完整後端需 8 小時、16 CPU cores，並假設各占一份授權資源。全部完整跑是 640 個授權占用小時、10,240 core-hours。若每個候選先用 3 GPU-minutes 篩選，只讓 8 個進完整後端，則變成 4 GPU-hours，加上 64 個授權占用小時與 1,024 core-hours。這是容量算例，並非 AutoDMP 或任何商用工具的實測。
 
-CPU 與授權占用在這個假設下減少九成，但不能宣稱總成本也必定減少九成。還有 GPU 價格、資料準備、排隊、失敗重跑與維護成本；GPU-hours 和 CPU core-hours 也不能直接相加。更重要的是：若真正最好的候選在第一層被丟掉，少花錢同時也可能少得到有價值的結果。
+CPU 與授權占用在這個假設下減少九成，但不能宣稱總成本也必定減少九成。還有 GPU 價格、資料準備、排隊、失敗重跑與維護成本；GPU-hours 和 CPU core-hours 也不能直接相加。另外，若實際最好的候選在第一層被丟掉，少花錢同時也可能少得到有價值的結果。
 
 因此比較基準不只該有「80 次全部完整跑」這種昂貴方案，也要有相同後端預算下的 random search，以及工程師既有 recipe。額外安排少量未入選候選做完整驗收，估計篩選的漏失風險。若代理排名與後端表現長期無關，應先修正代理模型或搜尋範圍，而不是把 GPU 數量加倍。
 
@@ -136,7 +136,7 @@ CPU 與授權占用在這個假設下減少九成，但不能宣稱總成本也�
 
 原研究對 270 萬 cells、320 macros 的設計報告約三小時的搜尋尺度；這不能解讀成三小時完成整顆 SoC 的 RTL-to-GDS，更不包含所有量產 signoff 工作。[NVIDIA 研究摘要](https://research.nvidia.com/publication/2023-03_autodmp-automated-dreamplace-based-macro-placement) 評估自己的結果時，也應把搜尋時間、候選後端時間與最終驗收時間分開記錄。
 
-## 最值得搬回平台的，是分層評估與可替換的探索器
+## 搬回平台的起點：分層評估與可替換的探索器
 
 起步不必先重做公司所有 CAD infrastructure。挑一個巨集密集、基準 flow 已穩定的公開設計分區，固定 netlist、constraints、libraries 與後端設定，只比較既有 recipe、隨機參數搜尋、模型引導搜尋。先驗證候選能正確往返，再比較相同完整後端次數下的合法率、routed timing、資源與變異。
 
