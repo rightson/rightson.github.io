@@ -38,6 +38,18 @@ r = S × (q − Z)
 
 這是 general quantization mechanism；不能倒推成 TPU v1 使用完全相同的 TensorFlow Lite quantizer。可以確定的是，TPU v1 的主要 Matrix Multiply Unit 以 8-bit integer operand 為設計中心。
 
+### Quantization 真正犧牲的是解析度，不只是有效位數
+
+假設某層 activation 的有效範圍是 -1 到 1，若用對稱 INT8 表示，可以粗略把 scale 想成 1/127。real value 0.37 會被映射到最接近的 integer code，大約是 47；還原後約為 47/127 = 0.3701。單次誤差很小。
+
+問題在於 range 不會永遠這麼漂亮。若同一層偶爾出現 magnitude 20 的 outlier，而 quantizer 又必須讓 20 落在 representable range 內，scale 會被迫放大。原本密集落在 -1 到 1 的多數 activation，就只剩很少的 integer code 可用。這時候即使沒有 clipping，rounding noise 也會急遽增加。
+
+反過來，如果 quantizer 把 range 收窄到多數資料所在區域，resolution 會更好，但 outlier 會飽和在最大／最小 code。這就是 clipping error。
+
+所以 8-bit 是否「夠用」不是單純看 bit 數，而是看 tensor distribution、scale 的選擇、不同 channel 的 range，以及模型對誤差的敏感度。後來 per-channel quantization 會重要，就是因為同一個 layer 裡不同 output channel 的 weight distribution 可能差很多；共用一個 scale 往往讓少數 outlier 決定整個 tensor 的 resolution。
+
+這也說明硬體與模型之間真正的契約：硬體提供低精度 arithmetic 的效率，compiler / quantizer 必須把 tensor 映射到那個數值空間，模型則要在這個誤差模型下仍然維持可接受 accuracy。缺任何一層，8-bit MAC 都只是一個便宜但不好用的乘法器。
+
 ## 8-bit 讓同樣 die budget 容納更多 arithmetic
 
 TPU v1 採 28 nm、700 MHz。Matrix Multiply Unit 裡有：
@@ -63,6 +75,16 @@ TPU v1 採 28 nm、700 MHz。Matrix Multiply Unit 裡有：
 表 1｜前兩列為 TPU v1 論文引用的 circuit-cost 估計；第三列是位元寬的直接算術結果，與 Jacob et al. 報告的近 4× model-memory reduction 一致。來源：[Jouppi et al., ISCA 2017](https://arxiv.org/pdf/1704.04760)、[Jacob et al., CVPR 2018](https://openaccess.thecvf.com/content_cvpr_2018/html/Jacob_Quantization_and_Training_CVPR_2018_paper.html)。
 
 值得注意的是，TPU floorplan 也反映這個取捨：Matrix Multiply Unit 只佔約四分之一 die，但已經容納 65K MAC；大量面積反而留給 Unified Buffer 與其他 data-storage structure。當 arithmetic 被低精度做便宜之後，**memory 會開始變成下一個最昂貴的資源。**
+
+### 為什麼 bit-width 會這麼直接地變成面積與功耗
+
+從電路角度看，N-bit integer multiplier 要處理 N×N 個 partial-product 關係，再透過 reduction tree 與 final adder 合併。實際 cell library、Booth encoding、pipeline depth 與 timing target 會改變精確 scaling，因此不能把「bit 數減半」機械地等同「面積變四分之一」。但方向很清楚：operand 越寬，需要參與切換的邏輯、wire 與 register 越多。
+
+Floating point 還多了 exponent、mantissa normalization、rounding、exception handling 等資料路徑。TPU v1 選擇 inference-only 的 8-bit integer datapath，等於把這些通用 floating-point 成本從最熱的 matrix multiply path 移除。
+
+更重要的是，這不是只省單顆 MAC 的 power。65,536 個 MAC 每個 cycle 同時切換時，任何每-operation energy 的差異都會被放大 65K 倍；而面積節省也會反過來讓 wire 更短、array 更緊密，進一步降低資料移動成本。domain-specific accelerator 的優勢常常就是這種乘數效應：一個局部簡化同時作用在數萬個平行單元上。
+
+因此「INT8 比 FP16 少 8 bits」這種描述太表面。真正改變的是整顆晶片在固定 power envelope 內能承受多少 active arithmetic density。
 
 <figure>
   <img src="https://storage.googleapis.com/gweb-cloudblog-publish/images/tpu-15dly1.max-500x500.PNG" alt="第一代 TPU block diagram，顯示 Unified Buffer、Matrix Multiply Unit、Accumulator 與 Weight FIFO" style="max-width:100%;height:auto;">
@@ -92,6 +114,21 @@ TPU v1 的 Weight Memory 是 8 GiB DDR3，透過 Weight FIFO 把 weight 餵進 M
 Google 的實測顯示，六個 representative workload 裡有四個仍受 memory bandwidth 限制；論文甚至估算，把 TPU 的 DDR3 memory system 換成當時 K80 等級的 GDDR5，achieved TOPS 可以接近三倍。[Jouppi et al., ISCA 2017](https://arxiv.org/pdf/1704.04760)
 
 這很能說明 accelerator 演化的規律：當 precision 讓 compute 變便宜，瓶頸就往 memory 移。
+
+### 用 100M weights 算一次：低 precision 同時改變容量與等待時間
+
+TPU v1 論文的六個 production workload 裡，最大模型約有 100M weights。若只做 raw-size 算例，FP32 需要約 400 MB、FP16 約 200 MB、INT8 約 100 MB。
+
+第一代 TPU 的 Weight Memory 頻寬約為 30 GiB/s。若極度簡化地假設整個 100 MB weight set 必須從 DRAM 順序搬一次，而且忽略 protocol、burst efficiency、bank conflict 與重用，理論傳輸時間大約是：
+
+FP32：400 MB / 30 GiB/s ≈ 12–13 ms  
+INT8：100 MB / 30 GiB/s ≈ 3–4 ms
+
+這不是 TPU workload 的實測 latency，因為真實 execution 會 tile、reuse、pipeline，並把 weight transfer 和 compute 重疊；不同 model 的 reuse 也完全不同。但這個算例揭露一件很重要的事：precision reduction 不只把 model「裝得下」，還直接縮短同一條 memory channel 上每份 tensor 的服務時間。
+
+當系統進入 bandwidth-bound 區域，這種 byte reduction 往往比增加更多 MAC 更有價值。反過來，如果 workload 的 arithmetic intensity 很高，同一份 weight 被重用上千次，weight bandwidth 的影響就會降低，compute array utilization 才重新成為主要問題。
+
+這正是 roofline model 後面會出現的理由：需要把 operations 與 bytes 放在同一個模型裡，才能知道下一顆 transistor 應該花在 MAC、SRAM 還是 memory interface。
 
 ## Precision 在 TPU v1 上直接等於 throughput
 
@@ -125,6 +162,18 @@ TPU v1 因此用 8-bit operand 做 multiply，但 16-bit product 會送進 **32-
 這是 low-precision accelerator 很重要的一個設計原則：**輸入 precision 可以很低，但 reduction path 往往需要更高 precision。**
 
 把所有資料都壓成最窄位元，不代表整體效率最高。若 accumulator 太窄，需要頻繁 rescale、saturate，甚至造成 accuracy loss，省下來的面積可能在其他地方付回去。
+
+### Low precision 的 failure mode 往往發生在 reduction，不是在 multiply
+
+假設單一 product 都能精確放進 16 bits，也不代表幾百、幾千個 product 相加後仍能安全。dot product 本質上是 reduction；誤差與 dynamic range 都會沿著 reduction tree 累積。
+
+這也是為什麼硬體常採用「窄 input、寬 accumulator」：把大量最頻繁的 multiply 做便宜，同時在相對少數的 accumulation state 上付出較高 bit-width 成本。這是一個比「所有地方都 INT8」更好的 area/accuracy trade-off。
+
+對 compiler 而言，這還會產生 requantization boundary。某一層的 32-bit accumulated result，送進下一層 8-bit activation 前，必須重新套用 scale、rounding 與 saturation。若 scale 選錯，問題不是 arithmetic throughput 下降，而是整層輸出 distribution 被扭曲。
+
+因此 quantized accelerator 的 correctness 不能只驗證「integer kernel 算對」。至少還要驗證三個邊界：輸入 tensor 的 quantization parameter 是否匹配、accumulator 是否可能 overflow、輸出 requantization 是否維持模型允許的 error budget。
+
+這種數值 contract 後來會一路延伸到 compiler IR：tensor 不只需要 shape 與 dtype，還需要 scale、zero-point、per-tensor/per-channel 等 quantization metadata。硬體越專用，software stack 就越需要精確描述這些語意。
 
 ## Quantization 的成本最後會回到模型與 compiler
 
