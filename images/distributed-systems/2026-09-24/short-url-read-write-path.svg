@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640">
+  <rect width="1200" height="640" fill="#ffffff"/>
+  <style>
+    .box{fill:#f7f7f7;stroke:#333;stroke-width:2;rx:14;ry:14}
+    .title{font:700 24px sans-serif;fill:#111}
+    .text{font:18px sans-serif;fill:#222}
+    .small{font:15px sans-serif;fill:#444}
+    .arrow{stroke:#333;stroke-width:2.5;fill:none;marker-end:url(#a)}
+    .dash{stroke:#666;stroke-width:2;stroke-dasharray:8 7;fill:none;marker-end:url(#a)}
+  </style>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#333"/></marker></defs>
+  <text x="50" y="48" class="title">短網址：把 redirect data plane 與 mutation control plane 分開</text>
+
+  <rect x="55" y="105" width="170" height="82" class="box"/>
+  <text x="95" y="138" class="text">Browser / App</text>
+  <text x="79" y="165" class="small">GET /{slug}</text>
+
+  <rect x="300" y="95" width="210" height="102" class="box"/>
+  <text x="330" y="133" class="text">Redirect Service</text>
+  <text x="342" y="160" class="small">L1 local cache</text>
+  <text x="328" y="181" class="small">status / TTL check</text>
+
+  <rect x="590" y="105" width="205" height="82" class="box"/>
+  <text x="625" y="139" class="text">Shared Cache</text>
+  <text x="620" y="165" class="small">soft state / lease</text>
+
+  <rect x="880" y="105" width="245" height="82" class="box"/>
+  <text x="916" y="139" class="text">Authoritative Store</text>
+  <text x="915" y="165" class="small">slug / status / version</text>
+
+  <path d="M225 145 L300 145" class="arrow"/>
+  <path d="M510 145 L590 145" class="arrow"/>
+  <path d="M795 145 L880 145" class="arrow"/>
+
+  <path d="M300 177 C255 220 255 245 205 245" class="arrow"/>
+  <text x="55" y="243" class="small">302 + Location</text>
+
+  <rect x="55" y="355" width="190" height="90" class="box"/>
+  <text x="89" y="390" class="text">Creator / Admin</text>
+  <text x="76" y="418" class="small">POST / disable</text>
+
+  <rect x="330" y="345" width="230" height="110" class="box"/>
+  <text x="359" y="383" class="text">Mutation Service</text>
+  <text x="360" y="410" class="small">idempotency + unique</text>
+  <text x="382" y="433" class="small">transaction boundary</text>
+
+  <path d="M245 399 L330 399" class="arrow"/>
+  <path d="M560 399 C720 399 770 230 930 187" class="arrow"/>
+  <text x="665" y="355" class="small">commit authority first</text>
+
+  <path d="M1000 188 C1000 280 810 350 695 350 C630 350 615 300 665 190" class="dash"/>
+  <text x="755" y="310" class="small">invalidate / generation advance</text>
+
+  <rect x="770" y="495" width="270" height="78" class="box"/>
+  <text x="805" y="529" class="text">Telemetry Path</text>
+  <text x="798" y="552" class="small">async click events; 可降級</text>
+  <path d="M405 197 C480 525 650 532 770 532" class="dash"/>
+</svg>

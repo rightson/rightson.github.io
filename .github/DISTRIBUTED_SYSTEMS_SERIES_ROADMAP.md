@@ -33,7 +33,7 @@
 
 ### 一、讓單一服務的狀態與負載可控
 
-- [ ] DS01 短網址服務。先備：無。範圍：讀寫比例、redirect、API／索引、唯一鍵與 cache；深掘 ID 碰撞／冪等寫入、熱點／失效傳播。
+- [x] DS01 短網址服務。先備：無。範圍：讀寫比例、redirect、API／索引、唯一鍵與 cache；深掘 ID 碰撞／冪等寫入、熱點／失效傳播。已發布：`_posts/2026-09-24-short-url-uniqueness-idempotency-cache-hotspots.md`；[公開文章](https://rightson.github.io/networking/2026/09/24/short-url-uniqueness-idempotency-cache-hotspots.html)
 - [ ] DS02 分散式 ID 服務。先備：01。範圍：唯一、順序及不可猜測性；深掘號段、時鐘回撥、worker ownership、lease／fencing、重啟重複。
 - [ ] DS03 多租戶限流服務。先備：01。範圍：跨節點配額；深掘 token bucket／sliding window、原子更新、局部配額誤差界、fail-open／closed。
 - [ ] DS04 分散式快取服務。先備：01、03。範圍：正確性與回源成本；深掘一致性雜湊、重分片、版本／失效競態、stampede 與 stale serving。

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+  <rect width="1200" height="680" fill="#ffffff"/>
+  <style>
+    .box{fill:#f7f7f7;stroke:#333;stroke-width:2;rx:12;ry:12}
+    .title{font:700 24px sans-serif;fill:#111}
+    .text{font:18px sans-serif;fill:#222}
+    .small{font:15px sans-serif;fill:#444}
+    .arrow{stroke:#333;stroke-width:2.3;fill:none;marker-end:url(#a)}
+    .line{stroke:#999;stroke-width:1.5;stroke-dasharray:6 6}
+  </style>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#333"/></marker></defs>
+  <text x="50" y="48" class="title">建立連結：candidate 可以碰撞，但 commit 結果只能有一個</text>
+
+  <text x="105" y="95" class="text">Client</text>
+  <text x="425" y="95" class="text">API</text>
+  <text x="755" y="95" class="text">Transaction</text>
+  <text x="1030" y="95" class="text">DB</text>
+  <line x1="130" y1="115" x2="130" y2="620" class="line"/>
+  <line x1="450" y1="115" x2="450" y2="620" class="line"/>
+  <line x1="790" y1="115" x2="790" y2="620" class="line"/>
+  <line x1="1050" y1="115" x2="1050" y2="620" class="line"/>
+
+  <path d="M130 145 L450 145" class="arrow"/>
+  <text x="200" y="137" class="small">POST + Idempotency-Key K</text>
+
+  <path d="M450 190 L790 190" class="arrow"/>
+  <text x="535" y="182" class="small">lookup (tenant, K)</text>
+
+  <path d="M790 235 L1050 235" class="arrow"/>
+  <text x="840" y="227" class="small">reserve idempotency key</text>
+
+  <path d="M790 285 L1050 285" class="arrow"/>
+  <text x="835" y="277" class="small">INSERT candidate slug</text>
+
+  <path d="M1050 325 L790 325" class="arrow"/>
+  <text x="846" y="317" class="small">unique conflict?</text>
+
+  <rect x="650" y="350" width="300" height="65" class="box"/>
+  <text x="679" y="378" class="small">若 collision：換 candidate 重試</text>
+  <text x="677" y="400" class="small">若成功：綁定 K → slug → response</text>
+
+  <path d="M790 445 L1050 445" class="arrow"/>
+  <text x="880" y="437" class="small">COMMIT</text>
+
+  <path d="M790 490 L450 490" class="arrow"/>
+  <text x="565" y="482" class="small">same semantic result</text>
+  <path d="M450 525 L130 525" class="arrow"/>
+  <text x="228" y="517" class="small">201 + same slug</text>
+
+  <path d="M130 570 L450 570" class="arrow"/>
+  <text x="185" y="562" class="small">timeout 後重送同一 K</text>
+  <path d="M450 605 L790 605" class="arrow"/>
+  <text x="528" y="597" class="small">讀既有 K；不再建立資源</text>
+</svg>

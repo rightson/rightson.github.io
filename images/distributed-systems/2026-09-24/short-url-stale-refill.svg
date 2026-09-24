@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <rect width="1200" height="700" fill="#ffffff"/>
+  <style>
+    .box{fill:#f7f7f7;stroke:#333;stroke-width:2;rx:12;ry:12}
+    .title{font:700 24px sans-serif;fill:#111}
+    .text{font:18px sans-serif;fill:#222}
+    .small{font:15px sans-serif;fill:#444}
+    .arrow{stroke:#333;stroke-width:2.2;fill:none;marker-end:url(#a)}
+    .bad{stroke:#777;stroke-width:2.2;stroke-dasharray:7 6;fill:none;marker-end:url(#a)}
+    .line{stroke:#aaa;stroke-width:1.5;stroke-dasharray:6 6}
+  </style>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#333"/></marker></defs>
+  <text x="50" y="48" class="title">停用競態：delete cache 之後，舊 reader 仍可能把 ACTIVE 塞回去</text>
+
+  <text x="90" y="100" class="text">Reader A</text>
+  <text x="365" y="100" class="text">Shared Cache</text>
+  <text x="700" y="100" class="text">Authority DB</text>
+  <text x="1010" y="100" class="text">Admin</text>
+  <line x1="125" y1="120" x2="125" y2="630" class="line"/>
+  <line x1="420" y1="120" x2="420" y2="630" class="line"/>
+  <line x1="755" y1="120" x2="755" y2="630" class="line"/>
+  <line x1="1045" y1="120" x2="1045" y2="630" class="line"/>
+
+  <path d="M125 155 L420 155" class="arrow"/>
+  <text x="205" y="147" class="small">GET slug → miss</text>
+  <path d="M420 195 L125 195" class="arrow"/>
+  <text x="205" y="187" class="small">refill lease L1</text>
+
+  <path d="M125 235 L755 235" class="arrow"/>
+  <text x="330" y="227" class="small">read → ACTIVE, version 7</text>
+
+  <path d="M1045 285 L755 285" class="arrow"/>
+  <text x="832" y="277" class="small">DISABLE → version 8</text>
+  <path d="M755 325 L1045 325" class="arrow"/>
+  <text x="850" y="317" class="small">commit OK</text>
+
+  <path d="M1045 370 L420 370" class="arrow"/>
+  <text x="645" y="362" class="small">invalidate; generation → 8</text>
+
+  <path d="M125 425 L420 425" class="bad"/>
+  <text x="190" y="417" class="small">late refill: ACTIVE v7 + lease L1</text>
+
+  <rect x="320" y="455" width="310" height="72" class="box"/>
+  <text x="352" y="486" class="small">cache 拒絕 L1：generation 已改變</text>
+  <text x="350" y="510" class="small">舊資料不能在 invalidation 後復活</text>
+
+  <path d="M125 565 L420 565" class="arrow"/>
+  <text x="215" y="557" class="small">下一次 GET</text>
+  <path d="M420 605 L755 605" class="arrow"/>
+  <text x="505" y="597" class="small">miss → read v8</text>
+</svg>
