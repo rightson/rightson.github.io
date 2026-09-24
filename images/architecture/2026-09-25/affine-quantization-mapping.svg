@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
+<rect width="1200" height="650" fill="#fff"/>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#333"/></marker></defs>
+<style>.t{font:700 30px Arial,sans-serif;fill:#111}.s{font:22px Arial,sans-serif;fill:#222}.sm{font:18px Arial,sans-serif;fill:#444}.b{fill:#f5f7fa;stroke:#333;stroke-width:2;rx:12}.q{fill:#eaf3ff;stroke:#376fae;stroke-width:2;rx:12}.arr{stroke:#333;stroke-width:2.5;fill:none;marker-end:url(#a)}</style>
+<text x="600" y="48" text-anchor="middle" class="t">Quantization is a mapping, not “throwing away decimals”</text>
+<rect x="75" y="160" width="260" height="170" class="b"/>
+<text x="205" y="205" text-anchor="middle" class="s">Real value r</text>
+<text x="205" y="250" text-anchor="middle" class="sm">floating-point model space</text>
+<text x="205" y="292" text-anchor="middle" class="sm">example: r = 0.37</text>
+<rect x="470" y="125" width="260" height="240" class="q"/>
+<text x="600" y="175" text-anchor="middle" class="s">Affine quantizer</text>
+<text x="600" y="225" text-anchor="middle" class="s">r = S · (q − Z)</text>
+<text x="600" y="270" text-anchor="middle" class="sm">S: scale</text>
+<text x="600" y="305" text-anchor="middle" class="sm">Z: zero-point</text>
+<text x="600" y="340" text-anchor="middle" class="sm">round / clamp → integer q</text>
+<rect x="865" y="160" width="260" height="170" class="b"/>
+<text x="995" y="205" text-anchor="middle" class="s">8-bit value q</text>
+<text x="995" y="250" text-anchor="middle" class="sm">integer inference space</text>
+<text x="995" y="292" text-anchor="middle" class="sm">256 representable codes</text>
+<path d="M335 245 L470 245" class="arr"/><path d="M730 245 L865 245" class="arr"/>
+<text x="600" y="450" text-anchor="middle" class="s">Accuracy cost comes from rounding + clipping.</text>
+<text x="600" y="495" text-anchor="middle" class="sm">Hardware benefit comes from narrower operands, smaller storage and lower data movement.</text>
+<text x="600" y="545" text-anchor="middle" class="sm">Accumulators may stay wide even when inputs are 8-bit.</text>
+</svg>
