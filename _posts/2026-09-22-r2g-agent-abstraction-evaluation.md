@@ -2,6 +2,7 @@
 layout: post
 title: "R2G 技術雷達：真正的核心是抽象層、可驗證執行與 Flow Graph"
 date: 2026-09-22 12:11:00 +0800
+domain: eda
 categories: eda r2g agentic-ai
 ---
 

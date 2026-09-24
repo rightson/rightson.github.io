@@ -2,6 +2,7 @@
 layout: post
 title: "R2G 平台的核心不是 Agent：把晶片設計流程做成可調和、可重播的 Control Plane"
 date: 2026-09-22 12:58:00 +0800
+domain: eda
 categories: eda r2g platform-engineering
 ---
 
