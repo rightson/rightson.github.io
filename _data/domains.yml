@@ -1,20 +1,20 @@
-- key: networking
-  number: '01'
-  title: 網路技術
-  english: NETWORKING
-  description: 從協定與交換晶片，到 AI 資料中心互連。
-- key: eda
-  number: '02'
-  title: EDA 設計平台
-  english: DESIGN PLATFORM
-  description: 探索 SYN、APR 與設計流程的自動化及驗證。
 - key: ai-industry
-  number: '03'
+  number: '01'
   title: AI 產業研究
   english: AI INDUSTRY
   description: 拆解算力需求、技術瓶頸與供應鏈變化。
 - key: investing
-  number: '04'
+  number: '02'
   title: 投資與交易
   english: INVESTING & TRADING
   description: 檢驗投資假設，關注估值、催化劑與風險。
+- key: networking
+  number: '03'
+  title: 網路技術
+  english: NETWORKING
+  description: 從協定與交換晶片，到 AI 資料中心互連。
+- key: eda
+  number: '04'
+  title: EDA 設計平台
+  english: DESIGN PLATFORM
+  description: 探索 SYN、APR 與設計流程的自動化及驗證。
