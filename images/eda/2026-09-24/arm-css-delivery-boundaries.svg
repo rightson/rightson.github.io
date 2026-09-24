@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="960" viewBox="0 0 900 960" role="img" aria-labelledby="title desc"><title id="title">從 CSS 交付到 SoC 實作</title><desc id="desc">來源可證實的交付物與作者整理的責任分工；2026 CSS N4 與 CSS V3 的 AGI CPU 案例分開。</desc><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#136d71"/></marker></defs><rect width="900" height="960" fill="#fcfdfd"/><g font-family="Noto Sans CJK TC,Microsoft JhengHei,sans-serif" fill="#19354b">
+<text x="48" y="52" font-size="30" font-weight="700" fill="#19354b" text-anchor="start">01 / 平台交付與責任邊界</text>
+<text x="48" y="91" font-size="25" font-weight="400" fill="#536674" text-anchor="start">先確定拿到什麼，再決定誰驗證下一個接點。</text>
+<rect x="48" y="127" width="804" height="143" rx="14" fill="#edf2f8" stroke="#afc1ce" stroke-width="2"/>
+<text x="72" y="168" font-size="29" font-weight="700" fill="#19354b" text-anchor="start">Arm Neoverse CSS N4｜2026 年 9 月</text>
+<text x="72" y="211" font-size="28" font-weight="400" fill="#19354b" text-anchor="start">RTL ＋ 系統 IP ＋ 軟體／參考設計</text>
+<text x="72" y="248" font-size="25" font-weight="400" fill="#536674" text-anchor="start">另附實作指南與第三方 IP 互通支援</text>
+<path d="M450 279 L450 321" fill="none" stroke="#136d71" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="48" y="338" width="804" height="169" rx="14" fill="#eaf3f3" stroke="#afc1ce" stroke-width="2"/>
+<text x="72" y="379" font-size="29" font-weight="700" fill="#19354b" text-anchor="start">客製 SoC 整合團隊</text>
+<text x="72" y="422" font-size="27" font-weight="400" fill="#19354b" text-anchor="start">配置、介面、位址、clock／reset／power</text>
+<text x="72" y="462" font-size="26" font-weight="400" fill="#19354b" text-anchor="start">加入自研 IP，確認哪些驗證必須重新執行</text>
+<text x="72" y="493" font-size="23" font-weight="400" fill="#536674" text-anchor="start">交接：一組一致的設計、模型與約束</text>
+<path d="M450 516 L450 554" fill="none" stroke="#136d71" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="48" y="571" width="804" height="167" rx="14" fill="#edf2f8" stroke="#afc1ce" stroke-width="2"/>
+<text x="72" y="612" font-size="29" font-weight="700" fill="#19354b" text-anchor="start">RTL-to-GDS 與 release 驗收</text>
+<text x="72" y="655" font-size="25" font-weight="400" fill="#19354b" text-anchor="start">Synthesis → APR → Timing／Physical／Power</text>
+<text x="72" y="695" font-size="26" font-weight="400" fill="#19354b" text-anchor="start">輸出 GDS、reports 與支撐結果的版本／條件</text>
+<text x="72" y="725" font-size="23" font-weight="400" fill="#536674" text-anchor="start">完成工具執行 ≠ 滿足全部 release 條件</text>
+<rect x="48" y="782" width="804" height="134" rx="14" fill="#fff6ec" stroke="#d8bd9b" stroke-width="2"/>
+<text x="72" y="821" font-size="27" font-weight="700" fill="#8a5425" text-anchor="start">已公開的實際案例：Arm AGI CPU</text>
+<text x="72" y="858" font-size="24" font-weight="400" fill="#19354b" text-anchor="start">基於 CSS V3；Synopsys 公開設計與驗證工具鏈。</text>
+<text x="72" y="894" font-size="24" font-weight="400" fill="#8a5425" text-anchor="start">這不是 CSS N4 已完成相同 tapeout 的證據。</text>
+</g></svg>

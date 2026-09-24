@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="980" viewBox="0 0 900 980" role="img" aria-labelledby="title desc"><title id="title">整合範例：讓配置與資料路徑一致</title><desc id="desc">作者設計之資料中心 SoC 範例，CPU控制DMA，透過互連和必要位址轉譯存取記憶體；不代表Arm實際晶片配置。</desc><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#136d71"/></marker></defs><rect width="900" height="980" fill="#fcfdfd"/><g font-family="Noto Sans CJK TC,Microsoft JhengHei,sans-serif" fill="#19354b">
+<text x="48" y="52" font-size="30" font-weight="700" fill="#19354b" text-anchor="start">02 / 配置、控制與資料路徑</text>
+<text x="48" y="91" font-size="25" font-weight="400" fill="#536674" text-anchor="start">作者設計範例；不是 CSS N4 官方方塊圖。</text>
+<rect x="48" y="127" width="804" height="146" rx="14" fill="#edf2f8" stroke="#afc1ce" stroke-width="2"/>
+<text x="72" y="168" font-size="29" font-weight="700" fill="#19354b" text-anchor="start">已核准的 SoC 配置與 IP metadata</text>
+<text x="72" y="211" font-size="25" font-weight="400" fill="#19354b" text-anchor="start">RTL／filelists　↔　register model　↔　軟體描述</text>
+<text x="72" y="249" font-size="24" font-weight="400" fill="#536674" text-anchor="start">同一個 release ID；clock／reset／power 另行核准</text>
+<path d="M450 280 L450 318" fill="none" stroke="#136d71" stroke-width="3" marker-end="url(#arrow)" stroke-dasharray="8 7"/>
+<text x="474" y="311" font-size="23" font-weight="400" fill="#536674" text-anchor="start">產生／核對</text>
+<rect x="48" y="351" width="314" height="118" rx="14" fill="#eaf3f3" stroke="#afc1ce" stroke-width="2"/>
+<text x="72" y="390" font-size="29" font-weight="700" fill="#19354b" text-anchor="start">運算子系統</text>
+<text x="72" y="429" font-size="26" font-weight="400" fill="#19354b" text-anchor="start">CPU ＋ 控制軟體</text>
+<rect x="538" y="351" width="314" height="118" rx="14" fill="#eaf3f3" stroke="#afc1ce" stroke-width="2"/>
+<text x="561" y="390" font-size="28" font-weight="700" fill="#19354b" text-anchor="start">自研資料面 IP</text>
+<text x="561" y="429" font-size="26" font-weight="400" fill="#19354b" text-anchor="start">DMA／加速器</text>
+<path d="M369 402 L530 402" fill="none" stroke="#136d71" stroke-width="3" marker-end="url(#arrow)" stroke-dasharray="8 7"/>
+<text x="450" y="379" font-size="21" font-weight="400" fill="#19354b" text-anchor="middle">MMIO 控制</text>
+<path d="M205 478 L205 548" fill="none" stroke="#136d71" stroke-width="3" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<path d="M695 478 L695 548" fill="none" stroke="#136d71" stroke-width="3" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<text x="726" y="519" font-size="22" font-weight="400" fill="#19354b" text-anchor="start">資料</text>
+<rect x="48" y="565" width="804" height="121" rx="14" fill="#edf2f8" stroke="#afc1ce" stroke-width="2"/>
+<text x="72" y="607" font-size="29" font-weight="700" fill="#19354b" text-anchor="start">互連與系統整合邊界</text>
+<text x="72" y="650" font-size="25" font-weight="400" fill="#19354b" text-anchor="start">位址轉譯、coherency、仲裁與交易順序需明確定義</text>
+<path d="M224 695 L224 751" fill="none" stroke="#136d71" stroke-width="3" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<path d="M677 695 L677 751" fill="none" stroke="#136d71" stroke-width="3" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<rect x="48" y="768" width="353" height="106" rx="14" fill="#eaf3f3" stroke="#afc1ce" stroke-width="2"/>
+<text x="72" y="808" font-size="24" font-weight="700" fill="#19354b" text-anchor="start">記憶體 controller／PHY</text>
+<text x="72" y="846" font-size="23" font-weight="400" fill="#19354b" text-anchor="start">對應的模型與實體 views</text>
+<rect x="499" y="768" width="353" height="106" rx="14" fill="#eaf3f3" stroke="#afc1ce" stroke-width="2"/>
+<text x="523" y="808" font-size="24" font-weight="700" fill="#19354b" text-anchor="start">外部 I/O controller／PHY</text>
+<text x="523" y="846" font-size="23" font-weight="400" fill="#19354b" text-anchor="start">例如 PCIe 介面</text>
+<text x="48" y="917" font-size="24" font-weight="400" fill="#536674" text-anchor="start">實線：資料關係　　虛線：配置／控制關係</text>
+<text x="48" y="951" font-size="24" font-weight="400" fill="#8a5425" text-anchor="start">停機契約：停止新工作 → 處置在途交易 → 恢復或回報</text>
+</g></svg>
