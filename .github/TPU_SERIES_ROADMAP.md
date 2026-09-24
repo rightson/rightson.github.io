@@ -84,7 +84,8 @@ Each topic has exactly one owning series; other series link to it instead of re-
   Public post: `_posts/2026-09-22-tpu-v1-origin-inference-asic.md`
 - [x] 02. TPU v1 datapath: how the 256×256 systolic array sustains 65,536 MACs  
   Public post: `_posts/2026-09-23-tpu-v1-systolic-array-dataflow.md`
-- [ ] 03. INT8 inference: why precision reduction changes silicon economics
+- [ ] 03. INT8 inference: why precision reduction changes silicon economics  
+  Public post: `_posts/2026-09-25-tpu-v1-int8-silicon-economics.md` — source committed; Pages build/deploy succeeded; generated HTML verified; live-page HTTP content verification pending.
 - [ ] 04. TPU v1 memory hierarchy: 24 MiB Unified Buffer, 4 MiB accumulators, Weight FIFO, and 8 GiB DDR3
 - [ ] 05. P99 latency versus throughput: why datacenter inference changes processor design
 - [ ] 06. Roofline analysis of TPU v1: why memory bandwidth became the next wall
