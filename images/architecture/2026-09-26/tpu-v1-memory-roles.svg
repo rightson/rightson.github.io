@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+<rect width="1200" height="700" fill="white"/>
+<defs>
+  <marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#333"/></marker>
+</defs>
+<style>
+.t{font:700 28px Arial,sans-serif;fill:#111}.s{font:20px Arial,sans-serif;fill:#222}.n{font:17px Arial,sans-serif;fill:#444}
+.b1{fill:#eef5ff;stroke:#2b5dab;stroke-width:2}.b2{fill:#fff3dc;stroke:#ad6b12;stroke-width:2}.b3{fill:#eef9ee;stroke:#3a7b3d;stroke-width:2}.b4{fill:#f7eefb;stroke:#7d4095;stroke-width:2}
+.arr{stroke:#333;stroke-width:3;fill:none;marker-end:url(#a)}.dash{stroke:#666;stroke-width:2;stroke-dasharray:8 7;fill:none;marker-end:url(#a)}
+</style>
+<text x="600" y="42" text-anchor="middle" class="t">TPU v1 separates data by lifetime, reuse and precision</text>
+<rect x="55" y="105" width="215" height="125" rx="14" class="b3"/>
+<text x="162" y="145" text-anchor="middle" class="s">Host DRAM</text><text x="162" y="178" text-anchor="middle" class="n">input / output</text><text x="162" y="205" text-anchor="middle" class="n">PCIe boundary</text>
+<rect x="340" y="80" width="250" height="150" rx="14" class="b1"/>
+<text x="465" y="123" text-anchor="middle" class="s">Unified Buffer</text><text x="465" y="156" text-anchor="middle" class="n">24 MiB SRAM</text><text x="465" y="183" text-anchor="middle" class="n">activation / intermediate</text><text x="465" y="210" text-anchor="middle" class="n">96K × 256 × 8b</text>
+<rect x="700" y="80" width="230" height="150" rx="14" class="b2"/>
+<text x="815" y="123" text-anchor="middle" class="s">Matrix Unit</text><text x="815" y="156" text-anchor="middle" class="n">256 × 256 MAC</text><text x="815" y="183" text-anchor="middle" class="n">64 KiB active tile</text><text x="815" y="210" text-anchor="middle" class="n">+ double buffer</text>
+<rect x="955" y="280" width="200" height="135" rx="14" class="b4"/>
+<text x="1055" y="320" text-anchor="middle" class="s">Accumulators</text><text x="1055" y="353" text-anchor="middle" class="n">4 MiB</text><text x="1055" y="380" text-anchor="middle" class="n">4096 × 256 × 32b</text>
+<rect x="340" y="455" width="250" height="145" rx="14" class="b3"/>
+<text x="465" y="496" text-anchor="middle" class="s">Weight Memory</text><text x="465" y="529" text-anchor="middle" class="n">8 GiB DDR3-2133</text><text x="465" y="556" text-anchor="middle" class="n">read-only in inference</text>
+<rect x="700" y="455" width="230" height="145" rx="14" class="b1"/>
+<text x="815" y="496" text-anchor="middle" class="s">Weight FIFO</text><text x="815" y="529" text-anchor="middle" class="n">4 tiles deep</text><text x="815" y="556" text-anchor="middle" class="n">prefetch / decouple</text>
+<path d="M270 166 L340 166" class="arr"/><text x="305" y="145" text-anchor="middle" class="n">DMA</text>
+<path d="M590 155 L700 155" class="arr"/><text x="645" y="132" text-anchor="middle" class="n">activation</text>
+<path d="M930 165 C1010 170 1048 215 1055 280" class="arr"/>
+<path d="M1055 415 C1045 450 995 455 930 520" class="dash"/>
+<path d="M955 348 C840 350 690 330 590 205" class="arr"/><text x="755" y="330" text-anchor="middle" class="n">activate / normalize / pool → UB</text>
+<path d="M590 528 L700 528" class="arr"/><text x="645" y="505" text-anchor="middle" class="n">30 GiB/s</text>
+<path d="M815 455 L815 230" class="arr"/><text x="850" y="350" class="n">weights</text>
+<text x="600" y="665" text-anchor="middle" class="n">Large read-only state stays off-chip; hot activations and wide reductions stay on-chip.</text>
+</svg>

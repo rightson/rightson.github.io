@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="690" viewBox="0 0 1200 690">
+<rect width="1200" height="690" fill="white"/>
+<style>
+.t{font:700 28px Arial,sans-serif;fill:#111}.s{font:20px Arial,sans-serif;fill:#222}.n{font:17px Arial,sans-serif;fill:#444}.bar{fill:#e9eef5;stroke:#333;stroke-width:1.5}.hi{fill:#dfeafc;stroke:#2458a6;stroke-width:1.5}
+</style>
+<text x="600" y="45" text-anchor="middle" class="t">One 64 KiB weight tile: internal shift is fast, DDR3 refill is slower</text>
+<text x="75" y="110" class="s">Internal array load</text>
+<rect x="320" y="82" width="145" height="42" class="hi"/>
+<text x="485" y="110" class="n">256 cycles ≈ 0.366 µs @ 700 MHz</text>
+<text x="75" y="200" class="s">DDR3 → FIFO fetch</text>
+<rect x="320" y="172" width="610" height="42" class="bar"/>
+<text x="950" y="200" class="n">≈ 1,424 cycles ≈ 2.03 µs @ 30 GiB/s</text>
+<text x="75" y="310" class="s">MatrixMultiply(B=256)</text>
+<rect x="320" y="282" width="145" height="42" class="hi"/>
+<text x="485" y="310" class="n">256 compute cycles ≈ 0.366 µs</text>
+<text x="75" y="400" class="s">MatrixMultiply(B=2048)</text>
+<rect x="320" y="372" width="880" height="42" class="hi"/>
+<text x="910" y="450" text-anchor="middle" class="n">2048 compute cycles ≈ 2.93 µs → enough time, in an ideal stream, to cover one 64 KiB DDR3 tile fetch</text>
+<line x1="320" y1="510" x2="930" y2="510" stroke="#333" stroke-width="2"/>
+<line x1="320" y1="500" x2="320" y2="520" stroke="#333" stroke-width="2"/>
+<line x1="465" y1="500" x2="465" y2="520" stroke="#333" stroke-width="2"/>
+<line x1="930" y1="500" x2="930" y2="520" stroke="#333" stroke-width="2"/>
+<text x="320" y="550" text-anchor="middle" class="n">0</text><text x="465" y="550" text-anchor="middle" class="n">256 cycles</text><text x="930" y="550" text-anchor="middle" class="n">≈1424 cycles</text>
+<text x="600" y="615" text-anchor="middle" class="s">FIFO and prefetch hide latency; only reuse can solve the steady-state bandwidth mismatch.</text>
+<text x="600" y="650" text-anchor="middle" class="n">Illustrative calculation: 64 KiB / 30 GiB/s and 700 MHz. Real layers differ in reuse, overlap and mapping.</text>
+</svg>
