@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 690" role="img" aria-label="Replacing Global Placement, Keeping the R2G Test">
+<style>text{font-family:system-ui,-apple-system,"Noto Sans CJK TC",sans-serif;fill:#17253d} .title{font-size:27px;font-weight:700} .sub{font-size:16px;fill:#51627b} .label{font-size:19px;font-weight:650} .small{font-size:15px} .n{font-size:18px;font-weight:700} .box{fill:#f7fafc;stroke:#8ea8bb;stroke-width:2} .blue{fill:#e4f1ff;stroke:#377ba9;stroke-width:2} .green{fill:#e7f5ed;stroke:#27815c;stroke-width:2} .amber{fill:#fff3da;stroke:#b57b21;stroke-width:2} .red{fill:#fff0f0;stroke:#b75151;stroke-width:2} .line{fill:none;stroke:#50647b;stroke-width:2.5;marker-end:url(#arrow)} .dash{fill:none;stroke:#8293a8;stroke-width:2;stroke-dasharray:7 6;marker-end:url(#arrow)}</style>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10" fill="none" stroke="#50647b" stroke-width="1.6"/></marker></defs>
+<text x="34" y="44" class="title">Replacing Global Placement, Keeping the R2G Test</text>
+<text x="34" y="78" text-anchor="start" class="sub">Same design, constraints, floorplan, downstream recipe and seed</text>
+<rect x="105" y="102" width="590" height="73" rx="14" class="box"/>
+<text x="400" y="132" text-anchor="middle" class="label">Netlist + SDC + Library + Macro/Floorplan</text>
+<text x="400" y="157" text-anchor="middle" class="small">Frozen input snapshot</text>
+<path d="M310 175 V210 H205 V236" class="line"/>
+<path d="M490 175 V210 H595 V236" class="line"/>
+<rect x="72" y="237" width="270" height="99" rx="14" class="blue"/>
+<text x="207" y="273" text-anchor="middle" class="label">Commercial GP</text>
+<text x="207" y="306" text-anchor="middle" class="small">Baseline placement</text>
+<rect x="458" y="237" width="270" height="99" rx="14" class="green"/>
+<text x="593" y="273" text-anchor="middle" class="label">C3PO global place</text>
+<text x="593" y="306" text-anchor="middle" class="small">Macro + standard-cell GP</text>
+<path d="M207 336 V386" class="line"/>
+<path d="M593 336 V386" class="line"/>
+<rect x="72" y="386" width="270" height="112" rx="14" class="box"/>
+<rect x="458" y="386" width="270" height="112" rx="14" class="box"/>
+<text x="207" y="420" text-anchor="middle" class="label">Same recipe</text>
+<text x="207" y="449" text-anchor="middle" class="small">legalize → clock-opt</text>
+<text x="207" y="475" text-anchor="middle" class="small">route → route-opt</text>
+<text x="593" y="420" text-anchor="middle" class="label">Same recipe</text>
+<text x="593" y="449" text-anchor="middle" class="small">legalize → clock-opt</text>
+<text x="593" y="475" text-anchor="middle" class="small">route → route-opt</text>
+<path d="M207 498 V533 H395 V555" class="line"/>
+<path d="M593 498 V533 H405 V555" class="line"/>
+<rect x="105" y="555" width="590" height="88" rx="14" class="amber"/>
+<text x="400" y="590" text-anchor="middle" class="label">Post-route QoR / Timing / Power</text>
+<text x="400" y="618" text-anchor="middle" class="small">Compare evidence before accepting a candidate</text>
+</svg>

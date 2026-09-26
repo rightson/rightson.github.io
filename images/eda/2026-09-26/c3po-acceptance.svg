@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 690" role="img" aria-label="ARIANE136: Better Wirelength, Worse TNS">
+<style>text{font-family:system-ui,-apple-system,"Noto Sans CJK TC",sans-serif;fill:#17253d} .title{font-size:27px;font-weight:700} .sub{font-size:16px;fill:#51627b} .label{font-size:19px;font-weight:650} .small{font-size:15px} .n{font-size:18px;font-weight:700} .box{fill:#f7fafc;stroke:#8ea8bb;stroke-width:2} .blue{fill:#e4f1ff;stroke:#377ba9;stroke-width:2} .green{fill:#e7f5ed;stroke:#27815c;stroke-width:2} .amber{fill:#fff3da;stroke:#b57b21;stroke-width:2} .red{fill:#fff0f0;stroke:#b75151;stroke-width:2} .line{fill:none;stroke:#50647b;stroke-width:2.5;marker-end:url(#arrow)} .dash{fill:none;stroke:#8293a8;stroke-width:2;stroke-dasharray:7 6;marker-end:url(#arrow)}</style>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10" fill="none" stroke="#50647b" stroke-width="1.6"/></marker></defs>
+<text x="34" y="44" class="title">ARIANE136: Better Wirelength, Worse TNS</text>
+<text x="34" y="78" text-anchor="start" class="sub">ASP-DAC 2026, Table III, route-opt; ASAP7 benchmark</text>
+<rect x="42" y="104" width="716" height="257" rx="14" class="box"/>
+<text x="68" y="144" text-anchor="start" class="label">Metric</text>
+<text x="400" y="144" text-anchor="middle" class="label">Commercial baseline</text>
+<text x="656" y="144" text-anchor="middle" class="label">C3PO</text>
+<line x1="60" x2="740" y1="158" y2="158" stroke="#d4dfe8"/>
+<line x1="60" x2="740" y1="205" y2="205" stroke="#d4dfe8"/>
+<line x1="60" x2="740" y1="252" y2="252" stroke="#d4dfe8"/>
+<line x1="60" x2="740" y1="299" y2="299" stroke="#d4dfe8"/>
+<text x="68" y="190" text-anchor="start" class="small">Routed WL (μm)</text>
+<text x="400" y="190" text-anchor="middle" class="n">970,236</text>
+<text x="656" y="190" text-anchor="middle" class="n">891,853</text>
+<text x="68" y="237" text-anchor="start" class="small">Switching power (mW)</text>
+<text x="400" y="237" text-anchor="middle" class="n">40.06</text>
+<text x="656" y="237" text-anchor="middle" class="n">36.58</text>
+<text x="68" y="284" text-anchor="start" class="small">TNS (ns)</text>
+<text x="400" y="284" text-anchor="middle" class="n">−0.035</text>
+<text x="656" y="284" text-anchor="middle" class="n">−0.101</text>
+<text x="68" y="331" text-anchor="start" class="small">Violation endpoints</text>
+<text x="400" y="331" text-anchor="middle" class="n">14</text>
+<text x="656" y="331" text-anchor="middle" class="n">38</text>
+<path d="M400 361 V401" class="line"/>
+<rect x="151" y="404" width="498" height="74" rx="14" class="amber"/>
+<text x="400" y="435" text-anchor="middle" class="label">Apply the pre-approved multi-metric gate</text>
+<text x="400" y="463" text-anchor="middle" class="small">Decide only after route-opt reports exist</text>
+<path d="M270 478 V510 H206 V529" class="line"/>
+<path d="M530 478 V510 H594 V529" class="line"/>
+<rect x="51" y="530" width="310" height="95" rx="14" class="red"/>
+<text x="206" y="567" text-anchor="middle" class="label">Hold candidate</text>
+<text x="206" y="598" text-anchor="middle" class="small">Review corner / ECO; no golden update</text>
+<rect x="439" y="530" width="310" height="95" rx="14" class="green"/>
+<text x="594" y="567" text-anchor="middle" class="label">Accept after review</text>
+<text x="594" y="598" text-anchor="middle" class="small">Advance a traceable version pointer</text>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 718" role="img" aria-label="Four Signals in One Placement Iteration">
+<style>text{font-family:system-ui,-apple-system,"Noto Sans CJK TC",sans-serif;fill:#17253d} .title{font-size:27px;font-weight:700} .sub{font-size:16px;fill:#51627b} .label{font-size:19px;font-weight:650} .small{font-size:15px} .n{font-size:18px;font-weight:700} .box{fill:#f7fafc;stroke:#8ea8bb;stroke-width:2} .blue{fill:#e4f1ff;stroke:#377ba9;stroke-width:2} .green{fill:#e7f5ed;stroke:#27815c;stroke-width:2} .amber{fill:#fff3da;stroke:#b57b21;stroke-width:2} .red{fill:#fff0f0;stroke:#b75151;stroke-width:2} .line{fill:none;stroke:#50647b;stroke-width:2.5;marker-end:url(#arrow)} .dash{fill:none;stroke:#8293a8;stroke-width:2;stroke-dasharray:7 6;marker-end:url(#arrow)}</style>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10" fill="none" stroke="#50647b" stroke-width="1.6"/></marker></defs>
+<text x="34" y="44" class="title">Four Signals in One Placement Iteration</text>
+<text x="34" y="78" text-anchor="start" class="sub">Gradients guide coordinates; route-opt provides external evidence</text>
+<rect x="170" y="105" width="460" height="70" rx="14" class="blue"/>
+<text x="400" y="135" text-anchor="middle" class="label">Cell / pin coordinates (x, y)</text>
+<text x="400" y="159" text-anchor="middle" class="small">Bound to netlist, library and constraints</text>
+<path d="M400 175 V205 H108 V229" class="line"/>
+<path d="M400 175 V205 H300 V229" class="line"/>
+<path d="M400 175 V205 H492 V229" class="line"/>
+<path d="M400 175 V205 H684 V229" class="line"/>
+<rect x="18" y="230" width="180" height="110" rx="14" class="box"/>
+<text x="108" y="270" text-anchor="middle" class="label">Wirelength</text>
+<text x="108" y="307" text-anchor="middle" class="small">Net geometry / HPWL</text>
+<rect x="210" y="230" width="180" height="110" rx="14" class="box"/>
+<text x="300" y="270" text-anchor="middle" class="label">Density</text>
+<text x="300" y="307" text-anchor="middle" class="small">bin utilization</text>
+<rect x="402" y="230" width="180" height="110" rx="14" class="green"/>
+<text x="492" y="270" text-anchor="middle" class="label">Timing</text>
+<text x="492" y="307" text-anchor="middle" class="small">RC → slew → WNS/TNS</text>
+<rect x="594" y="230" width="180" height="110" rx="14" class="green"/>
+<text x="684" y="270" text-anchor="middle" class="label">Routability</text>
+<text x="684" y="307" text-anchor="middle" class="small">RUDY / bin demand</text>
+<path d="M108 340 V386" class="line"/>
+<path d="M300 340 V386" class="line"/>
+<path d="M492 340 V386" class="line"/>
+<path d="M684 340 V386" class="line"/>
+<rect x="65" y="389" width="670" height="82" rx="14" class="blue"/>
+<text x="400" y="423" text-anchor="middle" class="label">Gradients of each objective w.r.t. coordinates</text>
+<text x="400" y="450" text-anchor="middle" class="small">Balance via inner products, regularization, nonnegative weights</text>
+<path d="M400 471 V505" class="line"/>
+<rect x="128" y="507" width="544" height="69" rx="14" class="green"/>
+<text x="400" y="548" text-anchor="middle" class="label">Update positions; recompute signals</text>
+<path d="M400 576 V610" class="line"/>
+<rect x="128" y="612" width="544" height="72" rx="14" class="amber"/>
+<text x="400" y="643" text-anchor="middle" class="label">Validate in the same downstream flow</text>
+<text x="400" y="669" text-anchor="middle" class="small">Model gradient is not routed signoff evidence</text>
+</svg>
