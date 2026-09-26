@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 560" role="img">
+<style>text{font-family:system-ui,-apple-system,"Noto Sans TC",sans-serif;fill:#172b4d}.t{font-size:24px;font-weight:700}.h{font-size:18px;font-weight:650}.s{font-size:15px;fill:#435574}.b{fill:#f5f8fc;stroke:#8ca0bd;stroke-width:2}.c{fill:#eaf4ff;stroke:#5e88b8;stroke-width:2}.g{fill:#edf8f1;stroke:#5c9b74;stroke-width:2}.l{stroke:#6b7f9f;stroke-width:2;fill:none}</style>
+<rect width="760" height="560" fill="#fff"/><text x="40" y="40" class="t">一個 process，許多獨立 control loops</text>
+<rect x="260" y="70" width="240" height="70" rx="12" class="c"/><text x="380" y="100" text-anchor="middle" class="h">kube-apiserver</text><text x="380" y="124" text-anchor="middle" class="s">authoritative API state</text>
+<path d="M380 140v55" class="l"/><rect x="190" y="195" width="380" height="72" rx="12" class="g"/><text x="380" y="226" text-anchor="middle" class="h">Shared Informer Factory / Cache</text><text x="380" y="251" text-anchor="middle" class="s">共用 observation，避免每個 controller 重複 LIST/WATCH</text>
+<path d="M270 267v55M380 267v55M490 267v55" class="l"/>
+<rect x="70" y="322" width="200" height="94" rx="12" class="b"/><text x="170" y="353" text-anchor="middle" class="h">Deployment</text><text x="170" y="378" text-anchor="middle" class="s">desired ReplicaSet</text><text x="170" y="399" text-anchor="middle" class="s">own reconcile loop</text>
+<rect x="280" y="322" width="200" height="94" rx="12" class="b"/><text x="380" y="353" text-anchor="middle" class="h">ReplicaSet</text><text x="380" y="378" text-anchor="middle" class="s">desired Pods</text><text x="380" y="399" text-anchor="middle" class="s">own reconcile loop</text>
+<rect x="490" y="322" width="200" height="94" rx="12" class="b"/><text x="590" y="353" text-anchor="middle" class="h">Job / PV / HPA ...</text><text x="590" y="378" text-anchor="middle" class="s">不同 state ownership</text><text x="590" y="399" text-anchor="middle" class="s">各自 failure/retry</text>
+<path d="M170 416v58M380 416v58M590 416v58" class="l"/>
+<text x="380" y="510" text-anchor="middle" class="s">邏輯上解耦；營運上合併成 kube-controller-manager</text>
+</svg>

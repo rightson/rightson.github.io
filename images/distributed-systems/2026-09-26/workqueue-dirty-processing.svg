@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 540" role="img">
+<style>text{font-family:system-ui,-apple-system,"Noto Sans TC",sans-serif;fill:#172b4d}.t{font-size:24px;font-weight:700}.h{font-size:18px;font-weight:650}.s{font-size:15px;fill:#435574}.b{fill:#f5f8fc;stroke:#8ca0bd;stroke-width:2}.q{fill:#fff4e8;stroke:#ba854a;stroke-width:2}.g{fill:#edf8f1;stroke:#5c9b74;stroke-width:2}.l{stroke:#6b7f9f;stroke-width:2;fill:none}.d{stroke:#a46b3c;stroke-width:2;fill:none;stroke-dasharray:7 5}</style>
+<rect width="760" height="540" fill="#fff"/><text x="38" y="40" class="t">100 個 update 不必變成 100 個工作</text>
+<rect x="45" y="82" width="190" height="76" rx="12" class="q"/><text x="140" y="112" text-anchor="middle" class="h">Add(key)</text><text x="140" y="136" text-anchor="middle" class="s">dirty = {key}</text>
+<path d="M235 120h80" class="l"/><rect x="315" y="82" width="190" height="76" rx="12" class="b"/><text x="410" y="112" text-anchor="middle" class="h">Get(key)</text><text x="410" y="136" text-anchor="middle" class="s">processing = {key}</text>
+<path d="M505 120h80" class="l"/><rect x="585" y="82" width="130" height="76" rx="12" class="g"/><text x="650" y="112" text-anchor="middle" class="h">Reconcile</text><text x="650" y="136" text-anchor="middle" class="s">讀最新 state</text>
+<path d="M650 158v112H410" class="l"/><rect x="315" y="270" width="190" height="88" rx="12" class="q"/><text x="410" y="302" text-anchor="middle" class="h">處理期間又有 update</text><text x="410" y="328" text-anchor="middle" class="s">只把 key 再標 dirty</text>
+<path d="M410 358v58" class="l"/><rect x="315" y="416" width="190" height="76" rx="12" class="b"/><text x="410" y="447" text-anchor="middle" class="h">Done(key)</text><text x="410" y="471" text-anchor="middle" class="s">dirty? → 再排一次</text>
+<path d="M315 454H140V158" class="d"/><text x="145" y="386" class="s">重新排 key</text>
+<text x="380" y="522" text-anchor="middle" class="s">queue 保存「需要再看」，API state 保存「真相是什麼」</text>
+</svg>
