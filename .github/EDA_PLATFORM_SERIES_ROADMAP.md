@@ -18,7 +18,7 @@
 
 ## 候選章節，依證據成熟度選擇，不按新聞日期輪替
 
-- [ ] **NVIDIA C3PO：全域 placement 的 timing、routability 與 wirelength 同時最佳化。** 由 [NVIDIA EDA 研究群出版清單](https://research.nvidia.com/labs/electronic-design-automation/)找到 2026 ASP-DAC 原文；深入 objective、資料結構、候選如何送往後段工具驗證，和既有 AutoDMP 的 macro placement 比較時須有新機制，勿重複敘事。若原文不足，轉下一題。
+- [x] **NVIDIA C3PO：全域 placement 的 timing、routability 與 wirelength 同時最佳化。** [已發表文章](https://rightson.github.io/eda/2026/09/26/nvidia-c3po-concurrent-placement-r2g.html)；repo path：`_posts/2026-09-26-nvidia-c3po-concurrent-placement-r2g.md`；原始研究：ASP-DAC 2026 年 1 月。文章比較後段 routed WL、TNS、power 與違例數，包括 ARIANE136 時序退化的反例；未宣稱為 NVIDIA 量產平台。
 - [ ] **NVIDIA INSTA／LEGO-Size：placement 後的快速 STA 與 signoff-accurate sizing 回饋。** 同一[研究清單](https://research.nvidia.com/labs/electronic-design-automation/)列 2025 DAC／ISPD 論文和部分程式碼；拆解 timing approximation 對工具呼叫、gate sizing 與 signoff 的責任邊界。選其中一個具體系統，不合併成無法驗證的「NVIDIA 全平台」。
 - [ ] **Marvell 3D chiplet 驗證或實體 signoff：跨 die／interposer 的交付條件。** [Marvell DAC 2026 官方議程](https://www.marvell.com/company/events/dac-2026.html)列 SIP flow、TSV／interposer／ESD signoff、3Dblox 產生和早期 DEF power grid shorts 分析。這些目前只是報告標題；須先取得完整簡報／技術資料，證實 input、規則、產物及案例，才可各自成篇。不能把多個報告拼成其內部平台。
 - [ ] **AMD 的 AI 驗證回歸：coverage 等效條件下的測試集合與資源。** [Synopsys 對 AMD 的公開案例](https://www.synopsys.com/zh-tw/taiwan/blog/amd-tests-snps-verification-tool.html)可作線索，須追到原始簡報、實驗條件及工具介面；與 Qualcomm 文章相比，新增價值必須落在 regression selection、fault evidence／成本等不同機制。只見數倍改善的宣傳數字不足以成篇。
@@ -29,4 +29,4 @@
 
 ## 發布時更新
 
-成功提交並驗證正式頁後，才把對應方框標為完成，補文章 repo path、原始日期與可驗證的正式連結。發現來源不足則保留未完成，註記缺口；不可把題目標題當已證實能力。每日僅一篇，先核對 `.github/EDA_PUBLICATION_QUEUE.md` 與當日其他 agent 的工作。
+成功提交並驗證正式頁後，才把對應方框標為完成，補文章 repo path、原始日期與可驗證的正式連結。發現來源不足則保留未完成，註記缺口；不可把題目標題當已證實能力。例行排程每日僅一篇；2026-09-26 的 C3PO 為使用者當日明確要求的加刊。先核對 `.github/EDA_PUBLICATION_QUEUE.md` 與當日其他 agent 的工作。
