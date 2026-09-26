@@ -55,4 +55,5 @@
   <text x="805" y="529" class="text">Telemetry Path</text>
   <text x="798" y="552" class="small">async click events; 可降級</text>
   <path d="M405 197 C480 525 650 532 770 532" class="dash"/>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#333" i]{fill:#d2d5d6}[fill="#ffffff" i]{fill:#1b1f20}.box{fill:#1f2325;stroke:#d2d5d6}.title{fill:#dee1e1}.text{fill:#d8dbdb}.small{fill:#cbcfd0}.arrow{stroke:#d2d5d6}.dash{stroke:#bfc4c5}}</style>
 </svg>

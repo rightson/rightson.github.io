@@ -48,4 +48,5 @@
   <text x="215" y="557" class="small">下一次 GET</text>
   <path d="M420 605 L755 605" class="arrow"/>
   <text x="505" y="597" class="small">miss → read v8</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#333" i]{fill:#d2d5d6}[fill="#ffffff" i]{fill:#1b1f20}.box{fill:#1f2325;stroke:#d2d5d6}.title{fill:#dee1e1}.text{fill:#d8dbdb}.small{fill:#cbcfd0}.arrow{stroke:#d2d5d6}.bad{stroke:#a2a2a2}.line{stroke:#6f6f6f}}</style>
 </svg>

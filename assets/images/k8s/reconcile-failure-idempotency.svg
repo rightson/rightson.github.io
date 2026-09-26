@@ -12,4 +12,5 @@
 <rect x="765" y="430" width="490" height="145" rx="12" class="g"/><text x="1010" y="470" text-anchor="middle" class="t m">idempotent reconciliation</text><text x="1010" y="505" text-anchor="middle" class="t s">re-observe external state → detect existing object → adopt/update</text><text x="1010" y="535" text-anchor="middle" class="t s">failure becomes extra work, not incorrect state</text>
 <path d="M1050 320 C1050 365 390 365 390 430" class="d"/><path d="M1050 320 L1010 430" class="a"/>
 <text x="700" y="660" text-anchor="middle" class="t s">A controller cannot assume exactly-once execution; it must tolerate duplicate work, restarts and stale observations.</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#333" i]{fill:#d2d5d6}[fill="white" i]{fill:#1b1f20}[stroke="#333" i]{stroke:#d2d5d6}.t{fill:#dee1e1}.s{fill:#cbcfd0}.b{fill:#1f2325;stroke:#d2d5d6}.c{fill:#131f33;stroke:#6b99df}.g{fill:#1d2b1d;stroke:#bad3bb}.r{fill:#311212;stroke:#c57474}.a{stroke:#d2d5d6}.d{stroke:#da8383}}</style>
 </svg>

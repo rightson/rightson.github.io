@@ -29,4 +29,5 @@
 <path d="M590 528 L700 528" class="arr"/><text x="645" y="505" text-anchor="middle" class="n">30 GiB/s</text>
 <path d="M815 455 L815 230" class="arr"/><text x="850" y="350" class="n">weights</text>
 <text x="600" y="665" text-anchor="middle" class="n">Large read-only state stays off-chip; hot activations and wide reductions stay on-chip.</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#333" i]{fill:#d2d5d6}[fill="white" i]{fill:#1b1f20}.t{fill:#dee1e1}.s{fill:#d8dbdb}.n{fill:#cbcfd0}.b1{fill:#131f31;stroke:#78a0dd}.b2{fill:#382c15;stroke:#e7aa57}.b3{fill:#1c2b1c;stroke:#bad2bb}.b4{fill:#27192d;stroke:#a05eba}.arr{stroke:#d2d5d6}.dash{stroke:#bfc4c5}}</style>
 </svg>

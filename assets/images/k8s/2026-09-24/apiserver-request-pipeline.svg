@@ -15,4 +15,5 @@
 <rect x="95" y="485" rx="12" width="505" height="135" class="b"/><text x="347" y="525" class="t">Read path</text><text x="347" y="558" class="m">GET / LIST / WATCH 不進 admission mutation path</text><text x="347" y="589" class="m">可由 watch cache / etcd consistency semantics 服務</text>
 <rect x="800" y="485" rx="12" width="505" height="135" class="b"/><text x="1052" y="525" class="t">Write path</text><text x="1052" y="558" class="m">CREATE / UPDATE / PATCH / DELETE</text><text x="1052" y="589" class="m">共享同一組 access-control 與 admission 規則</text>
 <text x="700" y="705" class="m">圖示為邏輯責任鏈，而非 kube-apiserver 內部所有 filter 的逐函式呼叫順序。</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#333" i]{fill:#d2d5d6}[fill="white" i]{fill:#1b1f20}.b{fill:#1f2325;stroke:#d2d5d6}.p{fill:#131f33;stroke:#6b99df}.w{fill:#342514;stroke:#e6a750}.s{fill:#1d2b1e;stroke:#bad3bb}.t{fill:#dee1e1}.m{fill:#d2d5d6}.ar{stroke:#d2d5d6}.dash{stroke:#a2a2a2}}</style>
 </svg>

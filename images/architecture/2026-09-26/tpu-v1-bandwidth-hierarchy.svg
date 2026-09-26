@@ -22,4 +22,5 @@
 <text x="600" y="515" text-anchor="middle" class="s">The MXU is fed by a much wider on-chip path than either off-chip interface.</text>
 <text x="600" y="555" text-anchor="middle" class="n">Therefore performance depends on keeping data resident and reusing it, not continuously streaming from DRAM.</text>
 <text x="600" y="630" text-anchor="middle" class="n">Numbers are architectural interface rates, not an application-level throughput guarantee.</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#f5f5f5" i]{fill:#202426}[fill="white" i]{fill:#1b1f20}[stroke="#333" i]{stroke:#d2d5d6}.t{fill:#dee1e1}.s{fill:#d8dbdb}.n{fill:#cbcfd0}.b{fill:#131f31;stroke:#6b99df}.g{fill:#1d2b1d;stroke:#bad3bb}.o{fill:#352714;stroke:#e7aa55}}</style>
 </svg>

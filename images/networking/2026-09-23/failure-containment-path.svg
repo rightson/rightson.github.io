@@ -49,4 +49,5 @@
   <line x1="305" y1="435" x2="515" y2="535" class="dashed"/>
   <line x1="605" y1="435" x2="600" y2="535" class="dashed"/>
   <line x1="910" y1="435" x2="685" y2="535" class="dashed"/>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#333" i]{fill:#d2d5d6}text{fill:#dee1e1}.sub{fill:#cbcfd0}.box{fill:#1f2325;stroke:#d2d5d6}.arrow{stroke:#d2d5d6}.dashed{stroke:#bfc4c5}}</style>
 </svg>

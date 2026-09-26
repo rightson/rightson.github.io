@@ -42,4 +42,5 @@
   <line x1="220" y1="390" x2="430" y2="480" class="line"/>
   <line x1="600" y1="390" x2="600" y2="480" class="line"/>
   <line x1="980" y1="390" x2="770" y2="480" class="line"/>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#222" i]{fill:#d8dbdb}[fill="white" i]{fill:#1b1f20}text{fill:#dee1e1}.box{fill:#202426;stroke:#d8dbdb}.accent{fill:#20262d;stroke:#d8dbdb}.line{stroke:#d8dbdb}}</style>
 </svg>

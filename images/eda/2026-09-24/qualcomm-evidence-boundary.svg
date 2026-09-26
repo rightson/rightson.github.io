@@ -16,4 +16,5 @@
 <rect x="32" y="648" width="776" height="120" rx="14" fill="#fff8eb" stroke="#b87c24" stroke-dasharray="8 6"/>
 <text x="54" y="691" class="t">待回答的整合問題</text>
 <text x="54" y="732" class="b">誰執行？誰驗收？如何控制權限與計算成本？</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#f4f7fa" i]{fill:#1c2227}[fill="#fff8eb" i]{fill:#322813}[fill="white" i]{fill:#1b1f20}[stroke="#b87c24" i]{stroke:#e4b877}[stroke="#c7d3df" i]{stroke:#2f363c}text{fill:#c9d5e1}.s{fill:#bcc3ca}.tag{fill:#51d7c9}}</style>
 </svg>

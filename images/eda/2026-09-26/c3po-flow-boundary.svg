@@ -29,4 +29,5 @@
 <rect x="105" y="555" width="590" height="88" rx="14" class="amber"/>
 <text x="400" y="590" text-anchor="middle" class="label">Post-route QoR / Timing / Power</text>
 <text x="400" y="618" text-anchor="middle" class="small">Compare evidence before accepting a candidate</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[stroke="#50647b" i]{stroke:#bac1ca}text{fill:#ccd4e2}.sub{fill:#bac0c9}.box{fill:#1a2227;stroke:#577891}.blue{fill:#142435;stroke:#87b8d8}.green{fill:#202e26;stroke:#5bcd9e}.amber{fill:#392e16;stroke:#e5b770}.red{fill:#311212;stroke:#c97c7c}.line{stroke:#bac1ca}.dash{stroke:#6d819a}}</style>
 </svg>

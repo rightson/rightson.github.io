@@ -36,4 +36,5 @@
 <rect x="128" y="612" width="544" height="72" rx="14" class="amber"/>
 <text x="400" y="643" text-anchor="middle" class="label">Validate in the same downstream flow</text>
 <text x="400" y="669" text-anchor="middle" class="small">Model gradient is not routed signoff evidence</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[stroke="#50647b" i]{stroke:#bac1ca}text{fill:#ccd4e2}.sub{fill:#bac0c9}.box{fill:#1a2227;stroke:#577891}.blue{fill:#142435;stroke:#87b8d8}.green{fill:#202e26;stroke:#5bcd9e}.amber{fill:#392e16;stroke:#e5b770}.red{fill:#311212;stroke:#c97c7c}.line{stroke:#bac1ca}.dash{stroke:#6d819a}}</style>
 </svg>

@@ -9,4 +9,5 @@
 <path d="M148 333v112" class="d"/><rect x="45" y="445" width="205" height="88" rx="12" class="r"/><text x="148" y="476" text-anchor="middle" class="h">舊 external job 仍可能活著</text><text x="148" y="501" text-anchor="middle" class="s">LSF / volume / API side effect</text>
 <path d="M510 374H360v115H250" class="d"/><text x="385" y="471" text-anchor="middle" class="s">新 leader 可能再次觸發</text>
 <text x="380" y="570" text-anchor="middle" class="s">因此 external side effect 還需要 idempotency / ownership / fencing contract</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#fff" i]{fill:#1b1f20}text{fill:#c6d0e2}.s{fill:#bcc3cf}.b{fill:#192029;stroke:#a4b4cb}.g{fill:#1d2b22;stroke:#80b494}.r{fill:#311613;stroke:#d89e97}.l{stroke:#7d8eaa}.d{stroke:#d89e97}}</style>
 </svg>

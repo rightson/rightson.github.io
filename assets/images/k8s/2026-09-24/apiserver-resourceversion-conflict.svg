@@ -15,4 +15,5 @@
 <rect x="540" y="505" rx="12" width="320" height="120" class="e"/><text x="700" y="548" class="t">409 Conflict</text><text x="700" y="582" class="m">stale write is rejected</text><text x="700" y="608" class="m">B must re-read / merge / retry</text>
 <path d="M700 415 L700 505" class="ar"/>
 <text x="700" y="700" class="m">這不是 distributed lock；它把「誰先拿到鎖」改成「誰基於最新 state 提交可接受的 mutation」。</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#333" i]{fill:#d2d5d6}[fill="white" i]{fill:#1b1f20}.c{fill:#131f33;stroke:#6b99df}.s{fill:#1d2b1e;stroke:#bad3bb}.e{fill:#311212;stroke:#d99696}.t{fill:#dee1e1}.m{fill:#d2d5d6}.ar{stroke:#d2d5d6}}</style>
 </svg>

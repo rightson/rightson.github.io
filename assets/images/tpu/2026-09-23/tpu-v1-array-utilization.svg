@@ -10,4 +10,5 @@
   <rect x="700" y="110" width="150" height="390" class="bar"/><text x="775" y="535" class="s" text-anchor="middle">256-wide</text><text x="775" y="95" class="s" text-anchor="middle">100% columns useful</text>
   <rect x="945" y="110" width="150" height="390" class="bar"/><text x="1020" y="535" class="s" text-anchor="middle">512-wide</text><text x="1020" y="95" class="s" text-anchor="middle">2 tiles, each full width</text>
   <text x="600" y="580" class="s" text-anchor="middle">Conceptual utilization example: the 256×256 array rewards dimensions that tile cleanly; padding or narrow dimensions waste active MAC capacity.</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="white" i]{fill:#1b1f20}.t{fill:#dee1e1}.s{fill:#d2d5d6}.axis{stroke:#d8dbdb}.grid{stroke:#343c3f}.bar{fill:#131f33;stroke:#6b99df}.fill{fill:#352714;stroke:#e7aa55}}</style>
 </svg>

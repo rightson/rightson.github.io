@@ -30,4 +30,5 @@
 <text x="72" y="939" font-size="30" font-weight="700" fill="#19354b" text-anchor="start">可交付 release</text>
 <text x="72" y="981" font-size="24" font-weight="400" fill="#19354b" text-anchor="start">GDS ＋ 設計版本 ＋ 驗收結果 ＋ 未決問題／核准</text>
 <text x="48" y="1052" font-size="23" font-weight="400" fill="#536674" text-anchor="start">軟體 boot／emulation 是另一條驗證分支，不能代替 signoff。</text>
-</g></svg>
+</g><style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#136d71" i]{fill:#48dae0}[fill="#19354b" i]{fill:#c7d6e1}[fill="#536674" i]{fill:#bdc4c9}[fill="#8a5425" i]{fill:#d3935b}[fill="#eaf3f3" i]{fill:#222b2b}[fill="#edf2f8" i]{fill:#1d242b}[fill="#fcfdfd" i]{fill:#1c2121}[stroke="#136d71" i]{stroke:#48dae0}[stroke="#afc1ce" i]{stroke:#445d70}}</style>
+</svg>

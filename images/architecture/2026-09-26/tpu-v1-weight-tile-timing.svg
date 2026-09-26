@@ -23,4 +23,5 @@
 <text x="320" y="550" text-anchor="middle" class="n">0</text><text x="465" y="550" text-anchor="middle" class="n">256 cycles</text><text x="930" y="550" text-anchor="middle" class="n">≈1424 cycles</text>
 <text x="600" y="615" text-anchor="middle" class="s">FIFO and prefetch hide latency; only reuse can solve the steady-state bandwidth mismatch.</text>
 <text x="600" y="650" text-anchor="middle" class="n">Illustrative calculation: 64 KiB / 30 GiB/s and 700 MHz. Real layers differ in reuse, overlap and mapping.</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="white" i]{fill:#1b1f20}[stroke="#333" i]{stroke:#d2d5d6}.t{fill:#dee1e1}.s{fill:#d8dbdb}.n{fill:#cbcfd0}.bar{fill:#20252d;stroke:#d2d5d6}.hi{fill:#182335;stroke:#6b99df}}</style>
 </svg>

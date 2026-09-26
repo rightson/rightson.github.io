@@ -13,4 +13,5 @@
 <rect x="750" y="535" rx="14" width="250" height="120" class="h"/><text x="875" y="575" class="t">Data path</text><text x="875" y="608" class="m">NFS / SAN / NVMe</text><text x="875" y="635" class="m">TCP / RDMA / MPI</text>
 <path d="M625 410 L550 535" class="d"/><path d="M775 410 L850 535" class="d"/>
 <text x="700" y="730" class="m">作者推論：Kubernetes 的價值在統一 control-plane mutation contract；LSF、RDMA、NFS/SAN 等 data/execution path 可保留各自最適機制。</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#333" i]{fill:#d2d5d6}[fill="white" i]{fill:#1b1f20}.b{fill:#1f2325;stroke:#d2d5d6}.p{fill:#131f33;stroke:#6b99df}.s{fill:#1d2b1e;stroke:#bad3bb}.h{fill:#342514;stroke:#e6a750}.t{fill:#dee1e1}.m{fill:#d2d5d6}.ar{stroke:#d2d5d6}.d{stroke:#a2a2a2}}</style>
 </svg>

@@ -35,4 +35,5 @@
 <rect x="439" y="530" width="310" height="95" rx="14" class="green"/>
 <text x="594" y="567" text-anchor="middle" class="label">Accept after review</text>
 <text x="594" y="598" text-anchor="middle" class="small">Advance a traceable version pointer</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[stroke="#50647b" i]{stroke:#bac1ca}[stroke="#d4dfe8" i]{stroke:#293036}text{fill:#ccd4e2}.sub{fill:#bac0c9}.box{fill:#1a2227;stroke:#577891}.blue{fill:#142435;stroke:#87b8d8}.green{fill:#202e26;stroke:#5bcd9e}.amber{fill:#392e16;stroke:#e5b770}.red{fill:#311212;stroke:#c97c7c}.line{stroke:#bac1ca}.dash{stroke:#6d819a}}</style>
 </svg>

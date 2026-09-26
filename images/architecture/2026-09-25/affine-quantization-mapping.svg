@@ -21,4 +21,5 @@
 <text x="600" y="450" text-anchor="middle" class="s">Accuracy cost comes from rounding + clipping.</text>
 <text x="600" y="495" text-anchor="middle" class="sm">Hardware benefit comes from narrower operands, smaller storage and lower data movement.</text>
 <text x="600" y="545" text-anchor="middle" class="sm">Accumulators may stay wide even when inputs are 8-bit.</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#333" i]{fill:#d2d5d6}[fill="#fff" i]{fill:#1b1f20}.t{fill:#dee1e1}.s{fill:#d8dbdb}.sm{fill:#cbcfd0}.b{fill:#1c2026;stroke:#d2d5d6}.q{fill:#132133;stroke:#8ab0da}.arr{stroke:#d2d5d6}}</style>
 </svg>

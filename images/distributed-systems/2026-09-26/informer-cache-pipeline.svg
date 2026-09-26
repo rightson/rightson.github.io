@@ -6,4 +6,5 @@
 <path d="M380 250v42" class="l"/><rect x="245" y="292" width="270" height="70" rx="12" class="g"/><text x="380" y="323" text-anchor="middle" class="h">Store / Indexer</text><text x="380" y="347" text-anchor="middle" class="s">eventually consistent local cache</text>
 <path d="M380 362v42" class="l"/><rect x="245" y="404" width="270" height="70" rx="12" class="q"/><text x="380" y="435" text-anchor="middle" class="h">Handler → workqueue key</text><text x="380" y="459" text-anchor="middle" class="s">namespace/name，而非完整 event history</text>
 <path d="M380 474v42" class="l"/><rect x="245" y="516" width="270" height="58" rx="12" class="b"/><text x="380" y="550" text-anchor="middle" class="h">sync(key) → 讀最新 state → reconcile</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#fff" i]{fill:#1b1f20}text{fill:#c6d0e2}.s{fill:#bcc3cf}.b{fill:#192029;stroke:#a4b4cb}.g{fill:#1d2b22;stroke:#80b494}.q{fill:#342414;stroke:#cba376}.l{stroke:#7d8eaa}}</style>
 </svg>

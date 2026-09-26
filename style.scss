@@ -930,6 +930,10 @@ p {
     border-radius: 4px;
     filter: brightness(0.92);
   }
+  .entry img[src$=".svg"]:not([src^="http"]) {
+    background: none;
+    filter: none;
+  }
   .highlight,
   .entry .highlight {
     background: transparent;

@@ -11,4 +11,5 @@
 <path d="M700 230 L700 285" class="a"/><path d="M620 400 C500 445 320 450 205 485" class="a"/><path d="M660 400 C620 445 565 450 515 485" class="a"/><path d="M740 400 C780 445 835 450 885 485" class="a"/><path d="M780 400 C900 445 1080 450 1195 485" class="a"/>
 <path d="M205 600 C205 650 400 665 500 680" class="d"/><path d="M515 600 C515 650 560 665 610 680" class="d"/><path d="M885 600 C885 650 840 665 790 680" class="d"/><path d="M1195 600 C1195 650 1000 665 900 680" class="d"/>
 <text x="700" y="805" text-anchor="middle" class="t s">The control plane can unify intent and evidence without pretending every workload needs the same execution engine.</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#333" i]{fill:#d2d5d6}[fill="white" i]{fill:#1b1f20}.t{fill:#dee1e1}.s{fill:#cbcfd0}.cp{fill:#131f33;stroke:#6b99df}.ex{fill:#1d2b1d;stroke:#bad3bb}.st{fill:#352714;stroke:#e7aa55}.a{stroke:#d2d5d6}.d{stroke:#a2a2a2}}</style>
 </svg>

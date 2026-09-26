@@ -51,4 +51,5 @@
   <text x="185" y="562" class="small">timeout 後重送同一 K</text>
   <path d="M450 605 L790 605" class="arrow"/>
   <text x="528" y="597" class="small">讀既有 K；不再建立資源</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#333" i]{fill:#d2d5d6}[fill="#ffffff" i]{fill:#1b1f20}.box{fill:#1f2325;stroke:#d2d5d6}.title{fill:#dee1e1}.text{fill:#d8dbdb}.small{fill:#cbcfd0}.arrow{stroke:#d2d5d6}.line{stroke:#808080}}</style>
 </svg>

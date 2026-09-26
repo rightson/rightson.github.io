@@ -39,4 +39,5 @@
   <path d="M890 360 L930 435" class="arrow"/>
   <path d="M805 493 C690 493 560 460 485 335" class="feedback"/>
   <text x="600" y="590" class="small">Observed status is fed back; controllers keep retrying until current state approaches desired state.</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#333" i]{fill:#d2d5d6}[fill="white" i]{fill:#1b1f20}.box{fill:#1f2325;stroke:#d2d5d6}.core{fill:#131f33;stroke:#6b99df}.node{fill:#1d2b1d;stroke:#bad3bb}.txt{fill:#dee1e1}.small{fill:#d2d5d6}.arrow{stroke:#d2d5d6}.feedback{stroke:#a2a2a2}}</style>
 </svg>

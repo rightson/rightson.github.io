@@ -26,4 +26,5 @@
 <rect x="30" y="808" width="780" height="112" rx="14" fill="#e9f5f0" stroke="#51998b"/>
 <text x="52" y="849" class="t">接納有效實驗結果</text><text x="52" y="889" class="b">設計判決：通過／發現反例；不是直接宣告 signoff</text>
 <text x="30" y="968" class="s">fencing 阻止舊 attempt 更新正式結果；取消舊工作仍需另外執行。</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#365b7b" i]{fill:#b9c7d4}[fill="#b87c24" i]{fill:#e4b877}[fill="#e9f5f0" i]{fill:#202d27}[fill="#f4f7fa" i]{fill:#1c2227}[fill="#fff8eb" i]{fill:#322813}[fill="white" i]{fill:#1b1f20}[stroke="#51998b" i]{stroke:#73b5a8}[stroke="#b87c24" i]{stroke:#e4b877}[stroke="#c7d3df" i]{stroke:#2f363c}text{fill:#c9d5e1}.a{stroke:#b9c7d4}.o{stroke:#e4b877}}</style>
 </svg>

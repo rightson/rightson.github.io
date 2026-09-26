@@ -50,4 +50,5 @@
       <path d="M0,0 L0,6 L9,3 z" fill="#6b7280"/>
     </marker>
   </defs>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#111827" i]{fill:#d3d9e4}[fill="#155e75" i]{fill:#49bbde}[fill="#166534" i]{fill:#4fd983}[fill="#312e81" i]{fill:#6a66c8}[fill="#374151" i]{fill:#c8ccd3}[fill="#4b5563" i]{fill:#c2c6cc}[fill="#6b7280" i]{fill:#9ba0ab}[fill="#854d0e" i]{fill:#e49944}[fill="#9a3412" i]{fill:#e56e47}[fill="#9d174d" i]{fill:#e54e8b}[fill="#ecfeff" i]{fill:#133032}[fill="#eef2ff" i]{fill:#131a31}[fill="#f0fdf4" i]{fill:#162e1e}[fill="#f9fafb" i]{fill:#1c2024}[fill="#fdf2f8" i]{fill:#2c1622}[fill="#fefce8" i]{fill:#333015}[fill="#fff7ed" i]{fill:#322413}[fill="#ffffff" i]{fill:#1b1f20}[stroke="#0891b2" i]{stroke:#53cae6}[stroke="#16a34a" i]{stroke:#52e689}[stroke="#6366f1" i]{stroke:#8284ed}[stroke="#6b7280" i]{stroke:#9ba0ab}[stroke="#9ca3af" i]{stroke:#67707f}[stroke="#ca8a04" i]{stroke:#e9be65}[stroke="#db2777" i]{stroke:#eb85b2}[stroke="#ea580c" i]{stroke:#eda782}}</style>
 </svg>

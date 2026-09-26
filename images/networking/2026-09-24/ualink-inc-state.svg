@@ -34,4 +34,5 @@
 
   <text x="60" y="545" class="label">核心 invariant</text>
   <text x="60" y="580" class="small">同一 collective 的每個 contribution 必須被計算一次且只有一次；所有 participant 最後看到同一個 valid result，或同一個 explicit failure。</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#222" i]{fill:#d8dbdb}[fill="white" i]{fill:#1b1f20}text{fill:#dee1e1}.box{fill:#1f2425;stroke:#d8dbdb}.core{fill:#20262d;stroke:#d8dbdb}.line{stroke:#d8dbdb}}</style>
 </svg>

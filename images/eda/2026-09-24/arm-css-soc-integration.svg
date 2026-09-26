@@ -31,4 +31,5 @@
 <text x="523" y="846" font-size="23" font-weight="400" fill="#19354b" text-anchor="start">例如 PCIe 介面</text>
 <text x="48" y="917" font-size="24" font-weight="400" fill="#536674" text-anchor="start">實線：資料關係　　虛線：配置／控制關係</text>
 <text x="48" y="951" font-size="24" font-weight="400" fill="#8a5425" text-anchor="start">停機契約：停止新工作 → 處置在途交易 → 恢復或回報</text>
-</g></svg>
+</g><style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#136d71" i]{fill:#48dae0}[fill="#19354b" i]{fill:#c7d6e1}[fill="#536674" i]{fill:#bdc4c9}[fill="#8a5425" i]{fill:#d3935b}[fill="#eaf3f3" i]{fill:#222b2b}[fill="#edf2f8" i]{fill:#1d242b}[fill="#fcfdfd" i]{fill:#1c2121}[stroke="#136d71" i]{stroke:#48dae0}[stroke="#afc1ce" i]{stroke:#445d70}}</style>
+</svg>

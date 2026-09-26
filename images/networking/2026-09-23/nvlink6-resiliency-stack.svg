@@ -40,4 +40,5 @@
   <text x="155" y="680" class="layer">Application / System</text>
   <text x="390" y="680" class="detail">checkpoint / restore、rack serviceability、job reconstruction</text>
   <text x="880" y="705" class="time">10s ～ minutes</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#333" i]{fill:#d2d5d6}text{fill:#dee1e1}.sub{fill:#cbcfd0}.box{fill:#1f2325;stroke:#d2d5d6}.arrow{stroke:#d2d5d6}}</style>
 </svg>

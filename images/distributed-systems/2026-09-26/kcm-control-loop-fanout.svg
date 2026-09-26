@@ -9,4 +9,5 @@
 <rect x="490" y="322" width="200" height="94" rx="12" class="b"/><text x="590" y="353" text-anchor="middle" class="h">Job / PV / HPA ...</text><text x="590" y="378" text-anchor="middle" class="s">不同 state ownership</text><text x="590" y="399" text-anchor="middle" class="s">各自 failure/retry</text>
 <path d="M170 416v58M380 416v58M590 416v58" class="l"/>
 <text x="380" y="510" text-anchor="middle" class="s">邏輯上解耦；營運上合併成 kube-controller-manager</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#fff" i]{fill:#1b1f20}text{fill:#c6d0e2}.s{fill:#bcc3cf}.b{fill:#192029;stroke:#a4b4cb}.c{fill:#132233;stroke:#88a7cb}.g{fill:#1d2b22;stroke:#80b494}.l{stroke:#7d8eaa}}</style>
 </svg>

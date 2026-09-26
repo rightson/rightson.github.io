@@ -11,4 +11,5 @@
 <path d="M290 180 L370 180" class="a"/><path d="M590 180 L670 180" class="a"/><path d="M890 180 L970 180" class="a"/><path d="M1080 230 L1080 360" class="a"/><path d="M970 412 L890 412" class="a"/><path d="M670 412 L590 412" class="a"/><path d="M480 360 C480 305 300 300 230 230" class="d"/>
 <text x="700" y="555" text-anchor="middle" class="t m">Event != truth</text><text x="700" y="590" text-anchor="middle" class="t s">Events enqueue work; reconcile re-reads current state before deciding. Duplicate or missed events need not corrupt correctness.</text>
 <text x="700" y="650" text-anchor="middle" class="t s">resourceVersion lets a client build a snapshot and then continue from subsequent changes.</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#333" i]{fill:#d2d5d6}[fill="white" i]{fill:#1b1f20}.t{fill:#dee1e1}.s{fill:#cbcfd0}.b{fill:#1f2325;stroke:#d2d5d6}.c{fill:#131f33;stroke:#6b99df}.g{fill:#1d2b1d;stroke:#bad3bb}.a{stroke:#d2d5d6}.d{stroke:#a2a2a2}}</style>
 </svg>

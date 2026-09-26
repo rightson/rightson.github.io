@@ -13,4 +13,5 @@
 <text x="605" y="610" text-anchor="middle" class="s">8b × 16b</text><text x="605" y="340" text-anchor="middle" class="s">0.5× ≈ 46 TOPS</text>
 <text x="880" y="610" text-anchor="middle" class="s">16b × 16b</text><text x="880" y="445" text-anchor="middle" class="s">0.25× ≈ 23 TOPS</text>
 <text x="600" y="660" text-anchor="middle" class="sm">Precision is therefore a throughput parameter in the first TPU, not only a model-format choice.</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#fff" i]{fill:#1b1f20}.t{fill:#dee1e1}.s{fill:#d8dbdb}.sm{fill:#cbcfd0}.bar{fill:#89b3e7}.bar2{fill:#2e3844}.axis{stroke:#d2d5d6}}</style>
 </svg>

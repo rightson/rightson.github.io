@@ -27,4 +27,5 @@
 <path d="M90 970H49V324H88" class="f"/>
 <text x="30" y="1090" class="b">實線：受控執行／驗收規則</text>
 <text x="30" y="1134" class="b" style="fill:#18796a">虛線：coverage／反例回饋，只影響下一輪探索</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#18796a" i]{fill:#4cdcc5}[fill="#365b7b" i]{fill:#b9c7d4}[fill="#e8f1fc" i]{fill:#182331}[fill="#e9f5f0" i]{fill:#202d27}[fill="#f4f7fa" i]{fill:#1c2227}[fill="#fff8eb" i]{fill:#322813}[fill="white" i]{fill:#1b1f20}[stroke="#51998b" i]{stroke:#73b5a8}[stroke="#7098bb" i]{stroke:#99b6cf}[stroke="#b87c24" i]{stroke:#e4b877}[stroke="#c7d3df" i]{stroke:#2f363c}text{fill:#c9d5e1}.a{stroke:#b9c7d4}.f{stroke:#4cdcc5}[style*="fill:#18796a"]{fill:#4cdcc5 !important}}</style>
 </svg>

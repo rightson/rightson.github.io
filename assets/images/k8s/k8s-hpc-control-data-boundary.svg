@@ -28,4 +28,5 @@
   <line x1="600" y1="405" x2="600" y2="455" class="line"/>
   <line x1="970" y1="405" x2="970" y2="455" class="line"/>
   <text x="600" y="620" class="small">A scheduler can select locality; it cannot repeal physics, kernel queueing, filesystem semantics or fabric congestion.</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="white" i]{fill:#1b1f20}.cp{fill:#131f33;stroke:#6b99df}.dp{fill:#1d2b1d;stroke:#bad3bb}.hw{fill:#352714;stroke:#e7aa55}.txt{fill:#dee1e1}.small{fill:#d2d5d6}.line{stroke:#d2d5d6}}</style>
 </svg>

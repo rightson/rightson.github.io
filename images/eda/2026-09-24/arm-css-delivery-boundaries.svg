@@ -21,4 +21,5 @@
 <text x="72" y="821" font-size="27" font-weight="700" fill="#8a5425" text-anchor="start">已公開的實際案例：Arm AGI CPU</text>
 <text x="72" y="858" font-size="24" font-weight="400" fill="#19354b" text-anchor="start">基於 CSS V3；Synopsys 公開設計與驗證工具鏈。</text>
 <text x="72" y="894" font-size="24" font-weight="400" fill="#8a5425" text-anchor="start">這不是 CSS N4 已完成相同 tapeout 的證據。</text>
-</g></svg>
+</g><style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#136d71" i]{fill:#48dae0}[fill="#19354b" i]{fill:#c7d6e1}[fill="#536674" i]{fill:#bdc4c9}[fill="#8a5425" i]{fill:#d3935b}[fill="#eaf3f3" i]{fill:#222b2b}[fill="#edf2f8" i]{fill:#1d242b}[fill="#fcfdfd" i]{fill:#1c2121}[fill="#fff6ec" i]{fill:#322313}[stroke="#136d71" i]{stroke:#48dae0}[stroke="#afc1ce" i]{stroke:#445d70}[stroke="#d8bd9b" i]{stroke:#d7bb98}}</style>
+</svg>

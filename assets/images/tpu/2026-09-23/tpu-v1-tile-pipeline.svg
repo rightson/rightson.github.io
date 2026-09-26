@@ -12,4 +12,5 @@
   <text x="600" y="520" class="s">Loading one 64 KiB tile takes 256 cycles; double buffering overlaps the next tile load with current-tile compute.</text>
   <text x="600" y="555" class="s">MatrixMultiply(B): (B×256) · (256×256) → (B×256), completed in B pipelined cycles once the tile is resident.</text>
   <text x="600" y="592" class="s">Redrawn from Jouppi et al., ISCA 2017, and Google Cloud’s first-TPU architecture deep dive.</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#333" i]{fill:#d2d5d6}[fill="white" i]{fill:#1b1f20}.b{fill:#1f2325;stroke:#d2d5d6}.m{fill:#131f33;stroke:#6b99df}.w{fill:#352714;stroke:#e7aa55}.t{fill:#dee1e1}.s{fill:#d2d5d6}.l{stroke:#d2d5d6}}</style>
 </svg>

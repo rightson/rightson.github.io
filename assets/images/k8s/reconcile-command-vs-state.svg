@@ -16,4 +16,5 @@
 <rect x="925" y="500" width="250" height="95" rx="12" class="g"/><text x="1050" y="537" text-anchor="middle" class="t m">act on system</text><text x="1050" y="567" text-anchor="middle" class="t s">create / patch / delete / call backend</text>
 <path d="M905 223 C905 270 960 290 995 315" class="a"/><path d="M1195 223 C1195 270 1140 290 1105 315" class="a"/><path d="M1050 410 L1050 500" class="a"/><path d="M1175 547 C1280 547 1300 300 1205 223" class="d"/>
 <text x="1050" y="665" text-anchor="middle" class="t s">Correctness comes from repeatedly re-deriving action from durable intent + observable reality.</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#333" i]{fill:#d2d5d6}[fill="white" i]{fill:#1b1f20}.t{fill:#dee1e1}.s{fill:#cbcfd0}.b{fill:#1f2325;stroke:#d2d5d6}.c{fill:#131f33;stroke:#6b99df}.g{fill:#1d2b1d;stroke:#bad3bb}.r{fill:#311212;stroke:#c57474}.a{stroke:#d2d5d6}.d{stroke:#a2a2a2}}</style>
 </svg>

@@ -38,4 +38,5 @@
   <rect x="825" y="110" width="170" height="55" class="box"/><text x="857" y="144" class="small">Next stage</text>
 
   <text x="60" y="570" class="small">B = 同一 tensor block 的資料量。此圖只表示會聚 cut 的流量差異，不代表 end-to-end all-reduce 總流量必然縮小 4 倍。</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#222" i]{fill:#d8dbdb}[fill="white" i]{fill:#1b1f20}text{fill:#dee1e1}.box{fill:#202426;stroke:#d8dbdb}.switch{fill:#20262d;stroke:#d8dbdb}.line{stroke:#d8dbdb}.cut{stroke:#a2a2a2}}</style>
 </svg>
