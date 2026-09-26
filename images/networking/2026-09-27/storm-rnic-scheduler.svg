@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+<title id="title">STORM RNIC scheduling data path</title>
+<desc id="desc">Three RDMA queue pairs expose request size and backlog to an RNIC scheduler, which maps urgency into a small number of wire priorities before packets enter switch queues.</desc>
+<style>
+text{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;fill:#17212b}
+.box{fill:#f4f7fb;stroke:#546579;stroke-width:2}
+.accent{fill:#e7f2ff;stroke:#2f6fa3;stroke-width:3}
+.queue{fill:#f8f1e4;stroke:#8a6a31;stroke-width:2}
+.line{stroke:#546579;stroke-width:3;fill:none;marker-end:url(#a)}
+.small{font-size:22px}.med{font-size:28px;font-weight:600}.big{font-size:34px;font-weight:700}
+@media (prefers-color-scheme: dark){
+text{fill:#eef4fb}.box{fill:#1c2733;stroke:#91a4b7}.accent{fill:#17344a;stroke:#79b8e8}.queue{fill:#362d1e;stroke:#d4ae68}.line{stroke:#b8c7d6}
+}
+</style>
+<defs><marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="context-stroke"/></marker></defs>
+<text x="60" y="55" class="big">RDMA request metadata → RNIC urgency → wire priority</text>
+<rect x="60" y="110" width="280" height="120" rx="18" class="box"/><text x="90" y="150" class="med">QP-A</text><text x="90" y="190" class="small">64 KB · backlog 0</text>
+<rect x="60" y="270" width="280" height="120" rx="18" class="box"/><text x="90" y="310" class="med">QP-B</text><text x="90" y="350" class="small">8 MB · backlog 12</text>
+<rect x="60" y="430" width="280" height="120" rx="18" class="box"/><text x="90" y="470" class="med">QP-C</text><text x="90" y="510" class="small">16 MB · backlog 0</text>
+<path d="M340 170 H470" class="line"/><path d="M340 330 H470" class="line"/><path d="M340 490 H470" class="line"/>
+<rect x="470" y="190" width="290" height="300" rx="24" class="accent"/>
+<text x="510" y="245" class="med">RNIC scheduler</text>
+<text x="510" y="300" class="small">1. remaining size</text>
+<text x="510" y="340" class="small">2. per-QP backlog</text>
+<text x="510" y="405" class="small">quantize urgency</text>
+<text x="510" y="445" class="small">into few priorities</text>
+<path d="M760 340 H875" class="line"/>
+<rect x="875" y="135" width="250" height="110" rx="18" class="queue"/><text x="915" y="180" class="med">High priority</text><text x="915" y="215" class="small">near finish / blocking</text>
+<rect x="875" y="295" width="250" height="110" rx="18" class="queue"/><text x="915" y="340" class="med">Medium</text><text x="915" y="375" class="small">approx. urgency</text>
+<rect x="875" y="455" width="250" height="110" rx="18" class="queue"/><text x="915" y="500" class="med">Low priority</text><text x="915" y="535" class="small">bulk / less urgent</text>
+<text x="60" y="640" class="small">Scheduler changes service order; congestion control still decides sending rate.</text>
+</svg>
