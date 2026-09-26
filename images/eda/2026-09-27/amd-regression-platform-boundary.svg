@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="760" viewBox="0 0 840 760" role="img" aria-labelledby="title desc">
+  <title id="title">Coverage regression platform boundary</title>
+  <desc id="desc">Versioned RTL and verification inputs enter a campaign contract. An optimizer proposes tests, a distributed VCS pool executes them, and an evidence gate checks artifacts and versions before R2G handoff.</desc>
+  <style>
+    .bg{fill:#f7f9fc}.box{fill:#ffffff;stroke:#294c6b;stroke-width:2}.accent{fill:#e7f1fb;stroke:#23618c;stroke-width:2}.gate{fill:#e9f6ef;stroke:#2d7552;stroke-width:2}.warn{fill:#fff3dc;stroke:#a76514;stroke-width:2}.t{font:600 19px system-ui,sans-serif;fill:#17324a}.s{font:16px system-ui,sans-serif;fill:#2d465c}.h{font:700 27px system-ui,sans-serif;fill:#17324a}.arrow{stroke:#355b78;stroke-width:3;fill:none;marker-end:url(#m)}.dash{stroke:#788b9b;stroke-width:2;stroke-dasharray:8 7;fill:none;marker-end:url(#m)}
+  </style>
+  <defs><marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0l10 5-10 5z" fill="#355b78"/></marker></defs>
+  <rect class="bg" width="840" height="760" rx="22"/>
+  <text class="h" x="42" y="52">Regression evidence pipeline</text>
+  <rect class="box" x="42" y="90" width="300" height="158" rx="16"/>
+  <text class="t" x="66" y="124">Versioned design inputs</text>
+  <text class="s" x="66" y="158">RTL / testbench / assertions</text>
+  <text class="s" x="66" y="187">coverage model / waivers</text>
+  <text class="s" x="66" y="216">simulator build / options</text>
+  <rect class="accent" x="498" y="90" width="300" height="158" rx="16"/>
+  <text class="t" x="522" y="124">Campaign contract</text>
+  <text class="s" x="522" y="158">objective / budget / digests</text>
+  <text class="s" x="522" y="187">acceptance / holdout policy</text>
+  <text class="s" x="522" y="216">authority / mutable parameters</text>
+  <path class="arrow" d="M342 169H488"/>
+  <rect class="accent" x="42" y="310" width="300" height="154" rx="16"/>
+  <text class="t" x="66" y="345">Coverage optimizer</text>
+  <text class="s" x="66" y="379">test selection / priority</text>
+  <text class="s" x="66" y="408">stimulus steering / RCA</text>
+  <text class="s" x="66" y="437">propose runs; preserve the gate</text>
+  <rect class="box" x="498" y="310" width="300" height="154" rx="16"/>
+  <text class="t" x="522" y="345">Distributed VCS pool</text>
+  <text class="s" x="522" y="379">scheduler / license / workers</text>
+  <text class="s" x="522" y="408">attempt-isolated artifacts</text>
+  <text class="s" x="522" y="437">logs / waves / coverage DB</text>
+  <path class="arrow" d="M648 248V300"/>
+  <path class="arrow" d="M342 387H488"/>
+  <path class="dash" d="M498 350C430 276 350 271 286 310"/>
+  <rect class="gate" x="258" y="526" width="324" height="130" rx="16"/>
+  <text class="t" x="282" y="563">Independent evidence gate</text>
+  <text class="s" x="282" y="596">artifact integrity + input identity</text>
+  <text class="s" x="282" y="626">coverage / failure / holdout checks</text>
+  <path class="arrow" d="M648 464V495H420V516"/>
+  <rect class="warn" x="258" y="692" width="324" height="50" rx="14"/>
+  <text class="t" x="298" y="725">Accepted evidence → R2G gate</text>
+  <path class="arrow" d="M420 656V682"/>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#355b78" i]{fill:#bac9d4}.bg{fill:#1a1f27}.box{fill:#1b1f20;stroke:#beccd9}.accent{fill:#192531;stroke:#59a3d6}.gate{fill:#1f2d25;stroke:#bbd8ca}.warn{fill:#382c15;stroke:#e7a554}.t{fill:#c7d5e2}.s{fill:#c3ced8}.h{fill:#c7d5e2}.arrow{stroke:#bac9d4}.dash{stroke:#7e90a0}}</style>
+</svg>

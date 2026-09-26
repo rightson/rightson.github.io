@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="820" viewBox="0 0 840 820" role="img" aria-labelledby="title desc">
+  <title id="title">Regression evidence state machine</title>
+  <desc id="desc">A campaign moves through declared, scheduled, running, artifact sealed, identity checked and evidence accepted. Incomplete or version-mismatched outputs are quarantined and recovered by retry or a new campaign.</desc>
+  <style>
+    .bg{fill:#f7f9fc}.state{fill:#ffffff;stroke:#2a5878;stroke-width:2}.ok{fill:#e9f6ef;stroke:#2d7552;stroke-width:2}.bad{fill:#fff0e7;stroke:#a8512c;stroke-width:2}.wait{fill:#fff4dd;stroke:#a56b1a;stroke-width:2}.h{font:700 22px system-ui,sans-serif;fill:#17324a}.t{font:600 18px system-ui,sans-serif;fill:#17324a}.s{font:15px system-ui,sans-serif;fill:#2d465c}.a{stroke:#355b78;stroke-width:3;fill:none;marker-end:url(#m)}.r{stroke:#a8512c;stroke-width:3;fill:none;marker-end:url(#r)}
+  </style>
+  <defs><marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0l10 5-10 5z" fill="#355b78"/></marker><marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0l10 5-10 5z" fill="#a8512c"/></marker></defs>
+  <rect class="bg" width="840" height="820" rx="22"/>
+  <text class="h" x="42" y="52">Execution, artifact integrity, and acceptance are separate</text>
+  <rect class="state" x="66" y="98" width="250" height="92" rx="15"/><text class="t" x="90" y="134">1. Declared</text><text class="s" x="90" y="162">fixed input / coverage digests</text>
+  <rect class="state" x="524" y="98" width="250" height="92" rx="15"/><text class="t" x="548" y="134">2. Scheduled</text><text class="s" x="548" y="162">job ID / budget reservation</text>
+  <path class="a" d="M316 144H514"/>
+  <rect class="state" x="524" y="252" width="250" height="92" rx="15"/><text class="t" x="548" y="288">3. Running</text><text class="s" x="548" y="316">attempt-isolated output</text>
+  <path class="a" d="M649 190V242"/>
+  <rect class="state" x="66" y="252" width="250" height="92" rx="15"/><text class="t" x="90" y="288">4. Artifact sealed</text><text class="s" x="90" y="316">manifest + content hashes</text>
+  <path class="a" d="M524 298H326"/>
+  <rect class="state" x="66" y="414" width="250" height="92" rx="15"/><text class="t" x="90" y="450">5. Identity checked</text><text class="s" x="90" y="478">inputs / schema / attempt</text>
+  <path class="a" d="M191 344V404"/>
+  <rect class="ok" x="524" y="414" width="250" height="92" rx="15"/><text class="t" x="548" y="450">6. Evidence accepted</text><text class="s" x="548" y="478">merge / RCA / R2G gate</text>
+  <path class="a" d="M316 460H514"/>
+  <rect class="bad" x="284" y="592" width="272" height="98" rx="16"/><text class="t" x="308" y="630">Quarantine</text><text class="s" x="308" y="658">missing / mixed / stale coverage</text>
+  <path class="r" d="M150 506C150 568 230 603 274 625"/><path class="r" d="M649 344C649 540 574 595 566 625"/>
+  <rect class="wait" x="66" y="730" width="250" height="60" rx="14"/><text class="t" x="90" y="768">Retry a new attempt</text>
+  <rect class="wait" x="524" y="730" width="250" height="60" rx="14"/><text class="t" x="548" y="768">Create campaign version</text>
+  <path class="a" d="M370 690L260 721"/><path class="a" d="M470 690L580 721"/>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#355b78" i]{fill:#bac9d4}[fill="#a8512c" i]{fill:#dc9678}.bg{fill:#1a1f27}.state{fill:#1b1f20;stroke:#609dc7}.ok{fill:#1f2d25;stroke:#bbd8ca}.bad{fill:#342014;stroke:#dc9678}.wait{fill:#382d15;stroke:#e5ab5a}.h{fill:#c7d5e2}.t{fill:#c7d5e2}.s{fill:#c3ced8}.a{stroke:#bac9d4}.r{stroke:#dc9678}}</style>
+</svg>

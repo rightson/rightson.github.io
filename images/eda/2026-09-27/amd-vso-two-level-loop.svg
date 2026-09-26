@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="740" viewBox="0 0 840 740" role="img" aria-labelledby="title desc">
+  <title id="title">Two-level verification space optimization loop</title>
+  <desc id="desc">A coarse loop selects tests according to expected evidence and cost. A fine loop tunes legal stimulus parameters in the simulator. Coverage and root-cause evidence update the next round.</desc>
+  <style>
+    .bg{fill:#f7f9fc}.outer{fill:#eef4fb;stroke:#2b5f89;stroke-width:2}.inner{fill:#ffffff;stroke:#42708f;stroke-width:2}.ev{fill:#e9f6ef;stroke:#2f7655;stroke-width:2}.stop{fill:#fff2dd;stroke:#a96718;stroke-width:2}.h{font:700 27px system-ui,sans-serif;fill:#17324a}.t{font:600 21px system-ui,sans-serif;fill:#17324a}.s{font:16px system-ui,sans-serif;fill:#2d465c}.a{stroke:#355b78;stroke-width:3;fill:none;marker-end:url(#m)}.feedback{stroke:#2f7655;stroke-width:3;stroke-dasharray:8 7;fill:none;marker-end:url(#g)}
+  </style>
+  <defs><marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0l10 5-10 5z" fill="#355b78"/></marker><marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0l10 5-10 5z" fill="#2f7655"/></marker></defs>
+  <rect class="bg" width="840" height="740" rx="22"/>
+  <text class="h" x="42" y="52">Two loops solve different coverage problems</text>
+  <rect class="outer" x="42" y="92" width="756" height="244" rx="18"/>
+  <text class="t" x="66" y="128">Coarse-grained: choose test / seed / option</text>
+  <rect class="inner" x="72" y="162" width="204" height="116" rx="14"/>
+  <text class="t" x="94" y="197">Candidate pool</text><text class="s" x="94" y="230">historical hits / cost</text><text class="s" x="94" y="256">uncertainty / diversity</text>
+  <rect class="inner" x="318" y="162" width="204" height="116" rx="14"/>
+  <text class="t" x="340" y="197">Objective</text><text class="s" x="340" y="230">CPU / run count</text><text class="s" x="340" y="256">cycles / license-hours</text>
+  <rect class="inner" x="564" y="162" width="204" height="116" rx="14"/>
+  <text class="t" x="586" y="197">Next batch</text><text class="s" x="586" y="230">high-ROI tests</text><text class="s" x="586" y="256">retain exploration</text>
+  <path class="a" d="M276 220H308"/><path class="a" d="M522 220H554"/>
+  <rect class="outer" x="42" y="382" width="756" height="176" rx="18"/>
+  <text class="t" x="66" y="418">Fine-grained: steer legal stimulus toward coverage gaps</text>
+  <rect class="inner" x="72" y="448" width="204" height="76" rx="14"/><text class="s" x="94" y="480">constraints / knobs</text><text class="s" x="94" y="506">test options</text>
+  <rect class="inner" x="318" y="448" width="204" height="76" rx="14"/><text class="s" x="340" y="480">simulator + solver</text><text class="s" x="340" y="506">legal stimulus</text>
+  <rect class="inner" x="564" y="448" width="204" height="76" rx="14"/><text class="s" x="586" y="480">coverage / failure</text><text class="s" x="586" y="506">per-run evidence</text>
+  <path class="a" d="M276 486H308"/><path class="a" d="M522 486H554"/><path class="a" d="M666 278V372"/>
+  <rect class="ev" x="42" y="608" width="474" height="94" rx="16"/>
+  <text class="t" x="66" y="644">Coverage frontier + RCA</text>
+  <text class="s" x="66" y="674">new hits / constraint conflicts / suspected unreachable</text>
+  <rect class="stop" x="556" y="608" width="242" height="94" rx="16"/>
+  <text class="t" x="580" y="644">Human approval</text>
+  <text class="s" x="580" y="674">waiver / model change</text>
+  <path class="a" d="M666 524V598"/><path class="feedback" d="M240 608C112 580 90 384 168 336"/><path class="a" d="M516 655H546"/>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#2f7655" i]{fill:#bbd7ca}[fill="#355b78" i]{fill:#bac9d4}.bg{fill:#1a1f27}.outer{fill:#19222d;stroke:#659fcf}.inner{fill:#1b1f20;stroke:#6294b7}.ev{fill:#1f2d25;stroke:#bbd7ca}.stop{fill:#382b15;stroke:#e7a759}.h{fill:#c7d5e2}.t{fill:#c7d5e2}.s{fill:#c3ced8}.a{stroke:#bac9d4}.feedback{stroke:#bbd7ca}}</style>
+</svg>
