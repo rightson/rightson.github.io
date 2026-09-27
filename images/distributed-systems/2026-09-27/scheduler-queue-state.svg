@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="650" viewBox="0 0 960 650" role="img" aria-labelledby="t d">
+<title id="t">kube-scheduler queue states</title><desc id="d">Pending entities move among active, unschedulable and backoff states depending on fit failures, cluster events and retry timers.</desc>
+<defs><marker id="a" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#315b8a"/></marker></defs>
+<rect x="20" y="20" width="920" height="610" rx="20" fill="#f7f9fc" stroke="#8da4bd"/>
+<text x="50" y="65" font-size="28" font-family="sans-serif" font-weight="700" fill="#18324a">Scheduling Queue 不是 FIFO：失敗原因決定何時值得重試</text>
+<g font-family="sans-serif" text-anchor="middle">
+<rect x="75" y="150" width="220" height="110" rx="14" fill="#e5eef8" stroke="#315b8a"/><text x="185" y="190" font-size="22" fill="#18324a">activeQ</text><text x="185" y="220" font-size="15" fill="#465d72">可立即參與排程</text>
+<rect x="370" y="150" width="220" height="110" rx="14" fill="#f7e8ef" stroke="#8c4f6c"/><text x="480" y="190" font-size="22" fill="#653449">unschedulable</text><text x="480" y="220" font-size="15" fill="#765061">目前條件下沒有解</text>
+<rect x="665" y="150" width="220" height="110" rx="14" fill="#fff1db" stroke="#a46c1f"/><text x="775" y="190" font-size="22" fill="#6f4314">backoffQ</text><text x="775" y="220" font-size="15" fill="#765a31">避免高頻空轉重試</text>
+<rect x="330" y="400" width="300" height="105" rx="14" fill="#e8f3f0" stroke="#397a6b"/><text x="480" y="438" font-size="20" fill="#23594e">Cluster event / QueueingHint</text><text x="480" y="470" font-size="15" fill="#4b6f67">例如 Node capacity、Pod delete、claim 狀態改變</text>
+</g>
+<g stroke="#315b8a" stroke-width="3" fill="none" marker-end="url(#a)"><path d="M295 205 H370"/><path d="M590 205 H665"/><path d="M775 260 V330 Q775 350 755 350 H560 V400"/><path d="M400 400 V340 Q400 320 380 320 H210 V260"/></g>
+<text x="333" y="182" font-size="14" font-family="sans-serif" fill="#465d72">Filter/Permit 判定不可排</text>
+<text x="624" y="182" font-size="14" font-family="sans-serif" fill="#465d72">重試節流</text>
+<text x="655" y="338" font-size="14" font-family="sans-serif" fill="#465d72">timer 到期</text>
+<text x="185" y="338" font-size="14" font-family="sans-serif" fill="#465d72">條件真的改變 → 提前喚醒</text>
+<text x="50" y="570" font-size="15" font-family="sans-serif" fill="#465d72">v1.37 queue 可承載 Pod 或 PodGroup entity；GenericWorkload 啟用時，群組工作不必再把每個 member Pod 當成彼此獨立的 queue item。</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#18324a" i]{fill:#c7d5e1}[fill="#23594e" i]{fill:#c3dcd7}[fill="#315b8a" i]{fill:#6f9bcc}[fill="#465d72" i]{fill:#bdc6ce}[fill="#4b6f67" i]{fill:#beccc9}[fill="#653449" i]{fill:#d5c1c9}[fill="#6f4314" i]{fill:#de964a}[fill="#765061" i]{fill:#cabcc2}[fill="#765a31" i]{fill:#d6cbbb}[fill="#e5eef8" i]{fill:#1c2630}[fill="#e8f3f0" i]{fill:#212c29}[fill="#f7e8ef" i]{fill:#2e1e25}[fill="#f7f9fc" i]{fill:#1a1f27}[fill="#fff1db" i]{fill:#392b16}[stroke="#315b8a" i]{stroke:#6f9bcc}[stroke="#397a6b" i]{stroke:#bad3cd}[stroke="#8c4f6c" i]{stroke:#ac6c8b}[stroke="#8da4bd" i]{stroke:#a5b7cb}[stroke="#a46c1f" i]{stroke:#e1ab61}}</style>
+</svg>
