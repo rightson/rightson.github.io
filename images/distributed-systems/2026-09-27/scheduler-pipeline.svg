@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="760" viewBox="0 0 960 760" role="img" aria-labelledby="t d">
+<title id="t">kube-scheduler scheduling and binding pipeline</title><desc id="d">Queue entity flows through snapshot, filter, score, assume, reserve, permit and bind, then kubelet performs node-local admission.</desc>
+<defs><marker id="a" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#315b8a"/></marker></defs>
+<rect x="20" y="20" width="920" height="720" rx="20" fill="#f7f9fc" stroke="#8da4bd"/>
+<text x="50" y="60" font-size="28" font-family="sans-serif" font-weight="700" fill="#18324a">kube-scheduler：從 pending entity 到 Node binding</text>
+<text x="50" y="92" font-size="16" font-family="sans-serif" fill="#465d72">Scheduling cycle 找可行且較佳的 Node；binding cycle 把選擇提交給 API。</text>
+<g font-family="sans-serif" font-size="18" text-anchor="middle">
+<rect x="60" y="145" width="180" height="78" rx="12" fill="#e5eef8" stroke="#315b8a"/><text x="150" y="176" fill="#18324a">Scheduling Queue</text><text x="150" y="201" font-size="14" fill="#465d72">Pod / PodGroup</text>
+<rect x="300" y="145" width="180" height="78" rx="12" fill="#e5eef8" stroke="#315b8a"/><text x="390" y="176" fill="#18324a">Snapshot</text><text x="390" y="201" font-size="14" fill="#465d72">NodeInfo / assumed state</text>
+<rect x="540" y="145" width="160" height="78" rx="12" fill="#eef5e9" stroke="#507443"/><text x="620" y="176" fill="#244422">PreFilter / Filter</text><text x="620" y="201" font-size="14" fill="#4f684c">feasible nodes</text>
+<rect x="760" y="145" width="140" height="78" rx="12" fill="#eef5e9" stroke="#507443"/><text x="830" y="176" fill="#244422">Score</text><text x="830" y="201" font-size="14" fill="#4f684c">rank nodes</text>
+<rect x="690" y="315" width="190" height="78" rx="12" fill="#fff1db" stroke="#a46c1f"/><text x="785" y="346" fill="#6f4314">Assume + Reserve</text><text x="785" y="371" font-size="14" fill="#765a31">先佔 scheduler cache</text>
+<rect x="430" y="315" width="180" height="78" rx="12" fill="#fff1db" stroke="#a46c1f"/><text x="520" y="346" fill="#6f43114">Permit</text><text x="520" y="371" font-size="14" fill="#765a31">approve / wait / deny</text>
+<rect x="175" y="315" width="180" height="78" rx="12" fill="#f7e8ef" stroke="#8c4f6c"/><text x="265" y="346" fill="#653449">PreBind / Bind</text><text x="265" y="371" font-size="14" fill="#765061">API server commit</text>
+<rect x="175" y="500" width="260" height="96" rx="12" fill="#ebe9f8" stroke="#685a9b"/><text x="305" y="535" fill="#433b6d">Pod.spec.nodeName = node-X</text><text x="305" y="563" font-size="14" fill="#5f5880">scheduler 的 placement 承諾到這裡</text>
+<rect x="560" y="500" width="300" height="96" rx="12" fill="#e8f3f0" stroke="#397a6b"/><text x="710" y="535" fill="#23594e">kubelet / node admission</text><text x="710" y="563" font-size="14" fill="#4b6f67">CPU / NUMA / device / cgroup</text>
+</g>
+<g stroke="#315b8a" stroke-width="3" fill="none" marker-end="url(#a)"><path d="M240 184 H300"/><path d="M480 184 H540"/><path d="M700 184 H760"/><path d="M830 223 V270 Q830 290 810 300 L800 315"/><path d="M690 354 H610"/><path d="M430 354 H355"/><path d="M265 393 V500"/><path d="M435 548 H560"/></g>
+<path d="M520 393 C520 440 405 448 330 430" stroke="#b75c55" stroke-width="2.5" fill="none" stroke-dasharray="7 6"/>
+<text x="520" y="455" font-size="14" font-family="sans-serif" fill="#8d4b46">失敗：Unreserve / Forget / requeue</text>
+<text x="50" y="680" font-size="15" font-family="sans-serif" fill="#465d72">重點：scheduler 能先在記憶體「假設」配置，讓下一輪不必等待 API Bind 完成；這提高 throughput，也要求失敗時可撤銷。</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#18324a" i]{fill:#c7d5e1}[fill="#23594e" i]{fill:#c3dcd7}[fill="#244422" i]{fill:#ccdccb}[fill="#315b8a" i]{fill:#6f9bcc}[fill="#433b6d" i]{fill:#c1bed2}[fill="#465d72" i]{fill:#bdc6ce}[fill="#4b6f67" i]{fill:#beccc9}[fill="#4f684c" i]{fill:#c2cbc1}[fill="#5f5880" i]{fill:#a39dbc}[fill="#653449" i]{fill:#d5c1c9}[fill="#6f4314" i]{fill:#de964a}[fill="#765061" i]{fill:#cabcc2}[fill="#765a31" i]{fill:#d6cbbb}[fill="#8d4b46" i]{fill:#b36b66}[fill="#e5eef8" i]{fill:#1c2630}[fill="#e8f3f0" i]{fill:#212c29}[fill="#ebe9f8" i]{fill:#1f1d2e}[fill="#eef5e9" i]{fill:#252d20}[fill="#f7e8ef" i]{fill:#2e1e25}[fill="#f7f9fc" i]{fill:#1a1f27}[fill="#fff1db" i]{fill:#392b16}[stroke="#315b8a" i]{stroke:#6f9bcc}[stroke="#397a6b" i]{stroke:#bad3cd}[stroke="#507443" i]{stroke:#c1cfbc}[stroke="#685a9b" i]{stroke:#8a7eb4}[stroke="#8c4f6c" i]{stroke:#ac6c8b}[stroke="#8da4bd" i]{stroke:#a5b7cb}[stroke="#a46c1f" i]{stroke:#e1ab61}[stroke="#b75c55" i]{stroke:#c98580}}</style>
+</svg>
