@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 600" role="img" aria-labelledby="title desc">
+<title id="title">號段式 ID allocator 的資料與控制路徑</title>
+<desc id="desc">強一致 allocator 只分配不重疊的大號段，application workers 在本地區間內遞增產生 ID。</desc>
+<style>
+ text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC",sans-serif;fill:#1f2937}
+ .box{fill:#fff;stroke:#475569;stroke-width:2}.authority{fill:#ecfeff;stroke:#0e7490;stroke-width:2.5}
+ .local{fill:#f0fdf4;stroke:#15803d;stroke-width:2}.line{stroke:#64748b;stroke-width:2.2;fill:none}
+ .dash{stroke-dasharray:8 7}.head{font-weight:700;font-size:22px}.label{font-weight:650;font-size:18px}.small{font-size:15px;fill:#475569}
+ @media (prefers-color-scheme: dark){text{fill:#e5e7eb}.box{fill:#111827;stroke:#94a3b8}.authority{fill:#083344;stroke:#67e8f9}.local{fill:#052e16;stroke:#86efac}.line{stroke:#94a3b8}.small{fill:#cbd5e1}}
+</style>
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#64748b"/></marker></defs>
+<text x="520" y="40" text-anchor="middle" class="head">把強一致成本放在號段分配，不放在每一個 ID</text>
+<rect x="355" y="80" width="330" height="105" rx="14" class="authority"/>
+<text x="520" y="118" text-anchor="middle" class="label">Range Allocator</text>
+<text x="520" y="148" text-anchor="middle" class="small">atomic high-water mark + request_id</text>
+<rect x="380" y="235" width="280" height="95" rx="12" class="authority"/>
+<text x="520" y="272" text-anchor="middle" class="label">Durable allocation state</text>
+<text x="520" y="301" text-anchor="middle" class="small">[start, end) 永不重新分配</text>
+<path d="M520 185 L520 235" class="line" marker-end="url(#a)"/>
+<rect x="55" y="405" width="260" height="115" rx="12" class="local"/>
+<text x="185" y="443" text-anchor="middle" class="label">Worker A</text>
+<text x="185" y="472" text-anchor="middle" class="small">range [10M, 11M)</text>
+<text x="185" y="498" text-anchor="middle" class="small">local ++</text>
+<rect x="390" y="405" width="260" height="115" rx="12" class="local"/>
+<text x="520" y="443" text-anchor="middle" class="label">Worker B</text>
+<text x="520" y="472" text-anchor="middle" class="small">range [11M, 12M)</text>
+<text x="520" y="498" text-anchor="middle" class="small">local ++</text>
+<rect x="725" y="405" width="260" height="115" rx="12" class="local"/>
+<text x="855" y="443" text-anchor="middle" class="label">Worker C</text>
+<text x="855" y="472" text-anchor="middle" class="small">range [12M, 13M)</text>
+<text x="855" y="498" text-anchor="middle" class="small">local ++</text>
+<path d="M455 330 C380 355,275 365,185 405" class="line dash" marker-end="url(#a)"/>
+<path d="M520 330 L520 405" class="line dash" marker-end="url(#a)"/>
+<path d="M585 330 C660 355,765 365,855 405" class="line dash" marker-end="url(#a)"/>
+<text x="520" y="566" text-anchor="middle" class="small">worker crash 只浪費自己尚未使用的號碼；不回收 range，避免 stale owner 與新 owner 重疊</text>
+</svg>
