@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 660" role="img" aria-labelledby="title desc">
+<title id="title">Worker lease split-brain 對 Snowflake 類 ID 的風險</title>
+<desc id="desc">舊 worker 與 coordinator 分區後，worker slot 被重新分配給新 worker；若舊 worker 仍能產生 ID，兩者可能形成相同 timestamp worker sequence。</desc>
+<style>
+ text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC",sans-serif;fill:#1f2937}
+ .box{fill:#fff;stroke:#475569;stroke-width:2}.warn{fill:#fff7ed;stroke:#c2410c;stroke-width:2.5}.safe{fill:#f0fdf4;stroke:#15803d;stroke-width:2}
+ .line{stroke:#64748b;stroke-width:2;fill:none}.bad{stroke:#dc2626;stroke-width:2.5;fill:none}.dash{stroke-dasharray:8 7}
+ .head{font-weight:700;font-size:22px}.label{font-weight:650;font-size:18px}.small{font-size:15px;fill:#475569}.red{fill:#b91c1c;font-weight:700}
+ @media (prefers-color-scheme: dark){text{fill:#e5e7eb}.box{fill:#111827;stroke:#94a3b8}.warn{fill:#431407;stroke:#fb923c}.safe{fill:#052e16;stroke:#86efac}.line{stroke:#94a3b8}.bad{stroke:#f87171}.small{fill:#cbd5e1}.red{fill:#fca5a5}}
+</style>
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#64748b"/></marker><marker id="r" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#dc2626"/></marker></defs>
+<text x="540" y="38" text-anchor="middle" class="head">Lease 到期不等於舊 generator 已經停止</text>
+<rect x="55" y="85" width="245" height="90" rx="12" class="box"/>
+<text x="177" y="120" text-anchor="middle" class="label">Worker A</text>
+<text x="177" y="149" text-anchor="middle" class="small">slot 37 / sequence local</text>
+<rect x="418" y="85" width="245" height="90" rx="12" class="box"/>
+<text x="540" y="120" text-anchor="middle" class="label">Coordinator</text>
+<text x="540" y="149" text-anchor="middle" class="small">slot ownership + lease</text>
+<rect x="780" y="85" width="245" height="90" rx="12" class="box"/>
+<text x="902" y="120" text-anchor="middle" class="label">Worker B</text>
+<text x="902" y="149" text-anchor="middle" class="small">等待取得 slot</text>
+<path d="M300 130 L418 130" class="line" marker-end="url(#a)"/>
+<text x="358" y="116" text-anchor="middle" class="small">renew</text>
+<path d="M300 220 L418 220" class="bad dash"/>
+<text x="358" y="208" text-anchor="middle" class="red">network partition</text>
+<path d="M663 275 L780 275" class="line" marker-end="url(#a)"/>
+<text x="721" y="260" text-anchor="middle" class="small">lease expiry → reassign slot 37</text>
+<rect x="55" y="325" width="245" height="125" rx="12" class="warn"/>
+<text x="177" y="362" text-anchor="middle" class="label">A 仍可發號</text>
+<text x="177" y="392" text-anchor="middle" class="small">(T, 37, seq)</text>
+<text x="177" y="420" text-anchor="middle" class="small">coordinator 看不到它</text>
+<rect x="780" y="325" width="245" height="125" rx="12" class="warn"/>
+<text x="902" y="362" text-anchor="middle" class="label">B 開始發號</text>
+<text x="902" y="392" text-anchor="middle" class="small">(T, 37, seq)</text>
+<text x="902" y="420" text-anchor="middle" class="small">同一 slot 已被重用</text>
+<path d="M300 387 C440 470,640 470,780 387" class="bad" marker-end="url(#r)"/>
+<text x="540" y="500" text-anchor="middle" class="red">相同 timestamp + slot + sequence → collision</text>
+<rect x="210" y="545" width="660" height="75" rx="12" class="safe"/>
+<text x="540" y="575" text-anchor="middle" class="label">安全條件</text>
+<text x="540" y="602" text-anchor="middle" class="small">舊 owner 必須停止，或 generation 必須進入 ID / 下游驗證；只在 coordinator 記 fencing token 不夠</text>
+</svg>
