@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+<title id="title">分散式 ID 的需求邊界</title>
+<desc id="desc">唯一性、粗略時間排序、64-bit 緊湊性、可用性與不可猜測性分別依賴不同機制。</desc>
+<style>
+  text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC",sans-serif;fill:#1f2937}
+  .box{fill:#ffffff;stroke:#475569;stroke-width:2}
+  .core{fill:#eef2ff;stroke:#4338ca;stroke-width:2.5}
+  .line{stroke:#64748b;stroke-width:2;fill:none}
+  .muted{fill:#475569;font-size:15px}
+  .head{font-weight:700;font-size:22px}
+  .label{font-weight:650;font-size:18px}
+  @media (prefers-color-scheme: dark){
+    text{fill:#e5e7eb}.box{fill:#111827;stroke:#94a3b8}.core{fill:#1e1b4b;stroke:#a5b4fc}.line{stroke:#94a3b8}.muted{fill:#cbd5e1}
+  }
+</style>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#64748b"/></marker></defs>
+<text x="480" y="42" text-anchor="middle" class="head">64-bit ID 不是一個需求，而是多個保證的交集</text>
+<rect x="330" y="205" width="300" height="120" rx="14" class="core"/>
+<text x="480" y="246" text-anchor="middle" class="label">ID generation contract</text>
+<text x="480" y="278" text-anchor="middle" class="muted">先定義保證，再選格式與協調機制</text>
+<rect x="55" y="85" width="220" height="95" rx="12" class="box"/>
+<text x="165" y="122" text-anchor="middle" class="label">唯一性</text>
+<text x="165" y="150" text-anchor="middle" class="muted">authoritative state</text>
+<rect x="685" y="85" width="220" height="95" rx="12" class="box"/>
+<text x="795" y="122" text-anchor="middle" class="label">時間排序</text>
+<text x="795" y="150" text-anchor="middle" class="muted">timestamp / logical order</text>
+<rect x="55" y="380" width="220" height="95" rx="12" class="box"/>
+<text x="165" y="417" text-anchor="middle" class="label">可用性</text>
+<text x="165" y="445" text-anchor="middle" class="muted">local generation / buffering</text>
+<rect x="370" y="410" width="220" height="95" rx="12" class="box"/>
+<text x="480" y="447" text-anchor="middle" class="label">64-bit 緊湊性</text>
+<text x="480" y="475" text-anchor="middle" class="muted">storage / index footprint</text>
+<rect x="685" y="380" width="220" height="95" rx="12" class="box"/>
+<text x="795" y="417" text-anchor="middle" class="label">不可猜測性</text>
+<text x="795" y="445" text-anchor="middle" class="muted">entropy / public token</text>
+<path d="M275 160 C320 170,335 205,360 220" class="line" marker-end="url(#arrow)"/>
+<path d="M685 160 C640 170,625 205,600 220" class="line" marker-end="url(#arrow)"/>
+<path d="M275 410 C320 390,345 330,380 315" class="line" marker-end="url(#arrow)"/>
+<path d="M480 410 L480 327" class="line" marker-end="url(#arrow)"/>
+<path d="M685 410 C640 390,615 330,580 315" class="line" marker-end="url(#arrow)"/>
+</svg>
