@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+<title id="title">Clause 121 與 Clause 180 TDECQ reference receiver 比較</title>
+<desc id="desc">舊方法採 FFE、分眼 histogram 與 Gaussian approximation；Clause 180 採單 feedback tap DFE、discrete-time equalizer、逐點 ERFC 與 transmitted symbol knowledge，並明定 MMSE optimization。</desc>
+<style>
+text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC",sans-serif;fill:#1f2937}.box{fill:#fff;stroke:#64748b;stroke-width:2}.old{fill:#fff7ed;stroke:#c2410c;stroke-width:2}.new{fill:#ecfeff;stroke:#0e7490;stroke-width:2}.h{font-size:25px;font-weight:700}.m{font-size:19px;font-weight:650}.s{font-size:16px}.line{stroke:#64748b;stroke-width:2;fill:none;marker-end:url(#a)}@media(prefers-color-scheme:dark){text{fill:#e5e7eb}.box{fill:#111827;stroke:#94a3b8}.old{fill:#431407;stroke:#fb923c}.new{fill:#083344;stroke:#67e8f9}.line{stroke:#cbd5e1}}
+</style>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0 0 L0 6 L9 3 Z" fill="#64748b"/></marker></defs>
+<text x="600" y="45" text-anchor="middle" class="h">TDECQ 的數字依賴 reference receiver 的定義</text>
+<rect x="55" y="95" width="1090" height="85" rx="14" class="box"/><text x="600" y="130" text-anchor="middle" class="m">Captured optical waveform + reference front-end</text><text x="600" y="158" text-anchor="middle" class="s">同一個 Tx waveform，進入不同 measurement model，結果未必可直接跨 clause 比較</text>
+<path d="M365 180 L365 235" class="line"/><path d="M835 180 L835 235" class="line"/>
+<text x="365" y="220" text-anchor="middle" class="m">Previous / Clause 121 lineage</text><text x="835" y="220" text-anchor="middle" class="m">Clause 180.9.6</text>
+<rect x="110" y="245" width="510" height="90" rx="14" class="old"/><text x="365" y="280" text-anchor="middle" class="m">FFE</text><text x="365" y="310" text-anchor="middle" class="s">time-domain wording historically ambiguous</text>
+<rect x="580" y="245" width="510" height="90" rx="14" class="new"/><text x="835" y="280" text-anchor="middle" class="m">1-feedback-tap DFE</text><text x="835" y="310" text-anchor="middle" class="s">explicit discrete-time equalizer</text>
+<path d="M365 335 L365 390" class="line"/><path d="M835 335 L835 390" class="line"/>
+<rect x="110" y="400" width="510" height="105" rx="14" class="old"/><text x="365" y="437" text-anchor="middle" class="m">SER estimate</text><text x="365" y="467" text-anchor="middle" class="s">sub-eye histograms + Gaussian approximation</text>
+<rect x="580" y="400" width="510" height="105" rx="14" class="new"/><text x="835" y="437" text-anchor="middle" class="m">SER estimate</text><text x="835" y="467" text-anchor="middle" class="s">pointwise ERFC + known transmitted symbol</text>
+<path d="M365 505 L365 560" class="line"/><path d="M835 505 L835 560" class="line"/>
+<rect x="110" y="570" width="510" height="105" rx="14" class="old"/><text x="365" y="607" text-anchor="middle" class="m">Optimization</text><text x="365" y="637" text-anchor="middle" class="s">search taps that minimize TDECQ</text>
+<rect x="580" y="570" width="510" height="105" rx="14" class="new"/><text x="835" y="607" text-anchor="middle" class="m">Optimization</text><text x="835" y="637" text-anchor="middle" class="s">explicit MMSE criterion for convergence</text>
+<text x="600" y="720" text-anchor="middle" class="s">Measurement methodology is part of the interoperability contract.</text>
+</svg>
