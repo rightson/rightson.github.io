@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+<title id="title">分散式 ID 服務的資料面與控制面</title>
+<desc id="desc">Caller 只走低延遲 generator data plane；worker lease、generation 與 reuse barrier 由小流量 control plane 管理。</desc>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC",sans-serif;fill:#17202a}.box{fill:#f8fafc;stroke:#475569;stroke-width:2}.hot{fill:#eef6ff;stroke:#2563eb;stroke-width:2}.ctrl{fill:#fff7ed;stroke:#c2410c;stroke-width:2}.line{stroke:#334155;stroke-width:2;fill:none;marker-end:url(#a)}.dash{stroke:#c2410c;stroke-width:2;stroke-dasharray:8 7;fill:none;marker-end:url(#b)}.label{font-size:24px;font-weight:700}.small{font-size:19px}.note{font-size:17px}@media(prefers-color-scheme:dark){text{fill:#e5e7eb}.box{fill:#111827;stroke:#94a3b8}.hot{fill:#10233f;stroke:#60a5fa}.ctrl{fill:#3b1d0d;stroke:#fb923c}.line{stroke:#cbd5e1}.dash{stroke:#fb923c}}</style>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#334155"/></marker><marker id="b" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#c2410c"/></marker></defs>
+<text x="60" y="55" class="label">Data plane：每個 ID 不做全域協調</text>
+<rect x="70" y="110" width="210" height="110" rx="16" class="box"/><text x="175" y="155" text-anchor="middle" class="label">Callers</text><text x="175" y="188" text-anchor="middle" class="small">orders / events / objects</text>
+<rect x="400" y="90" width="280" height="150" rx="16" class="hot"/><text x="540" y="135" text-anchor="middle" class="label">ID Generator Fleet</text><text x="540" y="172" text-anchor="middle" class="small">local timestamp + sequence</text><text x="540" y="203" text-anchor="middle" class="small">permit check → int64</text>
+<rect x="810" y="110" width="270" height="110" rx="16" class="box"/><text x="945" y="153" text-anchor="middle" class="label">Business Stores</text><text x="945" y="188" text-anchor="middle" class="small">ID 只作 opaque key</text>
+<path d="M280 165 L400 165" class="line"/><text x="340" y="145" text-anchor="middle" class="note">Allocate()</text>
+<path d="M680 165 L810 165" class="line"/><text x="745" y="145" text-anchor="middle" class="note">ID</text>
+<text x="60" y="330" class="label">Control plane：只協調 worker ownership</text>
+<rect x="100" y="385" width="330" height="190" rx="16" class="ctrl"/><text x="265" y="430" text-anchor="middle" class="label">Lease Coordinator</text><text x="265" y="468" text-anchor="middle" class="small">worker_id + generation</text><text x="265" y="500" text-anchor="middle" class="small">lease_expiry</text><text x="265" y="532" text-anchor="middle" class="small">reuse_after_timestamp</text>
+<rect x="560" y="385" width="280" height="190" rx="16" class="box"/><text x="700" y="430" text-anchor="middle" class="label">Worker Slot Table</text><text x="700" y="468" text-anchor="middle" class="small">PK(namespace, worker_id)</text><text x="700" y="500" text-anchor="middle" class="small">owner incarnation</text><text x="700" y="532" text-anchor="middle" class="small">config_version</text>
+<path d="M430 480 L560 480" class="dash"/><path d="M540 240 L540 320 L265 320 L265 385" class="dash"/>
+<text x="455" y="308" text-anchor="middle" class="note">renew / acquire：低頻</text>
+<text x="60" y="650" class="note">核心比例：32 個 generator、10 秒續約 ≈ 3.2 control-plane writes/s；ID data plane 可達百萬級 requests/s。</text>
+</svg>
