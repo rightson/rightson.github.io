@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720" role="img" aria-labelledby="t d">
+<title id="t">Node-level scheduling versus NUMA-local execution</title>
+<desc id="d">Cluster-level node selection and node-local NUMA alignment are separate decisions.</desc>
+<rect x="20" y="20" width="920" height="680" rx="20" fill="#f7f9fc" stroke="#8da4bd"/>
+<text x="50" y="62" font-size="27" font-family="sans-serif" font-weight="700" fill="#18324a">Node placement 與 NUMA / NIC locality 是兩層問題</text>
+<rect x="55" y="120" width="300" height="160" rx="14" fill="#e5eef8" stroke="#315b8a"/>
+<text x="205" y="160" font-size="20" font-family="sans-serif" text-anchor="middle" fill="#18324a">kube-scheduler</text>
+<text x="85" y="198" font-size="16" font-family="monospace" fill="#465d72">CPU: 64 allocatable</text>
+<text x="85" y="226" font-size="16" font-family="monospace" fill="#465d72">Memory: 512 GiB</text>
+<text x="85" y="254" font-size="16" font-family="monospace" fill="#465d72">RDMA VF: available</text>
+<text x="390" y="202" font-size="18" font-family="sans-serif" fill="#315b8a">Bind Node-X →</text>
+<rect x="510" y="100" width="380" height="390" rx="16" fill="#ffffff" stroke="#7b8fa5"/>
+<text x="700" y="138" font-size="22" font-family="sans-serif" text-anchor="middle" fill="#18324a">Node-X</text>
+<rect x="545" y="180" width="140" height="210" rx="12" fill="#eef5e9" stroke="#507443"/>
+<text x="615" y="215" font-size="19" font-family="sans-serif" text-anchor="middle" fill="#244422">NUMA 0</text>
+<text x="565" y="255" font-size="15" font-family="sans-serif" fill="#4f684c">CPU 0–31</text>
+<text x="565" y="285" font-size="15" font-family="sans-serif" fill="#4f684c">256 GiB</text>
+<rect x="715" y="180" width="140" height="210" rx="12" fill="#eef5e9" stroke="#507443"/>
+<text x="785" y="215" font-size="19" font-family="sans-serif" text-anchor="middle" fill="#244422">NUMA 1</text>
+<text x="735" y="255" font-size="15" font-family="sans-serif" fill="#4f684c">CPU 32–63</text>
+<text x="735" y="285" font-size="15" font-family="sans-serif" fill="#4f684c">256 GiB</text>
+<text x="735" y="335" font-size="15" font-family="sans-serif" fill="#23594e">RDMA NIC / VF</text>
+<line x1="685" y1="305" x2="715" y2="305" stroke="#b75c55" stroke-width="6" stroke-dasharray="8 6"/>
+<text x="700" y="430" font-size="16" font-family="sans-serif" text-anchor="middle" fill="#433b6d">kubelet Topology Manager：CPU / memory / device hints</text>
+<text x="55" y="570" font-size="16" font-family="sans-serif" fill="#465d72">若 CPU 在 NUMA 0、RDMA NIC 在 NUMA 1，實際 DMA / memory path 仍可能跨 socket。</text>
+<text x="55" y="605" font-size="16" font-family="sans-serif" fill="#465d72">scheduler 選 Node；kubelet 與 Linux kernel 才真正決定 cpuset、memory node 與 device locality。</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#f7f9fc" i]{fill:#1a1f27}[fill="#ffffff" i]{fill:#1b1f20}[fill="#e5eef8" i]{fill:#1c2630}[fill="#eef5e9" i]{fill:#252d20}[fill="#18324a" i]{fill:#c7d5e1}[fill="#465d72" i]{fill:#bdc6ce}[fill="#244422" i]{fill:#ccdccb}[fill="#4f684c" i]{fill:#c2cbc1}[fill="#23594e" i]{fill:#c3dcd7}[fill="#433b6d" i]{fill:#c1bed2}[stroke="#315b8a" i]{stroke:#6f9bcc}[stroke="#507443" i]{stroke:#c1cfbc}[stroke="#7b8fa5" i]{stroke:#72879f}[stroke="#8da4bd" i]{stroke:#a5b7cb}[stroke="#b75c55" i]{stroke:#c98580}}</style>
+</svg>
