@@ -146,8 +146,7 @@ audit 不是無成本的附註。每天 30 億個 ID、每段 10 萬個，約有
 2. [Snowflake update and migration details](https://groups.google.com/g/twitter-development-talk/c/ahbvo3VTIYI/m/0eMJbIpAC8MJ) — X 開發者說明，2010 年。
 3. [RFC 9562: Universally Unique IDentifiers](https://www.rfc-editor.org/rfc/rfc9562.html) — IETF，2024 年。
 4. [Sequence Manipulation Functions](https://www.postgresql.org/docs/current/functions-sequence.html) — PostgreSQL 18 官方文件。
-5. [CREATE SEQUENCE](https://www.postgresql.org/docs/current/sql-createsequence.html) — PostgreSQL 18 官方文件。
-6. [etcd API Guarantees](https://etcd.io/docs/v3.5/learning/api_guarantees/) — etcd 官方文件，2025 年修訂。
-7. [etcd v3.6 API](https://etcd.io/docs/v3.6/learning/api/) — etcd 官方文件。
-8. [Making retries safe with idempotent APIs](https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/) — AWS Builders' Library。
-9. [Service Level Objectives](https://sre.google/sre-book/service-level-objectives/) — Google SRE。
+5. [etcd API Guarantees](https://etcd.io/docs/v3.5/learning/api_guarantees/) — etcd 官方文件，2025 年修訂。
+6. [etcd v3.6 API](https://etcd.io/docs/v3.6/learning/api/) — etcd 官方文件。
+7. [Making retries safe with idempotent APIs](https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/) — AWS Builders' Library。
+8. [Service Level Objectives](https://sre.google/sre-book/service-level-objectives/) — Google SRE。
