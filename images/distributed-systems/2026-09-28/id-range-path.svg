@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="535" viewBox="0 0 600 535" role="img" aria-labelledby="title desc">
+  <title id="title">號段分配與業務提交</title>
+  <desc id="desc">權威資料庫交易提交水位與 audit 後分配不重疊號段，節點在本機消耗，業務資料庫另行確認物件建立。</desc>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4 0 8Z" fill="#38689a"/></marker></defs>
+  <rect width="600" height="535" rx="16" fill="#f7f9fc"/>
+  <text x="28" y="39" font-size="23" font-weight="bold" fill="#17324f">ID 唯一性由號段交易承諾</text>
+  <rect x="28" y="67" width="544" height="85" rx="12" fill="#e8f2ff" stroke="#38689a" stroke-width="2"/>
+  <text x="48" y="99" font-size="19" font-weight="bold" fill="#17324f">權威資料庫 · global stream</text>
+  <text x="48" y="129" font-size="17" fill="#28445f">鎖列 → 水位 +100,000 → audit → durable commit</text>
+  <path d="M300 153V192" fill="none" stroke="#38689a" stroke-width="2.5" marker-end="url(#a)"/>
+  <text x="310" y="179" font-size="15" fill="#28445f">確認後交出 [N, N+100000)</text>
+  <rect x="28" y="202" width="260" height="97" rx="12" fill="#ffffff" stroke="#38689a" stroke-width="2"/>
+  <rect x="312" y="202" width="260" height="97" rx="12" fill="#ffffff" stroke="#38689a" stroke-width="2"/>
+  <text x="48" y="239" font-size="20" font-weight="bold" fill="#17324f">節點 A</text>
+  <text x="48" y="271" font-size="17" fill="#28445f">本機原子遞增 N …</text>
+  <text x="332" y="239" font-size="20" font-weight="bold" fill="#17324f">節點 B</text>
+  <text x="332" y="271" font-size="17" fill="#28445f">另一段、永不重疊</text>
+  <path d="M158 300V347" fill="none" stroke="#38689a" stroke-width="2.5" marker-end="url(#a)"/>
+  <path d="M442 300V347" fill="none" stroke="#38689a" stroke-width="2.5" marker-end="url(#a)"/>
+  <rect x="28" y="357" width="544" height="91" rx="12" fill="#e9f8f3" stroke="#21735c" stroke-width="2"/>
+  <text x="48" y="393" font-size="19" font-weight="bold" fill="#164e3d">業務資料庫 · tenant_id 分區</text>
+  <text x="48" y="423" font-size="17" fill="#28554a">INSERT + 主鍵／冪等鍵；commit 才是物件建立</text>
+  <text x="28" y="489" font-size="17" fill="#8a4c16">節點崩潰：未用數字作廢；已發數字永不回收。</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#164e3d" i]{fill:#c6e2da}[fill="#17324f" i]{fill:#5992cf}[fill="#28445f" i]{fill:#c2ceda}[fill="#28554a" i]{fill:#c5dad5}[fill="#38689a" i]{fill:#80a8d1}[fill="#8a4c16" i]{fill:#e28f46}[fill="#e8f2ff" i]{fill:#142234}[fill="#e9f8f3" i]{fill:#1d2e28}[fill="#f7f9fc" i]{fill:#1a1f27}[fill="#ffffff" i]{fill:#1b1f20}[stroke="#21735c" i]{stroke:#59cfae}[stroke="#38689a" i]{stroke:#80a8d1}}</style>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="565" viewBox="0 0 600 565" role="img" aria-labelledby="title desc">
+  <title id="title">lease 到期後舊 worker 醒來</title>
+  <desc id="desc">舊 worker 17 暫停，協調端 lease 到期，把身分 17 交新 worker；舊者醒來若仍能對外回應，同一毫秒及 sequence 可能重複。</desc>
+  <defs><marker id="c" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4 0 8Z" fill="#a75f1e"/></marker></defs>
+  <rect width="600" height="565" rx="16" fill="#f7f9fc"/>
+  <text x="28" y="39" font-size="23" font-weight="bold" fill="#17324f">lease 不會收回已在途的回應</text>
+  <text x="32" y="83" font-size="18" fill="#17324f">舊 worker 17</text>
+  <text x="236" y="83" font-size="18" fill="#17324f">協調端</text>
+  <text x="439" y="83" font-size="18" fill="#17324f">新 worker 17</text>
+  <path d="M94 100V468M296 100V468M502 100V468" stroke="#97acc0" stroke-width="2" stroke-dasharray="7 7"/>
+  <rect x="28" y="122" width="544" height="59" rx="8" fill="#e8f2ff"/>
+  <text x="44" y="148" font-size="18" fill="#17324f">T0 · 舊者持有 lease，已發出 (t, 17, 0…)</text>
+  <text x="44" y="171" font-size="16" fill="#28445f">它在 GC pause，無法 keepalive</text>
+  <rect x="28" y="202" width="544" height="59" rx="8" fill="#e8f2ff"/>
+  <text x="44" y="228" font-size="18" fill="#17324f">T1 · lease 過期；權威端准許新者接手</text>
+  <text x="44" y="251" font-size="16" fill="#28445f">協調端的排他狀態已更新</text>
+  <rect x="28" y="282" width="544" height="59" rx="8" fill="#fff0d9"/>
+  <text x="44" y="308" font-size="18" fill="#8a4c16">T2 · 新者用 (t, 17, 0) 對外發號</text>
+  <text x="44" y="331" font-size="16" fill="#744622">舊者若醒來，仍可能送出同一組合</text>
+  <rect x="28" y="363" width="544" height="81" rx="8" fill="#fff0d9" stroke="#a75f1e" stroke-width="2"/>
+  <text x="44" y="390" font-size="18" font-weight="bold" fill="#8a4c16">修正的權威邊界</text>
+  <text x="44" y="417" font-size="16" fill="#744622">不重用 incarnation；或把 epoch 編入 ID，</text>
+  <text x="44" y="438" font-size="16" fill="#744622">並讓可控的寫入路徑拒絕舊世代</text>
+  <text x="28" y="505" font-size="17" fill="#28445f">fencing 能拒絕舊寫入；已曝光的 HTTP ID</text>
+  <text x="28" y="531" font-size="17" fill="#28445f">無法靠 lease 撤回。</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#17324f" i]{fill:#5992cf}[fill="#28445f" i]{fill:#c2ceda}[fill="#744622" i]{fill:#ce8d59}[fill="#8a4c16" i]{fill:#e28f46}[fill="#a75f1e" i]{fill:#e39f62}[fill="#e8f2ff" i]{fill:#142234}[fill="#f7f9fc" i]{fill:#1a1f27}[fill="#fff0d9" i]{fill:#3a2c16}[stroke="#97acc0" i]{stroke:#526e88}[stroke="#a75f1e" i]{stroke:#e39f62}}</style>
+</svg>

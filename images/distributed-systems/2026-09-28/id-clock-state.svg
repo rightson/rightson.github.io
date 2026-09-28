@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="535" viewBox="0 0 600 535" role="img" aria-labelledby="title desc">
+  <title id="title">時間型 ID 位元與時鐘狀態</title>
+  <desc id="desc">63-bit 正整數範例由 41-bit 毫秒、10-bit worker、12-bit sequence 組成；時間前進可重設計數，同毫秒遞增，回撥或用完時等待或拒絕。</desc>
+  <defs><marker id="b" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4 0 8Z" fill="#38689a"/></marker></defs>
+  <rect width="600" height="535" rx="16" fill="#f7f9fc"/>
+  <text x="28" y="39" font-size="23" font-weight="bold" fill="#17324f">64-bit signed 正數的欄位預算</text>
+  <rect x="28" y="68" width="30" height="73" fill="#e8f2ff" stroke="#38689a"/>
+  <rect x="58" y="68" width="316" height="73" fill="#dcefff" stroke="#38689a"/>
+  <rect x="374" y="68" width="92" height="73" fill="#d8f1e8" stroke="#21735c"/>
+  <rect x="466" y="68" width="106" height="73" fill="#fff0d9" stroke="#a75f1e"/>
+  <text x="34" y="111" font-size="16" fill="#17324f">0</text>
+  <text x="105" y="111" font-size="19" fill="#17324f">41-bit 毫秒</text>
+  <text x="390" y="105" font-size="16" fill="#164e3d">10-bit</text>
+  <text x="389" y="125" font-size="15" fill="#164e3d">worker</text>
+  <text x="475" y="105" font-size="16" fill="#8a4c16">12-bit</text>
+  <text x="473" y="125" font-size="15" fill="#8a4c16">sequence</text>
+  <rect x="28" y="183" width="544" height="62" rx="10" fill="#ffffff" stroke="#38689a" stroke-width="2"/>
+  <text x="48" y="210" font-size="18" font-weight="bold" fill="#17324f">now_ms &gt; last_ms</text>
+  <text x="48" y="233" font-size="16" fill="#28445f">推進 last_ms，sequence 歸零，再發號</text>
+  <rect x="28" y="265" width="544" height="62" rx="10" fill="#ffffff" stroke="#38689a" stroke-width="2"/>
+  <text x="48" y="292" font-size="18" font-weight="bold" fill="#17324f">now_ms = last_ms</text>
+  <text x="48" y="315" font-size="16" fill="#28445f">sequence 遞增；4096 值用完即等待／拒絕</text>
+  <rect x="28" y="347" width="544" height="77" rx="10" fill="#fff0d9" stroke="#a75f1e" stroke-width="2"/>
+  <text x="48" y="376" font-size="18" font-weight="bold" fill="#8a4c16">now_ms &lt; last_ms</text>
+  <text x="48" y="401" font-size="16" fill="#744622">不能回捲重用；有界等待或停止取號</text>
+  <text x="28" y="470" font-size="17" fill="#28445f">同一 worker 身分若同時由兩個 process 使用，</text>
+  <text x="28" y="497" font-size="17" fill="#28445f">即使各自的時鐘正常，ID 仍可能碰撞。</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#164e3d" i]{fill:#c6e2da}[fill="#17324f" i]{fill:#5992cf}[fill="#28445f" i]{fill:#c2ceda}[fill="#38689a" i]{fill:#80a8d1}[fill="#744622" i]{fill:#ce8d59}[fill="#8a4c16" i]{fill:#e28f46}[fill="#d8f1e8" i]{fill:#23352f}[fill="#dcefff" i]{fill:#152838}[fill="#e8f2ff" i]{fill:#142234}[fill="#f7f9fc" i]{fill:#1a1f27}[fill="#fff0d9" i]{fill:#3a2c16}[fill="#ffffff" i]{fill:#1b1f20}[stroke="#21735c" i]{stroke:#59cfae}[stroke="#38689a" i]{stroke:#80a8d1}[stroke="#a75f1e" i]{stroke:#e39f62}}</style>
+</svg>
