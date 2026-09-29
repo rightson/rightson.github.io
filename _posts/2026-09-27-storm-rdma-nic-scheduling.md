@@ -1,19 +1,18 @@
 ---
 layout: post
-title: "STORM 把 RDMA 排程放進 RNIC：transaction size 與 QP backlog 足以改寫尾延遲"
+title: "STORM 的 RNIC 排程：從請求大小與 Backlog 判斷服務順序"
 date: 2026-09-27 05:49:57 +0800
 domain: networking
 categories: networking rdma
-description: "SIGCOMM 2026 的 STORM 顯示，RNIC 已掌握 transaction size 與 per-QP backlog 兩個足以近似 application urgency 的訊號。把 scheduling 與 congestion control 分開，能在不要求應用程式提供 hint 的情況下，同時改善短 flow tail latency 與 LLM collective iteration time。"
+description: "STORM 以 transaction size 與 per-QP backlog 形成 wire priority；分析局部資訊如何改善完成時間，以及 ordering、公平性與控制迴路的限制。"
 ---
 
-作者：Scott Yo-Ru Chen
 
-RDMA 的問題早就不只是「能不能做到低 latency」。當同一套 RoCE / RDMA fabric 同時承載 RPC、storage fan-out、parameter exchange 與 LLM collective 時，真正開始暴露的是另一個問題：RNIC 幾乎總是知道目前有哪些工作、每個 request 還剩多少資料，但資料中心往往仍把這些 request 當成同一種流量公平分享。
+STORM 研究的是 RDMA 請求的服務順序：RNIC 已能觀察 transaction size 與 per-QP backlog，這些局部資訊是否足以改善整體完成時間？它把排程視為一個獨立於路徑選擇及速率控制的設計維度，讓相同網路資源可以用不同順序交付工作。[STORM，SIGCOMM 2026](https://doi.org/10.1145/3789240.3829117)
 
-SIGCOMM 2026 的 **STORM** 把這個矛盾抓得很準。它沒有要求 application 標 deadline，也沒有把整套 scheduler 搬回 host software；它只使用 RNIC 本來就看得到的兩個訊號——**RDMA transaction size** 與 **per-QP backlog**——把 request 映射成少量 wire priority。官方摘要報告，在代表性 cloud 與 LLM training workload 中，STORM 可把 training iteration time 最多縮短 12%，並把 average 與 P99 flow-completion slowdown 最多降低 90%。[SIGCOMM 2026 官方議程與摘要](https://conferences.sigcomm.org/sigcomm/2026/program/papers/)；[論文 DOI](https://doi.org/10.1145/3789240.3829117)
+RDMA 減少軟體參與資料搬移的成本，但多個 QP 仍會爭用 RNIC 與 fabric。短 RPC、大型資料傳送及 collective 的相依步驟，對完成順序的敏感度不同。公平分配當下頻寬是一個合理基線，卻未必同時縮短短工作的等待，或盡早解鎖後續計算。這使尾端延遲除了壅塞，也受到請求排隊位置影響。
 
-我認為這篇值得追的地方，是它把一個看似需要 application semantics 的問題，重新縮成 NIC 本地可觀察的 scheduling 問題。這個方向未必能取代 congestion control，也未必適合所有 AI collective；但它證明了一件更重要的事：**在 RDMA datapath 上，scheduler 可能比我們想像中更接近 hardware primitive，而不是 orchestration policy。**
+這題的前瞻性在於，以硬體本來可見的訊號近似工作急迫性，可能減少 application hints 的介面成本。以下先追蹤 size、backlog 與 priority 的映射，再檢查量化、in-order RoCEv2、公平性及 congestion control 的互動。論文結果與延伸到其他 AI 工作的架構推論會分開討論。
 
 ## 公平共享在 RDMA 上丟掉了哪些資訊
 
@@ -116,7 +115,7 @@ Load balancing 又是第三個問題：**這些 packet 應該走哪條 path？**
 
 ![公平分享與 STORM 類 urgency scheduling 的示意時間線](/images/networking/2026-09-27/fair-vs-storm.svg)
 
-圖：作者假設算例；排程概念依據 [STORM](https://doi.org/10.1145/3789240.3829117) 與 [pFabric](https://doi.org/10.1145/2486001.2486031)。圖中時間線不是論文實驗數據。
+圖：作者假設算例；排程概念依據 [STORM](https://doi.org/10.1145/3789240.3829117) 與 [pFabric](https://doi.org/10.1145/2486001.2486031)。圖中時間線不是論文實驗資料。
 
 這個算例也說明為什麼 STORM 不是單純的 size-based scheduling。Size 只知道「快完成」；backlog 補了一個「完成之後能解鎖多少本地工作」的 proxy。
 
