@@ -1,17 +1,18 @@
 ---
 layout: post
-title: "TPU 創始篇：Google 為什麼在 2013 年決定做一顆推論 ASIC？"
+title: "TPU v1 的起點：線上推論如何把晶片效率變成資料中心容量"
 date: 2026-09-22 13:40:00 +0800
 domain: architecture
 categories: ai-industry
-description: "TPU v1 的起點是一個成本問題：Google 估算，若語音搜尋大規模採用 DNN，既有 CPU 資料中心可能需要直接翻倍。這篇從 workload、P99 latency、INT8、systolic array、memory hierarchy 到 PCIe 整合，拆解第一代 TPU 為何長成這個樣子。"
+description: "Google 的第一代 TPU 由線上推論需求出發，在尾端延遲限制下改善容量與成本；INT8、systolic array、記憶體及 PCIe 整合都是這個目標下的取捨。"
 ---
 
-今天回頭看 TPU，很容易把它理解成「Google 自己做的 GPU」。這個理解會錯過整條技術演化的起點：第一代 TPU 的動機來自成本。Google 發現，神經網路推論一旦變成大規模線上服務，CPU 的成本結構會先崩掉；打造一顆更通用的平行處理器從來不是目標。
 
-2017 年 Google 在 ISCA 公開第一代 TPU 的實測論文時，揭露了一個比 92 TOPS 更關鍵的背景：2013 年內部估算，如果使用者每天只做約三分鐘的語音搜尋，而語音辨識全面改採深度神經網路，既有資料中心的計算量可能需要接近翻倍。Google 因此啟動高優先級 ASIC 專案，目標是在極短時間內把 inference 的 cost-performance 提升一個數量級；從設計到部署只用了約 15 個月。[Google Research 原始論文](https://research.google/pubs/in-datacenter-performance-analysis-of-a-tensor-processing-unit/)｜[ISCA 2017 PDF](https://arxiv.org/pdf/1704.04760)
+TPU v1 值得回頭研究，是因為它把晶片設計目標直接接到線上服務的容量與成本。Google 在 2013 年面對的問題，是神經網路推論若進入大量產品，既有伺服器能否在使用者可接受的延遲內承擔需求。第一代 TPU 選擇專用 ASIC，並以低精度運算、規律資料流與既有伺服器整合，縮小完成這些工作所需的硬體預算。[Jouppi，Google，ISCA 2017](https://research.google/pubs/in-datacenter-performance-analysis-of-a-tensor-processing-unit/)
 
-這個決策奠定了之後十年的 TPU 路線：先找出實際限制 AI system economics 的瓶頸，再讓硬體、compiler、memory、network 和資料中心一起往那個瓶頸收斂。
+資料中心的有效容量受到算力、記憶體、排隊與服務期限共同限制。通用 CPU／GPU 能服務較廣的程式，也提供成熟工具與彈性；但把 batch 放大以提高利用率，可能增加等待，未必符合線上推論的尾端延遲要求。專用硬體是否值得做，因而要先看實際工作負載、可接受的數值誤差與部署成本，才能回到乘法器數量。
+
+這個案例帶來的長期理解是：加速器的效率必須在完整服務條件下比較。下文沿著容量需求推導 INT8、256×256 array、片上儲存與 PCIe 的選擇，並追問每個機制成功後，瓶頸會移到哪裡。
 
 ## TPU 的起點：資料中心容量
 
