@@ -152,3 +152,4 @@ audit 不是無成本的附註。每天 30 億個 ID、每段 10 萬個，約有
 6. [etcd v3.6 API](https://etcd.io/docs/v3.6/learning/api/) — etcd 官方文件。
 7. [Making retries safe with idempotent APIs](https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/) — AWS Builders' Library。
 8. [Service Level Objectives](https://sre.google/sre-book/service-level-objectives/) — Google SRE。
+9. [Twitter Snowflake original project](https://github.com/twitter-archive/snowflake) — Twitter，2010 年原始專案，後歸檔。
