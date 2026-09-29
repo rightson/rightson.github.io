@@ -1,17 +1,18 @@
 ---
 layout: post
-title: "TPU v1 的效率來自資料重用：256×256 Systolic Array 如何把記憶體存取變成 65,536 個 MAC 的流水線"
+title: "256×256 Systolic Array 的供料條件：TPU v1 如何重用資料"
 date: 2026-09-23 19:43:00 +0800
 domain: architecture
 categories: ai-industry
-description: "TPU v1 要達到 92 TOPS，關鍵在於讓權重與 activation 在 256×256 systolic array 中被重複使用，並用 tile 與 double buffering 把資料搬移藏到計算後面。這篇從 MatrixMultiply(B)、pipeline、shape utilization 與 weight reuse 拆解第一代 TPU 的資料流。"
+description: "TPU v1 用規律資料流降低 operand 搬移；實際效率仍受 batch、tile 形狀、weight load 與 double buffering 是否重疊限制。"
 ---
 
-上一篇談的是 Google 為什麼必須做 TPU；這一篇處理更底層的問題：把 65,536 個 MAC 放在晶片上，並不自然等於 92 TOPS。效率取決於這些 MAC 能否每個 cycle 都拿得到資料，而且不必為每一次 multiply-add 都回 SRAM 或 DRAM 取數。
 
-CPU 與 GPU 的通用性建立在 register file、instruction scheduling、cache、threading 與大量控制邏輯上。TPU v1 做了相反的選擇：一旦 workload 已經被壓縮成大量 dense matrix multiply，硬體就不必再問「下一個 operand 在哪個 register、哪條 instruction 要讀它」。它可以把計算單元直接排成固定的空間結構，讓資料自己沿著陣列流動。
+TPU v1 的 systolic array 把矩陣乘法轉成規律的資料重用流程；65,536 個 MAC 的峰值只有在 operands 及累加狀態能持續供應時才成立。研究這個結構，重點是理解如何降低每次運算需要支付的搬移與控制成本，以及哪些 shape 會讓它失去效率。
 
-systolic array 的價值在這裡：它用空間上的資料重用，交換通用處理器的控制與搬移成本，重點並不在乘法器數量。
+神經網路的線性層與 convolution 可以形成大量重複的乘加。若每個 MAC 都獨立回到大型儲存體取得 operands，所需的記憶體埠、連線與功耗會隨並行度增加。規律陣列讓相鄰單元傳遞資料，把重用安排在空間與時間上；代價是軟體要把工作切成硬體能承接的 tiles。[Google TPU v1 deep dive](https://cloud.google.com/blog/products/ai-machine-learning/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu)
+
+在[第一代 TPU 的服務需求](/ai-industry/2026/09/22/tpu-v1-origin-inference-asic.html)之後，這篇把視角縮到一條 matrix instruction。由 MatrixMultiply(B) 追到 weight load、pipeline 與 shape utilization，便能看出「更多 MAC」何時增加吞吐量，何時只增加等待資料的硬體。
 
 ## 92 TOPS 只是算術上限，資料必須先供得上
 
