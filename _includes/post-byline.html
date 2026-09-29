@@ -1,5 +1,4 @@
 <div class="article-byline">
-  {% if page.author %}<span>作者：<a href="https://www.linkedin.com/in/scott-yo-ru-chen-14711538/" rel="me">{{ page.author | escape }}</a></span>{% endif %}
   <span>發布於 <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y 年 %-m 月 %-d 日 %H:%M' }}</time></span>
   <span data-reading-time></span>
   <a href="{{ page.url | absolute_url }}" data-speechify-read rel="nofollow" title="分享到 Speechify" hidden>分享到 Speechify</a>

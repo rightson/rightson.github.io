@@ -2,7 +2,6 @@
 layout: post
 title: "全域唯一 ID 的分配：號段、時間排序與節點所有權"
 date: 2026-09-28 17:18:26 +0800
-author: Scott Yo-Ru Chen
 domain: networking
 categories: networking
 description: "以可持久化號段建立全域唯一 ID，再檢查時間型編碼的排序收益、時鐘回撥、worker 重用與故障接手成本；分配順序與資料提交順序必須分開看。"
