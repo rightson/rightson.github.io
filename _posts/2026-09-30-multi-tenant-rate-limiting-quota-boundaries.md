@@ -1,0 +1,155 @@
+---
+layout: post
+title: "多租戶限流能容許多少超額？集中扣額與局部配額的保證邊界"
+date: 2026-09-30 05:16:17 +0800
+domain: networking
+categories: networking
+description: "從集中 token bucket 推導原子扣額、故障接手與局部 grant 的突發上界；以可量化的誤差、滑動視窗成本和失聯策略，決定多租戶 API 的准入契約。"
+series: distributed-systems
+series_order: 3
+---
+
+同一租戶的請求分散到三十二台 gateway，每台都設定每秒一千次，最後可能放行三萬兩千次。若改成所有請求先問中央計數器，租戶上限變得清楚，中央服務卻進入每一次 API 呼叫的延遲與故障路徑。多租戶限流必須先決定可接受的承諾：每個時間區間都守住同一個上限，或允許一個能計算、能監控的短期誤差，換取節點本機判定。
+
+我的基線是單區域、按租戶分區的集中 token bucket。先把原子扣額、回應遺失與故障接手處理完整；只有熱門租戶的協調成本確實逼近瓶頸，才把已扣除的額度分批交給 gateway。這種局部額度可以降低協調頻率，但會把「分配時刻」與「實際放行時刻」拆開，必須重新推導突發上界。
+
+先備是[短網址服務的建立與冪等路徑](/networking/2026/09/24/short-url-uniqueness-idempotency-cache-hotspots.html)；前篇[全域唯一 ID 的分配](/networking/2026/09/28/distributed-id-range-clock-worker-ownership.html)說明了已確認分配為何不能在接手後重放。以下是作者提出的服務設計與假設算例，不代表任何公司的內部架構。
+
+## 放行一次，到底消耗哪一種額度
+
+假設平台提供多租戶 API，包括建立物件與查詢。租戶由驗證後的身分決定，不能直接相信外部 `X-Tenant-ID`。每個租戶有一個全租戶預算，同一租戶的不同 API key 共用；route class 決定成本，普通查詢為一單位、昂貴建立為五單位。第一版不做逐使用者配額、跨區域共享預算、帳務結算或精確 CPU 計費。
+
+**計量對象是准入嘗試**：拿到允許後額度已消耗，即使 gateway 在轉送前崩潰，或後端回五百，也不自動退回。這會有少量保守扣額，卻避免「故意取消昂貴請求，再要求退款」的漏洞。業務重試是新的准入嘗試；同一筆訂單是否能重複建立，仍由業務冪等鍵負責。限流允許只表示這次嘗試可以進入，沒有訂單已提交或外部副作用恰好一次的含義。
+
+集中模式以權威提交 ALLOW 的時刻計入准入；回應傳輸與 gateway 轉送的延後量另受 deadline、in-flight 上限與後端並行限制約束，不能把提交包絡直接當成每一毫秒的後端到達包絡。
+
+基線用補充速率 `r`（units/s）與桶容量 `B`（units）。理想權威時鐘下，任意長度 `T` 秒的區間，累計准入成本滿足 `A(T) ≤ rT+B`。這個模型允許儲存短暫閒置後的突發額度。2002 年的 [RFC 3290 附錄 A](https://www.rfc-editor.org/rfc/rfc3290.html#appendix-A)用同樣的速率與桶容量描述流量包絡；這裡將封包 bytes 換成 API 成本單位，是作者的應用設計。
+
+設計目標是健康狀態下判定 p99 不超過五毫秒、有效判定成功比例至少 99.99%。「配額不足」是成功的拒絕判定；無法取得權威結果的逾時則是服務失敗。另有一個正確性目標：集中模式中已確認扣額不可因允許範圍內的單節點故障而消失。這兩個目標可能衝突，必須在分區失聯時選擇拒絕未知判定。
+
+租戶配額也不能保證後端安全。每秒一千個請求，若平均執行由十毫秒拉長到兩秒，穩態 in-flight 會由約十個增加到兩千個。這是 `並行量 ≈ 到達率 × 停留時間` 的算例。於是後端另設有界並行與排隊限制；租戶 rate limit 管長期入口，後端 admission control 管當下資源，兩者都必須通過。
+
+## 流量規模先決定協調放在哪裡
+
+假設二十萬個活躍租戶、三十二台 gateway，平均二十萬次請求／秒、尖峰一百萬次／秒。若一次判定 RPC 的 request 加 response 約三百八十四 bytes，尖峰總 payload 是 `10^6 × 384 B = 384 MB/s`，約 `3.07 Gbit/s`；尚未計 TLS、封包標頭、複寫與重試。RPC 數量比這個純頻寬更容易形成 CPU、連線與尾延遲成本。
+
+若權威狀態平均每租戶一百二十八 bytes，二十萬桶的原始資料僅 `25.6 MB`。因此這個服務的第一個瓶頸通常是判定頻率與偏斜，並非桶狀態總量。按租戶雜湊成六十四個邏輯分區，均勻尖峰每分區約 `15,625 decisions/s`，但這只是目標負載，不能當成已測得容量。
+
+假設單一大租戶占十五萬次／秒，它的桶仍要在同一條原子更新路徑上。六十四分區不能把一個 key 平分六十四次；增加一般分區只幫助其他租戶。應先量這個熱點的串行 CPU、commit 與排隊延遲，再決定要讓它獨占分區、降低可用配額，或導入局部額度。把同一租戶任意拆成多個完整桶會直接改變上限。
+
+另一個數量級是短期去重：若每次判定保存八十 bytes 的結果，保留兩秒透明 RPC 重試窗口，尖峰是 `10^6 × 2 × 80 B = 160 MB`，反而超過桶狀態六倍。實際還有索引、allocator 與複寫。這筆成本告訴我們：去重窗口必須與最大 RPC deadline 一起設計，不能讓任意外部 key 永久進入限流狀態。
+
+## 最小架構讓一個租戶只有一個扣額權威
+
+初期可以讓同一個限流服務同時承擔 policy 管理與判定，用一個支援原子交易、持久化的主寫入庫；不需要先拆出多個服務。gateway 驗證、做粗粒度本機保護，再以 `hash(tenant_id)` 找到權威分區。它能快取分區路由與 policy 描述，但不能快取集中模式的「上次允許」作為下一次請求的通行證。
+
+![gateway 先保護入口，再由租戶權威分區扣額，後端獨立限制並行](/images/distributed-systems/2026-09-30/rate-limit-authority.svg)
+
+*圖 1｜[作者設計](#最小架構讓一個租戶只有一個扣額權威)；本機粗限流搭配全域判定的分層思路參考 [Envoy global rate limiting](https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/other_features/global_rate_limiting)。*
+
+內部 API 是 `Check(tenant_id, route_class, attempt_id, deadline)`。`attempt_id` 由可信 gateway 為每次准入嘗試生成，外部使用者不能指定或跨 gateway 重用。回應含 `ALLOW / DENY / UNAVAILABLE`、`policy_version` 與估計等待時間。ALLOW 只能在本次 attempt 的 deadline 內使用；gateway 對該 attempt 的轉送狀態做本機原子轉移，避免同一 RPC 的重複回應觸發兩次轉送。
+
+配額不足對外回 `429`；權威服務不可達且此路徑選擇保守拒絕，回 `503`，不要把基礎設施失效說成租戶違規。2012 年的 [RFC 6585](https://www.rfc-editor.org/rfc/rfc6585.html#section-4)定義 `429` 可附 `Retry-After`，也明定此回應不能被 cache 保存；它沒有規定應用如何辨認租戶或計數。等待時間只是重新嘗試的建議，其他請求可能先消耗補充額度，不能保證屆時必定成功。
+
+資料模型可縮到三個同分區物件：`policy(tenant_id, version, r, B, route_costs, mode)`、`bucket(tenant_id, tokens, last_refill, applied_version)`、`decision(tenant_id, attempt_id, request_hash, result, expires_at)`。主索引分別是租戶、租戶，以及 `(tenant_id, attempt_id)`；去重到期用時間索引或分批清理，不能在一筆准入交易中掃遍所有歷史。相同 attempt 配不同 route 或成本要拒絕。
+
+主要寫路徑是 gateway 驗證 → 本機入口上限 → 權威查重與扣額 → 回判定 → gateway 單次轉送 → 後端並行檢查 → 業務交易。管理讀取可讀版本化 policy cache；它不提供精確即時 remaining。若要查權威剩餘量，也必須考慮後續請求立刻會改變數字，不能將顯示值當成額度預留。
+
+## 補充、判斷、扣除必須是同一次狀態轉移
+
+集中模式最小演算法如下，整段在租戶桶的原子邊界內執行，使用權威端時間，不接受 client timestamp：
+
+```text
+若 attempt 已存在：驗證參數與期限，回原結果
+t = max(authority_now, last_refill)
+available = min(B, tokens + r * (t - last_refill))
+若 cost <= available：new_tokens = available - cost，結果 ALLOW
+否則：new_tokens = available，結果 DENY
+保存 new_tokens、t、policy version 與 decision
+依選定的持久化／複寫契約確認，再回應
+```
+
+兩台 gateway 同時讀到一個 token，若各在 client 端判斷、再覆寫零，就會放行兩次。將補充、比較、扣除和 decision 放在同一交易，第二筆只會看到第一筆扣除後的狀態。拒絕也要保存本次補充後的時間與數量，避免後續重複補充；分數 token 用整數微單位與餘數保存，不能每次都向上取整憑空生額度。
+
+`cost > B` 的操作永遠等不到足夠 tokens，應當視為 policy 配置錯誤或另設昂貴操作規則，不能一直回一秒後再試。桶狀態只可在已閒置至少 `B/r` 且沒有未過期 decision／grant 後安全刪除，因為此時重新建滿桶與正常補充等價。重啟或 eviction 任意把桶設滿，等於額外給一次突發預算。
+
+若選 Redis 實作，server-side Lua 能讓該次狀態更新不被其他命令交錯，但腳本也會阻塞同一服務的其他工作，必須保持有界、先驗證參數，不能把大量滑動視窗清理塞進熱路徑。這是 [Redis Scripting with Lua](https://redis.io/docs/latest/develop/programmability/eval-intro/)提供的局部原子語義；它沒有自動建立跨故障接手的確認保證。
+
+第一個完整故障時序是**扣額成功但回應遺失**。T0：桶有十單位，A 的成本一單位；權威原子寫成九並保存 ALLOW。T1：回應在網路上丟失，gateway 還沒轉送。T2：gateway 用同一 attempt 在 deadline 內重試，權威找到 decision，回原 ALLOW，桶維持九。T3：gateway 原子標記本次已轉送，後端收到一次嘗試。若 T2 前 deadline 已過，gateway 必須放棄舊 attempt；使用者稍後重新呼叫會產生新 attempt，舊的一單位不退回。
+
+殘留狀態是少一 token 的桶、短期 decision，以及 gateway 的未轉送狀態。使用者可能只看到延遲，或在重試窗口耗盡時看到 `503`；不應看到同一 RPC retry 被扣十次。偵測看 decision replay、逾時後放棄率與「已確認允許／實際轉送」差額。恢復無需補償交易，保守扣額會隨正常 refill 消失。如果 gateway 已轉送後失去業務回應，則進入業務冪等問題；重放限流判定不能替它消除副作用。
+
+## 原子更新之後，還有主節點接手的界線
+
+第二個故障是**扣額在接手後消失**。舊主把桶從一百扣到二十，回出八十個 ALLOW，備份卻仍是一百。提升落後副本後再允許一百個，短時間一共放行一百八十個。所有單次扣額都可能是原子的，仍然違反原來的上限。
+
+對契約性的硬上限，我會要求每分區只有一個有效寫入權威；成功回應建立在故障模型內可保留的日誌提交上，且切換先隔離舊主、恢復已確認狀態。可以用具有共識日誌的狀態機或合適的資料庫提交與接手契約實現，但要驗證 commit 邊界，不能只寫「三副本」。時間也納入故障模型：新權威不能以失控的前跳時鐘立刻補滿桶；回撥可暫停補充，過大的前跳或偏差則撤出服務。若只能保證時鐘誤差，應公開帶時間誤差的包絡，或降低名義速率留出餘裕。
+
+Redis 官方[複寫文件](https://redis.io/docs/latest/operate/oss_and_stack/management/replication/)明確指出預設非同步複寫，`WAIT` 也不把部署轉成具強一致性的系統，特定故障下已確認寫入仍可能遺失。因此 Redis 加原子腳本適合可以接受短期超額的防濫用限流；若要用於不可超支的預算，必須另證明接手與持久化邊界。這是保證的差別，無法用較低的 benchmark latency 抵銷。
+
+若平台選擇近似模式，超額應明確量化。假設故障前實際允許速率為五萬單位／秒，遺失零點二秒已確認扣額，可能重新放出約一萬單位；這是持續流量與落後時間的算例，突發還會再增加。副本落後若沒有硬上界，就不能聲稱只有固定百分比誤差。觀測 replicated offset、接手世代和 confirmed watermark；無法建立上界時，先拒絕或將桶保守設零，再從安全時間慢慢補充，代價是正常租戶也會被誤拒絕。
+
+## 熱租戶把中央扣額改成局部額度，誤差從哪裡來
+
+熱門租戶可向權威預領 `q` 單位：中央先按同一 token bucket 原子扣掉 q，保存 `grant_id、owner_incarnation、policy_version、expiry`，確認後交給 gateway。gateway 在本機原子消耗 grant；沒有本機 refill，沒有額度就再請領。每個 owner 同時最多持有 q 未消耗單位，預領也算在這個上界內。這是作者設計，不等同於把完整的 r、B 複製到每台節點。
+
+![中央先扣除 grant，gateway 在同一 incarnation 內消耗，重啟與過期直接丟棄](/images/distributed-systems/2026-09-30/rate-limit-grant.svg)
+
+*圖 2｜[作者設計](#熱租戶把中央扣額改成局部額度誤差從哪裡來)；quota assignments 與逐次判定是不同路徑，可參考 [Envoy global rate limiting](https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/other_features/global_rate_limiting)，本圖的扣額及誤差契約由作者提出。*
+
+它與前篇號段有一個關鍵差異：ID 區間放在記憶體多久都不影響唯一性，限流額度延後使用卻會影響**何時**發生突發。中央分配流量滿足 `G(T) ≤ rT+B`，不代表 gateway 的實際放行流量也滿足相同包絡。
+
+設區間開始時未消耗額度是 `U_start`。區間內准入最多來自原有額度加新 grant，所以 `A(T) ≤ U_start + G(T) ≤ U_max+rT+B`。若一租戶最多有 N 個可消耗額度的 incarnation、每個至多 q，則 `U_max ≤ Nq`。這是理想時間、grant 不重複且不退回條件下的保守上界；新增的是突發誤差，長時間平均增量為 `Nq/T`，不能把它宣稱成每秒固定誤差。
+
+**假設算例**：`r=10,000 units/s、B=2,000、N=32、q=100`，新增突發餘裕是三千二百，實際包絡變成 `10,000T+5,200`。中央協調在充分利用下約由每秒一萬次降到一百次；低利用率、到期與小批請領會提高這個數字。平均每 gateway 約三百一十二單位／秒，一百單位只撐約零點三二秒，並沒有獲得很長的離線可用時間。
+
+如果業務只接受兩百單位額外突發，需 `q ≤ floor(200/32)=6`，協調頻率回到至少約 `10,000/6 ≈ 1,667 次/s`。另一條路是減少持有配額的 owner 數，或在每台另外做 pacing；不能同時保留大 grant、任意負載移動與近乎零誤差。控制面中斷後最多消耗當時剩餘 U，耗盡或到期就拒絕；這是有界的暫時繼續服務，不是無限制 fail-open。
+
+grant RPC 的重試用同一 grant_id，權威回同一分配；重啟換 incarnation，丟棄舊 grant。expiry 後也不退回中央桶，因為它已靠時間 refill；退款可能創造第二份容量。暫停後醒來的舊 process 必須在每次准入前檢查期限，且時間來源要涵蓋暫停／休眠；無法界定時鐘偏差時停止離線消耗。新 incarnation 與仍可能復活的舊 incarnation 都計入 N，不能只數目前註冊的三十二台。否則滾動重啟會不斷累積舊額度，剛才的 Nq 就失去意義。
+
+## 偏斜、滑動視窗與降額會改寫選型
+
+固定把 r、B 平分三十二台，是更簡單的替代方案：讓各 `r_i` 加總不超過 r，各 `B_i` 加總不超過 B，且 owner 集合與時鐘條件受控，合計仍符合包絡。但若九成流量落在一台，前述一萬單位／秒的租戶在那台只能用約三百一十二單位／秒，其他配額閒置。這適合分布穩定、可按租戶固定路由的環境；動態分配則適合偏斜與 gateway 擴縮頻繁，但重分配時要先讓舊額度失效或將它納入誤差預算。
+
+若產品要求「任意六十秒最多一千次」，token bucket 不直接等價。令 r 等於 `1000/60`、B 等於一千，六十秒包絡可到兩千次。固定分鐘計數也有跨界突發：前一分鐘最後一毫秒一千次，下一分鐘第一毫秒再一千次，兩毫秒就兩千次。
+
+精確 sliding window 可以保存已接受嘗試的時間與成本，用有序佇列清除 `(now-W)` 之前事件，維持成本總和，檢查後追加；同樣要在單一權威原子執行。每單位成本相同時也可用按 timestamp 排序的集合，事件 member 需唯一，不能讓相同毫秒的多筆請求覆寫。若熱租戶允許二十萬次／秒、W 是六十秒，窗口就有一千二百萬事件；每事件理想化三十二 bytes 是 `384 MB`，未計有序索引及記憶體放大。相較之下 token bucket 只要固定大小狀態，這個差距足以決定是否真的需要精確窗口。
+
+近似的兩窗口計數用 `C_current+(1-x)C_previous`，x 是目前窗口已經過的比例。它假設前一窗口分布均勻；若事件全擠在前一窗口末端，實際仍在最近 W 內，估計卻先打折。當 x 為零點五且前一窗口有一千次時，可能少算五百次。所以合約硬窗口應選精確日誌，或可證明保守的時間分桶上界；對軟性防濫用才考慮兩計數近似。這些都是作者推導的替代方案，不能只因某個產品叫 sliding window 就假設它精確。
+
+policy 降額也屬於狀態變更。集中桶先用舊 r 補到切換時刻，再令 `tokens=min(tokens,B_new)`，寫入新版本；不能換一個 version key 就新建滿桶，否則每次改配置都送一次突發。局部 grant 模式若突然撤銷租戶，舊 owner 仍可能持有 U 單位直到 expiry；推送通知可加快，但不是立即撤銷的證明。要求即刻生效的路徑必須重新走權威檢查，或經過會驗證最新世代的共同閘口，接受其可用性與延遲成本。
+
+## 限流服務失聯時，把損失限制在哪裡
+
+![集中判定失聯直接拒絕，局部 grant 只在有剩餘且未過期時放行，恢復後限制請領並行](/images/distributed-systems/2026-09-30/rate-limit-failure.svg)
+
+*圖 3｜[作者設計](#限流服務失聯時把損失限制在哪裡)；快速拒絕與有界重試的操作原則參考 [Google SRE：Handling Overload](https://sre.google/sre-book/handling-overload/)。*
+
+第三個情境是限流分區網路隔離十秒。集中模式 gateway 在五毫秒判定預算耗盡後回 `503`，不轉送；有 grant 的路徑只能消耗未過期餘額。假設剛才每台都剩一百單位，三十二台最多繼續三千二百單位；實際各台剩量與負載不同，不能宣稱全站一定可撐零點三二秒。grant 用完或時間不可證明時進入拒絕狀態，連線恢復後每 incarnation 僅一筆 outstanding grant RPC，加入退避與 jitter，避免所有節點同時預領將恢復中的權威壓垮。
+
+fail-open 是另一種明確取捨。對廉價讀取可配置獨立的緊急本機桶，但此桶必須有全站加總速率、burst 與最長使用時間 H 的上界。如果緊急速率總和八百／秒、總 burst 一千六百、只允許十秒，失聯期間額外准入最多約九千六百單位。它屬於契約外明示的緊急預算；如果每台用完整租戶上限且無期限，超額就無法以固定數字限制。昂貴寫入與不可超支配額維持 fail-closed。後端並行上限在所有模式都有效，防止「為可用性放行」變成資源耗盡。
+
+限流本身也要保護。gateway 本機粗桶限制送往權威的總 QPS，先驗證身分再建立狀態；未驗證流量以連線與入口資源上限處理。descriptor 必須是白名單 route class，不能拿任意 URL、query string 或使用者輸入作 key，否則攻擊者能產生無限基數。每租戶 state、管理 API、grant 請領都有上限；路由熱租戶時保留其他分區資源，避免一個桶占滿 CPU 連帶拒絕整站。
+
+## 上線驗收要量誤拒絕，也要量超額
+
+操作上至少分開三類 SLI：配額不足的正常拒絕、權威無法判定的失敗，以及符合契約卻被保守扣額／偏斜限制拒絕的損失。監控判定 p99、分區隊列與 commit latency、decision replay、時鐘偏差、policy 生效延遲、grant 未用量 U、過期丟棄量及後端 in-flight。用低基數總量與抽樣追蹤租戶，不能把每個 attempt_id 都放進 metrics label。
+
+驗收應以獨立記錄的實際准入時間與成本，逐區間比對 `rT+B` 或承諾的誤差包絡，不能拿中央分配數冒充實際放行數。給均勻流量之外，再給單租戶熱點、窗口邊界突發、成本混合、扣額後丟回應、落後副本接手、時鐘前跳、舊 process 暫停後復活與降額。這些是建議的壓測與故障注入，並非本文已實跑的結果。
+
+遷移時先做 shadow 判定，使用獨立桶且完全不影響真實准入，量測拒絕差異與權威容量。正式切換逐租戶進行，同一租戶只有一個有效 enforcing owner；舊版與新版不能各自持有滿桶同時放行。重分區可先停止該租戶新判定，等在途判定與 grant deadline 結束，再搬 bucket、decision 與版本，切路由後才恢復。需要不中斷搬移時，才增加有序變更日誌與 ownership cutover，別用暫時雙寫規避原子責任。
+
+回滾保留目前桶餘額與已消耗 grant 狀態，不能重新初始化滿桶。若狀態格式不相容，寧可短暫保守設零並按安全速率恢復，也要把誤拒絕預算明寫出來。Google SRE 的 [Handling Overload（2016）](https://sre.google/sre-book/handling-overload/)強調重試需要預算，且多層同時重試會形成組合放大；這裡同樣要求只有直接呼叫權威的一層處理透明重試，上游看到 `429` 或失聯拒絕時不能立即無限重送。
+
+最終選擇很具體：需要硬 token 包絡就採集中權威及可安全接手的確認契約；需要精確滑動窗口就支付事件記憶體與原子清理成本；熱門租戶要本機判定，先接受並計算 outstanding grant 帶來的突發誤差。這三個承諾不能用同一個「分散式限流」名稱混在一起。
+
+下一個問題也隨之浮現：gateway 能快取 policy 與路由，讀服務能快取資料，但權威版本變更、熱點失效和回源過載會互相牽動。下一篇將用完整的分散式快取服務，追蹤版本、失效競態與容量如何一起決定可用性。
+
+## References
+
+1. [RFC 3290: An Informal Management Model for Diffserv Routers](https://www.rfc-editor.org/rfc/rfc3290.html) — IETF，2002；附錄 A 的 token bucket 模型。
+2. [RFC 6585: Additional HTTP Status Codes](https://www.rfc-editor.org/rfc/rfc6585.html) — IETF，2012；429 與 Retry-After 語義。
+3. [Global rate limiting](https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/other_features/global_rate_limiting) — Envoy 官方現行文件；逐次判定、quota 分配與分層限流。
+4. [Scripting with Lua](https://redis.io/docs/latest/develop/programmability/eval-intro/) — Redis 官方現行文件；原子執行與阻塞界線。
+5. [Redis replication](https://redis.io/docs/latest/operate/oss_and_stack/management/replication/) — Redis 官方現行文件；非同步複寫與 WAIT 的保證限制。
+6. [Handling Overload](https://sre.google/sre-book/handling-overload/) — Google SRE，2016；過載處理與重試預算。
