@@ -1,15 +1,18 @@
 ---
 layout: post
-title: "NVIDIA C3PO 把時序與壅塞放進同一輪全域佈局：R2G 驗收揭露的取捨"
+title: "C3PO 如何校準佈局目標：時序、壅塞與後段結果的落差"
 date: 2026-09-26 12:11:33 +0800
 domain: eda
 categories: eda
-description: "C3PO 以可微分 STA、RUDY 壅塞梯度與動態權重替換全域 placement，送回同一套商用後段流程驗收；部分案例線長下降卻有時序退化，說明平台需保存多目標與各階段證據。"
+description: "C3PO 將可微分時序及壅塞訊號放入同一輪座標更新；以相同後段流程比較，辨認快速指標改善與最終 PPA 的差異。"
 ---
 
-晶片的全域佈局若只追求線長短，很容易在時序或繞線階段付出代價。NVIDIA Research 的 **C3PO** 把 wirelength、cell density、時序與估計壅塞放進同一輪座標更新，並直接替換商用實體設計流程中的 global placement，再讓相同的 legalization、clock optimization、routing 與 route optimization 接手。這個接法讓「placement 指標漂亮」與「R2G 結果真的改善」可以分開檢查。[C3PO 原始論文，圖 1、表 III](https://hhsiao30.github.io/papers/yichen_apsdac26__Camera_Ready_eXpress.pdf)
 
-這是 Yi-Chen Lu 與 NVIDIA Research 等作者在 **ASP-DAC 2026** 發表的研究系統，不是 2026 年 9 月推出的商用產品，也沒有公開證據證明 NVIDIA 全公司的 ASIC 專案都採用它。論文有完整演算法、公開 benchmark 與商用後段工具的對照，但沒有開放該商用工具的名稱、完整 recipe 或私有設計。值得學的是：如何讓 placement 的優化訊號接近後段成本，以及如何在一個明確的工具邊界驗證它。[NVIDIA 論文頁](https://research.nvidia.com/labs/electronic-design-automation/publication/lu2026aspdac/)、[ASP-DAC 2026 議程](https://www.aspdac.com/aspdac2026/program/program-abstract.html)
+C3PO 把時序與壅塞放進全域佈局的座標更新，使求解器更早看見後段代價。這項研究的價值，要由相同後段流程中的最終結果判斷；線長下降、global placement 加速與 timing 改善，是三個需要分別核對的成果。[C3PO 原始論文，ASP-DAC 2026](https://hhsiao30.github.io/papers/yichen_apsdac26__Camera_Ready_eXpress.pdf)
+
+RTL-to-GDS 逐步把邏輯連線轉成實際幾何與寄生效應。Global placement 決定元件的大致位置，但 legalization、clock optimization 與 routing 還會改變結果；如果早期目標忽略可繞性或關鍵路徑，後面就可能付出修復成本。把所有後段工作放進每次求解又太昂貴，因此需要研究可用且便宜的近似訊號。
+
+Yi-Chen Lu、NVIDIA Research 等作者的 [C3PO](https://research.nvidia.com/labs/electronic-design-automation/publication/lu2026aspdac/)提供演算法與跨階段比較，適合用來檢查近似目標如何接回工程需求。以下追蹤 timing gradient、RUDY 與動態權重，最後用完整 R2G 案例分析候選排名為何可能反轉，以及平台應保存哪些驗收條件。
 
 ## 從 floorplan 到 route，錯誤目標會被逐段放大
 
@@ -29,11 +32,11 @@ RTL 與 synthesis 交出 netlist，SDC、library、floorplan 與巨集限制決�
 
 C3PO 的輸入是 cell／pin 座標、net connectivity、library timing table，以及由實驗 flow 帶入的設計與製程條件。前向計算先為 net 建 rectilinear Steiner tree，再用 Elmore 模型求 net delay 與 slew；cell delay 由 Liberty 類型的 load／slew table 取得；沿 timing graph 傳播 arrival，形成 WNS／TNS。反向計算將目標對 net delay、cell arc、Steiner node 的變化一路傳回座標，得到移動某個 cell 對時序目標的方向。論文把相關 forward／backward 做成 CUDA kernel，核心是可微分的時序模型，**並非由 LLM 猜測擺放位置**。[論文第 III-B 節、圖 3](https://hhsiao30.github.io/papers/yichen_apsdac26__Camera_Ready_eXpress.pdf)
 
-這裡的「精確梯度」要讀準語境：它是相對於**論文採用的平滑模型與當輪拓撲**，不是對最終詳細繞線後的 signoff timing 做精確微分。Steiner topology 的生成本身不連續；作者用 FLUTE 決定節點，再把 Steiner 點上的梯度分給相鄰實際節點。當位置改變，拓撲需重算。多 fan-in 的 latest arrival 也用 temperature 為 0.1 的 log-sum-exp 平滑 hard max。若直接把這些近似當作真實 signoff，模型會在路徑切換或 routing detour 時失準。[論文式 (1)–(12)](https://hhsiao30.github.io/papers/yichen_apsdac26__Camera_Ready_eXpress.pdf)
+這裡的「精確梯度」要讀準語境：它是相對於**論文採用的平滑模型與當輪拓樸**，不是對最終詳細繞線後的 signoff timing 做精確微分。Steiner topology 的生成本身不連續；作者用 FLUTE 決定節點，再把 Steiner 點上的梯度分給相鄰實際節點。當位置改變，拓樸需重算。多 fan-in 的 latest arrival 也用 temperature 為 0.1 的 log-sum-exp 平滑 hard max。若直接把這些近似當作真實 signoff，模型會在路徑切換或 routing detour 時失準。[論文式 (1)–(12)](https://hhsiao30.github.io/papers/yichen_apsdac26__Camera_Ready_eXpress.pdf)
 
 更細的一個選擇是 cell delay lookup。早期 placement 可能把元件擠在一起，產生 timing table 之外的 load／slew。簡單雙線性插值若在界外鉗到角落，梯度容易失去辨識力；C3PO 在相鄰表格值上解一個含交互項的多項式，取得對 load、slew 的偏導數。這仍須依原 library 的適用範圍理解；論文並未證明所有界外電氣狀態都物理有效。對平台而言，要保存不只一個 slack 數字，還包括 library 版本、clock／mode、當輪 cell 座標及模型例外，才有可能查明某次「改善」從何而來。[論文式 (6)–(11) 與表 I](https://hhsiao30.github.io/papers/yichen_apsdac26__Camera_Ready_eXpress.pdf)
 
-## 第二個機制：讓壅塞反饋成可移動的方向
+## 第二個機制：讓壅塞回饋成可移動的方向
 
 壅塞估計不能等詳細繞線完成才回饋 placement；那時大部分座標已定。C3PO 以 RUDY 類指標，把 net 的 bounding box 覆蓋到 routing bins，估計每個 bin 的需求。net 的邊界、跨度與 bin overlap 都由 pin 座標決定，因此可以對 pin 位置求導。作者特別處理移動一個邊界 pin 造成 overlap 和分母 span 同時改變；若多個 pin 同占外框邊緣，就分配 max 函數的 subgradient。[論文第 III-C 節、式 (13)–(16)](https://hhsiao30.github.io/papers/yichen_apsdac26__Camera_Ready_eXpress.pdf)
 
@@ -51,7 +54,7 @@ C3PO 的輸入是 cell／pin 座標、net connectivity、library timing table，
 
 例如時序梯度若與基本 placement 方向相近，給它權重較不容易破壞收斂；若它要求把 cells 推向嚴重密集區，系統需要壓制這個次目標。保留 `g0` 是關鍵工程限制：純粹的多目標最小範數解，可能讓數個次要目標互相抵銷，連密度都不再下降。正則化參數與初始 guidance vector 仍是設計選擇，不能把「省去手調一組 loss weight」擴張成「完全沒有參數，也保證每個 design 收斂」。[論文式 (17)–(24)](https://hhsiao30.github.io/papers/yichen_apsdac26__Camera_Ready_eXpress.pdf)
 
-更根本的限制是設計意圖仍由人與既有 flow 提供。求解器可以對既定 timing graph 求導，卻不能從 netlist 自行確定某個路徑究竟應視為 false path、multi-cycle path，或跨 clock domain 的異步關係。SDC 若錯了，精準的梯度會更有效率地優化一個錯誤問題。移植時，`constraint_mode`、`clock_definition`、`exception_set` 與 MMMC corner 必須是輸入契約的一部分；不同 corner 的代價如何聚合、哪些違例是 hard gate，要由設計團隊先給出決策。論文的公開資料不足以推定它支援任何特定公司內部的 MMMC signoff 政策。這也是讓 agent 參與此類流程時應先限制其權限的理由：可以建議候選和比較 report，不能為了讓目標函數好看而自行放寬設計者核准的 constraint。
+更根本的限制是設計意圖仍由人與既有 flow 提供。求解器可以對既定 timing graph 求導，卻不能從 netlist 自行確定某個路徑究竟應視為 false path、multi-cycle path，或跨 clock domain 的異步關係。SDC 若錯了，精準的梯度會更有效率地最佳化一個錯誤問題。移植時，`constraint_mode`、`clock_definition`、`exception_set` 與 MMMC corner 必須是輸入契約的一部分；不同 corner 的代價如何聚合、哪些違例是 hard gate，要由設計團隊先給出決策。論文的公開資料不足以推定它支援任何特定公司內部的 MMMC signoff 政策。這也是讓 agent 參與此類流程時應先限制其權限的理由：可以建議候選和比較 report，不能為了讓目標函數好看而自行放寬設計者核准的 constraint。
 
 這裡也能看出與 AutoDMP 不同的算力用法。AutoDMP 的外層搜索大量 run，再挑候選進昂貴後段；C3PO 在每個 run 內投資 GPU kernel 計算多個直接目標，試圖減少因錯誤 proxy 導致的無效候選。兩者成本模型不同：前者消耗較多平行實驗與後段評估，後者增加每輪 timing／routability 分析、GPU 記憶體及與既有工具的接線。若公司缺 GPU 而商用 placement 已足夠，替換核心求解器未必划算；若受限於少量可用 license，先提高候選品質可能有價值。這是平台取捨推論，不是論文的公司採購建議。[AutoDMP](https://research.nvidia.com/publication/2023-03_autodmp-automated-dreamplace-based-macro-placement)、[C3PO](https://hhsiao30.github.io/papers/yichen_apsdac26__Camera_Ready_eXpress.pdf)
 
@@ -79,7 +82,7 @@ acceptance: {routed_wirelength_um: "...", wns_ns: "...",
 
 同一張表的 MEMPOOL 更能說明「平均改善」的陷阱。它有約 162,000 個 cells、20 個 macros；route-opt routed wirelength 由 1,400,162 μm 降至 1,346,411 μm，約 3.8%，但 TNS 由 −12.2k ns 到 −12.4k ns，違例 endpoint 由 18.1k 到 19.2k。FPU 的 routed wirelength 改善約 16.7%，route-opt WNS 由 −0.947 ns 略為惡化至 −0.950 ns，TNS 則由 −28.1 ns 到 −27.7 ns。不同設計、不同 metric 的符號不能被「PPA 更好」一句話抹平；WNS、TNS、違例數也不能用百分比互相抵銷。[論文表 III](https://hhsiao30.github.io/papers/yichen_apsdac26__Camera_Ready_eXpress.pdf)
 
-若設計團隊先定義目標為「routing 成本下降且不得新增 timing violation」，這些數據會產生不同的判斷：ARIANE133 值得進一步檢查其他 corner；ARIANE136 和 MEMPOOL 應留在候選區；FPU 則需要比對容許的 WNS margin 與統計變異。這是刻意選的一個**假設性驗收政策**，並非論文內建的門檻。對工程師而言，政策不能事後看見數字才改，否則同一批 placement 可以在不同報表裡被宣稱成功。平台至少要將實驗事前的 `objective`、`hard_gate`、`secondary_metric` 與版本一併保存，報表才有可比較的語意。
+若設計團隊先定義目標為「routing 成本下降且不得新增 timing violation」，這些資料會產生不同的判斷：ARIANE133 值得進一步檢查其他 corner；ARIANE136 和 MEMPOOL 應留在候選區；FPU 則需要比對容許的 WNS margin 與統計變異。這是刻意選的一個**假設性驗收政策**，並非論文內建的門檻。對工程師而言，政策不能事後看見數字才改，否則同一批 placement 可以在不同報表裡被宣稱成功。平台至少要將實驗事前的 `objective`、`hard_gate`、`secondary_metric` 與版本一併保存，報表才有可比較的語意。
 
 執行 trace 可以簡化成四個有責任人的轉移：`prepared`（設計與約束凍結）→ `candidate`（全域座標與輸出 hash）→ `evaluated`（商用後段所有階段及其 reports）→ `accepted/rejected`（事先約定的 gate）。如果 clock-opt 成功、route-opt 在 license timeout 中斷，這個 run 只能停在 `partial_evaluation`；不能用 clock-opt 的較佳 slack 代替 routed timing。若重試，應從可重用 checkpoint 接續，並記下工具版本與重試次數；若不能保證同 recipe、同 seed，就另立實驗編號。這條狀態機是作者設計的移植方案，其目的在防止跨階段偷換比較條件，不是 C3PO 論文公開的控制面。
 
@@ -95,7 +98,7 @@ acceptance: {routed_wirelength_um: "...", wns_ns: "...",
 
 另一種實際常見的失敗是 proxy 指標變好、route-opt 卻變差。前者需要版本鎖定及重跑；後者需要產品級 acceptance gate 與專家審查，**不能**靠 retry 原封不動的 job 修好。Placement artifact 已形成，仍不等於可以覆寫 golden placement。可採兩段發布：先把 C3PO 座標存為候選，再由完整相同的後段工具鏈生成 report，經 QoR／timing／DRC 門檻判定後才更新指向採用版本的指標。若發現負 slack，report 要保留當時的 corner、path group、setup／hold 類型與 violation endpoints，讓負責的工程師知道是同一條路徑惡化，還是新瓶頸浮現；只看總 TNS 無法決定修哪一個 constraint 或 placement。對宏觀變數和最終 signoff 未公開的地方，保證只能落在我們自己的流程契約，不是對 NVIDIA 研究系統的保證。
 
-這個隔離還牽涉平行運行時的資源效率。若同一設計有十個候選，每個都從 synthesis 重跑到 routing，成本通常被重複的前段與後段 license-hour 主導；但直接共用「看似同名」的 checkpoint，又可能把錯誤的 library、floorplan 或 SDC 帶入另一個候選。可安全共享的單位是**內容相同且工具語意相容的輸入快照**；從 global placement 起，兩條分支的座標、後續優化及 reports 應分開保存。假設完整後段一個候選要 20 license-hour，十個候選是 200 license-hour；先用低成本 proxy 篩到兩個再完整驗收，理論上剩 40 license-hour，前提是 proxy 不會排除真正可行者。這是用明示假設的預算算例，沒有量測任何公司的授權消耗。
+這個隔離還牽涉平行運作時的資源效率。若同一設計有十個候選，每個都從 synthesis 重跑到 routing，成本通常被重複的前段與後段 license-hour 主導；但直接共用「看似同名」的 checkpoint，又可能把錯誤的 library、floorplan 或 SDC 帶入另一個候選。可安全共享的單位是**內容相同且工具語意相容的輸入快照**；從 global placement 起，兩條分支的座標、後續最佳化及 reports 應分開保存。假設完整後段一個候選要 20 license-hour，十個候選是 200 license-hour；先用低成本 proxy 篩到兩個再完整驗收，理論上剩 40 license-hour，前提是 proxy 不會排除真正可行者。這是用明示假設的預算算例，沒有量測任何公司的授權消耗。
 
 ## 平台該換求解器，還是先把驗收做對
 
@@ -107,7 +110,7 @@ acceptance: {routed_wirelength_um: "...", wns_ns: "...",
 
 此表的研究速度與比較條件依 [論文表 III 的 runtime 註記](https://hhsiao30.github.io/papers/yichen_apsdac26__Camera_Ready_eXpress.pdf)；第三列是作者方案。不要把 10–30 倍的 **global placement** 加速寫成 10–30 倍 tape-out 加速。論文使用一張 NVIDIA A100 96 GB、AMD EPYC 7742 與 2 TB RAM 的平台；表 II 顯示 MEMPOOL 的 timing update，C3PO 約 6.19 秒、DATE’25 方法約 717.3 秒，但這不是每個完整 APR job 的 elapsed time。[論文表 II 與實驗設定](https://hhsiao30.github.io/papers/yichen_apsdac26__Camera_Ready_eXpress.pdf)
 
-而且「相同 seed」只降低一個變因，無法證明一次運行就刻畫了 run-to-run variation。論文的表格沒有多 seed 的置信區間，也沒有不同商用工具、不同節點與不同 PDK 的交叉試驗。合理的工程導入應先在自己可用的設計集做 paired comparison：固定 flow、corner 與資源，逐案記錄 WNS／TNS、違例數、route overflow、功耗、wirelength 和失敗率，再看改善是否跨設計一致。若只挑最優的一個 benchmark 報百分比，平台會傾向追求容易展示的代理分數，卻忽略真正昂貴的 rerun 與 signoff 風險。
+而且「相同 seed」只降低一個變因，無法證明一次運作就刻畫了 run-to-run variation。論文的表格沒有多 seed 的信賴區間，也沒有不同商用工具、不同節點與不同 PDK 的交叉試驗。合理的工程導入應先在自己可用的設計集做 paired comparison：固定 flow、corner 與資源，逐案記錄 WNS／TNS、違例數、route overflow、功耗、wirelength 和失敗率，再看改善是否跨設計一致。若只挑最優的一個 benchmark 報百分比，平台會傾向追求容易展示的代理分數，卻忽略真正昂貴的 rerun 與 signoff 風險。
 
 如果只能投資一項 6–18 個月能力，我會先建**同設計版本、同 seed、同後段 recipe 的候選驗收契約**，讓 placement 的替換成為可控實驗。最小驗證不需私有 PDK：選一個公開宏與 standard cell benchmark，固定開源 library、SDC、工具版本和 seed，以基準 placement 與一個 timing／congestion aware placement 產生兩份候選，跑同一套 OpenROAD 後段；記錄 GP 指標、post-route WNS／TNS、wirelength、overflow、DRC 與 wall-clock。先問兩組候選的排序是否在 post-route 反轉，再決定是否值得投入求解器。開源結果只能驗證**平台契約與 proxy 的風險**，不能複製 C3PO 對商用工具或先進節點的效益。
 
