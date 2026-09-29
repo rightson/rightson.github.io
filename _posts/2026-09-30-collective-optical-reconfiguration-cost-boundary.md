@@ -1,17 +1,23 @@
 ---
 layout: post
-title: "光交換的採用門檻：collective 的路徑收益必須覆蓋切換成本"
+title: "AI collective 何時值得改接光路：相依步驟、壅塞與切換延遲的交點"
 date: 2026-09-30 04:41:06 +0800
 domain: networking
 categories: networking optical-interconnect
-description: "由 Harvest 的問題建立可檢查的步驟成本模型，推導光交換應切換、部分切換或保持固定的條件，並追問端到端恢復時間與失敗後的正確性。"
+description: "分階段 collective 使固定互連承擔多跳與壅塞，逐步改接光路則付出停頓。以 Harvest 與可檢查算例推導切換門檻，並界定端到端恢復與容錯尚未驗證之處。"
 ---
 
-作者：Scott Yo-Ru Chen
+在八個 GPU 的 AllReduce 裡，通信伙伴會隨步驟改變。若互連始終保持同一張稀疏拓樸，後段資料可能跨越多個節點，還會與其他 flow 爭用鏈路；若每輪都改接光路，collective 又必須等待電路切換。兩種代價都在通信的 critical path 上。可重組光互連因此提出一個具體的架構問題：**哪些步驟值得共用同一張拓樸，何時才值得付出一次切換？**答案影響 port 數量、collective algorithm 的選擇，以及 runtime 應如何和網路共同排程。
 
-光交換是否值得在 collective 執行途中重配置，取決於新路徑省下的傳輸時間能否支付整個切換成本。只看每 lane 頻寬或 optical switching time，無法回答這個問題。同一份資料量，換成不同的步驟相依順序，就可能需要完全不同的 topology schedule。可重組 interconnect 因而多出一個架構決策：應讓哪些連續步驟共用同一張圖，以及何時接受一次暫停，換取後續更低的通信成本。
+## 固定拓樸為何會拖慢分階段通信
 
-[Harvest，SIGCOMM 2026](https://stygianet.cs.purdue.edu/papers/harvest-sigcomm26.pdf) 將固定 collective 步驟的 topology 排程寫成 dynamic programming，納入重配置與壅塞成本。以下從這個問題出發，建立一個可檢查的簡化模型，再追問它距離真實部署還缺哪些條件；文中的成本表與恢復流程是作者設計，不是論文實測。
+AllReduce 讓每個參與者取得所有輸入的 reduction 結果；API 規定的是結果，沒有規定唯一的傳送順序或物理路徑，可對照 [Open MPI 的 MPI_Allreduce 文件](https://docs.open-mpi.org/en/main/man-openmpi/man3/MPI_Allreduce.3.html)。實作會把交換拆成有相依關係的多個步驟。以八個 rank 的一種 recursive doubling 實作為例，伙伴依序可由 rank XOR 1、XOR 2、XOR 4 指定；第二輪送出的部分結果，需要先等第一輪完成。[Open MPI collective 原始碼](https://github.com/open-mpi/ompi/blob/main/ompi/mca/coll/base/coll_base_allreduce.c) 可作此伙伴規則的參照。這只是展示依賴結構；[Harvest 論文](https://stygianet.cs.purdue.edu/papers/harvest-sigcomm26.pdf) 分析固定 ring 時採用的是 cyclic variant，不能把兩種實作的實測結果直接混用。
+
+先讓八個節點固定成一圈，每個節點的連線數不隨步驟增加。初期交換可能由近鄰直達，後期伙伴變遠，資料便要經過中間節點；多筆流量在同一條實體鏈路上重疊。[Harvest 的八節點 ring 算例](https://stygianet.cs.purdue.edu/papers/harvest-sigcomm26.pdf) 中，第三步相對第一步的最大 congestion factor 從 1 增為 4。這個 4 是該拓樸與伙伴排程的鏈路競爭倍數，不代表任何八 GPU AllReduce 都必然慢四倍。端點 injection、routing、訊息長度與 collective algorithm 都會改變完成時間。
+
+增加固定連線、改用更適合拓樸的 collective，或讓流量由 packet fabric 繞路，都可能緩解問題。[Swing，NSDI 2024](https://www.usenix.org/conference/nsdi24/presentation/de-sensi) 便是優化固定 torus 上伙伴選擇的例子。光交換提出另一種可驗證選項：在下一組伙伴需要通信前改變實體連線，把原本爭用同一個 cut 的 flow 分開。這個選項有代價：舊流要安全結束，新光路與接收端要就緒，所有參與者才可繼續。若連線數本來已足以同時容納主要伙伴，切換可省的時間就可能太少。
+
+這也是 [Mahir Rahman（Purdue University）等人的 Harvest，SIGCOMM 2026](https://stygianet.cs.purdue.edu/papers/harvest-sigcomm26.pdf) 值得研究的原因。它將「固定不換」和「每一步都換」之間的策略變成可求解的排程問題：給定 collective 的步驟與資料量，在每段連續步驟共用一張拓樸，選擇何時切換，最小化通信與重配置的總時間。研究價值並不止於加速一個 benchmark；它使 optical device 的切換時間、網路的 degree／forwarding 能力與 collective 的資料依賴可以放進同一個可反駁的成本式。論文在既定模型內求最優，沒有證明實際系統的失鎖、容錯與多租戶排程已完成。
 
 ## Aggregate traffic matrix 丟掉的資訊
 
@@ -20,10 +26,6 @@ description: "由 Harvest 的問題建立可檢查的步驟成本模型，推導
 這兩個工作有相同的 aggregate traffic matrix，卻有不同的 earliest start time。第一個工作若先把 circuit 接成 B→C，鏈路會等待尚未產生的資料；第二個工作若有足夠獨立 port，兩筆傳輸可以重疊。矩陣保留 bytes，沒有保留資料何時可用。
 
 這是作者構造的反例：它不否定 traffic matrix 對穩態容量規劃的用途，而是證明**相同矩陣不足以唯一決定有相依工作的最短完成排程**。若一個 scheduler 已額外加入 release time 或 DAG，它就不再只有矩陣資訊，不能把它與純 aggregate scheduler 混為一談。
-
-AllReduce 的語意是讓所有參與者取得 reduction 結果，這個 API contract 沒有指定唯一的 packet schedule；見 [Open MPI 的 MPI_Allreduce 文件](https://docs.open-mpi.org/en/main/man-openmpi/man3/MPI_Allreduce.3.html)。因此，演算法、rank mapping 與物理 topology 必須分開。把 operation 都叫 AllReduce，並不足以推導 port 在下一個微秒應接到誰。
-
-以八個 rank 的 power-of-two recursive doubling 為例，可以用 rank XOR 1、XOR 2、XOR 4 描述三輪伙伴。每輪的資料依賴前輪結果；第一輪完成後，所需的伙伴集合便改變。這個具體伙伴規則可對照 [Open MPI recursive-doubling 原始碼](https://github.com/open-mpi/ompi/blob/main/ompi/mca/coll/base/coll_base_allreduce.c)。此例只用來呈現步驟結構，不代表任意 datatype、非二次方節點數或 GPU library 都採相同流程。
 
 ![相同流量總量可能有不同資料相依；八個 rank 的 XOR 伙伴在每輪改變](/images/networking/2026-09-30/collective-step-dependencies.svg)
 
@@ -118,7 +120,7 @@ D/C 是一次理想直連傳輸的序列化時間。假設 C=100 GB/s，τ=10 μ
 
 ## Harvest 的證據成立在哪個範圍
 
-Mahir Rahman（Purdue University）的 [Harvest 原文，§3.1、§6.1與Figure 6](https://stygianet.cs.purdue.edu/papers/harvest-sigcomm26.pdf) 假設 endpoint 可cut-through forwarding；其8-GPU硬體模擬用BlueField-3與100 Gb/s鏈路，分步執行再加固定切換penalty。Figure 6相對static與每步切換兩者中的較佳baseline，優勢約達1.3倍。這不是原生photonic switching的端到端實測。
+依 [Harvest 原文，§3.1、§6.1與Figure 6](https://stygianet.cs.purdue.edu/papers/harvest-sigcomm26.pdf)，模型假設 endpoint 具備 cut-through forwarding。論文分開採用 8–64 GPU、每 port 800 Gb/s 的 packet-level 模擬與數值求解，以及 8 GPU、BlueField-3、100 Gb/s optical transceiver 的硬體模擬。後者透過 GPUDirect RDMA、NIC eSwitch 與分步執行 NCCL 量測通信時間，再加上設定的固定重配置 penalty。論文報告跨多種 collective 的最高約 2 倍改善，是與 static 或每步切換兩種策略中較好的 baseline 比較；這是特定模型與參數空間的最高值，並非任何工作都能得到的平均收益，更不是原生 photonic switching 的端到端實測。
 
 這個方法能檢查通信成本趨勢，卻不能同時證明光路失鎖、receiver recovery、所有port重配置成功率或長時間運行可靠性。把模擬的 τ 從10 μs改成10 ns，也不會產生一套已經量測過10 ns恢復的硬體系統。
 
