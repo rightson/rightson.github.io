@@ -1,19 +1,20 @@
 ---
 layout: post
-title: "全域唯一 ID 的分配：號段、時間排序與節點所有權"
+title: "全域 ID 的分配契約：號段、時鐘與節點所有權"
 date: 2026-09-28 17:18:26 +0800
 domain: networking
 categories: networking
-description: "以可持久化號段建立全域唯一 ID，再檢查時間型編碼的排序收益、時鐘回撥、worker 重用與故障接手成本；分配順序與資料提交順序必須分開看。"
 series: distributed-systems
 series_order: 2
+description: "全域唯一性依賴不重疊的分配權；持久化號段與時間型編碼承擔不同故障條件，排序也不能取代業務提交順序。"
 ---
 
-[短網址服務](/networking/2026/09/24/short-url-uniqueness-idempotency-cache-hotspots.html)把唯一性留給資料庫的 `slug` unique constraint：產生器提出候選，交易成功後才算建立。這裡的 ID 指訂單、訊息等資料的**識別碼**。若多個寫入節點各自產生 ID，就必須約定誰能使用哪些值，否則不同節點可能都發出同一個主鍵。當服務跨幾十個資料分區，且寫入前就要取得全域 ID，難題是回應遺失、資料庫主從切換與節點重啟後，能否證明同一個數字不會重新交給另一個呼叫者。
 
-「分散式 ID 服務」描述的是一種部署方式，並非必須設置的標準元件。小系統可直接由資料庫 sequence 取號；多個節點也可各自在程式庫內產生 UUIDv7 或時間型 ID。本文選擇共用發號 API 作為具體設計案例，因為它能清楚呈現分配權威與故障邊界。Snowflake 的原始專案確實將自身稱為產生唯一 ID 的 network service，但這不表示所有系統都需要獨立發號服務。[Twitter Snowflake 原始專案](https://github.com/twitter-archive/snowflake)
+全域 ID 的唯一性，來自可證明不重疊的分配權。持久化號段把協調集中在區間分配，時間型編碼則把部分責任移到時鐘與 worker 身分；兩者都必須在回應遺失、重啟及接手後，避免同一個值交給不同使用者。
 
-基線採**持久化號段**：協調端只分配互不重疊的區間，服務節點在記憶體裡從區間取號。這個選擇沒有全域時間排序，卻容易說清楚唯一性的權威在哪裡。接著再看何時值得改成時間型 ID：它減少每次分配所需的中央寫入，但把正確性壓到時鐘與 worker 身分上。這兩種方案的「排序」都不能代替業務事件的提交順序。
+ID 讓訂單、訊息與其他資料具有穩定身分，通常還牽涉索引、分區或近似時間排序。單一資料庫 sequence 可以滿足不少需求；跨分區寫入、在持久化前先取號，或容許節點離線產生，才會增加分配契約的複雜度。因此不能先選 Snowflake 或 UUID，再反過來替服務補需求。[Twitter Snowflake 原始專案](https://github.com/twitter-archive/snowflake)
+
+[短網址服務](/networking/2026/09/24/short-url-uniqueness-idempotency-cache-hotspots.html)把唯一指向交給交易與 unique constraint。這篇將問題縮到識別碼本身，以共用發號 API 及持久化號段作為基線，再比較時間型 ID 的排序與故障成本。這是作者提出的設計；需要帶走的是誰能確認分配、何時持久化，以及哪種順序可以承諾。
 
 ## 取號介面究竟承諾什麼
 
