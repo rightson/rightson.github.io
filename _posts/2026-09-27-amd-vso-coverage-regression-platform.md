@@ -106,7 +106,7 @@ acceptance:
 
 ## Evidence 優先順序，不等於排程器優先順序
 
-Optimizer 可能判斷某個 test 對 coverage 很重要，scheduler 卻只能看到 requested cores、memory、queue 與 license。若平台直接把 evidence score 映射成全域高優先權，單一專案就可能佔滿昂貴 license；若完全不傳遞，最佳候選又可能在長隊列尾端等待，閉環失去低延遲優勢。
+Optimizer 可能判斷某個 test 對 coverage 很重要，scheduler 卻只能看到 requested cores、memory、queue 與 license。若平台直接把 evidence score 映射成全域高優先權，單一專案就可能佔滿昂貴 license；若完全不傳遞，最佳候選又可能在長佇列尾端等待，閉環失去低延遲優勢。
 
 較好的接口是由 campaign controller 提出「這批工作在本 campaign 內的相對價值」，資源管理層再套用跨專案 quota、fair-share、deadline 與 license policies。控制器可以選擇較便宜的替代 tests、降低並行度或延後低邊際工作，但不能自行繞過專案權限與資源配額。這讓演算法最佳化與組織治理分層：前者回答下一個最值得跑什麼，後者回答目前允許誰使用多少稀缺資源。
 
