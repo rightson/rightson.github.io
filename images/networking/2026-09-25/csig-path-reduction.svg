@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="525" viewBox="0 0 1000 525" role="img" aria-labelledby="title desc">
+<title id="title">CSIG: a bounded summary of the path</title><desc id="desc">Min-type signal; illustrative values, no physical unit or measured result</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#475569"/></marker></defs>
+<style>text{font-family:system-ui,-apple-system,"Noto Sans CJK TC",sans-serif;font-size:21px;fill:#172033}.heading{font-size:29px;font-weight:700}.sub{font-size:19px;fill:#475569}.label{font-size:22px;font-weight:650}.note{font-size:19px}.link{fill:none;stroke:#475569;stroke-width:3;marker-end:url(#arrow)}.box{fill:#eef6ff;stroke:#2563eb;stroke-width:2}.warm{fill:#fff7ed;stroke:#c2410c;stroke-width:2}</style>
+<rect width="1000" height="525" rx="16" fill="#ffffff"/>
+<text x="36" y="48" class="heading">CSIG: a bounded summary of the path</text><text x="36" y="80" class="sub">Min-type signal; illustrative values, no physical unit or measured result</text>
+<rect x="35" y="135" width="195" height="100" rx="12" class="box"/><text x="132.5" y="172" text-anchor="middle" class="label">Sender</text><text x="132.5" y="203" text-anchor="middle" class="note">S = maximum</text>
+<rect x="280" y="135" width="195" height="100" rx="12" class="box"/><text x="377.5" y="172" text-anchor="middle" class="label">Switch A</text><text x="377.5" y="203" text-anchor="middle" class="note">local = 0.78</text>
+<rect x="525" y="135" width="195" height="100" rx="12" class="box"/><text x="622.5" y="172" text-anchor="middle" class="label">Switch B</text><text x="622.5" y="203" text-anchor="middle" class="note">local = 0.41</text>
+<rect x="770" y="135" width="195" height="100" rx="12" class="box"/><text x="867.5" y="172" text-anchor="middle" class="label">Receiver</text><text x="867.5" y="203" text-anchor="middle" class="note">extract and reflect</text>
+<path d="M230 185 L280 185" class="link"/>
+<path d="M475 185 L525 185" class="link"/>
+<path d="M720 185 L770 185" class="link"/>
+<text x="377" y="276" text-anchor="middle">S ← 0.78</text><text x="622" y="276" text-anchor="middle">S = 0.41; LM = B</text>
+<path d="M867 240 V338 H132 V244" class="link"/><text x="500" y="326" text-anchor="middle" class="label">Feedback: summary = 0.41, locator = B</text>
+<rect x="35" y="385" width="930" height="105" rx="12" class="warm"/><text x="60" y="421" class="label">Bounded control input; full per-hop history is discarded</text><text x="60" y="457" class="note">Validate format, quantization, reflection delay, and controller gain together.</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#475569" i]{fill:#c0c6cd}[fill="#ffffff" i]{fill:#1b1f20}text{fill:#d0d5e1}.sub{fill:#c0c6cd}.link{stroke:#c0c6cd}.box{fill:#132131;stroke:#82a4ed}.warm{fill:#322413;stroke:#e98b65}}</style>
+</svg>

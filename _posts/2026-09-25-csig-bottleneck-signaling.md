@@ -1,31 +1,22 @@
 ---
 layout: post
-title: "CSIG 用 4/8-byte L2 Tag 回報 Bottleneck：μs 級 Network State 如何驅動 Transport"
+title: "CSIG 的瓶頸摘要：交換器如何提供可控制的路徑資訊"
 date: 2026-09-25 06:15:02 +0800
 domain: networking
 categories: networking congestion-control
-description: "SIGCOMM 2026 的 CSIG 用固定長度 L2 tag 在每個封包上累積 bottleneck state，讓 sender 約一個 RTT 內取得可直接控制的 available bandwidth、delay 與 locator；Google 報告 Fast Ramp-Up 在 production 將 median RPC latency 降低 20%、unclaimed bandwidth 降低 60%。"
+description: "固定長度 tag 用 min/max 彙整路徑狀態，讓 transport 以有限資訊調整速率；分析資訊壓縮、量化、回饋時間及混合部署的代價。"
 ---
 
-作者：Scott Yo-Ru Chen
 
-CSIG（Congestion Signaling）把 datacenter transport 最缺的資訊壓成一個固定長度的 bottleneck summary：封包穿過 fabric 時，switch 只在自己的狀態更差時覆寫 tag，receiver 再把結果反射回 sender。這個設計刻意犧牲完整 per-hop trace，換來每包可用、固定 4/8-byte、可以在 line rate 執行的 control signal。Google 在 SIGCOMM 2026 公開的結果顯示，Fast Ramp-Up 利用這類訊號後，production 的 median RPC latency 降低 20%，unclaimed bandwidth 降低 60%；團隊也驗證到五代 commodity switch、最高 102.4 Tbps、四代 NIC 與五種 transport stack。[Google Research](https://research.google/pubs/csig-congestion-signaling-for-datacenter-transports/)
+CSIG 把一路徑的部分狀態壓成固定長度摘要，讓 transport 可以更快判斷目前的瓶頸與可用餘裕。它採用的取捨很明確：放棄完整 per-hop trace，換取每包固定的解析與更新成本。這使 telemetry 從事後診斷資料，成為速率控制可直接消費的輸入。[Google Research，SIGCOMM 2026](https://research.google/pubs/csig-congestion-signaling-for-datacenter-transports/)
 
-這個工作最值得研究的地方，是它對 telemetry 做了非常強的資訊壓縮：不把整條 path 的狀態搬回 host，只保留「目前最限制這個 packet 的 hop」以及它的 signal value。對 congestion control 而言，這個資訊往往比一整串 switch counters 更可操作；代價則是 sender 永遠只看到經過壓縮後的 path state。
+資料中心流量常在很短的時間內開始、結束或換階段。Sender 若只靠端到端延遲與丟包推測，可能需要多輪探測才知道容量是否釋出；完整交換器 counters 則未必與當前 packet path 及控制時刻對齊。高頻寬鏈路會放大探測期間未用容量的絕對資料量，因此加速與減速都需要適當資訊。
 
-~~~text
-Forward path
-Sender             Switch A              Switch B              Receiver
-S = max   ------>  local=0.78  ------>   local=0.41  ------>   extract
-                    S=0.78                S=0.41, LM=B
+這項研究值得深入，是因為它把「需要知道多少網路狀態」變成有硬體成本邊界的設計問題。以下追蹤 compare-and-replace、4／8-byte 格式與 receiver reflection，再檢查摘要丟失了哪些資訊、控制穩定性依賴什麼，以及沒有訊號的路徑該如何解讀。
 
-Reverse reflection
-Sender  <----------------------------------------------------- Receiver
-        bottleneck=0.41, locator=Switch B / topology stage
-~~~
+![CSIG 在路徑上取最小訊號並由 receiver 反射給 sender](/images/networking/2026-09-25/csig-path-reduction.svg)
 
-
-圖：作者整理；資料來源：[Google — CSIG: Congestion Signaling for Datacenter Transports](https://research.google/pubs/csig-congestion-signaling-for-datacenter-transports/)、[IETF Internet-Draft draft-ravi-ippm-csig-01](https://datatracker.ietf.org/doc/html/draft-ravi-ippm-csig-01)
+圖：作者整理；數值為概念例。資料來源：[Google CSIG](https://research.google/pubs/csig-congestion-signaling-for-datacenter-transports/)、[IETF draft-ravi-ippm-csig-01](https://datatracker.ietf.org/doc/html/draft-ravi-ippm-csig-01)。
 
 ## ECN 能指出壅塞，fast ramp-up 還需要更直接的 headroom
 
