@@ -103,7 +103,7 @@ audit 不是無成本的附註。每天 30 億個 ID、每段 10 萬個，約有
 
 *圖 2｜作者設計；位元配置示例依 [X 的 Snowflake 說明（2010）](https://groups.google.com/g/twitter-development-talk/c/ahbvo3VTIYI/m/0eMJbIpAC8MJ)，狀態轉移為本文的保守設計。*
 
-時間型 ID 只能說**近似**時間排序。同一毫秒裡，高位時間相同，後面的 worker bits 可能使稍晚的 worker 2 ID 排在較早的 worker 3 前；跨節點時鐘偏差會放大反轉。就算 ID 全域遞增，先分配仍不代表先 commit。如果產品規格要求 `GET /events` 嚴格呈現資料庫提交順序，應使用權威日誌 offset、資料庫 commit sequence 或該聚合內的版本，並把排序與可見性的責任留在那個提交系統。前篇 [etcd 的 MVCC 與 watch](/distributed-systems/2026/09/25/etcd-kubernetes-mvcc-watch-quorum.html)討論的是這種權威版本；它不能由一組應用節點的本機牆上時鐘替代。
+時間型 ID 只能說**近似**時間排序。同一毫秒裡，高位時間相同，後面的 worker bits 可能使稍晚的 worker 2 ID 排在較早的 worker 3 前；跨節點時鐘偏差會放大反轉。就算 ID 全域遞增，先分配仍不代表先 commit。如果產品規格要求 `GET /events` 嚴格呈現資料庫提交順序，應使用權威日誌 offset、資料庫 commit sequence 或該聚合內的版本，並把排序與可見性的責任留在那個提交系統。[etcd 官方 API 文件](https://etcd.io/docs/v3.6/learning/api/)說明了 revision 如何排序儲存狀態的更新；這種權威版本不能由一組應用節點的本機牆上時鐘替代。
 
 ## worker lease 到期，舊 process 仍可能醒來
 
