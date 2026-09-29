@@ -1,19 +1,18 @@
 ---
 layout: post
-title: "高通 CAD 平台的 AI 演進：從 FunCovr.ai 到 Bedrock，驗證閉環該如何接起來"
+title: "AI 驗證閉環的兩份契約：高通案例中的刺激探索與結果驗收"
 date: 2026-09-24 09:54:01 +0800
 domain: eda
 categories: eda
-description: "高通新近公開 FunCovr.ai，並宣布深化 AWS／Bedrock 在 EDA 的使用。從已公開的驗證成果拆解覆蓋率回饋、模型介面與非同步執行邊界，理解 AI 設計平台如何探索、驗收與恢復。"
+description: "FunCovr.ai 與高通的 Bedrock 使用方向提供不同證據。驗證平台須固定 coverage 目標、保留實驗身分，並把模型提案與工具結果分開。"
 ---
 
-高通近期的 CAD 動態，讓一個問題變得具體：當 AI 不只回答工程師的問題，而開始選擇下一輪測試，設計平台要如何分清「值得嘗試的動作」與「足以採信的結果」？這兩件事若混在一起，模型可能很快把報告變漂亮，卻沒有增加對晶片行為的理解。
 
-2026 年 9 月 8 日，高通宣布擴大與 Amazon 合作，明確提到計畫深化 AWS AI 基礎設施、包括 Amazon Bedrock 在 EDA 工作負載的使用，以縮短晶片設計週期。這是官方方向，但公告沒有揭露選用模型、內部 agent 架構、接入哪些設計階段，或已實現多少週期改善。[高通官方公告](https://www.qualcomm.com/news/releases/2026/09/qualcomm-announces-multi-generational-product-collaboration-with)
+AI 用於晶片驗證的價值，在於更有效地找到尚未被檢查的行為，同時維持原有驗收條件。模型可以提出下一組刺激，卻不能靠改掉 coverage 分母或 assertion，讓同一個設計看起來更接近完成。探索權與驗收權需要分開。
 
-另一個更靠近工程現場的線索，是高通 Mahesh Shinde 團隊的 **FunCovr.ai**。它列於 DVCon India 2026 最終論文清單，正式議程排在 9 月 3 日；第一作者公開說明，其方向是動態找出驗證不足的邏輯，生成更有針對性的刺激，加速覆蓋率收斂。[正式論文清單](https://dvcon-india.org/wp-content/uploads/2026/09/DVCon-India-2026-Selected-Paper-List-Final.pdf)、[會議議程](https://dvcon-india.org/wp-content/uploads/2026/08/Day3v13_DVCon_India_2026_Agenda-copy-2.pdf)、[第一作者分享](https://www.linkedin.com/posts/mahesh-shinde-1b559332_dvconindia2026-designverification-aiineda-activity-7501282286563168256-Yq4l)、[團隊與機構確認](https://www.linkedin.com/posts/anantharamuavinash_our-qualcomm-paper-has-been-selected-for-activity-7493924039279865856-A8j2)
+晶片驗證是在龐大的狀態及輸入空間中累積證據。Constrained-random tests、coverage 與 assertions 各自縮小不確定性；當剩下的 coverage holes 難以命中，單純增加 jobs 可能付出很多資源，卻沒有增加同樣多的信心。這正是 AI 指向刺激生成與診斷的研究動機，也使實驗版本與可重現性更加重要。
 
-這些材料沒有證明 FunCovr.ai 已接上 Bedrock，也沒有公開足以重現其演算法的完整細節。能確認的是新方向與具體問題，不能把幾個產品名字直接拼成「高通完整內部平台」。以下的整合架構是由公開材料推導的參考設計，不是高通的內部架構圖。
+高通公開的 [FunCovr.ai 會議材料](https://dvcon-india.org/wp-content/uploads/2026/09/DVCon-India-2026-Selected-Paper-List-Final.pdf)與 [AWS／Bedrock 使用方向](https://www.qualcomm.com/news/releases/2026/09/qualcomm-announces-multi-generational-product-collaboration-with)，分別提供驗證問題與平台整合線索；它們並未證實兩者已接成同一套系統。以下以公開內容及明示的參考設計，追蹤刺激、simulation、coverage evidence 與非同步重試，判斷什麼條件下這個閉環值得採用。
 
 ## 三種證據，回答的是不同問題
 
@@ -21,8 +20,8 @@ description: "高通新近公開 FunCovr.ai，並宣布深化 AWS／Bedrock 在 
 
 | 公開材料 | 可以確認 | 不能據此確認 |
 | --- | --- | --- |
-| 2026 年 9 月高通／AWS 公告 | 將深化包括 Bedrock 在內的 AWS AI 基礎設施於 EDA 的使用 | 指定模型、完整部署拓撲、各階段自動化程度 |
-| DVCon India 2026 的 FunCovr.ai | 高通團隊提出以 AI 對準驗證缺口的工作 | LLM／RL 的具體分工、可重現數據、全公司部署規模 |
+| 2026 年 9 月高通／AWS 公告 | 將深化包括 Bedrock 在內的 AWS AI 基礎設施於 EDA 的使用 | 指定模型、完整部署拓樸、各階段自動化程度 |
+| DVCon India 2026 的 FunCovr.ai | 高通團隊提出以 AI 對準驗證缺口的工作 | LLM／RL 的具體分工、可重現資料、全公司部署規模 |
 | Synopsys 公開的高通 VCS ICO 案例，2023 | 特定 GPU 驗證專案已有以 AI 改善回歸與覆蓋率的結果 | 這些成果來自 Bedrock，或代表 2026 年所有設計的效益 |
 
 表中前兩列依據上述原始資料；第三列來自 [Synopsys 的高通驗證案例](https://www.synopsys.com/blogs/chip-design/ai-chip-design-verification-qualcomm.html)。
