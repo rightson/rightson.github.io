@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="630" viewBox="0 0 1000 630" role="img" aria-labelledby="title desc">
+<title id="title">400G/lane: a signal path with coupled budgets</title><desc id="desc">Generic PAM4 model; FEC, gearbox, and DSP placement depend on the PHY</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#475569"/></marker></defs>
+<style>text{font-family:system-ui,-apple-system,"Noto Sans CJK TC",sans-serif;font-size:21px;fill:#172033}.heading{font-size:29px;font-weight:700}.sub{font-size:19px;fill:#475569}.label{font-size:22px;font-weight:650}.note{font-size:17px}.link{fill:none;stroke:#475569;stroke-width:3;marker-end:url(#arrow)}.box{fill:#eef6ff;stroke:#2563eb;stroke-width:2}.warm{fill:#fff7ed;stroke:#c2410c;stroke-width:2}</style>
+<rect width="1000" height="630" rx="16" fill="#ffffff"/>
+<text x="36" y="48" class="heading">400G/lane: a signal path with coupled budgets</text><text x="36" y="80" class="sub">Generic PAM4 model; FEC, gearbox, and DSP placement depend on the PHY</text>
+<rect x="30" y="135" width="210" height="100" rx="12" class="box"/><text x="135" y="172" text-anchor="middle" class="label">PCS / FEC</text><text x="135" y="203" text-anchor="middle" class="note">payload to coded bits</text>
+<rect x="275" y="135" width="210" height="100" rx="12" class="box"/><text x="380" y="172" text-anchor="middle" class="label">Electrical I/O</text><text x="380" y="203" text-anchor="middle" class="note">SerDes, PCB channel</text>
+<rect x="520" y="135" width="210" height="100" rx="12" class="box"/><text x="625" y="172" text-anchor="middle" class="label">Optical Tx</text><text x="625" y="203" text-anchor="middle" class="note">DSP, driver, modulator</text>
+<rect x="765" y="135" width="205" height="100" rx="12" class="box"/><text x="867.5" y="172" text-anchor="middle" class="label">Optical Channel</text><text x="867.5" y="203" text-anchor="middle" class="note">fiber, link budget</text>
+<path d="M240 185 L275 185" class="link"/>
+<path d="M485 185 L520 185" class="link"/>
+<path d="M730 185 L765 185" class="link"/>
+<rect x="520" y="330" width="210" height="100" rx="12" class="box"/><text x="625" y="367" text-anchor="middle" class="label">Optical Rx</text><text x="625" y="398" text-anchor="middle" class="note">PD, TIA, equalization</text>
+<rect x="275" y="330" width="210" height="100" rx="12" class="box"/><text x="380" y="367" text-anchor="middle" class="label">Electrical I/O</text><text x="380" y="398" text-anchor="middle" class="note">host data path</text>
+<rect x="30" y="330" width="210" height="100" rx="12" class="box"/><text x="135" y="367" text-anchor="middle" class="label">PCS / FEC</text><text x="135" y="398" text-anchor="middle" class="note">decode to payload</text>
+<path d="M867 235 V380 H735" class="link"/>
+<path d="M520 380 L485 380" class="link"/>
+<path d="M275 380 L240 380" class="link"/>
+<rect x="30" y="475" width="940" height="120" rx="12" class="warm"/><text x="55" y="515" class="label">Useful rate = lanes × symbol rate × 2 × coding efficiency</text><text x="55" y="552" class="note">PAM4: 2 bits/symbol. Bandwidth, noise, equalization, FEC, and power are coupled.</text><text x="55" y="581" class="note">Functional blocks only; this is not Marvell's unpublished 2nm architecture.</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#475569" i]{fill:#c0c6cd}[fill="#ffffff" i]{fill:#1b1f20}text{fill:#d0d5e1}.sub{fill:#c0c6cd}.link{stroke:#c0c6cd}.box{fill:#132131;stroke:#82a4ed}.warm{fill:#322413;stroke:#e98b65}}</style>
+</svg>
