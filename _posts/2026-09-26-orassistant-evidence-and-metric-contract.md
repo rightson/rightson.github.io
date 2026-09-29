@@ -1,15 +1,18 @@
 ---
 layout: post
-title: "ORAssistant 的兩次修正揭露 CAD Agent 的驗收盲區：來源映射與評分語意"
+title: "CAD Agent 的證據身分：ORAssistant 來源映射與評分修正"
 date: 2026-09-26 06:04:54 +0800
 domain: eda
 categories: eda
-description: "OpenROAD 的 ORAssistant 修補了文件來源映射、失敗建置與評分方向；對 CAD Agent 而言，可信的回答必須能連回正確版本的證據，評估分數也必須保留語意與門檻。"
+description: "檢索來源及 metric 方向都是驗收契約的一部分；ORAssistant 的公開修正可用來追蹤版本、引用與評估語意如何失效。"
 ---
 
-一個 CAD 助理回答了正確的 Tcl 指令，工程師點開引用卻找不到原始文件；另一個版本把 hallucination score 的方向改了，報表仍沿用舊的高低判斷。這兩種錯誤看起來都不像 EDA 演算法問題，卻足以讓平台把不可靠的建議當成通過驗收的工程知識。
 
-OpenROAD 專案的 ORAssistant 在 9 月 25 日 UTC（台北時間 9 月 26 日凌晨）合併的兩組修正，剛好把這個問題攤開。[文件建置與來源修正](https://github.com/The-OpenROAD-Project/ORAssistant/commit/044ad94fa7e5fe0ce6af15129d0dc4252317cad4)修復了來源 URL 表被重設、文件建置失敗沒有中止，以及重複下載論文；[評估修正](https://github.com/The-OpenROAD-Project/ORAssistant/commit/555a92426489c97830fa4f5e5680663b281641b4)則把 DeepEval 4 的 hallucination、bias、toxicity 分數方向寫進程式與測試。這是開源專案的程式修補，不是商用晶片專案已導入的證據；但它提供了可以逐行檢查的設計平台案例。
+CAD agent 的可信度依賴兩種可追溯關係：回答要能回到正確版本的技術證據，評分要能回到明確的高低方向與門檻。來源映射遺失或 metric 語意改變，即使檢索文字與分數數值看似正常，平台仍可能採納錯誤結果。
+
+晶片設計知識和一般文件問答不同，一條 Tcl 指令的適用性會受到工具版本、設計階段與輸入狀態影響。工程師需要知道引用來自哪裡，平台也需要知道評估檢查了什麼。這使文件建置、資料身分及 metric adapter 成為工程流程的一部分，不能只放在模型之外當成雜務。
+
+ORAssistant 的[文件建置與來源修正](https://github.com/The-OpenROAD-Project/ORAssistant/commit/044ad94fa7e5fe0ce6af15129d0dc4252317cad4)及[評估修正](https://github.com/The-OpenROAD-Project/ORAssistant/commit/555a92426489c97830fa4f5e5680663b281641b4)，提供可逐行檢查的失效案例。以下沿著 corpus、檢索、引用與 verdict 追蹤錯誤，並放回 SYN／APR 的參考流程，判斷哪些介面需要版本與獨立驗收。
 
 ## 從問答系統到設計流程，信任鏈在哪裡斷掉
 
