@@ -10,7 +10,7 @@
 
 只有文章及所需圖檔成功寫入遠端預設分支後，才將 `[ ]` 改為 `[x]`，記錄 `_posts` 路徑及依 repo 規則推導的公開 URL。以遠端文章為完成證據；失敗不推進，同日／同序號重跑不重複發文。每次核對相關文章與本檔，不通讀整個 repo。
 
-文章沿用 `AGENTS.md` 必要欄位，增加 `series: distributed-systems`、`series_order: <篇號>`；使用 `domain: distributed-systems`（公開分類「分散式系統」）、單一 `categories: distributed-systems`，不增加公開分類。不署名：不設 `author`，正文不加作者列，也不重複 H1。每篇提供已存在的前篇／先備文章連結；不得假造尚未發布的下一篇連結。依需要維護已發布文章之導覽。
+文章沿用 `AGENTS.md` 必要欄位，增加 `series: distributed-systems`、`series_order: <篇號>`；依本系列指定使用 `domain: networking`、單一 `categories: networking`，不增加公開分類。不署名：不設 `author`，正文不加作者列，也不重複 H1。每篇提供已存在的前篇／先備文章連結；不得假造尚未發布的下一篇連結。依需要維護已發布文章之導覽。
 
 採使用者指定的精簡發布方式：檢查內容、front matter、來源、圖文及遠端提交結果；不逐篇輪詢 Actions 或執行例行 HTTP 驗證，不下载／分析 Pages artifacts，不建立、下載或保存 ZIP／TAR 等壓縮封存檔，不新增驗證 workflow。只有明確發布異常時才針對故障除錯。回報遠端提交結果與推導網址，不把未實測的 HTTP 或部署狀態說成已驗證。
 
@@ -38,7 +38,7 @@
 
 - [x] DS01 短網址服務。先備：無。範圍：讀寫比例、redirect、API／索引、唯一鍵與 cache；深掘 ID 碰撞／冪等寫入、熱點／失效傳播。已發布：`_posts/2026-09-24-short-url-uniqueness-idempotency-cache-hotspots.md`；[公開文章](https://rightson.github.io/networking/2026/09/24/short-url-uniqueness-idempotency-cache-hotspots.html)
 - [x] DS02 全域唯一 ID 的產生與分配。先備：01。範圍：唯一、順序及不可猜測性；深掘號段、時鐘回撥、worker ownership、lease／fencing、重啟重複。已發布：`_posts/2026-09-28-distributed-id-range-clock-worker-ownership.md`；[公開文章](https://rightson.github.io/networking/2026/09/28/distributed-id-range-clock-worker-ownership.html)
-- [ ] DS03 多租戶限流服務。先備：01。範圍：跨節點配額；深掘 token bucket／sliding window、原子更新、局部配額誤差界、fail-open／closed。
+- [x] DS03 多租戶限流服務。先備：01。範圍：跨節點配額；深掘 token bucket／sliding window、原子更新、局部配額誤差界、fail-open／closed。 已發布：`_posts/2026-09-30-multi-tenant-rate-limiting-quota-boundaries.md`；[公開文章](https://rightson.github.io/networking/2026/09/30/multi-tenant-rate-limiting-quota-boundaries.html)
 - [ ] DS04 分散式快取服務。先備：01、03。範圍：正確性與回源成本；深掘一致性雜湊、重分片、版本／失效競態、stampede 與 stale serving。
 - [ ] DS05 Key-value 儲存服務。先備：02、04。範圍：確認寫入與耐久性；深掘 WAL、複寫確認、讀寫一致性、修復及 compaction／recovery 資源競爭。
 - [ ] DS06 配置與服務發現平台。先備：05。範圍：有效版本與權威狀態；深掘 leader／共識日誌、watch 版本、lease、快取失效及滾動切換。
