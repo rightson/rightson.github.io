@@ -1,19 +1,18 @@
 ---
 layout: post
-title: "沒有 Timing Constraint，工具其實不知道什麼叫做『太慢』"
+title: "STA 的時間需求從哪裡來：SDC、Arrival Time 與 Slack"
 date: 2026-09-23 12:35:00 +0800
 domain: timing
 categories: eda
-description: "STA 需要設計者用 SDC 提供時間世界的邊界，工具才知道什麼叫做太慢。從 timing path、arrival time、required time 與 slack 建立後續 constraint reasoning 的共同模型。"
+description: "STA 結果建立在 netlist、delay model 與 timing intent 上；先理解需求如何形成 deadline，才能分辨路徑太慢與 constraint 寫錯。"
 ---
 
-一個 RTL design 可以在功能模擬中完全正確，卻仍然做不成一顆能在目標頻率工作的晶片。原因很直接：邏輯功能只回答「輸入經過電路之後會得到什麼」，但實體晶片還多了一個不可忽略的問題——**結果必須在什麼時候到。**
 
-Static Timing Analysis（STA）與 SDC 處理的就是這個問題。
+STA 的 pass／fail 來自電路延遲與時間需求的比較。相同 netlist，在不同 clock period 或介面條件下可能得到不同 slack；如果需求沒有被正確描述，漂亮的 timing report 也不足以證明晶片能在預期系統中工作。
 
-如果只把 SDC 當成一組 Tcl command，很容易學成 create_clock、set_input_delay、set_false_path 的語法表。但對 synthesis、APR、STA 或 sanity checker 而言，需要理解的是每一條 constraint 如何改變 timing engine 對設計的理解，command 本身只是入口。
+數位晶片同時承擔功能與時間兩種責任。RTL 描述應計算什麼，實體電路決定資料傳播需要多久，接收端則要求資料在適當的時刻穩定。Synthesis 與 APR 需要知道這個期限，才能在面積、功耗與速度間取捨；STA 再以 timing model 檢查結果。SDC 是設計意圖進入這條流程的重要介面。[OpenSTA](https://github.com/The-OpenROAD-Project/OpenSTA)
 
-> 如果沒有 timing constraint，STA 為什麼無法判斷一條 path 到底合不合格？
+因此，學 SDC 應先建立「需求如何成為 required time」的直覺，再讀 command 語法。這能避免把 negative slack 一律當成電路問題，或把 positive slack 一律當成成功。以下用同一條路徑、兩種 clock period，追蹤 arrival time、required time 與 constraint coverage，也建立後續 checker 與 diagnosis 所需的證據。
 
 ## 邏輯正確，不代表時間正確
 
