@@ -1,15 +1,18 @@
 ---
 layout: post
-title: "NVIDIA AutoDMP 的 R2G 整合：把巨集佈局探索接回真實 PPA"
+title: "AutoDMP 的分層搜尋：快速佈局如何接到後段 PPA 驗收"
 date: 2026-09-24 15:23:08 +0800
 domain: eda
 categories: eda
-description: "從 NVIDIA AutoDMP 的公開程式拆解 GPU 搜尋、候選 DEF 與實體後端的接點，分析兩層 PPA 評估、macro-only 取捨，以及研究流程移植成可靠 CAD 平台時需要補上的驗收機制。"
+description: "AutoDMP 先以 GPU 搜尋保留不同取捨的候選，再交由實體後端評估；研究價值在於控制 proxy 成本與避免候選排名反轉。"
 ---
 
-要把晶片設計平台做成能持續改善結果的系統，先得解決一個很現實的矛盾：便宜的評分不夠準，準確的評分又太貴。每一組 floorplan 都完整跑完 APR，探索次數會被時間與授權限制；只看線長或擁塞估計，又可能選出最後 timing 更差的佈局。
 
-NVIDIA 的 **AutoDMP** 提供一個值得直接拆解的工程參考：GPU 上大量探索巨集與標準元件的佈局，保留不同取捨的候選，再送回既有實體設計流程驗收。第一作者 Anthony Agnesina、研究機構 NVIDIA，於 ISPD 2023 發表這項工作，並公開程式碼。它不是 NVIDIA 完整內部 CAD 平台，也不是 2026 年新發布的產品；可借鏡的是一個有實際程式入口與後端接法的設計探索系統。[研究與論文](https://research.nvidia.com/publication/2023-03_autodmp-automated-dreamplace-based-macro-placement)、[官方程式碼](https://github.com/NVlabs/AutoDMP)
+AutoDMP 提供一種控制晶片設計探索成本的方法：用快速評估擴大候選範圍，再用後段流程確認真正的 PPA。這種分層只有在快速指標能保留值得深入的候選時才有價值；若先把可行解刪掉，後段驗收再精確也無法補回。
+
+佈局把邏輯連線放進有限的實體空間，會同時影響線長、壅塞、時脈與 timing。每個候選都完整跑完 APR，可以得到較接近最終結果的證據，卻會消耗時間與授權；只看便宜的 proxy，則可能忽略 routing 與 timing 的代價。這個矛盾存在於設計探索本身，不會因改用 AI 或 GPU 就消失。
+
+Anthony Agnesina、NVIDIA 的 [AutoDMP，ISPD 2023](https://research.nvidia.com/publication/2023-03_autodmp-automated-dreamplace-based-macro-placement)有公開程式與後端接點，適合逐段研究搜尋、候選交付及驗收。以下追蹤一份 checkpoint 如何形成候選 DEF，再進入同一套後段流程，並比較探索速度、結果品質與平台重用的取捨。
 
 ## 從 SoC 整合往下：物理條件互相牽制
 
@@ -130,7 +133,7 @@ CPU 與授權占用在這個假設下減少九成，但不能宣稱總成本也�
 
 因此比較基準不只該有「80 次全部完整跑」這種昂貴方案，也要有相同後端預算下的 random search，以及工程師既有 recipe。額外安排少量未入選候選做完整驗收，估計篩選的漏失風險。若代理排名與後端表現長期無關，應先修正代理模型或搜尋範圍，而不是把 GPU 數量加倍。
 
-資源配置也要分成兩個池。GPU worker 可以快速產生候選，不代表 CPU 後端與授權能同速消化。若候選到達速度長期超過後端吞吐量，增加前端平行度只會拉長等待時間。移植時可先限制待驗收候選數，將完成驗收的速度反饋給搜尋預算；實際 admission policy 是平台新增責任，不是 AutoDMP 名稱本身提供的功能。
+資源配置也要分成兩個池。GPU worker 可以快速產生候選，不代表 CPU 後端與授權能同速消化。若候選到達速度長期超過後端吞吐量，增加前端平行度只會拉長等待時間。移植時可先限制待驗收候選數，將完成驗收的速度回饋給搜尋預算；實際 admission policy 是平台新增責任，不是 AutoDMP 名稱本身提供的功能。
 
 最後還要防止挑選偏差。探索組若從五份結果挑最好的一份，baseline 只跑一次，看到的差距同時包含方法與抽樣機會。比較可用同樣的後端次數與相同驗收條件，報告成功率、最佳值、中位數及總資源；至少跨幾個不同巨集比例與擁塞程度的分區。只有一個順手案例勝出，還不足以決定部門全面導入。
 
