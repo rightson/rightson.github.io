@@ -4,16 +4,20 @@ title: "AI collective 何時值得改接光路：相依步驟、壅塞與切換�
 date: 2026-09-30 04:41:06 +0800
 domain: networking
 categories: networking optical-interconnect
-description: "分階段 collective 使固定互連承擔多跳與壅塞，逐步改接光路則付出停頓。以 Harvest 與可檢查試算推導切換門檻，並界定端到端恢復與容錯尚未驗證之處。"
+description: "分階段 collective 使固定互連承擔多跳與壅塞，逐步改接光路則付出停頓。以 Harvest 與可檢查試算推導切換門檻，釐清排程模型的假設與工程邊界。"
 ---
 
-在八個 GPU 的 AllReduce 裡，通訊夥伴會隨步驟改變。若互連始終保持同一張稀疏拓樸，後段資料可能跨越多個節點，還會與其他 flow 爭用鏈路；若每輪都改接光路，collective 又必須等待電路切換。兩種代價都在通訊的 critical path 上。可重組光互連因此提出一個具體的架構問題：**哪些步驟值得共用同一張拓樸，何時才值得付出一次切換？**答案影響 port 數量、collective algorithm 的選擇，以及 runtime 應如何和網路共同排程。
+當一個 AI 工作分散到多個加速器，單顆晶片的運算吞吐量便不足以推算整個 iteration 或推論請求的完成時間。AllReduce、All-to-All 等 collective 會在計算流程中交換大量資料；對分階段的實作，後續工作還需等待上一輪的資料。瓶頸可能出在端點注入頻寬、有限的連線數、共享鏈路，或最慢參與者的同步。提高 SerDes 速率與光 I/O 密度可以擴大頻寬預算，但仍需回答資料在當下拓樸中如何抵達下一個夥伴。[Harvest，SIGCOMM 2026](https://stygianet.cs.purdue.edu/papers/harvest-sigcomm26.pdf) 研究的正是這個 scale-up 域內的問題。
+
+光傳輸和光電路交換是兩個不同的設計選擇：用光纖傳送封包，不代表實體連線會隨工作負載改變。本文討論的系統允許光交換器重新接通 GPU 之間的路徑，並假設每個 GPU 的可用 port 有限。在固定拓樸下，稀疏連線需要多跳轉送，可能讓後段 collective 步驟相互爭用；隨步驟改接光路雖可建立直達路徑，卻使通訊暫停直到新路徑可用。這把 optical device、網路拓樸與 collective runtime 原本分開處理的選擇，放進同一個完成時間目標。
+
+以八個 GPU 的 AllReduce 為例，通訊夥伴逐輪改變，固定連線與逐輪切換各有代價。關鍵問題是**哪些連續步驟值得共用一張拓樸，以及省下的多跳與壅塞時間能否支付切換成本**。若答案隨訊息大小、port 數與重配置延遲而變，未來光互連的規格就不能只報每 lane 速率；runtime 也必須知道資料何時可用、何時能安全進入下一步。
 
 ## 固定拓樸為何會拖慢分階段通訊
 
 AllReduce 讓每個參與者取得所有輸入的 reduction 結果；API 規定的是結果，沒有規定唯一的傳送順序或物理路徑，可對照 [Open MPI 的 MPI_Allreduce 文件](https://docs.open-mpi.org/en/main/man-openmpi/man3/MPI_Allreduce.3.html)。實作會把交換拆成有相依關係的多個步驟。以八個 rank 的一種 recursive doubling 實作為例，夥伴依序可由 rank XOR 1、XOR 2、XOR 4 指定；第二輪送出的部分結果，需要先等第一輪完成。[Open MPI collective 原始碼](https://github.com/open-mpi/ompi/blob/main/ompi/mca/coll/base/coll_base_allreduce.c) 可作此夥伴規則的參照。這只是展示依賴結構；[Harvest 論文](https://stygianet.cs.purdue.edu/papers/harvest-sigcomm26.pdf) 分析固定 ring 時採用的是 cyclic variant，不能把兩種實作的實測結果直接混用。
 
-先讓八個節點固定成一圈，每個節點的連線數不隨步驟增加。初期交換可能由近鄰直達，後期夥伴變遠，資料便要經過中間節點；多筆流量在同一條實體鏈路上重疊。[Harvest 的八節點 ring 試算](https://stygianet.cs.purdue.edu/papers/harvest-sigcomm26.pdf) 中，第三步相對第一步的最大 congestion factor 從 1 增為 4。這個 4 是該拓樸與夥伴排程的鏈路競爭倍數，不代表任何八 GPU AllReduce 都必然慢四倍。端點 injection、routing、訊息長度與 collective algorithm 都會改變完成時間。
+先讓八個節點固定成一圈，每個節點的連線數不隨步驟增加。初期交換可能由近鄰直達，後期夥伴變遠，資料便要經過中間節點；多筆流量在同一條實體鏈路上重疊。[Harvest 的八節點 ring 範例](https://stygianet.cs.purdue.edu/papers/harvest-sigcomm26.pdf) 中，第三步相對第一步的最大 congestion factor 從 1 增為 4。這個 4 是該拓樸與夥伴排程的鏈路競爭倍數，不代表任何八 GPU AllReduce 都必然慢四倍。端點 injection、routing、訊息長度與 collective algorithm 都會改變完成時間。
 
 增加固定連線、改用更適合拓樸的 collective，或讓流量由 packet fabric 繞路，都可能緩解問題。[Swing，NSDI 2024](https://www.usenix.org/conference/nsdi24/presentation/de-sensi) 便是優化固定 torus 上夥伴選擇的例子。光交換提出另一種可驗證選項：在下一組夥伴需要通訊前改變實體連線，把原本爭用同一個 cut 的 flow 分開。這個選項有代價：舊流要安全結束，新光路與接收端要就緒，所有參與者才可繼續。若連線數本來已足以同時容納主要夥伴，切換可省的時間就可能太少。
 
