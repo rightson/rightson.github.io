@@ -17,7 +17,7 @@ AllReduce 讓每個參與者取得所有輸入的 reduction 結果；API 規定�
 
 增加固定連線、改用更適合拓樸的 collective，或讓流量由 packet fabric 繞路，都可能緩解問題。[Swing，NSDI 2024](https://www.usenix.org/conference/nsdi24/presentation/de-sensi) 便是優化固定 torus 上伙伴選擇的例子。光交換提出另一種可驗證選項：在下一組伙伴需要通信前改變實體連線，把原本爭用同一個 cut 的 flow 分開。這個選項有代價：舊流要安全結束，新光路與接收端要就緒，所有參與者才可繼續。若連線數本來已足以同時容納主要伙伴，切換可省的時間就可能太少。
 
-這也是 [Mahir Rahman（Purdue University）等人的 Harvest，SIGCOMM 2026](https://stygianet.cs.purdue.edu/papers/harvest-sigcomm26.pdf) 值得研究的原因。它將「固定不換」和「每一步都換」之間的策略變成可求解的排程問題：給定 collective 的步驟與資料量，在每段連續步驟共用一張拓樸，選擇何時切換，最小化通信與重配置的總時間。研究價值並不止於加速一個 benchmark；它使 optical device 的切換時間、網路的 degree／forwarding 能力與 collective 的資料依賴可以放進同一個可反駁的成本式。論文在既定模型內求最優，沒有證明實際系統的失鎖、容錯與多租戶排程已完成。
+這也是 [Mahir Rahman（Purdue University）等人的 Harvest，SIGCOMM 2026](https://stygianet.cs.purdue.edu/papers/harvest-sigcomm26.pdf) 值得研究的原因。它將「固定不換」和「每一步都換」之間的策略變成可求解的排程問題：給定 collective 的步驟與資料量，在每段連續步驟共用一張拓樸，選擇何時切換，最小化通信與重配置的總時間。這個工作的長期研究價值，在於把 optical device 的切換時間、網路的 degree／forwarding 能力與 collective 的資料依賴放進同一個可反駁的成本式。這使「提高每 port 頻寬」與「改變連線時機」成為可比較的架構選項，也指出未來必須量測哪些參數。
 
 ## Aggregate traffic matrix 丟掉的資訊
 
@@ -120,7 +120,7 @@ D/C 是一次理想直連傳輸的序列化時間。假設 C=100 GB/s，τ=10 μ
 
 ## Harvest 的證據成立在哪個範圍
 
-依 [Harvest 原文，§3.1、§6.1與Figure 6](https://stygianet.cs.purdue.edu/papers/harvest-sigcomm26.pdf)，模型假設 endpoint 具備 cut-through forwarding。論文分開採用 8–64 GPU、每 port 800 Gb/s 的 packet-level 模擬與數值求解，以及 8 GPU、BlueField-3、100 Gb/s optical transceiver 的硬體模擬。後者透過 GPUDirect RDMA、NIC eSwitch 與分步執行 NCCL 量測通信時間，再加上設定的固定重配置 penalty。論文報告跨多種 collective 的最高約 2 倍改善，是與 static 或每步切換兩種策略中較好的 baseline 比較；這是特定模型與參數空間的最高值，並非任何工作都能得到的平均收益，更不是原生 photonic switching 的端到端實測。
+依 [Harvest 原文，§3.1、§6.1與Figure 6](https://stygianet.cs.purdue.edu/papers/harvest-sigcomm26.pdf)，模型假設 endpoint 具備 cut-through forwarding。論文分開採用 8–64 GPU、每 port 800 Gb/s 的 packet-level 模擬與數值求解，以及 8 GPU、BlueField-3、100 Gb/s optical transceiver 的硬體模擬。後者透過 GPUDirect RDMA、NIC eSwitch 與分步執行 NCCL 量測通信時間，再加上設定的固定重配置 penalty。論文報告跨多種 collective 的最高約 2 倍改善，是與 static 或每步切換兩種策略中較好的 baseline 比較；這是特定模型與參數空間的最高值；硬體實驗採用可重配置互連的 emulation，不能把固定 penalty 當成已量測的光路端到端切換時間。
 
 這個方法能檢查通信成本趨勢，卻不能同時證明光路失鎖、receiver recovery、所有port重配置成功率或長時間運行可靠性。把模擬的 τ 從10 μs改成10 ns，也不會產生一套已經量測過10 ns恢復的硬體系統。
 
@@ -158,7 +158,7 @@ fallback也要有資源：預留packet fabric會增加成本；原地保留舊to
 
 此表是作者的工程比較，必須在相同endpoint bandwidth、port數、可用容量與故障要求下驗證。若可重組方案多出一組完整光學鏈路，就不能只把完成時間改善歸因於排程。
 
-另一個邊界是完整job。collective縮短不必然等比縮短iteration；若通信原本就被computation遮住，優化可能只增加idle gap。[Flux，2026年9月22日arXiv preprint](https://arxiv.org/html/2609.25949v1) 進一步用workload DAG、compute dependency與switch assignment共同排程；這是不同問題範圍，不能拿其模型下的optimal直接保證production最優。
+另一個邊界是完整job。collective縮短不必然等比縮短iteration；若通信原本就被computation遮住，優化可能只增加idle gap。[Flux，2026年9月22日arXiv preprint](https://arxiv.org/html/2609.25949v1) 進一步用workload DAG、compute dependency與switch assignment共同排程；其目標涵蓋計算與通訊的共同排程，應與本文固定 collective 步驟的問題範圍分開比較。
 
 ## 我的判斷與下一個可驗證問題
 
