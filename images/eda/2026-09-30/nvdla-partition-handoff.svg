@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="740" viewBox="0 0 840 740" role="img" aria-labelledby="title desc">
+<title id="title">NVDLA 分區綜合輸入與輸出</title><desc id="desc">共同配置分發到五個獨立綜合 TOP_NAMES。每個分區產生 netlist、SDC、DEF、DDC、SVF 與報告；頂層必須另行檢查跨分區連接。</desc>
+<style>.bg{fill:#f7f9fc}.box{fill:#fff;stroke:#386588;stroke-width:2}.accent{fill:#e6f3fb;stroke:#386588;stroke-width:2}.out{fill:#e7f4ec;stroke:#367256;stroke-width:2}.h{font:700 24px system-ui,sans-serif;fill:#18354d}.t{font:600 18px system-ui,sans-serif;fill:#18354d}.s{font:15px system-ui,sans-serif;fill:#345168}.a{stroke:#386588;stroke-width:3;fill:none;marker-end:url(#arr)}</style><defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0l10 5-10 5z" fill="#386588"/></marker></defs>
+<rect class="bg" width="840" height="740" rx="24"/><text class="h" x="42" y="50">每個分區有自己的輸入身分與證據包</text>
+<rect class="accent" x="78" y="84" width="684" height="90" rx="16"/><text class="t" x="105" y="120">共同 release：RTL、config、library、製程條件</text><text class="s" x="105" y="149">各 TOP 對應 SDC；physical synthesis 可讀入 DEF</text>
+<path class="a" d="M420 174V218"/>
+<rect class="box" x="88" y="228" width="664" height="192" rx="18"/><text class="t" x="115" y="262">syn_launch.sh → 五個獨立 TOP_NAMES</text>
+<rect class="accent" x="114" y="286" width="178" height="48" rx="10"/><text class="t" x="133" y="317">partition a / c</text>
+<rect class="accent" x="331" y="286" width="178" height="48" rx="10"/><text class="t" x="350" y="317">partition o / m</text>
+<rect class="accent" x="548" y="286" width="178" height="48" rx="10"/><text class="t" x="566" y="317">partition p</text>
+<text class="s" x="115" y="372">本機序列執行，或由非阻塞 COMMAND_PREFIX 送往 grid</text><text class="s" x="115" y="398">提交鉤子不等於公開了 NVIDIA 的內部排程器</text>
+<path class="a" d="M420 420V467"/>
+<rect class="out" x="78" y="477" width="684" height="122" rx="16"/><text class="t" x="105" y="514">每個分區的 output bundle</text><text class="s" x="105" y="545">.gv netlist · .sdc · .def · .ddc · .svf</text><text class="s" x="105" y="573">check_design · check_timing · final timing/QoR report</text>
+<path class="a" d="M420 599V636"/>
+<rect class="box" x="112" y="646" width="616" height="64" rx="14"/><text class="t" x="138" y="684">作者建議：頂層重驗跨分區 timing、CDC、實體約束</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#386588" i]{fill:#b5c6d3}.bg{fill:#1a1f27}.box{fill:#1b1f20;stroke:#b5c6d3}.accent{fill:#192831;stroke:#b5c6d3}.out{fill:#202d25;stroke:#bcd4c9}.h{fill:#c6d5e1}.t{fill:#c6d5e1}.s{fill:#c0cbd5}.a{stroke:#b5c6d3}}</style>
+</svg>

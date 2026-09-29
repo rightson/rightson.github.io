@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="720" viewBox="0 0 840 720" role="img" aria-labelledby="title desc">
+<title id="title">SRAM view 錯配的偵測與恢復</title><desc id="desc">模擬 behavioral RAM 通過，綜合卻可能讀入舊的 Liberty 或 DEF。平台比較實際輸入版本，隔離結果，替換相容 views，重跑受影響的後續階段。</desc>
+<style>.bg{fill:#f7f9fc}.ok{fill:#e7f4ec;stroke:#367256;stroke-width:2}.bad{fill:#fff0e6;stroke:#a65736;stroke-width:2}.box{fill:#fff;stroke:#386588;stroke-width:2}.h{font:700 24px system-ui,sans-serif;fill:#18354d}.t{font:600 18px system-ui,sans-serif;fill:#18354d}.s{font:15px system-ui,sans-serif;fill:#345168}.a{stroke:#386588;stroke-width:3;fill:none;marker-end:url(#arr)}.r{stroke:#a65736;stroke-width:3;fill:none;marker-end:url(#red)}</style><defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0l10 5-10 5z" fill="#386588"/></marker><marker id="red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0l10 5-10 5z" fill="#a65736"/></marker></defs>
+<rect class="bg" width="840" height="720" rx="24"/><text class="h" x="42" y="52">功能測試通過後，仍要核對實體 view</text>
+<rect class="ok" x="62" y="95" width="318" height="104" rx="15"/><text class="t" x="88" y="133">RTL trace PASS</text><text class="s" x="88" y="162">behavioral RAM 語意</text>
+<rect class="bad" x="460" y="95" width="318" height="104" rx="15"/><text class="t" x="486" y="133">綜合讀到舊 view</text><text class="s" x="486" y="162">Liberty / DEF 與 wrapper 不符</text>
+<path class="r" d="M380 148H450"/><path class="r" d="M619 199V244"/>
+<rect class="box" x="166" y="254" width="508" height="96" rx="16"/><text class="t" x="193" y="292">比對 manifest 與 resolved files</text><text class="s" x="193" y="320">檢查 RAM 介面、時序及幾何 view 身分</text>
+<path class="a" d="M420 350V392"/>
+<rect class="bad" x="166" y="402" width="508" height="94" rx="16"/><text class="t" x="193" y="439">隔離受影響分區產物</text><text class="s" x="193" y="467">保留舊 .gv / .ddc / report 供診斷</text>
+<path class="a" d="M420 496V539"/>
+<rect class="ok" x="62" y="549" width="338" height="124" rx="16"/><text class="t" x="88" y="586">重新配對 view</text><text class="s" x="88" y="615">重跑 trace、綜合、STA</text><text class="s" x="88" y="641">範圍由變更依賴決定</text>
+<rect class="box" x="440" y="549" width="338" height="124" rx="16"/><text class="t" x="466" y="586">重新進入 SoC gate</text><text class="s" x="466" y="615">macro 幾何變更另重驗 APR</text><text class="s" x="466" y="641">通過後才採納新 release</text>
+<path class="a" d="M400 611H430"/>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#386588" i]{fill:#b5c6d3}[fill="#a65736" i]{fill:#d79d84}.bg{fill:#1a1f27}.ok{fill:#202d25;stroke:#bcd4c9}.bad{fill:#342114;stroke:#d79d84}.box{fill:#1b1f20;stroke:#b5c6d3}.h{fill:#c6d5e1}.t{fill:#c6d5e1}.s{fill:#c0cbd5}.a{stroke:#b5c6d3}.r{stroke:#d79d84}}</style>
+</svg>

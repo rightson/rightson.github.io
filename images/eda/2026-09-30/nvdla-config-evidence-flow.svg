@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="760" viewBox="0 0 840 760" role="img" aria-labelledby="title desc">
+<title id="title">NVDLA 設定與兩條交接證據</title><desc id="desc">spec 和 tree.make 生成 RTL 及測試環境；驗證 trace 與分區綜合各有證據，最後由 SoC 整合者核對。SRAM 與製程資料由外部提供。</desc>
+<style>.bg{fill:#f7f9fc}.box{fill:#fff;stroke:#386588;stroke-width:2}.accent{fill:#e6f3fb;stroke:#386588;stroke-width:2}.ext{fill:#fff3df;stroke:#ab7130;stroke-width:2}.gate{fill:#e7f4ec;stroke:#367256;stroke-width:2}.h{font:700 25px system-ui,sans-serif;fill:#18354d}.t{font:600 19px system-ui,sans-serif;fill:#18354d}.s{font:16px system-ui,sans-serif;fill:#345168}.a{stroke:#386588;stroke-width:3;fill:none;marker-end:url(#arr)}</style>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0l10 5-10 5z" fill="#386588"/></marker></defs>
+<rect class="bg" width="840" height="760" rx="24"/>
+<text class="h" x="42" y="54">配置只是起點；驗證與綜合各自交證據</text>
+<rect class="accent" x="192" y="94" width="456" height="98" rx="16"/><text class="t" x="220" y="132">config spec + tree.make</text><text class="s" x="220" y="163">版本、工具路徑、project 身分</text>
+<path class="a" d="M420 192V244"/>
+<rect class="box" x="192" y="254" width="456" height="98" rx="16"/><text class="t" x="220" y="292">tmake：生成 RTL 與測試環境</text><text class="s" x="220" y="323">outdir/&lt;project&gt;/vmod</text>
+<path class="a" d="M326 352V406"/><path class="a" d="M514 352V406"/>
+<rect class="box" x="44" y="416" width="354" height="118" rx="16"/><text class="t" x="68" y="456">trace 驗證</text><text class="s" x="68" y="485">cfg + dat → checker / log</text><text class="s" x="68" y="509">證明指定功能情境</text>
+<rect class="box" x="442" y="416" width="354" height="118" rx="16"/><text class="t" x="466" y="456">分區綜合</text><text class="s" x="466" y="485">RTL + SDC + library + DEF</text><text class="s" x="466" y="509">netlist / report / database</text>
+<rect class="ext" x="442" y="566" width="354" height="74" rx="14"/><text class="t" x="466" y="597">整合者提供</text><text class="s" x="466" y="621">SRAM cell、corner、實體 view</text>
+<path class="a" d="M221 534V676H329"/><path class="a" d="M619 566V544"/><path class="a" d="M796 475H810V693H512"/>
+<rect class="gate" x="330" y="655" width="182" height="76" rx="16"/><text class="t" x="353" y="688">SoC 交接閘門</text><text class="s" x="353" y="713">核對同一設計版本</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#386588" i]{fill:#b5c6d3}.bg{fill:#1a1f27}.box{fill:#1b1f20;stroke:#b5c6d3}.accent{fill:#192831;stroke:#b5c6d3}.ext{fill:#372a15;stroke:#dbb07f}.gate{fill:#202d25;stroke:#bcd4c9}.h{fill:#c6d5e1}.t{fill:#c6d5e1}.s{fill:#c0cbd5}.a{stroke:#b5c6d3}}</style>
+</svg>
