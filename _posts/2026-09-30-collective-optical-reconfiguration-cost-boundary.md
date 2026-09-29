@@ -4,20 +4,20 @@ title: "AI collective 何時值得改接光路：相依步驟、壅塞與切換�
 date: 2026-09-30 04:41:06 +0800
 domain: networking
 categories: networking optical-interconnect
-description: "分階段 collective 使固定互連承擔多跳與壅塞，逐步改接光路則付出停頓。以 Harvest 與可檢查算例推導切換門檻，並界定端到端恢復與容錯尚未驗證之處。"
+description: "分階段 collective 使固定互連承擔多跳與壅塞，逐步改接光路則付出停頓。以 Harvest 與可檢查試算推導切換門檻，並界定端到端恢復與容錯尚未驗證之處。"
 ---
 
-在八個 GPU 的 AllReduce 裡，通信伙伴會隨步驟改變。若互連始終保持同一張稀疏拓樸，後段資料可能跨越多個節點，還會與其他 flow 爭用鏈路；若每輪都改接光路，collective 又必須等待電路切換。兩種代價都在通信的 critical path 上。可重組光互連因此提出一個具體的架構問題：**哪些步驟值得共用同一張拓樸，何時才值得付出一次切換？**答案影響 port 數量、collective algorithm 的選擇，以及 runtime 應如何和網路共同排程。
+在八個 GPU 的 AllReduce 裡，通訊夥伴會隨步驟改變。若互連始終保持同一張稀疏拓樸，後段資料可能跨越多個節點，還會與其他 flow 爭用鏈路；若每輪都改接光路，collective 又必須等待電路切換。兩種代價都在通訊的 critical path 上。可重組光互連因此提出一個具體的架構問題：**哪些步驟值得共用同一張拓樸，何時才值得付出一次切換？**答案影響 port 數量、collective algorithm 的選擇，以及 runtime 應如何和網路共同排程。
 
-## 固定拓樸為何會拖慢分階段通信
+## 固定拓樸為何會拖慢分階段通訊
 
-AllReduce 讓每個參與者取得所有輸入的 reduction 結果；API 規定的是結果，沒有規定唯一的傳送順序或物理路徑，可對照 [Open MPI 的 MPI_Allreduce 文件](https://docs.open-mpi.org/en/main/man-openmpi/man3/MPI_Allreduce.3.html)。實作會把交換拆成有相依關係的多個步驟。以八個 rank 的一種 recursive doubling 實作為例，伙伴依序可由 rank XOR 1、XOR 2、XOR 4 指定；第二輪送出的部分結果，需要先等第一輪完成。[Open MPI collective 原始碼](https://github.com/open-mpi/ompi/blob/main/ompi/mca/coll/base/coll_base_allreduce.c) 可作此伙伴規則的參照。這只是展示依賴結構；[Harvest 論文](https://stygianet.cs.purdue.edu/papers/harvest-sigcomm26.pdf) 分析固定 ring 時採用的是 cyclic variant，不能把兩種實作的實測結果直接混用。
+AllReduce 讓每個參與者取得所有輸入的 reduction 結果；API 規定的是結果，沒有規定唯一的傳送順序或物理路徑，可對照 [Open MPI 的 MPI_Allreduce 文件](https://docs.open-mpi.org/en/main/man-openmpi/man3/MPI_Allreduce.3.html)。實作會把交換拆成有相依關係的多個步驟。以八個 rank 的一種 recursive doubling 實作為例，夥伴依序可由 rank XOR 1、XOR 2、XOR 4 指定；第二輪送出的部分結果，需要先等第一輪完成。[Open MPI collective 原始碼](https://github.com/open-mpi/ompi/blob/main/ompi/mca/coll/base/coll_base_allreduce.c) 可作此夥伴規則的參照。這只是展示依賴結構；[Harvest 論文](https://stygianet.cs.purdue.edu/papers/harvest-sigcomm26.pdf) 分析固定 ring 時採用的是 cyclic variant，不能把兩種實作的實測結果直接混用。
 
-先讓八個節點固定成一圈，每個節點的連線數不隨步驟增加。初期交換可能由近鄰直達，後期伙伴變遠，資料便要經過中間節點；多筆流量在同一條實體鏈路上重疊。[Harvest 的八節點 ring 算例](https://stygianet.cs.purdue.edu/papers/harvest-sigcomm26.pdf) 中，第三步相對第一步的最大 congestion factor 從 1 增為 4。這個 4 是該拓樸與伙伴排程的鏈路競爭倍數，不代表任何八 GPU AllReduce 都必然慢四倍。端點 injection、routing、訊息長度與 collective algorithm 都會改變完成時間。
+先讓八個節點固定成一圈，每個節點的連線數不隨步驟增加。初期交換可能由近鄰直達，後期夥伴變遠，資料便要經過中間節點；多筆流量在同一條實體鏈路上重疊。[Harvest 的八節點 ring 試算](https://stygianet.cs.purdue.edu/papers/harvest-sigcomm26.pdf) 中，第三步相對第一步的最大 congestion factor 從 1 增為 4。這個 4 是該拓樸與夥伴排程的鏈路競爭倍數，不代表任何八 GPU AllReduce 都必然慢四倍。端點 injection、routing、訊息長度與 collective algorithm 都會改變完成時間。
 
-增加固定連線、改用更適合拓樸的 collective，或讓流量由 packet fabric 繞路，都可能緩解問題。[Swing，NSDI 2024](https://www.usenix.org/conference/nsdi24/presentation/de-sensi) 便是優化固定 torus 上伙伴選擇的例子。光交換提出另一種可驗證選項：在下一組伙伴需要通信前改變實體連線，把原本爭用同一個 cut 的 flow 分開。這個選項有代價：舊流要安全結束，新光路與接收端要就緒，所有參與者才可繼續。若連線數本來已足以同時容納主要伙伴，切換可省的時間就可能太少。
+增加固定連線、改用更適合拓樸的 collective，或讓流量由 packet fabric 繞路，都可能緩解問題。[Swing，NSDI 2024](https://www.usenix.org/conference/nsdi24/presentation/de-sensi) 便是優化固定 torus 上夥伴選擇的例子。光交換提出另一種可驗證選項：在下一組夥伴需要通訊前改變實體連線，把原本爭用同一個 cut 的 flow 分開。這個選項有代價：舊流要安全結束，新光路與接收端要就緒，所有參與者才可繼續。若連線數本來已足以同時容納主要夥伴，切換可省的時間就可能太少。
 
-這也是 [Mahir Rahman（Purdue University）等人的 Harvest，SIGCOMM 2026](https://stygianet.cs.purdue.edu/papers/harvest-sigcomm26.pdf) 值得研究的原因。它將「固定不換」和「每一步都換」之間的策略變成可求解的排程問題：給定 collective 的步驟與資料量，在每段連續步驟共用一張拓樸，選擇何時切換，最小化通信與重配置的總時間。這個工作的長期研究價值，在於把 optical device 的切換時間、網路的 degree／forwarding 能力與 collective 的資料依賴放進同一個可反駁的成本式。這使「提高每 port 頻寬」與「改變連線時機」成為可比較的架構選項，也指出未來必須量測哪些參數。
+這也是 [Mahir Rahman（Purdue University）等人的 Harvest，SIGCOMM 2026](https://stygianet.cs.purdue.edu/papers/harvest-sigcomm26.pdf) 值得研究的原因。它將「固定不換」和「每一步都換」之間的策略變成可求解的排程問題：給定 collective 的步驟與資料量，在每段連續步驟共用一張拓樸，選擇何時切換，最小化通訊與重配置的總時間。這個工作的長期研究價值，在於把 optical device 的切換時間、網路的 degree／forwarding 能力與 collective 的資料依賴放進同一個可反駁的成本式。這使「提高每 port 頻寬」與「改變連線時機」成為可比較的架構選項，也指出未來必須量測哪些參數。
 
 ## Aggregate traffic matrix 丟掉的資訊
 
@@ -27,7 +27,7 @@ AllReduce 讓每個參與者取得所有輸入的 reduction 結果；API 規定�
 
 這是作者構造的反例：它不否定 traffic matrix 對穩態容量規劃的用途，而是證明**相同矩陣不足以唯一決定有相依工作的最短完成排程**。若一個 scheduler 已額外加入 release time 或 DAG，它就不再只有矩陣資訊，不能把它與純 aggregate scheduler 混為一談。
 
-![相同流量總量可能有不同資料相依；八個 rank 的 XOR 伙伴在每輪改變](/images/networking/2026-09-30/collective-step-dependencies.svg)
+![相同流量總量可能有不同資料相依；八個 rank 的 XOR 夥伴在每輪改變](/images/networking/2026-09-30/collective-step-dependencies.svg)
 
 圖：作者整理；資料來源：[Open MPI collective 原始碼](https://github.com/open-mpi/ompi/blob/main/ompi/mca/coll/base/coll_base_allreduce.c)。A→B→C 反例為作者設計。
 
@@ -49,19 +49,19 @@ AllReduce 讓每個參與者取得所有輸入的 reduction 結果；API 規定�
 
 在這個模型裡，新 topology 的價值有兩個來源：減少鏈路上的重複負載，以及縮短資料經過的 forwarding path。兩者都可能降低 step time，但都受 injection bandwidth、receiver rate 與 routing 實作限制。只要 endpoint 已經飽和，再增加 circuit capacity 就沒有同等收益。
 
-固定拓樸仍有優化空間。[Swing，NSDI 2024](https://www.usenix.org/conference/nsdi24/presentation/de-sensi) 探索在 torus 上改變 AllReduce 伙伴以降低 hop 與鏈路分享。它提醒我們：比較可重組 fabric 時，baseline 應包括合理的 topology-aware algorithm；否則測到的收益可能包含「修正不合適演算法」的部分。
+固定拓樸仍有優化空間。[Swing，NSDI 2024](https://www.usenix.org/conference/nsdi24/presentation/de-sensi) 探索在 torus 上改變 AllReduce 夥伴以降低 hop 與鏈路分享。它提醒我們：比較可重組 fabric 時，baseline 應包括合理的 topology-aware algorithm；否則測到的收益可能包含「修正不合適演算法」的部分。
 
 ## 把重配置當成一筆必須支付的時間
 
-令 τ 表示完成一次 topology transition 後，受影響 communication 真正可恢復的時間。若六個通信步驟依序執行，選擇的拓樸是 G₁…G₆，最簡單的 serialized objective 是：
+令 τ 表示完成一次 topology transition 後，受影響 communication 真正可恢復的時間。若六個通訊步驟依序執行，選擇的拓樸是 G₁…G₆，最簡單的 serialized objective 是：
 
 `T = Σᵢ tᵢ(Gᵢ) + Σᵢ₌₂⁶ τ · 1[Gᵢ ≠ Gᵢ₋₁]`
 
-此式假設切換不能與其他通信重疊、切換代價固定、初始 topology 已預先就緒，且沒有跨步驟的並行 flow。若初始建立也計入，所有方案都應用相同規則；若其成本依目標 topology 改變，就必須逐一計算。
+此式假設切換不能與其他通訊重疊、切換代價固定、初始 topology 已預先就緒，且沒有跨步驟的並行 flow。若初始建立也計入，所有方案都應用相同規則；若其成本依目標 topology 改變，就必須逐一計算。
 
 對單次切換，採用條件可以直接寫成：
 
-`後續通信時間的減少量 > 暴露在 critical path 上的切換成本`
+`後續通訊時間的減少量 > 暴露在 critical path 上的切換成本`
 
 「暴露」很重要。若另一組獨立 port 可在 computation 期間預先配置，只有未被重疊藏掉的部分需要支付；但當下 circuit 若仍被未完成 flow 使用，不能憑空把整段 τ 塞到 computation 背後。
 
@@ -69,9 +69,9 @@ AllReduce 讓每個參與者取得所有輸入的 reduction 結果；API 規定�
 
 `ρ = τ / (D / C) = τC / D`
 
-D/C 是一次理想直連傳輸的序列化時間。假設 C=100 GB/s，τ=10 μs，則 D=1 MB 時 ρ=1；D=100 MB 時 ρ=0.01。這是十進位單位的作者算例，沒有包含 startup 或壅塞。相同 switch 在不同 message size 下，切換代價的重要性相差百倍；而 C 提升、τ 不變時，重配置反而更難攤平。
+D/C 是一次理想直連傳輸的序列化時間。假設 C=100 GB/s，τ=10 μs，則 D=1 MB 時 ρ=1；D=100 MB 時 ρ=0.01。這是十進位單位的作者試算，沒有包含 startup 或壅塞。相同 switch 在不同 message size 下，切換代價的重要性相差百倍；而 C 提升、τ 不變時，重配置反而更難攤平。
 
-## 六步算例：最佳切換次數會隨 τ 改變
+## 六步試算：最佳切換次數會隨 τ 改變
 
 以下四張候選 topology 的每步完成時間以 μs 表示。成本已包含該步路由、startup 與 serialization 的估計，獨立作為輸入；它不是 Harvest 的輸出，也不是任何實體 OCS 的 benchmark。
 
@@ -82,9 +82,9 @@ D/C 是一次理想直連傳輸的序列化時間。假設 C=100 GB/s，τ=10 μ
 | C | 22 | 22 | 12 | 12 | 10 | 10 | 88 |
 | D | 22 | 22 | 10 | 10 | 22 | 22 | 108 |
 
-只逐步選最低通信成本，會得到 B、B、D、D、C、C：通信60 μs，但要切兩次，總時間60+2τ。
+只逐步選最低通訊成本，會得到 B、B、D、D、C、C：通訊60 μs，但要切兩次，總時間60+2τ。
 
-若把中段也留在 B，直到最後兩步才換 C，通信成本是64 μs，只切一次，總時間64+τ。全程固定 B 或 C 則是88 μs。把四個候選的全部4⁶=4,096種序列逐一計算，可以核對：
+若把中段也留在 B，直到最後兩步才換 C，通訊成本是64 μs，只切一次，總時間64+τ。全程固定 B 或 C 則是88 μs。把四個候選的全部4⁶=4,096種序列逐一計算，可以核對：
 
 | τ | 最佳成本 | 一個最佳序列 | 原因 |
 | --- | ---: | --- | --- |
@@ -94,9 +94,9 @@ D/C 是一次理想直連傳輸的序列化時間。假設 C=100 GB/s，τ=10 μ
 
 三個下包絡線60+2τ、64+τ、88在τ=4與24 μs交會。邊界上有多個等價最佳解；不能把某個單一 schedule 宣稱為唯一答案。若 τ 的估計誤差足以跨越交點，選擇較少切換的方案通常更容易操作，但這是 robustness policy，要另外算收益代價。
 
-![六步算例的兩次切換、一次切換與固定 topology 成本線，交點為4及24微秒](/images/networking/2026-09-30/reconfiguration-cost-envelope.svg)
+![六步試算的兩次切換、一次切換與固定 topology 成本線，交點為4及24微秒](/images/networking/2026-09-30/reconfiguration-cost-envelope.svg)
 
-圖：作者整理；資料來源：[Harvest 的排程問題](https://stygianet.cs.purdue.edu/papers/harvest-sigcomm26.pdf)。曲線與所有數值為作者假設算例，非論文實驗圖。
+圖：作者整理；資料來源：[Harvest 的排程問題](https://stygianet.cs.purdue.edu/papers/harvest-sigcomm26.pdf)。曲線與所有數值為作者假設試算，非論文實驗圖。
 
 這個有限候選問題可以用簡單 recurrence 求解。令 Fᵢ(g) 是前 i 步、末步使用 g 的最低成本：
 
@@ -112,17 +112,17 @@ D/C 是一次理想直連傳輸的序列化時間。假設 C=100 GB/s，τ=10 μ
 
 前述成本表刻意把topology成本當輸入。若要從硬體直接估計，還要檢查兩個下界。對節點v，若它必須發送Dᵥ bytes、只有d個可同時使用的port，每個payload rate為C，則單靠injection就需要至少Dᵥ/(dC)。任何切換都不能把這個下界降掉，除非增加port或減少資料量。
 
-對一個節點集合U，令本步必須離開U的資料為D(U)，跨cut的所有可用鏈路容量合計為C(U)。在沒有壓縮或in-network reduction改變資料量的假設下，完成時間至少D(U)/C(U)。重配置能把有限port重新分配到忙碌cut，但提高一個cut的capacity，可能同時縮小另一個cut；不能只檢查被優化的那組伙伴。
+對一個節點集合U，令本步必須離開U的資料為D(U)，跨cut的所有可用鏈路容量合計為C(U)。在沒有壓縮或in-network reduction改變資料量的假設下，完成時間至少D(U)/C(U)。重配置能把有限port重新分配到忙碌cut，但提高一個cut的capacity，可能同時縮小另一個cut；不能只檢查被優化的那組夥伴。
 
-這也說明bandwidth density與schedule是不同設計旋鈕。更多port能讓多組伙伴同時存在，降低切換需求，卻增加transceiver、光纖、package escape與控制成本。更快的單port保持degree限制，可能讓序列化更短，反而放大τ的重要性。比較方案時應把port數、port rate、切換domain與endpoint forwarding能力列成四個獨立欄位。
+這也說明bandwidth density與schedule是不同設計旋鈕。更多port能讓多組夥伴同時存在，降低切換需求，卻增加transceiver、光纖、package escape與控制成本。更快的單port保持degree限制，可能讓序列化更短，反而放大τ的重要性。比較方案時應把port數、port rate、切換domain與endpoint forwarding能力列成四個獨立欄位。
 
 還有一個可直接量測的resource overhead：若某sender在切換時繼續產生資料，輸入速率λ、暫停服務時間τ，且沒有其他出口或上游backpressure，buffer最低增量是λτ。以100 GB/s與10 μs的假設值，增量是1 MB；若八個流共同落到同一buffer，必須按合計arrival rate計算。這不是平均queueing分析，也不是buffer sizing的完整答案，但已足以檢查一個「切換期間照常發送」的設計是否自洽。
 
 ## Harvest 的證據成立在哪個範圍
 
-依 [Harvest 原文，§3.1、§6.1與Figure 6](https://stygianet.cs.purdue.edu/papers/harvest-sigcomm26.pdf)，模型假設 endpoint 具備 cut-through forwarding。論文分開採用 8–64 GPU、每 port 800 Gb/s 的 packet-level 模擬與數值求解，以及 8 GPU、BlueField-3、100 Gb/s optical transceiver 的硬體模擬。後者透過 GPUDirect RDMA、NIC eSwitch 與分步執行 NCCL 量測通信時間，再加上設定的固定重配置 penalty。論文報告跨多種 collective 的最高約 2 倍改善，是與 static 或每步切換兩種策略中較好的 baseline 比較；這是特定模型與參數空間的最高值；硬體實驗採用可重配置互連的 emulation，不能把固定 penalty 當成已量測的光路端到端切換時間。
+依 [Harvest 原文，§3.1、§6.1與Figure 6](https://stygianet.cs.purdue.edu/papers/harvest-sigcomm26.pdf)，模型假設 endpoint 具備 cut-through forwarding。論文分開採用 8–64 GPU、每 port 800 Gb/s 的 packet-level 模擬與數值求解，以及 8 GPU、BlueField-3、100 Gb/s optical transceiver 的硬體模擬。後者透過 GPUDirect RDMA、NIC eSwitch 與分步執行 NCCL 量測通訊時間，再加上設定的固定重配置 penalty。論文報告跨多種 collective 的最高約 2 倍改善，是與 static 或每步切換兩種策略中較好的 baseline 比較；這是特定模型與參數空間的最高值；硬體實驗採用可重配置互連的 emulation，不能把固定 penalty 當成已量測的光路端到端切換時間。
 
-這個方法能檢查通信成本趨勢，卻不能同時證明光路失鎖、receiver recovery、所有port重配置成功率或長時間運行可靠性。把模擬的 τ 從10 μs改成10 ns，也不會產生一套已經量測過10 ns恢復的硬體系統。
+這個方法能檢查通訊成本趨勢，卻不能同時證明光路失鎖、receiver recovery、所有port重配置成功率或長時間運作可靠性。把模擬的 τ 從10 μs改成10 ns，也不會產生一套已經量測過10 ns恢復的硬體系統。
 
 [公開artifact](https://github.com/STyGIANet/Harvest) 提供synthesis、Astra-Sim、hardware-emulation與compute-sync路徑，並說明一般topology synthesis需要Gurobi；現成topology可以用於模擬。復現時應分開記錄「重新求解排程」與「重播既有排程」，兩者驗證的能力不同。這裡沒有宣稱已完整執行該artifact。
 
@@ -136,7 +136,7 @@ D/C 是一次理想直連傳輸的序列化時間。假設 C=100 GB/s，τ=10 μ
 
 圖：作者整理；資料來源：[端到端重配置研究問題](https://stygianet.cs.purdue.edu/papers/photonicsreconfigurationhotnets26.html)。epoch、驗證與失敗處理為作者設計，非廠商官方實作。
 
-量測起點若放在controller送出command，會漏掉request排隊；終點若放在switch ACK，則可能早於payload真正可傳。選型至少要同時記錄device時間、request-to-ready時間、p50/p99，以及切換時可繼續服務的port比例。當job每輪通信都必須等待最慢參與者，平均τ也不能直接代表job看到的暫停。
+量測起點若放在controller送出command，會漏掉request排隊；終點若放在switch ACK，則可能早於payload真正可傳。選型至少要同時記錄device時間、request-to-ready時間、p50/p99，以及切換時可繼續服務的port比例。當job每輪通訊都必須等待最慢參與者，平均τ也不能直接代表job看到的暫停。
 
 ## 一次部分失敗，會留下哪些狀態
 
@@ -144,7 +144,7 @@ D/C 是一次理想直連傳輸的序列化時間。假設 C=100 GB/s，τ=10 μ
 
 在作者設計的恢復方案裡，首先需要把「配置已送出」與「資料可安全進入」分開。每個受影響endpoint回報epoch、peer identity與link readiness；完整參與集合尚未確認前，runtime不放行。超時後停止該operation，保存已完成step與未完成step的界線。
 
-尤其reduction已覆寫buffer時，不能只恢復舊circuit後重送全部資料。某些貢獻可能已納入partial result，重送會重複加總；若無法證明chunk完成state，安全策略是從未被污染的輸入或checkpoint重啟collective。代價是多一次通信，保證則是避免把半完成結果交給上層。
+尤其reduction已覆寫buffer時，不能只恢復舊circuit後重送全部資料。某些貢獻可能已納入partial result，重送會重複加總；若無法證明chunk完成state，安全策略是從未被污染的輸入或checkpoint重啟collective。代價是多一次通訊，保證則是避免把半完成結果交給上層。
 
 fallback也要有資源：預留packet fabric會增加成本；原地保留舊topology需要port與切換能力；直接abort job則降低局部恢復複雜度，但擴大failure domain。這些是三種不同設計，沒有免費的第四條路。
 
@@ -153,12 +153,12 @@ fallback也要有資源：預留packet fabric會增加成本；原地保留舊to
 | 設計 | 主要收益 | 要付的成本 | 比較有利的條件 |
 | --- | --- | --- | --- |
 | 固定packet fabric＋適配collective | 容許較多即時交通變化 | port、buffer、routing與功耗預算 | concurrent jobs多、流量難預知 |
-| 固定optical topology＋多hop | 避免執行途中切換 | endpoint forwarding與路由負載 | 伙伴穩定、切換成本高 |
+| 固定optical topology＋多hop | 避免執行途中切換 | endpoint forwarding與路由負載 | 夥伴穩定、切換成本高 |
 | 依step重配置optical topology | 在需要時建立更合適路徑 | synchronization、transition與recovery | 步驟可預知、獨占資源、收益可攤平 |
 
 此表是作者的工程比較，必須在相同endpoint bandwidth、port數、可用容量與故障要求下驗證。若可重組方案多出一組完整光學鏈路，就不能只把完成時間改善歸因於排程。
 
-另一個邊界是完整job。collective縮短不必然等比縮短iteration；若通信原本就被computation遮住，優化可能只增加idle gap。[Flux，2026年9月22日arXiv preprint](https://arxiv.org/html/2609.25949v1) 進一步用workload DAG、compute dependency與switch assignment共同排程；其目標涵蓋計算與通訊的共同排程，應與本文固定 collective 步驟的問題範圍分開比較。
+另一個邊界是完整job。collective縮短不必然等比縮短iteration；若通訊原本就被computation遮住，優化可能只增加idle gap。[Flux，2026年9月22日arXiv preprint](https://arxiv.org/html/2609.25949v1) 進一步用workload DAG、compute dependency與switch assignment共同排程；其目標涵蓋計算與通訊的共同排程，應與本文固定 collective 步驟的問題範圍分開比較。
 
 ## 我的判斷與下一個可驗證問題
 
@@ -166,13 +166,13 @@ fallback也要有資源：預留packet fabric會增加成本；原地保留舊to
 
 第一，可重組interconnect的採用門檻會隨message size、effective bandwidth與端到端τ共同移動。設備資料表應能對應到這個三維空間；只有lane rate與一個switching time，資訊不足以決定runtime策略。
 
-第二，最先值得投入的場景是通信步驟穩定、資源隔離清楚、可重複使用排程的domain。這能讓offline synthesis攤平，也讓failure recovery的state範圍可管理。多租戶或動態MoE traffic不是不能做，而是需要不同的state與不確定性模型。
+第二，最先值得投入的場景是通訊步驟穩定、資源隔離清楚、可重複使用排程的domain。這能讓offline synthesis攤平，也讓failure recovery的state範圍可管理。多租戶或動態MoE traffic不是不能做，而是需要不同的state與不確定性模型。
 
 第三，optical schedule可能成為runtime contract的一部分。tensor size、rank mapping、algorithm、topology version或forwarding能力改變時，舊schedule應重新驗收；只保存一串switch command，無法證明它仍對目前的communication DAG有效。
 
-下一步最值得測四件事：以真實request-to-payload-ready分布替代固定τ後，最佳切段是否穩定；注入一個port延遲或失敗，能否阻止partial reduction被錯誤交付；與優化過的固定fabric及collective比較後，仍剩多少收益；加入computation overlap與第二個job後，整體iteration p99是否改善。
+下一步最值得測四件事：以真實request-to-payload-ready分布替代固定τ後，最佳分段方式是否穩定；注入一個port延遲或失敗，能否阻止partial reduction被錯誤交付；與優化過的固定fabric及collective比較後，仍剩多少收益；加入computation overlap與第二個job後，整體iteration p99是否改善。
 
-可長期保留的insight是：**通信需求除了「多少bytes、送給誰」，還包括「何時產生、依賴誰、切換後何時可安全繼續」。**當topology可被程式改變，這些時間與正確性資訊便成為網路架構輸入。
+可長期保留的insight是：**通訊需求除了「多少bytes、送給誰」，還包括「何時產生、依賴誰、切換後何時可安全繼續」。**當topology可被程式改變，這些時間與正確性資訊便成為網路架構輸入。
 
 ## References
 
