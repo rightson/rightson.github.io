@@ -1,19 +1,18 @@
 ---
 layout: post
-title: "同一個 10 ns Clock，Setup 與 Hold 為什麼比較不同的 Edge"
+title: "Launch 與 Capture Edge：Setup、Hold 如何建立不同期限"
 date: 2026-09-24 11:31:48 +0800
 domain: timing
 categories: eda
-description: "同樣是 10 ns clock，setup 與 hold 為什麼會得到完全不同的 timing relationship？從 launch/capture edge、Liberty timing arc 與 OpenSTA 的 max/min analysis，看懂 create_clock 建立的其實是一組時間關係。"
+description: "Clock period 只是時間關係的一部分；setup 與 hold 要由 launch/capture edge、Liberty arc 及 max/min path 一起建立。"
 ---
 
-昨天先建立了一個最小觀念：**delay 本身沒有 pass 或 fail，只有把 delay 放進 timing requirement 之後，slack 才有意義。** 下一步要釐清的，是這個 requirement 從哪裡來。
 
-對最常見的 synchronous register-to-register path，一句「clock period 是 10 ns」並不夠。STA 實際做的事情，是先找出 data 從哪一個 clock edge 被 launch，再找出應該被哪一個 clock edge capture，最後才把 cell delay、net delay、setup/hold time 等資訊放進這兩個 edge 之間。
+Setup 與 hold 檢查的是不同的資料穩定條件，因此同一個 10 ns clock 會形成不同期限。Setup 要確認資料在接收時刻前準備好，hold 則限制新資料不可太早破壞當下的取樣；只有 frequency，無法完整決定這些關係。
 
-STA 看 clock，看的是 edge relationship；frequency 只是其中一個參數。
+同步電路用 clock edge 協調資料交接，但 launch FF、組合邏輯與 capture FF 都有實際延遲，clock 到達各端的時間也可能不同。STA 必須先配對兩端的 edge，再加入資料路徑及 Liberty timing arcs。這使 clock waveform、來源與相位成為分析輸入，並解釋為何同樣 period 的兩個 clock 未必可以互換。[OpenSTA 分析流程](https://opensta.readthedocs.io/en/latest/Examples/)
 
-這個差別看似只是語意，但它直接決定後面 generated clock、multicycle path、clock groups、latency、uncertainty 甚至 hierarchical SDC 為什麼會變難。
+[前篇](/eda/2026/09/23/timing-constraint-defines-deadline.html)建立需求與延遲的比較；這篇進一步追蹤期限如何由 edges 產生。這個理解能幫助判斷 hold buffer、generated clock 或 multicycle constraint 是否合理，也能避免只靠「setup 看 max、hold 看 min」口訣解讀 report。
 
 ## 一個 10 ns clock，STA 其實看見一整串 edge
 
