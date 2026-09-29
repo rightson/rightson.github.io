@@ -1,25 +1,22 @@
 ---
 layout: post
-title: "AI 原生 IC Design Platform 需要 Typed Design State：讓設計狀態可驗證、可重播、可分層操作"
+title: "可驗證的 IC 設計狀態：AI 如何跨越抽象層並保留證據"
 date: 2026-09-23 06:05:00 +0800
 domain: eda
 categories: eda
-description: "當 AI 開始跨越 RTL、verification、synthesis、APR 與 signoff，瓶頸會轉到 IC design platform 是否有可驗證、可重播、可分層操作的設計狀態。"
+description: "Agent 跨越 RTL、constraints 與實體設計時，平台必須保存型別、版本、品質及相依關係；高階抽象與成果驗證各自解決不同問題。"
 ---
 
-AI 驅動的 IC Design Platform 能不能從「好用的助理」走向「可信任的工程系統」，取決於設計狀態本身能不能被機器清楚理解、修改、驗證與重播。再增加一批 design agent，或替每一套 EDA tool 補一個 MCP server，都繞不過這個前提。
 
-今天有三個訊號從不同方向指向同一件事。UCLA 的 Zijian Ding 在 ICCAD 2026 invited paper 中顯示，讓同一類 coding agent 從 RTL 提升到 HLS 層操作，再回到 RTL refinement，11 個 benchmark 上相對 Direct RTL Design 取得 2.62× geometric-mean speedup；而單純 Agent-based HLS 也有 2.31×。這並未證明 HLS 永遠優於 RTL：論文同時顯示小型 kernel 上 direct RTL 仍可能較好，而且每組實驗只跑一次。結果能支持的是「agent 操作哪一層表示」會直接改變它能利用的設計知識與探索效率。[來源：Zijian Ding, UCLA, ICCAD 2026](https://arxiv.org/abs/2609.21157)
+AI 參與 IC 設計的可靠性，取決於每個修改能否對應到清楚的設計狀態與驗收證據。一次 WNS 改善，只有在 RTL、SDC、library、corner 與分析條件可比較時才有意義；一次工具呼叫成功，也不代表產出的成果可以被下一階段信任。
 
-同一時間，Synopsys 的 Thomas Andersen 把 autonomous engineering 描述成從 command-driven tool use 轉向 goal-directed workflow execution：人定義 intent、constraints、thresholds 與 priorities，系統決定如何推進 workflow；而且真實工程不可能只靠單一 agent，需要 generation、verification、diagnosis、analysis、planning、correction 等能力協同。[來源：Synopsys](https://www.synopsys.com/blogs/chip-design/agentic-ai-autonomous-engineering.html)
+完整晶片流程會把同一份意圖逐步轉成架構、RTL、netlist 與實體資料庫，每個表示保留不同資訊，也開放不同的修改空間。人類工程師原本負責跨層判讀：哪些 constraints 不可改、哪份 checkpoint 對應目前版本、哪些 report 已失效。當 agent 開始跨階段探索，這些判讀需要轉成平台可驗證的資料關係。
 
-OpenROAD Project 的 Øyvind Harboe 今天則在 bazel-orfs 的設計討論中提出一個很工程化的觀點：如果某個 stage 只能產出 degraded result，不應只在 orchestrator 或 log 裡記住「它有問題」，而應把 degraded marker 寫進 declared artifact；如此 marker 會進入 content hash，進而影響 downstream action key，使 clean artifact 與 degraded artifact 永遠不會被 cache 系統誤認為同一個狀態。這目前是 repo 中的設計提案，不是我所宣稱已成為正式 ORFS 行為，但它點出了 AI-native EDA platform 很關鍵的一個 state-model 問題。[來源：bazel-orfs commit, Øyvind Harboe](https://github.com/The-OpenROAD-Project/bazel-orfs/commit/1631e5e8faa15cee3c1e0991419a4c4a7b235fef)
-
-三件事合起來，我得到的結論是：未來的 IC design platform 必須從「一堆 tool + scripts + agents」升級成「一個具有多層 Typed Design State 的 engineering system」。
+[UCLA 的 AHRR 研究](https://arxiv.org/abs/2609.21157)提供抽象層如何影響探索的證據；[bazel-orfs 的成果狀態討論](https://github.com/The-OpenROAD-Project/bazel-orfs/commit/1631e5e8faa15cee3c1e0991419a4c4a7b235fef)則提供版本與品質如何進入相依關係的線索。兩者不能合併成某個既有公司的完整平台，但能支持一個值得驗證的設計方向：讓 agent 在適當表示上探索，並由獨立證據決定成果能否晉級。
 
 ![AI-native IC design platform multi-level state stack](/assets/images/eda/ai-native-ic-platform-state-stack.svg)
 
-*圖 1：我對 AI-native IC Design Platform 的狀態分層。整理自 UCLA AHRR 的 abstraction-level 結果、Synopsys autonomous engineering 的 goal-directed workflow 概念，以及現有 EDA flow 的 artifact/evidence 結構。*
+*圖 1：作者提出的狀態分層設計；機制參考：[UCLA AHRR](https://arxiv.org/abs/2609.21157)、[Synopsys autonomous engineering](https://www.synopsys.com/blogs/chip-design/agentic-ai-autonomous-engineering.html)。*
 
 ## 從 command sequence 到 state transition：IC design 的操作模型
 
@@ -218,15 +215,9 @@ D. higher-level intent / IR + lowering + verifier
 
 ## References
 
-1. Zijian Ding, Yang Zou, Yizhou Sun, Jason Cong, *Can Agents Design Better Chips with a Higher Level Abstraction?*, ICCAD 2026.  
-   https://arxiv.org/abs/2609.21157
-2. Thomas Andersen, Synopsys, *Agentic AI and Autonomous Engineering*.  
-   https://www.synopsys.com/blogs/chip-design/agentic-ai-autonomous-engineering.html
-3. Emma-Jane Crozier, Siemens EDA, *Self-verifying, long-running EDA AI agents that engineers can trust*.  
-   https://blogs.sw.siemens.com/cicv/2026/07/29/self-verifying-eda-ai-agents/
-4. Øyvind Harboe, OpenROAD Project / bazel-orfs, design discussion on degraded artifact markers and action-key semantics, 2026-09-22.  
-   https://github.com/The-OpenROAD-Project/bazel-orfs/commit/1631e5e8faa15cee3c1e0991419a4c4a7b235fef
-5. The OpenROAD Project, *bazel-orfs*.  
-   https://github.com/The-OpenROAD-Project/bazel-orfs
-6. Hang Xiao et al., *Trust, but Validate the Instrument: Auditing AI-Generated RTL Verification Plans on Authored Security-Regression Proxies*.  
-   https://arxiv.org/abs/2609.19844
+1. [Zijian Ding, Yang Zou, Yizhou Sun, Jason Cong, *Can Agents Design Better Chips with a Higher Level Abstraction?*, ICCAD 2026.](https://arxiv.org/abs/2609.21157)
+2. [Thomas Andersen, Synopsys, *Agentic AI and Autonomous Engineering*.](https://www.synopsys.com/blogs/chip-design/agentic-ai-autonomous-engineering.html)
+3. [Emma-Jane Crozier, Siemens EDA, *Self-verifying, long-running EDA AI agents that engineers can trust*.](https://blogs.sw.siemens.com/cicv/2026/07/29/self-verifying-eda-ai-agents/)
+4. [Øyvind Harboe, OpenROAD Project / bazel-orfs, design discussion on degraded artifact markers and action-key semantics, 2026-09-22.](https://github.com/The-OpenROAD-Project/bazel-orfs/commit/1631e5e8faa15cee3c1e0991419a4c4a7b235fef)
+5. [The OpenROAD Project, *bazel-orfs*.](https://github.com/The-OpenROAD-Project/bazel-orfs)
+6. [Hang Xiao et al., *Trust, but Validate the Instrument: Auditing AI-Generated RTL Verification Plans on Authored Security-Regression Proxies*.](https://arxiv.org/abs/2609.19844)
