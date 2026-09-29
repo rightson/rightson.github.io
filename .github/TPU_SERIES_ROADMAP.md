@@ -22,7 +22,7 @@ The series should not become a product-spec chronology. Every article must answe
 - Read `AGENTS.md`, this roadmap, and recent `_posts/` before writing.
 - Front matter: `domain: architecture` (public section 「計算機架構」) and a single `categories: architecture`. Articles whose core question is TPU economics or supply chain belong to `ai-industry` or `investing` instead.
 - Publish exactly one primary topic per article.
-- Minimum article depth: **at least a 5-minute read**. Target roughly 2,500–4,500 Traditional Chinese characters excluding front matter and references; longer is acceptable when the topic requires it.
+- Minimum article depth: **at least a 10-minute read**. Target roughly 3,500–5,500 Traditional Chinese characters excluding front matter and references; longer is acceptable when the topic requires it. Verify the site's reading-time estimate and add substantive mechanisms, examples, or evidence if needed; do not override the estimate.
 - Every article must contain at least one concrete technical example, calculation, tensor shape, bandwidth/latency example, topology mapping, or compiler mapping.
 - Prefer **2–4 technically meaningful visual elements per article** when the topic supports them: architecture/block diagrams, dataflow diagrams, memory hierarchy, chip/package/board/rack relationships, topology, roofline/bandwidth charts, or tables. Avoid decorative stock imagery.
 - Every visual must include an explicit source citation in its caption. If using an original Google/paper figure, link the primary source. If redrawing a diagram, label it as `依據 ... 重繪/整理` and cite all primary sources used to construct it. Do not present an unsourced schematic as fact.
@@ -31,7 +31,7 @@ The series should not become a product-spec chronology. Every article must answe
 - Do not repeat an existing article unless new evidence materially changes the conclusion.
 - Mark an item `[x]` only after the public post is committed and verified.
 - Add newly disclosed TPU generations or major architectural topics to this roadmap rather than replacing prior topics.
-- Keep generation-history articles interleaved with cross-layer deep dives so the series does not spend many consecutive days on one layer.
+- Keep generation-history articles interleaved with cross-layer deep dives so the series does not spend many consecutive articles on one layer.
 
 ## Current generation boundary — 2026-09-22
 
@@ -250,7 +250,7 @@ These articles compare mechanisms, not brand rankings.
 - [ ] 136. Reliability at million-accelerator scale
 - [ ] 137. Co-designing model architecture with physical topology
 
-## Daily selection policy
+## Article selection policy
 
 Choose the next article using this order:
 
