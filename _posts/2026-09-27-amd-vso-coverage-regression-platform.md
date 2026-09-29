@@ -1,17 +1,18 @@
 ---
 layout: post
-title: "AMD 把 Coverage Regression 變成可重排的計算組合：四個設計實驗給驗證平台的答案"
+title: "Coverage Regression 的成本模型：AMD 測試組合與驗證證據"
 date: 2026-09-27 06:03:47 +0800
 domain: eda
 categories: eda
-description: "AMD 以四個設計的 constrained-random regression 實驗，證明同一 coverage 目標可以用更小的測試集合達成。這個案例揭示設計平台要管理的是測試、coverage 證據、版本與運算成本之間的關係。"
+description: "AMD 的四項 VSO.ai 實驗提供縮小測試集合的線索；平台須固定 coverage 目標、保留版本與 seed，並以獨立對照檢查刪除風險。"
 ---
 
-大型晶片專案的 regression 很容易長成一份只會增加、不敢刪除的測試清單。每次 RTL 或 testbench 改動後，平台照表排入數千個 simulation jobs；結果回來，再把 coverage databases 合併成一個百分比。這套做法穩健，但也把驗證吞吐量綁在測試數、平均執行時間、模擬器 license 與叢集並行度上。
 
-AMD 在 2023 年 SNUG Silicon Valley 公開的 VSO.ai 實驗，提供了一個更有平台價值的觀察：regression 可以被視為「在固定成本下取得足夠驗證證據」的組合問題。AMD 以四個不同設計做比較，在達到相同 coverage 的條件下，報告測試數減少 **1.5 到 16 倍**；其中既有熟悉設計，也有從其他 business unit 接手、團隊不熟悉的 inherited design。[SNUG 2023 proceedings](https://www.synopsys.com/community/snug/snug-silicon-valley/location-proceedings-2023.html)列出 Michael Chan 與 Eric Chew 的 AMD 簡報；[Synopsys 的案例整理](https://www.synopsys.com/zh-tw/taiwan/blog/amd-tests-snps-verification-tool.html)則保存四項實驗與結果摘要。
+Coverage regression 可以視為在有限成本內取得驗證證據的組合問題。AMD 的四項 VSO.ai 實驗顯示，在所測設計與 coverage 目標下，較小的測試集合可以達到相同 coverage；這提供了重新安排計算的方向，也要求平台回答被刪掉的工作是否藏有其他價值。[AMD，SNUG 2023](https://www.synopsys.com/community/snug/snug-silicon-valley/location-proceedings-2023.html)、[案例整理](https://www.synopsys.com/zh-tw/taiwan/blog/amd-tests-snps-verification-tool.html)
 
-這組結果最適合從設計平台角度閱讀。VSO.ai 是商用工具，公開資料沒有揭露 AMD 內部 regression farm、模型特徵或完整演算法；但已足以確認輸入是既有 VCS regression 與 coverage，操作包含測試層級的最佳化、simulator 內的 stimulus 調整及 coverage root-cause analysis，輸出則是較小或重新排序的測試集合、coverage 證據與診斷。平台要做的，是把這些輸入與結果放進可追溯、可恢復、能與傳統 full regression 對照的執行契約。
+晶片驗證需要反覆執行 simulation，成本受測試數、執行時間、license 與叢集容量限制。全跑既有清單容易管理，卻可能重複命中相同行為；只挑容易增加 coverage 的 tests，又可能忽略長時間、低頻率或歷史失效案例。Coverage 是證據的一種表示，不能自行代表全部 bug detection 能力。
+
+這個問題值得從平台角度研究，因為選擇器改變了哪些證據會被產生。以下先拆解測試集合與刺激探索，再把結果接到版本、checkpoint、holdout 及失敗恢復。要保留的能力是用可比較的證據配置資源，而非只把 regression 的百分比或 job 數當成進度。
 
 ## 先把問題放回 R2G 的正確位置
 
@@ -142,7 +143,7 @@ AMD 報告的 1.5–16 倍是「達到相同 coverage 所需測試數」的範�
 
 可以用一個明示假設的算例理解平台量級。假設基準 regression 有 12,000 個 tests，每個平均 20 分鐘、使用 4 CPU cores 與一個 simulator license，總計 16,000 CPU-hours、4,000 license-hours。若某個候選流程達到 4 倍 test-count reduction，只跑 3,000 個 tests，simulation 變成 4,000 CPU-hours、1,000 license-hours；再加上 200 CPU-hours 的分析，總 CPU 成本仍下降 73.75%。
 
-這不是 AMD 的量測。真實收益會被長尾 tests、編譯攤提、license token 類型、queue wait、coverage merge 與多輪 adaptive synchronization 改寫。若被保留的 tests 恰好更長，test count 減少 4 倍不代表 wall-clock 或 license-hours 同幅下降。因此平台的 objective 要直接使用實際成本，不要只優化 run count。
+這不是 AMD 的量測。真實收益會被長尾 tests、編譯攤提、license token 類型、queue wait、coverage merge 與多輪 adaptive synchronization 改寫。若被保留的 tests 恰好更長，test count 減少 4 倍不代表 wall-clock 或 license-hours 同幅下降。因此平台的 objective 要直接使用實際成本，不要只最佳化 run count。
 
 ## Agent 應該接在哪裡
 
