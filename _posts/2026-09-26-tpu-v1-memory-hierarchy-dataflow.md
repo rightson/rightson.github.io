@@ -1,21 +1,18 @@
 ---
 layout: post
-title: "TPU v1 用 24 MiB SRAM 撐起 167 GiB/s 資料路徑：Memory Hierarchy 如何餵飽 65K MAC"
+title: "供應 65K MAC 的記憶體階層：TPU v1 的資料壽命與重用"
 date: 2026-09-26 05:15:48 +0800
 domain: architecture
 categories: architecture
-description: "TPU v1 的 DDR3 weight path 只有 30 GiB/s，但 256×256 MXU 的 activation path 需要約 167 GiB/s。Google 因此把 weights、activations 與 partial sums 依資料壽命、重用率與精度拆成 8 GiB DDR3、24 MiB Unified Buffer、Weight FIFO 與 4 MiB 32-bit accumulators。"
+description: "TPU v1 分開管理 weights、activations 與 partial sums；頻寬不對稱使軟體排程、重用及累加狀態成為效率條件。"
 ---
 
-[前一篇](/architecture/2026/09/25/tpu-v1-int8-silicon-economics.html)把 INT8 的價值拆到 silicon economics：算術變便宜之後，晶片可以塞進 65,536 個 MAC。接下來真正困難的是供料。
 
-TPU v1 在 700 MHz 運作，Matrix Multiply Unit 每個 cycle 需要送入 256 個 activation element。若是 8-bit activation，單純把這條資料路徑換算成頻寬：
+TPU v1 的記憶體階層依資料壽命、重用方式與數值寬度分工，讓較慢的外部供應支撐較快的片上運算。這個設計不會消除 memory wall；它把成功條件轉成 tile 是否重用、weights 能否及時到位，以及 partial sums 是否留在適當層級。
 
-`256 B/cycle × 700M cycle/s = 179.2 GB/s ≈ 166.9 GiB/s`
+[INT8 降低算術成本](/architecture/2026/09/25/tpu-v1-int8-silicon-economics.html)後，65,536 個 MAC 需要規律供料。公開架構中的 activation path 約為 167 GiB/s，外部 weight DDR3 則約為 30 GiB/s；這兩條路徑承載不同資料，不能直接拿頻寬差距當成利用率。必須先看哪些資料從外部取得、能在片上重用多久，以及每個運算階段的消費速率。[Google TPU v1 deep dive](https://cloud.google.com/blog/products/ai-machine-learning/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu)
 
-Google 公開的 block diagram 正好標出約 **167 GiB/s** 的 Unified Buffer → systolic data path。問題是同一顆 TPU 的外部 weight DDR3 只有約 **30 GiB/s**，host 端又受 PCIe Gen3 x16 約 12.5 GB/s effective bandwidth 限制。[Jouppi et al., ISCA 2017](https://research.google/pubs/in-datacenter-performance-analysis-of-a-tensor-processing-unit/)｜[Google Cloud TPU v1 deep dive](https://cloud.google.com/blog/products/ai-machine-learning/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu)
-
-這個差距直接決定 TPU v1 的 memory hierarchy。65K MAC 不可能每個 cycle 都到外部 DRAM 找 operand；資料必須先被搬進更靠近 compute 的地方，而且不同資料的壽命、重用方式與數值寬度不同，不能只靠一塊「大 cache」解決。
+因此，理解加速器的儲存容量，還要理解排程與 live state。以下把 weights、activations 與 partial sums 分開追蹤，推導 Unified Buffer、Weight FIFO 及 Accumulator 的角色，再分析什麼 shape 或 batch 會使陣列等待。這能用來判斷新增 SRAM、頻寬或 MAC，哪一項才會改善目標工作負載。
 
 <figure>
   <img src="https://storage.googleapis.com/gweb-cloudblog-publish/images/tpu-15dly1.max-500x500.PNG" alt="第一代 TPU block diagram，顯示 PCIe、DDR3 Weight Memory、Weight FIFO、Unified Buffer、Matrix Multiply Unit 與 Accumulator" style="max-width:100%;height:auto;">
