@@ -119,7 +119,7 @@ Reach 也會改變方法。短距離 IM-DD／PAM4 與 campus coherent-lite 解�
 
 第三，400G/lane 是否推動 CPO，取決於 electrical path 省下的裕量與功耗，能否支付封裝、維修及光源分配的成本。現有展示支持技術路徑值得深入追蹤，尚不能直接推導各部署模型的成本排序。
 
-我接下來會追三組數據：完整 Tx＋Rx 路徑的 pJ／useful bit 與測試條件；跨溫度、channel loss、製程與老化的 error margin；以及實際 assembly 的 bandwidth density、良率與可維修失效單位。這些資料才會回答，400G/lane 在固定系統預算下增加多少有效容量，以及下一個瓶頸移到了哪裡。
+我接下來會追三組資料：完整 Tx＋Rx 路徑的 pJ／useful bit 與測試條件；跨溫度、channel loss、製程與老化的 error margin；以及實際 assembly 的 bandwidth density、良率與可維修失效單位。這些資料才會回答，400G/lane 在固定系統預算下增加多少有效容量，以及下一個瓶頸移到了哪裡。
 
 ## References
 
