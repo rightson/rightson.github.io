@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+<title id="title">Abstraction changes exploration, not acceptance</title><desc id="desc">Paper flow concepts with an author-proposed artifact acceptance boundary</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#475569"/></marker></defs>
+<style>text{font-family:system-ui,-apple-system,"Noto Sans CJK TC",sans-serif;font-size:21px;fill:#172033}.heading{font-size:29px;font-weight:700}.sub{font-size:19px;fill:#475569}.label{font-size:22px;font-weight:650}.note{font-size:17px}.link{fill:none;stroke:#475569;stroke-width:3;marker-end:url(#arrow)}.box{fill:#eef6ff;stroke:#2563eb;stroke-width:2}.warm{fill:#fff7ed;stroke:#c2410c;stroke-width:2}</style>
+<rect width="1000" height="560" rx="16" fill="#ffffff"/>
+<text x="36" y="48" class="heading">Abstraction changes exploration, not acceptance</text><text x="36" y="80" class="sub">Paper flow concepts with an author-proposed artifact acceptance boundary</text>
+<rect x="40" y="130" width="250" height="100" rx="12" class="box"/><text x="165" y="167" text-anchor="middle" class="label">Specification</text><text x="165" y="198" text-anchor="middle" class="note">function, interface, budget</text>
+<rect x="375" y="130" width="250" height="100" rx="12" class="box"/><text x="500" y="167" text-anchor="middle" class="label">HLS Design</text><text x="500" y="198" text-anchor="middle" class="note">computation + directives</text>
+<rect x="710" y="130" width="250" height="100" rx="12" class="box"/><text x="835" y="167" text-anchor="middle" class="label">Generated RTL</text><text x="835" y="198" text-anchor="middle" class="note">compiler implementation</text>
+<path d="M290 180 L375 180" class="link"/>
+<path d="M625 180 L710 180" class="link"/>
+<text x="330" y="115" text-anchor="middle" class="note">agent</text><text x="670" y="115" text-anchor="middle" class="note">HLS compiler</text>
+<rect x="710" y="300" width="250" height="100" rx="12" class="box"/><text x="835" y="337" text-anchor="middle" class="label">RTL Refinement</text><text x="835" y="368" text-anchor="middle" class="note">candidate edits or rewrites</text>
+<path d="M835 230 V300" class="link"/>
+<rect x="375" y="300" width="250" height="100" rx="12" class="box"/><text x="500" y="337" text-anchor="middle" class="label">Independent Evidence</text><text x="500" y="368" text-anchor="middle" class="note">function, cycles, timing</text>
+<path d="M710 350 L625 350" class="link"/>
+<rect x="40" y="300" width="250" height="100" rx="12" class="box"/><text x="165" y="337" text-anchor="middle" class="label">Accepted Artifact</text><text x="165" y="368" text-anchor="middle" class="note">versioned, traceable result</text>
+<path d="M375 350 L290 350" class="link"/>
+<path d="M40 180 H20 V440 H835 V405" class="link"/><text x="440" y="468" text-anchor="middle" class="note">Direct RTL baseline: same specification and acceptance checks</text>
+<text x="40" y="518" class="note">Hold the comparison boundary fixed across abstraction levels.</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#475569" i]{fill:#c0c6cd}[fill="#ffffff" i]{fill:#1b1f20}text{fill:#d0d5e1}.sub{fill:#c0c6cd}.link{stroke:#c0c6cd}.box{fill:#132131;stroke:#82a4ed}.warm{fill:#322413;stroke:#e98b65}}</style>
+</svg>
