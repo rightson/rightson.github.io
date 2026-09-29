@@ -92,7 +92,7 @@ acceptance: {routed_wirelength_um: "...", wns_ns: "...",
 
 ## 故障後留下什麼，以及怎麼退回
 
-考慮另一個**假設性**故障：global placement 的 job 用 netlist v17 與 SDC v8 產出座標，後段隊列延遲期間有人將 clock constraint 更新為 SDC v9；後段 worker 若只拿「最新 SDC」接上舊 DEF，仍可能跑出格式完整的 report，卻已不是原來同一組輸入的比較。壞在 handoff 身分，殘留物是 v17/v8 的 placement、v17/v9 的 route report，以及可能已排隊的其他衍生 jobs。
+考慮另一個**假設性**故障：global placement 的 job 用 netlist v17 與 SDC v8 產出座標，後段佇列延遲期間有人將 clock constraint 更新為 SDC v9；後段 worker 若只拿「最新 SDC」接上舊 DEF，仍可能跑出格式完整的 report，卻已不是原來同一組輸入的比較。壞在 handoff 身分，殘留物是 v17/v8 的 placement、v17/v9 的 route report，以及可能已排隊的其他衍生 jobs。
 
 檢測方法是要求每一個 checkpoint、report 與結果列出 netlist、SDC、library、floorplan、recipe 版本與 hash。若 downstream inputs 與候選的 frozen manifest 不一致，就標記 `invalid_input_lineage`，不把該 run 算進 PPA 比較；保留舊結果供排查，將 v9 的相依 stage 重新排程，只有通過相同 manifest 的新結果才可晉級。這是作者提出的執行治理方案，C3PO 論文沒有描述其排程器或 rollback API。
 
