@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="765" viewBox="0 0 1000 765" role="img" aria-labelledby="title desc">
+<title id="title">R2G: state transitions require evidence</title><desc id="desc">Author-proposed architecture; job completion and acceptance are separate</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#475569"/></marker></defs>
+<style>text{font-family:system-ui,-apple-system,"Noto Sans CJK TC",sans-serif;font-size:21px;fill:#172033}.heading{font-size:29px;font-weight:700}.sub{font-size:19px;fill:#475569}.label{font-size:22px;font-weight:650}.note{font-size:19px}.link{fill:none;stroke:#475569;stroke-width:3;marker-end:url(#arrow)}.box{fill:#eef6ff;stroke:#2563eb;stroke-width:2}.warm{fill:#fff7ed;stroke:#c2410c;stroke-width:2}</style>
+<rect width="1000" height="765" rx="16" fill="#ffffff"/>
+<text x="36" y="48" class="heading">R2G: state transitions require evidence</text><text x="36" y="80" class="sub">Author-proposed architecture; job completion and acceptance are separate</text>
+<rect x="350" y="115" width="300" height="95" rx="12" class="box"/><text x="500" y="152" text-anchor="middle" class="label">Intent / Contract</text><text x="500" y="183" text-anchor="middle" class="note">goals, invariants, authority</text>
+<rect x="350" y="255" width="300" height="95" rx="12" class="box"/><text x="500" y="292" text-anchor="middle" class="label">Candidate Action</text><text x="500" y="323" text-anchor="middle" class="note">inputs, versions, ActionKey</text>
+<rect x="350" y="395" width="300" height="95" rx="12" class="box"/><text x="500" y="432" text-anchor="middle" class="label">EDA Execution</text><text x="500" y="463" text-anchor="middle" class="note">isolated execution</text>
+<rect x="350" y="535" width="300" height="95" rx="12" class="box"/><text x="500" y="572" text-anchor="middle" class="label">Evidence Gate</text><text x="500" y="603" text-anchor="middle" class="note">independent validation</text>
+<rect x="35" y="255" width="250" height="95" rx="12" class="box"/><text x="160" y="292" text-anchor="middle" class="label">Observed State</text><text x="160" y="323" text-anchor="middle" class="note">trusted artifacts</text>
+<rect x="715" y="395" width="250" height="95" rx="12" class="warm"/><text x="840" y="432" text-anchor="middle" class="label">Candidate Artifacts</text><text x="840" y="463" text-anchor="middle" class="note">untrusted branches</text>
+<path d="M500 210 L500 255" class="link"/>
+<path d="M500 350 L500 395" class="link"/>
+<path d="M500 490 L500 535" class="link"/>
+<path d="M285 302 L350 302" class="link"/>
+<path d="M650 442 L715 442" class="link"/>
+<path d="M350 582 H160 V350" class="link"/><text x="175" y="553" class="note">update on pass</text>
+<path d="M500 630 V672 H840 V490" class="link"/><text x="555" y="660" class="note">isolate failed branch</text>
+<text x="36" y="723" class="note">Workflow state, artifact identity, and evidence must refer to the same run.</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#475569" i]{fill:#c0c6cd}[fill="#ffffff" i]{fill:#1b1f20}text{fill:#d0d5e1}.sub{fill:#c0c6cd}.link{stroke:#c0c6cd}.box{fill:#132131;stroke:#82a4ed}.warm{fill:#322413;stroke:#e98b65}}</style>
+</svg>
