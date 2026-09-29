@@ -7,9 +7,13 @@ categories: eda
 description: "NVDLA 的公開整合手冊揭露從配置、RTL 生成、trace 驗證到分區綜合的實際交付物；SRAM、時脈約束與製程資料則明確留給 SoC 整合者。"
 ---
 
-把可配置 IP 接進 SoC，最容易被低估的是交接物的數量。同一個 configuration 會改變 RTL 結構、介面能力、測試情境與軟體可見的能力；進入實體設計後，綜合還必須讀到相容的 SRAM、時序 library、SDC 與 floorplan。某一條路徑能跑通，只證明那條路徑的輸入足夠，並不自動證明另一條路徑也在處理同一份設計。
+可配置加速器 IP 的重用價值，來自把已完成的功能設計帶進不同 SoC；整合者仍要讓硬體配置、軟體能力、記憶體實作與時序假設彼此一致。NVDLA 的公開流程把這個交接問題具體化：同一份 configuration 會生成 RTL 與測試環境，五個綜合分區又各自需要相容的 SDC、library 與實體 view。配置一致性因此是跨階段的驗收條件。
 
-NVIDIA 在 [2017 年 9 月首次公開 NVDLA 硬體原始碼與參考綜合腳本](https://nvdla.org/updates.html)，又在 [2018 年 4 月釋出可配置的 v2](https://nvdla.org/updates.html)。它是一個很適合觀察設計平台的公開樣本：官方[整合手冊](https://nvdla.org/hw/v2/integration_guide.html)明列 SoC 介面、配置生成、記憶體替換、分區綜合的輸入與輸出；[驗證手冊](https://nvdla.org/hw/v2/verif_guide.html)則交代 trace 如何在不同驗證環境重用。這裡討論的是公開 NVDLA IP 的**參考設計與整合方法**，不是 NVIDIA 現行產品的內部 CAD 拓撲，也不是已完成 APR 或量產 signoff 的證明。官方仍註明 v2 當時只有 `nv_small` 經過測試，且需要更多 coverage 才達到 tapeout 品質。[配置與覆蓋範圍說明](https://nvdla.org/hw/v2/scalability.html)
+從系統需求選定算力與 buffer 尺寸，到工具產生可交付 netlist，中間包含多種不同承諾。Generator 接受參數，代表它能產生某個設計；simulation 檢查指定行為；synthesis 則把邏輯映射到目標製程資源。原本依靠整合工程師辨認版本與交接條件的流程，在配置、SRAM 家族或工具分支增加後，容易出現各階段都能執行、卻沒有在處理同一份設計的問題。
+
+研究這條公開路徑的價值，是找出哪些工程知識可以轉成可檢查的交付契約：配置如何影響驗證與軟體，behavioral RAM 如何接到實體 cell，分區綜合成果如何被後端接收，以及錯配後哪些證據必須失效。這些相依關係決定成果能否安全重用，也決定平台與 agent 可以自動化到哪裡。
+
+NVIDIA 在 [2017 年 9 月公開 NVDLA 硬體原始碼與參考綜合腳本](https://nvdla.org/updates.html)，並於 [2018 年 4 月釋出可配置 v2](https://nvdla.org/updates.html)。以下以其[整合手冊](https://nvdla.org/hw/v2/integration_guide.html)、[配置說明](https://nvdla.org/hw/v2/scalability.html)及[驗證手冊](https://nvdla.org/hw/v2/verif_guide.html)分析公開 IP 的整合方法；成果管理與驗收方案會清楚標為作者設計。
 
 ## 一份配置會跨過哪些設計邊界
 
@@ -32,7 +36,7 @@ ConfigROM 提供了可實作的交叉檢查點。官方文件把 sub-unit ID、�
 
 參考 RTL 在功能模擬中可讀寫記憶體，不代表後端已拿到實體可實作的 SRAM。NVDLA 的[整合手冊](https://nvdla.org/hw/v2/integration_guide.html)說明，發布包內的 RAM 是 behavioral model；整合者要以相同 port 介面的 wrapper 映射到自己的 memory compiler 產物，並供應對應的 timing model。手冊特別警告不要把 `vmod/rams/model` 加進綜合的 `RTL_SEARCH_PATH`，因為它是模擬模型，不是可供該流程綜合的 RAM RTL。
 
-這是 R2G 中很實際的責任切割。IP 團隊可以交付邏輯 RAM 介面及測試模型，製程整合團隊才有能力選擇實際 SRAM、電源控制腳位、保留模式、大小與物理位置。官方文件也指出幾類 clock-domain synchronizer 雖有可綜合 RTL 實作，實際導入時應改用降低 MTBF 的對應 library cell。兩種替換都要求**功能等價的介面**和**製程相容的實體 view**；只有 RTL module name 對上，不足以驗收 clock crossing 或記憶體讀寫語意。[Library Cells 段落](https://nvdla.org/hw/v2/integration_guide.html)
+這是 R2G 中很實際的責任切割。IP 團隊可以交付邏輯 RAM 介面及測試模型，製程整合團隊才有能力選擇實際 SRAM、電源控制腳位、保留模式、大小與物理位置。官方文件也指出幾類 clock-domain synchronizer 雖有可綜合 RTL 實作，實際導入時應換成適合目標製程的專用 synchronizer cell。這裡需校正原文的術語：手冊寫「reduce MTBF」，但 MTBF 是平均失效間隔；可靠性目標應是提高 MTBF、降低失效頻率。[AMD 的 synchronizer MTBF 文件](https://docs.amd.com/r/en-US/ug835-vivado-tcl-commands/report_synchronizer_mtbf)也明確以增加 settling time、提高 MTBF 為目標。兩種替換都要求**功能等價的介面**和**製程相容的實體 view**；只有 RTL module name 對上，不足以驗收 clock crossing 或記憶體讀寫語意。[Library Cells 段落](https://nvdla.org/hw/v2/integration_guide.html)
 
 記憶體的讀寫衝突尤其不能粗略處理。NVDLA 手冊區分 true dual-port `RAMDP` 與以倍頻方式實作的 pseudo-dual-port `RAMPDP`，並明列同位址讀寫時的行為：前者讀出資料可能毀損，後者在指定的 1R+1W 時序中讀到舊內容。[RAM 時序與介面](https://nvdla.org/hw/v2/integration_guide.html)若替換的 SRAM 只有 pin 名稱相同、碰撞語意卻不同，基本 convolution 測試仍可能通過；在罕見的 buffer 衝突或 reset 邊界才出現資料差異。整合平台應把 RAM wrapper 的真實 cell、Liberty view、幾何 view、碰撞模式與對應定向測試綁為一組交付物。
 
@@ -48,7 +52,7 @@ NVDLA 參考流程把 `NV_NVDLA_partition_a/c/o/m/p` 視為獨立的 synthesis t
 
 這同時解釋何以約束必須有來源。官方提供的 SDC 是一組參考 clock target 與 false path，而不是設計整合者可不審查就移植的時序真理。[Synthesis constraints](https://nvdla.org/hw/v2/integration_guide.html)當 SoC 把 CSB clock 接到新的 host domain，或讓 RAM wrapper 加入額外一拍，原本的時脈假設和跨域驗證都需要重新檢查。合理的交接資料應回答每條例外由哪個設計意圖支持、適用於哪個 mode、哪個 owner 核准；有 `check_timing` 報告只代表工具已按目前設定分析，並不替這些設定背書。
 
-手冊還公開了一個小但重要的分散式執行接點：`COMMAND_PREFIX` 可以把每個 `TOP_NAMES` 的 `dc_shell` 送到 LSF 或其他 grid，`<MODULE>` 與 `<LOG>` 代入對應名稱；沒有 prefix 時分區工作序列執行，使用非阻塞 prefix 才能平行送出。[Synthesis Configuration](https://nvdla.org/hw/v2/integration_guide.html)公開資料只證明參考腳本有提交鉤子，沒有揭露 NVIDIA 的內部 queue、license policy 或 artifact store。若要把此接口升級為團隊平台，提交後還需要分區與配置 identity、attempt ID、exit status、license 消耗及產物驗證；這是作者提出的控制層，不應倒寫成 NVIDIA 已部署功能。
+手冊還公開了一個小但重要的分散式執行接點：`COMMAND_PREFIX` 可以把每個 `TOP_NAMES` 的 `dc_shell` 送到 LSF 或其他 grid，`<MODULE>` 與 `<LOG>` 代入對應名稱；沒有 prefix 時分區工作序列執行，使用非阻塞 prefix 才能平行送出。[Synthesis Configuration](https://nvdla.org/hw/v2/integration_guide.html)公開資料只證明參考腳本有提交鉤子，沒有揭露 NVIDIA 的內部 queue、license policy 或 artifact store。若要把此介面升級為團隊平台，提交後還需要分區與配置 identity、attempt ID、exit status、license 消耗及產物驗證；這是作者提出的控制層，不應倒寫成 NVIDIA 已部署功能。
 
 <figure>
   <a href="/images/eda/2026-09-30/nvdla-partition-handoff.svg"><img src="/images/eda/2026-09-30/nvdla-partition-handoff.svg" alt="五個 NVDLA 綜合分區各讀同組 RTL、SDC、library 與可選 DEF，產生 netlist、SDC、DEF、DDC、SVF 和 reports；top-level 整合需另外驗證跨分區假設。" width="840" height="740" loading="lazy"></a>
@@ -75,7 +79,7 @@ acceptance: {cdc: pending, lec: pending, top_sta: pending, apr: pending}
 
 先由 `tmake` 建出 `vmod` 與 verification environment，再按[官方驗證指南](https://nvdla.org/hw/v2/verif_guide.html)執行 `run_test.py -P nv_small dc_24x33x55_5x5x55x25_int8_0 -outdir ... -v nvdla_utb`。測試的 trace 包含 `.cfg` 中的 register 操作和 `.dat` 中的記憶體內容，可用 golden CRC 或 output surface 比對；完成一個 hardware layer 的中斷也能成為同步事件。它的特別之處是同一 trace 格式可重用於 unit RTL、system verification、C model、FPGA validation 和 bring-up，讓各環境對「送了什麼刺激、期待什麼結果」有共同座標。[Trace Test format](https://nvdla.org/hw/v2/verif_guide.html)
 
-一個 trace 不只是預填的 output。官方格式裡，`mem_load` 裝載資料、`reg_write` 建立寄存器狀態、`sync_wait`／`sync_notify` 約束多個 player 的先後，`intr_notify` 觀察完成中斷，`check_crc` 或 `check_file` 才做結果核對；`poll` 可等待某個硬體狀態達成。[Trace configuration commands](https://nvdla.org/hw/v2/verif_guide.html)對多資源 pipeline，順序錯誤可能讓資料尚未準備好就啟動下游單元；如果平台只保存最後的 CRC pass，之後便無法分辨是 register 序列、資料載入還是中斷等待造成差異。因此一筆驗證結果至少要指回 config、trace、data、testbench、DUT RTL 和執行 log 的版本，且保留 timeout 與 checker failure 的分類。
+一個 trace 不只是預填的 output。官方格式裡，`mem_load` 裝載資料、`reg_write` 建立暫存器狀態、`sync_wait`／`sync_notify` 約束多個 player 的先後，`intr_notify` 觀察完成中斷，`check_crc` 或 `check_file` 才做結果核對；`poll` 可等待某個硬體狀態達成。[Trace configuration commands](https://nvdla.org/hw/v2/verif_guide.html)對多資源 pipeline，順序錯誤可能讓資料尚未準備好就啟動下游單元；如果平台只保存最後的 CRC pass，之後便無法分辨是 register 序列、資料載入還是中斷等待造成差異。因此一筆驗證結果至少要指回 config、trace、data、testbench、DUT RTL 和執行 log 的版本，且保留 timeout 與 checker failure 的分類。
 
 這條路徑還有語意上的死角。CRC 通過是針對所測資料及指定 memory surface 的結果，不能證明未執行功能或跨 SoC 的 coherency、reset recovery 都正確。官方 `run_plan.py` 能用 test plan、tag 與 run directory 選取 regression，範例包含 `-no_lsf` 在本機執行，並輸出各 test 的 PASS／RUNNING 狀態；這給了分散式回歸可用的批次入口，卻未公開跨 farm 的可靠採納協定。[Verification Suite 的 Quick Start](https://nvdla.org/hw/v2/verif_guide.html)工程平台若平行跑多個 seed，應先定義「worker 回報完成」和「報表可被正式採納」的區別：缺少 trace output、版本漂移或 checker 沒跑到，都不能由零退出碼補救。
 
@@ -85,7 +89,7 @@ acceptance: {cdc: pending, lec: pending, top_sta: pending, apr: pending}
 
 ## 一次 RAM view 錯配會留下什麼
 
-假設整合者更新 SRAM wrapper，使 `nv_small` 某個 RAM 的碰撞行為或深度映射改變。RTL trace 仍使用 behavioral RAM，於是 simulation pass；綜合則讀到新版 wrapper，但 `LINK_LIB` 指向舊版 timing model。更糟時，物理流程沿用舊 `.def` 或 macro 幾何 view。這是由公開接口推演的故障情境，並非 NVDLA 的已知事故。
+假設整合者更新 SRAM wrapper，使 `nv_small` 某個 RAM 的碰撞行為或深度映射改變。RTL trace 仍使用 behavioral RAM，於是 simulation pass；綜合則讀到新版 wrapper，但 `LINK_LIB` 指向舊版 timing model。更糟時，物理流程沿用舊 `.def` 或 macro 幾何 view。這是由公開介面推演的故障情境，並非 NVDLA 的已知事故。
 
 故障點在跨工具 view 的配對。殘留物可能包括有效的 trace log、已產生但未經新 SRAM view 驗收的 `.gv`／`.ddc`、舊的 `.sdc`／`.def`、以不一致 library 算出的 timing report，以及等待 top-level 接收的分區包。偵測不能只看工具 exit code；應比較 release manifest 中的 RAM interface、model／Liberty／geometry 識別與實際 resolved files，並跑同位址讀寫與 reset 等定向測試。發現錯配就把相關 partition artifacts 隔離，保留它們以供診斷，禁止進入新的 top-level release。
 
@@ -103,7 +107,7 @@ acceptance: {cdc: pending, lec: pending, top_sta: pending, apr: pending}
 | 每次全部重建 RTL、trace 與五分區綜合 | 較高；重複跑未變更分區 | 常受最慢工具與 license queue 影響 | 流程較容易理解，但仍需核對跨 view 相容性 | 腳本簡單；大型 SoC 會浪費資源 |
 | 以配置與 view 依賴做增量重跑 | 能跳過不受影響工作；需保存 artifact 與索引 | 小變更較快，錯判依賴時可能返工 | 必須證明 cache 命中條件，特別是 SDC、RAM 與 tool mode | 需要版本化圖譜、失效規則、隔離與審核 |
 
-在五個分區、少量變更時，先用完整重建建立 baseline 是合理的。當組態、SRAM 家族或下游 corner 增多，再增加依賴索引；索引須以實際 tool inputs 而非檔名推斷。例如改了某分區的 SDC，不可復用其舊 `check_timing`，但未受影響分區的功能 trace 可能不必重跑。改了 `spec`，則連 ConfigROM、RTL 與驗證計畫的共同身份都要重看。
+在五個分區、少量變更時，先用完整重建建立 baseline 是合理的。當組態、SRAM 家族或下游 corner 增多，再增加依賴索引；索引須以實際 tool inputs 而非檔名推斷。例如改了某分區的 SDC，不可重用其舊 `check_timing`，但未受影響分區的功能 trace 可能不必重跑。改了 `spec`，則連 ConfigROM、RTL 與驗證計畫的共同身分都要重看。
 
 增量策略最難的是處理「工具輸入沒變、解讀方式變了」。若有人更動 waiver 規則或提高驗收門檻，原始 netlist 也許可以保留，但舊的放行決策必須失效；若換的是綜合工具版本或隱含預設選項，依賴圖應保守地重算受影響分區。平台可以允許人工批准例外，但每次例外都要記錄理由與到期條件，避免暫時繞過檢查的做法變成永久設計事實。
 
@@ -111,9 +115,9 @@ AI 或 agent 在這裡能做的事也應受此邊界約束。作者建議讓 age
 
 未來 6–18 個月，最值得借鏡的是三個具體能力。第一，讓配置版本直接索引生成 RTL、ConfigROM 預期與 trace plan。第二，為每個綜合分區保存 resolved inputs、`.gv/.sdc/.def/.ddc/.svf` 與 reports，並明確標示 top-level 尚未驗收的項目。第三，針對 SRAM、CDC、SDC 變更建立保守失效規則，先求「不錯用舊證據」，再追求增量重跑速度。
 
-不碰 PDK 的最小驗證可以用公開 `nv_small` 的 config 與 trace metadata 做一個小型 dependency checker，或在簡化 FIFO IP 上模擬同一交接形狀：準備兩個配置、兩份 SRAM 行為模型、兩份假設 SDC，為每個 artifact 記錄輸入 digest；故意只改 RAM collision rule，再檢查系統是否拒收舊 trace 與舊分區 report。成功標準是受影響結果全部被標為 stale，無關結果仍可復用，且審查者能從 manifest 找到原因。這項實驗只驗證**平台的失效判定**，不證明 NVDLA 的 tapeout readiness。
+不碰 PDK 的最小驗證可以用公開 `nv_small` 的 config 與 trace metadata 做一個小型 dependency checker，或在簡化 FIFO IP 上模擬同一交接形狀：準備兩個配置、兩份 SRAM 行為模型、兩份假設 SDC，為每個 artifact 記錄輸入 digest；故意只改 RAM collision rule，再檢查系統是否拒收舊 trace 與舊分區 report。成功標準是受影響結果全部被標為 stale，無關結果仍可重用，且審查者能從 manifest 找到原因。這項實驗的驗收對象是**平台的失效判定**。
 
-NVDLA 提供的不是一條從 `spec` 直達 GDS 的捷徑，而是一段看得見輸入、輸出與責任交界的公開 R2G 入口。下一個值得追的工程問題是：五個綜合分區進入同一顆 SoC 後，跨 block SDC、clock／reset 和 SRAM 物理 view 如何在 APR／signoff 前重新形成一致的驗收契約。
+NVDLA 提供一段可檢查輸入、輸出與責任交界的公開 R2G 入口。下一個值得追的工程問題是：五個綜合分區進入同一顆 SoC 後，跨 block SDC、clock／reset 和 SRAM 物理 view 如何在 APR／signoff 前重新形成一致的驗收契約。
 
 ## 參考資料
 
@@ -123,3 +127,5 @@ NVDLA 提供的不是一條從 `spec` 直達 GDS 的捷徑，而是一段看得�
 4. [Scalability parameters and ConfigROM](https://nvdla.org/hw/v2/scalability.html) — NVIDIA／NVDLA，v2 文件，隨 2018 年可配置版本；組態參數、能力描述與 `nv_small` 驗證程度。
 5. [NVDLA Verification Suite User Guide, v2](https://nvdla.org/hw/v2/verif_guide.html) — NVIDIA／NVDLA，v2 文件，隨 2018 年可配置版本；trace 格式、test plan、single test 與 regression。
 6. [nvdla/hw](https://github.com/nvdla/hw) — NVIDIA／NVDLA 官方原始碼，2017 年起發布；RTL、spec、verification、synthesis scripts 與 performance model。
+
+7. [report_synchronizer_mtbf — Vivado Design Suite Tcl Command Reference Guide, UG835](https://docs.amd.com/r/en-US/ug835-vivado-tcl-commands/report_synchronizer_mtbf) — AMD, 2026.1；用於核對 MTBF 定義與改善方向。
