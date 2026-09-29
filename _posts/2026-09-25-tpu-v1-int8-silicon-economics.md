@@ -1,19 +1,18 @@
 ---
 layout: post
-title: "INT8 把 TPU v1 的晶片預算換成更多 MAC：精度如何同時改寫面積、功耗與頻寬"
+title: "TPU v1 的低精度預算：INT8 如何牽動運算、儲存與誤差"
 date: 2026-09-25 05:03:49 +0800
 domain: architecture
 categories: architecture
-description: "8-bit quantization 讓 TPU v1 能在有限面積與功耗內塞入 65,536 個 MAC，並同時降低權重儲存與資料搬移成本；代價則是 rounding、clipping 與 accumulator 位寬管理。"
+description: "降低 operand 位寬會同時改變 arithmetic、SRAM 及資料搬移成本；必須將量化誤差、累加位寬與模型品質納入同一個設計。"
 ---
 
-[上一篇](/ai-industry/2026/09/23/tpu-v1-systolic-array-dataflow.html)拆了 TPU v1 的 256×256 systolic array，但還留著一個更底層的問題：**為什麼這顆晶片有可能在 28 nm、40 W 等級的設計裡放進 65,536 個 MAC？**
 
-答案要從 precision 開始看。
+TPU v1 採用 INT8，等於把可接受的模型數值誤差轉成晶片面積、功耗與頻寬的設計空間。這筆交換涵蓋 operands、儲存與資料路徑；累加器及跨層 requantization 仍需保留足夠精度，否則更高的算術吞吐量也無法交付正確推論。
 
-一個乘法器不是抽象的「一個 multiply」。operand 從 8-bit 變成 16-bit，代表 partial product、adder tree、register、wire、SRAM port 與資料路徑都變寬；面積、切換電容與資料搬移能量一起上升。Google 在第一代 TPU 論文裡直接引用當時的 circuit-cost 估計：**8-bit integer multiply 相較 IEEE-754 FP16 multiply，可低約 6 倍 energy、6 倍 area；integer add 的差距更大，energy 約 13 倍、area 約 38 倍。** 這些數字不是 TPU 實測，而是論文用來說明低精度 arithmetic 為何能大幅改變 ASIC cost structure 的前提。[Jouppi et al., ISCA 2017](https://arxiv.org/pdf/1704.04760)
+[前篇的 systolic array](/ai-industry/2026/09/23/tpu-v1-systolic-array-dataflow.html)解釋資料重用如何供應大量 MAC。下一個問題是這些 MAC 及它們周圍的 wires、registers、SRAM ports 能否放進有限預算。Operand 位寬加大，成本會在多個元件同時出現；降低位寬則需要模型與軟體先回答誤差是否可接受。[Jouppi，Google，ISCA 2017](https://arxiv.org/pdf/1704.04760)
 
-換句話說，quantization 對 TPU v1 不是部署後的小優化；它直接決定了晶片可以長成什麼樣子。
+這使 quantization 成為模型與架構的共同決策。以下從量化映射、arithmetic 成本與頻寬試算，追到 accumulator、clipping 及 compiler 邊界。長期有用的判斷是：精度收益應以相同任務品質下的整體成本比較，不能只把 INT8 TOPS 與浮點 TOPS 放在同一張排行榜。
 
 ## Inference 為什麼有資格使用較低 precision
 
