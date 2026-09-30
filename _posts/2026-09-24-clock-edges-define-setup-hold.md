@@ -14,6 +14,12 @@ Setup 與 hold 檢查的是不同的資料穩定條件，因此同一個 10 ns c
 
 [前篇](/eda/2026/09/23/timing-constraint-defines-deadline.html)建立需求與延遲的比較；這篇進一步追蹤期限如何由 edges 產生。這個理解能幫助判斷 hold buffer、generated clock 或 multicycle constraint 是否合理，也能避免只靠「setup 看 max、hold 看 min」口訣解讀 report。
 
+沿圖中的資料路徑從 launch FF 走到 capture FF，再看下方兩個取樣時刻。0 ns edge 要保住剛取樣的舊值；10 ns edge 則要求下一筆新值提早穩定。這兩個時間窗解釋了為何同一條路徑既要查最早抵達，也要查最晚抵達。
+
+![同一時脈的 launch 與 capture 關係；hold 保護當下舊值，setup 要求下一筆資料在後續 edge 前穩定](/images/timing/2026-09-24/setup-hold-background.svg)
+
+圖：作者設計的理想 same-clock 10 ns 教學示意；視窗寬度不按比例，省略 skew 與 uncertainty。機制參考：[OpenSTA Command Reference](https://opensta.readthedocs.io/en/latest/Commands/)。
+
 ## 一個 10 ns clock，STA 其實看見一整串 edge
 
 最基本的 constraint 可能只有一行：

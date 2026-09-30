@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="780" viewBox="0 0 680 780" role="img" aria-labelledby="title desc"><title id="title">Setup and hold protect different data</title><desc id="desc">Setup and hold protect different data. Conceptual diagram, not to scale.</desc><defs><marker id="blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#1766ad"/></marker><marker id="orange" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#b55b0c"/></marker><marker id="ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#183047"/></marker><marker id="teal" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#087c72"/></marker><marker id="red" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#b83232"/></marker></defs><style>text{font-family:DejaVu Sans,Arial,sans-serif;fill:#183047;font-size:22px}.small{font-size:19px}.head{font-size:25px;font-weight:700}.bold{font-weight:700}</style>
+<rect x="0" y="0" width="680" height="780" rx="12" fill="#ffffff"/>
+<text x="28" y="42" text-anchor="start" class="head">Setup and hold protect different data</text>
+<rect x="20" y="68" width="640" height="168" rx="12" fill="#f0f5fa"/>
+<text x="40" y="104" text-anchor="start" class="bold">1. A register-to-register transfer</text>
+<rect x="70" y="128" width="145" height="68" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="142.5" y="155" text-anchor="middle" class="small">launch FF</text>
+<text x="142.5" y="180" text-anchor="middle" class="small">new data</text>
+<rect x="267" y="128" width="145" height="68" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="339.5" y="155" text-anchor="middle" class="small">logic path</text>
+<rect x="464" y="128" width="145" height="68" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="536.5" y="155" text-anchor="middle" class="small">capture FF</text>
+<line x1="220" y1="164" x2="262" y2="164" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="417" y1="164" x2="459" y2="164" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<rect x="20" y="258" width="640" height="396" rx="12" fill="#f0f5fa"/>
+<text x="40" y="294" text-anchor="start" class="bold">2. One clock, two sampling boundaries</text>
+<line x1="115" y1="377" x2="600" y2="377" stroke="#183047" stroke-width="3" marker-end="url(#ink)"/>
+<line x1="150" y1="330" x2="150" y2="415" stroke="#1766ad" stroke-width="3"/>
+<text x="150" y="450" text-anchor="middle" class="small">0 ns</text>
+<line x1="570" y1="330" x2="570" y2="415" stroke="#1766ad" stroke-width="3"/>
+<text x="570" y="450" text-anchor="middle" class="small">10 ns</text>
+<rect x="150" y="346" width="45" height="64" rx="12" fill="#fff0df"/>
+<rect x="525" y="346" width="45" height="64" rx="12" fill="#e4f3ec"/>
+<text x="40" y="318" text-anchor="start">old sample</text>
+<text x="445" y="318" text-anchor="start">next sample</text>
+<text x="40" y="501" text-anchor="start" class="small">HOLD: preserve old data after the 0 ns edge.</text>
+<text x="40" y="546" text-anchor="start" class="small">SETUP: new data ready before the 10 ns edge.</text>
+<text x="40" y="603" text-anchor="start" class="small">Earliest and latest arrivals need separate checks.</text>
+<text x="36" y="704" text-anchor="start" class="small">Ideal same-clock example; window widths illustrative.</text>
+<text x="36" y="741" text-anchor="start" class="small">Clock skew and uncertainty are added later.</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#087c72" i]{fill:#44e4d6}[fill="#1766ad" i]{fill:#5ca5e8}[fill="#183047" i]{fill:#c8d5e1}[fill="#b55b0c" i]{fill:#e79c59}[fill="#b83232" i]{fill:#df8a8a}[fill="#e4f3ec" i]{fill:#212f29}[fill="#f0f5fa" i]{fill:#1b232b}[fill="#fff0df" i]{fill:#372715}[fill="#ffffff" i]{fill:#1b1f20}[stroke="#1766ad" i]{stroke:#5ca5e8}[stroke="#183047" i]{stroke:#c8d5e1}text{fill:#c8d5e1}}</style>
+</svg>

@@ -33,7 +33,7 @@
 <text x="132.5" y="537" text-anchor="middle" class="small">GPU 3</text>
 <line x1="200" y1="396" x2="425" y2="396" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
 <line x1="491" y1="429" x2="491" y2="510" stroke="#1766ad" stroke-width="8" marker-end="url(#blue)"/>
-<line x1="425" y1="543" x2="200" y2="543" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="425" y1="543" x2="200" y2="543" stroke="#183047" stroke-width="3"/>
 <line x1="131" y1="510" x2="131" y2="429" stroke="#183047" stroke-width="3" stroke-dasharray="7 5"/>
 <path d="M 491,429 L 517,452 L 517,520 L 440,565 L 200,565" fill="none" stroke="#b55b0c" stroke-width="4" marker-end="url(#orange)"/>
 <text x="240" y="383" text-anchor="start" class="small">0 -&gt; 1 -&gt; 2</text>
