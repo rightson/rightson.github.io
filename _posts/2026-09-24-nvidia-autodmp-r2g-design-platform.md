@@ -14,6 +14,12 @@ AutoDMP 提供一種控制晶片設計探索成本的方法：用快速評估擴
 
 Anthony Agnesina、NVIDIA 的 [AutoDMP，ISPD 2023](https://research.nvidia.com/publication/2023-03_autodmp-automated-dreamplace-based-macro-placement)有公開程式與後端接點，適合逐段研究搜尋、候選交付及驗收。以下追蹤一份 checkpoint 如何形成候選 DEF，再進入同一套後段流程，並比較探索速度、結果品質與平台重用的取捨。
 
+先從圖上方的多個佈局候選往下看：便宜的 proxy 決定哪些候選值得投入後段成本，實體後端再判斷最終 PPA。這個流程有一個不可逆的風險：早期被排除的候選，即使最後會更好，也不會再出現在後段比較中。
+
+![多個佈局候選經快速 proxy 篩選，再由相同實體後端比較 PPA；早期排除會限制後段可見的解](/images/eda/2026-09-24/autodmp-search-background.svg)
+
+圖：作者整理的搜尋成本示意；候選數為教學假設，非論文實驗規模。分層探索概念依據：[AutoDMP，ISPD 2023](https://research.nvidia.com/publication/2023-03_autodmp-automated-dreamplace-based-macro-placement)。
+
 ## 從 SoC 整合往下：物理條件互相牽制
 
 假設一個 AI 加速器分區有多組運算單元、64 個 SRAM，以及連接它們的控制與資料路徑。邏輯整合完成，只代表連線與功能關係已經成立。把 SRAM 靠近運算單元可能減少線長，卻也可能擠掉標準元件的位置；替走線保留通道，又可能拉長某些關鍵路徑。這是本文的假設案例，不是 NVIDIA 某顆晶片的內部配置。
