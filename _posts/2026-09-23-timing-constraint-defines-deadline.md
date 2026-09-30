@@ -14,6 +14,12 @@ STA 的 pass／fail 來自電路延遲與時間需求的比較。相同 netlist�
 
 因此，學 SDC 應先建立「需求如何成為 required time」的直覺，再讀 command 語法。這能避免把 negative slack 一律當成電路問題，或把 positive slack 一律當成成功。以下用同一條路徑、兩種 clock period，追蹤 arrival time、required time 與 constraint coverage，也建立後續 checker 與 diagnosis 所需的證據。
 
+圖中電路保持不變，資料都在 6.5 ns 抵達；改變 clock period 後，required time 卻從 9.2 ns 變成 5.2 ns，slack 因而由正轉負。先把「電路花多久」與「需求允許多久」分開，就能理解 SDC 為何會直接改變 STA 的判定。
+
+![同一條資料路徑的 arrival 為 6.5 ns；10 ns 與 6 ns 時脈建立不同 required time 和 slack](/images/timing/2026-09-23/sdc-deadline-context.svg)
+
+圖：作者依正文算例繪製，假設 clock-to-Q 0.5 ns、logic delay 6 ns、setup 0.8 ns，省略 skew 與 uncertainty。分析物件參考：[OpenSTA](https://github.com/The-OpenROAD-Project/OpenSTA)。
+
 ## 邏輯正確，不代表時間正確
 
 先看一個最小的 synchronous path：

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="820" viewBox="0 0 680 820" role="img" aria-labelledby="title desc"><title id="title">Same circuit, different timing demand</title><desc id="desc">Same circuit, different timing demand. Conceptual diagram, not to scale.</desc><defs><marker id="blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#1766ad"/></marker><marker id="orange" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#b55b0c"/></marker><marker id="ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#183047"/></marker><marker id="teal" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#087c72"/></marker><marker id="red" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#b83232"/></marker></defs><style>text{font-family:DejaVu Sans,Arial,sans-serif;fill:#183047;font-size:22px}.small{font-size:19px}.head{font-size:25px;font-weight:700}.bold{font-weight:700}</style>
+<rect x="0" y="0" width="680" height="820" rx="12" fill="#ffffff"/>
+<text x="28" y="42" text-anchor="start" class="head">Same circuit, different timing demand</text>
+<rect x="20" y="68" width="640" height="180" rx="12" fill="#f0f5fa"/>
+<text x="40" y="104" text-anchor="start" class="bold">1. Electrical path sets arrival time</text>
+<rect x="45" y="125" width="145" height="66" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="117.5" y="152" text-anchor="middle" class="small">launch FF</text>
+<text x="117.5" y="177" text-anchor="middle" class="small">clock-to-Q</text>
+<rect x="266" y="125" width="145" height="66" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="338.5" y="152" text-anchor="middle" class="small">logic</text>
+<text x="338.5" y="177" text-anchor="middle" class="small">propagation</text>
+<rect x="485" y="125" width="145" height="66" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="557.5" y="152" text-anchor="middle" class="small">capture FF</text>
+<text x="557.5" y="177" text-anchor="middle" class="small">setup</text>
+<line x1="194" y1="158" x2="260" y2="158" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="415" y1="158" x2="479" y2="158" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<text x="340" y="227" text-anchor="middle" class="small">Example arrival = 0.5 + 6.0 = 6.5 ns</text>
+<rect x="20" y="270" width="640" height="405" rx="12" fill="#f0f5fa"/>
+<text x="40" y="306" text-anchor="start" class="bold">2. The clock requirement sets the deadline</text>
+<text x="40" y="349" text-anchor="start" class="small">period 10 ns; setup 0.8 ns</text>
+<line x1="70" y1="397" x2="610" y2="397" stroke="#183047" stroke-width="3" marker-end="url(#ink)"/>
+<line x1="70" y1="362" x2="70" y2="410" stroke="#1766ad" stroke-width="3"/>
+<text x="70" y="439" text-anchor="middle" class="small">0</text>
+<line x1="382.0" y1="362" x2="382.0" y2="410" stroke="#1766ad" stroke-width="3"/>
+<text x="382.0" y="439" text-anchor="middle" class="small">6.5</text>
+<line x1="511.59999999999997" y1="362" x2="511.59999999999997" y2="410" stroke="#087c72" stroke-width="3"/>
+<text x="511.59999999999997" y="439" text-anchor="middle" class="small">9.2</text>
+<text x="92" y="384" text-anchor="start" class="small">arrival: blue</text>
+<text x="350" y="384" text-anchor="start" class="small">required: green</text>
+<text x="40" y="475" text-anchor="start" class="small">slack = required - arrival = +2.7 ns</text>
+<text x="40" y="522" text-anchor="start" class="small">period 6 ns; setup 0.8 ns</text>
+<line x1="70" y1="570" x2="610" y2="570" stroke="#183047" stroke-width="3" marker-end="url(#ink)"/>
+<line x1="70" y1="535" x2="70" y2="583" stroke="#1766ad" stroke-width="3"/>
+<text x="70" y="612" text-anchor="middle" class="small">0</text>
+<line x1="382.0" y1="535" x2="382.0" y2="583" stroke="#1766ad" stroke-width="3"/>
+<text x="382.0" y="612" text-anchor="middle" class="small">6.5</text>
+<line x1="319.6" y1="535" x2="319.6" y2="583" stroke="#087c72" stroke-width="3"/>
+<text x="319.6" y="612" text-anchor="middle" class="small">5.2</text>
+<text x="92" y="557" text-anchor="start" class="small">arrival: blue</text>
+<text x="350" y="557" text-anchor="start" class="small">required: green</text>
+<text x="40" y="648" text-anchor="start" class="small">slack = required - arrival = -1.3 ns</text>
+<text x="36" y="723" text-anchor="start" class="small">Author calculation: ideal clocks; no skew or uncertainty.</text>
+<text x="36" y="759" text-anchor="start" class="small">A changed SDC does not change the physical path.</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#087c72" i]{fill:#44e4d6}[fill="#1766ad" i]{fill:#5ca5e8}[fill="#183047" i]{fill:#c8d5e1}[fill="#b55b0c" i]{fill:#e79c59}[fill="#b83232" i]{fill:#df8a8a}[fill="#f0f5fa" i]{fill:#1b232b}[fill="#ffffff" i]{fill:#1b1f20}[stroke="#087c72" i]{stroke:#44e4d6}[stroke="#1766ad" i]{stroke:#5ca5e8}[stroke="#183047" i]{stroke:#c8d5e1}text{fill:#c8d5e1}}</style>
+</svg>
