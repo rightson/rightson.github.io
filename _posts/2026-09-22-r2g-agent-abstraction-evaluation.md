@@ -13,6 +13,12 @@ EDA Agent 的設計能力，取決於模型與它能操作的設計空間。HLS 
 
 這使「agent 要從哪一層開始」具有研究價值。自由度太大，可能把時間耗在機械細節；限制太多，則可能排除最好的架構。值得理解的是設計知識如何被介面保存、哪裡需要逃生口，以及驗收如何不受候選自己修改。這些問題會長期影響 EDA 平台，個別模型更新也不會讓它們消失。
 
+圖中從相同 specification 分出 direct RTL 與 HLS 路徑，最後回到相同的成果驗收。先把搜尋介面與驗收邊界分開看，就能理解抽象層為何可能減少探索成本，以及後續 RTL refinement 為何仍須重新驗證。
+
+![HLS 搜尋、RTL refinement 與獨立成果驗收的比較邊界](/images/eda/2026-09-22/agent-abstraction-verification.svg)
+
+圖：作者整理；HLS／RTL flow 概念依據 [AHRR 論文](https://arxiv.org/html/2609.21157v1)，成果版本與獨立驗收邊界為作者設計。Direct RTL baseline 也必須使用相同 specification 與 acceptance checks。
+
 ## 研究比較的是設計介面與 compiler 分工
 
 UCLA 的 Zijian Ding 在 [Can Agents Design Better Chips with a Higher Level Abstraction?](https://arxiv.org/html/2609.21157v1) 比較直接 RTL、agent-based HLS 與 compiler 產出後的 refinement。AHRR 組合 HLS 設計與後續 RTL 修正。論文於 2026 年 9 月公開，列為 ICCAD 2026 invited paper；本文討論已公開的工作，不把尚未舉行的會議寫成已發表演講。
@@ -40,9 +46,6 @@ UCLA 的 Zijian Ding 在 [Can Agents Design Better Chips with a Higher Level Abs
 
 HLS 後接 RTL refinement，則把起始點從空白規格換成已有功能與結構的候選。Agent 可以針對局部邏輯、位寬、control 或 critical path 修正，避免重建整個設計；代價是 compiler 產生的 RTL 可能很大、命名複雜，修改後也不再由原始高階表示完整描述。平台必須保存 refinement 與原始成果的 lineage，且重新驗證修改後的語意。
 
-![HLS 搜尋、RTL refinement 與獨立成果驗收的比較邊界](/images/eda/2026-09-22/agent-abstraction-verification.svg)
-
-圖：作者整理；HLS／RTL flow 概念依據 [AHRR 論文](https://arxiv.org/html/2609.21157v1)，成果版本與獨立驗收邊界為作者設計。Direct RTL baseline 也必須使用相同 specification 與 acceptance checks。
 
 ## 一個 reduction kernel 的完整設計帳
 
