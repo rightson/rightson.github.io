@@ -14,6 +14,12 @@ RTL-to-GDS 平台需要管理的核心物件，是帶著版本、相依關係與
 
 因此，值得研究的是如何在失敗後保留正確性，又避免每次從頭執行。下文將 [Kubernetes controller](https://kubernetes.io/docs/concepts/architecture/controller/)、[Temporal](https://docs.temporal.io/) 與 [bazel-orfs](https://github.com/The-OpenROAD-Project/bazel-orfs) 作為機制參考，提出適用於 R2G 的設計；採用哪些產品則取決於既有流程與維護成本。
 
+圖中的迴路把設計意圖、候選執行與驗收分開：工作產生 report 或 checkpoint，平台再依固定需求決定成果能否進入下一階段。先注意「工具完成」到「成果被接受」之間的邊界；這正是單純排程工作無法替工程師判斷的部分。
+
+![R2G 設計意圖、候選執行與成果驗收的狀態迴路](/images/eda/2026-09-22/r2g-state-evidence-loop.svg)
+
+圖：作者設計；reconciliation、durable execution 與 artifact dependency 分別參考 [Kubernetes](https://kubernetes.io/docs/concepts/architecture/controller/)、[Temporal](https://docs.temporal.io/activity-execution) 與 [bazel-orfs](https://github.com/The-OpenROAD-Project/bazel-orfs)。
+
 ## Scheduler 看不到的工程狀態
 
 傳統 implementation flow 很自然會長成：
@@ -302,9 +308,6 @@ LLM 可以判斷下一步值得嘗試什麼。
 
 把這些拼起來，R2G 比較合理的形狀如下，它並非一個大型 Agent framework：
 
-![R2G 設計意圖、候選執行與成果驗收的狀態迴路](/images/eda/2026-09-22/r2g-state-evidence-loop.svg)
-
-圖：作者設計；reconciliation、durable execution 與 artifact dependency 分別參考 [Kubernetes](https://kubernetes.io/docs/concepts/architecture/controller/)、[Temporal](https://docs.temporal.io/activity-execution) 與 [bazel-orfs](https://github.com/The-OpenROAD-Project/bazel-orfs)。
 
 這個架構裡，Kubernetes 不是必要條件，Temporal 也不是；Bazel 也不一定要直接導入。
 
