@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="925" viewBox="0 0 680 925" role="img" aria-labelledby="title desc"><title id="title">One IP configuration crosses many stages</title><desc id="desc">One IP configuration crosses many stages. Conceptual diagram, not to scale.</desc><defs><marker id="blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#1766ad"/></marker><marker id="orange" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#b55b0c"/></marker><marker id="ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#183047"/></marker><marker id="teal" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#087c72"/></marker><marker id="red" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#b83232"/></marker></defs><style>text{font-family:DejaVu Sans,Arial,sans-serif;fill:#183047;font-size:22px}.small{font-size:19px}.head{font-size:25px;font-weight:700}.bold{font-weight:700}</style>
+<rect x="0" y="0" width="680" height="925" rx="12" fill="#ffffff"/>
+<text x="28" y="42" text-anchor="start" class="head">One IP configuration crosses many stages</text>
+<rect x="20" y="68" width="640" height="454" rx="12" fill="#f0f5fa"/>
+<text x="40" y="104" text-anchor="start" class="bold">1. Configuration identifies generated views</text>
+<rect x="208" y="126" width="264" height="66" rx="12" fill="#ffffff" stroke="#087c72" stroke-width="2"/>
+<text x="340.0" y="153" text-anchor="middle" class="small">configuration version</text>
+<rect x="45" y="267" width="170" height="83" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="130.0" y="294" text-anchor="middle" class="small">generated</text>
+<text x="130.0" y="319" text-anchor="middle" class="small">RTL</text>
+<line x1="340" y1="198" x2="130" y2="261" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<rect x="255" y="267" width="170" height="83" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="340.0" y="294" text-anchor="middle" class="small">testbench</text>
+<text x="340.0" y="319" text-anchor="middle" class="small">traces</text>
+<line x1="340" y1="198" x2="340" y2="261" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<rect x="465" y="267" width="170" height="83" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="550.0" y="294" text-anchor="middle" class="small">software-visible</text>
+<text x="550.0" y="319" text-anchor="middle" class="small">configuration</text>
+<line x1="340" y1="198" x2="550" y2="261" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<rect x="58" y="395" width="562" height="85" rx="12" fill="#ffffff" stroke="#b55b0c" stroke-width="2"/>
+<text x="340" y="429" text-anchor="middle" class="bold">integration assumptions</text>
+<text x="340" y="458" text-anchor="middle" class="small">SRAM behavior + clocks + reset</text>
+<line x1="130" y1="356" x2="130" y2="388" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="340" y1="356" x2="340" y2="388" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="550" y1="356" x2="550" y2="388" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<rect x="20" y="546" width="640" height="272" rx="12" fill="#f0f5fa"/>
+<text x="40" y="582" text-anchor="start" class="bold">2. Target views bind the synthesis handoff</text>
+<rect x="58" y="609" width="224" height="83" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="170.0" y="636" text-anchor="middle" class="small">library + SDC</text>
+<text x="170.0" y="661" text-anchor="middle" class="small">memory views</text>
+<rect x="405" y="609" width="224" height="83" rx="12" fill="#ffffff" stroke="#087c72" stroke-width="2"/>
+<text x="517.0" y="636" text-anchor="middle" class="small">partitions</text>
+<text x="517.0" y="661" text-anchor="middle" class="small">a / c / o / m / p</text>
+<line x1="288" y1="650" x2="399" y2="650" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<text x="45" y="750" text-anchor="start" class="small">Outputs carry the input conditions used to produce them.</text>
+<text x="36" y="865" text-anchor="start" class="small">Author dependency view based on the NVDLA manuals.</text>
+<text x="36" y="897" text-anchor="start" class="small">No SoC-level signoff is implied by partition synthesis.</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#087c72" i]{fill:#44e4d6}[fill="#1766ad" i]{fill:#5ca5e8}[fill="#183047" i]{fill:#c8d5e1}[fill="#b55b0c" i]{fill:#e79c59}[fill="#b83232" i]{fill:#df8a8a}[fill="#f0f5fa" i]{fill:#1b232b}[fill="#ffffff" i]{fill:#1b1f20}[stroke="#087c72" i]{stroke:#44e4d6}[stroke="#1766ad" i]{stroke:#5ca5e8}[stroke="#b55b0c" i]{stroke:#e79c59}text{fill:#c8d5e1}}</style>
+</svg>

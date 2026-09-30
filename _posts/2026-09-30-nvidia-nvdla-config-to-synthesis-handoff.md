@@ -15,6 +15,12 @@ description: "NVDLA 的公開整合手冊揭露從配置、RTL 生成、trace �
 
 NVIDIA 在 [2017 年 9 月公開 NVDLA 硬體原始碼與參考綜合腳本](https://nvdla.org/updates.html)，並於 [2018 年 4 月釋出可配置 v2](https://nvdla.org/updates.html)。以下以其[整合手冊](https://nvdla.org/hw/v2/integration_guide.html)、[配置說明](https://nvdla.org/hw/v2/scalability.html)及[驗證手冊](https://nvdla.org/hw/v2/verif_guide.html)分析公開 IP 的整合方法；成果管理與驗收方案會清楚標為作者設計。
 
+先沿圖從 configuration 分出去看：RTL、測試與軟體可見能力，都必須對應同一組配置。進入綜合後，還要接上目標 SRAM、library 與 SDC；所以每一份交付成果都帶著輸入條件，單看檔名或工具成功訊息不足以判斷能否接收。
+
+![同一 NVDLA 配置影響 RTL、驗證與軟體可見能力，再以 SRAM、library 和 SDC 條件交給五個綜合分區](/images/eda/2026-09-30/nvdla-handoff-background.svg)
+
+圖：作者依 [NVDLA Integrator’s Manual](https://nvdla.org/hw/v2/integration_guide.html)、[Configuration and Scalability](https://nvdla.org/hw/v2/scalability.html)整理的相依關係示意，非完整 SoC 架構。
+
 ## 一份配置會跨過哪些設計邊界
 
 NVDLA 的 `hw/spec/defs/<config>.spec` 選定硬體組態，`tree.make` 固定要建立的 project 與工具位置，`tmake -build vmod` 產出對應的 RTL；`ready_for_test` 另建測試環境，`verif_protection` 可跑基礎保護測試。[官方環境設定指南](https://nvdla.org/hw/v2/environment_setup_guide.html)列出生成結果放在 `outdir/<project>/vmod`，也列出 `cmod_top` 的獨立 build target。這些目錄與命令讓配置不只是一行 define，而是有具體衍生物的 design state。
