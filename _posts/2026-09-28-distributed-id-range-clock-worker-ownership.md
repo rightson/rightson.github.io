@@ -15,6 +15,12 @@ description: "從多個資料分區各自建立物件的情境出發，釐清唯
 
 [短網址服務](/networking/2026/09/24/short-url-uniqueness-idempotency-cache-hotspots.html)用同一筆建立交易確認 slug 與重試結果。這裡延伸到取號與業務寫入位於不同權威邊界的情況：取得 ID 之後，物件仍可能沒有建立成功。
 
+先看圖中的兩個寫入者：A 與 B 各自在自己的分區建立 101，局部使用原本沒有問題；送入共用查詢或稽核之後，單一的 101 卻不能辨認物件。待解的需求是唯一範圍與呼叫契約，接著才有理由比較複合識別、號段或時間型 ID。
+
+![兩個資料分區各自產生局部 ID 101；資料合併後純整數查詢無法辨識物件，必須先定義唯一範圍](/images/distributed-systems/2026-09-28/id-scope-background.svg)
+
+圖：作者設計的識別需求情境。局部取號機制參考：[PostgreSQL Sequence Manipulation Functions](https://www.postgresql.org/docs/current/functions-sequence.html)；圖中尚未選定跨分區演算法。
+
 ## 不同分區要共用哪一種識別契約
 
 先回答相容性問題。這個案例的既有資料與下游索引使用 `BIGINT`，因此第一版維持正的 63-bit 整數，不要求呼叫者一次遷移所有外鍵。呼叫者可指定經核准的 `namespace`，得到正的 63-bit 整數。目標是：同一 namespace 的每個**成功發出**的 ID 永不重複，跨 namespace 可用不同表或另帶 namespace 組成複合識別；若 API 對外只傳一個純整數，則所有租戶共用同一全域 stream，不能偷偷重用 namespace 內的值。以下算例採單一全域 stream。
