@@ -14,6 +14,12 @@ RTL-to-GDS 逐步把邏輯連線轉成實際幾何與寄生效應。Global place
 
 Yi-Chen Lu、NVIDIA Research 等作者的 [C3PO](https://research.nvidia.com/labs/electronic-design-automation/publication/lu2026aspdac/)提供演算法與跨階段比較，適合用來檢查近似目標如何接回工程需求。以下追蹤 timing gradient、RUDY 與動態權重，最後用完整 R2G 案例分析候選排名為何可能反轉，以及平台應保存哪些驗收條件。
 
+圖中把 global placement 放回完整實體設計流程：上游給定設計與約束，下游仍要經過 legalization、clock 與 routing 等步驟。C3PO 改變的是早期求解器；相同下游條件則用來檢查早期改善能否保留到最終結果。
+
+![C3PO 在 R2G 流程中的替換範圍](/images/eda/2026-09-26/c3po-flow-boundary.svg)
+
+圖一：依據 [C3PO 論文圖 1、圖 2](https://hhsiao30.github.io/papers/yichen_apsdac26__Camera_Ready_eXpress.pdf)重畫研究實驗的工具邊界；「相同下游 recipe」是論文的對照條件，不代表公開了 NVIDIA 內部完整 R2G 流程。
+
 ## 從 floorplan 到 route，錯誤目標會被逐段放大
 
 RTL 與 synthesis 交出 netlist，SDC、library、floorplan 與巨集限制決定哪些位置可用、哪些路徑需要多快。Global placement 此時要為大量標準元件和部分 macro 找座標；它還不是最終 legal placement，也沒有最終寄生參數。線長代理指標可以很快評分，卻無法保證 detailed routing 的 detour、buffer 與 clock tree 不會吃掉原來的好處。
@@ -22,9 +28,6 @@ RTL 與 synthesis 交出 netlist，SDC、library、floorplan 與巨集限制決�
 
 本系列先前分析的 [AutoDMP](/eda/2026/09/24/nvidia-autodmp-r2g-design-platform.html) 解的是 macro placement 候選及工具參數搜尋，將少量候選送進後段比較。C3PO 面對另一個層級：**同一個 global placement run 裡，每輪如何移動 cells、如何平衡彼此牴觸的目標**。兩者都由 NVIDIA 研究提出，也都以後段 PPA 驗收，但論文沒有說它們已串成同一套內部平台；不能把研究系統拼成未公開的 production flow。[AutoDMP 論文](https://research.nvidia.com/publication/2023-03_autodmp-automated-dreamplace-based-macro-placement)、[C3PO 原文](https://hhsiao30.github.io/papers/yichen_apsdac26__Camera_Ready_eXpress.pdf)
 
-![C3PO 在 R2G 流程中的替換範圍](/images/eda/2026-09-26/c3po-flow-boundary.svg)
-
-圖一：依據 [C3PO 論文圖 1、圖 2](https://hhsiao30.github.io/papers/yichen_apsdac26__Camera_Ready_eXpress.pdf)重畫研究實驗的工具邊界；「相同下游 recipe」是論文的對照條件，不代表公開了 NVIDIA 內部完整 R2G 流程。
 
 ## 第一個機制：時序梯度要追到 cell 座標
 
