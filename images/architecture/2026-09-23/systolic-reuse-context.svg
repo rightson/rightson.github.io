@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="830" viewBox="0 0 680 830" role="img" aria-labelledby="title desc"><title id="title">Data reuse feeds a matrix array</title><desc id="desc">Data reuse feeds a matrix array. Conceptual diagram, not to scale.</desc><defs><marker id="blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#1766ad"/></marker><marker id="orange" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#b55b0c"/></marker><marker id="ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#183047"/></marker><marker id="teal" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#087c72"/></marker><marker id="red" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#b83232"/></marker></defs><style>text{font-family:DejaVu Sans,Arial,sans-serif;fill:#183047;font-size:22px}.small{font-size:19px}.head{font-size:25px;font-weight:700}.bold{font-weight:700}</style>
+<rect x="0" y="0" width="680" height="830" rx="12" fill="#ffffff"/>
+<text x="28" y="42" text-anchor="start" class="head">Data reuse feeds a matrix array</text>
+<rect x="20" y="68" width="640" height="200" rx="12" fill="#f0f5fa"/>
+<text x="40" y="104" text-anchor="start" class="bold">1. Independent MAC reads replicate traffic</text>
+<rect x="65" y="170" width="140" height="60" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="135.0" y="197" text-anchor="middle" class="small">MAC</text>
+<line x1="135" y1="147" x2="135" y2="163" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<rect x="270" y="170" width="140" height="60" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="340.0" y="197" text-anchor="middle" class="small">MAC</text>
+<line x1="340" y1="147" x2="340" y2="163" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<rect x="475" y="170" width="140" height="60" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="545.0" y="197" text-anchor="middle" class="small">MAC</text>
+<line x1="545" y1="147" x2="545" y2="163" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<text x="340" y="138" text-anchor="middle" class="small">large operand storage</text>
+<text x="340" y="251" text-anchor="middle" class="small">More MACs require more independent deliveries.</text>
+<rect x="20" y="290" width="640" height="428" rx="12" fill="#f0f5fa"/>
+<text x="40" y="326" text-anchor="start" class="bold">2. Neighbors forward data inside the array</text>
+<text x="340" y="350" text-anchor="middle" class="small">weights loaded before compute</text>
+<line x1="310" y1="365" x2="310" y2="397" stroke="#183047" stroke-width="3" stroke-dasharray="7 5" marker-end="url(#ink)"/>
+<line x1="505" y1="365" x2="505" y2="397" stroke="#183047" stroke-width="3" stroke-dasharray="7 5" marker-end="url(#ink)"/>
+<text x="45" y="447" text-anchor="start" class="small">activation</text>
+<line x1="175" y1="440" x2="245" y2="440" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<rect x="250" y="410" width="125" height="62" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="312.5" y="437" text-anchor="middle" class="small">MAC</text>
+<text x="312.5" y="462" text-anchor="middle" class="small">held weight</text>
+<rect x="445" y="410" width="125" height="62" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="507.5" y="437" text-anchor="middle" class="small">MAC</text>
+<text x="507.5" y="462" text-anchor="middle" class="small">held weight</text>
+<line x1="377" y1="440" x2="440" y2="440" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<text x="45" y="572" text-anchor="start" class="small">activation</text>
+<line x1="175" y1="565" x2="245" y2="565" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<rect x="250" y="535" width="125" height="62" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="312.5" y="562" text-anchor="middle" class="small">MAC</text>
+<text x="312.5" y="587" text-anchor="middle" class="small">held weight</text>
+<rect x="445" y="535" width="125" height="62" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="507.5" y="562" text-anchor="middle" class="small">MAC</text>
+<text x="507.5" y="587" text-anchor="middle" class="small">held weight</text>
+<line x1="377" y1="565" x2="440" y2="565" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="310" y1="475" x2="310" y2="530" stroke="#087c72" stroke-width="3" marker-end="url(#teal)"/>
+<line x1="310" y1="599" x2="310" y2="650" stroke="#087c72" stroke-width="3" marker-end="url(#teal)"/>
+<line x1="505" y1="475" x2="505" y2="530" stroke="#087c72" stroke-width="3" marker-end="url(#teal)"/>
+<line x1="505" y1="599" x2="505" y2="650" stroke="#087c72" stroke-width="3" marker-end="url(#teal)"/>
+<text x="415" y="685" text-anchor="middle" class="small">partial sums / outputs</text>
+<text x="36" y="755" text-anchor="start" class="small">2 x 2 teaching tile; directions show data roles.</text>
+<text x="36" y="790" text-anchor="start" class="small">Wavefront alignment and buffering are omitted.</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#087c72" i]{fill:#44e4d6}[fill="#1766ad" i]{fill:#5ca5e8}[fill="#183047" i]{fill:#c8d5e1}[fill="#b55b0c" i]{fill:#e79c59}[fill="#b83232" i]{fill:#df8a8a}[fill="#f0f5fa" i]{fill:#1b232b}[fill="#ffffff" i]{fill:#1b1f20}[stroke="#087c72" i]{stroke:#44e4d6}[stroke="#1766ad" i]{stroke:#5ca5e8}[stroke="#183047" i]{stroke:#c8d5e1}text{fill:#c8d5e1}}</style>
+</svg>

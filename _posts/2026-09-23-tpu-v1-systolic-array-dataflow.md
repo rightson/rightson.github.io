@@ -14,6 +14,12 @@ TPU v1 的 systolic array 把矩陣乘法轉成規律的資料重用流程；65,
 
 在[第一代 TPU 的服務需求](/ai-industry/2026/09/22/tpu-v1-origin-inference-asic.html)之後，這篇把視角縮到一條 matrix instruction。由 MatrixMultiply(B) 追到 weight load、pipeline 與 shape utilization，便能看出「更多 MAC」何時增加吞吐量，何時只增加等待資料的硬體。
 
+圖上半部把每個 MAC 都獨立取得資料的成本畫出來，下半部則以小陣列示意相鄰單元的資料傳遞。先觀察 activation 橫向流動與 partial sum 向下累積：規律重用能降低大型儲存體的供應負擔，但仍要讓資料在正確的 cycle 相遇。
+
+![獨立 MAC 反覆取得 operands；小型陣列透過相鄰傳遞重用 activation 並累積 partial sums](/images/architecture/2026-09-23/systolic-reuse-context.svg)
+
+圖：作者整理；2×2 為教學示意，省略 wavefront 對齊與 buffering，不代表 TPU 的實際陣列大小。資料流概念依據：[Google TPU v1 deep dive](https://cloud.google.com/blog/products/ai-machine-learning/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu)。
+
 ## 92 TOPS 只是算術上限，資料必須先供得上
 
 TPU v1 的 Matrix Multiply Unit 是 `256 × 256` 個 8-bit MAC，共 65,536 個運算單元。晶片頻率約 700 MHz，因此理論 MAC throughput 是：
