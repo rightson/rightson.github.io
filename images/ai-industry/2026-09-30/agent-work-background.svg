@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="915" viewBox="0 0 680 915" role="img" aria-labelledby="title desc"><title id="title">An agent work item outlives one answer</title><desc id="desc">An agent work item outlives one answer. Conceptual diagram, not to scale.</desc><defs><marker id="blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#1766ad"/></marker><marker id="orange" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#b55b0c"/></marker><marker id="ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#183047"/></marker><marker id="teal" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#087c72"/></marker><marker id="red" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#b83232"/></marker></defs><style>text{font-family:DejaVu Sans,Arial,sans-serif;fill:#183047;font-size:22px}.small{font-size:19px}.head{font-size:25px;font-weight:700}.bold{font-weight:700}</style>
+<rect x="0" y="0" width="680" height="915" rx="12" fill="#ffffff"/>
+<text x="28" y="42" text-anchor="start" class="head">An agent work item outlives one answer</text>
+<rect x="20" y="68" width="640" height="468" rx="12" fill="#f0f5fa"/>
+<text x="40" y="104" text-anchor="start" class="bold">1. Tool work can wait, fail, and resume</text>
+<rect x="52" y="137" width="245" height="82" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="174.5" y="164" text-anchor="middle" class="small">read task + data</text>
+<text x="174.5" y="189" text-anchor="middle" class="small">authorized context</text>
+<rect x="384" y="137" width="245" height="82" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="506.5" y="164" text-anchor="middle" class="small">model proposes</text>
+<text x="506.5" y="189" text-anchor="middle" class="small">a next action</text>
+<rect x="384" y="344" width="245" height="82" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="506.5" y="371" text-anchor="middle" class="small">tool executes</text>
+<text x="506.5" y="396" text-anchor="middle" class="small">or waits</text>
+<rect x="52" y="344" width="245" height="82" rx="12" fill="#ffffff" stroke="#087c72" stroke-width="2"/>
+<text x="174.5" y="371" text-anchor="middle" class="small">record result</text>
+<text x="174.5" y="396" text-anchor="middle" class="small">resume / verify</text>
+<line x1="303" y1="178" x2="378" y2="178" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="507" y1="224" x2="507" y2="338" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="378" y1="385" x2="303" y2="385" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<path d="M 170,338 L 170,270 L 384,270 L 384,224" fill="none" stroke="#087c72" stroke-width="3" marker-end="url(#teal)"/>
+<text x="42" y="499" text-anchor="start" class="small">A retry must distinguish &#x27;not done&#x27; from &#x27;done, lost reply&#x27;.</text>
+<rect x="20" y="560" width="640" height="276" rx="12" fill="#f0f5fa"/>
+<text x="40" y="596" text-anchor="start" class="bold">2. Improvements address different constraints</text>
+<rect x="50" y="595" width="580" height="41" rx="12" fill="#ffffff"/>
+<text x="70" y="621" text-anchor="start" class="small">model cost / latency -&gt; calls and waiting</text>
+<rect x="50" y="649" width="580" height="41" rx="12" fill="#ffffff"/>
+<text x="70" y="675" text-anchor="start" class="small">persistent state -&gt; continuation</text>
+<rect x="50" y="703" width="580" height="41" rx="12" fill="#ffffff"/>
+<text x="70" y="729" text-anchor="start" class="small">events + authority -&gt; start and access</text>
+<text x="36" y="879" text-anchor="start" class="small">Author workflow; not OpenAI&#x27;s internal architecture.</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#087c72" i]{fill:#44e4d6}[fill="#1766ad" i]{fill:#5ca5e8}[fill="#183047" i]{fill:#c8d5e1}[fill="#b55b0c" i]{fill:#e79c59}[fill="#b83232" i]{fill:#df8a8a}[fill="#f0f5fa" i]{fill:#1b232b}[fill="#ffffff" i]{fill:#1b1f20}[stroke="#087c72" i]{stroke:#44e4d6}[stroke="#1766ad" i]{stroke:#5ca5e8}text{fill:#c8d5e1}}</style>
+</svg>

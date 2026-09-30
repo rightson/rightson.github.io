@@ -14,6 +14,12 @@ DevDay 2026 把 AI 應用的設計範圍向外推了一層：模型價格與速�
 
 OpenAI 在 9 月 29 日的 [DevDay 公告](https://openai.com/index/devday-2026-recap/)同時推出或預告模型、agent 與開發介面。以下選出五個會改變工程決策的進展：GPT-6.1 Sol、Ultrafast、dots 與雲端執行、MCP Events，以及 Private Intelligence。本文的系統比較與算例是分析推導，並非 OpenAI 公開的內部實作。
 
+先沿圖中的工作迴路看：模型提案之後，工具可能執行、等待或失敗，結果還要被記錄與驗收，才能決定是否接續。模型成本、持續狀態、事件與授權各自處理這條路徑的不同限制；這也是比較 DevDay 各項能力時的系統背景。
+
+![Agent 工作跨越模型提案、工具執行與等待、結果紀錄和驗收；成本、狀態與授權分別限制工作路徑](/images/ai-industry/2026-09-30/agent-work-background.svg)
+
+圖：作者提出的一般 Agent 工作流程，非 OpenAI 官方內部架構；各項公開能力以 [DevDay 2026 Recap](https://openai.com/index/devday-2026-recap/)為準。
+
 ## 五項進展分別鬆動哪個限制
 
 | 技術進展 | 對應的限制 | 首先該驗證的問題 |
