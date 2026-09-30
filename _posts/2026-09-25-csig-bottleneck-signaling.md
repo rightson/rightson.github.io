@@ -14,6 +14,8 @@ CSIG 把一路徑的部分狀態壓成固定長度摘要，讓 transport 可以�
 
 這項研究值得深入，是因為它把「需要知道多少網路狀態」變成有硬體成本邊界的設計問題。以下追蹤 compare-and-replace、4／8-byte 格式與 receiver reflection，再檢查摘要丟失了哪些資訊、控制穩定性依賴什麼，以及沒有訊號的路徑該如何解讀。
 
+從 sender 沿資料方向讀到 receiver，再沿回饋路徑返回。交換器把局部訊號合成固定大小的摘要，sender 得到的是整條路徑的有限資訊。先看清這個回饋迴路，才能追問摘要是否及時、哪些瓶頸資訊被留下，以及哪些細節被捨棄。
+
 ![CSIG 在路徑上取最小訊號並由 receiver 反射給 sender](/images/networking/2026-09-25/csig-path-reduction.svg)
 
 圖：作者整理；數值為概念例。資料來源：[Google CSIG](https://research.google/pubs/csig-congestion-signaling-for-datacenter-transports/)、[IETF draft-ravi-ippm-csig-01](https://datatracker.ietf.org/doc/html/draft-ravi-ippm-csig-01)。
