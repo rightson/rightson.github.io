@@ -38,6 +38,7 @@ categories: ai-supply-chain research
 - `/categories/`: static section archives, usable without JavaScript.
 - `/search/`: client-side full-text search with AND matching across space-separated keywords, domain and category filters, and shareable URLs.
 - `/search.json`: automatically generated from published posts at build time.
+- Article byline: `Scott Yo-Ru Chen · AI-assisted` appears below the title beside the publication date for all existing and future posts. Author and AI assistance labels are configured in `_config.yml` and rendered by `_includes/post-byline.html`; do not duplicate the byline in post bodies or front matter.
 - Article pages: generated H2/H3 outline, estimated bilingual reading time, responsive tables, and previous/next links.
 - Browser-native text scaling, visible keyboard focus, skip navigation, and reduced-motion support.
 
