@@ -14,6 +14,12 @@ CAD agent 的可信度依賴兩種可追溯關係：回答要能回到正確版�
 
 ORAssistant 的[文件建置與來源修正](https://github.com/The-OpenROAD-Project/ORAssistant/commit/044ad94fa7e5fe0ce6af15129d0dc4252317cad4)及[評估修正](https://github.com/The-OpenROAD-Project/ORAssistant/commit/555a92426489c97830fa4f5e5680663b281641b4)，提供可逐行檢查的失效案例。以下沿著 corpus、檢索、引用與 verdict 追蹤錯誤，並放回 SYN／APR 的參考流程，判斷哪些介面需要版本與獨立驗收。
 
+先沿圖中的證據鏈走一次：文件有版本與來源，檢索片段支撐回答，工程動作再接受獨立檢查。引用或評分出錯，可能讓文字看似合理的建議越過驗收邊界；後面的修正案例會逐一追到這些關係。
+
+![文件到工程動作的證據鏈](/images/eda/2026-09-26/orassistant-evidence-chain.svg)
+
+圖：作者依 [ORAssistant 論文](https://arxiv.org/html/2410.03845v2)與 [現行程式](https://github.com/The-OpenROAD-Project/ORAssistant/blob/master/backend/src/agents/retriever_graph.py)整理；下方的工程動作驗收閘門為作者設計，非 ORAssistant 官方架構。
+
 ## 從問答系統到設計流程，信任鏈在哪裡斷掉
 
 ORAssistant 起於 2024 年的 OpenROAD 問答系統。Aviral Kaintura（National Forensic Sciences University）等人的[原始論文](https://arxiv.org/html/2410.03845v2)描述：把 OpenROAD、OpenROAD-flow-scripts、OpenSTA、Yosys、KLayout 文件及社群討論切塊，建立語意與 BM25 檢索，再經 re-ranking 選擇上下文；系統按安裝、命令、錯誤等主題路由，最後由模型生成答案及引用。這種分工對 EDA 很合理：工程師可能只記得錯誤碼，也可能用自然語言描述「CTS 後 timing 變差」，兩者需要不同檢索方式。[現行 README](https://github.com/The-OpenROAD-Project/ORAssistant/blob/master/README.md)仍把 hybrid retrieval 與各類 retriever 列為主要架構。
@@ -26,9 +32,6 @@ ORAssistant 起於 2024 年的 OpenROAD 問答系統。Aviral Kaintura（Nationa
 
 問答的最小可驗證單位是「這句答案由哪份文件的哪個版本支持」。執行型 agent 的最小可驗證單位還要多一層：「誰授權哪個動作、用了哪份設計與 constraint、工具實際改了什麼 artifact、哪份 report 證明結果」。ORAssistant 已有將問題分到 RAG、架構產生與 MCP 動作路徑的[分類圖](https://github.com/The-OpenROAD-Project/ORAssistant/blob/master/backend/src/agents/retriever_graph.py)，也有把 MCP 工具呼叫接進 LangGraph 的[實作](https://github.com/The-OpenROAD-Project/ORAssistant/blob/master/backend/src/agents/retriever_mcp.py)。這證明程式有「回答」與「執行」的路徑，卻不等於它已提供本文後面提出的完整授權與 artifact 驗收契約。
 
-![文件到工程動作的證據鏈](/images/eda/2026-09-26/orassistant-evidence-chain.svg)
-
-圖：作者依 [ORAssistant 論文](https://arxiv.org/html/2410.03845v2)與 [現行程式](https://github.com/The-OpenROAD-Project/ORAssistant/blob/master/backend/src/agents/retriever_graph.py)整理；下方的工程動作驗收閘門為作者設計，非 ORAssistant 官方架構。
 
 ## 第一個失效機制：檢索內容還在，來源身分先消失
 
