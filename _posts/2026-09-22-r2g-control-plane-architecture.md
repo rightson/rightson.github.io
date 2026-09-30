@@ -306,7 +306,7 @@ LLM 可以判斷下一步值得嘗試什麼。
 
 ## 作者提出的 R2G Platform Architecture
 
-把這些拼起來，R2G 比較合理的形狀如下，它並非一個大型 Agent framework：
+回到開頭的狀態迴路，這些機制共同支撐 R2G 的成果管理與驗收。
 
 
 這個架構裡，Kubernetes 不是必要條件，Temporal 也不是；Bazel 也不一定要直接導入。

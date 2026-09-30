@@ -14,6 +14,8 @@ AI 參與 IC 設計的可靠性，取決於每個修改能否對應到清楚的�
 
 [UCLA 的 AHRR 研究](https://arxiv.org/abs/2609.21157)提供抽象層如何影響探索的證據；[bazel-orfs 的成果狀態討論](https://github.com/The-OpenROAD-Project/bazel-orfs/commit/1631e5e8faa15cee3c1e0991419a4c4a7b235fef)則提供版本與品質如何進入相依關係的線索。兩者不能合併成某個既有公司的完整平台，但能支持一個值得驗證的設計方向：讓 agent 在適當表示上探索，並由獨立證據決定成果能否晉級。
 
+沿圖由上而下看，同一份設計意圖逐步變成 RTL、netlist 與實體成果，每一層都帶著不同的約束。這是作者提出的參考分層：要觀察的是改動跨層後，哪些相依證據需要重建，而非把每個方塊當成必須採購的產品。
+
 ![AI-native IC design platform multi-level state stack](/assets/images/eda/ai-native-ic-platform-state-stack.svg)
 
 *圖 1：作者提出的狀態分層設計；機制參考：[UCLA AHRR](https://arxiv.org/abs/2609.21157)、[Synopsys autonomous engineering](https://www.synopsys.com/blogs/chip-design/agentic-ai-autonomous-engineering.html)。*
