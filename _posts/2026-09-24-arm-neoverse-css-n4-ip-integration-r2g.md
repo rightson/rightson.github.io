@@ -14,6 +14,12 @@ SoC 整合的成本來自多個相互依賴的界面：CPU、記憶體與 I/O �
 
 因此，平台的價值要由「哪些工作不必重做，哪些改動必須重新驗證」判斷。以下從版本與環境固定，走到一條 DMA 資料路徑，再追到 RTL-to-GDS handoff。要帶回設計團隊的是能辨認相依失效的交付契約，而非把所有配置都選到最大。
 
+圖中綠框是一組可重用的整合基線，旁邊的客製加速器卻會透過 DMA 加入新的記憶體流量。先把修改跨過的邊界畫出來，才能追問原有位址、ordering、clock／reset 與驗證條件是否仍成立；預先整合的價值也建立在這些假設上。
+
+![可重用子系統與客製加速器共用記憶體語意；新增 DMA 流量會影響原有整合假設](/images/eda/2026-09-24/css-integration-background.svg)
+
+圖：作者提出的 SoC 整合參考情境，非 Arm 官方內部架構。交付範圍依據：[Arm Neoverse CSS N4](https://www.arm.com/products/cloud-datacenter/neoverse-compute-subsystems/css-n4)。
+
 ## CSS N4 交付的是整合起點：RTL、系統 IP 與參考軟體
 
 Arm 的產品文件寫得很具體：CSS N4 以 RTL 交付，包含預先整合的系統 IP、軟體及參考設計，另有實作指南、第三方 IP 互通支援，以及可啟動 Linux 的整合軟體堆疊。每個 die 可配置 8–128 個核心，並支援 LPDDR6、PCIe Gen 7 等選項。這裡的重點不是把規格全部選到最大，而是每個選項都必須對應一組能共同工作的交付物。[CSS N4 官方產品與交付範圍](https://www.arm.com/products/cloud-datacenter/neoverse-compute-subsystems/css-n4)
