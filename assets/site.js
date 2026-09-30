@@ -163,7 +163,7 @@
       card.className = "post-card";
       const date = document.createElement("div");
       date.className = "card-meta";
-      date.textContent = `${post.date} · ${post.categories.join(" / ")}`;
+      date.textContent = `${post.date} · ${post.domain_title || post.domain}`;
       const heading = document.createElement("h2");
       const link = document.createElement("a");
       link.href = post.url;
