@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="780" viewBox="0 0 920 780" role="img" aria-labelledby="title desc">
+<title id="title">INSTA Top-K statistical timing propagation</title><desc id="desc">Timing graph 依 level 批次傳播，每個節點保存多個 rise fall arrival distribution 與 startpoint，endpoint 再計算 CPPR 和 slack。</desc>
+<style>.bg{fill:#f7f9fc}.box{fill:#fff;stroke:#376489;stroke-width:2}.tensor{fill:#e8f3fb;stroke:#376489;stroke-width:2}.cppr{fill:#e8f5ed;stroke:#367158;stroke-width:2}.h{font:700 26px system-ui,sans-serif;fill:#17364e}.t{font:650 18px system-ui,sans-serif;fill:#17364e}.s{font:15px system-ui,sans-serif;fill:#35536a}.a{stroke:#376489;stroke-width:3;fill:none;marker-end:url(#arr)}</style>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0l10 5-10 5z" fill="#376489"/></marker></defs>
+<rect class="bg" width="920" height="780" rx="24"/><text class="h" x="40" y="54">多候選 arrival 保留到 CPPR 判定點</text>
+<text class="t" x="58" y="104">Timing graph level</text>
+<rect class="box" x="58" y="130" width="190" height="94" rx="15"/><text class="t" x="82" y="167">L1：startpoints</text><text class="s" x="82" y="196">mean / std / clock ID</text>
+<path class="a" d="M248 177H318"/><rect class="box" x="318" y="130" width="190" height="94" rx="15"/><text class="t" x="342" y="167">L2…Ln：arcs</text><text class="s" x="342" y="196">cell + net delay</text>
+<path class="a" d="M508 177H578"/><rect class="box" x="578" y="130" width="280" height="94" rx="15"/><text class="t" x="602" y="167">Endpoints</text><text class="s" x="602" y="196">required time / reference slack</text>
+<path class="a" d="M458 224V292"/><rect class="tensor" x="110" y="292" width="700" height="214" rx="18"/><text class="t" x="140" y="332">GPU tensors：每個 node × Top-K（公開設定 K=256）</text>
+<rect class="box" x="142" y="360" width="250" height="112" rx="14"/><text class="t" x="164" y="394">Rise candidates</text><text class="s" x="164" y="423">arrival mean / std</text><text class="s" x="164" y="448">startpoint IDs</text>
+<rect class="box" x="528" y="360" width="250" height="112" rx="14"/><text class="t" x="550" y="394">Fall candidates</text><text class="s" x="550" y="423">arrival mean / std</text><text class="s" x="550" y="448">startpoint IDs</text>
+<path class="a" d="M392 416H528"/><text class="s" x="419" y="402">level-wise</text><text class="s" x="424" y="438">CUDA</text>
+<path class="a" d="M460 506V566"/><rect class="cppr" x="180" y="566" width="560" height="100" rx="16"/><text class="t" x="208" y="605">Endpoint selection + CPPR correction</text><text class="s" x="208" y="636">保留 startpoint 身分，避免共享 clock path 被重複悲觀計算</text>
+<path class="a" d="M460 666V712"/><rect class="box" x="260" y="712" width="400" height="50" rx="14"/><text class="t" x="292" y="744">WNS / TNS / slack correlation</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#376489" i]{fill:#b5c5d3}.bg{fill:#1a1f27}.box{fill:#1b1f20;stroke:#b5c5d3}.tensor{fill:#192730;stroke:#b5c5d3}.cppr{fill:#202d25;stroke:#bdd4ca}.h{fill:#c6d6e2}.t{fill:#c6d6e2}.s{fill:#bfcbd4}.a{stroke:#b5c5d3}}</style>
+</svg>
