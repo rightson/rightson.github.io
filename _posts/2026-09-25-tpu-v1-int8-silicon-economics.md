@@ -14,6 +14,12 @@ TPU v1 採用 INT8，等於把可接受的模型數值誤差轉成晶片面積�
 
 這使 quantization 成為模型與架構的共同決策。以下從量化映射、arithmetic 成本與頻寬試算，追到 accumulator、clipping 及 compiler 邊界。長期有用的判斷是：精度收益應以相同任務品質下的整體成本比較，不能只把 INT8 TOPS 與浮點 TOPS 放在同一張排行榜。
 
+先把相同數量的 operands 放進圖中的兩種表示：FP32 的原始資料量是 INT8 的四倍，這會影響儲存與搬移預算。再看下半部的誤差驗收迴路；低位寬乘法仍需搭配較寬累加及數值檢查，收益必須在模型品質成立後才可採信。
+
+![相同 N 個 operands 的 FP32 與 INT8 原始資料量比較，以及量化、較寬累加和模型品質檢查的關係](/images/architecture/2026-09-25/int8-budget-context.svg)
+
+圖：作者設計的數值預算示意；4:1 只指原始 operand bytes，未含 metadata，不代表晶片面積或工作速度同比改善。概念依據：[Jouppi，ISCA 2017](https://research.google/pubs/in-datacenter-performance-analysis-of-a-tensor-processing-unit/)、[Google TPU v1 deep dive](https://cloud.google.com/blog/products/ai-machine-learning/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu)。
+
 ## Inference 為什麼有資格使用較低 precision
 
 Training 與 inference 對數值的需求並不相同。

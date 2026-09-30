@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="790" viewBox="0 0 680 790" role="img" aria-labelledby="title desc"><title id="title">Precision is a system budget</title><desc id="desc">Precision is a system budget. Conceptual diagram, not to scale.</desc><defs><marker id="blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#1766ad"/></marker><marker id="orange" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#b55b0c"/></marker><marker id="ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#183047"/></marker><marker id="teal" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#087c72"/></marker><marker id="red" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#b83232"/></marker></defs><style>text{font-family:DejaVu Sans,Arial,sans-serif;fill:#183047;font-size:22px}.small{font-size:19px}.head{font-size:25px;font-weight:700}.bold{font-weight:700}</style>
+<rect x="0" y="0" width="680" height="790" rx="12" fill="#ffffff"/>
+<text x="28" y="42" text-anchor="start" class="head">Precision is a system budget</text>
+<rect x="20" y="68" width="640" height="253" rx="12" fill="#f0f5fa"/>
+<text x="40" y="104" text-anchor="start" class="bold">1. Same N operands, different payload size</text>
+<text x="45" y="144" text-anchor="start">FP32: 4N bytes</text>
+<rect x="45" y="170" width="550" height="40" rx="12" fill="#dcecf9"/>
+<line x1="182.5" y1="170" x2="182.5" y2="210" stroke="#ffffff" stroke-width="2"/>
+<line x1="320" y1="170" x2="320" y2="210" stroke="#ffffff" stroke-width="2"/>
+<line x1="457.5" y1="170" x2="457.5" y2="210" stroke="#ffffff" stroke-width="2"/>
+<text x="45" y="249" text-anchor="start">INT8: N bytes</text>
+<rect x="45" y="265" width="137.5" height="35" rx="12" fill="#e4f3ec"/>
+<rect x="20" y="345" width="640" height="269" rx="12" fill="#f0f5fa"/>
+<text x="40" y="381" text-anchor="start" class="bold">2. Storage savings do not remove error</text>
+<rect x="50" y="407" width="165" height="80" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="132.5" y="434" text-anchor="middle" class="small">real values</text>
+<text x="132.5" y="459" text-anchor="middle" class="small">scale + range</text>
+<rect x="255" y="407" width="165" height="80" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="337.5" y="434" text-anchor="middle" class="small">INT8 values</text>
+<text x="337.5" y="459" text-anchor="middle" class="small">round / clip</text>
+<rect x="460" y="407" width="165" height="80" rx="12" fill="#ffffff" stroke="#087c72" stroke-width="2"/>
+<text x="542.5" y="434" text-anchor="middle" class="small">MAC</text>
+<text x="542.5" y="459" text-anchor="middle" class="small">wider sum</text>
+<line x1="219" y1="447" x2="249" y2="447" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="424" y1="447" x2="454" y2="447" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<path d="M 542,490 L 542,555 L 135,555 L 135,492" fill="none" stroke="#b55b0c" stroke-width="3" marker-end="url(#orange)"/>
+<text x="340" y="587" text-anchor="middle" class="small">validate error against the task</text>
+<rect x="20" y="639" width="640" height="116" rx="12" fill="#fff0df"/>
+<text x="40" y="679" text-anchor="start">4:1 describes raw operand bytes only.</text>
+<text x="40" y="713" text-anchor="start" class="small">It is not a 4x chip-area or job-speedup claim.</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#087c72" i]{fill:#44e4d6}[fill="#1766ad" i]{fill:#5ca5e8}[fill="#183047" i]{fill:#c8d5e1}[fill="#b55b0c" i]{fill:#e79c59}[fill="#b83232" i]{fill:#df8a8a}[fill="#dcecf9" i]{fill:#1c2a36}[fill="#e4f3ec" i]{fill:#212f29}[fill="#f0f5fa" i]{fill:#1b232b}[fill="#fff0df" i]{fill:#372715}[fill="#ffffff" i]{fill:#1b1f20}[stroke="#087c72" i]{stroke:#44e4d6}[stroke="#1766ad" i]{stroke:#5ca5e8}[stroke="#b55b0c" i]{stroke:#e79c59}[stroke="#ffffff" i]{stroke:#1b1f20}text{fill:#c8d5e1}}</style>
+</svg>
