@@ -20,7 +20,7 @@
 
 上方連結僅供選題查重；正式 URL 應依現行站點 permalink 與公開頁核對。
 
-- **NVIDIA 使用的 GDP／配置式設計管理**：2026-09-30 使用者明確要求加刊；source path `_posts/2026-09-30-nvidia-gdp-multivendor-design-source-of-truth.md`。NVIDIA 使用證言、2024 GDP-XL 公告與目前 GDP-AI 文件分開；作者 schema／恢復／發布方案不冒充 NVIDIA 部署。提交與公開頁驗證狀態另行核對，未驗證前不標為已發布。
+- **NVIDIA 使用的 GDP／配置式設計管理**：2026-09-30 使用者明確要求加刊；source path `_posts/2026-09-30-nvidia-gdp-multivendor-design-source-of-truth.md`。NVIDIA 使用證言、2024 GDP-XL 公告與目前 GDP-AI 文件分開；作者 schema／恢復／發布方案不冒充 NVIDIA 部署。原始碼 commit `2ace04740ebe12ce34c73d0cbfb390e5c00dfa69`；[正式文章](https://rightson.github.io/ic-design-platform/2026/09/30/nvidia-gdp-multivendor-design-source-of-truth.html)。2026-09-30 已核對該 commit 的 Pages build／deploy 成功、正式頁與四張 SVG HTTP 200、分類／search.json／RSS；正文有效中文字 4,416，依站點算法 16 分鐘。
 
 ## 候選章節，依證據成熟度選擇，不按新聞日期輪替
 
