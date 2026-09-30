@@ -17,6 +17,12 @@ series_order: 3
 
 這是一個作者提出的假設案例，數量與政策用來推導架構，並非某家公司的內部資料。既有[短網址服務](/networking/2026/09/24/short-url-uniqueness-idempotency-cache-hotspots.html)可作為被保護的 API；[前篇的 ID 分配](/networking/2026/09/28/distributed-id-range-clock-worker-ownership.html)則會在後面比較批次配額時派上用場。
 
+圖中先只保留原有問題：兩家客戶經過不同入口，最後仍競爭同一批後端資源。A 的批次流量增加，B 的請求也可能跟著等待；接下來要釐清計量對象與可接受的突發，再決定配額狀態應放在哪裡。
+
+![兩個租戶經多個 API 入口共用後端容量；一家租戶的突發請求可能拖慢另一家](/images/distributed-systems/2026-09-30/tenant-burst-background.svg)
+
+圖：作者設計的假設平台情境，未指定限流演算法。故障與過載機制參考：[Google SRE — Addressing Cascading Failures](https://sre.google/sre-book/addressing-cascading-failures/)。
+
 ## 誰共用配額，哪些操作需要被限制
 
 先問限制的對象是誰。若按 IP 計數，一家公司透過多個出口便能取得多份配額，多家公司共用出口又可能互相影響。若按 API key 計數，客戶建立新 key 就可能擴大預算。因此本案例選擇「企業租戶」：同一公司的多把 key、不同使用者與入口節點，共用同一租戶預算。租戶身分來自驗證結果，外部自行填寫的 `X-Tenant-ID` 不能成為計數依據。
