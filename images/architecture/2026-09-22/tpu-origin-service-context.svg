@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="790" viewBox="0 0 680 790" role="img" aria-labelledby="title desc"><title id="title">Inference capacity has a deadline</title><desc id="desc">Inference capacity has a deadline. Conceptual diagram, not to scale.</desc><defs><marker id="blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#1766ad"/></marker><marker id="orange" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#b55b0c"/></marker><marker id="ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#183047"/></marker><marker id="teal" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#087c72"/></marker><marker id="red" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#b83232"/></marker></defs><style>text{font-family:DejaVu Sans,Arial,sans-serif;fill:#183047;font-size:22px}.small{font-size:19px}.head{font-size:25px;font-weight:700}.bold{font-weight:700}</style>
+<rect x="0" y="0" width="680" height="790" rx="12" fill="#ffffff"/>
+<text x="28" y="42" text-anchor="start" class="head">Inference capacity has a deadline</text>
+<rect x="20" y="68" width="640" height="225" rx="12" fill="#f0f5fa"/>
+<text x="40" y="104" text-anchor="start" class="bold">1. Request -&gt; compute -&gt; useful response</text>
+<rect x="50" y="132" width="150" height="75" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="125.0" y="159" text-anchor="middle" class="small">Request</text>
+<text x="125.0" y="184" text-anchor="middle" class="small">arrives</text>
+<rect x="265" y="132" width="150" height="75" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="340.0" y="159" text-anchor="middle" class="small">Queue +</text>
+<text x="340.0" y="184" text-anchor="middle" class="small">inference</text>
+<rect x="480" y="132" width="150" height="75" rx="12" fill="#ffffff" stroke="#087c72" stroke-width="2"/>
+<text x="555.0" y="159" text-anchor="middle" class="small">Response</text>
+<text x="555.0" y="184" text-anchor="middle" class="small">before SLO</text>
+<line x1="202" y1="169" x2="260" y2="169" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="417" y1="169" x2="475" y2="169" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<text x="45" y="256" text-anchor="start" class="small">A faster chip helps only if the full path fits.</text>
+<rect x="20" y="316" width="640" height="340" rx="12" fill="#f0f5fa"/>
+<text x="40" y="352" text-anchor="start" class="bold">2. Batch formation also consumes the budget</text>
+<text x="42" y="392" text-anchor="start">small batch</text>
+<text x="42" y="480" text-anchor="start">large batch</text>
+<rect x="205" y="415" width="55" height="36" rx="12" fill="#fff0df"/>
+<rect x="260" y="415" width="190" height="36" rx="12" fill="#dcecf9"/>
+<line x1="560" y1="396" x2="560" y2="468" stroke="#b83232" stroke-width="3" stroke-dasharray="7 5"/>
+<rect x="205" y="503" width="160" height="36" rx="12" fill="#fff0df"/>
+<rect x="365" y="503" width="150" height="36" rx="12" fill="#dcecf9"/>
+<line x1="560" y1="484" x2="560" y2="556" stroke="#b83232" stroke-width="3" stroke-dasharray="7 5"/>
+<text x="580" y="393" text-anchor="start" class="small">SLO</text>
+<text x="217" y="569" text-anchor="start" class="small">waiting</text>
+<text x="390" y="569" text-anchor="start" class="small">compute</text>
+<text x="42" y="620" text-anchor="start" class="small">Teaching timeline: lengths are not measurements.</text>
+<rect x="20" y="680" width="640" height="81" rx="12" fill="#e4f3ec"/>
+<text x="40" y="712" text-anchor="start">ASIC choices: precision, reuse, memory, host link</text>
+<text x="40" y="742" text-anchor="start" class="small">Judge them by useful responses within the deadline.</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#087c72" i]{fill:#44e4d6}[fill="#1766ad" i]{fill:#5ca5e8}[fill="#183047" i]{fill:#c8d5e1}[fill="#b55b0c" i]{fill:#e79c59}[fill="#b83232" i]{fill:#df8a8a}[fill="#dcecf9" i]{fill:#1c2a36}[fill="#e4f3ec" i]{fill:#212f29}[fill="#f0f5fa" i]{fill:#1b232b}[fill="#fff0df" i]{fill:#372715}[fill="#ffffff" i]{fill:#1b1f20}[stroke="#087c72" i]{stroke:#44e4d6}[stroke="#1766ad" i]{stroke:#5ca5e8}[stroke="#b83232" i]{stroke:#df8a8a}text{fill:#c8d5e1}}</style>
+</svg>

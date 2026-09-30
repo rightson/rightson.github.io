@@ -14,6 +14,12 @@ TPU v1 值得回頭研究，是因為它把晶片設計目標直接接到線上�
 
 這個案例帶來的長期理解是：加速器的效率必須在完整服務條件下比較。下文沿著容量需求推導 INT8、256×256 array、片上儲存與 PCIe 的選擇，並追問每個機制成功後，瓶頸會移到哪裡。
 
+先沿圖中的服務路徑看：請求抵達之後，還要經過排隊、湊 batch 與實際推論，才能得到回應。小 batch 與大 batch 的時間分配不同；選擇專用硬體，是希望在服務期限內增加可交付的工作，而不只提高單一運算單元的峰值。
+
+![線上推論從請求、等待與運算到回應；不同 batch 大小會改變等待與計算的時間分配](/images/architecture/2026-09-22/tpu-origin-service-context.svg)
+
+圖：作者整理的服務背景示意；時間條長度為教學假設，非 Google 量測。需求與架構依據：[Jouppi，Google，ISCA 2017](https://research.google/pubs/in-datacenter-performance-analysis-of-a-tensor-processing-unit/)。
+
 ## TPU 的起點：資料中心容量
 
 2013 年的 Google 面對的問題是「如果 DNN inference 滲透到 Search、Translate、speech 等大量服務，現有機房能不能承受」，比「矩陣乘法能不能更快」範圍大得多。
