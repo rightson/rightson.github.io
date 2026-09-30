@@ -1,6 +1,6 @@
 # Kubernetes / HPC Systems：從入門到 production architecture
 
-本檔是 `rightson/rightson.github.io` 這個系列唯一的選題、前置依賴與完成狀態來源。公開文章遵守 repo 最新 `AGENTS.md`；本檔只管課程，不作公開文章。每三天於 Asia/Taipei 08:00 啟動一次寫作與發布流程；啟動時間不是文章的建立或上線時間。
+本檔是 `rightson/rightson.github.io` 這個系列唯一的選題、前置依賴與完成狀態來源。公開文章遵守 repo 最新 `AGENTS.md`；本檔只管課程，不作公開文章。依 2026-09-30 已同意的新編輯週期，每週四於 Asia/Taipei 19:00 啟動一次寫作與發布流程；series: k8s-hpc。完整規格見 RESEARCH_SCHEDULES.md 與 RESEARCH_AUTOMATIONS.json，runtime 是否啟用另行驗證；啟動時間不是文章的建立或上線時間。
 
 ## 目前狀態與接續規則
 

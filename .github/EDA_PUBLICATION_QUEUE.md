@@ -16,4 +16,4 @@ Read AGENTS.md before processing this queue. This is scheduling metadata, not ar
 - Deployment/public-page verification is tracked separately from the source release.
 - On retries, inspect both locations first. If already restored, verify this release rather than publish again.
 
-The regular EDA radar remains daily at 06:00. No weekend or holiday PPTX is requested.
+The historical release record above is preserved. The approved replacement editorial cadence is SOTA R2G/CAD on Mondays at 06:00, Agentic Design radar daily at 06:30, and Agentic architecture deep dives on Tuesdays at 06:00, all Asia/Taipei. Read RESEARCH_SCHEDULES.md and RESEARCH_AUTOMATIONS.json. These files describe the intended cadence, not a verified scheduler state. No weekend or holiday PPTX is requested.

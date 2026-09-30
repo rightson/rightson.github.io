@@ -52,3 +52,7 @@ Search downloads the full index once. Consider a dedicated search index if the a
 Build with `bundle exec jekyll build`. Verify `/`, `/categories/`, `/search/`, an existing article, and `/feed.xml`. Test a keyword found only in article content, combined filters, zero results, mobile overflow, keyboard navigation, and an index-load failure.
 
 分類邊界：STA、SDC、timing closure 與 EDA 演算法歸 `eda`；多人協作、IP／SoC 整合、跨工具 R2G 流程與設計資料／執行治理歸 `ic-design-platform`。重新分類既有文章只修改 `domain`，保留 `categories` 與 URL。
+
+## Research series and recurring work
+
+The eight public domains remain unchanged. Approved series, topic ownership, cadence and fresh-session migration requirements are documented in `.github/RESEARCH_SCHEDULES.md`; complete recurring prompts are in `.github/RESEARCH_AUTOMATIONS.json`. Each run reads the latest `AGENTS.md` before researching or writing. Repository specifications do not create, enable or disable scheduler tasks; runtime status requires separate verification. Existing curriculum progress, post dates, categories and permalinks are preserved.
