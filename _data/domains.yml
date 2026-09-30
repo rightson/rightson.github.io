@@ -34,3 +34,8 @@
   title: 分散式系統
   english: DISTRIBUTED SYSTEMS
   description: 叢集管理與控制面、一致性、複寫、容錯，以及大規模服務設計。
+- key: ai-frontier
+  number: '08'
+  title: AI 前沿技術
+  english: AI FRONTIER TECHNOLOGY
+  description: 前沿模型、訓練與推論方法、Agent 系統，以及 open-weight 模型競爭與技術社群討論。

@@ -8,7 +8,7 @@ This site uses native Jekyll layouts and GitHub Pages. No remote theme, JavaScri
 
 Continue adding Markdown files to `_posts/YYYY-MM-DD-slug.md` with `layout: post`, `title`, `date`, and `categories`. Do not change existing `categories`: Jekyll uses them in default post URLs.
 
-Add an optional `domain` to explicitly select one of the seven editorial sections:
+Add an optional `domain` to explicitly select one of the eight editorial sections:
 
 | domain | Section |
 | --- | --- |
@@ -19,6 +19,9 @@ Add an optional `domain` to explicitly select one of the seven editorial section
 | architecture | 計算機架構 |
 | networking | 網路與互連 |
 | distributed-systems | 分散式系統 |
+| ai-frontier | AI 前沿技術 |
+
+The daily AI frontier digest uses `series: ai-frontier-digest`, `domain: ai-frontier`, and `categories: ai-frontier` for new posts. Reclassifying existing digest posts changes only `domain`; preserve their original `categories`, filename, date, and permalink. Models, inference/training methods, Agent systems, open-weight competition, and technical community debates belong here; supply-chain and business analysis remain in `ai-industry`.
 
 `domain` does not change the article URL. Existing posts are classified using `_includes/domain-key.html`; unmatched posts appear under 其他筆記. A post has one primary domain and any number of category labels. Unknown category labels remain visible, so daily publishing does not require a code change. Chinese display labels can be added to `_data/category_labels.yml`.
 
@@ -34,7 +37,7 @@ categories: ai-supply-chain research
 
 ## Features
 
-- Homepage: newest-first articles and seven persistent research sections.
+- Homepage: newest-first articles and eight persistent research sections.
 - `/categories/`: static section archives, usable without JavaScript.
 - `/search/`: client-side full-text search with AND matching across space-separated keywords, domain and category filters, and shareable URLs.
 - `/search.json`: automatically generated from published posts at build time.

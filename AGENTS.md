@@ -41,7 +41,7 @@
 現有功能應保留：
 
 - 首頁依時間由新到舊顯示文章。
-- 七個固定研究 domain（見第 2 節）。
+- 八個固定研究 domain（見第 2 節）。
 - `/categories/` 靜態分類頁。
 - `/search/` 全文搜尋、AND keyword matching、domain/category filters 與 shareable query URL。
 - `/search.json` 由 published posts 自動產生。
@@ -58,7 +58,7 @@
 
 ---
 
-## 2. 七個公開分類與 URL 穩定性
+## 2. 八個公開分類與 URL 穩定性
 
 分類名稱採學術會議與業界通用詞彙；每篇選一個主要 `domain`：
 
@@ -71,6 +71,7 @@
 | `architecture` | 計算機架構 | 加速器（TPU／GPU／ASIC）、處理器微架構、記憶體階層、資料流、效能模型 | ISCA、MICRO、HPCA |
 | `networking` | 網路與互連 | 網路協定、交換晶片、光通訊、scale-up／scale-out 互連、資料中心網路 | SIGCOMM、NSDI、Hot Interconnects |
 | `distributed-systems` | 分散式系統 | 叢集管理（Kubernetes、Slurm）、控制面、一致性、複寫、容錯、大規模服務設計 | OSDI、SOSP、EuroSys |
+| `ai-frontier` | AI 前沿技術 | 前沿模型、訓練／推論演算法、reasoning／multimodal、Agent／工具／memory／evaluation、open-weight 競爭與即時技術討論 | AI 前沿技術摘要、模型與系統研究 |
 
 規則：
 
@@ -83,6 +84,8 @@
 - 不用細碎 category/tag 製造分類噪音。首頁、分類頁與文章頁只對讀者顯示 `domain`；`categories` 僅用於既有 URL 與搜尋篩選。
 - 顯示順序依 `_data/domains.yml`。
 - 邊界：
+  - 「AI 前沿技術摘要」排程使用 `series: ai-frontier-digest`；新文章固定 `domain: ai-frontier` 與 `categories: ai-frontier`。既有本系列移入時只改 `domain`，保留原 `categories`、檔名、date 與 permalink。
+  - 模型能力、訓練／推論方法、通用 Agent 技術及 open-weight 比較歸 `ai-frontier`；需求、供應鏈、產能與價值分配歸 `ai-industry`，估值與交易歸 `investing`。獨立的硬體微架構、互連、控制面或 EDA 深掘仍按下列既有邊界分類；AI 前沿技術摘要中為理解模型／Agent 而引用跨層機制，不改變本系列的主要分類。
   - STA／SDC／timing closure 與 EDA 演算法歸 `eda`；多人協作、IP／SoC 整合、跨工具資料交接、R2G 流程與設計資料／執行治理歸 `ic-design-platform`。依正文的主要問題分類，不按排程名稱或廠商名稱決定；C3PO／AutoDMP 等以 placement 最佳化為主的文章歸 `eda`。
   - TPU／加速器的微架構與資料流歸 `architecture`；其商業、供應鏈或估值歸 `ai-industry`／`investing`。
   - Kubernetes／HPC 叢集與控制面歸 `distributed-systems`，即使應用案例是 EDA；NVLink／UALink／光互連等資料路徑歸 `networking`。

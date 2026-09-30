@@ -2,7 +2,7 @@
 layout: post
 title: DevDay 2026：較低成本模型與持續型 Agent 改變工作設計
 date: 2026-09-30 08:39:59 +0800
-domain: ai-industry
+domain: ai-frontier
 categories: ai-industry
 series: ai-frontier-digest
 description: GPT-6.1 Sol、Ultrafast、雲端 Agent、MCP Events 與 Private Intelligence 分別改變成本、等待、工作接續及資料邊界；效益須以相同品質下的成功交付衡量。
@@ -61,6 +61,10 @@ DevDay 的速度宣稱區分 Codex 與 API 場景；具體接入方式則見 [Ul
 
 從應用看，時間至少由模型生成、工具執行、通訊與排隊構成。假設原本一件工作花 100 秒，其中 40 秒可以由模型服務加速，60 秒是串行工具與其他等待。即使把那 40 秒理想地加速六倍，總時間仍是 60＋40／6＝66.7 秒，端到端加速約 1.5 倍。若可加速部分占 80%，同樣算例才會到 3 倍。這裡的六倍是演算假設，不是對實際服務的效能承諾。
 
+![串行工作中模型生成與其他等待的時間比較：六倍模型加速只帶來一點五倍整體加速](/images/ai-frontier/2026-09-30/devday-latency-critical-path.svg)
+
+圖：作者依本節假設算例繪製，非官方量測。藍色是模型生成，綠色是工具與其他等待；縮短藍色區段仍會留下六十秒。所有長條採相同時間比例，六倍是演算假設。
+
 工具很多的 agent 尤其需要量測這個比例。模型快速選出下一步之後，若還要等待五秒搜尋、三十秒測試或十分鐘人工批准，生成率很快就不再主導交付。相反地，連續編輯、短工具回合與即時互動，可能更容易受益。相同技術在不同 execution path 上，經濟價值不同。
 
 因此，速度實驗應保留同一模型、工作、工具及驗收條件，分段量測延遲。比較 standard 與 Ultrafast 時，除了完成時間，也要觀察費用與排隊分布；只記平均 tokens/s，會漏掉使用者真正遇到的長尾等待。若更快服務讓單位時間啟動更多工具工作，下游容量不足時還可能增加排隊，抵銷部分收益。這是需要驗證的系統推論。
@@ -80,6 +84,10 @@ DevDay 的速度宣稱區分 Codex 與 API 場景；具體接入方式則見 [Ul
 具體來看，假設一個 agent 收到 bug report，要重現、修改程式、執行測試，再建立待審查 PR。這是本文的參考案例：先固定 issue 與 repository revision，保存這次工作的識別；修正及測試都對應同一版本，PR 再連回測試證據。收到建立 PR 的回應之後，還需核對遠端 PR 是否包含預期修改。
 
 最麻煩的故障發生在「外部成功、自己沒收到」。PR 已建立，連線卻在回應途中斷掉。此時重新發出整個任務，可能建立第二個 PR；直接宣告失敗，又會遺漏已完成的成果。
+
+![外部 PR 成功但回覆遺失的恢復流程：先查相同工作與遠端 PR，再決定是否重試](/images/ai-frontier/2026-09-30/devday-unknown-outcome-recovery.svg)
+
+圖：作者設計的恢復路徑，參考 [Agents API 的相同 session 恢復要求](https://developers.openai.com/api/docs/guides/agents-api/tools/computer-use)。外部 PR 的識別與版本核對是應用責任；仍不確定時保留 unknown，不能把「查不到」直接視為可以重送。
 
 | 應用可見狀態 | 外部可能留下什麼 | 恢復時的第一步 |
 | --- | --- | --- |
