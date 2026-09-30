@@ -14,6 +14,12 @@ RDMA 減少軟體參與資料搬移的成本，但多個 QP 仍會爭用 RNIC �
 
 這題的前瞻性在於，以硬體本來可見的訊號近似工作急迫性，可能減少 application hints 的介面成本。以下先追蹤 size、backlog 與 priority 的映射，再檢查量化、in-order RoCEv2、公平性及 congestion control 的互動。論文結果與延伸到其他 AI 工作的架構推論會分開討論。
 
+沿圖從多個 QP 走向同一條發送路徑：RNIC 能看見待傳請求與 backlog，排程器再決定誰先取得服務。注意順序選擇與 wire priority 的交接；這讓排程能影響完成時間，也必須與下游交換器的服務方式一起檢查。
+
+![STORM 以 transaction size 與 QP backlog 產生少量 wire priority](/images/networking/2026-09-27/storm-rnic-scheduler.svg)
+
+圖：作者整理；機制依據 [STORM 論文摘要](https://re.public.polimi.it/handle/11311/1326226) 與 [Cambridge Systems Research Group 演講摘要](https://www.cst.cam.ac.uk/seminars/list/249035)。
+
 ## 公平共享在 RDMA 上丟掉了哪些資訊
 
 先把問題拆乾淨。
@@ -36,9 +42,6 @@ STORM 的核心不是精準還原 application DAG。它接受資訊不完整，�
 
 答案至少在論文的 workload 裡是肯定的。[University of Cambridge 的作者演講摘要](https://www.cst.cam.ac.uk/seminars/list/249035) 也直接指出，STORM 只依賴 NIC-visible information，不需要 application hint。
 
-![STORM 以 transaction size 與 QP backlog 產生少量 wire priority](/images/networking/2026-09-27/storm-rnic-scheduler.svg)
-
-圖：作者整理；機制依據 [STORM 論文摘要](https://re.public.polimi.it/handle/11311/1326226) 與 [Cambridge Systems Research Group 演講摘要](https://www.cst.cam.ac.uk/seminars/list/249035)。
 
 ## RNIC 其實已經知道足夠多
 
