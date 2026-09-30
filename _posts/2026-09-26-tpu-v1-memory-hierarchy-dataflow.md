@@ -14,6 +14,8 @@ TPU v1 的記憶體階層依資料壽命、重用方式與數值寬度分工，�
 
 因此，理解加速器的儲存容量，還要理解排程與 live state。以下把 weights、activations 與 partial sums 分開追蹤，推導 Unified Buffer、Weight FIFO 及 Accumulator 的角色，再分析什麼 shape 或 batch 會使陣列等待。這能用來判斷新增 SRAM、頻寬或 MAC，哪一項才會改善目標工作負載。
 
+先依圖把三類資料分開：weights 從外部記憶體進入，activations 在片上 buffer 供應，partial sums 留在累加路徑。這些箭頭不是同一種頻寬；資料可以在哪裡停留、重用幾次，才會決定外部供應能否支撐陣列。
+
 <figure>
   <img src="https://storage.googleapis.com/gweb-cloudblog-publish/images/tpu-15dly1.max-500x500.PNG" alt="第一代 TPU block diagram，顯示 PCIe、DDR3 Weight Memory、Weight FIFO、Unified Buffer、Matrix Multiply Unit 與 Accumulator" style="max-width:100%;height:auto;">
   <figcaption>圖 1｜TPU v1 的官方 block diagram。最重要的不是元件名稱，而是資料路徑的不對稱：weight 從 DDR3 以約 30 GiB/s 進來，activation 在片上以約 167 GiB/s 餵給 Matrix Unit。來源：<a href="https://cloud.google.com/blog/products/ai-machine-learning/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu">Google Cloud — An in-depth look at Google’s first Tensor Processing Unit</a>。</figcaption>
