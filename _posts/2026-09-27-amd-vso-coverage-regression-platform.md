@@ -14,6 +14,12 @@ Coverage regression 可以視為在有限成本內取得驗證證據的組合問
 
 這個問題值得從平台角度研究，因為選擇器改變了哪些證據會被產生。以下先拆解測試集合與刺激探索，再把結果接到版本、checkpoint、holdout 及失敗恢復。要保留的能力是用可比較的證據配置資源，而非只把 regression 的百分比或 job 數當成進度。
 
+先看圖中的 test／bin 矩陣：T1 與 T2、T3 與 T4 存在重疊；在這個小例子裡，保留 T1 和 T4 就能命中原來四個 bins。這使縮小 regression 成為可研究的選擇問題，也提醒我們相同 coverage 並不能自行證明所有 bug detection 能力都被保留。
+
+![四個 tests 命中重疊的 coverage bins；假設矩陣中 T1 和 T4 的子集仍命中全部四個 bins](/images/eda/2026-09-27/coverage-selection-context.svg)
+
+圖：作者假設矩陣，非 AMD 原始資料或 VSO.ai 實測；僅說明固定 bins 下的集合選擇。研究線索：[AMD，SNUG 2023 Proceedings](https://www.synopsys.com/community/snug/snug-silicon-valley/location-proceedings-2023.html)。
+
 ## 先把問題放回 R2G 的正確位置
 
 Coverage regression 位在 RTL／testbench 變更之後、功能驗證驗收之前。它接收 RTL、verification IP、assertions、coverage model、simulation build 與一組測試設定；輸出不只是 pass／fail，而是 assertion failures、waveforms、logs、functional／code coverage databases，以及「這些證據對應哪一版輸入」的關係。

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="815" viewBox="0 0 680 815" role="img" aria-labelledby="title desc"><title id="title">Test overlap creates a selection problem</title><desc id="desc">Test overlap creates a selection problem. Conceptual diagram, not to scale.</desc><defs><marker id="blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#1766ad"/></marker><marker id="orange" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#b55b0c"/></marker><marker id="ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#183047"/></marker><marker id="teal" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#087c72"/></marker><marker id="red" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#b83232"/></marker></defs><style>text{font-family:DejaVu Sans,Arial,sans-serif;fill:#183047;font-size:22px}.small{font-size:19px}.head{font-size:25px;font-weight:700}.bold{font-weight:700}</style>
+<rect x="0" y="0" width="680" height="815" rx="12" fill="#ffffff"/>
+<text x="28" y="42" text-anchor="start" class="head">Test overlap creates a selection problem</text>
+<rect x="20" y="68" width="640" height="355" rx="12" fill="#f0f5fa"/>
+<text x="40" y="104" text-anchor="start" class="bold">1. Tests cover overlapping behavior</text>
+<text x="45" y="143" text-anchor="start" class="small">test / bin</text>
+<text x="250" y="143" text-anchor="middle" class="small">B1</text>
+<text x="340" y="143" text-anchor="middle" class="small">B2</text>
+<text x="430" y="143" text-anchor="middle" class="small">B3</text>
+<text x="520" y="143" text-anchor="middle" class="small">B4</text>
+<text x="48" y="201" text-anchor="start" class="bold">T1</text>
+<rect x="223" y="176" width="52" height="35" rx="5" fill="#e4f3ec" stroke="#087c72" stroke-width="2"/>
+<text x="249" y="201" text-anchor="middle" class="small">x</text>
+<rect x="313" y="176" width="52" height="35" rx="5" fill="#e4f3ec" stroke="#087c72" stroke-width="2"/>
+<text x="339" y="201" text-anchor="middle" class="small">x</text>
+<rect x="403" y="176" width="52" height="35" rx="5" fill="#ffffff" stroke="#486174" stroke-width="2"/>
+<rect x="493" y="176" width="52" height="35" rx="5" fill="#ffffff" stroke="#486174" stroke-width="2"/>
+<text x="48" y="255" text-anchor="start" class="bold">T2</text>
+<rect x="223" y="230" width="52" height="35" rx="5" fill="#e4f3ec" stroke="#087c72" stroke-width="2"/>
+<text x="249" y="255" text-anchor="middle" class="small">x</text>
+<rect x="313" y="230" width="52" height="35" rx="5" fill="#ffffff" stroke="#486174" stroke-width="2"/>
+<rect x="403" y="230" width="52" height="35" rx="5" fill="#ffffff" stroke="#486174" stroke-width="2"/>
+<rect x="493" y="230" width="52" height="35" rx="5" fill="#ffffff" stroke="#486174" stroke-width="2"/>
+<text x="48" y="309" text-anchor="start" class="bold">T3</text>
+<rect x="223" y="284" width="52" height="35" rx="5" fill="#ffffff" stroke="#486174" stroke-width="2"/>
+<rect x="313" y="284" width="52" height="35" rx="5" fill="#ffffff" stroke="#486174" stroke-width="2"/>
+<rect x="403" y="284" width="52" height="35" rx="5" fill="#e4f3ec" stroke="#087c72" stroke-width="2"/>
+<text x="429" y="309" text-anchor="middle" class="small">x</text>
+<rect x="493" y="284" width="52" height="35" rx="5" fill="#ffffff" stroke="#486174" stroke-width="2"/>
+<text x="48" y="363" text-anchor="start" class="bold">T4</text>
+<rect x="223" y="338" width="52" height="35" rx="5" fill="#ffffff" stroke="#486174" stroke-width="2"/>
+<rect x="313" y="338" width="52" height="35" rx="5" fill="#ffffff" stroke="#486174" stroke-width="2"/>
+<rect x="403" y="338" width="52" height="35" rx="5" fill="#e4f3ec" stroke="#087c72" stroke-width="2"/>
+<text x="429" y="363" text-anchor="middle" class="small">x</text>
+<rect x="493" y="338" width="52" height="35" rx="5" fill="#e4f3ec" stroke="#087c72" stroke-width="2"/>
+<text x="519" y="363" text-anchor="middle" class="small">x</text>
+<rect x="20" y="446" width="640" height="275" rx="12" fill="#f0f5fa"/>
+<text x="40" y="482" text-anchor="start" class="bold">2. Same bins can come from fewer tests</text>
+<rect x="55" y="510" width="240" height="71" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="175.0" y="537" text-anchor="middle" class="small">all: T1 T2 T3 T4</text>
+<rect x="386" y="510" width="240" height="71" rx="12" fill="#ffffff" stroke="#087c72" stroke-width="2"/>
+<text x="506.0" y="537" text-anchor="middle" class="small">subset: T1 T4</text>
+<text x="340" y="628" text-anchor="middle" class="small">Both cover B1 B2 B3 B4 in this example.</text>
+<text x="40" y="681" text-anchor="start" class="small">A coverage bin is not proof of every possible bug.</text>
+<text x="36" y="765" text-anchor="start" class="small">Author matrix; neither AMD data nor a VSO.ai result.</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#087c72" i]{fill:#44e4d6}[fill="#1766ad" i]{fill:#5ca5e8}[fill="#183047" i]{fill:#c8d5e1}[fill="#b55b0c" i]{fill:#e79c59}[fill="#b83232" i]{fill:#df8a8a}[fill="#e4f3ec" i]{fill:#212f29}[fill="#f0f5fa" i]{fill:#1b232b}[fill="#ffffff" i]{fill:#1b1f20}[stroke="#087c72" i]{stroke:#44e4d6}[stroke="#1766ad" i]{stroke:#5ca5e8}[stroke="#486174" i]{stroke:#bcc6cd}text{fill:#c8d5e1}}</style>
+</svg>
