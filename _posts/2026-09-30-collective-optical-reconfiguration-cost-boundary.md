@@ -7,13 +7,17 @@ categories: networking optical-interconnect
 description: "分階段 collective 使固定互連承擔多跳與壅塞，逐步改接光路則付出停頓。以 Harvest 與可檢查試算推導切換門檻，釐清排程模型的假設與工程邊界。"
 ---
 
-分階段 collective 是否值得改接光路，取決於省下的多跳與壅塞時間，能否支付端到端重配置的停頓。連線會改變之後，網路設計需要同時看通訊相依、有限 port 與切換時序。
+把 AI 工作分散到更多 GPU，可以擴大可用算力與記憶體，但各顆 GPU 算出的局部結果仍須互相交換，才能推進共同的工作。例如，在使用 AllReduce 同步梯度的資料平行訓練中，每個參與者都要取得合併後的結果；若下一段計算依賴這個結果，資料交換就進入完成時間的 critical path。[NCCL 的 collective 定義](https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/usage/collectives.html) 說明了 AllReduce 如何把各 rank 的輸入合併，再讓所有 rank 取得相同結果。從系統角度看，增加 GPU 之後，必須一起考慮運算能力與結果交換所需的時間。
 
-當一個 AI 工作分散到多個加速器，單顆晶片的運算吞吐量便不足以推算整個 iteration 或推論請求的完成時間。AllReduce、All-to-All 等 collective 會在計算流程中交換大量資料；對分階段的實作，後續工作還需等待上一輪的資料。瓶頸可能出在端點注入頻寬、有限的連線數、共享鏈路，或最慢參與者的同步。提高 SerDes 速率與光 I/O 密度可以擴大頻寬預算，但仍需回答資料在當下拓樸中如何抵達下一個夥伴。[Harvest，SIGCOMM 2026](https://stygianet.cs.purdue.edu/papers/harvest-sigcomm26.pdf) 研究的正是這個 scale-up 域內的問題。
+承接這些交換的一種基本架構，是在工作執行期間維持固定的實體連線。Collective algorithm 決定哪些 GPU 在哪一步交換資料，網路則透過既有鏈路與轉送路徑承載流量。這個分工有合理性：連線持續可用，通訊步驟可以重複執行，也不必在兩步之間等待實體網路重新接通。但 collective 的通訊夥伴可能逐步改變；固定拓樸能否有效承接每一步，取決於連線數、路由與共享鏈路的負載。
 
-光傳輸和光電路交換是兩個不同的設計選擇：用光纖傳送封包，不代表實體連線會隨工作負載改變。本文討論的系統允許光交換器重新接通 GPU 之間的路徑，並假設每個 GPU 的可用 port 有限。在固定拓樸下，稀疏連線需要多跳轉送，可能讓後段 collective 步驟相互爭用；隨步驟改接光路雖可建立直達路徑，卻使通訊暫停直到新路徑可用。這把 optical device、網路拓樸與 collective runtime 原本分開處理的選擇，放進同一個完成時間目標。
+當每個 GPU 的可用 port 少於可能的通訊夥伴數，固定連線便無法同時為所有夥伴提供專用直達路徑。若拓樸較稀疏、且系統支援中繼轉送，某些步驟需要多跳傳送，多組交換也可能爭用同一條鏈路。提高每 port 的速率可以縮短傳送時間，但有限連線應如何分配，仍是另一個設計問題。這正是可重配置光互連值得研究的動機：若通訊需求有可預知的步驟，能否把有限的實體連線，在需要的時間接給需要的夥伴？
 
-以八個 GPU 的 AllReduce 為例，通訊夥伴逐輪改變，固定連線與逐輪切換各有代價。關鍵問題是**哪些連續步驟值得共用一張拓樸，以及省下的多跳與壅塞時間能否支付切換成本**。若答案隨訊息大小、port 數與重配置延遲而變，未來光互連的規格就不能只報每 lane 速率；runtime 也必須知道資料何時可用、何時能安全進入下一步。
+光纖本身提供傳輸媒介；加入可重配置的光路，才讓系統能在執行期間改變端點之間的連線。這使網路多了一個設計自由度，也引入新的等待：受影響的舊交換須妥善收尾，光路與接收端須就緒，下一步才可安全開始。因此，較合適的拓樸不一定帶來較短的完成時間；它省下的多跳與壅塞時間，必須足以支付切換造成的停頓。
+
+[Harvest，SIGCOMM 2026](https://stygianet.cs.purdue.edu/papers/harvest-sigcomm26.pdf) 把這個取捨收斂成一個具體問題：在單一 scale-up 域內，給定 collective 的通訊步驟與每個 GPU 的有限 port，決定哪些連續步驟共用一張拓樸，以及何時值得改接光路。它的研究價值，在於讓 collective 的資料相依、拓樸的轉送負載與光路的切換時間，能放進同一個完成時間模型。如此才能比較增加 port、提高鏈路速率與改變連線時機各自能解決多少瓶頸。
+
+核心判斷是：**當實體連線可以隨通訊步驟改變，網路架構就需要同時決定頻寬的配置與配置生效的時間。**切換越快未必就該每一步都換；連線越快，也未必能消除拓樸造成的競爭。以下從八個 GPU 的分階段 AllReduce 出發，追問哪些步驟值得共用連線，以及切換收益在什麼條件下足以抵銷成本。
 
 ## 固定拓樸為何會拖慢分階段通訊
 
@@ -189,3 +193,4 @@ fallback也要有資源：預留packet fabric會增加成本；原地保留舊to
 5. [Swing: Short-cutting Rings for Higher Bandwidth Allreduce](https://www.usenix.org/conference/nsdi24/presentation/de-sensi) — NSDI, 2024.
 6. [What Is Reconfiguration Delay, Really? An End-to-End View of Photonic Switching](https://stygianet.cs.purdue.edu/papers/photonicsreconfigurationhotnets26.html) — STyGIANet, public research page; HotNets 2026 work scheduled for November.
 7. [Flux: Optimal Scheduling of Optical Circuit Switches for LLM Training](https://arxiv.org/html/2609.25949v1) — University of Antwerp / imec, arXiv preprint v1, 2026.
+8. [Collective Operations](https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/usage/collectives.html) — NVIDIA, NCCL User Guide, online documentation.
