@@ -13,6 +13,12 @@ AI fabric 的容量擴張，同時受到 ASIC I/O、封裝邊界、面板空間�
 
 [Marvell 的 ECOC 2026 公告](https://www.marvell.com/company/newsroom/marvell-industry-first-2nm-optical-technology-ai-data-center-infrastructure-ecoc-2026.html) 提出 2nm、400G/lane PAM4 光互連展示。它延續了 [OFC 2025 公布的 224 Gbaud electrical-to-optical link](https://www.marvell.com/company/newsroom/marvell-to-demonstrate-industrys-first-400g-lane-pam4-electrical-to-optical-link-technology-at-ofc-2025.html)。這條技術路徑的重要性，是讓「增加 lane」之外的設計空間有了實體證據；接下來要理解的，是較少 lane 究竟把成本移到哪裡。
 
+先沿圖中的資料路徑走一次：有效資料必須跨過 ASIC、package／PCB、光電轉換與光纖，再由接收端還原。增加 lane 會占用更多實體邊界，提高每 lane 速率則把負擔移向訊號裕量與處理功耗；圖下方列出的預算，是後面比較方案時要一起核對的條件。
+
+![400G/lane PAM4 的功能路徑與相互耦合的訊號預算](/images/networking/2026-09-22/400g-lane-signal-budget.svg)
+
+圖：作者整理；功能路徑參考 [Marvell OFC 2025 electrical-to-optical demonstration](https://www.marvell.com/company/newsroom/marvell-to-demonstrate-industrys-first-400g-lane-pam4-electrical-to-optical-link-technology-at-ofc-2025.html)。圖為通用 PAM4 模型；FEC、gearbox 與 DSP 的實際位置依 PHY 架構而定。
+
 ## 先固定比較單位：400G 是哪一段的速率
 
 PAM4 每個 symbol 有四個電平，可表示兩個 bit。以下採最簡單的速率帳：
@@ -41,9 +47,6 @@ Equalization 可以重新分配頻率響應、抵銷部分 ISI，但補高頻時
 
 ## 一條完整光互連的資料與訊號路徑
 
-![400G/lane PAM4 的功能路徑與相互耦合的訊號預算](/images/networking/2026-09-22/400g-lane-signal-budget.svg)
-
-圖：作者整理；功能路徑參考 [Marvell OFC 2025 electrical-to-optical demonstration](https://www.marvell.com/company/newsroom/marvell-to-demonstrate-industrys-first-400g-lane-pam4-electrical-to-optical-link-technology-at-ofc-2025.html)。圖為通用 PAM4 模型；FEC、gearbox 與 DSP 的實際位置依 PHY 架構而定。
 
 從有效資料開始，PCS／FEC 將資料編碼成可傳送的 sequence，host electrical I/O 再穿過 package 與 PCB 到光端。Transmit side 的訊號處理、driver 與 modulator 把 electrical symbols 轉成光訊號；經過 fiber、coupling 與連接器後，photodetector 和 TIA 把接收光訊號轉回可判斷的 electrical waveform。Receiver 進行所需 equalization、clock recovery 與 decoding，最後交還資料。
 
