@@ -2,7 +2,7 @@
 layout: post
 title: "如何設計多租戶 API 限流：從共享配額需求到跨節點判定"
 date: 2026-09-30 05:16:17 +0800
-domain: networking
+domain: distributed-systems
 categories: networking
 description: "一家客戶的批次請求拖慢其他客戶，API 平台該如何限制用量？從計量對象、突發與故障需求開始，建立單入口方案，再推導共享狀態、原子扣額和局部配額的取捨。"
 series: distributed-systems
