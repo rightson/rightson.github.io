@@ -2,7 +2,7 @@
 layout: post
 title: "跨分區寫入如何取得唯一 ID：從取號需求到分配邊界"
 date: 2026-09-28 17:18:26 +0800
-domain: networking
+domain: distributed-systems
 categories: networking
 series: distributed-systems
 series_order: 2
