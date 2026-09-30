@@ -14,6 +14,8 @@ Scale-up fabric 讓資料與同步跨越單顆加速器，應用程式的完成�
 
 [NVIDIA 的 NVLink 6 技術說明](https://developer.nvidia.com/blog/how-nvidia-nvlink-6-delivers-multi-layer-resiliency-for-ai-factories/)把 FEC、Physical Layer Retry、credit、contain-and-drain 與上層恢復放在同一條鏈中。以下依公開機制追蹤故障能在哪一層結束、仍留下哪些狀態，以及恢復時間如何影響 sustained goodput。這也是判斷新互連是否真正增加可用算力的必要視角。
 
+圖中的層級由鏈路一路延伸到 collective 與工作恢復。從低層向上追蹤一個錯誤：能在較小範圍結束時，其他參與者較有機會繼續；一旦穿透到應用相依，正常 GPU 也可能跟著等待。後面各機制都要放回這條故障傳播路徑判斷。
+
 ![NVLink 6 多層故障恢復時間尺度](/images/networking/2026-09-23/nvlink6-resiliency-stack.svg)
 
 圖：作者整理；資料來源：[NVIDIA — How NVLink 6 Delivers Multi-Layer Resiliency for AI Factories](https://developer.nvidia.com/blog/how-nvidia-nvlink-6-delivers-multi-layer-resiliency-for-ai-factories/)
