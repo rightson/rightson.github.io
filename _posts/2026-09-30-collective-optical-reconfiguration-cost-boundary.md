@@ -13,6 +13,13 @@ description: "分階段 collective 使固定互連承擔多跳與壅塞，逐步
 
 當每個 GPU 的可用 port 少於可能的通訊夥伴數，固定連線便無法同時為所有夥伴提供專用直達路徑。若拓樸較稀疏、且系統支援中繼轉送，某些步驟需要多跳傳送，多組交換也可能爭用同一條鏈路。提高每 port 的速率可以縮短傳送時間，但有限連線應如何分配，仍是另一個設計問題。這正是可重配置光互連值得研究的動機：若通訊需求有可預知的步驟，能否把有限的實體連線，在需要的時間接給需要的夥伴？
 
+先看下面的四節點示意：GPU 先各自計算，再交換局部結果。固定 ring 中，藍色的 `0→1→2` 與橘色的 `1→2→3` 共用 `1→2`；改接後可為這兩組夥伴建立直達路徑，但下一批資料要先等路徑就緒。這只是刻意選定路由的教學案例，用來說明取捨，並非任何 AllReduce 都會產生相同競爭。
+
+![多 GPU 工作先產生局部結果；固定 ring 的兩條路徑共用鏈路，重新接通直達光路則須先等待切換完成](/images/networking/2026-09-30/collective-background-context.svg)
+
+圖：作者設計的四節點背景示意，只畫出選定的單向流量，交叉線不代表交換節點；每 GPU 至多兩個 port，未使用的連線省略。概念依據：[NCCL Collective Operations](https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/usage/collectives.html)、[Harvest](https://stygianet.cs.purdue.edu/papers/harvest-sigcomm26.pdf)。
+
+
 光纖本身提供傳輸媒介；加入可重配置的光路，才讓系統能在執行期間改變端點之間的連線。這使網路多了一個設計自由度，也引入新的等待：受影響的舊交換須妥善收尾，光路與接收端須就緒，下一步才可安全開始。因此，較合適的拓樸不一定帶來較短的完成時間；它省下的多跳與壅塞時間，必須足以支付切換造成的停頓。
 
 [Harvest，SIGCOMM 2026](https://stygianet.cs.purdue.edu/papers/harvest-sigcomm26.pdf) 把這個取捨收斂成一個具體問題：在單一 scale-up 域內，給定 collective 的通訊步驟與每個 GPU 的有限 port，決定哪些連續步驟共用一張拓樸，以及何時值得改接光路。它的研究價值，在於讓 collective 的資料相依、拓樸的轉送負載與光路的切換時間，能放進同一個完成時間模型。如此才能比較增加 port、提高鏈路速率與改變連線時機各自能解決多少瓶頸。

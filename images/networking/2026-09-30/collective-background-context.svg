@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="1110" viewBox="0 0 680 1110" role="img" aria-labelledby="title desc"><title id="title">AI work depends on data exchange</title><desc id="desc">AI work depends on data exchange. Conceptual diagram, not to scale.</desc><defs><marker id="blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#1766ad"/></marker><marker id="orange" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#b55b0c"/></marker><marker id="ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#183047"/></marker><marker id="teal" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#087c72"/></marker><marker id="red" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#b83232"/></marker></defs><style>text{font-family:DejaVu Sans,Arial,sans-serif;fill:#183047;font-size:22px}.small{font-size:19px}.head{font-size:25px;font-weight:700}.bold{font-weight:700}</style>
+<rect x="0" y="0" width="680" height="1110" rx="12" fill="#ffffff"/>
+<text x="28" y="42" text-anchor="start" class="head">AI work depends on data exchange</text>
+<rect x="20" y="68" width="640" height="205" rx="12" fill="#f0f5fa"/>
+<text x="40" y="104" text-anchor="start" class="bold">1. An iteration has a dependency</text>
+<rect x="40" y="125" width="130" height="57" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="105.0" y="152" text-anchor="middle" class="small">GPU 0</text>
+<text x="105.0" y="177" text-anchor="middle" class="small">local result</text>
+<rect x="194" y="125" width="130" height="57" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="259.0" y="152" text-anchor="middle" class="small">GPU 1</text>
+<text x="259.0" y="177" text-anchor="middle" class="small">local result</text>
+<rect x="348" y="125" width="130" height="57" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="413.0" y="152" text-anchor="middle" class="small">GPU 2</text>
+<text x="413.0" y="177" text-anchor="middle" class="small">local result</text>
+<rect x="502" y="125" width="130" height="57" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="567.0" y="152" text-anchor="middle" class="small">GPU 3</text>
+<text x="567.0" y="177" text-anchor="middle" class="small">local result</text>
+<line x1="105" y1="186" x2="105" y2="206" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="259" y1="186" x2="259" y2="206" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="413" y1="186" x2="413" y2="206" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="567" y1="186" x2="567" y2="206" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<rect x="64" y="212" width="552" height="38" rx="12" fill="#e4f3ec"/>
+<text x="340" y="239" text-anchor="middle" class="small">AllReduce result -&gt; dependent compute</text>
+<rect x="20" y="292" width="640" height="344" rx="12" fill="#f0f5fa"/>
+<text x="40" y="328" text-anchor="start" class="bold">2. Fixed ring: selected routes share a link</text>
+<rect x="65" y="365" width="135" height="64" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="132.5" y="392" text-anchor="middle" class="small">GPU 0</text>
+<rect x="425" y="365" width="135" height="64" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="492.5" y="392" text-anchor="middle" class="small">GPU 1</text>
+<rect x="425" y="510" width="135" height="64" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="492.5" y="537" text-anchor="middle" class="small">GPU 2</text>
+<rect x="65" y="510" width="135" height="64" rx="12" fill="#ffffff" stroke="#1766ad" stroke-width="2"/>
+<text x="132.5" y="537" text-anchor="middle" class="small">GPU 3</text>
+<line x1="200" y1="396" x2="425" y2="396" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="491" y1="429" x2="491" y2="510" stroke="#1766ad" stroke-width="8" marker-end="url(#blue)"/>
+<line x1="425" y1="543" x2="200" y2="543" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="131" y1="510" x2="131" y2="429" stroke="#183047" stroke-width="3" stroke-dasharray="7 5"/>
+<path d="M 491,429 L 517,452 L 517,520 L 440,565 L 200,565" fill="none" stroke="#b55b0c" stroke-width="4" marker-end="url(#orange)"/>
+<text x="240" y="383" text-anchor="start" class="small">0 -&gt; 1 -&gt; 2</text>
+<text x="235" y="599" text-anchor="start" class="small" fill="#b55b0c">1 -&gt; 2 -&gt; 3</text>
+<text x="541" y="471" text-anchor="start" class="small">shared</text>
+<text x="541" y="496" text-anchor="start" class="small">link</text>
+<rect x="20" y="656" width="640" height="370" rx="12" fill="#f0f5fa"/>
+<text x="40" y="692" text-anchor="start" class="bold">3. Rewire for these partners: wait, then send</text>
+<rect x="65" y="728" width="170" height="36" rx="12" fill="#fff0df"/>
+<text x="150" y="753" text-anchor="middle" class="small">pause: tau</text>
+<line x1="248" y1="746" x2="594" y2="746" stroke="#087c72" stroke-width="3" marker-end="url(#teal)"/>
+<text x="385" y="719" text-anchor="middle" class="small">payload after ready</text>
+<rect x="65" y="786" width="135" height="64" rx="12" fill="#ffffff" stroke="#087c72" stroke-width="2"/>
+<text x="132.5" y="813" text-anchor="middle" class="small">GPU 0</text>
+<rect x="425" y="786" width="135" height="64" rx="12" fill="#ffffff" stroke="#087c72" stroke-width="2"/>
+<text x="492.5" y="813" text-anchor="middle" class="small">GPU 1</text>
+<rect x="425" y="918" width="135" height="64" rx="12" fill="#ffffff" stroke="#087c72" stroke-width="2"/>
+<text x="492.5" y="945" text-anchor="middle" class="small">GPU 2</text>
+<rect x="65" y="918" width="135" height="64" rx="12" fill="#ffffff" stroke="#087c72" stroke-width="2"/>
+<text x="132.5" y="945" text-anchor="middle" class="small">GPU 3</text>
+<line x1="195" y1="848" x2="425" y2="921" stroke="#1766ad" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="428" y1="848" x2="196" y2="921" stroke="#b55b0c" stroke-width="3" marker-end="url(#orange)"/>
+<text x="340" y="1011" text-anchor="middle" class="small">crossing is not a switch</text>
+<text x="36" y="1055" text-anchor="start" class="small">Four-node teaching example; selected flows only.</text>
+<text x="36" y="1082" text-anchor="start" class="small">Port budget &lt;= 2/GPU; no measured speedup implied.</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#087c72" i]{fill:#44e4d6}[fill="#1766ad" i]{fill:#5ca5e8}[fill="#183047" i]{fill:#c8d5e1}[fill="#b55b0c" i]{fill:#e79c59}[fill="#b83232" i]{fill:#df8a8a}[fill="#e4f3ec" i]{fill:#212f29}[fill="#f0f5fa" i]{fill:#1b232b}[fill="#fff0df" i]{fill:#372715}[fill="#ffffff" i]{fill:#1b1f20}[stroke="#087c72" i]{stroke:#44e4d6}[stroke="#1766ad" i]{stroke:#5ca5e8}[stroke="#183047" i]{stroke:#c8d5e1}[stroke="#b55b0c" i]{stroke:#e79c59}text{fill:#c8d5e1}}</style>
+</svg>
