@@ -162,6 +162,7 @@ description: "一至兩句概括文章真正的核心判斷。"
 - 故障要追蹤失效點、殘留狀態、使用者可見結果、偵測與恢復，再交代安全隔離、觀測及上線／遷移取捨。需求變體須完成推導，不能只留下問題。
 - 收尾回到起始需求，核對已成立的承諾及未解限制，再銜接已發布先備或下一個自然問題。
 - 章節使用具體釐清問題或設計結論，依案例安排，不套固定目錄、不寫角色扮演或虛構對話。公開正文只呈現服務需求、技術來源與工程判斷。
+- `series: distributed-systems` 的新文章使用 `domain: distributed-systems` 與 `categories: distributed-systems`。既有文章若因舊 `categories` 形成公開網址，只修正 `domain` 以歸入分散式系統，保留原 permalink。
 - 改寫既有文章時保留檔名、date、categories、permalink 及原有 domain；除非使用者另行授權分類調整。保留技術深度、量化推導與來源，不能以縮成提綱代替改寫。
 
 ### 禁止重複句型（標題、description、開頭段）
