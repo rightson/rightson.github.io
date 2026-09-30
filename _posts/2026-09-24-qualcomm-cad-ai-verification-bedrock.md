@@ -14,6 +14,12 @@ AI 用於晶片驗證的價值，在於更有效地找到尚未被檢查的行�
 
 高通公開的 [FunCovr.ai 會議材料](https://dvcon-india.org/wp-content/uploads/2026/09/DVCon-India-2026-Selected-Paper-List-Final.pdf)與 [AWS／Bedrock 使用方向](https://www.qualcomm.com/news/releases/2026/09/qualcomm-announces-multi-generational-product-collaboration-with)，分別提供驗證問題與平台整合線索；它們並未證實兩者已接成同一套系統。以下以公開內容及明示的參考設計，追蹤刺激、simulation、coverage evidence 與非同步重試，判斷什麼條件下這個閉環值得採用。
 
+沿圖中的迴路看一次 stimulus 如何進入 simulator、產生 coverage，再影響下一次嘗試。下方另外保留 assertions 與 coverage model 的驗收邊界：搜尋可以改變嘗試順序，不能自行改變何謂通過。這是理解 AI 驗證平台的起點。
+
+![刺激探索、simulation、coverage 和下一次測試形成回饋迴路；固定 assertions 與 coverage model 支撐獨立驗收](/images/eda/2026-09-24/verification-exploration-context.svg)
+
+圖：作者設計的驗證參考迴路，非已公開證實的 Qualcomm／AWS 整合系統。問題線索：[DVCon India 2026 Selected Papers](https://dvcon-india.org/wp-content/uploads/2026/09/DVCon-India-2026-Selected-Paper-List-Final.pdf)。
+
 ## 三種證據，回答的是不同問題
 
 理解這條演進路徑，必須把新計畫、研究分享與既有實測分開。
