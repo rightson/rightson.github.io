@@ -14,6 +14,8 @@ UALink 2.0 把部分 collective 計算移入 fabric，使 scale-up switch 開始
 
 這題的重要性在於系統邊界改變：fabric 從傳送資料，延伸到參與一個分散式運算。以下先分析頻寬與 element rate，再追到浮點結果、operation state、安全及恢復。標準是否有長期架構價值，要看這些語意能否在獨立元件之間組合，形成 runtime 可以信任的契約。
 
+先比較圖中的資料跨越同一個 cut 時發生什麼事：由 endpoint 彙整，與先在網路內合併部分輸入，對跨界資料量的要求不同。圖只呈現這個條件式收益；它也留下下一個問題：交換器開始保有運算狀態後，誰能確認 collective 已經完成？
+
 ![Endpoint-only collective 與 in-network reduction 的差異](/images/networking/2026-09-24/ualink-inc-cut.svg)
 
 圖：作者整理；資料來源：[UALink — Exploring In-Network Compute](https://ualinkconsortium.org/blog/exploring-in-network-compute-how-ualink-is-redefining-ai-scale-up-architecture-1509/)、[Synopsys — Four Ways UALink 2.0 Advances AI Scale Up](https://www.synopsys.com/blogs/chip-design/4-ways-ualink-2-0-advances-ai-scale-up.html)
