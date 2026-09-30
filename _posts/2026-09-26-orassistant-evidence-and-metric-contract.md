@@ -2,7 +2,7 @@
 layout: post
 title: "CAD Agent 的證據身分：ORAssistant 來源映射與評分修正"
 date: 2026-09-26 06:04:54 +0800
-domain: eda
+domain: ic-design-platform
 categories: eda
 description: "檢索來源及 metric 方向都是驗收契約的一部分；ORAssistant 的公開修正可用來追蹤版本、引用與評估語意如何失效。"
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: "Coverage Regression 的成本模型：AMD 測試組合與驗證證據"
 date: 2026-09-27 06:03:47 +0800
-domain: eda
+domain: ic-design-platform
 categories: eda
 description: "AMD 的四項 VSO.ai 實驗提供縮小測試集合的線索；平台須固定 coverage 目標、保留版本與 seed，並以獨立對照檢查刪除風險。"
 ---

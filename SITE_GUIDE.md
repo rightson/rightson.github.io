@@ -15,7 +15,7 @@ Add an optional `domain` to explicitly select one of the seven editorial section
 | ai-industry | 產業分析 |
 | investing | 投資與交易 |
 | eda | 電子設計自動化 |
-| timing | 靜態時序分析 |
+| ic-design-platform | IC 設計平台 |
 | architecture | 計算機架構 |
 | networking | 網路與互連 |
 | distributed-systems | 分散式系統 |
@@ -47,3 +47,5 @@ Search downloads the full index once. Consider a dedicated search index if the a
 ## Validation
 
 Build with `bundle exec jekyll build`. Verify `/`, `/categories/`, `/search/`, an existing article, and `/feed.xml`. Test a keyword found only in article content, combined filters, zero results, mobile overflow, keyboard navigation, and an index-load failure.
+
+分類邊界：STA、SDC、timing closure 與 EDA 演算法歸 `eda`；多人協作、IP／SoC 整合、跨工具 R2G 流程與設計資料／執行治理歸 `ic-design-platform`。重新分類既有文章只修改 `domain`，保留 `categories` 與 URL。

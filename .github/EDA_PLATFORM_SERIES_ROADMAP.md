@@ -2,6 +2,10 @@
 
 本文件是 AI EDA 技術雷達的編輯路線。每次仍先讀最新 `AGENTS.md`、出版佇列和近期文章。選題以 Qualcomm、NVIDIA、AMD、Marvell **公開揭露的晶片設計方法、工具或實際導入案例**為主角；論文原始發表年份照實標示。這是選題佇列，不代表這些公司有一套已公開的完整內部 control plane。
 
+## 分類與圖解
+
+平台協作、整合、工具／資料交接與治理使用 `domain: ic-design-platform`；EDA 演算法及 STA／SDC 使用 `domain: eda`。依主要問題分類，不因公司或系列名稱一律歸平台。既有 categories 與 URL 保留。每篇在背景後提供平台架構或端到端流程總覽圖，另以局部圖解釋關鍵機制。
+
 ## 系列要回答的問題
 
 從 IP／SoC 配置與整合、RTL／驗證、synthesis 與 constraints、placement／routing、STA／signoff 到 R2G 交付，逐篇追問：一個階段接受什麼 design state，誰可改哪些變數，產生什麼 artifact，哪份工具證據允許移交下一階段，失敗後如何辨識及恢復。AI、agent、分散式執行與治理，只在有直接工程作用與公開證據時展開；不能代替公司設計流程本身。
@@ -15,6 +19,8 @@
 - 2026-09-26 的 ORAssistant 是既有文章，不作本系列之後的選題模板。
 
 上方連結僅供選題查重；正式 URL 應依現行站點 permalink 與公開頁核對。
+
+- **NVIDIA 使用的 GDP／配置式設計管理**：2026-09-30 使用者明確要求加刊；source path `_posts/2026-09-30-nvidia-gdp-multivendor-design-source-of-truth.md`。NVIDIA 使用證言、2024 GDP-XL 公告與目前 GDP-AI 文件分開；作者 schema／恢復／發布方案不冒充 NVIDIA 部署。提交與公開頁驗證狀態另行核對，未驗證前不標為已發布。
 
 ## 候選章節，依證據成熟度選擇，不按新聞日期輪替
 

@@ -12,12 +12,13 @@
   number: '03'
   title: 電子設計自動化
   english: EDA
-  description: RTL-to-GDS 設計流程、SYN/APR、驗證，以及 IC 設計平台與 CAD 基礎設施。
-- key: timing
+  description: EDA 演算法與分析方法：synthesis、placement、routing、sizing、STA／SDC、timing closure、verification
+    與 signoff。
+- key: ic-design-platform
   number: '04'
-  title: 靜態時序分析
-  english: STATIC TIMING ANALYSIS
-  description: SDC 時序約束、clock 關係、setup／hold 與 timing closure。
+  title: IC 設計平台
+  english: IC DESIGN PLATFORMS
+  description: 多人協作、IP／SoC 整合、R2G 流程、跨工具資料交接，以及設計資料、執行與治理平台。
 - key: architecture
   number: '05'
   title: 計算機架構

@@ -2,7 +2,7 @@
 layout: post
 title: "Arm CSS N4 的整合基線：IP 重用如何保留客製晶片的正確性"
 date: 2026-09-24 15:50:02 +0800
-domain: eda
+domain: ic-design-platform
 categories: eda
 description: "預先整合的子系統可以縮小重複驗證範圍，但配置、clock/reset/power 與 DMA 語意仍須共同驗收，再交給 R2G。"
 ---

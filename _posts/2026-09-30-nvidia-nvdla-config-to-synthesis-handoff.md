@@ -2,7 +2,7 @@
 layout: post
 title: "NVIDIA NVDLA 把 IP 配置接到可驗收的綜合交付：五個分區與 SRAM 邊界"
 date: 2026-09-30 06:04:34 +0800
-domain: eda
+domain: ic-design-platform
 categories: eda
 description: "NVDLA 的公開整合手冊揭露從配置、RTL 生成、trace 驗證到分區綜合的實際交付物；SRAM、時脈約束與製程資料則明確留給 SoC 整合者。"
 ---

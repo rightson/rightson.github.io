@@ -2,7 +2,7 @@
 layout: post
 title: "AI 驗證閉環的兩份契約：高通案例中的刺激探索與結果驗收"
 date: 2026-09-24 09:54:01 +0800
-domain: eda
+domain: ic-design-platform
 categories: eda
 description: "FunCovr.ai 與高通的 Bedrock 使用方向提供不同證據。驗證平台須固定 coverage 目標、保留實驗身分，並把模型提案與工具結果分開。"
 ---

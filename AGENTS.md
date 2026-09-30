@@ -66,8 +66,8 @@
 | --- | --- | --- | --- |
 | `ai-industry` | 產業分析 | AI／半導體需求、供應鏈、產能、政策、價值分配 | 產業研究 |
 | `investing` | 投資與交易 | 投資假設、估值、催化劑、資金動向、交易與風險 | 投資研究 |
-| `eda` | 電子設計自動化 | RTL-to-GDS flow、SYN/APR、驗證、DFT、IC 設計平台／CAD 基礎設施、AI for EDA | DAC、ICCAD |
-| `timing` | 靜態時序分析 | STA、SDC、clock 關係、setup／hold、timing closure、OCV／SI | TAU、STA |
+| `eda` | 電子設計自動化 | EDA 演算法、synthesis、placement、routing、sizing、STA／SDC、timing closure、verification、signoff 方法 | DAC、ICCAD、TAU |
+| `ic-design-platform` | IC 設計平台 | 多人協作、IP／SoC 整合、跨工具交接、R2G 流程、設計資料與執行治理平台 | CAD infrastructure、design management |
 | `architecture` | 計算機架構 | 加速器（TPU／GPU／ASIC）、處理器微架構、記憶體階層、資料流、效能模型 | ISCA、MICRO、HPCA |
 | `networking` | 網路與互連 | 網路協定、交換晶片、光通訊、scale-up／scale-out 互連、資料中心網路 | SIGCOMM、NSDI、Hot Interconnects |
 | `distributed-systems` | 分散式系統 | 叢集管理（Kubernetes、Slurm）、控制面、一致性、複寫、容錯、大規模服務設計 | OSDI、SOSP、EuroSys |
@@ -83,7 +83,7 @@
 - 不用細碎 category/tag 製造分類噪音。首頁、分類頁與文章頁只對讀者顯示 `domain`；`categories` 僅用於既有 URL 與搜尋篩選。
 - 顯示順序依 `_data/domains.yml`。
 - 邊界：
-  - STA／SDC／timing closure 歸 `timing`；flow、平台、驗證、SYN/APR 方法歸 `eda`。
+  - STA／SDC／timing closure 與 EDA 演算法歸 `eda`；多人協作、IP／SoC 整合、跨工具資料交接、R2G 流程與設計資料／執行治理歸 `ic-design-platform`。依正文的主要問題分類，不按排程名稱或廠商名稱決定；C3PO／AutoDMP 等以 placement 最佳化為主的文章歸 `eda`。
   - TPU／加速器的微架構與資料流歸 `architecture`；其商業、供應鏈或估值歸 `ai-industry`／`investing`。
   - Kubernetes／HPC 叢集與控制面歸 `distributed-systems`，即使應用案例是 EDA；NVLink／UALink／光互連等資料路徑歸 `networking`。
   - 光互連技術機制歸 `networking`；光通訊公司估值／交易分析歸 `investing`。
@@ -221,6 +221,8 @@ description: "一至兩句概括文章真正的核心判斷。"
 
 ## 6. EDA / IC Design Platform 文章的特殊要求
 
+`eda` 與 `ic-design-platform` 分別依第 2 節分類；兩者仍共用以下工程證據與保密要求。
+
 EDA 類文章不限 R2G，應把視野放到完整 IC design platform：
 
 `spec / architecture → RTL → verification / formal / DFT → synthesis → STA / SDC → APR / ECO → signoff → package / chiplet / system`
@@ -331,6 +333,7 @@ EDA 類文章不限 R2G，應把視野放到完整 IC design platform：
 
 規則：
 
+- 每篇 IC 設計平台長文至少有一張平台架構或端到端流程總覽圖，置於必要背景後、局部機制前，說清輸入、角色／工具、交付物與驗收責任。總覽圖不能以元件清單或裝飾圖代替；其餘圖放在對應機制附近。既有文章修訂亦適用。
 - 優先原創 SVG 或 repo 已確認能直接顯示的格式。
 - 不把未渲染 Mermaid 原始碼當成完成圖片。
 - 圖要回答問題：資料怎麼走、誰擁有 state、哪裡排隊、哪裡驗證、哪裡會失敗、怎麼恢復。

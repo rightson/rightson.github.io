@@ -2,7 +2,7 @@
 layout: post
 title: "RTL-to-GDS 的狀態管理：重試、成果相依與工程驗收"
 date: 2026-09-22 12:58:00 +0800
-domain: eda
+domain: ic-design-platform
 categories: eda r2g platform-engineering
 description: "長時間 R2G 工作需要把設計意圖、執行狀態及可採信成果分開管理；以調和、持久執行與版本相依說明控制面的必要能力及成本。"
 ---

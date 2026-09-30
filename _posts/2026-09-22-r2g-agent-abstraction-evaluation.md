@@ -2,7 +2,7 @@
 layout: post
 title: "HLS 改變 Agent 的設計搜尋：抽象層、低階修正與成果驗收"
 date: 2026-09-22 12:11:00 +0800
-domain: eda
+domain: ic-design-platform
 categories: eda r2g agentic-ai
 description: "以 HLS 與 RTL refinement 研究分析抽象層如何縮減搜尋空間，再推導 R2G 的介面、驗收與實驗成本；成果品質須以固定條件獨立判定。"
 ---

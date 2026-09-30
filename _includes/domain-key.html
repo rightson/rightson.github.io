@@ -1,6 +1,8 @@
 {%- assign item = include.post -%}
-{%- if item.domain -%}{{- item.domain -}}
-{%- elsif item.categories contains 'timing' or item.categories contains 'sta' or item.categories contains 'sdc' -%}timing
+{%- if item.domain == 'timing' -%}eda
+{%- elsif item.domain -%}{{- item.domain -}}
+{%- elsif item.categories contains 'ic-design-platform' -%}ic-design-platform
+{%- elsif item.categories contains 'timing' or item.categories contains 'sta' or item.categories contains 'sdc' -%}eda
 {%- elsif item.categories contains 'eda' or item.categories contains 'r2g' -%}eda
 {%- elsif item.categories contains 'investment' or item.categories contains 'investing' or item.categories contains 'trading' or item.categories contains '投資' -%}investing
 {%- elsif item.categories contains 'distributed-systems' or item.categories contains 'kubernetes' -%}distributed-systems

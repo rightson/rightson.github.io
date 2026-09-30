@@ -2,7 +2,7 @@
 layout: post
 title: "可驗證的 IC 設計狀態：AI 如何跨越抽象層並保留證據"
 date: 2026-09-23 06:05:00 +0800
-domain: eda
+domain: ic-design-platform
 categories: eda
 description: "Agent 跨越 RTL、constraints 與實體設計時，平台必須保存型別、版本、品質及相依關係；高階抽象與成果驗證各自解決不同問題。"
 ---
