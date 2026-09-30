@@ -14,6 +14,12 @@ description: "效率揭露讓能源、水與負載彈性進入機房比較；混
 
 這條線索值得追蹤，是因為效率若進入客戶合約、許可或融資條件，就可能改變設備採購與營運成本。研究時應先區分可量測的能力、制度要求及真正的現金效果，再判斷供應商是否取得定價權。
 
+圖中先把輸入功率分成 IT 負載與支援它的冷卻、配電耗損，再分開看風冷與液冷的熱移除路徑。這說明機房為何不能把接電 MW 全部當成可售算力，也把既有 rack 保留、局部改造與整體效率接到同一個容量問題。
+
+![機房輸入功率分配給 IT 與冷卻配電耗損；既有風冷 rack 與液冷 rack 經不同路徑排出熱量](/images/ai-industry/2026-09-24/facility-power-background.svg)
+
+圖：作者整理的一般機房功率與熱路徑，非特定廠商產品管路圖。PUE 以相同量測期間的能源比計算；上半部為功率分配示意，不混用不同期間的數據。熱路徑與計量邊界參考：[U.S. DOE — Best Practices Guide for Energy-Efficient Data Center Design，2024](https://www.energy.gov/sites/default/files/2024-07/best-practice-guide-data-center-design.pdf)。
+
 ## 標籤先改變比較方式，門檻才會跟上
 
 歐盟執委會在 [2026 年 9 月 21 日提出共同評級制度](https://commission.europa.eu/news-and-media/news/making-data-centres-energy-efficient-thanks-new-eu-rating-system-2026-09-21_en)，範圍涵蓋 IT 裝置功率超過 500 kW 的個別資料中心。評級不只看能源與水的實際使用，也納入廢熱再利用、潔淨能源與配合電網調整負載的能力；首批標籤預計在 2027 年出現。
