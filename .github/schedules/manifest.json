@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "repository": "rightson/rightson.github.io",
+  "execution_mode": "cloud_scheduler_repo_instructions",
+  "instruction_revision": "Resolve the latest default-branch commit at each run and read all instruction files from that commit.",
+  "common_instructions": ".github/schedules/common.md",
+  "schedule_semantics": "runtime_snapshot; editing this file does not reschedule or enable cloud tasks",
+  "snapshot_date": "2026-10-01",
+  "timezone": "Asia/Taipei",
+  "groups": [
+    {
+      "key": "r2g-agentic-design",
+      "title": "（新）R2G／Agentic Design",
+      "automation_id": "6abe36cde5dc819192330aa53636c3eb",
+      "instructions": ".github/schedules/r2g-agentic-design.md",
+      "series": [
+        "sota-r2g-cad",
+        "agentic-design-radar",
+        "agentic-design-deep-dive"
+      ],
+      "branches": "每日雷達；週一 SOTA；週二架構長文與會議摘要",
+      "cadence": "每日 06:00",
+      "runtime_snapshot": {
+        "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Taipei:20261002T060000\nRRULE:FREQ=DAILY;BYHOUR=6;BYMINUTE=0;BYSECOND=0\nEND:VEVENT",
+        "is_enabled": true,
+        "timezone": "Asia/Taipei",
+        "updated_at": "2026-10-01T10:56:56.868543+00:00"
+      }
+    },
+    {
+      "key": "ai-frontier-share",
+      "title": "（新）AI 前沿與分享",
+      "automation_id": "6abe36db1f60819186c89cd600dff008",
+      "instructions": ".github/schedules/ai-frontier-share.md",
+      "series": [
+        "ai-frontier-digest",
+        "ai-weekly-share"
+      ],
+      "branches": "每日摘要；週四分享素材",
+      "cadence": "每日 07:30",
+      "runtime_snapshot": {
+        "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Taipei:20261002T073000\nRRULE:FREQ=DAILY;BYHOUR=7;BYMINUTE=30;BYSECOND=0\nEND:VEVENT",
+        "is_enabled": true,
+        "timezone": "Asia/Taipei",
+        "updated_at": "2026-10-01T10:56:59.131706+00:00"
+      }
+    },
+    {
+      "key": "technical-curriculum",
+      "title": "（新）技術課程",
+      "automation_id": "6abe36dd14b88191980f6bb9e9a0b0f4",
+      "instructions": ".github/schedules/technical-curriculum.md",
+      "series": [
+        "networking-deep-dive",
+        "k8s-hpc",
+        "tpu-technical",
+        "distributed-systems",
+        "llm-lab"
+      ],
+      "branches": "三 Networking；四 K8s；五 TPU 與分散式系統；六 LLM Lab",
+      "cadence": "週三至六 19:00",
+      "runtime_snapshot": {
+        "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Taipei:20261001T190000\nRRULE:FREQ=WEEKLY;BYDAY=WE,TH,FR,SA;BYHOUR=19;BYMINUTE=0;BYSECOND=0\nEND:VEVENT",
+        "is_enabled": true,
+        "timezone": "Asia/Taipei",
+        "updated_at": "2026-10-01T10:57:01.559688+00:00"
+      }
+    },
+    {
+      "key": "ecosystem-investment",
+      "title": "（新）生態系投資研究",
+      "automation_id": "6abe36df9b6c8191bd0dde319cacb347",
+      "instructions": ".github/schedules/ecosystem-investment.md",
+      "series": [
+        "mtk-ecosystem-institutional",
+        "mtk-ecosystem-market-journal",
+        "mtk-ecosystem-deep-dive"
+      ],
+      "branches": "晨報、盤後日誌、週日深研",
+      "cadence": "平日 05:30／17:30；週日 05:30",
+      "runtime_snapshot": {
+        "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Taipei:20261002T053000\nRRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR,SU;BYHOUR=5,17;BYMINUTE=30;BYSECOND=0;BYSETPOS=1,2,3,4,5,6,7,8,9,10,11;WKST=MO\nEND:VEVENT",
+        "is_enabled": true,
+        "timezone": "Asia/Taipei",
+        "updated_at": "2026-10-01T10:57:05.448169+00:00"
+      }
+    },
+    {
+      "key": "market-events",
+      "title": "（新）市場事件觀察",
+      "automation_id": "6abe36e1c468819182542abb4134d860",
+      "instructions": ".github/schedules/market-events.md",
+      "series": [
+        "mtk-ecosystem-intraday"
+      ],
+      "branches": "盤中事件觀察",
+      "cadence": "平日 10:30／13:30，執行時核對交易日",
+      "runtime_snapshot": {
+        "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Taipei:20261002T103000\nRRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;BYHOUR=10,13;BYMINUTE=30;BYSECOND=0\nEND:VEVENT",
+        "is_enabled": true,
+        "timezone": "Asia/Taipei",
+        "updated_at": "2026-10-01T10:57:07.133201+00:00"
+      }
+    }
+  ]
+}
+

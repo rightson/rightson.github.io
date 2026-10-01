@@ -20,7 +20,7 @@
    - `_config.yml`
    - `.github/ARTICLE_TAXONOMY.md` 與 `_data/research_series.yml`
    - 與任務相關的 roadmap / series spec（若存在）
-   - 研究排程另讀 `.github/RESEARCH_SCHEDULES.md` 與 `.github/RESEARCH_AUTOMATIONS.json` 中本任務規格；其中的排程中繼資料不代表 scheduler 已啟用。
+   - 研究排程先讀 `.github/schedules/README.md`、`manifest.json`、`common.md` 與對應 group 任務檔，再讀 `.github/RESEARCH_SCHEDULES.md` 及 `.github/RESEARCH_AUTOMATIONS.json` 的相關系列補充規格。每次先記錄最新 default-branch instruction commit SHA，從該版本完整讀取指令；寫入前仍另核對最新 head。repo 時程是對照紀錄，不會自行重排或啟用 scheduler。
    - 最近至少數篇同 domain／同系列文章，檢查重複與既有語氣。
 3. 若任務會影響 layout、search、分類、RSS、about、CSS 或其他網站功能，再讀對應的 `_layouts/`、`_includes/`、`_data/`、`assets/` 與 `SITE_GUIDE.md`。
 4. 確認同日／同系列／同 slug 是否已有文章；不得重複建立。
