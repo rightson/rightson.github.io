@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img">
+<title>Creation and replacement</title>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10" fill="#475569"/></marker></defs>
+<rect width="720" height="900" fill="#ffffff"/>
+<text x="36" y="54" font-family="sans-serif" font-size="30" font-weight="bold" fill="#0f172a">Creation and replacement</text>
+<text x="36" y="90" font-family="sans-serif" font-size="21" fill="#475569">fork creates an identity; exec selects its program.</text>
+<rect x="80" y="125" width="560" height="115" rx="14" fill="#e0f2fe" stroke="#64748b" stroke-width="2"/>
+<text x="360.0" y="163" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="bold" fill="#0f172a">Parent process P</text>
+<text x="360.0" y="197" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#334155">fork returns child PID to parent.</text>
+<rect x="80" y="280" width="560" height="115" rx="14" fill="#eef2ff" stroke="#64748b" stroke-width="2"/>
+<text x="360.0" y="318" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="bold" fill="#0f172a">Child process C</text>
+<text x="360.0" y="352" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#334155">fork returns 0; child has its own identity.</text>
+<rect x="80" y="435" width="560" height="115" rx="14" fill="#f0fdf4" stroke="#64748b" stroke-width="2"/>
+<text x="360.0" y="473" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="bold" fill="#0f172a">Same C after exec</text>
+<text x="360.0" y="507" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#334155">Old program image replaced; PID stays C.</text>
+<rect x="35" y="595" width="310" height="130" rx="14" fill="#eef2ff" stroke="#64748b" stroke-width="2"/>
+<text x="190.0" y="633" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="bold" fill="#0f172a">Main thread</text>
+<text x="190.0" y="667" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#334155">TID = C</text>
+<text x="190.0" y="696" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#334155">Waits for command</text>
+<rect x="375" y="595" width="310" height="130" rx="14" fill="#eef2ff" stroke="#64748b" stroke-width="2"/>
+<text x="530.0" y="633" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="bold" fill="#0f172a">Worker thread</text>
+<text x="530.0" y="667" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#334155">Different TID</text>
+<text x="530.0" y="696" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#334155">Waits for event</text>
+<path d="M360 240 L360 280" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#a)"/>
+<path d="M360 395 L360 435" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#a)"/>
+<path d="M270 550 L190 595" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#a)"/>
+<path d="M450 550 L530 595" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#a)"/>
+<text x="36" y="780" font-family="sans-serif" font-size="22" fill="#334155">Both threads share the process memory and open files.</text>
+<text x="36" y="820" font-family="sans-serif" font-size="22" fill="#334155">Two threads do not imply two CPUs in use.</text>
+<text x="36" y="860" font-family="sans-serif" font-size="22" fill="#334155">This trace keeps the parent single-threaded at fork.</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#0f172a" i]{fill:#d1d7e6}[fill="#334155" i]{fill:#c6ccd5}[fill="#475569" i]{fill:#c0c6cd}[fill="#e0f2fe" i]{fill:#162936}[fill="#eef2ff" i]{fill:#131a31}[fill="#f0fdf4" i]{fill:#162e1e}[fill="#ffffff" i]{fill:#1b1f20}[stroke="#475569" i]{stroke:#c0c6cd}[stroke="#64748b" i]{stroke:#929eb0}}</style>
+</svg>

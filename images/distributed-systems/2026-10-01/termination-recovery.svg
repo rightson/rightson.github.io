@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img">
+<title>Termination and recovery</title>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10" fill="#475569"/></marker></defs>
+<rect width="720" height="900" fill="#ffffff"/>
+<text x="36" y="54" font-family="sans-serif" font-size="30" font-weight="bold" fill="#0f172a">Termination and recovery</text>
+<text x="36" y="90" font-family="sans-serif" font-size="21" fill="#475569">OS termination and application completion are separate.</text>
+<rect x="80" y="125" width="560" height="115" rx="14" fill="#e0f2fe" stroke="#64748b" stroke-width="2"/>
+<text x="360.0" y="163" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="bold" fill="#0f172a">Worker alive</text>
+<text x="360.0" y="197" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#334155">result.tmp exists; result.txt absent.</text>
+<rect x="35" y="290" width="310" height="130" rx="14" fill="#f0fdf4" stroke="#64748b" stroke-width="2"/>
+<text x="190.0" y="328" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="bold" fill="#0f172a">Normal finish</text>
+<text x="190.0" y="362" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#334155">Write complete output</text>
+<text x="190.0" y="391" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#334155">Rename; exit 0</text>
+<rect x="375" y="290" width="310" height="130" rx="14" fill="#fff7ed" stroke="#64748b" stroke-width="2"/>
+<text x="530.0" y="328" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="bold" fill="#0f172a">SIGKILL</text>
+<text x="530.0" y="362" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#334155">No user cleanup</text>
+<text x="530.0" y="391" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#334155">Temporary file remains</text>
+<rect x="80" y="475" width="560" height="115" rx="14" fill="#eef2ff" stroke="#64748b" stroke-width="2"/>
+<text x="360.0" y="513" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="bold" fill="#0f172a">Parent observes termination</text>
+<text x="360.0" y="547" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#334155">Inspect outcome before accepting output.</text>
+<rect x="80" y="640" width="560" height="100" rx="14" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+<text x="360.0" y="678" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="bold" fill="#0f172a">Parent calls waitpid</text>
+<text x="360.0" y="712" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#334155">Exit status consumed; zombie removed.</text>
+<path d="M270 240 L190 290" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#a)"/>
+<path d="M450 240 L530 290" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#a)"/>
+<path d="M190 420 L270 475" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#a)"/>
+<path d="M530 420 L450 475" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#a)"/>
+<path d="M360 590 L360 640" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#a)"/>
+<text x="36" y="791" font-family="sans-serif" font-size="22" fill="#334155">Normal: verify the published result.</text>
+<text x="36" y="827" font-family="sans-serif" font-size="22" fill="#334155">Killed: discard partial output, then rerun this pure job.</text>
+<text x="36" y="863" font-family="sans-serif" font-size="22" fill="#334155">A rerun cannot undo external payments or messages.</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#0f172a" i]{fill:#d1d7e6}[fill="#334155" i]{fill:#c6ccd5}[fill="#475569" i]{fill:#c0c6cd}[fill="#e0f2fe" i]{fill:#162936}[fill="#eef2ff" i]{fill:#131a31}[fill="#f0fdf4" i]{fill:#162e1e}[fill="#f1f5f9" i]{fill:#1d2329}[fill="#fff7ed" i]{fill:#322413}[fill="#ffffff" i]{fill:#1b1f20}[stroke="#475569" i]{stroke:#c0c6cd}[stroke="#64748b" i]{stroke:#929eb0}}</style>
+</svg>

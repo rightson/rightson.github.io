@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img">
+<title>From a file to a running job</title>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10" fill="#475569"/></marker></defs>
+<rect width="720" height="900" fill="#ffffff"/>
+<text x="36" y="54" font-family="sans-serif" font-size="30" font-weight="bold" fill="#0f172a">From a file to a running job</text>
+<text x="36" y="90" font-family="sans-serif" font-size="21" fill="#475569">A process holds one execution; a file holds instructions.</text>
+<rect x="80" y="130" width="560" height="115" rx="14" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+<text x="360.0" y="168" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="bold" fill="#0f172a">Program on disk</text>
+<text x="360.0" y="202" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#334155">Same code can start several jobs.</text>
+<rect x="80" y="290" width="560" height="115" rx="14" fill="#e0f2fe" stroke="#64748b" stroke-width="2"/>
+<text x="360.0" y="328" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="bold" fill="#0f172a">Launcher / parent</text>
+<text x="360.0" y="362" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#334155">Create child, select code, observe outcome.</text>
+<rect x="35" y="460" width="310" height="175" rx="14" fill="#eef2ff" stroke="#64748b" stroke-width="2"/>
+<text x="190.0" y="498" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="bold" fill="#0f172a">Process A</text>
+<text x="190.0" y="532" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#334155">Own PID and memory</text>
+<text x="190.0" y="561" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#334155">Main + worker thread</text>
+<text x="190.0" y="590" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#334155">Input A / output A</text>
+<rect x="375" y="460" width="310" height="175" rx="14" fill="#f0fdf4" stroke="#64748b" stroke-width="2"/>
+<text x="530.0" y="498" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="bold" fill="#0f172a">Process B</text>
+<text x="530.0" y="532" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#334155">Own PID and memory</text>
+<text x="530.0" y="561" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#334155">Main + worker thread</text>
+<text x="530.0" y="590" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#334155">Input B / output B</text>
+<rect x="80" y="690" width="560" height="100" rx="14" fill="#fff7ed" stroke="#64748b" stroke-width="2"/>
+<text x="360.0" y="728" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="bold" fill="#0f172a">External result files</text>
+<text x="360.0" y="762" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#334155">Exit does not undo earlier file writes.</text>
+<path d="M360 245 L360 290" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#a)"/>
+<path d="M270 405 L190 460" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#a)"/>
+<path d="M450 405 L530 460" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#a)"/>
+<path d="M190 635 L280 690" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#a)"/>
+<path d="M530 635 L440 690" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#a)"/>
+<text x="36" y="843" font-family="sans-serif" font-size="22" fill="#334155">Scenario: two conversions use the same program file.</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#0f172a" i]{fill:#d1d7e6}[fill="#334155" i]{fill:#c6ccd5}[fill="#475569" i]{fill:#c0c6cd}[fill="#e0f2fe" i]{fill:#162936}[fill="#eef2ff" i]{fill:#131a31}[fill="#f0fdf4" i]{fill:#162e1e}[fill="#f1f5f9" i]{fill:#1d2329}[fill="#fff7ed" i]{fill:#322413}[fill="#ffffff" i]{fill:#1b1f20}[stroke="#475569" i]{stroke:#c0c6cd}[stroke="#64748b" i]{stroke:#929eb0}}</style>
+</svg>
