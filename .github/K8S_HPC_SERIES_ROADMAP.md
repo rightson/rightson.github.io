@@ -4,7 +4,7 @@
 
 ## 目前狀態與接續規則
 
-- **新課程從 K001 開始，全部未完成。** 舊系列 #001–#005 曾在 `_posts/`，#006 曾在 `_drafts/`；六篇及其本地 SVG 已移至 `_archive/k8s-hpc/`，不屬於新課程的已完成篇目，不提供公開先修連結。
+- **新版 K001 已發布並完成驗證；下一篇為 K002。** 舊系列 #001–#005 曾在 `_posts/`，#006 曾在 `_drafts/`；六篇及其本地 SVG 已移至 `_archive/k8s-hpc/`，不屬於新課程的已完成篇目，不提供公開先修連結。
 - 若前一篇已有提交而 Pages／正式頁尚未驗證，先完成驗證或修復；不得跳到下一篇。若已提交同一篇，先比對 source、build、deploy、public content，不建立副本。
 - 依下列順序選第一個前置知識已教完的未完成篇目。篇號是穩定 ID；插入必需先修時使用新 ID，明示其前置關係，不重新編號既有篇目。
 - `[x]` 的唯一條件：文章、圖檔已在預設分支；Pages build 與 deploy 成功；正式 URL 的標題與正文已核對。各篇完成時在該行補 `_posts/...` 和實際 public URL。未全數驗證只記錄精確狀態，不打勾。
@@ -29,7 +29,12 @@
 
 完成後能說出 process、CPU、memory、file、socket 為何是後續容器與叢集的基本單位。只教理解 Kubernetes 必需的 OS 基礎。
 
-- [ ] K001. 啟動一個程式之後，作業系統建立了什麼？process、thread、生命週期與最小 trace。
+- [x] K001. 啟動一個程式之後，作業系統建立了什麼？process、thread、生命週期與最小 trace。
+  - 文章：`_posts/2026-10-01-linux-program-process-thread-lifecycle.md`
+  - 正式 URL：https://rightson.github.io/distributed-systems/2026/10/01/linux-program-process-thread-lifecycle.html
+  - 文章與圖檔 commit：`08254e5fd166bf9951edb4486be1f38f6767d091`；[Pages build/deploy](https://github.com/rightson/rightson.github.io/actions/runs/36854351258) 成功；source 六檔逐字回讀、正式頁標題／正文／分類／canonical 及三張 SVG 核驗完成。
+  - 實驗：`scripts/experiments/k001/process_lifecycle.py`、`observed.jsonl`；Linux 6.18.44 / Python 3.12.14，正常、SIGKILL、清除暫存後重做三條路徑已實跑。未做 syscall 全量追蹤、效能比較或斷電耐久性實驗；無阻塞。
+  - 有效正文 4,107 中文字；網站既有算法對正式 HTML 計算約 14 分鐘；三張圖已檢查手機尺寸及深淺色。
 - [ ] K002. 一顆 CPU 為什麼能輪流執行許多 process？core、時間片與 scheduler 的初步直覺。
 - [ ] K003. 程式讀寫的記憶體與檔案各在哪裡？address space、RAM、filesystem 的可用模型。
 - [ ] K004. 兩個程式怎麼傳訊息？同機 process、socket、跨機網路與隔離需求。
@@ -171,3 +176,7 @@
 使用符合最新 `AGENTS.md` 的 front matter、單一 `domain: distributed-systems` 和 `categories: distributed-systems`；新文不公開署名。檔名 `_posts/YYYY-MM-DD-english-kebab-slug.md`，`date` 是 Markdown 首次實際寫入時間（Asia/Taipei）；引用與圖在同 commit。對變動中的 Kubernetes release、scheduler、DRA、CNI/CSI 或 Linux 行為，發文前查官方最新資料。先檢查標題骨架和近文去重，能 build 時本地 build；提交後回讀遠端 source、檢查 Pages build/deploy 與實頁標題／正文。失敗只修復，不跳題、不空 commit。
 
 每次回報：篇號、標題、Phase、核心 mental model、repo path、commit SHA、正式 URL、deploy／正文驗證狀態、下一題及其新增的一層理解。若缺任一驗證項，只報已完成到哪一步。
+
+## 已完成執行記錄
+
+- `k8s-hpc｜2026-10-01｜19:00 Asia/Taipei`：完成 K001；以上正式文章作為重試的唯一成果，不再另建副本。Instruction commit：`7dd5a016ba935538d160768b523f6b91dd2d3170`。下一篇 K002，補上 core、可執行進度、等待與輪流服務的初步模型。既有封存稿保持封存。
