@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 860" role="img" aria-labelledby="title"><title id="title">環境分支隔離測試資料，發布另行套用程式與 migration</title>
+<rect width="740" height="860" rx="22" fill="#f8fafc"/>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#475569" stroke-width="1.5"/></marker></defs>
+<text x="370" y="46" font-family="Noto Sans CJK TC, sans-serif" font-size="30" font-weight="600" text-anchor="middle" fill="#0f172a">複製測試環境，發布已驗證的變更</text>
+<text x="370" y="85" font-family="Noto Sans CJK TC, sans-serif" font-size="21" font-weight="400" text-anchor="middle" fill="#334155">依 OSS 規格整理；驗收與發布流程為作者設計</text>
+<rect x="105" y="120" width="530" height="94" rx="14" fill="#fef3c7" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="370.0" y="156" font-family="Noto Sans CJK TC, sans-serif" font-size="27" font-weight="600" text-anchor="middle" fill="#0f172a">正式環境：建立分支時的狀態</text>
+<text x="370.0" y="190" font-family="Noto Sans CJK TC, sans-serif" font-size="22" font-weight="400" text-anchor="middle" fill="#334155">程式版本＋Postgres＋bucket＋volume</text>
+<path d="M230 214 L230 272" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M510 214 L510 272" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="40" y="282" width="315" height="94" rx="14" fill="#fef3c7" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="197.5" y="318" font-family="Noto Sans CJK TC, sans-serif" font-size="27" font-weight="600" text-anchor="middle" fill="#0f172a">正式環境持續運作</text>
+<text x="197.5" y="352" font-family="Noto Sans CJK TC, sans-serif" font-size="22" font-weight="400" text-anchor="middle" fill="#334155">使用者新增真實資料</text>
+<rect x="385" y="282" width="315" height="94" rx="14" fill="#e0f2fe" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="542.5" y="318" font-family="Noto Sans CJK TC, sans-serif" font-size="27" font-weight="600" text-anchor="middle" fill="#0f172a">隔離的工作分支</text>
+<text x="542.5" y="352" font-family="Noto Sans CJK TC, sans-serif" font-size="22" font-weight="400" text-anchor="middle" fill="#334155">修改程式、資料與設定</text>
+<path d="M197 376 L197 438" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M542 376 L542 438" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="40" y="448" width="315" height="94" rx="14" fill="#fef3c7" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="197.5" y="484" font-family="Noto Sans CJK TC, sans-serif" font-size="27" font-weight="600" text-anchor="middle" fill="#0f172a">正式資料保留</text>
+<text x="197.5" y="518" font-family="Noto Sans CJK TC, sans-serif" font-size="22" font-weight="400" text-anchor="middle" fill="#334155">不被測試資料覆蓋</text>
+<rect x="385" y="448" width="315" height="94" rx="14" fill="#dcfce7" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="542.5" y="484" font-family="Noto Sans CJK TC, sans-serif" font-size="27" font-weight="600" text-anchor="middle" fill="#0f172a">分支驗收</text>
+<text x="542.5" y="518" font-family="Noto Sans CJK TC, sans-serif" font-size="22" font-weight="400" text-anchor="middle" fill="#334155">正常、拒絕與故障路徑</text>
+<path d="M542 542 L542 590" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="105" y="600" width="530" height="94" rx="14" fill="#dcfce7" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="370.0" y="636" font-family="Noto Sans CJK TC, sans-serif" font-size="27" font-weight="600" text-anchor="middle" fill="#0f172a">固定候選變更，核對發布目標</text>
+<text x="370.0" y="670" font-family="Noto Sans CJK TC, sans-serif" font-size="22" font-weight="400" text-anchor="middle" fill="#334155">commit · image digest · migration checksum</text>
+<path d="M635 647 L675 647 L675 790 L638 790" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="105" y="752" width="530" height="77" rx="14" fill="#fef3c7" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="370.0" y="788" font-family="Noto Sans CJK TC, sans-serif" font-size="27" font-weight="600" text-anchor="middle" fill="#0f172a">正式套用 migration 與部署程式</text>
+<text x="197" y="581" font-family="Noto Sans CJK TC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#334155">保留自己的狀態</text>
+<text x="370" y="724" font-family="Noto Sans CJK TC, sans-serif" font-size="23" font-weight="600" text-anchor="middle" fill="#92400e">structural merge 不回灌資料</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#0f172a" i]{fill:#d1d7e6}[fill="#334155" i]{fill:#c6ccd5}[fill="#92400e" i]{fill:#e48044}[fill="#dcfce7" i]{fill:#193723}[fill="#e0f2fe" i]{fill:#162936}[fill="#f8fafc" i]{fill:#1a2026}[fill="#fef3c7" i]{fill:#413919}[stroke="#475569" i]{stroke:#c0c6cd}[stroke="#94a3b8" i]{stroke:#5b6f8a}}</style>
+</svg>

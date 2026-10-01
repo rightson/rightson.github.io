@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 840" role="img" aria-labelledby="title"><title id="title">Agent 的控制路徑與應用的資料路徑</title>
+<rect width="740" height="840" rx="22" fill="#f8fafc"/>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#475569" stroke-width="1.5"/></marker></defs>
+<text x="370" y="46" font-family="Noto Sans CJK TC, sans-serif" font-size="30" font-weight="600" text-anchor="middle" fill="#0f172a">同一套後端，兩條不同責任的路徑</text>
+<text x="370" y="85" font-family="Noto Sans CJK TC, sans-serif" font-size="22" font-weight="400" text-anchor="middle" fill="#334155">作者設計 · 語意模型，非實際部署拓樸</text>
+<rect x="55" y="125" width="290" height="94" rx="14" fill="#dcfce7" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="200.0" y="161" font-family="Noto Sans CJK TC, sans-serif" font-size="27" font-weight="600" text-anchor="middle" fill="#0f172a">使用者</text>
+<text x="200.0" y="195" font-family="Noto Sans CJK TC, sans-serif" font-size="22" font-weight="400" text-anchor="middle" fill="#334155">登入、上傳、讀取</text>
+<rect x="395" y="125" width="290" height="94" rx="14" fill="#e0f2fe" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="540.0" y="161" font-family="Noto Sans CJK TC, sans-serif" font-size="27" font-weight="600" text-anchor="middle" fill="#0f172a">Coding Agent</text>
+<text x="540.0" y="195" font-family="Noto Sans CJK TC, sans-serif" font-size="22" font-weight="400" text-anchor="middle" fill="#334155">修改、部署、查詢</text>
+<path d="M200 220 L200 270" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M540 220 L540 270" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="55" y="280" width="290" height="94" rx="14" fill="#dcfce7" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="200.0" y="316" font-family="Noto Sans CJK TC, sans-serif" font-size="27" font-weight="600" text-anchor="middle" fill="#0f172a">應用程式</text>
+<text x="200.0" y="350" font-family="Noto Sans CJK TC, sans-serif" font-size="22" font-weight="400" text-anchor="middle" fill="#334155">API 與業務權限</text>
+<rect x="395" y="280" width="290" height="94" rx="14" fill="#e0f2fe" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="540.0" y="316" font-family="Noto Sans CJK TC, sans-serif" font-size="27" font-weight="600" text-anchor="middle" fill="#0f172a">受控操作介面</text>
+<text x="540.0" y="350" font-family="Noto Sans CJK TC, sans-serif" font-size="22" font-weight="400" text-anchor="middle" fill="#334155">CLI／MCP＋身分檢查</text>
+<text x="200" y="415" font-family="Noto Sans CJK TC, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#166534">資料路徑</text>
+<text x="540" y="415" font-family="Noto Sans CJK TC, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#0369a1">控制路徑</text>
+<path d="M200 430 L200 485" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M540 430 L540 485" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="55" y="495" width="630" height="105" rx="14" fill="#fef3c7" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="370.0" y="531" font-family="Noto Sans CJK TC, sans-serif" font-size="27" font-weight="600" text-anchor="middle" fill="#0f172a">有狀態的後端服務</text>
+<text x="370.0" y="565" font-family="Noto Sans CJK TC, sans-serif" font-size="22" font-weight="400" text-anchor="middle" fill="#334155">資料庫 · 檔案 · 容器 · 設定</text>
+<path d="M640 600 L640 640" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M640 645 L540 645" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="395" y="660" width="290" height="94" rx="14" fill="#e0f2fe" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="540.0" y="696" font-family="Noto Sans CJK TC, sans-serif" font-size="27" font-weight="600" text-anchor="middle" fill="#0f172a">外部證據</text>
+<text x="540.0" y="730" font-family="Noto Sans CJK TC, sans-serif" font-size="22" font-weight="400" text-anchor="middle" fill="#334155">實際版本、狀態、日誌</text>
+<path d="M685 700 L710 700 L710 320 L688 320" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="180" y="686" font-family="Noto Sans CJK TC, sans-serif" font-size="23" font-weight="600" text-anchor="middle" fill="#92400e">操作完成 ≠ 功能正確</text>
+<text x="180" y="725" font-family="Noto Sans CJK TC, sans-serif" font-size="22" font-weight="400" text-anchor="middle" fill="#334155">驗收要沿資料路徑重跑</text>
+<text x="370" y="802" font-family="Noto Sans CJK TC, sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#334155">Agent 依證據接續；正式使用者承受變更結果</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#0369a1" i]{fill:#44abe4}[fill="#0f172a" i]{fill:#d1d7e6}[fill="#166534" i]{fill:#4fd983}[fill="#334155" i]{fill:#c6ccd5}[fill="#92400e" i]{fill:#e48044}[fill="#dcfce7" i]{fill:#193723}[fill="#e0f2fe" i]{fill:#162936}[fill="#f8fafc" i]{fill:#1a2026}[fill="#fef3c7" i]{fill:#413919}[stroke="#475569" i]{stroke:#c0c6cd}[stroke="#94a3b8" i]{stroke:#5b6f8a}}</style>
+</svg>

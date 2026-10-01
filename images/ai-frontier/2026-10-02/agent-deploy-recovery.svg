@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 935" role="img" aria-labelledby="title"><title id="title">部署逾時後根據實際狀態選擇重試驗收或恢復</title>
+<rect width="740" height="935" rx="22" fill="#f8fafc"/>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#475569" stroke-width="1.5"/></marker></defs>
+<text x="370" y="46" font-family="Noto Sans CJK TC, sans-serif" font-size="30" font-weight="600" text-anchor="middle" fill="#0f172a">逾時之後，先辨認已發生的變更</text>
+<text x="370" y="85" font-family="Noto Sans CJK TC, sans-serif" font-size="22" font-weight="400" text-anchor="middle" fill="#334155">作者設計 · 不假定所有操作都有 exactly-once</text>
+<rect x="120" y="120" width="500" height="94" rx="14" fill="#fee2e2" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="370.0" y="156" font-family="Noto Sans CJK TC, sans-serif" font-size="27" font-weight="600" text-anchor="middle" fill="#0f172a">部署請求逾時</text>
+<text x="370.0" y="190" font-family="Noto Sans CJK TC, sans-serif" font-size="22" font-weight="400" text-anchor="middle" fill="#334155">沒有回應，結果未知</text>
+<path d="M370 214 L370 270" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="65" y="280" width="610" height="94" rx="14" fill="#e0f2fe" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="370.0" y="316" font-family="Noto Sans CJK TC, sans-serif" font-size="27" font-weight="600" text-anchor="middle" fill="#0f172a">查詢事件、runtime 與 migration 版本</text>
+<text x="370.0" y="350" font-family="Noto Sans CJK TC, sans-serif" font-size="22" font-weight="400" text-anchor="middle" fill="#334155">依資源身分核對，保留查詢證據</text>
+<path d="M65 330 L18 330 L18 649 L35 649" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M240 374 L240 438" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M500 374 L500 438" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="35" y="448" width="320" height="94" rx="14" fill="#e0f2fe" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="195.0" y="484" font-family="Noto Sans CJK TC, sans-serif" font-size="27" font-weight="600" text-anchor="middle" fill="#0f172a">確認沒有受理</text>
+<text x="195.0" y="518" font-family="Noto Sans CJK TC, sans-serif" font-size="22" font-weight="400" text-anchor="middle" fill="#334155">依冪等與前置條件重試</text>
+<rect x="385" y="448" width="320" height="94" rx="14" fill="#fef3c7" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="545.0" y="484" font-family="Noto Sans CJK TC, sans-serif" font-size="27" font-weight="600" text-anchor="middle" fill="#0f172a">確認已有變更</text>
+<text x="545.0" y="518" font-family="Noto Sans CJK TC, sans-serif" font-size="22" font-weight="400" text-anchor="middle" fill="#334155">區分完成與部分完成</text>
+<path d="M545 542 L545 594" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="385" y="604" width="320" height="94" rx="14" fill="#dcfce7" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="545.0" y="640" font-family="Noto Sans CJK TC, sans-serif" font-size="27" font-weight="600" text-anchor="middle" fill="#0f172a">檢查應用與資料相容</text>
+<text x="545.0" y="674" font-family="Noto Sans CJK TC, sans-serif" font-size="22" font-weight="400" text-anchor="middle" fill="#334155">健康探測＋功能測試</text>
+<path d="M545 698 L545 750" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="385" y="760" width="320" height="94" rx="14" fill="#dcfce7" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="545.0" y="796" font-family="Noto Sans CJK TC, sans-serif" font-size="27" font-weight="600" text-anchor="middle" fill="#0f172a">通過：交付</text>
+<text x="545.0" y="830" font-family="Noto Sans CJK TC, sans-serif" font-size="22" font-weight="400" text-anchor="middle" fill="#334155">未通過：回退／前進修復</text>
+<rect x="35" y="604" width="320" height="94" rx="14" fill="#fee2e2" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="195.0" y="640" font-family="Noto Sans CJK TC, sans-serif" font-size="27" font-weight="600" text-anchor="middle" fill="#0f172a">仍無法判定</text>
+<text x="195.0" y="674" font-family="Noto Sans CJK TC, sans-serif" font-size="22" font-weight="400" text-anchor="middle" fill="#334155">保留未知，升級處理</text>
+<text x="370" y="895" font-family="Noto Sans CJK TC, sans-serif" font-size="25" font-weight="600" text-anchor="middle" fill="#92400e">回退程式 ≠ 還原已刪除的資料</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#0f172a" i]{fill:#d1d7e6}[fill="#334155" i]{fill:#c6ccd5}[fill="#92400e" i]{fill:#e48044}[fill="#dcfce7" i]{fill:#193723}[fill="#e0f2fe" i]{fill:#162936}[fill="#f8fafc" i]{fill:#1a2026}[fill="#fee2e2" i]{fill:#351616}[fill="#fef3c7" i]{fill:#413919}[stroke="#475569" i]{stroke:#c0c6cd}[stroke="#94a3b8" i]{stroke:#5b6f8a}}</style>
+</svg>
