@@ -8,7 +8,7 @@ This site uses native Jekyll layouts and GitHub Pages. No remote theme, JavaScri
 
 Continue adding Markdown files to `_posts/YYYY-MM-DD-slug.md` with `layout: post`, `title`, `date`, and `categories`. Do not change existing `categories`: Jekyll uses them in default post URLs.
 
-Set one primary `domain` according to the article's main question. The seven public sections are:
+Set one primary `domain` according to the article's main question. The eight public sections are:
 
 | domain | Section |
 | --- | --- |
@@ -17,6 +17,7 @@ Set one primary `domain` according to the article's main question. The seven pub
 | architecture | 運算架構 |
 | networking | 網路系統 |
 | distributed-systems | 分散式系統 |
+| platform-engineering | 系統與平台 |
 | ai-industry | 產業與供應鏈 |
 | investing | 投資與交易 |
 
@@ -34,7 +35,7 @@ categories: ai-supply-chain research
 
 ## Features
 
-- Homepage: newest-first articles and seven persistent research sections.
+- Homepage: newest-first articles and eight persistent research sections.
 - `/categories/`: static section archives, usable without JavaScript.
 - `/search/`: client-side full-text search with AND matching across space-separated keywords, domain and category filters, and shareable URLs.
 - `/search.json`: automatically generated from published posts at build time.
@@ -52,12 +53,16 @@ Build with `bundle exec jekyll build`. Verify `/`, `/categories/`, `/search/`, a
 
 ## Research series and recurring work
 
-The seven public domains follow `.github/ARTICLE_TAXONOMY.md`. Approved series, topic ownership, cadence and fresh-session migration requirements are documented in `.github/RESEARCH_SCHEDULES.md`; complete recurring prompts are in `.github/RESEARCH_AUTOMATIONS.json`. Each run reads the latest `AGENTS.md` before researching or writing. Repository specifications do not create, enable or disable scheduler tasks; runtime status requires separate verification. Existing curriculum progress, post dates, categories and permalinks are preserved.
+The eight public domains follow `.github/ARTICLE_TAXONOMY.md`. Approved series, topic ownership, cadence and fresh-session migration requirements are documented in `.github/RESEARCH_SCHEDULES.md`; complete recurring prompts are in `.github/RESEARCH_AUTOMATIONS.json`. Each run reads the latest `AGENTS.md` before researching or writing. Repository specifications do not create, enable or disable scheduler tasks; runtime status requires separate verification. Existing curriculum progress, post dates, categories and permalinks are preserved.
 
 ## IC platform publication scope
 
-2026-10-01 使用者核准：IC 設計平台目前只公開以平台架構、工程協作、工具／資料交接、狀態管理、執行恢復或驗收治理為主問題的文章。純 STA／SDC 基礎教材、placement／timing 演算法或單一引擎機制暫不公開；不能只加平台總覽或驗收段落就視為平台文章。封存清單以 `_archive/ic-design-platform/README.md` 為準；封存稿仍算歷史已完成，保留原始 date、categories、series、篇號及查重紀錄，不移回 `_posts/`、不換 slug／日期重發，恢復發布須使用者另行確認。其他六類與十四個系列的研究責任、五個排程器的時程及啟用狀態不變。
+2026-10-01 使用者核准：IC 設計平台目前只公開以平台架構、工程協作、工具／資料交接、狀態管理、執行恢復或驗收治理為主問題的文章。純 STA／SDC 基礎教材、placement／timing 演算法或單一引擎機制暫不公開；不能只加平台總覽或驗收段落就視為平台文章。封存清單以 `_archive/ic-design-platform/README.md` 為準；封存稿仍算歷史已完成，保留原始 date、categories、series、篇號及查重紀錄，不移回 `_posts/`、不換 slug／日期重發，恢復發布須使用者另行確認。其他分類與十四個系列的研究責任、五個排程器的時程及啟用狀態不變。
 
 ## Repository-managed scheduled instructions
 
 The five cloud tasks read `.github/schedules/README.md`, `common.md`, `manifest.json` and their group instruction file from the latest default-branch commit at each run. Edit those files to change future run instructions; the actual cloud triggers remain in ChatGPT. Schedule or enabled changes require a scheduler update and a verified manifest snapshot. Existing automation IDs, cadences and the fourteen series are preserved. `RESEARCH_AUTOMATIONS.json` keeps series-level supplementary requirements; it is not fourteen separate active tasks.
+
+## Kubernetes curriculum
+
+The k8s-hpc series now belongs to 系統與平台 (platform-engineering). Its roadmap links to rightson/k8s-lab for the 40 core plus 8 advanced units, all auxiliary materials, exercises and raw experiments. The former K001–K081 curriculum is retired; original posts remain archived. The distributed-systems service-design series and LLM Lab remain independent.

@@ -21,15 +21,20 @@
 - key: distributed-systems
   number: '05'
   title: 分散式系統
-  english: DISTRIBUTED & SYSTEMS ENGINEERING
-  description: 分散式服務、Linux、容器、叢集、資源管理與可靠性。
-- key: ai-industry
+  english: DISTRIBUTED SYSTEMS
+  description: 分散式服務、資料模型、一致性、複寫、容錯與恢復。
+- key: platform-engineering
   number: '06'
+  title: 系統與平台
+  english: SYSTEMS & PLATFORMS
+  description: Linux、容器、Kubernetes／HPC、叢集資源、平台效能與維運。
+- key: ai-industry
+  number: '07'
   title: 產業與供應鏈
   english: INDUSTRY & SUPPLY CHAINS
   description: 公司競爭力、產品、市場供需、客戶關係與價值分配。
 - key: investing
-  number: '07'
+  number: '08'
   title: 投資與交易
   english: INVESTING & TRADING
   description: 盈利預期、估值、機構資金、價量與進退場條件。

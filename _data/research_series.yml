@@ -26,8 +26,8 @@
   title: 分散式系統深度系列
   default_domain: distributed-systems
 - key: k8s-hpc
-  title: K8s／HPC 系統工程系列
-  default_domain: distributed-systems
+  title: Kubernetes：從執行模型到平台工程
+  default_domain: platform-engineering
 - key: mtk-ecosystem-deep-dive
   title: MTK 與半導體生態系深度研究
   default_domain: ai-industry

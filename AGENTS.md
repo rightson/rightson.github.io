@@ -43,7 +43,7 @@
 現有功能應保留：
 
 - 首頁依時間由新到舊顯示文章。
-- 七個固定研究 domain（見第 2 節）。
+- 八個固定研究 domain（見第 2 節）。
 - `/categories/` 靜態分類頁。
 - `/search/` 全文搜尋、AND keyword matching、domain/category filters 與 shareable query URL。
 - `/search.json` 由 published posts 自動產生。
@@ -60,7 +60,7 @@
 
 ---
 
-## 2. 七個公開分類與 URL 穩定性
+## 2. 八個公開分類與 URL 穩定性
 
 分類按「文章主要回答什麼問題」判斷；五個排程器是執行入口，十四個主題保留為系列。完整分類邊界與系列預設見 [.github/ARTICLE_TAXONOMY.md](.github/ARTICLE_TAXONOMY.md) 和 `_data/research_series.yml`。
 
@@ -70,7 +70,8 @@
 | `ai-frontier` | AI 技術與工程 | 模型原理、訓練／推論、通用 Agent、工具與實作。 |
 | `architecture` | 運算架構 | 加速器、微架構、資料流、記憶體與軟硬體協同。 |
 | `networking` | 網路系統 | 協定、封包路徑、互連、壅塞控制與網路效能。 |
-| `distributed-systems` | 分散式系統 | 分散式服務、Linux、容器、叢集、資源管理與可靠性。 |
+| `distributed-systems` | 分散式系統 | 分散式服務、資料模型、一致性、複寫、容錯與恢復。 |
+| `platform-engineering` | 系統與平台 | Linux、容器、K8s／HPC、叢集資源、平台效能與維運。 |
 | `ai-industry` | 產業與供應鏈 | 公司競爭力、產品、市場供需、客戶關係與價值分配。 |
 | `investing` | 投資與交易 | 盈利預期、估值、機構資金、價量與進退場條件。 |
 
@@ -81,9 +82,9 @@
 - LLM Lab 模型與實作預設 `ai-frontier`；獨立加速器微架構、記憶體或資料流歸 `architecture`。系列 identifier 不變。
 - 企業如何成長、競爭及獲利歸 `ai-industry`；股價已反映多少、合理估值、機構資金或進退場條件歸 `investing`。出現 EPS、營收、毛利或現金流數字，不足以歸為投資文。
 - 半導體生態系深研預設 `ai-industry`；主問題為合理股價、估值情境或布局條件時歸 `investing`。
-- TPU 微架構歸 `architecture`；協定、封包路徑與互連歸 `networking`；服務一致性、Linux、容器、K8s／HPC、叢集資源與可靠性歸 `distributed-systems`，不因應用於 EDA／AI 而改分類。
+- TPU 微架構歸 `architecture`；協定、封包路徑與互連歸 `networking`；服務一致性、複寫與完整服務設計歸 `distributed-systems`；Linux、容器、K8s／HPC、叢集資源與平台維運歸 `platform-engineering`，不因應用於 EDA／AI 而改分類。
 - 「AI 前沿每日摘要」使用 `series: ai-frontier-digest`；依本節主問題規則分類，不以系列預設凌駕實際文章內容。
-- 已核准本次七類與順序（2026-10-01）。未來新增、合併、拆分、更名、重排公開分類或重新分類既有文章，仍須使用者確認；新文章依已核准規則選分類，不必逐篇詢問。
+- 已核准本次八類與順序（2026-10-01）。未來新增、合併、拆分、更名、重排公開分類或重新分類既有文章，仍須使用者確認；新文章依已核准規則選分類，不必逐篇詢問。
 - 同步 `_data/domains.yml`、`_includes/domain-key.html`、本表、roadmap 與五個新排程。顯示順序以 `_data/domains.yml` 為準。
 
 ---
@@ -454,7 +455,7 @@ Article-only content commit 不必為了形式重跑所有 UI 測試；只做與
 
 ## 13. 保留與刪除規則
 
-2026-10-01 使用者核准：IC 設計平台目前只公開以平台架構、工程協作、工具／資料交接、狀態管理、執行恢復或驗收治理為主問題的文章。純 STA／SDC 基礎教材、placement／timing 演算法或單一引擎機制暫不公開；不能只加平台總覽或驗收段落就視為平台文章。封存清單以 `_archive/ic-design-platform/README.md` 為準；封存稿仍算歷史已完成，保留原始 date、categories、series、篇號及查重紀錄，不移回 `_posts/`、不換 slug／日期重發，恢復發布須使用者另行確認。其他六類與十四個系列的研究責任、五個排程器的時程及啟用狀態不變。
+2026-10-01 使用者核准：IC 設計平台目前只公開以平台架構、工程協作、工具／資料交接、狀態管理、執行恢復或驗收治理為主問題的文章。純 STA／SDC 基礎教材、placement／timing 演算法或單一引擎機制暫不公開；不能只加平台總覽或驗收段落就視為平台文章。封存清單以 `_archive/ic-design-platform/README.md` 為準；封存稿仍算歷史已完成，保留原始 date、categories、series、篇號及查重紀錄，不移回 `_posts/`、不換 slug／日期重發，恢復發布須使用者另行確認。其他分類與十四個系列的研究責任、五個排程器的時程及啟用狀態不變。
 
 - 不任意修改既有文章 filename、date、categories、permalink。
 - 未經要求，不順手改寫舊文章。
@@ -499,3 +500,7 @@ Article-only content commit 不必為了形式重跑所有 UI 測試；只做與
 3. `SITE_GUIDE.md` 應同步修正，而不是讓兩套規則長期分岔。
 
 任何 agent 在「開寫文章前」只要遵守第 0 節，就必然會先讀到這套規則。
+
+## K8s 課程與教材（2026-10-01 後續核准）
+
+Kubernetes 從零學習，沿用 OS 與資工先備；series k8s-hpc，預設 domain/categories platform-engineering（系統與平台）。現行 roadmap 指向 rightson/k8s-lab 的完整 learning-plan、lesson-standard、learning-progress；所有 K8s 輔助教材、練習、解答、程式與 raw 實驗證據放該 repo。網站只保存完整文章與文章圖。舊 K001–K081 不沿用，新穩定 ID K082–K129；封存歷史保留，恢復須另行授權。LLM Lab 的預設分類仍為 AI 技術與工程，硬體主問題依規則歸運算架構。五個雲端排程時程與啟用狀態不變。

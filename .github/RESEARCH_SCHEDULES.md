@@ -4,10 +4,10 @@
 
 ## 規則與接續
 
-2026-10-01 使用者核准：IC 設計平台目前只公開以平台架構、工程協作、工具／資料交接、狀態管理、執行恢復或驗收治理為主問題的文章。純 STA／SDC 基礎教材、placement／timing 演算法或單一引擎機制暫不公開；不能只加平台總覽或驗收段落就視為平台文章。封存清單以 `_archive/ic-design-platform/README.md` 為準；封存稿仍算歷史已完成，保留原始 date、categories、series、篇號及查重紀錄，不移回 `_posts/`、不換 slug／日期重發，恢復發布須使用者另行確認。其他六類與十四個系列的研究責任、五個排程器的時程及啟用狀態不變。
+2026-10-01 使用者核准：IC 設計平台目前只公開以平台架構、工程協作、工具／資料交接、狀態管理、執行恢復或驗收治理為主問題的文章。純 STA／SDC 基礎教材、placement／timing 演算法或單一引擎機制暫不公開；不能只加平台總覽或驗收段落就視為平台文章。封存清單以 `_archive/ic-design-platform/README.md` 為準；封存稿仍算歷史已完成，保留原始 date、categories、series、篇號及查重紀錄，不移回 `_posts/`、不換 slug／日期重發，恢復發布須使用者另行確認。其他分類與十四個系列的研究責任、五個排程器的時程及啟用狀態不變。
 
 - 每次開寫完整讀取最新 default branch 的 `AGENTS.md`、`_config.yml`、本檔、[五個任務指令](schedules/README.md) 與 [系列補充規格](RESEARCH_AUTOMATIONS.json)、直接相關 roadmap 與近期文章。`AGENTS.md` 仍是唯一 agent source of truth；本檔只補充任務分工，不放寬既有門檻。
-- 依 2026-10-01 核准的七類與順序分類，詳見 ARTICLE_TAXONOMY.md；既有 permalink 保留；每篇按核心問題選一個 domain，新文章 categories 與 domain 一致。`series` 表示系列接續，不能改動既有 URL。
+- 依 2026-10-01 核准的八類與順序分類，詳見 ARTICLE_TAXONOMY.md；既有 permalink 保留；每篇按核心問題選一個 domain，新文章 categories 與 domain 一致。`series` 表示系列接續，不能改動既有 URL。
 - 所有 replacement task 使用全新 cloud session。知識進度由 repo roadmap、已發布文章與可核對的 ledger 接續，不使用舊對話狀態。
 - 初始化與定期執行分開：一次性停用舊任務／建立新任務的步驟不得放進 recurring prompt。
 - 啟動時間採 Asia/Taipei，文章 date 仍按首次實際寫入時間。台股工作日只是執行候選日；每次盤中／盤後先核對官方交易日。
@@ -46,7 +46,7 @@
 | `tpu-technical`：TPU／AI 加速器深度系列 | 每週五 19:00 | 每週一篇深度長文 | architecture |
 | `networking-deep-dive`：Networking 每週深度長文 | 每週三 19:00 | 每週一篇深度長文 | networking |
 | `distributed-systems`：分散式系統深度系列 | 每週五 19:00 | 每週一篇完整系統設計案例 | distributed-systems |
-| `k8s-hpc`：K8s／HPC 系統工程系列 | 每週四 19:00 | 每週一篇循序技術教材 | distributed-systems |
+| `k8s-hpc`：Kubernetes：從執行模型到平台工程 | 每週四 19:00 | 每週一篇完整教材，練習與實驗在 k8s-lab | platform-engineering |
 
 ## 任務分工
 
@@ -154,9 +154,9 @@
 - 任務指令：[schedules/technical-curriculum.md](schedules/technical-curriculum.md)；系列補充規格：`RESEARCH_AUTOMATIONS.json` 的 `distributed-systems`。
 - 接續來源：`.github/DISTRIBUTED_SYSTEMS_SERIES_ROADMAP.md`
 
-### K8s／HPC 系統工程系列
+### Kubernetes：從執行模型到平台工程
 
-延續目前新版 .github/K8S_HPC_SERIES_ROADMAP.md 的 K001 起始課程、穩定 ID、先備順序與驗證狀態；已封存舊 #001–#006 不算新版進度、不重建。每週只打通一個當前問題，由 process／Linux 到容器、CPU/memory、network/storage、control plane、scheduler、checkpoint、K8s/Slurm/HPC、AI/EDA workload，依當前階段先補直覺與最小模型，不預設尚未教過的 kernel／RDMA／Raft 知識。遵守 roadmap 入門與進階篇幅、完整例子與視覺要求，不能為一般長文深度提早塞入先備不足的概念。與 distributed-systems 理論、networking 資料路徑及 TPU hardware 清楚分工，按需引用既有先修。依已同意的新週期每週四 19:00 接續，domain/categories: distributed-systems，series: k8s-hpc。
+Kubernetes：從執行模型到平台工程完整長文。讀者沿用 OS、程式與網路先備，Kubernetes 從零學習，OS 基本名詞按需簡短銜接，新 K8s 概念清楚建立動機、系統模型與責任邊界。先讀網站 .github/K8S_HPC_SERIES_ROADMAP.md，再讀 rightson/k8s-lab 最新 default branch metadata、完整 AGENTS.md、README、docs/learning-plan.md、docs/lesson-standard.md、docs/learning-progress.json 與相關教材；記錄兩個 repo instruction commit SHA。依 K082–K129（40 核心＋8 進階）的先備順序推進，下一單元 K082；舊 #001–#006、K001–K081 均保留歷史但不當新課程完成，不恢復封存稿、不重用篇號、不換日期重發。所有輔助教材、練習、解答、manifest、程式與 raw 實驗放 rightson/k8s-lab，網站放對應完整公開長文與文章圖，domain/categories platform-engineering（系統與平台），series k8s-hpc。先提交並回讀 lab source 與實驗，再發布網站；兩個 repo 各自核驗階段，只有必要實驗及網站 source/build/deploy/public content 全成立才更新 lab 完成進度。硬體或來源不足記錄精確 blockers，不捏造實驗，不縮成摘要。週四 Asia/Taipei 19:00 保持不變。
 
 - series：`k8s-hpc`
 - 任務指令：[schedules/technical-curriculum.md](schedules/technical-curriculum.md)；系列補充規格：`RESEARCH_AUTOMATIONS.json` 的 `k8s-hpc`。
@@ -177,7 +177,7 @@
 | TPU 技術深度系列 | tpu-technical，每週五早上 |
 | Networking 每週深度長文 | networking-deep-dive，每週三晚上 |
 | 分散式系統深度系列 | distributed-systems，每週五晚上 |
-| K8s HPC 技術系列 | k8s-hpc，每週四晚上；新版 K001 課程接續 |
+| K8s HPC 技術系列 | k8s-hpc，每週四晚上；K082–K129 課程接續 |
 
 ## 跨系列 ownership
 
