@@ -2,7 +2,7 @@
 layout: post
 title: "STA 的時間需求從哪裡來：SDC、Arrival Time 與 Slack"
 date: 2026-09-23 12:35:00 +0800
-domain: eda
+domain: ic-design-platform
 categories: eda
 description: "STA 結果建立在 netlist、delay model 與 timing intent 上；先理解需求如何形成 deadline，才能分辨路徑太慢與 constraint 寫錯。"
 ---

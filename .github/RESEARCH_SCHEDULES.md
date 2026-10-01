@@ -5,27 +5,41 @@
 ## 規則與接續
 
 - 每次開寫完整讀取最新 default branch 的 `AGENTS.md`、`_config.yml`、本檔、[完整任務 prompt](RESEARCH_AUTOMATIONS.json)、直接相關 roadmap 與近期文章。`AGENTS.md` 仍是唯一 agent source of truth；本檔只補充任務分工，不放寬既有門檻。
-- 八個現有公開 domain、顯示順序與既有 permalink 保留；每篇按核心問題選一個 domain，新文章 categories 與 domain 一致。`series` 表示系列接續，不能改動既有 URL。
+- 依 2026-10-01 核准的七類與順序分類，詳見 ARTICLE_TAXONOMY.md；既有 permalink 保留；每篇按核心問題選一個 domain，新文章 categories 與 domain 一致。`series` 表示系列接續，不能改動既有 URL。
 - 所有 replacement task 使用全新 cloud session。知識進度由 repo roadmap、已發布文章與可核對的 ledger 接續，不使用舊對話狀態。
 - 初始化與定期執行分開：一次性停用舊任務／建立新任務的步驟不得放進 recurring prompt。
 - 啟動時間採 Asia/Taipei，文章 date 仍按首次實際寫入時間。台股工作日只是執行候選日；每次盤中／盤後先核對官方交易日。
 - 會議摘要、私人決策日誌、持倉與實際交易留在各自 session；公開 repo 僅保存適合公開的研究、來源與課程狀態。
 
-## 已同意週期
+## 目前五個執行入口
+
+2026-10-01 已有五個「（新）」排程；以下是目前工作分派，取代原十四個主題的獨立啟動時間。scheduler 設定仍需回讀核驗。本次只同步分類，不新增、重啟或重排任務。
+
+| 排程器 | Asia/Taipei | 系列分派 |
+| --- | --- | --- |
+| （新）R2G／Agentic Design | 每日 06:00 | 每日雷達；週一 SOTA；週二架構長文與會議摘要 |
+| （新）AI 前沿與分享 | 每日 07:30 | 每日摘要；週四分享素材 |
+| （新）技術課程 | 週三至六 19:00 | 三 Networking；四 K8s；五 TPU 與分散式系統；六 LLM Lab |
+| （新）生態系投資研究 | 平日 05:30、17:30；週日 05:30 | 晨報、盤後日誌、週日深研 |
+| （新）市場事件觀察 | 台股交易日 10:30、13:30 | 盤中事件觀察 |
+
+十四個系列及預設分類見 `_data/research_series.yml`；實際分類依文章主問題與 ARTICLE_TAXONOMY.md。公開 repo 的編輯規格不新增額外任務。
+
+## 十四個系列的內容規格
 
 | 系列 | 啟動週期（Asia/Taipei） | 產出 | 主要 domain |
 | --- | --- | --- | --- |
-| `sota-r2g-cad`：SOTA R2G／CAD 平台深度學習 | 每週一 06:00 | 每週一篇深度長文 | ic-design-platform / eda |
-| `agentic-design-radar`：Agentic Design 即時雷達 | 每日 06:30 | 重要增量才發布短評 | ic-design-platform / eda |
-| `agentic-design-deep-dive`：Agentic Design 架構深掘與會議素材 | 每週二 06:00 | 一篇長文；會議摘要留 session | ic-design-platform / eda |
+| `sota-r2g-cad`：SOTA R2G／CAD 平台深度學習 | 每週一 06:00 | 每週一篇深度長文 | ic-design-platform |
+| `agentic-design-radar`：Agentic Design 即時雷達 | 每日 06:00 | 重要增量才發布短評 | ic-design-platform |
+| `agentic-design-deep-dive`：Agentic Design 架構深掘與會議素材 | 每週二 06:00 | 一篇長文；會議摘要留 session | ic-design-platform |
 | `ai-frontier-digest`：AI 前沿每日摘要 | 每日 07:30 | 有增量的一篇技術摘要 | ai-frontier |
-| `ai-weekly-share`：AI 每週分享素材 | 每週四 17:00 | session 分享材料；增量足夠才發公開綜述 | ai-frontier |
-| `llm-lab`：LLM Lab：模型到晶片的完整技術鏈 | 每週六 09:00 | 每週一篇完整 lab | ai-frontier / architecture / eda / ic-design-platform |
+| `ai-weekly-share`：AI 每週分享素材 | 每週四 07:30 | session 分享材料；增量足夠才發公開綜述 | ai-frontier |
+| `llm-lab`：LLM Lab：模型到晶片的完整技術鏈 | 每週六 19:00 | 每週一篇完整 lab | ai-frontier / architecture / ic-design-platform |
 | `mtk-ecosystem-institutional`：MTK／台積電生態系機構與基本面晨報 | 週一至五 05:30 | session 短報；重大假設變化才發文 | investing / ai-industry |
-| `mtk-ecosystem-intraday`：盤中價量與事件觀察 | 台股交易日 10:30、13:00 | 只在 session 通知重要變化 | investing |
+| `mtk-ecosystem-intraday`：盤中價量與事件觀察 | 台股交易日 10:30、13:30 | 只在 session 通知重要變化 | investing |
 | `mtk-ecosystem-market-journal`：盤後籌碼與波段決策日誌 | 台股交易日 17:30 | 有價值的公開分析；私人日誌留 session | investing |
-| `mtk-ecosystem-deep-dive`：MTK 與半導體生態系深度研究 | 每週日 09:00 | 每週一篇深度研究 | ai-industry / investing |
-| `tpu-technical`：TPU／AI 加速器深度系列 | 每週五 06:00 | 每週一篇深度長文 | architecture |
+| `mtk-ecosystem-deep-dive`：MTK 與半導體生態系深度研究 | 每週日 05:30 | 每週一篇深度研究 | ai-industry / investing |
+| `tpu-technical`：TPU／AI 加速器深度系列 | 每週五 19:00 | 每週一篇深度長文 | architecture |
 | `networking-deep-dive`：Networking 每週深度長文 | 每週三 19:00 | 每週一篇深度長文 | networking |
 | `distributed-systems`：分散式系統深度系列 | 每週五 19:00 | 每週一篇完整系統設計案例 | distributed-systems |
 | `k8s-hpc`：K8s／HPC 系統工程系列 | 每週四 19:00 | 每週一篇循序技術教材 | distributed-systems |
@@ -34,7 +48,7 @@
 
 ### SOTA R2G／CAD 平台深度學習
 
-從 NVIDIA、AMD、Qualcomm、Broadcom、Marvell 與 Synopsys、Cadence、Siemens 等公開案例，選一個能補齊知識缺口的具名平台或設計方法。研究完整 design intent／IP／SoC／RTL／verification／formal／DFT／synthesis／SDC／APR／ECO／signoff／package 的必要交接，說清 inputs、可改變數、artifacts、tool evidence、驗收責任及失效恢復；先建立端到端總覽，再深掘至少兩個關鍵機制、設計理由與 trade-off。形成跨公司有來源支持的比較與可借鏡的實驗。僅將公開證據支持的內容稱為公司現有做法；徵才、議程標題、行銷聲明不能拼成完整內部架構。開源 flow 可作可重現對照，不把它等同商用先進製程量產。依主要問題選 ic-design-platform 或 eda。延續既有 EDA roadmap 已公開案例與完成狀態，每週一篇，讓週一／週二有完整消化時間；不重啟舊篇目、不重寫已有 NVIDIA／Qualcomm 案例。
+從 NVIDIA、AMD、Qualcomm、Broadcom、Marvell 與 Synopsys、Cadence、Siemens 等公開案例，選一個能補齊知識缺口的具名平台或設計方法。研究完整 design intent／IP／SoC／RTL／verification／formal／DFT／synthesis／SDC／APR／ECO／signoff／package 的必要交接，說清 inputs、可改變數、artifacts、tool evidence、驗收責任及失效恢復；先建立端到端總覽，再深掘至少兩個關鍵機制、設計理由與 trade-off。形成跨公司有來源支持的比較與可借鏡的實驗。僅將公開證據支持的內容稱為公司現有做法；徵才、議程標題、行銷聲明不能拼成完整內部架構。開源 flow 可作可重現對照，不把它等同商用先進製程量產。晶片設計方法與平台主問題歸 ic-design-platform。延續既有 EDA roadmap 已公開案例與完成狀態，每週一篇，讓週一／週二有完整消化時間；不重啟舊篇目、不重寫已有 NVIDIA／Qualcomm 案例。
 
 - series：`sota-r2g-cad`
 - 完整 recurring prompt：`RESEARCH_AUTOMATIONS.json` 的 `sota-r2g-cad`。

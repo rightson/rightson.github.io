@@ -8,22 +8,19 @@ This site uses native Jekyll layouts and GitHub Pages. No remote theme, JavaScri
 
 Continue adding Markdown files to `_posts/YYYY-MM-DD-slug.md` with `layout: post`, `title`, `date`, and `categories`. Do not change existing `categories`: Jekyll uses them in default post URLs.
 
-Add an optional `domain` to explicitly select one of the eight editorial sections:
+Set one primary `domain` according to the article's main question. The seven public sections are:
 
 | domain | Section |
 | --- | --- |
-| ai-industry | 產業分析 |
-| investing | 投資與交易 |
-| eda | 電子設計自動化 |
 | ic-design-platform | IC 設計平台 |
-| architecture | 計算機架構 |
-| networking | 網路與互連 |
-| distributed-systems | 分散式系統 |
-| ai-frontier | AI 前沿技術 |
+| ai-frontier | AI 技術與工程 |
+| architecture | 運算架構 |
+| networking | 網路系統 |
+| distributed-systems | 分散式與系統工程 |
+| ai-industry | 產業與供應鏈 |
+| investing | 投資與交易 |
 
-The daily AI frontier digest uses `series: ai-frontier-digest`, `domain: ai-frontier`, and `categories: ai-frontier` for new posts. Reclassifying existing digest posts changes only `domain`; preserve their original `categories`, filename, date, and permalink. Models, inference/training methods, Agent systems, open-weight competition, and technical community debates belong here; supply-chain and business analysis remain in `ai-industry`.
-
-`domain` does not change the article URL. Existing posts are classified using `_includes/domain-key.html`; unmatched posts appear under 其他筆記. A post has one primary domain and any number of category labels. Unknown category labels remain visible, so daily publishing does not require a code change. Chinese display labels can be added to `_data/category_labels.yml`.
+Five scheduler groups retain fourteen research series. Series, companies and technical names are secondary metadata, not additional navigation sections. Read `.github/ARTICLE_TAXONOMY.md` and `_data/research_series.yml` for defaults and boundaries. EDA and legacy `timing` now belong to `ic-design-platform`. Existing article `domain` may be corrected after user approval; preserve filename, date, categories, permalink and series numbering. New articles use one category equal to their domain.
 
 ```yaml
 ---
@@ -37,7 +34,7 @@ categories: ai-supply-chain research
 
 ## Features
 
-- Homepage: newest-first articles and eight persistent research sections.
+- Homepage: newest-first articles and seven persistent research sections.
 - `/categories/`: static section archives, usable without JavaScript.
 - `/search/`: client-side full-text search with AND matching across space-separated keywords, domain and category filters, and shareable URLs.
 - `/search.json`: automatically generated from published posts at build time.
@@ -51,8 +48,8 @@ Search downloads the full index once. Consider a dedicated search index if the a
 
 Build with `bundle exec jekyll build`. Verify `/`, `/categories/`, `/search/`, an existing article, and `/feed.xml`. Test a keyword found only in article content, combined filters, zero results, mobile overflow, keyboard navigation, and an index-load failure.
 
-分類邊界：STA、SDC、timing closure 與 EDA 演算法歸 `eda`；多人協作、IP／SoC 整合、跨工具 R2G 流程與設計資料／執行治理歸 `ic-design-platform`。重新分類既有文章只修改 `domain`，保留 `categories` 與 URL。
+分類邊界以 `.github/ARTICLE_TAXONOMY.md` 為準：企業競爭與供需歸產業；價格、估值與交易歸投資。通用 Agent 歸 AI；晶片設計流程導入與驗收歸 IC 設計平台。
 
 ## Research series and recurring work
 
-The eight public domains remain unchanged. Approved series, topic ownership, cadence and fresh-session migration requirements are documented in `.github/RESEARCH_SCHEDULES.md`; complete recurring prompts are in `.github/RESEARCH_AUTOMATIONS.json`. Each run reads the latest `AGENTS.md` before researching or writing. Repository specifications do not create, enable or disable scheduler tasks; runtime status requires separate verification. Existing curriculum progress, post dates, categories and permalinks are preserved.
+The seven public domains follow `.github/ARTICLE_TAXONOMY.md`. Approved series, topic ownership, cadence and fresh-session migration requirements are documented in `.github/RESEARCH_SCHEDULES.md`; complete recurring prompts are in `.github/RESEARCH_AUTOMATIONS.json`. Each run reads the latest `AGENTS.md` before researching or writing. Repository specifications do not create, enable or disable scheduler tasks; runtime status requires separate verification. Existing curriculum progress, post dates, categories and permalinks are preserved.

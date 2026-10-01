@@ -18,6 +18,7 @@
 2. 讀取最新 default branch 的：
    - `AGENTS.md`
    - `_config.yml`
+   - `.github/ARTICLE_TAXONOMY.md` 與 `_data/research_series.yml`
    - 與任務相關的 roadmap / series spec（若存在）
    - 研究排程另讀 `.github/RESEARCH_SCHEDULES.md` 與 `.github/RESEARCH_AUTOMATIONS.json` 中本任務規格；其中的排程中繼資料不代表 scheduler 已啟用。
    - 最近至少數篇同 domain／同系列文章，檢查重複與既有語氣。
@@ -42,7 +43,7 @@
 現有功能應保留：
 
 - 首頁依時間由新到舊顯示文章。
-- 八個固定研究 domain（見第 2 節）。
+- 七個固定研究 domain（見第 2 節）。
 - `/categories/` 靜態分類頁。
 - `/search/` 全文搜尋、AND keyword matching、domain/category filters 與 shareable query URL。
 - `/search.json` 由 published posts 自動產生。
@@ -59,38 +60,31 @@
 
 ---
 
-## 2. 八個公開分類與 URL 穩定性
+## 2. 七個公開分類與 URL 穩定性
 
-分類名稱採學術會議與業界通用詞彙；每篇選一個主要 `domain`：
+分類按「文章主要回答什麼問題」判斷；五個排程器是執行入口，十四個主題保留為系列。完整分類邊界與系列預設見 [.github/ARTICLE_TAXONOMY.md](.github/ARTICLE_TAXONOMY.md) 和 `_data/research_series.yml`。
 
-| domain | 公開分類 | 內容 | 常見對應 |
-| --- | --- | --- | --- |
-| `ai-industry` | 產業分析 | AI／半導體需求、供應鏈、產能、政策、價值分配 | 產業研究 |
-| `investing` | 投資與交易 | 投資假設、估值、催化劑、資金動向、交易與風險 | 投資研究 |
-| `eda` | 電子設計自動化 | EDA 演算法、synthesis、placement、routing、sizing、STA／SDC、timing closure、verification、signoff 方法 | DAC、ICCAD、TAU |
-| `ic-design-platform` | IC 設計平台 | 多人協作、IP／SoC 整合、跨工具交接、R2G 流程、設計資料與執行治理平台 | CAD infrastructure、design management |
-| `architecture` | 計算機架構 | 加速器（TPU／GPU／ASIC）、處理器微架構、記憶體階層、資料流、效能模型 | ISCA、MICRO、HPCA |
-| `networking` | 網路與互連 | 網路協定、交換晶片、光通訊、scale-up／scale-out 互連、資料中心網路 | SIGCOMM、NSDI、Hot Interconnects |
-| `distributed-systems` | 分散式系統 | 叢集管理（Kubernetes、Slurm）、控制面、一致性、複寫、容錯、大規模服務設計 | OSDI、SOSP、EuroSys |
-| `ai-frontier` | AI 前沿技術 | 前沿模型、訓練／推論演算法、reasoning／multimodal、Agent／工具／memory／evaluation、open-weight 競爭與即時技術討論 | AI 前沿技術摘要、模型與系統研究 |
+| domain | 公開分類 | 主要問題 |
+| --- | --- | --- |
+| `ic-design-platform` | IC 設計平台 | 晶片設計流程、EDA、工程協作、資料交接與治理。 |
+| `ai-frontier` | AI 技術與工程 | 模型原理、訓練／推論、通用 Agent、工具與實作。 |
+| `architecture` | 運算架構 | 加速器、微架構、資料流、記憶體與軟硬體協同。 |
+| `networking` | 網路系統 | 協定、封包路徑、互連、壅塞控制與網路效能。 |
+| `distributed-systems` | 分散式與系統工程 | 分散式服務、Linux、容器、叢集、資源管理與可靠性。 |
+| `ai-industry` | 產業與供應鏈 | 公司競爭力、產品、市場供需、客戶關係與價值分配。 |
+| `investing` | 投資與交易 | 盈利預期、估值、機構資金、價量與進退場條件。 |
 
-規則：
-
-- 每篇新文章只有一個 primary `domain`，依文章的核心問題決定，不按關鍵字機械分類。
-- 新文章的 `categories` 原則上使用與 `domain` 相同的單一值。
-- **既有文章的 `categories` 不可為了重新分類而修改。** Jekyll default post URL 會受 categories 影響，修改可能直接破壞外部連結；重新分類只改 `domain`。
-- `domain` 用於內容分區，不應改變文章 URL。
-- **分類變更前必須先向使用者提出方案並取得確認**，包括：新增、合併、拆分或更名公開分類、調整顯示順序，以及改變既有文章的 `domain`。確認後再同步 `_data/domains.yml`、`_includes/domain-key.html`、本表與相關 roadmap。
-- 新文章依本表與邊界規則選定 `domain`，不需逐篇詢問；若核心問題無法明確對應任一分類，先詢問，不自行新增分類。
-- 不用細碎 category/tag 製造分類噪音。首頁、分類頁與文章頁只對讀者顯示 `domain`；`categories` 僅用於既有 URL 與搜尋篩選。
-- 顯示順序依 `_data/domains.yml`。
-- 邊界：
-  - 「AI 前沿技術摘要」排程使用 `series: ai-frontier-digest`；新文章固定 `domain: ai-frontier` 與 `categories: ai-frontier`。既有本系列移入時只改 `domain`，保留原 `categories`、檔名、date 與 permalink。
-  - 模型能力、訓練／推論方法、通用 Agent 技術及 open-weight 比較歸 `ai-frontier`；需求、供應鏈、產能與價值分配歸 `ai-industry`，估值與交易歸 `investing`。獨立的硬體微架構、互連、控制面或 EDA 深掘仍按下列既有邊界分類；AI 前沿技術摘要中為理解模型／Agent 而引用跨層機制，不改變本系列的主要分類。
-  - STA／SDC／timing closure 與 EDA 演算法歸 `eda`；多人協作、IP／SoC 整合、跨工具資料交接、R2G 流程與設計資料／執行治理歸 `ic-design-platform`。依正文的主要問題分類，不按排程名稱或廠商名稱決定；C3PO／AutoDMP 等以 placement 最佳化為主的文章歸 `eda`。
-  - TPU／加速器的微架構與資料流歸 `architecture`；其商業、供應鏈或估值歸 `ai-industry`／`investing`。
-  - Kubernetes／HPC 叢集與控制面歸 `distributed-systems`，即使應用案例是 EDA；NVLink／UALink／光互連等資料路徑歸 `networking`。
-  - 光互連技術機制歸 `networking`；光通訊公司估值／交易分析歸 `investing`。
+- 每篇只有一個 primary `domain`；`series`、公司與技術名稱為次級資料，不增加主選單。系列預設不能取代文章主問題判斷。
+- 新文章單一 `categories` 與 `domain` 一致；既有文章重新分類只改 `domain`，保留 filename、date、categories、permalink、既有 series／篇號與正文。`domain` 不改變文章 URL。
+- EDA 演算法、STA／SDC、placement、routing、verification、signoff 與設計流程／平台統一歸 `ic-design-platform`。`eda`／`timing` 是舊分類相容值，不能新增為公開選單。
+- 模型、訓練／推論與通用 Agent 歸 `ai-frontier`；主問題為 RTL、驗證、synthesis／APR、signoff 的導入、流程與驗收責任，歸 `ic-design-platform`。
+- LLM Lab 模型與實作預設 `ai-frontier`；獨立加速器微架構、記憶體或資料流歸 `architecture`。系列 identifier 不變。
+- 企業如何成長、競爭及獲利歸 `ai-industry`；股價已反映多少、合理估值、機構資金或進退場條件歸 `investing`。出現 EPS、營收、毛利或現金流數字，不足以歸為投資文。
+- 半導體生態系深研預設 `ai-industry`；主問題為合理股價、估值情境或布局條件時歸 `investing`。
+- TPU 微架構歸 `architecture`；協定、封包路徑與互連歸 `networking`；服務一致性、Linux、容器、K8s／HPC、叢集資源與可靠性歸 `distributed-systems`，不因應用於 EDA／AI 而改分類。
+- 「AI 前沿每日摘要」使用 `series: ai-frontier-digest`；依本節主問題規則分類，不以系列預設凌駕實際文章內容。
+- 已核准本次七類與順序（2026-10-01）。未來新增、合併、拆分、更名、重排公開分類或重新分類既有文章，仍須使用者確認；新文章依已核准規則選分類，不必逐篇詢問。
+- 同步 `_data/domains.yml`、`_includes/domain-key.html`、本表、roadmap 與五個新排程。顯示順序以 `_data/domains.yml` 為準。
 
 ---
 
@@ -107,8 +101,8 @@
 layout: post
 title: "具體、有資訊量、像工程師會寫的標題"
 date: YYYY-MM-DD HH:MM:SS +0800
-domain: eda
-categories: eda
+domain: ic-design-platform
+categories: ic-design-platform
 description: "一至兩句概括文章真正的核心判斷。"
 ---
 ```
@@ -225,7 +219,7 @@ description: "一至兩句概括文章真正的核心判斷。"
 
 ## 6. EDA / IC Design Platform 文章的特殊要求
 
-`eda` 與 `ic-design-platform` 分別依第 2 節分類；兩者仍共用以下工程證據與保密要求。
+EDA 方法與 IC 設計平台均依第 2 節歸 `ic-design-platform`，共用以下工程證據與保密要求。
 
 EDA 類文章不限 R2G，應把視野放到完整 IC design platform：
 

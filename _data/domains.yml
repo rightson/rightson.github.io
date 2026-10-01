@@ -1,41 +1,35 @@
-- key: ai-industry
-  number: '01'
-  title: 產業分析
-  english: INDUSTRY ANALYSIS
-  description: AI 與半導體的需求、供應鏈、產能、政策與價值分配。
-- key: investing
-  number: '02'
-  title: 投資與交易
-  english: INVESTING & TRADING
-  description: 投資假設、估值、催化劑、資金動向與風險管理。
-- key: eda
-  number: '03'
-  title: 電子設計自動化
-  english: EDA
-  description: EDA 演算法與分析方法：synthesis、placement、routing、sizing、STA／SDC、timing closure、verification
-    與 signoff。
 - key: ic-design-platform
-  number: '04'
+  number: '01'
   title: IC 設計平台
   english: IC DESIGN PLATFORMS
-  description: 多人協作、IP／SoC 整合、R2G 流程、跨工具資料交接，以及設計資料、執行與治理平台。
-- key: architecture
-  number: '05'
-  title: 計算機架構
-  english: COMPUTER ARCHITECTURE
-  description: 加速器與處理器微架構、記憶體階層、資料流與效能模型。
-- key: networking
-  number: '06'
-  title: 網路與互連
-  english: NETWORKING & INTERCONNECTS
-  description: 網路協定、交換晶片、光通訊，以及 scale-up／scale-out 互連。
-- key: distributed-systems
-  number: '07'
-  title: 分散式系統
-  english: DISTRIBUTED SYSTEMS
-  description: 叢集管理與控制面、一致性、複寫、容錯，以及大規模服務設計。
+  description: 晶片設計流程、EDA、工程協作、資料交接與治理。
 - key: ai-frontier
-  number: '08'
-  title: AI 前沿技術
-  english: AI FRONTIER TECHNOLOGY
-  description: 前沿模型、訓練與推論方法、Agent 系統，以及 open-weight 模型競爭與技術社群討論。
+  number: '02'
+  title: AI 技術與工程
+  english: AI TECHNOLOGY & ENGINEERING
+  description: 模型原理、訓練／推論、通用 Agent、工具與實作。
+- key: architecture
+  number: '03'
+  title: 運算架構
+  english: COMPUTING ARCHITECTURE
+  description: 加速器、微架構、資料流、記憶體與軟硬體協同。
+- key: networking
+  number: '04'
+  title: 網路系統
+  english: NETWORKING SYSTEMS
+  description: 協定、封包路徑、互連、壅塞控制與網路效能。
+- key: distributed-systems
+  number: '05'
+  title: 分散式與系統工程
+  english: DISTRIBUTED & SYSTEMS ENGINEERING
+  description: 分散式服務、Linux、容器、叢集、資源管理與可靠性。
+- key: ai-industry
+  number: '06'
+  title: 產業與供應鏈
+  english: INDUSTRY & SUPPLY CHAINS
+  description: 公司競爭力、產品、市場供需、客戶關係與價值分配。
+- key: investing
+  number: '07'
+  title: 投資與交易
+  english: INVESTING & TRADING
+  description: 盈利預期、估值、機構資金、價量與進退場條件。

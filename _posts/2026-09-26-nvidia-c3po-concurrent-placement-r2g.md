@@ -2,7 +2,7 @@
 layout: post
 title: "C3PO 如何校準佈局目標：時序、壅塞與後段結果的落差"
 date: 2026-09-26 12:11:33 +0800
-domain: eda
+domain: ic-design-platform
 categories: eda
 description: "C3PO 將可微分時序及壅塞訊號放入同一輪座標更新；以相同後段流程比較，辨認快速指標改善與最終 PPA 的差異。"
 ---

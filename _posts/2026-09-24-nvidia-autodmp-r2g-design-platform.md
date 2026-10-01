@@ -2,7 +2,7 @@
 layout: post
 title: "AutoDMP 的分層搜尋：快速佈局如何接到後段 PPA 驗收"
 date: 2026-09-24 15:23:08 +0800
-domain: eda
+domain: ic-design-platform
 categories: eda
 description: "AutoDMP 先以 GPU 搜尋保留不同取捨的候選，再交由實體後端評估；研究價值在於控制 proxy 成本與避免候選排名反轉。"
 ---

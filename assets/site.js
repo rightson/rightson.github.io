@@ -73,6 +73,8 @@
       wrapper.append(table);
     });
   }
+  if (["#eda", "#timing"].includes(location.hash))
+    location.replace("#ic-design-platform");
   const switcher = document.querySelector("[data-domain-switcher]");
   if (switcher) {
     const links = [...switcher.querySelectorAll('a[href^="#"]')];
@@ -132,7 +134,9 @@
     const params = new URLSearchParams(location.search);
     input.value = params.get("q") || "";
     category.value = params.get("category") || "";
-    domain.value = params.get("domain") || "";
+    const requestedDomain = params.get("domain") || "";
+    domain.value = ["eda", "timing"].includes(requestedDomain)
+      ? "ic-design-platform" : requestedDomain;
   }
   function render(sync = true) {
     if (!loaded) return;

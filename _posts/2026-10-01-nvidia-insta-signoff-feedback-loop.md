@@ -2,7 +2,7 @@
 layout: post
 title: "INSTA 把 signoff 時序壓進實體設計內迴圈：一次校準、GPU 傳播與驗收邊界"
 date: 2026-10-01 06:00:07 +0800
-domain: eda
+domain: ic-design-platform
 categories: eda
 series: sota-r2g-cad
 description: "NVIDIA INSTA 以商用 reference tool 的一次性初始化建立可微分 GPU 時序引擎，讓 placement／sizing 取得高速回饋；正式交付仍須回到 reference signoff 重新驗收。"

@@ -2,7 +2,7 @@
 layout: post
 title: "Launch 與 Capture Edge：Setup、Hold 如何建立不同期限"
 date: 2026-09-24 11:31:48 +0800
-domain: eda
+domain: ic-design-platform
 categories: eda
 description: "Clock period 只是時間關係的一部分；setup 與 hold 要由 launch/capture edge、Liberty arc 及 max/min path 一起建立。"
 ---

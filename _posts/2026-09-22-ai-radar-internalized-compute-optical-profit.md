@@ -2,7 +2,7 @@
 layout: post
 title: "自研算力與光互連擴產：AI 支出如何轉成可留存的利潤"
 date: 2026-09-22 17:35:00 +0800
-domain: investing
+domain: ai-industry
 categories: investing
 description: "阿里巴巴自研晶片與 Ciena 光互連成長，分別考驗成本內製及設備定價能力。兩者的股東價值都取決於新增資本投入後，還能留下多少現金。"
 ---

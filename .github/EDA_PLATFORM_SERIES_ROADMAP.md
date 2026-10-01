@@ -4,7 +4,7 @@
 
 ## 分類與圖解
 
-平台協作、整合、工具／資料交接與治理使用 `domain: ic-design-platform`；EDA 演算法及 STA／SDC 使用 `domain: eda`。依主要問題分類，不因公司或系列名稱一律歸平台。既有 categories 與 URL 保留。每篇在背景後提供平台架構或端到端流程總覽圖，另以局部圖解釋關鍵機制。
+平台協作、整合、交接、治理與 EDA 演算法／STA／SDC 均使用 `domain: ic-design-platform`（IC 設計平台）；系列保留 SOTA 主線，依 `.github/ARTICLE_TAXONOMY.md` 判斷跨域主問題。既有 categories 與 URL 保留。每篇在背景後提供平台架構或端到端流程總覽圖，另以局部圖解釋關鍵機制。
 
 ## 系列要回答的問題
 
