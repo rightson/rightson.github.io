@@ -432,7 +432,7 @@
   "runtime_groups": [
     {
       "key": "r2g-agentic-design",
-      "title": "（新）R2G／Agentic Design",
+      "title": "R2G／Agentic Design",
       "automation_id": "6abe36cde5dc819192330aa53636c3eb",
       "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Taipei:20261002T060000\nRRULE:FREQ=DAILY;BYHOUR=6;BYMINUTE=0;BYSECOND=0\nEND:VEVENT",
       "timezone": "Asia/Taipei",
@@ -444,7 +444,7 @@
     },
     {
       "key": "ai-frontier-share",
-      "title": "（新）AI 前沿與分享",
+      "title": "AI 前沿與分享",
       "automation_id": "6abe36db1f60819186c89cd600dff008",
       "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Taipei:20261002T073000\nRRULE:FREQ=DAILY;BYHOUR=7;BYMINUTE=30;BYSECOND=0\nEND:VEVENT",
       "timezone": "Asia/Taipei",
@@ -456,7 +456,7 @@
     },
     {
       "key": "technical-curriculum",
-      "title": "（新）技術課程",
+      "title": "技術課程",
       "automation_id": "6abe36dd14b88191980f6bb9e9a0b0f4",
       "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Taipei:20261001T190000\nRRULE:FREQ=WEEKLY;BYDAY=WE,TH,FR,SA;BYHOUR=19;BYMINUTE=0;BYSECOND=0\nEND:VEVENT",
       "timezone": "Asia/Taipei",
@@ -468,7 +468,7 @@
     },
     {
       "key": "ecosystem-investment",
-      "title": "（新）生態系投資研究",
+      "title": "生態系投資研究",
       "automation_id": "6abe36df9b6c8191bd0dde319cacb347",
       "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Taipei:20261002T053000\nRRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR,SU;BYHOUR=5,17;BYMINUTE=30;BYSECOND=0;BYSETPOS=1,2,3,4,5,6,7,8,9,10,11;WKST=MO\nEND:VEVENT",
       "timezone": "Asia/Taipei",
@@ -480,7 +480,7 @@
     },
     {
       "key": "market-events",
-      "title": "（新）市場事件觀察",
+      "title": "市場事件觀察",
       "automation_id": "6abe36e1c468819182542abb4134d860",
       "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Taipei:20261002T103000\nRRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;BYHOUR=10,13;BYMINUTE=30;BYSECOND=0\nEND:VEVENT",
       "timezone": "Asia/Taipei",

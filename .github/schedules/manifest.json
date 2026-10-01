@@ -10,7 +10,7 @@
   "groups": [
     {
       "key": "r2g-agentic-design",
-      "title": "（新）R2G／Agentic Design",
+      "title": "R2G／Agentic Design",
       "automation_id": "6abe36cde5dc819192330aa53636c3eb",
       "instructions": ".github/schedules/r2g-agentic-design.md",
       "series": [
@@ -29,7 +29,7 @@
     },
     {
       "key": "ai-frontier-share",
-      "title": "（新）AI 前沿與分享",
+      "title": "AI 前沿與分享",
       "automation_id": "6abe36db1f60819186c89cd600dff008",
       "instructions": ".github/schedules/ai-frontier-share.md",
       "series": [
@@ -47,7 +47,7 @@
     },
     {
       "key": "technical-curriculum",
-      "title": "（新）技術課程",
+      "title": "技術課程",
       "automation_id": "6abe36dd14b88191980f6bb9e9a0b0f4",
       "instructions": ".github/schedules/technical-curriculum.md",
       "series": [
@@ -68,7 +68,7 @@
     },
     {
       "key": "ecosystem-investment",
-      "title": "（新）生態系投資研究",
+      "title": "生態系投資研究",
       "automation_id": "6abe36df9b6c8191bd0dde319cacb347",
       "instructions": ".github/schedules/ecosystem-investment.md",
       "series": [
@@ -87,7 +87,7 @@
     },
     {
       "key": "market-events",
-      "title": "（新）市場事件觀察",
+      "title": "市場事件觀察",
       "automation_id": "6abe36e1c468819182542abb4134d860",
       "instructions": ".github/schedules/market-events.md",
       "series": [

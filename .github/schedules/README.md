@@ -1,16 +1,16 @@
 # 五個研究排程：指令管理入口
 
-2026-10-01 將既有五個「（新）」排程改為每次從本 repo 讀取指令。這次只遷移指令位置，保留相同 automation ID、啟動時間、時區與啟用狀態，不建立額外任務。
+2026-10-01 將既有五個研究排程改為每次從本 repo 讀取指令。這次只遷移指令位置，保留相同 automation ID、啟動時間、時區與啟用狀態，不建立額外任務。
 
 ## 在哪裡修改
 
 | 排程器 | Asia/Taipei 時程 | 任務指令 |
 | --- | --- | --- |
-| （新）R2G／Agentic Design | 每日 06:00 | [r2g-agentic-design](r2g-agentic-design.md) |
-| （新）AI 前沿與分享 | 每日 07:30 | [ai-frontier-share](ai-frontier-share.md) |
-| （新）技術課程 | 週三至六 19:00 | [technical-curriculum](technical-curriculum.md) |
-| （新）生態系投資研究 | 平日 05:30／17:30；週日 05:30 | [ecosystem-investment](ecosystem-investment.md) |
-| （新）市場事件觀察 | 平日 10:30／13:30，執行時核對交易日 | [market-events](market-events.md) |
+| R2G／Agentic Design | 每日 06:00 | [r2g-agentic-design](r2g-agentic-design.md) |
+| AI 前沿與分享 | 每日 07:30 | [ai-frontier-share](ai-frontier-share.md) |
+| 技術課程 | 週三至六 19:00 | [technical-curriculum](technical-curriculum.md) |
+| 生態系投資研究 | 平日 05:30／17:30；週日 05:30 | [ecosystem-investment](ecosystem-investment.md) |
+| 市場事件觀察 | 平日 10:30／13:30，執行時核對交易日 | [market-events](market-events.md) |
 
 所有任務共用要求修改 [common.md](common.md)；全站寫作、分類、來源、發布與封存規則修改 [AGENTS.md](../../AGENTS.md) 及其指定規格。各系列進度仍保存在原 roadmap。五個任務的完整執行指令為「AGENTS.md＋common.md＋對應任務檔＋本次相關系列補充規格」。
 
