@@ -16,7 +16,7 @@ Set one primary `domain` according to the article's main question. The seven pub
 | ai-frontier | AI 技術與工程 |
 | architecture | 運算架構 |
 | networking | 網路系統 |
-| distributed-systems | 分散式與系統工程 |
+| distributed-systems | 分散式系統 |
 | ai-industry | 產業與供應鏈 |
 | investing | 投資與交易 |
 

@@ -20,7 +20,7 @@
   description: 協定、封包路徑、互連、壅塞控制與網路效能。
 - key: distributed-systems
   number: '05'
-  title: 分散式與系統工程
+  title: 分散式系統
   english: DISTRIBUTED & SYSTEMS ENGINEERING
   description: 分散式服務、Linux、容器、叢集、資源管理與可靠性。
 - key: ai-industry

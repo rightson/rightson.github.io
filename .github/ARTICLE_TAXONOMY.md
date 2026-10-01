@@ -10,7 +10,7 @@
 | ai-frontier | AI 技術與工程 | 模型與通用 Agent 如何運作、評估與實作？ | ai-frontier-digest、ai-weekly-share、llm-lab |
 | architecture | 運算架構 | 運算硬體如何安排計算、資料搬移與記憶體？ | tpu-technical |
 | networking | 網路系統 | 資料如何跨節點傳送，如何控制壅塞與恢復？ | networking-deep-dive |
-| distributed-systems | 分散式與系統工程 | 服務、作業系統與叢集如何管理狀態、資源及可靠性？ | distributed-systems、k8s-hpc |
+| distributed-systems | 分散式系統 | 服務、作業系統與叢集如何管理狀態、資源及可靠性？ | distributed-systems、k8s-hpc |
 | ai-industry | 產業與供應鏈 | 企業如何成長、競爭、獲利，供需與價值如何分配？ | mtk-ecosystem-deep-dive |
 | investing | 投資與交易 | 股價反映多少預期，何時布局、減碼或退出？ | mtk-ecosystem-institutional、mtk-ecosystem-intraday、mtk-ecosystem-market-journal |
 
