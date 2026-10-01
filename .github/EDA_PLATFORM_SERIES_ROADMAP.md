@@ -4,6 +4,8 @@
 
 ## 分類與圖解
 
+2026-10-01 使用者核准：IC 設計平台目前只公開以平台架構、工程協作、工具／資料交接、狀態管理、執行恢復或驗收治理為主問題的文章。純 STA／SDC 基礎教材、placement／timing 演算法或單一引擎機制暫不公開；不能只加平台總覽或驗收段落就視為平台文章。封存清單以 `_archive/ic-design-platform/README.md` 為準；封存稿仍算歷史已完成，保留原始 date、categories、series、篇號及查重紀錄，不移回 `_posts/`、不換 slug／日期重發，恢復發布須使用者另行確認。其他六類與十四個系列的研究責任、五個排程器的時程及啟用狀態不變。
+
 平台協作、整合、交接、治理與 EDA 演算法／STA／SDC 均使用 `domain: ic-design-platform`（IC 設計平台）；系列保留 SOTA 主線，依 `.github/ARTICLE_TAXONOMY.md` 判斷跨域主問題。既有 categories 與 URL 保留。每篇在背景後提供平台架構或端到端流程總覽圖，另以局部圖解釋關鍵機制。
 
 ## 系列要回答的問題
@@ -14,7 +16,7 @@
 
 ## 已有文章：先查重
 
-- [NVIDIA AutoDMP：巨集佈局探索接回 R2G](/eda/2026/09/24/nvidia-autodmp-r2g-design-platform.html)：2023 年研究，已處理 PreDP、DEF 候選、PostDP／PPA。後續不可換說法重寫。
+- [NVIDIA AutoDMP：巨集佈局探索接回 R2G（已封存，禁止重發）](../_archive/ic-design-platform/_posts/2026-09-24-nvidia-autodmp-r2g-design-platform.md)：2023 年研究，已處理 PreDP、DEF 候選、PostDP／PPA。後續不可換說法重寫。
 - [Qualcomm FunCovr.ai／Bedrock 的驗證閉環](/eda/2026/09/24/qualcomm-cad-ai-verification-bedrock.html)：公開線索的證據邊界已說明；Bedrock 與 FunCovr.ai 的內部整合未被證實。
 - 2026-09-26 的 ORAssistant 是既有文章，不作本系列之後的選題模板。
 
@@ -24,8 +26,10 @@
 
 ## 候選章節，依證據成熟度選擇，不按新聞日期輪替
 
-- [x] **NVIDIA C3PO：全域 placement 的 timing、routability 與 wirelength 同時最佳化。** [已發表文章](https://rightson.github.io/eda/2026/09/26/nvidia-c3po-concurrent-placement-r2g.html)；repo path：`_posts/2026-09-26-nvidia-c3po-concurrent-placement-r2g.md`；原始研究：ASP-DAC 2026 年 1 月。文章比較後段 routed WL、TNS、power 與違例數，包括 ARIANE136 時序退化的反例；未宣稱為 NVIDIA 量產平台。
-- [x] **NVIDIA NVDLA：公開 IP 配置、trace 驗證與五分區綜合的 R2G 入口。** [已發表文章](https://rightson.github.io/eda/2026/09/30/nvidia-nvdla-config-to-synthesis-handoff.html)；repo path：`_posts/2026-09-30-nvidia-nvdla-config-to-synthesis-handoff.md`；原始公開版本：2017 年 9 月、可配置 v2：2018 年 4 月。官方資料揭露 spec／生成 RTL／ConfigROM／驗證 trace／SDC 與綜合輸出；`nv_small` 當時仍需補足 tapeout coverage，不宣稱 NVIDIA 內部量產部署或完整 APR signoff。\n- [ ] **NVIDIA INSTA／LEGO-Size：placement 後的快速 STA 與 signoff-accurate sizing 回饋。** 同一[研究清單](https://research.nvidia.com/labs/electronic-design-automation/)列 2025 DAC／ISPD 論文和部分程式碼；拆解 timing approximation 對工具呼叫、gate sizing 與 signoff 的責任邊界。選其中一個具體系統，不合併成無法驗證的「NVIDIA 全平台」。
+- [x] **NVIDIA C3PO：全域 placement 的 timing、routability 與 wirelength 同時最佳化。** [歷史已完成、現已封存](../_archive/ic-design-platform/_posts/2026-09-26-nvidia-c3po-concurrent-placement-r2g.md)；repo path：`_archive/ic-design-platform/_posts/2026-09-26-nvidia-c3po-concurrent-placement-r2g.md`；禁止重發；原始研究：ASP-DAC 2026 年 1 月。文章比較後段 routed WL、TNS、power 與違例數，包括 ARIANE136 時序退化的反例；未宣稱為 NVIDIA 量產平台。
+- [x] **NVIDIA NVDLA：公開 IP 配置、trace 驗證與五分區綜合的 R2G 入口。** [已發表文章](https://rightson.github.io/eda/2026/09/30/nvidia-nvdla-config-to-synthesis-handoff.html)；repo path：`_posts/2026-09-30-nvidia-nvdla-config-to-synthesis-handoff.md`；原始公開版本：2017 年 9 月、可配置 v2：2018 年 4 月。官方資料揭露 spec／生成 RTL／ConfigROM／驗證 trace／SDC 與綜合輸出；`nv_small` 當時仍需補足 tapeout coverage，不宣稱 NVIDIA 內部量產部署或完整 APR signoff。
+- [x] **NVIDIA INSTA：歷史已完成，2026-10-01 已封存。** [封存原文](../_archive/ic-design-platform/_posts/2026-10-01-nvidia-insta-signoff-feedback-loop.md)；主問題為時序引擎與最佳化機制，禁止重發或當成待補章節。
+- [ ] **NVIDIA LEGO-Size：暫不公開。** 純 gate sizing／timing 演算法不符合目前平台公開範圍；保留研究候選，不因排程自動發文。
 - [ ] **Marvell 3D chiplet 驗證或實體 signoff：跨 die／interposer 的交付條件。** [Marvell DAC 2026 官方議程](https://www.marvell.com/company/events/dac-2026.html)列 SIP flow、TSV／interposer／ESD signoff、3Dblox 產生和早期 DEF power grid shorts 分析。這些目前只是報告標題；須先取得完整簡報／技術資料，證實 input、規則、產物及案例，才可各自成篇。不能把多個報告拼成其內部平台。
 - [ ] **AMD 的 AI 驗證回歸：coverage 等效條件下的測試集合與資源。** [Synopsys 對 AMD 的公開案例](https://www.synopsys.com/zh-tw/taiwan/blog/amd-tests-snps-verification-tool.html)可作線索，須追到原始簡報、實驗條件及工具介面；與 Qualcomm 文章相比，新增價值必須落在 regression selection、fault evidence／成本等不同機制。只見數倍改善的宣傳數字不足以成篇。
 - [ ] **Qualcomm 後續 R2G 案例：constraint、IP 整合或實體實作。** 只有找到具名公開報告、足夠方法和資料流，才能立題。已有 FunCovr.ai／Bedrock 文章，不能再用同一三組來源改寫。

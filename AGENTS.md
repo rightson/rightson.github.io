@@ -454,6 +454,8 @@ Article-only content commit 不必為了形式重跑所有 UI 測試；只做與
 
 ## 13. 保留與刪除規則
 
+2026-10-01 使用者核准：IC 設計平台目前只公開以平台架構、工程協作、工具／資料交接、狀態管理、執行恢復或驗收治理為主問題的文章。純 STA／SDC 基礎教材、placement／timing 演算法或單一引擎機制暫不公開；不能只加平台總覽或驗收段落就視為平台文章。封存清單以 `_archive/ic-design-platform/README.md` 為準；封存稿仍算歷史已完成，保留原始 date、categories、series、篇號及查重紀錄，不移回 `_posts/`、不換 slug／日期重發，恢復發布須使用者另行確認。其他六類與十四個系列的研究責任、五個排程器的時程及啟用狀態不變。
+
 - 不任意修改既有文章 filename、date、categories、permalink。
 - 未經要求，不順手改寫舊文章。
 - 已刪除且不得重建：

@@ -28,6 +28,8 @@
 
 ## 既有與未來文章
 
+2026-10-01 使用者核准：IC 設計平台目前只公開以平台架構、工程協作、工具／資料交接、狀態管理、執行恢復或驗收治理為主問題的文章。純 STA／SDC 基礎教材、placement／timing 演算法或單一引擎機制暫不公開；不能只加平台總覽或驗收段落就視為平台文章。封存清單以 `_archive/ic-design-platform/README.md` 為準；封存稿仍算歷史已完成，保留原始 date、categories、series、篇號及查重紀錄，不移回 `_posts/`、不換 slug／日期重發，恢復發布須使用者另行確認。其他六類與十四個系列的研究責任、五個排程器的時程及啟用狀態不變。
+
 - 既有文章重新分類只改 `domain`，保留 filename、date、categories、permalink、正文、原始系列與篇號；不靠改 categories 移動網址。已封存文章保持封存。
 - 新文章使用單一 `categories`，與所選 `domain` 相同；`series` 使用穩定 identifier，可跨 domain，不隨題目更名。
 - 寫作前讀最新 `AGENTS.md`、本檔及對應 roadmap；分類變更同步首頁、分類頁、文章標籤、搜尋索引及排程規格。不得自行新增第八類。

@@ -4,6 +4,8 @@
 
 ## 規則與接續
 
+2026-10-01 使用者核准：IC 設計平台目前只公開以平台架構、工程協作、工具／資料交接、狀態管理、執行恢復或驗收治理為主問題的文章。純 STA／SDC 基礎教材、placement／timing 演算法或單一引擎機制暫不公開；不能只加平台總覽或驗收段落就視為平台文章。封存清單以 `_archive/ic-design-platform/README.md` 為準；封存稿仍算歷史已完成，保留原始 date、categories、series、篇號及查重紀錄，不移回 `_posts/`、不換 slug／日期重發，恢復發布須使用者另行確認。其他六類與十四個系列的研究責任、五個排程器的時程及啟用狀態不變。
+
 - 每次開寫完整讀取最新 default branch 的 `AGENTS.md`、`_config.yml`、本檔、[完整任務 prompt](RESEARCH_AUTOMATIONS.json)、直接相關 roadmap 與近期文章。`AGENTS.md` 仍是唯一 agent source of truth；本檔只補充任務分工，不放寬既有門檻。
 - 依 2026-10-01 核准的七類與順序分類，詳見 ARTICLE_TAXONOMY.md；既有 permalink 保留；每篇按核心問題選一個 domain，新文章 categories 與 domain 一致。`series` 表示系列接續，不能改動既有 URL。
 - 所有 replacement task 使用全新 cloud session。知識進度由 repo roadmap、已發布文章與可核對的 ledger 接續，不使用舊對話狀態。

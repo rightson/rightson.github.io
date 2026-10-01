@@ -1,0 +1,57 @@
+[
+  {
+    "filename": "2026-09-23-timing-constraint-defines-deadline.md",
+    "title": "STA 的時間需求從哪裡來：SDC、Arrival Time 與 Slack",
+    "original_path": "_posts/2026-09-23-timing-constraint-defines-deadline.md",
+    "archive_path": "_archive/ic-design-platform/_posts/2026-09-23-timing-constraint-defines-deadline.md",
+    "original_url": "https://rightson.github.io/eda/2026/09/23/timing-constraint-defines-deadline.html",
+    "sha256": "6a194a24b32751ecfd4dc35379266e8ebc56adf2b5a2e7573d31190338714fa6",
+    "date": "2026-09-23 12:35:00 +0800",
+    "series": null,
+    "series_order": null
+  },
+  {
+    "filename": "2026-09-24-clock-edges-define-setup-hold.md",
+    "title": "Launch 與 Capture Edge：Setup、Hold 如何建立不同期限",
+    "original_path": "_posts/2026-09-24-clock-edges-define-setup-hold.md",
+    "archive_path": "_archive/ic-design-platform/_posts/2026-09-24-clock-edges-define-setup-hold.md",
+    "original_url": "https://rightson.github.io/eda/2026/09/24/clock-edges-define-setup-hold.html",
+    "sha256": "2b5db6f17647d0f24557c25249c88a94ed27240cee8d9e7bf099d310f9933e05",
+    "date": "2026-09-24 11:31:48 +0800",
+    "series": null,
+    "series_order": null
+  },
+  {
+    "filename": "2026-09-24-nvidia-autodmp-r2g-design-platform.md",
+    "title": "AutoDMP 的分層搜尋：快速佈局如何接到後段 PPA 驗收",
+    "original_path": "_posts/2026-09-24-nvidia-autodmp-r2g-design-platform.md",
+    "archive_path": "_archive/ic-design-platform/_posts/2026-09-24-nvidia-autodmp-r2g-design-platform.md",
+    "original_url": "https://rightson.github.io/eda/2026/09/24/nvidia-autodmp-r2g-design-platform.html",
+    "sha256": "d0bb306aa336ec3ed92345c03e909d8c6b692cce2e00d43d365f76c01024185e",
+    "date": "2026-09-24 15:23:08 +0800",
+    "series": null,
+    "series_order": null
+  },
+  {
+    "filename": "2026-09-26-nvidia-c3po-concurrent-placement-r2g.md",
+    "title": "C3PO 如何校準佈局目標：時序、壅塞與後段結果的落差",
+    "original_path": "_posts/2026-09-26-nvidia-c3po-concurrent-placement-r2g.md",
+    "archive_path": "_archive/ic-design-platform/_posts/2026-09-26-nvidia-c3po-concurrent-placement-r2g.md",
+    "original_url": "https://rightson.github.io/eda/2026/09/26/nvidia-c3po-concurrent-placement-r2g.html",
+    "sha256": "9924dd63a9e03f768b50560146a27472c645c42fb706f6873e49da553d2fa066",
+    "date": "2026-09-26 12:11:33 +0800",
+    "series": null,
+    "series_order": null
+  },
+  {
+    "filename": "2026-10-01-nvidia-insta-signoff-feedback-loop.md",
+    "title": "INSTA 把 signoff 時序壓進實體設計內迴圈：一次校準、GPU 傳播與驗收邊界",
+    "original_path": "_posts/2026-10-01-nvidia-insta-signoff-feedback-loop.md",
+    "archive_path": "_archive/ic-design-platform/_posts/2026-10-01-nvidia-insta-signoff-feedback-loop.md",
+    "original_url": "https://rightson.github.io/eda/2026/10/01/nvidia-insta-signoff-feedback-loop.html",
+    "sha256": "25e7bd9a83063fa52a9e85da6e3695a452fb480b88d73be68e1a08e5365bdc2b",
+    "date": "2026-10-01 06:00:07 +0800",
+    "series": "sota-r2g-cad",
+    "series_order": null
+  }
+]
