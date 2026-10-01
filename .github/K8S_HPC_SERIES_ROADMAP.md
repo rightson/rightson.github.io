@@ -38,6 +38,6 @@ OS 名詞按需簡短銜接；K8s 新概念先建立問題與最小模型，再�
 
 新文章單一 domain/categories 為 platform-engineering，series k8s-hpc；date 是首次實際寫入時間，固定署名依共用 template。每次核對最近20篇標題與description、最新head和blob SHA，保留他人變更、不force-push。
 
-先提交並回讀 k8s-lab 教材與實驗證據，再提交網站文章及圖檔；兩個 repo 分開核驗並記錄階段。只有必要實驗成立、source 回讀、網站 build/deploy 與正式正文／圖檔核驗完成，才在 lab ledger 標記 complete 並接續下一單元。無硬體、行情或權限時記錄受影響部分，不捏造結果。
+先提交並回讀 k8s-lab 教材與實驗證據，再提交網站文章及圖檔；兩個 repo 分開核驗並記錄階段。只有必要實驗成立、source 回讀、網站 build/deploy 與正式正文／圖檔核驗完成，才在 lab ledger 標記 complete、記錄實際 next_unit 並同步本檔的目前接續索引；後續以 lab ledger 狀態接續，不固定重跑初始化的 K082。無硬體、行情或權限時記錄受影響部分，不捏造結果。
 
 使用「系列＋排定日期＋時段」核對 lab execution ledger。`k8s-hpc｜2026-10-01｜19:00 Asia/Taipei` 已有 K001 歷史成果，封存不撤銷該次完成，不在相同時段重發新版文章。
