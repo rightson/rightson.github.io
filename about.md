@@ -21,4 +21,4 @@ permalink: /about/
 
 ## 聯絡
 
-[GitHub](https://github.com/rightson) · [LinkedIn](https://www.linkedin.com/in/scott-yo-ru-chen-14711538/)
+[GitHub](https://github.com/rightson)
