@@ -515,6 +515,32 @@ p {
   flex-wrap: wrap;
   gap: 8px;
 }
+.article-summary {
+  margin-top: 26px;
+  padding: 18px 22px;
+  background: var(--tint);
+  border-left: 3px solid var(--teal);
+  border-radius: 4px;
+}
+.article-summary-label {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--teal);
+}
+.article-summary ul {
+  margin: 0;
+  padding-left: 1.2em;
+}
+.article-summary li {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--ink);
+}
+.article-summary li + li {
+  margin-top: 4px;
+}
 .article-grid {
   display: grid;
   grid-template-columns: minmax(0, 760px) minmax(160px, 1fr);

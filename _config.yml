@@ -27,3 +27,4 @@ exclude:
   - SITE_GUIDE.md
   - scripts
   - _archive
+  - _blocked

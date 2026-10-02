@@ -26,6 +26,7 @@
 4. 確認同日／同系列／同 slug 是否已有文章；不得重複建立。
 5. 先形成「認知增量」：新證據、新機制、新實驗、新架構比較，或明確修正舊判斷。選材看研究價值、工程影響與可長期保留的理解，不按新舊或熱門程度排序。經典教材的增量也可以是補齊必要先備、推導或可驗證的直覺；不因當天沒有新聞而跳過課程。沒有足夠價值時不為排程硬湊文章，回報原因，但不得自行停用、暫停或刪除 recurring task。
 6. 才開始研究、畫圖與寫作。
+7. 發布前執行 `python3 scripts/lint_posts.py <新文章路徑>`（規則見第 11 節）；未通過不得提交。
 
 若取得規則、原文或現況失敗，先說明缺口，不可依猜測覆寫檔案。
 
@@ -39,6 +40,7 @@
 - 無 JavaScript framework。
 - 無外部字型依賴。
 - 搜尋為本站自有 client-side index，不把文章內容送往外部搜尋服務。
+- `_posts/` 有變更時，`.github/workflows/post-lint.yml` 會執行 `scripts/lint_posts.py --block`：未通過的新文章被移到 `_blocked/`（附 `.lint.txt` 違規說明），由 bot commit 回 main 並重新觸發 Pages 建置，該次 workflow 標成失敗。被擋下的文章在 bot commit 前的一兩分鐘內可能短暫可見，因此仍須在提交前自行跑 lint。
 
 現有功能應保留：
 
@@ -84,6 +86,7 @@
 - 半導體生態系深研預設 `ai-industry`；主問題為合理股價、估值情境或布局條件時歸 `investing`。
 - TPU 微架構歸 `architecture`；協定、封包路徑與互連歸 `networking`；服務一致性、複寫與完整服務設計歸 `distributed-systems`；Linux、容器、K8s／HPC、叢集資源與平台維運歸 `platform-engineering`，不因應用於 EDA／AI 而改分類。
 - 「AI 前沿每日摘要」使用 `series: ai-frontier-digest`；依本節主問題規則分類，不以系列預設凌駕實際文章內容。
+- K8s 課程從零學習，沿用 OS 與資工先備；`series: k8s-hpc`，預設 domain／categories 為 `platform-engineering`。roadmap 指向 rightson/k8s-lab 的 learning-plan、lesson-standard、learning-progress；輔助教材、練習、解答、程式與 raw 實驗證據放該 repo，網站只保存完整文章與文章圖。舊 K001–K081 不沿用，新穩定 ID 為 K082–K129；封存歷史保留，恢復須另行授權。
 - 已核准本次八類與順序（2026-10-01）。未來新增、合併、拆分、更名、重排公開分類或重新分類既有文章，仍須使用者確認；新文章依已核准規則選分類，不必逐篇詢問。
 - 同步 `_data/domains.yml`、`_includes/domain-key.html`、本表、roadmap 與五個新排程。顯示順序以 `_data/domains.yml` 為準。
 
@@ -105,8 +108,14 @@ date: YYYY-MM-DD HH:MM:SS +0800
 domain: ic-design-platform
 categories: ic-design-platform
 description: "一至兩句概括文章真正的核心判斷。"
+summary:
+  - "第一個可帶走的判斷，8–80 字"
+  - "第二個判斷，最好附數字或條件"
+  - "第三個判斷或下一個可驗證問題"
 ---
 ```
+
+`summary` 為 3–5 條、每條 8–80 字的判斷句，顯示在文章頁首「重點」區塊。讀者只讀這幾行就要知道結論與條件；不寫「本文介紹…」。
 
 ### 時間規則
 
@@ -123,7 +132,7 @@ description: "一至兩句概括文章真正的核心判斷。"
 - 作者姓名與 AI 協助標示集中於 `_config.yml` 的 `author`、`ai_assistance`，由 `_includes/post-byline.html` 統一呈現，適用於所有既有與未來文章。
 - front matter 不需自行加入 `author`；不要在正文開頭或結尾重複署名，也不要逐篇加入 AI 協作聲明。
 - 「AI-assisted」表達 AI 協助研究與撰寫，不把 AI 列為共同作者，也不自動聲稱作者已逐篇人工審訂。
-- 「作者整理／作者推論／作者設計」仍用來標識證據性質，不取代固定署名。
+- 正文、圖說與表格不標註作者立場：不寫「作者整理／作者推論／作者設計／作者分析」，也不標示是否經人工審閱。證據性質改用中性標示：依來源整理寫「依據 XXX 整理」，推論寫「推論」，自行提出的架構寫「參考設計」，試算寫「假設算例」。
 
 ---
 
@@ -139,6 +148,7 @@ description: "一至兩句概括文章真正的核心判斷。"
   - 重算版／更新版
 - 不用日期當標題核心，除非日期本身就是事件。
 - 不為 SEO 堆砌同義關鍵字；標題要能準確回答「這篇到底在講什麼」。
+- 標題不使用冒號（「：」或「:」），寫成一句完整的結論或問題。
 
 ### 全站技術文章的推理與敘述
 
@@ -172,10 +182,11 @@ description: "一至兩句概括文章真正的核心判斷。"
 - 「X 的核心／本質不是 A，而是 B」、「不是 A，而是 B」、「而不只是 A」
 - 「X 才是真正的拐點／分水嶺」、「X 的分水嶺：…」
 - 開頭段的「我認為 X 最值得注意的地方，不是…也不是…真正的…」、「今天（真正）最值得注意的，不是…而是…」、「我現在比較在意的，不是…而是…」
+- 「X 的價值／可靠性／可信度取決於（在於、來自、前提是）Y」、「X 值得研究，是因為…」、「最值得注意／警戒的是…」
 
 改用直接陳述結論或具體問題，例如：
 - ✗「NVLink 6 真正的突破不是 3.6 TB/s，而是把故障恢復做成跨層控制迴路」
-- ✓「NVLink 6 把故障恢復做成跨層控制迴路：從 PHY retry 到 NCCL 彈性恢復」
+- ✓「NVLink 6 從 PHY retry 到 NCCL 彈性恢復，把故障處理做成跨層控制迴路」
 
 發布前必做：
 1. 列出最近 20 篇文章的標題與 `description`，確認新標題的句法骨架（去掉專有名詞後的結構）沒有與任何一篇相同。
@@ -191,6 +202,9 @@ description: "一至兩句概括文章真正的核心判斷。"
 - 推理可以從最根本約束出發，但方法只體現在內容，不自我介紹。
 - 不用機械化 AI 句型反覆填充，例如「真正的核心不是 X，而是 Y」若沒有新的具體證據就不要重複。
 - 不在正文交代 routine、coverage audit、資料截點流程、重算流程等與讀者無關的幕後操作。
+- 不交代素材取得過程：翻譯、節錄、補充整理、社群貼文轉述鏈都不寫進正文，直接引用原始來源。
+- 不寫排程的搜尋窗口（例如「近 72 小時」）；改寫成具體日期。
+- 私人研究框架的術語與符號（例如 regime reversal、good-news failure、estimate peak、Capital ↑／Research →）只供內部判讀；公開正文改寫成讀者懂的中文，說清是哪個數據往哪個方向變。
 - 不為模仿人味加入假口語、驚嘆號、刻意反問或虛構親身經驗。
 
 ---
@@ -201,16 +215,31 @@ description: "一至兩句概括文章真正的核心判斷。"
 
 建議正文約 4,000–6,000 中文字；深題可更長。圖說、References、front matter、大段程式碼不算拿來湊篇幅。
 
-長度不是目的。文章應至少具備：
+### 結論要回答所屬分類的核心問題
 
-1. 具體 engineering contradiction / bottleneck。
-2. 現有方法為什麼在特定條件下失效。
-3. 至少兩個真正決定結果的 mechanism。
-4. 一個完整具體案例或 end-to-end path。
-5. 一個 failure scenario：失效點、殘留狀態、偵測、恢復／rollback 與保證邊界。
-6. 至少兩種合理設計的 trade-off；不要預設多一層平台或多一個 agent 一定較好。
-7. 至少一項量化證據或透明算例，標明 baseline、單位、假設與限制。
-8. 收斂到實際工程影響與下一個可驗證問題。
+每篇的結論必須回答 primary domain 的核心問題。框架是工具，不是結論：不得把每個主題都收斂成「驗收、證據、邊界、恢復、契約」。只有文章的核心問題本身就是治理、驗收或故障處理時，這些詞才是結論。
+
+| domain | 結論要回答 | 典型的好結論 |
+| --- | --- | --- |
+| `ic-design-platform` | 哪種流程或平台設計，在什麼條件下改善時程、品質、tool-hours 或人力 | 「固定 IP 配置後，整合週期由數週縮到數天，代價是客製彈性」 |
+| `ai-frontier` | 模型或 Agent 機制怎麼運作、能力到哪裡、該怎麼用 | 「新版把思考預算交給 API 參數，長任務成本可下降約三成」 |
+| `architecture` | 計算、資料搬移與記憶體的瓶頸在哪，取捨如何量化 | 「INT8 讓 MAC 面積降到約六分之一，換來校準成本」 |
+| `networking` | 延遲、頻寬、壅塞或可靠性由哪個機制決定，量級多少 | 「400G/lane 省下一半通道，DSP 功耗占比升到 X%」 |
+| `distributed-systems` | 依第 4 節的需求先行順序，交代每次設計演進的觸發與代價 | 依系列 roadmap |
+| `platform-engineering` | OS／容器／K8s 的執行機制與可重現實驗結果 | 依系列 roadmap |
+| `ai-industry` | 誰拿到利潤、為什麼、能維持多久 | 「HBM 每片晶圓的利潤是一般 DRAM 的數倍，排擠效應會延續到 2027」 |
+| `investing` | 價格隱含什麼預期，哪些數據出現就推翻判斷 | 「現價要求 EPS 再成長 34%；下一季毛利率低於 X% 即失效」 |
+
+### 共同要件
+
+1. 一個具體問題或判斷，在開頭就說清楚。
+2. 至少兩個真正決定結果的機制。
+3. 一個完整具體案例或端到端路徑。
+4. 至少一項量化證據或透明算例，標明 baseline、單位與假設。
+5. 至少兩種合理設計或解讀的取捨；不預設多一層平台或多一個 agent 一定較好。
+6. 至少一個可被後續資料推翻的具體判斷。
+7. 文末 `## 證據範圍`：集中寫保留條件、資料缺口、適用範圍與尚未證實的部分。正文以判斷句推進，不逐句加「不代表／不能／不等於」劃界。
+8. 只有核心問題涉及系統執行、故障或維運（例如分散式系統、網路可靠性、平台維運、長程 agent 執行）時，才必須寫 failure scenario：失效點、殘留狀態、偵測、恢復與保證範圍。其他主題寫最可能讓判斷失效的情境即可。
 
 若網站現有 reading-time algorithm 可取得，發布前依同一算法確認；未達門檻應補機制、案例與證據，不可硬寫 `reading_time: 10` 或修改演算法作弊。
 
@@ -254,7 +283,7 @@ EDA 類文章不限 R2G，應把視野放到完整 IC design platform：
 但必須：
 - 只把公開證據支持的內容稱為公司現有能力。
 - 不從 job posting、零碎 conference 文字或 marketing statement 推導不存在的完整內部架構。
-- 自己畫的「合理參考架構」清楚標成作者設計／推論，不畫成廠商官方架構。
+- 自己畫的「合理參考架構」清楚標成「參考設計」或「推論」，不畫成廠商官方架構。
 - prototype / demo / preview / GA / production deployment 分開寫。
 - 開源 flow 的結果不可直接外推到商用 advanced-node production。
 
@@ -290,6 +319,7 @@ EDA 類文章不限 R2G，應把視野放到完整 IC design platform：
 - 核對原始 publication date、revision date、event date，不把搜尋／抓取日當發布日。
 - 舊資料可以用，但要自然標出原始年份／日期，不冒充今日消息。
 - vendor claim 要寫清 benchmark 條件、缺失資訊與可能 marketing bias。
+- 連結必須讓讀者能直接定位到被引用的數字或段落。不連整包 OpenAPI 或 JSON 端點（例如 `openapi.twse.com.tw`、`response=json`），改連 TWSE／TPEx／公開資訊觀測站可查詢的網頁並寫明查詢日期與欄位；不以 Facebook 等社群貼文作來源，找到原始出處再引用。
 
 ### 研究價值與證據範圍
 
@@ -306,14 +336,14 @@ EDA 類文章不限 R2G，應把視野放到完整 IC design platform：
 
 ### 事實與推論
 
-清楚分開：
-- source fact
-- paper / vendor reported result
-- 作者推論
+清楚分開以下性質，但用中性標示，不標註作者立場：
+- 來源事實
+- 論文／vendor reported result
+- 推論
 - 假設算例
-- 作者設計方案
+- 參考設計
 
-作者推論可以有力度，但不能偽裝成來源已證實。
+推論要有力度，正文直接寫成判斷句；不能偽裝成來源已證實。保留條件集中寫在文末 `## 證據範圍`，不在每句後面加否定式劃界。
 
 ---
 
@@ -339,7 +369,7 @@ EDA 類文章不限 R2G，應把視野放到完整 IC design platform：
 - 不用 stock image 或裝飾性插圖湊圖數。
 - 每張圖有 alt text、caption、來源。
 - 依 primary source 重畫：標「依據 XXX 整理／重繪」並附 link。
-- 自己提出的架構：標「作者設計」。
+- 自己提出的架構：標「參考設計」。
 - 直接引用或改繪外部圖片前確認允許的引用／授權條件。
 - 圖中文字與箭頭需在手機寬度仍可理解。
 - 網站會跟隨系統深淺色。新增或修改 SVG 後執行 `python3 scripts/svg_dark_mode.py <svg 檔案>`，為圖加上深色配色（可重複執行）；並在深色模式下確認文字可讀。
@@ -351,7 +381,7 @@ EDA 類文章不限 R2G，應把視野放到完整 IC design platform：
 - 依題目選擇情境、端到端流程、系統邊界、拓樸、時間軸或原有方案與需求變化的對照。分散式系統案例先畫使用者與服務需求，不在需求未成立前把最終架構畫成既定答案。
 - 圖前後要有具體導讀，指出應沿哪條資料／控制路徑、觀察哪個相依或瓶頸，以及它如何銜接本文的核心問題。圖片不能代替必要的背景文字，也不以術語方塊清單、無關插圖或重複正文湊數。
 - 既有文章亦適用：逐篇檢視開頭，已有合適圖時重用、移至合適位置並補導讀；缺少時補畫。保留技術深度、來源、date 與 permalink，不必為此整篇重寫。
-- 概念圖、假設案例與作者設計須清楚標示；廠商或論文的實作只能依 primary source 呈現。示意圖的線寬、顏色與位置不冒充實測效能或比例。遵守本節 SVG、圖說、手機可讀性與深色模式規則。
+- 概念圖、假設案例與參考設計須清楚標示；廠商或論文的實作只能依 primary source 呈現。示意圖的線寬、顏色與位置不冒充實測效能或比例。遵守本節 SVG、圖說、手機可讀性與深色模式規則。
 
 建議圖片路徑：
 `images/<domain>/YYYY-MM-DD/<descriptive-name>.svg`
@@ -361,7 +391,7 @@ EDA 類文章不限 R2G，應把視野放到完整 IC design platform：
 ## 9. 內部連結、SEO 與可讀性
 
 - 每篇有具體 `description`，摘要核心結論，不寫「本文將介紹」。
-- 適當連到既有相關文章／系列導讀，建立 topic cluster；不要濫塞內鏈。
+- 每篇至少連一篇相關既有文章或系列導讀，建立 topic cluster；不要濫塞內鏈。
 - 新系列若已形成知識鏈，可建立 roadmap / hub，但不新增公開 domain。
 - 重要內容不要只存在圖裡；正文需有可索引文字。
 - 圖有描述性 alt。
@@ -408,7 +438,7 @@ Jekyll permalink 不能靠直覺自行拼接。
 
 1. 取得最新 default branch。
 2. 建立／修改文章與圖片。
-3. 做 front matter / links / sources / image paths / duplicate check。
+3. 做 front matter / links / sources / image paths / duplicate check，並執行 `python3 scripts/lint_posts.py <新文章路徑>`。未通過就修改後重跑，不得提交。執行環境無法跑 Python 時，逐條對照下方 lint 清單自查；部署 workflow 仍會擋下未通過者。
 4. 能本地 build 時執行 `bundle exec jekyll build`；若無法 build，明確區分未驗證項。
 5. Commit 到授權的 branch / default branch。
 6. 回讀遠端檔案，確認本次內容真的存在。
@@ -419,6 +449,17 @@ Jekyll permalink 不能靠直覺自行拼接。
 11. 只有 source + build + deploy + public content 均成立，才回報「發布成功」。
 
 若 deployment pending、工具不能讀正式站或 verification 不完整，精確寫目前完成到哪一層，不假稱完成。
+
+若「Post lint gate」workflow 標成失敗，或文章出現在 `_blocked/`，代表被 lint 擋下、沒有上線。依 `_blocked/<檔名>.lint.txt` 修正，移回 `_posts/`（保留原檔名與 date）後重新提交。
+
+### lint 清單（`scripts/lint_posts.py`，適用 2026-10-02 13:00 之後建立的文章）
+
+- front matter 具備 title、date、domain、categories（與 domain 相同）、description、summary（3–5 條、每條 8–80 字）。
+- 標題不含冒號；標題、description、開頭段不使用第 4 節列出的模板句型。
+- 正文不出現作者立場標註、素材取得過程、排程搜尋窗口、私人研究框架術語或符號、幕後寫作方法。
+- 有 `## 證據範圍` 段落；該段之前的正文，否定／保留語（不能、不代表、不等於、並非、而非、不可、不宜、未必）每萬字不超過 12 次。
+- 框架詞（驗收、邊界、證據、恢復、契約、閘門、可採信）每萬字上限：`ic-design-platform`、`distributed-systems` 為 25，其餘分類為 15。
+- 至少一個站內文章連結與一個外部來源連結；不連 OpenAPI／JSON 端點或 Facebook。
 
 ---
 
@@ -455,7 +496,7 @@ Article-only content commit 不必為了形式重跑所有 UI 測試；只做與
 
 ## 13. 保留與刪除規則
 
-2026-10-01 使用者核准：IC 設計平台目前只公開以平台架構、工程協作、工具／資料交接、狀態管理、執行恢復或驗收治理為主問題的文章。純 STA／SDC 基礎教材、placement／timing 演算法或單一引擎機制暫不公開；不能只加平台總覽或驗收段落就視為平台文章。封存清單以 `_archive/ic-design-platform/README.md` 為準；封存稿仍算歷史已完成，保留原始 date、categories、series、篇號及查重紀錄，不移回 `_posts/`、不換 slug／日期重發，恢復發布須使用者另行確認。其他分類與十四個系列的研究責任、五個排程器的時程及啟用狀態不變。
+IC 設計平台目前只公開以平台架構、工程協作、工具／資料交接、狀態管理、執行恢復或驗收治理為主問題的文章。純 STA／SDC 基礎教材、placement／timing 演算法或單一引擎機制暫不公開；不能只加平台總覽或驗收段落就視為平台文章。封存清單以 `_archive/ic-design-platform/README.md` 為準；封存稿仍算歷史已完成，保留原始 date、categories、series、篇號及查重紀錄，不移回 `_posts/`、不換 slug／日期重發，恢復發布須使用者另行確認。其他分類與十四個系列的研究責任、五個排程器的時程及啟用狀態不變。
 
 - 不任意修改既有文章 filename、date、categories、permalink。
 - 未經要求，不順手改寫舊文章。
@@ -501,6 +542,3 @@ Article-only content commit 不必為了形式重跑所有 UI 測試；只做與
 
 任何 agent 在「開寫文章前」只要遵守第 0 節，就必然會先讀到這套規則。
 
-## K8s 課程與教材（2026-10-01 後續核准）
-
-Kubernetes 從零學習，沿用 OS 與資工先備；series k8s-hpc，預設 domain/categories platform-engineering（系統與平台）。現行 roadmap 指向 rightson/k8s-lab 的完整 learning-plan、lesson-standard、learning-progress；所有 K8s 輔助教材、練習、解答、程式與 raw 實驗證據放該 repo。網站只保存完整文章與文章圖。舊 K001–K081 不沿用，新穩定 ID K082–K129；封存歷史保留，恢復須另行授權。LLM Lab 的預設分類仍為 AI 技術與工程，硬體主問題依規則歸運算架構。五個雲端排程時程與啟用狀態不變。

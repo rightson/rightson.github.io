@@ -1,0 +1,67 @@
+name: Post lint gate
+
+# Blocks new posts that fail scripts/lint_posts.py (AGENTS.md §11):
+# failing posts are moved from _posts/ to _blocked/ with a .lint.txt report,
+# the move is committed back, and a fresh Pages build is requested so the
+# post is not published. The run is marked failed so writers see the block.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "_posts/**"
+      - "scripts/lint_posts.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: post-lint-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install lint dependency
+        run: pip install pyyaml
+
+      - name: Lint new posts and move failures to _blocked/
+        id: lint
+        run: python3 scripts/lint_posts.py --block
+
+      - name: Commit blocked posts
+        if: steps.lint.outputs.failed != '0'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898499+github-actions[bot]@users.noreply.github.com"
+          git add -A _posts _blocked
+          git commit -m "Block new posts that fail lint" -m "See _blocked/*.lint.txt for the violations. Fix, move back to _posts/ and recommit."
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}"; then
+              exit 0
+            fi
+            sleep $((attempt * 5))
+          done
+          echo "Could not push the block commit" >&2
+          exit 1
+
+      - name: Request a Pages rebuild without the blocked posts
+        if: steps.lint.outputs.failed != '0' && github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/${GITHUB_REPOSITORY}/pages/builds" || echo "Pages rebuild request failed; the block commit will still trigger a build."
+
+      - name: Mark the run failed when posts were blocked
+        if: steps.lint.outputs.failed != '0'
+        run: |
+          echo "New posts failed lint and were moved to _blocked/. See the job summary." >&2
+          exit 1

@@ -4,6 +4,8 @@
 
 This site uses native Jekyll layouts and GitHub Pages. No remote theme, JavaScript framework, external fonts, or search service is required. Post bodies and permalinks are unchanged.
 
+New posts must pass `scripts/lint_posts.py` (rules in AGENTS.md §11). The `Post lint gate` workflow moves failing new posts to `_blocked/` with a `.lint.txt` report. Posts may carry a `summary` list (3–5 items) that renders as the 「重點」 box under the title.
+
 ## Publishing
 
 Continue adding Markdown files to `_posts/YYYY-MM-DD-slug.md` with `layout: post`, `title`, `date`, and `categories`. Do not change existing `categories`: Jekyll uses them in default post URLs.
