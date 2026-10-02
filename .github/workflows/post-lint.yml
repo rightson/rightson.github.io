@@ -7,7 +7,7 @@ name: Post lint gate
 
 on:
   push:
-    branches: [main]
+    branches: [main, lint-gate-test]
     paths:
       - "_posts/**"
       - "scripts/lint_posts.py"
