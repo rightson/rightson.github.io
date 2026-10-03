@@ -45,7 +45,7 @@
 現有功能應保留：
 
 - 首頁依時間由新到舊顯示文章。
-- 八個固定研究 domain（見第 2 節）。
+- 九個固定研究 domain（見第 2 節）。
 - `/categories/` 靜態分類頁。
 - `/search/` 全文搜尋、AND keyword matching、domain/category filters 與 shareable query URL。
 - `/search.json` 由 published posts 自動產生。
@@ -62,7 +62,7 @@
 
 ---
 
-## 2. 八個公開分類與 URL 穩定性
+## 2. 九個公開分類與 URL 穩定性
 
 分類按「文章主要回答什麼問題」判斷；五個排程器是執行入口，十四個主題保留為系列。完整分類邊界與系列預設見 [.github/ARTICLE_TAXONOMY.md](.github/ARTICLE_TAXONOMY.md) 和 `_data/research_series.yml`。
 
@@ -76,6 +76,7 @@
 | `platform-engineering` | 系統與平台 | Linux、容器、K8s／HPC、叢集資源、平台效能與維運。 |
 | `ai-industry` | 產業與供應鏈 | 公司競爭力、產品、市場供需、客戶關係與價值分配。 |
 | `investing` | 投資與交易 | 盈利預期、估值、機構資金、價量與進退場條件。 |
+| `science-physics` | 科學與物理 | 自然現象、材料物性、物理機制、實驗與理論研究。 |
 
 - 每篇只有一個 primary `domain`；`series`、公司與技術名稱為次級資料，不增加主選單。系列預設不能取代文章主問題判斷。
 - 新文章單一 `categories` 與 `domain` 一致；既有文章重新分類只改 `domain`，保留 filename、date、categories、permalink、既有 series／篇號與正文。`domain` 不改變文章 URL。
@@ -87,7 +88,7 @@
 - TPU 微架構歸 `architecture`；協定、封包路徑與互連歸 `networking`；服務一致性、複寫與完整服務設計歸 `distributed-systems`；Linux、容器、K8s／HPC、叢集資源與平台維運歸 `platform-engineering`，不因應用於 EDA／AI 而改分類。
 - 「AI 前沿每日摘要」使用 `series: ai-frontier-digest`；依本節主問題規則分類，不以系列預設凌駕實際文章內容。
 - K8s 課程從零學習，沿用 OS 與資工先備；`series: k8s-hpc`，預設 domain／categories 為 `platform-engineering`。roadmap 指向 rightson/k8s-lab 的 learning-plan、lesson-standard、learning-progress；輔助教材、練習、解答、程式與 raw 實驗證據放該 repo，網站只保存完整文章與文章圖。舊 K001–K081 不沿用，新穩定 ID 為 K082–K129；封存歷史保留，恢復須另行授權。
-- 已核准本次八類與順序（2026-10-01）。未來新增、合併、拆分、更名、重排公開分類或重新分類既有文章，仍須使用者確認；新文章依已核准規則選分類，不必逐篇詢問。
+- 2026-10-01 核准前八類；2026-10-03 核准新增第九類「科學與物理」。未來新增、合併、拆分、更名、重排公開分類或重新分類既有文章，仍須使用者確認；新文章依已核准規則選分類，不必逐篇詢問。
 - 同步 `_data/domains.yml`、`_includes/domain-key.html`、本表、roadmap 與五個新排程。顯示順序以 `_data/domains.yml` 為準。
 
 ---
@@ -229,6 +230,7 @@ summary:
 | `platform-engineering` | OS／容器／K8s 的執行機制與可重現實驗結果 | 依系列 roadmap |
 | `ai-industry` | 誰拿到利潤、為什麼、能維持多久 | 「HBM 每片晶圓的利潤是一般 DRAM 的數倍，排擠效應會延續到 2027」 |
 | `investing` | 價格隱含什麼預期，哪些數據出現就推翻判斷 | 「現價要求 EPS 再成長 34%；下一季毛利率低於 X% 即失效」 |
+| `science-physics` | 自然現象由哪些物理機制決定，實驗與理論支持到哪裡 | 「應變梯度可誘發冰的電極化；介面與液體傳輸影響有效反應」 |
 
 ### 共同要件
 

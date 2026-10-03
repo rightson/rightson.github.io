@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="730" viewBox="0 0 640 730" role="img" aria-labelledby="title"><title id="title">電荷如何走到感測與儲能</title><rect width="640" height="730" fill="#f8fafc"/><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L0 6 L9 3 Z" fill="#475569"/></marker></defs><g font-family="system-ui, sans-serif" fill="#172b3a">
+<text x="32" y="48" font-size="27" font-weight="700">電荷如何走到感測與儲能</text>
+<rect x="32" y="85" width="576" height="94" rx="14" fill="#e0f2fe" stroke="#94a3b8"/>
+<text x="50" y="122" font-size="24" fill="#172b3a">機械能輸入 → 材料產生電反應</text>
+<path d="M188 183 L188 234" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M452 183 L452 234" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="32" y="249" width="276" height="149" rx="14" fill="#e0f2fe" stroke="#94a3b8"/>
+<text x="50" y="286" font-size="24" fill="#172b3a">感測</text>
+<text x="50" y="322" font-size="24" fill="#172b3a">電荷 → 讀出電路</text>
+<text x="50" y="358" font-size="24" fill="#172b3a">辨認事件與幅度</text>
+<rect x="328" y="249" width="280" height="149" rx="14" fill="#dcfce7" stroke="#94a3b8"/>
+<text x="346" y="286" font-size="24" fill="#172b3a">能量擷取</text>
+<text x="346" y="322" font-size="24" fill="#172b3a">電荷 → 負載／儲能</text>
+<text x="346" y="358" font-size="24" fill="#172b3a">交付可用能量</text>
+<path d="M188 402 L188 445" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M452 402 L452 445" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="32" y="460" width="576" height="130" rx="14" fill="#e0f2fe" stroke="#94a3b8"/>
+<text x="50" y="497" font-size="24" fill="#172b3a">指定電容模型</text>
+<text x="50" y="533" font-size="24" fill="#172b3a">V ≈ Q/C；U ≈ Q²/(2C)</text>
+<text x="50" y="569" font-size="24" fill="#172b3a">高電壓與高能量須分別衡量</text>
+<text x="32" y="643" font-size="23" fill="#172b3a">共同考量：雜訊、漏電、疲勞</text>
+<text x="32" y="678" font-size="23" fill="#172b3a">主動冷卻另計入系統能耗</text>
+</g><style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#172b3a" i]{fill:#cdd9e2}[fill="#475569" i]{fill:#c0c6cd}[fill="#dcfce7" i]{fill:#193723}[fill="#e0f2fe" i]{fill:#162936}[fill="#f8fafc" i]{fill:#1a2026}[stroke="#475569" i]{stroke:#c0c6cd}[stroke="#94a3b8" i]{stroke:#5b6f8a}}</style>
+</svg>

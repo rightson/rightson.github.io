@@ -36,7 +36,7 @@ FRAME_RE = re.compile(r"驗收|邊界|證據|恢復|契約|閘門|可採信")
 
 DOMAINS = {
     "ic-design-platform", "ai-frontier", "architecture", "networking",
-    "distributed-systems", "platform-engineering", "ai-industry", "investing",
+    "distributed-systems", "platform-engineering", "ai-industry", "investing", "science-physics",
 }
 
 # Sentence skeletons already overused on the site (title, description, opening).
@@ -147,7 +147,7 @@ def lint(path):
             errs.append(f"front matter 缺少 {key}")
     domain = fm.get("domain")
     if domain and domain not in DOMAINS:
-        errs.append(f"domain 不在八個公開分類內：{domain}")
+        errs.append(f"domain 不在九個公開分類內：{domain}")
     cats = fm.get("categories")
     if domain and cats and str(cats).strip() != str(domain):
         errs.append("新文章 categories 必須與 domain 相同")

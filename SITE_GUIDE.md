@@ -10,7 +10,7 @@ New posts must pass `scripts/lint_posts.py` (rules in AGENTS.md §11). The `Post
 
 Continue adding Markdown files to `_posts/YYYY-MM-DD-slug.md` with `layout: post`, `title`, `date`, and `categories`. Do not change existing `categories`: Jekyll uses them in default post URLs.
 
-Set one primary `domain` according to the article's main question. The eight public sections are:
+Set one primary `domain` according to the article's main question. The nine public sections are:
 
 | domain | Section |
 | --- | --- |
@@ -22,6 +22,7 @@ Set one primary `domain` according to the article's main question. The eight pub
 | platform-engineering | 系統與平台 |
 | ai-industry | 產業與供應鏈 |
 | investing | 投資與交易 |
+| science-physics | 科學與物理 |
 
 Five scheduler groups retain fourteen research series. Series, companies and technical names are secondary metadata, not additional navigation sections. Read `.github/ARTICLE_TAXONOMY.md` and `_data/research_series.yml` for defaults and boundaries. EDA and legacy `timing` now belong to `ic-design-platform`. Existing article `domain` may be corrected after user approval; preserve filename, date, categories, permalink and series numbering. New articles use one category equal to their domain.
 
@@ -37,7 +38,7 @@ categories: ai-supply-chain research
 
 ## Features
 
-- Homepage: newest-first articles and eight persistent research sections.
+- Homepage: newest-first articles and nine persistent research sections.
 - `/categories/`: static section archives, usable without JavaScript.
 - `/search/`: client-side full-text search with AND matching across space-separated keywords, domain and category filters, and shareable URLs.
 - `/search.json`: automatically generated from published posts at build time.
@@ -55,7 +56,7 @@ Build with `bundle exec jekyll build`. Verify `/`, `/categories/`, `/search/`, a
 
 ## Research series and recurring work
 
-The eight public domains follow `.github/ARTICLE_TAXONOMY.md`. Approved series, topic ownership, cadence and fresh-session migration requirements are documented in `.github/RESEARCH_SCHEDULES.md`; complete recurring prompts are in `.github/RESEARCH_AUTOMATIONS.json`. Each run reads the latest `AGENTS.md` before researching or writing. Repository specifications do not create, enable or disable scheduler tasks; runtime status requires separate verification. Existing curriculum progress, post dates, categories and permalinks are preserved.
+The nine public domains follow `.github/ARTICLE_TAXONOMY.md`. Approved series, topic ownership, cadence and fresh-session migration requirements are documented in `.github/RESEARCH_SCHEDULES.md`; complete recurring prompts are in `.github/RESEARCH_AUTOMATIONS.json`. Each run reads the latest `AGENTS.md` before researching or writing. Repository specifications do not create, enable or disable scheduler tasks; runtime status requires separate verification. Existing curriculum progress, post dates, categories and permalinks are preserved.
 
 ## IC platform publication scope
 
@@ -68,3 +69,5 @@ The five cloud tasks read `.github/schedules/README.md`, `common.md`, `manifest.
 ## Kubernetes curriculum
 
 The k8s-hpc series now belongs to 系統與平台 (platform-engineering). Its roadmap links to rightson/k8s-lab for the 40 core plus 8 advanced units, all auxiliary materials, exercises and raw experiments. The former K001–K081 curriculum is retired; original posts remain archived. The distributed-systems service-design series and LLM Lab remain independent.
+
+2026-10-03: User approved the ninth section, 科學與物理 (`science-physics`), for natural phenomena, materials physics, experiments and theory. Existing fourteen scheduled series are unchanged.

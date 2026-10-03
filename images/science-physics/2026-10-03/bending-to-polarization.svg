@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="800" viewBox="0 0 640 800" role="img" aria-labelledby="title"><title id="title">彎曲的兩側具有不同應變</title><rect width="640" height="800" fill="#f8fafc"/><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L0 6 L9 3 Z" fill="#475569"/></marker></defs><g font-family="system-ui, sans-serif" fill="#172b3a">
+<text x="32" y="48" font-size="27" font-weight="700">彎曲的兩側具有不同應變</text>
+<path d="M50 160 Q320 55 590 160 L590 225 Q320 120 50 225 Z" fill="#e0f2fe" stroke="#0284c7" stroke-width="3"/>
+<path d="M50 193 Q320 88 590 193" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="7 6"/>
+<text x="32" y="95" font-size="23" fill="#172b3a">外弧拉伸</text>
+<text x="32" y="267" font-size="23" fill="#172b3a">內弧壓縮；中間接近中性層</text>
+<path d="M565 145 L565 219" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="380" y="270" font-size="22" fill="#172b3a">厚度方向 z</text>
+<rect x="32" y="318" width="276" height="122" rx="14" fill="#e0f2fe" stroke="#94a3b8"/>
+<text x="50" y="355" font-size="24" fill="#172b3a">位移感測</text>
+<text x="50" y="391" font-size="24" fill="#172b3a">幾何／梁模型</text>
+<text x="50" y="427" font-size="24" fill="#172b3a">換成應變梯度</text>
+<rect x="328" y="318" width="280" height="122" rx="14" fill="#e0f2fe" stroke="#94a3b8"/>
+<text x="346" y="355" font-size="24" fill="#172b3a">電荷量測</text>
+<text x="346" y="391" font-size="24" fill="#172b3a">除以電極面積</text>
+<text x="346" y="427" font-size="24" fill="#172b3a">換成極化 P</text>
+<path d="M170 444 L240 510" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M468 444 L400 510" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="32" y="528" width="576" height="111" rx="14" fill="#e0f2fe" stroke="#94a3b8"/>
+<text x="50" y="565" font-size="24" fill="#172b3a">比較不同彎曲幅度</text>
+<text x="50" y="601" font-size="24" fill="#172b3a">P 對梯度的斜率 → 有效係數 μ</text>
+<text x="32" y="696" font-size="23" fill="#172b3a">簡化模型：P ≈ μκ；κ = 1/R</text>
+<text x="32" y="731" font-size="23" fill="#172b3a">固定表面應變與固定曲率</text>
+<text x="32" y="766" font-size="23" fill="#172b3a">是兩種不同的尺度比較</text>
+</g><style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#172b3a" i]{fill:#cdd9e2}[fill="#475569" i]{fill:#c0c6cd}[fill="#e0f2fe" i]{fill:#162936}[fill="#f8fafc" i]{fill:#1a2026}[stroke="#0284c7" i]{stroke:#60bae8}[stroke="#475569" i]{stroke:#c0c6cd}[stroke="#64748b" i]{stroke:#929eb0}[stroke="#94a3b8" i]{stroke:#5b6f8a}}</style>
+</svg>

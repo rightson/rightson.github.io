@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="850" viewBox="0 0 640 850" role="img" aria-labelledby="title"><title id="title">冰如何把機械作用轉成電訊號</title><rect width="640" height="850" fill="#f8fafc"/><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L0 6 L9 3 Z" fill="#475569"/></marker></defs><g font-family="system-ui, sans-serif" fill="#172b3a">
+<text x="32" y="48" font-size="27" font-weight="700">冰如何把機械作用轉成電訊號</text>
+<rect x="32" y="85" width="576" height="104" rx="14" fill="#e0f2fe" stroke="#94a3b8"/>
+<text x="50" y="122" font-size="24" fill="#172b3a">外力輸入</text>
+<text x="50" y="158" font-size="24" fill="#172b3a">薄片彎曲／冰粒碰撞／局部破裂</text>
+<path d="M320 192 L320 225" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="32" y="232" width="576" height="104" rx="14" fill="#e0f2fe" stroke="#94a3b8"/>
+<text x="50" y="269" font-size="24" fill="#172b3a">不均勻變形</text>
+<text x="50" y="305" font-size="24" fill="#172b3a">不同位置的應變不同，建立梯度</text>
+<path d="M188 340 L188 385" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M452 340 L452 385" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="32" y="398" width="276" height="142" rx="14" fill="#e0f2fe" stroke="#94a3b8"/>
+<text x="50" y="435" font-size="24" fill="#172b3a">固體與介面</text>
+<text x="50" y="471" font-size="24" fill="#172b3a">電荷分布偏移</text>
+<text x="50" y="507" font-size="24" fill="#172b3a">形成電極化</text>
+<rect x="328" y="398" width="280" height="142" rx="14" fill="#dcfce7" stroke="#94a3b8"/>
+<text x="346" y="435" font-size="24" fill="#172b3a">含鹽液體通道</text>
+<text x="346" y="471" font-size="24" fill="#172b3a">晶界流動</text>
+<text x="346" y="507" font-size="24" fill="#172b3a">輸運可移動電荷</text>
+<path d="M188 544 L188 590" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M452 544 L452 590" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="32" y="604" width="576" height="130" rx="14" fill="#e0f2fe" stroke="#94a3b8"/>
+<text x="50" y="641" font-size="24" fill="#172b3a">電極讀出／接觸區帶電</text>
+<text x="50" y="677" font-size="24" fill="#172b3a">感測訊號與可用能量</text>
+<text x="50" y="713" font-size="24" fill="#172b3a">需由電路和受力條件判斷</text>
+<text x="32" y="790" font-size="22" fill="#172b3a">概念圖｜箭頭不表示實測強度</text>
+</g><style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#172b3a" i]{fill:#cdd9e2}[fill="#475569" i]{fill:#c0c6cd}[fill="#dcfce7" i]{fill:#193723}[fill="#e0f2fe" i]{fill:#162936}[fill="#f8fafc" i]{fill:#1a2026}[stroke="#475569" i]{stroke:#c0c6cd}[stroke="#94a3b8" i]{stroke:#5b6f8a}}</style>
+</svg>

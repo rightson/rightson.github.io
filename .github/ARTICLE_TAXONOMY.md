@@ -1,6 +1,6 @@
-# 八類文章與十四個研究系列
+# 九類文章與十四個研究系列
 
-2026-10-01 使用者核准。五個排程器是執行入口；十四個系列保留各自進度；八個 `domain` 是公開選單。三者不可混用。
+2026-10-01 使用者核准前八類；2026-10-03 核准新增「科學與物理」（science-physics）。五個排程器是執行入口；十四個系列保留各自進度；九個 `domain` 是公開選單。三者不可混用。
 
 ## 分類以文章主要回答的問題為準
 
@@ -14,6 +14,7 @@
 | platform-engineering | 系統與平台 | Linux、容器、K8s／HPC 平台如何執行、隔離、配置資源、維運及驗證效能？ | k8s-hpc |
 | ai-industry | 產業與供應鏈 | 企業如何成長、競爭、獲利，供需與價值如何分配？ | mtk-ecosystem-deep-dive |
 | investing | 投資與交易 | 股價反映多少預期，何時布局、減碼或退出？ | mtk-ecosystem-institutional、mtk-ecosystem-intraday、mtk-ecosystem-market-journal |
+| science-physics | 科學與物理 | 自然現象與材料物性由哪些物理機制決定，如何以實驗和理論理解？ | 單篇專題，無新增排程系列 |
 
 完整系列名稱與預設分類見 `_data/research_series.yml`；選單名稱、順序與說明見 `_data/domains.yml`。以上預設不能代替逐篇閱讀與判斷。
 
@@ -34,6 +35,8 @@
 - 既有文章重新分類只改 `domain`，保留 filename、date、categories、permalink、正文、原始系列與篇號；不靠改 categories 移動網址。已封存文章保持封存。
 - 新文章使用單一 `categories`，與所選 `domain` 相同；`series` 使用穩定 identifier，可跨 domain，不隨題目更名。
 - 寫作前讀最新 `AGENTS.md`、本檔及對應 roadmap；分類變更同步首頁、分類頁、文章標籤、搜尋索引及排程規格。本次使用者已核准新增 platform-engineering（系統與平台）；其他分類變更仍需使用者授權。
-- 完成遷移必須比較所有既有文章的 URL、date、categories、series_order 與正文，並確認每篇僅落入八類之一。
+- 完成遷移必須比較所有既有文章的 URL、date、categories、series_order 與正文，並確認每篇僅落入九類之一。
 
 2026-10-01 後續核准：K8s 課程從零建立 Kubernetes 能力並沿用 OS 先備，公開分類名稱為「系統與平台」。LLM Lab 預設仍為 ai-frontier；每篇依主要問題選分類，series llm-lab 保持獨立。
+
+科學與物理研究歸 science-physics；若主問題是運算硬體資料流，仍歸 architecture。新增分類不自動建立研究系列或排程。

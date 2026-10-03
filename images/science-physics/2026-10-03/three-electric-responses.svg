@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="760" viewBox="0 0 640 760" role="img" aria-labelledby="title"><title id="title">三種反應發生在不同位置</title><rect width="640" height="760" fill="#f8fafc"/><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L0 6 L9 3 Z" fill="#475569"/></marker></defs><g font-family="system-ui, sans-serif" fill="#172b3a">
+<text x="32" y="48" font-size="27" font-weight="700">三種反應發生在不同位置</text>
+<rect x="32" y="88" width="576" height="170" rx="14" fill="#e0f2fe" stroke="#94a3b8"/>
+<text x="50" y="125" font-size="24" fill="#172b3a">① 固體冰的撓曲電反應</text>
+<text x="50" y="161" font-size="24" fill="#172b3a">位置：冰體材料</text>
+<text x="50" y="197" font-size="24" fill="#172b3a">驅動：應變梯度 → 電極化</text>
+<rect x="32" y="282" width="576" height="170" rx="14" fill="#fef3c7" stroke="#94a3b8"/>
+<text x="50" y="319" font-size="24" fill="#172b3a">② 近表面鐵電排列</text>
+<text x="50" y="355" font-size="24" fill="#172b3a">位置：金屬—冰介面附近</text>
+<text x="50" y="391" font-size="24" fill="#172b3a">條件：約 160 K，受介面影響</text>
+<rect x="32" y="476" width="576" height="170" rx="14" fill="#dcfce7" stroke="#94a3b8"/>
+<text x="50" y="513" font-size="24" fill="#172b3a">③ 鹽冰的流動電反應</text>
+<text x="50" y="549" font-size="24" fill="#172b3a">位置：含液體的冰晶界</text>
+<text x="50" y="585" font-size="24" fill="#172b3a">驅動：彎曲 → 流動 → 輸運電荷</text>
+<text x="32" y="707" font-size="23" fill="#172b3a">相同電訊號外觀，可能包含多種機制</text>
+</g><style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#172b3a" i]{fill:#cdd9e2}[fill="#475569" i]{fill:#c0c6cd}[fill="#dcfce7" i]{fill:#193723}[fill="#e0f2fe" i]{fill:#162936}[fill="#f8fafc" i]{fill:#1a2026}[fill="#fef3c7" i]{fill:#413919}[stroke="#94a3b8" i]{stroke:#5b6f8a}}</style>
+</svg>
