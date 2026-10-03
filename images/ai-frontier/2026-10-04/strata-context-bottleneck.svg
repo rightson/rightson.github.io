@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="1090" viewBox="0 0 680 1090" role="img" aria-labelledby="title desc">
+<title id="title">長上下文快取將等待瓶頸移向資料搬移</title>
+<desc id="desc">情境示意：兩個短問題共享長文件前綴。前綴 KV 若命中外部 SSD 或 Host DRAM，仍須搬入 GPU HBM，才可沿用並只為新 token 進行 prefill，再開始 decode。CPU 與 GPU 之間的長前綴搬移可能成為瓶頸。</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7.3" refY="4.5" orient="auto-start-reverse"><path d="M1 1 L7.3 4.5 L1 8" fill="none" stroke="#62768b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<rect x="0" y="0" width="680" height="1090" rx="22" fill="#f8fafc"/>
+<text x="340" y="52" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="30" font-weight="600" text-anchor="middle" fill="#172b42">長上下文重用後，瓶頸移向搬移</text>
+<text x="340" y="90" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="23" font-weight="400" text-anchor="middle" fill="#42566d">情境示意 · 共用長文件＋不同短問題</text>
+<rect x="24" y="121" width="632" height="162" rx="13" fill="#ffffff" stroke="#c9d5e2" stroke-width="1.6"/>
+<rect x="52" y="145" width="414" height="47" rx="8" fill="#dff4eb"/>
+<text x="259" y="177" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="25" font-weight="600" text-anchor="middle" fill="#116447">長文件前綴 P</text>
+<rect x="482" y="145" width="146" height="47" rx="8" fill="#e1efff"/>
+<text x="555" y="177" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="25" font-weight="600" text-anchor="middle" fill="#215f9a">問題 A</text>
+<rect x="52" y="213" width="414" height="47" rx="8" fill="#dff4eb"/>
+<text x="259" y="245" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="25" font-weight="600" text-anchor="middle" fill="#116447">長文件前綴 P</text>
+<rect x="482" y="213" width="146" height="47" rx="8" fill="#e1efff"/>
+<text x="555" y="245" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="25" font-weight="600" text-anchor="middle" fill="#215f9a">問題 B</text>
+<path d="M340 285 L340 311" fill="none" stroke="#62768b" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="340" y="345" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="26" font-weight="600" text-anchor="middle" fill="#172b42">當 P 的 KV 留在 DRAM／SSD</text>
+<rect x="56" y="367" width="568" height="81" rx="13" fill="#eee9fa" stroke="#c9d5e2" stroke-width="1.6"/>
+<text x="340" y="402" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="28" font-weight="600" text-anchor="middle" fill="#5b21b6">外部 SSD</text>
+<text x="340" y="434" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="23" font-weight="400" text-anchor="middle" fill="#42566d">容量延伸，保存 KV pages</text>
+<path d="M340 451 L340 485" fill="none" stroke="#62768b" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="372" y="478" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#42566d">下層命中才讀回</text>
+<rect x="56" y="497" width="568" height="83" rx="13" fill="#dff4eb" stroke="#c9d5e2" stroke-width="1.6"/>
+<text x="340" y="533" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="28" font-weight="600" text-anchor="middle" fill="#116447">Host DRAM</text>
+<text x="340" y="566" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#42566d">頁面已快取，仍需載入 GPU</text>
+<path d="M340 584 L340 601" fill="none" stroke="#62768b" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="80" y="611" width="520" height="89" rx="12" fill="#fff0da" stroke="#dfa454" stroke-width="1.6"/>
+<text x="340" y="647" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="28" font-weight="600" text-anchor="middle" fill="#8a4f13">CPU↔GPU 搬移</text>
+<text x="340" y="681" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#8a4f13">長前綴可能成為等待瓶頸</text>
+<path d="M340 704 L340 727" fill="none" stroke="#62768b" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="56" y="739" width="568" height="85" rx="13" fill="#e1efff" stroke="#c9d5e2" stroke-width="1.6"/>
+<text x="340" y="775" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="28" font-weight="600" text-anchor="middle" fill="#215f9a">GPU HBM</text>
+<text x="340" y="807" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#42566d">前綴 KV 到位後，可直接沿用</text>
+<path d="M340 828 L340 856" fill="none" stroke="#62768b" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="56" y="868" width="568" height="95" rx="13" fill="#ffffff" stroke="#c9d5e2" stroke-width="1.6"/>
+<text x="340" y="908" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="26" font-weight="600" text-anchor="middle" fill="#172b42">新 token 的 prefill → decode</text>
+<text x="340" y="944" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#42566d">沿用 P 的 KV，處理新增 token</text>
+<text x="340" y="1016" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="25" font-weight="600" text-anchor="middle" fill="#172b42">快取命中省下重算；資料仍要及時到位</text>
+<text x="340" y="1055" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="23" font-weight="400" text-anchor="middle" fill="#42566d">路徑示意，非時間或容量比例</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#116447" i]{fill:#48e0ab}[fill="#172b42" i]{fill:#cad5e2}[fill="#215f9a" i]{fill:#5e9fdc}[fill="#42566d" i]{fill:#bfc6cf}[fill="#5b21b6" i]{fill:#9e71e5}[fill="#8a4f13" i]{fill:#e49544}[fill="#dff4eb" i]{fill:#20322a}[fill="#e1efff" i]{fill:#152436}[fill="#eee9fa" i]{fill:#201a2f}[fill="#f8fafc" i]{fill:#1a2026}[fill="#fff0da" i]{fill:#392b16}[fill="#ffffff" i]{fill:#1b1f20}[stroke="#62768b" i]{stroke:#92a2b2}[stroke="#c9d5e2" i]{stroke:#2d343b}[stroke="#dfa454" i]{stroke:#e8bf87}}</style>
+</svg>

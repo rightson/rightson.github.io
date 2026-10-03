@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="1194" viewBox="0 0 680 1194" role="img" aria-labelledby="title desc">
+<title id="title">Strata 在 GPU 與 Host 使用不同的 KV 實體排列</title>
+<desc id="desc">邏輯頁面 A、B 各包含第 0、1、2 層 KV。GPU HBM 以層為先，依次排列 A0 B0、A1 B1、A2 B2；Host DRAM 以頁為先，排列 A0 A1 A2 以及 B0 B1 B2。GPU 複製 kernel 用大量平行執行緒搬移細小區塊並換算位址。Host 的同頁連續排列另有助於外部 SSD 進行較大的連續 I/O；這是不同層級的兩項最佳化。</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7.3" refY="4.5" orient="auto-start-reverse"><path d="M1 1 L7.3 4.5 L1 8" fill="none" stroke="#62768b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="biarrow" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto-start-reverse"><path d="M3 2 L11 7 L3 12" fill="none" stroke="#62768b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<rect x="0" y="0" width="680" height="1194" rx="22" fill="#f8fafc"/>
+<text x="340" y="52" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="30" font-weight="600" text-anchor="middle" fill="#172b42">同一份 KV，依使用位置排列</text>
+<text x="340" y="90" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="23" font-weight="400" text-anchor="middle" fill="#42566d">邏輯頁面不變，實體排列不同</text>
+<rect x="24" y="120" width="632" height="332" rx="13" fill="#ffffff" stroke="#c9d5e2" stroke-width="1.6"/>
+<text x="340" y="161" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="28" font-weight="600" text-anchor="middle" fill="#215f9a">GPU HBM · layer-first</text>
+<text x="340" y="198" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#42566d">同層資料相鄰，方便 GPU 計算</text>
+<text x="65" y="261" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#42566d">Layer 0</text>
+<rect x="207" y="224" width="186" height="55" rx="8" fill="#dff4eb"/>
+<text x="300" y="261" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="28" font-weight="600" text-anchor="middle" fill="#116447">A0</text>
+<rect x="411" y="224" width="186" height="55" rx="8" fill="#e1efff"/>
+<text x="504" y="261" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="28" font-weight="600" text-anchor="middle" fill="#215f9a">B0</text>
+<text x="65" y="331" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#42566d">Layer 1</text>
+<rect x="207" y="294" width="186" height="55" rx="8" fill="#dff4eb"/>
+<text x="300" y="331" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="28" font-weight="600" text-anchor="middle" fill="#116447">A1</text>
+<rect x="411" y="294" width="186" height="55" rx="8" fill="#e1efff"/>
+<text x="504" y="331" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="28" font-weight="600" text-anchor="middle" fill="#215f9a">B1</text>
+<text x="65" y="401" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#42566d">Layer 2</text>
+<rect x="207" y="364" width="186" height="55" rx="8" fill="#dff4eb"/>
+<text x="300" y="401" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="28" font-weight="600" text-anchor="middle" fill="#116447">A2</text>
+<rect x="411" y="364" width="186" height="55" rx="8" fill="#e1efff"/>
+<text x="504" y="401" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="28" font-weight="600" text-anchor="middle" fill="#215f9a">B2</text>
+<path d="M340 461 L340 490" fill="none" stroke="#62768b" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#biarrow)" marker-start="url(#biarrow)"/>
+<rect x="65" y="503" width="550" height="93" rx="12" fill="#fff0da" stroke="#dfa454" stroke-width="1.6"/>
+<text x="340" y="538" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="28" font-weight="600" text-anchor="middle" fill="#8a4f13">GPU 複製 kernel</text>
+<text x="340" y="573" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#8a4f13">平行搬移小區塊，同時換算位址</text>
+<path d="M340 607 L340 633" fill="none" stroke="#62768b" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#biarrow)" marker-start="url(#biarrow)"/>
+<rect x="24" y="646" width="632" height="236" rx="13" fill="#ffffff" stroke="#c9d5e2" stroke-width="1.6"/>
+<text x="340" y="684" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="28" font-weight="600" text-anchor="middle" fill="#116447">Host DRAM · page-first</text>
+<text x="340" y="721" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#42566d">同一頁跨層相鄰，利於儲存 I/O</text>
+<text x="58" y="776" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#42566d">Page A</text>
+<rect x="196" y="742" width="126" height="48" rx="6" fill="#dff4eb"/>
+<text x="259" y="775" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="27" font-weight="600" text-anchor="middle" fill="#116447">A0</text>
+<rect x="331" y="742" width="126" height="48" rx="6" fill="#dff4eb"/>
+<text x="394" y="775" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="27" font-weight="600" text-anchor="middle" fill="#116447">A1</text>
+<rect x="466" y="742" width="126" height="48" rx="6" fill="#dff4eb"/>
+<text x="529" y="775" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="27" font-weight="600" text-anchor="middle" fill="#116447">A2</text>
+<text x="58" y="846" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#42566d">Page B</text>
+<rect x="196" y="812" width="126" height="48" rx="6" fill="#e1efff"/>
+<text x="259" y="845" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="27" font-weight="600" text-anchor="middle" fill="#215f9a">B0</text>
+<rect x="331" y="812" width="126" height="48" rx="6" fill="#e1efff"/>
+<text x="394" y="845" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="27" font-weight="600" text-anchor="middle" fill="#215f9a">B1</text>
+<rect x="466" y="812" width="126" height="48" rx="6" fill="#e1efff"/>
+<text x="529" y="845" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="27" font-weight="600" text-anchor="middle" fill="#215f9a">B2</text>
+<path d="M340 891 L340 937" fill="none" stroke="#62768b" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#biarrow)" marker-start="url(#biarrow)"/>
+<text x="373" y="923" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#42566d">較大且連續的 I/O</text>
+<rect x="56" y="951" width="568" height="120" rx="13" fill="#eee9fa" stroke="#c9d5e2" stroke-width="1.6"/>
+<text x="340" y="988" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="28" font-weight="600" text-anchor="middle" fill="#5b21b6">外部 SSD</text>
+<rect x="83" y="1005" width="246" height="44" rx="7" fill="#ffffff"/>
+<text x="206" y="1035" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#5b21b6">Page A</text>
+<rect x="351" y="1005" width="246" height="44" rx="7" fill="#ffffff"/>
+<text x="474" y="1035" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#5b21b6">Page B</text>
+<text x="340" y="1122" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="26" font-weight="600" text-anchor="middle" fill="#172b42">兩個瓶頸各自處理</text>
+<text x="340" y="1164" font-family="Noto Sans CJK TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#42566d">GPU 搬移效率＋外部儲存 I/O 粒度</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#116447" i]{fill:#48e0ab}[fill="#172b42" i]{fill:#cad5e2}[fill="#215f9a" i]{fill:#5e9fdc}[fill="#42566d" i]{fill:#bfc6cf}[fill="#5b21b6" i]{fill:#9e71e5}[fill="#8a4f13" i]{fill:#e49544}[fill="#dff4eb" i]{fill:#20322a}[fill="#e1efff" i]{fill:#152436}[fill="#eee9fa" i]{fill:#201a2f}[fill="#f8fafc" i]{fill:#1a2026}[fill="#fff0da" i]{fill:#392b16}[fill="#ffffff" i]{fill:#1b1f20}[stroke="#62768b" i]{stroke:#92a2b2}[stroke="#c9d5e2" i]{stroke:#2d343b}[stroke="#dfa454" i]{stroke:#e8bf87}}</style>
+</svg>
