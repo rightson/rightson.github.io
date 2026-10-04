@@ -35,13 +35,13 @@
     <marker id="arrow-warn" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#a56a00"/></marker>
   </defs>
   <rect class="bg" width="900" height="660" rx="24"/>
-  <text class="h" x="450" y="42" text-anchor="middle">服務能操作工具，客戶仍掌握驗收與放行</text>
+  <text class="h" x="450" y="42" text-anchor="middle">服務負責操作工具，放行權留在客戶手上</text>
 
   <rect class="panel" x="45" y="82" width="250" height="150" rx="16"/>
   <text class="t" x="170" y="116" text-anchor="middle">Customer agent harness</text>
   <text class="s" x="70" y="150">• design objective／policy</text>
   <text class="s" x="70" y="178">• artifact identity／access</text>
-  <text class="s" x="70" y="206">• acceptance／rollback</text>
+  <text class="s" x="70" y="206">• release／rollback</text>
 
   <rect class="vendor" x="345" y="82" width="235" height="150" rx="16"/>
   <text class="t" x="462" y="116" text-anchor="middle">GPT-Synopsys</text>
@@ -63,10 +63,10 @@
   <text class="t" x="300" y="320" text-anchor="middle">Versioned design state</text>
   <text class="s" x="132" y="354">RTL／SDC／UPF／checkpoint／tool build</text>
   <text class="s" x="132" y="382">input／output digest＋run identity</text>
-  <text class="s" x="132" y="410">證據有效範圍與失效關係</text>
+  <text class="s" x="132" y="410">結果的適用範圍與作廢關係</text>
 
   <rect class="gate" x="555" y="286" width="300" height="145" rx="16"/>
-  <text class="t" x="705" y="320" text-anchor="middle">Evidence gate</text>
+  <text class="t" x="705" y="320" text-anchor="middle">晉級檢查</text>
   <text class="s" x="582" y="354">simulation／formal／LEC</text>
   <text class="s" x="582" y="382">STA／DRC／LVS／review</text>
   <text class="s" x="582" y="410">通過後才發布下一階段</text>
@@ -75,9 +75,9 @@
   <path class="line" d="M705 431 V486 H450"/>
 
   <rect class="warn" x="105" y="492" width="690" height="115" rx="16"/>
-  <text class="t" x="450" y="526" text-anchor="middle">失敗與恢復邊界</text>
+  <text class="t" x="450" y="526" text-anchor="middle">出錯時的處理</text>
   <text class="s" x="140" y="560">tool timeout／license loss／stale checkpoint → 隔離候選、檢查殘留狀態、由 verified checkpoint 重跑</text>
-  <text class="s" x="140" y="588">資料治理：retention／audit／permission 已有方向；residency、跨工具 schema 與重播契約仍待公開</text>
+  <text class="s" x="140" y="588">資料治理：retention／audit／permission 已有方向；residency、跨工具 schema 與重播格式仍待公開</text>
 
   <path class="dash" d="M450 492 V455 H300 V439"/>
 <style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#40556f" i]{fill:#bec6d0}[fill="#a56a00" i]{fill:#e4ab44}.bg{fill:#1a1f27}.panel{fill:#1b1f20;stroke:#80aad9}.vendor{fill:#142234;stroke:#71a5de}.gate{fill:#1d2f24;stroke:#56d291}.warn{fill:#382e15;stroke:#e4ab44}.line{stroke:#bec6d0}.dash{stroke:#e4a544}text{fill:#cdd6e2}.bg{fill:#d5dbe4}.panel{fill:#d1d7e1;stroke:#82b4ed}.vendor{fill:#cad5e2;stroke:#82b4ed}.gate{fill:#d0e1db;stroke:#8fe0b6}.warn{fill:#e3dbcd;stroke:#edc782}.line{stroke:#a1b5ce}.dash{stroke:#edc782}text{fill:#131f32}}</style>

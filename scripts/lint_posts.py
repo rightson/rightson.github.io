@@ -21,10 +21,11 @@ import sys
 import yaml
 
 NEW_POST_CUTOFF = dt.datetime(2026, 10, 2, 13, 0, tzinfo=dt.timezone(dt.timedelta(hours=8)))
-# Posts created at or after this time need a `lede`, a dated precedent, a
+# Posts created at or after this time need `takeaways` (concrete-name labels), a dated precedent, a
 # time-bound outlook, and no visible analysis-framework vocabulary.
 TAKEAWAY_CUTOFF = dt.datetime(2026, 10, 4, 12, 0, tzinfo=dt.timezone(dt.timedelta(hours=8)))
 LEDE_RANGE = (180, 450)
+GENERIC_WHO = re.compile(r"^(?:使用者|用戶|客戶|競爭者|競爭對手|合作方|合作雙方|長期|投資人|受益者|最大受益者|供應商|讀者)$|受益|（.*?）")
 FRAMEWORK_TERMS = re.compile(
     r"最大受益者|受益者|第[一二三]階|[一二]階思考|反方論點|影響與槓桿|(?<!營運)(?<!財務)(?<!融資)槓桿|鑑往知來"
     r"|利害關係人|(?i:takeaways?)|預測與訊號|本文的?判斷|90\s*秒"
@@ -155,6 +156,8 @@ def check_takeaways(items):
         if not isinstance(t, dict) or not t.get("who") or not t.get("value"):
             errs.append(f"takeaways 第 {i} 條須有 who 與 value")
             continue
+        if GENERIC_WHO.search(str(t["who"]).strip()):
+            errs.append(f"takeaways 第 {i} 條的標籤「{t['who']}」是分析類別或附註；改用具體的公司、產品、機構或角色名稱")
         n = len(str(t["value"]))
         total += n
         if not 40 <= n <= 160:
@@ -215,14 +218,14 @@ def lint(path):
             errs.append(f"front matter 缺少 {key}")
     lede = fm.get("lede")
     if new_format:
-        if not lede:
-            errs.append("front matter 缺少 lede（180–450 字導言散文，AGENTS.md 第 3 節）")
-        elif not LEDE_RANGE[0] <= len(str(lede)) <= LEDE_RANGE[1]:
+        if not takeaways:
+            errs.append("front matter 缺少 takeaways（3–6 條重點，AGENTS.md 第 3 節與第 4.2 節）")
+        else:
+            errs.extend(check_takeaways(takeaways))
+        if lede and not LEDE_RANGE[0] <= len(str(lede)) <= LEDE_RANGE[1]:
             errs.append(f"lede 須為 {LEDE_RANGE[0]}–{LEDE_RANGE[1]} 字（目前 {len(str(lede))} 字）")
     elif not (lede or takeaways or summary):
-        errs.append("front matter 缺少 lede")
-    if takeaways is not None and not new_format:
-        errs.extend(check_takeaways(takeaways))
+        errs.append("front matter 缺少 takeaways")
     domain = fm.get("domain")
     if domain and domain not in DOMAINS:
         errs.append(f"domain 不在九個公開分類內：{domain}")
@@ -265,7 +268,7 @@ def lint(path):
 
     exempt = fm.get("series") in IMPACT_EXEMPT_SERIES or domain in IMPACT_EXEMPT_DOMAINS
     if new_format:
-        public = "\n".join([title, desc, str(lede or ""), prose(body)])
+        public = "\n".join([title, desc, str(lede or ""), summary_text, prose(body)])
         m = FRAMEWORK_TERMS.search(public)
         if m:
             errs.append(f"出現分析框架詞彙「{m.group(0)}」；把分析寫成具體內容，不外顯框架（AGENTS.md 第 5 節）")

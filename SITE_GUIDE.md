@@ -4,7 +4,7 @@
 
 This site uses native Jekyll layouts and GitHub Pages. No remote theme, JavaScript framework, external fonts, or search service is required. Post bodies and permalinks are unchanged.
 
-New posts must pass `scripts/lint_posts.py` (rules in AGENTS.md §11). The `Post lint gate` workflow moves failing new posts to `_blocked/` with a `.lint.txt` report. Posts carry a `lede` paragraph that renders as an unlabeled standfirst under the title; older posts with `summary` or `takeaways` still render them.
+New posts must pass `scripts/lint_posts.py` (rules in AGENTS.md §11). The `Post lint gate` workflow moves failing new posts to `_blocked/` with a `.lint.txt` report. Posts carry a `takeaways` list (concrete name + one causal sentence) that renders as the 「重點」 box under the title; older posts with `summary` or `lede` still render them. Writing principles live in AGENTS.md §4.
 
 ## Publishing
 
