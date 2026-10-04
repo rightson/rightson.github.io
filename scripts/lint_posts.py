@@ -49,8 +49,10 @@ FRAME_RE = re.compile(r"驗收|邊界|證據|恢復|契約|閘門|可採信")
 
 DOMAINS = {
     "ic-design-platform", "ai-frontier", "architecture", "networking",
-    "distributed-systems", "platform-engineering", "ai-industry", "investing", "science-physics",
+    "distributed-systems", "platform-engineering", "ai-industry", "science-physics",
 }
+# Withdrawn from the public site on 2026-10-04; see _archive/investing/README.md.
+PRIVATE_DOMAINS = {"investing", "investment", "trading"}
 
 # Sentence skeletons already overused on the site (title, description, opening).
 TEMPLATE_PATTERNS = [
@@ -227,8 +229,10 @@ def lint(path):
     elif not (lede or takeaways or summary):
         errs.append("front matter 缺少 takeaways")
     domain = fm.get("domain")
-    if domain and domain not in DOMAINS:
-        errs.append(f"domain 不在九個公開分類內：{domain}")
+    if domain in PRIVATE_DOMAINS:
+        errs.append(f"{domain} 不公開發佈；投資觀點留在私人紀錄，不放 _posts/")
+    elif domain and domain not in DOMAINS:
+        errs.append(f"domain 不在公開分類內：{domain}")
     cats = fm.get("categories")
     if domain and cats and str(cats).strip() != str(domain):
         errs.append("新文章 categories 必須與 domain 相同")

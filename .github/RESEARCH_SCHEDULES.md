@@ -7,7 +7,7 @@
 2026-10-01 使用者核准：IC 設計平台目前只公開以平台架構、工程協作、工具／資料交接、狀態管理、執行恢復或驗收治理為主問題的文章。純 STA／SDC 基礎教材、placement／timing 演算法或單一引擎機制暫不公開；不能只加平台總覽或驗收段落就視為平台文章。封存清單以 `_archive/ic-design-platform/README.md` 為準；封存稿仍算歷史已完成，保留原始 date、categories、series、篇號及查重紀錄，不移回 `_posts/`、不換 slug／日期重發，恢復發布須使用者另行確認。其他分類與十四個系列的研究責任、五個排程器的時程及啟用狀態不變。
 
 - 每次開寫完整讀取最新 default branch 的 `AGENTS.md`、`_config.yml`、本檔、[五個任務指令](schedules/README.md) 與 [系列補充規格](RESEARCH_AUTOMATIONS.json)、直接相關 roadmap 與近期文章。`AGENTS.md` 仍是唯一 agent source of truth；本檔只補充任務分工，不放寬既有門檻。
-- 依 2026-10-01 核准前八類及 2026-10-03 新增科學與物理的九類順序分類，詳見 ARTICLE_TAXONOMY.md；既有 permalink 保留；每篇按核心問題選一個 domain，新文章 categories 與 domain 一致。`series` 表示系列接續，不能改動既有 URL。
+- 依 2026-10-01 核准前八類、2026-10-03 新增科學與物理、2026-10-04 收回投資與交易後的八個公開分類，詳見 ARTICLE_TAXONOMY.md；既有 permalink 保留；每篇按核心問題選一個 domain，新文章 categories 與 domain 一致。`series` 表示系列接續，不能改動既有 URL。
 - 所有 replacement task 使用全新 cloud session。知識進度由 repo roadmap、已發布文章與可核對的 ledger 接續，不使用舊對話狀態。
 - 初始化與定期執行分開：一次性停用舊任務／建立新任務的步驟不得放進 recurring prompt。
 - 啟動時間採 Asia/Taipei，文章 date 仍按首次實際寫入時間。台股工作日只是執行候選日；每次盤中／盤後先核對官方交易日。
@@ -39,10 +39,10 @@
 | `ai-frontier-digest`：AI 前沿每日摘要 | 每日 07:30 | 有增量的一篇技術摘要 | ai-frontier |
 | `ai-weekly-share`：AI 每週分享素材 | 每週四 07:30 | session 分享材料；增量足夠才發公開綜述 | ai-frontier |
 | `llm-lab`：LLM Lab：模型到晶片的完整技術鏈 | 每週六 19:00 | 每週一篇完整 lab | ai-frontier / architecture / ic-design-platform |
-| `mtk-ecosystem-institutional`：MTK／台積電生態系機構與基本面晨報 | 週一至五 05:30 | session 短報；重大假設變化才發文 | investing / ai-industry |
-| `mtk-ecosystem-intraday`：盤中價量與事件觀察 | 台股交易日 10:30、13:30 | 只在 session 通知重要變化 | investing |
-| `mtk-ecosystem-market-journal`：盤後籌碼與波段決策日誌 | 台股交易日 17:30 | 有價值的公開分析；私人日誌留 session | investing |
-| `mtk-ecosystem-deep-dive`：MTK 與半導體生態系深度研究 | 每週日 05:30 | 每週一篇深度研究 | ai-industry / investing |
+| `mtk-ecosystem-institutional`：MTK／台積電生態系機構與基本面晨報 | 週一至五 05:30 | session 短報；投資觀點不公開發佈 | ai-industry（僅經營／供需稿） |
+| `mtk-ecosystem-intraday`：盤中價量與事件觀察 | 台股交易日 10:30、13:30 | 只在 session 通知重要變化 | 不公開 |
+| `mtk-ecosystem-market-journal`：盤後籌碼與波段決策日誌 | 台股交易日 17:30 | 留 session／私人紀錄，不公開發佈 | 不公開 |
+| `mtk-ecosystem-deep-dive`：MTK 與半導體生態系深度研究 | 每週日 05:30 | 每週一篇深度研究；估值與布局判讀不公開 | ai-industry |
 | `tpu-technical`：TPU／AI 加速器深度系列 | 每週五 19:00 | 每週一篇深度長文 | architecture |
 | `networking-deep-dive`：Networking 每週深度長文 | 每週三 19:00 | 每週一篇深度長文 | networking |
 | `distributed-systems`：分散式系統深度系列 | 每週五 19:00 | 每週一篇完整系統設計案例 | distributed-systems |
@@ -100,7 +100,7 @@
 
 ### MTK／台積電生態系機構與基本面晨報
 
-以 .github/MTK_ECOSYSTEM_RESEARCH.md 維持 MTK、台積電與有證據的上下游／客戶／競爭／替代關係觀察池，保留既有 AI 供應鏈觀察範圍作次要雷達，不自行猜出完整 98 檔清單。每天核對最近 24–72 小時公司公告、營收／財報／法說、產品與客戶進展、競爭，以及機構評級與 revenue／EPS／gross margin／operating margin／shipment／ASP／capex／target price／multiple 修正。記錄機構、原文日期、old→new、預測期間、核心假設與公開來源；無法取得原始研究时標示媒體轉述／來源受限，不捏造或繞過付費牆。問清模型哪個假設改變、consensus revision 是否加速／減速、共識分歧、re-rating／de-rating 與估值已反映程度。與 latest 已公布價格／籌碼交叉驗證但不重做盤後報告。輸出最多 5 個重要變化和其投資論點影響；無新增重要變化保持精簡。重大公開研究才寫文章，估值／交易核心歸 investing，經營與供應鏈核心歸 ai-industry，不公開私人持倉。
+以 .github/MTK_ECOSYSTEM_RESEARCH.md 維持 MTK、台積電與有證據的上下游／客戶／競爭／替代關係觀察池，保留既有 AI 供應鏈觀察範圍作次要雷達，不自行猜出完整 98 檔清單。每天核對最近 24–72 小時公司公告、營收／財報／法說、產品與客戶進展、競爭，以及機構評級與 revenue／EPS／gross margin／operating margin／shipment／ASP／capex／target price／multiple 修正。記錄機構、原文日期、old→new、預測期間、核心假設與公開來源；無法取得原始研究时標示媒體轉述／來源受限，不捏造或繞過付費牆。問清模型哪個假設改變、consensus revision 是否加速／減速、共識分歧、re-rating／de-rating 與估值已反映程度。與 latest 已公布價格／籌碼交叉驗證但不重做盤後報告。輸出最多 5 個重要變化和其投資論點影響；無新增重要變化保持精簡。估值／交易判讀不公開發佈；只有經營與供應鏈核心、且不含投資判讀的重大研究才以 ai-industry 公開，不公開私人持倉。
 
 - series：`mtk-ecosystem-institutional`
 - 任務指令：[schedules/ecosystem-investment.md](schedules/ecosystem-investment.md)；系列補充規格：`RESEARCH_AUTOMATIONS.json` 的 `mtk-ecosystem-institutional`。
@@ -116,7 +116,7 @@
 
 ### 盤後籌碼與波段決策日誌
 
-確認官方交易日與資料 availability，再取得當日官方價格、成交量、外資／投信、融資券，以及有證據的歷史基線，處理單位、除權息與非交易日。追蹤 5／10／20 日籌碼變化、外資占成交量／金額、投信同步性、融資增減、MA5／20／60、20 日均量、相對強弱與近期高低點；缺資料的指標標缺漏，不填零、不捏造、不阻止其他證據完整的公司產出。尋找早期 accumulation、distribution、利多不漲、price/EPS 與 research/capital 分歧，同步做 downside scan。維持同一投資論點的日期序列與原始判斷，區分觀察／布局候選／追蹤中／風險升高，提供觸發、失效、減碼／獲利了結條件、替代解釋與尚缺證據；單一訊號不作確定結論。可公開且有認知增量的分析最多一篇，domain/categories: investing；個人持倉、實際交易與私人決策日誌只留本 session。公開 repo 只保存來源可追溯的研究 ledger，保留歷史而不事後改寫。
+確認官方交易日與資料 availability，再取得當日官方價格、成交量、外資／投信、融資券，以及有證據的歷史基線，處理單位、除權息與非交易日。追蹤 5／10／20 日籌碼變化、外資占成交量／金額、投信同步性、融資增減、MA5／20／60、20 日均量、相對強弱與近期高低點；缺資料的指標標缺漏，不填零、不捏造、不阻止其他證據完整的公司產出。尋找早期 accumulation、distribution、利多不漲、price/EPS 與 research/capital 分歧，同步做 downside scan。維持同一投資論點的日期序列與原始判斷，區分觀察／布局候選／追蹤中／風險升高，提供觸發、失效、減碼／獲利了結條件、替代解釋與尚缺證據；單一訊號不作確定結論。盤後分析不公開發佈，全部留在本 session 或已授權私人紀錄。研究 ledger 留在私人紀錄，保留歷史而不事後改寫。
 
 - series：`mtk-ecosystem-market-journal`
 - 任務指令：[schedules/ecosystem-investment.md](schedules/ecosystem-investment.md)；系列補充規格：`RESEARCH_AUTOMATIONS.json` 的 `mtk-ecosystem-market-journal`。
@@ -124,7 +124,7 @@
 
 ### MTK 與半導體生態系深度研究
 
-每週一個主問題，結合 CTO 技術理解、CFO 財務與資本配置、buy-side 預期差與投資教育。輪替 AI ASIC／TPU、手機、車用及其他產品線，研究客戶、設計合作、台積電製程／先進封裝、供應鏈／競爭者／替代方案；同時追蹤全球 AI 基礎設施需求、capex、產能瓶頸、earnings pool、定價權、第二供應商與供給擴張，以保留原 AI 基礎設施週報的視野。將技術／產品變化連到 shipment、ASP、content、營收、毛利率、EPS、現金流與估值 driver，建立透明 bull/base/bear 情境、敏感度、催化劑、反證與市場已反映程度。不以相關性推定業務關係、設計得標或經濟利益；TPU 微架構由 TPU 系列負責，引用其已發布結果而不重寫。公開一篇來源完整的研究，主問題為商業／產業歸 ai-industry，估值／交易歸 investing；不得把估值情境說成保證股價或可反覆獲利的確定機會。更新公開 thesis／evidence ledger，保留舊判斷與修訂原因。
+每週一個主問題，結合 CTO 技術理解、CFO 財務與資本配置、buy-side 預期差與投資教育。輪替 AI ASIC／TPU、手機、車用及其他產品線，研究客戶、設計合作、台積電製程／先進封裝、供應鏈／競爭者／替代方案；同時追蹤全球 AI 基礎設施需求、capex、產能瓶頸、earnings pool、定價權、第二供應商與供給擴張，以保留原 AI 基礎設施週報的視野。將技術／產品變化連到 shipment、ASP、content、營收、毛利率、EPS、現金流與估值 driver，建立透明 bull/base/bear 情境、敏感度、催化劑、反證與市場已反映程度。不以相關性推定業務關係、設計得標或經濟利益；TPU 微架構由 TPU 系列負責，引用其已發布結果而不重寫。公開一篇來源完整的研究，主問題為商業／產業歸 ai-industry，估值／交易判讀不公開發佈；不得把估值情境說成保證股價或可反覆獲利的確定機會。更新私人 thesis／evidence ledger，保留舊判斷與修訂原因。
 
 - series：`mtk-ecosystem-deep-dive`
 - 任務指令：[schedules/ecosystem-investment.md](schedules/ecosystem-investment.md)；系列補充規格：`RESEARCH_AUTOMATIONS.json` 的 `mtk-ecosystem-deep-dive`。

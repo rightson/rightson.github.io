@@ -33,10 +33,10 @@
   default_domain: ai-industry
 - key: mtk-ecosystem-institutional
   title: MTK／台積電生態系機構與基本面晨報
-  default_domain: investing
+  default_domain: private  # 投資觀點不公開發佈（2026-10-04）
 - key: mtk-ecosystem-intraday
   title: 盤中價量與事件觀察
-  default_domain: investing
+  default_domain: private  # 投資觀點不公開發佈（2026-10-04）
 - key: mtk-ecosystem-market-journal
   title: 盤後籌碼與波段決策日誌
-  default_domain: investing
+  default_domain: private  # 投資觀點不公開發佈（2026-10-04）

@@ -45,7 +45,7 @@
 現有功能應保留：
 
 - 首頁依時間由新到舊顯示文章。
-- 九個固定研究 domain（見第 2 節）。
+- 八個公開研究 domain（見第 2 節）。
 - `/categories/` 靜態分類頁。
 - `/search/` 全文搜尋、AND keyword matching、domain/category filters 與 shareable query URL。
 - `/search.json` 由 published posts 自動產生。
@@ -62,7 +62,7 @@
 
 ---
 
-## 2. 九個公開分類與 URL 穩定性
+## 2. 八個公開分類與 URL 穩定性
 
 分類按「文章主要回答什麼問題」判斷；五個排程器是執行入口，十四個主題保留為系列。完整分類邊界與系列預設見 [.github/ARTICLE_TAXONOMY.md](.github/ARTICLE_TAXONOMY.md) 和 `_data/research_series.yml`。
 
@@ -75,20 +75,21 @@
 | `distributed-systems` | 分散式系統 | 分散式服務、資料模型、一致性、複寫、容錯與恢復。 |
 | `platform-engineering` | 系統與平台 | Linux、容器、K8s／HPC、叢集資源、平台效能與維運。 |
 | `ai-industry` | 產業與供應鏈 | 公司競爭力、產品、市場供需、客戶關係與價值分配。 |
-| `investing` | 投資與交易 | 盈利預期、估值、機構資金、價量與進退場條件。 |
 | `science-physics` | 科學與物理 | 自然現象、材料物性、物理機制、實驗與理論研究。 |
+
+投資觀點不公開發佈（2026-10-04 使用者要求）：股價已反映多少、合理估值、目標價、機構資金、價量與布局／減碼／進退場條件，不寫成 `_posts/` 文章，也不夾帶在其他分類的文章裡；研究結果留在排程對話或已授權私人紀錄。原 `investing` 分類六篇封存於 `_archive/investing/`（清單與恢復條件見該目錄 README），不得移回或改寫重發；`scripts/lint_posts.py` 會擋下 `domain: investing`。
 
 - 每篇只有一個 primary `domain`；`series`、公司與技術名稱為次級資料，不增加主選單。系列預設不能取代文章主問題判斷。
 - 新文章單一 `categories` 與 `domain` 一致；既有文章重新分類只改 `domain`，保留 filename、date、categories、permalink、既有 series／篇號與正文。`domain` 不改變文章 URL。
 - EDA 演算法、STA／SDC、placement、routing、verification、signoff 與設計流程／平台統一歸 `ic-design-platform`。`eda`／`timing` 是舊分類相容值，不能新增為公開選單。
 - 模型、訓練／推論與通用 Agent 歸 `ai-frontier`；主問題為 RTL、驗證、synthesis／APR、signoff 的導入、流程與驗收責任，歸 `ic-design-platform`。
 - LLM Lab 模型與實作預設 `ai-frontier`；獨立加速器微架構、記憶體或資料流歸 `architecture`。系列 identifier 不變。
-- 企業如何成長、競爭及獲利歸 `ai-industry`；股價已反映多少、合理估值、機構資金或進退場條件歸 `investing`。出現 EPS、營收、毛利或現金流數字，不足以歸為投資文。
-- 半導體生態系深研預設 `ai-industry`；主問題為合理股價、估值情境或布局條件時歸 `investing`。
+- 企業如何成長、競爭及獲利歸 `ai-industry`；股價已反映多少、合理估值、機構資金或進退場條件屬投資觀點，不公開發佈。出現 EPS、營收、毛利或現金流數字，不足以歸為投資文。
+- 半導體生態系深研預設 `ai-industry`；主問題為合理股價、估值情境或布局條件時不公開發佈。
 - TPU 微架構歸 `architecture`；協定、封包路徑與互連歸 `networking`；服務一致性、複寫與完整服務設計歸 `distributed-systems`；Linux、容器、K8s／HPC、叢集資源與平台維運歸 `platform-engineering`，不因應用於 EDA／AI 而改分類。
 - 「AI 前沿每日摘要」使用 `series: ai-frontier-digest`；依本節主問題規則分類，不以系列預設凌駕實際文章內容。
 - K8s 課程從零學習，沿用 OS 與資工先備；`series: k8s-hpc`，預設 domain／categories 為 `platform-engineering`。roadmap 指向 rightson/k8s-lab 的 learning-plan、lesson-standard、learning-progress；輔助教材、練習、解答、程式與 raw 實驗證據放該 repo，網站只保存完整文章與文章圖。舊 K001–K081 不沿用，新穩定 ID 為 K082–K129；封存歷史保留，恢復須另行授權。
-- 2026-10-01 核准前八類；2026-10-03 核准新增第九類「科學與物理」。未來新增、合併、拆分、更名、重排公開分類或重新分類既有文章，仍須使用者確認；新文章依已核准規則選分類，不必逐篇詢問。
+- 2026-10-01 核准前八類；2026-10-03 核准新增第九類「科學與物理」；2026-10-04 依使用者要求自公開分類移除「投資與交易」，現為八類。未來新增、合併、拆分、更名、重排公開分類或重新分類既有文章，仍須使用者確認；新文章依已核准規則選分類，不必逐篇詢問。
 - 同步 `_data/domains.yml`、`_includes/domain-key.html`、本表、roadmap 與五個新排程。顯示順序以 `_data/domains.yml` 為準。
 
 ---
@@ -268,14 +269,13 @@ takeaways:
 | `distributed-systems` | 依第 4 節「分散式系統系列的敘事順序」，交代每次設計演進的觸發與代價 | 依系列 roadmap |
 | `platform-engineering` | OS／容器／K8s 的執行機制與可重現實驗結果 | 依系列 roadmap |
 | `ai-industry` | 誰拿到利潤、為什麼、能維持多久 | 「HBM 每片晶圓的利潤是一般 DRAM 的數倍，排擠效應會延續到 2027」 |
-| `investing` | 價格隱含什麼預期，哪些數據出現就推翻判斷 | 「現價要求 EPS 再成長 34%；下一季毛利率低於 X% 即失效」 |
 | `science-physics` | 自然現象由哪些物理機制決定，實驗與理論支持到哪裡 | 「應變梯度可誘發冰的電極化；介面與液體傳輸影響有效反應」 |
 
 其餘要件見第 4.1–4.3 節。
 
 若網站現有 reading-time algorithm 可取得，發布前依同一算法確認；未達門檻應補機制、案例與證據，不可硬寫 `reading_time: 10` 或修改演算法作弊。
 
-短評、投資快訊等若有明確 task-specific 篇幅規格，以該任務為準；不要為套用長文規則而灌水。
+短評、快訊等若有明確 task-specific 篇幅規格，以該任務為準；不要為套用長文規則而灌水。
 
 ---
 
@@ -452,6 +452,7 @@ EDA 類文章不限 R2G，應把視野放到完整 IC design platform：
 - 公司內部程式碼、PDK、private RTL、log、skill、case、客戶資料。
 - 未公開 CAD 架構、憑證、token、帳號、內部 endpoint。
 - 私人投資持倉、未公開工作資訊，除非使用者當次明確要求且適合公開。
+- 投資觀點（見第 2 節），除非使用者另行核准恢復。
 
 ---
 
@@ -495,6 +496,7 @@ Jekyll permalink 不能靠直覺自行拼接。
 - 有 `## 證據範圍` 段落；該段之前的正文，否定／保留語（不能、不代表、不等於、並非、而非、不可、不宜、未必）每萬字不超過 12 次。
 - 框架詞（驗收、邊界、證據、恢復、契約、閘門、可採信）每萬字上限：`ic-design-platform`、`distributed-systems` 為 25，其餘分類為 15。
 - 至少一個站內文章連結與一個外部來源連結；不連 OpenAPI／JSON 端點或 Facebook。
+- `domain` 不得為 `investing`（投資觀點不公開發佈）。
 
 ---
 

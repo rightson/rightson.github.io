@@ -10,7 +10,7 @@ New posts must pass `scripts/lint_posts.py` (rules in AGENTS.md §11). The `Post
 
 Continue adding Markdown files to `_posts/YYYY-MM-DD-slug.md` with `layout: post`, `title`, `date`, and `categories`. Do not change existing `categories`: Jekyll uses them in default post URLs.
 
-Set one primary `domain` according to the article's main question. The nine public sections are:
+Set one primary `domain` according to the article's main question. The eight public sections are:
 
 | domain | Section |
 | --- | --- |
@@ -21,7 +21,6 @@ Set one primary `domain` according to the article's main question. The nine publ
 | distributed-systems | 分散式系統 |
 | platform-engineering | 系統與平台 |
 | ai-industry | 產業與供應鏈 |
-| investing | 投資與交易 |
 | science-physics | 科學與物理 |
 
 Five scheduler groups retain fourteen research series. Series, companies and technical names are secondary metadata, not additional navigation sections. Read `.github/ARTICLE_TAXONOMY.md` and `_data/research_series.yml` for defaults and boundaries. EDA and legacy `timing` now belong to `ic-design-platform`. Existing article `domain` may be corrected after user approval; preserve filename, date, categories, permalink and series numbering. New articles use one category equal to their domain.
@@ -38,7 +37,7 @@ categories: ai-supply-chain research
 
 ## Features
 
-- Homepage: newest-first articles and nine persistent research sections.
+- Homepage: newest-first articles and eight persistent research sections.
 - `/categories/`: static section archives, usable without JavaScript.
 - `/search/`: client-side full-text search with AND matching across space-separated keywords, domain and category filters, and shareable URLs.
 - `/search.json`: automatically generated from published posts at build time.
@@ -52,11 +51,11 @@ Search downloads the full index once. Consider a dedicated search index if the a
 
 Build with `bundle exec jekyll build`. Verify `/`, `/categories/`, `/search/`, an existing article, and `/feed.xml`. Test a keyword found only in article content, combined filters, zero results, mobile overflow, keyboard navigation, and an index-load failure.
 
-分類邊界以 `.github/ARTICLE_TAXONOMY.md` 為準：企業競爭與供需歸產業；價格、估值與交易歸投資。通用 Agent 歸 AI；晶片設計流程導入與驗收歸 IC 設計平台。
+分類邊界以 `.github/ARTICLE_TAXONOMY.md` 為準：企業競爭與供需歸產業；價格、估值與交易屬投資觀點，不公開發佈（封存見 `_archive/investing/`）。通用 Agent 歸 AI；晶片設計流程導入與驗收歸 IC 設計平台。
 
 ## Research series and recurring work
 
-The nine public domains follow `.github/ARTICLE_TAXONOMY.md`. Approved series, topic ownership, cadence and fresh-session migration requirements are documented in `.github/RESEARCH_SCHEDULES.md`; complete recurring prompts are in `.github/RESEARCH_AUTOMATIONS.json`. Each run reads the latest `AGENTS.md` before researching or writing. Repository specifications do not create, enable or disable scheduler tasks; runtime status requires separate verification. Existing curriculum progress, post dates, categories and permalinks are preserved.
+The eight public domains follow `.github/ARTICLE_TAXONOMY.md`. Approved series, topic ownership, cadence and fresh-session migration requirements are documented in `.github/RESEARCH_SCHEDULES.md`; complete recurring prompts are in `.github/RESEARCH_AUTOMATIONS.json`. Each run reads the latest `AGENTS.md` before researching or writing. Repository specifications do not create, enable or disable scheduler tasks; runtime status requires separate verification. Existing curriculum progress, post dates, categories and permalinks are preserved.
 
 ## IC platform publication scope
 
