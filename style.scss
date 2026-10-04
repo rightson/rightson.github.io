@@ -541,6 +541,36 @@ p {
 .article-summary li + li {
   margin-top: 4px;
 }
+.article-takeaways dl {
+  margin: 0;
+}
+.takeaway {
+  display: grid;
+  grid-template-columns: minmax(7em, max-content) 1fr;
+  gap: 4px 16px;
+  padding: 8px 0;
+}
+.takeaway + .takeaway {
+  border-top: 1px solid var(--line);
+}
+.takeaway dt {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.8;
+  color: var(--teal);
+}
+.takeaway dd {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--ink);
+}
+@media (max-width: 640px) {
+  .takeaway {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+}
 .article-grid {
   display: grid;
   grid-template-columns: minmax(0, 760px) minmax(160px, 1fr);

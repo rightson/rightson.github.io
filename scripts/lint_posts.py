@@ -21,6 +21,12 @@ import sys
 import yaml
 
 NEW_POST_CUTOFF = dt.datetime(2026, 10, 2, 13, 0, tzinfo=dt.timezone(dt.timedelta(hours=8)))
+# Posts created at or after this time need `takeaways` and the impact section.
+TAKEAWAY_CUTOFF = dt.datetime(2026, 10, 4, 12, 0, tzinfo=dt.timezone(dt.timedelta(hours=8)))
+IMPACT_HEADING = "影響與槓桿"
+IMPACT_SUBSECTIONS = (("第一階", 250, False), ("第二階", 400, True), ("最強反方論點", 150, False))
+IMPACT_EXEMPT_SERIES = {"tpu-technical", "distributed-systems", "k8s-hpc", "llm-lab"}
+IMPACT_EXEMPT_DOMAINS = {"science-physics"}
 POSTS_DIR = "_posts"
 BLOCKED_DIR = "_blocked"
 EVIDENCE_HEADING = "證據範圍"
@@ -130,6 +136,63 @@ def first_paragraph(body):
     return ""
 
 
+def cjk_len(text):
+    return len(re.findall(r"[\u4e00-\u9fffA-Za-z0-9]", text))
+
+
+def check_takeaways(items):
+    errs = []
+    if not isinstance(items, list) or not 3 <= len(items) <= 6:
+        return ["takeaways 必須是 3–6 條的清單"]
+    total = 0
+    for i, t in enumerate(items, 1):
+        if not isinstance(t, dict) or not t.get("who") or not t.get("value"):
+            errs.append(f"takeaways 第 {i} 條須有 who 與 value")
+            continue
+        n = len(str(t["value"]))
+        total += n
+        if not 40 <= n <= 160:
+            errs.append(f"takeaways 第 {i} 條 value 須為 40–160 字的完整因果句（目前 {n} 字）：{t['who']}")
+    if errs:
+        return errs
+    if not 250 <= total <= 700:
+        errs.append(f"takeaways 總長須為 250–700 字，讓讀者約 90 秒讀完（目前 {total} 字）")
+    return errs
+
+
+def section(body, level, title, start=0, end=None):
+    """Return text of the first heading of `level` whose title starts with `title`."""
+    end = len(body) if end is None else end
+    hashes = "#" * level
+    m = re.compile(rf"^{hashes}\s+{re.escape(title)}[^\n]*$", re.M).search(body, start, end)
+    if not m:
+        return None, None, None
+    nxt = re.compile(rf"^#{{1,{level}}}\s", re.M).search(body, m.end(), end)
+    stop = nxt.start() if nxt else end
+    return body[m.end():stop], m.start(), stop
+
+
+def check_impact(body):
+    errs = []
+    text, start, stop = section(body, 2, IMPACT_HEADING)
+    if text is None:
+        return [f"缺少「## {IMPACT_HEADING}」段落（第一階、第二階、最強反方論點，AGENTS.md 第 5 節）"]
+    ev = re.search(rf"^##\s+{EVIDENCE_HEADING}", body, re.M)
+    if ev and ev.start() < start:
+        errs.append(f"「## {IMPACT_HEADING}」須放在「## {EVIDENCE_HEADING}」之前")
+    for name, min_len, needs_year in IMPACT_SUBSECTIONS:
+        sub, _, _ = section(body, 3, name, start, stop)
+        if sub is None:
+            errs.append(f"「## {IMPACT_HEADING}」缺少「### {name}」小節")
+            continue
+        n = cjk_len(prose(sub))
+        if n < min_len:
+            errs.append(f"「### {name}」只有 {n} 字，至少 {min_len} 字")
+        if needs_year and not re.search(r"(19|20)\d\d", sub):
+            errs.append(f"「### {name}」須有附日期的歷史先例或附時間範圍的預測（至少出現一個年份）")
+    return errs
+
+
 def lint(path):
     errs = []
     fm, body = parse(path)
@@ -141,10 +204,19 @@ def lint(path):
     title = str(fm.get("title", ""))
     desc = str(fm.get("description", ""))
     summary = fm.get("summary")
+    takeaways = fm.get("takeaways")
+    created = post_date(fm)
+    new_format = created is None or created >= TAKEAWAY_CUTOFF
 
-    for key in ("title", "date", "domain", "categories", "description", "summary"):
+    for key in ("title", "date", "domain", "categories", "description"):
         if not fm.get(key):
             errs.append(f"front matter 缺少 {key}")
+    if new_format and not takeaways:
+        errs.append("front matter 缺少 takeaways（3–6 條 who＋value，AGENTS.md 第 3 節）")
+    if not new_format and not takeaways and not summary:
+        errs.append("front matter 缺少 takeaways 或 summary")
+    if takeaways is not None:
+        errs.extend(check_takeaways(takeaways))
     domain = fm.get("domain")
     if domain and domain not in DOMAINS:
         errs.append(f"domain 不在九個公開分類內：{domain}")
@@ -169,6 +241,8 @@ def lint(path):
                 errs.append(f"{field}使用模板化{label}")
 
     summary_text = " ".join(summary) if isinstance(summary, list) else ""
+    if isinstance(takeaways, list):
+        summary_text += " " + " ".join(f"{t.get('who', '')} {t.get('value', '')}" for t in takeaways if isinstance(t, dict))
     whole = "\n".join([title, desc, summary_text, prose(body)])
     for pat, label in BANNED_TERMS:
         m = re.search(pat, whole)
@@ -180,6 +254,10 @@ def lint(path):
 
     if not re.search(rf"^##\s+{EVIDENCE_HEADING}\s*$", body, re.M):
         errs.append(f"缺少「## {EVIDENCE_HEADING}」段落（保留條件集中於此）")
+
+    exempt = fm.get("series") in IMPACT_EXEMPT_SERIES or domain in IMPACT_EXEMPT_DOMAINS
+    if new_format and not exempt:
+        errs.extend(check_impact(body))
 
     main, _ = split_sections(body)
     main_prose = prose(main)
