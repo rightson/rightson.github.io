@@ -21,10 +21,16 @@ import sys
 import yaml
 
 NEW_POST_CUTOFF = dt.datetime(2026, 10, 2, 13, 0, tzinfo=dt.timezone(dt.timedelta(hours=8)))
-# Posts created at or after this time need `takeaways` and the impact section.
+# Posts created at or after this time need a `lede`, a dated precedent, a
+# time-bound outlook, and no visible analysis-framework vocabulary.
 TAKEAWAY_CUTOFF = dt.datetime(2026, 10, 4, 12, 0, tzinfo=dt.timezone(dt.timedelta(hours=8)))
-IMPACT_HEADING = "影響與槓桿"
-IMPACT_SUBSECTIONS = (("第一階", 250, False), ("第二階", 400, True), ("最強反方論點", 150, False))
+LEDE_RANGE = (180, 450)
+FRAMEWORK_TERMS = re.compile(
+    r"最大受益者|受益者|第[一二三]階|[一二]階思考|反方論點|影響與槓桿|(?<!營運)(?<!財務)(?<!融資)槓桿|鑑往知來"
+    r"|利害關係人|(?i:takeaways?)|預測與訊號|本文的?判斷|90\s*秒"
+)
+LIST_LABEL_RE = re.compile(r"^\s*(?:[-*]\s*|\d+\.\s*)?(?:\*\*)?對(?:使用者|用戶|客戶|競爭者|競爭對手|合作雙方|投資人)(?:\*\*)?\s*[：:]", re.M)
+FUTURE_RE = re.compile(r"(?:未來|接下來|往後|之後)\s*[一二三四五六七八九十\d]+\s*(?:個月|年|季)")
 IMPACT_EXEMPT_SERIES = {"tpu-technical", "distributed-systems", "k8s-hpc", "llm-lab"}
 IMPACT_EXEMPT_DOMAINS = {"science-physics"}
 POSTS_DIR = "_posts"
@@ -172,24 +178,20 @@ def section(body, level, title, start=0, end=None):
     return body[m.end():stop], m.start(), stop
 
 
-def check_impact(body):
+def check_depth(body, created):
     errs = []
-    text, start, stop = section(body, 2, IMPACT_HEADING)
-    if text is None:
-        return [f"缺少「## {IMPACT_HEADING}」段落（第一階、第二階、最強反方論點，AGENTS.md 第 5 節）"]
-    ev = re.search(rf"^##\s+{EVIDENCE_HEADING}", body, re.M)
-    if ev and ev.start() < start:
-        errs.append(f"「## {IMPACT_HEADING}」須放在「## {EVIDENCE_HEADING}」之前")
-    for name, min_len, needs_year in IMPACT_SUBSECTIONS:
-        sub, _, _ = section(body, 3, name, start, stop)
-        if sub is None:
-            errs.append(f"「## {IMPACT_HEADING}」缺少「### {name}」小節")
-            continue
-        n = cjk_len(prose(sub))
-        if n < min_len:
-            errs.append(f"「### {name}」只有 {n} 字，至少 {min_len} 字")
-        if needs_year and not re.search(r"(19|20)\d\d", sub):
-            errs.append(f"「### {name}」須有附日期的歷史先例或附時間範圍的預測（至少出現一個年份）")
+    main, _ = split_sections(body)
+    year = (created or dt.datetime.now(NEW_POST_CUTOFF.tzinfo)).year
+    paragraphs = re.split(r"\n\s*\n", main)
+    precedent = any(
+        LINK_RE.search(p) and any(int(y) < year for y in re.findall(r"((?:19|20)\d\d)\s*年", p))
+        for p in paragraphs
+    )
+    if not precedent:
+        errs.append("正文缺少有日期、附來源連結的前例（同一段需有早於發文年份的「YYYY 年」與外部連結）")
+    future_year = any(int(y) > year for y in re.findall(r"((?:19|20)\d\d)\s*年", main))
+    if not (future_year or FUTURE_RE.search(main)):
+        errs.append("正文缺少附時間範圍的預判（例如「2027 年底前」「未來 12 個月」）")
     return errs
 
 
@@ -211,11 +213,15 @@ def lint(path):
     for key in ("title", "date", "domain", "categories", "description"):
         if not fm.get(key):
             errs.append(f"front matter 缺少 {key}")
-    if new_format and not takeaways:
-        errs.append("front matter 缺少 takeaways（3–6 條 who＋value，AGENTS.md 第 3 節）")
-    if not new_format and not takeaways and not summary:
-        errs.append("front matter 缺少 takeaways 或 summary")
-    if takeaways is not None:
+    lede = fm.get("lede")
+    if new_format:
+        if not lede:
+            errs.append("front matter 缺少 lede（180–450 字導言散文，AGENTS.md 第 3 節）")
+        elif not LEDE_RANGE[0] <= len(str(lede)) <= LEDE_RANGE[1]:
+            errs.append(f"lede 須為 {LEDE_RANGE[0]}–{LEDE_RANGE[1]} 字（目前 {len(str(lede))} 字）")
+    elif not (lede or takeaways or summary):
+        errs.append("front matter 缺少 lede")
+    if takeaways is not None and not new_format:
         errs.extend(check_takeaways(takeaways))
     domain = fm.get("domain")
     if domain and domain not in DOMAINS:
@@ -241,6 +247,8 @@ def lint(path):
                 errs.append(f"{field}使用模板化{label}")
 
     summary_text = " ".join(summary) if isinstance(summary, list) else ""
+    if lede:
+        summary_text += " " + str(lede)
     if isinstance(takeaways, list):
         summary_text += " " + " ".join(f"{t.get('who', '')} {t.get('value', '')}" for t in takeaways if isinstance(t, dict))
     whole = "\n".join([title, desc, summary_text, prose(body)])
@@ -256,8 +264,15 @@ def lint(path):
         errs.append(f"缺少「## {EVIDENCE_HEADING}」段落（保留條件集中於此）")
 
     exempt = fm.get("series") in IMPACT_EXEMPT_SERIES or domain in IMPACT_EXEMPT_DOMAINS
-    if new_format and not exempt:
-        errs.extend(check_impact(body))
+    if new_format:
+        public = "\n".join([title, desc, str(lede or ""), prose(body)])
+        m = FRAMEWORK_TERMS.search(public)
+        if m:
+            errs.append(f"出現分析框架詞彙「{m.group(0)}」；把分析寫成具體內容，不外顯框架（AGENTS.md 第 5 節）")
+        if LIST_LABEL_RE.search(body):
+            errs.append("出現「對使用者／對競爭者：」式的逐一列舉；改寫成以公司或角色為主詞的敘述")
+        if not exempt:
+            errs.extend(check_depth(body, created))
 
     main, _ = split_sections(body)
     main_prose = prose(main)

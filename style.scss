@@ -541,6 +541,19 @@ p {
 .article-summary li + li {
   margin-top: 4px;
 }
+.article-lede {
+  margin: 26px 0 0;
+  max-width: 760px;
+  font-family: var(--serif);
+  font-size: 19px;
+  line-height: 1.85;
+  color: var(--quote-ink);
+}
+@media (max-width: 640px) {
+  .article-lede {
+    font-size: 17px;
+  }
+}
 .article-takeaways dl {
   margin: 0;
 }
