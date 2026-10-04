@@ -33,13 +33,8 @@
   title: 產業與供應鏈
   english: INDUSTRY & SUPPLY CHAINS
   description: 公司競爭力、產品、市場供需、客戶關係與價值分配。
-- key: investing
-  number: '08'
-  title: 投資與交易
-  english: INVESTING & TRADING
-  description: 盈利預期、估值、機構資金、價量與進退場條件。
 - key: science-physics
-  number: '09'
+  number: '08'
   title: 科學與物理
   english: SCIENCE & PHYSICS
   description: 自然現象、材料物性、物理機制、實驗與理論研究。
