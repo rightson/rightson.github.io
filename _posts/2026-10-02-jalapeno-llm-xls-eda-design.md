@@ -1,237 +1,266 @@
 ---
 layout: post
-title: "Jalapeño 用通用模型探索設計，XLS 與 EDA 接手成果驗證"
+title: "OpenAI 用通用 LLM 最佳化 Jalapeño，EDA 的 AI 加值開始面臨競爭"
 date: 2026-10-02 02:53:27 +0800
 domain: ic-design-platform
 categories: ic-design-platform
 permalink: /ic-design-platform/2026/10/02/jalapeno-llm-xls-eda-design.html
-description: "Jalapeño 由軟體工作負載決定架構，以通用模型與 XLS 加快設計探索，再經 EDA、bring-up 與量產驗證交付；NUMA 映射、benchmark 條件與機群調度共同決定實際收益。"
+description: "OpenAI 以通用 LLM 與 XLS 改善 Jalapeño 的設計，驗證與 signoff 沿用 EDA。設計公司可以自行取得模型帶來的加值，EDA 廠商的內建 AI 得靠完整設計流程的成果競爭。"
+takeaways:
+  - who: "OpenAI"
+    value: "OpenAI 用沒有做 IC 設計專用微調的 LLM 協助 Jalapeño 最佳化，其中一例省下超過 13% die area，修改多在 XLS 完成，團隊再以既有驗證與 EDA 流程確認功能和實作結果。"
+  - who: "IC 設計團隊"
+    value: "IC 設計團隊可以把獨立 LLM 接到現有工具，自己取得模型帶來的設計收益，也要自行負擔上下文整理、工具串接、版本管理與驗證工作，這些使用經驗會逐步留在公司內部。"
+  - who: "EDA 工具商"
+    value: "EDA 工具商的內建 AI 會面對現有 EDA 加獨立 LLM 的比較，若能持續更快達到相同 PPA、節省整合與工程時間，就有額外收費的理由，產品競爭也會更直接落到完整設計流程的成果。"
+  - who: "Broadcom"
+    value: "Broadcom 以 IP、介面、實體整合與量產取得能力承接 OpenAI 的設計，客戶掌握更多架構與前段工作後，turnkey 服務的分工會改變，夥伴需要靠可交付的系統與產能持續證明價值。"
 ---
 
-Jalapeño 的開發經驗顯示，通用 LLM 可以協助晶片原始碼最佳化，收益卻要放回軟體與硬體共同決策的流程衡量：先確認工作負載能映射到架構，再用模型加快探索，以 EDA 與完整驗證採納候選，最後在矽晶片及資料中心機群中檢驗成果。Richard Ho 在 Ian Cutress 的採訪中報告一個節省超過 13% die area 的案例，使用的內部模型未針對該硬體任務微調，signoff 仍走標準 EDA 流程。[採訪來源](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
+OpenAI 設計 Jalapeño 時，用沒有做 IC 設計專用微調的內部 LLM 協助最佳化，Richard Ho 在採訪中提到，其中一個案例省下超過 13% die area。模型只比當時公開版本稍微領先，設計修改多在 XLS 程式碼上完成，最後仍用標準 EDA 流程 signoff。設計公司因此多了一種選擇：把前沿 LLM 接到現有 EDA 流程，直接改善自己的設計。[採訪來源](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
 
-晶片設計原本就依賴分工：架構決定計算與資料配置，前段把需求變成可驗證邏輯，後段在製程與物理限制下實作，封裝連接運算、記憶體與介面。LLM 與 agent 的工作組成快速變動，卻要由開發週期長、投入後難以改動的硬體承接。這個落差使可程式性、設計速度及軟體可實作性成為同一個問題；局部面積改善只是其中一段。
+EDA 廠商靠內建 AI 收取額外價值，會面臨更直接的競爭。IDM／fabless 可以把獨立 LLM 接到既有工具，自己建立設計方法、累積最佳化經驗。這會把一部分 AI 加值留在設計公司手上。Jalapeño 展示了這條路：模型協助修改，XLS 提供適合操作的硬體描述，EDA 負責驗證與實作。
 
-本文以 More than Moore 的 Richard Ho 採訪為主要技術來源，刊出日期依補充整理為 **2026 年 9 月 30 日**；[YouTube 錄影](https://youtu.be/8s7uYtCM1bc)與文章是同一場訪談，不算兩份獨立佐證。最初的九項觀察來自這篇 [Facebook 貼文](https://www.facebook.com/share/p/1CEZyFpDTh/?mibextid=wwXIfr)。訪談內容依中譯節錄與補充整理轉述，技術補充另連結官方文件；以下的假設算例、驗收流程與未公開連線均標為作者分析或參考設計。
+這條路值得走，因為模型變化很快，晶片從開發到量產卻需要很長時間。硬體團隊要加快設計，又得保留可程式性，讓後來的工作負載能跑在同一套硬體上。LLM 能增加可探索的設計方案，軟體與 EDA 團隊則決定哪些方案值得實作。下圖把這個分工放回設計流程來看。
 
 <figure>
 <a href="/images/ic-design-platform/2026-10-02/jalapeno-design-flow.svg"><img src="/images/ic-design-platform/2026-10-02/jalapeno-design-flow.svg" alt="工程師固定規格、版本與目標，LLM 提出 XLS 程式碼候選，compiler 產生 RTL；功能驗證與 EDA 實作提供證據，由工程師決定採納，失敗候選回到探索。" width="600" height="1050"></a>
-<figcaption>圖一：作者參考流程。依<a href="https://morethanmoore.substack.com/p/interview-with-richard-ho-openai">採訪</a>所述的模型最佳化、XLS 與標準 EDA signoff，以及<a href="https://github.com/google/xls/blob/1f1e152a856d223eaa474f01d67abd8e5ec727c7/README.md">XLS 官方工具鏈</a>整理；版本固定、驗收順序與回退連線為作者設計，非 OpenAI 公開內部架構。</figcaption>
+<figcaption>圖一：依據<a href="https://morethanmoore.substack.com/p/interview-with-richard-ho-openai">採訪</a>與<a href="https://github.com/google/xls/blob/1f1e152a856d223eaa474f01d67abd8e5ec727c7/README.md">XLS 工具鏈</a>整理的參考設計，包含版本固定、功能驗證、實作及失敗後回到原版本的做法。</figcaption>
 </figure>
 
-沿圖往下看，模型輸出的是候選修改；compiler、驗證與實作才逐步回答候選是否可用。這個責任分配能解釋為什麼未做 IC 設計專用微調的模型仍可能有價值，也能解釋為什麼模型再強都不能自行宣告 tapeout。
+模型負責提出修改，XLS 把高階描述轉成 RTL，驗證與 EDA 工具檢查功能和實作結果。工程師要決定修改能否採用，也要確認相關報告對應同一版設計。這套分工讓模型能參與探索，同時沿用晶片設計原有的檢查方法。
 
-## 架構定案前，先讓編譯器、kernel 與推論團隊走通
+## 架構先讓 compiler、kernel 與推論團隊確認
 
-採訪前言的整理將 Jalapeño 定位為**推論加速器**，Broadcom 是設計夥伴，Celestica 負責板卡與機架整合。這裡的推論用途也包含研究與訓練流程中的模型執行；它不能被概括成只服務終端使用者。Ho 提到 reasoning 與強化學習迴圈讓推論需求的重要性浮現，工作負載的變化直接影響架構重心。[採訪：架構動機與前言](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
+Jalapeño 定位為推論加速器，Broadcom 是設計夥伴，Celestica 負責板卡與機架整合。推論也會出現在研究和訓練流程裡，例如強化學習迴圈中的模型執行。Ho 提到，他在 2023 年加入 OpenAI 時，reasoning 的可行性開始浮現，這讓推論需求直接影響架構方向。[採訪：架構動機](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
 
-下列規格依採訪前言的補充整理列出，屬來源報告，未在本文重現量測。它們用來界定討論尺度，不能取代模型服務效能。
+採訪前言列出的規格如下：
 
-| 範圍 | 採訪整理所列規格 | 判讀時要保留的條件 |
+| 項目 | 規格 | 比較時需要知道的條件 |
 | --- | --- | --- |
-| 單顆裝置 | 一顆運算 die、一顆 I/O chiplet；216 GiB HBM4、15.4 TB/s | 容量與標稱頻寬不代表全部 kernel 都能有效使用 |
-| 功耗 | 峰值 700 W，持續運作約 550 W | 測試負載、量測邊界與平均窗口仍需核對 |
-| 系統範圍 | 128 顆構成一個 local domain，2,048 顆構成一套系統 | Local domain 不能自行推定為快取一致性或故障隔離範圍 |
-| 運算峰值 | 2,048 顆系統在 FP4 下約 27 EFLOP/s | 低精度運算峰值不能直接換算成合格輸出 tokens/s |
+| 單顆裝置 | 一顆運算 die、一顆 I/O chiplet；216 GiB HBM4、15.4 TB/s | kernel 能用到多少頻寬，取決於存取與排程 |
+| 功耗 | 峰值 700 W，持續運作約 550 W | 負載、量測範圍與平均時間尚未列出 |
+| 系統配置 | 128 顆構成一個 local domain，2,048 顆構成一套系統 | local domain 的名稱未交代快取一致性或故障隔離範圍 |
+| 運算峰值 | 2,048 顆系統在 FP4 下約 27 EFLOP/s | 峰值算力還要經過模型與服務測試，才能得到 tokens/s |
 
-表二：依[採訪前言](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)的補充整理，非本文實測；單顆功耗與整套系統算力不可混用分母。
+規格來源：[採訪前言](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)。單顆功耗與整套系統的算力，要用各自的範圍比較。
 
-Ho 描述，架構定案前的主要利害關係人是 compiler、kernel 最佳化與推論團隊，團隊以快速且準確的模擬器展示預期效果，讓軟體端先認同再推進。硬體與研究團隊同處一地、共用會議與資訊，降低了需求往返的距離。這是公開訪談中的協作方式，不代表模擬器原始碼、誤差範圍或全部內部介面已公開。[採訪：軟體先行與組織協作](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
+Ho 說，架構定案前主要要說服的是 compiler、kernel 最佳化與推論團隊。他們先做又快又準的模擬器，展示工作負載跑上去的效果，軟體團隊認同之後才繼續推進。硬體與研究團隊也在同一個地方工作，共用會議和資訊，讓設計需求可以直接討論。[採訪：軟體先行](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
 
-作者認為，這個順序能提早暴露三種不同失敗：運算可表達但 compiler 難以映射，映射成功但 kernel 無法取得預期效率，局部 kernel 很快但整個服務被資料搬移或排程拖慢。若只展示一個理想算子的峰值，這些問題會延後到架構難以修改時才浮現。因此架構評估的交付物應包括代表性模型、映射策略、kernel 路徑與服務假設，讓下一階段知道效能承諾基於什麼。
+這個順序很合理。架構能表達某種運算，compiler 未必能有效映射；compiler 映射成功，kernel 未必跑得快；kernel 很快，整個服務又可能卡在資料搬移或排程。若前期只看理想算子的峰值，等 RTL 和實體設計已經投入大量工作，才發現軟體用不起來，修改的成本會很高。
 
-可程式性也有具體代價：保留選項可能增加控制、儲存與編譯器工作，固定功能則可能有較高局部效率。Ho 從 TPU 經驗提出避免過度擬合單一模型的教訓；作者將它理解為讓新工作負載有可承接的路徑。這不保證未來所有模型都能有效映射，也不代表每個功能都應做成可程式。[採訪：刻意避開的陷阱](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
+因此，架構評估至少要拿出代表性模型、compiler 映射方式、kernel 執行路徑和服務設定。這些資料讓後面的工程師知道，效能估計依賴哪些假設，哪些地方還需要補軟體。
 
-## 13% 面積改善與九個月時程，分母決定了結論
+Ho 從 TPU 的經驗學到，要避免把架構過度擬合到某一個模型。LLM 與 agent 的工作組成會變，保留可程式性可以多留一些調整空間。不過，控制邏輯、儲存與 compiler 都要付出成本；固定功能在適合的工作上仍可能比較有效率。哪些功能值得保留彈性，要從預期的模型變化判斷。[採訪：可程式性](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
 
-Ho 描述的起因很具體：團隊依模擬與邏輯面積估計設定效能目標，後來發現設計無法完全放進預定空間，必須考慮犧牲效能。他們轉向模型尋找最佳化方法，並報告一個節省超過 13% die area 的例子。這是受訪者報告的工程成果，節錄未提供原始 netlist、面積報告、製程、corner 或可重現的對照實驗。[採訪：機器學習輔助設計段落](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
+## 13% 面積改善，模型已經參與設計收斂
 
-因此，13% 可以支持「模型協助找到了有實質價值的修改」，不能直接換算成每顆晶片成本下降 13%。必須先知道比較的是哪一版設計、同樣的效能限制是否成立、量測在何階段完成，以及哪些固定面積不會跟著邏輯一起縮小。記憶體、I/O、實體留白或封裝限制都可能改變最後收益；本文不替 Jalapeño 補造這些未披露條件。
+Ho 描述的問題是：依照模擬與邏輯面積估計設定的效能目標，後來發現放不進原先預定的空間。團隊原本可能要降低效能，於是請模型找最佳化方法，其中一個案例省下超過 13% die area。[採訪：AI 輔助設計](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
 
-一個**假設算例**能說明範圍的重要性。若原始面積為 100 個任意面積單位，其中可改寫邏輯占 40，其他部分固定為 60；可改寫部分縮小 13%，全體只降到 94.8，改善是 5.2%。若 13% 本來就以整顆 die 為分母，則是降到 87。兩者回答不同問題。這個算例不是重解釋 Ho 的數字，而是說明讀面積成果時必須保留分母。
+13% 的意義在於，模型找到的修改足以影響設計能否達標。原本可能得犧牲效能的問題，有了另一個解法，LLM 已經參與設計收斂。至於成本收益，還要看記憶體、I/O、實體留白與封裝占比；比較其他方法時，則需要相同 baseline、製程與 corner 的面積報告。
 
-九個月開發時程也需要起訖點：從架構定案、RTL 開始、第一次 tapeout，或拿到可用矽晶片，會得到不同的週期。現有採訪節錄支持「模型使團隊更快接近效能目標」，但沒有交代九個月的定義與未使用模型的對照週期。因此，九個月不能被當成已量測的 AI 加速倍率，更不能把全部時程壓縮歸因於 LLM。[採訪：時程與效能取捨段落](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
+用一個假設算例來看：原始面積是 100 個任意面積單位，其中可改寫邏輯占 40，其他部分固定為 60。若可改寫部分縮小 13%，總面積會變成 94.8，全體改善 5.2%；若 13% 本來就以整顆 die 為分母，則會降到 87。這個算例只說明分母的差異，沒有重新解釋 Ho 報告的成果。
 
-工程上值得追問的是：模型減少了哪一段關鍵路徑？少一次原始碼重寫、少一次實作迭代，與平行跑更多候選，會留下不同證據。總週期還受 IP 取得、驗證、後段收斂和製造限制影響。只有知道哪些等待被消除，才可能判斷另一家公司能否重現收益。
+時程也是同一個問題。Ho 說，若沒有模型，即使是優秀工程師，也得在更長開發週期和較低效能之間取捨。模型替團隊增加了同時達到時程與效能目標的機會。[採訪：時程與效能取捨](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
 
-## 未做硬體專用微調，仍需要一套使用方法
+設計團隊導入時，應優先找這種卡住效能與面積的工作。少一次原始碼重寫、少一輪實體收斂，或同時跑更多方案，都可能縮短 critical path。把模型用在這些地方，比先替所有工具加上對話介面更接近工程收益。
 
-Ho 回答模型是否微調時，表示使用原始模型，許多是比公開版本稍微領先的內部模型。他也說團隊請機器學習研究人員協助找出取得最佳結果的方法。兩個陳述應一起讀：模型沒有針對這個設計任務再微調，使用過程仍有研究與工程 know-how。[採訪：模型與 EDA 夥伴段落](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
+## 模型可以通用，設計 know-how 要自己建立
 
-Ho 對模型為何有效的解釋，是模型能在自己的 context 中同時考慮不同設計區塊，系統性找出可以調整的「軟點」，而人較難端到端串起這些關聯。這是受訪者對成功原因的解釋，沒有附上上下文大小、輸入範圍或消融實驗；不能據此宣稱整顆晶片的全部原始碼一次放入模型，或證明某種特定推理演算法。[採訪：模型如何掌握設計關聯](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
+Ho 回答模型有沒有微調時，強調使用原始模型，許多是略領先公開版的內部模型。他同時提到，團隊請機器學習研究人員協助找出取得最佳結果的方法。也就是說，沒有 IC 設計專用微調，仍然需要研究人員和工程師知道怎麼使用。[採訪：模型與研究團隊](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
 
-作者推論，跨區塊視野的價值在於改寫相依關係：某段運算是否重複、兩個模組是否需要同時持有中間結果，以及某個局部選擇是否讓下游更難實作。這與只調整一個數值參數的搜尋不同。不過，模型若遺漏介面條件、時序假設或合法輸入範圍，也會提出看似全局合理的錯誤修改；上下文廣度必須由獨立驗收補上可靠性。
+Ho 對模型為何有效的解釋，是模型能在 context 中同時考慮不同區塊，找出設計裡可以調整的地方。工程師各自理解某個區塊，要把全晶片的關聯串起來很難。這個解釋指向一種值得優先嘗試的用法：把相依區塊與限制一起交給模型分析。[採訪：模型如何理解設計](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
 
-「沒有 IC 設計專用微調」不等於「從未接受任何 post-training」。通用模型本身可能經過指令與推理能力的後訓練，採訪節錄沒有公開完整訓練歷程；不能由這個回答推斷所用模型是只有預訓練的 base model。同樣地，內部版本稍微領先公開模型，也不保證今天隨便選一個公開 LLM，就能得到相同面積與週期改善。
+跨區塊分析確實可能找到局部最佳化漏掉的機會。例如兩段運算是否重複、兩個模組是否需要同時保存中間結果，或上游的一個選擇是否讓下游多出控制邏輯。這類修改要同時理解功能和相依關係；如果模型漏掉介面、時序或合法輸入範圍，修改也可能看起來合理，實際上卻錯了。
 
-作者判斷，這個案例削弱了「必須等 EDA 廠商完成各模組 AI 化，設計公司才有收益」的假設。IDM 或 fabless 團隊可以先評估獨立前沿 LLM 與現有流程的組合。不過，可採用的模型只是起點：要挑選可修改的設計範圍、提供足夠上下文、保留驗收規則，並把修改交回工具執行。這些能力決定模型建議能否變成工程成果。
+這裡的「原始模型」指沒有再做 IC 設計專用微調。通用模型本身仍可能有指令或推理能力的 post-training。對導入決策有用的資訊是，團隊可以先用現成模型處理設計問題，再依結果決定是否需要領域訓練。
 
-Ho 認為其內部模型在相關工作上比 EDA 公司提供的方案強，這是他的使用觀察，沒有附上跨廠商、相同設計與預算的公開 benchmark。它可以形成研究問題，不能被擴大成「LLM 全面勝過 EDA」；雙方甚至可能負責不同層次，一邊產生原始碼候選，一邊解決實體實作或數值分析。[採訪：內部模型的評價](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
+這也是 EDA 廠商面臨的競爭壓力。模型能力可以從工具之外取得，客戶就有條件比較「現有 EDA 加獨立 LLM」與「EDA 內建 AI」。內建功能若能省下整合、搜尋或收斂時間，客戶有理由付費；設計團隊自己完成這些工作，也能把經驗留在內部。
 
-| 導入方式 | 適合的工程情境 | 團隊要付出的代價 |
+know-how 就在這些工作裡：選出適合修改的模組，提供設計意圖、原始碼和限制，再把修改送回既有工具檢查。團隊每跑完一輪，就能累積哪些資訊有用、哪些修改常失敗，以及哪些結果值得進一步實作。這些經驗會決定通用模型在自己設計上能發揮多少能力。
+
+Ho 也直接表示，自家內部模型在相關工作上，比 EDA 公司圍繞模型開發的方案強。這是受訪者的使用判斷，而客戶能自行比較兩條導入路線，已經足以改變工具商的競爭方式。原始碼修改、工具參數搜尋和實體分析各有適合的方法，產品要用實際工作成果說服客戶。[採訪：對 EDA 方案的看法](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
+
+| 導入方式 | 適合的問題 | 團隊需要處理的工作 |
 | --- | --- | --- |
-| 獨立 LLM 接既有 EDA | 需要跨程式碼與設計意圖提出新候選，且能自行建立驗收 | 維護上下文、執行介面、版本與結果追溯 |
-| EDA 內建 AI 功能 | 搜尋變數與工具資料緊密相連，已有可比較的分析目標 | 核對功能範圍、資料可攜性與工具版本限制 |
-| 既有 compiler／專用最佳化器 | 問題已形式化，合法變換與目標相對穩定 | 搜尋範圍較固定，跨規格推理需由工程師補足 |
+| 獨立 LLM 加既有 EDA | 跨原始碼與設計意圖提出修改 | 提供 context，串接工具，保存版本並驗證結果 |
+| EDA 內建 AI | 搜尋變數與工具資料密切相關，目標已明確 | 確认功能範圍、資料可攜性與版本限制 |
+| compiler／專用最佳化器 | 合法變換與目標已形式化、相對穩定 | 補足工具搜尋範圍以外的設計判斷 |
 
-表一：作者對導入選擇的比較，非三種方法在 Jalapeño 上的實測。通用模型、工具內建 AI 與專用最佳化可以共存；選擇應取決於問題位置與完整交付成本。
+上表是導入方式的比較，並非 Jalapeño 實測。三種方式可以一起使用，實際選擇要看問題和整合成本。
 
-## XLS 把模型的修改接到可檢查的硬體語意
+## XLS 讓模型比較容易理解硬體描述
 
-Ho 說團隊大量使用 XLS，許多模型最佳化發生在 XLS 程式碼上；較接近 Rust 的語法與語意，讓軟體背景的工程師與模型較容易理解。這提供了一個關鍵機制：改變模型操作的抽象層，可能比先增加領域微調更快打開可用的搜尋空間。[採訪：XLS 段落](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
+Ho 說團隊大量使用 XLS，模型最佳化的部分多半是 XLS 程式碼。語法與語意接近 Rust，對軟體背景的人比較容易理解，當時的模型也比較懂軟體，對 Verilog／SystemVerilog 仍有困難。使用 XLS 讓團隊能先利用模型已經比較熟悉的表示方式。[採訪：XLS](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
 
-官方文件將 **XLS（Accelerated HW Synthesis）**定位為高階硬體綜合工具鏈，可從高階功能描述產生可綜合的 Verilog／SystemVerilog。這裡要區分工具鏈與語言：**DSLX** 是其中受 Rust 啟發、以不可變運算式與資料流為中心的語言，具有固定大小物件、任意位元寬度等硬體特性；它不是一般 Rust 程式直接轉成晶片。[XLS README](https://github.com/google/xls/blob/1f1e152a856d223eaa474f01d67abd8e5ec727c7/README.md)、[DSLX Reference](https://github.com/google/xls/blob/1f1e152a856d223eaa474f01d67abd8e5ec727c7/docs_src/dslx_reference.md)
+XLS（Accelerated HW Synthesis）是高階硬體綜合工具鏈，可以從高階功能描述產生可綜合的 Verilog／SystemVerilog。其中的 DSLX 是受 Rust 啟發的語言，以不可變運算式與資料流為主，包含固定大小物件、任意位元寬度等硬體特性。它和一般 Rust 程式還是有差別。[XLS README](https://github.com/google/xls/blob/1f1e152a856d223eaa474f01d67abd8e5ec727c7/README.md)、[DSLX Reference](https://github.com/google/xls/blob/1f1e152a856d223eaa474f01d67abd8e5ec727c7/docs_src/dslx_reference.md)
 
-具體路徑是 DSLX 描述功能，轉成 XLS IR，經最佳化及排程，再生成 RTL。XLS IR 保留資料流與固定寬度型別；排程決定運算放在哪個 pipeline stage，code generation 將結果轉成具有 ports、registers 等 RTL 物件的 block。官方也提供 IR 求值、等價檢查與 Verilog 生成工具。[IR 語意](https://github.com/google/xls/blob/1f1e152a856d223eaa474f01d67abd8e5ec727c7/docs_src/ir_semantics.md)、[工具索引](https://github.com/google/xls/blob/1f1e152a856d223eaa474f01d67abd8e5ec727c7/docs_src/tools.md)
+流程是 DSLX 描述功能，轉成 XLS IR，經最佳化與排程，再生成 RTL。IR 保留資料流和固定寬度型別，排程決定運算放在哪一個 pipeline stage，code generation 再產生 ports、registers 等 RTL 物件。XLS 也有 IR 求值、等價檢查與 Verilog 生成工具。[IR Semantics](https://github.com/google/xls/blob/1f1e152a856d223eaa474f01d67abd8e5ec727c7/docs_src/ir_semantics.md)、[XLS Tools](https://github.com/google/xls/blob/1f1e152a856d223eaa474f01d67abd8e5ec727c7/docs_src/tools.md)
 
-高階表示的收益，在於模型可以先思考運算的關係，而不用同時手寫每個暫存器與控制細節。例如兩個分支是否可以共用運算、某個位元寬度是否足夠、條件判斷能否前移，都是可提出的候選。但共用資源可能增加 mux 與控制相依，縮窄位元也可能丟掉合法輸入；「程式碼更短」沒有自行保證面積更小。
+模型在這一層可以先分析運算關係，少處理一些暫存器與控制細節。例如兩個分支能否共用運算、位元寬度是否足夠，或條件判斷能否前移。不過，共用資源可能增加 mux 與控制相依；縮窄位元可能丟失合法結果。程式碼變短，最後的電路未必比較小。
 
-這裡有兩個互補機制。第一，明確型別與資料流讓部分語意能被 compiler 或 solver 檢查，模型的自然語言理由不再是唯一依據。第二，把 pipeline 與實體結果交回工具量測，能發現高階等價修改的物理代價。抽象層提高探索效率，驗收仍必須穿過抽象層。
+型別、資料流與工具檢查讓這些修改有辦法被逐一確認。compiler 或 solver 可以檢查部分語意，排程與實體實作則會顯示 pipeline、時序和面積的代價。高階描述比較容易修改，也要一路檢查到產生的硬體。
 
-這也說明 XLS 的邊界。純函式描述輸入到輸出的映射；有狀態的 proc 還要處理跨時間狀態與 channel 通訊，最後 block 才具體表示 RTL。函式等價不自動證明 reset、backpressure、整合 latency 與協定行為全部正確。不同抽象層各自有檢查義務，不能只拿一份高階測試通過就放行整顆晶片。[XLS 的 function／proc／block 定義](https://github.com/google/xls/blob/1f1e152a856d223eaa474f01d67abd8e5ec727c7/docs_src/ir_semantics.md)
+XLS 的 function、proc、block 各有不同範圍。純函式描述輸入到輸出的映射，proc 還有跨時間的狀態與 channel 通訊，block 才具體表示 RTL。函式等價通過之後，reset、backpressure、整合 latency 和協定行為仍需要自己的檢查。[XLS IR 定義](https://github.com/google/xls/blob/1f1e152a856d223eaa474f01d67abd8e5ec727c7/docs_src/ir_semantics.md)
 
-## 從模型候選到 signoff，不能共用一個「正確率」
+## 模型的修改，還是要經過驗證與 signoff
 
-Ho 明確表示短期內不認為模型會取代 EDA，仍以標準 EDA 流程 signoff。他用數億個 gates 的設計說明，即使模型號稱 99.99% 正確，也不足以直接 tape out。這是一個規模與責任的提醒，並非一項模型準確率測試。[採訪：模型限制與驗證段落](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
+Ho 說，短期內模型不會取代 EDA，signoff 仍走標準流程。他用數億個 gates 的設計說明，即使模型有 99.99% 正確率，也不夠直接 tapeout。這個數字是在說明精確度要求，並非模型準確率的實測。[採訪：模型限制](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
 
-若把三億個 gates 與萬分之一失誤率機械式相乘，會得到三萬。**這只能當作說明尺度的算術，不能當成晶片 bug 預測**：模型建議的錯誤率、gate 數與實際失效並不是獨立同分布的事件。工程驗收需要回答特定設計性質是否成立，不能用平均正確率覆蓋少數致命反例。
+晶片驗證要檢查具體行為：某個合法輸入是否丟資料，reset 後狀態是否正確，修改是否保留原有功能。一個會讓晶片失效的反例，就足以否決修改。把三億 gates 乘上錯誤率只是在做尺度比喻；設計是否可用，要由這些具體檢查決定。
 
-Ho 還提到，有些模型最佳化在當下未被團隊完全理解，快速推進的壓力使完整驗證更重要。作者認為，這應改變工作的分配：工程師可以縮短手工探索時間，卻要維持規格、輸入假設與採納責任。模型產生修改與模型解釋修改，可能共享同一個錯誤前提；第二次詢問模型不能取代獨立工具證據。[採訪：未完全理解的原始碼最佳化](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
+Ho 還提到，團隊一開始沒有完全理解某些模型做的原始碼最佳化，趕時程時只能靠完整驗證確認沒有破壞其他部分。工程師因此可以少花時間手工搜尋，但規格、輸入假設和採用修改的責任仍在。再問一次模型為什麼這樣改，可能只得到基於同一個錯誤前提的解釋。[採訪：原始碼最佳化與驗證](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
 
-下面用一個**作者設計的假設案例**走完這條路徑。某個運算單元將兩個 16-bit unsigned 輸入相加，輸出定義為完整 17-bit 結果。模型因觀察到測試資料數值偏小，建議先在 16-bit 寬度相加，再擴充到 17-bit，希望減少邏輯。對小數值它可能看起來完全正確，對 65,535 加 1 卻會先溢位成零；正確結果應是 65,536。
+用一個假設的加法器就能看出問題。規格要求兩個 16-bit unsigned 輸入相加，輸出完整的 17-bit 結果。模型看到測試資料數值都很小，建議先用 16-bit 相加，再擴充成 17-bit，想減少邏輯。小數值測試會通過，但 65,535 加 1 會先溢位成 0，正確輸出應該是 65,536。
 
-第一步固定規格與 baseline，明確禁止模型把輸入限制改成「總和不超過 65,535」。第二步保存候選，將原設計與候選依相同型別語意求值，加入邊界值；適用時用等價檢查找反例。若 proof 未完成或 timeout，就保持未知，不把沒有找到反例當成通過。XLS 官方工具可以提供 IR 求值與 IR 等價檢查，但其可處理範圍仍要依實際設計核對。[XLS 求值與等價工具](https://github.com/google/xls/blob/1f1e152a856d223eaa474f01d67abd8e5ec727c7/docs_src/tools.md)
+檢查時先固定原規格與 baseline，輸入範圍仍然是所有合法的 16-bit 值。讓原設計和修改版用同樣的型別語意求值，加入邊界值，再視設計使用等價檢查。proof 若 timeout 或未完成，結果就是未知，需要繼續處理。XLS 的 IR 求值與等價工具可用來做這類檢查，實際適用範圍要依工具和設計確認。[XLS Tools](https://github.com/google/xls/blob/1f1e152a856d223eaa474f01d67abd8e5ec727c7/docs_src/tools.md)
 
-第三步是恢復：留下失敗候選、完整輸入與反例，不更新已核准設計；模型可以再提出「先把兩個 operand 擴充，再做 17-bit 加法」的修正。新候選是新版本，重新檢查後才量測 PPA。這不是一次宣稱已執行的 XLS 實驗，數值反例只是可直接重算的型別語意案例。
+找到反例後，保留失敗版本、輸入和反例，正式設計維持原版。下一版若改成「先把兩個 operand 擴充到 17-bit，再相加」，也要重新驗證，通過後才比較 PPA。這是型別語意的假設案例，沒有執行 XLS 工具測試。
 
 <figure>
 <a href="/images/ic-design-platform/2026-10-02/jalapeno-candidate-acceptance.svg"><img src="/images/ic-design-platform/2026-10-02/jalapeno-candidate-acceptance.svg" alt="16-bit 先加後擴充丟失進位；語意驗證保留反例與舊版本，先擴充再相加的新候選重新驗證，通過後才進行 PPA 與整合驗收。" width="600" height="880" loading="lazy"></a>
-<figcaption>圖二：作者假設案例與驗收設計，非 Jalapeño 實際電路。固定寬度運算與工具能力參考<a href="https://github.com/google/xls/blob/1f1e152a856d223eaa474f01d67abd8e5ec727c7/docs_src/dslx_reference.md">DSLX Reference</a>及<a href="https://github.com/google/xls/blob/1f1e152a856d223eaa474f01d67abd8e5ec727c7/docs_src/tools.md">XLS Tools</a>；沒有宣稱已完成工具實測。</figcaption>
+<figcaption>圖二：16-bit 加法假設算例，依據<a href="https://github.com/google/xls/blob/1f1e152a856d223eaa474f01d67abd8e5ec727c7/docs_src/dslx_reference.md">DSLX 型別語意</a>與<a href="https://github.com/google/xls/blob/1f1e152a856d223eaa474f01d67abd8e5ec727c7/docs_src/tools.md">XLS 工具文件</a>說明檢查順序。</figcaption>
 </figure>
 
-第四步回到同一份實作條件。功能正確的候選還要經 synthesis、實體實作與適用的時序／功耗檢查；必要的整合、DFT、實體與封裝驗收仍由對應 owner 負責。若面積縮小卻使時序失敗，或者上游修改已改變介面，就不能沿用上一版本的放行報告。此處為作者提出的交付方法，不是採訪已揭露的 OpenAI 工具清單。
+功能通過後，仍要在相同條件下做 synthesis、實體實作和時序／功耗檢查。面積縮小但時序失敗，這個方案就不合原目標；上游介面改了，原有整合報告也要重新確認。DFT、實體與封裝的檢查，仍由各階段的工程團隊負責。這是可採用的檢查流程，訪談沒有公開 OpenAI 的完整工具清單。
 
-這與本站[配置式設計管理的分析](/ic-design-platform/2026/09/30/nvidia-gdp-multivendor-design-source-of-truth.html)可以銜接：模型讓候選數量增加，配置管理則讓每份結果回到確定的輸入。探索能力越強，越需要防止「候選甲的面積改善」與「候選乙的正確性報告」被拼成不存在的成功設計。
+候選版本變多之後，版本管理也會變重要。修改 A 的面積與正確性報告要一起保存，修改 B 則有自己的一組結果，才有辦法知道哪一版同時通過功能和 PPA。本站另一篇[配置式設計管理文章](/ic-design-platform/2026/09/30/nvidia-gdp-multivendor-design-source-of-truth.html)討論的正是這種跨工具、跨團隊的版本問題。
 
-## I/O 提早回來、A0 帶起軟體、B0 驗證量產，各自降低不同風險
+## I/O chiplet、A0、B0 分別處理哪些工作
 
-補充採訪整理指出，I/O chiplet 先回來，團隊利用部分元件提早做驗證；A0／B0 兩次 stepping 一開始就列入計畫。A0 已具有所需效能功能，主要供軟體 bring-up，B0 在訪談當時進行量產驗證。因此不能將「有 B0」直接解讀為 A0 出錯後才救援，也不能將 B0 在實驗室驗證寫成已完成大量部署。[採訪：投片與 bring-up](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
+採訪中，I/O chiplet 先回來，團隊先用部分元件做驗證；A0／B0 兩次 stepping 則是一開始就規劃好的。A0 已有目標效能所需功能，供軟體 bring-up；B0 在訪談當時進行量產驗證。這個安排把軟體啟動和量產準備分開推進，能提早做的工作就先做。[採訪：投片與 bring-up](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
 
-這裡的 **shift-left** 是把能提前做的工作移到較早階段，例如在全系統到齊前先驗證可取得的介面或啟動路徑。它不會自動覆蓋尚不存在的組合：部分元件通過，仍可能在完整系統整合、其他 corner 或長時間運作下出現新問題。A0 讓軟體能提早接觸真實硬體，B0 的量產驗證則面對另一組放行條件。
+這種 shift-left 做法，把能提早做的驗證往前移。例如全系統還沒到齊，可以先測拿得到的介面和啟動路徑；A0 則讓軟體團隊開始用真正的硬體。完整系統組合、其他 corner 和長時間運作，仍要等相應條件具備才有辦法測。
 
 <figure>
 <a href="/images/ic-design-platform/2026-10-02/jalapeno-software-silicon-feedback.svg"><img src="/images/ic-design-platform/2026-10-02/jalapeno-software-silicon-feedback.svg" alt="工作負載先經編譯器、kernel 與推論團隊在模擬器中評估，設計再經 EDA 驗收；提早取得的 IO chiplet、A0 軟體 bring-up 與 B0 量產驗證提供不同證據，實測差異回饋模型與軟體。" width="600" height="1100" loading="lazy"></a>
-<figcaption>圖三：作者依<a href="https://morethanmoore.substack.com/p/interview-with-richard-ho-openai">採訪補充整理</a>繪製的交付與回饋模型。A0／B0 為預先規劃的 stepping；連線、交付物及差異處理是作者設計，不表示每階段的日期、比例或 OpenAI 內部執行順序。</figcaption>
+<figcaption>圖三：依據<a href="https://morethanmoore.substack.com/p/interview-with-richard-ho-openai">採訪</a>整理的參考設計。A0／B0 是預先規劃的 stepping，交付物與差異處理用來說明各階段的工作。</figcaption>
 </figure>
 
-作者建議把模擬器、FPGA 與矽晶片的相關性當成可維護的工程資料。若同一輸入在三者出現差異，先保存可重現的工作負載、軟體版本與量測條件，再分類為模型近似、實作行為、軟體錯誤或物理限制；原因未明前，降低相關效能預測的可信度，停止用舊預測放行受影響的組態。這是本文提出的失敗處理，不是聲稱 Jalapeño 曾發生某項故障。
+模擬器、FPGA 與矽晶片的結果要能持續對照。假設同一個 workload 出現差異，先留下輸入、軟體版本和量測條件，再確認是模擬近似、硬體實作、軟體錯誤，還是物理限制。原因還沒找到，就暫停沿用受影響的效能預測，避免拿已經不準確的估計繼續決定設計。這是建議的處理方式，並非 Jalapeño 已發生的故障。
 
-相對地，全部等到正式矽晶片才驗證，前期投入較少，問題卻更晚被發現；早期模擬與多階段驗證增加維護成本，也依賴模型足夠準確。Ho 報告模擬、FPGA 與矽晶片的相關性良好，仍將類比及訊號完整性列為不確定處。合理策略是逐步增加與實際系統的關聯證據，而不把一次相關性良好當成所有負載與 corner 都成立。[採訪：模型與矽的相關性](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
+等到正式矽晶片才開始測，可以少維護早期環境，但問題會發現得很晚。模擬與多階段驗證讓團隊較早修正問題，也要付出工具、模型和對照資料的維護成本。Ho 說模擬、FPGA 與矽的相關性良好，類比與訊號完整性仍是較不確定的地方。[採訪：模擬與矽的相關性](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
 
-## 類比風險提醒我們，驗證方法必須符合物理問題
+## 類比與訊號完整性，仍需要工程經驗
 
-採訪中，Ho 把類比部分與訊號完整性列為較難確定的風險，並談到 Broadcom 的相關專長。這支持「數位最佳化的成功不能直接外推到類比與實體介面」，卻不足以證明 AI 完全無法協助類比設計。[採訪：FPGA 與矽晶片對應、類比風險](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
+Ho 在採訪中指出，類比部分和訊號完整性比較難確定，也談到 Broadcom 在這些領域的專長。工程師的物理經驗在這裡仍有很高價值。數位修改可以依靠明確的型別、邏輯和等價關係檢查；類比與高速介面則要面對製程、訊號和實際量測，這也讓 Broadcom 的相關能力持續有用。[採訪：類比風險](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
 
-作者解讀是，工程師的物理經驗仍有重要位置：離散邏輯測試沒有覆蓋的問題，不能靠增加同類測試就自動解決。若風險涉及訊號完整性，驗收要能對應相關物理模型與量測；若是數位協定，則要回到交易與時序語意。哪些方法能夠提供足夠證據，取決於問題本身。
+離散邏輯的測試沒有涵蓋訊號完整性時，多跑同樣的測試也補不了這個問題。訊號完整性要用相應的物理模型與量測，數位協定則要檢查交易與時序。數位、類比都在同一顆晶片裡，驗證方法還是各有適用範圍。
 
-Ho 對工具供應商提出的 PCIe 控制器挑戰，正好把這個門檻具體化：符合需求，同時比團隊更快、更好、面積更小，並滿足 PPA。採訪沒有界定 controller 邏輯、PHY、各世代規格與量測條件，所以不能把這段話當成涵蓋所有數位與類比介面的正式 benchmark。[採訪：PCIe 工具評估](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
+Ho 給 EDA／ML 供應商的考題很直接：用 AI 做出符合他們 compliance 要求的 PCIe 控制器，而且比他的團隊更快、更好、面積更小，PPA 也達標，做到了再拿來看。訪談沒有列出 controller／PHY 的範圍、PCIe 世代或量測設定，正式比較時仍要把這些條件補齊。[採訪：PCIe 控制器挑戰](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
 
-可操作的測試應先固定交付範圍，再量「到達可驗收結果的時間」。生成幾百行可編譯程式碼與交付一個符合需求的 IP，差距就在約束、反例、實體證據和整合責任。這也是 EDA 廠商仍能提供價值的地方：把候選變成可靠交付的成本，並不會因模型能力進步而消失。
+這個要求合理。產生幾百行可以編譯的程式碼，後面還有規格、反例、實體限制和整合工作。要比較 AI 工具，就固定交付範圍，量從開始到 IP 通過同樣檢查所需的時間。EDA 廠商如果能把這段做得更快、更容易用，仍然有很清楚的價值。
 
-## 一顆涵蓋多種推論階段的晶片，保留 fleet 的選擇權
+## 一顆晶片涵蓋 prefill、decode，保留調度彈性
 
-Cutress 問到業界常討論的 prefill、speculative decoding 與完整 decode 分工。Ho 的回答從整個資料中心 fleet 出發：一旦把硬體固定分配給某一階段，資本支出與電力配置也跟著被鎖住；工作負載與模型比例變動後，原先買好的比例未必合適。他因此偏好能涵蓋較廣工作範圍、可在不同負載間調度的裝置。[採訪：推論分工與同質硬體](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
+大多數人想到自研 ASIC，會先想到針對特定工作做專用化。Jalapeño 在推論用途上，卻選擇讓同一種裝置涵蓋較廣的工作範圍。Cutress 問到業界常見的 prefill、speculative decoding 與完整 decode 分工，Ho 從整個資料中心 fleet（機群）回答：硬體一旦固定分給某個階段，CapEx 和電力也跟著投入；之後模型與工作比例變了，原來買好的比例未必合適。[採訪：推論分工](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
 
-這是**推論領域內的泛化**，不能擴大為「Jalapeño 像 GPU 一樣支援所有運算工作」。Ho 所說的涵蓋 Pareto 範圍，是架構選擇的主張；節錄沒有提供跨模型、跨階段的完整效能曲線。他也承認正式部署後可能辨識出目前看不出的效率代價。既有 fleet 仍會使用 CPU 與 GPU，並不等於整個資料中心只剩一種處理器。
+如果同一種裝置能在不同工作之間調度，團隊就比較容易把容量重新分配。這是推論用途裡的泛化，範圍仍和 GPU 的全部用途不同。Ho 認為 Jalapeño 能涵蓋整個 Pareto 範圍。他也承認，正式部署後可能才看得出為這種彈性付出的效率代價。
 
-用一個**假設容量模型**看這個取捨：兩種工作 P、D 各配置 50 單位專用容量，總需求為 100。若需求變成 P=70、D=30，且兩種容量不能互換，實際最多服務 50+30=80，仍有 20 單位閒置。若 100 單位共用容量都能服務兩種工作，即使每單位有效能力因泛用設計降為 0.9，也可能服務 90。
+他並不反對 CPU、GPU 與推論加速器並存，fleet 仍會使用這些裝置。他比較擔心的是，把某一群硬體永久指定給某一種工作，之後很難隨需求調整。[採訪：異質基礎設施](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
 
-這個算例假設工作可在同一尺度衡量、兩者能獨立排程，沒有計入資料搬移、記憶體容量與服務延遲限制；它不是 Jalapeño 的效能模型。它只說明局部單位效率與 fleet 利用率可以往不同方向走。專用硬體在比例穩定時可能更好，共用硬體在需求易變時可能更有彈性；部署評估要把兩者放進同一套需求情境。
+用一個假設的容量模型來看。P、D 兩種工作各有 50 單位專用容量，總需求是 100；需求若變成 P=70、D=30，兩種容量又不能互換，最多只能服務 50+30=80，還有 20 單位閒置。若改成 100 單位可共用容量，即使每單位能力因泛用設計降為 0.9，也可能服務 90。
 
-## NUMA 的方向，是讓資料位置成為可利用的成本差異
+這個算例假設工作可換成相同容量單位、獨立排程，省略資料搬移、記憶體與延遲限制。它把取捨說得很清楚：工作比例穩定，專用硬體比較容易發揮效率；比例常變，共用硬體比較容易避免閒置。我認為 OpenAI 以 fleet 調度彈性決定這個方向是合理的，因為模型與推論階段的比例持續在變。部署後要量的是，這份彈性省下多少閒置，以及付出多少單位效率。
 
-Ho 說 NUMA 是正確方向，甚至預期 GPU 團隊可能採取類似路線。技術上，NUMA 的區別是**存取成本隨發起端與記憶體位置而變**；UMA 指較一致的記憶體存取模型，並不是「一塊實體記憶體邏輯切給不同處理器」。記憶體是否共享、位址空間是否統一、快取是否一致，還要分開討論。[採訪：NUMA 段落](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)、[Linux：What is NUMA?](https://github.com/torvalds/linux/blob/d24e8ac715de2e16a53c144005b1863660a5fbea/Documentation/mm/numa.rst)
+## NUMA 的好處，要靠資料與運算一起配置
 
-Linux 的文件用多個 cell、local memory 與互連說明 NUMA，強調要取得可擴展頻寬，多數存取必須落在本地或較近的記憶體。這是一般機制背景，不能據此宣稱 Jalapeño 採用 Linux 式 ccNUMA 或相同一致性協定。[Linux NUMA 定義](https://github.com/torvalds/linux/blob/d24e8ac715de2e16a53c144005b1863660a5fbea/Documentation/mm/numa.rst)
+Ho 認為 NUMA 是正確方向，甚至預期 GPU 團隊也可能走這條路。NUMA（Non-Uniform Memory Access）表示記憶體存取成本，會隨發起存取的運算單元和資料位置改變；UMA 則是存取成本較一致的模型。它們的區別在存取成本，實體記憶體的塊數、位址空間是否統一，以及快取是否一致，還要另外確認。[採訪：NUMA](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)、[Linux：What is NUMA?](https://github.com/torvalds/linux/blob/d24e8ac715de2e16a53c144005b1863660a5fbea/Documentation/mm/numa.rst)
 
-補充採訪整理進一步描述，Jalapeño 將 HBM bank 與運算核心相連，盡量在相應區域完成運算以避免資料搬移。架構有 ring，但 Ho 的說明著重高頻寬路徑；現有材料仍不足以重建全部連線、仲裁與一致性機制。這比單純說「採用 NUMA」更具體：硬體把資料位置的成本差異交給軟體利用，收益取決於模型是否能被有效安排到這些資源。[採訪：記憶體與運算配置](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
+Linux 的 NUMA 文件始於 1999 年 11 月，用多個 cell、本地記憶體與互連來解釋，若要隨規模增加而取得更多頻寬，多數存取就要落在本地或較近的記憶體。這可以幫助理解 NUMA，但 Jalapeño 的具體實作仍要以它公開的架構為準。[Linux NUMA 文件](https://github.com/torvalds/linux/blob/d24e8ac715de2e16a53c144005b1863660a5fbea/Documentation/mm/numa.rst)
 
-Ho 表示當時測過的開源模型都能映射，機器學習也協助映射；這個範圍應保留「當時測過」的條件。長 context 與 KV cache 仍要由 compiler 與 kernel 處理，他也承認極長 context 可能有界限，尚未完成分析。因此不能由一組開源模型通過，外推所有模型、任意序列長度與併發都具有相同效率。[採訪：映射與長 context](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
+Linux 的文件用多個 cell、本地記憶體與互連來解釋，若要隨規模增加而取得更多頻寬，多數存取就要落在本地或較近的記憶體。這可以幫助理解 NUMA，但 Jalapeño 的具體實作仍要以它公開的架構為準。[Linux NUMA 文件](https://github.com/torvalds/linux/blob/d24e8ac715de2e16a53c144005b1863660a5fbea/Documentation/mm/numa.rst)
 
-NUMA 的收益也不能只從硬體方塊推導。作者認為，若運算分區與常用資料一起放在較近的資源，能減少遠端流量；如果 runtime 把工作移走卻把資料留在原處，local memory 就失去作用。模型切分、權重配置、KV cache 的生命週期與排程，需要共同決定哪些資料值得搬、何時搬，以及搬移能否被之後的重用攤平。
+採訪中，Jalapeño 把 HBM bank 與運算核心相連，盡量在對應區域完成運算，減少搬移資料；Ho 也談到架構中的 ring 和高頻寬路徑。這樣的配置讓軟體有明確的最佳化方向：把常用資料和相關運算放在附近，優先利用本地頻寬。[採訪：記憶體與運算配置](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
+
+Ho 說，當時測過的開源模型都能映射，機器學習也參與映射工作。不過長 context 與 KV cache 仍要由 compiler 和 kernel 處理，極長 context 的限制也還沒完成分析。已測模型能跑得上去，和任意模型、長度、併發都能有效率地跑，是不同程度的要求。[採訪：模型映射](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
+
+實際使用時，runtime 若把計算移走，卻把常用資料留在原處，就會增加遠端存取。模型切分、weights 配置、KV cache 的生命週期和排程要一起考慮，才能決定哪些資料值得搬、什麼時候搬，以及後續重用能否抵銷搬移成本。
 
 <figure>
 <a href="/images/ic-design-platform/2026-10-02/jalapeno-locality-tradeoff.svg"><img src="/images/ic-design-platform/2026-10-02/jalapeno-locality-tradeoff.svg" alt="兩個運算區域各有本地記憶體；同區存取較近，跨區存取經互連。移動計算卻留下資料會增加遠端存取，複製資料則消耗容量與搬移時間。" width="600" height="740" loading="lazy"></a>
-<figcaption>圖四：作者 NUMA 概念圖，非 Jalapeño 官方拓樸，不表示實測延遲、頻寬或快取一致性。定義依<a href="https://github.com/torvalds/linux/blob/d24e8ac715de2e16a53c144005b1863660a5fbea/Documentation/mm/numa.rst">Linux NUMA 文件</a>，與採訪架構主張的連結為作者分析。</figcaption>
+<figcaption>圖四：依據<a href="https://github.com/torvalds/linux/blob/d24e8ac715de2e16a53c144005b1863660a5fbea/Documentation/mm/numa.rst">Linux NUMA 文件</a>整理的本地與遠端存取概念圖。</figcaption>
 </figure>
 
-一個**假設串行存取模型**：本地延遲 100 ns、遠端 300 ns，若 80% 存取為本地，平均是 140 ns；本地比例降到 50%，平均升到 200 ns。真實加速器有平行請求、預取、快取與排隊，不能直接拿這個平均當吞吐預測。但它足以展示在地性是執行條件，不是硬體名稱。
+再用一個假設的串行存取模型來看：本地延遲 100 ns、遠端 300 ns，80% 存取在本地，平均是 140 ns；本地比例降到 50%，平均就升到 200 ns。這裡量的是平均串行存取延遲；實際加速器的吞吐還受平行請求、預取、快取和排隊影響。資料配置是軟體能直接改變的一項成本。
 
-要驗證 NUMA 是否有利，至少要一起觀察本地命中比例、遠端流量、互連壅塞、每個區域的容量壓力與服務時間。固定資料位置有利於重用，卻可能形成負載不均；移動或複製資料有利於平衡，又增加容量與一致性管理成本。Ho 的方向值得研究，實際優勢仍要落到 workload 與軟體映射的證據。
+所以測 NUMA 的效益，要一起看本地存取比例、遠端流量、互連壅塞、每區容量與服務時間。資料固定在原位置有利於重用，也可能造成負載不均；移動或複製可以改善分配，卻會增加容量、搬移及同步成本。同一套硬體，軟體安排不同，結果可能差很多。
 
-### 長 context 的壓力，同時來自容量與位置
+### 長 context 還會遇到局部容量不足
 
-KV cache 保留每層先前 token 的 key／value，讓後續生成重用；一般 cache tensor 包含 batch、heads、序列長度與每個 head 的維度。快取可動態成長，也可採固定、滑動視窗、量化或 offload，不同方法有不同記憶體與速度取捨。[Transformers：快取原理](https://github.com/huggingface/transformers/blob/a005fc82babfe8871d87746decad2dbee100a125/docs/source/en/cache_explanation.md)、[Cache strategies](https://github.com/huggingface/transformers/blob/a005fc82babfe8871d87746decad2dbee100a125/docs/source/en/kv_cache.md)
+KV cache 保存每層先前 token 的 key／value，讓後續生成可以重用。一般 cache tensor 包含 batch、heads、序列長度和每個 head 的維度。動態成長、固定大小、滑動視窗、量化和 offload 等方式，會有不同的容量與速度取捨。[Transformers：快取原理](https://github.com/huggingface/transformers/blob/a005fc82babfe8871d87746decad2dbee100a125/docs/source/en/cache_explanation.md)、[Cache strategies](https://github.com/huggingface/transformers/blob/a005fc82babfe8871d87746decad2dbee100a125/docs/source/en/kv_cache.md)
 
-用一個**作者假設的完整保留 KV 模型**計算容量：64 層，每層 8 個 KV heads，每個 head 為 128 維，每個值 2 bytes，一個請求含 131,072 tokens。key 與 value 都保留時，容量是：
+假設一個完整保留 KV 的模型有 64 層，每層 8 個 KV heads，每個 head 是 128 維，每個值 2 bytes，一個請求含 131,072 tokens。key 和 value 都保留，所需容量是：
 
 `2 × 64 × 8 × 128 × 2 × 131,072 = 34,359,738,368 bytes = 32 GiB`
 
-四個這樣的請求就需要 128 GiB，尚未加入模型 weights、暫存空間、allocator 留白、複製或分片開銷。此例沒有使用壓縮、prefix sharing 或 sliding window，也不是 Jalapeño 所測模型；它只說明 216 GiB 的名目總容量不能全部當成可自由配置的 KV 預算。
+四個這樣的請求就需要 128 GiB，還沒加入 weights、暫存空間、allocator 留白、複製或分片的開銷。此例沒有壓縮、prefix sharing 或 sliding window，也不是 Jalapeño 的測試模型；即使裝置有 216 GiB，仍要先扣掉其他用途，才能知道 KV cache 可用多少。
 
-在 NUMA 型配置下，總容量足夠仍可能有局部不足：若某些 layers 或請求把 KV 集中在少數區域，其餘記憶體閒置也未必能低成本使用。保留資料位置有利於重用，重新分片有利於平衡，但要付出搬移與同步。作者建議同時測 context 長度、併發數與映射策略，記錄每區容量、遠端流量及 token 延遲；如此才能辨認限制來自總容量、局部容量、互連或 kernel。
+NUMA 還多了位置問題。總容量足夠，但某些 layers 或請求的 KV 集中在少數區域，局部仍可能放不下；其他區域有空間，也要付出遠端存取或重新分片的成本。保留原位置有利於重用，重新分片有利於平衡，兩邊需要靠 context 長度、併發與映射方式的測試來比較。
 
-## Benchmark 要連同軟體、預測方式與操作點一起比較
+測試若同時記錄每區容量、遠端流量和 token 延遲，就比較容易分辨是總容量不夠、局部配置不均，還是互連與 kernel 拖慢了執行。只看 HBM 總容量，會漏掉這些問題。
 
-補充採訪整理記載，OpenAI 採用第三方 InferenceX 方法，以開源模型展示結果，並邀 SemiAnalysis 驗證；Ho 說正式生產環境使用 MTP，公開展示因開源模型沒有現成 draft model，採用 STP，目標是超越對手已公布的 MTP 數字。這些是採訪中的比較安排，不能由 InferenceX 的存在自動推定所有 Jalapeño 數字已具完整、公開、可重現的第三方測試。[採訪：benchmark 選擇](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
+## 效能數字要連同 STP／MTP 和服務條件看
 
-InferenceX 官方 repository 將自身定位為持續追蹤軟體與硬體的推論效能平台；其結果文件保留模型、framework、精度、speculative mode、輸入／輸出長度、併發、拓樸，以及吞吐、延遲與可取得的功耗資料。這些欄位說明結果的身分包括整個服務設定，不能只剩晶片名稱。[InferenceX README](https://github.com/SemiAnalysisAI/InferenceX/blob/49460fc6f8612349ba654d26e6333e19df525414/README.md)、[結果與量測欄位](https://github.com/SemiAnalysisAI/InferenceX/blob/49460fc6f8612349ba654d26e6333e19df525414/inferencex-e2e/docs/results-and-ingestion.md)
+採訪中，OpenAI 採用第三方 InferenceX 方法，以開源模型展示結果，也邀 SemiAnalysis 驗證。Ho 說正式生產環境使用 MTP，公開展示時因開源模型沒有現成 draft model，採用 STP，目標是超過對手已公布的 MTP 數字。這些結果要按各自的預測方式與服務設定比較。[採訪：benchmark](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
 
-在這個比較脈絡中，STP 是單 token 預測，MTP 是多 token 預測；多 token 路徑的結果還會受提案、驗證、接受率與額外運算影響。**STP 超過另一套系統的 MTP 成績，可以支持該設定下的服務結果，不能單獨隔離出晶片微架構的貢獻。**若要拆解原因，應先固定模型品質與服務條件，再分別比較同一預測模式，以及各平台可達的最佳端到端組合。
+InferenceX 的結果文件會保留模型、framework、精度、speculative mode、輸入／輸出長度、併發、拓樸，以及吞吐、延遲和可取得的功耗資料。同一顆晶片，這些設定換了，量出的服務效能也會變。[InferenceX README](https://github.com/SemiAnalysisAI/InferenceX/blob/49460fc6f8612349ba654d26e6333e19df525414/README.md)、[Results and Ingestion](https://github.com/SemiAnalysisAI/InferenceX/blob/49460fc6f8612349ba654d26e6333e19df525414/inferencex-e2e/docs/results-and-ingestion.md)
 
-採訪前言整理所述的 Hot Chips 2026 數字，包括相對 GB200／GB300 在所選峰值吞吐測點的每瓦效能 1.5–1.9 倍、延遲改善 1.7–3.6 倍，以及 Pareto 邊緣操作點最高 104 倍。這些結果沒有在本文重新量測，缺少逐點的模型、版本、batch／併發、SLO 與功耗明細，不能混成「Jalapeño 通常快 104 倍」。[採訪前言與效能比較](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
+這裡的 STP 是單 token 預測，MTP 是多 token 預測。多 token 路徑還會受提案、驗證、接受率與額外運算影響。STP 成績超過另一套系統的 MTP，可以比較那兩套設定的服務結果；要判斷晶片架構本身貢獻多少，還得固定模型品質與服務條件，分別比較同一預測模式，以及各平台最佳的端到端組合。
 
-Pareto frontier 表示在吞吐與延遲等目標間，尚無另一個配置能同時改善所有目標的一組操作點。若比較落在對手難以有效提供服務的區域，比值可能很大；其工程意義是某個服務條件的可達性，與常見負載下的平均加速不同。GPU 與 Jalapeño 的全部測點、品質與 SLO 還要一起看，才能判斷哪一段 frontier 有實際用途。
+採訪前言列出的 Hot Chips 2026 比較數字，包括相對 GB200／GB300，在所選峰值吞吐測點的每瓦效能 1.5–1.9 倍、延遲改善 1.7–3.6 倍，以及 Pareto 邊緣操作點最高 104 倍。這些數字仍缺逐點的模型、版本、batch／併發、SLO 和功耗明細，104 倍尤其需要看它出現在哪個條件。[採訪前言：效能比較](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
 
-作者提出的最小比較契約有四組條件：固定模型與輸出品質；固定輸入／輸出長度、到達模式與併發；交代 STP／MTP、精度、parallelism 與軟體版本；以相同服務 SLO 及功耗邊界量測合格吞吐。比較低併發互動與高併發批次時應各畫曲線，不能用一邊的最佳吞吐對另一邊的最佳延遲。
+Pareto frontier 是一組在吞吐與延遲等目標之間，無法同時再改善所有目標的操作點。某個服務條件若落在對手很難達到的區域，比值可能很大，但常見負載下的結果可能不同。104 倍能說明特定操作點的差距，還需要整條曲線才能判斷哪些服務用得上。
 
-品質驗收也不能省略。InferenceX 的評估文件明確區分 throughput-only 工作與 model evaluation，跳過 eval 的 run 只提供吞吐證據；AgentX 則另有 trace replay、暖機與執行條件。這提供可檢查的評估機制，不代表 Jalapeño 已在所有這些流程上通過。[InferenceX 評估與 AgentX](https://github.com/SemiAnalysisAI/InferenceX/blob/49460fc6f8612349ba654d26e6333e19df525414/inferencex-e2e/docs/eval-agentx-procedures.md)
+比較時，模型與輸出品質、輸入／輸出長度、請求到達方式和併發要固定；STP／MTP、精度、parallelism、軟體版本也要交代。最後用相同 SLO 與功耗範圍量通過品質要求的吞吐。低併發互動與高併發批次各畫一條曲線，才能看出同一個服務條件下，哪套系統提供較多有效容量。
 
-Ho 希望 benchmark 擴展到 agentic、diffusion 與多模態，因為測什麼會影響硬體朝哪裡最佳化。對本文的設計主線而言，這形成一個回饋：架構先接受代表性軟體負載的檢驗，部署後再用更接近服務的測量修正下一代需求。一次展示能證明部分能力，尚不能替未知 workload 寫下完整承諾。[採訪：benchmark 與後續方向](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
+InferenceX 的評估文件也把 throughput-only 工作和 model evaluation 分開。跳過 eval 的 run 只提供吞吐資料，AgentX 則另有 trace replay、暖機與執行條件。模型品質會影響效能比較，所以還要確認所引用的結果實際跑了哪些評估。[InferenceX Evaluation and AgentX](https://github.com/SemiAnalysisAI/InferenceX/blob/49460fc6f8612349ba654d26e6333e19df525414/inferencex-e2e/docs/eval-agentx-procedures.md)
 
-## 封裝擴大設計空間，也重新界定合作夥伴的價值
+Ho 希望 benchmark 能補上 agentic、diffusion 和多模態，因為測試項目也會影響硬體設計方向。若 benchmark 只涵蓋現有的文字推論，硬體容易跟著那些工作最佳化；新型態的服務需要自己的測試，才能讓下一代架構有資料可依據。[採訪：benchmark 的後續方向](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
 
-Ho 把當前稱為封裝的黃金時代，談到 system-on-wafer、panel、晶圓級整合與光學元件，以及如何把元件有效連接。他描述 OpenAI 直接與記憶體供應商溝通，因為團隊負責高層系統規劃，會討論需要什麼記憶體、如何配置與平衡；Broadcom 則提供重要 IP、合作經驗及取得大量供應的能力。[採訪：記憶體、封裝與合作夥伴](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
+## 封裝的黃金時代，Broadcom 的價值也包括供應能力
 
-作者的技術解讀是，架構邊界正在超出單顆邏輯 die。計算放在哪裡、資料在哪裡、介面可提供什麼，以及封裝能如何連接，必須一起考慮。若本地記憶體能改善存取，還要確認對應容量、連線與系統限制是否允許；因此封裝會影響架構可實現的選項，不能只在 RTL 完成後才被當成組裝問題。
+Ho 認為現在是封裝的黃金時代，談到 system-on-wafer、面板級、晶圓級整合與光學元件。他也說 OpenAI 直接和記憶體供應商討論，因為團隊負責高層系統設計，需要決定記憶體配置、平衡和實體佈局；Broadcom 則提供 IP、介面專長與大量供應的能力。[採訪：記憶體與封裝](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
 
-這些陳述支持 OpenAI 保有相當程度的系統與高層設計主導權，也支持其團隊直接參與原始碼最佳化。**它們沒有證明 OpenAI 包辦全部 front-end／RTL，也沒有證明 Broadcom 只做 physical design。**採訪明確談到 Broadcom 的 IP、介面專長與供應取得，將其角色縮成後段實作反而會漏掉已披露的價值。
+這讓晶片架構得提早考慮封裝。運算放在哪裡、記憶體容量怎麼分、介面有多少頻寬，以及元件可以怎麼連，會一起決定系統能做什麼。若架構依賴本地記憶體的效率，就得確認封裝與互連能支持那種配置，等 RTL 完成才開始處理，可能已經太晚。
 
-補充採訪整理將 Broadcom 的選擇理由分成 IP、長期合作經驗與量產規模。SerDes、控制器等能力有其他供應商可以競爭，但取得足量晶圓、記憶體及封裝產能，需要已能承接大量供應的夥伴。Ho 也區分「加快設計到 bring-up」與「量產爬坡」：有限量可以嘗試加速取得，大量供應不能只靠多付錢插隊。[採訪：Broadcom 與供應規模](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
+從訪談可以看出，OpenAI 掌握系統與高層設計方向，也直接參與原始碼最佳化。這支持一個分工判斷：客戶端保留設計主導權，ASIC 夥伴要靠 IP、實體整合和供應能力提供價值。Broadcom 在 SerDes、介面與量產取得上的角色，對這種客戶尤其重要。[採訪：合作夥伴分工](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
 
-這使設計平台的輸出多了一個現實邊界。RTL、signoff 與軟體都完成，只證明設計進入下一階段；實際可部署量還要看晶圓、記憶體、封裝、板卡與機架交付是否同步。採訪前言將 Celestica 列為板卡與機架整合夥伴，正好提醒我們不能把合作鏈只畫到 GDS。[採訪前言：系統整合夥伴](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
+Ho 選擇 Broadcom 的理由包括 IP、長期合作經驗與量產規模。SerDes 和控制器也有其他強的供應商，但軟體公司內部的新硬體團隊，要取得足量台積電晶圓、記憶體和封裝產能，需要能承接大量供應的夥伴。他也說，有限量可以設法加速，大量供應很難靠多付錢插隊；加快設計到 bring-up，和量產爬坡還是兩段工作。[採訪：Broadcom 與量產](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
 
-作者推論，fleet 的硬體選擇還包含供應時程與使用壽命：一款局部效率較高但取得量不足的裝置，可能無法承接所需服務；一款可調度的裝置則有機會在需求比例變動後繼續使用。Ho 所述將最新硬體服務高階需求、較舊且已折舊的硬體服務較低價層級，是一種容量分層構想；是否划算仍取決於功耗、SLO、維護與機會成本，不能只因帳面折舊結束就視為免費。[採訪：硬體壽命與服務分層](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
+這會改變 turnkey ASIC 服務的價值分配。客戶越能自己掌握架構與前段設計，夥伴越需要用 IP、實體整合、封裝和量產能力證明價值。對 Broadcom 的判斷應該跟著這些工作走：它替客戶解決多少介面問題、整合多大系統，以及能交付多少產能。這裡談的是分工方向，獲利影響還要看合約與定價。
 
-對 turnkey 模式的影響，可以提出有條件的產業推論：當客戶自己掌握架構與部分前段工程能力，服務商可包辦的範圍可能改變，價值分配也可能轉向 IP、實體整合、封裝與供應鏈。但採訪未公開合約、工作範圍、定價與利潤，不能由設計主導權直接推導 Broadcom 附加價值或獲利下降。技術分工與商業結果之間，仍需要另一組證據。
+設計完成之後，晶圓、記憶體、封裝、板卡和機架都要跟得上，才有可部署的容量。採訪前言把 Celestica 列為板卡與機架整合夥伴，也說明交付還有晶片之外的工作。[採訪前言](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
 
-## 用同一組工作負載，驗證探索、交付與服務收益
+fleet 的成本還要看硬體能用多久。Ho 描述的構想是，最新硬體服務高階需求，較舊、已折舊的硬體服務較低價的層級，直到電力成本不划算為止。折舊結束後仍有電力、維護和機會成本，是否留下來用，也要看它能不能滿足該層服務的 SLO。[採訪：硬體壽命](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai)
 
-Jalapeño 的經驗把三個決策接起來。先由軟體團隊與模擬證據確認架構可承接的負載，再讓模型在 XLS 等可檢查表示中尋找候選，最後用 EDA、矽晶片與服務量測決定能交付什麼。這條路徑使「AI 加速設計」有了具體接點：探索可以更快，工程責任與未完成驗證仍要保留。
+## EDA 內建 AI 得和獨立 LLM 比較
 
-下一個可公開重現的實驗，應從一個固定規格的硬體模組開始，比較工程師既有方法、獨立公開 LLM，以及可取得的工具內建方案。固定 compiler、合法修改範圍與實作條件，記錄候選的等價失敗、PPA、工具耗時、工程師介入，以及到達相同驗收門檻的總時間。面積與時間改善都要回到同一個 baseline，不能把不同候選的最佳結果拼成一筆成果。
+Jalapeño 提供了一個可以嘗試的做法：讓通用模型在 XLS 等高階描述上找修改，團隊用既有 compiler、驗證和 EDA 流程確認結果。要判斷其他公司能取得多少效益，可以從固定規格的硬體模組開始，比較工程師既有方法、獨立公開 LLM 和工具內建 AI。
 
-再往系統層推進時，保留同一組代表性 workload，在不同 context、併發與 prefill／decode 比例下比較映射、局部容量、遠端流量及合格吞吐。若局部 PPA 改善卻增加資料搬移，或更高 tokens/s 來自品質下降，就沒有完成原先的承諾。若服務效益成立，還要觀察硬體供應與調度能否把它轉成持續可用容量。
+compiler、合法修改範圍、製程與實作條件都固定，記錄等價檢查的失敗、PPA、工具耗時、工程師介入，以及到相同驗收要求所需的總時間。這樣才有辦法知道，模型省下的是搜尋時間，還是連後面的收斂工作也變快；面積和時間改善，也要出自同一個 baseline 和同一版候選。
 
-對 EDA 廠商而言，可驗證的機會是降低整條交付鏈的成本；對設計團隊而言，前沿模型的可用性讓它們能更早探索，但不保證自動取得 OpenAI 的成果；對 ASIC 夥伴而言，IP、實體整合、封裝與量產取得，仍是將設計變成可用基礎設施的重要能力。下一個最有價值的證據，是這些能力如何在相同品質與服務限制下，一起縮短時間、降低成本。
+往系統層看，則需要同一組 workload 在不同 context、併發與 prefill／decode 比例下的結果，包含局部容量、遠端流量和通過品質要求的吞吐。局部 PPA 改善若增加資料搬移，服務未必比較快；tokens/s 增加若伴隨品質下降，也得重新比較。供應數量和調度彈性，最後會決定這些效能能變成多少實際服務容量。
+
+未來十二個月，我預期企業評估 EDA 的 AI 功能時，會更常拿獨立 LLM 做對照，比較完整設計工作所需的時間。通用模型能由設計公司直接取得，EDA 的內建 AI 就得靠省下的整合、驗證和實作工作來競爭。若固定規格的模組測試顯示，內建方案持續比獨立 LLM 更快達到相同 PPA，我會提高對工具商 AI 加值的評價；若獨立模型加現有流程已能做到，這份加值就更多留在設計公司。Ho 的 PCIe 控制器考題，正好把這個比較具體化。
+
+## 證據範圍
+
+13% 面積改善、裝置規格、A0／B0 狀態與 Hot Chips 效能數字，皆為採訪所報告的成果。面積比較尚缺 baseline、製程、corner 與原始報告；九個月時程也缺起訖與對照週期。採訪和影片的逐段核對、刊出日期與時間碼仍待確認。
+
+模型未做 IC 設計專用微調，是這次導入判斷的依據。模型的完整訓練歷程、context 大小、輸入範圍，以及和各家 EDA AI 的同條件比較尚未公開。內部版本略領先公開版，使用方法也有機器學習研究人員參與。
+
+STP／MTP 成績要保留模型、軟體、品質、併發、SLO 與功耗條件。104 倍出現在 Pareto 邊緣操作點，完整逐點曲線與設定仍有待公開。極長 context 的映射限制、泛用設計的效率代價，以及機群利用率增益，也需要部署資料來量化。
+
+面積、加法器、容量、存取延遲與 KV cache 都是明示假設的算例；加法器未執行 XLS 工具測試。四張圖是參考設計或概念圖，流程連線與失敗處理用來說明機制。引用的 XLS、Linux、InferenceX、Transformers 版本是文件基準，OpenAI 的實際工具版本與完整架構另需確認。
+
+EDA 與 turnkey 服務的價值分配屬產業推論。OpenAI 與 Broadcom 的完整 front-end／RTL 分工、合約與定價尚未公開；判斷會隨同規格設計的總時間、PPA、整合成本及量產交付結果調整。
 
 ## 參考資料
 
-1. [Interview with Richard Ho, OpenAI](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai) — Ian Cutress，More than Moore。刊出日期依補充整理為 2026 年 9 月 30 日；本文依中譯節錄與補充整理轉述，未逐段直接核對全文。規格、13% 面積、投片狀態及 Hot Chips 比較均為來源報告，不是本文獨立重現。
-2. [XLS README](https://github.com/google/xls/blob/1f1e152a856d223eaa474f01d67abd8e5ec727c7/README.md) — Google XLS 官方 repository；版本 `1f1e152a856d`。用於工具鏈定位，不能據此外推 OpenAI 採用同一版本。
-3. [DSLX Reference](https://github.com/google/xls/blob/1f1e152a856d223eaa474f01d67abd8e5ec727c7/docs_src/dslx_reference.md)、[IR Semantics](https://github.com/google/xls/blob/1f1e152a856d223eaa474f01d67abd8e5ec727c7/docs_src/ir_semantics.md)、[XLS Tools](https://github.com/google/xls/blob/1f1e152a856d223eaa474f01d67abd8e5ec727c7/docs_src/tools.md) — 同一 XLS 版本的語言、抽象層與求值／等價／生成介面。
-4. [觀點來源：Facebook 貼文](https://www.facebook.com/share/p/1CEZyFpDTh/?mibextid=wwXIfr) — 九項觀察的來源連結；本文不將其中的產業推論當成受訪者已證實的事實。貼文作者與發布日期未核實。
-5. [相關影片](https://youtu.be/8s7uYtCM1bc) — 依補充整理，為 Substack 內嵌的同場訪談，不能當成獨立佐證；未逐段核對字幕與時間碼。
-6. [What is NUMA?](https://github.com/torvalds/linux/blob/d24e8ac715de2e16a53c144005b1863660a5fbea/Documentation/mm/numa.rst) — Linux 官方文件；版本 `d24e8ac715de`。文件註明起始於 1999 年 11 月；用於一般定義，不代表 Jalapeño 實作。
-7. [InferenceX 官方 repository](https://github.com/SemiAnalysisAI/InferenceX/blob/49460fc6f8612349ba654d26e6333e19df525414/README.md)、[Results and Ingestion](https://github.com/SemiAnalysisAI/InferenceX/blob/49460fc6f8612349ba654d26e6333e19df525414/inferencex-e2e/docs/results-and-ingestion.md)、[Evaluation and AgentX Procedures](https://github.com/SemiAnalysisAI/InferenceX/blob/49460fc6f8612349ba654d26e6333e19df525414/inferencex-e2e/docs/eval-agentx-procedures.md) — SemiAnalysisAI，版本 `49460fc6f861`。引用方法、結果身分與品質驗收；此版本不當作 Hot Chips 當時的固定版本，也不據此認定 Jalapeño 比較已獲全部獨立驗證。
-8. [How caching works](https://github.com/huggingface/transformers/blob/a005fc82babfe8871d87746decad2dbee100a125/docs/source/en/cache_explanation.md)、[Cache strategies](https://github.com/huggingface/transformers/blob/a005fc82babfe8871d87746decad2dbee100a125/docs/source/en/kv_cache.md) — Hugging Face Transformers 官方文件，版本 `a005fc82babf`。引用 KV 結構與容量／速度取捨，非 Jalapeño 軟體實作。
+1. [Interview with Richard Ho, OpenAI](https://morethanmoore.substack.com/p/interview-with-richard-ho-openai) — Ian Cutress，More Than Moore；Jalapeño 設計、模型使用、XLS、架構與合作夥伴的主要來源。
+2. [同場訪談錄影](https://youtu.be/8s7uYtCM1bc) — Richard Ho 與 Ian Cutress 的訪談影片。
+3. [XLS README](https://github.com/google/xls/blob/1f1e152a856d223eaa474f01d67abd8e5ec727c7/README.md)、[DSLX Reference](https://github.com/google/xls/blob/1f1e152a856d223eaa474f01d67abd8e5ec727c7/docs_src/dslx_reference.md)、[IR Semantics](https://github.com/google/xls/blob/1f1e152a856d223eaa474f01d67abd8e5ec727c7/docs_src/ir_semantics.md)、[XLS Tools](https://github.com/google/xls/blob/1f1e152a856d223eaa474f01d67abd8e5ec727c7/docs_src/tools.md) — Google XLS 官方文件，引用版本 `1f1e152a856d`。
+4. [What is NUMA?](https://github.com/torvalds/linux/blob/d24e8ac715de2e16a53c144005b1863660a5fbea/Documentation/mm/numa.rst) — Linux 官方文件，引用版本 `d24e8ac715de`，文件始於 1999 年 11 月。
+5. [InferenceX README](https://github.com/SemiAnalysisAI/InferenceX/blob/49460fc6f8612349ba654d26e6333e19df525414/README.md)、[Results and Ingestion](https://github.com/SemiAnalysisAI/InferenceX/blob/49460fc6f8612349ba654d26e6333e19df525414/inferencex-e2e/docs/results-and-ingestion.md)、[Evaluation and AgentX Procedures](https://github.com/SemiAnalysisAI/InferenceX/blob/49460fc6f8612349ba654d26e6333e19df525414/inferencex-e2e/docs/eval-agentx-procedures.md) — SemiAnalysisAI 官方 repository，引用版本 `49460fc6f861`。
+6. [How caching works](https://github.com/huggingface/transformers/blob/a005fc82babfe8871d87746decad2dbee100a125/docs/source/en/cache_explanation.md)、[Cache strategies](https://github.com/huggingface/transformers/blob/a005fc82babfe8871d87746decad2dbee100a125/docs/source/en/kv_cache.md) — Hugging Face Transformers 官方文件，引用版本 `a005fc82babf`。
