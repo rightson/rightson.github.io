@@ -18,7 +18,7 @@ takeaways:
     value: "EDA 工具供應商若提供穩定的 waveform、coverage 與 source mapping API，會直接降低 Agent 整合成本；若資料仍鎖在 proprietary viewer 與檔案格式，模型再強也會把大量時間耗在資料轉譯與定位。"
 ---
 
-大型模擬失敗後，工程師常做的不是重新寫 RTL，而是打開 waveform、沿 hierarchy 找訊號、定位 assertion 失敗時間，再回到對應的 RTL。這段工作很適合人用 GUI 探索，卻不適合直接把原始 dump 丟給 LLM：一個 SoC block 的 VCD 可以超過數 GB，時間序列又需要精確的 scope、timestamp 與 value semantics。
+大型模擬失敗後，工程師會打開 waveform、沿 hierarchy 找訊號、定位 assertion 失敗時間，再回到對應的 RTL；重新寫 RTL 通常發生在問題已經被定位之後。這段工作很適合人用 GUI 探索，卻不適合直接把原始 dump 丟給 LLM：一個 SoC block 的 VCD 可以超過數 GB，時間序列又需要精確的 scope、timestamp 與 value semantics。
 
 10 月 5 日公開的 [Back to the Future（BTTF）](https://arxiv.org/abs/2610.06790)提出另一種做法：先把 waveform 轉成關聯資料，再讓 Agent 操作資料庫。論文處理的 4.2 GB VCD 含 18,450 個 nets，將訊號宣告與時間變化拆成兩張主要 table；上層 Agent 以自然語言規劃，再產生 schema-aware SQL、執行 assertion 檢查，並把異常訊號連回版本化 RTL。
 
@@ -57,7 +57,7 @@ BTTF 把工作拆成 Orchestration、Analysis、Verification 與 Evaluation。An
 
 可行的導入順序是先做 read-only debug path。固定一批 regression failures，保留 engineer golden answers，量測 scope discovery、timestamp lookup、RTL attribution 與 assertion diagnosis 的正確率、P50/P95 latency、資料轉換時間與 storage overhead。等 read path 穩定，再決定是否讓 Agent 產生新的 assertion、test stimulus 或 RTL patch。這樣能把「會查」和「會改」分成兩個可獨立評估的能力。
 
-未來 6–12 個月若這條路線成立，最值得觀察的訊號不是更大的 LLM，而是 EDA vendor 與內部 CAD 平台是否開始提供穩定的 waveform／coverage query API、source mapping，以及能跨 regression run 比較的 schema。若每套 simulator 仍需獨立解析 proprietary dump，BTTF 的方法仍有研究價值，但導入成本會停留在資料轉譯層。
+未來 12 個月若這條路線成立，最值得觀察的訊號不是更大的 LLM，而是 EDA vendor 與內部 CAD 平台是否開始提供穩定的 waveform／coverage query API、source mapping，以及能跨 regression run 比較的 schema。若每套 simulator 仍需獨立解析 proprietary dump，BTTF 的方法仍有研究價值，但導入成本會停留在資料轉譯層。
 
 ## 週三相對週二的新增變化
 
