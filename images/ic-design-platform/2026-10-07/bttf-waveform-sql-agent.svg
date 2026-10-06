@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+<title id="title">BTTF waveform-to-query architecture</title><desc id="desc">Simulation waveform is normalized into SQLite tables, then queried by specialized agents that connect anomalies back to RTL.</desc>
+<style>
+:root{color-scheme:light dark}.bg{fill:#fff}.box{fill:#f5f7fa;stroke:#44546a;stroke-width:2}.db{fill:#eef4ff;stroke:#365f91;stroke-width:2}.agent{fill:#f3f7f0;stroke:#4f6b45;stroke-width:2}.t{font:600 18px system-ui,sans-serif;fill:#1f2937}.s{font:14px system-ui,sans-serif;fill:#374151}.a{stroke:#596579;stroke-width:2.4;fill:none;marker-end:url(#arrow)}
+@media(prefers-color-scheme:dark){.bg{fill:#111827}.box{fill:#1f2937;stroke:#9ca3af}.db{fill:#172554;stroke:#93c5fd}.agent{fill:#1f2d24;stroke:#86a77b}.t{fill:#f3f4f6}.s{fill:#d1d5db}.a{stroke:#cbd5e1}}
+</style>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="context-stroke"/></marker></defs><rect class="bg" width="900" height="560"/>
+<rect class="box" x="35" y="85" rx="14" width="180" height="110"/><text class="t" x="125" y="125" text-anchor="middle">Simulator</text><text class="s" x="125" y="155" text-anchor="middle">VCD / waveform</text>
+<rect class="box" x="275" y="70" rx="14" width="220" height="140"/><text class="t" x="385" y="108" text-anchor="middle">Preprocessing</text><text class="s" x="385" y="138" text-anchor="middle">signal metadata</text><text class="s" x="385" y="164" text-anchor="middle">timestamped transitions</text><text class="s" x="385" y="190" text-anchor="middle">clock / inactive pruning</text>
+<rect class="db" x="555" y="70" rx="14" width="300" height="140"/><text class="t" x="705" y="108" text-anchor="middle">waves.db</text><text class="s" x="705" y="140" text-anchor="middle">signal_metadata + signal_changes</text><text class="s" x="705" y="170" text-anchor="middle">indexed SQL query surface</text>
+<path class="a" d="M215 140H275"/><path class="a" d="M495 140H555"/>
+<rect class="agent" x="70" y="330" rx="14" width="210" height="110"/><text class="t" x="175" y="370" text-anchor="middle">Orchestrator</text><text class="s" x="175" y="400" text-anchor="middle">decompose + route</text>
+<rect class="agent" x="340" y="285" rx="14" width="210" height="90"/><text class="t" x="445" y="322" text-anchor="middle">Analysis Agent</text><text class="s" x="445" y="350" text-anchor="middle">schema-aware SQL</text>
+<rect class="agent" x="340" y="405" rx="14" width="210" height="90"/><text class="t" x="445" y="442" text-anchor="middle">Verification Agent</text><text class="s" x="445" y="470" text-anchor="middle">assertion + source map</text>
+<rect class="box" x="630" y="330" rx="14" width="225" height="110"/><text class="t" x="742" y="370" text-anchor="middle">Versioned RTL</text><text class="s" x="742" y="400" text-anchor="middle">module / source line</text>
+<path class="a" d="M280 365H340"/><path class="a" d="M280 405H340"/><path class="a" d="M445 285V245H705V210"/><path class="a" d="M550 450H600V405H630"/>
+<text class="s" x="450" y="535" text-anchor="middle">Simulation artifact → queryable state → specialized tools → RTL localization</text></svg>
