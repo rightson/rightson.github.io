@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="740" viewBox="0 0 600 740" role="img" aria-labelledby="title desc"><title id="title">NUMA 的本地與遠端成本</title><desc id="desc">兩個計算區域各有本地記憶體，跨區存取通過互連。此圖不宣稱 Jalapeño 的一致性與拓樸。</desc><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#334155"/></marker></defs><rect width="600" height="740" fill="#ffffff"/><g font-family="system-ui, sans-serif" font-size="25" fill="#172033"><text x="300" y="44" text-anchor="middle" font-weight="700">資料與計算的位置共同決定成本</text><text x="300" y="81" text-anchor="middle" font-size="23">作者概念圖 · 非 Jalapeño 官方拓樸</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="740" viewBox="0 0 600 740" role="img" aria-labelledby="title desc"><title id="title">NUMA 的本地與遠端成本</title><desc id="desc">兩個計算區域各有本地記憶體，跨區存取通過互連。此圖不宣稱 Jalapeño 的一致性與拓樸。</desc><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#334155"/></marker></defs><rect width="600" height="740" fill="#ffffff"/><g font-family="system-ui, sans-serif" font-size="25" fill="#172033"><text x="300" y="44" text-anchor="middle" font-weight="700">NUMA 的本地與遠端存取</text><text x="300" y="81" text-anchor="middle" font-size="23">本地與遠端存取概念圖</text>
 <rect x="35" y="112" width="240" height="265" rx="14" fill="#eff6ff" stroke="#64748b" stroke-width="2"/>
 <rect x="325" y="112" width="240" height="265" rx="14" fill="#eff6ff" stroke="#64748b" stroke-width="2"/>
 <text x="155" y="153" text-anchor="middle" font-weight="700">計算區域 A</text><text x="445" y="153" text-anchor="middle" font-weight="700">計算區域 B</text>
@@ -10,7 +10,7 @@
 <rect x="348" y="299" width="194" height="60" rx="8" fill="#fff7ed" stroke="#64748b"/><text x="445" y="338" text-anchor="middle">記憶體 B</text>
 <path d="M155 377 V423 H445 V389" fill="none" stroke="#334155" stroke-width="3" marker-end="url(#arrow)" marker-start="url(#arrow)"/><text x="300" y="463" text-anchor="middle">跨區存取需經互連</text>
 <rect x="40" y="497" width="520" height="205" rx="12" fill="#f8fafc" stroke="#64748b"/>
-<text x="300" y="538" text-anchor="middle" font-weight="700">軟體映射的取捨</text>
+<text x="300" y="538" text-anchor="middle" font-weight="700">資料與運算要怎麼移動</text>
 <text x="300" y="581" text-anchor="middle" font-size="24">只搬計算 → 原資料可能變遠端</text>
 <text x="300" y="624" text-anchor="middle" font-size="24">連資料搬 → 付搬移與同步成本</text>
 <text x="300" y="667" text-anchor="middle" font-size="24">複製資料 → 付容量與管理成本</text>
