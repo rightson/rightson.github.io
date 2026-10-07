@@ -34,7 +34,7 @@
 - 同日已有 BTTF 文章，保留原始 date `2026-10-07 06:32:00 +0800`、series 與 permalink，不重複建立：`_posts/2026-10-07-bttf-waveform-sql-agent.md`；[正式頁面](https://rightson.github.io/ic-design-platform/2026/10/07/bttf-waveform-sql-agent.html)。
 - 該文章在 `415507e6ee7b7c5bfd83b08d7dd0fe79ac904e36` 的 source 已回讀；[Post lint gate](https://github.com/rightson/rightson.github.io/actions/runs/37541662937) 與 [Pages build/deploy](https://github.com/rightson/rightson.github.io/actions/runs/37541661385) 均 success。正式 HTML 回讀含本次標題、`signal_metadata`、95.33% 與 1.96× 的內容，背景 SVG HTTP 200；完成公開內容核驗。
 - [BTTF 原始論文](https://arxiv.org/html/2610.06790)，v1 原始日期 2026-10-05：150-query execution accuracy、資料轉換與查詢延遲屬論文自報結果；本次沒有執行其實驗。該篇為雷達成果，不因此將 AD001–AD008 完整深掘標為完成。
-- 本次新增 FormalOS 短報與下方 AD009 候選；Cadence 2026-10-06 ViraStack 活動頁目前只提供功能介紹，未取得新技術材料或量化實驗，不据此推定完整部署架構。
+- 本次新增 FormalOS 短報與下方 AD009 候選；Cadence 2026-10-06 ViraStack 活動頁目前只提供功能介紹，未取得新技術材料或量化實驗，不據此推定完整部署架構。
 
 ## 新增候選
 
