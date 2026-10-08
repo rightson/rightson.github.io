@@ -24,9 +24,9 @@ takeaways:
 
 先沿著一顆 **800G、8×100G、EML、DR8、可插拔且含 DSP** 的模組看訊號路徑。這組限定很重要：改用矽光、線性光學或不同傳輸距離，零件數量與成本就會變。圖左沿發射方向讀，圖右沿接收方向讀；主機與模組各自處理哪些工作，會直接影響可替換的晶片。
 
-<div role="region" aria-label="800G EML DR8 主機到光纖的 TX 與 RX 路徑，對應 315 美元假設 BOM、支援材料、公司產品和公開階段；替代矽光與 CPO 角色另列，可橫向捲動" tabindex="0" style="overflow-x: auto; margin: 1.5rem 0;">
+<div style="margin: 1.5rem 0;">
   <a href="/images/ai-industry/2026-10-07/optical-module-bom-role-map.svg" aria-label="開啟完整圖">
-    <img src="/images/ai-industry/2026-10-07/optical-module-bom-role-map.svg" alt="800G EML DR8 主機到光纖的 TX 與 RX 路徑，對應 315 美元假設 BOM、支援材料、公司產品和公開階段；替代矽光與 CPO 角色另列" style="width: 100%; min-width: 1200px; max-width: none; height: auto;" />
+    <img src="/images/ai-industry/2026-10-07/optical-module-bom-role-map.svg" alt="800G EML DR8 主機到光纖的 TX 與 RX 路徑，對應 315 美元假設 BOM、支援材料、公司產品和公開階段；替代矽光與 CPO 角色另列" style="display: block; width: 100%; max-width: 100%; height: auto;" />
   </a>
 </div>
 
@@ -117,9 +117,9 @@ EML 把光源與調變結合；矽光可由 CW 雷射提供連續光，再由矽
 
 下圖先分開三個選擇，再組成五種具體配置。沿每一列比較零件如何改變，最後讀組合表；光源、處理方式與封裝可以搭配，但每種搭配都要滿足相同鏈路的電氣、光學與維修要求。
 
-<div role="region" aria-label="三次選型圖，分別比較 EML、CW 加矽光和 VCSEL，雙向 retimed、TRO 和 LPO，以及可插拔和 CPO；下方列出五種具體組合與成本變化，可橫向捲動" tabindex="0" style="overflow-x: auto; margin: 1.5rem 0;">
+<div style="margin: 1.5rem 0;">
   <a href="/images/ai-industry/2026-10-07/optical-three-design-choices.svg" aria-label="開啟完整圖">
-    <img src="/images/ai-industry/2026-10-07/optical-three-design-choices.svg" alt="三次選型圖，分別比較 EML、CW 加矽光和 VCSEL，雙向 retimed、TRO 和 LPO，以及可插拔和 CPO；下方列出五種具體組合與成本變化" style="width: 100%; min-width: 1200px; max-width: none; height: auto;" />
+    <img src="/images/ai-industry/2026-10-07/optical-three-design-choices.svg" alt="三次選型圖，分別比較 EML、CW 加矽光和 VCSEL，雙向 retimed、TRO 和 LPO，以及可插拔和 CPO；下方列出五種具體組合與成本變化" style="display: block; width: 100%; max-width: 100%; height: auto;" />
   </a>
 </div>
 
@@ -145,9 +145,9 @@ CPO 將光引擎移近交換 ASIC，縮短高速電氣路徑，再以光纖連�
 
 為了只比較封裝位置，以下前後兩邊均固定使用 CW 雷射與矽光 PIC。上半部的模組含 DSP、EIC 與 PIC；下半部採外部 ELS 供光的 CPO。藍線表示高速電訊號，橘線表示已承載資料的光，綠色虛線表示尚未調變的 CW 供光。收發方向以雙向箭頭合併呈現，實體 TX／RX 光纖仍分開。
 
-<div role="region" aria-label="矽光 retimed 可插拔改成外部 ELS 供光 CPO 的 before after 架構，標示 ASIC 與共同封裝、DSP、EIC Driver TIA、PIC 調變器和 PD、面板光纖介面，以及電訊號、資料光、CW 供光三種路徑，可橫向捲動" tabindex="0" style="overflow-x: auto; margin: 1.5rem 0;">
+<div style="margin: 1.5rem 0;">
   <a href="/images/ai-industry/2026-10-07/optical-cpo-before-after.svg" aria-label="開啟完整圖">
-    <img src="/images/ai-industry/2026-10-07/optical-cpo-before-after.svg" alt="矽光 retimed 可插拔改成外部 ELS 供光 CPO 的 before after 架構，標示 ASIC 與共同封裝、DSP、EIC Driver TIA、PIC 調變器和 PD、面板光纖介面，以及電訊號、資料光、CW 供光三種路徑" style="width: 100%; min-width: 1200px; max-width: none; height: auto;" />
+    <img src="/images/ai-industry/2026-10-07/optical-cpo-before-after.svg" alt="矽光 retimed 可插拔改成外部 ELS 供光 CPO 的 before after 架構，標示 ASIC 與共同封裝、DSP、EIC Driver TIA、PIC 調變器和 PD、面板光纖介面，以及電訊號、資料光、CW 供光三種路徑" style="display: block; width: 100%; max-width: 100%; height: auto;" />
   </a>
 </div>
 
