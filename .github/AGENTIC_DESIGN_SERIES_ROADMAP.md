@@ -44,3 +44,11 @@
   - 成熟度：公告稱正於 LUBIS 的 active projects 導入，隨 formal verification engagements 部署於客戶環境。預設不包含、託管或呼叫 AI，由客戶自行選擇接入模型；未取得獨立量化效益。
   - 擴充套件將 proof runner、自動回寫 proof results 與 in-editor triage 列為 roadmap；目前計畫同步功能與未來執行閉環分開研究。
   - 新增問題：與既有 GPT-Synopsys 打包服務相比，拆分方法論／工具編排與模型採購，是否降低替換成本並提高計畫一致性？需補 API／版本語意、proof result 綁定、衝突處理、覆蓋定義與實際案例後，再決定深掘。
+## 2026-10-08 雷達查核與接續
+
+- 本次指令 commit：`17cabcb8ad469ffad55dd0c0212bcb2ac499614d`；執行識別：`agentic-design-radar｜2026-10-08｜09:00 Asia/Taipei`。本次只接續每日雷達，不修改 scheduler。
+- [Cadence 2026-10-07 的 AI 產物驗證與 signoff 說明](https://community.cadence.com/cadence_blogs_8/b/artificial-intelligence/posts/how-to-verify-and-sign-off-ai-generated-design-data)提供新的供應商一手架構邊界：AI 產出的 RTL、assertion、constraint、ECO 與實作變更是待驗證的 engineering input；核准的 specification、constraint、library、IP 與 signoff criteria 仍是權威來源，mental model 只能由這些來源衍生，不能取代它們。
+- 驗收證據仍由 simulation、formal、equivalence、regression、STA、power、physical verification 與 signoff database 產生；模型 confidence 或 explanation 不能代替工程證據。Cadence 另主張 material change 應記錄 request、requirement、design revision、agent／model／tool／configuration、constraint／assumption、產物、後續修改、驗證結果、waiver、approval 與可重跑路徑。
+- 執行權限與結果有效性分屬兩層：OpenShell 類 sandbox 限制 agent 能讀寫的檔案、憑證、工具、網路與權限；EDA engine 判斷輸出是否符合設計標準。Cadence 明確區分 autonomous execution 與 final signoff，工程師仍負責 intent、exception 與最後接受。
+- 這份資料為 AD001、AD002、AD006、AD007 增加 vendor primary evidence，但沒有公開 machine-readable schema、API／版本語意、獨立客戶案例或量化結果，因此不將任何候選標為完成，也不據此推定 ChipStack 的完整內部實作。
+- 與前一日 BTTF 相比，BTTF 補的是 waveform 的可查詢 read path；Cadence 本次補的是 generated change 的 authority、evidence 與 acceptance path。兩者互補，但後者與既有「可驗證的 IC 設計狀態」文章高度重疊，認知增量尚不足以另發公開短評，避免用同一機制重寫新文。
