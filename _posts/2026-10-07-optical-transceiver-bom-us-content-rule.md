@@ -24,9 +24,15 @@ takeaways:
 
 先沿著一顆 **800G、8×100G、EML、DR8、可插拔且含 DSP** 的模組看訊號路徑。這組限定很重要：改用矽光、線性光學或不同傳輸距離，零件數量與成本就會變。圖左沿發射方向讀，圖右沿接收方向讀；主機與模組各自處理哪些工作，會直接影響可替換的晶片。
 
-![800G EML DR8 可插拔模組的雙向訊號路徑，主機負責 PCS 與 FEC，模組 DSP 負責等化與重定時，發射經 Driver 和 EML，接收經 PD 和 TIA](/images/ai-industry/2026-10-07/optical-module-signal-path.svg)
+<div role="region" aria-label="800G EML DR8 主機到光纖的 TX 與 RX 路徑，對應 315 美元假設 BOM、支援材料、公司產品和公開階段；替代矽光與 CPO 角色另列，可橫向捲動" tabindex="0" style="overflow-x: auto; margin: 1.5rem 0;">
+  <a href="/images/ai-industry/2026-10-07/optical-module-bom-role-map.svg" aria-label="開啟完整圖">
+    <img src="/images/ai-industry/2026-10-07/optical-module-bom-role-map.svg" alt="800G EML DR8 主機到光纖的 TX 與 RX 路徑，對應 315 美元假設 BOM、支援材料、公司產品和公開階段；替代矽光與 CPO 角色另列" style="width: 100%; min-width: 1200px; max-width: none; height: auto;" />
+  </a>
+</div>
 
-圖：一般 retimed EML 模組的功能示意，省略各晶片內部細節。依據 [IEEE 800GbE 架構說明](https://standards.ieee.org/beyond-standards/ethernets-next-bar/)、[IEEE DSP 與 FEC 架構討論](https://www.ieee802.org/3/df/public/22_02/lu_3df_01b_220215.pdf)整理；部分 200G/lane 設計另有模組端 inner FEC，應依產品確認。
+[開啟完整圖，可放大閱讀](/images/ai-industry/2026-10-07/optical-module-bom-role-map.svg)
+
+圖：一般 retimed EML 模組的功能與成本對應。BOM 為[公開個人拆解](https://caifuhao.eastmoney.com/news/20260411230337084311740)的假設算例；功能依據 [IEEE 架構討論](https://www.ieee802.org/3/df/public/22_02/lu_3df_01b_220215.pdf)。公司例子依據 [Marvell 產品資料](https://www.marvell.com/products/pam-dsp.html)、[達發方案](https://www.airoha.com/group-news/09joI74gjH0LOMIF)、[Lumentum 100G EML](https://www.lumentum.com/en/products/eml-100g-pam4-cwdm-laser)與 [ELSFP-350](https://www.lumentum.com/products/external-laser-source-els-module-ultra-high-power-laser)、[Coherent 2024 年報](https://www.coherent.com/content/dam/coherent/site/en/documents/investors/annual-filings/2024/coherent-annual-report-2024.pdf)、[聯亞年報](https://www.lmoc.com.tw/index.php?i=1&id=391&lang=en&option=module&task=dfile)與 [NVIDIA 量產分工](https://blogs.nvidia.com/blog/nvidia-gtc-taipei-computex-2026-news/)整理。公司對應其公開能力，成本對應元件類別；實際算例的供應商與料號待查。
 
 ## 一顆模組把高速電路接到精密光學
 
@@ -38,13 +44,25 @@ FEC 是用冗餘資訊修正錯誤，與等化、重定時分屬不同功能。�
 
 這條路徑上至少有兩種稀缺能力。高速電路要在功耗限制內處理失真的訊號；光學製造要把多條光路對準，並在溫度、壽命與大量生產條件下保持良率。前者形成 IC 設計與產品認證的門檻，後者形成製程、設備與交付的門檻。光學組裝的商業模式也可能包含設計、測試與品質責任，只有外殼與焊接的代工費用，無法代表整家模組公司的價值。
 
+### 功能位置能對到成本，晶片整合與交付範圍仍須展開
+
+省去細節會影響 BOM 的適用性與加總方式。功能圖描述每個工作的位置，一個工作可以由獨立晶片完成，也可以整合在另一個採購項目中。例如，[Marvell Perseus 官方產品資料](https://www.marvell.com/products/pam-dsp.html)列出整合 TIA 與雷射 Driver；[達發 AN8928／AN8924](https://www.airoha.com/group-news/09joI74gjH0LOMIF)也列出內建 Driver。拿這些方案重算成本，要以該整合晶片的採購價取代被它涵蓋的各列。
+
+| 圖裡省略的細節 | 如何影響這份 800G 算例 | 重算時需要的資料 |
+| --- | --- | --- |
+| DSP、Driver、TIA 的晶片整合 | 分開畫的是功能；整合產品可合併採購，88 與 38 美元須重列 | 料號、功能範圍、裸晶／封裝價格；38 美元的分拆尚無資料 |
+| 光源、調變器與接收器的整合 | 本例限定八條 EML 發射通道；矽光改列 CW、PIC 與分光，PD 也可能在 PIC 內 | 光功率、通道數、雷射數、PIC 內容與耦合損耗 |
+| 發射與接收的耦合件 | 圖有兩個方向，但被動光學 29 美元只計一次 | 透鏡、FA／FAU、連接器的實際數量及報價 |
+| MCU、監控、時脈與溫控 | 原資料未逐項交代，9 美元支援材料的涵蓋範圍也待查 | 每項材料及是否已包含在其他採購件 |
+| 封裝、測試、良率與保固 | 材料價與合格模組銷貨成本有差距，6 美元餘額保持未解 | 報價交付範圍、製造費、測試費、良率與保固準備 |
+
+因此，315 美元算例可教成本結構和敏感度；驗證某個實際產品，需要再接上料號級清單。加入細節可能把兩列合成一列、把一列拆成多項，或新增支出。光引擎與 ELS 分攤則屬另一份成本模型。管理、時脈與散熱雖未出現在資料串列中，仍需出現在完整採購清單。
+
 ## 315 美元拆解能教成本結構，尚不足以代表實際採購
 
 原先流傳的 [2026 年 4 月 800G EML 拆解](https://caifuhao.eastmoney.com/news/20260411230337084311740)列出約 315 美元 BOM 與 380–400 美元售價。這是個人撰稿資料，以下將金額視為**假設算例**，用來觀察成本敏感度。BOM 是材料清單及其成本；ASP 是平均售價，兩者需要分開。
 
-![800G EML 模組假設 BOM 的九項成本，雷射 92 美元、DSP 88 美元、Driver 加 TIA 38 美元，四類晶片合計 218 美元，約占總成本 69.2%，各零件國別須另查](/images/ai-industry/2026-10-07/optical-module-bom-800g.svg)
-
-圖：依據上述公開拆解整理的假設算例，金額合計 315 美元；原始分項合計 309 美元，餘額 6 美元獨立列出。顏色區分成本類別，國別須依實際供應商與料號確認。
+上方整合圖把訊號路徑與成本放在一起：DSP 與 EML 各有金額；Driver／TIA 和雙向被動光學各只有一筆合計。下表保留完整數字方便核算。原始分項合計 309 美元，與 315 美元總額之間的 6 美元獨立列出。
 
 | 成本項目 | 算例金額（美元／顆模組） | 占 315 美元比例 | 成本會因什麼改變 |
 | --- | ---: | ---: | --- |
@@ -97,11 +115,19 @@ EML、矽光、LPO 與 CPO 回答的是不同問題。把它們排成單一接�
 
 EML 把光源與調變結合；矽光可由 CW 雷射提供連續光，再由矽光晶片上的調變器寫入資料。矽光改變光源與調變的配置，模組仍可使用 DSP。光纖陣列 FA／FAU 負責耦合與連接，需求要依每台設備的光引擎數、通道數與封裝設計計算。[Coherent 的 InP 製程說明](https://www.coherent.com/news/press-releases/worlds-first-6-inch-inp-scalable-wafer-fabs-paving-the-way-for-the-next-generation-of-lasers-for-ai-transceivers-and-6g-wireless-networks)列出 EML、高速光偵測器與矽光 CW 雷射等產品，說明同一材料平台如何跨不同光學設計。
 
-下面只比較訊號處理與封裝位置；光源可依鏈路需求另選。請觀察 DSP 從模組移出後，工作如何回到主機，以及 CPO 如何縮短主機到光引擎的電氣距離。
+下圖先分開三個選擇，再組成五種具體配置。沿每一列比較零件如何改變，最後讀組合表；光源、處理方式與封裝可以搭配，但每種搭配都要滿足相同鏈路的電氣、光學與維修要求。
 
-![Retimed 可插拔、LPO 與 CPO 三種配置比較，分別顯示 DSP、主機 SerDes 和光引擎的位置及對應的採購取捨](/images/ai-industry/2026-10-07/optical-architecture-options.svg)
+<div role="region" aria-label="三次選型圖，分別比較 EML、CW 加矽光和 VCSEL，雙向 retimed、TRO 和 LPO，以及可插拔和 CPO；下方列出五種具體組合與成本變化，可橫向捲動" tabindex="0" style="overflow-x: auto; margin: 1.5rem 0;">
+  <a href="/images/ai-industry/2026-10-07/optical-three-design-choices.svg" aria-label="開啟完整圖">
+    <img src="/images/ai-industry/2026-10-07/optical-three-design-choices.svg" alt="三次選型圖，分別比較 EML、CW 加矽光和 VCSEL，雙向 retimed、TRO 和 LPO，以及可插拔和 CPO；下方列出五種具體組合與成本變化" style="width: 100%; min-width: 1200px; max-width: none; height: auto;" />
+  </a>
+</div>
 
-圖：功能比較示意，依據 [LPO MSA 規範](https://www.lpo-msa.org/files/live/sites/lpomsa/files/specs/LPO_MSA_Specification_v1p2_final.pdf)與 [NVIDIA CPO 技術說明](https://developer.nvidia.com/blog/scaling-ai-factories-with-co-packaged-optics-for-better-power-efficiency/)整理；各區塊尺寸與距離為示意。
+[開啟完整圖，可放大閱讀](/images/ai-industry/2026-10-07/optical-three-design-choices.svg)
+
+圖：功能比較示意，依據 [Coherent 2024 年報的光源與距離說明](https://www.coherent.com/content/dam/coherent/site/en/documents/investors/annual-filings/2024/coherent-annual-report-2024.pdf)、[2026 年 OFC 多技術展示](https://www.coherent.com/news/press-releases/coherent-demonstrates-next-gen-pluggable-transceiver-ofc-2026)、[LPO MSA 規範](https://www.lpo-msa.org/files/live/sites/lpomsa/files/specs/LPO_MSA_Specification_v1p2_final.pdf)、[Marvell Ara T 公告](https://www.marvell.com/company/newsroom/marvell-1-6t-optical-dsp-ai-data-center-connectivity.html)與 [NVIDIA CPO 技術說明](https://developer.nvidia.com/blog/how-industry-collaboration-fosters-nvidia-co-packaged-optics/)整理。產品例子對應公開技術路徑，A 的 315 美元為獨立假設。
+
+例如，從配置 A 的 EML retimed 可插拔改成 B 的矽光 retimed 可插拔，DSP 可以保留，光學材料則重列。從 B 改成 LPO，是省去模組內數位處理並重估線性電路與主機通道；再改成 CPO，還會搬動光引擎和供光位置。TRO 居於雙向 retimed 與全線性之間：發射端留重定時，接收端回到主機協同。Ara T 在 2026 年第一季起送樣，與原版 Ara 已量產的階段分開。
 
 ### LPO 節省模組處理，主機與整條鏈路共同承擔品質
 
@@ -116,6 +142,22 @@ Marvell 的產品反應已經出現：[官方產品公告](https://investor.marv
 ### CPO 把光電整合移近交換晶片，採購單位跟著改變
 
 CPO 將光引擎移近交換 ASIC，縮短高速電氣路徑，再以光纖連到遠端。[NVIDIA 技術說明](https://developer.nvidia.com/blog/scaling-ai-factories-with-co-packaged-optics-for-better-power-efficiency/)展示光引擎、外部光源與封裝的分工。維修、更換、光纖管理與可靠性設計會進入系統採購，成本應以「同樣總頻寬、距離、可靠性與交付範圍」比較。
+
+為了只比較封裝位置，以下前後兩邊均固定使用 CW 雷射與矽光 PIC。上半部的模組含 DSP、EIC 與 PIC；下半部採外部 ELS 供光的 CPO。藍線表示高速電訊號，橘線表示已承載資料的光，綠色虛線表示尚未調變的 CW 供光。收發方向以雙向箭頭合併呈現，實體 TX／RX 光纖仍分開。
+
+<div role="region" aria-label="矽光 retimed 可插拔改成外部 ELS 供光 CPO 的 before after 架構，標示 ASIC 與共同封裝、DSP、EIC Driver TIA、PIC 調變器和 PD、面板光纖介面，以及電訊號、資料光、CW 供光三種路徑，可橫向捲動" tabindex="0" style="overflow-x: auto; margin: 1.5rem 0;">
+  <a href="/images/ai-industry/2026-10-07/optical-cpo-before-after.svg" aria-label="開啟完整圖">
+    <img src="/images/ai-industry/2026-10-07/optical-cpo-before-after.svg" alt="矽光 retimed 可插拔改成外部 ELS 供光 CPO 的 before after 架構，標示 ASIC 與共同封裝、DSP、EIC Driver TIA、PIC 調變器和 PD、面板光纖介面，以及電訊號、資料光、CW 供光三種路徑" style="width: 100%; min-width: 1200px; max-width: none; height: auto;" />
+  </a>
+</div>
+
+[開啟完整圖，可放大閱讀](/images/ai-industry/2026-10-07/optical-cpo-before-after.svg)
+
+圖：依據 [NVIDIA 2025 年 CPO 技術說明](https://developer.nvidia.com/blog/how-industry-collaboration-fosters-nvidia-co-packaged-optics/)、[2026 年 Spectrum-X 技術更新](https://developer.nvidia.com/blog/scaling-power-efficient-ai-factories-with-nvidia-spectrum-x-ethernet-photonics)與 [2026 年量產分工](https://blogs.nvidia.com/blog/nvidia-gtc-taipei-computex-2026-news/)整理的功能配置比較，非晶粒 floorplan；省略通道複製、管理匯流排與冷卻管線。圖內的 NVIDIA 配置數另依產品資料列出；800G EML 的金額只用在前面的 BOM 算例。
+
+EIC 是承接高速電介面的電子晶片，PIC 是處理光的積體電路。這類 CPO 方案省去面板上的獨立模組 DSP，Driver、TIA、調變器與 PD 的工作持續存在，並透過短電氣距離和共同設計管理訊號品質。CW 雷射位於 ASIC 封裝外，送出的供光進入 PIC 後才寫入資料；外部光源與面板資料光纖是兩條不同路徑。
+
+NVIDIA 公開的 Spectrum-X 單 ASIC 封裝例子含 32 個光引擎，每引擎 16 條 TX 與 16 條 RX、200G/lane。以單方向速率計，每引擎 3.2Tb/s、單 ASIC 102.4Tb/s；四 ASIC 系統合計 409.6Tb/s。光引擎數與外部雷射模組數按各型號核對，採購模型也要區分光引擎、ELS 分攤與整機。
 
 假設 10 萬條鏈路兩端均用可插拔光模組，就是 20 萬顆；若交換器端改成 CPO，交換器端的光學功能轉入光引擎，另一端仍可能保留可插拔。只追可插拔顆數會漏掉轉移出去的內容。應把每端架構分開，再計算每條鏈路的光源、DSP、光引擎與連接成本。
 
@@ -219,7 +261,8 @@ FCC 正式規則討論 Covered List 元件，純機械與被動元件有不同�
 - 315 美元 BOM 來自個人文章，原始分項與合計有 6 美元差額，且同文售價、BOM 與毛利率互不相容。本文只用它作假設算例，不採信其未經核對的市占、客戶採購比例與缺口數字。
 - 截至 2026 年 10 月 7 日，本文取得的一手文件，未提供上述 65%／3.2T 情境的正式條文。摩根士丹利原報告未取得；美國公司、美國製造、盟國來源、價值分母與外包製程認定均待確認。本文未將任何台廠判為合規或排除。
 - FCC 26-50、S.5548 與尚待公布的光模組措施不可互相替代。S.5548 引用的是 9 月 24 日提出版本，不代表法案已通過；適用細節仍須依最後條文核對。
-- 訊號路徑是一般功能圖；模組 FEC、Driver 整合、光源數量與熱管理依產品而異。原先引用的 2022 年 IEEE 功耗比例屬不同光學配置，本次移除其對所有 800G DR8 模組的外推。
+- 詳細拆解圖的公司是公開能力例子，未確認為假設算例的實際供應商；價格亦未確認對應圖列產品。通道數與裸晶數、合併報價與分項金額分開。訊號路徑是一般功能圖；模組 FEC、Driver 整合、光源數量與熱管理依產品而異。原先引用的 2022 年 IEEE 功耗比例屬不同光學配置，本次移除其對所有 800G DR8 模組的外推。
+- CPO 前後圖固定矽光，比較外部 ELS 供光配置；其他 CPO 光源位置與介面仍依設計。圖示功能框分開展示 EIC 與 PIC，實際可垂直堆疊；面板光纖介面與 ELS 可抽換性分別確認。
 - LPO 規範引用 100G/lane 版本；CPO 與部分重定時的產品公告支持各自公布的能力與階段，不提供全球採用比例。圖中尺寸與光路不按比例。
 - 公司毛利率區分 GAAP／非 GAAP、期間與產品範圍；中際旭創 46.6% 保留為原文二手資料待核對項，不作單顆模組預測。聯亞營收是公司整體，未假設全部來自 CW 雷射。
 - 營收、功耗、含量與現金流試算均明示假設，未加入任何公司目標價、個人持倉或進退場建議。
@@ -245,3 +288,12 @@ FCC 正式規則討論 Covered List 元件，純機械與被動元件有不同�
 - [東方財富個人文章 — 800G EML 成本拆解，2026-04-11，本文僅作算例](https://caifuhao.eastmoney.com/news/20260411230337084311740)
 - [同花順 — 模組廠上半年數字，二手資料待核對](https://stock.10jqka.com.cn/20260901/c679463474.shtml)
 - [股癌 EP702 原集，2026-10-03](https://player.soundon.fm/p/954689a5-3096-43a4-a80b-7810b219cef3/episodes/42301381-6003-4b54-a28d-290a3fd2e258)
+
+- [Marvell — PAM4 DSP 產品資料，Spica、Perseus 與類比整合](https://www.marvell.com/products/pam-dsp.html)
+- [Marvell — Ara T 等產品於 Q1 2026 起送樣，2026-03-12](https://www.marvell.com/company/newsroom/marvell-1-6t-optical-dsp-ai-data-center-connectivity.html)
+- [Lumentum — 100G EML 官方產品與 800G 升級路徑](https://www.lumentum.com/en/products/eml-100g-pam4-cwdm-laser)
+- [Lumentum — ELSFP-350 外部雷射模組](https://www.lumentum.com/products/external-laser-source-els-module-ultra-high-power-laser)
+- [Coherent — 2024 年報，800G DR8 與不同光源](https://www.coherent.com/content/dam/coherent/site/en/documents/investors/annual-filings/2024/coherent-annual-report-2024.pdf)
+- [Coherent — OFC 多種 1.6T 光學技術展示，2026-03-17](https://www.coherent.com/news/press-releases/coherent-demonstrates-next-gen-pluggable-transceiver-ofc-2026)
+- [NVIDIA — CPO 光引擎、外部供光與封裝，2025-08-26](https://developer.nvidia.com/blog/how-industry-collaboration-fosters-nvidia-co-packaged-optics/)
+- [NVIDIA — Spectrum-X Ethernet Photonics 技術更新，2026-01-06](https://developer.nvidia.com/blog/scaling-power-efficient-ai-factories-with-nvidia-spectrum-x-ethernet-photonics)
