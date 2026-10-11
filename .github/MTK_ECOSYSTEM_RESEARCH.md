@@ -1,6 +1,6 @@
 # MTK／台積電與半導體生態系研究契約
 
-先讀最新 AGENTS.md、RESEARCH_SCHEDULES.md 與 RESEARCH_AUTOMATIONS.json。本檔是四種時間尺度的研究分工，不是交易指令，不代表排程已啟用。
+先讀同一最新 instruction commit 的 AGENTS.md、schedules/common.md 與 Codex prompt 指定的 schedules/topics/<topic-key>.md。本檔是四種時間尺度的研究分工，不是交易指令，不代表排程已啟用。
 
 ## 觀察池與關係
 
@@ -9,9 +9,9 @@
 ## 四條研究線
 
 - 機構晨報：最近公開公告與研究修正，機構／日期／old→new／預測期／核心假設／來源。維持評級、EPS、營收、毛利率、shipments、ASP、capex、目標價、multiple 與 consensus dispersion 的變化，不只列看多／看空。
-- 盤中觀察：開市日 10:30／13:00 的兩個觀察窗；核實報價 timestamp、延遲與 availability。以當時價格、事件與可得的最新已公布籌碼觀察，不把前日法人資料當今日即時買賣。
+- 盤中觀察：在每次觸發時核對是否開市及可取得行情；核實報價 timestamp、延遲與 availability。以當時價格、事件與可得的最新已公布籌碼觀察，不把前日法人資料當今日即時買賣。
 - 盤後日誌：官方價格／量／法人／融資券的 5／10／20 日變化、均線、相對強弱、乖離與除權息；缺漏不填零。結合 revision 與公司事件，維持條件式布局／失效／減碼假設與 downside scan。
-- 週末研究：從技術到產品、競爭、客戶、供給稀缺性、earnings pool、財務與估值。輪替 AI ASIC／TPU、手機、車用與其他產品線，並保留全球 AI infrastructure／capex／供應鏈視野。
+- 生態系深度研究：從技術到產品、競爭、客戶、供給稀缺性、earnings pool、財務與估值。輪替 AI ASIC／TPU、手機、車用與其他產品線，並保留全球 AI infrastructure／capex／供應鏈視野。
 
 ## 證據與日誌
 
@@ -23,4 +23,4 @@
 
 ## 分類與產出
 
-主要論點為經營／產業／供應鏈歸 ai-industry；估值、資金、條件與交易研究不公開發佈，留在私人紀錄。一文一個 domain，公開部分遵守 AGENTS.md 的寫作、來源與發布驗收。例行晨報與盤中以精簡 session 產出為主；有獨立認知增量才公開，盤後最多一篇，週末一篇深度研究。
+主要論點為經營／產業／供應鏈歸 ai-industry；估值、資金、條件與交易研究不公開發佈，留在私人紀錄。一文一個 domain，公開部分遵守 AGENTS.md 的寫作、來源與發布驗收。例行晨報與盤中以精簡 session 產出為主；有獨立認知增量才公開，各次依指定主題完成其完整責任。

@@ -1,107 +1,150 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "repository": "rightson/rightson.github.io",
-  "execution_mode": "cloud_scheduler_repo_instructions",
-  "instruction_revision": "Resolve the latest default-branch commit at each run and read all instruction files from that commit.",
+  "execution_mode": "codex_scheduler_topic_prompts",
+  "instruction_revision": "Read complete instructions from the latest default-branch commit at every run.",
   "common_instructions": ".github/schedules/common.md",
-  "schedule_semantics": "runtime_snapshot; editing this file does not reschedule or enable cloud tasks",
-  "snapshot_date": "2026-10-01",
-  "timezone": "Asia/Taipei",
-  "groups": [
+  "topics": [
     {
-      "key": "r2g-agentic-design",
-      "title": "R2G／Agentic Design",
-      "automation_id": "6abe36cde5dc819192330aa53636c3eb",
-      "instructions": ".github/schedules/r2g-agentic-design.md",
-      "series": [
-        "sota-r2g-cad",
-        "agentic-design-radar",
-        "agentic-design-deep-dive"
+      "key": "sota-r2g-cad",
+      "title": "SOTA R2G／CAD 平台深度學習",
+      "instructions": ".github/schedules/topics/sota-r2g-cad.md",
+      "series": "sota-r2g-cad",
+      "roadmaps": [
+        ".github/EDA_PLATFORM_SERIES_ROADMAP.md"
       ],
-      "branches": "每日雷達；週一 SOTA；週二架構長文與會議摘要",
-      "cadence": "每日 06:00",
-      "runtime_snapshot": {
-        "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Taipei:20261002T060000\nRRULE:FREQ=DAILY;BYHOUR=6;BYMINUTE=0;BYSECOND=0\nEND:VEVENT",
-        "is_enabled": true,
-        "timezone": "Asia/Taipei",
-        "updated_at": "2026-10-01T10:56:56.868543+00:00"
-      }
+      "output": "每週一篇深度長文"
     },
     {
-      "key": "ai-frontier-share",
-      "title": "AI 前沿與分享",
-      "automation_id": "6abe36db1f60819186c89cd600dff008",
-      "instructions": ".github/schedules/ai-frontier-share.md",
-      "series": [
-        "ai-frontier-digest",
-        "ai-weekly-share"
+      "key": "agentic-design-radar",
+      "title": "Agentic Design 即時雷達",
+      "instructions": ".github/schedules/topics/agentic-design-radar.md",
+      "series": "agentic-design-radar",
+      "roadmaps": [
+        ".github/AGENTIC_DESIGN_SERIES_ROADMAP.md"
       ],
-      "branches": "每日摘要；週四分享素材",
-      "cadence": "每日 07:30",
-      "runtime_snapshot": {
-        "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Taipei:20261002T073000\nRRULE:FREQ=DAILY;BYHOUR=7;BYMINUTE=30;BYSECOND=0\nEND:VEVENT",
-        "is_enabled": true,
-        "timezone": "Asia/Taipei",
-        "updated_at": "2026-10-01T10:56:59.131706+00:00"
-      }
+      "output": "重要增量才發布短評"
     },
     {
-      "key": "technical-curriculum",
-      "title": "技術課程",
-      "automation_id": "6abe36dd14b88191980f6bb9e9a0b0f4",
-      "instructions": ".github/schedules/technical-curriculum.md",
-      "series": [
-        "networking-deep-dive",
-        "k8s-hpc",
-        "tpu-technical",
-        "distributed-systems",
-        "llm-lab"
+      "key": "agentic-design-deep-dive",
+      "title": "Agentic Design 架構深掘與會議素材",
+      "instructions": ".github/schedules/topics/agentic-design-deep-dive.md",
+      "series": "agentic-design-deep-dive",
+      "roadmaps": [
+        ".github/AGENTIC_DESIGN_SERIES_ROADMAP.md",
+        ".github/EDA_PLATFORM_SERIES_ROADMAP.md"
       ],
-      "branches": "三 Networking；四 K8s；五 TPU 與分散式系統；六 LLM Lab",
-      "cadence": "週三至六 19:00",
-      "runtime_snapshot": {
-        "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Taipei:20261001T190000\nRRULE:FREQ=WEEKLY;BYDAY=WE,TH,FR,SA;BYHOUR=19;BYMINUTE=0;BYSECOND=0\nEND:VEVENT",
-        "is_enabled": true,
-        "timezone": "Asia/Taipei",
-        "updated_at": "2026-10-01T10:57:01.559688+00:00"
-      }
+      "output": "一篇長文；會議摘要留 session"
     },
     {
-      "key": "ecosystem-investment",
-      "title": "生態系投資研究",
-      "automation_id": "6abe36df9b6c8191bd0dde319cacb347",
-      "instructions": ".github/schedules/ecosystem-investment.md",
-      "series": [
-        "mtk-ecosystem-institutional",
-        "mtk-ecosystem-market-journal",
-        "mtk-ecosystem-deep-dive"
-      ],
-      "branches": "晨報、盤後日誌、週日深研",
-      "cadence": "平日 05:30／17:30；週日 05:30",
-      "runtime_snapshot": {
-        "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Taipei:20261002T053000\nRRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR,SU;BYHOUR=5,17;BYMINUTE=30;BYSECOND=0;BYSETPOS=1,2,3,4,5,6,7,8,9,10,11;WKST=MO\nEND:VEVENT",
-        "is_enabled": true,
-        "timezone": "Asia/Taipei",
-        "updated_at": "2026-10-01T10:57:05.448169+00:00"
-      }
+      "key": "ai-frontier-digest",
+      "title": "AI 前沿每日摘要",
+      "instructions": ".github/schedules/topics/ai-frontier-digest.md",
+      "series": "ai-frontier-digest",
+      "roadmaps": [],
+      "output": "有增量的一篇技術摘要"
     },
     {
-      "key": "market-events",
-      "title": "市場事件觀察",
-      "automation_id": "6abe36e1c468819182542abb4134d860",
-      "instructions": ".github/schedules/market-events.md",
-      "series": [
-        "mtk-ecosystem-intraday"
+      "key": "ai-weekly-share",
+      "title": "AI 每週分享素材",
+      "instructions": ".github/schedules/topics/ai-weekly-share.md",
+      "series": "ai-weekly-share",
+      "roadmaps": [],
+      "output": "session 分享材料；增量足夠才發公開綜述"
+    },
+    {
+      "key": "llm-lab",
+      "title": "LLM Lab：模型到晶片的完整技術鏈",
+      "instructions": ".github/schedules/topics/llm-lab.md",
+      "series": "llm-lab",
+      "roadmaps": [
+        ".github/LLM_LAB_SERIES_ROADMAP.md",
+        ".github/TPU_SERIES_ROADMAP.md",
+        ".github/K8S_HPC_SERIES_ROADMAP.md",
+        ".github/DISTRIBUTED_SYSTEMS_SERIES_ROADMAP.md"
       ],
-      "branches": "盤中事件觀察",
-      "cadence": "平日 10:30／13:30，執行時核對交易日",
-      "runtime_snapshot": {
-        "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Taipei:20261002T103000\nRRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;BYHOUR=10,13;BYMINUTE=30;BYSECOND=0\nEND:VEVENT",
-        "is_enabled": true,
-        "timezone": "Asia/Taipei",
-        "updated_at": "2026-10-01T10:57:07.133201+00:00"
-      }
+      "output": "每週一篇完整 lab"
+    },
+    {
+      "key": "mtk-ecosystem-institutional",
+      "title": "MTK／台積電生態系機構與基本面晨報",
+      "instructions": ".github/schedules/topics/mtk-ecosystem-institutional.md",
+      "series": "mtk-ecosystem-institutional",
+      "roadmaps": [
+        ".github/MTK_ECOSYSTEM_RESEARCH.md"
+      ],
+      "output": "session 短報；投資觀點不公開發佈"
+    },
+    {
+      "key": "mtk-ecosystem-intraday",
+      "title": "盤中價量與事件觀察",
+      "instructions": ".github/schedules/topics/mtk-ecosystem-intraday.md",
+      "series": "mtk-ecosystem-intraday",
+      "roadmaps": [
+        ".github/MTK_ECOSYSTEM_RESEARCH.md"
+      ],
+      "output": "只在 session 通知重要變化；不公開發佈"
+    },
+    {
+      "key": "mtk-ecosystem-market-journal",
+      "title": "盤後籌碼與波段決策日誌",
+      "instructions": ".github/schedules/topics/mtk-ecosystem-market-journal.md",
+      "series": "mtk-ecosystem-market-journal",
+      "roadmaps": [
+        ".github/MTK_ECOSYSTEM_RESEARCH.md"
+      ],
+      "output": "留 session／私人紀錄，不公開發佈"
+    },
+    {
+      "key": "mtk-ecosystem-deep-dive",
+      "title": "MTK 與半導體生態系深度研究",
+      "instructions": ".github/schedules/topics/mtk-ecosystem-deep-dive.md",
+      "series": "mtk-ecosystem-deep-dive",
+      "roadmaps": [
+        ".github/MTK_ECOSYSTEM_RESEARCH.md",
+        ".github/TPU_SERIES_ROADMAP.md"
+      ],
+      "output": "每週一篇 ai-industry 深度研究；估值與布局判讀不公開"
+    },
+    {
+      "key": "tpu-technical",
+      "title": "TPU／AI 加速器深度系列",
+      "instructions": ".github/schedules/topics/tpu-technical.md",
+      "series": "tpu-technical",
+      "roadmaps": [
+        ".github/TPU_SERIES_ROADMAP.md"
+      ],
+      "output": "每週一篇深度長文"
+    },
+    {
+      "key": "networking-deep-dive",
+      "title": "Networking 每週深度長文",
+      "instructions": ".github/schedules/topics/networking-deep-dive.md",
+      "series": "networking-deep-dive",
+      "roadmaps": [
+        ".github/NETWORKING_SERIES_ROADMAP.md"
+      ],
+      "output": "每週一篇深度長文"
+    },
+    {
+      "key": "distributed-systems",
+      "title": "分散式系統深度系列",
+      "instructions": ".github/schedules/topics/distributed-systems.md",
+      "series": "distributed-systems",
+      "roadmaps": [
+        ".github/DISTRIBUTED_SYSTEMS_SERIES_ROADMAP.md"
+      ],
+      "output": "每週一篇完整系統設計案例"
+    },
+    {
+      "key": "k8s-hpc",
+      "title": "Kubernetes：從執行模型到平台工程",
+      "instructions": ".github/schedules/topics/k8s-hpc.md",
+      "series": "k8s-hpc",
+      "roadmaps": [
+        ".github/K8S_HPC_SERIES_ROADMAP.md"
+      ],
+      "output": "每週一篇完整教材；輔助教材與練習在 rightson/k8s-lab"
     }
   ]
 }
-

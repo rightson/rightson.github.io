@@ -20,7 +20,7 @@
    - `_config.yml`
    - `.github/ARTICLE_TAXONOMY.md` 與 `_data/research_series.yml`
    - 與任務相關的 roadmap / series spec（若存在）
-   - 研究排程先讀 `.github/schedules/README.md`、`manifest.json`、`common.md` 與對應 group 任務檔，再讀 `.github/RESEARCH_SCHEDULES.md` 及 `.github/RESEARCH_AUTOMATIONS.json` 的相關系列補充規格。每次先記錄最新 default-branch instruction commit SHA，從該版本完整讀取指令；寫入前仍另核對最新 head。repo 時程是對照紀錄，不會自行重排或啟用 scheduler。
+   - 研究排程先讀 `.github/schedules/common.md` 與雲端 prompt 指定的 `.github/schedules/topics/<topic-key>.md`，再讀直接相關 roadmap 與系列進度。`.github/schedules/README.md`、`manifest.json`、`RESEARCH_SCHEDULES.md` 及 `RESEARCH_AUTOMATIONS.json` 只作文件索引，不保存排程時間或 runtime 設定。每次記錄最新 default-branch instruction commit SHA，完整讀取該版本指令；寫入前另核對最新 head。直接執行指定主題，不依星期、觸發時段或啟動時間選擇分支；時間、週期、enabled、模型及對話關聯由 Codex 雲端排程器管理。
    - 最近至少數篇同 domain／同系列文章，檢查重複與既有語氣。
 3. 若任務會影響 layout、search、分類、RSS、about、CSS 或其他網站功能，再讀對應的 `_layouts/`、`_includes/`、`_data/`、`assets/` 與 `SITE_GUIDE.md`。
 4. 確認同日／同系列／同 slug 是否已有文章；不得重複建立。
@@ -64,7 +64,7 @@
 
 ## 2. 九個公開分類與 URL 穩定性
 
-分類按「文章主要回答什麼問題」判斷；五個排程器是執行入口，十四個主題保留為系列。完整分類邊界與系列預設見 [.github/ARTICLE_TAXONOMY.md](.github/ARTICLE_TAXONOMY.md) 和 `_data/research_series.yml`。
+分類按「文章主要回答什麼問題」判斷；各主題有獨立 prompt 與 Codex 排程入口，十四個主題保留為系列。完整分類邊界與系列預設見 [.github/ARTICLE_TAXONOMY.md](.github/ARTICLE_TAXONOMY.md) 和 `_data/research_series.yml`。
 
 | domain | 公開分類 | 主要問題 |
 | --- | --- | --- |
@@ -91,7 +91,7 @@
 - 「AI 前沿每日摘要」使用 `series: ai-frontier-digest`；依本節主問題規則分類，不以系列預設凌駕實際文章內容。
 - K8s 課程從零學習，沿用 OS 與資工先備；`series: k8s-hpc`，預設 domain／categories 為 `platform-engineering`。roadmap 指向 rightson/k8s-lab 的 learning-plan、lesson-standard、learning-progress；輔助教材、練習、解答、程式與 raw 實驗證據放該 repo，網站只保存完整文章與文章圖。舊 K001–K081 不沿用，新穩定 ID 為 K082–K129；封存歷史保留，恢復須另行授權。
 - 2026-10-01 核准前八類；2026-10-03 新增「科學與物理」；2026-10-04 移除「投資與交易」，當時為八類；2026-10-11 使用者新增「投資策略與市場結構」，現為九類。未來新增、合併、拆分、更名、重排公開分類或重新分類既有文章，仍須使用者確認；新文章依已核准規則選分類，不必逐篇詢問。
-- 同步 `_data/domains.yml`、`_includes/domain-key.html`、本表、roadmap 與五個新排程。顯示順序以 `_data/domains.yml` 為準。
+- 同步 `_data/domains.yml`、`_includes/domain-key.html`、本表、roadmap 與主題 prompt。顯示順序以 `_data/domains.yml` 為準。
 
 ---
 
@@ -536,7 +536,7 @@ Article-only content commit 不必為了形式重跑所有 UI 測試；只做與
 
 ## 13. 保留與刪除規則
 
-IC 設計平台目前只公開以平台架構、工程協作、工具／資料交接、狀態管理、執行恢復或驗收治理為主問題的文章。純 STA／SDC 基礎教材、placement／timing 演算法或單一引擎機制暫不公開；不能只加平台總覽或驗收段落就視為平台文章。封存清單以 `_archive/ic-design-platform/README.md` 為準；封存稿仍算歷史已完成，保留原始 date、categories、series、篇號及查重紀錄，不移回 `_posts/`、不換 slug／日期重發，恢復發布須使用者另行確認。其他分類與十四個系列的研究責任、五個排程器的時程及啟用狀態不變。
+IC 設計平台目前只公開以平台架構、工程協作、工具／資料交接、狀態管理、執行恢復或驗收治理為主問題的文章。純 STA／SDC 基礎教材、placement／timing 演算法或單一引擎機制暫不公開；不能只加平台總覽或驗收段落就視為平台文章。封存清單以 `_archive/ic-design-platform/README.md` 為準；封存稿仍算歷史已完成，保留原始 date、categories、series、篇號及查重紀錄，不移回 `_posts/`、不換 slug／日期重發，恢復發布須使用者另行確認。其他分類與十四個系列的研究責任保持獨立。
 
 - 不任意修改既有文章 filename、date、categories、permalink。
 - 未經要求，不順手改寫舊文章。

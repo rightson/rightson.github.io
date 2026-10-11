@@ -1,39 +1,32 @@
-# 五個研究排程：指令管理入口
+# 研究主題 prompt 入口
 
-2026-10-01 將既有五個研究排程改為每次從本 repo 讀取指令。這次只遷移指令位置，保留相同 automation ID、啟動時間、時區與啟用狀態，不建立額外任務。
+Codex 雲端排程器管理所有執行時間、週期、時區、enabled、模型及對話關聯。GitHub 只管理 prompt、寫作規則、研究 roadmap 與進度。本目錄不定義或保存任何執行時程，也不按觸發時間路由主題。
 
-## 在哪裡修改
+一個主題一份文件，一個排程器直接指定一份主題文件；同次啟動只執行指定主題。修改時間只在 Codex 進行，無須修改 GitHub。即使啟動延遲或手動執行，主題也保持相同。
 
-| 排程器 | Asia/Taipei 時程 | 任務指令 |
-| --- | --- | --- |
-| R2G／Agentic Design | 每日 06:00 | [r2g-agentic-design](r2g-agentic-design.md) |
-| AI 前沿與分享 | 每日 07:30 | [ai-frontier-share](ai-frontier-share.md) |
-| 技術課程 | 週三至六 19:00 | [technical-curriculum](technical-curriculum.md) |
-| 生態系投資研究 | 平日 05:30／17:30；週日 05:30 | [ecosystem-investment](ecosystem-investment.md) |
-| 市場事件觀察 | 平日 10:30／13:30，執行時核對交易日 | [market-events](market-events.md) |
+| 主題 | prompt |
+| --- | --- |
+| SOTA R2G／CAD 平台深度學習 | [sota-r2g-cad](topics/sota-r2g-cad.md) |
+| Agentic Design 即時雷達 | [agentic-design-radar](topics/agentic-design-radar.md) |
+| Agentic Design 架構深掘與會議素材 | [agentic-design-deep-dive](topics/agentic-design-deep-dive.md) |
+| AI 前沿每日摘要 | [ai-frontier-digest](topics/ai-frontier-digest.md) |
+| AI 每週分享素材 | [ai-weekly-share](topics/ai-weekly-share.md) |
+| LLM Lab：模型到晶片的完整技術鏈 | [llm-lab](topics/llm-lab.md) |
+| MTK／台積電生態系機構與基本面晨報 | [mtk-ecosystem-institutional](topics/mtk-ecosystem-institutional.md) |
+| 盤中價量與事件觀察 | [mtk-ecosystem-intraday](topics/mtk-ecosystem-intraday.md) |
+| 盤後籌碼與波段決策日誌 | [mtk-ecosystem-market-journal](topics/mtk-ecosystem-market-journal.md) |
+| MTK 與半導體生態系深度研究 | [mtk-ecosystem-deep-dive](topics/mtk-ecosystem-deep-dive.md) |
+| TPU／AI 加速器深度系列 | [tpu-technical](topics/tpu-technical.md) |
+| Networking 每週深度長文 | [networking-deep-dive](topics/networking-deep-dive.md) |
+| 分散式系統深度系列 | [distributed-systems](topics/distributed-systems.md) |
+| Kubernetes：從執行模型到平台工程 | [k8s-hpc](topics/k8s-hpc.md) |
 
-所有任務共用要求修改 [common.md](common.md)；全站寫作、分類、來源、發布與封存規則修改 [AGENTS.md](../../AGENTS.md) 及其指定規格。各系列進度仍保存在原 roadmap。五個任務的完整執行指令為「AGENTS.md＋common.md＋對應任務檔＋本次相關系列補充規格」。
+## 讀取協定
 
-[manifest.json](manifest.json) 保存五個任務的穩定 ID、任務檔路徑、十四個系列分派及回讀雲端的時程對照。它是透明的 runtime snapshot，不會自行建立、啟用或重排雲端任務；目前使用者同意的週期未變。
+1. 取得 rightson/rightson.github.io 最新 default branch metadata 及 commit SHA。
+2. 從該 commit 完整讀取 AGENTS.md、common.md 及雲端 prompt 指定的 topics/<topic-key>.md，再讀分類規格、相關 roadmap、最近成果及進度。
+3. 記錄 instruction commit SHA。讀取失敗、缺檔或截斷時停止該次發布並精確回報，保留任務。
+4. 直接執行指定主題，不以星期、時段、啟動時間或本索引選擇其他主題。
+5. 寫入前核對最新 head 與目標 blob SHA，保留其他人的變更；依 AGENTS.md 驗證完成階段。
 
-## 每次啟動如何讀取
-
-1. 雲端 scheduler 觸發既有任務；短 prompt 指定 repo 與固定 group key。
-2. 透過已連接的 GitHub 讀 repo metadata、最新 default branch 的 commit SHA。
-3. 從該 commit 完整讀取 AGENTS.md、本 README、manifest、common 及任務檔，再讀本次相關分類規格、系列補充規格、roadmap 與進度。不只讀 GitHub 頁面摘要，不依賴會被清除的本地工作目錄。
-4. 以原排定觸發日期、星期與 Asia/Taipei 時段選本次分支；重試與延遲仍處理原時段，無法確定就回報缺口。
-5. 記錄 instruction commit SHA；讀取失敗、缺檔或內容截斷就停止該次發布並回報，不用舊 prompt 猜做，也不因此停用 recurring task。
-6. 寫入前另取得最新 head／blob SHA，保留其他 agent 的文章與進度。初始指令版本的記錄不代表可以用過時 tree 覆寫 main。
-
-## 修改後何時生效
-
-- 改 common 或任務檔並 commit：下一次執行依短 prompt 讀取新版本；已開始的執行保持其啟動時版本。這是本 repo 的讀取約定，不是自動同步服務。
-- 改觸發時間或 enabled：需由 ChatGPT scheduler 更新，再回讀並同步 manifest 與 RESEARCH_SCHEDULES.md。僅改 repo 時程不會改變觸發時間。
-- 改任務檔路徑、group key 或 repo：同步修改雲端短 prompt 的入口，避免舊路徑失效。一般修改正文不用重新貼完整指令到五個排程器。
-- RESEARCH_AUTOMATIONS.json 的十四筆 automations 是系列補充規格；runtime_groups 連到本目錄。五個 group 的時段優先於早期系列 prompt 的舊時段，內容深度、實驗與公開／私人邊界保持原要求。
-- 本目錄保存在公開 GitHub repo，但不新增網站選單或文章。只保存公開研究規格與排程對照，不保存私人投資日誌、持倉、公司內部資料或憑證。
-
-## 驗證範圍
-
-遷移驗收：五個任務指令完整拆分、十四個系列各有一個 group owner、遠端檔案回讀、五個雲端 prompt 回讀、ID／schedule／timezone／enabled 不變。這些核對不等同已執行下一次研究，也不為測試入口重複發布文章。
-
+manifest.json 與 .github/RESEARCH_AUTOMATIONS.json 只提供主題文件索引，不是排程設定，也不是第二份 prompt。通用要求只在 common.md 維護；各主題完整責任只在對應文件維護。十四個系列沿用穩定 identifier、roadmap 與歷史完成記錄。此目錄不新增網站公開選單或文章。

@@ -1,6 +1,6 @@
 # Kubernetes：從執行模型到平台工程
 
-2026-10-01 使用者核准：OS 與資工先備直接沿用，Kubernetes 從零學習。公開分類「系統與平台」，domain `platform-engineering`，series 延續 `k8s-hpc`。每週四 Asia/Taipei 19:00 由既有「技術課程」分支啟動，不新增或重排雲端任務。
+2026-10-01 使用者核准：OS 與資工先備直接沿用，Kubernetes 從零學習。公開分類「系統與平台」，domain `platform-engineering`，series 延續 `k8s-hpc`。直接由 Codex 排程器指定 k8s-hpc 主題 prompt；執行時間只在 Codex 管理。
 
 ## 課程與教材來源
 
@@ -40,4 +40,4 @@ OS 名詞按需簡短銜接；K8s 新概念先建立問題與最小模型，再�
 
 先提交並回讀 k8s-lab 教材與實驗證據，再提交網站文章及圖檔；兩個 repo 分開核驗並記錄階段。只有必要實驗成立、source 回讀、網站 build/deploy 與正式正文／圖檔核驗完成，才在 lab ledger 標記 complete、記錄實際 next_unit 並同步本檔的目前接續索引；後續以 lab ledger 狀態接續，不固定重跑初始化的 K082。無硬體、行情或權限時記錄受影響部分，不捏造結果。
 
-使用「系列＋排定日期＋時段」核對 lab execution ledger。`k8s-hpc｜2026-10-01｜19:00 Asia/Taipei` 已有 K001 歷史成果，封存不撤銷該次完成，不在相同時段重發新版文章。
+按系列、穩定單元 ID、來源與完成狀態核對 lab execution ledger。2026-10-01 的 K001 是歷史成果，封存不撤銷該次完成，也不把封存稿改名或換日期重發；新課程依 K082–K129 與 lab ledger 接續。

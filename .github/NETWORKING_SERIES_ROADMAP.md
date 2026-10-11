@@ -1,6 +1,6 @@
 # Networking 研究與深度接續
 
-每週三 19:00，series: networking-deep-dive，domain/categories: networking。每次先讀最新 AGENTS.md、RESEARCH_SCHEDULES.md 與最近同 domain 文章；本檔是選材規格，不代表 scheduler 狀態。
+series: networking-deep-dive，domain/categories: networking。每次先讀最新 AGENTS.md、RESEARCH_SCHEDULES.md 與最近同 domain 文章；本檔是選材規格，不代表 scheduler 狀態。
 
 從頂尖國際會議原始論文、官方規格與實際工程證據選一個能補上知識缺口的問題。經典原理與 AI network 前沿交錯，必要先備用最小模型建立，不靠術語密度。維持 workload／topology／data path／bottleneck→mechanism→quantitative evidence→trade-off／failure／deployment 的完整理解。
 
