@@ -1,3 +1,7 @@
+# MTK／台積電生態系歷史研究接續
+
+本檔保留原四條研究線的研究方法與歷史接續，實際任務已合併至 [CSP 高資本支出供應鏈關鍵動態](schedules/topics/csp-capex-ecosystem.md)。本檔不啟動獨立 recurring 分支；執行內容以新主題 prompt 與最新 AGENTS.md 為準。
+
 # MTK／台積電與半導體生態系研究契約
 
 先讀同一最新 instruction commit 的 AGENTS.md、schedules/common.md 與 Codex prompt 指定的 schedules/topics/<topic-key>.md。本檔是四種時間尺度的研究分工，不是交易指令，不代表排程已啟用。

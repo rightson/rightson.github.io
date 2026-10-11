@@ -12,7 +12,7 @@
       "roadmaps": [
         ".github/EDA_PLATFORM_SERIES_ROADMAP.md"
       ],
-      "output": "每週一篇深度長文"
+      "output": "每次一篇深度長文"
     },
     {
       "key": "agentic-design-radar",
@@ -62,48 +62,7 @@
         ".github/K8S_HPC_SERIES_ROADMAP.md",
         ".github/DISTRIBUTED_SYSTEMS_SERIES_ROADMAP.md"
       ],
-      "output": "每週一篇完整 lab"
-    },
-    {
-      "key": "mtk-ecosystem-institutional",
-      "title": "MTK／台積電生態系機構與基本面晨報",
-      "instructions": ".github/schedules/topics/mtk-ecosystem-institutional.md",
-      "series": "mtk-ecosystem-institutional",
-      "roadmaps": [
-        ".github/MTK_ECOSYSTEM_RESEARCH.md"
-      ],
-      "output": "session 短報；投資觀點不公開發佈"
-    },
-    {
-      "key": "mtk-ecosystem-intraday",
-      "title": "盤中價量與事件觀察",
-      "instructions": ".github/schedules/topics/mtk-ecosystem-intraday.md",
-      "series": "mtk-ecosystem-intraday",
-      "roadmaps": [
-        ".github/MTK_ECOSYSTEM_RESEARCH.md"
-      ],
-      "output": "只在 session 通知重要變化；不公開發佈"
-    },
-    {
-      "key": "mtk-ecosystem-market-journal",
-      "title": "盤後籌碼與波段決策日誌",
-      "instructions": ".github/schedules/topics/mtk-ecosystem-market-journal.md",
-      "series": "mtk-ecosystem-market-journal",
-      "roadmaps": [
-        ".github/MTK_ECOSYSTEM_RESEARCH.md"
-      ],
-      "output": "留 session／私人紀錄，不公開發佈"
-    },
-    {
-      "key": "mtk-ecosystem-deep-dive",
-      "title": "MTK 與半導體生態系深度研究",
-      "instructions": ".github/schedules/topics/mtk-ecosystem-deep-dive.md",
-      "series": "mtk-ecosystem-deep-dive",
-      "roadmaps": [
-        ".github/MTK_ECOSYSTEM_RESEARCH.md",
-        ".github/TPU_SERIES_ROADMAP.md"
-      ],
-      "output": "每週一篇 ai-industry 深度研究；估值與布局判讀不公開"
+      "output": "每次一篇完整 lab"
     },
     {
       "key": "tpu-technical",
@@ -113,7 +72,7 @@
       "roadmaps": [
         ".github/TPU_SERIES_ROADMAP.md"
       ],
-      "output": "每週一篇深度長文"
+      "output": "每次一篇深度長文"
     },
     {
       "key": "networking-deep-dive",
@@ -123,7 +82,7 @@
       "roadmaps": [
         ".github/NETWORKING_SERIES_ROADMAP.md"
       ],
-      "output": "每週一篇深度長文"
+      "output": "每次一篇深度長文"
     },
     {
       "key": "distributed-systems",
@@ -133,7 +92,7 @@
       "roadmaps": [
         ".github/DISTRIBUTED_SYSTEMS_SERIES_ROADMAP.md"
       ],
-      "output": "每週一篇完整系統設計案例"
+      "output": "每次一篇完整系統設計案例"
     },
     {
       "key": "k8s-hpc",
@@ -143,7 +102,18 @@
       "roadmaps": [
         ".github/K8S_HPC_SERIES_ROADMAP.md"
       ],
-      "output": "每週一篇完整教材；輔助教材與練習在 rightson/k8s-lab"
+      "output": "每次一篇完整教材；輔助教材與練習在 rightson/k8s-lab"
+    },
+    {
+      "key": "csp-capex-ecosystem",
+      "title": "CSP 高資本支出供應鏈關鍵動態",
+      "instructions": ".github/schedules/topics/csp-capex-ecosystem.md",
+      "series": "csp-capex-ecosystem",
+      "roadmaps": [
+        ".github/CSP_CAPEX_ECOSYSTEM_RESEARCH.md",
+        ".github/CSP_CAPEX_ECOSYSTEM_PROGRESS.json"
+      ],
+      "output": "重要增量才通知；獨立產業論證才公開完整文章，個股 re-rating／估值判讀留私人對話"
     }
   ]
 }

@@ -1,6 +1,6 @@
-# 九類公開文章與十四個研究系列
+# 九類公開文章與研究系列
 
-2026-10-01 使用者核准最初的分類；2026-10-03 新增「科學與物理」；2026-10-04 撤下「投資與交易」（investing），舊稿封存於 `_archive/investing/`。2026-10-11 使用者新增「投資策略與市場結構」（investing-strategy），目前九個公開 `domain`。各主題有獨立 Codex 排程入口，十四個系列各自管理研究進度，三者不可混用。
+2026-10-01 使用者核准最初的分類；2026-10-03 新增「科學與物理」；2026-10-04 撤下「投資與交易」（investing），舊稿封存於 `_archive/investing/`。2026-10-11 使用者新增「投資策略與市場結構」（investing-strategy），目前九個公開 `domain`。各主題有獨立 Codex 排程入口，各系列各自管理研究進度，三者不可混用。
 
 ## 分類以文章主要回答的問題為準
 
@@ -12,7 +12,7 @@
 | networking | 網路系統 | 資料如何跨節點傳送，如何控制壅塞與恢復？ | networking-deep-dive |
 | distributed-systems | 分散式系統 | 服務如何設計資料、狀態、一致性、複寫、容錯與恢復？ | distributed-systems |
 | platform-engineering | 系統與平台 | Linux、容器、K8s／HPC 平台如何執行、隔離、配置資源、維運及驗證效能？ | k8s-hpc |
-| ai-industry | 產業與供應鏈 | 企業如何成長、競爭、獲利，供需與價值如何分配？ | mtk-ecosystem-deep-dive |
+| ai-industry | 產業與供應鏈 | 企業如何成長、競爭、獲利，供需與價值如何分配？ | csp-capex-ecosystem |
 | science-physics | 科學與物理 | 自然現象與材料物性由哪些物理機制決定，如何以實驗和理論理解？ | 單篇專題，無新增排程系列 |
 | investing-strategy | 投資策略與市場結構 | 市場如何定價、制度性資金約束如何造成錯價、通用投資方法何時有效？ | 單篇專題，無新增排程系列 |
 
@@ -30,7 +30,7 @@
 
 ## 既有與未來文章
 
-2026-10-01 使用者核准：IC 設計平台目前只公開以平台架構、工程協作、工具／資料交接、狀態管理、執行恢復或驗收治理為主問題的文章。純 STA／SDC 基礎教材、placement／timing 演算法或單一引擎機制暫不公開；不能只加平台總覽或驗收段落就視為平台文章。封存清單以 `_archive/ic-design-platform/README.md` 為準；封存稿仍算歷史已完成，保留原始 date、categories、series、篇號及查重紀錄，不移回 `_posts/`、不換 slug／日期重發，恢復發布須使用者另行確認。其他分類與十四個系列的研究責任保持獨立。
+2026-10-01 使用者核准：IC 設計平台目前只公開以平台架構、工程協作、工具／資料交接、狀態管理、執行恢復或驗收治理為主問題的文章。純 STA／SDC 基礎教材、placement／timing 演算法或單一引擎機制暫不公開；不能只加平台總覽或驗收段落就視為平台文章。封存清單以 `_archive/ic-design-platform/README.md` 為準；封存稿仍算歷史已完成，保留原始 date、categories、series、篇號及查重紀錄，不移回 `_posts/`、不換 slug／日期重發，恢復發布須使用者另行確認。其他分類與各系列的研究責任保持獨立。
 
 - 既有文章重新分類只改 `domain`，保留 filename、date、categories、permalink、正文、原始系列與篇號；不靠改 categories 移動網址。已封存文章保持封存。
 - 新文章使用單一 `categories`，與所選 `domain` 相同；`series` 使用穩定 identifier，可跨 domain，不隨題目更名。
@@ -40,3 +40,7 @@
 2026-10-01 後續核准：K8s 課程從零建立 Kubernetes 能力並沿用 OS 先備，公開分類名稱為「系統與平台」。LLM Lab 預設仍為 ai-frontier；每篇依主要問題選分類，series llm-lab 保持獨立。
 
 科學與物理研究歸 science-physics；若主問題是運算硬體資料流，仍歸 architecture。投資方法論歸 investing-strategy；本次新分類僅承接 2026-10-11 Ackman 市場結構專題，不恢復封存的六篇投資交易文章，也不新增排程。新增分類不自動建立研究系列或排程。
+
+## CSP 供應鏈研究合併
+
+使用者核准將 MTK／台積電機構、盤中、盤後與半導體生態系深研合併為 csp-capex-ecosystem。新研究按主要問題使用 ai-industry；個股 re-rating、當前估值與具體交易判讀仍留私人對話。舊四個 series identifier 與已完成記錄保留作歷史，不改既有文章或封存內容，不再有獨立研究排程入口。此合併不新增公開 domain。

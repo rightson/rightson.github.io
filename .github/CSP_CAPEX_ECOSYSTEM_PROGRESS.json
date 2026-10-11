@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "series": "csp-capex-ecosystem",
+  "setup_only": true,
+  "baseline_status": "not_yet_researched",
+  "legacy_series": [
+    "mtk-ecosystem-institutional",
+    "mtk-ecosystem-intraday",
+    "mtk-ecosystem-market-journal",
+    "mtk-ecosystem-deep-dive"
+  ],
+  "public_events": [],
+  "articles": [],
+  "coverage": {
+    "universe_source": "rightson/alpha-quant:seeds/watchlists/ai_supply_chain_universe.csv",
+    "status": "not_yet_checked"
+  },
+  "research_candidates": [],
+  "blockers": []
+}

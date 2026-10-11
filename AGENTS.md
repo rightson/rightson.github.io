@@ -64,7 +64,7 @@
 
 ## 2. 九個公開分類與 URL 穩定性
 
-分類按「文章主要回答什麼問題」判斷；各主題有獨立 prompt 與 Codex 排程入口，十四個主題保留為系列。完整分類邊界與系列預設見 [.github/ARTICLE_TAXONOMY.md](.github/ARTICLE_TAXONOMY.md) 和 `_data/research_series.yml`。
+分類按「文章主要回答什麼問題」判斷；各主題有獨立 prompt 與 Codex 排程入口，各主題保留獨立系列及歷史記錄。完整分類邊界與系列預設見 [.github/ARTICLE_TAXONOMY.md](.github/ARTICLE_TAXONOMY.md) 和 `_data/research_series.yml`。
 
 | domain | 公開分類 | 主要問題 |
 | --- | --- | --- |
@@ -86,7 +86,7 @@
 - 模型、訓練／推論與通用 Agent 歸 `ai-frontier`；主問題為 RTL、驗證、synthesis／APR、signoff 的導入、流程與驗收責任，歸 `ic-design-platform`。
 - LLM Lab 模型與實作預設 `ai-frontier`；獨立加速器微架構、記憶體或資料流歸 `architecture`。系列 identifier 不變。
 - 企業如何成長、競爭及獲利歸 `ai-industry`；市場微結構、制度性風控、資金期限與通用策略研究歸 `investing-strategy`。個股當前估值、即時機構資金與具體進退場條件仍不公開發佈。出現 EPS、營收、毛利或現金流數字，不足以歸為投資文。
-- 半導體生態系深研預設 `ai-industry`；主問題為合理股價、估值情境或布局條件時不公開發佈。
+- CSP 高資本支出供應鏈研究（`csp-capex-ecosystem`）承接 MTK／台積電生態系四條研究線，舊系列只保留歷史完成記錄，不能恢復為獨立 recurring 分支。公開產業研究預設 `ai-industry`；主問題為合理股價、估值情境或布局條件時不公開發佈。
 - TPU 微架構歸 `architecture`；協定、封包路徑與互連歸 `networking`；服務一致性、複寫與完整服務設計歸 `distributed-systems`；Linux、容器、K8s／HPC、叢集資源與平台維運歸 `platform-engineering`，不因應用於 EDA／AI 而改分類。
 - 「AI 前沿每日摘要」使用 `series: ai-frontier-digest`；依本節主問題規則分類，不以系列預設凌駕實際文章內容。
 - K8s 課程從零學習，沿用 OS 與資工先備；`series: k8s-hpc`，預設 domain／categories 為 `platform-engineering`。roadmap 指向 rightson/k8s-lab 的 learning-plan、lesson-standard、learning-progress；輔助教材、練習、解答、程式與 raw 實驗證據放該 repo，網站只保存完整文章與文章圖。舊 K001–K081 不沿用，新穩定 ID 為 K082–K129；封存歷史保留，恢復須另行授權。
@@ -536,7 +536,7 @@ Article-only content commit 不必為了形式重跑所有 UI 測試；只做與
 
 ## 13. 保留與刪除規則
 
-IC 設計平台目前只公開以平台架構、工程協作、工具／資料交接、狀態管理、執行恢復或驗收治理為主問題的文章。純 STA／SDC 基礎教材、placement／timing 演算法或單一引擎機制暫不公開；不能只加平台總覽或驗收段落就視為平台文章。封存清單以 `_archive/ic-design-platform/README.md` 為準；封存稿仍算歷史已完成，保留原始 date、categories、series、篇號及查重紀錄，不移回 `_posts/`、不換 slug／日期重發，恢復發布須使用者另行確認。其他分類與十四個系列的研究責任保持獨立。
+IC 設計平台目前只公開以平台架構、工程協作、工具／資料交接、狀態管理、執行恢復或驗收治理為主問題的文章。純 STA／SDC 基礎教材、placement／timing 演算法或單一引擎機制暫不公開；不能只加平台總覽或驗收段落就視為平台文章。封存清單以 `_archive/ic-design-platform/README.md` 為準；封存稿仍算歷史已完成，保留原始 date、categories、series、篇號及查重紀錄，不移回 `_posts/`、不換 slug／日期重發，恢復發布須使用者另行確認。其他分類與各系列的研究責任保持獨立。
 
 - 不任意修改既有文章 filename、date、categories、permalink。
 - 未經要求，不順手改寫舊文章。

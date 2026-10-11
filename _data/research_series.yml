@@ -40,3 +40,7 @@
 - key: mtk-ecosystem-market-journal
   title: 盤後籌碼與波段決策日誌
   default_domain: private  # 投資觀點不公開發佈（2026-10-04）
+
+- key: csp-capex-ecosystem
+  title: CSP 高資本支出供應鏈關鍵動態
+  default_domain: ai-industry
