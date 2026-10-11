@@ -1,6 +1,6 @@
-# 八類公開文章與十四個研究系列
+# 九類公開文章與十四個研究系列
 
-2026-10-01 使用者核准前八類；2026-10-03 核准新增「科學與物理」（science-physics）。五個排程器是執行入口；十四個系列保留各自進度；八個 `domain` 是公開選單。三者不可混用。2026-10-04 依使用者要求收回「投資與交易」（investing）：投資觀點不公開發佈，既有稿件封存於 `_archive/investing/`。
+2026-10-01 使用者核准最初的分類；2026-10-03 新增「科學與物理」；2026-10-04 撤下「投資與交易」（investing），舊稿封存於 `_archive/investing/`。2026-10-11 使用者新增「投資策略與市場結構」（investing-strategy），目前九個公開 `domain`。五個排程器是執行入口，十四個系列各自管理研究進度，三者不可混用。
 
 ## 分類以文章主要回答的問題為準
 
@@ -14,6 +14,7 @@
 | platform-engineering | 系統與平台 | Linux、容器、K8s／HPC 平台如何執行、隔離、配置資源、維運及驗證效能？ | k8s-hpc |
 | ai-industry | 產業與供應鏈 | 企業如何成長、競爭、獲利，供需與價值如何分配？ | mtk-ecosystem-deep-dive |
 | science-physics | 科學與物理 | 自然現象與材料物性由哪些物理機制決定，如何以實驗和理論理解？ | 單篇專題，無新增排程系列 |
+| investing-strategy | 投資策略與市場結構 | 市場如何定價、制度性資金約束如何造成錯價、通用投資方法何時有效？ | 單篇專題，無新增排程系列 |
 
 完整系列名稱與預設分類見 `_data/research_series.yml`；選單名稱、順序與說明見 `_data/domains.yml`。以上預設不能代替逐篇閱讀與判斷。
 
@@ -23,7 +24,7 @@
 - EDA 演算法、STA／SDC、placement、routing、verification、signoff 與 R2G 平台均歸 `ic-design-platform`；`eda`、`timing` 是舊分類相容值，不再建立獨立公開分類。
 - 通用模型與 Agent 機制歸 `ai-frontier`；主問題在 RTL、驗證、synthesis／APR、signoff 的導入、流程或驗收責任，歸 `ic-design-platform`。
 - LLM Lab 主問題為模型、數學與軟體實作時歸 `ai-frontier`；獨立加速器資料流或微架構歸 `architecture`。依主要問題亦可歸網路、系統或 IC 平台；系列 identifier 不變。
-- 解釋企業如何成長、競爭及獲利歸 `ai-industry`；判斷股價已反映的預期、合理估值、資金動向或進退場條件屬投資觀點，不公開發佈；mtk-ecosystem-institutional、mtk-ecosystem-intraday、mtk-ecosystem-market-journal 的結果只留在排程對話或私人紀錄。出現營收、EPS、毛利或現金流數字，不足以將文章判成投資文。
+- 解釋企業如何成長、競爭及獲利歸 `ai-industry`；解釋通用投資方法、制度性資金約束、錯價成因與市場微結構歸 `investing-strategy`。個股即時估值、籌碼、目標價與具體進退場條件仍不公開；mtk-ecosystem-institutional、mtk-ecosystem-intraday、mtk-ecosystem-market-journal 的結果只留在排程對話或私人紀錄。出現營收、EPS、毛利或現金流數字，不足以將文章判成投資文。
 - 半導體生態系深研預設 `ai-industry`；主問題為合理股價、估值情境或布局條件時不公開發佈。晨報只有在獨立回答經營或供需問題、且不含估值或進退場判斷時，才依主問題公開分類。
 - TPU 微架構歸 `architecture`；其供需、競爭或估值研究依上述邊界分流。互連協定與封包路徑歸 `networking`；服務一致性、複寫與完整服務設計歸 `distributed-systems`；Linux、容器、K8s／HPC、叢集資源與平台維運歸 `platform-engineering`，不因應用於 AI／EDA 而改分類。
 
@@ -38,4 +39,4 @@
 
 2026-10-01 後續核准：K8s 課程從零建立 Kubernetes 能力並沿用 OS 先備，公開分類名稱為「系統與平台」。LLM Lab 預設仍為 ai-frontier；每篇依主要問題選分類，series llm-lab 保持獨立。
 
-科學與物理研究歸 science-physics；若主問題是運算硬體資料流，仍歸 architecture。新增分類不自動建立研究系列或排程。
+科學與物理研究歸 science-physics；若主問題是運算硬體資料流，仍歸 architecture。投資方法論歸 investing-strategy；本次新分類僅承接 2026-10-11 Ackman 市場結構專題，不恢復封存的六篇投資交易文章，也不新增排程。新增分類不自動建立研究系列或排程。

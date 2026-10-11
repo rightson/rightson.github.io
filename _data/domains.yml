@@ -38,3 +38,8 @@
   title: 科學與物理
   english: SCIENCE & PHYSICS
   description: 自然現象、材料物性、物理機制、實驗與理論研究。
+- key: investing-strategy
+  number: '09'
+  title: 投資策略與市場結構
+  english: INVESTING & MARKET STRUCTURE
+  description: 資金行為、定價機制、投資期限與風險管理的通用研究。

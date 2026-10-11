@@ -50,8 +50,10 @@ FRAME_RE = re.compile(r"驗收|邊界|證據|恢復|契約|閘門|可採信")
 DOMAINS = {
     "ic-design-platform", "ai-frontier", "architecture", "networking",
     "distributed-systems", "platform-engineering", "ai-industry", "science-physics",
+    "investing-strategy",
 }
-# Withdrawn from the public site on 2026-10-04; see _archive/investing/README.md.
+# Legacy investing/trading domains remain private; the approved 2026-10-11
+# investing-strategy domain is reserved for general market-structure and methods research.
 PRIVATE_DOMAINS = {"investing", "investment", "trading"}
 
 # Sentence skeletons already overused on the site (title, description, opening).
@@ -230,7 +232,7 @@ def lint(path):
         errs.append("front matter 缺少 takeaways")
     domain = fm.get("domain")
     if domain in PRIVATE_DOMAINS:
-        errs.append(f"{domain} 不公開發佈；投資觀點留在私人紀錄，不放 _posts/")
+        errs.append(f"{domain} 舊投資交易分類維持封存；個股交易紀錄與私人持倉不放 _posts/")
     elif domain and domain not in DOMAINS:
         errs.append(f"domain 不在公開分類內：{domain}")
     cats = fm.get("categories")
