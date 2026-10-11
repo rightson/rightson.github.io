@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="980" viewBox="0 0 1100 980" role="img" aria-labelledby="title desc">
+<title id="title">短期資金期限錯配，如何在財報衝擊後造成兩種不同的價值結果</title>
+<desc id="desc">指數化資金、Pod 風控與短天期選擇權可能改變邊際訂單流；財報失望後，股價下跌可能超過企業價值損失，也可能是在反映永久價值受損。下方比較股價75美元時內在價值95美元與60美元兩種情境。</desc>
+<style>
+  .bg{fill:#f8fafc}.ink{fill:#182637}.muted{fill:#49576b}.line{stroke:#74869a}.card{fill:#edf3fa;stroke:#bdcbd9}.shock{fill:#e6eefb;stroke:#8aa7cf}.good{fill:#e6f5ee;stroke:#74ae8e}.bad{fill:#fcefee;stroke:#d49a95}.green{fill:#155f42}.red{fill:#a13736}.footer{fill:#617086}
+  text{font-family:system-ui,-apple-system,"Noto Sans TC","PingFang TC",sans-serif}
+  @media (prefers-color-scheme:dark){
+    .bg{fill:#111a25}.ink{fill:#eef4fb}.muted{fill:#c2cfdd}.line{stroke:#8ba2b9}.card{fill:#213246;stroke:#4a6985}.shock{fill:#1d3659;stroke:#577da8}.good{fill:#16392e;stroke:#4a8867}.bad{fill:#462729;stroke:#956064}.green{fill:#a8e7c2}.red{fill:#ffc1bc}.footer{fill:#bcc9d8}
+  }
+</style>
+<rect class="bg" x="0" y="0" width="1100" height="980" rx="20"/>
+<text class="ink" x="55" y="67" font-size="37" font-weight="700">同一場暴跌，兩種完全不同的結果</text>
+<text class="muted" x="55" y="110" font-size="22">圖解：投資期限錯配如何影響價格，以及何時可能成為錯價</text>
+<line class="line" x1="55" y1="134" x2="1045" y2="134" stroke-width="2"/>
+<rect class="card" x="55" y="169" width="310" height="172" rx="18"/>
+<rect class="card" x="395" y="169" width="310" height="172" rx="18"/>
+<rect class="card" x="735" y="169" width="310" height="172" rx="18"/>
+<text class="ink" x="80" y="212" font-size="27" font-weight="700">指數化持股</text>
+<text class="muted" x="80" y="252" font-size="20">相對少依單季財報</text>
+<text class="muted" x="80" y="281" font-size="20">主動調整持倉</text>
+<text class="muted" x="80" y="312" font-size="18">影響邊際交易結構</text>
+<text class="ink" x="420" y="212" font-size="27" font-weight="700">多策略 Pod</text>
+<text class="muted" x="420" y="252" font-size="20">短期績效與風控額度</text>
+<text class="muted" x="420" y="281" font-size="20">可能迫使同步減碼</text>
+<text class="muted" x="420" y="312" font-size="18">去槓桿造成集中賣壓</text>
+<text class="ink" x="760" y="212" font-size="27" font-weight="700">短天期選擇權</text>
+<text class="muted" x="760" y="252" font-size="20">造市商避險方向</text>
+<text class="muted" x="760" y="281" font-size="20">可能放大或抑制波動</text>
+<text class="muted" x="760" y="312" font-size="18">取決於淨 Gamma 部位</text>
+<path class="line" d="M210 341 V380 H550 M550 341 V407 M890 341 V380 H550" fill="none" stroke-width="3" stroke-linecap="round"/>
+<path class="line" d="M539 397 L550 414 L561 397" fill="none" stroke-width="3"/>
+<rect class="shock" x="202" y="430" width="696" height="145" rx="20"/>
+<text class="ink" x="550" y="478" font-size="28" font-weight="700" text-anchor="middle">財報不如預期／市場風險偏好下降</text>
+<text class="muted" x="550" y="514" font-size="21" text-anchor="middle">新資訊改變獲利預期，訂單流則決定當下成交價</text>
+<text class="ink" x="550" y="552" font-size="22" font-weight="600" text-anchor="middle">觀察到股價從 $100 跌至 $75（−25%）</text>
+<path class="line" d="M550 575 V626 M289 626 H811 M289 626 V664 M811 626 V664" fill="none" stroke-width="3"/>
+<path class="line" d="M280 652 L289 668 L298 652 M802 652 L811 668 L820 652" fill="none" stroke-width="3"/>
+<rect class="good" x="55" y="677" width="478" height="202" rx="20"/>
+<rect class="bad" x="567" y="677" width="478" height="202" rx="20"/>
+<text class="green" x="84" y="723" font-size="30" font-weight="700">A　短期錯價</text>
+<text class="ink" x="84" y="760" font-size="22">保守估計長期價值：$95</text>
+<text class="ink" x="84" y="793" font-size="22">現價：$75</text>
+<text class="green" x="84" y="840" font-size="27" font-weight="700">回到估值的空間：+26.7%</text>
+<text class="red" x="596" y="723" font-size="30" font-weight="700">B　價值陷阱</text>
+<text class="ink" x="596" y="760" font-size="22">重新估計長期價值：$60</text>
+<text class="ink" x="596" y="793" font-size="22">現價：$75</text>
+<text class="red" x="596" y="840" font-size="27" font-weight="700">回到估值的空間：−20.0%</text>
+<text class="muted" x="55" y="917" font-size="20">假設算例：判斷企業價值是否受損，優先於解讀股價跌幅。</text>
+<text class="footer" x="1043" y="951" font-size="13" text-anchor="end">Scott Yo-Ru Chen · 2026-10-11</text>
+</svg>
