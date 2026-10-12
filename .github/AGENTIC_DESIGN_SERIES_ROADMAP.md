@@ -16,7 +16,7 @@
 - [ ] AD001. Design state 與 typed tool interface：RTL／constraint／report 身分與可修改範圍。
 - [ ] AD002. Artifact lineage：修改後哪些證據失效、何時能交付下一個階段。
 - [ ] AD003. Durable execution：長程工具呼叫、checkpoint、重試、duplicate 與恢復。
-- [ ] AD004. Agent memory／skill：驗證成功的經驗如何帶著適用條件重用。
+- [x] AD004. Agent memory／skill：驗證成功的經驗如何帶著適用條件重用。2026-10-13 完成帶條件診斷 skill、離線回放與可撤回發布的完整研究；真實 LLM／EDA 泛化與多機實驗另列未完成。
 - [ ] AD005. Evaluation：功能、PPA、工程介入、tool budget 與成本的共同 baseline。
 - [ ] AD006. Authority／sandbox／policy：授權如何綁定輸出版本與生效邊界。
 - [ ] AD007. Spec-to-RTL／verification／physical optimization 的閉環與驗收差異。
@@ -52,3 +52,16 @@
 - 執行權限與結果有效性分屬兩層：OpenShell 類 sandbox 限制 agent 能讀寫的檔案、憑證、工具、網路與權限；EDA engine 判斷輸出是否符合設計標準。Cadence 明確區分 autonomous execution 與 final signoff，工程師仍負責 intent、exception 與最後接受。
 - 這份資料為 AD001、AD002、AD006、AD007 增加 vendor primary evidence，但沒有公開 machine-readable schema、API／版本語意、獨立客戶案例或量化結果，因此不將任何候選標為完成，也不據此推定 ChipStack 的完整內部實作。
 - 與前一日 BTTF 相比，BTTF 補的是 waveform 的可查詢 read path；Cadence 本次補的是 generated change 的 authority、evidence 與 acceptance path。兩者互補，但後者與既有「可驗證的 IC 設計狀態」文章高度重疊，認知增量尚不足以另發公開短評，避免用同一機制重寫新文。
+
+
+## 2026-10-13 AD004 架構深掘與接續
+
+- 指令 commit：`ea435295cf245518b9a516defba45a3aa93387ad`；單元識別 `AD004`，series `agentic-design-deep-dive`。本文首次建立 date `2026-10-13 06:09:00 +0800`，不改既有文章 metadata。
+- 完成文章：[讓 EDA Agent 從失敗案例學習，先把診斷 skill 送進離線回放](https://rightson.github.io/ic-design-platform/2026/10/13/eda-diagnostic-skills-offline-replay.html)；source path `_posts/2026-10-13-eda-diagnostic-skills-offline-replay.md`；文章、三張深淺色 SVG、實驗程式與原始輸出同 commit `2962b880d1dbcd594fe1d3fddd762e0d7e99d651`。
+- 原始研究：ACE v1（2025-10-06，本文機制與 AppWorld 表格引用版本；現有 v3 2026-03-29）、GEPA v2（2026-02-14）、Reflexion（2023）；另接續 Cadence 2026-10-07 公開工程責任文件及本系列 BTTF 文章。條件式診斷、EDA 案例與發布流程是參考設計，不宣稱公司內部部署。
+- 主要新增：將診斷 skill 的可觀察前提與反例分流、資料與案例組隔離、棄答／覆蓋／錯誤成本、bundle 撤回與受影響 run 追蹤串成完整學習路徑；與既有 typed-state／durable-execution／GDP 稿的成果管理分開。
+- 最小實驗已跑：`scripts/experiments/agentic_diagnostic_skill_demo.py`；輸出 `scripts/experiments/agentic_diagnostic_skill_demo.results.json`。3 個正向訓練、3 個開發反例、12 個人工設計測試案例；未使用 LLM、EDA 或 PDK。未篩 scope 為 6 正確／6 錯誤／0 棄答，scope v1 為 6／0／6，反例分流 v2 為 9／0／3；這是合成協定測試，不是統計泛化或模型 benchmark。
+- 實驗另核對報告 digest 不符、正常晉升、stale parent 衝突、版本撤回與撤回後拒絕重用；限單程序狀態模型，無分散式儲存／交易保證。
+- 發布核驗：[Post lint gate](https://github.com/rightson/rightson.github.io/actions/runs/38315374482) success；[Pages build/deploy](https://github.com/rightson/rightson.github.io/actions/runs/38315373927) success；6 個遠端 source byte-for-byte 相符，正式 HTML 含新標題、`inspect-upstream`、75% 與測試 digest，3 張公開 SVG HTTP 200 且內容相符。正文有效中文字 4,199（排除 code、figures 與尾段）；實際公開正文依 `assets/site.js` 算法為 4,712 CJK／764 non-CJK words，16 分鐘。
+- 未完成實驗：真實 tool parser、人工確認根因的公開 flow 失敗集、跨設計／時間／工具版本泛化、LLM 萃取與候選演進、EDA 修正及設計檢查、資料庫交易、多機競爭與 crash durability。後續 AD004 延伸先補其中一項實驗，不換標題重寫相同方法。
+- 近七天可回讀的既有相關公開文章為 2026-10-07 BTTF；未找到近七天新增 SOTA 文章。本次會議摘要留在對話，不提交公開 repository，也不推定其他 session 的進度。
