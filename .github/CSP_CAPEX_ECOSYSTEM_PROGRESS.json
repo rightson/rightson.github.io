@@ -98,6 +98,30 @@
         "https://www.marvell.com/company/newsroom/marvell-open-ai-infrastructure-ocp-global-summit-2026.html"
       ],
       "status": "primary_verified_baseline"
+    },
+    {
+      "fingerprint": "accton-monthly-sales-2026-09-20261006",
+      "event_date": "2026-10-06",
+      "companies": [
+        "Accton/Edgecore"
+      ],
+      "type": "company_reported_unaudited_revenue",
+      "facts": {
+        "currency": "TWD",
+        "unit": "thousand",
+        "period": "2026-09",
+        "revenue": 40398562,
+        "yoy_percent": 66.13,
+        "mom_percent": -1.16,
+        "ytd_revenue": 286402145,
+        "ytd_yoy_percent": 62.45,
+        "maturity": "company-level revenue verified; product, customer, Tomahawk 6 and CPO contribution not disclosed"
+      },
+      "sources": [
+        "https://www.accton.com/tw/accton-sep-2026-sales-revenue-report/",
+        "https://www.accton.com/tw/monthly-merge/"
+      ],
+      "status": "primary_verified_new_research_candidate"
     }
   ],
   "articles": [],
@@ -108,11 +132,11 @@
     "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
     "active_count": 98,
     "search_screened_count": 98,
-    "primary_company_fact_checked_count": 4,
-    "primary_monthly_revenue_checked_count": 2,
+    "primary_company_fact_checked_count": 5,
+    "primary_monthly_revenue_checked_count": 3,
     "primary_partner_relationship_checked_count": 2,
-    "remaining_primary_company_fact_check_count": 94,
-    "note": "Search screening is not primary-source verification; no complete-universe research or valuation conclusion is claimed. The private watchlist and private valuation conclusions are not copied here."
+    "remaining_primary_company_fact_check_count": 93,
+    "note": "Search screening is not primary-source verification; no complete-universe research or valuation conclusion is claimed. Five companies now have at least one primary-source fact checked, including Accton's company-level revenue. The private watchlist and private valuation conclusions are not copied here."
   },
   "research_candidates": [
     {
@@ -128,7 +152,7 @@
         "https://www.marvell.com/company/newsroom/marvell-open-ai-infrastructure-ocp-global-summit-2026.html",
         "https://www.deltaww.com/en-US/solutions/data-center-networks"
       ],
-      "stage": "public_relationships_verified_customer_economics_pending",
+      "stage": "public_relationships_and_accton_company_revenue_verified_product_customer_and_margin_attribution_pending",
       "questions": [
         "Named production customer and procurement scope",
         "Qualified shipments and product mix",
@@ -150,12 +174,12 @@
       "key": "universe-primary-validation",
       "date": "2026-10-12",
       "status": "partial",
-      "remaining_company_count": 94,
+      "remaining_company_count": 93,
       "impact": "Search hits and reposted notices have not been individually checked against company or exchange originals."
     }
   ],
   "last_research_date": "2026-10-12",
-  "instruction_commit_sha": "3873aecfb03d68d9a8c195bcfb2b07da1486a0f7",
+  "instruction_commit_sha": "6da260b01b7fe7e74ad91ef726ad1d752e09d6e6",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
