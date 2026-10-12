@@ -484,6 +484,49 @@
         "https://www.lgcorp.com/media/release/30644"
       ],
       "status": "joint_company_primary_long_term_supply_relationship_verified_contract_value_delivery_and_margin_pending"
+    },
+    {
+      "fingerprint": "meta-multivendor-ai-networking-tahan-icecube-fpf-20261012",
+      "event_date": "2026-10-12",
+      "companies": [
+        "Meta",
+        "Broadcom",
+        "NVIDIA",
+        "Cisco"
+      ],
+      "type": "company_primary_deployment_and_named_silicon_disclosure",
+      "facts": {
+        "source_nature": "Meta Engineering primary disclosure at OCP Global Summit 2026",
+        "current_scale_up": "Meta said Tahan is shipping today for MTIA 300; it uses Broadcom Tomahawk 5 51.2 Tbps silicon, four switches interconnect 16 accelerators, and the system provides 6.4 Tbps per accelerator",
+        "current_scale_out": "Meta disclosed two 102.4 Tbps IceCube variants, one using Broadcom Tomahawk 6C and one using NVIDIA Spectrum-6; each provides 128x800G non-blocking switching and runs FBOSS through OCP SAI",
+        "next_generation_preview": "A previewed 216x400G scale-up blade uses Broadcom Tomahawk 6C; eight switches are intended to interconnect 72 accelerators per rack, with a future generation planned to adopt ESUN",
+        "regional_backbone": "Meta said its deployed SRv6 regional backbone uses open shallow-buffer platforms powered by Cisco Silicon One, while additional silicon families are being onboarded",
+        "software_control_point": "FBOSS and OCP SAI abstract the silicon families, preserving multi-vendor choice across Broadcom, NVIDIA and Cisco rather than locking the fleet to one switch ASIC supplier",
+        "economics_limit": "No installed system count, procurement value, supplier revenue recognition, gross margin or exact deployment schedule was disclosed for the new IceCube and next-generation systems",
+        "interpretation": "The disclosure adds a named, current Broadcom scale-up design and confirms deliberate multi-vendor silicon use across Meta's AI network. It strengthens Broadcom's production exposure but also shows that value is split with NVIDIA and Cisco and that the operator's software layer preserves substitution options."
+      },
+      "sources": [
+        "https://engineering.fb.com/2026/10/12/open-source/ocp-summit-2026-powering-ai-with-open-innovations-in-scale-up-scale-out-and-scale-across-networks/"
+      ],
+      "status": "company_primary_verified_material_multivendor_networking_evidence_volume_and_financial_attribution_pending"
+    },
+    {
+      "fingerprint": "broadcom-ceo-capital-over-memory-constraint-20261012",
+      "event_date": "2026-10-12",
+      "companies": [
+        "Broadcom"
+      ],
+      "type": "reliable_media_reported_management_supply_constraint_commentary",
+      "facts": {
+        "source_nature": "Reuters report quoting Broadcom CEO Hock Tan at a Singapore panel",
+        "management_comment": "Tan said Broadcom is overcoming wafer and memory shortages and that capital will be the biggest constraint as AI development continues",
+        "interpretation": "This is a counter-signal to the assumption that memory scarcity must remain the dominant AI infrastructure bottleneck. If confirmed by supplier inventory, lead-time and contract-price data, value could shift from memory scarcity toward financing capacity and project economics.",
+        "evidence_limit": "The report provides no product-specific lead time, inventory, HBM or DRAM supply-demand balance, pricing, contract term or forecast revision; it does not by itself overturn Nanya Technology's company-reported Q3 contract repricing evidence."
+      },
+      "sources": [
+        "https://www.reuters.com/world/asia-pacific/broadcom-ceo-says-biggest-hurdle-ai-fuelled-tech-growth-is-capital-not-memory-2026-10-12/"
+      ],
+      "status": "reliable_media_management_commentary_quantitative_supply_validation_pending"
     }
   ],
   "articles": [],
@@ -524,14 +567,18 @@
         "Broadcom",
         "Accton/Edgecore",
         "Delta Electronics",
-        "Marvell"
+        "Marvell",
+        "Meta",
+        "NVIDIA",
+        "Cisco"
       ],
       "sources": [
         "https://investors.broadcom.com/news-releases/news-release-details/broadcom-redefines-ai-infrastructure-industry-leading-networking",
         "https://www.marvell.com/company/newsroom/marvell-open-ai-infrastructure-ocp-global-summit-2026.html",
-        "https://www.deltaww.com/en-US/solutions/data-center-networks"
+        "https://www.deltaww.com/en-US/solutions/data-center-networks",
+        "https://engineering.fb.com/2026/10/12/open-source/ocp-summit-2026-powering-ai-with-open-innovations-in-scale-up-scale-out-and-scale-across-networks/"
       ],
-      "stage": "public_relationships_and_accton_company_revenue_verified_product_customer_and_margin_attribution_pending",
+      "stage": "meta_named_multivendor_switch_silicon_and_tahan_shipping_verified_optics_volume_product_mix_and_margin_attribution_pending",
       "questions": [
         "Named production customer and procurement scope",
         "Qualified shipments and product mix",
@@ -594,14 +641,16 @@
       ],
       "sources": [
         "https://www.nanya.com/tw/Activity?Action=IR_investorcalendar_FileName&Id=5298&column=PressRelease",
-        "https://www.nanya.com/tw/Activity?Action=IR_investorcalendar_FileName&Id=5298&column=Presentation"
+        "https://www.nanya.com/tw/Activity?Action=IR_investorcalendar_FileName&Id=5298&column=Presentation",
+        "https://www.reuters.com/world/asia-pacific/broadcom-ceo-says-biggest-hurdle-ai-fuelled-tech-growth-is-capital-not-memory-2026-10-12/"
       ],
       "stage": "company_q3_results_and_ai_lta_expansion_plan_verified_post_call_market_and_contract_durability_validation_pending",
       "questions": [
         "Q4 realized ASP and gross margin versus renewed long-term-contract terms",
         "Customer commitment scope, cancellation protection and product mix",
         "1C qualification yield and timing of the 5A capacity ramp",
-        "Post-call earnings revisions and whether the market has already priced the profit step-up"
+        "Post-call earnings revisions and whether the market has already priced the profit step-up",
+        "Whether Broadcom's statement that memory shortages are being overcome is company-specific or confirmed by market-wide inventory, lead-time and contract-pricing data"
       ],
       "publication_status": "not_drafted"
     },
@@ -699,14 +748,15 @@
         "Cisco"
       ],
       "sources": [
-        "https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/"
+        "https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/",
+        "https://engineering.fb.com/2026/10/12/open-source/ocp-summit-2026-powering-ai-with-open-innovations-in-scale-up-scale-out-and-scale-across-networks/"
       ],
-      "stage": "named_meta_spectrum6_adoption_verified_installed_base_orders_shipments_and_revenue_pending",
+      "stage": "meta_primary_multivendor_current_shipping_and_next_generation_designs_verified_installed_base_orders_revenue_and_supplier_mix_pending",
       "questions": [
-        "Installed switch and SuperNIC counts, deployment schedule and procurement value",
-        "Whether Spectrum-6 displaces Broadcom- or Cisco-based fabrics or serves incremental Vera Rubin clusters",
-        "External cloud adoption of Meta and NVIDIA's multiplane operational design",
-        "NVIDIA networking revenue and gross-margin contribution attributable to Spectrum-6"
+        "Installed Tahan and IceCube system counts, deployment dates, procurement value and supplier revenue recognition",
+        "Broadcom Tomahawk 5 and 6C versus NVIDIA Spectrum-6 allocation by fabric role, cluster generation and volume",
+        "Whether FBOSS and OCP SAI materially reduce switching costs or mainly preserve negotiating leverage",
+        "Broadcom, NVIDIA and Cisco networking revenue and gross-margin contribution attributable to Meta"
       ],
       "publication_status": "not_drafted"
     },
@@ -789,7 +839,7 @@
     }
   ],
   "last_research_date": "2026-10-13",
-  "instruction_commit_sha": "60dac7e0e93fb0fe9012ef537c9bc21f72f9f8d4",
+  "instruction_commit_sha": "94c5ef883ff795a0bb37e5fe6db0989956a82c17",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
