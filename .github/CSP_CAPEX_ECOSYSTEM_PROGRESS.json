@@ -122,6 +122,65 @@
         "https://www.accton.com/tw/monthly-merge/"
       ],
       "status": "primary_verified_new_research_candidate"
+    },
+    {
+      "fingerprint": "usitc-vpd-337-ta-1526-institution-20261009",
+      "event_date": "2026-10-09",
+      "companies": [
+        "Delta Electronics",
+        "Quanta Computer",
+        "Hon Hai/Foxconn",
+        "Vicor",
+        "Monolithic Power Systems",
+        "Infineon",
+        "Celestica",
+        "Flex"
+      ],
+      "type": "regulator_confirmed_investigation_institution",
+      "facts": {
+        "investigation": "337-TA-1526",
+        "complainant": "Vicor Corporation",
+        "complaint_date": "2026-09-09",
+        "complaint_supplement_date": "2026-09-10",
+        "product_scope": "Certain vertical power delivery systems, components thereof, and computing systems containing the same",
+        "requested_remedies": "Limited exclusion order and cease and desist orders requested by complainant",
+        "stage": "Investigation instituted; no decision on merits; requested remedies have not been granted",
+        "named_taiwan_respondent_groups": [
+          "Delta Electronics",
+          "Quanta Computer/QCT",
+          "Hon Hai/Foxconn/Ingrasys"
+        ],
+        "outcome": "Unresolved"
+      },
+      "sources": [
+        "https://www.usitc.gov/press_room/news_release/2026/er1009_69342.htm",
+        "https://www.usitc.gov/fed_reg_notices/section_337_notices/certain_vertical_power_delivery_systems_components_100926.htm"
+      ],
+      "status": "regulator_primary_verified_new_risk_candidate"
+    },
+    {
+      "fingerprint": "osat-pricing-media-report-edn-20261012",
+      "event_date": "2026-10-12",
+      "companies": [
+        "ASE Technology",
+        "KYEC",
+        "Powertech",
+        "Ardentec"
+      ],
+      "type": "original_media_report_primary_economics_unverified",
+      "facts": {
+        "reported_pricing_increase_percent_range": [
+          10,
+          30
+        ],
+        "reported_driver": "Longer AI-chip test time and custom-chip demand constrain effective test capacity",
+        "attribution": "Industry sources quoted by Economic Daily News; not a disclosed company-wide contractual price increase",
+        "scope_limit": "Company, product, contract coverage and effective dates remain unverified"
+      },
+      "sources": [
+        "https://money.udn.com/money/story/5612/9808264"
+      ],
+      "status": "media_lead_company_and_financial_validation_pending"
     }
   ],
   "articles": [],
@@ -132,11 +191,27 @@
     "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
     "active_count": 98,
     "search_screened_count": 98,
-    "primary_company_fact_checked_count": 5,
+    "primary_company_fact_checked_count": 6,
     "primary_monthly_revenue_checked_count": 3,
     "primary_partner_relationship_checked_count": 2,
-    "remaining_primary_company_fact_check_count": 93,
-    "note": "Search screening is not primary-source verification; no complete-universe research or valuation conclusion is claimed. Five companies now have at least one primary-source fact checked, including Accton's company-level revenue. The private watchlist and private valuation conclusions are not copied here."
+    "remaining_primary_company_fact_check_count": 92,
+    "note": "Counts now use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; the previous count of five had double-counted Accton. The two newly added distinct companies are Hon Hai and Quanta, named in the regulator announcement. Primary-source validation is still partial; no full-universe or valuation conclusion is claimed.",
+    "active_universe_primary_verified_symbols": [
+      "2330",
+      "2454",
+      "2308",
+      "2345",
+      "2317",
+      "2382"
+    ],
+    "current_run_screening": {
+      "date": "2026-10-12",
+      "scope": "All 98 active company names included in 25 grouped public-news queries",
+      "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+      "company_count": 98,
+      "grouped_query_count": 25
+    },
+    "primary_regulator_company_fact_checked_count": 3
   },
   "research_candidates": [
     {
@@ -160,6 +235,52 @@
         "Who retains value when optics move into the switch system"
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "vpd-ip-licensing-and-supply-chain-exposure",
+      "companies": [
+        "Delta Electronics",
+        "Quanta Computer",
+        "Hon Hai/Foxconn",
+        "Vicor",
+        "Monolithic Power Systems",
+        "Infineon",
+        "Celestica",
+        "Flex"
+      ],
+      "sources": [
+        "https://www.usitc.gov/press_room/news_release/2026/er1009_69342.htm",
+        "https://www.usitc.gov/fed_reg_notices/section_337_notices/certain_vertical_power_delivery_systems_components_100926.htm",
+        "https://www.vicorpower.com/ip-licensing"
+      ],
+      "stage": "regulator_institution_verified_affected_products_and_economics_pending",
+      "questions": [
+        "Exact affected SKUs and export revenue exposure",
+        "Existing licenses, patent scope and viable alternative designs",
+        "Who bears any agreed license fees or redesign costs",
+        "Any substantiated changes to shipments, customer procurement or financial guidance"
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "osat-test-capacity-pricing-transmission",
+      "companies": [
+        "ASE Technology",
+        "KYEC",
+        "Powertech",
+        "Ardentec"
+      ],
+      "sources": [
+        "https://money.udn.com/money/story/5612/9808264"
+      ],
+      "stage": "original_media_report_read_contract_and_margin_validation_pending",
+      "questions": [
+        "Product-specific repricing versus urgent-order surcharges",
+        "Realized ASP, test time, utilization and contract duration",
+        "Depreciation and labor cost versus gross profit changes",
+        "Timing and qualification of incremental 2027 capacity"
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -174,12 +295,12 @@
       "key": "universe-primary-validation",
       "date": "2026-10-12",
       "status": "partial",
-      "remaining_company_count": 93,
+      "remaining_company_count": 92,
       "impact": "Search hits and reposted notices have not been individually checked against company or exchange originals."
     }
   ],
   "last_research_date": "2026-10-12",
-  "instruction_commit_sha": "6da260b01b7fe7e74ad91ef726ad1d752e09d6e6",
+  "instruction_commit_sha": "c72249c6ed64d3480ba0b9573d2b4883f5df3261",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
