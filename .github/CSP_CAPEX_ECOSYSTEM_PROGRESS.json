@@ -1,20 +1,187 @@
 {
   "schema_version": 1,
   "series": "csp-capex-ecosystem",
-  "setup_only": true,
-  "baseline_status": "not_yet_researched",
+  "setup_only": false,
+  "baseline_status": "partial_primary_baseline",
   "legacy_series": [
     "mtk-ecosystem-institutional",
     "mtk-ecosystem-intraday",
     "mtk-ecosystem-market-journal",
     "mtk-ecosystem-deep-dive"
   ],
-  "public_events": [],
+  "public_events": [
+    {
+      "fingerprint": "tsmc-monthly-sales-2026-09-20261008",
+      "event_date": "2026-10-08",
+      "companies": [
+        "TSMC"
+      ],
+      "type": "company_reported_unaudited_revenue",
+      "facts": {
+        "currency": "TWD",
+        "unit": "million",
+        "period": "2026-09",
+        "revenue": 511857,
+        "yoy_percent": 54.6,
+        "mom_percent": -0.6,
+        "ytd_revenue": 3898727,
+        "ytd_yoy_percent": 41.1
+      },
+      "sources": [
+        "https://pr.tsmc.com/chinese/news/3343",
+        "https://investor.tsmc.com/chinese/monthly-revenue/2026"
+      ],
+      "status": "primary_verified_baseline"
+    },
+    {
+      "fingerprint": "mediatek-monthly-sales-2026-09-20261008",
+      "event_date": "2026-10-08",
+      "companies": [
+        "MediaTek"
+      ],
+      "type": "company_reported_unaudited_revenue",
+      "facts": {
+        "currency": "TWD",
+        "unit": "million",
+        "period": "2026-09",
+        "revenue": 55399,
+        "yoy_percent": 1.97,
+        "mom_percent": -13.69,
+        "ytd_revenue": 469391,
+        "ytd_yoy_percent": 5.3
+      },
+      "sources": [
+        "https://www.mediatek.com/investor-relations/financial-information",
+        "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Monthly%20Reports/2026/Monthly%20Sales%20Revenue%20September,%202026.pdf"
+      ],
+      "status": "primary_verified_baseline"
+    },
+    {
+      "fingerprint": "broadcom-ocp-partner-demos-20261008",
+      "event_date": "2026-10-08",
+      "companies": [
+        "Broadcom",
+        "Accton/Edgecore",
+        "Delta Electronics"
+      ],
+      "type": "announced_demonstration_relationship",
+      "facts": {
+        "event": "OCP Global Summit 2026",
+        "event_dates": "2026-10-12/2026-10-15",
+        "accton_edgecore": "Tomahawk 6 demonstrations",
+        "delta": "Tomahawk 6-Davisson 102.4T CPO demonstration",
+        "maturity": "announced demonstrations; not a confirmed customer production order"
+      },
+      "sources": [
+        "https://investors.broadcom.com/news-releases/news-release-details/broadcom-redefines-ai-infrastructure-industry-leading-networking"
+      ],
+      "status": "primary_verified_new_research_candidate"
+    },
+    {
+      "fingerprint": "marvell-ocp-portfolio-announcement-20261008",
+      "event_date": "2026-10-08",
+      "companies": [
+        "Marvell"
+      ],
+      "type": "announced_demonstration_portfolio",
+      "facts": {
+        "portfolio": [
+          "Teralynx T100 102.4T",
+          "Structera CXL",
+          "Ara 1.6T optical DSP",
+          "400G/lane PAM4",
+          "Bravera PCIe 6.0 SSD controller"
+        ],
+        "maturity": "demonstrations announced; adoption and revenue contribution not quantified"
+      },
+      "sources": [
+        "https://www.marvell.com/company/newsroom/marvell-open-ai-infrastructure-ocp-global-summit-2026.html"
+      ],
+      "status": "primary_verified_baseline"
+    }
+  ],
   "articles": [],
   "coverage": {
     "universe_source": "rightson/alpha-quant:seeds/watchlists/ai_supply_chain_universe.csv",
-    "status": "not_yet_checked"
+    "status": "all_98_search_screened_primary_validation_partial",
+    "universe_commit_sha": "5b0d86316d1e634fbc3b28b2b40a43c08b0fdcfe",
+    "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+    "active_count": 98,
+    "search_screened_count": 98,
+    "primary_company_fact_checked_count": 4,
+    "primary_monthly_revenue_checked_count": 2,
+    "primary_partner_relationship_checked_count": 2,
+    "remaining_primary_company_fact_check_count": 94,
+    "note": "Search screening is not primary-source verification; no complete-universe research or valuation conclusion is claimed. The private watchlist and private valuation conclusions are not copied here."
   },
-  "research_candidates": [],
-  "blockers": []
+  "research_candidates": [
+    {
+      "key": "ocp-ethernet-cpo-system-value-capture",
+      "companies": [
+        "Broadcom",
+        "Accton/Edgecore",
+        "Delta Electronics",
+        "Marvell"
+      ],
+      "sources": [
+        "https://investors.broadcom.com/news-releases/news-release-details/broadcom-redefines-ai-infrastructure-industry-leading-networking",
+        "https://www.marvell.com/company/newsroom/marvell-open-ai-infrastructure-ocp-global-summit-2026.html",
+        "https://www.deltaww.com/en-US/solutions/data-center-networks"
+      ],
+      "stage": "public_relationships_verified_customer_economics_pending",
+      "questions": [
+        "Named production customer and procurement scope",
+        "Qualified shipments and product mix",
+        "Incremental gross profit and cash conversion",
+        "Who retains value when optics move into the switch system"
+      ],
+      "publication_status": "not_drafted"
+    }
+  ],
+  "blockers": [
+    {
+      "key": "mops-monthly-revenue-bulk-read",
+      "date": "2026-10-12",
+      "scope": "Official listed and OTC September 2026 revenue tables",
+      "status": "web_fetch_failed",
+      "impact": "No exchange-wide original revenue table or complete primary validation is available."
+    },
+    {
+      "key": "universe-primary-validation",
+      "date": "2026-10-12",
+      "status": "partial",
+      "remaining_company_count": 94,
+      "impact": "Search hits and reposted notices have not been individually checked against company or exchange originals."
+    }
+  ],
+  "last_research_date": "2026-10-12",
+  "instruction_commit_sha": "3873aecfb03d68d9a8c195bcfb2b07da1486a0f7",
+  "csp_baseline": {
+    "status": "partial",
+    "verified_sources": [
+      {
+        "company": "Microsoft",
+        "source": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4",
+        "source_date": "2026-07-29",
+        "note": "2026 capex presentation changes include lease classification; not treated as a new spending cut."
+      },
+      {
+        "company": "Amazon",
+        "source": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx",
+        "source_date": "2026-07-30"
+      },
+      {
+        "company": "Meta",
+        "source": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/",
+        "source_date": "2026-07-29"
+      },
+      {
+        "company": "Oracle",
+        "source": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Q1-Results-Driven-by-Triple-Digit-Growth-in-Cloud-Infrastructure-Revenues/default.aspx",
+        "source_date": "2026-09-10"
+      }
+    ],
+    "alphabet_status": "SEC earnings release discovered; full primary capex baseline not completed",
+    "note": "Prior-period sources form baseline only; no cross-company capex total is presented because definitions and reporting periods differ."
+  }
 }
