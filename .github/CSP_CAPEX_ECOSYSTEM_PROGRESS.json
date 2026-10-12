@@ -236,6 +236,32 @@
         "https://www.nanya.com/tw/Activity?Action=IR_investorcalendar_FileName&Id=5298&column=Presentation"
       ],
       "status": "company_primary_verified_major_earnings_and_rerating_candidate"
+    },
+    {
+      "fingerprint": "tsmc-q3-2026-earnings-consensus-preview-20261012",
+      "event_date": "2026-10-12",
+      "companies": [
+        "TSMC"
+      ],
+      "type": "reliable_media_reported_analyst_consensus_and_institution_preview",
+      "facts": {
+        "source_nature": "Reuters report citing an LSEG SmartEstimate and a dated Morgan Stanley research view; not TSMC reported results or guidance",
+        "scheduled_company_report_date": "2026-10-15",
+        "lseg_smartestimate_analyst_count": 16,
+        "expected_q3_2026_net_profit_twd_billion": 746.3,
+        "expected_q3_2026_net_profit_yoy_percent": 65,
+        "morgan_stanley_report_date": "2026-10-06",
+        "current_company_full_year_revenue_growth_guidance": "more than 40 percent",
+        "morgan_stanley_expected_revised_guidance": "low-to-mid 40 percent range",
+        "stated_driver": "Strong demand for 3-nanometre chips",
+        "official_q3_revenue_context": "TSMC reported approximately TWD 1.49 trillion for Q3 2026, above the prior USD 44.6-45.8 billion company guidance range",
+        "interpretation": "This establishes the market hurdle for the October 15 earnings call. It is not evidence that TSMC has already raised guidance; re-rating depends on reported profit, margins, full-year guidance and forward demand commentary."
+      },
+      "sources": [
+        "https://www.reuters.com/world/china/tsmc-expected-report-sixth-straight-quarter-record-profit-thanks-ai-boom-2026-10-12/",
+        "https://investor.tsmc.com/english/quarterly-results/2026/q2"
+      ],
+      "status": "reliable_media_reported_market_expectation_company_result_pending"
     }
   ],
   "articles": [],
@@ -356,6 +382,24 @@
         "Post-call earnings revisions and whether the market has already priced the profit step-up"
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "tsmc-q3-2026-earnings-call-market-hurdle",
+      "companies": [
+        "TSMC"
+      ],
+      "sources": [
+        "https://www.reuters.com/world/china/tsmc-expected-report-sixth-straight-quarter-record-profit-thanks-ai-boom-2026-10-12/",
+        "https://investor.tsmc.com/english/quarterly-results/2026/q2"
+      ],
+      "stage": "analyst_consensus_and_single_institution_preview_recorded_company_results_pending",
+      "questions": [
+        "Reported Q3 net profit versus the TWD 746.3 billion LSEG SmartEstimate",
+        "Reported gross margin versus the company's prior 65-67 percent guidance",
+        "Whether TSMC raises full-year revenue growth guidance above more than 40 percent",
+        "Forward demand, 3nm and advanced-packaging capacity comments that distinguish earnings revision from multiple expansion"
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -375,7 +419,7 @@
     }
   ],
   "last_research_date": "2026-10-12",
-  "instruction_commit_sha": "12890ade20f662c4135f1a3a3bbef61f426bdbd7",
+  "instruction_commit_sha": "c422d50d62a6416ce605abbf3e6ac535e0d55b09",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
