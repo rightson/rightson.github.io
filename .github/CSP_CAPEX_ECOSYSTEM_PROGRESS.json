@@ -294,6 +294,37 @@
         "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
       ],
       "status": "reliable_media_verified_company_announcement_deployment_and_supplier_economics_pending"
+    },
+    {
+      "fingerprint": "microsoft-maia-300-primary-architecture-supply-chain-20261012",
+      "event_date": "2026-10-12",
+      "companies": [
+        "Microsoft",
+        "TSMC"
+      ],
+      "type": "company_primary_architecture_and_system_disclosure",
+      "facts": {
+        "source_nature": "Microsoft Azure primary architecture disclosure",
+        "compute_process": "TSMC N2P for compute chiplets; memory-controller and I/O functions separated onto dies optimized for bandwidth, connectivity and cost",
+        "hbm_per_accelerator": "8 HBM4 stacks, 288 GB capacity and 18 TB/s bandwidth",
+        "accelerator_per_rack": 96,
+        "rack_power_kw": 167,
+        "switch_asic_per_rack": 6,
+        "superpod_scale": "Up to 12,288 accelerators across 128 racks",
+        "network_topology": "In-rack electrical links; optical second tier across racks",
+        "power_delivery": "Dual feeds, high-capacity power shelves and 50 V busbar",
+        "cooling": "Liquid cooling removes more than 80 percent of rack thermal load; remaining components use air cooling",
+        "derived_content_per_rack": "768 HBM4 stacks per 96-accelerator rack",
+        "derived_content_at_reported_potential_scale": "If Reuters' potential scale of more than one million accelerators is realized, accelerator HBM content would exceed eight million HBM4 stacks; this is a scenario calculation, not a confirmed purchase order",
+        "benchmark_limit": "Microsoft comparisons are vendor-reported and primarily versus Maia 200; the disclosed architecture page does not name third-party suppliers for HBM, switch ASICs, optics, power or cooling",
+        "interpretation": "The primary architecture turns Maia 300 from a foundry-only demand signal into a measurable HBM4, optical interconnect, liquid-cooling and rack-power content map. Re-rating for individual suppliers still requires named awards, qualified shipments and revenue or margin attribution."
+      },
+      "sources": [
+        "https://azure.microsoft.com/en-us/blog/deep-dive-into-azure-maia-300-architecture/",
+        "https://news.microsoft.com/maia-2026/",
+        "https://www.reuters.com/business/microsoft-plans-huge-deployment-its-own-ai-chips-with-an-eye-saving-costs-2026-10-12/"
+      ],
+      "status": "company_primary_verified_material_supply_chain_content_supplier_awards_pending"
     }
   ],
   "articles": [],
@@ -444,16 +475,19 @@
       "sources": [
         "https://www.reuters.com/business/microsoft-plans-huge-deployment-its-own-ai-chips-with-an-eye-saving-costs-2026-10-12/",
         "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout",
-        "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+        "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4",
+        "https://azure.microsoft.com/en-us/blog/deep-dive-into-azure-maia-300-architecture/"
       ],
-      "stage": "company_deployment_intent_and_tsmc_process_role_reported_actual_orders_yield_packaging_memory_and_customer_adoption_pending",
+      "stage": "primary_architecture_hbm_network_power_and_cooling_content_verified_actual_orders_supplier_awards_yield_and_external_adoption_pending",
       "questions": [
         "Actual 2027 deployed racks, megawatts and accelerators versus the stated potential scale",
         "TSMC N2 and N3 wafer demand, die sizes, yield, advanced-packaging content and order value",
         "Named HBM, packaging, networking, power and cooling suppliers",
         "Measured tokens per megawatt and total cost against a named GPU system under comparable workloads",
         "How much Maia substitutes for NVIDIA and AMD inference purchases versus adding incremental capacity",
-        "External Azure availability and customer adoption beyond Microsoft's internal services"
+        "External Azure availability and customer adoption beyond Microsoft's internal services",
+        "Named HBM4 supplier, stack pricing and qualified delivery schedule",
+        "Named switch ASIC, optical interconnect, liquid-cooling and rack-power suppliers"
       ],
       "publication_status": "not_drafted"
     }
@@ -475,7 +509,7 @@
     }
   ],
   "last_research_date": "2026-10-12",
-  "instruction_commit_sha": "c4503e321bdf6a4e37850161ff71254b5fa68169",
+  "instruction_commit_sha": "e726c28c411b7fca24e12c4d8cfe22d9aaa57295",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
