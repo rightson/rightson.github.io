@@ -262,6 +262,38 @@
         "https://investor.tsmc.com/english/quarterly-results/2026/q2"
       ],
       "status": "reliable_media_reported_market_expectation_company_result_pending"
+    },
+    {
+      "fingerprint": "microsoft-maia-300-multigigawatt-deployment-20261012",
+      "event_date": "2026-10-12",
+      "companies": [
+        "Microsoft",
+        "TSMC",
+        "NVIDIA",
+        "AMD"
+      ],
+      "type": "company_announced_custom_ai_accelerator_and_deployment_plan_reported_by_reliable_media",
+      "facts": {
+        "source_nature": "Reuters reporting on Microsoft's announcement and executive interview, corroborated by The Verge quoting Microsoft Cloud EVP Scott Guthrie; the indexed Microsoft primary announcement was not retrieved in this run",
+        "product": "Azure Maia 300",
+        "deployment_start_year": 2027,
+        "deployment_scale": "Microsoft said multi-gigawatt deployments and Reuters reported potentially more than one million chips",
+        "intended_role": "Primary AI inference system for Microsoft products and services",
+        "foundry_and_process": "TSMC 2nm for key compute chiplets and lower-cost 3nm for chiplets handling data movement and other functions",
+        "rack_configuration": "96 Maia 300 accelerators",
+        "rack_power_kw": 167,
+        "prior_generation_comparison": "Microsoft claims up to 7x Maia 200 rack-scale token throughput",
+        "efficiency_claim": "Microsoft claims about 40 percent more useful compute or tokens per megawatt than leading GPU-based systems",
+        "benchmark_limit": "Microsoft did not name the GPU system used as the comparison baseline in the Reuters report",
+        "csp_capex_context": "Microsoft expects more than USD 175 billion of calendar-year capital expenditure",
+        "interpretation": "The announcement confirms a shift from exploratory custom silicon to a planned fleet-scale inference platform and directly supports TSMC N2/N3 demand. It increases long-term substitution risk for marginal NVIDIA and AMD inference demand, but does not establish delivered volume, external customer adoption, supplier revenue or a near-term reduction in GPU purchases."
+      },
+      "sources": [
+        "https://www.reuters.com/business/microsoft-plans-huge-deployment-its-own-ai-chips-with-an-eye-saving-costs-2026-10-12/",
+        "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout",
+        "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+      ],
+      "status": "reliable_media_verified_company_announcement_deployment_and_supplier_economics_pending"
     }
   ],
   "articles": [],
@@ -400,6 +432,30 @@
         "Forward demand, 3nm and advanced-packaging capacity comments that distinguish earnings revision from multiple expansion"
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "microsoft-maia-300-custom-silicon-value-shift",
+      "companies": [
+        "Microsoft",
+        "TSMC",
+        "NVIDIA",
+        "AMD"
+      ],
+      "sources": [
+        "https://www.reuters.com/business/microsoft-plans-huge-deployment-its-own-ai-chips-with-an-eye-saving-costs-2026-10-12/",
+        "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout",
+        "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+      ],
+      "stage": "company_deployment_intent_and_tsmc_process_role_reported_actual_orders_yield_packaging_memory_and_customer_adoption_pending",
+      "questions": [
+        "Actual 2027 deployed racks, megawatts and accelerators versus the stated potential scale",
+        "TSMC N2 and N3 wafer demand, die sizes, yield, advanced-packaging content and order value",
+        "Named HBM, packaging, networking, power and cooling suppliers",
+        "Measured tokens per megawatt and total cost against a named GPU system under comparable workloads",
+        "How much Maia substitutes for NVIDIA and AMD inference purchases versus adding incremental capacity",
+        "External Azure availability and customer adoption beyond Microsoft's internal services"
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -419,7 +475,7 @@
     }
   ],
   "last_research_date": "2026-10-12",
-  "instruction_commit_sha": "c422d50d62a6416ce605abbf3e6ac535e0d55b09",
+  "instruction_commit_sha": "c4503e321bdf6a4e37850161ff71254b5fa68169",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
