@@ -203,6 +203,39 @@
         "https://www.cna.com.tw/news/afe/202610110175.aspx"
       ],
       "status": "reliable_news_reports_company_statements_new_cost_allocation_clue"
+    },
+    {
+      "fingerprint": "nanya-q3-2026-ai-infrastructure-lta-pricing-20261012",
+      "event_date": "2026-10-12",
+      "companies": [
+        "Nanya Technology"
+      ],
+      "type": "company_primary_quarterly_results_and_outlook",
+      "facts": {
+        "reporting_basis": "Q3 2026 company self-reported consolidated results, unaudited",
+        "revenue_twd_million": 133649,
+        "revenue_qoq_percent": 61.9,
+        "revenue_yoy_percent": 611.7,
+        "dram_asp_qoq": "up more than sixty percent",
+        "dram_asp_yoy": "up more than 500 percent",
+        "bit_shipments_qoq": "down mid-single-digit percent",
+        "gross_margin_percent": 85.7,
+        "eps_twd": 25.4,
+        "ai_infrastructure_revenue_share": "more than 20 percent, including servers, networking, storage and system management",
+        "pricing_mechanism": "Q3 ASP increase attributed by the company mainly to renewed long-term contracts",
+        "q4_supply_view": "low supplier inventory; AI compute demand constrains memory supply for smartphones, PCs and consumer applications",
+        "capex_2026_limit_twd_billion": 69.7,
+        "capex_q1_q3_2026_twd_billion": 27.6,
+        "expansion_condition": "future expansion primarily targets customer long-term-contract AI projects",
+        "capacity_plan": "equipment installation planned for Q1 2027; 30,000 wafers per month by end-2028 and 50,000 by end-2030",
+        "technology_milestone": "1C customer qualification planned for Q1 2027; 1D, 1E and EUV development reported on schedule",
+        "interpretation": "The quarter provides direct company evidence that AI-related memory tightness and contract repricing, rather than shipment growth, are driving current profit expansion; durability depends on contract pricing, customer commitments, qualification and the supply ramp."
+      },
+      "sources": [
+        "https://www.nanya.com/tw/Activity?Action=IR_investorcalendar_FileName&Id=5298&column=PressRelease",
+        "https://www.nanya.com/tw/Activity?Action=IR_investorcalendar_FileName&Id=5298&column=Presentation"
+      ],
+      "status": "company_primary_verified_major_earnings_and_rerating_candidate"
     }
   ],
   "articles": [],
@@ -213,10 +246,10 @@
     "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
     "active_count": 98,
     "search_screened_count": 98,
-    "primary_company_fact_checked_count": 6,
+    "primary_company_fact_checked_count": 7,
     "primary_monthly_revenue_checked_count": 3,
     "primary_partner_relationship_checked_count": 2,
-    "remaining_primary_company_fact_check_count": 92,
+    "remaining_primary_company_fact_check_count": 91,
     "note": "Counts now use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; the previous count of five had double-counted Accton. The two newly added distinct companies are Hon Hai and Quanta, named in the regulator announcement. Primary-source validation is still partial; no full-universe or valuation conclusion is claimed.",
     "active_universe_primary_verified_symbols": [
       "2330",
@@ -224,7 +257,8 @@
       "2308",
       "2345",
       "2317",
-      "2382"
+      "2382",
+      "2408"
     ],
     "current_run_screening": {
       "date": "2026-10-12",
@@ -304,6 +338,24 @@
         "Timing and qualification of incremental 2027 capacity"
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "nanya-dram-lta-ai-infrastructure-pricing-durability",
+      "companies": [
+        "Nanya Technology"
+      ],
+      "sources": [
+        "https://www.nanya.com/tw/Activity?Action=IR_investorcalendar_FileName&Id=5298&column=PressRelease",
+        "https://www.nanya.com/tw/Activity?Action=IR_investorcalendar_FileName&Id=5298&column=Presentation"
+      ],
+      "stage": "company_q3_results_and_ai_lta_expansion_plan_verified_post_call_market_and_contract_durability_validation_pending",
+      "questions": [
+        "Q4 realized ASP and gross margin versus renewed long-term-contract terms",
+        "Customer commitment scope, cancellation protection and product mix",
+        "1C qualification yield and timing of the 5A capacity ramp",
+        "Post-call earnings revisions and whether the market has already priced the profit step-up"
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -323,7 +375,7 @@
     }
   ],
   "last_research_date": "2026-10-12",
-  "instruction_commit_sha": "7cbb530f6b890da7272d98040f3b7bfebf7f7f5d",
+  "instruction_commit_sha": "12890ade20f662c4135f1a3a3bbef61f426bdbd7",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
