@@ -65,3 +65,13 @@
 - 發布核驗：[Post lint gate](https://github.com/rightson/rightson.github.io/actions/runs/38315374482) success；[Pages build/deploy](https://github.com/rightson/rightson.github.io/actions/runs/38315373927) success；6 個遠端 source byte-for-byte 相符，正式 HTML 含新標題、`inspect-upstream`、75% 與測試 digest，3 張公開 SVG HTTP 200 且內容相符。正文有效中文字 4,199（排除 code、figures 與尾段）；實際公開正文依 `assets/site.js` 算法為 4,712 CJK／764 non-CJK words，16 分鐘。
 - 未完成實驗：真實 tool parser、人工確認根因的公開 flow 失敗集、跨設計／時間／工具版本泛化、LLM 萃取與候選演進、EDA 修正及設計檢查、資料庫交易、多機競爭與 crash durability。後續 AD004 延伸先補其中一項實驗，不換標題重寫相同方法。
 - 近七天可回讀的既有相關公開文章為 2026-10-07 BTTF；未找到近七天新增 SOTA 文章。本次會議摘要留在對話，不提交公開 repository，也不推定其他 session 的進度。
+
+## 2026-10-13 雷達查核與接續
+
+- 本次指令 commit：`0226d071fe0020687fa280e1919716420d173508`；研究紀錄：`agentic-design-radar｜2026-10-13`。本紀錄只更新證據佇列，不設定或改動 scheduler。
+- [SiliCAD EDA_MCP 2026-10-10 合併的 WorkBoard 修正](https://github.com/SiliCAD/EDA_MCP/commit/84b82e8dc8d135450afb090913805891cd555cf6)與[同日 CommandGuard 修正](https://github.com/SiliCAD/EDA_MCP/commit/f2a840fec7598ab8ee94c50e8640b0b7e855af48)提供一組可檢查的開源工程增量：工作板根目錄依顯式參數、環境變數、MCP roots 與預設目錄解析；呼叫序列化；下載以暫存檔加原子替換；git 失敗不再回報假成功；遠端命令與寫入路徑在執行前經 allowlist、dry-run 與 JSONL audit；SCP 路徑拒絕 shell metacharacter，host key 策略由 `no` 改為 `accept-new`。合併內容含對應的離線單元測試。
+- 上述 EDA_MCP 證據接續 AD002、AD003、AD006、AD008：它把 workspace identity、artifact baseline、並行修改、遠端 authority 與稽核放進同一條工具路徑；相較只有 MCP tool schema，新增的是變更前檢查、失敗可見性與可恢復寫入。成熟度仍記為「開源工程預覽」：目前沒有公開 release qualification、獨立安全審查、客戶部署或 PPA／生產效益證據；CommandGuard 自身也不是完整 sandbox，無法判斷被呼叫腳本內部的副作用。
+- [TPCS 預印本](https://arxiv.org/abs/2610.13067) v1 原始提交日為 2026-10-09，近期才進入可檢索的新文清單。作者提出以 transaction-based function invocation 與 host control flow 剪除 inactive logic，讓同一中介抽象涵蓋微架構建模、cycle-accurate simulation 與 synthesizable RTL generation。作者自報：SMP workload 相對 parallel Verilator 為 36×–42×、accelerator workload 相對 single-thread Verilator 為 3.4×–7.2×，評估 traces 達 cycle-level waveform agreement；生成 RTL 的 clock period 相對手寫版本為 -4.7% 到 +2.6%，standard-cell area 為 -3.3% 到 +4.0%。
+- TPCS 不是 agent 系統，也沒有公開證據顯示已接入 LLM 或 production design flow；以上數字只視為論文 reported result。它先列為 AD001、AD007 的相鄰 substrate 證據：若後續能取得完整介面、design identity、轉譯失敗與 independently reproduced result，才評估是否形成「可執行設計狀態」深掘；不能把更快的 simulation 直接外推成 agent 閉環較可靠。
+- 本次沒有新的 EDA 廠商 production deployment、客戶 adoption 或獨立量化效益達到公開短評門檻，因此不建立新文章。下一步分別驗證 EDA_MCP guard 的繞過面與 crash recovery，以及 TPCS 的 benchmark 組成、RTL 子集、生成失敗模式與程式碼可得性；AD001–AD003、AD006–AD008 均不因此標為完成。
+
