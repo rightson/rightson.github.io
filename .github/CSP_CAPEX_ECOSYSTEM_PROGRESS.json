@@ -351,13 +351,40 @@
         "https://www.reuters.com/world/asia-pacific/globalfoundries-make-key-ai-chip-component-tsmc-2026-10-08/"
       ],
       "status": "company_primary_verified_material_long_term_packaging_capacity_and_rerating_event"
+    },
+    {
+      "fingerprint": "vertiv-capitaland-30mw-liquid-cooling-deployment-20261012",
+      "event_date": "2026-10-12",
+      "companies": [
+        "Vertiv",
+        "CapitaLand India Trust"
+      ],
+      "type": "company_supplied_completed_liquid_cooling_deployment_release_syndicated_by_industry_media",
+      "facts": {
+        "source_nature": "Company-supplied deployment release reproduced by multiple industry publications; CapitaLand's property page independently confirms the site's 108 MW planned power capacity, but neither Vertiv nor CapitaLand posted a matching investor announcement retrieved in this run",
+        "project": "Direct-to-chip high-density liquid cooling deployment at CLDC Mumbai 01 in Airoli, Navi Mumbai",
+        "disclosed_ai_load_mw": 30,
+        "customer": "Unnamed hyperscale end customer",
+        "system": "Vertiv secondary fluid network (SFN) technology-loop skids",
+        "completion_evidence": "Vertiv says design, installation and commissioning were completed and Level 4 testing was conducted ahead of go-live",
+        "manufacturing_action": "Vertiv built an India production facility capable of higher-volume manufacture of customized technology-loop skids",
+        "site_context": "CapitaLand India Trust lists CLDC Mumbai 01 as a 108 MW facility under development",
+        "disclosed_limits": "No contract value, order date, named hyperscaler, revenue-recognition timing, gross-margin contribution, deployed rack count or repeat-order commitment was disclosed",
+        "interpretation": "This is operational evidence that direct-to-chip cooling has moved from reference designs into a completed 30 MW hyperscale deployment in India. It strengthens the liquid-cooling adoption thesis and Vertiv's local execution credentials, but the missing contract economics mean it is not yet evidence of an earnings revision or durable multiple re-rating."
+      },
+      "sources": [
+        "https://www.expresscomputer.in/news/vertiv-delivers-indias-first-high-density-liquid-cooling-deployment-for-30-mw-of-ai-ready-capacity/139810/",
+        "https://www.itvoice.in/vertiv-delivers-indias-first-high-density-liquid-cooling-data-center-deployment-for-capitaland-india-trust-enabling-30-mw-of-ai-ready-capacity",
+        "https://www.clint.com.sg/en/portfolio/data-centres/capitaland-dc-navi-mumbai-1.html"
+      ],
+      "status": "company_supplied_completed_deployment_verified_through_syndicated_release_contract_economics_and_customer_identity_pending"
     }
   ],
   "articles": [],
   "coverage": {
     "universe_source": "rightson/alpha-quant:seeds/watchlists/ai_supply_chain_universe.csv",
     "status": "all_98_search_screened_primary_validation_partial",
-    "universe_commit_sha": "4151678538377601643fd466aa99669275a5e816",
+    "universe_commit_sha": "55734143a74d47582143288231edd334ca0eedfc",
     "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
     "active_count": 98,
     "search_screened_count": 98,
@@ -365,7 +392,7 @@
     "primary_monthly_revenue_checked_count": 3,
     "primary_partner_relationship_checked_count": 2,
     "remaining_primary_company_fact_check_count": 91,
-    "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed.",
+    "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed. Vertiv is not in the current 98-company alpha-quant universe; this run added it as an out-of-universe supplier candidate because a completed 30 MW hyperscale liquid-cooling deployment provides explicit demand-transmission evidence.",
     "active_universe_primary_verified_symbols": [
       "2330",
       "2454",
@@ -536,6 +563,26 @@
         "Whether U.S. interposer capacity adds to or substitutes for Taiwan-based interposer supply"
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "vertiv-capitaland-liquid-cooling-content-and-repeatability",
+      "companies": [
+        "Vertiv",
+        "CapitaLand India Trust"
+      ],
+      "sources": [
+        "https://www.expresscomputer.in/news/vertiv-delivers-indias-first-high-density-liquid-cooling-deployment-for-30-mw-of-ai-ready-capacity/139810/",
+        "https://www.itvoice.in/vertiv-delivers-indias-first-high-density-liquid-cooling-data-center-deployment-for-capitaland-india-trust-enabling-30-mw-of-ai-ready-capacity",
+        "https://www.clint.com.sg/en/portfolio/data-centres/capitaland-dc-navi-mumbai-1.html"
+      ],
+      "stage": "completed_30mw_deployment_and_site_capacity_verified_contract_value_customer_revenue_margin_and_repeat_orders_pending",
+      "questions": [
+        "Contract value, exact award scope and revenue-recognition timing",
+        "Named hyperscale customer, live-load date and whether 30 MW is an initial phase of the 108 MW site",
+        "Liquid-cooling content and gross profit per deployed megawatt",
+        "Repeat orders, manufacturing throughput and customer acceptance after Level 4 testing"
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -554,8 +601,8 @@
       "impact": "Search hits and reposted notices have not been individually checked against company or exchange originals."
     }
   ],
-  "last_research_date": "2026-10-12",
-  "instruction_commit_sha": "e0566e1853503d99045be8e486fb2fcf9ef4717d",
+  "last_research_date": "2026-10-13",
+  "instruction_commit_sha": "467a68fc1ec32dcf07e616c0435187e6ca63e60a",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
