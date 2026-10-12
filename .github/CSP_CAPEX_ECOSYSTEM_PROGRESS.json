@@ -455,6 +455,35 @@
         "https://www.reuters.com/business/energy/google-enters-massive-36-gw-power-deal-with-constellation-energy-2026-10-06/"
       ],
       "status": "joint_company_primary_long_term_power_and_investment_terms_verified_pricing_returns_and_regulatory_execution_pending"
+    },
+    {
+      "fingerprint": "lg-air-5gw-ai-datacenter-chiller-lta-20261005",
+      "event_date": "2026-10-05",
+      "companies": [
+        "LG Electronics",
+        "AIR Control Concepts"
+      ],
+      "type": "company_primary_long_term_ai_datacenter_chiller_supply_agreement",
+      "facts": {
+        "source_nature": "Matching primary announcements from LG Electronics and AIR Control Concepts",
+        "geography": "United States and Canada",
+        "agreement": "Long-term supply agreement for advanced chillers supporting AI data-center projects",
+        "project_capacity_scope_gw": "more than 5",
+        "delivery_description": "LG says cooling solutions will be supplied sequentially across AIR-supported projects",
+        "customer_scope": "AIR serves leading global data-center operators, but neither announcement names the operators or project sites",
+        "company_first_half_2026_aidc_cooling_orders_usd_million": "more than 428",
+        "company_year_end_2026_order_outlook": "several billion U.S. dollars",
+        "company_chiller_revenue_target": "approximately USD 680 million (KRW 1 trillion), originally targeted for 2027 and now expected ahead of schedule",
+        "energy_efficiency_claim": "LG internal simulation says refrigerant free-cooling used about 30 percent less annual energy than waterside free-cooling for one 1,750 kW unit under Seoul-area climate conditions",
+        "disclosed_limits": "No contract value, committed purchase minimum, chiller count, delivery schedule, named data-center customer, site, revenue-recognition cadence or margin contribution was disclosed",
+        "interpretation": "The signed long-term agreement moves LG's AI cooling exposure from project bids toward a portfolio supply relationship and supports a structural B2B growth thesis. The 5 GW figure measures supported data-center project capacity rather than chiller output or order value, so supplier earnings attribution still requires purchase volumes, delivery timing and margins."
+      },
+      "sources": [
+        "https://www.lg.com/us/newsroom/corporate/air-and-lg-supply-agreement-aims-to-advance-ai-data-center-cooling-business-in-north-america",
+        "https://www.aircontrolconcepts.com/news/air-and-lg-supply-agreement-aims-to-advance-ai-data-center-cooling-business-in-north-america",
+        "https://www.lgcorp.com/media/release/30644"
+      ],
+      "status": "joint_company_primary_long_term_supply_relationship_verified_contract_value_delivery_and_margin_pending"
     }
   ],
   "articles": [],
@@ -469,7 +498,7 @@
     "primary_monthly_revenue_checked_count": 3,
     "primary_partner_relationship_checked_count": 2,
     "remaining_primary_company_fact_check_count": 91,
-    "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed. Vertiv is not in the current 98-company alpha-quant universe; this run added it as an out-of-universe supplier candidate because a completed 30 MW hyperscale liquid-cooling deployment provides explicit demand-transmission evidence.",
+    "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed. Vertiv is not in the current 98-company alpha-quant universe; this run added it as an out-of-universe supplier candidate because a completed 30 MW hyperscale liquid-cooling deployment provides explicit demand-transmission evidence. LG Electronics is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because the signed AIR long-term agreement covers AI data-center projects exceeding 5 GW, while contract value and delivery economics remain undisclosed.",
     "active_universe_primary_verified_symbols": [
       "2330",
       "2454",
@@ -720,6 +749,27 @@
         "Whether the framework produces additional generation, storage or demand-response projects"
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "lg-air-ai-datacenter-cooling-contract-economics",
+      "companies": [
+        "LG Electronics",
+        "AIR Control Concepts"
+      ],
+      "sources": [
+        "https://www.lg.com/us/newsroom/corporate/air-and-lg-supply-agreement-aims-to-advance-ai-data-center-cooling-business-in-north-america",
+        "https://www.aircontrolconcepts.com/news/air-and-lg-supply-agreement-aims-to-advance-ai-data-center-cooling-business-in-north-america",
+        "https://www.lgcorp.com/media/release/30644"
+      ],
+      "stage": "long_term_5gw_project_scope_and_company_order_outlook_verified_contract_value_purchase_minimum_named_customers_delivery_revenue_and_margin_pending",
+      "questions": [
+        "Committed chiller volumes, contract value, purchase minimums and cancellation terms",
+        "Named data-center operators, project sites, construction status and first delivery dates",
+        "Revenue-recognition cadence, manufacturing allocation and incremental gross margin",
+        "Air-cooled chiller versus direct-to-chip CDU and cold-plate content per deployed megawatt",
+        "Whether the agreement converts LG's several-billion-dollar order outlook into recurring revenue or remains project-by-project call-off capacity"
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -739,7 +789,7 @@
     }
   ],
   "last_research_date": "2026-10-13",
-  "instruction_commit_sha": "cbddf179819dc9a969bc98f152bdb28db29e57d3",
+  "instruction_commit_sha": "60dac7e0e93fb0fe9012ef537c9bc21f72f9f8d4",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
