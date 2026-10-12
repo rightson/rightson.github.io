@@ -527,6 +527,56 @@
         "https://www.reuters.com/world/asia-pacific/broadcom-ceo-says-biggest-hurdle-ai-fuelled-tech-growth-is-capital-not-memory-2026-10-12/"
       ],
       "status": "reliable_media_management_commentary_quantitative_supply_validation_pending"
+    },
+    {
+      "fingerprint": "ferc-pjm-large-load-registry-iras-rejection-20261009",
+      "event_date": "2026-10-09",
+      "companies": [
+        "PJM Interconnection",
+        "U.S. Federal Energy Regulatory Commission"
+      ],
+      "type": "regulator_order_large_load_registry_and_tariff_rejection",
+      "facts": {
+        "docket": "ER26-3515-000",
+        "accepted": "Large Load definition and registry",
+        "large_load_threshold": "50 MW cumulative peak at one electrical site; affiliated facilities within one mile aggregate",
+        "effective_date": "2026-10-12",
+        "rejected": [
+          "Interim Resource Adequacy Service",
+          "Bring Your Own New Capacity rules",
+          "linked capacity-demand-curve exclusion"
+        ],
+        "basis": "FERC found jurisdictional and undue-discrimination issues in the proposed curtailment framework",
+        "next_step": "PJM may refile a revised proposal and must make a compliance filing within 30 days",
+        "interpretation": "The immediate PJM-wide curtailment mechanism was not approved, but the registry increases project-level visibility and the power shortfall remains unresolved"
+      },
+      "sources": [
+        "https://elibrary.ferc.gov/eLibrary/filedownload?fileid=AA5986A3-4945-C7A8-8BDD-A122D3900000",
+        "https://www.reuters.com/business/energy/us-panel-approves-pjms-registry-data-centers-rejects-plan-curtail-power-them-2026-10-12/"
+      ],
+      "status": "regulator_order_verified_revised_curtailment_framework_and_state_action_pending"
+    },
+    {
+      "fingerprint": "doe-pjm-202c-emergency-backup-generation-order-20261012",
+      "event_date": "2026-10-12",
+      "companies": [
+        "PJM Interconnection",
+        "U.S. Department of Energy"
+      ],
+      "type": "federal_emergency_grid_reliability_order",
+      "facts": {
+        "order": "DOE Order No. 202-26-50",
+        "effective_period": "2026-10-13 through 2026-10-16",
+        "action": "Directs PJM to dispatch specified units as needed and authorizes backup generation at large loads as a last resort before or during EEA 3",
+        "requested_by": "PJM application dated 2026-10-11",
+        "maturity": "Authorization and dispatch framework; actual backup-generator activation, duration and affected facilities are not yet disclosed",
+        "interpretation": "A fresh emergency order confirms that near-term grid reliability remains a live deployment constraint even as FERC rejected PJM's standing IRAS curtailment design"
+      },
+      "sources": [
+        "https://www.energy.gov/ceser/federal-power-act-section-202c-pjm-interconnection-llc-pjm-order-no-202-26-50",
+        "https://www.pjm.com/library/filing-order.aspx"
+      ],
+      "status": "federal_primary_order_verified_actual_dispatch_and_company_exposure_pending"
     }
   ],
   "articles": [],
@@ -820,6 +870,27 @@
         "Whether the agreement converts LG's several-billion-dollar order outlook into recurring revenue or remains project-by-project call-off capacity"
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "pjm-large-load-regulatory-and-reliability-constraint",
+      "companies": [
+        "PJM Interconnection",
+        "U.S. Federal Energy Regulatory Commission",
+        "U.S. Department of Energy"
+      ],
+      "sources": [
+        "https://elibrary.ferc.gov/eLibrary/filedownload?fileid=AA5986A3-4945-C7A8-8BDD-A122D3900000",
+        "https://www.energy.gov/ceser/federal-power-act-section-202c-pjm-interconnection-llc-pjm-order-no-202-26-50",
+        "https://www.reuters.com/business/energy/us-panel-approves-pjms-registry-data-centers-rejects-plan-curtail-power-them-2026-10-12/"
+      ],
+      "stage": "large_load_registry_accepted_iras_rejected_and_fresh_202c_emergency_order_verified_actual_dispatch_project_delays_cost_allocation_and_revised_rules_pending",
+      "questions": [
+        "Whether PJM files a revised curtailment or resource-adequacy tariff and how states allocate costs to large loads",
+        "Which data centers or other large loads are directed to run backup generation under Order 202-26-50, for how long and at what cost",
+        "Whether grid constraints delay energization, reduce accelerator utilization or shift orders toward on-site generation, storage and load-shaping systems",
+        "Which CSP projects, utilities and equipment suppliers have quantifiable revenue, margin or capital-expenditure exposure"
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -839,7 +910,7 @@
     }
   ],
   "last_research_date": "2026-10-13",
-  "instruction_commit_sha": "94c5ef883ff795a0bb37e5fe6db0989956a82c17",
+  "instruction_commit_sha": "34deb65c78cabbb48465efbcbca4abc5adbd050b",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
