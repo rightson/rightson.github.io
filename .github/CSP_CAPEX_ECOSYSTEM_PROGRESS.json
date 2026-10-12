@@ -325,6 +325,32 @@
         "https://www.reuters.com/business/microsoft-plans-huge-deployment-its-own-ai-chips-with-an-eye-saving-costs-2026-10-12/"
       ],
       "status": "company_primary_verified_material_supply_chain_content_supplier_awards_pending"
+    },
+    {
+      "fingerprint": "gf-tsmc-cowos-interposer-2b-agreement-20261008",
+      "event_date": "2026-10-08",
+      "companies": [
+        "TSMC",
+        "GlobalFoundries"
+      ],
+      "type": "company_primary_multiyear_manufacturing_agreement",
+      "facts": {
+        "source_nature": "GlobalFoundries primary company announcement, corroborated by Reuters",
+        "agreement_value_usd_billion": 2,
+        "initial_term_years": 5,
+        "scope": "GlobalFoundries will manufacture silicon interposers for TSMC's CoWoS advanced-packaging ecosystem",
+        "site": "GlobalFoundries Malta, New York facility",
+        "capacity_action": "GlobalFoundries will add fabrication capacity, including capability supporting embedded deep-trench-capacitor components",
+        "production_timing": "Volume production expected to begin ramping in the first half of 2028",
+        "strategic_role": "First U.S.-based source of silicon interposers supporting TSMC's CoWoS ecosystem, according to GlobalFoundries",
+        "disclosed_limits": "Annual capacity, product allocation, end customers, payment cadence, utilization, pricing, margins and any TSMC volume guarantee were not disclosed",
+        "interpretation": "The agreement adds a contracted U.S. interposer source and turns advanced-packaging geographic resilience into a funded manufacturing program. It is direct long-duration AI exposure for GlobalFoundries and may ease TSMC CoWoS interposer constraints after 2028, but does not establish near-term capacity relief or supplier revenue recognition."
+      },
+      "sources": [
+        "https://gf.com/news-and-events/news/globalfoundries-reaches-agreement-to-establish-us-based-supply-of-silicon-interposers-for-advanced-ai-packaging/",
+        "https://www.reuters.com/world/asia-pacific/globalfoundries-make-key-ai-chip-component-tsmc-2026-10-08/"
+      ],
+      "status": "company_primary_verified_material_long_term_packaging_capacity_and_rerating_event"
     }
   ],
   "articles": [],
@@ -490,6 +516,26 @@
         "Named switch ASIC, optical interconnect, liquid-cooling and rack-power suppliers"
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "tsmc-gf-us-interposer-cowos-capacity",
+      "companies": [
+        "TSMC",
+        "GlobalFoundries"
+      ],
+      "sources": [
+        "https://gf.com/news-and-events/news/globalfoundries-reaches-agreement-to-establish-us-based-supply-of-silicon-interposers-for-advanced-ai-packaging/",
+        "https://www.reuters.com/world/asia-pacific/globalfoundries-make-key-ai-chip-component-tsmc-2026-10-08/"
+      ],
+      "stage": "agreement_value_term_site_and_2028_ramp_verified_capacity_customer_allocation_revenue_timing_and_margin_pending",
+      "questions": [
+        "Committed annual wafer or interposer capacity and capacity-expansion milestones",
+        "Payment cadence, take-or-pay terms and whether the USD 2 billion represents purchases, capacity reservation or mixed commitments",
+        "Qualified CoWoS product generations, end customers and embedded deep-trench-capacitor scope",
+        "GlobalFoundries revenue recognition, utilization, incremental depreciation and gross-margin contribution",
+        "Whether U.S. interposer capacity adds to or substitutes for Taiwan-based interposer supply"
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -509,7 +555,7 @@
     }
   ],
   "last_research_date": "2026-10-12",
-  "instruction_commit_sha": "e726c28c411b7fca24e12c4d8cfe22d9aaa57295",
+  "instruction_commit_sha": "e0566e1853503d99045be8e486fb2fcf9ef4717d",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
