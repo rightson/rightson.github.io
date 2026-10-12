@@ -181,6 +181,28 @@
         "https://money.udn.com/money/story/5612/9808264"
       ],
       "status": "media_lead_company_and_financial_validation_pending"
+    },
+    {
+      "fingerprint": "usitc-vpd-taiwan-respondent-responses-20261011",
+      "event_date": "2026-10-11",
+      "companies": [
+        "Delta Electronics",
+        "Quanta Computer",
+        "Hon Hai/Foxconn"
+      ],
+      "type": "reported_company_responses_to_regulator_investigation",
+      "facts": {
+        "source_nature": "Company statements reported by Central News Agency; direct Delta and Quanta filings were not retrieved in this run",
+        "delta": "Said the relevant products are currently unaffected and it will respond through the legal process",
+        "quanta": "Said the relevant products and operations are unaffected and it will require the relevant suppliers to handle the component dispute and respond",
+        "hon_hai": "Said its initial assessment found no material impact on production, shipments or customer cooperation",
+        "interpretation": "Near-term operations are reported unchanged; Quanta's supplier-response wording makes contractual responsibility and cost allocation a specific unresolved question",
+        "stage": "Company responses; no regulator decision on merits or remedy"
+      },
+      "sources": [
+        "https://www.cna.com.tw/news/afe/202610110175.aspx"
+      ],
+      "status": "reliable_news_reports_company_statements_new_cost_allocation_clue"
     }
   ],
   "articles": [],
@@ -251,9 +273,10 @@
       "sources": [
         "https://www.usitc.gov/press_room/news_release/2026/er1009_69342.htm",
         "https://www.usitc.gov/fed_reg_notices/section_337_notices/certain_vertical_power_delivery_systems_components_100926.htm",
-        "https://www.vicorpower.com/ip-licensing"
+        "https://www.vicorpower.com/ip-licensing",
+        "https://www.cna.com.tw/news/afe/202610110175.aspx"
       ],
-      "stage": "regulator_institution_verified_affected_products_and_economics_pending",
+      "stage": "regulator_institution_verified_company_responses_report_no_current_operational_impact_supplier_cost_allocation_unresolved",
       "questions": [
         "Exact affected SKUs and export revenue exposure",
         "Existing licenses, patent scope and viable alternative designs",
@@ -300,7 +323,7 @@
     }
   ],
   "last_research_date": "2026-10-12",
-  "instruction_commit_sha": "c72249c6ed64d3480ba0b9573d2b4883f5df3261",
+  "instruction_commit_sha": "7cbb530f6b890da7272d98040f3b7bfebf7f7f5d",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
