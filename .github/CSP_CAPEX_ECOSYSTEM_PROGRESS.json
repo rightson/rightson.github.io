@@ -424,6 +424,37 @@
         "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m10/cisco-advances-scalability-and-openness-at-ocp-2026.html"
       ],
       "status": "company_primary_named_production_deployments_verified_volume_contract_and_margin_pending"
+    },
+    {
+      "fingerprint": "google-constellation-3590mw-power-nuclear-uprate-20261006",
+      "event_date": "2026-10-06",
+      "companies": [
+        "Alphabet/Google",
+        "Constellation Energy"
+      ],
+      "type": "csp_long_term_power_purchase_and_generation_investment_agreement",
+      "facts": {
+        "source_nature": "Joint Constellation and Google company announcements corroborated by Reuters",
+        "total_power_scope_mw": 3590,
+        "new_nuclear_capacity_mw": 890,
+        "nuclear_agreement_term_years": 20,
+        "existing_fleet_supply_mw": 2700,
+        "existing_fleet_agreement_term_years": 15,
+        "constellation_investment_usd_billion": 4.3,
+        "nuclear_asset_scope": "Upgrades at 11 Constellation-owned nuclear units across six sites in Illinois, Pennsylvania and New Jersey",
+        "delivery_timing": "First uprate expected by 2028; Google says all 890 MW should be added before the end of 2032",
+        "commercial_mechanism": "Google's long-term offtake provides revenue certainty for uprates while the 2,700 MW agreement supports continued operation of existing PJM assets",
+        "flexibility": "Agreement includes load shaping and demand-response capability during high-stress grid events",
+        "technology_alliance": "Constellation selected Google Cloud and Gemini Enterprise under an expanded five-year alliance for planning, asset optimization and critical-infrastructure operations",
+        "disclosed_limits": "Power prices, take-or-pay structure, annual cash-flow profile, project-level returns, regulatory milestones and data-center load locations were not disclosed",
+        "interpretation": "The agreement shows CSP capital commitments moving upstream from data-center equipment into long-duration generation economics. Constellation gains a contracted path to invest USD 4.3 billion and monetize both incremental and existing capacity, while Google reduces power-availability risk. The 15- to 20-year duration supports a structural earnings-quality argument, but returns still depend on undisclosed pricing, execution and regulatory outcomes."
+      },
+      "sources": [
+        "https://www.constellationenergy.com/news/2026/10/google-and-constellation-announce-landmark-agreement-to-bring-890-mw-of-new-nuclear-capacity-to-pjm-grid.html",
+        "https://blog.google/company-news/why-were-backing-americas-existing-nuclear-plants/",
+        "https://www.reuters.com/business/energy/google-enters-massive-36-gw-power-deal-with-constellation-energy-2026-10-06/"
+      ],
+      "status": "joint_company_primary_long_term_power_and_investment_terms_verified_pricing_returns_and_regulatory_execution_pending"
     }
   ],
   "articles": [],
@@ -668,6 +699,27 @@
         "Whether wins expand Cisco share or replace incumbent merchant silicon"
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "google-constellation-power-contract-economics-and-execution",
+      "companies": [
+        "Alphabet/Google",
+        "Constellation Energy"
+      ],
+      "sources": [
+        "https://www.constellationenergy.com/news/2026/10/google-and-constellation-announce-landmark-agreement-to-bring-890-mw-of-new-nuclear-capacity-to-pjm-grid.html",
+        "https://blog.google/company-news/why-were-backing-americas-existing-nuclear-plants/",
+        "https://www.reuters.com/business/energy/google-enters-massive-36-gw-power-deal-with-constellation-energy-2026-10-06/"
+      ],
+      "stage": "3590mw_long_term_agreements_and_4_3b_investment_verified_pricing_project_returns_delivery_and_regulatory_execution_pending",
+      "questions": [
+        "PPA and supply-agreement pricing, escalation and take-or-pay terms",
+        "Annual investment and revenue-recognition cadence through 2032",
+        "Required NRC, PJM and state approvals and the critical path for each uprate",
+        "Incremental return on invested capital and downside if Google's load growth or delivery schedule changes",
+        "Whether the framework produces additional generation, storage or demand-response projects"
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -687,7 +739,7 @@
     }
   ],
   "last_research_date": "2026-10-13",
-  "instruction_commit_sha": "5517a77099dea9ba5f811b0b23053e3759d7cc6b",
+  "instruction_commit_sha": "cbddf179819dc9a969bc98f152bdb28db29e57d3",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
