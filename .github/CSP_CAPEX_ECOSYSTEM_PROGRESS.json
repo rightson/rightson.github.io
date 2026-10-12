@@ -242,7 +242,7 @@
   "coverage": {
     "universe_source": "rightson/alpha-quant:seeds/watchlists/ai_supply_chain_universe.csv",
     "status": "all_98_search_screened_primary_validation_partial",
-    "universe_commit_sha": "5b0d86316d1e634fbc3b28b2b40a43c08b0fdcfe",
+    "universe_commit_sha": "4151678538377601643fd466aa99669275a5e816",
     "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
     "active_count": 98,
     "search_screened_count": 98,
@@ -250,7 +250,7 @@
     "primary_monthly_revenue_checked_count": 3,
     "primary_partner_relationship_checked_count": 2,
     "remaining_primary_company_fact_check_count": 91,
-    "note": "Counts now use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; the previous count of five had double-counted Accton. The two newly added distinct companies are Hon Hai and Quanta, named in the regulator announcement. Primary-source validation is still partial; no full-universe or valuation conclusion is claimed.",
+    "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed.",
     "active_universe_primary_verified_symbols": [
       "2330",
       "2454",
