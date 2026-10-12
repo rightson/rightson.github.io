@@ -378,6 +378,52 @@
         "https://www.clint.com.sg/en/portfolio/data-centres/capitaland-dc-navi-mumbai-1.html"
       ],
       "status": "company_supplied_completed_deployment_verified_through_syndicated_release_contract_economics_and_customer_identity_pending"
+    },
+    {
+      "fingerprint": "meta-nvidia-spectrum6-n-icecube-adoption-20261012",
+      "event_date": "2026-10-12",
+      "companies": [
+        "Meta",
+        "NVIDIA"
+      ],
+      "type": "named_hyperscaler_ai_networking_adoption",
+      "facts": {
+        "source_nature": "NVIDIA primary OCP announcement quoting Meta infrastructure leadership",
+        "customer_and_product": "Meta is adopting NVIDIA Spectrum-6 102.4 Tb/s Ethernet switches in its N-IceCube system for the liquid-cooled IcePack rack",
+        "architecture": "Spectrum-X Multiplane uses Spectrum-6 switches and ConnectX-9 SuperNICs across as many as eight independent network planes",
+        "scale_target": "The architecture is designed to support Vera Rubin AI factories beyond 100,000 GPUs",
+        "software_control": "Meta extends FBOSS to Spectrum ASICs through the OCP Switch Abstraction Interface",
+        "deployment_boundary": "Meta describes N-IceCube as connecting upcoming accelerator generations; the disclosure does not provide installed switch counts, purchase value, deployment date or revenue timing",
+        "interpretation": "A named hyperscaler design adoption raises NVIDIA's credibility as a merchant Ethernet switching supplier beyond its GPU attach. It creates a real competitive signal for Broadcom, Cisco and other AI fabric vendors, but is not yet a disclosed production-volume or earnings-revision event."
+      },
+      "sources": [
+        "https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/"
+      ],
+      "status": "company_primary_named_customer_adoption_verified_volume_revenue_and_production_timing_pending"
+    },
+    {
+      "fingerprint": "cisco-p200-microsoft-alibaba-production-g300-shipments-20261012",
+      "event_date": "2026-10-12",
+      "companies": [
+        "Cisco",
+        "Microsoft",
+        "Alibaba"
+      ],
+      "type": "named_hyperscaler_production_deployment_and_customer_shipments",
+      "facts": {
+        "source_nature": "Cisco primary OCP press release with direct customer statements from Microsoft and Alibaba",
+        "microsoft_deployment": "Microsoft says systems powered by Cisco Silicon One P200 have moved into production",
+        "alibaba_deployment": "Alibaba says its in-house Quantum Cat routers using Cisco Silicon One P200 have been deployed at massive scale in the eCORE backbone",
+        "p200_system": "51.2 Tb/s deep-buffered routing systems for scale-across and backbone workloads",
+        "g300_status": "First 102.4 Tb/s Silicon One G300-powered systems are shipping to customers",
+        "g302_status": "Cisco plans customer shipments of its 51.2 Tb/s G302 top-of-rack silicon before the end of 2026",
+        "disclosed_limits": "Cisco did not disclose chip or system volumes, contract value, customer concentration, product gross margins or revenue-recognition timing",
+        "interpretation": "The named production deployments move Cisco Silicon One from product availability into hyperscaler validation and create a more credible AI-networking revenue path. The missing economics prevent direct EPS attribution, but the evidence weakens the assumption that Broadcom and NVIDIA will capture nearly all merchant AI networking value."
+      },
+      "sources": [
+        "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m10/cisco-advances-scalability-and-openness-at-ocp-2026.html"
+      ],
+      "status": "company_primary_named_production_deployments_verified_volume_contract_and_margin_pending"
     }
   ],
   "articles": [],
@@ -583,6 +629,45 @@
         "Repeat orders, manufacturing throughput and customer acceptance after Level 4 testing"
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "meta-spectrum6-ethernet-share-and-volume",
+      "companies": [
+        "Meta",
+        "NVIDIA",
+        "Broadcom",
+        "Cisco"
+      ],
+      "sources": [
+        "https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/"
+      ],
+      "stage": "named_meta_spectrum6_adoption_verified_installed_base_orders_shipments_and_revenue_pending",
+      "questions": [
+        "Installed switch and SuperNIC counts, deployment schedule and procurement value",
+        "Whether Spectrum-6 displaces Broadcom- or Cisco-based fabrics or serves incremental Vera Rubin clusters",
+        "External cloud adoption of Meta and NVIDIA's multiplane operational design",
+        "NVIDIA networking revenue and gross-margin contribution attributable to Spectrum-6"
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "cisco-silicon-one-hyperscaler-production-economics",
+      "companies": [
+        "Cisco",
+        "Microsoft",
+        "Alibaba"
+      ],
+      "sources": [
+        "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m10/cisco-advances-scalability-and-openness-at-ocp-2026.html"
+      ],
+      "stage": "named_p200_production_deployments_and_g300_customer_shipments_verified_volume_contract_revenue_and_margin_pending",
+      "questions": [
+        "P200 deployed ports, systems and incremental orders at Microsoft and Alibaba",
+        "G300 customer names, production shipment volume and revenue-recognition timing",
+        "Silicon-only versus Cisco-system mix and resulting gross-margin profile",
+        "Whether wins expand Cisco share or replace incumbent merchant silicon"
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -602,7 +687,7 @@
     }
   ],
   "last_research_date": "2026-10-13",
-  "instruction_commit_sha": "467a68fc1ec32dcf07e616c0435187e6ca63e60a",
+  "instruction_commit_sha": "5517a77099dea9ba5f811b0b23053e3759d7cc6b",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
