@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="1010" viewBox="0 0 640 1010" role="img" aria-label="Learning from EDA diagnosis runs">
+<rect width="640" height="100%" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#506274"/></marker></defs>
+<style>text{font-family:Arial,sans-serif;fill:#182b40} .title{font-size:26px;font-weight:700}.heading{font-size:23px;font-weight:700}.detail{font-size:20px}.note{font-size:18px}.sign{font-size:10px}</style>
+<text class="title" x="32" y="44">Learning from EDA diagnosis runs</text>
+<rect x="32" y="76" width="576" height="110" rx="12" fill="#eef5fa" stroke="#617991" stroke-width="1.5"/>
+<text class="heading" x="50" y="109">1 · Capture the failed run</text>
+<text class="detail" x="50" y="141">RTL / Tcl / report IDs + tool / parser versions</text>
+<path d="M320,186 L320,216" fill="none" stroke="#506274" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="32" y="220" width="576" height="110" rx="12" fill="#eef5fa" stroke="#617991" stroke-width="1.5"/>
+<text class="heading" x="50" y="253">2 · Read an approved skill bundle</text>
+<text class="detail" x="50" y="285">Match scope; inspect data; suggest next check</text>
+<path d="M320,330 L320,360" fill="none" stroke="#506274" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="32" y="364" width="576" height="138" rx="12" fill="#eef5fa" stroke="#617991" stroke-width="1.5"/>
+<text class="heading" x="50" y="397">3 · Confirm the resolved case</text>
+<text class="detail" x="50" y="429">Flow owner verifies cause + actual change</text>
+<text class="detail" x="50" y="456">EDA flow checks the revised output</text>
+<path d="M320,502 L320,532" fill="none" stroke="#506274" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="32" y="536" width="576" height="110" rx="12" fill="#eef5fa" stroke="#617991" stroke-width="1.5"/>
+<text class="heading" x="50" y="569">4 · Extract a candidate delta</text>
+<text class="detail" x="50" y="601">Keep conditions, counterexamples and case IDs</text>
+<path d="M320,646 L320,676" fill="none" stroke="#506274" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="32" y="680" width="576" height="138" rx="12" fill="#eef5fa" stroke="#617991" stroke-width="1.5"/>
+<text class="heading" x="50" y="713">5 · Replay before use</text>
+<text class="detail" x="50" y="745">Freeze data and bundle; compare against baseline</text>
+<text class="detail" x="50" y="772">Measure wrong advice, coverage and cost</text>
+<path d="M320,818 L320,848" fill="none" stroke="#506274" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="32" y="852" width="576" height="110" rx="12" fill="#eef5fa" stroke="#617991" stroke-width="1.5"/>
+<text class="heading" x="50" y="885">6 · Approve a version for new runs</text>
+<text class="detail" x="50" y="917">Owner signs digest; retain history and revocation</text>
+<text class="sign" x="614" y="994" text-anchor="end">Scott Yo-Ru Chen · 2026-10-13</text><style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#506274" i]{fill:#bdc3ca}[fill="#eef5fa" i]{fill:#1b252c}[fill="#ffffff" i]{fill:#1b1f20}[stroke="#506274" i]{stroke:#bdc3ca}[stroke="#617991" i]{stroke:#8da0b2}text{fill:#cbd6e1}}</style>
+</svg>

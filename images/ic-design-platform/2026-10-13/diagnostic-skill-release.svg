@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="940" viewBox="0 0 640 940" role="img" aria-label="Versioned skills can be withdrawn">
+<rect width="640" height="100%" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#506274"/></marker></defs>
+<style>text{font-family:Arial,sans-serif;fill:#182b40} .title{font-size:26px;font-weight:700}.heading{font-size:23px;font-weight:700}.detail{font-size:20px}.note{font-size:18px}.sign{font-size:10px}</style>
+<text class="title" x="32" y="44">Versioned skills can be withdrawn</text>
+<rect x="32" y="76" width="576" height="110" rx="12" fill="#eef5fa" stroke="#617991" stroke-width="1.5"/>
+<text class="heading" x="50" y="109">Freeze candidate + test package</text>
+<text class="detail" x="50" y="141">Each artifact gets an immutable digest</text>
+<path d="M320,186 L320,216" fill="none" stroke="#506274" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="32" y="220" width="576" height="138" rx="12" fill="#eef5fa" stroke="#617991" stroke-width="1.5"/>
+<text class="heading" x="50" y="253">Replay and attach the report</text>
+<text class="detail" x="50" y="285">Report digest must match this skill bundle</text>
+<text class="detail" x="50" y="312">Wrong routes and low coverage block promotion</text>
+<path d="M320,358 L320,388" fill="none" stroke="#506274" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="32" y="392" width="576" height="110" rx="12" fill="#eef5fa" stroke="#617991" stroke-width="1.5"/>
+<text class="heading" x="50" y="425">Owner approves the tested revision</text>
+<text class="detail" x="50" y="457">Approval refers to the evaluated bundle digest</text>
+<path d="M320,502 L320,532" fill="none" stroke="#506274" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="32" y="536" width="576" height="138" rx="12" fill="#eef5fa" stroke="#617991" stroke-width="1.5"/>
+<text class="heading" x="50" y="569">Compare current parent; then publish</text>
+<text class="detail" x="50" y="601">Changed parent: conflict, compare again</text>
+<text class="detail" x="50" y="628">Matching parent: new requests can use v2</text>
+<path d="M320,674 L320,704" fill="none" stroke="#506274" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="32" y="708" width="576" height="164" rx="12" fill="#fff4e9" stroke="#617991" stroke-width="1.5"/>
+<text class="heading" x="50" y="741">Withdraw an unsafe revision</text>
+<text class="detail" x="50" y="773">Block future use; restore a known bundle</text>
+<text class="detail" x="50" y="800">List affected runs and review prior advice</text>
+<text class="detail" x="50" y="827">Preserve old decisions and original results</text>
+<text class="sign" x="614" y="924" text-anchor="end">Scott Yo-Ru Chen · 2026-10-13</text><style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#506274" i]{fill:#bdc3ca}[fill="#eef5fa" i]{fill:#1b252c}[fill="#fff4e9" i]{fill:#332313}[fill="#ffffff" i]{fill:#1b1f20}[stroke="#506274" i]{stroke:#bdc3ca}[stroke="#617991" i]{stroke:#8da0b2}text{fill:#cbd6e1}}</style>
+</svg>

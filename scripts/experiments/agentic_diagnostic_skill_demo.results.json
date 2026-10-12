@@ -1,0 +1,290 @@
+{
+  "fixture_kind": "authored_synthetic_protocol_cases_not_empirical_generalization",
+  "model_calls": 0,
+  "eda_calls": 0,
+  "counts": {
+    "positive_training": 3,
+    "negative_development": 3,
+    "test_cases": 12
+  },
+  "bundle_digests": {
+    "v1": "d506a181d1ba189489a4bd993b7b13337a1cb8e34b31aab672cd216cc88f703a",
+    "v2": "ef6d7794dfa81983c907176376a8f897306f7f57f0fb8b3bf0e34501337837d5"
+  },
+  "test_fixture_digest": "ab698b6d55e97d406a7baceb9965b1f80e6217c939d3e9d6d71c3760d9d50178",
+  "evaluations": {
+    "unscoped_v1": {
+      "correct": 6,
+      "wrong": 6,
+      "abstain": 0,
+      "total": 12,
+      "coverage": 1.0,
+      "precision_when_answered": 0.5,
+      "correct_over_all": 0.5,
+      "cases": [
+        {
+          "id": "test-pos-train-l-0",
+          "expected": "inspect-license",
+          "action": "inspect-license",
+          "status": "correct"
+        },
+        {
+          "id": "test-pos-train-l-1",
+          "expected": "inspect-license",
+          "action": "inspect-license",
+          "status": "correct"
+        },
+        {
+          "id": "test-neg-train-l",
+          "expected": "inspect-upstream",
+          "action": "inspect-license",
+          "status": "wrong"
+        },
+        {
+          "id": "test-schema-train-l",
+          "expected": "unsupported",
+          "action": "inspect-license",
+          "status": "wrong"
+        },
+        {
+          "id": "test-pos-train-b-0",
+          "expected": "inspect-library",
+          "action": "inspect-library",
+          "status": "correct"
+        },
+        {
+          "id": "test-pos-train-b-1",
+          "expected": "inspect-library",
+          "action": "inspect-library",
+          "status": "correct"
+        },
+        {
+          "id": "test-neg-train-b",
+          "expected": "inspect-upstream",
+          "action": "inspect-library",
+          "status": "wrong"
+        },
+        {
+          "id": "test-schema-train-b",
+          "expected": "unsupported",
+          "action": "inspect-library",
+          "status": "wrong"
+        },
+        {
+          "id": "test-pos-train-c-0",
+          "expected": "inspect-inputs",
+          "action": "inspect-inputs",
+          "status": "correct"
+        },
+        {
+          "id": "test-pos-train-c-1",
+          "expected": "inspect-inputs",
+          "action": "inspect-inputs",
+          "status": "correct"
+        },
+        {
+          "id": "test-neg-train-c",
+          "expected": "inspect-upstream",
+          "action": "inspect-inputs",
+          "status": "wrong"
+        },
+        {
+          "id": "test-schema-train-c",
+          "expected": "unsupported",
+          "action": "inspect-inputs",
+          "status": "wrong"
+        }
+      ]
+    },
+    "scoped_v1": {
+      "correct": 6,
+      "wrong": 0,
+      "abstain": 6,
+      "total": 12,
+      "coverage": 0.5,
+      "precision_when_answered": 1.0,
+      "correct_over_all": 0.5,
+      "cases": [
+        {
+          "id": "test-pos-train-l-0",
+          "expected": "inspect-license",
+          "action": "inspect-license",
+          "status": "correct"
+        },
+        {
+          "id": "test-pos-train-l-1",
+          "expected": "inspect-license",
+          "action": "inspect-license",
+          "status": "correct"
+        },
+        {
+          "id": "test-neg-train-l",
+          "expected": "inspect-upstream",
+          "action": null,
+          "status": "abstain"
+        },
+        {
+          "id": "test-schema-train-l",
+          "expected": "unsupported",
+          "action": null,
+          "status": "abstain"
+        },
+        {
+          "id": "test-pos-train-b-0",
+          "expected": "inspect-library",
+          "action": "inspect-library",
+          "status": "correct"
+        },
+        {
+          "id": "test-pos-train-b-1",
+          "expected": "inspect-library",
+          "action": "inspect-library",
+          "status": "correct"
+        },
+        {
+          "id": "test-neg-train-b",
+          "expected": "inspect-upstream",
+          "action": null,
+          "status": "abstain"
+        },
+        {
+          "id": "test-schema-train-b",
+          "expected": "unsupported",
+          "action": null,
+          "status": "abstain"
+        },
+        {
+          "id": "test-pos-train-c-0",
+          "expected": "inspect-inputs",
+          "action": "inspect-inputs",
+          "status": "correct"
+        },
+        {
+          "id": "test-pos-train-c-1",
+          "expected": "inspect-inputs",
+          "action": "inspect-inputs",
+          "status": "correct"
+        },
+        {
+          "id": "test-neg-train-c",
+          "expected": "inspect-upstream",
+          "action": null,
+          "status": "abstain"
+        },
+        {
+          "id": "test-schema-train-c",
+          "expected": "unsupported",
+          "action": null,
+          "status": "abstain"
+        }
+      ]
+    },
+    "scoped_v2": {
+      "correct": 9,
+      "wrong": 0,
+      "abstain": 3,
+      "total": 12,
+      "coverage": 0.75,
+      "precision_when_answered": 1.0,
+      "correct_over_all": 0.75,
+      "cases": [
+        {
+          "id": "test-pos-train-l-0",
+          "expected": "inspect-license",
+          "action": "inspect-license",
+          "status": "correct"
+        },
+        {
+          "id": "test-pos-train-l-1",
+          "expected": "inspect-license",
+          "action": "inspect-license",
+          "status": "correct"
+        },
+        {
+          "id": "test-neg-train-l",
+          "expected": "inspect-upstream",
+          "action": "inspect-upstream",
+          "status": "correct"
+        },
+        {
+          "id": "test-schema-train-l",
+          "expected": "unsupported",
+          "action": null,
+          "status": "abstain"
+        },
+        {
+          "id": "test-pos-train-b-0",
+          "expected": "inspect-library",
+          "action": "inspect-library",
+          "status": "correct"
+        },
+        {
+          "id": "test-pos-train-b-1",
+          "expected": "inspect-library",
+          "action": "inspect-library",
+          "status": "correct"
+        },
+        {
+          "id": "test-neg-train-b",
+          "expected": "inspect-upstream",
+          "action": "inspect-upstream",
+          "status": "correct"
+        },
+        {
+          "id": "test-schema-train-b",
+          "expected": "unsupported",
+          "action": null,
+          "status": "abstain"
+        },
+        {
+          "id": "test-pos-train-c-0",
+          "expected": "inspect-inputs",
+          "action": "inspect-inputs",
+          "status": "correct"
+        },
+        {
+          "id": "test-pos-train-c-1",
+          "expected": "inspect-inputs",
+          "action": "inspect-inputs",
+          "status": "correct"
+        },
+        {
+          "id": "test-neg-train-c",
+          "expected": "inspect-upstream",
+          "action": "inspect-upstream",
+          "status": "correct"
+        },
+        {
+          "id": "test-schema-train-c",
+          "expected": "unsupported",
+          "action": null,
+          "status": "abstain"
+        }
+      ]
+    }
+  },
+  "release_checks": {
+    "mismatched_report": "digest-mismatch",
+    "promotion": "released",
+    "stale_promotion": "conflict",
+    "current_after_revocation": "v1",
+    "reuse_revoked": "revoked"
+  },
+  "history": [
+    {
+      "from": "v1",
+      "to": "v2",
+      "reason": "evaluation"
+    },
+    {
+      "from": "v2",
+      "to": "v1",
+      "reason": "revocation"
+    }
+  ],
+  "limits": [
+    "No language generation, LLM evaluation, simulator or tool execution",
+    "Small authored fixtures share rule structure; no statistical independence",
+    "In-process release model; no distributed storage, crash durability or race test"
+  ]
+}
