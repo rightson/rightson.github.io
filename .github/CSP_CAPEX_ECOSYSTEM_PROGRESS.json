@@ -733,6 +733,25 @@
         "https://www.mediatek.com/tek-talk-blogs/from-silicon-to-scale-inside-mediateks-ai-data-center-solution"
       ],
       "status": "company_primary_guidance_and_capability_scope_verified_customer_program_mix_orders_margin_and_timing_pending"
+    },
+    {
+      "fingerprint": "enerflex-over-1gw-datacenter-btm-power-award-20261013",
+      "event_date": "2026-10-13",
+      "companies": [
+        "Enerflex"
+      ],
+      "type": "company_primary_contract_award_and_backlog_expansion",
+      "facts": {
+        "project_scope": "Enerflex has been contracted to design, engineer, fabricate and assemble more than 1 GW of low-emission behind-the-meter natural-gas-fired generation for a large-scale North American data-center development.",
+        "backlog": "Including other awards, such as approximately 450 MW announced on October 1, Enerflex says its behind-the-meter power backlog now exceeds 1.75 GW, with deliveries extending through 2028.",
+        "investment": "Enerflex has authorized approximately US$100 million-equivalent of investments in Engineered Systems facilities and capabilities; US$15 million is included in 2026 capital-expenditure guidance.",
+        "recurring_opportunity": "Management identifies possible commissioning, installation, aftermarket, digital and maintenance services beyond the initial equipment scope.",
+        "interpretation": "This converts the data-center grid-constraint thesis into a contracted gigawatt-scale equipment backlog and may lift Engineered Systems revenue capacity and service attachment. The customer, contract value, revenue-recognition cadence, gross margin, cancellation terms and fuel or permitting execution remain undisclosed."
+      },
+      "sources": [
+        "https://investors.enerflex.com/news-releases/news-release-details/enerflex-announces-major-project-award-and-increases-behind"
+      ],
+      "status": "company_primary_gigawatt_contract_and_backlog_verified_customer_value_margin_recognition_and_execution_pending"
     }
   ],
   "articles": [],
@@ -747,7 +766,7 @@
     "primary_monthly_revenue_checked_count": 3,
     "primary_partner_relationship_checked_count": 2,
     "remaining_primary_company_fact_check_count": 91,
-    "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed. Vertiv is not in the current 98-company alpha-quant universe; this run added it as an out-of-universe supplier candidate because a completed 30 MW hyperscale liquid-cooling deployment provides explicit demand-transmission evidence. LG Electronics is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because the signed AIR long-term agreement covers AI data-center projects exceeding 5 GW, while contract value and delivery economics remain undisclosed.",
+    "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed. Vertiv is not in the current 98-company alpha-quant universe; this run added it as an out-of-universe supplier candidate because a completed 30 MW hyperscale liquid-cooling deployment provides explicit demand-transmission evidence. LG Electronics is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because the signed AIR long-term agreement covers AI data-center projects exceeding 5 GW, while contract value and delivery economics remain undisclosed. Enerflex is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because a contracted over-1-GW behind-the-meter data-center power project lifts the company's related backlog above 1.75 GW, while customer identity, contract value, margin and revenue timing remain undisclosed.",
     "active_universe_primary_verified_symbols": [
       "2330",
       "2454",
@@ -1147,6 +1166,24 @@
         "Evidence of repeat generations, customer concentration and competitive allocation versus Broadcom and Marvell"
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "enerflex-datacenter-behind-the-meter-power-earnings-conversion",
+      "companies": [
+        "Enerflex"
+      ],
+      "sources": [
+        "https://investors.enerflex.com/news-releases/news-release-details/enerflex-announces-major-project-award-and-increases-behind"
+      ],
+      "stage": "company_primary_over_1gw_award_and_over_1_75gw_backlog_verified_contract_value_customer_revenue_margin_and_service_attachment_pending",
+      "questions": [
+        "Named customer and exact contracted megawatts, equipment count, cancellation protections and delivery milestones",
+        "Contract value, backlog conversion by year, revenue-recognition cadence, working-capital requirements and gross margin",
+        "Whether the approximately US$100 million capability investment raises sustainable Engineered Systems throughput and return on invested capital",
+        "Commissioning, installation, aftermarket, digital and maintenance attach rates after equipment delivery",
+        "Gas supply, emissions, permitting, interconnection and execution risks for behind-the-meter generation"
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -1166,7 +1203,7 @@
     }
   ],
   "last_research_date": "2026-10-13",
-  "instruction_commit_sha": "28e96063a0b8731cd276a1c4c9cdddd5daa9459f",
+  "instruction_commit_sha": "f558325aff75d28a7886fa1341cff104fd5bdc34",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
