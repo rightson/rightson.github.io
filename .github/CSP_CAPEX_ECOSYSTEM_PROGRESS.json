@@ -647,6 +647,67 @@
         "https://www.amd.com/en/products/rackscale-solutions/helion.html"
       ],
       "status": "company_primary_reference_design_and_partner_support_verified_orders_shipments_and_economics_pending"
+    },
+    {
+      "fingerprint": "idc-china-ai-accelerator-market-h1-2026-20261013",
+      "event_date": "2026-10-13",
+      "companies": [
+        "NVIDIA",
+        "Huawei",
+        "Alibaba/T-Head",
+        "Cambricon",
+        "Baidu/Kunlunxin",
+        "Hygon"
+      ],
+      "type": "reliable_media_reported_third_party_market_tracker_shipments",
+      "facts": {
+        "source_nature": "Reuters reporting on an IDC report seen by Reuters; the underlying IDC report and methodology were not retrieved in this run",
+        "period": "H1 2026",
+        "china_total_ai_accelerator_shipments": 2008000,
+        "nvidia_shipments": 678000,
+        "nvidia_shipments_yoy_percent": -44,
+        "nvidia_market_share_percent": 34,
+        "huawei_shipments": 572000,
+        "huawei_prior_year_shipments": "more than 300,000",
+        "huawei_market_share_percent": 28,
+        "gpu_shipments": 991000,
+        "gpu_shipments_yoy_percent": -26,
+        "non_gpu_accelerator_shipments": 1016000,
+        "non_gpu_accelerator_shipments_yoy": "up nearly 80 percent",
+        "domestic_non_gpu_share": "Huawei, T-Head, Kunlunxin and Cambricon together accounted for 95 percent of the non-GPU segment",
+        "idc_full_year_view": "Total accelerator shipments expected to grow 19 percent while GPU shipments fall 9 percent",
+        "maturity": "Third-party shipment estimate; product definitions, ASP, revenue share, utilization and IDC methodology remain unavailable",
+        "interpretation": "Export controls and domestic procurement are shifting Chinese AI infrastructure from imported GPUs toward local non-GPU accelerators and system-level integration. This is a material regional share loss for NVIDIA, not evidence of a comparable change in NVIDIA global revenue or share."
+      },
+      "sources": [
+        "https://www.reuters.com/business/retail-consumer/nvidias-china-ai-chip-share-falls-huawei-closes-gap-report-finds-2026-10-13/"
+      ],
+      "status": "reliable_media_reported_idc_market_shift_primary_report_methodology_revenue_and_utilization_pending"
+    },
+    {
+      "fingerprint": "tencent-proposed-notes-and-h1-capex-stepup-20261013",
+      "event_date": "2026-10-13",
+      "companies": [
+        "Tencent"
+      ],
+      "type": "company_primary_proposed_debt_issue_and_capex_disclosure_with_reliable_media_term_sheet_update",
+      "facts": {
+        "official_announcement_date": "2026-10-12",
+        "official_status": "Proposed international notes offering under the global medium-term note programme; no binding agreement existed at the announcement date and completion remained conditional",
+        "h1_2026_capex_rmb_billion": 96.3,
+        "h1_2025_capex_rmb_billion": 45.9,
+        "capex_scope": "IT infrastructure including computer equipment, components and software; data centres; land-use rights; office premises; and intellectual property excluding media content",
+        "liquidity_statement": "Tencent said existing cash, operating cash flow and term deposits should be sufficient for anticipated operations and capital expenditure for at least the next 12 months",
+        "reported_term_sheet_update": "Reuters reported a four-tranche USD and offshore-yuan sale that could raise at least USD 4.5 billion, with books exceeding USD 2 billion for the dollar tranches and RMB 35 billion for the yuan tranches",
+        "proceeds_limit": "General corporate purposes; the proposed notes are not disclosed as dedicated AI-project financing",
+        "maturity": "Offering was being marketed; final principal, pricing, completion and allocation of proceeds were not yet company-confirmed",
+        "interpretation": "Tencent's H1 capital spending step-up confirms a large China-CSP infrastructure demand pool and the proposed long-dated funding preserves financing capacity. It does not prove capital stress or identify supplier orders because Tencent states internal liquidity is sufficient and the proceeds are general corporate."
+      },
+      "sources": [
+        "https://www.tencent.com/wp-content/uploads/2026/10/E700_Launch-Announcement.pdf",
+        "https://www.reuters.com/world/asia-pacific/tencent-markets-us-dollar-dim-sum-bonds-four-tranches-2026-10-13/"
+      ],
+      "status": "company_primary_capex_and_proposed_issue_verified_reuters_term_sheet_demand_reported_final_pricing_completion_ai_allocation_and_supplier_orders_pending"
     }
   ],
   "articles": [],
@@ -995,6 +1056,48 @@
         "Incremental revenue, gross margin and working-capital requirements for each OEM and ODM"
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "china-ai-accelerator-localization-and-system-value-shift",
+      "companies": [
+        "NVIDIA",
+        "Huawei",
+        "Alibaba/T-Head",
+        "Cambricon",
+        "Baidu/Kunlunxin",
+        "Hygon"
+      ],
+      "sources": [
+        "https://www.reuters.com/business/retail-consumer/nvidias-china-ai-chip-share-falls-huawei-closes-gap-report-finds-2026-10-13/"
+      ],
+      "stage": "reuters_reported_idc_h1_shipment_and_share_estimates_recorded_underlying_methodology_product_mix_asp_revenue_utilization_and_cluster_performance_pending",
+      "questions": [
+        "IDC product definitions, covered vendors and whether shipments include grey-market or previously stocked accelerators",
+        "ASP and revenue share versus unit share by vendor and accelerator type",
+        "Measured utilization, software maturity and cluster-level performance for domestic systems",
+        "Foundry, memory, networking, power and server-system suppliers that capture the localized demand",
+        "Whether localization persists if export controls or compliant NVIDIA product availability change"
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "tencent-ai-capex-financing-and-supplier-transmission",
+      "companies": [
+        "Tencent"
+      ],
+      "sources": [
+        "https://www.tencent.com/wp-content/uploads/2026/10/E700_Launch-Announcement.pdf",
+        "https://www.reuters.com/world/asia-pacific/tencent-markets-us-dollar-dim-sum-bonds-four-tranches-2026-10-13/"
+      ],
+      "stage": "h1_capex_stepup_and_proposed_notes_verified_term_sheet_demand_reported_final_size_cost_use_of_proceeds_supplier_orders_utilization_and_ai_revenue_pending",
+      "questions": [
+        "Final principal, coupon, maturity mix and completion of the October notes",
+        "How much of RMB 96.3 billion H1 capex went to accelerators, servers, networking, power and data-centre construction",
+        "Named accelerator, foundry, memory, ODM and networking suppliers and their order timing",
+        "Utilization, depreciation, AI revenue and return on the incremental infrastructure",
+        "Whether future capex remains funded mainly by operating cash flow or requires repeated external financing"
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -1014,7 +1117,7 @@
     }
   ],
   "last_research_date": "2026-10-13",
-  "instruction_commit_sha": "fd14c79086287c9db6e1f185334ac83362736e3d",
+  "instruction_commit_sha": "c850c95b3c40fda19286b2165851fbf3d1a0328e",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
