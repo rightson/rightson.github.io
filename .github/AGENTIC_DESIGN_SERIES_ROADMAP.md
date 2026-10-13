@@ -75,3 +75,13 @@
 - TPCS 不是 agent 系統，也沒有公開證據顯示已接入 LLM 或 production design flow；以上數字只視為論文 reported result。它先列為 AD001、AD007 的相鄰 substrate 證據：若後續能取得完整介面、design identity、轉譯失敗與 independently reproduced result，才評估是否形成「可執行設計狀態」深掘；不能把更快的 simulation 直接外推成 agent 閉環較可靠。
 - 本次沒有新的 EDA 廠商 production deployment、客戶 adoption 或獨立量化效益達到公開短評門檻，因此不建立新文章。下一步分別驗證 EDA_MCP guard 的繞過面與 crash recovery，以及 TPCS 的 benchmark 組成、RTL 子集、生成失敗模式與程式碼可得性；AD001–AD003、AD006–AD008 均不因此標為完成。
 
+## 2026-10-14 雷達查核與接續
+
+- 本次指令 commit：`fb248b4aa7cfe734bef332f11ee20957fa0125e9`；研究紀錄：`agentic-design-radar｜2026-10-14`。本紀錄只更新證據佇列，不設定或改動 scheduler。
+- [Cadence 2026-10-13 的 Virtuoso AI Studio／ViraStack 說明](https://community.cadence.com/cadence_blogs_8/b/cic/posts/when-ai-becomes-part-of-your-analog-design-workflow)補上先前活動頁缺少的 analog workflow 細節：由自然語言建立 testbench、產生與修正 SKILL、執行 topology mapping／device scaling／跨製程最佳化；實體設計路徑可由影像提出 floorplan，產生 placement 與 routing 原型，再協調 physical verification、extraction 與 post-layout optimization。
+- Cadence 描述的接受責任仍在人：floorplan 先提案、經工程師核准才生成；多個 layout 候選由工程師依面積、open 數與平衡結果選擇；DRC agent 報告並建議修正，工程師決定處理項目；電路行為仍由 simulation 與 verification engine 建立。這為 AD001、AD007 與 AD008 增加了具體的 input／action／artifact／acceptance 路徑，也顯示 agent 層主要協調既有 Virtuoso、Circuit Simulation 與 Pegasus 能力。
+- 同一說明自報：具 Virtuoso API 與 design context 的 SKILL 生成相對人工工作提高 95% productivity；6 GHz analog／RF PHY migration flow 縮短 60% design-closure 時間。公開頁面沒有提供樣本數、人工 baseline 定義、製程節點、品質分母、重跑成本、具名客戶或可重現資料，兩項數字只列為 vendor reported result，先接到 AD005 的 evaluation 缺口。
+- 成熟度維持「供應商產品材料／development-partner engagement」：Cadence 2026-04-16 的[官方 Super Agent 說明](https://community.cadence.com/cadence_blogs_8/b/artificial-intelligence/posts/reimagining-chip-design-from-spec-to-signoff-with-cadence-ai-super-agents)曾將 ViraStack 列為 early engagements；10 月 13 日新文說明 cloud-enabled、on-premises 與 customer-specific knowledge，但沒有更新 GA 狀態或提出獨立客戶 production deployment。因此不把 demo、早期合作與量產導入混寫。
+- 相較 10 月 8 日 Cadence signoff 文件，本次新增的是 analog custom-design 的實際編排粒度與人工核准位置；權威來源、版本綁定、失敗後殘留狀態、回復路徑與跨製程 acceptance schema 仍未公開。下一步驗證兩項 productivity claim 的測量方式、候選 layout 的比較 schema、migration 前後 specification traceability，以及 agent 失敗或工具中斷時如何保存與撤回狀態。AD001、AD005、AD007、AD008 均不因此標為完成。
+- 本次沒有第二項同等強度的新 EDA 廠商 production deployment、客戶採用或獨立量化結果；不建立公開短評，避免把單一供應商材料擴寫成部署事實。
+
