@@ -577,6 +577,76 @@
         "https://www.pjm.com/library/filing-order.aspx"
       ],
       "status": "federal_primary_order_verified_actual_dispatch_and_company_exposure_pending"
+    },
+    {
+      "fingerprint": "cxmt-g5-mass-production-4f2-server-rdimm-plan-20261012",
+      "event_date": "2026-10-12",
+      "companies": [
+        "CXMT",
+        "Nanya Technology",
+        "Micron",
+        "SK hynix",
+        "Samsung Electronics"
+      ],
+      "type": "company_primary_mass_production_and_announced_server_dram_architecture",
+      "facts": {
+        "source_nature": "CXMT primary disclosure for G5 and LPDDR5X mass production; subsequent reporting of CXMT president Cao Kanyu's October 2026 conference remarks for the 4F² server-memory plan",
+        "g5_status": "Mass production",
+        "g5_active_area_half_pitch_nm": 11.95,
+        "g5_dies_per_wafer_change": "At least 50 percent higher than the prior platform when normalized at 8Gb",
+        "current_mass_production_product": "24Gb LPDDR5X",
+        "current_product_scope_limit": "The primary mass-production disclosure is mobile LPDDR5X, not server DDR5 RDIMM",
+        "announced_architecture": "4F² DRAM cell using a vertical-surrounded-gate transistor",
+        "announced_server_product": "DDR5 RDIMM planned by the end of 2026",
+        "maturity": "Product plan and architecture progress; server qualification, yield, volume production, customer adoption and capacity are not disclosed",
+        "interpretation": "This raises a medium-term downside risk to the server-DRAM scarcity and pricing thesis, but it is not evidence of immediate qualified server supply or 2026 market oversupply"
+      },
+      "sources": [
+        "https://www.cxmt.com/en/news/info_22.html",
+        "https://www.scmp.com/tech/big-tech/article/3370505/chinas-cxmt-unveils-key-progress-chip-structure-pursued-samsung-sk-hynix",
+        "https://www.trendforce.com/news/2026/10/12/news-cxmt-accelerates-4f%C2%B2-dram-push-eyes-year-end-server-ddr5-rdimm-launch/"
+      ],
+      "status": "g5_lpddr5x_mass_production_primary_verified_4f2_server_product_plan_verified_yield_qualification_customer_and_capacity_pending"
+    },
+    {
+      "fingerprint": "amd-helion-open-rack-oem-odm-ecosystem-20261012",
+      "event_date": "2026-10-12",
+      "companies": [
+        "AMD",
+        "Cisco",
+        "Dell Technologies",
+        "Hon Hai/Foxconn",
+        "HPE",
+        "Lenovo",
+        "QCT",
+        "Supermicro",
+        "Wiwynn"
+      ],
+      "type": "company_primary_announced_open_rack_reference_design_and_partner_ecosystem",
+      "facts": {
+        "product": "AMD Helion agentic AI rack",
+        "architecture": "Open Compute Project specification-based blueprint with CPU-only hyperscale and EPYC plus MI350P integrated configurations",
+        "maximum_cpu_cores": 32768,
+        "maximum_mi350p_gpus": 16,
+        "planned_availability": "November 2026",
+        "status": "Configurations are under development with ecosystem partners",
+        "named_oem_odm_partners": [
+          "Dell Technologies",
+          "Hon Hai/Foxconn",
+          "HPE",
+          "Lenovo",
+          "QCT",
+          "Supermicro",
+          "Wiwynn"
+        ],
+        "maturity": "Reference design and partner support announcement; no named end-customer order, shipment volume, procurement value, revenue or margin contribution",
+        "interpretation": "The announcement defines a near-term route to market for AMD rack-scale agentic infrastructure and a watch list for Taiwan ODM participation, but it does not yet establish a design-win or re-rating event for any partner"
+      },
+      "sources": [
+        "https://ir.amd.com/news-events/press-releases/detail/1301/introducing-amd-helion-agentic-ai-compute-at-rack-scale",
+        "https://www.amd.com/en/products/rackscale-solutions/helion.html"
+      ],
+      "status": "company_primary_reference_design_and_partner_support_verified_orders_shipments_and_economics_pending"
     }
   ],
   "articles": [],
@@ -687,20 +757,29 @@
     {
       "key": "nanya-dram-lta-ai-infrastructure-pricing-durability",
       "companies": [
-        "Nanya Technology"
+        "Nanya Technology",
+        "CXMT",
+        "Micron",
+        "SK hynix",
+        "Samsung Electronics"
       ],
       "sources": [
         "https://www.nanya.com/tw/Activity?Action=IR_investorcalendar_FileName&Id=5298&column=PressRelease",
         "https://www.nanya.com/tw/Activity?Action=IR_investorcalendar_FileName&Id=5298&column=Presentation",
-        "https://www.reuters.com/world/asia-pacific/broadcom-ceo-says-biggest-hurdle-ai-fuelled-tech-growth-is-capital-not-memory-2026-10-12/"
+        "https://www.reuters.com/world/asia-pacific/broadcom-ceo-says-biggest-hurdle-ai-fuelled-tech-growth-is-capital-not-memory-2026-10-12/",
+        "https://www.cxmt.com/en/news/info_22.html",
+        "https://www.scmp.com/tech/big-tech/article/3370505/chinas-cxmt-unveils-key-progress-chip-structure-pursued-samsung-sk-hynix",
+        "https://www.trendforce.com/news/2026/10/12/news-cxmt-accelerates-4f%C2%B2-dram-push-eyes-year-end-server-ddr5-rdimm-launch/"
       ],
-      "stage": "company_q3_results_and_ai_lta_expansion_plan_verified_post_call_market_and_contract_durability_validation_pending",
+      "stage": "company_q3_results_and_ai_lta_expansion_verified_cxmt_g5_mass_production_and_4f2_server_plan_add_competitive_supply_risk_qualification_yield_capacity_and_contract_durability_pending",
       "questions": [
         "Q4 realized ASP and gross margin versus renewed long-term-contract terms",
         "Customer commitment scope, cancellation protection and product mix",
         "1C qualification yield and timing of the 5A capacity ramp",
         "Post-call earnings revisions and whether the market has already priced the profit step-up",
-        "Whether Broadcom's statement that memory shortages are being overcome is company-specific or confirmed by market-wide inventory, lead-time and contract-pricing data"
+        "Whether Broadcom's statement that memory shortages are being overcome is company-specific or confirmed by market-wide inventory, lead-time and contract-pricing data",
+        "Whether CXMT's 4F² DDR5 RDIMM reaches server qualification, stable yield and volume production, and in which customer and geographic markets",
+        "Whether additional CXMT supply changes server DDR5 contract pricing, lead times or Nanya's long-term-contract renewal economics"
       ],
       "publication_status": "not_drafted"
     },
@@ -891,6 +970,31 @@
         "Which CSP projects, utilities and equipment suppliers have quantifiable revenue, margin or capital-expenditure exposure"
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "amd-helion-open-rack-odm-value-capture",
+      "companies": [
+        "AMD",
+        "Dell Technologies",
+        "Hon Hai/Foxconn",
+        "HPE",
+        "Lenovo",
+        "QCT",
+        "Supermicro",
+        "Wiwynn"
+      ],
+      "sources": [
+        "https://ir.amd.com/news-events/press-releases/detail/1301/introducing-amd-helion-agentic-ai-compute-at-rack-scale",
+        "https://www.amd.com/en/products/rackscale-solutions/helion.html"
+      ],
+      "stage": "primary_reference_design_partner_ecosystem_and_november_availability_verified_named_customer_orders_shipments_supplier_share_revenue_and_margin_pending",
+      "questions": [
+        "Named end customers, purchase commitments and first production shipment date",
+        "Partner-specific rack, board, power, cooling and integration scope",
+        "CPU-only versus EPYC plus MI350P system mix and content per rack",
+        "Incremental revenue, gross margin and working-capital requirements for each OEM and ODM"
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -910,7 +1014,7 @@
     }
   ],
   "last_research_date": "2026-10-13",
-  "instruction_commit_sha": "34deb65c78cabbb48465efbcbca4abc5adbd050b",
+  "instruction_commit_sha": "fd14c79086287c9db6e1f185334ac83362736e3d",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
