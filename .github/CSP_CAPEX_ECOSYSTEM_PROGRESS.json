@@ -752,6 +752,28 @@
         "https://investors.enerflex.com/news-releases/news-release-details/enerflex-announces-major-project-award-and-increases-behind"
       ],
       "status": "company_primary_gigawatt_contract_and_backlog_verified_customer_value_margin_recognition_and_execution_pending"
+    },
+    {
+      "fingerprint": "mainspring-aep-linear-generator-agreement-20261013",
+      "event_date": "2026-10-13",
+      "companies": [
+        "Mainspring Energy",
+        "American Electric Power"
+      ],
+      "type": "company_primary_sales_agreement_with_initial_purchase_and_long_term_capacity_option",
+      "facts": {
+        "agreement_scope": "Mainspring signed a sales agreement for AEP to purchase up to 1.6 GW of linear generators through 2034.",
+        "firm_initial_tranche": "AEP purchased an initial 190 MW tranche for delivery beginning in 2027.",
+        "demand_link": "The companies identify AI data centers, manufacturing and electrification as drivers of rapidly growing electricity demand; the equipment is utility-scale local generation rather than a disclosed dedicated CSP site order.",
+        "reported_value": "Bloomberg-derived reports cite potential value above US$4 billion over eight years, with pricing set tranche by tranche; this is not a fixed company-disclosed contract value and the remaining capacity is not equivalent to a firm 1.6 GW order.",
+        "interpretation": "The initial purchase converts speed-to-power demand into a firm equipment order and validates a new modular generation category at utility scale. Mainspring is private; AEP's earnings benefit depends on project siting, regulatory approval, rate-base treatment, cost recovery and actual follow-on tranches.",
+        "market_snapshot": "AEP traded at US$125.67 at 2026-10-14 03:03 Asia/Taipei, up 1.16% from the previous close; the one-day move cannot be attributed solely to this announcement."
+      },
+      "sources": [
+        "https://www.mainspringenergy.com/news/mainspring-energy-signs-landmark-1-6-gw-agreement-with-aep-for-reliable-affordable-power-capacity",
+        "https://www.prnewswire.com/news-releases/mainspring-energy-signs-landmark-1-6-gw-agreement-with-aep-for-reliable-affordable-power-capacity-302906235.html"
+      ],
+      "status": "company_primary_initial_190mw_purchase_and_1_6gw_framework_verified_total_value_follow_on_commitment_regulatory_recovery_revenue_margin_and_project_allocation_pending"
     }
   ],
   "articles": [],
@@ -1184,6 +1206,26 @@
         "Gas supply, emissions, permitting, interconnection and execution risks for behind-the-meter generation"
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "mainspring-aep-linear-generation-contract-economics",
+      "companies": [
+        "Mainspring Energy",
+        "American Electric Power"
+      ],
+      "sources": [
+        "https://www.mainspringenergy.com/news/mainspring-energy-signs-landmark-1-6-gw-agreement-with-aep-for-reliable-affordable-power-capacity",
+        "https://www.prnewswire.com/news-releases/mainspring-energy-signs-landmark-1-6-gw-agreement-with-aep-for-reliable-affordable-power-capacity-302906235.html"
+      ],
+      "stage": "initial_190mw_purchase_and_up_to_1_6gw_sales_framework_verified_contract_value_follow_on_orders_regulatory_recovery_project_allocation_revenue_and_margin_pending",
+      "questions": [
+        "Exact initial-tranche and total contract value, price per megawatt, cancellation protections and annual option mechanics through 2034",
+        "Named AEP operating companies, sites, permits, interconnection path and which capacity directly serves data-center load",
+        "Regulatory approval, rate-base eligibility, customer cost recovery and AEP return on invested capital",
+        "Mainspring manufacturing capacity, delivery cadence, backlog conversion, gross margin and service attachment",
+        "Whether follow-on tranches become firm orders or remain contingent on load growth and project economics"
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -1202,8 +1244,8 @@
       "impact": "Search hits and reposted notices have not been individually checked against company or exchange originals."
     }
   ],
-  "last_research_date": "2026-10-13",
-  "instruction_commit_sha": "f558325aff75d28a7886fa1341cff104fd5bdc34",
+  "last_research_date": "2026-10-14",
+  "instruction_commit_sha": "39be1fc5fd49291e41a9b7909540992bd71d7882",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
