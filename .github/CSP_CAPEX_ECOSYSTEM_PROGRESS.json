@@ -708,6 +708,31 @@
         "https://www.reuters.com/world/asia-pacific/tencent-markets-us-dollar-dim-sum-bonds-four-tranches-2026-10-13/"
       ],
       "status": "company_primary_capex_and_proposed_issue_verified_reuters_term_sheet_demand_reported_final_pricing_completion_ai_allocation_and_supplier_orders_pending"
+    },
+    {
+      "fingerprint": "mediatek-ai-datacenter-asic-guidance-and-platform-scope-20260624",
+      "event_date": "2026-06-24",
+      "companies": [
+        "MediaTek",
+        "TSMC"
+      ],
+      "type": "company_primary_guidance_and_platform_capability_disclosure",
+      "facts": {
+        "source_nature": "MediaTek official company blog summarizing Computex remarks by Vince Hu; company guidance and marketing claims, not audited segment reporting",
+        "ai_datacenter_asic_revenue_guidance_2026_usd_billion": 2,
+        "ai_datacenter_solutions_tam_2027_usd_billion_range": [
+          70,
+          80
+        ],
+        "target_share": "10-15% in the coming years",
+        "advanced_node_execution": "MediaTek states 10+ TSMC N3 tape-outs, 2+ N2 tape-outs, and an A14 test-chip tape-out planned later in 2026",
+        "platform_scope": "Custom ASIC, advanced packaging, HBM interface, UCIe/custom die-to-die, SerDes, uLED, Ethernet, NVLink Fusion, CPO and rack integration",
+        "interpretation": "The disclosure strengthens the evidence that data-center ASIC is already material to MediaTek and is intended to expand from design service into rack-level integration. The US$2 billion figure is company guidance; the 10-15% target and TAM do not establish orders, revenue timing or margins."
+      },
+      "sources": [
+        "https://www.mediatek.com/tek-talk-blogs/from-silicon-to-scale-inside-mediateks-ai-data-center-solution"
+      ],
+      "status": "company_primary_guidance_and_capability_scope_verified_customer_program_mix_orders_margin_and_timing_pending"
     }
   ],
   "articles": [],
@@ -1098,6 +1123,30 @@
         "Whether future capex remains funded mainly by operating cash flow or requires repeated external financing"
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "mediatek-ai-datacenter-asic-earnings-conversion",
+      "companies": [
+        "MediaTek",
+        "TSMC",
+        "Google",
+        "NVIDIA",
+        "Broadcom",
+        "Marvell"
+      ],
+      "sources": [
+        "https://www.mediatek.com/tek-talk-blogs/from-silicon-to-scale-inside-mediateks-ai-data-center-solution"
+      ],
+      "stage": "company_primary_2026_revenue_guidance_tam_target_and_platform_scope_verified_named_customer_program_economics_revenue_recognition_margin_and_repeat_generations_pending",
+      "questions": [
+        "Definition and reporting perimeter of the US$2 billion 2026 AI Data Center ASIC revenue guidance and actual recognized revenue",
+        "Whether the 10-15% target applies to the full US$70-80 billion solutions TAM or only MediaTek-addressable custom-silicon content, and by what year",
+        "Named hyperscaler programs and separation of Google TPU, NVIDIA NVLink Fusion and other customers",
+        "NRE versus volume revenue, gross margin, working-capital requirements and revenue-recognition cadence",
+        "Mapping of the N3/N2 tape-outs to data-center products, production status and TSMC wafer and advanced-packaging demand",
+        "Evidence of repeat generations, customer concentration and competitive allocation versus Broadcom and Marvell"
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -1117,7 +1166,7 @@
     }
   ],
   "last_research_date": "2026-10-13",
-  "instruction_commit_sha": "c850c95b3c40fda19286b2165851fbf3d1a0328e",
+  "instruction_commit_sha": "28e96063a0b8731cd276a1c4c9cdddd5daa9459f",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
