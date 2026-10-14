@@ -1121,6 +1121,81 @@
         "https://www.sec.gov/Archives/edgar/data/6951/000162828026056699/exhibit991q32026earningsre.htm"
       ],
       "status": "company_primary_long_term_targets_and_historical_margin_baseline_verified_orders_market_size_mix_returns_and_forecast_revisions_pending"
+    },
+    {
+      "fingerprint": "asml-q3-2026-results-guidance-and-2027-2028-supply-constraint-20261014",
+      "event_date": "2026-10-14",
+      "companies": [
+        "ASML",
+        "TSMC",
+        "MediaTek"
+      ],
+      "type": "issuer_primary_quarterly_results_guidance_update_and_capacity_constraint",
+      "facts": {
+        "source_nature": "ASML-issued GlobeNewswire earnings release, October 14 at 01:00 US Eastern daylight time; US GAAP quarterly financial statements unaudited.",
+        "reporting_period": "Quarter ended September 27, 2026",
+        "q3_2026": {
+          "currency": "EUR",
+          "unit": "million",
+          "net_sales": 11662,
+          "installed_base_management_sales": 3289,
+          "gross_margin_percent": 57.5,
+          "net_income": 4960,
+          "basic_eps_eur": 12.95
+        },
+        "prior_q3_guidance": {
+          "source_date": "2026-07-15",
+          "net_sales_eur_billion_range": [
+            11,
+            12
+          ],
+          "gross_margin_percent_range": [
+            55,
+            57
+          ]
+        },
+        "guidance_comparison": "Reported revenue is within the prior company range; gross margin exceeds its upper bound by 0.5 percentage point. Productivity-upgrade demand lifted Installed Base Management above guidance and drove the margin strength, according to the company.",
+        "annual_guidance": {
+          "period": "2026",
+          "old_net_sales_eur_billion_range": [
+            43,
+            45
+          ],
+          "new_net_sales_eur_billion_range": [
+            44,
+            45
+          ],
+          "old_gross_margin_percent_range": [
+            54,
+            56
+          ],
+          "new_gross_margin_percent": "around 56"
+        },
+        "q4_guidance": {
+          "net_sales_eur_billion_range": [
+            14.2,
+            15.2
+          ],
+          "gross_margin_percent": "around 57"
+        },
+        "capacity_baseline": "July plan: 2026 low-NA EUV capacity around 65 and DUV immersion around 130; planned 30 percent increase for 2027 and investigation of another 30 percent increase for 2028. These are tool-production capacity plans, not completed shipments or customer orders.",
+        "capacity_increment": "Management now expects its planned 2027 and 2028 supply will not fully meet customer demand and is investigating 2028 capacity beyond the previously communicated 30 percent increase.",
+        "order_scope": "Customer interest in orders for 2029 and 2030 is not equivalent to signed backlog. The retrieved release does not disclose a quantified quarterly bookings figure or named incremental customer allocations.",
+        "interpretation": "Adds realized profitability and a near-term guidance revision to the AI-equipment demand thesis. Tool supply constraints may support productivity-upgrade and service economics but also constrain wafer-fab expansion and downstream accelerator delivery; no TSMC or MediaTek program-specific delay or revenue change is established.",
+        "alternative_and_invalidation": "Order pull-forward, cancellations, export controls, new-tool delivery bottlenecks or weaker utilization can reduce backlog conversion and upgrade demand. Expanded capacity is still being investigated.",
+        "next_checks": [
+          "Company investor call and any quantified order/backlog disclosure",
+          "Actual tool shipments and productivity-upgrade sales versus guidance",
+          "2028 expansion approval and supplier readiness",
+          "Named customer fab readiness, utilization, order conversion and export-license effects"
+        ]
+      },
+      "sources": [
+        "https://www.globenewswire.com/news-release/2026/10/14/3380319/0/en/asml-reports-11-7-billion-total-net-sales-and-5-0-billion-net-income-in-q3-2026.html",
+        "https://www.sec.gov/Archives/edgar/data/937966/000162828026048235/pressreleasefinancialresul.htm",
+        "https://www.reuters.com/business/asml-forecasts-q4-sales-above-expectations-ai-chip-demand-2026-10-14/"
+      ],
+      "status": "issuer_primary_results_and_old_new_guidance_verified_capacity_plan_shortfall_management_reported_quantified_bookings_customer_allocation_and_execution_pending"
     }
   ],
   "articles": [],
@@ -1135,7 +1210,7 @@
     "primary_monthly_revenue_checked_count": 3,
     "primary_partner_relationship_checked_count": 2,
     "remaining_primary_company_fact_check_count": 90,
-    "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed. Vertiv is not in the current 98-company alpha-quant universe; this run added it as an out-of-universe supplier candidate because a completed 30 MW hyperscale liquid-cooling deployment provides explicit demand-transmission evidence. LG Electronics is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because the signed AIR long-term agreement covers AI data-center projects exceeding 5 GW, while contract value and delivery economics remain undisclosed. Enerflex is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because a contracted over-1-GW behind-the-meter data-center power project lifts the company's related backlog above 1.75 GW, while customer identity, contract value, margin and revenue timing remain undisclosed. Wistron was added from its official October 12 board announcement; 8 distinct active-universe names now have an identified primary-source fact. Historical blocker counts are preserved as dated records. Applied Materials was added as an out-of-universe research candidate from its official AI-related WFE, services and long-term profitability targets; no named incremental CSP order is inferred and primary coverage counts remain unchanged.",
+    "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed. Vertiv is not in the current 98-company alpha-quant universe; this run added it as an out-of-universe supplier candidate because a completed 30 MW hyperscale liquid-cooling deployment provides explicit demand-transmission evidence. LG Electronics is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because the signed AIR long-term agreement covers AI data-center projects exceeding 5 GW, while contract value and delivery economics remain undisclosed. Enerflex is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because a contracted over-1-GW behind-the-meter data-center power project lifts the company's related backlog above 1.75 GW, while customer identity, contract value, margin and revenue timing remain undisclosed. Wistron was added from its official October 12 board announcement; 8 distinct active-universe names now have an identified primary-source fact. Historical blocker counts are preserved as dated records. Applied Materials was added as an out-of-universe research candidate from its official AI-related WFE, services and long-term profitability targets; no named incremental CSP order is inferred and primary coverage counts remain unchanged. ASML added as an out-of-universe supplier research candidate from issuer-reported earnings, revised guidance and planned-capacity constraints; no named TSMC or MediaTek order or program delay inferred. Active-universe primary-validation counts unchanged.",
     "active_universe_primary_verified_symbols": [
       "2330",
       "2454",
@@ -1148,8 +1223,8 @@
     ],
     "current_run_screening": {
       "date": "2026-10-14",
-      "instruction_commit_sha": "12f5b4cbfa9b7769b60a8bc12ed4eae39d251b62",
-      "scope": "All 98 active names included in 13 fresh grouped discovery queries; latest TSMC and MediaTek official pages plus targeted CSP/US supplier follow-up and Applied Materials primary long-term targets.",
+      "instruction_commit_sha": "b11f871a45a29337532d5706c6d5b7900b08d6a7",
+      "scope": "All 98 active names included in 13 fresh grouped discovery queries; latest TSMC and MediaTek official pages, CSP/US supplier checks and ASML issuer Q3 earnings plus prior SEC guidance.",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 13
@@ -1199,6 +1274,14 @@
         "date": "2026-10-14",
         "instruction_commit_sha": "12f5b4cbfa9b7769b60a8bc12ed4eae39d251b62",
         "scope": "All 98 active names included in 13 fresh grouped discovery queries; latest TSMC and MediaTek official pages plus targeted CSP/US supplier follow-up and Applied Materials primary long-term targets.",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 13
+      },
+      {
+        "date": "2026-10-14",
+        "instruction_commit_sha": "b11f871a45a29337532d5706c6d5b7900b08d6a7",
+        "scope": "All 98 active names included in 13 fresh grouped discovery queries; latest TSMC and MediaTek official pages, CSP/US supplier checks and ASML issuer Q3 earnings plus prior SEC guidance.",
         "status": "grouped_discovery_screen_only_not_individual_primary_validation",
         "company_count": 98,
         "grouped_query_count": 13
@@ -1831,6 +1914,27 @@
         "Measure capex and R&D returns against cash generation; distinguish new EPS revisions from long-term aspirations"
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "asml-ai-lithography-scarcity-productivity-upgrades-and-earnings",
+      "companies": [
+        "ASML",
+        "TSMC",
+        "MediaTek"
+      ],
+      "sources": [
+        "https://www.globenewswire.com/news-release/2026/10/14/3380319/0/en/asml-reports-11-7-billion-total-net-sales-and-5-0-billion-net-income-in-q3-2026.html",
+        "https://www.sec.gov/Archives/edgar/data/937966/000162828026048235/pressreleasefinancialresul.htm"
+      ],
+      "stage": "primary_q3_results_guidance_revision_and_capacity_shortfall_verified_orders_customer_allocation_and_expansion_execution_pending",
+      "questions": [
+        "Separate realized Q3 profit and Q4 guidance from 2029-2030 order interest",
+        "Validate bookings, backlog conversion, cancellations and export controls",
+        "Track productivity upgrades, installed-base revenue and gross-margin sustainability",
+        "Confirm 2028 capacity expansion beyond earlier plans and supplier constraints",
+        "Identify actual impact on customer wafer-fab ramps without assuming a specific TPU delay"
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -1850,7 +1954,7 @@
     }
   ],
   "last_research_date": "2026-10-14",
-  "instruction_commit_sha": "12f5b4cbfa9b7769b60a8bc12ed4eae39d251b62",
+  "instruction_commit_sha": "b11f871a45a29337532d5706c6d5b7900b08d6a7",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
