@@ -1416,7 +1416,7 @@
       ],
       "type": "new_monthly_profit_disclosure_reproduced_notice_original_exchange_read_pending",
       "facts": {
-        "source_nature": "Indexed MOPS notice reproductions checked against original financial reporting and dated MoneyDJ/UDN reporting; direct MOPS/issuer notice not retrieved. These reproductions are one original event, not independent issuer confirmations.",
+        "source_nature": "Indexed MOPS notice reproductions compared with dated MoneyDJ/UDN reporting and precise monthly-revenue filing reproductions; direct MOPS/issuer notice not retrieved. These reproductions are one original event, not independent issuer confirmations.",
         "period": "September 2026 versus September 2025",
         "currency": "TWD",
         "unit": "million except EPS in TWD per share",
