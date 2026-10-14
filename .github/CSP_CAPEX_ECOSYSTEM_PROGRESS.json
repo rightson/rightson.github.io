@@ -1624,6 +1624,69 @@
         "https://ase.aseglobal.com/press-room/ase-expands-powersip-platform-for-next-generation-ai-power-delivery/"
       ],
       "status": "company_primary_available_platform_verified_orders_and_financial_attribution_pending_no_material_earnings_alert"
+    },
+    {
+      "fingerprint": "aep-google-cheyenne-702mw-project-details-not-new-bloom-order-20261014",
+      "event_date": "2026-10-14",
+      "companies": [
+        "AEP",
+        "Google/Alphabet",
+        "Bloom Energy",
+        "Basalt Infrastructure Partners"
+      ],
+      "type": "issuer_project_scope_and_named_offtaker_disclosure_not_new_equipment_order",
+      "facts": {
+        "planned_investment_usd": 4000000000,
+        "planned_capacity_mw": 702,
+        "power_purchase_term_years": 20,
+        "project_owner": "Cheyenne Fuel Cell LLC: approximately 92% AEP, nearly 8% Basalt-advised funds",
+        "construction_start_plan": "2026",
+        "full_operation_target": "end of 2028",
+        "baseline": "AEP 2025 10-K, p57/PDF p69, already disclosed January 2026 Cheyenne fuel-cell procurement of approximately USD2.65bn and a conditional 20-year offtake for all output with an unnamed investment-grade customer.",
+        "increment": "October 14 identifies Google and specifies project capacity, total planned investment, ownership and construction schedule.",
+        "limits": "Not a newly signed USD4bn Bloom order; do not add old equipment procurement to total project investment or infer an incremental order. PPA price, equipment delivery/revenue schedule, project returns and all permit/closing-condition satisfaction not verified. Carbon capture is planned, not commissioned. No named Taiwan supplier award inferred.",
+        "next_checks": [
+          "Actual construction and energization milestones",
+          "Bloom equipment acceptance, revenue recognition and service economics",
+          "PPA economics, project financing and permit status"
+        ]
+      },
+      "sources": [
+        "https://pr.aep.com/news/releases/read/12314/AEP-Advances-Innovative-Energy-Solution-for-Google-with-702MW-of-Bloom-Fuel-Cells",
+        "https://docs.aep.com/docs/investors/filings/docs/AEP_10K_2025.pdf"
+      ],
+      "status": "issuer_project_details_and_historical_overlap_verified_actual_delivery_and_returns_pending"
+    },
+    {
+      "fingerprint": "fermi-tensorwave-noi-capacity-basis-and-amd-support-conditions-20261014",
+      "event_date": "2026-10-14",
+      "companies": [
+        "Fermi",
+        "TensorWave",
+        "AMD"
+      ],
+      "type": "issuer_sec_furnished_fact_sheet_additional_economics_not_new_lease_closing",
+      "facts": {
+        "baseline": "October 13 AMD credit-support event recorded; the lease and USD6.5bn/15-year headline predate October 14. September 22 issuer release extended conditional closing to October 31.",
+        "lease_initial_years": 15,
+        "reported_contract_revenue_usd": 6500000000,
+        "total_power_capacity_mw": 222,
+        "critical_it_capacity_mw": 156,
+        "delivery_plan": "Phased delivery Q4 2027 through early 2028",
+        "annual_escalator_pct": 2.5,
+        "expected_project_noi_margin_pct": "75-80",
+        "power_capex_guidance_usd_per_mw_total_power": "3-4 million",
+        "turnkey_datacenter_capex_guidance_usd_per_mw_critical_it": "10-12 million",
+        "noi_scope": "Fixed base rent/capacity payments less selected non-reimbursable site/power operating costs; excludes variable power pass-through and associated costs, depreciation, corporate SG&A, interest and capital expenditure. Not GAAP net margin or free cash flow.",
+        "support_conditions": "AMD obligations begin only after construction completion and rent commencement on final delivery phase, subject to contractual conditions; may end early after tenant/guarantor maintains investment-grade status for 12 consecutive months.",
+        "limits": "October 14 fact sheet is furnished, not a lease-closing or project-finance closing announcement. 222 MW is not IT capacity or an AMD GPU purchase. Future NOI has no GAAP reconciliation; final costs, financing terms and actual receipts pending."
+      },
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/2071778/000121390026109227/ea0308546-8k_fermi.htm",
+        "https://www.sec.gov/Archives/edgar/data/2071778/000121390026109227/ea030854601ex99-1.htm",
+        "https://www.accessnewswire.com/newsroom/en/oil-gas-and-energy/fermi-and-tensorwave-agree-to-extend-closing-date-to-october-31-2026-1225550"
+      ],
+      "status": "sec_primary_economic_scope_and_postconstruction_credit_conditions_verified_lease_closing_financing_and_delivery_pending"
     }
   ],
   "articles": [],
@@ -1638,7 +1701,7 @@
     "primary_monthly_revenue_checked_count": 3,
     "primary_partner_relationship_checked_count": 2,
     "remaining_primary_company_fact_check_count": 89,
-    "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed. Vertiv is not in the current 98-company alpha-quant universe; this run added it as an out-of-universe supplier candidate because a completed 30 MW hyperscale liquid-cooling deployment provides explicit demand-transmission evidence. LG Electronics is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because the signed AIR long-term agreement covers AI data-center projects exceeding 5 GW, while contract value and delivery economics remain undisclosed. Enerflex is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because a contracted over-1-GW behind-the-meter data-center power project lifts the company's related backlog above 1.75 GW, while customer identity, contract value, margin and revenue timing remain undisclosed. Wistron was added from its official October 12 board announcement; 8 distinct active-universe names now have an identified primary-source fact. Historical blocker counts are preserved as dated records. Applied Materials was added as an out-of-universe research candidate from its official AI-related WFE, services and long-term profitability targets; no named incremental CSP order is inferred and primary coverage counts remain unchanged. ASML added as an out-of-universe supplier research candidate from issuer-reported earnings, revised guidance and planned-capacity constraints; no named TSMC or MediaTek order or program delay inferred. Active-universe primary-validation counts unchanged. LS ELECTRIC and LS Materials are out-of-universe candidates with explicit AI data-center power contract evidence; neither changes active-universe primary company counts. Winstek is outside the 98-company universe and is retained with an explicit AI/HPC testing/packaging demand relationship. GMM quarterly profit evidence is based on a reproduced notice, not an obtained issuer/exchange original; active-universe primary-validation counts remain 8 checked and 90 pending. ASE added from its official October 13 PowerSiP availability release; 9 distinct active names now have an identified primary company fact, 89 remain pending. This covers platform availability only, not customer-order or earnings validation. Alpha Compute and NTT Data are out-of-universe candidates; watchlist unchanged.",
+    "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed. Vertiv is not in the current 98-company alpha-quant universe; this run added it as an out-of-universe supplier candidate because a completed 30 MW hyperscale liquid-cooling deployment provides explicit demand-transmission evidence. LG Electronics is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because the signed AIR long-term agreement covers AI data-center projects exceeding 5 GW, while contract value and delivery economics remain undisclosed. Enerflex is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because a contracted over-1-GW behind-the-meter data-center power project lifts the company's related backlog above 1.75 GW, while customer identity, contract value, margin and revenue timing remain undisclosed. Wistron was added from its official October 12 board announcement; 8 distinct active-universe names now have an identified primary-source fact. Historical blocker counts are preserved as dated records. Applied Materials was added as an out-of-universe research candidate from its official AI-related WFE, services and long-term profitability targets; no named incremental CSP order is inferred and primary coverage counts remain unchanged. ASML added as an out-of-universe supplier research candidate from issuer-reported earnings, revised guidance and planned-capacity constraints; no named TSMC or MediaTek order or program delay inferred. Active-universe primary-validation counts unchanged. LS ELECTRIC and LS Materials are out-of-universe candidates with explicit AI data-center power contract evidence; neither changes active-universe primary company counts. Winstek is outside the 98-company universe and is retained with an explicit AI/HPC testing/packaging demand relationship. GMM quarterly profit evidence is based on a reproduced notice, not an obtained issuer/exchange original; active-universe primary-validation counts remain 8 checked and 90 pending. ASE added from its official October 13 PowerSiP availability release; 9 distinct active names now have an identified primary company fact, 89 remain pending. This covers platform availability only, not customer-order or earnings validation. Alpha Compute and NTT Data are out-of-universe candidates; watchlist unchanged. AEP/Bloom and Fermi/TensorWave economic-scope supplements are out-of-universe checks; 98-name search screening does not resolve the 89 outstanding individual primary validations. Jabil/Adani MoU and researcher DCPI data add candidates only; watchlist unchanged.",
     "active_universe_primary_verified_symbols": [
       "2330",
       "2454",
@@ -1652,8 +1715,8 @@
     ],
     "current_run_screening": {
       "date": "2026-10-14",
-      "instruction_commit_sha": "e19dde84db279a748fbb616c46390bb982089a4d",
-      "scope": "All 98 active names included in 13 fresh grouped public-news discovery queries. Current TSMC and MediaTek official latest pages checked; targeted CSP/US suppliers and new Alpha Compute issuer lease disclosure checked. ASE official PowerSiP availability verified; NTT/Anthropic reported talks retained as a candidate, not a signed order.",
+      "instruction_commit_sha": "e3696314cd743ae22c364bd93ea41d3fc7f58ded",
+      "scope": "All 98 active names included in 13 fresh grouped public-news discovery queries. Current TSMC official calendar and MediaTek press room checked; targeted CSP/US semiconductor suppliers and AEP/Fermi original project disclosures researched. Jabil non-binding India JV and Dell'Oro market summary retained as candidates, not earnings/order alerts.",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 13
@@ -1759,6 +1822,14 @@
         "date": "2026-10-14",
         "instruction_commit_sha": "e19dde84db279a748fbb616c46390bb982089a4d",
         "scope": "All 98 active names included in 13 fresh grouped public-news discovery queries. Current TSMC and MediaTek official latest pages checked; targeted CSP/US suppliers and new Alpha Compute issuer lease disclosure checked. ASE official PowerSiP availability verified; NTT/Anthropic reported talks retained as a candidate, not a signed order.",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 13
+      },
+      {
+        "date": "2026-10-14",
+        "instruction_commit_sha": "e3696314cd743ae22c364bd93ea41d3fc7f58ded",
+        "scope": "All 98 active names included in 13 fresh grouped public-news discovery queries. Current TSMC official calendar and MediaTek press room checked; targeted CSP/US semiconductor suppliers and AEP/Fermi original project disclosures researched. Jabil non-binding India JV and Dell'Oro market summary retained as candidates, not earnings/order alerts.",
         "status": "grouped_discovery_screen_only_not_individual_primary_validation",
         "company_count": 98,
         "grouped_query_count": 13
@@ -2674,6 +2745,90 @@
         "Hardware purchase awards and project returns"
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "aep-google-cheyenne-fuel-cell-delivery-and-project-returns",
+      "companies": [
+        "AEP",
+        "Google/Alphabet",
+        "Bloom Energy"
+      ],
+      "sources": [
+        "https://pr.aep.com/news/releases/read/12314/AEP-Advances-Innovative-Energy-Solution-for-Google-with-702MW-of-Bloom-Fuel-Cells",
+        "https://docs.aep.com/docs/investors/filings/docs/AEP_10K_2025.pdf"
+      ],
+      "stage": "named_customer_and_project_scope_verified_existing_equipment_commitment_not_counted_as_new_order",
+      "questions": [
+        "PPA price and returns after fuel, service and financing costs",
+        "Permits, construction and 2028 actual energization",
+        "Bloom deliveries and revenue versus already-disclosed January procurement"
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "fermi-tensorwave-noi-reconciliation-and-conditional-support",
+      "companies": [
+        "Fermi",
+        "TensorWave",
+        "AMD"
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/2071778/000121390026109227/ea030854601ex99-1.htm",
+        "https://www.sec.gov/Archives/edgar/data/2071778/000121390026109227/ea0308546-8k_fermi.htm",
+        "https://www.accessnewswire.com/newsroom/en/oil-gas-and-energy/fermi-and-tensorwave-agree-to-extend-closing-date-to-october-31-2026-1225550"
+      ],
+      "stage": "primary_october14_fact_sheet_verified_non_gaap_scope_and_capacity_bases_separated",
+      "related_candidate": "fermi-amd-credit-support-project-financing-and-delivery",
+      "questions": [
+        "Closing-condition satisfaction versus October 31 deadline",
+        "Construction funding and cost overruns before AMD obligations start",
+        "Net earnings and cash after depreciation, interest and capital spending"
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "jabil-adani-india-hardware-jv-definitive-agreements",
+      "companies": [
+        "Jabil",
+        "Adani Enterprises"
+      ],
+      "sources": [
+        "https://investors.jabil.com/news/news-details/2026/Adani-Enterprises-Jabil-Sign-MoU-for-5050-Data-Center-Hardware-Joint-Venture/default.aspx"
+      ],
+      "stage": "october13_primary_nonbinding_5050_mou_verified_not_formed_jv_or_customer_order",
+      "facts": {
+        "increment": "Proposed ownership framework follows June alliance announcement.",
+        "scope": "AI racks, servers, networking, power and cooling plus installation; multi-GW capacity is intended, not operating.",
+        "conditions": "Definitive agreements and approvals remain required; no customer order value, utilization, returns or near-term profit change disclosed."
+      },
+      "questions": [
+        "Executed definitive agreements, capital contribution and approvals",
+        "Named orders and delivered manufacturing capacity",
+        "Pricing, margins and returns"
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "delloro-q2-2026-dcpi-growth-and-permit-conversion",
+      "companies": [
+        "DCPI supplier ecosystem"
+      ],
+      "sources": [
+        "https://www.delloro.com/news/data-center-physical-infrastructure-market-grows-27-percent-y-y-to-14-billion-in-2q-2026/"
+      ],
+      "stage": "october14_researcher_primary_summary_verified_quarterly_market_estimates_not_supplier_profit_revision",
+      "facts": {
+        "period": "2Q 2026",
+        "dcpi_manufacturer_revenue_usd": 14000000000,
+        "year_over_year_growth_pct": 27,
+        "thermal_growth_pct": "over 40",
+        "limits": "Research estimate under new five-customer-segment structure; full underlying dataset not obtained. No named supplier margin or earnings revision. Permit restrictions described by researcher require regulator originals before treating as new legal events."
+      },
+      "questions": [
+        "Comparable segment definitions and company order-to-cash evidence",
+        "Permit/interconnection timing and deliveries versus cancellations"
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -2693,7 +2848,7 @@
     }
   ],
   "last_research_date": "2026-10-14",
-  "instruction_commit_sha": "e19dde84db279a748fbb616c46390bb982089a4d",
+  "instruction_commit_sha": "e3696314cd743ae22c364bd93ea41d3fc7f58ded",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
