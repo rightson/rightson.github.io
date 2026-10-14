@@ -977,6 +977,71 @@
         "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Transcript.pdf"
       ],
       "status": "company_primary_historical_timing_and_directional_margin_guidance_verified_current_execution_and_quantitative_margin_pending"
+    },
+    {
+      "fingerprint": "murata-mlcc-additional-capacity-review-order-strength-20261013",
+      "event_date": "2026-10-13",
+      "companies": [
+        "Murata Manufacturing"
+      ],
+      "type": "bloomberg_original_management_interview_reproduced_by_authorized_news_partner",
+      "facts": {
+        "source_nature": "Bloomberg interview by Takashi Mochizuki, reproduced by TBS CROSS DIG with Bloomberg; not a finalized company capital-expenditure announcement.",
+        "baseline": "April plan: approximately JPY80 billion through the fiscal year ending March 2028, increasing MLCC capacity 10-15 percent.",
+        "increment": "President Norio Nakajima said further investment is under consideration, materials and supplier discussions are underway, and some customer orders must be declined. Concrete spending figures are intended for the October 30 earnings announcement.",
+        "order_metric": "MLCC book-to-bill remains just below 1.5; June-end 1.47 is historical, not a new October record.",
+        "interpretation": "Supports persistent qualified-component supply tightness despite AI-spending doubts. Investment approval, material availability, realized pricing, deliveries and returns remain unresolved; Taiwan competitors cannot inherit Murata's orders without qualification."
+      },
+      "sources": [
+        "https://newsdig.tbs.co.jp/articles/withbloomberg/3008740?display=1",
+        "https://udn.com/news/story/6811/9811940"
+      ],
+      "status": "original_management_interview_verified_additional_investment_not_finalized_materials_pricing_and_earnings_pending"
+    },
+    {
+      "fingerprint": "wistron-taiwan-facility-capex-and-proposed-tainan-acquisition-20261012",
+      "event_date": "2026-10-12",
+      "companies": [
+        "Wistron",
+        "Coretronic"
+      ],
+      "type": "company_primary_board_capital_expenditure_and_proposed_asset_acquisition",
+      "facts": {
+        "source_nature": "Wistron's dated official English and Chinese board announcement. Media figures for Kaohsiung differ; primary company figure takes precedence.",
+        "approved_kaohsiung_capex_twd_billion": 6.5,
+        "approved_hsinchu_capex_twd_million": 591.6,
+        "derived_combined_approved_capex_twd_billion": 7.0916,
+        "proposed_tainan_factory_purchase_max_twd_billion": 1,
+        "derived_max_including_proposed_acquisition_twd_billion": 8.0916,
+        "scope": "Building improvements and machinery/equipment; Tainan acquisition is proposed, not a completed transaction.",
+        "baseline": "August 4 company announcement already approved additional Taiwan facility spending of TWD2 billion at Hsinchu and TWD8.5 billion at Kaohsiung; October is separately described as additional.",
+        "interpretation": "Adds committed capacity investment, not a customer order or earnings forecast. Production, utilization, depreciation, cash conversion and whether budgets overlap require validation."
+      },
+      "sources": [
+        "https://www.wistron.com/en/Newsroom/2026-10-12",
+        "https://www.wistron.com/en/Newsroom/2026-08-04"
+      ],
+      "status": "company_primary_additional_budget_verified_customer_orders_capacity_commissioning_and_margin_pending"
+    },
+    {
+      "fingerprint": "microsoft-azure-software-cost-discussion-company-denial-20261013",
+      "event_date": "2026-10-13",
+      "companies": [
+        "Microsoft"
+      ],
+      "type": "original_media_report_with_reported_company_denial",
+      "facts": {
+        "source_nature": "The Information original report and Economic Daily News account, both carrying Microsoft's spokesperson response; anonymous-source claim disputed by the company.",
+        "report": "Reported request for ideas to reduce costs by at least 20 percent in Bablani's software-development unit; measures unfinalized.",
+        "company_response": "Spokesperson denied directing teams to prepare cost-cutting plans.",
+        "scope_limit": "Software unit, not data-center construction; no disclosed 20-percent capex or accelerator-procurement cut.",
+        "interpretation": "Monitor spending discipline, but do not revise supplier demand solely from this contested unit-cost story."
+      },
+      "sources": [
+        "https://www.theinformation.com/articles/microsoft-cloud-president-asks-leaders-find-20-cost-cuts",
+        "https://udn.com/news/story/6811/9813232"
+      ],
+      "status": "disputed_report_and_company_response_verified_no_confirmed_capex_revision"
     }
   ],
   "articles": [],
@@ -987,11 +1052,11 @@
     "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
     "active_count": 98,
     "search_screened_count": 98,
-    "primary_company_fact_checked_count": 7,
+    "primary_company_fact_checked_count": 8,
     "primary_monthly_revenue_checked_count": 3,
     "primary_partner_relationship_checked_count": 2,
-    "remaining_primary_company_fact_check_count": 91,
-    "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed. Vertiv is not in the current 98-company alpha-quant universe; this run added it as an out-of-universe supplier candidate because a completed 30 MW hyperscale liquid-cooling deployment provides explicit demand-transmission evidence. LG Electronics is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because the signed AIR long-term agreement covers AI data-center projects exceeding 5 GW, while contract value and delivery economics remain undisclosed. Enerflex is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because a contracted over-1-GW behind-the-meter data-center power project lifts the company's related backlog above 1.75 GW, while customer identity, contract value, margin and revenue timing remain undisclosed.",
+    "remaining_primary_company_fact_check_count": 90,
+    "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed. Vertiv is not in the current 98-company alpha-quant universe; this run added it as an out-of-universe supplier candidate because a completed 30 MW hyperscale liquid-cooling deployment provides explicit demand-transmission evidence. LG Electronics is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because the signed AIR long-term agreement covers AI data-center projects exceeding 5 GW, while contract value and delivery economics remain undisclosed. Enerflex is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because a contracted over-1-GW behind-the-meter data-center power project lifts the company's related backlog above 1.75 GW, while customer identity, contract value, margin and revenue timing remain undisclosed. Wistron was added from its official October 12 board announcement; 8 distinct active-universe names now have an identified primary-source fact. Historical blocker counts are preserved as dated records.",
     "active_universe_primary_verified_symbols": [
       "2330",
       "2454",
@@ -999,12 +1064,13 @@
       "2345",
       "2317",
       "2382",
-      "2408"
+      "2408",
+      "3231"
     ],
     "current_run_screening": {
       "date": "2026-10-14",
-      "instruction_commit_sha": "26125ae7efe46da7c4b9f804bad8b4ab5588e1b4",
-      "scope": "All 98 active names included in 13 fresh grouped discovery queries; current TSMC and MediaTek official pages checked, with targeted US CSP/supplier and MediaTek milestone follow-up.",
+      "instruction_commit_sha": "c6743ef6c422a2c24bbd1ae7b69139327d9323b7",
+      "scope": "All 98 active names included in 13 fresh grouped discovery queries, plus TSMC/MediaTek latest official pages and targeted CSP/supplier follow-up.",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 13
@@ -1030,6 +1096,14 @@
         "date": "2026-10-14",
         "instruction_commit_sha": "26125ae7efe46da7c4b9f804bad8b4ab5588e1b4",
         "scope": "All 98 active names included in 13 fresh grouped discovery queries; current TSMC and MediaTek official pages checked, with targeted US CSP/supplier and MediaTek milestone follow-up.",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 13
+      },
+      {
+        "date": "2026-10-14",
+        "instruction_commit_sha": "c6743ef6c422a2c24bbd1ae7b69139327d9323b7",
+        "scope": "All 98 active names included in 13 fresh grouped discovery queries, plus TSMC/MediaTek latest official pages and targeted CSP/supplier follow-up.",
         "status": "grouped_discovery_screen_only_not_individual_primary_validation",
         "company_count": 98,
         "grouped_query_count": 13
@@ -1571,6 +1645,63 @@
         "Measure ASIC gross-profit dollars, expense ratio and operating-margin accretion; do not assume higher chip content raises gross-margin percentage"
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "murata-high-end-mlcc-scarcity-capacity-and-profit-retention",
+      "companies": [
+        "Murata Manufacturing",
+        "Samsung Electro-Mechanics",
+        "Yageo",
+        "Walsin Technology",
+        "Holy Stone"
+      ],
+      "sources": [
+        "https://newsdig.tbs.co.jp/articles/withbloomberg/3008740?display=1",
+        "https://udn.com/news/story/6811/9811940"
+      ],
+      "stage": "original_management_interview_verified_expansion_amount_materials_and_company_specific_earnings_pending",
+      "questions": [
+        "October 30 approved investment, commissioning and material availability",
+        "MLCC order cancellation and pull-forward versus persistent demand",
+        "Product-specific realized ASP, yield and margin",
+        "Taiwan suppliers' independent qualification and customer orders, not inferred spillover"
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "wistron-taiwan-additional-capex-returns-and-delivery",
+      "companies": [
+        "Wistron"
+      ],
+      "sources": [
+        "https://www.wistron.com/en/Newsroom/2026-10-12",
+        "https://www.wistron.com/en/Newsroom/2026-08-04"
+      ],
+      "stage": "company_primary_budget_and_proposed_acquisition_verified_orders_utilization_and_returns_pending",
+      "questions": [
+        "Reconcile October budget with August approvals and total 2026/2027 spending without double-counting",
+        "Facility commissioning, capacity by product and firm customer commitments",
+        "Incremental gross profit versus depreciation and working capital",
+        "Completion and price of proposed Tainan acquisition"
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "microsoft-azure-cost-discipline-versus-capex-demand",
+      "companies": [
+        "Microsoft"
+      ],
+      "sources": [
+        "https://www.theinformation.com/articles/microsoft-cloud-president-asks-leaders-find-20-cost-cuts",
+        "https://udn.com/news/story/6811/9813232"
+      ],
+      "stage": "disputed_software_unit_cost_report_verified_no_confirmed_infrastructure_spending_change",
+      "questions": [
+        "Any company-confirmed spending revision",
+        "Distinguish software/contractor expense from server purchases, leases and data-center capex",
+        "Whether actual project delays or supplier cancellations appear"
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -1590,7 +1721,7 @@
     }
   ],
   "last_research_date": "2026-10-14",
-  "instruction_commit_sha": "26125ae7efe46da7c4b9f804bad8b4ab5588e1b4",
+  "instruction_commit_sha": "c6743ef6c422a2c24bbd1ae7b69139327d9323b7",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
