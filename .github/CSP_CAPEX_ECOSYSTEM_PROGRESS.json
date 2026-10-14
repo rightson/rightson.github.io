@@ -1687,6 +1687,45 @@
         "https://www.accessnewswire.com/newsroom/en/oil-gas-and-energy/fermi-and-tensorwave-agree-to-extend-closing-date-to-october-31-2026-1225550"
       ],
       "status": "sec_primary_economic_scope_and_postconstruction_credit_conditions_verified_lease_closing_financing_and_delivery_pending"
+    },
+    {
+      "fingerprint": "flex-epc-power-acquisition-close-borrowings-and-pending-preferred-20261014",
+      "event_date": "2026-10-14",
+      "companies": [
+        "Flex",
+        "EPC Power",
+        "Axiom"
+      ],
+      "type": "sec_primary_completed_acquisition_and_actual_financing_drawdown",
+      "facts": {
+        "baseline": "September 3 definitive acquisition agreement at USD4.4bn and planned Q4 2026 closing; October 5 preferred financing announcement remained conditional.",
+        "acquisition_cash_paid_usd": 4400000000,
+        "purchase_price_scope": "Subject to customary adjustments; EPC Power now a wholly owned subsidiary in Cloud and Power Infrastructure.",
+        "borrowed_on_october14_usd": {
+          "term_loan": 3300000000,
+          "bridge": 1100000000
+        },
+        "both_facilities_maturity": "2027-10-13",
+        "financing_conditions": "Both facilities floating-rate; Axiom spin-off term-loan funding requires prepayment of the USD3.3bn facility. USD2bn convertible preferred investment remains subject to closing conditions, explicitly confirmed in October 14 8-K.",
+        "preferred_dividend_terms_from_october5": "10% cash annually before separation; after separation 6% cash or 7% payment-in-kind, with later step-ups/adjustments. Conditional investment, not received funding.",
+        "supply_chain_relationship": "Proprietary power-conversion hardware, software and controls support grid stability, backup power and next-generation 800V AI data-center infrastructure alongside Flex power/cooling/compute capabilities.",
+        "deployed_scope": "Issuer says over 15 GW deployed across applications; not 15 GW of newly delivered AI data-center capacity.",
+        "historical_management_targets_not_new_revisions": {
+          "calendar2026_epc_revenue_usd": 800000000,
+          "calendar2027_organic_revenue_growth_pct": 40,
+          "calendar2027_expected_ebitda_margin_pct": 30,
+          "source_date": "2026-09-03"
+        },
+        "planned_separation": "Axiom targeted for Q1 calendar 2027; still conditional, not completed.",
+        "limits": "Closing de-risks acquisition execution, not earnings conversion. No new named CSP purchase value or Taiwan supplier award verified. Debt costs, preferred distributions, purchase-accounting charges, integration spending and cash flows must be deducted before ordinary-share earnings/returns conclusions."
+      },
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/866374/000119312526421058/d147467d8k.htm",
+        "https://www.sec.gov/Archives/edgar/data/866374/000119312526421058/d147467dex991.htm",
+        "https://investors.flex.com/news/news-details/2026/Flex-to-Acquire-EPC-Power-Adding-Leading-Power-Conversion-Capabilities-for-AI-Data-Centers-and-Grid-Applications/default.aspx",
+        "https://investors.flex.com/news/news-details/2026/Flex-Announces-2-0-Billion-Convertible-Preferred-Investment-into-Axiom-Led-by-General-Catalyst-with-Koch-Equity-Development/default.aspx"
+      ],
+      "status": "sec_primary_completed_acquisition_and_borrowings_verified_preferred_closing_spin_off_and_profit_conversion_pending"
     }
   ],
   "articles": [],
@@ -1701,7 +1740,7 @@
     "primary_monthly_revenue_checked_count": 3,
     "primary_partner_relationship_checked_count": 2,
     "remaining_primary_company_fact_check_count": 89,
-    "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed. Vertiv is not in the current 98-company alpha-quant universe; this run added it as an out-of-universe supplier candidate because a completed 30 MW hyperscale liquid-cooling deployment provides explicit demand-transmission evidence. LG Electronics is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because the signed AIR long-term agreement covers AI data-center projects exceeding 5 GW, while contract value and delivery economics remain undisclosed. Enerflex is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because a contracted over-1-GW behind-the-meter data-center power project lifts the company's related backlog above 1.75 GW, while customer identity, contract value, margin and revenue timing remain undisclosed. Wistron was added from its official October 12 board announcement; 8 distinct active-universe names now have an identified primary-source fact. Historical blocker counts are preserved as dated records. Applied Materials was added as an out-of-universe research candidate from its official AI-related WFE, services and long-term profitability targets; no named incremental CSP order is inferred and primary coverage counts remain unchanged. ASML added as an out-of-universe supplier research candidate from issuer-reported earnings, revised guidance and planned-capacity constraints; no named TSMC or MediaTek order or program delay inferred. Active-universe primary-validation counts unchanged. LS ELECTRIC and LS Materials are out-of-universe candidates with explicit AI data-center power contract evidence; neither changes active-universe primary company counts. Winstek is outside the 98-company universe and is retained with an explicit AI/HPC testing/packaging demand relationship. GMM quarterly profit evidence is based on a reproduced notice, not an obtained issuer/exchange original; active-universe primary-validation counts remain 8 checked and 90 pending. ASE added from its official October 13 PowerSiP availability release; 9 distinct active names now have an identified primary company fact, 89 remain pending. This covers platform availability only, not customer-order or earnings validation. Alpha Compute and NTT Data are out-of-universe candidates; watchlist unchanged. AEP/Bloom and Fermi/TensorWave economic-scope supplements are out-of-universe checks; 98-name search screening does not resolve the 89 outstanding individual primary validations. Jabil/Adani MoU and researcher DCPI data add candidates only; watchlist unchanged.",
+    "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed. Vertiv is not in the current 98-company alpha-quant universe; this run added it as an out-of-universe supplier candidate because a completed 30 MW hyperscale liquid-cooling deployment provides explicit demand-transmission evidence. LG Electronics is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because the signed AIR long-term agreement covers AI data-center projects exceeding 5 GW, while contract value and delivery economics remain undisclosed. Enerflex is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because a contracted over-1-GW behind-the-meter data-center power project lifts the company's related backlog above 1.75 GW, while customer identity, contract value, margin and revenue timing remain undisclosed. Wistron was added from its official October 12 board announcement; 8 distinct active-universe names now have an identified primary-source fact. Historical blocker counts are preserved as dated records. Applied Materials was added as an out-of-universe research candidate from its official AI-related WFE, services and long-term profitability targets; no named incremental CSP order is inferred and primary coverage counts remain unchanged. ASML added as an out-of-universe supplier research candidate from issuer-reported earnings, revised guidance and planned-capacity constraints; no named TSMC or MediaTek order or program delay inferred. Active-universe primary-validation counts unchanged. LS ELECTRIC and LS Materials are out-of-universe candidates with explicit AI data-center power contract evidence; neither changes active-universe primary company counts. Winstek is outside the 98-company universe and is retained with an explicit AI/HPC testing/packaging demand relationship. GMM quarterly profit evidence is based on a reproduced notice, not an obtained issuer/exchange original; active-universe primary-validation counts remain 8 checked and 90 pending. ASE added from its official October 13 PowerSiP availability release; 9 distinct active names now have an identified primary company fact, 89 remain pending. This covers platform availability only, not customer-order or earnings validation. Alpha Compute and NTT Data are out-of-universe candidates; watchlist unchanged. AEP/Bloom and Fermi/TensorWave economic-scope supplements are out-of-universe checks; 98-name search screening does not resolve the 89 outstanding individual primary validations. Jabil/Adani MoU and researcher DCPI data add candidates only; watchlist unchanged. Flex/EPC Power/Axiom are out-of-universe suppliers with explicit AI data-center power-conversion evidence. This run does not add an active-universe primary-validated company; 9 checked and 89 pending remain. Amazon warrant restructuring is not a new CSP equipment order; watchlist unchanged.",
     "active_universe_primary_verified_symbols": [
       "2330",
       "2454",
@@ -1715,8 +1754,8 @@
     ],
     "current_run_screening": {
       "date": "2026-10-14",
-      "instruction_commit_sha": "e3696314cd743ae22c364bd93ea41d3fc7f58ded",
-      "scope": "All 98 active names included in 13 fresh grouped public-news discovery queries. Current TSMC official calendar and MediaTek press room checked; targeted CSP/US semiconductor suppliers and AEP/Fermi original project disclosures researched. Jabil non-binding India JV and Dell'Oro market summary retained as candidates, not earnings/order alerts.",
+      "instruction_commit_sha": "1e564ee49e39759cc7dee0fa5e643db2dadb9a8d",
+      "scope": "All 98 active names included in 13 fresh grouped public-news discovery queries. Current TSMC official calendar and MediaTek press room checked, plus targeted CSP/NVIDIA/AMD/Broadcom/Marvell discovery. Flex acquisition and borrowings verified against October 14 SEC original, September 3 acquisition baseline and October 5 conditional preferred terms. October 13 Amazon warrant amendment original checked as a non-order candidate.",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 13
@@ -1830,6 +1869,14 @@
         "date": "2026-10-14",
         "instruction_commit_sha": "e3696314cd743ae22c364bd93ea41d3fc7f58ded",
         "scope": "All 98 active names included in 13 fresh grouped public-news discovery queries. Current TSMC official calendar and MediaTek press room checked; targeted CSP/US semiconductor suppliers and AEP/Fermi original project disclosures researched. Jabil non-binding India JV and Dell'Oro market summary retained as candidates, not earnings/order alerts.",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 13
+      },
+      {
+        "date": "2026-10-14",
+        "instruction_commit_sha": "1e564ee49e39759cc7dee0fa5e643db2dadb9a8d",
+        "scope": "All 98 active names included in 13 fresh grouped public-news discovery queries. Current TSMC official calendar and MediaTek press room checked, plus targeted CSP/NVIDIA/AMD/Broadcom/Marvell discovery. Flex acquisition and borrowings verified against October 14 SEC original, September 3 acquisition baseline and October 5 conditional preferred terms. October 13 Amazon warrant amendment original checked as a non-order candidate.",
         "status": "grouped_discovery_screen_only_not_individual_primary_validation",
         "company_count": 98,
         "grouped_query_count": 13
@@ -2829,6 +2876,50 @@
         "Permit/interconnection timing and deliveries versus cancellations"
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "flex-axiom-epc-power-margin-cash-financing-and-separation",
+      "companies": [
+        "Flex",
+        "Axiom",
+        "EPC Power"
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/866374/000119312526421058/d147467d8k.htm",
+        "https://www.sec.gov/Archives/edgar/data/866374/000119312526421058/d147467dex991.htm",
+        "https://investors.flex.com/news/news-details/2026/Flex-to-Acquire-EPC-Power-Adding-Leading-Power-Conversion-Capabilities-for-AI-Data-Centers-and-Grid-Applications/default.aspx",
+        "https://investors.flex.com/news/news-details/2026/Flex-Announces-2-0-Billion-Convertible-Preferred-Investment-into-Axiom-Led-by-General-Catalyst-with-Koch-Equity-Development/default.aspx"
+      ],
+      "stage": "acquisition_closed_and_borrowings_drawn_verified_conditional_preferred_and_separation_profit_conversion_pending",
+      "questions": [
+        "Actual EPC revenue, margins, cash and integration costs versus September 3 management targets",
+        "Preferred investment closing, dividends and debt repayment/refinancing",
+        "Axiom spin-off approvals, capital structure and operating returns",
+        "Named 800V customer deployment and equipment/service revenue"
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "flex-amazon-warrant-spinco-economic-exposure-not-new-order",
+      "companies": [
+        "Flex",
+        "Axiom",
+        "Amazon"
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/866374/000110465926115502/tm2627474d1_8k.htm"
+      ],
+      "stage": "october13_sec_original_october9_amendment_verified_not_new_ai_purchase_commitment",
+      "facts": {
+        "baseline": "Existing August 15, 2025 Flex warrant amended for planned spin-off.",
+        "scope": "Amazon.com Services would receive a fully vested Spinco warrant concurrent with distribution, with shares based on existing warrant intrinsic value and USD0.01 exercise price.",
+        "limits": "Future distribution and warrant issuance, not received Spinco stock; no new procurement size or supplier profit revision disclosed."
+      },
+      "questions": [
+        "Actual separation and warrant share count",
+        "Original commercial spending vesting conditions and customer economics"
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -2848,7 +2939,7 @@
     }
   ],
   "last_research_date": "2026-10-14",
-  "instruction_commit_sha": "e3696314cd743ae22c364bd93ea41d3fc7f58ded",
+  "instruction_commit_sha": "1e564ee49e39759cc7dee0fa5e643db2dadb9a8d",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
