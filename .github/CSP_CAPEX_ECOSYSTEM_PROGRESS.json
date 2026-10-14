@@ -1087,6 +1087,40 @@
         "https://www.tencent.com/wp-content/uploads/2026/10/E700_Pricing-Announcement.pdf"
       ],
       "status": "company_primary_signed_and_priced_verified_issue_completion_ai_allocation_and_supplier_orders_pending"
+    },
+    {
+      "fingerprint": "applied-materials-semicon-west-2030-share-services-margin-targets-20261013",
+      "event_date": "2026-10-13",
+      "companies": [
+        "Applied Materials"
+      ],
+      "type": "company_primary_long_term_financial_and_market_share_targets",
+      "facts": {
+        "source_nature": "Official SEMICON West press release, October 13 at 12:45 PM EDT; targets, not contracted orders or realized results. Full 11 MB investor presentation could not be fetched; no claims depend on unread slides.",
+        "baseline": "Fiscal Q3 ended July 26, 2026, published August 13: non-GAAP consolidated gross margin 50.4 percent and operating margin 34.0 percent. Semiconductor Systems non-GAAP gross margin 55.4 percent; Applied Global Services 35.6 percent.",
+        "increment": "New calendar-2030 profitability, services and equipment-share targets provide a testable longer-term earnings framework; comparison to historical actuals is not an upward revision from a retrieved previous 2030 forecast.",
+        "targets": {
+          "wfe_share_gain_2025_to_2030_percentage_points": "more than 2",
+          "non_gaap_gross_margin_2030_percent": "approximately 54",
+          "non_gaap_operating_margin_2030_percent": "approximately 40",
+          "service_revenue_2030_usd_billion": "more than 12",
+          "service_growth_rate": "mid-teens CAGR"
+        },
+        "management_demand_view": "Leading-edge foundry-logic, DRAM and advanced packaging expected to generate around 75 percent of 2025-2030 WFE growth; this is management's industry forecast, not a quantified CSP purchase commitment.",
+        "interpretation": "AI-driven wafer-fab investment may transmit into equipment share, installed-base services and operating leverage. Recurring services can improve earnings visibility, but Q3 service gross margin was below equipment gross margin, so services growth alone does not establish consolidated gross-margin expansion.",
+        "undisclosed": [
+          "Specific named customer orders and committed equipment volumes",
+          "Total quantified WFE market forecast and a prior comparable 2030 model",
+          "Realized product pricing, service renewals and future segment mix",
+          "Financial returns from R&D and capacity investment",
+          "Current consensus forecast revisions"
+        ]
+      },
+      "sources": [
+        "https://www.appliedmaterials.com/us/en/newsroom/press-releases/101326-applied-set-to-outperform-as-ai-drives-demand-for-wafer-fab-equipment.html",
+        "https://www.sec.gov/Archives/edgar/data/6951/000162828026056699/exhibit991q32026earningsre.htm"
+      ],
+      "status": "company_primary_long_term_targets_and_historical_margin_baseline_verified_orders_market_size_mix_returns_and_forecast_revisions_pending"
     }
   ],
   "articles": [],
@@ -1101,7 +1135,7 @@
     "primary_monthly_revenue_checked_count": 3,
     "primary_partner_relationship_checked_count": 2,
     "remaining_primary_company_fact_check_count": 90,
-    "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed. Vertiv is not in the current 98-company alpha-quant universe; this run added it as an out-of-universe supplier candidate because a completed 30 MW hyperscale liquid-cooling deployment provides explicit demand-transmission evidence. LG Electronics is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because the signed AIR long-term agreement covers AI data-center projects exceeding 5 GW, while contract value and delivery economics remain undisclosed. Enerflex is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because a contracted over-1-GW behind-the-meter data-center power project lifts the company's related backlog above 1.75 GW, while customer identity, contract value, margin and revenue timing remain undisclosed. Wistron was added from its official October 12 board announcement; 8 distinct active-universe names now have an identified primary-source fact. Historical blocker counts are preserved as dated records.",
+    "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed. Vertiv is not in the current 98-company alpha-quant universe; this run added it as an out-of-universe supplier candidate because a completed 30 MW hyperscale liquid-cooling deployment provides explicit demand-transmission evidence. LG Electronics is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because the signed AIR long-term agreement covers AI data-center projects exceeding 5 GW, while contract value and delivery economics remain undisclosed. Enerflex is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because a contracted over-1-GW behind-the-meter data-center power project lifts the company's related backlog above 1.75 GW, while customer identity, contract value, margin and revenue timing remain undisclosed. Wistron was added from its official October 12 board announcement; 8 distinct active-universe names now have an identified primary-source fact. Historical blocker counts are preserved as dated records. Applied Materials was added as an out-of-universe research candidate from its official AI-related WFE, services and long-term profitability targets; no named incremental CSP order is inferred and primary coverage counts remain unchanged.",
     "active_universe_primary_verified_symbols": [
       "2330",
       "2454",
@@ -1114,8 +1148,8 @@
     ],
     "current_run_screening": {
       "date": "2026-10-14",
-      "instruction_commit_sha": "9b48b585dd2d7402314afbddb4bcc12135ebae98",
-      "scope": "All 98 active names included in 13 fresh grouped discovery queries; current TSMC and MediaTek official pages plus targeted CSP, US supplier and Tencent financing follow-up.",
+      "instruction_commit_sha": "12f5b4cbfa9b7769b60a8bc12ed4eae39d251b62",
+      "scope": "All 98 active names included in 13 fresh grouped discovery queries; latest TSMC and MediaTek official pages plus targeted CSP/US supplier follow-up and Applied Materials primary long-term targets.",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 13
@@ -1157,6 +1191,14 @@
         "date": "2026-10-14",
         "instruction_commit_sha": "9b48b585dd2d7402314afbddb4bcc12135ebae98",
         "scope": "All 98 active names included in 13 fresh grouped discovery queries; current TSMC and MediaTek official pages plus targeted CSP, US supplier and Tencent financing follow-up.",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 13
+      },
+      {
+        "date": "2026-10-14",
+        "instruction_commit_sha": "12f5b4cbfa9b7769b60a8bc12ed4eae39d251b62",
+        "scope": "All 98 active names included in 13 fresh grouped discovery queries; latest TSMC and MediaTek official pages plus targeted CSP/US supplier follow-up and Applied Materials primary long-term targets.",
         "status": "grouped_discovery_screen_only_not_individual_primary_validation",
         "company_count": 98,
         "grouped_query_count": 13
@@ -1770,6 +1812,25 @@
         "Whether actual project delays or supplier cancellations appear"
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "applied-materials-ai-wfe-share-services-and-margin-conversion",
+      "companies": [
+        "Applied Materials"
+      ],
+      "sources": [
+        "https://www.appliedmaterials.com/us/en/newsroom/press-releases/101326-applied-set-to-outperform-as-ai-drives-demand-for-wafer-fab-equipment.html",
+        "https://www.sec.gov/Archives/edgar/data/6951/000162828026056699/exhibit991q32026earningsre.htm"
+      ],
+      "stage": "company_primary_2030_targets_and_historical_segment_margin_baseline_verified_realized_orders_mix_returns_and_forecast_revisions_pending",
+      "questions": [
+        "Track equipment revenue growth versus WFE and realized share gains",
+        "Separate service renewals and recurring revenue from nonrecurring equipment sales",
+        "Reconcile services mix with consolidated gross margin and operating leverage",
+        "Validate customer fab readiness, order conversion and export-license constraints",
+        "Measure capex and R&D returns against cash generation; distinguish new EPS revisions from long-term aspirations"
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -1789,7 +1850,7 @@
     }
   ],
   "last_research_date": "2026-10-14",
-  "instruction_commit_sha": "9b48b585dd2d7402314afbddb4bcc12135ebae98",
+  "instruction_commit_sha": "12f5b4cbfa9b7769b60a8bc12ed4eae39d251b62",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
