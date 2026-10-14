@@ -1726,6 +1726,34 @@
         "https://investors.flex.com/news/news-details/2026/Flex-Announces-2-0-Billion-Convertible-Preferred-Investment-into-Axiom-Led-by-General-Catalyst-with-Koch-Equity-Development/default.aspx"
       ],
       "status": "sec_primary_completed_acquisition_and_borrowings_verified_preferred_closing_spin_off_and_profit_conversion_pending"
+    },
+    {
+      "fingerprint": "digi-power-x-alabama-conditional-project-debt-commitment-20261013",
+      "event_date": "2026-10-13",
+      "discovered_date": "2026-10-15",
+      "companies": [
+        "Digi Power X",
+        "Goldman Sachs",
+        "Supermicro",
+        "NVIDIA"
+      ],
+      "type": "issuer_primary_conditional_project_financing_commitment",
+      "facts": {
+        "baseline": "August 14 issuer described advanced lender discussions and Goldman Sachs syndication engagement; construction dates and 40-MW IT scope already disclosed.",
+        "commitment_usd": 200000000,
+        "scope": "Alabama completion and related project costs; project SPV with unsecured parent guarantee through completion and certain limited matters.",
+        "closing": "Expected within 90 days; definitive documents, lender diligence and other conditions outstanding. Not received cash or non-recourse completed financing.",
+        "cash_usd_as_of_october13": 135000000,
+        "year_to_date_capex_usd": 153000000,
+        "construction_targets": "December 2026 Phase 1 and March 2027 Phase 2 unchanged.",
+        "relationship": "Existing GPU bare-metal deployment uses Supermicro/NVIDIA Blackwell systems; no new GPU order identified.",
+        "limits": "Rate, maturity, drawdown, remaining construction cost and incremental profit undisclosed. Q3 no ATM issuance is historical, not a promise of no future dilution."
+      },
+      "sources": [
+        "https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/digi-power-x-announces-200-million-debt-financing-commitment-to-s-1236162",
+        "https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/digi-power-x-reports-second-quarter-2026-financial-results-and-pr-1207277"
+      ],
+      "status": "primary_commitment_letter_and_parent_guarantee_verified_financial_close_and_profit_conversion_pending"
     }
   ],
   "articles": [],
@@ -1740,7 +1768,7 @@
     "primary_monthly_revenue_checked_count": 3,
     "primary_partner_relationship_checked_count": 3,
     "remaining_primary_company_fact_check_count": 87,
-    "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed. Vertiv is not in the current 98-company alpha-quant universe; this run added it as an out-of-universe supplier candidate because a completed 30 MW hyperscale liquid-cooling deployment provides explicit demand-transmission evidence. LG Electronics is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because the signed AIR long-term agreement covers AI data-center projects exceeding 5 GW, while contract value and delivery economics remain undisclosed. Enerflex is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because a contracted over-1-GW behind-the-meter data-center power project lifts the company's related backlog above 1.75 GW, while customer identity, contract value, margin and revenue timing remain undisclosed. Wistron was added from its official October 12 board announcement; 8 distinct active-universe names now have an identified primary-source fact. Historical blocker counts are preserved as dated records. Applied Materials was added as an out-of-universe research candidate from its official AI-related WFE, services and long-term profitability targets; no named incremental CSP order is inferred and primary coverage counts remain unchanged. ASML added as an out-of-universe supplier research candidate from issuer-reported earnings, revised guidance and planned-capacity constraints; no named TSMC or MediaTek order or program delay inferred. Active-universe primary-validation counts unchanged. LS ELECTRIC and LS Materials are out-of-universe candidates with explicit AI data-center power contract evidence; neither changes active-universe primary company counts. Winstek is outside the 98-company universe and is retained with an explicit AI/HPC testing/packaging demand relationship. GMM quarterly profit evidence is based on a reproduced notice, not an obtained issuer/exchange original; active-universe primary-validation counts remain 8 checked and 90 pending. ASE added from its official October 13 PowerSiP availability release; 9 distinct active names now have an identified primary company fact, 89 remain pending. This covers platform availability only, not customer-order or earnings validation. Alpha Compute and NTT Data are out-of-universe candidates; watchlist unchanged. AEP/Bloom and Fermi/TensorWave economic-scope supplements are out-of-universe checks; 98-name search screening does not resolve the 89 outstanding individual primary validations. Jabil/Adani MoU and researcher DCPI data add candidates only; watchlist unchanged. Flex/EPC Power/Axiom are out-of-universe suppliers with explicit AI data-center power-conversion evidence. This run does not add an active-universe primary-validated company; 9 checked and 89 pending remain. Amazon warrant restructuring is not a new CSP equipment order; watchlist unchanged. Faraday (3035) added from its October 13 issuer MIPI IP availability release, which establishes product maturity for edge/vision AI but not a CSP design win. Chenbro (8210) added from its May 29 issuer NVIDIA MGX/rack mechanical relationship baseline; this is not fresh order evidence. Distinct active-universe primary-fact coverage is now 11 checked and 87 pending, not 98 fully validated. No new material-event notification or article is registered. October 15 screening adds research candidates only. NVIDIA fab-workflow benchmarks do not validate TSMC throughput or earnings; Ardentec forecast remains media-level. National Compute is an October 7 preview baseline, and Marvell investor-day original validation is incomplete due to PDF size. Distinct primary-company coverage remains 11 active names and 87 pending; no whole-universe earnings conclusion.",
+    "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed. Vertiv is not in the current 98-company alpha-quant universe; this run added it as an out-of-universe supplier candidate because a completed 30 MW hyperscale liquid-cooling deployment provides explicit demand-transmission evidence. LG Electronics is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because the signed AIR long-term agreement covers AI data-center projects exceeding 5 GW, while contract value and delivery economics remain undisclosed. Enerflex is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because a contracted over-1-GW behind-the-meter data-center power project lifts the company's related backlog above 1.75 GW, while customer identity, contract value, margin and revenue timing remain undisclosed. Wistron was added from its official October 12 board announcement; 8 distinct active-universe names now have an identified primary-source fact. Historical blocker counts are preserved as dated records. Applied Materials was added as an out-of-universe research candidate from its official AI-related WFE, services and long-term profitability targets; no named incremental CSP order is inferred and primary coverage counts remain unchanged. ASML added as an out-of-universe supplier research candidate from issuer-reported earnings, revised guidance and planned-capacity constraints; no named TSMC or MediaTek order or program delay inferred. Active-universe primary-validation counts unchanged. LS ELECTRIC and LS Materials are out-of-universe candidates with explicit AI data-center power contract evidence; neither changes active-universe primary company counts. Winstek is outside the 98-company universe and is retained with an explicit AI/HPC testing/packaging demand relationship. GMM quarterly profit evidence is based on a reproduced notice, not an obtained issuer/exchange original; active-universe primary-validation counts remain 8 checked and 90 pending. ASE added from its official October 13 PowerSiP availability release; 9 distinct active names now have an identified primary company fact, 89 remain pending. This covers platform availability only, not customer-order or earnings validation. Alpha Compute and NTT Data are out-of-universe candidates; watchlist unchanged. AEP/Bloom and Fermi/TensorWave economic-scope supplements are out-of-universe checks; 98-name search screening does not resolve the 89 outstanding individual primary validations. Jabil/Adani MoU and researcher DCPI data add candidates only; watchlist unchanged. Flex/EPC Power/Axiom are out-of-universe suppliers with explicit AI data-center power-conversion evidence. This run does not add an active-universe primary-validated company; 9 checked and 89 pending remain. Amazon warrant restructuring is not a new CSP equipment order; watchlist unchanged. Faraday (3035) added from its October 13 issuer MIPI IP availability release, which establishes product maturity for edge/vision AI but not a CSP design win. Chenbro (8210) added from its May 29 issuer NVIDIA MGX/rack mechanical relationship baseline; this is not fresh order evidence. Distinct active-universe primary-fact coverage is now 11 checked and 87 pending, not 98 fully validated. No new material-event notification or article is registered. October 15 screening adds research candidates only. NVIDIA fab-workflow benchmarks do not validate TSMC throughput or earnings; Ardentec forecast remains media-level. National Compute is an October 7 preview baseline, and Marvell investor-day original validation is incomplete due to PDF size. Distinct primary-company coverage remains 11 active names and 87 pending; no whole-universe earnings conclusion. Digi Power X is outside the current active universe; issuer commitment supports an AI infrastructure financing relationship but not funded debt or earnings revision. PJM/SoftBank lead is a study-stage, original-body-unverified candidate. Watchlist unchanged; primary-fact counts remain 11 checked and 87 pending.",
     "active_universe_primary_verified_symbols": [
       "2330",
       "2454",
@@ -1756,16 +1784,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-15",
-      "instruction_commit_sha": "1e497e90de36e53a2265a258e018c30e83c5d775",
-      "scope": "All 98 active names included in 13 fresh grouped public-news discovery queries. Current TSMC calendar and MediaTek/NVIDIA/AMD/Marvell original news indexes checked; Broadcom search-indexed original list checked after direct fetch failed. NVIDIA October 14 manufacturing-library release, Ardentec profit-preview lead and October 7 Vultr/National Compute baseline reviewed. Marvell October 6 investor-day baseline discovered; official deck retrieval exceeded tool size limit. Existing Flex, AEP/Google, ASML and MediaTek milestone events are not re-notified.",
+      "instruction_commit_sha": "a7ffd247aa96f67cdee537565a396419b8ee8d4a",
+      "scope": "All 98 active names included in 13 fresh grouped public-news discovery queries. Current TSMC calendar and MediaTek/NVIDIA/AMD/Marvell original news indexes checked, with Broadcom original indexed IR list. Digi Power X October 13 issuer financing release compared against August 14 issuer baseline. PJM/SoftBank October 14 original reporting retained as an unapproved study-stage candidate. Existing AEP, Flex, ASML, MediaTek and NVIDIA workflow-release fingerprints not repeated.",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 13,
       "source_limits": [
-        "Broadcom original news-list direct access failed; indexed original list is discovery-level only.",
-        "Ardentec October 14 profit forecast is from unnamed institutions in original MoneyDJ reporting; issuer/exchange Q3 results not obtained.",
-        "Marvell original printer-friendly investor-day PDF retrieval failed because the 10,678,395-byte file exceeds the tool limit; no claim of full original-deck validation.",
-        "National Compute October 14 coverage repeats an October 7 announcement; site remains public-sector preview, not proven commercial pool utilization."
+        "Broadcom IR list checked through indexed original, not a full release-by-release review.",
+        "PJM/SoftBank FERC eLibrary original body unreadable; reported study scope remains media-level and regulator action unverified."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -1914,6 +1940,18 @@
           "Ardentec October 14 profit forecast is from unnamed institutions in original MoneyDJ reporting; issuer/exchange Q3 results not obtained.",
           "Marvell original printer-friendly investor-day PDF retrieval failed because the 10,678,395-byte file exceeds the tool limit; no claim of full original-deck validation.",
           "National Compute October 14 coverage repeats an October 7 announcement; site remains public-sector preview, not proven commercial pool utilization."
+        ]
+      },
+      {
+        "date": "2026-10-15",
+        "instruction_commit_sha": "a7ffd247aa96f67cdee537565a396419b8ee8d4a",
+        "scope": "All 98 active names included in 13 fresh grouped public-news discovery queries. Current TSMC calendar and MediaTek/NVIDIA/AMD/Marvell original news indexes checked, with Broadcom original indexed IR list. Digi Power X October 13 issuer financing release compared against August 14 issuer baseline. PJM/SoftBank October 14 original reporting retained as an unapproved study-stage candidate. Existing AEP, Flex, ASML, MediaTek and NVIDIA workflow-release fingerprints not repeated.",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 13,
+        "source_limits": [
+          "Broadcom IR list checked through indexed original, not a full release-by-release review.",
+          "PJM/SoftBank FERC eLibrary original body unreadable; reported study scope remains media-level and regulator action unverified."
         ]
       }
     ],
@@ -3095,6 +3133,51 @@
         "Booked design wins, realized shipments and margin/cash conversion versus long-term management targets"
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "digi-power-x-alabama-financing-capacity-and-cash-conversion",
+      "companies": [
+        "Digi Power X",
+        "Supermicro",
+        "NVIDIA"
+      ],
+      "sources": [
+        "https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/digi-power-x-announces-200-million-debt-financing-commitment-to-s-1236162",
+        "https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/digi-power-x-reports-second-quarter-2026-financial-results-and-pr-1207277"
+      ],
+      "stage": "issuer_conditional_debt_commitment_verified_drawdown_commissioning_customer_cash_and_margin_pending",
+      "questions": [
+        "Executed borrowing terms, funding and parent-guarantee release",
+        "Remaining construction costs and contingency versus committed financing",
+        "15/25-MW IT phases commissioned and contracted customer revenue recognized",
+        "GPU rental margin, debt service and cash versus annualized revenue targets"
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "pjm-softbank-ohio-flagship-study-cost-allocation-and-power-delivery",
+      "companies": [
+        "PJM",
+        "SoftBank",
+        "SB Energy",
+        "AEP Ohio"
+      ],
+      "sources": [
+        "https://www.utilitydive.com/news/pjm-softbank-ohio-ai-flagship-state-agreement-approach/832962/",
+        "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261013-5422&optimized=false&sid=8bee6650-1a5a-436b-a3d2-0936e486d50f"
+      ],
+      "stage": "october14_original_report_of_october13_filing_read_ferc_original_body_not_retrieved",
+      "facts": {
+        "scope": "Report describes study agreement executed September 25 and filed October 13 for additional 9.6-GW load and 10.2-GW generation through 2032, separate from initial 800-MW tariff phase.",
+        "costs": "Reported SB Energy infrastructure-payment commitments apply irrespective of usage, while actual allocation and recovery require future proceedings.",
+        "limits": "Study does not award transmission service/interconnection rights or select infrastructure. FERC eLibrary page returned no readable body; original agreement and regulator acceptance not verified. No new equipment order or delivered capacity claimed."
+      },
+      "questions": [
+        "FERC acceptance and actual original cost obligations",
+        "Ohio/FERC cost recovery and permits",
+        "Firm interconnection dates, procurement and commissioned capacity"
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -3114,7 +3197,7 @@
     }
   ],
   "last_research_date": "2026-10-15",
-  "instruction_commit_sha": "1e497e90de36e53a2265a258e018c30e83c5d775",
+  "instruction_commit_sha": "a7ffd247aa96f67cdee537565a396419b8ee8d4a",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
