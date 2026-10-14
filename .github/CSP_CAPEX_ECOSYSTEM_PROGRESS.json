@@ -1736,11 +1736,11 @@
     "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
     "active_count": 98,
     "search_screened_count": 98,
-    "primary_company_fact_checked_count": 9,
+    "primary_company_fact_checked_count": 11,
     "primary_monthly_revenue_checked_count": 3,
-    "primary_partner_relationship_checked_count": 2,
-    "remaining_primary_company_fact_check_count": 89,
-    "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed. Vertiv is not in the current 98-company alpha-quant universe; this run added it as an out-of-universe supplier candidate because a completed 30 MW hyperscale liquid-cooling deployment provides explicit demand-transmission evidence. LG Electronics is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because the signed AIR long-term agreement covers AI data-center projects exceeding 5 GW, while contract value and delivery economics remain undisclosed. Enerflex is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because a contracted over-1-GW behind-the-meter data-center power project lifts the company's related backlog above 1.75 GW, while customer identity, contract value, margin and revenue timing remain undisclosed. Wistron was added from its official October 12 board announcement; 8 distinct active-universe names now have an identified primary-source fact. Historical blocker counts are preserved as dated records. Applied Materials was added as an out-of-universe research candidate from its official AI-related WFE, services and long-term profitability targets; no named incremental CSP order is inferred and primary coverage counts remain unchanged. ASML added as an out-of-universe supplier research candidate from issuer-reported earnings, revised guidance and planned-capacity constraints; no named TSMC or MediaTek order or program delay inferred. Active-universe primary-validation counts unchanged. LS ELECTRIC and LS Materials are out-of-universe candidates with explicit AI data-center power contract evidence; neither changes active-universe primary company counts. Winstek is outside the 98-company universe and is retained with an explicit AI/HPC testing/packaging demand relationship. GMM quarterly profit evidence is based on a reproduced notice, not an obtained issuer/exchange original; active-universe primary-validation counts remain 8 checked and 90 pending. ASE added from its official October 13 PowerSiP availability release; 9 distinct active names now have an identified primary company fact, 89 remain pending. This covers platform availability only, not customer-order or earnings validation. Alpha Compute and NTT Data are out-of-universe candidates; watchlist unchanged. AEP/Bloom and Fermi/TensorWave economic-scope supplements are out-of-universe checks; 98-name search screening does not resolve the 89 outstanding individual primary validations. Jabil/Adani MoU and researcher DCPI data add candidates only; watchlist unchanged. Flex/EPC Power/Axiom are out-of-universe suppliers with explicit AI data-center power-conversion evidence. This run does not add an active-universe primary-validated company; 9 checked and 89 pending remain. Amazon warrant restructuring is not a new CSP equipment order; watchlist unchanged.",
+    "primary_partner_relationship_checked_count": 3,
+    "remaining_primary_company_fact_check_count": 87,
+    "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed. Vertiv is not in the current 98-company alpha-quant universe; this run added it as an out-of-universe supplier candidate because a completed 30 MW hyperscale liquid-cooling deployment provides explicit demand-transmission evidence. LG Electronics is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because the signed AIR long-term agreement covers AI data-center projects exceeding 5 GW, while contract value and delivery economics remain undisclosed. Enerflex is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because a contracted over-1-GW behind-the-meter data-center power project lifts the company's related backlog above 1.75 GW, while customer identity, contract value, margin and revenue timing remain undisclosed. Wistron was added from its official October 12 board announcement; 8 distinct active-universe names now have an identified primary-source fact. Historical blocker counts are preserved as dated records. Applied Materials was added as an out-of-universe research candidate from its official AI-related WFE, services and long-term profitability targets; no named incremental CSP order is inferred and primary coverage counts remain unchanged. ASML added as an out-of-universe supplier research candidate from issuer-reported earnings, revised guidance and planned-capacity constraints; no named TSMC or MediaTek order or program delay inferred. Active-universe primary-validation counts unchanged. LS ELECTRIC and LS Materials are out-of-universe candidates with explicit AI data-center power contract evidence; neither changes active-universe primary company counts. Winstek is outside the 98-company universe and is retained with an explicit AI/HPC testing/packaging demand relationship. GMM quarterly profit evidence is based on a reproduced notice, not an obtained issuer/exchange original; active-universe primary-validation counts remain 8 checked and 90 pending. ASE added from its official October 13 PowerSiP availability release; 9 distinct active names now have an identified primary company fact, 89 remain pending. This covers platform availability only, not customer-order or earnings validation. Alpha Compute and NTT Data are out-of-universe candidates; watchlist unchanged. AEP/Bloom and Fermi/TensorWave economic-scope supplements are out-of-universe checks; 98-name search screening does not resolve the 89 outstanding individual primary validations. Jabil/Adani MoU and researcher DCPI data add candidates only; watchlist unchanged. Flex/EPC Power/Axiom are out-of-universe suppliers with explicit AI data-center power-conversion evidence. This run does not add an active-universe primary-validated company; 9 checked and 89 pending remain. Amazon warrant restructuring is not a new CSP equipment order; watchlist unchanged. Faraday (3035) added from its October 13 issuer MIPI IP availability release, which establishes product maturity for edge/vision AI but not a CSP design win. Chenbro (8210) added from its May 29 issuer NVIDIA MGX/rack mechanical relationship baseline; this is not fresh order evidence. Distinct active-universe primary-fact coverage is now 11 checked and 87 pending, not 98 fully validated. No new material-event notification or article is registered.",
     "active_universe_primary_verified_symbols": [
       "2330",
       "2454",
@@ -1750,15 +1750,22 @@
       "2382",
       "2408",
       "3231",
-      "3711"
+      "3711",
+      "3035",
+      "8210"
     ],
     "current_run_screening": {
       "date": "2026-10-14",
-      "instruction_commit_sha": "1e564ee49e39759cc7dee0fa5e643db2dadb9a8d",
-      "scope": "All 98 active names included in 13 fresh grouped public-news discovery queries. Current TSMC official calendar and MediaTek press room checked, plus targeted CSP/NVIDIA/AMD/Broadcom/Marvell discovery. Flex acquisition and borrowings verified against October 14 SEC original, September 3 acquisition baseline and October 5 conditional preferred terms. October 13 Amazon warrant amendment original checked as a non-order candidate.",
+      "instruction_commit_sha": "b91e95c6655a6f3a93ec89db6a75b615b68448e4",
+      "scope": "All 98 active names included in 13 fresh grouped public-news discovery queries. Current TSMC calendar, MediaTek, NVIDIA, AMD and Marvell official news indexes checked; Broadcom original indexed financial-news list checked after direct page access failed. Faraday October 13 issuer release and Chenbro May 29 issuer relationship baseline verified; October 13 Chenbro OCP release discovered through indexed PR text. No new material order, earnings revision or completed deployment verified beyond existing event fingerprints.",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
-      "grouped_query_count": 13
+      "grouped_query_count": 13,
+      "source_limits": [
+        "Broadcom direct news page returned 403; search-indexed original list supports discovery only, not comprehensive full-release review.",
+        "Chenbro October 13 DIGITIMES PR direct fetch unavailable; indexed text is retained as a capacity-plan lead, not independently confirmed production or orders.",
+        "Largan October 14 coverage repeats October 8 management comments; no new customer order or revised economics verified."
+      ]
     },
     "primary_regulator_company_fact_checked_count": 3,
     "screening_history": [
@@ -1880,9 +1887,22 @@
         "status": "grouped_discovery_screen_only_not_individual_primary_validation",
         "company_count": 98,
         "grouped_query_count": 13
+      },
+      {
+        "date": "2026-10-14",
+        "instruction_commit_sha": "b91e95c6655a6f3a93ec89db6a75b615b68448e4",
+        "scope": "All 98 active names included in 13 fresh grouped public-news discovery queries. Current TSMC calendar, MediaTek, NVIDIA, AMD and Marvell official news indexes checked; Broadcom original indexed financial-news list checked after direct page access failed. Faraday October 13 issuer release and Chenbro May 29 issuer relationship baseline verified; October 13 Chenbro OCP release discovered through indexed PR text. No new material order, earnings revision or completed deployment verified beyond existing event fingerprints.",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 13,
+        "source_limits": [
+          "Broadcom direct news page returned 403; search-indexed original list supports discovery only, not comprehensive full-release review.",
+          "Chenbro October 13 DIGITIMES PR direct fetch unavailable; indexed text is retained as a capacity-plan lead, not independently confirmed production or orders.",
+          "Largan October 14 coverage repeats October 8 management comments; no new customer order or revised economics verified."
+        ]
       }
     ],
-    "primary_product_platform_company_fact_checked_count": 1
+    "primary_product_platform_company_fact_checked_count": 2
   },
   "research_candidates": [
     {
@@ -2920,6 +2940,50 @@
         "Original commercial spending vesting conditions and customer economics"
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "faraday-14nm-mipi-ip-availability-not-csp-design-win",
+      "companies": [
+        "Faraday Technology",
+        "UMC"
+      ],
+      "sources": [
+        "https://www.globenewswire.com/news-release/2026/10/13/3379357/0/en/faraday-powers-intelligent-sensing-with-new-14nm-mipi-c-d-combo-phy-ip.html"
+      ],
+      "stage": "october13_issuer_product_availability_verified_no_csp_customer_or_earnings_revision",
+      "facts": {
+        "date": "2026-10-13",
+        "scope": "Silicon-proven MIPI C/D combo PHY on UMC 14nm targets vision AI, imaging and automotive sensing. Claimed IP area reduction over 30% applies to shared interface circuitry, not total chip die or company costs.",
+        "limits": "Product availability is not customer tape-out, deployment, procurement or revenue recognition. No named CSP relation, new order, financial guidance or sustainable profit change disclosed."
+      },
+      "questions": [
+        "Named licensed customer or tape-out and royalty/NRE economics",
+        "Any explicit data-center relationship rather than edge AI branding"
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "chenbro-ocp-rack-global-capacity-plan-order-conversion",
+      "companies": [
+        "Chenbro",
+        "NVIDIA",
+        "AMD"
+      ],
+      "sources": [
+        "https://www.chenbro.com/en-US/news/release/6a30106741048fe746417ae3",
+        "https://www.digitimes.com/newsshow/article.asp?chid=9&datePublish=2026%2F10%2F13&pages=pr&seq=202"
+      ],
+      "stage": "may29_issuer_mgx_relationship_verified_october13_indexed_pr_capacity_lead_pending_original_followup",
+      "facts": {
+        "baseline": "May 29 issuer describes MGX chassis/rack mechanical support including Vera Rubin and CSP applications.",
+        "lead": "October 13 indexed OCP PR describes adding China rack lines, Malaysia Q4 2026 ramp-up and Vietnam H1 2027 production plans.",
+        "limits": "October release direct fetch unavailable; schedule is a plan, not verified ramp-up, accepted orders or earnings guidance. Rack integration capability is already present in May/June baseline."
+      },
+      "questions": [
+        "Original October release or issuer confirmation of factory milestones",
+        "Rack sales, customer orders, utilization and incremental margin versus capital employed"
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -2939,7 +3003,7 @@
     }
   ],
   "last_research_date": "2026-10-14",
-  "instruction_commit_sha": "1e564ee49e39759cc7dee0fa5e643db2dadb9a8d",
+  "instruction_commit_sha": "b91e95c6655a6f3a93ec89db6a75b615b68448e4",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
