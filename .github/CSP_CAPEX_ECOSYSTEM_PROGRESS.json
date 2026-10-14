@@ -840,6 +840,101 @@
         "https://www.mediatek.com/tek-talk-blogs/how-mediatek-built-its-way-to-global-technology-leadership"
       ],
       "status": "company_primary_later_target_verified_historical_baseline_corrected_actual_revenue_orders_and_margin_pending"
+    },
+    {
+      "fingerprint": "sigurd-sigurd-microelectronics-hsinchu-ai-test-plant-acquisition-20261013",
+      "event_date": "2026-10-13",
+      "companies": [
+        "Sigurd",
+        "Sigurd Microelectronics",
+        "CyberTAN"
+      ],
+      "type": "reliable_original_report_quoting_company_announcement_and_press_release",
+      "facts": {
+        "source_nature": "CNA original report quoting the company announcement and press release; direct company release and MOPS document not retrieved.",
+        "transaction_twd_billion": 2.188,
+        "site": "No. 1, Chuangxin 2nd Road, Hsinchu Science Park",
+        "building_ping_approx": 14215,
+        "company_capacity_expectation_percent": 25,
+        "capacity_condition": "Incremental capacity relative to existing production sites after the acquired facility enters volume production; not an existing output increase or revenue forecast.",
+        "intended_services": [
+          "AI connectivity and silicon-photonics high-speed communication IC testing",
+          "AI ASIC wafer and CoWoS chip testing",
+          "General IC testing and back-end services"
+        ],
+        "baseline_change": "Beyond existing Hukou II and planned Zhongxing III projects, the reported completed bid adds a separately acquired facility for US customer AI/HPC testing demand.",
+        "undisclosed": [
+          "Acquired-site commissioning date",
+          "Equipment budget and test-machine installation",
+          "Named customer commitments",
+          "Utilization and service pricing",
+          "Yield, depreciation, margin and returns"
+        ]
+      },
+      "sources": [
+        "https://www.cna.com.tw/news/afe/202610130315.aspx",
+        "https://ec.ltn.com.tw/article/breakingnews/5605294"
+      ],
+      "status": "reported_company_acquisition_and_conditional_capacity_expectation_verified_direct_primary_and_earnings_conversion_pending"
+    },
+    {
+      "fingerprint": "kingboard-2116-thin-glass-cloth-ccl-prepreg-price-increase-20261013",
+      "event_date": "2026-10-13",
+      "companies": [
+        "Kingboard Laminates"
+      ],
+      "type": "original_media_report_of_supplier_price_notice",
+      "facts": {
+        "source_nature": "MoneyDJ original report describing the supplier notice; supplier-hosted original notice was not retrieved. Reproductions do not constitute additional independent confirmation.",
+        "reported_price_increase_percent": 15,
+        "product_scope": "Board materials and prepreg using glass-cloth specification 2116 or below, for new orders from October 13; not a blanket increase across all CCL products.",
+        "reported_reason": "Tight glass-cloth and glass-yarn supply and higher raw-material costs.",
+        "baseline_change": "An additional targeted supplier price notice extends the earlier CCL input-cost pass-through trend.",
+        "interpretation": "The notice supports continued material cost pressure; it does not establish a 15 percent increase at Taiwan suppliers or an improvement in their gross margins.",
+        "undisclosed": [
+          "Original notice verification",
+          "Realized transaction prices and discounts",
+          "Taiwan suppliers' corresponding customer contracts",
+          "Input-cost change relative to selling-price change",
+          "Product-specific demand and qualification"
+        ]
+      },
+      "sources": [
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=638fd5ae-09a7-4f46-9dda-b9dadb30462f",
+        "https://udn.com/news/story/7333/9812049"
+      ],
+      "status": "original_media_report_verified_supplier_original_notice_realized_asp_and_margin_pending"
+    },
+    {
+      "fingerprint": "fermi-amd-project-matador-222mw-credit-support-650mw-framework-20261013",
+      "event_date": "2026-10-13",
+      "companies": [
+        "Fermi",
+        "AMD",
+        "TensorWave"
+      ],
+      "type": "issuer_primary_press_release",
+      "facts": {
+        "source_nature": "Fermi-issued ACCESS Newswire release, linked from the issuer media room; includes an AMD executive statement.",
+        "signed_agreement": "AMD credit support for the phase-one Project Matador customer lease.",
+        "phase_one_gross_power_capacity_mw": 222,
+        "expansion_framework_gross_power_capacity_mw_up_to": 650,
+        "baseline_change": "An existing announced customer lease now has a named semiconductor partner providing credit support to advance project financing.",
+        "interpretation": "Credit support may make the project more financeable; it is not proof that financing has closed, that the facility is operating, or that AMD has received a new GPU order of the same scale.",
+        "conditions": "The issuer explicitly identifies conditions to AMD's obligations, TensorWave lease closing and obtaining acceptable project financing. The 650 MW figure is a future-expansion framework, not delivered capacity.",
+        "undisclosed": [
+          "Credit-support amount, duration, fees and recourse",
+          "Lease-closing condition satisfaction",
+          "Project-financing commitments and drawdown",
+          "Power and compute commissioning",
+          "Incremental AMD chip purchases and revenue",
+          "Project returns and dilution"
+        ]
+      },
+      "sources": [
+        "https://www.accessnewswire.com/newsroom/en/oil-gas-and-energy/fermi-signs-credit-support-agreement-with-amd-and-announces-partnership-1236099"
+      ],
+      "status": "issuer_primary_credit_support_and_capacity_scope_verified_financing_closing_delivery_and_economics_pending"
     }
   ],
   "articles": [],
@@ -866,7 +961,8 @@
     ],
     "current_run_screening": {
       "date": "2026-10-14",
-      "scope": "All 98 active names included in 25 grouped public-news discovery queries; separate TSMC latest-news and MediaTek current-source checks",
+      "instruction_commit_sha": "e400f9b85e4a177c0c1acb9273530a09d27d6393",
+      "scope": "All 98 active names included in 25 fresh grouped discovery queries; separate current TSMC, MediaTek and selected US supplier/CSP checks.",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 25
@@ -876,6 +972,14 @@
       {
         "date": "2026-10-14",
         "scope": "All 98 active names included in 25 grouped public-news discovery queries; separate TSMC latest-news and MediaTek current-source checks",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 25
+      },
+      {
+        "date": "2026-10-14",
+        "instruction_commit_sha": "e400f9b85e4a177c0c1acb9273530a09d27d6393",
+        "scope": "All 98 active names included in 25 fresh grouped discovery queries; separate current TSMC, MediaTek and selected US supplier/CSP checks.",
         "status": "grouped_discovery_screen_only_not_individual_primary_validation",
         "company_count": 98,
         "grouped_query_count": 25
@@ -1337,6 +1441,65 @@
         "Preserve June 24 source as dated history, not current guidance"
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "sigurd-acquired-ai-test-capacity-earnings-conversion",
+      "companies": [
+        "Sigurd"
+      ],
+      "sources": [
+        "https://www.cna.com.tw/news/afe/202610130315.aspx",
+        "https://ec.ltn.com.tw/article/breakingnews/5605294"
+      ],
+      "stage": "reported_acquisition_and_conditional_25_percent_capacity_expectation_verified_direct_primary_commissioning_and_utilization_pending",
+      "questions": [
+        "Validate company-hosted original and MOPS acquisition document",
+        "When does the acquired site begin production, distinct from Hukou II and Zhongxing III?",
+        "What equipment investment, customer commitments, utilization and test ASP support profitable output?",
+        "Does additional gross profit exceed depreciation, financing and staff costs?"
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "ccl-thin-glass-cloth-cost-pass-through-and-profit-retention",
+      "companies": [
+        "Kingboard Laminates",
+        "Elite Material",
+        "Taiwan Union Technology",
+        "ITEQ",
+        "Fulltech Fiber Glass"
+      ],
+      "sources": [
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=638fd5ae-09a7-4f46-9dda-b9dadb30462f",
+        "https://udn.com/news/story/7333/9812049"
+      ],
+      "stage": "reported_targeted_supplier_price_notice_verified_direct_notice_realized_prices_and_supplier_margin_pending",
+      "questions": [
+        "Obtain the original October 13 notice and validate specification coverage",
+        "Separate raw-material replacement cost from realized CCL price changes",
+        "Validate Taiwan suppliers' own qualified products, contracts and product mix without importing Kingboard's 15 percent increase",
+        "Which supplier retains gross profit rather than passing costs through?"
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "fermi-amd-credit-support-project-financing-and-delivery",
+      "companies": [
+        "Fermi",
+        "AMD",
+        "TensorWave"
+      ],
+      "sources": [
+        "https://www.accessnewswire.com/newsroom/en/oil-gas-and-energy/fermi-signs-credit-support-agreement-with-amd-and-announces-partnership-1236099"
+      ],
+      "stage": "issuer_primary_credit_support_verified_binding_terms_lease_closing_project_financing_and_delivery_pending",
+      "questions": [
+        "What are AMD's conditional obligations, credit support limit and recourse?",
+        "Has TensorWave lease closing occurred and project financing been committed?",
+        "Separate phase-one 222 MW from up-to-650 MW expansion framework and longer-term site ambition",
+        "What actual power delivery, compute purchases and rental collections convert the agreement into cash flow?"
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -1356,7 +1519,7 @@
     }
   ],
   "last_research_date": "2026-10-14",
-  "instruction_commit_sha": "9d178f813cb3f55dff60d5659dde9c0abae2c93e",
+  "instruction_commit_sha": "e400f9b85e4a177c0c1acb9273530a09d27d6393",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
