@@ -1463,6 +1463,104 @@
         "https://money.udn.com/money/story/11074/9814876"
       ],
       "status": "indexed_reproduced_notices_and_dated_reports_checked_primary_original_and_quarterly_quality_pending"
+    },
+    {
+      "fingerprint": "winstek-september-profit-stepup-and-equipment-share-issue-20261014",
+      "event_date": "2026-10-14",
+      "companies": [
+        "Winstek/台星科",
+        "Sigurd/矽格"
+      ],
+      "type": "unaudited_monthly_profit_and_proposed_financing_reproduced_notices_original_exchange_pending",
+      "facts": {
+        "source_nature": "Indexed MOPS notice reproductions compared with dated UDN reporting. October 13 capital-raise notice reproduction opened in full. Company website retrieval returned a redirect loop; original exchange disclosure not obtained.",
+        "period": "September 2026 versus September 2025",
+        "currency": "TWD",
+        "unit": "million except EPS per share and share count",
+        "revenue": 400,
+        "prior_revenue": 359,
+        "reported_revenue_growth_percent": 11.4,
+        "parent_net_profit": 101,
+        "prior_parent_net_profit": 46,
+        "reported_profit_growth_percent": 119.6,
+        "pretax_profit": 125,
+        "prior_pretax_profit": 56,
+        "eps": 0.74,
+        "prior_eps": 0.34,
+        "unaudited": true,
+        "calculation_from_rounded_amounts": {
+          "parent_net_profit_to_revenue_percent": 25.25,
+          "prior_percent": 12.81
+        },
+        "financing": {
+          "decision_date": "2026-10-13",
+          "proposed_new_common_shares": 16950000,
+          "face_value_twd": 10,
+          "nominal_capital_increase_twd": 169500000,
+          "use": "Purchase machinery and equipment",
+          "issue_price_and_actual_proceeds": "Not yet determined; subject to regulatory effectiveness and later pricing. Nominal capital is not cash proceeds."
+        },
+        "demand_relationship": "October 6 CNA management interview records AI/HPC-driven testing and wafer-level packaging expansion; N2 qualification complete and FCBGA in production, CPO/NPO optical-engine and test development distinct from production. HPC exposure reported about 50 percent in October 14 UDN reporting, not verified as all AI ASIC revenue.",
+        "interpretation": "Profit increases substantially faster than revenue, creating a profit-conversion validation candidate beyond the 98-company universe. Proposed equipment financing adds cash-return and per-share dilution questions.",
+        "limits": "Ratios are parent net profit/revenue, not gross or operating margins. Non-operating income, tax, utilization, realized test ASP and customer-specific revenue remain unseparated; one month cannot be annualized. A secondary report misstated pretax profit as 101 million; reproduced notice and UDN show 125 million.",
+        "next_checks": [
+          "Original issuer/exchange notice and reviewed Q3 financial statements",
+          "Gross and operating profit, non-operating items, tax and cash flow",
+          "Share-issue effectiveness, price, actual proceeds, equipment delivery, utilization and incremental return"
+        ]
+      },
+      "sources": [
+        "https://chbfund.moneydj.com/z/zf/zfz/zfzNStkCHB1_FA3134FF-9E89-4836-88E8-CD27D378A5F2.djhtm",
+        "https://money.udn.com/money/story/11074/9814715",
+        "https://chbfund.moneydj.com/z/zf/zfz/zfzNStkCHB1_FF3D7D88-92C0-422F-8359-1348FE0DB99E.djhtm",
+        "https://www.cna.com.tw/news/afe/202610060198.aspx"
+      ],
+      "status": "indexed_profit_notice_and_opened_financing_notice_verified_original_exchange_and_earnings_quality_pending"
+    },
+    {
+      "fingerprint": "gmm-q3-2026-self-reported-profit-and-equipment-conversion-20261013",
+      "event_date": "2026-10-13",
+      "companies": [
+        "GMM/均華",
+        "GPM/均豪"
+      ],
+      "type": "quarterly_unaudited_profit_reproduced_notice_not_reviewed_financial_statements",
+      "facts": {
+        "source_nature": "MoneyDJ reproduction of MOPS notice opened in full, compared with CNA October 13 original reporting and quarterly/monthly notice reproductions. Issuer IR pages timed out; original MOPS disclosure not obtained.",
+        "period": "Q3 2026 versus Q2 2026",
+        "currency": "TWD",
+        "unit": "thousand except EPS per share",
+        "q3_parent_net_profit": 269298,
+        "q2_parent_net_profit": 123129,
+        "q3_pretax_profit": 339373,
+        "q3_eps": 9.38,
+        "ytd_parent_net_profit": 539434,
+        "ytd_eps": 18.94,
+        "q3_revenue": 1655334,
+        "q2_revenue": 821536,
+        "calculation": {
+          "q3_revenue": "YTD September 3307175 less YTD June 1651841 from reproduced monthly notices",
+          "revenue_qoq_percent": 101.49,
+          "parent_net_profit_qoq_percent": 118.71,
+          "q3_parent_net_profit_to_revenue_percent": 16.27,
+          "q2_percent": 14.99
+        },
+        "unaudited": true,
+        "demand_relationship": "CNA attributes die-bonding equipment shipment growth to semiconductor packaging/testing expansion; named incremental CSP customers, customer orders and program economics are not disclosed.",
+        "interpretation": "Quarterly revenue roughly doubles with moderately faster parent-profit growth, improving profit conversion versus Q2. Equipment shipment/acceptance and non-operating items must be separated before projecting persistent pricing power.",
+        "limits": "Parent profit/revenue is not gross or operating margin. No company-reviewed Q3 statements, market-consensus EPS population, quantified future order revision or recurring margin claim. Do not annualize one strong equipment quarter.",
+        "next_checks": [
+          "Original exchange notice and reviewed Q3 statement",
+          "Operating margin, mix, acceptance timing, non-operating gains and cash collection",
+          "Repeat order pipeline and capacity versus equipment revenue lumpiness"
+        ]
+      },
+      "sources": [
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=0d2bbdb7-10cb-4025-b92f-03bc0f02ec02",
+        "https://www.cna.com.tw/news/afe/202610130278.aspx",
+        "https://tw.stock.yahoo.com/quote/6640/announcement"
+      ],
+      "status": "opened_reproduced_notice_and_dated_reporting_checked_original_exchange_and_profit_mechanism_pending"
     }
   ],
   "articles": [],
@@ -1477,7 +1575,7 @@
     "primary_monthly_revenue_checked_count": 3,
     "primary_partner_relationship_checked_count": 2,
     "remaining_primary_company_fact_check_count": 90,
-    "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed. Vertiv is not in the current 98-company alpha-quant universe; this run added it as an out-of-universe supplier candidate because a completed 30 MW hyperscale liquid-cooling deployment provides explicit demand-transmission evidence. LG Electronics is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because the signed AIR long-term agreement covers AI data-center projects exceeding 5 GW, while contract value and delivery economics remain undisclosed. Enerflex is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because a contracted over-1-GW behind-the-meter data-center power project lifts the company's related backlog above 1.75 GW, while customer identity, contract value, margin and revenue timing remain undisclosed. Wistron was added from its official October 12 board announcement; 8 distinct active-universe names now have an identified primary-source fact. Historical blocker counts are preserved as dated records. Applied Materials was added as an out-of-universe research candidate from its official AI-related WFE, services and long-term profitability targets; no named incremental CSP order is inferred and primary coverage counts remain unchanged. ASML added as an out-of-universe supplier research candidate from issuer-reported earnings, revised guidance and planned-capacity constraints; no named TSMC or MediaTek order or program delay inferred. Active-universe primary-validation counts unchanged. LS ELECTRIC and LS Materials are out-of-universe candidates with explicit AI data-center power contract evidence; neither changes active-universe primary company counts.",
+    "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed. Vertiv is not in the current 98-company alpha-quant universe; this run added it as an out-of-universe supplier candidate because a completed 30 MW hyperscale liquid-cooling deployment provides explicit demand-transmission evidence. LG Electronics is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because the signed AIR long-term agreement covers AI data-center projects exceeding 5 GW, while contract value and delivery economics remain undisclosed. Enerflex is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because a contracted over-1-GW behind-the-meter data-center power project lifts the company's related backlog above 1.75 GW, while customer identity, contract value, margin and revenue timing remain undisclosed. Wistron was added from its official October 12 board announcement; 8 distinct active-universe names now have an identified primary-source fact. Historical blocker counts are preserved as dated records. Applied Materials was added as an out-of-universe research candidate from its official AI-related WFE, services and long-term profitability targets; no named incremental CSP order is inferred and primary coverage counts remain unchanged. ASML added as an out-of-universe supplier research candidate from issuer-reported earnings, revised guidance and planned-capacity constraints; no named TSMC or MediaTek order or program delay inferred. Active-universe primary-validation counts unchanged. LS ELECTRIC and LS Materials are out-of-universe candidates with explicit AI data-center power contract evidence; neither changes active-universe primary company counts. Winstek is outside the 98-company universe and is retained with an explicit AI/HPC testing/packaging demand relationship. GMM quarterly profit evidence is based on a reproduced notice, not an obtained issuer/exchange original; active-universe primary-validation counts remain 8 checked and 90 pending.",
     "active_universe_primary_verified_symbols": [
       "2330",
       "2454",
@@ -1490,8 +1588,8 @@
     ],
     "current_run_screening": {
       "date": "2026-10-14",
-      "instruction_commit_sha": "c502603b715ae41fd6cf8cfd6a087b2c50ac54e1",
-      "scope": "All 98 active names included in 13 fresh grouped public-news discovery queries; TSMC and MediaTek official latest pages checked, targeted CSP/US suppliers and original TrendForce current/historical forecasts checked. LuxNet/All Ring indexed notice leads researched; Marvell product maturity checked.",
+      "instruction_commit_sha": "0f0a0f8c9a4a533b639a457679fd605dbb2f149a",
+      "scope": "All 98 active names included in 13 fresh grouped discovery queries. Current TSMC and MediaTek official latest-news pages checked; targeted CSP/US suppliers plus Winstek/GMM disclosed-profit and financing leads checked. CoreWeave original interview full text paywalled; aspiration not promoted to a completed funding event.",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 13
@@ -1581,6 +1679,14 @@
         "date": "2026-10-14",
         "instruction_commit_sha": "c502603b715ae41fd6cf8cfd6a087b2c50ac54e1",
         "scope": "All 98 active names included in 13 fresh grouped public-news discovery queries; TSMC and MediaTek official latest pages checked, targeted CSP/US suppliers and original TrendForce current/historical forecasts checked. LuxNet/All Ring indexed notice leads researched; Marvell product maturity checked.",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 13
+      },
+      {
+        "date": "2026-10-14",
+        "instruction_commit_sha": "0f0a0f8c9a4a533b639a457679fd605dbb2f149a",
+        "scope": "All 98 active names included in 13 fresh grouped discovery queries. Current TSMC and MediaTek official latest-news pages checked; targeted CSP/US suppliers plus Winstek/GMM disclosed-profit and financing leads checked. CoreWeave original interview full text paywalled; aspiration not promoted to a completed funding event.",
         "status": "grouped_discovery_screen_only_not_individual_primary_validation",
         "company_count": 98,
         "grouped_query_count": 13
@@ -2381,6 +2487,63 @@
         "Copper reach, memory reuse and compression substitution effects under customer workloads"
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "winstek-ai-hpc-profit-conversion-and-equipment-financing",
+      "companies": [
+        "Winstek/台星科",
+        "Sigurd/矽格"
+      ],
+      "sources": [
+        "https://chbfund.moneydj.com/z/zf/zfz/zfzNStkCHB1_FA3134FF-9E89-4836-88E8-CD27D378A5F2.djhtm",
+        "https://money.udn.com/money/story/11074/9814715",
+        "https://chbfund.moneydj.com/z/zf/zfz/zfzNStkCHB1_FF3D7D88-92C0-422F-8359-1348FE0DB99E.djhtm",
+        "https://www.cna.com.tw/news/afe/202610060198.aspx"
+      ],
+      "stage": "new_monthly_profit_and_proposed_share_issue_checked_primary_original_operating_quality_and_returns_pending",
+      "questions": [
+        "Separate test/packaging operating profitability from non-operating gains and taxes",
+        "Validate AI/HPC customer commitments, utilization and equipment capex cash returns",
+        "Confirm financing price, proceeds and per-share impact"
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "gmm-advanced-packaging-equipment-quarterly-profit-retention",
+      "companies": [
+        "GMM/均華",
+        "GPM/均豪"
+      ],
+      "sources": [
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=0d2bbdb7-10cb-4025-b92f-03bc0f02ec02",
+        "https://www.cna.com.tw/news/afe/202610130278.aspx",
+        "https://tw.stock.yahoo.com/quote/6640/announcement"
+      ],
+      "stage": "unaudited_q3_parent_profit_and_revenue_conversion_checked_reviewed_statement_cash_and_order_durability_pending",
+      "questions": [
+        "Operating margin versus parent profit ratio",
+        "Equipment acceptance timing, receivables and cash conversion",
+        "Repeat orders, capacity and product mix"
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "coreweave-insurance-funding-investment-grade-access",
+      "companies": [
+        "CoreWeave",
+        "NVIDIA"
+      ],
+      "sources": [
+        "https://www.ft.com/content/4ffa1853-0e2c-424f-b941-88c6bcac5765",
+        "https://seekingalpha.com/news/4652744-coreweave-seeks-insurers-capital-to-finance-ai-infrastructure-build-out---report"
+      ],
+      "stage": "october14_original_headline_and_indexed_report_checked_full_ft_paywalled_no_completed_funding_or_credit_rating_change_verified",
+      "questions": [
+        "Full original interview and current issuer financing disclosure",
+        "Actual insurer commitments, rating, financing cost and recourse",
+        "Customer credit and GPU-collateral values versus equipment purchases and delivery"
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -2400,7 +2563,7 @@
     }
   ],
   "last_research_date": "2026-10-14",
-  "instruction_commit_sha": "c502603b715ae41fd6cf8cfd6a087b2c50ac54e1",
+  "instruction_commit_sha": "0f0a0f8c9a4a533b639a457679fd605dbb2f149a",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
