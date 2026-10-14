@@ -1196,6 +1196,85 @@
         "https://www.reuters.com/business/asml-forecasts-q4-sales-above-expectations-ai-chip-demand-2026-10-14/"
       ],
       "status": "issuer_primary_results_and_old_new_guidance_verified_capacity_plan_shortfall_management_reported_quantified_bookings_customer_allocation_and_execution_pending"
+    },
+    {
+      "fingerprint": "ls-electric-bloom-pennsylvania-ai-datacenter-distribution-order-20261013",
+      "event_date": "2026-10-13",
+      "companies": [
+        "LS ELECTRIC",
+        "Bloom Energy"
+      ],
+      "type": "company_primary_datacenter_power_distribution_supply_contract",
+      "facts": {
+        "source_nature": "October 13 company press release on LS Group's official website, not a media-estimated project value.",
+        "contract_usd": 138458284,
+        "reported_contract_krw_billion": 185.3,
+        "project": "Fuel-cell-based on-site generation for a big-tech data center in Pennsylvania, United States.",
+        "products": "38 kV high-voltage switchgear and distribution transformers supplied as a package.",
+        "planned_delivery": "April-July 2027",
+        "customer_relationship_baseline": "Official release dates the Bloom Energy relationship's cumulative orders from April 2025.",
+        "cumulative_order_scope": "Bloom-related cumulative orders now exceed USD 500 million; this is a cumulative total, not an additional USD 500 million contract.",
+        "increment": "A named-customer, quantified equipment contract connects data-center on-site power construction to a distribution-equipment revenue opportunity, beyond generic power-demand forecasts.",
+        "interpretation": "Packaged distribution equipment and local production/service capability can expand content per project and repeat business. Signed order value alone does not establish gross margin, realized cash flow or pricing power.",
+        "undisclosed": [
+          "End data-center operator and site power capacity",
+          "Original exchange filing and exact contracting-entity chain",
+          "Gross margin, payment schedule, cancellation terms and acceptance conditions",
+          "Additional firm orders beyond those already disclosed"
+        ],
+        "next_checks": [
+          "2027 delivery, acceptance, revenue recognition and collection",
+          "North American backlog conversion and package margin",
+          "Repeat orders and returns on local capacity investment"
+        ]
+      },
+      "sources": [
+        "https://www.lsholdings.co.kr/ko/media/news/454165426433564e652b56653538733948624a7762466c6e6e77584733564b35",
+        "https://www.yna.co.kr/view/AKR20261013039200003"
+      ],
+      "status": "company_primary_named_customer_contract_value_and_delivery_verified_original_filing_legal_entity_chain_and_economics_pending"
+    },
+    {
+      "fingerprint": "ls-materials-ai-datacenter-fuel-cell-ultracapacitor-order-20261013",
+      "event_date": "2026-10-13",
+      "companies": [
+        "LS Materials"
+      ],
+      "type": "company_primary_ai_datacenter_component_supply_contract",
+      "facts": {
+        "source_nature": "October 13 issuer-group press release on LS Cable & System's official newsroom.",
+        "new_contract_usd_million": 51.5,
+        "reported_new_contract_krw_billion": 69,
+        "prior_initial_contract": {
+          "announcement_period": "July 2026",
+          "usd_million": 4.7,
+          "planned_first_delivery": "November 2026"
+        },
+        "reported_cumulative_contract_usd_million": 56,
+        "planned_new_contract_delivery": "From April 2027 in stages over approximately one year.",
+        "company_comparison": "Reported KRW 69 billion contract is approximately 2.4 times last year's KRW 29 billion standalone revenue, not 2.4 times consolidated group revenue or earnings.",
+        "product_role": "Ultracapacitors charge and discharge rapidly to buffer load fluctuations and stabilize fuel-cell system output for AI data centers; stated role is the company's description, not an independently measured performance benchmark.",
+        "customer_identity": "Primary release identifies a U.S. fuel-cell company without naming it. Media reports name Bloom Energy; that mapping is not established by the retrieved primary release.",
+        "increment": "A repeat purchase following the initial contract shifts the evidence from a new-market aspiration to a quantified AI-power component order and delivery plan.",
+        "conditional_pipeline": "The company hopes cumulative orders exceed USD 100 million if additional contracts are signed by year-end; this is conditional discussion, not current firm backlog.",
+        "interpretation": "If qualified production, utilization and repeat orders sustain margin, this can change the business's earnings duration and mix. Order size relative to standalone revenue does not establish an equivalent consolidated growth rate or net profit.",
+        "undisclosed": [
+          "Gross margin, qualified capacity and manufacturing investment",
+          "Exact legal buyer, named end operator and project capacity",
+          "Cancellation protections, collection terms and revenue-recognition policy"
+        ],
+        "next_checks": [
+          "November initial delivery and qualification",
+          "April 2027 shipments and contract revenue recognition",
+          "Actual gross profit, working capital and operating cash flow",
+          "Additional signed orders versus the conditional USD 100 million aspiration"
+        ]
+      },
+      "sources": [
+        "https://news.lscns.com/ls%EB%A8%B8%ED%8A%B8%EB%A6%AC%EC%96%BC%EC%A6%88-%E7%BE%8E-%EC%88%98%EC%86%8C%EC%97%B0%EB%A3%8C%EC%A0%84%EC%A7%80-%EA%B8%B0%EC%97%85%EC%97%90-5%EC%B2%9C%EB%A7%8C-%EB%8B%AC%EB%9F%AC-uc-%EA%B3%B5/",
+        "https://www.yna.co.kr/amp/view/AKR20261013060300003"
+      ],
+      "status": "company_primary_order_value_prior_contract_and_delivery_verified_customer_name_qualified_capacity_and_profit_conversion_pending"
     }
   ],
   "articles": [],
@@ -1210,7 +1289,7 @@
     "primary_monthly_revenue_checked_count": 3,
     "primary_partner_relationship_checked_count": 2,
     "remaining_primary_company_fact_check_count": 90,
-    "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed. Vertiv is not in the current 98-company alpha-quant universe; this run added it as an out-of-universe supplier candidate because a completed 30 MW hyperscale liquid-cooling deployment provides explicit demand-transmission evidence. LG Electronics is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because the signed AIR long-term agreement covers AI data-center projects exceeding 5 GW, while contract value and delivery economics remain undisclosed. Enerflex is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because a contracted over-1-GW behind-the-meter data-center power project lifts the company's related backlog above 1.75 GW, while customer identity, contract value, margin and revenue timing remain undisclosed. Wistron was added from its official October 12 board announcement; 8 distinct active-universe names now have an identified primary-source fact. Historical blocker counts are preserved as dated records. Applied Materials was added as an out-of-universe research candidate from its official AI-related WFE, services and long-term profitability targets; no named incremental CSP order is inferred and primary coverage counts remain unchanged. ASML added as an out-of-universe supplier research candidate from issuer-reported earnings, revised guidance and planned-capacity constraints; no named TSMC or MediaTek order or program delay inferred. Active-universe primary-validation counts unchanged.",
+    "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed. Vertiv is not in the current 98-company alpha-quant universe; this run added it as an out-of-universe supplier candidate because a completed 30 MW hyperscale liquid-cooling deployment provides explicit demand-transmission evidence. LG Electronics is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because the signed AIR long-term agreement covers AI data-center projects exceeding 5 GW, while contract value and delivery economics remain undisclosed. Enerflex is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because a contracted over-1-GW behind-the-meter data-center power project lifts the company's related backlog above 1.75 GW, while customer identity, contract value, margin and revenue timing remain undisclosed. Wistron was added from its official October 12 board announcement; 8 distinct active-universe names now have an identified primary-source fact. Historical blocker counts are preserved as dated records. Applied Materials was added as an out-of-universe research candidate from its official AI-related WFE, services and long-term profitability targets; no named incremental CSP order is inferred and primary coverage counts remain unchanged. ASML added as an out-of-universe supplier research candidate from issuer-reported earnings, revised guidance and planned-capacity constraints; no named TSMC or MediaTek order or program delay inferred. Active-universe primary-validation counts unchanged. LS ELECTRIC and LS Materials are out-of-universe candidates with explicit AI data-center power contract evidence; neither changes active-universe primary company counts.",
     "active_universe_primary_verified_symbols": [
       "2330",
       "2454",
@@ -1223,8 +1302,8 @@
     ],
     "current_run_screening": {
       "date": "2026-10-14",
-      "instruction_commit_sha": "b11f871a45a29337532d5706c6d5b7900b08d6a7",
-      "scope": "All 98 active names included in 13 fresh grouped discovery queries; latest TSMC and MediaTek official pages, CSP/US supplier checks and ASML issuer Q3 earnings plus prior SEC guidance.",
+      "instruction_commit_sha": "db35d2055cec1024324720ebccb4da12944cf3b6",
+      "scope": "All 98 active names included in 13 fresh grouped discovery queries; latest TSMC and MediaTek official pages checked, with targeted CSP/US supplier follow-up and two LS Group power-supply-chain primary announcements.",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 13
@@ -1282,6 +1361,14 @@
         "date": "2026-10-14",
         "instruction_commit_sha": "b11f871a45a29337532d5706c6d5b7900b08d6a7",
         "scope": "All 98 active names included in 13 fresh grouped discovery queries; latest TSMC and MediaTek official pages, CSP/US supplier checks and ASML issuer Q3 earnings plus prior SEC guidance.",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 13
+      },
+      {
+        "date": "2026-10-14",
+        "instruction_commit_sha": "db35d2055cec1024324720ebccb4da12944cf3b6",
+        "scope": "All 98 active names included in 13 fresh grouped discovery queries; latest TSMC and MediaTek official pages checked, with targeted CSP/US supplier follow-up and two LS Group power-supply-chain primary announcements.",
         "status": "grouped_discovery_screen_only_not_individual_primary_validation",
         "company_count": 98,
         "grouped_query_count": 13
@@ -1934,6 +2021,57 @@
         "Confirm 2028 capacity expansion beyond earlier plans and supplier constraints",
         "Identify actual impact on customer wafer-fab ramps without assuming a specific TPU delay"
       ],
+      "publication_status": "not_drafted",
+      "evidence_updates": [
+        {
+          "date": "2026-10-14",
+          "stage": "management_video_pricing_and_mistral_revaluation_leads_primary_attachment_validation_pending_not_added_as_verified_event",
+          "sources": [
+            "https://www.ft.com/content/2fc239ae-b0d4-41e8-81d0-cc2c0b3aba01",
+            "https://www.wsj.com/business/earnings/chip-machine-supplier-asml-boosts-guidance-for-third-time-on-surging-ai-demand-7ea173d9",
+            "https://investor.asml.com/quarterly-results"
+          ],
+          "next_checks": [
+            "Retrieve issuer video transcript and US GAAP statements from the observed current results links; web click resolution failed.",
+            "Separate any non-operating equity investment revaluation from recurring equipment earnings; do not mechanically subtract a pretax amount from net income.",
+            "Confirm timing and magnitude of new-tool price agreements before describing their profit contribution."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "ls-electric-onsite-datacenter-power-distribution-profit-conversion",
+      "companies": [
+        "LS ELECTRIC",
+        "Bloom Energy"
+      ],
+      "sources": [
+        "https://www.lsholdings.co.kr/ko/media/news/454165426433564e652b56653538733948624a7762466c6e6e77584733564b35"
+      ],
+      "stage": "company_primary_named_customer_order_value_and_delivery_verified_legal_contract_chain_margin_cash_and_repeat_orders_pending",
+      "questions": [
+        "Retrieve original KRX filing and distinguish intercompany supply from end-customer commitments",
+        "Validate end-operator, site readiness, commissioning and revenue-recognition cadence",
+        "Measure package gross margin, cash conversion and local capacity returns",
+        "Separate USD 138.46 million new contract from over USD 500 million cumulative orders"
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "ls-materials-fuel-cell-ultracapacitor-ai-market-profit-conversion",
+      "companies": [
+        "LS Materials"
+      ],
+      "sources": [
+        "https://news.lscns.com/ls%EB%A8%B8%ED%8A%B8%EB%A6%AC%EC%96%BC%EC%A6%88-%E7%BE%8E-%EC%88%98%EC%86%8C%EC%97%B0%EB%A3%8C%EC%A0%84%EC%A7%80-%EA%B8%B0%EC%97%85%EC%97%90-5%EC%B2%9C%EB%A7%8C-%EB%8B%AC%EB%9F%AC-uc-%EA%B3%B5/"
+      ],
+      "stage": "company_primary_repeat_order_and_staged_delivery_verified_qualified_capacity_customer_identity_margin_and_cash_pending",
+      "questions": [
+        "Confirm legal buyer and end-customer mapping from original filing",
+        "Reconcile standalone and consolidated financial scope before estimating growth",
+        "Validate qualification, output, yields, gross margin and collection",
+        "Separate signed USD 51.5 million contract and reported USD 56 million cumulative orders from conditional USD 100 million pipeline"
+      ],
       "publication_status": "not_drafted"
     }
   ],
@@ -1954,7 +2092,7 @@
     }
   ],
   "last_research_date": "2026-10-14",
-  "instruction_commit_sha": "b11f871a45a29337532d5706c6d5b7900b08d6a7",
+  "instruction_commit_sha": "db35d2055cec1024324720ebccb4da12944cf3b6",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
