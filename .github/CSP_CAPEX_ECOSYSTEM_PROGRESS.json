@@ -1859,7 +1859,7 @@
     "primary_monthly_revenue_checked_count": 4,
     "primary_partner_relationship_checked_count": 3,
     "remaining_primary_company_fact_check_count": 86,
-    "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed. Vertiv is not in the current 98-company alpha-quant universe; this run added it as an out-of-universe supplier candidate because a completed 30 MW hyperscale liquid-cooling deployment provides explicit demand-transmission evidence. LG Electronics is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because the signed AIR long-term agreement covers AI data-center projects exceeding 5 GW, while contract value and delivery economics remain undisclosed. Enerflex is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because a contracted over-1-GW behind-the-meter data-center power project lifts the company's related backlog above 1.75 GW, while customer identity, contract value, margin and revenue timing remain undisclosed. Wistron was added from its official October 12 board announcement; 8 distinct active-universe names now have an identified primary-source fact. Historical blocker counts are preserved as dated records. Applied Materials was added as an out-of-universe research candidate from its official AI-related WFE, services and long-term profitability targets; no named incremental CSP order is inferred and primary coverage counts remain unchanged. ASML added as an out-of-universe supplier research candidate from issuer-reported earnings, revised guidance and planned-capacity constraints; no named TSMC or MediaTek order or program delay inferred. Active-universe primary-validation counts unchanged. LS ELECTRIC and LS Materials are out-of-universe candidates with explicit AI data-center power contract evidence; neither changes active-universe primary company counts. Winstek is outside the 98-company universe and is retained with an explicit AI/HPC testing/packaging demand relationship. GMM quarterly profit evidence is based on a reproduced notice, not an obtained issuer/exchange original; active-universe primary-validation counts remain 8 checked and 90 pending. ASE added from its official October 13 PowerSiP availability release; 9 distinct active names now have an identified primary company fact, 89 remain pending. This covers platform availability only, not customer-order or earnings validation. Alpha Compute and NTT Data are out-of-universe candidates; watchlist unchanged. AEP/Bloom and Fermi/TensorWave economic-scope supplements are out-of-universe checks; 98-name search screening does not resolve the 89 outstanding individual primary validations. Jabil/Adani MoU and researcher DCPI data add candidates only; watchlist unchanged. Flex/EPC Power/Axiom are out-of-universe suppliers with explicit AI data-center power-conversion evidence. This run does not add an active-universe primary-validated company; 9 checked and 89 pending remain. Amazon warrant restructuring is not a new CSP equipment order; watchlist unchanged. Faraday (3035) added from its October 13 issuer MIPI IP availability release, which establishes product maturity for edge/vision AI but not a CSP design win. Chenbro (8210) added from its May 29 issuer NVIDIA MGX/rack mechanical relationship baseline; this is not fresh order evidence. Distinct active-universe primary-fact coverage is now 11 checked and 87 pending, not 98 fully validated. No new material-event notification or article is registered. October 15 screening adds research candidates only. NVIDIA fab-workflow benchmarks do not validate TSMC throughput or earnings; Ardentec forecast remains media-level. National Compute is an October 7 preview baseline, and Marvell investor-day original validation is incomplete due to PDF size. Distinct primary-company coverage remains 11 active names and 87 pending; no whole-universe earnings conclusion. Digi Power X is outside the current active universe; issuer commitment supports an AI infrastructure financing relationship but not funded debt or earnings revision. PJM/SoftBank lead is a study-stage, original-body-unverified candidate. Watchlist unchanged; primary-fact counts remain 11 checked and 87 pending. October 15 credit-risk follow-up checked original Reuters reporting and CoreWeave historical issuer/SEC financing data. CoreWeave and Oracle are outside the active Taiwan universe; no additional active-universe primary company check is counted. No new equipment cancellation or supplier earnings change verified, and no stock/bond quote or valuation is saved in this public ledger. Holy Stone (3026) added using issuer monthly revenue and historical AI power product relationship; 12 distinct active companies now have an identified primary fact and 86 remain pending. No fresh October order or margin improvement inferred from the historical deck or intraday theme. Gartner conditional forecasts are a new researcher event, not realized impairment or an active-universe primary-company validation. GF is outside the active Taiwan universe. October 14 SPV/services announcement and original investor PDF add a distinct conditional funding/business-model event without changing active-company primary coverage counts. Previously announced investment plans are not simply summed, and first-fab management expectations exclude the contingent second fab.",
+    "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed. Vertiv is not in the current 98-company alpha-quant universe; this run added it as an out-of-universe supplier candidate because a completed 30 MW hyperscale liquid-cooling deployment provides explicit demand-transmission evidence. LG Electronics is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because the signed AIR long-term agreement covers AI data-center projects exceeding 5 GW, while contract value and delivery economics remain undisclosed. Enerflex is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because a contracted over-1-GW behind-the-meter data-center power project lifts the company's related backlog above 1.75 GW, while customer identity, contract value, margin and revenue timing remain undisclosed. Wistron was added from its official October 12 board announcement; 8 distinct active-universe names now have an identified primary-source fact. Historical blocker counts are preserved as dated records. Applied Materials was added as an out-of-universe research candidate from its official AI-related WFE, services and long-term profitability targets; no named incremental CSP order is inferred and primary coverage counts remain unchanged. ASML added as an out-of-universe supplier research candidate from issuer-reported earnings, revised guidance and planned-capacity constraints; no named TSMC or MediaTek order or program delay inferred. Active-universe primary-validation counts unchanged. LS ELECTRIC and LS Materials are out-of-universe candidates with explicit AI data-center power contract evidence; neither changes active-universe primary company counts. Winstek is outside the 98-company universe and is retained with an explicit AI/HPC testing/packaging demand relationship. GMM quarterly profit evidence is based on a reproduced notice, not an obtained issuer/exchange original; active-universe primary-validation counts remain 8 checked and 90 pending. ASE added from its official October 13 PowerSiP availability release; 9 distinct active names now have an identified primary company fact, 89 remain pending. This covers platform availability only, not customer-order or earnings validation. Alpha Compute and NTT Data are out-of-universe candidates; watchlist unchanged. AEP/Bloom and Fermi/TensorWave economic-scope supplements are out-of-universe checks; 98-name search screening does not resolve the 89 outstanding individual primary validations. Jabil/Adani MoU and researcher DCPI data add candidates only; watchlist unchanged. Flex/EPC Power/Axiom are out-of-universe suppliers with explicit AI data-center power-conversion evidence. This run does not add an active-universe primary-validated company; 9 checked and 89 pending remain. Amazon warrant restructuring is not a new CSP equipment order; watchlist unchanged. Faraday (3035) added from its October 13 issuer MIPI IP availability release, which establishes product maturity for edge/vision AI but not a CSP design win. Chenbro (8210) added from its May 29 issuer NVIDIA MGX/rack mechanical relationship baseline; this is not fresh order evidence. Distinct active-universe primary-fact coverage is now 11 checked and 87 pending, not 98 fully validated. No new material-event notification or article is registered. October 15 screening adds research candidates only. NVIDIA fab-workflow benchmarks do not validate TSMC throughput or earnings; Ardentec forecast remains media-level. National Compute is an October 7 preview baseline, and Marvell investor-day original validation is incomplete due to PDF size. Distinct primary-company coverage remains 11 active names and 87 pending; no whole-universe earnings conclusion. Digi Power X is outside the current active universe; issuer commitment supports an AI infrastructure financing relationship but not funded debt or earnings revision. PJM/SoftBank lead is a study-stage, original-body-unverified candidate. Watchlist unchanged; primary-fact counts remain 11 checked and 87 pending. October 15 credit-risk follow-up checked original Reuters reporting and CoreWeave historical issuer/SEC financing data. CoreWeave and Oracle are outside the active Taiwan universe; no additional active-universe primary company check is counted. No new equipment cancellation or supplier earnings change verified, and no stock/bond quote or valuation is saved in this public ledger. Holy Stone (3026) added using issuer monthly revenue and historical AI power product relationship; 12 distinct active companies now have an identified primary fact and 86 remain pending. No fresh October order or margin improvement inferred from the historical deck or intraday theme. Gartner conditional forecasts are a new researcher event, not realized impairment or an active-universe primary-company validation. GF is outside the active Taiwan universe. October 14 SPV/services announcement and original investor PDF add a distinct conditional funding/business-model event without changing active-company primary coverage counts. Previously announced investment plans are not simply summed, and first-fab management expectations exclude the contingent second fab. NetApp is outside the active Taiwan universe; September 29 original storage announcement and OCI planned-service relationship added as a historical research baseline only. No new material event, earnings alert or article registered; active primary coverage remains 12 checked and 86 pending.",
     "active_universe_primary_verified_symbols": [
       "2330",
       "2454",
@@ -1876,15 +1876,16 @@
     ],
     "current_run_screening": {
       "date": "2026-10-15",
-      "instruction_commit_sha": "48fb42c6dbb0dd6955ac00bb8f45c6a9fd2abaf6",
-      "scope": "All 98 active names included in 13 fresh grouped discovery queries. Current TSMC calendar, MediaTek/NVIDIA/AMD/Marvell news indexes, Broadcom original OCP discovery and targeted CSP official-domain checks completed. GF October 14 issuer release and investor PDF checked against the June 2025 investment baseline; first-fab conditional financial model separated from total investment and second fab. CoreWeave CEO backlog reassurance read as reporting of management statements, not completed financing or order changes.",
+      "instruction_commit_sha": "23d3bc477496839878a1dcf11ce31bd596eae8a5",
+      "scope": "All 98 active names included in 13 fresh grouped discovery queries. Current TSMC calendar and MediaTek, NVIDIA, AMD and Marvell original news indexes checked; Broadcom indexed original list and targeted CSP official-domain checks reviewed. NetApp September 29 original Novus release and joint Oracle announcement verify historical storage relationship and distinct product maturity; October 14 coverage is not treated as a new order. Existing GF, CoreWeave, Gartner, Digi Power X, Flex, AEP and MediaTek event fingerprints not repeated.",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 13,
       "source_limits": [
-        "No comprehensive company-by-company primary validation of all 98 names; 12 distinct active-company primary facts and 86 pending remain.",
-        "GF financial metrics are management non-IFRS forward expectations, not final contracts, realized results or consensus estimates.",
-        "Original PDF text is readable; screenshot tool returned text placeholders without image payload, so no claim of visual-page verification."
+        "No full company-by-company primary validation of all 98 active names; 12 distinct primary-company facts and 86 pending remain.",
+        "NetApp throughput is vendor architecture positioning and cited Omdia modeling, not a verified deployed 100-TB/s customer system or earnings revision.",
+        "TSMC October 15 conference remains upcoming at 14:00 Taiwan time; no preview estimate is presented as announced quarterly earnings.",
+        "Broadcom original news list checked through indexed text; not a comprehensive original release-by-release audit."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -2083,6 +2084,20 @@
           "No comprehensive company-by-company primary validation of all 98 names; 12 distinct active-company primary facts and 86 pending remain.",
           "GF financial metrics are management non-IFRS forward expectations, not final contracts, realized results or consensus estimates.",
           "Original PDF text is readable; screenshot tool returned text placeholders without image payload, so no claim of visual-page verification."
+        ]
+      },
+      {
+        "date": "2026-10-15",
+        "instruction_commit_sha": "23d3bc477496839878a1dcf11ce31bd596eae8a5",
+        "scope": "All 98 active names included in 13 fresh grouped discovery queries. Current TSMC calendar and MediaTek, NVIDIA, AMD and Marvell original news indexes checked; Broadcom indexed original list and targeted CSP official-domain checks reviewed. NetApp September 29 original Novus release and joint Oracle announcement verify historical storage relationship and distinct product maturity; October 14 coverage is not treated as a new order. Existing GF, CoreWeave, Gartner, Digi Power X, Flex, AEP and MediaTek event fingerprints not repeated.",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 13,
+        "source_limits": [
+          "No full company-by-company primary validation of all 98 active names; 12 distinct primary-company facts and 86 pending remain.",
+          "NetApp throughput is vendor architecture positioning and cited Omdia modeling, not a verified deployed 100-TB/s customer system or earnings revision.",
+          "TSMC October 15 conference remains upcoming at 14:00 Taiwan time; no preview estimate is presented as announced quarterly earnings.",
+          "Broadcom original news list checked through indexed text; not a comprehensive original release-by-release audit."
         ]
       }
     ],
@@ -3400,6 +3415,33 @@
         "AI-specific revenue conversion from the repurposed CHIPS investments"
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "netapp-novus-storage-utilization-and-oci-native-service-conversion",
+      "companies": [
+        "NetApp",
+        "Supermicro",
+        "Oracle"
+      ],
+      "sources": [
+        "https://investors.netapp.com/news/news-details/2026/NetApp-Removes-Storage-Bottleneck-for-AI-Factories/default.aspx",
+        "https://www.oracle.com/news/announcement/netapp-and-oracle-to-launch-fully-managed-cloud-storage-service-for-demanding-ai-and-enterprise-workloads-2026-09-29/"
+      ],
+      "stage": "september29_issuer_product_and_partner_baseline_verified_not_new_october14_order_or_earnings_alert",
+      "facts": {
+        "original_date": "2026-09-29",
+        "relationship": "Novus initially combines metadata software on qualified Supermicro systems with ONTAP data services on AFF A90. Separately, OCI-native ONTAP storage is a planned fully managed service.",
+        "maturity": "Novus orderable on announcement date; OCI service general availability planned within twelve months of September 29, not current production availability.",
+        "performance_scope": "Up-to-100-TB/s architecture claim; issuer cites Omdia observed scaling and modeled projection, not independently verified installed customer performance.",
+        "limits": "No named new customer purchase, committed volumes, realized utilization improvement, revenue contribution or margin revision disclosed in these announcements. October 14 coverage repeats the September baseline."
+      },
+      "questions": [
+        "Named paid deployments, booked orders and actual revenue recognition",
+        "Measured workload-specific utilization and storage cost versus alternative architectures",
+        "Recurring software and cloud-service economics after partner revenue sharing and support costs",
+        "OCI actual general availability, adoption and incremental margin"
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -3419,7 +3461,7 @@
     }
   ],
   "last_research_date": "2026-10-15",
-  "instruction_commit_sha": "48fb42c6dbb0dd6955ac00bb8f45c6a9fd2abaf6",
+  "instruction_commit_sha": "23d3bc477496839878a1dcf11ce31bd596eae8a5",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
