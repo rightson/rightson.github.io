@@ -1561,6 +1561,69 @@
         "https://tw.stock.yahoo.com/quote/6640/announcement"
       ],
       "status": "opened_reproduced_notice_and_dated_reporting_checked_original_exchange_and_profit_mechanism_pending"
+    },
+    {
+      "fingerprint": "alpha-compute-alpha03-b300-lease-and-disclosure-gaps-20261014",
+      "event_date": "2026-10-14",
+      "agreement_date": "2026-10-09",
+      "companies": [
+        "Alpha Compute",
+        "NVIDIA"
+      ],
+      "type": "issuer_reported_compute_lease_not_delivered_capacity_or_realized_revenue",
+      "facts": {
+        "reported_term_months": 48,
+        "reported_contract_value_usd": 81732160,
+        "reported_annual_revenue_usd": 20183040,
+        "gpus": {
+          "revenue_gpus": 576,
+          "hot_spares": 16,
+          "total": 592,
+          "model": "NVIDIA B300"
+        },
+        "location": "Missouri, USA",
+        "contracted_facility_mw": 1.3,
+        "target_delivery": "early Q1 2027",
+        "reported_received_deposit_usd": 1000000,
+        "payment_scope": "Issuer reports capacity fees payable irrespective of use, with 20% advance due at signing and 5% at delivery. Due is not received.",
+        "disclosure_inconsistencies": [
+          "Narrative advance amount USD20.2m versus transaction table USD21.183040m; latter is about 25.9%, not 25%, of stated TCV. Deposit inclusion unexplained.",
+          "Headline says binding contract signed; risk section still lists definitive MSA signing/terms as forward-looking and warns it might not be signed. Executed agreement not obtained."
+        ],
+        "source_nature": "Issuer-origin release linked from official IR, not an independent customer confirmation.",
+        "interpretation": "First reported US cluster contract extends disclosed geographic customer commitments; profitability depends on actual receipts, finance terms, equipment costs, deployment and counterparty credit.",
+        "limits": "Unnamed customer; no contract text, complete funding close, delivery, recognized revenue or gross margin verified. Neither NVIDIA incremental order value nor Taiwan supplier awards inferred.",
+        "next_checks": [
+          "Executed MSA and cancellation rights",
+          "Receipt of due advance and finance closing",
+          "GPU commissioning and acceptance",
+          "Actual lease margin and cash after power, facility, financing and equipment costs"
+        ]
+      },
+      "sources": [
+        "https://www.globenewswire.com/news-release/2026/10/14/3380592/0/en/alpha-compute-signs-binding-gpu-contract-leasing-alpha-03-cluster-under-four-year-81-7-million-agreement-in-its-missouri-superintelligence-factory.html",
+        "https://www.alphacompute.ai/investors"
+      ],
+      "status": "issuer_announcement_and_internal_inconsistencies_verified_contract_text_cash_receipt_and_profitability_pending"
+    },
+    {
+      "fingerprint": "ase-powersip-vertical-vrm-platform-availability-20261013",
+      "event_date": "2026-10-13",
+      "companies": [
+        "ASE/日月光投控"
+      ],
+      "type": "issuer_product_platform_available_not_named_production_order",
+      "facts": {
+        "stage": "Company says available now, using qualified assembly technologies and modular toolbox for vertically integrated VRMs.",
+        "mechanism": "Shorter board-to-chip high-current paths; double-sided capacitor integration, substrate-less cap arrays, 4:1 copper pins and active/passive SiP integration.",
+        "vendor_claim": "Parasitic routing loss reduction of 50% or more; not a measured 50% reduction in total chip or data-center power.",
+        "demand_relationship": "Issuer explicitly names GPU, TPU and custom ASIC packaging applications for AI data-center/HPC power delivery.",
+        "limits": "No named customer, deployed volume, contract revenue, ASP or margin disclosed. No legal conclusion on Vicor investigation or licensed IP compatibility inferred."
+      },
+      "sources": [
+        "https://ase.aseglobal.com/press-room/ase-expands-powersip-platform-for-next-generation-ai-power-delivery/"
+      ],
+      "status": "company_primary_available_platform_verified_orders_and_financial_attribution_pending_no_material_earnings_alert"
     }
   ],
   "articles": [],
@@ -1571,11 +1634,11 @@
     "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
     "active_count": 98,
     "search_screened_count": 98,
-    "primary_company_fact_checked_count": 8,
+    "primary_company_fact_checked_count": 9,
     "primary_monthly_revenue_checked_count": 3,
     "primary_partner_relationship_checked_count": 2,
-    "remaining_primary_company_fact_check_count": 90,
-    "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed. Vertiv is not in the current 98-company alpha-quant universe; this run added it as an out-of-universe supplier candidate because a completed 30 MW hyperscale liquid-cooling deployment provides explicit demand-transmission evidence. LG Electronics is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because the signed AIR long-term agreement covers AI data-center projects exceeding 5 GW, while contract value and delivery economics remain undisclosed. Enerflex is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because a contracted over-1-GW behind-the-meter data-center power project lifts the company's related backlog above 1.75 GW, while customer identity, contract value, margin and revenue timing remain undisclosed. Wistron was added from its official October 12 board announcement; 8 distinct active-universe names now have an identified primary-source fact. Historical blocker counts are preserved as dated records. Applied Materials was added as an out-of-universe research candidate from its official AI-related WFE, services and long-term profitability targets; no named incremental CSP order is inferred and primary coverage counts remain unchanged. ASML added as an out-of-universe supplier research candidate from issuer-reported earnings, revised guidance and planned-capacity constraints; no named TSMC or MediaTek order or program delay inferred. Active-universe primary-validation counts unchanged. LS ELECTRIC and LS Materials are out-of-universe candidates with explicit AI data-center power contract evidence; neither changes active-universe primary company counts. Winstek is outside the 98-company universe and is retained with an explicit AI/HPC testing/packaging demand relationship. GMM quarterly profit evidence is based on a reproduced notice, not an obtained issuer/exchange original; active-universe primary-validation counts remain 8 checked and 90 pending.",
+    "remaining_primary_company_fact_check_count": 89,
+    "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed. Vertiv is not in the current 98-company alpha-quant universe; this run added it as an out-of-universe supplier candidate because a completed 30 MW hyperscale liquid-cooling deployment provides explicit demand-transmission evidence. LG Electronics is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because the signed AIR long-term agreement covers AI data-center projects exceeding 5 GW, while contract value and delivery economics remain undisclosed. Enerflex is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because a contracted over-1-GW behind-the-meter data-center power project lifts the company's related backlog above 1.75 GW, while customer identity, contract value, margin and revenue timing remain undisclosed. Wistron was added from its official October 12 board announcement; 8 distinct active-universe names now have an identified primary-source fact. Historical blocker counts are preserved as dated records. Applied Materials was added as an out-of-universe research candidate from its official AI-related WFE, services and long-term profitability targets; no named incremental CSP order is inferred and primary coverage counts remain unchanged. ASML added as an out-of-universe supplier research candidate from issuer-reported earnings, revised guidance and planned-capacity constraints; no named TSMC or MediaTek order or program delay inferred. Active-universe primary-validation counts unchanged. LS ELECTRIC and LS Materials are out-of-universe candidates with explicit AI data-center power contract evidence; neither changes active-universe primary company counts. Winstek is outside the 98-company universe and is retained with an explicit AI/HPC testing/packaging demand relationship. GMM quarterly profit evidence is based on a reproduced notice, not an obtained issuer/exchange original; active-universe primary-validation counts remain 8 checked and 90 pending. ASE added from its official October 13 PowerSiP availability release; 9 distinct active names now have an identified primary company fact, 89 remain pending. This covers platform availability only, not customer-order or earnings validation. Alpha Compute and NTT Data are out-of-universe candidates; watchlist unchanged.",
     "active_universe_primary_verified_symbols": [
       "2330",
       "2454",
@@ -1584,12 +1647,13 @@
       "2317",
       "2382",
       "2408",
-      "3231"
+      "3231",
+      "3711"
     ],
     "current_run_screening": {
       "date": "2026-10-14",
-      "instruction_commit_sha": "0f0a0f8c9a4a533b639a457679fd605dbb2f149a",
-      "scope": "All 98 active names included in 13 fresh grouped discovery queries. Current TSMC and MediaTek official latest-news pages checked; targeted CSP/US suppliers plus Winstek/GMM disclosed-profit and financing leads checked. CoreWeave original interview full text paywalled; aspiration not promoted to a completed funding event.",
+      "instruction_commit_sha": "e19dde84db279a748fbb616c46390bb982089a4d",
+      "scope": "All 98 active names included in 13 fresh grouped public-news discovery queries. Current TSMC and MediaTek official latest pages checked; targeted CSP/US suppliers and new Alpha Compute issuer lease disclosure checked. ASE official PowerSiP availability verified; NTT/Anthropic reported talks retained as a candidate, not a signed order.",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 13
@@ -1690,8 +1754,17 @@
         "status": "grouped_discovery_screen_only_not_individual_primary_validation",
         "company_count": 98,
         "grouped_query_count": 13
+      },
+      {
+        "date": "2026-10-14",
+        "instruction_commit_sha": "e19dde84db279a748fbb616c46390bb982089a4d",
+        "scope": "All 98 active names included in 13 fresh grouped public-news discovery queries. Current TSMC and MediaTek official latest pages checked; targeted CSP/US suppliers and new Alpha Compute issuer lease disclosure checked. ASE official PowerSiP availability verified; NTT/Anthropic reported talks retained as a candidate, not a signed order.",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 13
       }
-    ]
+    ],
+    "primary_product_platform_company_fact_checked_count": 1
   },
   "research_candidates": [
     {
@@ -2544,6 +2617,63 @@
         "Customer credit and GPU-collateral values versus equipment purchases and delivery"
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "alpha-compute-us-b300-lease-cash-profit-and-contract-quality",
+      "companies": [
+        "Alpha Compute",
+        "NVIDIA"
+      ],
+      "sources": [
+        "https://www.globenewswire.com/news-release/2026/10/14/3380592/0/en/alpha-compute-signs-binding-gpu-contract-leasing-alpha-03-cluster-under-four-year-81-7-million-agreement-in-its-missouri-superintelligence-factory.html"
+      ],
+      "stage": "issuer_reported_new_cluster_lease_and_disclosure_inconsistencies_checked_executed_msa_cash_funding_delivery_and_margin_pending",
+      "questions": [
+        "Resolve binding-contract versus definitive-MSA disclaimer",
+        "Reconcile USD20.2m and USD21.183m advance terms and actual receipts",
+        "Counterparty credit, financing, equipment cost and recurring margin"
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "ase-vertical-power-packaging-commercial-conversion",
+      "companies": [
+        "ASE/日月光投控"
+      ],
+      "sources": [
+        "https://ase.aseglobal.com/press-room/ase-expands-powersip-platform-for-next-generation-ai-power-delivery/"
+      ],
+      "stage": "primary_available_platform_verified_named_customer_volume_revenue_margin_and_total_system_power_validation_pending",
+      "questions": [
+        "Named design wins and deployed production volumes",
+        "ASP, customer pricing and margin after packaging cost",
+        "System-level loss baseline, reliability and customer qualification"
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "ntt-anthropic-osaka-project-contract-power-and-economics",
+      "companies": [
+        "NTT Data",
+        "Anthropic"
+      ],
+      "sources": [
+        "https://www.reuters.com/business/media-telecom/ntt-data-final-talks-build-anthropics-first-data-centre-japan-nikkei-reports-2026-10-13/",
+        "https://m.economictimes.com/tech/artificial-intelligence/ntt-data-in-final-talks-to-build-anthropics-first-data-centre-in-japan-nikkei-reports/amp_articleshow/134906918.cms"
+      ],
+      "stage": "october13_reuters_attributed_nikkei_final_talks_recorded_not_signed_order_or_verified_delivery",
+      "facts": {
+        "reported_ceiling_construction_yen": "up to 1 trillion",
+        "reported_power_intake_mw": "up to 500",
+        "reported_timing": "Aim for agreement by March 31, 2027; partial operations potentially 2028",
+        "limits": "Nikkei original and issuer confirmation not obtained; no GPU procurement or named equipment awards inferred."
+      },
+      "questions": [
+        "Executed agreement and project scope",
+        "Grid/on-site fuel permits and actual energization",
+        "Hardware purchase awards and project returns"
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -2563,7 +2693,7 @@
     }
   ],
   "last_research_date": "2026-10-14",
-  "instruction_commit_sha": "0f0a0f8c9a4a533b639a457679fd605dbb2f149a",
+  "instruction_commit_sha": "e19dde84db279a748fbb616c46390bb982089a4d",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
