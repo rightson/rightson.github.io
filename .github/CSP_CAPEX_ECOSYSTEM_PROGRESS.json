@@ -1356,6 +1356,113 @@
         "https://www.oracle.com/news/announcement/project-jupiter-is-expected-to-generate-13-billion-in-economic-impact-2026-10-13/"
       ],
       "status": "renewed_request_original_report_verified_primary_relationship_and_regulatory_baseline_checked_latest_letter_order_and_financial_impact_pending"
+    },
+    {
+      "fingerprint": "trendforce-nine-csp-2027-capex-growth-revision-20261014",
+      "event_date": "2026-10-14",
+      "companies": [
+        "Alphabet/Google",
+        "Amazon",
+        "Meta",
+        "Microsoft",
+        "Oracle",
+        "ByteDance",
+        "Tencent",
+        "Alibaba",
+        "Baidu"
+      ],
+      "type": "research_house_original_forecast_revision_not_company_guidance",
+      "facts": {
+        "source_nature": "TrendForce October 14 original press release; August 3 and August 25 original forecasts checked.",
+        "forecast_population": "Nine named CSPs, not just the five US hyperscalers. Aggregate definitions, leases and fiscal/calendar normalization are not fully detailed in the public release.",
+        "prior_2027_capex_growth_percent": 50,
+        "new_2027_capex_growth_percent": 60,
+        "new_2026_capex_usd_billion": 957,
+        "new_2027_capex_usd_trillion": "over 1.5",
+        "historical_forecast": "August 3: 2026 over USD886.7 billion / approximately 90% growth, 2027 about USD1.3 trillion / nearly 50% growth. August 25: 2026 98% and 2027 50% growth. Do not present August 3 dollar levels as the immediately preceding forecast.",
+        "revision_drivers": [
+          "Higher complete-system prices",
+          "Higher component quotations amid shortages",
+          "Supplier prepayments that bring forward cash spending"
+        ],
+        "ai_server_forecasts": {
+          "shipment_growth_2026_percent": 32.2,
+          "shipment_growth_2027_percent": "nearly 36",
+          "revenue_2026_usd_billion": 479,
+          "revenue_2027_usd_billion": "nearly 920",
+          "revenue_growth_2027_percent": "over 90"
+        },
+        "interpretation": "A price and working-capital-driven capex revision strengthens the hypothesis that scarce suppliers can capture value, while increasing customer funding requirements. It is not an equivalent increase in compute deployment or industry-wide profits.",
+        "limits": "Research-house forecasts, not new signed orders, issuer capex guidance, market consensus, or quantified earnings revisions for TSMC/MediaTek or ODMs.",
+        "next_checks": [
+          "Issuer capex, purchase commitments and prepayment disclosures under comparable accounting definitions",
+          "Supplier realized prices versus costs, mix, receivables and cash conversion",
+          "Physical delivery, available power, utilization and customer monetization"
+        ]
+      },
+      "sources": [
+        "https://www.trendforce.com/presscenter/news/20261014-13269.html",
+        "https://www.trendforce.com/presscenter/news/20260803-13161.html",
+        "https://www.trendforce.com/presscenter/news/20260825-13198.html"
+      ],
+      "status": "original_current_and_historical_forecasts_verified_no_stock_valuation_or_article"
+    },
+    {
+      "fingerprint": "luxnet-allring-september-self-reported-profit-conversion-20261014",
+      "event_date": "2026-10-14",
+      "companies": [
+        "LuxNet/華星光",
+        "All Ring/萬潤"
+      ],
+      "type": "new_monthly_profit_disclosure_reproduced_notice_original_exchange_read_pending",
+      "facts": {
+        "source_nature": "Indexed MOPS notice reproductions checked against original financial reporting and dated MoneyDJ/UDN reporting; direct MOPS/issuer notice not retrieved. These reproductions are one original event, not independent issuer confirmations.",
+        "period": "September 2026 versus September 2025",
+        "currency": "TWD",
+        "unit": "million except EPS in TWD per share",
+        "unaudited": true,
+        "luxnet": {
+          "revenue": 575,
+          "prior_revenue": 290,
+          "parent_net_profit": 103,
+          "prior_parent_net_profit": 49,
+          "eps": 0.72,
+          "prior_eps": 0.34,
+          "reported_revenue_growth_percent": 98.28,
+          "reported_net_profit_growth_percent": 110.2
+        },
+        "all_ring": {
+          "revenue": 1160,
+          "prior_revenue": 555,
+          "parent_net_profit": 194,
+          "prior_parent_net_profit": 130,
+          "eps": 1.98,
+          "prior_eps": 1.36,
+          "reported_revenue_growth_percent": 109,
+          "reported_net_profit_growth_percent": 49
+        },
+        "calculation_from_rounded_notice_amounts": {
+          "luxnet_parent_net_profit_to_revenue_percent": 17.9,
+          "luxnet_prior_percent": 16.9,
+          "all_ring_parent_net_profit_to_revenue_percent": 16.7,
+          "all_ring_prior_percent": 23.4
+        },
+        "interpretation": "LuxNet's net-profit growth modestly exceeds revenue growth; All Ring's profit conversion deteriorates year on year despite doubled revenue. These ratios are not gross margins or operating margins.",
+        "limits": "Rounded unaudited single-month data do not establish sustainable pricing power, operating cost mechanism, customer-specific AI exposure or full-quarter earnings. Revenue growth computed from rounded notice figures differs from precise monthly-revenue filings; retain the notice's reported percentages with that qualification. Do not annualize one-month EPS.",
+        "next_checks": [
+          "Direct original exchange notice and subsequent quarterly statements",
+          "Gross margin, operating margin, non-operating gains/tax, product mix and equipment acceptance timing",
+          "Named customer/program contribution and delivery volumes"
+        ]
+      },
+      "sources": [
+        "https://pchome.megatime.com.tw/news/cat1/20261014/9700004979202610141.html",
+        "https://5850web.moneydj.com/z/zf/zfz/zfz_958A6AAF-464E-422D-9325-7D3408ED9AB0.djhtm",
+        "https://m.moneydj.com/f1a.aspx?a=3634e678-b114-4ed2-a38c-ceecd482a18e&c=MB06",
+        "https://money.udn.com/money/story/11074/9814661",
+        "https://money.udn.com/money/story/11074/9814876"
+      ],
+      "status": "indexed_reproduced_notices_and_dated_reports_checked_primary_original_and_quarterly_quality_pending"
     }
   ],
   "articles": [],
@@ -1383,8 +1490,8 @@
     ],
     "current_run_screening": {
       "date": "2026-10-14",
-      "instruction_commit_sha": "71998c09f1327028d50586d74d051fc6c02ab2a3",
-      "scope": "All 98 active names included in 13 fresh grouped public-news queries; latest TSMC and MediaTek official pages checked, selected CSP/US supplier follow-up, Oracle/Bloom primary project sources and Scaleway named deployment plans checked.",
+      "instruction_commit_sha": "c502603b715ae41fd6cf8cfd6a087b2c50ac54e1",
+      "scope": "All 98 active names included in 13 fresh grouped public-news discovery queries; TSMC and MediaTek official latest pages checked, targeted CSP/US suppliers and original TrendForce current/historical forecasts checked. LuxNet/All Ring indexed notice leads researched; Marvell product maturity checked.",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 13
@@ -1466,6 +1573,14 @@
         "date": "2026-10-14",
         "instruction_commit_sha": "71998c09f1327028d50586d74d051fc6c02ab2a3",
         "scope": "All 98 active names included in 13 fresh grouped public-news queries; latest TSMC and MediaTek official pages checked, selected CSP/US supplier follow-up, Oracle/Bloom primary project sources and Scaleway named deployment plans checked.",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 13
+      },
+      {
+        "date": "2026-10-14",
+        "instruction_commit_sha": "c502603b715ae41fd6cf8cfd6a087b2c50ac54e1",
+        "scope": "All 98 active names included in 13 fresh grouped public-news discovery queries; TSMC and MediaTek official latest pages checked, targeted CSP/US suppliers and original TrendForce current/historical forecasts checked. LuxNet/All Ring indexed notice leads researched; Marvell product maturity checked.",
         "status": "grouped_discovery_screen_only_not_individual_primary_validation",
         "company_count": 98,
         "grouped_query_count": 13
@@ -2239,6 +2354,33 @@
         "Incremental capacity versus substitution among existing GPU allocations"
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "marvell-alaska-3nm-sampling-and-structera-six-channel-preview",
+      "companies": [
+        "Marvell",
+        "AMD",
+        "Meta",
+        "Alibaba",
+        "Amphenol",
+        "Molex"
+      ],
+      "sources": [
+        "https://www.marvell.com/company/newsroom/marvell-connectivity-portfolio-3-2t-retimer-second-generation-1-6t-aec-dsp.html",
+        "https://www.marvell.com/company/newsroom/marvell-structera-x-cxl-3-2-memory-expanders-ai-inference.html"
+      ],
+      "stage": "primary_october12_and13_product_maturity_verified_not_new_order_or_earnings_revision",
+      "facts": {
+        "alaska": "Alaska E 3.2T retimer and second-generation Alaska A 1.6T AEC DSP currently sampling. Supplier states second-generation copper reach exceeds six metres; no production customer volumes, revenue or margin disclosed.",
+        "structera": "Six-channel CXL 3.2 Structera X 3406/3506 planned sampling Q1 2027; first-generation 2404/2504 already shipping to hyperscalers. Named Meta/Alibaba ecosystem collaboration does not prove new-generation production adoption.",
+        "relationship": "Amphenol and Molex cited as copper-interconnect ecosystem collaborators; no purchasing volumes or company-specific financial attribution."
+      },
+      "questions": [
+        "Named production design wins and qualification",
+        "Sampling-to-delivery timing and financial contribution",
+        "Copper reach, memory reuse and compression substitution effects under customer workloads"
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -2258,7 +2400,7 @@
     }
   ],
   "last_research_date": "2026-10-14",
-  "instruction_commit_sha": "71998c09f1327028d50586d74d051fc6c02ab2a3",
+  "instruction_commit_sha": "c502603b715ae41fd6cf8cfd6a087b2c50ac54e1",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
