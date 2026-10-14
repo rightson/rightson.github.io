@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 630" role="img" aria-labelledby="title desc">
+<title id="title">Ingress and egress account different packet sets</title><desc id="desc">One ingress has 48 kB queued for each of four egresses. The ingress total is 192 kB above 128 kB XOFF. Every egress is below 80 kB ECN.</desc>
+<defs><marker id="blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#2563eb"/></marker>
+<marker id="orange" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#c05a13"/></marker>
+<marker id="purple" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#7c3aed"/></marker></defs>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif;fill:#17324d;font-size:23px} .small{font-size:18px} .head{font-size:28px;font-weight:700} .tiny{font-size:10px}</style>
+<rect width="600" height="630" fill="#ffffff"/>
+<text x="30" y="42" text-anchor="start" class="head">Same packets, different sums</text>
+<text x="30" y="78" text-anchor="start" class="small">Hypothetical occupancy, not an ASIC layout</text>
+<rect x="40" y="110" width="520" height="100" rx="12" fill="#fff4e9" stroke="#c05a13" stroke-width="2"/>
+<text x="300" y="151" text-anchor="middle" class="">Ingress A: 192 kB</text>
+<text x="300" y="189" text-anchor="middle" class="small">XOFF = 128 kB  →  pause</text>
+<path d="M300,210 L300,261 L163,261 L163,285" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#blue)"/>
+<rect x="55" y="285" width="215" height="112" rx="12" fill="#eef5ff" stroke="#2563eb" stroke-width="2"/>
+<text x="163" y="325" text-anchor="middle" class="">Egress 1: 48 kB</text>
+<text x="163" y="361" text-anchor="middle" class="small">ECN = 80 kB</text>
+<text x="163" y="385" text-anchor="middle" class="small">Below mark threshold</text>
+<path d="M300,210 L300,261 L428,261 L428,285" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#blue)"/>
+<rect x="320" y="285" width="215" height="112" rx="12" fill="#eef5ff" stroke="#2563eb" stroke-width="2"/>
+<text x="428" y="325" text-anchor="middle" class="">Egress 2: 48 kB</text>
+<text x="428" y="361" text-anchor="middle" class="small">ECN = 80 kB</text>
+<text x="428" y="385" text-anchor="middle" class="small">Below mark threshold</text>
+<path d="M300,210 L300,416 L163,416 L163,440" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#blue)"/>
+<rect x="55" y="440" width="215" height="112" rx="12" fill="#eef5ff" stroke="#2563eb" stroke-width="2"/>
+<text x="163" y="480" text-anchor="middle" class="">Egress 3: 48 kB</text>
+<text x="163" y="516" text-anchor="middle" class="small">ECN = 80 kB</text>
+<text x="163" y="540" text-anchor="middle" class="small">Below mark threshold</text>
+<path d="M300,210 L300,416 L428,416 L428,440" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#blue)"/>
+<rect x="320" y="440" width="215" height="112" rx="12" fill="#eef5ff" stroke="#2563eb" stroke-width="2"/>
+<text x="428" y="480" text-anchor="middle" class="">Egress 4: 48 kB</text>
+<text x="428" y="516" text-anchor="middle" class="small">ECN = 80 kB</text>
+<text x="428" y="540" text-anchor="middle" class="small">Below mark threshold</text>
+<text x="30" y="598" text-anchor="start" class="small">48 + 48 + 48 + 48 = 192 kB</text>
+<text x="580" y="614" text-anchor="end" class="tiny">Scott Yo-Ru Chen · 2026-10-14</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#2563eb" i]{fill:#82a4ed}[fill="#7c3aed" i]{fill:#aa82ed}[fill="#c05a13" i]{fill:#ea9e69}[fill="#eef5ff" i]{fill:#131f31}[fill="#fff4e9" i]{fill:#332313}[fill="#ffffff" i]{fill:#1b1f20}[stroke="#2563eb" i]{stroke:#82a4ed}[stroke="#c05a13" i]{stroke:#ea9e69}text{fill:#c6d4e2}}</style>
+</svg>

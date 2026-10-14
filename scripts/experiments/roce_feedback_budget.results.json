@@ -1,0 +1,390 @@
+{
+  "assumptions": {
+    "abstract_pressure_bytes": 768000,
+    "cc_feedback_us": 8,
+    "extra_per_ingress_bytes": 9000,
+    "mark_bytes": 256000,
+    "pause_stop_us": 2,
+    "units": "decimal bytes, seconds, ideal data rate"
+  },
+  "base_case": {
+    "aggregate_arrival_Bps": 200000000000.0,
+    "cc_feedback_excess_bytes": 1200000.0,
+    "excess_Bps": 150000000000.0,
+    "fair_share_GBps": 12.5,
+    "first_cc_effective_us": 9.706666666666667,
+    "first_mark_us": 1.7066666666666668,
+    "first_pause_effective_us": 7.119999999999999,
+    "ideal_cc_peak_bytes": 1456000.0,
+    "ideal_first_pause_peak_bytes": 1068000.0,
+    "link_Bps": 50000000000.0,
+    "pressure_crossing_us": 5.12,
+    "pressure_to_mark_gap_us": 3.4133333333333336,
+    "rate_gbps": 400,
+    "raw_concurrent_headroom_bytes": 436000.0,
+    "raw_headroom_per_ingress_bytes": 109000.0,
+    "senders": 4
+  },
+  "completion_lower_bound_ms": 1.28,
+  "headroom_delay_sensitivity_400G": [
+    {
+      "headroom_bytes": 34000.0,
+      "pause_us": 0.5
+    },
+    {
+      "headroom_bytes": 59000.0,
+      "pause_us": 1
+    },
+    {
+      "headroom_bytes": 109000.0,
+      "pause_us": 2
+    },
+    {
+      "headroom_bytes": 209000.0,
+      "pause_us": 4
+    }
+  ],
+  "independent_checks": {
+    "first_pause": {
+      "analytic_peak_bytes": 1068000.0,
+      "dt_us": 0.001,
+      "error_bound_bytes": 200.0,
+      "stepped_peak_bytes": 1068000.0
+    },
+    "ideal_cc": {
+      "analytic_peak_bytes": 1456000.0,
+      "dt_us": 0.001,
+      "error_bound_bytes": 200.0,
+      "stepped_peak_bytes": 1456050.0
+    }
+  },
+  "jain": {
+    "fair": 1.0,
+    "unequal": 0.4807692307692308
+  },
+  "mapping_counterexample": {
+    "ecn_bytes": 80000,
+    "egress_columns_bytes": [
+      48000,
+      48000,
+      48000,
+      48000
+    ],
+    "ingress_row_bytes": 192000,
+    "xoff_bytes": 128000
+  },
+  "queue_samples": [
+    {
+      "first_pause_bytes": 0.0,
+      "ideal_cc_bytes": 0.0,
+      "t_us": 0
+    },
+    {
+      "first_pause_bytes": 150000.0,
+      "ideal_cc_bytes": 150000.0,
+      "t_us": 1
+    },
+    {
+      "first_pause_bytes": 256000.0,
+      "ideal_cc_bytes": 256000.0,
+      "t_us": 1.7066666666666668
+    },
+    {
+      "first_pause_bytes": 300000.0,
+      "ideal_cc_bytes": 300000.0,
+      "t_us": 2
+    },
+    {
+      "first_pause_bytes": 450000.0,
+      "ideal_cc_bytes": 450000.0,
+      "t_us": 3
+    },
+    {
+      "first_pause_bytes": 600000.0,
+      "ideal_cc_bytes": 600000.0,
+      "t_us": 4
+    },
+    {
+      "first_pause_bytes": 749999.9999999999,
+      "ideal_cc_bytes": 749999.9999999999,
+      "t_us": 5
+    },
+    {
+      "first_pause_bytes": 768000.0,
+      "ideal_cc_bytes": 768000.0,
+      "t_us": 5.12
+    },
+    {
+      "first_pause_bytes": 900000.0,
+      "ideal_cc_bytes": 900000.0,
+      "t_us": 6
+    },
+    {
+      "first_pause_bytes": 1050000.0,
+      "ideal_cc_bytes": 1050000.0,
+      "t_us": 7
+    },
+    {
+      "first_pause_bytes": 1067999.9999999998,
+      "ideal_cc_bytes": 1067999.9999999998,
+      "t_us": 7.119999999999999
+    },
+    {
+      "first_pause_bytes": 1023999.9999999998,
+      "ideal_cc_bytes": 1200000.0,
+      "t_us": 8
+    },
+    {
+      "first_pause_bytes": 973999.9999999997,
+      "ideal_cc_bytes": 1350000.0,
+      "t_us": 9
+    },
+    {
+      "first_pause_bytes": 938666.6666666664,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 9.706666666666667
+    },
+    {
+      "first_pause_bytes": 923999.9999999998,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 10
+    },
+    {
+      "first_pause_bytes": 873999.9999999998,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 11
+    },
+    {
+      "first_pause_bytes": 823999.9999999997,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 12
+    },
+    {
+      "first_pause_bytes": 773999.9999999998,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 13
+    },
+    {
+      "first_pause_bytes": 723999.9999999998,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 14
+    },
+    {
+      "first_pause_bytes": 673999.9999999998,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 15
+    },
+    {
+      "first_pause_bytes": 623999.9999999998,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 16
+    },
+    {
+      "first_pause_bytes": 573999.9999999998,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 17
+    },
+    {
+      "first_pause_bytes": 523999.99999999977,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 18
+    },
+    {
+      "first_pause_bytes": 473999.9999999999,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 19
+    },
+    {
+      "first_pause_bytes": 423999.9999999999,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 20
+    },
+    {
+      "first_pause_bytes": 373999.99999999977,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 21
+    },
+    {
+      "first_pause_bytes": 323999.99999999977,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 22
+    },
+    {
+      "first_pause_bytes": 273999.99999999977,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 23
+    },
+    {
+      "first_pause_bytes": 223999.99999999977,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 24
+    },
+    {
+      "first_pause_bytes": 173999.99999999988,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 25
+    },
+    {
+      "first_pause_bytes": 123999.99999999988,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 26
+    },
+    {
+      "first_pause_bytes": 73999.99999999977,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 27
+    },
+    {
+      "first_pause_bytes": 23999.999999999767,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 28
+    },
+    {
+      "first_pause_bytes": 0.0,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 29
+    },
+    {
+      "first_pause_bytes": 0.0,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 30
+    },
+    {
+      "first_pause_bytes": 0.0,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 31
+    },
+    {
+      "first_pause_bytes": 0.0,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 32
+    },
+    {
+      "first_pause_bytes": 0.0,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 33
+    },
+    {
+      "first_pause_bytes": 0.0,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 34
+    },
+    {
+      "first_pause_bytes": 0.0,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 35
+    },
+    {
+      "first_pause_bytes": 0.0,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 36
+    },
+    {
+      "first_pause_bytes": 0.0,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 37
+    },
+    {
+      "first_pause_bytes": 0.0,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 38
+    },
+    {
+      "first_pause_bytes": 0.0,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 39
+    },
+    {
+      "first_pause_bytes": 0.0,
+      "ideal_cc_bytes": 1456000.0,
+      "t_us": 40
+    }
+  ],
+  "rate_sensitivity": [
+    {
+      "aggregate_arrival_Bps": 50000000000.0,
+      "cc_feedback_excess_bytes": 300000.0,
+      "excess_Bps": 37500000000.0,
+      "fair_share_GBps": 3.125,
+      "first_cc_effective_us": 14.826666666666666,
+      "first_mark_us": 6.826666666666667,
+      "first_pause_effective_us": 22.48,
+      "ideal_cc_peak_bytes": 556000.0,
+      "ideal_first_pause_peak_bytes": 843000.0000000001,
+      "link_Bps": 12500000000.0,
+      "pressure_crossing_us": 20.48,
+      "pressure_to_mark_gap_us": 13.653333333333334,
+      "rate_gbps": 100,
+      "raw_concurrent_headroom_bytes": 136000.0,
+      "raw_headroom_per_ingress_bytes": 34000.0,
+      "senders": 4
+    },
+    {
+      "aggregate_arrival_Bps": 100000000000.0,
+      "cc_feedback_excess_bytes": 600000.0,
+      "excess_Bps": 75000000000.0,
+      "fair_share_GBps": 6.25,
+      "first_cc_effective_us": 11.413333333333332,
+      "first_mark_us": 3.4133333333333336,
+      "first_pause_effective_us": 12.24,
+      "ideal_cc_peak_bytes": 856000.0,
+      "ideal_first_pause_peak_bytes": 918000.0,
+      "link_Bps": 25000000000.0,
+      "pressure_crossing_us": 10.24,
+      "pressure_to_mark_gap_us": 6.826666666666667,
+      "rate_gbps": 200,
+      "raw_concurrent_headroom_bytes": 236000.0,
+      "raw_headroom_per_ingress_bytes": 59000.0,
+      "senders": 4
+    },
+    {
+      "aggregate_arrival_Bps": 200000000000.0,
+      "cc_feedback_excess_bytes": 1200000.0,
+      "excess_Bps": 150000000000.0,
+      "fair_share_GBps": 12.5,
+      "first_cc_effective_us": 9.706666666666667,
+      "first_mark_us": 1.7066666666666668,
+      "first_pause_effective_us": 7.119999999999999,
+      "ideal_cc_peak_bytes": 1456000.0,
+      "ideal_first_pause_peak_bytes": 1068000.0,
+      "link_Bps": 50000000000.0,
+      "pressure_crossing_us": 5.12,
+      "pressure_to_mark_gap_us": 3.4133333333333336,
+      "rate_gbps": 400,
+      "raw_concurrent_headroom_bytes": 436000.0,
+      "raw_headroom_per_ingress_bytes": 109000.0,
+      "senders": 4
+    },
+    {
+      "aggregate_arrival_Bps": 400000000000.0,
+      "cc_feedback_excess_bytes": 2400000.0,
+      "excess_Bps": 300000000000.0,
+      "fair_share_GBps": 25.0,
+      "first_cc_effective_us": 8.853333333333332,
+      "first_mark_us": 0.8533333333333334,
+      "first_pause_effective_us": 4.5600000000000005,
+      "ideal_cc_peak_bytes": 2655999.9999999995,
+      "ideal_first_pause_peak_bytes": 1368000.0,
+      "link_Bps": 100000000000.0,
+      "pressure_crossing_us": 2.56,
+      "pressure_to_mark_gap_us": 1.7066666666666668,
+      "rate_gbps": 800,
+      "raw_concurrent_headroom_bytes": 836000.0,
+      "raw_headroom_per_ingress_bytes": 209000.0,
+      "senders": 4
+    }
+  ],
+  "scope": "Executed hypothetical arithmetic and independent discrete conservation checks; no hardware measurements.",
+  "shared_headroom": {
+    "dedicated_per_ingress_bytes": 32000,
+    "required_shared_bytes": 308000.0,
+    "shared_pool_bytes": 200000,
+    "shortfall_bytes": 108000.0
+  },
+  "short_message": {
+    "bytes": 64000,
+    "pause_plus_serialization_us": 21.28,
+    "pause_us": 20,
+    "serialization_us": 1.28
+  }
+}
