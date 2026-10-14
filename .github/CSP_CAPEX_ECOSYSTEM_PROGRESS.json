@@ -1042,6 +1042,51 @@
         "https://udn.com/news/story/6811/9813232"
       ],
       "status": "disputed_report_and_company_response_verified_no_confirmed_capex_revision"
+    },
+    {
+      "fingerprint": "tencent-dual-currency-notes-pricing-subscription-agreements-20261014",
+      "event_date": "2026-10-14",
+      "companies": [
+        "Tencent"
+      ],
+      "type": "company_primary_debt_pricing_and_signed_subscription_agreements",
+      "facts": {
+        "agreement_date": "2026-10-13 New York time",
+        "baseline_change": "Prior proposed offering progressed to signed subscription agreements and fixed pricing.",
+        "tranches": [
+          {
+            "currency": "USD",
+            "principal_billion": 1.3,
+            "coupon_percent": 6.1,
+            "maturity": "2036-10-21"
+          },
+          {
+            "currency": "USD",
+            "principal_billion": 0.5,
+            "coupon_percent": 6.75,
+            "maturity": "2046-10-21"
+          },
+          {
+            "currency": "CNY",
+            "principal_billion": 20,
+            "coupon_percent": 2.4,
+            "maturity": "2036-10-21"
+          },
+          {
+            "currency": "CNY",
+            "principal_billion": 6,
+            "coupon_percent": 3,
+            "maturity": "2056-10-21"
+          }
+        ],
+        "expected_issue_date": "2026-10-21 New York time",
+        "use": "General corporate purposes; subscription remains conditional and terminable.",
+        "interpretation": "Confirms access to long-duration funding, not completed cash receipt or dedicated AI supplier orders."
+      },
+      "sources": [
+        "https://www.tencent.com/wp-content/uploads/2026/10/E700_Pricing-Announcement.pdf"
+      ],
+      "status": "company_primary_signed_and_priced_verified_issue_completion_ai_allocation_and_supplier_orders_pending"
     }
   ],
   "articles": [],
@@ -1069,8 +1114,8 @@
     ],
     "current_run_screening": {
       "date": "2026-10-14",
-      "instruction_commit_sha": "c6743ef6c422a2c24bbd1ae7b69139327d9323b7",
-      "scope": "All 98 active names included in 13 fresh grouped discovery queries, plus TSMC/MediaTek latest official pages and targeted CSP/supplier follow-up.",
+      "instruction_commit_sha": "9b48b585dd2d7402314afbddb4bcc12135ebae98",
+      "scope": "All 98 active names included in 13 fresh grouped discovery queries; current TSMC and MediaTek official pages plus targeted CSP, US supplier and Tencent financing follow-up.",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 13
@@ -1104,6 +1149,14 @@
         "date": "2026-10-14",
         "instruction_commit_sha": "c6743ef6c422a2c24bbd1ae7b69139327d9323b7",
         "scope": "All 98 active names included in 13 fresh grouped discovery queries, plus TSMC/MediaTek latest official pages and targeted CSP/supplier follow-up.",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 13
+      },
+      {
+        "date": "2026-10-14",
+        "instruction_commit_sha": "9b48b585dd2d7402314afbddb4bcc12135ebae98",
+        "scope": "All 98 active names included in 13 fresh grouped discovery queries; current TSMC and MediaTek official pages plus targeted CSP, US supplier and Tencent financing follow-up.",
         "status": "grouped_discovery_screen_only_not_individual_primary_validation",
         "company_count": 98,
         "grouped_query_count": 13
@@ -1466,7 +1519,22 @@
         "Utilization, depreciation, AI revenue and return on the incremental infrastructure",
         "Whether future capex remains funded mainly by operating cash flow or requires repeated external financing"
       ],
-      "publication_status": "not_drafted"
+      "publication_status": "not_drafted",
+      "evidence_updates": [
+        {
+          "date": "2026-10-14",
+          "fingerprint": "tencent-dual-currency-notes-pricing-subscription-agreements-20261014",
+          "stage": "signed_subscription_and_four_tranche_pricing_verified_expected_october21_issue_not_yet_completed",
+          "sources": [
+            "https://www.tencent.com/wp-content/uploads/2026/10/E700_Pricing-Announcement.pdf"
+          ],
+          "next_checks": [
+            "Issue completion and actual funds receipt",
+            "Capital allocation and firm supplier orders versus general corporate proceeds",
+            "Currency-specific funding costs and asset cash-flow matching; nominal coupons are not interchangeable"
+          ]
+        }
+      ]
     },
     {
       "key": "mediatek-ai-datacenter-asic-earnings-conversion",
@@ -1721,7 +1789,7 @@
     }
   ],
   "last_research_date": "2026-10-14",
-  "instruction_commit_sha": "c6743ef6c422a2c24bbd1ae7b69139327d9323b7",
+  "instruction_commit_sha": "9b48b585dd2d7402314afbddb4bcc12135ebae98",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
