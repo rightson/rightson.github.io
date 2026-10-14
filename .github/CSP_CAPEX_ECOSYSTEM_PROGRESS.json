@@ -1275,6 +1275,52 @@
         "https://www.yna.co.kr/amp/view/AKR20261013060300003"
       ],
       "status": "company_primary_order_value_prior_contract_and_delivery_verified_customer_name_qualified_capacity_and_profit_conversion_pending"
+    },
+    {
+      "fingerprint": "asml-q3-2026-completed-pricing-conversations-and-investment-gain-20261014",
+      "event_date": "2026-10-14",
+      "companies": [
+        "ASML"
+      ],
+      "type": "issuer_primary_pricing_timing_and_profit_quality_increment",
+      "related_event_fingerprint": "asml-q3-2026-results-guidance-and-2027-2028-supply-constraint-20261014",
+      "facts": {
+        "source_nature": "Issuer Q3 CEO/CFO video transcript and unaudited US GAAP financial statements; primary attachments retrieved and checked.",
+        "prior_record": "Earlier event verified Q3 results and supply constraints; pricing conversations and Mistral revaluation were retained only as leads pending original attachments.",
+        "pricing": {
+          "management_statement": "Conversations on higher value-based pricing completed with key customers.",
+          "effect_2026": "Not really visible",
+          "effect_2027": "Partly visible during the year",
+          "effect_2028_and_beyond": "Full impact starts to be visible",
+          "limitations": "No disclosed price-increase percentage, customer-by-customer terms or quantified margin contribution; not a signed-order or realized-profit assertion."
+        },
+        "profit_quality": {
+          "period": "Quarter ended September 27, 2026",
+          "currency": "EUR",
+          "unit": "million",
+          "operating_income": 5172.8,
+          "prior_year_operating_income": 2468.4,
+          "equity_investment_gain_pretax": 509.7,
+          "pretax_income": 5750.7,
+          "net_income": 4960.4,
+          "cfo_mistral_revaluation_description": "Approximately 500 million from the first investment tranche.",
+          "equity_investment_cash_flow_reconciliation_adjustment": -508.8,
+          "limitations": "Equity gain is below operating income and does not explain gross-margin improvement. A pretax gain cannot be mechanically subtracted from net income to derive after-tax recurring EPS. CFO rounding is not an exact reconciliation of every euro of equity gain."
+        },
+        "interpretation": "Completed pricing conversations and explicit 2027/2028 timing strengthen evidence of a future pricing mechanism, separately from current volume, mix and installed-base upgrades. Investment revaluation is not recurring equipment operating income or operating cash receipt; operating income nevertheless increased materially.",
+        "alternative_and_invalidation": "Management-reported timing and unquantified terms do not establish the magnitude of future margin improvement. Shipment mix, delivery delays, order cancellations, export restrictions or cost increases may offset pricing benefits; investment gains can reverse.",
+        "next_checks": [
+          "Realized 2027 system pricing and margins, separating mix and volume effects",
+          "Quantified price terms or margin contribution if disclosed",
+          "Shipments, cancellations, export-license and cost effects",
+          "Investment accounting and tax-specific disclosures before adjusted earnings calculations"
+        ]
+      },
+      "sources": [
+        "https://investor.asml.com/static-files/7ec38683-352c-4cc9-923e-c2af8199e876",
+        "https://investor.asml.com/static-files/d310262b-d037-485d-83b5-92c93cc462f0"
+      ],
+      "status": "primary_transcript_and_statements_verified_pricing_magnitude_and_future_realization_pending"
     }
   ],
   "articles": [],
@@ -1302,8 +1348,8 @@
     ],
     "current_run_screening": {
       "date": "2026-10-14",
-      "instruction_commit_sha": "db35d2055cec1024324720ebccb4da12944cf3b6",
-      "scope": "All 98 active names included in 13 fresh grouped discovery queries; latest TSMC and MediaTek official pages checked, with targeted CSP/US supplier follow-up and two LS Group power-supply-chain primary announcements.",
+      "instruction_commit_sha": "7b12979e991484b8e8664dd77e3c86b5d2c42326",
+      "scope": "All 98 active names included in 13 fresh grouped discovery queries; latest TSMC and MediaTek official pages checked, with targeted CSP/US supplier follow-up and ASML original CEO/CFO video transcript and US GAAP statements.",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 13
@@ -1369,6 +1415,14 @@
         "date": "2026-10-14",
         "instruction_commit_sha": "db35d2055cec1024324720ebccb4da12944cf3b6",
         "scope": "All 98 active names included in 13 fresh grouped discovery queries; latest TSMC and MediaTek official pages checked, with targeted CSP/US supplier follow-up and two LS Group power-supply-chain primary announcements.",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 13
+      },
+      {
+        "date": "2026-10-14",
+        "instruction_commit_sha": "7b12979e991484b8e8664dd77e3c86b5d2c42326",
+        "scope": "All 98 active names included in 13 fresh grouped discovery queries; latest TSMC and MediaTek official pages checked, with targeted CSP/US supplier follow-up and ASML original CEO/CFO video transcript and US GAAP statements.",
         "status": "grouped_discovery_screen_only_not_individual_primary_validation",
         "company_count": 98,
         "grouped_query_count": 13
@@ -2036,6 +2090,20 @@
             "Separate any non-operating equity investment revaluation from recurring equipment earnings; do not mechanically subtract a pretax amount from net income.",
             "Confirm timing and magnitude of new-tool price agreements before describing their profit contribution."
           ]
+        },
+        {
+          "date": "2026-10-14",
+          "instruction_commit_sha": "7b12979e991484b8e8664dd77e3c86b5d2c42326",
+          "stage": "primary_attachments_retrieved_pricing_timing_and_profit_quality_verified",
+          "sources": [
+            "https://investor.asml.com/static-files/7ec38683-352c-4cc9-923e-c2af8199e876",
+            "https://investor.asml.com/static-files/d310262b-d037-485d-83b5-92c93cc462f0"
+          ],
+          "related_event_fingerprint": "asml-q3-2026-completed-pricing-conversations-and-investment-gain-20261014",
+          "next_checks": [
+            "Quantify and verify 2027-2028 realized pricing contribution",
+            "Separate equity revaluation and recurring operating earnings without mixing pretax and after-tax figures"
+          ]
         }
       ]
     },
@@ -2092,7 +2160,7 @@
     }
   ],
   "last_research_date": "2026-10-14",
-  "instruction_commit_sha": "db35d2055cec1024324720ebccb4da12944cf3b6",
+  "instruction_commit_sha": "7b12979e991484b8e8664dd77e3c86b5d2c42326",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
