@@ -1321,6 +1321,41 @@
         "https://investor.asml.com/static-files/d310262b-d037-485d-83b5-92c93cc462f0"
       ],
       "status": "primary_transcript_and_statements_verified_pricing_magnitude_and_future_realization_pending"
+    },
+    {
+      "fingerprint": "oracle-project-jupiter-green-chile-renewed-expedite-request-20261013",
+      "event_date": "2026-10-13",
+      "companies": [
+        "Oracle",
+        "Bloom Energy",
+        "Energy Transfer/Transwestern"
+      ],
+      "type": "original_media_reported_company_regulatory_request_with_primary_project_baseline",
+      "facts": {
+        "source_nature": "Bloomberg original report by Julian Hast, published October 13 at 20:37 UTC, quotes Oracle's renewed FERC letter. Full letter not retrieved; Bloomberg Law preview and indexed authorized Yahoo reproduction support the reported request. Yahoo page opens returned 429, so no claim of full-page read.",
+        "new_evidence": "Oracle government-affairs SVP Josh Pitcock reportedly renewed the request to expedite approval of the Green Chile pipeline and warned continued delay threatens Project Jupiter operations.",
+        "historical_timing": "February 2027 anticipated pipeline in-service date versus earlier August 15 target was already reported August 21, 2026; not a newly announced October delay.",
+        "primary_regulatory_baseline": "September 4 FERC environmental assessment notice, published September 10, docket CP26-80-000: proposed 17.77-mile, 24-inch pipeline; comments due October 5. Notice explicitly says EA is not a decision document. FERC pending-project table is only dated September 24 and is not proof of current October status.",
+        "primary_customer_relationship": "Bloom's August 3 blog updated September 30 states Project Jupiter is planned to use up to 2.45 GW of its fuel-cell capacity. Planned capacity is not delivered equipment or recognized revenue.",
+        "counter_evidence": "Oracle's October 13 company release says project capacity, buildings, water use and power plan have not changed beyond the April power-plan update. Its updated economic-impact estimate is not Oracle revenue or a new equipment order.",
+        "interpretation": "On-site generation reduces grid dependence but retains fuel-delivery and permitting dependencies. A pipeline constraint can affect commissioning and cloud capacity monetization; the effect on Bloom equipment revenue, customer acceptance, collections or redeployment is contract-specific and unquantified.",
+        "limits": "No verified cancellation, new campus completion-date revision, EPS/capex downgrade, exact equipment acceptance terms or October 13 letter text. Renewed request is a material execution-risk signal, not proof that the full campus has missed its operating target.",
+        "next_checks": [
+          "Retrieve October 13 original FERC letter and any subsequent construction authorization",
+          "Pipeline construction, fuel availability and initial commissioning versus full-load operation",
+          "Oracle customer-capacity delivery and cloud revenue recognition",
+          "Bloom delivery, acceptance, revenue recognition, collection and any equipment redeployment"
+        ]
+      },
+      "sources": [
+        "https://news.bloomberglaw.com/ip-law/oracle-asks-regulators-to-expedite-gas-pipeline-for-data-center",
+        "https://ca.finance.yahoo.com/news/oracle-asks-regulators-expedite-gas-203711536.html",
+        "https://www.govinfo.gov/content/pkg/FR-2026-09-10/pdf/2026-18455.pdf",
+        "https://www.undergroundinfrastructure.com/news/2026/august/project-jupiter-natural-gas-pipeline-delayed-until-2027-filings-show",
+        "https://www.bloomenergy.com/blog/communities-are-right-to-ask-about-the-water-use-of-ai-infrastructure/",
+        "https://www.oracle.com/news/announcement/project-jupiter-is-expected-to-generate-13-billion-in-economic-impact-2026-10-13/"
+      ],
+      "status": "renewed_request_original_report_verified_primary_relationship_and_regulatory_baseline_checked_latest_letter_order_and_financial_impact_pending"
     }
   ],
   "articles": [],
@@ -1348,8 +1383,8 @@
     ],
     "current_run_screening": {
       "date": "2026-10-14",
-      "instruction_commit_sha": "7b12979e991484b8e8664dd77e3c86b5d2c42326",
-      "scope": "All 98 active names included in 13 fresh grouped discovery queries; latest TSMC and MediaTek official pages checked, with targeted CSP/US supplier follow-up and ASML original CEO/CFO video transcript and US GAAP statements.",
+      "instruction_commit_sha": "71998c09f1327028d50586d74d051fc6c02ab2a3",
+      "scope": "All 98 active names included in 13 fresh grouped public-news queries; latest TSMC and MediaTek official pages checked, selected CSP/US supplier follow-up, Oracle/Bloom primary project sources and Scaleway named deployment plans checked.",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 13
@@ -1423,6 +1458,14 @@
         "date": "2026-10-14",
         "instruction_commit_sha": "7b12979e991484b8e8664dd77e3c86b5d2c42326",
         "scope": "All 98 active names included in 13 fresh grouped discovery queries; latest TSMC and MediaTek official pages checked, with targeted CSP/US supplier follow-up and ASML original CEO/CFO video transcript and US GAAP statements.",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 13
+      },
+      {
+        "date": "2026-10-14",
+        "instruction_commit_sha": "71998c09f1327028d50586d74d051fc6c02ab2a3",
+        "scope": "All 98 active names included in 13 fresh grouped public-news queries; latest TSMC and MediaTek official pages checked, selected CSP/US supplier follow-up, Oracle/Bloom primary project sources and Scaleway named deployment plans checked.",
         "status": "grouped_discovery_screen_only_not_individual_primary_validation",
         "company_count": 98,
         "grouped_query_count": 13
@@ -2141,6 +2184,61 @@
         "Separate signed USD 51.5 million contract and reported USD 56 million cumulative orders from conditional USD 100 million pipeline"
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "oracle-bloom-jupiter-fuel-permit-and-revenue-timing",
+      "companies": [
+        "Oracle",
+        "Bloom Energy",
+        "Energy Transfer/Transwestern"
+      ],
+      "sources": [
+        "https://news.bloomberglaw.com/ip-law/oracle-asks-regulators-to-expedite-gas-pipeline-for-data-center",
+        "https://ca.finance.yahoo.com/news/oracle-asks-regulators-expedite-gas-203711536.html",
+        "https://www.govinfo.gov/content/pkg/FR-2026-09-10/pdf/2026-18455.pdf",
+        "https://www.undergroundinfrastructure.com/news/2026/august/project-jupiter-natural-gas-pipeline-delayed-until-2027-filings-show",
+        "https://www.bloomenergy.com/blog/communities-are-right-to-ask-about-the-water-use-of-ai-infrastructure/",
+        "https://www.oracle.com/news/announcement/project-jupiter-is-expected-to-generate-13-billion-in-economic-impact-2026-10-13/"
+      ],
+      "stage": "reported_renewed_expedite_request_and_primary_project_baseline_verified_original_letter_current_authorization_and_economics_pending",
+      "questions": [
+        "Distinguish historical pipeline-date slippage from a new data-center deadline revision",
+        "Verify fuel and permit critical path and temporary supply capability",
+        "Separate Bloom equipment sale recognition from Oracle cloud commissioning",
+        "Test whether redeployment protects equipment economics while campus financing remains exposed"
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "scaleway-multivendor-gpu-zones-and-named-system-suppliers",
+      "companies": [
+        "Scaleway",
+        "AMD",
+        "NVIDIA",
+        "Bull",
+        "Giga Computing",
+        "HPE",
+        "VAST Data",
+        "Motul"
+      ],
+      "sources": [
+        "https://www.scaleway.com/en/news/scaleway-expands-ai-infrastructure-in-europe-with-new-amd-instinct-gpu-based-supercomputer-in-sweden/",
+        "https://www.scaleway.com/en/news/scaleway-scales-up-to-power-europes-ai-ambitions/"
+      ],
+      "stage": "primary_october13_deployment_plans_named_suppliers_and_nvidia_thousands_scope_verified_not_delivered_capacity_or_earnings_revision",
+      "facts": {
+        "sweden": "Announced AMD MI355X and ROCm cluster; GPU count, start date and contract value not disclosed.",
+        "copenhagen": "Announced NVIDIA B300 cluster with several thousand GPUs; portfolio ambition for tens of thousands across Paris/Copenhagen/Stockholm is not a signed purchase total.",
+        "supplier_roles": "Bull integration and maintenance, Giga Computing servers, HPE Ethernet networking, VAST Data storage and Motul cooling fluid.",
+        "interpretation": "Named customer adoption improves AMD's commercial reference base, while parallel NVIDIA expansion contradicts a blanket NVIDIA-replacement reading. Financial scale and actual delivery unverified."
+      },
+      "questions": [
+        "Named program purchase commitments, quantities and delivery dates",
+        "Verified service availability and paid utilization",
+        "Supplier-specific revenue and margin attribution",
+        "Incremental capacity versus substitution among existing GPU allocations"
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -2160,7 +2258,7 @@
     }
   ],
   "last_research_date": "2026-10-14",
-  "instruction_commit_sha": "7b12979e991484b8e8664dd77e3c86b5d2c42326",
+  "instruction_commit_sha": "71998c09f1327028d50586d74d051fc6c02ab2a3",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
