@@ -774,13 +774,79 @@
         "https://www.prnewswire.com/news-releases/mainspring-energy-signs-landmark-1-6-gw-agreement-with-aep-for-reliable-affordable-power-capacity-302906235.html"
       ],
       "status": "company_primary_initial_190mw_purchase_and_1_6gw_framework_verified_total_value_follow_on_commitment_regulatory_recovery_revenue_margin_and_project_allocation_pending"
+    },
+    {
+      "fingerprint": "kyec-nvidia-us-test-capacity-customer-prepayment-20261013",
+      "event_date": "2026-10-13",
+      "companies": [
+        "KYEC",
+        "NVIDIA",
+        "AeternZ Semiconductor Testing Corporation"
+      ],
+      "type": "reliable_original_media_report_of_company_filing_and_reproduced_filing",
+      "facts": {
+        "source_nature": "CNA original report quoting KYEC announcement; filing text reproduced by Goodinfo and securities news services. Direct MOPS document not retrieved.",
+        "counterparty": "NVIDIA International, Inc.",
+        "agreement": "NVIDIA prepays KYEC and wholly owned US subsidiary AeternZ to build and reserve US testing capacity and provide testing services.",
+        "settlement": "Prepayments offset future service charges; do not treat prepayment cash as recognized revenue.",
+        "term": "Signing date until prepayments have been fully offset, as stated in reproduced filing.",
+        "baseline_change": "Prior US expansion ambition now has a named customer and prepayment arrangement.",
+        "undisclosed": [
+          "Prepayment amount",
+          "Capacity quantity",
+          "Service price and margins",
+          "Commissioning schedule",
+          "Minimum utilization",
+          "Cancellation or repayment protection"
+        ],
+        "interpretation": "The customer funding and reserved-capacity link increases visibility into US testing demand; profitability still depends on utilization, US costs, depreciation and contractual protections."
+      },
+      "sources": [
+        "https://www.cna.com.tw/news/afe/202610130188.aspx",
+        "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7BCBA5E015-3FF2-4A87-B8B4-DA04D558BC7C%7D"
+      ],
+      "status": "reliable_original_report_and_reproduced_company_filing_verified_direct_mops_and_contract_economics_pending"
+    },
+    {
+      "fingerprint": "mediatek-ai-asic-target-baseline-correction-20260922",
+      "event_date": "2026-09-22",
+      "companies": [
+        "MediaTek"
+      ],
+      "type": "company_primary_update_to_previously_recorded_guidance_baseline",
+      "facts": {
+        "source_nature": "Dated official corporate blog by MediaTek Corporate Marketing Communications; not a new October 14 announcement or a substitute for the full earnings transcript.",
+        "prior_recorded_source_date": "2026-06-24",
+        "prior_recorded_share_target_percent": [
+          10,
+          15
+        ],
+        "updated_share_target_percent": [
+          15,
+          20
+        ],
+        "updated_custom_ai_asic_addressable_market_2027_usd_billion": 80,
+        "updated_2026_ai_datacenter_asic_revenue_expectation_usd_billion": "more than 2",
+        "interpretation": "The older 10-15 percent target is historical and must not be used as the current company target. Market-share ambition remains distinct from contracted orders, a year-specific revenue forecast, NRE or volume economics.",
+        "undisclosed": [
+          "Year by which share target is attained",
+          "Actual orders and customer allocations",
+          "Revenue recognition",
+          "NRE versus volume revenue",
+          "Gross margin"
+        ]
+      },
+      "sources": [
+        "https://www.mediatek.com/tek-talk-blogs/how-mediatek-built-its-way-to-global-technology-leadership"
+      ],
+      "status": "company_primary_later_target_verified_historical_baseline_corrected_actual_revenue_orders_and_margin_pending"
     }
   ],
   "articles": [],
   "coverage": {
     "universe_source": "rightson/alpha-quant:seeds/watchlists/ai_supply_chain_universe.csv",
     "status": "all_98_search_screened_primary_validation_partial",
-    "universe_commit_sha": "55734143a74d47582143288231edd334ca0eedfc",
+    "universe_commit_sha": "6aa19a55f33c995c8f703bfe0c65dcdf07e6b6d3",
     "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
     "active_count": 98,
     "search_screened_count": 98,
@@ -799,13 +865,22 @@
       "2408"
     ],
     "current_run_screening": {
-      "date": "2026-10-12",
-      "scope": "All 98 active company names included in 25 grouped public-news queries",
+      "date": "2026-10-14",
+      "scope": "All 98 active names included in 25 grouped public-news discovery queries; separate TSMC latest-news and MediaTek current-source checks",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 25
     },
-    "primary_regulator_company_fact_checked_count": 3
+    "primary_regulator_company_fact_checked_count": 3,
+    "screening_history": [
+      {
+        "date": "2026-10-14",
+        "scope": "All 98 active names included in 25 grouped public-news discovery queries; separate TSMC latest-news and MediaTek current-source checks",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 25
+      }
+    ]
   },
   "research_candidates": [
     {
@@ -1226,6 +1301,42 @@
         "Whether follow-on tranches become firm orders or remain contingent on load growth and project economics"
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "kyec-nvidia-us-test-capacity-contract-economics",
+      "companies": [
+        "KYEC",
+        "NVIDIA",
+        "AeternZ Semiconductor Testing Corporation"
+      ],
+      "sources": [
+        "https://www.cna.com.tw/news/afe/202610130188.aspx"
+      ],
+      "stage": "reported_company_filing_named_customer_prepayment_verified_direct_mops_and_economics_pending",
+      "questions": [
+        "Prepayment amount and receipt date",
+        "Firm reserved capacity and minimum service purchases versus optional capacity",
+        "US commissioning dates, utilization, test yield and capital intensity",
+        "Service ASP and margin net of US cost and depreciation",
+        "Cancellation, repayment and capacity-release protections"
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "mediatek-ai-asic-updated-target-validation-20260922",
+      "companies": [
+        "MediaTek"
+      ],
+      "sources": [
+        "https://www.mediatek.com/tek-talk-blogs/how-mediatek-built-its-way-to-global-technology-leadership"
+      ],
+      "stage": "later_official_target_baseline_verified_full_earnings_transcript_and_conversion_pending",
+      "questions": [
+        "Reconcile official September 22 blog with full July 31 earnings transcript and target attainment year",
+        "Validate US$80 billion market definition and 15-20 percent aspiration against actual customers, orders and recognized revenue",
+        "Preserve June 24 source as dated history, not current guidance"
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -1245,7 +1356,7 @@
     }
   ],
   "last_research_date": "2026-10-14",
-  "instruction_commit_sha": "39be1fc5fd49291e41a9b7909540992bd71d7882",
+  "instruction_commit_sha": "9d178f813cb3f55dff60d5659dde9c0abae2c93e",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
