@@ -935,6 +935,48 @@
         "https://www.accessnewswire.com/newsroom/en/oil-gas-and-energy/fermi-signs-credit-support-agreement-with-amd-and-announces-partnership-1236099"
       ],
       "status": "issuer_primary_credit_support_and_capacity_scope_verified_financing_closing_delivery_and_economics_pending"
+    },
+    {
+      "fingerprint": "gf-securities-humufish-design-tapeout-schedule-risk-20261013",
+      "event_date": "2026-10-13",
+      "companies": [
+        "MediaTek",
+        "Google",
+        "Intel"
+      ],
+      "type": "media_reported_single_institution_supply_chain_estimates",
+      "facts": {
+        "institution": "GF Securities",
+        "analyst": "Jeff Pu",
+        "source_nature": "Seeking Alpha report distributed by TradingView and TaiSounds report; same underlying institution, not independent company confirmation. Original investor note unavailable.",
+        "reported_schedule": "Core A redesign slips about three weeks; November samples unchanged; tape-out expected January 2027; mass-production-version tape-out expected Q2 2027; shipments estimated Q1 2028.",
+        "scope_limit": "Production-version tape-out is not volume production. Prior milestone dates and quantified earnings revisions were not supplied. Company did not confirm Humufish-to-second-ASIC mapping.",
+        "baseline_comparison": "MediaTek's July 31 official call already targeted early-2028 production for its second ASIC; a 2028 shipment headline alone does not prove a new one-year guidance delay."
+      },
+      "sources": [
+        "https://www.tradingview.com/news/seekingalpha%3A80afd954b094b%3A0-google-s-tpu-v9-faces-slight-delay-marvell-remains-well-positioned-long-term-in-supply-chain-gf/",
+        "https://www.taisounds.com/news/content/76/293686",
+        "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Transcript.pdf"
+      ],
+      "status": "reported_schedule_risk_verified_as_single_institution_estimate_original_note_company_confirmation_and_financial_impact_pending"
+    },
+    {
+      "fingerprint": "mediatek-q2-call-second-asic-production-and-margin-baseline-20260731",
+      "event_date": "2026-07-31",
+      "companies": [
+        "MediaTek"
+      ],
+      "type": "company_primary_historical_guidance_baseline_supplement",
+      "facts": {
+        "source_nature": "Official July 31 earnings transcript, pages 9 and 15; historical guidance, not a new October 14 revision.",
+        "second_asic_production": "Early 2028; management described design and tape-out progress as on track at that time.",
+        "margin_guidance": "Gross margin expected similar across ASIC generations and slightly dilutive to corporate gross margin; scale expected to materially improve operating margin as expense ratio falls, while absolute operating expenses increase.",
+        "interpretation": "More chip content and revenue do not automatically raise gross-margin percentage; earnings conversion depends on production volume and expense absorption."
+      },
+      "sources": [
+        "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Transcript.pdf"
+      ],
+      "status": "company_primary_historical_timing_and_directional_margin_guidance_verified_current_execution_and_quantitative_margin_pending"
     }
   ],
   "articles": [],
@@ -961,11 +1003,11 @@
     ],
     "current_run_screening": {
       "date": "2026-10-14",
-      "instruction_commit_sha": "e400f9b85e4a177c0c1acb9273530a09d27d6393",
-      "scope": "All 98 active names included in 25 fresh grouped discovery queries; separate current TSMC, MediaTek and selected US supplier/CSP checks.",
+      "instruction_commit_sha": "26125ae7efe46da7c4b9f804bad8b4ab5588e1b4",
+      "scope": "All 98 active names included in 13 fresh grouped discovery queries; current TSMC and MediaTek official pages checked, with targeted US CSP/supplier and MediaTek milestone follow-up.",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
-      "grouped_query_count": 25
+      "grouped_query_count": 13
     },
     "primary_regulator_company_fact_checked_count": 3,
     "screening_history": [
@@ -983,6 +1025,14 @@
         "status": "grouped_discovery_screen_only_not_individual_primary_validation",
         "company_count": 98,
         "grouped_query_count": 25
+      },
+      {
+        "date": "2026-10-14",
+        "instruction_commit_sha": "26125ae7efe46da7c4b9f804bad8b4ab5588e1b4",
+        "scope": "All 98 active names included in 13 fresh grouped discovery queries; current TSMC and MediaTek official pages checked, with targeted US CSP/supplier and MediaTek milestone follow-up.",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 13
       }
     ]
   },
@@ -1500,6 +1550,27 @@
         "What actual power delivery, compute purchases and rental collections convert the agreement into cash flow?"
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "mediatek-humufish-milestone-risk-and-asic-operating-leverage",
+      "companies": [
+        "MediaTek",
+        "Google",
+        "Intel"
+      ],
+      "sources": [
+        "https://www.tradingview.com/news/seekingalpha%3A80afd954b094b%3A0-google-s-tpu-v9-faces-slight-delay-marvell-remains-well-positioned-long-term-in-supply-chain-gf/",
+        "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Transcript.pdf"
+      ],
+      "stage": "single_institution_milestone_risk_and_official_historical_production_margin_baseline_verified_original_note_current_company_update_and_earnings_quantification_pending",
+      "questions": [
+        "Obtain the original GF note and its old-versus-new milestone table, research date and forecast revisions",
+        "Confirm whether broker-named Humufish is the official second ASIC program",
+        "Distinguish sample tape-out, production-version tape-out, qualified output, customer delivery and recognized revenue",
+        "Validate whether first-ASIC shipments offset any later-program delay",
+        "Measure ASIC gross-profit dollars, expense ratio and operating-margin accretion; do not assume higher chip content raises gross-margin percentage"
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -1519,7 +1590,7 @@
     }
   ],
   "last_research_date": "2026-10-14",
-  "instruction_commit_sha": "e400f9b85e4a177c0c1acb9273530a09d27d6393",
+  "instruction_commit_sha": "26125ae7efe46da7c4b9f804bad8b4ab5588e1b4",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
