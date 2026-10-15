@@ -2254,10 +2254,10 @@
     "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
     "active_count": 98,
     "search_screened_count": 98,
-    "primary_company_fact_checked_count": 25,
-    "primary_monthly_revenue_checked_count": 12,
+    "primary_company_fact_checked_count": 26,
+    "primary_monthly_revenue_checked_count": 13,
     "primary_partner_relationship_checked_count": 3,
-    "remaining_primary_company_fact_check_count": 73,
+    "remaining_primary_company_fact_check_count": 72,
     "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed. Vertiv is not in the current 98-company alpha-quant universe; this run added it as an out-of-universe supplier candidate because a completed 30 MW hyperscale liquid-cooling deployment provides explicit demand-transmission evidence. LG Electronics is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because the signed AIR long-term agreement covers AI data-center projects exceeding 5 GW, while contract value and delivery economics remain undisclosed. Enerflex is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because a contracted over-1-GW behind-the-meter data-center power project lifts the company's related backlog above 1.75 GW, while customer identity, contract value, margin and revenue timing remain undisclosed. Wistron was added from its official October 12 board announcement; 8 distinct active-universe names now have an identified primary-source fact. Historical blocker counts are preserved as dated records. Applied Materials was added as an out-of-universe research candidate from its official AI-related WFE, services and long-term profitability targets; no named incremental CSP order is inferred and primary coverage counts remain unchanged. ASML added as an out-of-universe supplier research candidate from issuer-reported earnings, revised guidance and planned-capacity constraints; no named TSMC or MediaTek order or program delay inferred. Active-universe primary-validation counts unchanged. LS ELECTRIC and LS Materials are out-of-universe candidates with explicit AI data-center power contract evidence; neither changes active-universe primary company counts. Winstek is outside the 98-company universe and is retained with an explicit AI/HPC testing/packaging demand relationship. GMM quarterly profit evidence is based on a reproduced notice, not an obtained issuer/exchange original; active-universe primary-validation counts remain 8 checked and 90 pending. ASE added from its official October 13 PowerSiP availability release; 9 distinct active names now have an identified primary company fact, 89 remain pending. This covers platform availability only, not customer-order or earnings validation. Alpha Compute and NTT Data are out-of-universe candidates; watchlist unchanged. AEP/Bloom and Fermi/TensorWave economic-scope supplements are out-of-universe checks; 98-name search screening does not resolve the 89 outstanding individual primary validations. Jabil/Adani MoU and researcher DCPI data add candidates only; watchlist unchanged. Flex/EPC Power/Axiom are out-of-universe suppliers with explicit AI data-center power-conversion evidence. This run does not add an active-universe primary-validated company; 9 checked and 89 pending remain. Amazon warrant restructuring is not a new CSP equipment order; watchlist unchanged. Faraday (3035) added from its October 13 issuer MIPI IP availability release, which establishes product maturity for edge/vision AI but not a CSP design win. Chenbro (8210) added from its May 29 issuer NVIDIA MGX/rack mechanical relationship baseline; this is not fresh order evidence. Distinct active-universe primary-fact coverage is now 11 checked and 87 pending, not 98 fully validated. No new material-event notification or article is registered. October 15 screening adds research candidates only. NVIDIA fab-workflow benchmarks do not validate TSMC throughput or earnings; Ardentec forecast remains media-level. National Compute is an October 7 preview baseline, and Marvell investor-day original validation is incomplete due to PDF size. Distinct primary-company coverage remains 11 active names and 87 pending; no whole-universe earnings conclusion. Digi Power X is outside the current active universe; issuer commitment supports an AI infrastructure financing relationship but not funded debt or earnings revision. PJM/SoftBank lead is a study-stage, original-body-unverified candidate. Watchlist unchanged; primary-fact counts remain 11 checked and 87 pending. October 15 credit-risk follow-up checked original Reuters reporting and CoreWeave historical issuer/SEC financing data. CoreWeave and Oracle are outside the active Taiwan universe; no additional active-universe primary company check is counted. No new equipment cancellation or supplier earnings change verified, and no stock/bond quote or valuation is saved in this public ledger. Holy Stone (3026) added using issuer monthly revenue and historical AI power product relationship; 12 distinct active companies now have an identified primary fact and 86 remain pending. No fresh October order or margin improvement inferred from the historical deck or intraday theme. Gartner conditional forecasts are a new researcher event, not realized impairment or an active-universe primary-company validation. GF is outside the active Taiwan universe. October 14 SPV/services announcement and original investor PDF add a distinct conditional funding/business-model event without changing active-company primary coverage counts. Previously announced investment plans are not simply summed, and first-fab management expectations exclude the contingent second fab. NetApp is outside the active Taiwan universe; September 29 original storage announcement and OCI planned-service relationship added as a historical research baseline only. No new material event, earnings alert or article registered; active primary coverage remains 12 checked and 86 pending. Cipher Digital is outside the active Taiwan universe. October 14 priced financing, expected old-note share exchange and September 24 Barber Lake lease terms are primary verified; settlement, share issuance, construction delivery and rent remain pending. No stock quote, valuation or transaction instruction is saved publicly; active primary coverage remains 12 checked and 86 pending. AES Indiana/Google Monrovia is an outside-universe historical power-contract candidate. October 7 primary approval and regulator key findings checked against April proposal; October 14 reporting is not a new approval or supplier-order revision. No material-event notification or article registered. Active primary coverage remains 12 checked and 86 pending. MiTAC (3706) added from its issuer OCP release dated October 12 with October 13 page date. Product/partner and issuer deployment-claim facts are checked, while cooling PoC, annualized pPUE model and commercial earnings evidence remain separate. Distinct active primary-company coverage is now 13 checked and 85 pending; no material-event alert or new article. October 15 follow-up retained one provisional outside-universe Black Sesame AI-server contract lead from a notice reproduction; exchange original and CSP linkage unresolved. No new primary-company count, material-event alert or article. Broadcom original financial-news list was readable; this does not remove historical source-access limits. Anthropic October 14 investor-day financial reporting adds a distinct reported demand-monetization event and follow-up candidate; public financial reconciliations remain pending. No active-universe primary-company count change or new article. October 15 follow-up traces Gaon/LSCUS busduct coverage to August 20 issuer order and June 16 expansion baselines; outside-universe candidate only, not fresh order alert. MediaTek October 15 timing language remains previously reported institution-level information. No active-universe primary-count change. Elite Material (2383) added from its official 2026 monthly-revenue PDF, July 29 H1 financial announcement and current financial calendar. Distinct primary-company coverage is 14 checked and 84 pending; monthly-revenue coverage is five companies. These historical records do not establish new price increases, customer awards or Q3 margins. No new material-event alert or article. TSMC October 15 actual Q3 issuer results and cash-flow data added as a distinct event after the preview baseline. TSMC was already primary-checked; counts remain 14 checked and 84 pending. Forward guidance and call Q&A remain separate pending evidence. LandMark Optoelectronics (3081) added from its issuer September monthly-revenue table and data-center epiwafer product page. These historical product/revenue facts do not establish new CSP orders or earnings revisions. Distinct active-company primary-fact coverage is 15 checked and 83 pending; monthly-revenue coverage is six companies. GUC (3443) added from issuer October 5 September revenue release and financial table as a historical baseline. Distinct active primary-fact coverage is 16 checked and 82 pending, including seven monthly-revenue baselines. Delta October 14/15 SST and SOFC milestones add a research candidate with explicit sample/pilot and efficiency-definition limits; no material-event alert or article registered.",
     "active_universe_primary_verified_symbols": [
       "2330",
@@ -2284,15 +2284,16 @@
       "6223",
       "2344",
       "2421",
-      "6282"
+      "6282",
+      "6213"
     ],
     "current_run_screening": {
       "date": "2026-10-16",
-      "instruction_commit_sha": "393238955a78106a41f734ddc5d66d651bef0546",
-      "scope": "All 98 active names included in 13 fresh grouped discovery queries; these are not individual primary audits. Core six current official sources and TSMC guidance checked alongside CSP spending/financing discovery and outside-universe leads. AcBel October 9 issuer-distributed power showcase adds one historical product baseline, not a material new order or earnings event. No article registered.",
+      "instruction_commit_sha": "60b37f05e0416afad9665e504eb42641e42fb9e6",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 13,
+      "scope": "All 98 active names included in 13 fresh grouped discovery queries. Core-six issuer sources checked or attempted; direct Broadcom IR index access failed. ITEQ historical August issuer revenue baseline added, with September still blank in extracted table. CSP financing and outside-universe discovery performed; no material event or article registered.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -2300,17 +2301,18 @@
         "https://newsroom.amd.com/",
         "https://www.marvell.com/company/newsroom.html",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
-        "https://www.reuters.com/technology/bytedance-nears-chip-supply-deal-with-mediatek-data-centres-bloomberg-news-2026-10-15/",
-        "https://en.prnasia.com/releases/global/acbel-to-showcase-high-density-power-solutions-for-ai-data-centers-at-ocp-global-summit-2026-551002.shtml"
+        "https://investors.broadcom.com/news-releases/news-release-details/broadcom-introduces-vmware-hyperarmor-expanding-hypervisor",
+        "https://www.iteqcorp.com/investor-relations/monthly-revenues/",
+        "https://www.sigurd.com.tw/zh-tw/monthly-revenue"
       ],
       "source_limits": [
-        "25 active names now have identified primary-company facts; 73 still require individual primary validation. Primary facts are historical baselines, not proof that each company's latest disclosures were reviewed. Grouped search results were uneven; the first four groups using exact date strings produced weak discovery coverage.",
-        "AcBel release is issuer-distributed through PR Newswire. Technical specifications are issuer-described capabilities. No named CSP award, accepted customer deployment, commercial qualification, delivered capacity or profit improvement established.",
-        "TSMC Q4 guidance and current core official release lists did not establish an increment beyond registered events. MediaTek/ByteDance remains reported advanced talks, not a confirmed award. AMD interview full transcript remains unreviewed.",
-        "Fresh CSP financing/monetization discovery overlapped existing risk evidence and earnings previews. No additional verified capex revision, financing close, equipment cancellation or supplier earnings revision registered. Full project procurement, lease, utilization and cash-conversion audit remains incomplete.",
-        "Outside-universe discovery surfaced an iPower nonbinding-LOI lead, but the SEC exhibit body could not be retrieved; it is not treated as a verified order or added to the active watchlist. Historical prefabricated-data-center LOI and product-launch leads do not establish binding CSP purchases.",
-        "Previously registered Holy Stone, Ta Liang, TSMC, MediaTek and financing developments not repeated. Existing LITEON/ZDT/ASPEED and direct Ta Liang primary-source gaps were not re-audited in this run.",
-        "No stock quote, valuation, holding or trading condition saved publicly. No article, lint/build, deployment or public-site publication claimed."
+        "26 active names have identified primary-company facts; 72 remain without individual primary baselines. These counts do not represent latest-release validation. Grouped queries produced uneven issuer, media and historical results, not exhaustive coverage.",
+        "TSMC guidance unchanged versus registered event; MediaTek/ByteDance October 16 coverage retransmits October 15 talks, not a confirmed award. NVIDIA/AMD/Marvell lists did not add a verified hardware-order or earnings increment; AMD interview full transcript unreviewed.",
+        "Broadcom financial news index direct read failed, then returned HTTP 403; no bypass attempted. Search-indexed issuer October 13 HyperArmor release is not a full current-index audit. Sigurd monthly body timed out twice; no primary count added for Sigurd.",
+        "ITEQ primary table supports August baseline only; September blank is missing data, not zero revenue. Anonymous broker product-price revision remains discovery-level, not verified company guidance, consensus or earnings revision.",
+        "CSP financing reports overlap existing credit-risk baseline; two additional Reuters bodies unavailable. Full lease, funded procurement, utilization and cash-conversion audit remains incomplete. Unverified source retrieval does not establish absence of news.",
+        "Outside-universe AZIO lead was an editorial-placement announcement in search text; body retrieval failed and hosting contract details were not verified. Historical AIB/Nebius and other discovered equipment announcements not re-dated as new orders. Alpha-quant watchlist unchanged.",
+        "No stock quote, valuation, target, holding or trade condition saved publicly. No article, lint/build, deployment or public-site publication claimed. Existing historical blockers and events preserved."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -3179,6 +3181,34 @@
           "Previously registered Holy Stone, Ta Liang, TSMC, MediaTek and financing developments not repeated. Existing LITEON/ZDT/ASPEED and direct Ta Liang primary-source gaps were not re-audited in this run.",
           "No stock quote, valuation, holding or trading condition saved publicly. No article, lint/build, deployment or public-site publication claimed."
         ]
+      },
+      {
+        "date": "2026-10-16",
+        "instruction_commit_sha": "60b37f05e0416afad9665e504eb42641e42fb9e6",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 13,
+        "scope": "All 98 active names included in 13 fresh grouped discovery queries. Core-six issuer sources checked or attempted; direct Broadcom IR index access failed. ITEQ historical August issuer revenue baseline added, with September still blank in extracted table. CSP financing and outside-universe discovery performed; no material event or article registered.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://newsroom.amd.com/",
+          "https://www.marvell.com/company/newsroom.html",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investors.broadcom.com/news-releases/news-release-details/broadcom-introduces-vmware-hyperarmor-expanding-hypervisor",
+          "https://www.iteqcorp.com/investor-relations/monthly-revenues/",
+          "https://www.sigurd.com.tw/zh-tw/monthly-revenue"
+        ],
+        "source_limits": [
+          "26 active names have identified primary-company facts; 72 remain without individual primary baselines. These counts do not represent latest-release validation. Grouped queries produced uneven issuer, media and historical results, not exhaustive coverage.",
+          "TSMC guidance unchanged versus registered event; MediaTek/ByteDance October 16 coverage retransmits October 15 talks, not a confirmed award. NVIDIA/AMD/Marvell lists did not add a verified hardware-order or earnings increment; AMD interview full transcript unreviewed.",
+          "Broadcom financial news index direct read failed, then returned HTTP 403; no bypass attempted. Search-indexed issuer October 13 HyperArmor release is not a full current-index audit. Sigurd monthly body timed out twice; no primary count added for Sigurd.",
+          "ITEQ primary table supports August baseline only; September blank is missing data, not zero revenue. Anonymous broker product-price revision remains discovery-level, not verified company guidance, consensus or earnings revision.",
+          "CSP financing reports overlap existing credit-risk baseline; two additional Reuters bodies unavailable. Full lease, funded procurement, utilization and cash-conversion audit remains incomplete. Unverified source retrieval does not establish absence of news.",
+          "Outside-universe AZIO lead was an editorial-placement announcement in search text; body retrieval failed and hosting contract details were not verified. Historical AIB/Nebius and other discovered equipment announcements not re-dated as new orders. Alpha-quant watchlist unchanged.",
+          "No stock quote, valuation, target, holding or trade condition saved publicly. No article, lint/build, deployment or public-site publication claimed. Existing historical blockers and events preserved."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 5
@@ -3725,7 +3755,16 @@
         "What equipment investment, customer commitments, utilization and test ASP support profitable output?",
         "Does additional gross profit exceed depreciation, financing and staff costs?"
       ],
-      "publication_status": "not_drafted"
+      "publication_status": "not_drafted",
+      "verification_updates": [
+        {
+          "date": "2026-10-16",
+          "instruction_commit_sha": "60b37f05e0416afad9665e504eb42641e42fb9e6",
+          "stage": "issuer_monthly_revenue_body_timeout_twice_no_new_primary_baseline",
+          "source": "https://www.sigurd.com.tw/zh-tw/monthly-revenue",
+          "limits": "Current September report discovered in issuer search index, but body fetch and retry timed out. No numeric fact or primary coverage increment added; acquisition economics remain pending."
+        }
+      ]
     },
     {
       "key": "ccl-thin-glass-cloth-cost-pass-through-and-profit-retention",
@@ -4543,6 +4582,16 @@
           ],
           "scope": "Original bodies obtained. Credit-market evidence extends the already registered risk; customer deals, loans and capacity backstop in the roundup are historical, not new October 15 contracts. CEO reassurance is attributed commentary, not financing close.",
           "limits": "Underlying market series and final capacity-purchase protections still not obtained. Rounded media debt descriptions are not substituted for the ledger's debt/lease accounting separation. No verified default, capex cut, equipment cancellation or supplier earnings revision; no duplicate alert."
+        },
+        {
+          "date": "2026-10-16",
+          "instruction_commit_sha": "60b37f05e0416afad9665e504eb42641e42fb9e6",
+          "stage": "additional_october15_reuters_cds_explainer_and_credit_body_fetch_failed",
+          "sources": [
+            "https://www.reuters.com/business/media-telecom/global-markets-cds-ai-urgent-2026-10-15/",
+            "https://www.reuters.com/business/finance/global-markets-cds-explainer-2026-10-15/"
+          ],
+          "limits": "Indexed reports overlap known credit stress; full bodies not obtained in this run. No incremental issuer default, completed financing, capex cut, cancellation or earnings revision registered."
         }
       ]
     },
@@ -5523,6 +5572,35 @@
         "Check competition, component costs and architecture changes that could offset content growth."
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "iteq-ccl-price-mix-margin-and-cash-conversion",
+      "companies": [
+        "ITEQ (6213)"
+      ],
+      "sources": [
+        "https://www.iteqcorp.com/investor-relations/monthly-revenues/",
+        "https://ec.ltn.com.tw/article/breakingnews/5606748"
+      ],
+      "stage": "historical_august_issuer_revenue_baseline_verified_september_and_attributed_broker_revision_originals_pending",
+      "facts": {
+        "checked_date": "2026-10-16",
+        "primary_revenue_period": "2026-08",
+        "unit": "NTD thousand",
+        "august_consolidated_revenue": 5044034,
+        "august_yoy_percent": 97.93,
+        "ytd_revenue": 30466286,
+        "ytd_yoy_percent": 42.25,
+        "scope": "Issuer monthly table obtained; current extracted September row is blank. Historical August baseline only, not a new October revenue revision.",
+        "reporting_lead": "October 15 Liberty Times indexed text attributes higher product-price assumptions to an unnamed Japanese broker. Full article and broker original not obtained; neither named institution, forecast period-specific EPS revisions nor market consensus verified.",
+        "limits": "No AI-specific revenue, realized pricing, gross-profit increase, cash improvement or named CSP award established."
+      },
+      "questions": [
+        "Retrieve September original filing and quarterly operating results; separate price, volume, product mix and cost pass-through.",
+        "Identify original institution, publication date and comparable old/new earnings estimates before treating the lead as a verified revision.",
+        "Reconcile receivables, inventory and operating cash; lower utilization, material inflation or competing supply could offset pricing."
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -5542,7 +5620,7 @@
     }
   ],
   "last_research_date": "2026-10-16",
-  "instruction_commit_sha": "393238955a78106a41f734ddc5d66d651bef0546",
+  "instruction_commit_sha": "60b37f05e0416afad9665e504eb42641e42fb9e6",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
