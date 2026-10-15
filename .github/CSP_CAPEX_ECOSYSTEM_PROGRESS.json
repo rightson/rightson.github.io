@@ -1973,6 +1973,78 @@
         "https://www.reuters.com/world/asia-pacific/tsmc-q3-profit-jumps-69-record-beating-expectations-2026-10-15/"
       ],
       "status": "issuer_results_financials_and_management_report_text_verified_forward_guidance_and_call_qa_pending"
+    },
+    {
+      "fingerprint": "tsmc-q4-2026-guidance-annual-growth-and-n2-n3-capacity-update-20261015",
+      "event_date": "2026-10-15",
+      "discovered_date": "2026-10-15",
+      "companies": [
+        "TSMC"
+      ],
+      "type": "issuer_forward_guidance_with_attributed_call_capacity_update",
+      "facts": {
+        "q4_revenue_guidance_usd_billion": [
+          52.3,
+          54.3
+        ],
+        "q4_revenue_midpoint_usd_billion": 53.3,
+        "q3_revenue_usd_billion": 46.72,
+        "derived_midpoint_revenue_qoq_percent": 14.08,
+        "q4_exchange_rate_assumption_usd_ntd": 31.8,
+        "q4_gross_margin_guidance_percent": [
+          65,
+          67
+        ],
+        "q4_operating_margin_guidance_percent": [
+          56.5,
+          58.5
+        ],
+        "q3_actual_gross_margin_percent": 66.4,
+        "q3_actual_operating_margin_percent": 58.7,
+        "annual_revenue_growth_guidance_usd_percent": 44,
+        "prior_annual_growth_guidance": "Slightly above 40 percent, July 2026; old qualitative range has no exact midpoint.",
+        "annual_capex_usd_billion": [
+          60,
+          64
+        ],
+        "capex_change": "Reiterated July range, not a new capex increase. Higher aggregate 2026-2028 investment remains qualitative, not a numerical 2027 budget.",
+        "call_update_attributed": "Reproduced prepared remarks and current original reporting say 2027 N2-family annual capacity is expected to more than double; an additional Tainan N3 fab is planned for 1H2028 volume production, separate from the already planned 1H2027 Tainan fab. Arizona second-fab volume production is planned for 3Q2027, slightly earlier than previous schedule.",
+        "profitability_scope": "Q4 GM midpoint is 0.4 percentage point below Q3, attributed in reproduced remarks to N2 ramp and overseas fabs, partly offset by productivity/cost measures. This is forward guidance, not realized profit or a quantified analyst EPS revision.",
+        "limits": "Official presentation/release and current guidance table obtained. Selected reproduced call passages checked, not issuer-authenticated full audio or complete Q&A. AI CAGR comment is qualitative, not a new formal numeric guidance. No confirmed universal price hike, named supplier award or customer-specific volume inferred."
+      },
+      "sources": [
+        "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+        "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/e630db74ca50871f7598b011eafb5c036e7dd831/3Q26%20Presentation%20(E).pdf",
+        "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/526b65af7305df2dde6b9ece6812b1fdf1e49f9b/3Q26%20EarningsRelease.pdf",
+        "https://www.cna.com.tw/news/afe/202610150159.aspx",
+        "https://www.cna.com.tw/news/afe/202610150148.aspx",
+        "https://www.investing.com/news/transcripts/earnings-call-transcript-tsmc-beats-q3-2026-estimates-as-stock-slips-93CH-4950695",
+        "https://money.udn.com/money/story/5612/9816715",
+        "https://www.businessinsider.tw/article/8327"
+      ],
+      "status": "official_q4_guidance_verified_capacity_and_annual_growth_call_updates_cross_checked_no_article"
+    },
+    {
+      "fingerprint": "micron-aatt2-open-and-2027-capacity-reservation-20261015",
+      "event_date": "2026-10-15",
+      "discovered_date": "2026-10-15",
+      "companies": [
+        "Micron"
+      ],
+      "type": "facility_opening_and_attributed_capacity_reservation_update",
+      "facts": {
+        "facility": "Micron Advanced Assembly and Test Taiwan 2 (AATT2), Taichung",
+        "milestone": "October 15 opening verified by presidential-office original. HBM assembly/testing relationship explicit; planned October opening was already reported October 1.",
+        "commercial_scope": "Reuters quotes Micron COO Bhatia saying the capacity this factory will build for 2027 is sold out. Scope is this factory's planned capacity, not all Micron 2027 capacity or quantified realized output.",
+        "risk_scope": "Bonus-related union strike authorization was reported as last week's event. October 19 planned Taipei rally explicitly described by unions as not a strike. No current shutdown, shipment loss or customer cancellation verified.",
+        "limits": "No facility capacity units, qualified yield, commissioning ramp, realized revenue, margin, contract minimums or new local supplier awards obtained. Opening and reservations do not prove unrestricted deliverable HBM supply."
+      },
+      "sources": [
+        "https://www.president.gov.tw/NEWS/40429",
+        "https://www.reuters.com/world/asia-pacific/taiwan-president-calls-micron-workers-negotiate-sincerely-ahead-possible-strike-2026-10-15/",
+        "https://focustaiwan.tw/business/202610010013"
+      ],
+      "status": "primary_opening_verified_management_reservation_reported_financial_conversion_pending"
     }
   ],
   "articles": [],
@@ -2007,30 +2079,35 @@
     ],
     "current_run_screening": {
       "date": "2026-10-15",
-      "instruction_commit_sha": "7ff774d805904f8976305c30c9b983732b6dc0f7",
-      "scope": "All 98 active names included in 13 fresh grouped discovery queries. Current TSMC results page and linked release/presentation, MediaTek press room, NVIDIA/AMD/Marvell news and Broadcom financial-news list checked, with targeted CSP discovery. TSMC linked WoG PDFs repeat the actual Q3 event already registered; no retrieved new forward guidance or call Q&A. LandMark original monthly revenue and data-center product records add historical primary validation only. No distinct material event or article registered.",
+      "instruction_commit_sha": "ca7320b740f80e1f0be94b0e5c9ff175eb81668e",
+      "scope": "All 98 active names included in 13 fresh grouped discovery queries. Current TSMC, MediaTek, NVIDIA, AMD, Broadcom and Marvell official listings checked alongside CSP discovery. Newly available TSMC official Q4 guidance registered separately from prior actual-Q3 event; annual growth/capacity remarks cross-checked. Micron AATT2 actual opening and facility-specific 2027 reservation reporting add an out-of-universe supplier milestone. No article.",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 13,
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
-        "https://investor.tsmc.com/english/encrypt/files/encrypt_file/qr/phase4_reports/2026-10/6996be551d904f126c5521bd349b85be71cea0d6/3Q26%20Presentation%20(E)_WoG.pdf",
-        "https://investor.tsmc.com/english/encrypt/files/encrypt_file/qr/phase4_reports/2026-10/cb1c588cc3b2009f97afa57a6d7c146ae1e27808/3Q26%20EarningsRelease_WoG.pdf",
+        "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/e630db74ca50871f7598b011eafb5c036e7dd831/3Q26%20Presentation%20(E).pdf",
+        "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/526b65af7305df2dde6b9ece6812b1fdf1e49f9b/3Q26%20EarningsRelease.pdf",
+        "https://www.cna.com.tw/news/afe/202610150159.aspx",
+        "https://www.cna.com.tw/news/afe/202610150148.aspx",
+        "https://www.investing.com/news/transcripts/earnings-call-transcript-tsmc-beats-q3-2026-estimates-as-stock-slips-93CH-4950695",
+        "https://money.udn.com/money/story/5612/9816715",
+        "https://www.businessinsider.tw/article/8327",
+        "https://www.president.gov.tw/NEWS/40429",
+        "https://www.reuters.com/world/asia-pacific/taiwan-president-calls-micron-workers-negotiate-sincerely-ahead-possible-strike-2026-10-15/",
+        "https://focustaiwan.tw/business/202610010013",
         "https://www.mediatek.com/press-room",
         "https://nvidianews.nvidia.com/news",
         "https://newsroom.amd.com/",
         "https://www.marvell.com/company/newsroom.html",
-        "https://investors.broadcom.com/financial-information/financial-news-releases",
-        "https://www.lmoc.com.tw/index.php?lang=en&temp=investment",
-        "https://www.lmoc.com.tw/index.php?id=110&index=2&lang=en&option=module&task=pageinfo"
+        "https://investors.broadcom.com/financial-information/financial-news-releases"
       ],
       "source_limits": [
-        "15 distinct active companies now have an identified primary fact; 83 still need individual primary validation. Grouped news discovery is not full-universe company financial validation.",
-        "TSMC retrieved results-page table still shows prior Q3 guidance; linked release and presentation remain WoG. Fresh Q4 guidance, annual capex update and live-call Q&A not obtained. No inference that the company has not spoken or revised guidance.",
-        "TSMC Chinese press-release body returned a tool access error; indexed original repeats the same Q3 actual figures. No new earnings alert registered from this duplicate.",
-        "MediaTek listing adds no named ASIC award or commercial economics. Current TPU schedule stories repeat the existing institution-level lead, without an obtained original institution note or company update.",
-        "LandMark monthly and portfolio records are historical and overlap the October 7 site article; no new customer, current margin or realized silicon-photonics revenue split verified.",
-        "Current supplier news listings do not constitute an exhaustive release audit. Existing Anthropic, TSMC actual earnings, financing and other fingerprints not repeated."
+        "15 distinct active names have an identified primary-company fact; 83 still need individual primary validation. Search inclusion is not 98 company financial validations.",
+        "Official non-WoG TSMC presentation and release now obtained, resolving the earlier forward-guidance retrieval gap. Selected call reproduction is not complete issuer audio or Q&A validation; no numerical 2027 capex or formal replacement AI CAGR obtained.",
+        "MediaTek current listing adds no named ASIC award or contract economics. Current TPU timing report repeats the October 13 institution-level information; institution original still unavailable.",
+        "Micron is outside the active Taiwan universe. Facility opening and management reservation statement do not verify qualified capacity, realized margins or local supplier awards. Union rally not labeled a strike or current shutdown.",
+        "No comparable Q4 consensus estimate population obtained; no claim of consensus EPS revision. No valuation, stock prices, trades, watchlist changes or public article recorded."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -2456,6 +2533,39 @@
           "LandMark monthly and portfolio records are historical and overlap the October 7 site article; no new customer, current margin or realized silicon-photonics revenue split verified.",
           "Current supplier news listings do not constitute an exhaustive release audit. Existing Anthropic, TSMC actual earnings, financing and other fingerprints not repeated."
         ]
+      },
+      {
+        "date": "2026-10-15",
+        "instruction_commit_sha": "ca7320b740f80e1f0be94b0e5c9ff175eb81668e",
+        "scope": "All 98 active names included in 13 fresh grouped discovery queries. Current TSMC, MediaTek, NVIDIA, AMD, Broadcom and Marvell official listings checked alongside CSP discovery. Newly available TSMC official Q4 guidance registered separately from prior actual-Q3 event; annual growth/capacity remarks cross-checked. Micron AATT2 actual opening and facility-specific 2027 reservation reporting add an out-of-universe supplier milestone. No article.",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 13,
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/e630db74ca50871f7598b011eafb5c036e7dd831/3Q26%20Presentation%20(E).pdf",
+          "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/526b65af7305df2dde6b9ece6812b1fdf1e49f9b/3Q26%20EarningsRelease.pdf",
+          "https://www.cna.com.tw/news/afe/202610150159.aspx",
+          "https://www.cna.com.tw/news/afe/202610150148.aspx",
+          "https://www.investing.com/news/transcripts/earnings-call-transcript-tsmc-beats-q3-2026-estimates-as-stock-slips-93CH-4950695",
+          "https://money.udn.com/money/story/5612/9816715",
+          "https://www.businessinsider.tw/article/8327",
+          "https://www.president.gov.tw/NEWS/40429",
+          "https://www.reuters.com/world/asia-pacific/taiwan-president-calls-micron-workers-negotiate-sincerely-ahead-possible-strike-2026-10-15/",
+          "https://focustaiwan.tw/business/202610010013",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://newsroom.amd.com/",
+          "https://www.marvell.com/company/newsroom.html",
+          "https://investors.broadcom.com/financial-information/financial-news-releases"
+        ],
+        "source_limits": [
+          "15 distinct active names have an identified primary-company fact; 83 still need individual primary validation. Search inclusion is not 98 company financial validations.",
+          "Official non-WoG TSMC presentation and release now obtained, resolving the earlier forward-guidance retrieval gap. Selected call reproduction is not complete issuer audio or Q&A validation; no numerical 2027 capex or formal replacement AI CAGR obtained.",
+          "MediaTek current listing adds no named ASIC award or contract economics. Current TPU timing report repeats the October 13 institution-level information; institution original still unavailable.",
+          "Micron is outside the active Taiwan universe. Facility opening and management reservation statement do not verify qualified capacity, realized margins or local supplier awards. Union rally not labeled a strike or current shutdown.",
+          "No comparable Q4 consensus estimate population obtained; no claim of consensus EPS revision. No valuation, stock prices, trades, watchlist changes or public article recorded."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 2
@@ -2599,6 +2709,28 @@
             "Test N2 margin dilution against yield, utilization and 2027 profitability",
             "Separate quarterly capex payment timing from sustained free-cash-flow growth",
             "Validate CoWoS, customer mix, pricing and committed allocation without mapping HPC entirely to AI"
+          ]
+        },
+        {
+          "date": "2026-10-15",
+          "instruction_commit_sha": "ca7320b740f80e1f0be94b0e5c9ff175eb81668e",
+          "stage": "official_q4_guidance_verified_annual_growth_and_capacity_call_update_cross_checked",
+          "event_fingerprint": "tsmc-q4-2026-guidance-annual-growth-and-n2-n3-capacity-update-20261015",
+          "sources": [
+            "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+            "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/e630db74ca50871f7598b011eafb5c036e7dd831/3Q26%20Presentation%20(E).pdf",
+            "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/526b65af7305df2dde6b9ece6812b1fdf1e49f9b/3Q26%20EarningsRelease.pdf",
+            "https://www.cna.com.tw/news/afe/202610150159.aspx",
+            "https://www.cna.com.tw/news/afe/202610150148.aspx",
+            "https://www.investing.com/news/transcripts/earnings-call-transcript-tsmc-beats-q3-2026-estimates-as-stock-slips-93CH-4950695",
+            "https://money.udn.com/money/story/5612/9816715",
+            "https://www.businessinsider.tw/article/8327"
+          ],
+          "questions": [
+            "Track realized Q4 revenue, N2 yield/productivity and gross margin against guidance.",
+            "Obtain formal 2027 capex, capacity units and customer allocation rather than extrapolating a qualitative AI CAGR answer.",
+            "Check N3 fab/tool orders, capacity conversion and commissioning; no supplier award inferred from a fab plan.",
+            "Separate revenue-guidance upgrade from comparable sell-side EPS revisions; full Q4 consensus population not obtained."
           ]
         }
       ]
@@ -4031,6 +4163,26 @@
         "Compare qualified output and pricing with competing capacity and customer substitution"
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "micron-aatt2-hbm-qualified-output-and-cash-conversion",
+      "companies": [
+        "Micron"
+      ],
+      "sources": [
+        "https://www.president.gov.tw/NEWS/40429",
+        "https://www.reuters.com/world/asia-pacific/taiwan-president-calls-micron-workers-negotiate-sincerely-ahead-possible-strike-2026-10-15/",
+        "https://focustaiwan.tw/business/202610010013"
+      ],
+      "stage": "primary_opening_verified_reported_2027_capacity_reservation_and_labor_risk_separated_qualified_output_and_profit_pending",
+      "event_fingerprint": "micron-aatt2-open-and-2027-capacity-reservation-20261015",
+      "questions": [
+        "Quantify qualified HBM output, customer acceptance, yield and utilization at AATT2.",
+        "Check contracted quantities, pricing, margins and cash conversion; capacity reservation is not realized revenue.",
+        "Follow labor negotiations and distinguish rally, strike authorization and actual production disruption.",
+        "Identify primary evidence for supplier equipment orders; attendee names establish no order."
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -4050,7 +4202,7 @@
     }
   ],
   "last_research_date": "2026-10-15",
-  "instruction_commit_sha": "7ff774d805904f8976305c30c9b983732b6dc0f7",
+  "instruction_commit_sha": "ca7320b740f80e1f0be94b0e5c9ff175eb81668e",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
