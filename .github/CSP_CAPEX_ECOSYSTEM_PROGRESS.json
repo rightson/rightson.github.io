@@ -2262,8 +2262,8 @@
     ],
     "current_run_screening": {
       "date": "2026-10-16",
-      "instruction_commit_sha": "0fbc0c144853975aef408d9e6fa103d423d16693",
-      "scope": "All 98 active names included in 13 fresh grouped discovery queries. TSMC/MediaTek and NVIDIA/AMD/Broadcom/Marvell current official sources checked, with CSP capex/financing and supplier searches. MPI historical issuer revenue/product pages add one primary-fact baseline. NVIDIA Europe access initiative traced to June hardware-buildout baseline; Volvo automotive release does not establish CSP demand. Existing Holy Stone, core-company and financing events not repeated. No new material event or article registered.",
+      "instruction_commit_sha": "62cf16a33d3b4dc4e3396c6da0b38d322e3dfab6",
+      "scope": "All 98 active names included in 13 fresh grouped discovery queries. TSMC/MediaTek and NVIDIA/AMD/Broadcom/Marvell current official sources checked; targeted CSP capex and ASIC searches performed. Newly discovered Aehr repeat-order lead traced to October 7 issuer original, not October 13 reprint date. ASE attributed institution forecasts retained pending original-note/old-estimate validation. ASPEED original monthly pages returned no numerical rows. No fresh material-event alert or article registered.",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 13,
@@ -2274,23 +2274,20 @@
         "https://newsroom.amd.com/",
         "https://www.marvell.com/company/newsroom.html",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
-        "https://www.mpi.com.tw/investors-relationship/monthly-revenue/",
-        "https://www.mpi.com.tw/probecard/",
-        "https://blogs.nvidia.com/blog/ec-scientific-computing-pledge/",
-        "https://nvidianews.nvidia.com/news/europe-unveils-a-record-35-new-nvidia-ai-supercomputers",
-        "https://nvidianews.nvidia.com/news/volvo-cars-and-nvidia-expand-partnership-to-advance-safe-automated-driving",
-        "https://www.reuters.com/business/finance/market-selloff-rising-rates-test-ai-data-centre-deal-boom-2026-10-15/",
-        "https://www.liteon.com/zh-tw/news/press-center/content/quarterly-second-eps-2026",
-        "https://www.zdtco.com/public/tw/news"
+        "https://www.aehr.com/2026/10/aehr-receives-follow-on-sonoma-production-orders-for-lead-hyperscale-customer-s-next-generation-ai-processor/",
+        "https://news.ustv.com.tw/newsdetail/20261015A001015",
+        "https://www.aspeedtech.com/tw/financials_monthly/",
+        "https://www.aspeedtech.com/financials_monthly/",
+        "https://www.aspeedtech.com/monthly_revenue/"
       ],
       "source_limits": [
-        "22 active names now have identified primary-company facts; 76 still require individual primary validation. Grouped search inclusion is not exhaustive company-release validation or full current financial diligence.",
-        "MPI historical monthly table and product portfolio do not establish new AI orders or company earnings revisions. No exact publication timestamp inferred from the table.",
-        "TSMC guidance unchanged versus registered table; MediaTek current official list does not confirm ByteDance terms. Core indexes are not full release-by-release financial or AMD interview-transcript validation.",
-        "Reuters original article text returned in fresh search; direct open failed. It repeats previously read fundraising developments, not fresh cancellations. Complete CSP capex/lease/customer-level audit remains partial.",
-        "LITEON historical Q2 original body still failed retrieval. ZDT issuer news/IR pages returned retrieval/502 failures; indexed historical September excerpts do not count as obtained full primary validation. Neither active-name count advanced for those companies.",
-        "NVIDIA October 15 access/software/automotive entries do not establish incremental CSP hardware purchases. June 22 supercomputer announcement is historical; no fresh order or deployment alert registered.",
-        "No stock quotes, valuation, holdings or trade conditions written publicly. No article or website publication claimed."
+        "22 active names retain identified primary-company facts; 76 still require individual primary validation. All-name grouped discovery is not exhaustive current company-release or financial validation; no active-name count added.",
+        "TSMC current Q4 table repeats registered guidance. MediaTek ByteDance reports remain the same anonymous-source talks; no new confirmed terms obtained. Core indexes do not constitute full financial audits or AMD interview-transcript review.",
+        "Aehr original body verifies a historical repeat order; October 13 reproduction does not reset announcement date. Delivery and profit conversion remain pending. Outside-universe lead does not alter alpha-quant watchlist or coverage count.",
+        "ASE broadcaster body obtained via search after direct retrieval error. Institution original, old forecasts and consensus population unavailable; no verified estimate-revision magnitude or new customer award registered.",
+        "ASPEED official monthly pages are readable but numeric rows absent from returned content; September revenue not primary-verified. Secondary tables are not substituted. Historical LITEON/ZDT retrieval gaps remain unresolved; not rechecked in this run.",
+        "Fresh global searches contain older and syndicated items. Complete current CSP capex/lease and project-level order transmission audit remains partial. Prior financing and Holy Stone notifications not repeated.",
+        "No stock quote, current valuation, holding or trade condition saved publicly. No article, build, deployment or public-site validation claimed."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -3040,6 +3037,36 @@
           "LITEON historical Q2 original body still failed retrieval. ZDT issuer news/IR pages returned retrieval/502 failures; indexed historical September excerpts do not count as obtained full primary validation. Neither active-name count advanced for those companies.",
           "NVIDIA October 15 access/software/automotive entries do not establish incremental CSP hardware purchases. June 22 supercomputer announcement is historical; no fresh order or deployment alert registered.",
           "No stock quotes, valuation, holdings or trade conditions written publicly. No article or website publication claimed."
+        ]
+      },
+      {
+        "date": "2026-10-16",
+        "instruction_commit_sha": "62cf16a33d3b4dc4e3396c6da0b38d322e3dfab6",
+        "scope": "All 98 active names included in 13 fresh grouped discovery queries. TSMC/MediaTek and NVIDIA/AMD/Broadcom/Marvell current official sources checked; targeted CSP capex and ASIC searches performed. Newly discovered Aehr repeat-order lead traced to October 7 issuer original, not October 13 reprint date. ASE attributed institution forecasts retained pending original-note/old-estimate validation. ASPEED original monthly pages returned no numerical rows. No fresh material-event alert or article registered.",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 13,
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://newsroom.amd.com/",
+          "https://www.marvell.com/company/newsroom.html",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.aehr.com/2026/10/aehr-receives-follow-on-sonoma-production-orders-for-lead-hyperscale-customer-s-next-generation-ai-processor/",
+          "https://news.ustv.com.tw/newsdetail/20261015A001015",
+          "https://www.aspeedtech.com/tw/financials_monthly/",
+          "https://www.aspeedtech.com/financials_monthly/",
+          "https://www.aspeedtech.com/monthly_revenue/"
+        ],
+        "source_limits": [
+          "22 active names retain identified primary-company facts; 76 still require individual primary validation. All-name grouped discovery is not exhaustive current company-release or financial validation; no active-name count added.",
+          "TSMC current Q4 table repeats registered guidance. MediaTek ByteDance reports remain the same anonymous-source talks; no new confirmed terms obtained. Core indexes do not constitute full financial audits or AMD interview-transcript review.",
+          "Aehr original body verifies a historical repeat order; October 13 reproduction does not reset announcement date. Delivery and profit conversion remain pending. Outside-universe lead does not alter alpha-quant watchlist or coverage count.",
+          "ASE broadcaster body obtained via search after direct retrieval error. Institution original, old forecasts and consensus population unavailable; no verified estimate-revision magnitude or new customer award registered.",
+          "ASPEED official monthly pages are readable but numeric rows absent from returned content; September revenue not primary-verified. Secondary tables are not substituted. Historical LITEON/ZDT retrieval gaps remain unresolved; not rechecked in this run.",
+          "Fresh global searches contain older and syndicated items. Complete current CSP capex/lease and project-level order transmission audit remains partial. Prior financing and Holy Stone notifications not repeated.",
+          "No stock quote, current valuation, holding or trade condition saved publicly. No article, build, deployment or public-site validation claimed."
         ]
       }
     ],
@@ -5211,6 +5238,59 @@
         "Verify incremental funded purchases and paid utilization before attributing supplier earnings."
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "aehr-sonoma-second-ai-processor-repeat-orders-and-cash-conversion",
+      "companies": [
+        "Aehr Test Systems (AEHR)",
+        "Unnamed hyperscale customer",
+        "Unnamed Taiwan OSAT partner"
+      ],
+      "sources": [
+        "https://www.aehr.com/2026/10/aehr-receives-follow-on-sonoma-production-orders-for-lead-hyperscale-customer-s-next-generation-ai-processor/",
+        "https://www.dqindia.com/semiconductors/aehr-receives-follow-on-sonoma-production-orders-for-lead-hyperscale-customers-next-gen-ai-processor-12666753"
+      ],
+      "stage": "october7_historical_issuer_follow_on_orders_verified_october13_reprint_not_new_award",
+      "facts": {
+        "checked_date": "2026-10-16",
+        "source_date": "2026-10-07",
+        "reprint_date": "2026-10-13",
+        "order_value_usd_approx": 6000000,
+        "scope": "Sonoma systems, burn-in modules, device-specific sockets and software for the same hyperscale customer's second AI processor; deployment at its unnamed Taiwan OSAT. Delivery scheduled over six months from October 7; 2027 production ramp is expected.",
+        "baseline": "Follows a prior production win; not a new hyperscale customer. First processor already in high-volume production according to issuer.",
+        "limits": "Historical issuer order announcement, not new October 16 evidence. Delivery, acceptance, cash receipts, margins and follow-on volume unverified; no names inferred for customer or OSAT."
+      },
+      "questions": [
+        "Verify scheduled equipment acceptance, repeat consumables and customer concentration.",
+        "Check gross profit and operating cash after support/working-capital costs; delayed processor ramp or alternative reliability screening would weaken conversion."
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "ase-attributed-bofa-earnings-revision-original-validation",
+      "companies": [
+        "ASE Technology Holding (3711)"
+      ],
+      "sources": [
+        "https://news.ustv.com.tw/newsdetail/20261015A001015"
+      ],
+      "stage": "october15_media_attributed_institution_estimates_read_original_note_and_old_estimates_missing",
+      "facts": {
+        "checked_date": "2026-10-16",
+        "reporting_date": "2026-10-15",
+        "forecast_periods": [
+          "2026",
+          "2027",
+          "2028"
+        ],
+        "scope": "Original broadcaster article attributes stronger LEAP/mature-packaging mix and earnings forecasts to BofA, with separate unnamed domestic-institution views.",
+        "limits": "Institution note, exact issue date and previous EPS estimates not obtained. No quantified old-to-new revision or consensus change established. Forecasts are not reported profit; target prices and trading views excluded."
+      },
+      "questions": [
+        "Obtain dated institution original and old/new forecasts, then reconcile with company segment results.",
+        "Verify sustained gross profit and cash rather than revenue alone; weaker outsourcing/mix or capacity utilization would challenge forecasts."
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -5230,7 +5310,7 @@
     }
   ],
   "last_research_date": "2026-10-16",
-  "instruction_commit_sha": "0fbc0c144853975aef408d9e6fa103d423d16693",
+  "instruction_commit_sha": "62cf16a33d3b4dc4e3396c6da0b38d322e3dfab6",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
