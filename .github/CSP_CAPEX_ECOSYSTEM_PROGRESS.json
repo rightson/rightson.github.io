@@ -2176,6 +2176,29 @@
         "https://investors.qumulusai.com/news/news-details/2026/QumulusAI-Reports-Second-Quarter-2026-Results/default.aspx"
       ],
       "status": "issuer_original_release_verified_handoff_claim_not_independent_acceptance_or_cash_validation"
+    },
+    {
+      "fingerprint": "venture-global-ge-baker-island-mode-power-framework-disclosed-20261015",
+      "event_date": "2026-10-15",
+      "event_date_scope": "disclosure_date_contract_execution_date_not_primary_verified",
+      "discovered_date": "2026-10-16",
+      "companies": [
+        "Venture Global",
+        "GE Vernova",
+        "Baker Hughes"
+      ],
+      "type": "issuer_verified_conditional_equipment_framework_not_firm_ai_orders",
+      "facts": {
+        "baseline": "Prior candidate had indexed excerpts only; issuer release bodies are now obtained.",
+        "increment": "Venture Global confirms a framework for up to sixteen 720 MW power islands; first purchase order is expected by year-end 2026. Potential compute capacity up to 10 GW by end-2034 depends on customers and demand.",
+        "supplier_scope": "Baker Hughes describes turbines, equipment/services, controls and electrical integration, with contemplated delivery during 2028–2034.",
+        "limits": "LNG and possible adjacent data centers share the opportunity. No firm AI customer award, funded full buildout, booked full-capacity order or profit revision established. SEC original agreement and reservation terms remain unavailable."
+      },
+      "sources": [
+        "https://ventureglobal.com/2026/10/15/venture-global-secures-new-agreements-to-support-expansion-of-existing-grid-independent-power-network/",
+        "https://www.globenewswire.com/news-release/2026/10/15/3381773/0/en/baker-hughes-and-venture-global-expand-strategic-long-term-power-generation-partnership.html"
+      ],
+      "status": "two_issuer_releases_verified_framework_and_conditional_schedule_only"
     }
   ],
   "articles": [],
@@ -2214,9 +2237,9 @@
       "6515"
     ],
     "current_run_screening": {
-      "date": "2026-10-15",
-      "instruction_commit_sha": "1b94ab45a5ab7e657ce9a317e5f2de17743d1f0b",
-      "scope": "All 98 active names included in 13 fresh grouped discovery queries. TSMC and MediaTek current official sources plus NVIDIA/AMD/Broadcom/Marvell indexes checked. Fresh CSP/power/financing discovery and ledger event deduplication performed. WinWay historical issuer revenue and Q2 result add one primary-fact baseline. Venture Global power framework and new Reuters credit/fundraising reports remain body-validation candidates; no new material-event alert or article registered.",
+      "date": "2026-10-16",
+      "instruction_commit_sha": "bb738bab07ef41c69aafbf40e57837a419a7bf22",
+      "scope": "All 98 active names included in 13 fresh grouped discovery queries. TSMC/MediaTek and NVIDIA/AMD/Broadcom/Marvell official current pages checked, plus targeted CSP capex and MediaTek/ByteDance searches. Two issuer Venture Global/Baker Hughes release bodies now verify the previously provisional framework. Reuters fundraising original and linked historical IPO reports read. NVIDIA model availability retained as research candidate. No article.",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 13,
@@ -2227,16 +2250,17 @@
         "https://newsroom.amd.com/",
         "https://www.marvell.com/company/newsroom.html",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
-        "https://www.winwayglobal.com/zh-TW/news-detail/qCRukyOSg2SuII21",
-        "https://www.winwayglobal.com/zh-TW/news-detail/Z9hy0t3yjMSM6VlK",
-        "https://ventureglobal.com/2026/10/15/venture-global-secures-new-agreements-to-support-expansion-of-existing-grid-independent-power-network/"
+        "https://ventureglobal.com/2026/10/15/venture-global-secures-new-agreements-to-support-expansion-of-existing-grid-independent-power-network/",
+        "https://www.globenewswire.com/news-release/2026/10/15/3381773/0/en/baker-hughes-and-venture-global-expand-strategic-long-term-power-generation-partnership.html",
+        "https://www.reuters.com/business/finance/market-selloff-rising-rates-test-ai-data-centre-deal-boom-2026-10-15/",
+        "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
       ],
       "source_limits": [
-        "20 active names now have identified primary-company facts; 78 still need individual primary validation. Grouped search inclusion is not exhaustive company-event validation or complete current financial diligence.",
-        "WinWay August 6 and October 6 disclosures are historical baselines; no fresh October 15 award or profit revision inferred.",
-        "Venture Global/Baker Hughes issuer indexed excerpts obtained but complete release/SEC original unavailable. Additional October 15 Reuters credit/fundraising bodies could not be retrieved. These checks are incomplete, not a conclusion that no new event exists.",
-        "LITEON historical Q2 issuer release timed out twice; no primary-verified count added for LITEON. Core indexes do not constitute full interview-transcript review.",
-        "Registered TSMC, MediaTek and QumulusAI events not repeated. No stock quote, valuation, holding or trade condition saved publicly; no article or site publication claimed."
+        "20 active names retain identified primary-company facts; 78 still need individual primary validation. Grouped search inclusion is not exhaustive current company-event validation. No active-name primary count added this run.",
+        "Venture Global two-party issuer releases read, resolving their previous body-access gap; SEC agreement/reservation fees, cancellation terms, funded capex and commercial economics remain incomplete.",
+        "October 15 Reuters fundraising body obtained; AirTrunk/Firmus underlying developments are historical, not fresh cancellations. FT bond article is paywalled and underlying CDS/bond series unverified.",
+        "LITEON historical Q2 issuer page still failed retrieval; no primary count added. AMD latest interview transcript not fully reviewed.",
+        "Prior TSMC, MediaTek, Holtek and QumulusAI notifications are not repeated. New model/software claims do not establish hardware purchases. No price, valuation, holdings or trade condition saved publicly; no article or website publication claimed."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -2896,6 +2920,33 @@
           "Venture Global/Baker Hughes issuer indexed excerpts obtained but complete release/SEC original unavailable. Additional October 15 Reuters credit/fundraising bodies could not be retrieved. These checks are incomplete, not a conclusion that no new event exists.",
           "LITEON historical Q2 issuer release timed out twice; no primary-verified count added for LITEON. Core indexes do not constitute full interview-transcript review.",
           "Registered TSMC, MediaTek and QumulusAI events not repeated. No stock quote, valuation, holding or trade condition saved publicly; no article or site publication claimed."
+        ]
+      },
+      {
+        "date": "2026-10-16",
+        "instruction_commit_sha": "bb738bab07ef41c69aafbf40e57837a419a7bf22",
+        "scope": "All 98 active names included in 13 fresh grouped discovery queries. TSMC/MediaTek and NVIDIA/AMD/Broadcom/Marvell official current pages checked, plus targeted CSP capex and MediaTek/ByteDance searches. Two issuer Venture Global/Baker Hughes release bodies now verify the previously provisional framework. Reuters fundraising original and linked historical IPO reports read. NVIDIA model availability retained as research candidate. No article.",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 13,
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://newsroom.amd.com/",
+          "https://www.marvell.com/company/newsroom.html",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://ventureglobal.com/2026/10/15/venture-global-secures-new-agreements-to-support-expansion-of-existing-grid-independent-power-network/",
+          "https://www.globenewswire.com/news-release/2026/10/15/3381773/0/en/baker-hughes-and-venture-global-expand-strategic-long-term-power-generation-partnership.html",
+          "https://www.reuters.com/business/finance/market-selloff-rising-rates-test-ai-data-centre-deal-boom-2026-10-15/",
+          "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
+        ],
+        "source_limits": [
+          "20 active names retain identified primary-company facts; 78 still need individual primary validation. Grouped search inclusion is not exhaustive current company-event validation. No active-name primary count added this run.",
+          "Venture Global two-party issuer releases read, resolving their previous body-access gap; SEC agreement/reservation fees, cancellation terms, funded capex and commercial economics remain incomplete.",
+          "October 15 Reuters fundraising body obtained; AirTrunk/Firmus underlying developments are historical, not fresh cancellations. FT bond article is paywalled and underlying CDS/bond series unverified.",
+          "LITEON historical Q2 issuer page still failed retrieval; no primary count added. AMD latest interview transcript not fully reviewed.",
+          "Prior TSMC, MediaTek, Holtek and QumulusAI notifications are not repeated. New model/software claims do not establish hardware purchases. No price, valuation, holdings or trade condition saved publicly; no article or website publication claimed."
         ]
       }
     ],
@@ -4229,6 +4280,17 @@
             "https://www.reuters.com/business/finance/market-selloff-rising-rates-test-ai-data-centre-deal-boom-2026-10-15/"
           ],
           "limits": "Search excerpts only for these additional reports; full report bodies and underlying CDS/financing documents remain missing. No fresh quote, issuer financing change, cancellation or supplier earnings revision registered. Prior October 14 credit-risk evidence is retained; no duplicate alert."
+        },
+        {
+          "date": "2026-10-16",
+          "stage": "october15_reuters_fundraising_original_body_read_historical_ipo_links_checked",
+          "sources": [
+            "https://www.reuters.com/business/finance/market-selloff-rising-rates-test-ai-data-centre-deal-boom-2026-10-15/",
+            "https://www.reuters.com/world/asia-pacific/airtrunk-delay-singapore-ipo-wsj-reports-2026-10-13/",
+            "https://www.reuters.com/world/asia-pacific/australian-nvidia-backed-ai-data-centre-operator-firmus-shelves-ipo-2026-10-08/"
+          ],
+          "scope": "Reuters fundraising body now retrieved. Linked AirTrunk postponement and Firmus withdrawal were reported October 13 and October 8/9, respectively; historical funding-risk baselines, not newly cancelled equipment contracts.",
+          "limits": "October 15 CDS underlying series and FT bond report remain unverified. No fresh issuer capex cut, financing close or supplier earnings revision established."
         }
       ]
     },
@@ -4890,6 +4952,39 @@
         "Verify signed AI customers, finance, permits and staged delivery dates. Equipment slots could support LNG expansion instead of AI; a missed purchase order or insufficient contracted demand would weaken the AI conversion case.",
         "Only then reconcile supplier backlog, margins and service revenue; do not sum equipment-framework ceilings with CSP capex."
       ],
+      "publication_status": "not_drafted",
+      "verification_updates": [
+        {
+          "date": "2026-10-16",
+          "stage": "two_issuer_full_release_bodies_obtained_sec_original_and_commercial_economics_pending",
+          "event_fingerprint": "venture-global-ge-baker-island-mode-power-framework-disclosed-20261015",
+          "sources": [
+            "https://ventureglobal.com/2026/10/15/venture-global-secures-new-agreements-to-support-expansion-of-existing-grid-independent-power-network/",
+            "https://www.globenewswire.com/news-release/2026/10/15/3381773/0/en/baker-hughes-and-venture-global-expand-strategic-long-term-power-generation-partnership.html"
+          ],
+          "scope": "Earlier retrieval-failure stage is preserved. New event records the verified framework and dates; firm orders, AI customers and returns remain open."
+        }
+      ]
+    },
+    {
+      "key": "nvidia-nemotron-agent-efficiency-to-hardware-demand-and-cash-conversion",
+      "companies": [
+        "NVIDIA"
+      ],
+      "sources": [
+        "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
+      ],
+      "stage": "october15_issuer_model_availability_and_adoption_claims_checked_not_incremental_hardware_order",
+      "facts": {
+        "source_date": "2026-10-15",
+        "checked_date": "2026-10-16",
+        "scope": "New Super VL/Bolt release spans cloud and local agent deployment. Named customization and software integration are issuer claims, not new GPU orders or supplier revenue.",
+        "limits": "Efficiency benchmarks not independently reproduced; no measured capacity utilization, customer hardware procurement, incremental revenue or profit revision verified."
+      },
+      "questions": [
+        "Does lower compute per task expand paid usage enough to raise total hardware demand, or mainly reduce required capacity?",
+        "Verify repeat paid deployments and customer capex before attributing supplier earnings; weaker utilization or local substitution would challenge demand expansion."
+      ],
       "publication_status": "not_drafted"
     }
   ],
@@ -4909,8 +5004,8 @@
       "impact": "Search hits and reposted notices have not been individually checked against company or exchange originals."
     }
   ],
-  "last_research_date": "2026-10-15",
-  "instruction_commit_sha": "1b94ab45a5ab7e657ce9a317e5f2de17743d1f0b",
+  "last_research_date": "2026-10-16",
+  "instruction_commit_sha": "bb738bab07ef41c69aafbf40e57837a419a7bf22",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
