@@ -2141,11 +2141,11 @@
     "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
     "active_count": 98,
     "search_screened_count": 98,
-    "primary_company_fact_checked_count": 15,
-    "primary_monthly_revenue_checked_count": 6,
+    "primary_company_fact_checked_count": 16,
+    "primary_monthly_revenue_checked_count": 7,
     "primary_partner_relationship_checked_count": 3,
-    "remaining_primary_company_fact_check_count": 83,
-    "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed. Vertiv is not in the current 98-company alpha-quant universe; this run added it as an out-of-universe supplier candidate because a completed 30 MW hyperscale liquid-cooling deployment provides explicit demand-transmission evidence. LG Electronics is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because the signed AIR long-term agreement covers AI data-center projects exceeding 5 GW, while contract value and delivery economics remain undisclosed. Enerflex is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because a contracted over-1-GW behind-the-meter data-center power project lifts the company's related backlog above 1.75 GW, while customer identity, contract value, margin and revenue timing remain undisclosed. Wistron was added from its official October 12 board announcement; 8 distinct active-universe names now have an identified primary-source fact. Historical blocker counts are preserved as dated records. Applied Materials was added as an out-of-universe research candidate from its official AI-related WFE, services and long-term profitability targets; no named incremental CSP order is inferred and primary coverage counts remain unchanged. ASML added as an out-of-universe supplier research candidate from issuer-reported earnings, revised guidance and planned-capacity constraints; no named TSMC or MediaTek order or program delay inferred. Active-universe primary-validation counts unchanged. LS ELECTRIC and LS Materials are out-of-universe candidates with explicit AI data-center power contract evidence; neither changes active-universe primary company counts. Winstek is outside the 98-company universe and is retained with an explicit AI/HPC testing/packaging demand relationship. GMM quarterly profit evidence is based on a reproduced notice, not an obtained issuer/exchange original; active-universe primary-validation counts remain 8 checked and 90 pending. ASE added from its official October 13 PowerSiP availability release; 9 distinct active names now have an identified primary company fact, 89 remain pending. This covers platform availability only, not customer-order or earnings validation. Alpha Compute and NTT Data are out-of-universe candidates; watchlist unchanged. AEP/Bloom and Fermi/TensorWave economic-scope supplements are out-of-universe checks; 98-name search screening does not resolve the 89 outstanding individual primary validations. Jabil/Adani MoU and researcher DCPI data add candidates only; watchlist unchanged. Flex/EPC Power/Axiom are out-of-universe suppliers with explicit AI data-center power-conversion evidence. This run does not add an active-universe primary-validated company; 9 checked and 89 pending remain. Amazon warrant restructuring is not a new CSP equipment order; watchlist unchanged. Faraday (3035) added from its October 13 issuer MIPI IP availability release, which establishes product maturity for edge/vision AI but not a CSP design win. Chenbro (8210) added from its May 29 issuer NVIDIA MGX/rack mechanical relationship baseline; this is not fresh order evidence. Distinct active-universe primary-fact coverage is now 11 checked and 87 pending, not 98 fully validated. No new material-event notification or article is registered. October 15 screening adds research candidates only. NVIDIA fab-workflow benchmarks do not validate TSMC throughput or earnings; Ardentec forecast remains media-level. National Compute is an October 7 preview baseline, and Marvell investor-day original validation is incomplete due to PDF size. Distinct primary-company coverage remains 11 active names and 87 pending; no whole-universe earnings conclusion. Digi Power X is outside the current active universe; issuer commitment supports an AI infrastructure financing relationship but not funded debt or earnings revision. PJM/SoftBank lead is a study-stage, original-body-unverified candidate. Watchlist unchanged; primary-fact counts remain 11 checked and 87 pending. October 15 credit-risk follow-up checked original Reuters reporting and CoreWeave historical issuer/SEC financing data. CoreWeave and Oracle are outside the active Taiwan universe; no additional active-universe primary company check is counted. No new equipment cancellation or supplier earnings change verified, and no stock/bond quote or valuation is saved in this public ledger. Holy Stone (3026) added using issuer monthly revenue and historical AI power product relationship; 12 distinct active companies now have an identified primary fact and 86 remain pending. No fresh October order or margin improvement inferred from the historical deck or intraday theme. Gartner conditional forecasts are a new researcher event, not realized impairment or an active-universe primary-company validation. GF is outside the active Taiwan universe. October 14 SPV/services announcement and original investor PDF add a distinct conditional funding/business-model event without changing active-company primary coverage counts. Previously announced investment plans are not simply summed, and first-fab management expectations exclude the contingent second fab. NetApp is outside the active Taiwan universe; September 29 original storage announcement and OCI planned-service relationship added as a historical research baseline only. No new material event, earnings alert or article registered; active primary coverage remains 12 checked and 86 pending. Cipher Digital is outside the active Taiwan universe. October 14 priced financing, expected old-note share exchange and September 24 Barber Lake lease terms are primary verified; settlement, share issuance, construction delivery and rent remain pending. No stock quote, valuation or transaction instruction is saved publicly; active primary coverage remains 12 checked and 86 pending. AES Indiana/Google Monrovia is an outside-universe historical power-contract candidate. October 7 primary approval and regulator key findings checked against April proposal; October 14 reporting is not a new approval or supplier-order revision. No material-event notification or article registered. Active primary coverage remains 12 checked and 86 pending. MiTAC (3706) added from its issuer OCP release dated October 12 with October 13 page date. Product/partner and issuer deployment-claim facts are checked, while cooling PoC, annualized pPUE model and commercial earnings evidence remain separate. Distinct active primary-company coverage is now 13 checked and 85 pending; no material-event alert or new article. October 15 follow-up retained one provisional outside-universe Black Sesame AI-server contract lead from a notice reproduction; exchange original and CSP linkage unresolved. No new primary-company count, material-event alert or article. Broadcom original financial-news list was readable; this does not remove historical source-access limits. Anthropic October 14 investor-day financial reporting adds a distinct reported demand-monetization event and follow-up candidate; public financial reconciliations remain pending. No active-universe primary-company count change or new article. October 15 follow-up traces Gaon/LSCUS busduct coverage to August 20 issuer order and June 16 expansion baselines; outside-universe candidate only, not fresh order alert. MediaTek October 15 timing language remains previously reported institution-level information. No active-universe primary-count change. Elite Material (2383) added from its official 2026 monthly-revenue PDF, July 29 H1 financial announcement and current financial calendar. Distinct primary-company coverage is 14 checked and 84 pending; monthly-revenue coverage is five companies. These historical records do not establish new price increases, customer awards or Q3 margins. No new material-event alert or article. TSMC October 15 actual Q3 issuer results and cash-flow data added as a distinct event after the preview baseline. TSMC was already primary-checked; counts remain 14 checked and 84 pending. Forward guidance and call Q&A remain separate pending evidence. LandMark Optoelectronics (3081) added from its issuer September monthly-revenue table and data-center epiwafer product page. These historical product/revenue facts do not establish new CSP orders or earnings revisions. Distinct active-company primary-fact coverage is 15 checked and 83 pending; monthly-revenue coverage is six companies.",
+    "remaining_primary_company_fact_check_count": 82,
+    "note": "Counts use distinct active-universe companies with an identified primary-source fact, not the number of source checks. Accton's partner relationship and monthly revenue count as one company; an earlier count of five had double-counted Accton. Hon Hai and Quanta were added from the regulator event, and Nanya Technology was added from its Q3 2026 company results. Primary-source validation remains partial; no full-universe or valuation conclusion is claimed. Vertiv is not in the current 98-company alpha-quant universe; this run added it as an out-of-universe supplier candidate because a completed 30 MW hyperscale liquid-cooling deployment provides explicit demand-transmission evidence. LG Electronics is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because the signed AIR long-term agreement covers AI data-center projects exceeding 5 GW, while contract value and delivery economics remain undisclosed. Enerflex is not in the current 98-company alpha-quant universe; it was added as an out-of-universe supplier candidate because a contracted over-1-GW behind-the-meter data-center power project lifts the company's related backlog above 1.75 GW, while customer identity, contract value, margin and revenue timing remain undisclosed. Wistron was added from its official October 12 board announcement; 8 distinct active-universe names now have an identified primary-source fact. Historical blocker counts are preserved as dated records. Applied Materials was added as an out-of-universe research candidate from its official AI-related WFE, services and long-term profitability targets; no named incremental CSP order is inferred and primary coverage counts remain unchanged. ASML added as an out-of-universe supplier research candidate from issuer-reported earnings, revised guidance and planned-capacity constraints; no named TSMC or MediaTek order or program delay inferred. Active-universe primary-validation counts unchanged. LS ELECTRIC and LS Materials are out-of-universe candidates with explicit AI data-center power contract evidence; neither changes active-universe primary company counts. Winstek is outside the 98-company universe and is retained with an explicit AI/HPC testing/packaging demand relationship. GMM quarterly profit evidence is based on a reproduced notice, not an obtained issuer/exchange original; active-universe primary-validation counts remain 8 checked and 90 pending. ASE added from its official October 13 PowerSiP availability release; 9 distinct active names now have an identified primary company fact, 89 remain pending. This covers platform availability only, not customer-order or earnings validation. Alpha Compute and NTT Data are out-of-universe candidates; watchlist unchanged. AEP/Bloom and Fermi/TensorWave economic-scope supplements are out-of-universe checks; 98-name search screening does not resolve the 89 outstanding individual primary validations. Jabil/Adani MoU and researcher DCPI data add candidates only; watchlist unchanged. Flex/EPC Power/Axiom are out-of-universe suppliers with explicit AI data-center power-conversion evidence. This run does not add an active-universe primary-validated company; 9 checked and 89 pending remain. Amazon warrant restructuring is not a new CSP equipment order; watchlist unchanged. Faraday (3035) added from its October 13 issuer MIPI IP availability release, which establishes product maturity for edge/vision AI but not a CSP design win. Chenbro (8210) added from its May 29 issuer NVIDIA MGX/rack mechanical relationship baseline; this is not fresh order evidence. Distinct active-universe primary-fact coverage is now 11 checked and 87 pending, not 98 fully validated. No new material-event notification or article is registered. October 15 screening adds research candidates only. NVIDIA fab-workflow benchmarks do not validate TSMC throughput or earnings; Ardentec forecast remains media-level. National Compute is an October 7 preview baseline, and Marvell investor-day original validation is incomplete due to PDF size. Distinct primary-company coverage remains 11 active names and 87 pending; no whole-universe earnings conclusion. Digi Power X is outside the current active universe; issuer commitment supports an AI infrastructure financing relationship but not funded debt or earnings revision. PJM/SoftBank lead is a study-stage, original-body-unverified candidate. Watchlist unchanged; primary-fact counts remain 11 checked and 87 pending. October 15 credit-risk follow-up checked original Reuters reporting and CoreWeave historical issuer/SEC financing data. CoreWeave and Oracle are outside the active Taiwan universe; no additional active-universe primary company check is counted. No new equipment cancellation or supplier earnings change verified, and no stock/bond quote or valuation is saved in this public ledger. Holy Stone (3026) added using issuer monthly revenue and historical AI power product relationship; 12 distinct active companies now have an identified primary fact and 86 remain pending. No fresh October order or margin improvement inferred from the historical deck or intraday theme. Gartner conditional forecasts are a new researcher event, not realized impairment or an active-universe primary-company validation. GF is outside the active Taiwan universe. October 14 SPV/services announcement and original investor PDF add a distinct conditional funding/business-model event without changing active-company primary coverage counts. Previously announced investment plans are not simply summed, and first-fab management expectations exclude the contingent second fab. NetApp is outside the active Taiwan universe; September 29 original storage announcement and OCI planned-service relationship added as a historical research baseline only. No new material event, earnings alert or article registered; active primary coverage remains 12 checked and 86 pending. Cipher Digital is outside the active Taiwan universe. October 14 priced financing, expected old-note share exchange and September 24 Barber Lake lease terms are primary verified; settlement, share issuance, construction delivery and rent remain pending. No stock quote, valuation or transaction instruction is saved publicly; active primary coverage remains 12 checked and 86 pending. AES Indiana/Google Monrovia is an outside-universe historical power-contract candidate. October 7 primary approval and regulator key findings checked against April proposal; October 14 reporting is not a new approval or supplier-order revision. No material-event notification or article registered. Active primary coverage remains 12 checked and 86 pending. MiTAC (3706) added from its issuer OCP release dated October 12 with October 13 page date. Product/partner and issuer deployment-claim facts are checked, while cooling PoC, annualized pPUE model and commercial earnings evidence remain separate. Distinct active primary-company coverage is now 13 checked and 85 pending; no material-event alert or new article. October 15 follow-up retained one provisional outside-universe Black Sesame AI-server contract lead from a notice reproduction; exchange original and CSP linkage unresolved. No new primary-company count, material-event alert or article. Broadcom original financial-news list was readable; this does not remove historical source-access limits. Anthropic October 14 investor-day financial reporting adds a distinct reported demand-monetization event and follow-up candidate; public financial reconciliations remain pending. No active-universe primary-company count change or new article. October 15 follow-up traces Gaon/LSCUS busduct coverage to August 20 issuer order and June 16 expansion baselines; outside-universe candidate only, not fresh order alert. MediaTek October 15 timing language remains previously reported institution-level information. No active-universe primary-count change. Elite Material (2383) added from its official 2026 monthly-revenue PDF, July 29 H1 financial announcement and current financial calendar. Distinct primary-company coverage is 14 checked and 84 pending; monthly-revenue coverage is five companies. These historical records do not establish new price increases, customer awards or Q3 margins. No new material-event alert or article. TSMC October 15 actual Q3 issuer results and cash-flow data added as a distinct event after the preview baseline. TSMC was already primary-checked; counts remain 14 checked and 84 pending. Forward guidance and call Q&A remain separate pending evidence. LandMark Optoelectronics (3081) added from its issuer September monthly-revenue table and data-center epiwafer product page. These historical product/revenue facts do not establish new CSP orders or earnings revisions. Distinct active-company primary-fact coverage is 15 checked and 83 pending; monthly-revenue coverage is six companies. GUC (3443) added from issuer October 5 September revenue release and financial table as a historical baseline. Distinct active primary-fact coverage is 16 checked and 82 pending, including seven monthly-revenue baselines. Delta October 14/15 SST and SOFC milestones add a research candidate with explicit sample/pilot and efficiency-definition limits; no material-event alert or article registered.",
     "active_universe_primary_verified_symbols": [
       "2330",
       "2454",
@@ -2161,36 +2161,36 @@
       "3026",
       "3706",
       "2383",
-      "3081"
+      "3081",
+      "3443"
     ],
     "current_run_screening": {
       "date": "2026-10-15",
-      "instruction_commit_sha": "4c2f0f073e089d03257aed4d0bf467ba247b2315",
-      "scope": "All 98 active names included in 13 fresh grouped discovery queries. Current TSMC, MediaTek, NVIDIA, AMD and Marvell official pages checked; Broadcom latest-release original list failed directly and current indexed official OCP material was checked. Selected TSMC Q&A adds management confirmation of Texas evaluation and TSMC-operation condition for potential Terafab cooperation. Previous guidance, Micron opening, MediaTek/ByteDance and mobile-demand events are not repeated. No article.",
+      "instruction_commit_sha": "97b88700c115b7fb343bb1ac9e11fa9bf8d98f60",
+      "scope": "All 98 active names included in 13 fresh grouped discovery queries, followed by current core/CSP checks. TSMC, MediaTek, NVIDIA, AMD, Broadcom and Marvell official current listings checked. GUC original September revenue adds historical primary validation. Delta SST/SOFC original unveiling and original reporting retained as commercialization follow-up, not a fresh earnings or hyperscale order alert. Existing TSMC actual/guidance/Terafab, MediaTek/ByteDance and financing events not repeated. No article.",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 13,
       "sources": [
-        "https://www.marketbeat.com/earnings/reports/2026-10-15-taiwan-semiconductor-manufacturing-company-limited-stock/",
-        "https://www.reuters.com/world/asia-pacific/tsmc-expected-report-sixth-straight-quarter-record-profit-thanks-ai-boom-2026-10-14/",
-        "https://www.cna.com.tw/news/afe/202610150172.aspx",
-        "https://money.udn.com/money/story/5612/9816853?from=edn_related_storybottom",
-        "https://www.cna.com.tw/news/afe/202610030028.aspx",
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
         "https://nvidianews.nvidia.com/news",
         "https://newsroom.amd.com/",
         "https://www.marvell.com/company/newsroom.html",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
-        "https://investors.broadcom.com/news-releases/news-release-details/broadcom-redefines-ai-infrastructure-industry-leading-networking"
+        "https://www.guc-asic.com/public/tw/news/PressReleases/202609revenueC",
+        "https://www.guc-asic.com/tw/investor/financial",
+        "https://www.deltaww.com/en-US/press/41167",
+        "https://news.cnyes.com/news/id/6630369",
+        "https://technews.tw/2026/10/14/delta-electronics-800-vdc-sst-debut-sofc-pilot-production-starts-year-end/",
+        "https://www.cna.com.tw/news/afe/202610150208.aspx"
       ],
       "source_limits": [
-        "15 active names retain an identified primary-company fact; 83 still need individual primary validation. Search queries include every name but results mix older items and grouped coverage is not an exhaustive company release or financial audit.",
-        "TSMC/Terafab remains discussion and evaluation, not project approval, customer contract, supplier award, process transfer or commercial output. Selected reproduced Q&A and original reporting are not full issuer audio verification.",
-        "Overseas margin dilution of 3-4 percentage points in later ramp stages predates this call; not reported as newly worsened guidance. No numerical 2027 capital budget or consensus EPS revision established.",
-        "MediaTek current press room supplies no new named ByteDance contract or economics; Bloomberg negotiation and Omdia contraction fingerprints retain their prior limits.",
-        "Broadcom latest financial-news index returned direct retrieval errors; indexed original October 8 OCP material is historical. No inference that Broadcom has issued no other news.",
-        "Only public event, sources, coverage and research stage appended; no stock quote, valuation, private holding, trade condition, scheduler setting, watchlist mutation or public article."
+        "16 active names have an identified primary-company fact; 82 still require individual primary validation. Grouped discovery is not an exhaustive company release or financial audit.",
+        "TSMC current Q4 table repeats the registered guidance. MediaTek current listing does not establish new named ByteDance terms, design win, NRE or production economics.",
+        "Broadcom financial-news index readable this time; prior retrieval failures remain historical. Current official listings are not complete release-by-release financial validation.",
+        "Delta detailed issuer release prose was not returned, only title/date/captions. Original reporting supplies sample/pilot statements; no named CSP commercial deployment, revenue or margin verified. Site-specific production dates remain to be reconciled.",
+        "GUC issuer historical monthly baseline does not establish new October 15 customer awards or margin revisions. No new article, stock quote, valuation, private holding, trade condition or watchlist mutation recorded."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -2708,6 +2708,35 @@
           "MediaTek current press room supplies no new named ByteDance contract or economics; Bloomberg negotiation and Omdia contraction fingerprints retain their prior limits.",
           "Broadcom latest financial-news index returned direct retrieval errors; indexed original October 8 OCP material is historical. No inference that Broadcom has issued no other news.",
           "Only public event, sources, coverage and research stage appended; no stock quote, valuation, private holding, trade condition, scheduler setting, watchlist mutation or public article."
+        ]
+      },
+      {
+        "date": "2026-10-15",
+        "instruction_commit_sha": "97b88700c115b7fb343bb1ac9e11fa9bf8d98f60",
+        "scope": "All 98 active names included in 13 fresh grouped discovery queries, followed by current core/CSP checks. TSMC, MediaTek, NVIDIA, AMD, Broadcom and Marvell official current listings checked. GUC original September revenue adds historical primary validation. Delta SST/SOFC original unveiling and original reporting retained as commercialization follow-up, not a fresh earnings or hyperscale order alert. Existing TSMC actual/guidance/Terafab, MediaTek/ByteDance and financing events not repeated. No article.",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 13,
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://newsroom.amd.com/",
+          "https://www.marvell.com/company/newsroom.html",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.guc-asic.com/public/tw/news/PressReleases/202609revenueC",
+          "https://www.guc-asic.com/tw/investor/financial",
+          "https://www.deltaww.com/en-US/press/41167",
+          "https://news.cnyes.com/news/id/6630369",
+          "https://technews.tw/2026/10/14/delta-electronics-800-vdc-sst-debut-sofc-pilot-production-starts-year-end/",
+          "https://www.cna.com.tw/news/afe/202610150208.aspx"
+        ],
+        "source_limits": [
+          "16 active names have an identified primary-company fact; 82 still require individual primary validation. Grouped discovery is not an exhaustive company release or financial audit.",
+          "TSMC current Q4 table repeats the registered guidance. MediaTek current listing does not establish new named ByteDance terms, design win, NRE or production economics.",
+          "Broadcom financial-news index readable this time; prior retrieval failures remain historical. Current official listings are not complete release-by-release financial validation.",
+          "Delta detailed issuer release prose was not returned, only title/date/captions. Original reporting supplies sample/pilot statements; no named CSP commercial deployment, revenue or margin verified. Site-specific production dates remain to be reconciled.",
+          "GUC issuer historical monthly baseline does not establish new October 15 customer awards or margin revisions. No new article, stock quote, valuation, private holding, trade condition or watchlist mutation recorded."
         ]
       }
     ],
@@ -4397,6 +4426,62 @@
         "Check whether the potential arrangement supplements TSMC capacity or changes actual external foundry procurement; no competitor displacement assumed."
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "guc-september-revenue-and-asic-gross-profit-conversion",
+      "companies": [
+        "Global Unichip (3443)"
+      ],
+      "sources": [
+        "https://www.guc-asic.com/public/tw/news/PressReleases/202609revenueC",
+        "https://www.guc-asic.com/tw/investor/financial"
+      ],
+      "stage": "issuer_historical_september_revenue_verified_mix_margin_cash_and_named_customer_attribution_pending",
+      "facts": {
+        "publication_date": "2026-10-05",
+        "checked_date": "2026-10-15",
+        "currency": "TWD",
+        "unit": "thousand",
+        "period": "2026-09",
+        "revenue": 7145236,
+        "yoy_percent": 97.8,
+        "mom_percent": 22.3,
+        "january_september_revenue": 44098869,
+        "ytd_yoy_percent": 102.8,
+        "limits": "October 5 release rounds to millions; exact thousand-unit values come from issuer financial table. Historical baseline, not a fresh October 15 order or estimate revision. Revenue alone does not identify NRE versus mass-production mix, named CSP allocation, gross profit or cash conversion."
+      },
+      "questions": [
+        "Reconcile NRE and mass-production revenue, gross margin and working capital with the next quarterly financial report.",
+        "Obtain named customer/program and qualification evidence before attributing growth to a specific CSP."
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "delta-sst-dc-power-and-sofc-commercialization",
+      "companies": [
+        "Delta Electronics (2308)",
+        "Great Taipei Gas"
+      ],
+      "sources": [
+        "https://www.deltaww.com/en-US/press/41167",
+        "https://news.cnyes.com/news/id/6630369",
+        "https://technews.tw/2026/10/14/delta-electronics-800-vdc-sst-debut-sofc-pilot-production-starts-year-end/",
+        "https://www.cna.com.tw/news/afe/202610150208.aspx"
+      ],
+      "stage": "issuer_october14_unveiling_verified_media_sample_and_pilot_milestones_customer_acceptance_and_commercial_economics_pending",
+      "facts": {
+        "event_date": "2026-10-14",
+        "followup_date": "2026-10-15",
+        "issuer_scope": "Issuer page verifies SST DC-system unveiling, SOFC presentation, event date and executives. Retrieved body contains captions but not the detailed release prose.",
+        "reported_milestones": "October 14 original reporting says more than 100 SST sets combine samples with small shipments, not 100 paid hyperscale deployments. Data-center 800 VDC validation is separate from prior industrial SST operation. Reporting identifies a planned 550 kW Great Taipei Gas office demonstration and year-end SOFC pilot production.",
+        "limits": "October 15 general 2027 mass-production comment and October 14 site-specific pilot/2028 Guan Yin schedule need issuer reconciliation. 85% includes heat recovery, not electrical efficiency. Deployment-time and conversion-efficiency figures are vendor claims without obtained test protocols. No named CSP purchase value, acceptance, margin or recognized SOFC revenue verified."
+      },
+      "questions": [
+        "Obtain exact site, product generation, capacity and acceptance milestones to reconcile pilot and mass-production dates.",
+        "Separate paid data-center shipments from samples and industrial uses; verify customer awards, price, margin and warranty economics.",
+        "Verify electrical-only versus cogeneration efficiency, fuel price, uptime, degradation and installed cost against alternative power architectures."
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -4416,7 +4501,7 @@
     }
   ],
   "last_research_date": "2026-10-15",
-  "instruction_commit_sha": "4c2f0f073e089d03257aed4d0bf467ba247b2315",
+  "instruction_commit_sha": "97b88700c115b7fb343bb1ac9e11fa9bf8d98f60",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
