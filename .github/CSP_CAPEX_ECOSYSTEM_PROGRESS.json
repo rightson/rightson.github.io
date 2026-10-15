@@ -2045,6 +2045,63 @@
         "https://focustaiwan.tw/business/202610010013"
       ],
       "status": "primary_opening_verified_management_reservation_reported_financial_conversion_pending"
+    },
+    {
+      "fingerprint": "mediatek-bytedance-data-center-asic-advanced-talks-reported-20261015",
+      "event_date": "2026-10-15",
+      "discovered_date": "2026-10-15",
+      "companies": [
+        "MediaTek",
+        "ByteDance"
+      ],
+      "type": "original_media_report_of_advanced_talks_not_confirmed_design_win",
+      "facts": {
+        "original_reporter": "Haze Fan, Bloomberg News",
+        "original_publication_utc": "2026-10-15 02:39",
+        "reported_stage": "Advanced talks / close to agreement to procure bespoke data-center semiconductors from MediaTek; anonymous people familiar with the matter.",
+        "customer_scope": "Bloomberg licensed-syndication indexed text describes ByteDance as a possible second major ASIC customer after Google if the deal completes. This is not confirmed customer ranking or a signed contract.",
+        "commercial_gaps": [
+          "Chip architecture and workload, quantities, price, design responsibility and foundry/packaging allocation undisclosed.",
+          "No disclosed NRE, volume economics, revenue recognition, gross margin or repeat-generation commitment.",
+          "No evidence identifies this as a Google TPU program, the previously discussed second ASIC, a replacement for Broadcom/Marvell, or an altered Google procurement allocation.",
+          "No primary export-classification, approval or contract-eligibility evidence obtained; no legal-compliance conclusion."
+        ],
+        "verification_limits": "Bloomberg original headline, timestamp and opening excerpt obtained; full original remains subscription-gated. Licensed-syndication search text supports additional attribution, but direct Yahoo body fetch failed, including a 429 on the UK mirror. Reuters explicitly could not independently verify; retransmissions count as one Bloomberg-origin report. Company press-room listing contains no confirmation."
+      },
+      "sources": [
+        "https://news.bloomberglaw.com/capital-markets/bytedance-in-talks-to-secure-mediatek-ai-chips-for-data-centers",
+        "https://finance.yahoo.com/technology/ai/articles/bytedance-talks-secure-mediatek-ai-023911406.html",
+        "https://www.reuters.com/technology/bytedance-nears-chip-supply-deal-with-mediatek-data-centres-bloomberg-news-2026-10-15/",
+        "https://news.cnyes.com/news/id/6631028",
+        "https://www.mediatek.com/press-room"
+      ],
+      "status": "reported_negotiation_candidate_registered_company_confirmation_and_economics_pending"
+    },
+    {
+      "fingerprint": "omdia-q3-2026-smartphone-contraction-memory-cost-and-mobile-mix-20261015",
+      "event_date": "2026-10-15",
+      "discovered_date": "2026-10-15",
+      "companies": [
+        "MediaTek",
+        "TSMC",
+        "Samsung",
+        "Apple"
+      ],
+      "type": "researcher_primary_preliminary_market_estimate_not_company_earnings_revision",
+      "facts": {
+        "source_date": "2026-10-15",
+        "q3_2026_global_smartphone_shipments_yoy_percent": -20,
+        "prior_quarter_yoy_percent": -6,
+        "source_scope": "Omdia preliminary estimates; same-source prior-quarter comparator. Not blended with IDC's different dataset.",
+        "demand_and_mix": "Omdia reports sequential decline despite flagship launches and year-end channel preparation, with memory/storage costs pushing vendors to reduce low-margin devices. Samsung and Apple combined share about 45 percent, up about 8 percentage points year-on-year.",
+        "transmission_scope": "Relevant counterevidence to assuming AI ASIC opportunities translate directly into whole-company profit improvement at mobile-exposed chip vendors. Company-specific shipment, ASP, flagship mix and inventory evidence remain required; no numerical MediaTek EPS cut inferred.",
+        "limits": "Underlying tracker/methodology not fully retrieved. IDC 22-percent figures appear in current licensed reporting/reproduction, but the obtained IDC original market-share page still contains Q2; IDC Q3 not treated as primary-verified or substituted for Omdia."
+      },
+      "sources": [
+        "https://omdia.tech.informa.com/pr/2026/oct/global-smartphone-market-shrinks-20percent-in-3q26-as-memory-crisis-reshapes-competition",
+        "https://www.mediatek.com/press-room"
+      ],
+      "status": "primary_researcher_summary_verified_company_specific_profit_transmission_pending"
     }
   ],
   "articles": [],
@@ -2079,35 +2136,32 @@
     ],
     "current_run_screening": {
       "date": "2026-10-15",
-      "instruction_commit_sha": "ca7320b740f80e1f0be94b0e5c9ff175eb81668e",
-      "scope": "All 98 active names included in 13 fresh grouped discovery queries. Current TSMC, MediaTek, NVIDIA, AMD, Broadcom and Marvell official listings checked alongside CSP discovery. Newly available TSMC official Q4 guidance registered separately from prior actual-Q3 event; annual growth/capacity remarks cross-checked. Micron AATT2 actual opening and facility-specific 2027 reservation reporting add an out-of-universe supplier milestone. No article.",
+      "instruction_commit_sha": "b1011cd009950b97113e63c1fbcc2fa47836735c",
+      "scope": "All 98 active names included in 13 fresh grouped discovery queries. Current TSMC, MediaTek, NVIDIA, AMD, Broadcom and Marvell official listings checked with targeted CSP and supplier discovery. New Bloomberg-origin MediaTek/ByteDance negotiation lead registered without treating retransmissions as independent confirmation. Omdia original Q3 smartphone-market decline adds counterevidence to whole-company profit assumptions. Existing TSMC guidance, Micron opening and earlier financing fingerprints not repeated. No article.",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 13,
       "sources": [
-        "https://investor.tsmc.com/english/quarterly-results/2026/q3",
-        "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/e630db74ca50871f7598b011eafb5c036e7dd831/3Q26%20Presentation%20(E).pdf",
-        "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/526b65af7305df2dde6b9ece6812b1fdf1e49f9b/3Q26%20EarningsRelease.pdf",
-        "https://www.cna.com.tw/news/afe/202610150159.aspx",
-        "https://www.cna.com.tw/news/afe/202610150148.aspx",
-        "https://www.investing.com/news/transcripts/earnings-call-transcript-tsmc-beats-q3-2026-estimates-as-stock-slips-93CH-4950695",
-        "https://money.udn.com/money/story/5612/9816715",
-        "https://www.businessinsider.tw/article/8327",
-        "https://www.president.gov.tw/NEWS/40429",
-        "https://www.reuters.com/world/asia-pacific/taiwan-president-calls-micron-workers-negotiate-sincerely-ahead-possible-strike-2026-10-15/",
-        "https://focustaiwan.tw/business/202610010013",
+        "https://news.bloomberglaw.com/capital-markets/bytedance-in-talks-to-secure-mediatek-ai-chips-for-data-centers",
+        "https://finance.yahoo.com/technology/ai/articles/bytedance-talks-secure-mediatek-ai-023911406.html",
+        "https://www.reuters.com/technology/bytedance-nears-chip-supply-deal-with-mediatek-data-centres-bloomberg-news-2026-10-15/",
+        "https://news.cnyes.com/news/id/6631028",
         "https://www.mediatek.com/press-room",
+        "https://omdia.tech.informa.com/pr/2026/oct/global-smartphone-market-shrinks-20percent-in-3q26-as-memory-crisis-reshapes-competition",
+        "https://www.mediatek.com/press-room",
+        "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://nvidianews.nvidia.com/news",
         "https://newsroom.amd.com/",
         "https://www.marvell.com/company/newsroom.html",
         "https://investors.broadcom.com/financial-information/financial-news-releases"
       ],
       "source_limits": [
-        "15 distinct active names have an identified primary-company fact; 83 still need individual primary validation. Search inclusion is not 98 company financial validations.",
-        "Official non-WoG TSMC presentation and release now obtained, resolving the earlier forward-guidance retrieval gap. Selected call reproduction is not complete issuer audio or Q&A validation; no numerical 2027 capex or formal replacement AI CAGR obtained.",
-        "MediaTek current listing adds no named ASIC award or contract economics. Current TPU timing report repeats the October 13 institution-level information; institution original still unavailable.",
-        "Micron is outside the active Taiwan universe. Facility opening and management reservation statement do not verify qualified capacity, realized margins or local supplier awards. Union rally not labeled a strike or current shutdown.",
-        "No comparable Q4 consensus estimate population obtained; no claim of consensus EPS revision. No valuation, stock prices, trades, watchlist changes or public article recorded."
+        "15 active names retain an identified primary-company fact; 83 still need individual primary validation. Grouped discovery does not establish full-universe earnings verification.",
+        "ByteDance negotiation remains one anonymous-source Bloomberg report. Full original not obtained; opening excerpt and licensed indexed syndication checked. Reuters explicitly lacks independent verification; MediaTek listing adds no confirmation.",
+        "Omdia preliminary shipments are market estimates, not company guidance. IDC Q3 source body not obtained; no blending of datasets or numerical MediaTek earnings impact.",
+        "LITEON historical Q2 issuer release timed out on direct reads. Indexed text not counted as an obtained company original; no primary-count addition.",
+        "Official TWSE October 15 HTML quote retrieval failed; independent third-party closing-price page obtained for private context only, not stored here. No stock prices, valuation, trade conditions or private judgments added to the public ledger.",
+        "TSMC current official table repeats registered Q4 guidance; audio replay link now available but not listened/transcribed in full. No fresh company numerical 2027 capex or pricing guidance adopted."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -2565,6 +2619,36 @@
           "MediaTek current listing adds no named ASIC award or contract economics. Current TPU timing report repeats the October 13 institution-level information; institution original still unavailable.",
           "Micron is outside the active Taiwan universe. Facility opening and management reservation statement do not verify qualified capacity, realized margins or local supplier awards. Union rally not labeled a strike or current shutdown.",
           "No comparable Q4 consensus estimate population obtained; no claim of consensus EPS revision. No valuation, stock prices, trades, watchlist changes or public article recorded."
+        ]
+      },
+      {
+        "date": "2026-10-15",
+        "instruction_commit_sha": "b1011cd009950b97113e63c1fbcc2fa47836735c",
+        "scope": "All 98 active names included in 13 fresh grouped discovery queries. Current TSMC, MediaTek, NVIDIA, AMD, Broadcom and Marvell official listings checked with targeted CSP and supplier discovery. New Bloomberg-origin MediaTek/ByteDance negotiation lead registered without treating retransmissions as independent confirmation. Omdia original Q3 smartphone-market decline adds counterevidence to whole-company profit assumptions. Existing TSMC guidance, Micron opening and earlier financing fingerprints not repeated. No article.",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 13,
+        "sources": [
+          "https://news.bloomberglaw.com/capital-markets/bytedance-in-talks-to-secure-mediatek-ai-chips-for-data-centers",
+          "https://finance.yahoo.com/technology/ai/articles/bytedance-talks-secure-mediatek-ai-023911406.html",
+          "https://www.reuters.com/technology/bytedance-nears-chip-supply-deal-with-mediatek-data-centres-bloomberg-news-2026-10-15/",
+          "https://news.cnyes.com/news/id/6631028",
+          "https://www.mediatek.com/press-room",
+          "https://omdia.tech.informa.com/pr/2026/oct/global-smartphone-market-shrinks-20percent-in-3q26-as-memory-crisis-reshapes-competition",
+          "https://www.mediatek.com/press-room",
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://nvidianews.nvidia.com/news",
+          "https://newsroom.amd.com/",
+          "https://www.marvell.com/company/newsroom.html",
+          "https://investors.broadcom.com/financial-information/financial-news-releases"
+        ],
+        "source_limits": [
+          "15 active names retain an identified primary-company fact; 83 still need individual primary validation. Grouped discovery does not establish full-universe earnings verification.",
+          "ByteDance negotiation remains one anonymous-source Bloomberg report. Full original not obtained; opening excerpt and licensed indexed syndication checked. Reuters explicitly lacks independent verification; MediaTek listing adds no confirmation.",
+          "Omdia preliminary shipments are market estimates, not company guidance. IDC Q3 source body not obtained; no blending of datasets or numerical MediaTek earnings impact.",
+          "LITEON historical Q2 issuer release timed out on direct reads. Indexed text not counted as an obtained company original; no primary-count addition.",
+          "Official TWSE October 15 HTML quote retrieval failed; independent third-party closing-price page obtained for private context only, not stored here. No stock prices, valuation, trade conditions or private judgments added to the public ledger.",
+          "TSMC current official table repeats registered Q4 guidance; audio replay link now available but not listened/transcribed in full. No fresh company numerical 2027 capex or pricing guidance adopted."
         ]
       }
     ],
@@ -4183,6 +4267,51 @@
         "Identify primary evidence for supplier equipment orders; attendee names establish no order."
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "mediatek-bytedance-asic-customer-diversification-and-economics",
+      "companies": [
+        "MediaTek",
+        "ByteDance"
+      ],
+      "sources": [
+        "https://news.bloomberglaw.com/capital-markets/bytedance-in-talks-to-secure-mediatek-ai-chips-for-data-centers",
+        "https://finance.yahoo.com/technology/ai/articles/bytedance-talks-secure-mediatek-ai-023911406.html",
+        "https://www.reuters.com/technology/bytedance-nears-chip-supply-deal-with-mediatek-data-centres-bloomberg-news-2026-10-15/",
+        "https://news.cnyes.com/news/id/6631028",
+        "https://www.mediatek.com/press-room"
+      ],
+      "stage": "original_media_excerpt_verified_advanced_talks_not_confirmed_design_win",
+      "event_fingerprint": "mediatek-bytedance-data-center-asic-advanced-talks-reported-20261015",
+      "questions": [
+        "Obtain signed agreement or named company confirmation and distinguish development work from volume purchase.",
+        "Identify chip workload, architecture, milestone schedule, design/IP responsibilities and relation, if any, to existing ASIC programs.",
+        "Validate NRE, gross-profit dollars, recurring production share, working capital and revenue timing.",
+        "Check customer concentration, repeat generations and explicit competitive allocation; no Google TPU share shift inferred.",
+        "Obtain applicable export classification and approval evidence without inferring legality from media generalizations.",
+        "Test whether prospective ASIC earnings can offset mobile demand and product-mix pressure."
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "ai-memory-allocation-mobile-demand-and-soc-profit-offset",
+      "companies": [
+        "MediaTek",
+        "TSMC"
+      ],
+      "sources": [
+        "https://omdia.tech.informa.com/pr/2026/oct/global-smartphone-market-shrinks-20percent-in-3q26-as-memory-crisis-reshapes-competition",
+        "https://www.mediatek.com/press-room"
+      ],
+      "stage": "omdia_primary_q3_market_contraction_verified_mobile_mix_inventory_and_company_profit_pending",
+      "event_fingerprint": "omdia-q3-2026-smartphone-contraction-memory-cost-and-mobile-mix-20261015",
+      "questions": [
+        "Reconcile vendor-specific mobile-chip shipments, ASP and flagship mix with industry unit contraction.",
+        "Test whether memory-cost inflation reduces low-end chip demand, increases channel inventories or shifts profits toward premium products.",
+        "Compare recognized ASIC gross profit and expense absorption with mobile-profit changes rather than applying a market shipment rate to company earnings.",
+        "Obtain comparable tracker revisions and company guidance, preserving Omdia/IDC population differences."
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -4202,7 +4331,7 @@
     }
   ],
   "last_research_date": "2026-10-15",
-  "instruction_commit_sha": "ca7320b740f80e1f0be94b0e5c9ff175eb81668e",
+  "instruction_commit_sha": "b1011cd009950b97113e63c1fbcc2fa47836735c",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
