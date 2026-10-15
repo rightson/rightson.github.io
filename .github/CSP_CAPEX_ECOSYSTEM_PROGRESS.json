@@ -2131,6 +2131,28 @@
         "https://investor.tsmc.com/english/quarterly-results/2026/q3"
       ],
       "status": "management_evaluation_and_operating_condition_cross_checked_no_definitive_project_or_earnings_revision"
+    },
+    {
+      "fingerprint": "holtek-12v-ai-server-fan-mcu-september-first-orders-small-shipments-disclosed-20261015",
+      "event_date": "2026-09",
+      "disclosed_date": "2026-10-15",
+      "discovered_date": "2026-10-15",
+      "companies": [
+        "Holtek Semiconductor (6202)"
+      ],
+      "type": "attributed_management_commercialization_milestone_original_reporting",
+      "facts": {
+        "baseline": "July 22 reporting placed 12V server-fan control at customer validation.",
+        "increment": "October 15 original reporting attributes September first orders and small deliveries to spokesperson Pan Chien-chou, with larger contributions expected from Q1 2027. Taiwan cooling suppliers and Japanese customers are reported; no named hyperscaler.",
+        "economics": "Management describes the server-fan product margin as above company average, while foundry and back-end lead times lengthen and cost pass-through remains difficult.",
+        "limits": "No obtained issuer shipment filing, customer award, ASP, financial contribution or recurring contract. Customer H1 2027 demand forecast is not booked revenue; reported chip-demand and server-unit quantities require reconciliation. 48V remains in validation."
+      },
+      "sources": [
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=21d701e5-4a18-4883-9b7e-c783d65a1c0e",
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=dd7ca67c-f79f-4eb0-ad7c-9f65ee9b57a1",
+        "https://ww2.money-link.com.tw/realtimenews/NewsContent.aspx?PU=1002&SN=2432302002"
+      ],
+      "status": "original_reporting_cross_checked_initial_shipments_not_verified_scale_or_profit_revision"
     }
   ],
   "articles": [],
@@ -2166,8 +2188,8 @@
     ],
     "current_run_screening": {
       "date": "2026-10-15",
-      "instruction_commit_sha": "97b88700c115b7fb343bb1ac9e11fa9bf8d98f60",
-      "scope": "All 98 active names included in 13 fresh grouped discovery queries, followed by current core/CSP checks. TSMC, MediaTek, NVIDIA, AMD, Broadcom and Marvell official current listings checked. GUC original September revenue adds historical primary validation. Delta SST/SOFC original unveiling and original reporting retained as commercialization follow-up, not a fresh earnings or hyperscale order alert. Existing TSMC actual/guidance/Terafab, MediaTek/ByteDance and financing events not repeated. No article.",
+      "instruction_commit_sha": "14d450c5033eff88fd0493729913c9e68cbf2da9",
+      "scope": "All 98 active names included in 13 fresh grouped discovery queries; current TSMC, MediaTek, NVIDIA, AMD, Broadcom and Marvell official listings checked, with CSP demand/financing follow-ups. New outside-universe Holtek early commercial shipments cross-checked against July validation baseline; TECO POC and capacity retained as research follow-up. Existing TSMC results/guidance, GF packaging agreement and MediaTek discussions not repeated. No article.",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 13,
@@ -2178,19 +2200,19 @@
         "https://newsroom.amd.com/",
         "https://www.marvell.com/company/newsroom.html",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
-        "https://www.guc-asic.com/public/tw/news/PressReleases/202609revenueC",
-        "https://www.guc-asic.com/tw/investor/financial",
-        "https://www.deltaww.com/en-US/press/41167",
-        "https://news.cnyes.com/news/id/6630369",
-        "https://technews.tw/2026/10/14/delta-electronics-800-vdc-sst-debut-sofc-pilot-production-starts-year-end/",
-        "https://www.cna.com.tw/news/afe/202610150208.aspx"
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=21d701e5-4a18-4883-9b7e-c783d65a1c0e",
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=dd7ca67c-f79f-4eb0-ad7c-9f65ee9b57a1",
+        "https://ww2.money-link.com.tw/realtimenews/NewsContent.aspx?PU=1002&SN=2432302002",
+        "https://www.cna.com.tw/news/afe/202610140102.aspx",
+        "https://news.cnyes.com/news/id/6630216",
+        "https://news.cnyes.com/news/id/6631199"
       ],
       "source_limits": [
-        "16 active names have an identified primary-company fact; 82 still require individual primary validation. Grouped discovery is not an exhaustive company release or financial audit.",
-        "TSMC current Q4 table repeats the registered guidance. MediaTek current listing does not establish new named ByteDance terms, design win, NRE or production economics.",
-        "Broadcom financial-news index readable this time; prior retrieval failures remain historical. Current official listings are not complete release-by-release financial validation.",
-        "Delta detailed issuer release prose was not returned, only title/date/captions. Original reporting supplies sample/pilot statements; no named CSP commercial deployment, revenue or margin verified. Site-specific production dates remain to be reconciled.",
-        "GUC issuer historical monthly baseline does not establish new October 15 customer awards or margin revisions. No new article, stock quote, valuation, private holding, trade condition or watchlist mutation recorded."
+        "16 active names retain identified primary-company facts; 82 still require individual primary validation. All-name grouped discovery includes stale and unrelated results and is not exhaustive individual-company coverage. Outside-universe leads do not change these counts or the source watchlist.",
+        "Core official indexes and TSMC Q4 table did not establish a new revision beyond registered events. Index checks are not complete release-by-release financial validation.",
+        "Holtek issuer product-event page returned no body; licensed/original management reporting supports the shipment milestone, not independent customer confirmation. LTN and licensed reproduction body opens failed; obtained MoneyDJ body and indexed original reports provide the stated scope.",
+        "TECO original CNA body was obtained; duplicate October 15 accounts are not new awards. Some inter-publication order-growth and factory-timing descriptions differ; only attributed CNA milestones are retained.",
+        "No stock quote, current valuation, private holding or trade condition written to the public ledger. No article or website publication claimed."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -2737,6 +2759,35 @@
           "Broadcom financial-news index readable this time; prior retrieval failures remain historical. Current official listings are not complete release-by-release financial validation.",
           "Delta detailed issuer release prose was not returned, only title/date/captions. Original reporting supplies sample/pilot statements; no named CSP commercial deployment, revenue or margin verified. Site-specific production dates remain to be reconciled.",
           "GUC issuer historical monthly baseline does not establish new October 15 customer awards or margin revisions. No new article, stock quote, valuation, private holding, trade condition or watchlist mutation recorded."
+        ]
+      },
+      {
+        "date": "2026-10-15",
+        "instruction_commit_sha": "14d450c5033eff88fd0493729913c9e68cbf2da9",
+        "scope": "All 98 active names included in 13 fresh grouped discovery queries; current TSMC, MediaTek, NVIDIA, AMD, Broadcom and Marvell official listings checked, with CSP demand/financing follow-ups. New outside-universe Holtek early commercial shipments cross-checked against July validation baseline; TECO POC and capacity retained as research follow-up. Existing TSMC results/guidance, GF packaging agreement and MediaTek discussions not repeated. No article.",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 13,
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://newsroom.amd.com/",
+          "https://www.marvell.com/company/newsroom.html",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=21d701e5-4a18-4883-9b7e-c783d65a1c0e",
+          "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=dd7ca67c-f79f-4eb0-ad7c-9f65ee9b57a1",
+          "https://ww2.money-link.com.tw/realtimenews/NewsContent.aspx?PU=1002&SN=2432302002",
+          "https://www.cna.com.tw/news/afe/202610140102.aspx",
+          "https://news.cnyes.com/news/id/6630216",
+          "https://news.cnyes.com/news/id/6631199"
+        ],
+        "source_limits": [
+          "16 active names retain identified primary-company facts; 82 still require individual primary validation. All-name grouped discovery includes stale and unrelated results and is not exhaustive individual-company coverage. Outside-universe leads do not change these counts or the source watchlist.",
+          "Core official indexes and TSMC Q4 table did not establish a new revision beyond registered events. Index checks are not complete release-by-release financial validation.",
+          "Holtek issuer product-event page returned no body; licensed/original management reporting supports the shipment milestone, not independent customer confirmation. LTN and licensed reproduction body opens failed; obtained MoneyDJ body and indexed original reports provide the stated scope.",
+          "TECO original CNA body was obtained; duplicate October 15 accounts are not new awards. Some inter-publication order-growth and factory-timing descriptions differ; only attributed CNA milestones are retained.",
+          "No stock quote, current valuation, private holding or trade condition written to the public ledger. No article or website publication claimed."
         ]
       }
     ],
@@ -4482,6 +4533,49 @@
         "Verify electrical-only versus cogeneration efficiency, fuel price, uptime, degradation and installed cost against alternative power architectures."
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "holtek-ai-server-fan-mcu-first-small-shipments-and-capacity-allocation",
+      "companies": [
+        "Holtek Semiconductor (6202)"
+      ],
+      "event_fingerprint": "holtek-12v-ai-server-fan-mcu-september-first-orders-small-shipments-disclosed-20261015",
+      "sources": [
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=21d701e5-4a18-4883-9b7e-c783d65a1c0e",
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=dd7ca67c-f79f-4eb0-ad7c-9f65ee9b57a1",
+        "https://ww2.money-link.com.tw/realtimenews/NewsContent.aspx?PU=1002&SN=2432302002"
+      ],
+      "stage": "original_reporting_cross_checked_early_commercial_shipments_issuer_and_customer_economics_pending",
+      "questions": [
+        "Reconcile H1 2027 customer forecast, firm releases, chip counts and server units; verify accepted deliveries and cancellations.",
+        "Obtain program revenue, ASP, gross profit and working-capital contribution against cost inflation and legacy-product weakness.",
+        "Confirm foundry/back-end allocation and repeat orders before extrapolating Q1 2027 delivery or 48V qualification."
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "teco-mdc-poc-and-transformer-capacity-commercial-conversion",
+      "companies": [
+        "TECO (1504)"
+      ],
+      "sources": [
+        "https://www.cna.com.tw/news/afe/202610140102.aspx",
+        "https://news.cnyes.com/news/id/6630216",
+        "https://www.teco.com.tw/zh-tw/press/news/20240924?tags=3468"
+      ],
+      "stage": "october14_management_interview_and_historical_issuer_relationship_poc_acceptance_and_economics_pending",
+      "facts": {
+        "event_date": "2026-10-14",
+        "followup_date": "2026-10-15",
+        "scope": "CNA attributes doubled Southeast Asia CSP orders versus 2025 to management, without obtained award values or margin detail. MDC proof-of-concept results in Malaysia and Japan remain expected by year-end; initial 3 MW and 5 MW projects are plans, not accepted deployments.",
+        "capacity": "Reported completion targets are end-2027 for Indonesian distribution/dry transformers, 2028 for power transformers and Q2 2027 for the Zhongli plant. These are not qualified output.",
+        "limits": "October 15 follow-up repeats the October 14 interview. Historical issuer alliance supports the transformer relationship, not a new 2026 named CSP purchase."
+      },
+      "questions": [
+        "Obtain issuer-confirmed order value, customer/program scope, delivery and acceptance terms.",
+        "Separate MDC POC, energy-storage projects and transformer capacity from recognized AIDC revenue and cash returns."
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -4501,7 +4595,7 @@
     }
   ],
   "last_research_date": "2026-10-15",
-  "instruction_commit_sha": "97b88700c115b7fb343bb1ac9e11fa9bf8d98f60",
+  "instruction_commit_sha": "14d450c5033eff88fd0493729913c9e68cbf2da9",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
