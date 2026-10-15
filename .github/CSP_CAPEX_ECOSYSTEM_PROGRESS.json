@@ -2102,6 +2102,35 @@
         "https://www.mediatek.com/press-room"
       ],
       "status": "primary_researcher_summary_verified_company_specific_profit_transmission_pending"
+    },
+    {
+      "fingerprint": "tsmc-texas-terafab-evaluation-and-fab-operating-control-20261015",
+      "event_date": "2026-10-15",
+      "discovered_date": "2026-10-15",
+      "companies": [
+        "TSMC",
+        "Tesla",
+        "SpaceX"
+      ],
+      "type": "attributed_earnings_call_expansion_evaluation_and_operating_control",
+      "facts": {
+        "historical_baseline": "Texas expansion and Terafab discussions were reported before the call; October 3 CNA preview and Reuters reference to September reporting establish that this is not a newly signed project.",
+        "call_scope": "In the October 15 Q3 call, C.C. Wei said TSMC sent teams to evaluate Texas and was discussing potential use of capacity with the Terafab customer. The talks remain ongoing and any solid conclusion would be shared.",
+        "operating_control": "Selected reproduced Q&A at 00:32:24 and 00:34:30 attributes to Wei the condition that a participating fab has to be run by TSMC; the legal ownership or partnership structure is not settled.",
+        "demand_relationship": "Management linked U.S. capacity expansion to requests from large U.S. customers. No named new CSP order, supplier award, allocated capacity, process node or commercial production date was disclosed for Texas/Terafab.",
+        "financial_scope": "No definitive investment amount, capital-sharing ratio, customer prepayment, pricing, gross margin or return target obtained. Existing 2026 capex guidance is not raised by this discussion.",
+        "verification_limits": "MarketBeat/Quartr reproduced selected transcript passages and Reuters original body cross-checked. CNA original indexed text and licensed UDN reproduction agree, but direct CNA body retrieval failed. Issuer results page provides audio replay; full issuer audio was not listened to or authenticated, and no legal agreement obtained.",
+        "historical_margin_check": "Overseas-fab dilution of 2-3 percentage points in early stages and 3-4 later was already described in January/July 2026 sources. The latter range is not registered as a new October deterioration."
+      },
+      "sources": [
+        "https://www.marketbeat.com/earnings/reports/2026-10-15-taiwan-semiconductor-manufacturing-company-limited-stock/",
+        "https://www.reuters.com/world/asia-pacific/tsmc-expected-report-sixth-straight-quarter-record-profit-thanks-ai-boom-2026-10-14/",
+        "https://www.cna.com.tw/news/afe/202610150172.aspx",
+        "https://money.udn.com/money/story/5612/9816853?from=edn_related_storybottom",
+        "https://www.cna.com.tw/news/afe/202610030028.aspx",
+        "https://investor.tsmc.com/english/quarterly-results/2026/q3"
+      ],
+      "status": "management_evaluation_and_operating_condition_cross_checked_no_definitive_project_or_earnings_revision"
     }
   ],
   "articles": [],
@@ -2136,32 +2165,32 @@
     ],
     "current_run_screening": {
       "date": "2026-10-15",
-      "instruction_commit_sha": "b1011cd009950b97113e63c1fbcc2fa47836735c",
-      "scope": "All 98 active names included in 13 fresh grouped discovery queries. Current TSMC, MediaTek, NVIDIA, AMD, Broadcom and Marvell official listings checked with targeted CSP and supplier discovery. New Bloomberg-origin MediaTek/ByteDance negotiation lead registered without treating retransmissions as independent confirmation. Omdia original Q3 smartphone-market decline adds counterevidence to whole-company profit assumptions. Existing TSMC guidance, Micron opening and earlier financing fingerprints not repeated. No article.",
+      "instruction_commit_sha": "4c2f0f073e089d03257aed4d0bf467ba247b2315",
+      "scope": "All 98 active names included in 13 fresh grouped discovery queries. Current TSMC, MediaTek, NVIDIA, AMD and Marvell official pages checked; Broadcom latest-release original list failed directly and current indexed official OCP material was checked. Selected TSMC Q&A adds management confirmation of Texas evaluation and TSMC-operation condition for potential Terafab cooperation. Previous guidance, Micron opening, MediaTek/ByteDance and mobile-demand events are not repeated. No article.",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 13,
       "sources": [
-        "https://news.bloomberglaw.com/capital-markets/bytedance-in-talks-to-secure-mediatek-ai-chips-for-data-centers",
-        "https://finance.yahoo.com/technology/ai/articles/bytedance-talks-secure-mediatek-ai-023911406.html",
-        "https://www.reuters.com/technology/bytedance-nears-chip-supply-deal-with-mediatek-data-centres-bloomberg-news-2026-10-15/",
-        "https://news.cnyes.com/news/id/6631028",
-        "https://www.mediatek.com/press-room",
-        "https://omdia.tech.informa.com/pr/2026/oct/global-smartphone-market-shrinks-20percent-in-3q26-as-memory-crisis-reshapes-competition",
-        "https://www.mediatek.com/press-room",
+        "https://www.marketbeat.com/earnings/reports/2026-10-15-taiwan-semiconductor-manufacturing-company-limited-stock/",
+        "https://www.reuters.com/world/asia-pacific/tsmc-expected-report-sixth-straight-quarter-record-profit-thanks-ai-boom-2026-10-14/",
+        "https://www.cna.com.tw/news/afe/202610150172.aspx",
+        "https://money.udn.com/money/story/5612/9816853?from=edn_related_storybottom",
+        "https://www.cna.com.tw/news/afe/202610030028.aspx",
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+        "https://www.mediatek.com/press-room",
         "https://nvidianews.nvidia.com/news",
         "https://newsroom.amd.com/",
         "https://www.marvell.com/company/newsroom.html",
-        "https://investors.broadcom.com/financial-information/financial-news-releases"
+        "https://investors.broadcom.com/financial-information/financial-news-releases",
+        "https://investors.broadcom.com/news-releases/news-release-details/broadcom-redefines-ai-infrastructure-industry-leading-networking"
       ],
       "source_limits": [
-        "15 active names retain an identified primary-company fact; 83 still need individual primary validation. Grouped discovery does not establish full-universe earnings verification.",
-        "ByteDance negotiation remains one anonymous-source Bloomberg report. Full original not obtained; opening excerpt and licensed indexed syndication checked. Reuters explicitly lacks independent verification; MediaTek listing adds no confirmation.",
-        "Omdia preliminary shipments are market estimates, not company guidance. IDC Q3 source body not obtained; no blending of datasets or numerical MediaTek earnings impact.",
-        "LITEON historical Q2 issuer release timed out on direct reads. Indexed text not counted as an obtained company original; no primary-count addition.",
-        "Official TWSE October 15 HTML quote retrieval failed; independent third-party closing-price page obtained for private context only, not stored here. No stock prices, valuation, trade conditions or private judgments added to the public ledger.",
-        "TSMC current official table repeats registered Q4 guidance; audio replay link now available but not listened/transcribed in full. No fresh company numerical 2027 capex or pricing guidance adopted."
+        "15 active names retain an identified primary-company fact; 83 still need individual primary validation. Search queries include every name but results mix older items and grouped coverage is not an exhaustive company release or financial audit.",
+        "TSMC/Terafab remains discussion and evaluation, not project approval, customer contract, supplier award, process transfer or commercial output. Selected reproduced Q&A and original reporting are not full issuer audio verification.",
+        "Overseas margin dilution of 3-4 percentage points in later ramp stages predates this call; not reported as newly worsened guidance. No numerical 2027 capital budget or consensus EPS revision established.",
+        "MediaTek current press room supplies no new named ByteDance contract or economics; Bloomberg negotiation and Omdia contraction fingerprints retain their prior limits.",
+        "Broadcom latest financial-news index returned direct retrieval errors; indexed original October 8 OCP material is historical. No inference that Broadcom has issued no other news.",
+        "Only public event, sources, coverage and research stage appended; no stock quote, valuation, private holding, trade condition, scheduler setting, watchlist mutation or public article."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -2649,6 +2678,36 @@
           "LITEON historical Q2 issuer release timed out on direct reads. Indexed text not counted as an obtained company original; no primary-count addition.",
           "Official TWSE October 15 HTML quote retrieval failed; independent third-party closing-price page obtained for private context only, not stored here. No stock prices, valuation, trade conditions or private judgments added to the public ledger.",
           "TSMC current official table repeats registered Q4 guidance; audio replay link now available but not listened/transcribed in full. No fresh company numerical 2027 capex or pricing guidance adopted."
+        ]
+      },
+      {
+        "date": "2026-10-15",
+        "instruction_commit_sha": "4c2f0f073e089d03257aed4d0bf467ba247b2315",
+        "scope": "All 98 active names included in 13 fresh grouped discovery queries. Current TSMC, MediaTek, NVIDIA, AMD and Marvell official pages checked; Broadcom latest-release original list failed directly and current indexed official OCP material was checked. Selected TSMC Q&A adds management confirmation of Texas evaluation and TSMC-operation condition for potential Terafab cooperation. Previous guidance, Micron opening, MediaTek/ByteDance and mobile-demand events are not repeated. No article.",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 13,
+        "sources": [
+          "https://www.marketbeat.com/earnings/reports/2026-10-15-taiwan-semiconductor-manufacturing-company-limited-stock/",
+          "https://www.reuters.com/world/asia-pacific/tsmc-expected-report-sixth-straight-quarter-record-profit-thanks-ai-boom-2026-10-14/",
+          "https://www.cna.com.tw/news/afe/202610150172.aspx",
+          "https://money.udn.com/money/story/5612/9816853?from=edn_related_storybottom",
+          "https://www.cna.com.tw/news/afe/202610030028.aspx",
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://newsroom.amd.com/",
+          "https://www.marvell.com/company/newsroom.html",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investors.broadcom.com/news-releases/news-release-details/broadcom-redefines-ai-infrastructure-industry-leading-networking"
+        ],
+        "source_limits": [
+          "15 active names retain an identified primary-company fact; 83 still need individual primary validation. Search queries include every name but results mix older items and grouped coverage is not an exhaustive company release or financial audit.",
+          "TSMC/Terafab remains discussion and evaluation, not project approval, customer contract, supplier award, process transfer or commercial output. Selected reproduced Q&A and original reporting are not full issuer audio verification.",
+          "Overseas margin dilution of 3-4 percentage points in later ramp stages predates this call; not reported as newly worsened guidance. No numerical 2027 capital budget or consensus EPS revision established.",
+          "MediaTek current press room supplies no new named ByteDance contract or economics; Bloomberg negotiation and Omdia contraction fingerprints retain their prior limits.",
+          "Broadcom latest financial-news index returned direct retrieval errors; indexed original October 8 OCP material is historical. No inference that Broadcom has issued no other news.",
+          "Only public event, sources, coverage and research stage appended; no stock quote, valuation, private holding, trade condition, scheduler setting, watchlist mutation or public article."
         ]
       }
     ],
@@ -4312,6 +4371,32 @@
         "Obtain comparable tracker revisions and company guidance, preserving Omdia/IDC population differences."
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "tsmc-terafab-operating-control-capital-allocation-and-manufacturing-economics",
+      "companies": [
+        "TSMC",
+        "Tesla",
+        "SpaceX"
+      ],
+      "sources": [
+        "https://www.marketbeat.com/earnings/reports/2026-10-15-taiwan-semiconductor-manufacturing-company-limited-stock/",
+        "https://www.reuters.com/world/asia-pacific/tsmc-expected-report-sixth-straight-quarter-record-profit-thanks-ai-boom-2026-10-14/",
+        "https://www.cna.com.tw/news/afe/202610150172.aspx",
+        "https://money.udn.com/money/story/5612/9816853?from=edn_related_storybottom",
+        "https://www.cna.com.tw/news/afe/202610030028.aspx",
+        "https://investor.tsmc.com/english/quarterly-results/2026/q3"
+      ],
+      "event_fingerprint": "tsmc-texas-terafab-evaluation-and-fab-operating-control-20261015",
+      "stage": "attributed_company_call_evaluation_and_operation_condition_cross_checked_definitive_terms_pending",
+      "questions": [
+        "Obtain definitive site, legal structure, ownership and fab operating responsibility; do not infer shared process know-how or licensing.",
+        "Determine capital contribution, customer prepayment, government support and downside obligations before assessing capital intensity.",
+        "Verify node, qualified capacity, yield, committed customer demand, commissioning and revenue recognition.",
+        "Measure U.S. pricing, ramp costs, operating margin and cash returns separately from capacity headlines.",
+        "Check whether the potential arrangement supplements TSMC capacity or changes actual external foundry procurement; no competitor displacement assumed."
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -4331,7 +4416,7 @@
     }
   ],
   "last_research_date": "2026-10-15",
-  "instruction_commit_sha": "b1011cd009950b97113e63c1fbcc2fa47836735c",
+  "instruction_commit_sha": "4c2f0f073e089d03257aed4d0bf467ba247b2315",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
