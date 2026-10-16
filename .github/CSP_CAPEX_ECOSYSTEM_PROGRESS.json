@@ -2602,6 +2602,41 @@
         "https://www.ffg.com.tw/finance-1.asp"
       ],
       "status": "monthly_realized_profit_increment_and_forecast_attribution_limits_verified_no_article"
+    },
+    {
+      "fingerprint": "wooriro-etern-datacenter-optical-awg-contract-and-post-acceptance-payment-20261015",
+      "event_date": "2026-10-14",
+      "publication_date": "2026-10-15",
+      "discovered_date": "2026-10-17",
+      "companies": [
+        "Wooriro (046970.KQ)",
+        "Wuhan ETERN Optoelectronics Group Limited",
+        "CIG"
+      ],
+      "type": "reported_company_contract_disclosure_reproductions_cross_checked_direct_regulator_host_unavailable",
+      "facts": {
+        "currency": "KRW",
+        "contract_value": 22777776000,
+        "contract_value_usd": 16992000,
+        "conversion_krw_per_usd": 1340.5,
+        "conversion_date": "2026-10-14",
+        "prior_year_consolidated_revenue_krw": 42474837788,
+        "contract_to_2025_revenue_pct": 53.6,
+        "contract_start": "2026-10-14",
+        "delivery_completion_target": "2028-12-30",
+        "contract_end_including_payment": "2029-02-13",
+        "disclosure_scope": "Two complete reproductions agree on a non-conditional data-center optical-semiconductor contract with ETERN, own production and China supply destination. No deposit/advance; payment follows acceptance and invoice on monthly 45-day terms. Material procurement-cost changes may alter contract value.",
+        "increment": "New named-counterparty contract not previously in the ledger. Multi-year order visibility advances beyond product capability, but 53.6% compares total contract value with one historical year, not an annual revenue or earnings growth forecast.",
+        "reported_demand_relationship": "Financial News attributes to the company that CWDM-AWG wafers/chips enter CIG modules supplied to North American hyperscalers. ETERN is reported to have an investment/cooperation relationship with CIG. No named ultimate CSP or direct CSP contract established; this is passive optical content, not a verified CPO mass-production award.",
+        "limits": "DART original direct fetch failed, including a 502 on the linked retry. Reproductions share one underlying filing, not independent contracts. Company-attributed demand linkage is reporting-level; shipment cadence, margin, cash receipt and incremental capacity remain unverified. No primary-universe coverage credit."
+      },
+      "sources": [
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261015900382",
+        "https://www.bosoop.com/disclosures/20261015900382/",
+        "https://www.specialtimes.co.kr/news/articleView.html?idxno=474505",
+        "https://www.fnnews.com/news/202610151639152742"
+      ],
+      "status": "new_multiyear_named_counterparty_order_and_cash_timing_scope_recorded_no_article"
     }
   ],
   "articles": [],
@@ -2660,12 +2695,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-17",
-      "checked_at": "2026-10-16T23:11:29Z",
-      "instruction_commit_sha": "b38a1d2957fcd75734bf7592a956918280e964f5",
+      "checked_at": "2026-10-16T23:56:04Z",
+      "instruction_commit_sha": "3e89da1c12e149fc640a4fb36bb275ef9e90b5f0",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh active-universe grouped discovery, core-six issuer/news and MediaTek/TPU checks, five-CSP landing pages and owner-domain discovery, outside-universe contracts and downside execution/financing checks. Two below-threshold research candidates appended; no material-event notification or article.",
+      "scope": "Fresh 98-name grouped discovery, core-six issuer/news and MediaTek/TPU checks, five-CSP landing pages and owner-domain discovery, outside-universe opportunities and downside. One new Wooriro contract event/candidate recorded; no article.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -2678,24 +2713,24 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://www.sec.gov/Archives/edgar/data/2109869/000182912626011139/exascalelabs_8k.htm",
-        "https://www.sec.gov/Archives/edgar/data/2109869/000182912626011139/exascalelabs_ex10-1.htm",
-        "https://www.prnewswire.com/news-releases/brightray-signs-letter-of-intent-for-planned-10mw-ai-data-center-project-in-the-united-states-302908490.html",
-        "https://www.sigurd.com.tw/zh-tw/monthly-revenue",
-        "https://searchlightnm.org/oracle-touts-project-jupiter-benefits-during-tour-as-wrangling-over-power-continues/",
-        "https://www.reuters.com/legal/transactional/why-coreweave-is-crosshairs-ai-scare-2026-10-16/"
+        "https://www.sinbon.com/tw/investors-news/1",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261015900382",
+        "https://www.bosoop.com/disclosures/20261015900382/",
+        "https://www.specialtimes.co.kr/news/articleView.html?idxno=474505",
+        "https://www.fnnews.com/news/202610151639152742",
+        "https://www.reuters.com/legal/transactional/coreweave-bond-rout-tests-markets-math-ai-buildout-2026-10-16/"
       ],
       "source_limits": [
-        "Fresh alpha-quant main 6aa19a55f33c995c8f703bfe0c65dcdf07e6b6d3 and CSV blob 88422949d38165d4757a1e24c27f8662bede14c1 read fully. All 98 active names included in 14 grouped recent-date queries; this does not constitute 98 individual current-filings validations.",
-        "Distinct active-company primary baselines remain 39, with 59 pending; monthly 18, partner 4, regulator 3, product 9. No company-coverage increment claimed from indexed Sigurd numbers or outside-universe project leads.",
-        "TSMC Q3/Q4 and MediaTek platform announcements overlap prior baselines. Recent ByteDance/TPU reports do not establish authenticated Google procurement, design responsibility, NRE, renewals or new production economics.",
-        "Core-six current issuer pages checked. Broadcom's financial-news index was fully accessible this run, unlike the preceding run; current items overlap existing baselines. No fresh customer award or financial revision verified from the reviewed product news.",
-        "Five CSP landing pages plus owner-domain discovery checked. Amazon and Alphabet dynamic landing pages remain incomplete; no full current-filings audit or new cross-company capex total claimed. New earnings-calendar announcements are not spending changes.",
-        "Exascale SEC filing and signed exhibit verified; Sunon is equipment buyer, not recipient of a cooling award. Brightray issuer release verifies a conditional nonbinding LOI. Neither establishes durable earnings improvement; follow-up conditions recorded in separate candidates.",
-        "Sigurd issuer monthly-revenue page timed out twice. Indexed figures and a news reproduction are discovery only; no full primary numeric body obtained or coverage credit added.",
-        "Searchlight's October 16 Project Jupiter article and Reuters' October 16 CoreWeave article full bodies were unavailable on direct fetch. Indexed leads are not new verified permit decisions, financing closes, defaults or cancellations. This access gap is not a no-news finding.",
-        "Fulltech monthly profit/forecast clarification, NiSource/Microsoft power agreement, Nscale delays and FormFactor/Teradyne transaction remain registered baselines; no duplicate event notification.",
-        "All 86 events, 147 prior candidates, 70 prior screenings, articles and dated blockers preserved. Two candidates appended, no article drafted, no stock price/valuation/target/position/trading condition recorded publicly, no automation or other-repository watchlist mutation. Ledger-only source readback remains the relevant completion check; no article lint/build/deploy claim."
+        "Fresh alpha-quant default main 6aa19a55f33c995c8f703bfe0c65dcdf07e6b6d3 and CSV blob 88422949d38165d4757a1e24c27f8662bede14c1 read fully. All 98 active names included in 14 grouped recent-date discovery queries; historical and price-only hits are not current primary-filing validations.",
+        "Distinct company primary baselines remain 39 with 59 pending; monthly 18, partner 4, regulator 3 and product 9 unchanged. Wooriro is outside the universe, and its direct regulator original was not obtained. No coverage increment claimed.",
+        "TSMC Q3 actual/Q4 guidance and MediaTek issuer releases remain existing baselines. Fresh TPU/Marvell discovery repeats historical procurement/timing reporting; no new authenticated NRE, Google allocation or generation-economics terms verified.",
+        "NVIDIA, AMD, Broadcom and Marvell current issuer indexes checked. Latest reviewed product/partner items overlap ledger baselines; no new quantified core-company order or financial revision established.",
+        "Five CSP landing pages and owner-domain discovery checked. Amazon/Alphabet dynamic pages are incomplete; no full current-filings audit or new aggregate capex total claimed. Historical Amazon country investments and software/product news are not new hardware orders.",
+        "SINBON issuer monthly page again returned a one-line JavaScript shell, including retry from the indexed source. Indexed September numbers are not a complete primary numeric-body validation; existing gap retained.",
+        "Wooriro contract date, term and payment fields cross-checked in two complete filing reproductions; these are one underlying filing. Original reporting supplies the company-attributed CIG/hyperscaler relationship. Direct DART fetch failed and linked retry returned 502; source strength and ultimate-customer gap retained.",
+        "Downside discovery includes CoreWeave debt repricing and Nscale execution concerns already registered; fresh discovery alone is not a new financing failure, default or cancellation. No repeated alert on Fulltech, Semtech, Schneider, VAT, AIXTRON, NiSource or FormFactor.",
+        "Latest available dated Wooriro closing data checked privately; no price, valuation, target, position or trading condition stored publicly. No market-consensus earnings estimate or low-valuation conclusion asserted.",
+        "All 86 prior events, 149 prior candidates, 71 prior screenings, articles and dated blockers preserved. One event and one candidate appended. No article draft/lint/build/deploy/public-page completion, automation change or other-repository watchlist mutation claimed."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -4453,6 +4488,46 @@
           "Searchlight's October 16 Project Jupiter article and Reuters' October 16 CoreWeave article full bodies were unavailable on direct fetch. Indexed leads are not new verified permit decisions, financing closes, defaults or cancellations. This access gap is not a no-news finding.",
           "Fulltech monthly profit/forecast clarification, NiSource/Microsoft power agreement, Nscale delays and FormFactor/Teradyne transaction remain registered baselines; no duplicate event notification.",
           "All 86 events, 147 prior candidates, 70 prior screenings, articles and dated blockers preserved. Two candidates appended, no article drafted, no stock price/valuation/target/position/trading condition recorded publicly, no automation or other-repository watchlist mutation. Ledger-only source readback remains the relevant completion check; no article lint/build/deploy claim."
+        ]
+      },
+      {
+        "date": "2026-10-17",
+        "checked_at": "2026-10-16T23:56:04Z",
+        "instruction_commit_sha": "3e89da1c12e149fc640a4fb36bb275ef9e90b5f0",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh 98-name grouped discovery, core-six issuer/news and MediaTek/TPU checks, five-CSP landing pages and owner-domain discovery, outside-universe opportunities and downside. One new Wooriro contract event/candidate recorded; no article.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.marvell.com/company/newsroom.html",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://www.sinbon.com/tw/investors-news/1",
+          "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261015900382",
+          "https://www.bosoop.com/disclosures/20261015900382/",
+          "https://www.specialtimes.co.kr/news/articleView.html?idxno=474505",
+          "https://www.fnnews.com/news/202610151639152742",
+          "https://www.reuters.com/legal/transactional/coreweave-bond-rout-tests-markets-math-ai-buildout-2026-10-16/"
+        ],
+        "source_limits": [
+          "Fresh alpha-quant default main 6aa19a55f33c995c8f703bfe0c65dcdf07e6b6d3 and CSV blob 88422949d38165d4757a1e24c27f8662bede14c1 read fully. All 98 active names included in 14 grouped recent-date discovery queries; historical and price-only hits are not current primary-filing validations.",
+          "Distinct company primary baselines remain 39 with 59 pending; monthly 18, partner 4, regulator 3 and product 9 unchanged. Wooriro is outside the universe, and its direct regulator original was not obtained. No coverage increment claimed.",
+          "TSMC Q3 actual/Q4 guidance and MediaTek issuer releases remain existing baselines. Fresh TPU/Marvell discovery repeats historical procurement/timing reporting; no new authenticated NRE, Google allocation or generation-economics terms verified.",
+          "NVIDIA, AMD, Broadcom and Marvell current issuer indexes checked. Latest reviewed product/partner items overlap ledger baselines; no new quantified core-company order or financial revision established.",
+          "Five CSP landing pages and owner-domain discovery checked. Amazon/Alphabet dynamic pages are incomplete; no full current-filings audit or new aggregate capex total claimed. Historical Amazon country investments and software/product news are not new hardware orders.",
+          "SINBON issuer monthly page again returned a one-line JavaScript shell, including retry from the indexed source. Indexed September numbers are not a complete primary numeric-body validation; existing gap retained.",
+          "Wooriro contract date, term and payment fields cross-checked in two complete filing reproductions; these are one underlying filing. Original reporting supplies the company-attributed CIG/hyperscaler relationship. Direct DART fetch failed and linked retry returned 502; source strength and ultimate-customer gap retained.",
+          "Downside discovery includes CoreWeave debt repricing and Nscale execution concerns already registered; fresh discovery alone is not a new financing failure, default or cancellation. No repeated alert on Fulltech, Semtech, Schneider, VAT, AIXTRON, NiSource or FormFactor.",
+          "Latest available dated Wooriro closing data checked privately; no price, valuation, target, position or trading condition stored publicly. No market-consensus earnings estimate or low-valuation conclusion asserted.",
+          "All 86 prior events, 149 prior candidates, 71 prior screenings, articles and dated blockers preserved. One event and one candidate appended. No article draft/lint/build/deploy/public-page completion, automation change or other-repository watchlist mutation claimed."
         ]
       }
     ],
@@ -8328,6 +8403,35 @@
         "Obtain contract scope, cost allocation, retained margin and operating cash; failure to convert the LOI invalidates the firm-demand interpretation."
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "wooriro-awg-datacenter-optical-contract-margin-and-cash-conversion",
+      "companies": [
+        "Wooriro (046970.KQ)",
+        "Wuhan ETERN Optoelectronics Group Limited",
+        "CIG"
+      ],
+      "sources": [
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261015900382",
+        "https://www.bosoop.com/disclosures/20261015900382/",
+        "https://www.specialtimes.co.kr/news/articleView.html?idxno=474505",
+        "https://www.fnnews.com/news/202610151639152742"
+      ],
+      "stage": "october15_contract_reproductions_and_company_attributed_optical_relationship_cross_checked_direct_dart_and_profit_conversion_pending",
+      "facts": {
+        "event_fingerprint": "wooriro-etern-datacenter-optical-awg-contract-and-post-acceptance-payment-20261015",
+        "baseline": "Outside the active 98-company universe; no previous company-specific contract baseline in this ledger.",
+        "mechanism": "Accepted optical-component volume could improve utilization and fixed-cost absorption; actual pricing, yields, ramp costs and collection decide retained gross profit.",
+        "alternative": "The contract can span existing capacity or customer demand; its multi-year total alone does not establish annual growth, durable scarcity or a reviewed profit revision.",
+        "limits": "Direct regulator original, underlying customer chain, delivery schedule and project-level earnings are incomplete."
+      },
+      "questions": [
+        "Obtain the regulator/issuer original and monitor amendments, termination and minimum-volume obligations.",
+        "Reconcile accepted shipments, product mix, realized ASP, yield, capacity utilization and gross profit against contract deliveries.",
+        "Track inventory, receivables and collections after customer acceptance; no advance means working-capital requirements matter.",
+        "Confirm ultimate demand without naming an undisclosed CSP; slower shipments, pricing pressure, failed acceptance or collection would weaken the profit-conversion hypothesis."
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -8347,7 +8451,7 @@
     }
   ],
   "last_research_date": "2026-10-17",
-  "instruction_commit_sha": "b38a1d2957fcd75734bf7592a956918280e964f5",
+  "instruction_commit_sha": "3e89da1c12e149fc640a4fb36bb275ef9e90b5f0",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
