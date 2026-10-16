@@ -2278,6 +2278,50 @@
         "https://www.datacenterdynamics.com/en/news/digico-signs-71mw-lease-for-sydney-data-center-with-unnamed-tech-firm/"
       ],
       "status": "issuer_release_original_document_reproduction_verified_conditions_delivery_and_cash_pending"
+    },
+    {
+      "fingerprint": "modal-series-d-and-billion-dollar-annualized-run-rate-disclosed-20261014",
+      "event_date": "2026-10-14",
+      "discovered_date": "2026-10-16",
+      "companies": [
+        "Modal",
+        "Accel"
+      ],
+      "type": "issuer_and_investor_reported_funding_and_usage_monetization",
+      "facts": {
+        "baseline": "May 21 issuer release: USD355m Series C and over USD300m annualized revenue.",
+        "increment": "October 14 issuer release: USD750m Series D, usage tripled since Series C, over USD1bn annualized run rate and USD300m Sandboxes run rate. Lead investor Accel corroborates funding and places the billion-dollar milestone in September.",
+        "relationship": "Modal aggregates capacity across more than twenty clouds; no named incremental hardware supplier or equipment purchase disclosed.",
+        "limits": "Run rate is not recognized annual revenue, contracted ARR, cash collection or profit. No audited reconciliation, gross margin, utilization, customer concentration or incremental capex allocation obtained."
+      },
+      "sources": [
+        "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
+        "https://www.accel.com/news/our-investment-in-modal",
+        "https://modal.com/blog/modal-series-c",
+        "https://modal.com/products/platform"
+      ],
+      "status": "company_and_lead_investor_originals_verified_not_audited_financial_or_supplier_order_validation"
+    },
+    {
+      "fingerprint": "colt-rmz-mumbai3-64mw-prelet-and-construction-disclosed-20261015",
+      "event_date": "2026-10-15",
+      "discovered_date": "2026-10-16",
+      "companies": [
+        "Colt Data Centre Services",
+        "RMZ"
+      ],
+      "type": "issuer_reported_hyperscale_prelease_and_construction_milestone",
+      "facts": {
+        "baseline": "USD1.7bn JV was announced in 2024; ground preparation began December 2025.",
+        "increment": "October 15 issuer release confirms Mumbai 3 construction following a first hyperscale customer signing and says the 64MW facility is fully pre-let.",
+        "scope": "64MW is future completed capacity with contracted power, not delivered IT load or billing. Hybrid air/direct-to-chip cooling and campus 220kV GIS substation specified.",
+        "limits": "Customer identity, lease value, term, completion date, procurement vendors and project-specific cost/returns not disclosed. 250MW JV plan and 148MW campus potential are not new delivered capacity."
+      },
+      "sources": [
+        "https://www.coltdatacentres.net/en-GB/press-releases/data-centres/2026/10/coltdcs-and-rmz-begins-construction-third-dc-in-mumbai",
+        "https://www.datacenterdynamics.com/en/news/colt-dcs-and-rmz-start-work-on-third-facility-at-mumbai-campus-india/"
+      ],
+      "status": "issuer_original_body_verified_prelease_and_construction_not_delivered_capacity_or_supplier_award"
     }
   ],
   "articles": [],
@@ -2323,11 +2367,11 @@
     ],
     "current_run_screening": {
       "date": "2026-10-16",
-      "instruction_commit_sha": "02b6e6d2f611ce02f58682c2f84339b62c21a0b8",
+      "instruction_commit_sha": "0b376d8cff01ee226cfa2cb8677a1634497e0970",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 13,
-      "scope": "All 98 active names included in 13 fresh grouped discovery queries; uneven or historical results explicitly do not establish complete current coverage. Core-six issuer lists and TSMC Q4 guidance read. New outside-universe DigiCo tenant/D&C document and capacity/accounting footnotes verified; no article.",
+      "scope": "All 98 active names included in fresh grouped discovery. Core-six current official pages checked. Two outside-universe company milestones verified; no article.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -2335,18 +2379,21 @@
         "https://newsroom.amd.com/",
         "https://www.marvell.com/company/newsroom.html",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
-        "https://investorpa.com/announcement-pdf/20261015/357370.pdf",
-        "https://www.datacenterdynamics.com/en/news/digico-signs-71mw-lease-for-sydney-data-center-with-unnamed-tech-firm/"
+        "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
+        "https://www.accel.com/news/our-investment-in-modal",
+        "https://modal.com/blog/modal-series-c",
+        "https://modal.com/products/platform",
+        "https://www.coltdatacentres.net/en-GB/press-releases/data-centres/2026/10/coltdcs-and-rmz-begins-construction-third-dc-in-mumbai",
+        "https://www.datacenterdynamics.com/en/news/colt-dcs-and-rmz-start-work-on-third-facility-at-mumbai-campus-india/"
       ],
       "source_limits": [
-        "26 active-universe companies retain identified primary facts; 72 remain without individual baselines. No additional active-company validation is counted. Same alpha-quant default-branch commit 6aa19a55f33c995c8f703bfe0c65dcdf07e6b6d3 and universe blob 88422949d38165d4757a1e24c27f8662bede14c1 retrieved. Watchlist unchanged.",
-        "First grouped queries returned mostly historical/uneven results; date-focused follow-up does not cure exhaustive per-company coverage. Macro-ZDT indexed issuer facts and ACES media growth/relationship reporting remain historical leads, not new awards or original-body financial validation.",
-        "TSMC Q4 guidance unchanged from registered event; MediaTek/ByteDance and Holy Stone reports overlap already registered information. No newly confirmed MediaTek award or Google procurement change. AMD interview full transcript remains unreviewed.",
-        "Broadcom financial-news index was readable and latest listed release remained October 13 HyperArmor. This resolves this run's index access, not historical blocked reads or all underlying filings.",
-        "October 15 Reuters CDS/fundraising and FT bond-report direct bodies not retrieved in this run. Existing verified credit-risk evidence retained; no default, capex cut or equipment cancellation inferred from retrieval failures.",
-        "DigiCo is outside the active Taiwan universe. Issuer ASX release reproduction and corroborating original reporting verify the new contract; manager-hosted original retrieval failed. No specific CSP identity or AI workload inferred. Rent and credit documentation, cash funding reconciliation and delivery remain pending.",
-        "SHAPE original release body unavailable; ASX-announcement title and original reporting support a follow-up lead, not an independently verified profit revision. No price/valuation saved publicly. Conflicting or future-dated market-page observations excluded from investment judgments.",
-        "No stock quote, valuation, target, holding or trade condition saved publicly. No article, lint/build, deployment or public-site publication claimed. Historical events, source gaps and progress retained."
+        "Alpha-quant main commit 6aa19a55f33c995c8f703bfe0c65dcdf07e6b6d3 and universe blob 88422949d38165d4757a1e24c27f8662bede14c1 freshly retrieved. Active watchlist unchanged. Primary-company baselines remain 26 checked and 72 pending; grouped queries returned uneven and often historical results, not complete current issuer validation.",
+        "TSMC Q4 official guidance unchanged versus registered event. MediaTek official newsroom adds no confirmed ByteDance award or revised Google program economics. Current NVIDIA/AMD/Marvell/Broadcom lists overlap registered releases; AMD video interview full transcript remains unreviewed.",
+        "CSP spending, financing and monetization discovery includes Microsoft, Amazon/AWS, Google, Meta and Oracle. Historical project announcements, debt-market risk reporting and rating scenarios are not new capex cuts, defaults or cancellations. Complete lease, procurement, utilization and cash-flow audit remains incomplete.",
+        "Modal issuer and investor originals support new monetization/funding evidence only. Mumbai 3 issuer body supports pre-leasing/construction only. Both are outside the Taiwan universe and do not add active-company primary counts. Neither establishes a named Taiwan supplier award.",
+        "SK hynix/Solidigm Dalian/US-fab conditional-negotiation lead remains unregistered: Reuters body retrieval failed; secondary summaries differ on company response and do not establish export approval, capacity expansion or a firm US fab. No legal or equipment-order conclusion inferred.",
+        "LITEON historical Q2 issuer page returned a 502 error and retry did not provide its body. Existing direct financial-source gaps retained; indexed excerpts not promoted to primary validation. Other historical ZDT/ASPEED/Ta Liang/SHAPE gaps not re-audited.",
+        "No stock price, valuation, target, holding or trading condition saved publicly. No article, lint/build, deployment or public-site publication claimed. Historical events/candidates/blockers preserved."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -3270,6 +3317,37 @@
           "DigiCo is outside the active Taiwan universe. Issuer ASX release reproduction and corroborating original reporting verify the new contract; manager-hosted original retrieval failed. No specific CSP identity or AI workload inferred. Rent and credit documentation, cash funding reconciliation and delivery remain pending.",
           "SHAPE original release body unavailable; ASX-announcement title and original reporting support a follow-up lead, not an independently verified profit revision. No price/valuation saved publicly. Conflicting or future-dated market-page observations excluded from investment judgments.",
           "No stock quote, valuation, target, holding or trade condition saved publicly. No article, lint/build, deployment or public-site publication claimed. Historical events, source gaps and progress retained."
+        ]
+      },
+      {
+        "date": "2026-10-16",
+        "instruction_commit_sha": "0b376d8cff01ee226cfa2cb8677a1634497e0970",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 13,
+        "scope": "All 98 active names included in fresh grouped discovery. Core-six current official pages checked. Two outside-universe company milestones verified; no article.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://newsroom.amd.com/",
+          "https://www.marvell.com/company/newsroom.html",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
+          "https://www.accel.com/news/our-investment-in-modal",
+          "https://modal.com/blog/modal-series-c",
+          "https://modal.com/products/platform",
+          "https://www.coltdatacentres.net/en-GB/press-releases/data-centres/2026/10/coltdcs-and-rmz-begins-construction-third-dc-in-mumbai",
+          "https://www.datacenterdynamics.com/en/news/colt-dcs-and-rmz-start-work-on-third-facility-at-mumbai-campus-india/"
+        ],
+        "source_limits": [
+          "Alpha-quant main commit 6aa19a55f33c995c8f703bfe0c65dcdf07e6b6d3 and universe blob 88422949d38165d4757a1e24c27f8662bede14c1 freshly retrieved. Active watchlist unchanged. Primary-company baselines remain 26 checked and 72 pending; grouped queries returned uneven and often historical results, not complete current issuer validation.",
+          "TSMC Q4 official guidance unchanged versus registered event. MediaTek official newsroom adds no confirmed ByteDance award or revised Google program economics. Current NVIDIA/AMD/Marvell/Broadcom lists overlap registered releases; AMD video interview full transcript remains unreviewed.",
+          "CSP spending, financing and monetization discovery includes Microsoft, Amazon/AWS, Google, Meta and Oracle. Historical project announcements, debt-market risk reporting and rating scenarios are not new capex cuts, defaults or cancellations. Complete lease, procurement, utilization and cash-flow audit remains incomplete.",
+          "Modal issuer and investor originals support new monetization/funding evidence only. Mumbai 3 issuer body supports pre-leasing/construction only. Both are outside the Taiwan universe and do not add active-company primary counts. Neither establishes a named Taiwan supplier award.",
+          "SK hynix/Solidigm Dalian/US-fab conditional-negotiation lead remains unregistered: Reuters body retrieval failed; secondary summaries differ on company response and do not establish export approval, capacity expansion or a firm US fab. No legal or equipment-order conclusion inferred.",
+          "LITEON historical Q2 issuer page returned a 502 error and retry did not provide its body. Existing direct financial-source gaps retained; indexed excerpts not promoted to primary validation. Other historical ZDT/ASPEED/Ta Liang/SHAPE gaps not re-audited.",
+          "No stock price, valuation, target, holding or trading condition saved publicly. No article, lint/build, deployment or public-site publication claimed. Historical events/candidates/blockers preserved."
         ]
       }
     ],
@@ -5689,6 +5767,52 @@
         "SHAPE original contract announcement, revenue recognition, cost overruns, exclusions and construction margin."
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "modal-multicloud-ai-workload-monetization-to-gross-profit-and-capacity-purchases",
+      "companies": [
+        "Modal",
+        "Accel"
+      ],
+      "sources": [
+        "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
+        "https://www.accel.com/news/our-investment-in-modal",
+        "https://modal.com/blog/modal-series-c",
+        "https://modal.com/products/platform"
+      ],
+      "stage": "october14_issuer_and_lead_investor_originals_verified_funding_and_run_rate_not_profit",
+      "facts": {
+        "verification": "Company and investor originals obtained; historical May issuer baseline checked.",
+        "limits": "No audited earnings, funded hardware commitments or named incremental supplier award obtained."
+      },
+      "questions": [
+        "Reconcile annualized run rate to recognized revenue and cash collections, including credits and pass-through compute.",
+        "Separate workload growth from gross profit, net retention, customer concentration and cloud-capacity procurement.",
+        "Verify whether software scheduling improves existing fleet utilization or creates net incremental equipment purchases."
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "colt-rmz-mumbai3-prelease-power-construction-and-rent-conversion",
+      "companies": [
+        "Colt Data Centre Services",
+        "RMZ"
+      ],
+      "sources": [
+        "https://www.coltdatacentres.net/en-GB/press-releases/data-centres/2026/10/coltdcs-and-rmz-begins-construction-third-dc-in-mumbai",
+        "https://www.datacenterdynamics.com/en/news/colt-dcs-and-rmz-start-work-on-third-facility-at-mumbai-campus-india/"
+      ],
+      "stage": "october15_issuer_original_verified_prelet_construction_no_delivery_date_or_named_supplier",
+      "facts": {
+        "verification": "Issuer body obtained after initial retrieval failure; corroborating original industry reporting checked.",
+        "limits": "Signed hyperscale relationship and pre-leasing are not evidence of operational capacity or current rent."
+      },
+      "questions": [
+        "Verify completion/energization timetable, tenant acceptance and rent commencement.",
+        "Obtain supplier awards, contract terms, project funding and construction cost exposure.",
+        "Track delivered and billed capacity against pre-leased capacity and disclosed power."
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -5708,7 +5832,7 @@
     }
   ],
   "last_research_date": "2026-10-16",
-  "instruction_commit_sha": "02b6e6d2f611ce02f58682c2f84339b62c21a0b8",
+  "instruction_commit_sha": "0b376d8cff01ee226cfa2cb8677a1634497e0970",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
