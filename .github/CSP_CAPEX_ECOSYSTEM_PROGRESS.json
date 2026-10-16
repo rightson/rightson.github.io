@@ -2660,40 +2660,42 @@
     ],
     "current_run_screening": {
       "date": "2026-10-17",
-      "checked_at": "2026-10-16T21:59:30Z",
-      "instruction_commit_sha": "097cc64c02a28636b510d03cc27d068b42653330",
+      "checked_at": "2026-10-16T23:11:29Z",
+      "instruction_commit_sha": "b38a1d2957fcd75734bf7592a956918280e964f5",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh full-universe grouped discovery,core-six issuer/news checks and MediaTek/TPU procurement research,five-CSP landing pages plus owner-domain discovery,outside-universe opportunities and downside. Added Ardentec historical issuer monthly baseline and a local-opposition research lead. No material new event or article.",
+      "scope": "Fresh active-universe grouped discovery, core-six issuer/news and MediaTek/TPU checks, five-CSP landing pages and owner-domain discovery, outside-universe contracts and downside execution/financing checks. Two below-threshold research candidates appended; no material-event notification or article.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
         "https://nvidianews.nvidia.com/news",
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
-        "https://www.broadcom.com/company/news/apj",
         "https://www.marvell.com/company/newsroom.html",
         "https://www.microsoft.com/en-us/investor/default",
         "https://ir.aboutamazon.com/overview/default.aspx",
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://web.ardentec.com/?m=112&u=34.69816ca1640336.01913564",
-        "https://heatmap.news/daily/260-billion-data-center-opposition?_hsmi=442986112",
-        "https://www.axios.com/2026/10/16/amazon-web-services-ai-cfo",
-        "https://www.ft.com/content/678bcd31-6c2a-447b-a68c-ce6dec220bbc"
+        "https://www.sec.gov/Archives/edgar/data/2109869/000182912626011139/exascalelabs_8k.htm",
+        "https://www.sec.gov/Archives/edgar/data/2109869/000182912626011139/exascalelabs_ex10-1.htm",
+        "https://www.prnewswire.com/news-releases/brightray-signs-letter-of-intent-for-planned-10mw-ai-data-center-project-in-the-united-states-302908490.html",
+        "https://www.sigurd.com.tw/zh-tw/monthly-revenue",
+        "https://searchlightnm.org/oracle-touts-project-jupiter-benefits-during-tour-as-wrangling-over-power-continues/",
+        "https://www.reuters.com/legal/transactional/why-coreweave-is-crosshairs-ai-scare-2026-10-16/"
       ],
       "source_limits": [
-        "Fresh alpha-quant main6aa19a55f33c995c8f703bfe0c65dcdf07e6b6d3 and CSV blob88422949d38165d4757a1e24c27f8662bede14c1 read fully. All98 active names included in14 grouped recent-date queries; many results historical. This is not98 individual current-filings validations.",
-        "Distinct company primary baselines39,remaining59. Monthly18,partner4,regulator3,product9. Ardentec3264 issuer monthly table supplies one historical baseline; no current-quarter profit audit implied.",
-        "TSMC Q3/Q4 figures and MediaTek platform news remain prior baselines. Existing ByteDance/TPU timing leads do not establish authenticated Google procurement,NRE,design responsibility,renewals or new production economics.",
-        "NVIDIA/AMD/Marvell original pages checked; current product/platform headlines overlap prior candidates. Broadcom financial index returned error then403; separate public company newsroom exposed only iframe on direct read. Search-index entries checked but full current release audit remains incomplete; not absence of news.",
-        "Five CSP landing pages and fresh owner-domain discovery checked; Amazon/Alphabet dynamic pages incomplete. No full current-filings audit,new capex total or completed new procurement verified.",
-        "AWS interview reviewed; no new procurement or independently verified return established.",
-        "Heatmap historical publisher survey retained as a project-level reconciliation lead,not an issuer budget reduction. FT article body subscription-blocked; no claim derived from unavailable full text. Existing CoreWeave financing-risk candidate retained without duplicate alert.",
-        "Fulltech monthly profit and forecast clarification already registered in instruction commit; no material fresh evidence established. No duplicate alert. Other grouped stock headlines and broker target stories are discovery only,not verified consensus earnings revisions.",
-        "All86 events,146 prior candidates,69 prior screenings,articles and blockers preserved. One candidate and one candidate verification appended; no public price,valuation,target,position or trading condition. No article drafted,lint/build/deploy claimed,automation changed or watchlist mutated."
+        "Fresh alpha-quant main 6aa19a55f33c995c8f703bfe0c65dcdf07e6b6d3 and CSV blob 88422949d38165d4757a1e24c27f8662bede14c1 read fully. All 98 active names included in 14 grouped recent-date queries; this does not constitute 98 individual current-filings validations.",
+        "Distinct active-company primary baselines remain 39, with 59 pending; monthly 18, partner 4, regulator 3, product 9. No company-coverage increment claimed from indexed Sigurd numbers or outside-universe project leads.",
+        "TSMC Q3/Q4 and MediaTek platform announcements overlap prior baselines. Recent ByteDance/TPU reports do not establish authenticated Google procurement, design responsibility, NRE, renewals or new production economics.",
+        "Core-six current issuer pages checked. Broadcom's financial-news index was fully accessible this run, unlike the preceding run; current items overlap existing baselines. No fresh customer award or financial revision verified from the reviewed product news.",
+        "Five CSP landing pages plus owner-domain discovery checked. Amazon and Alphabet dynamic landing pages remain incomplete; no full current-filings audit or new cross-company capex total claimed. New earnings-calendar announcements are not spending changes.",
+        "Exascale SEC filing and signed exhibit verified; Sunon is equipment buyer, not recipient of a cooling award. Brightray issuer release verifies a conditional nonbinding LOI. Neither establishes durable earnings improvement; follow-up conditions recorded in separate candidates.",
+        "Sigurd issuer monthly-revenue page timed out twice. Indexed figures and a news reproduction are discovery only; no full primary numeric body obtained or coverage credit added.",
+        "Searchlight's October 16 Project Jupiter article and Reuters' October 16 CoreWeave article full bodies were unavailable on direct fetch. Indexed leads are not new verified permit decisions, financing closes, defaults or cancellations. This access gap is not a no-news finding.",
+        "Fulltech monthly profit/forecast clarification, NiSource/Microsoft power agreement, Nscale delays and FormFactor/Teradyne transaction remain registered baselines; no duplicate event notification.",
+        "All 86 events, 147 prior candidates, 70 prior screenings, articles and dated blockers preserved. Two candidates appended, no article drafted, no stock price/valuation/target/position/trading condition recorded publicly, no automation or other-repository watchlist mutation. Ledger-only source readback remains the relevant completion check; no article lint/build/deploy claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -4411,6 +4413,46 @@
           "Heatmap historical publisher survey retained as a project-level reconciliation lead,not an issuer budget reduction. FT article body subscription-blocked; no claim derived from unavailable full text. Existing CoreWeave financing-risk candidate retained without duplicate alert.",
           "Fulltech monthly profit and forecast clarification already registered in instruction commit; no material fresh evidence established. No duplicate alert. Other grouped stock headlines and broker target stories are discovery only,not verified consensus earnings revisions.",
           "All86 events,146 prior candidates,69 prior screenings,articles and blockers preserved. One candidate and one candidate verification appended; no public price,valuation,target,position or trading condition. No article drafted,lint/build/deploy claimed,automation changed or watchlist mutated."
+        ]
+      },
+      {
+        "date": "2026-10-17",
+        "checked_at": "2026-10-16T23:11:29Z",
+        "instruction_commit_sha": "b38a1d2957fcd75734bf7592a956918280e964f5",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh active-universe grouped discovery, core-six issuer/news and MediaTek/TPU checks, five-CSP landing pages and owner-domain discovery, outside-universe contracts and downside execution/financing checks. Two below-threshold research candidates appended; no material-event notification or article.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.marvell.com/company/newsroom.html",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://www.sec.gov/Archives/edgar/data/2109869/000182912626011139/exascalelabs_8k.htm",
+          "https://www.sec.gov/Archives/edgar/data/2109869/000182912626011139/exascalelabs_ex10-1.htm",
+          "https://www.prnewswire.com/news-releases/brightray-signs-letter-of-intent-for-planned-10mw-ai-data-center-project-in-the-united-states-302908490.html",
+          "https://www.sigurd.com.tw/zh-tw/monthly-revenue",
+          "https://searchlightnm.org/oracle-touts-project-jupiter-benefits-during-tour-as-wrangling-over-power-continues/",
+          "https://www.reuters.com/legal/transactional/why-coreweave-is-crosshairs-ai-scare-2026-10-16/"
+        ],
+        "source_limits": [
+          "Fresh alpha-quant main 6aa19a55f33c995c8f703bfe0c65dcdf07e6b6d3 and CSV blob 88422949d38165d4757a1e24c27f8662bede14c1 read fully. All 98 active names included in 14 grouped recent-date queries; this does not constitute 98 individual current-filings validations.",
+          "Distinct active-company primary baselines remain 39, with 59 pending; monthly 18, partner 4, regulator 3, product 9. No company-coverage increment claimed from indexed Sigurd numbers or outside-universe project leads.",
+          "TSMC Q3/Q4 and MediaTek platform announcements overlap prior baselines. Recent ByteDance/TPU reports do not establish authenticated Google procurement, design responsibility, NRE, renewals or new production economics.",
+          "Core-six current issuer pages checked. Broadcom's financial-news index was fully accessible this run, unlike the preceding run; current items overlap existing baselines. No fresh customer award or financial revision verified from the reviewed product news.",
+          "Five CSP landing pages plus owner-domain discovery checked. Amazon and Alphabet dynamic landing pages remain incomplete; no full current-filings audit or new cross-company capex total claimed. New earnings-calendar announcements are not spending changes.",
+          "Exascale SEC filing and signed exhibit verified; Sunon is equipment buyer, not recipient of a cooling award. Brightray issuer release verifies a conditional nonbinding LOI. Neither establishes durable earnings improvement; follow-up conditions recorded in separate candidates.",
+          "Sigurd issuer monthly-revenue page timed out twice. Indexed figures and a news reproduction are discovery only; no full primary numeric body obtained or coverage credit added.",
+          "Searchlight's October 16 Project Jupiter article and Reuters' October 16 CoreWeave article full bodies were unavailable on direct fetch. Indexed leads are not new verified permit decisions, financing closes, defaults or cancellations. This access gap is not a no-news finding.",
+          "Fulltech monthly profit/forecast clarification, NiSource/Microsoft power agreement, Nscale delays and FormFactor/Teradyne transaction remain registered baselines; no duplicate event notification.",
+          "All 86 events, 147 prior candidates, 70 prior screenings, articles and dated blockers preserved. Two candidates appended, no article drafted, no stock price/valuation/target/position/trading condition recorded publicly, no automation or other-repository watchlist mutation. Ledger-only source readback remains the relevant completion check; no article lint/build/deploy claim."
         ]
       }
     ],
@@ -8233,6 +8275,59 @@
         "Distinguish permitting-related deployment deferral from a reduction in aggregate demand; quantify affected companies only after primary reconciliation."
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "exascale-sunon-gpu-equipment-purchase-deposit-delivery-and-service-economics",
+      "companies": [
+        "Exascale Labs Holdings (XLAB)",
+        "Sunon Inc / Sunonwealth (2421)",
+        "NVIDIA"
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/2109869/000182912626011139/exascalelabs_8k.htm",
+        "https://www.sec.gov/Archives/edgar/data/2109869/000182912626011139/exascalelabs_ex10-1.htm"
+      ],
+      "stage": "october15_sec_filing_and_signed_exhibit_verified_deposit_oem_order_delivery_and_margin_pending",
+      "facts": {
+        "filing_date": "2026-10-15",
+        "contract_date": "2026-10-08; Exascale execution October 9",
+        "baseline": "Sunon already has a product/platform research baseline; this filing separately identifies its US subsidiary as a GPU-equipment buyer, not a cooling supplier receiving an award.",
+        "filed_transaction": "Exascale reports a US$8.208 million equipment/deployment/36-month IT-operations agreement with Sunon Inc, covering 12 HGX B300 servers with 96 GPUs plus supporting systems. Duties and taxes are additional; shipment and receipt of payment were not verified.",
+        "contract_conditions": "The signed exhibit requires a 30% deposit after purchase order; acceptance depends on cleared funds. Remaining 70% precedes shipment. Estimated delivery is 4–6 weeks after the later of cleared deposit and NVIDIA/import-export approvals, not a guaranteed date. Deployment has separate acceptance; service details require a supplementary agreement.",
+        "limits": "Bundled pricing does not disclose component margin or service allocation. No named CSP end-customer, Sunon end-use, repeat orders, OEM order placement or cash collection established. One-off equipment resale is an alternative to recurring infrastructure economics; this is a research candidate, not a durable earnings conclusion."
+      },
+      "questions": [
+        "Verify cleared deposit, accepted purchase order and corresponding OEM order; distinguish an executed agreement from funded backlog.",
+        "Obtain approvals, shipment and customer acceptance; reconcile equipment and service revenue timing and costs.",
+        "Establish Sunon's intended deployment, customer demand and repeatability; do not count this buyer-side transaction as a cooling-system order.",
+        "Test gross-profit retention and cash conversion; failed funding, approvals or acceptance would weaken the demand-transmission path."
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "brightray-indiana-prefabricated-datacenter-loi-to-firm-order-and-delivery",
+      "companies": [
+        "Brightray / BUUU Group",
+        "Unnamed US mission-critical partner"
+      ],
+      "sources": [
+        "https://www.prnewswire.com/news-releases/brightray-signs-letter-of-intent-for-planned-10mw-ai-data-center-project-in-the-united-states-302908490.html"
+      ],
+      "stage": "october14_issuer_nonbinding_loi_verified_definitive_contract_power_and_cash_pending",
+      "facts": {
+        "publication_date": "2026-10-14",
+        "event_date": "2026-10-06",
+        "source_type": "Issuer-distributed release",
+        "baseline": "Outside-universe modular data-center development lead; no prior firm order established.",
+        "new_evidence": "Brightray announces an LOI for a planned 10 MW Indiana project. Principal arrangements are nonbinding and create no purchase, supply or payment obligation. A November 15 purchase-order target remains conditional on definitive terms, permits, site power and supply.",
+        "limits": "GB300 compatibility is planned, not a NVIDIA procurement award. PUE below 1.2 and Tier III are design goals, not measured or certified results. Within-one-year delivery is a target tied to a future definitive contract; no funded project or recurring margin established."
+      },
+      "questions": [
+        "Verify definitive agreement, purchase order and cash commitment instead of counting LOI capacity as contracted demand.",
+        "Confirm named site/customer, permits, firm power and supply availability; test commissioning schedule against actual obligations.",
+        "Obtain contract scope, cost allocation, retained margin and operating cash; failure to convert the LOI invalidates the firm-demand interpretation."
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -8252,7 +8347,7 @@
     }
   ],
   "last_research_date": "2026-10-17",
-  "instruction_commit_sha": "097cc64c02a28636b510d03cc27d068b42653330",
+  "instruction_commit_sha": "b38a1d2957fcd75734bf7592a956918280e964f5",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
