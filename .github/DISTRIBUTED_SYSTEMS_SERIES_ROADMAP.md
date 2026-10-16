@@ -53,7 +53,7 @@
 - [x] DS01 短網址服務。先備：無。範圍：讀寫比例、redirect、API／索引、唯一鍵與 cache；深掘 ID 碰撞／冪等寫入、熱點／失效傳播。已發布：`_posts/2026-09-24-short-url-uniqueness-idempotency-cache-hotspots.md`；[公開文章](https://rightson.github.io/networking/2026/09/24/short-url-uniqueness-idempotency-cache-hotspots.html)
 - [x] DS02 全域唯一 ID 的產生與分配。先備：01。範圍：唯一、順序及不可猜測性；深掘號段、時鐘回撥、worker ownership、lease／fencing、重啟重複。已發布：`_posts/2026-09-28-distributed-id-range-clock-worker-ownership.md`；[公開文章](https://rightson.github.io/networking/2026/09/28/distributed-id-range-clock-worker-ownership.html)
 - [x] DS03 多租戶限流服務。先備：01。範圍：跨節點配額；深掘 token bucket／sliding window、原子更新、局部配額誤差界、fail-open／closed。 已發布：`_posts/2026-09-30-multi-tenant-rate-limiting-quota-boundaries.md`；[公開文章](https://rightson.github.io/networking/2026/09/30/multi-tenant-rate-limiting-quota-boundaries.html)
-- [ ] DS04 分散式快取服務。先備：01、03。範圍：正確性與回源成本；深掘一致性雜湊、重分片、版本／失效競態、stampede 與 stale serving。
+- [x] DS04 分散式快取服務。先備：01、03。範圍：正確性與回源成本；深掘一致性雜湊、重分片、版本／失效競態、stampede 與 stale serving。已完成遠端提交（本系列精簡流程）：`_posts/2026-10-16-distributed-cache-versioned-refill-resharding.md`；[依 permalink 規則推導的文章網址](https://rightson.github.io/distributed-systems/2026/10/16/distributed-cache-versioned-refill-resharding.html)。Source commit：`bfe1a59e719a425bc0f8a50813118d26a2f32787`；五個內容檔案已逐一回讀核對，未做 build／deploy／HTTP 核驗，不宣稱已驗證上線。
 - [ ] DS05 Key-value 儲存服務。先備：02、04。範圍：確認寫入與耐久性；深掘 WAL、複寫確認、讀寫一致性、修復及 compaction／recovery 資源競爭。
 - [ ] DS06 配置與服務發現平台。先備：05。範圍：有效版本與權威狀態；深掘 leader／共識日誌、watch 版本、lease、快取失效及滾動切換。
 
@@ -94,6 +94,16 @@
 - [ ] DS30 多租戶事件平台的容量與災難恢復。先備：10、24、25、26、29。範圍：流量暴增與區域故障同時發生；深掘故障域、備援容量、重播追趕預算、過載控制及分階段復原。
 
 ## 資料與持續延伸
+
+### DS04 提交紀錄 — 2026-10-16
+
+- Instruction commit SHA：`d0f06465461964d90abf63b937b4df51c5cfdea1`；default branch：`main`。本次依同一 commit 完整讀取 AGENTS、common、topic、taxonomy、series、config、roadmap 與近期同系列成果，確認 DS01–DS03 已完成後接續 DS04。
+- 新內容：多租戶商品目錄案例，來源時間／雙期限、單次回填 token 與版本下限、固定 bucket 擴容及回源准入；保留既有 DS01–DS03 的 filename、date、categories、URL 與正文。
+- 文章 blob：`de151780503bbd5f1dd0a607ab337a22b426201b`。三張 SVG 與 Markdown 同 commit，含深色配色與固定日期署名；以 375px 寬度光柵化檢查深淺色可讀性。
+- `python3 scripts/lint_posts.py _posts/2026-10-16-distributed-cache-versioned-refill-resharding.md` 通過；`python3 scripts/experiments/ds04_cache_refill_demo.py` 的 10 項確定性狀態模型測試全數通過。這些是局部模型測試，不是實際快取叢集 benchmark。
+- 依 `assets/site.js` 的 CJK／400 加英文詞數／220 算法，以 Markdown 渲染後文字估算：排除圖說與文末的正文約 17 分鐘，整個文章 body 約 19 分鐘；正文約 5,100 中文字。未覆寫網站 reading-time。
+- 驗證階段：內容、front matter、來源、站內連結、圖文、遠端提交及五檔完整回讀已完成。依本系列精簡流程未例行查 Actions、build、deploy 或正式 HTTP；執行環境無 Ruby／Bundler，未做本地 Jekyll build。未建立或下載 Pages artifacts／壓縮封存檔，未新增驗證 workflow。
+- 下一個未完成篇目：DS05 Key-value 儲存服務，先備 DS02／DS04；從本次可丟棄快取接續到 WAL、複寫確認與已確認寫入的耐久性。
 
 每篇查核相關原始論文、正式文件、公開工程記錄及事故復盤。經典機制不受新聞時效限制；產品版本、容量及現行 API 須查證。通常使用 4–8 個真正支持正文的來源，關鍵主張就近連結，不列未採用的資料。
 
