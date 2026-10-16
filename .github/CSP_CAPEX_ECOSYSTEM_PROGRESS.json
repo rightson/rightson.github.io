@@ -2322,6 +2322,30 @@
         "https://www.datacenterdynamics.com/en/news/colt-dcs-and-rmz-start-work-on-third-facility-at-mumbai-campus-india/"
       ],
       "status": "issuer_original_body_verified_prelease_and_construction_not_delivered_capacity_or_supplier_award"
+    },
+    {
+      "fingerprint": "ichia-optical-flipchip-customer-qualification-q4-volume-and-component-pass-through-20261015",
+      "event_date": "2026-10-15",
+      "discovered_date": "2026-10-16",
+      "companies": [
+        "Ichia Technologies (2402)"
+      ],
+      "type": "attributed_management_call_reporting_customer_qualification_and_volume_ramp_with_profit_conversion_limits",
+      "facts": {
+        "prior_baseline": "Existing candidate recorded Malaysia capacity/capex plans and thermal-product validation, without establishing optical assembly acceptance or quantified revenue mix.",
+        "new_stage": "CNA and Anue original October 15 call reporting attribute completed Q3 customer qualification and Q4 volume ramp of optical Flip-chip assembly to management. This is a different product scope from still-pending high-end thermal validation.",
+        "management_outlook": "AI-related revenue share targeted around 40% in 2027 versus about 6% in 2026; optical communications share separately described as 30-40%. These are management forecasts, not realized mix or sixfold total revenue/profit growth.",
+        "economics": "Anue's named-CEO reporting says purchased components exceed 80% of optical assembly cost, and MLCC/DSP/PCB supply constrains actual revenue. Gross billings therefore do not establish comparable value-added or profit growth.",
+        "capacity": "Management describes 3 current assembly lines, 8-12 planned for 2027 and potential 24 in 2028. Order-based utilization expectations are about 4 full lines in 1H2027 and 6-8 in 2H2027, not installed or accepted capacity today. mSAP volume target remains 3Q2027.",
+        "financial_baseline": "CNA reports Q3 self-reported revenue TWD3.417bn, gross margin about 14%, operating profit approximately TWD165m and EPS TWD0.33; initial overseas costs and FX weigh on profitability. Not audited Q3 financial-statement validation.",
+        "limits": "Named reporter attribution cross-checked, not an obtained issuer slide deck or full recording. No named CSP, order value, binding multi-generation award, gross-profit revision or incremental cash collection established. Ichia is outside the 98-name universe; watchlist unchanged."
+      },
+      "sources": [
+        "https://www.cna.com.tw/news/afe/202610150215.aspx",
+        "https://news.cnyes.com/news/id/6631142",
+        "https://www.ichia.com/article.php?lang=tw&tb=2"
+      ],
+      "status": "original_management_reporting_cross_checked_material_product_stage_increment_no_article"
     }
   ],
   "articles": [],
@@ -2368,38 +2392,32 @@
     ],
     "current_run_screening": {
       "date": "2026-10-16",
-      "instruction_commit_sha": "769922c2022f0a1afcfa1f3e9266bc33c74e309c",
+      "instruction_commit_sha": "4fd84dea58358850aba532ce66f95fbb04dabb3a",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
-      "grouped_query_count": 25,
-      "scope": "All 98 active companies included in 25 fresh smaller-group discovery queries. Core-six current official pages and selected TSMC reproduced Q&A read. Historical Chicony Power baseline and Meta local-project candidate added; no material event or article registered.",
+      "grouped_query_count": 13,
+      "scope": "All 98 active names included in 13 fresh grouped discovery queries, with core-six issuer lists, CSP financing/negative-stage checks and outside-universe leads. Ichia optical-assembly stage increment cross-checked through two original call reports; no article.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+        "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf",
         "https://www.mediatek.com/press-room",
         "https://nvidianews.nvidia.com/news",
         "https://newsroom.amd.com/",
         "https://www.marvell.com/company/newsroom.html",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
-        "https://www.chiconypower.com/en/post/view?post_id=118",
-        "https://www.chiconypower.com/en/post/view?post_id=116",
-        "https://www.chiconypower.com/zh-tw/investor/finance",
-        "https://www.weku.org/the-commonwealth/2026-10-15/meta-is-behind-mason-county-data-center-project-what-did-officials-agree-to",
-        "https://www.wvxu.org/local-news/2026-10-15/meta-facebook-data-center-maysville-mason-county-kentucky",
-        "https://www.masoncountykentucky.us/Document%20Center.php",
-        "https://www.fool.com/earnings/call-transcripts/2026/10/15/tsmc-tsm-q3-2026-earnings-call-transcript/",
-        "https://www.aspeedtech.com/financials_monthly/",
-        "https://www.sigurd.com.tw/zh-tw/monthly-revenue",
-        "https://news.skhynix.com/en/ocp-global-summit-2026/"
+        "https://www.cna.com.tw/news/afe/202610150215.aspx",
+        "https://news.cnyes.com/news/id/6631142",
+        "https://www.jpcco.com/lang/tw/investor/financial_information/index",
+        "https://www.jpcco.com/lang/tw/solution/DNT/MGX_Ecosystem"
       ],
       "source_limits": [
-        "Fresh alpha-quant main commit 6aa19a55f33c995c8f703bfe0c65dcdf07e6b6d3, universe blob 88422949d38165d4757a1e24c27f8662bede14c1; 98 active names unchanged. Smaller grouped queries still produced uneven and historical results despite date filters. These are discovery checks, not complete individual current-source audits.",
-        "27 active names now have identified primary-company facts and 71 remain without individual baselines. Chicony Power adds a historical financial baseline only; source publication dates and small cross-language numerical differences retained. No new CSP award or profit improvement inferred.",
-        "TSMC official Q4 guidance unchanged from registered event. Selected reproduced Q&A says it is too early to provide numerical capex beyond 2026, pricing varies by segment/location/technology, and CPU is outside the narrow AI-accelerator calculation. Qualitative comments are not a new numerical budget, broad price rise or confirmed customer transfer; full issuer audio/transcript not authenticated.",
-        "MediaTek official release list and fresh discovery do not establish a confirmed ByteDance design win or revised Google ASIC commercial terms. NVIDIA/AMD/Marvell/Broadcom official lists overlap registered releases; AMD interview full transcript remains unreviewed.",
-        "CSP financing/spending discovery includes Microsoft, AWS, Google, Meta and Oracle. Credit repricing and rating-risk reporting overlap prior baseline; October-dated retellings of Oracle's historical downgrade not treated as a new rating action. No independently verified new capex cut, funding close, procurement cancellation or earnings revision registered. Full project-level audit remains incomplete.",
-        "Meta Mason County is a local-approval candidate, not funded equipment procurement. Original reporting obtained and county index read, but all four linked legal documents failed with non-retryable redirect errors; legal terms not promoted to primary-verified facts.",
-        "ASPEED monthly page exposes no numeric table in extracted body; no company count added. Sigurd monthly source again timed out. SK hynix October 16 memory-centric OCP demo lead indexed, but direct original body unavailable on two attempts; no commercial deployment or hardware-demand reduction inferred. Existing unrelated historical source gaps retained.",
-        "No individual-stock valuation, price, target, holding or trade condition stored publicly. No article, lint/build, deployment or public-site publication claimed. Existing public events, candidates, articles and blockers preserved; previously notified Modal, Mumbai 3, DigiCo and core-company events not repeated."
+        "Fresh alpha-quant default-branch commit 6aa19a55f33c995c8f703bfe0c65dcdf07e6b6d3 and blob 88422949d38165d4757a1e24c27f8662bede14c1 retrieved; 98 active names unchanged. Grouped discovery returns uneven and historical results despite freshness filters, not exhaustive current issuer audits.",
+        "Distinct active-company primary baselines remain 27 checked and 71 pending. Ichia and Tutor Perini are outside the universe. JPC finance page lists September image but its numeric image could not be visually retrieved; MGX body says no dashboard data. No primary financial count added from these menus or secondary revenue tables.",
+        "TSMC original hosted edited transcript now supports selected Q&A attribution; earlier historical retrieval gaps are retained. No incremental numerical capex, across-board price increase or named award inferred. Core official lists otherwise overlap existing events; AMD video transcript not reviewed.",
+        "MediaTek October 16 headline is stronger than its body, which still reports talks. Unnamed-institution turnkey revenue scenarios are not accepted as an award, issuer earnings guidance or consensus. Existing ByteDance, Holy Stone, Holtek, Modal, Mumbai and DigiCo alerts not repeated.",
+        "CSP discovery includes Microsoft, Amazon/AWS, Alphabet, Meta and Oracle financing, spending and utilization risks. New River Valley land-contract expiry has no named CSP end user. Google final site-plan approval is a project-stage candidate, not another 1GW equipment order. Full CSP project funding, supplier procurement and cash/utilization reconciliation remains incomplete.",
+        "Ichia original management reporting supports optical qualification and volume ramp, not named CSP orders or realized margin improvement. Official IR confirms October 15 meeting entry but extracted presentation labels expose no downloadable body. CNA and Anue scope distinctions and component pass-through retained.",
+        "No stock quote, valuation, target, holding or trade condition stored publicly. No article, lint/build, deploy or public-site publication claimed. Historical events/candidates/articles/blockers preserved."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -3390,6 +3408,36 @@
           "Meta Mason County is a local-approval candidate, not funded equipment procurement. Original reporting obtained and county index read, but all four linked legal documents failed with non-retryable redirect errors; legal terms not promoted to primary-verified facts.",
           "ASPEED monthly page exposes no numeric table in extracted body; no company count added. Sigurd monthly source again timed out. SK hynix October 16 memory-centric OCP demo lead indexed, but direct original body unavailable on two attempts; no commercial deployment or hardware-demand reduction inferred. Existing unrelated historical source gaps retained.",
           "No individual-stock valuation, price, target, holding or trade condition stored publicly. No article, lint/build, deployment or public-site publication claimed. Existing public events, candidates, articles and blockers preserved; previously notified Modal, Mumbai 3, DigiCo and core-company events not repeated."
+        ]
+      },
+      {
+        "date": "2026-10-16",
+        "instruction_commit_sha": "4fd84dea58358850aba532ce66f95fbb04dabb3a",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 13,
+        "scope": "All 98 active names included in 13 fresh grouped discovery queries, with core-six issuer lists, CSP financing/negative-stage checks and outside-universe leads. Ichia optical-assembly stage increment cross-checked through two original call reports; no article.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://newsroom.amd.com/",
+          "https://www.marvell.com/company/newsroom.html",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.cna.com.tw/news/afe/202610150215.aspx",
+          "https://news.cnyes.com/news/id/6631142",
+          "https://www.jpcco.com/lang/tw/investor/financial_information/index",
+          "https://www.jpcco.com/lang/tw/solution/DNT/MGX_Ecosystem"
+        ],
+        "source_limits": [
+          "Fresh alpha-quant default-branch commit 6aa19a55f33c995c8f703bfe0c65dcdf07e6b6d3 and blob 88422949d38165d4757a1e24c27f8662bede14c1 retrieved; 98 active names unchanged. Grouped discovery returns uneven and historical results despite freshness filters, not exhaustive current issuer audits.",
+          "Distinct active-company primary baselines remain 27 checked and 71 pending. Ichia and Tutor Perini are outside the universe. JPC finance page lists September image but its numeric image could not be visually retrieved; MGX body says no dashboard data. No primary financial count added from these menus or secondary revenue tables.",
+          "TSMC original hosted edited transcript now supports selected Q&A attribution; earlier historical retrieval gaps are retained. No incremental numerical capex, across-board price increase or named award inferred. Core official lists otherwise overlap existing events; AMD video transcript not reviewed.",
+          "MediaTek October 16 headline is stronger than its body, which still reports talks. Unnamed-institution turnkey revenue scenarios are not accepted as an award, issuer earnings guidance or consensus. Existing ByteDance, Holy Stone, Holtek, Modal, Mumbai and DigiCo alerts not repeated.",
+          "CSP discovery includes Microsoft, Amazon/AWS, Alphabet, Meta and Oracle financing, spending and utilization risks. New River Valley land-contract expiry has no named CSP end user. Google final site-plan approval is a project-stage candidate, not another 1GW equipment order. Full CSP project funding, supplier procurement and cash/utilization reconciliation remains incomplete.",
+          "Ichia original management reporting supports optical qualification and volume ramp, not named CSP orders or realized margin improvement. Official IR confirms October 15 meeting entry but extracted presentation labels expose no downloadable body. CNA and Anue scope distinctions and component pass-through retained.",
+          "No stock quote, valuation, target, holding or trade condition stored publicly. No article, lint/build, deploy or public-site publication claimed. Historical events/candidates/articles/blockers preserved."
         ]
       }
     ],
@@ -5105,7 +5153,19 @@
         "Obtain applicable export classification and approval evidence without inferring legality from media generalizations.",
         "Test whether prospective ASIC earnings can offset mobile demand and product-mix pressure."
       ],
-      "publication_status": "not_drafted"
+      "publication_status": "not_drafted",
+      "verification_updates": [
+        {
+          "date": "2026-10-16",
+          "instruction_commit_sha": "4fd84dea58358850aba532ce66f95fbb04dabb3a",
+          "source": "https://ec.ltn.com.tw/article/breakingnews/5608012",
+          "stage": "october16_headline_rechecked_body_still_near_agreement_anonymous_broker_scenario",
+          "facts": "Body still describes approaching agreement. New development/tapeout/production dates and revenue-scale extrapolation are attributed to an unnamed US broker with original note unavailable; not company guidance, consensus or a confirmed purchase.",
+          "questions": [
+            "Obtain named institution original and management agreement confirmation; validate gross-profit and working-capital scope before using turnkey gross revenue."
+          ]
+        }
+      ]
     },
     {
       "key": "ai-memory-allocation-mobile-demand-and-soc-profit-offset",
@@ -5325,7 +5385,24 @@
         "Obtain issuer presentation and named program relationship; reconcile installed lines, customer releases and utilization.",
         "Test whether PCB integration and thermal content improve gross profit and cash after capex rather than merely expanding low-margin assembly."
       ],
-      "publication_status": "not_drafted"
+      "publication_status": "not_drafted",
+      "verification_updates": [
+        {
+          "date": "2026-10-16",
+          "instruction_commit_sha": "4fd84dea58358850aba532ce66f95fbb04dabb3a",
+          "event_fingerprint": "ichia-optical-flipchip-customer-qualification-q4-volume-and-component-pass-through-20261015",
+          "sources": [
+            "https://www.cna.com.tw/news/afe/202610150215.aspx",
+            "https://news.cnyes.com/news/id/6631142"
+          ],
+          "stage": "optical_assembly_customer_qualification_and_q4_volume_reporting_cross_checked",
+          "questions": [
+            "Verify issuer presentation and Q4 delivered optical revenue versus purchased-component pass-through.",
+            "Track gross-profit dollars, operating profit and operating cash after Malaysia ramp and capex; test whether supply shortages or new-line underutilization offset scale benefits.",
+            "Keep Flip-chip assembly, mSAP substrate and thermal products on distinct qualification/delivery timelines."
+          ]
+        }
+      ]
     },
     {
       "key": "qumulusai-contracted-gpu-capacity-to-billing-and-cash-conversion",
@@ -5904,6 +5981,93 @@
         "Verify funded capital, utility approvals and delivered capacity before attributing supplier earnings."
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "tsmc-q3-2026-issuer-hosted-transcript-capex-pricing-and-capacity-qa-verification",
+      "companies": [
+        "TSMC"
+      ],
+      "sources": [
+        "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf"
+      ],
+      "stage": "issuer_hosted_edited_transcript_selected_prepared_and_qa_passages_verified_existing_event_supplement",
+      "facts": {
+        "source_date": "2026-10-15",
+        "scope": "Issuer-hosted 19-page LSEG edited transcript obtained. Selected passages confirm earlier recorded capex, pricing, CPU-definition, overseas-dilution and Terafab qualifications. Numerical capex beyond 2026 is explicitly withheld; equipment inflation is real but longer-term demand drives most investment. Management still expects revenue growth to outpace capex growth if execution succeeds.",
+        "limits": "No new numerical 2027 budget, blanket price rise or named customer transfer. CPU remains outside narrow AI-accelerator calculation. Backend supply partnership supports an already registered GF agreement, not another award. This resolves the selected original-transcript attribution gap, not an independent audit of CSP utilization or complete audio verification."
+      },
+      "questions": [
+        "Track numerical 2027 budget when formally guided and actual equipment deliveries.",
+        "Reconcile productive capacity, node mix, gross profit and cash rather than extrapolating qualitative comments."
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "google-van-buren-cannoli-final-site-plan-and-power-delivery-conversion",
+      "companies": [
+        "Alphabet / Google",
+        "DTE Energy",
+        "Panattoni",
+        "Walbridge"
+      ],
+      "sources": [
+        "https://bridgemi.com/michigan-environment-watch/township-vote-paves-way-for-michigans-second-hyperscale-data-center/",
+        "https://planetdetroit.org/2026/10/google-data-center-van-buren-approval/",
+        "https://www.cbsnews.com/detroit/news/google-data-center-clears-site-plan-review-van-buren-township/"
+      ],
+      "stage": "original_local_reporting_of_october14_final_site_plan_approval_read_primary_minutes_and_procurement_pending",
+      "facts": {
+        "event_date": "2026-10-14",
+        "source_dates": "Bridge Michigan original October 14; Planet Detroit republication October 15, not two independent sources.",
+        "scope": "Reported 5-1 final site-plan approval for Google's planned 1GW campus, with initial power drawing intended for late 2027 and subsequent ramp. Earlier October 1 power-contract approval is historical, not another new procurement commitment.",
+        "limits": "Site-plan approval removes one planning step, not operational 1GW IT load, new equipment awards or funded capex. Township executed minutes, utility contractual conditions and supplier economics not read."
+      },
+      "questions": [
+        "Obtain official final approval/conditions and construction milestones.",
+        "Separate utility demand, energization and IT utilization; identify actual equipment awards before supplier earnings attribution."
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "new-river-valley-commerce-park-expired-development-contract-negative-stage-check",
+      "companies": [
+        "New River Valley LLC",
+        "Virginia's First Regional Industrial Facility Authority"
+      ],
+      "sources": [
+        "https://cardinalnews.org/2026/10/12/company-opts-not-to-finalize-new-river-valley-commerce-park-contract-including-data-center/"
+      ],
+      "stage": "original_local_official_interview_read_land_transaction_did_not_close_not_named_csp_cancellation",
+      "facts": {
+        "event_date": "2026-10-05",
+        "source_date": "2026-10-12",
+        "scope": "Authority executive says buyer missed October 5 land closing and contract expired; planned minimum USD750m over ten years included mixed industrial development and a potential data center.",
+        "limits": "No data-center end user identified and reason unknown. Not a USD750m equipment-order cancellation, hyperscaler budget cut or financed campus default; underlying contract not obtained."
+      },
+      "questions": [
+        "Verify authority disposition and any replacement developer/end user before linking to a supplier."
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "tutor-perini-fisk-houston-prefabricated-datacenter-electrical-backlog",
+      "companies": [
+        "Tutor Perini",
+        "Fisk Electric"
+      ],
+      "sources": [
+        "https://investors.tutorperini.com/press-releases/press-release-details/2026/Fisk-Electric-Awarded-24-Million-Data-Center-Electrical-Project-Expanding-Prefabrication-Capabilities-in-Houston/default.aspx"
+      ],
+      "stage": "october6_issuer_contract_baseline_verified_not_new_october16_award",
+      "facts": {
+        "source_date": "2026-10-06",
+        "scope": "Issuer announces approximately USD24m Houston electrical services award for confidential data-center customer, including modular prefabrication and liquid-cooling components/piping. Value enters Q3 backlog; work planned Q4 2026 with substantial completion Q1 2027.",
+        "limits": "Direct data-center demand relationship supports outside-universe research only. Historical release is not re-dated; no customer identity, realized profit or cash conversion provided."
+      },
+      "questions": [
+        "Check Q3 backlog accounting, project execution margin and collections; distinguish repeatable prefabrication demand from one project."
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -5923,7 +6087,7 @@
     }
   ],
   "last_research_date": "2026-10-16",
-  "instruction_commit_sha": "769922c2022f0a1afcfa1f3e9266bc33c74e309c",
+  "instruction_commit_sha": "4fd84dea58358850aba532ce66f95fbb04dabb3a",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
