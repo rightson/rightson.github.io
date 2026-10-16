@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 700" role="img" aria-labelledby="title desc">
+<title id="title">Move one stable bucket with a new routing epoch</title><desc id="desc">Copy values without extending deadlines, send invalidation to both owners, revoke old refill tokens, switch routing epoch, and gradually warm the new owner under a shared source budget.</desc>
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#486375"/></marker></defs>
+<rect width="560" height="700" rx="16" fill="#f5f8fa"/>
+<g font-family="Arial,sans-serif" fill="#173347" text-anchor="middle">
+<text x="280" y="43" font-size="25" font-weight="700">Stable bucket, changing owner</text>
+<rect x="32" y="78" width="210" height="100" rx="12" fill="#dcecf7" stroke="#487c9d"/><text x="137" y="115" font-size="23">Owner A</text><text x="137" y="148" font-size="21">epoch 17</text>
+<rect x="318" y="78" width="210" height="100" rx="12" fill="#e3eddd" stroke="#65834a"/><text x="423" y="115" font-size="23">Owner B</text><text x="423" y="148" font-size="21">prepare + warm</text>
+<path d="M242 126 H311" fill="none" stroke="#486375" stroke-width="3" marker-end="url(#a)"/>
+<text x="280" y="219" font-size="22">Copy values, not refill tokens</text><text x="280" y="252" font-size="22">Keep the original hard deadline</text>
+<rect x="55" y="282" width="450" height="95" rx="12" fill="#ffffff" stroke="#487c9d"/><text x="280" y="318" font-size="22">Send version events to A and B</text><text x="280" y="350" font-size="21">Reject copied values below version floor</text>
+<path d="M280 377 V414" fill="none" stroke="#486375" stroke-width="3" marker-end="url(#a)"/>
+<rect x="55" y="423" width="450" height="95" rx="12" fill="#fff0d4" stroke="#a87931"/><text x="280" y="459" font-size="22">Cut over to epoch 18 / owner B</text><text x="280" y="491" font-size="21">A revokes rights; B issues new tokens</text>
+<path d="M280 518 V555" fill="none" stroke="#486375" stroke-width="3" marker-end="url(#a)"/>
+<rect x="55" y="564" width="450" height="84" rx="12" fill="#e3eddd" stroke="#65834a"/><text x="280" y="598" font-size="22">Warm a bounded batch of buckets</text><text x="280" y="630" font-size="21">All origin work shares one source budget</text>
+<text x="535" y="682" text-anchor="end" font-size="9" fill="#566976">Scott Yo-Ru Chen · 2026-10-16</text>
+</g><style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#173347" i]{fill:#c8d7e2}[fill="#486375" i]{fill:#bcc6cd}[fill="#566976" i]{fill:#bcc3c8}[fill="#dcecf7" i]{fill:#1e2b35}[fill="#e3eddd" i]{fill:#2a3226}[fill="#f5f8fa" i]{fill:#1c2226}[fill="#fff0d4" i]{fill:#3c2f17}[fill="#ffffff" i]{fill:#1b1f20}[stroke="#486375" i]{stroke:#bcc6cd}[stroke="#487c9d" i]{stroke:#689aba}[stroke="#65834a" i]{stroke:#8bac6c}[stroke="#a87931" i]{stroke:#dab67f}}</style>
+</svg>

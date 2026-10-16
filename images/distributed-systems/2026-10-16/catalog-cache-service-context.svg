@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 620" role="img" aria-labelledby="title desc">
+<title id="title">Catalog read pressure and update requirements</title><desc id="desc">Visitors and merchants share one catalog source. Reads peak at 300,000 per second against a safe source read budget of 20,000 per second. Display freshness is limited to 30 seconds.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#486375"/></marker></defs>
+<rect width="560" height="620" rx="16" fill="#f5f8fa"/>
+<g font-family="Arial,sans-serif" text-anchor="middle" fill="#173347">
+<text x="280" y="42" font-size="25" font-weight="700">One catalog, two demands</text>
+<rect x="28" y="75" width="242" height="112" rx="12" fill="#dcecf7" stroke="#487c9d"/>
+<text x="149" y="110" font-size="24" font-weight="700">Visitors</text><text x="149" y="143" font-size="21">Read product display</text><text x="149" y="170" font-size="21">300,000 reads/s peak</text>
+<rect x="290" y="75" width="242" height="112" rx="12" fill="#e3eddd" stroke="#65834a"/>
+<text x="411" y="110" font-size="24" font-weight="700">Merchants</text><text x="411" y="143" font-size="21">Edit their own items</text><text x="411" y="170" font-size="21">2,000 writes/s peak</text>
+<path d="M149 187 V218 H230 V247 M411 187 V218 H330 V247" fill="none" stroke="#486375" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="130" y="252" width="300" height="80" rx="12" fill="#ffffff" stroke="#487c9d"/><text x="280" y="285" font-size="24" font-weight="700">Catalog API</text><text x="280" y="315" font-size="21">Tenant + item identity</text>
+<path d="M280 332 V382" fill="none" stroke="#486375" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="90" y="390" width="380" height="90" rx="12" fill="#fff0d4" stroke="#a87931"/><text x="280" y="425" font-size="24" font-weight="700">Authoritative source</text><text x="280" y="458" font-size="22">Read budget: 20,000/s</text>
+<text x="280" y="525" font-size="22">Display age at decision: at most 30 s</text><text x="280" y="558" font-size="21">Checkout and authorization stay separate</text>
+<text x="535" y="602" text-anchor="end" font-size="9" fill="#566976">Scott Yo-Ru Chen · 2026-10-16</text>
+</g><style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#173347" i]{fill:#c8d7e2}[fill="#486375" i]{fill:#bcc6cd}[fill="#566976" i]{fill:#bcc3c8}[fill="#dcecf7" i]{fill:#1e2b35}[fill="#e3eddd" i]{fill:#2a3226}[fill="#f5f8fa" i]{fill:#1c2226}[fill="#fff0d4" i]{fill:#3c2f17}[fill="#ffffff" i]{fill:#1b1f20}[stroke="#486375" i]{stroke:#bcc6cd}[stroke="#487c9d" i]{stroke:#689aba}[stroke="#65834a" i]{stroke:#8bac6c}[stroke="#a87931" i]{stroke:#dab67f}}</style>
+</svg>

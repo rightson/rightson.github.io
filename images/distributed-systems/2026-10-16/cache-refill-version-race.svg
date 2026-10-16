@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 720" role="img" aria-labelledby="title desc">
+<title id="title">Invalidation rejects a late refill</title><desc id="desc">Reader holds token from generation 9, reads version 41, then an update commits version 42. Invalidation advances generation to 10 and cancels the old token, so the late version 41 fill is rejected.</desc>
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#486375"/></marker></defs>
+<rect width="560" height="720" rx="16" fill="#f5f8fa"/>
+<g font-family="Arial,sans-serif" fill="#173347">
+<text x="280" y="43" text-anchor="middle" font-size="25" font-weight="700">The old reader returns last</text>
+<g stroke="#487c9d" fill="#dcecf7"><rect x="35" y="78" width="490" height="88" rx="12"/><rect x="35" y="205" width="490" height="88" rx="12"/></g>
+<g font-size="22"><text x="56" y="111">1. Cache owner grants refill right</text><text x="56" y="143">Reader token: epoch 7 / gen 9</text><text x="56" y="238">2. Reader fetches source v41</text><text x="56" y="270">Response pauses in transit</text></g>
+<rect x="35" y="332" width="490" height="88" rx="12" fill="#e3eddd" stroke="#65834a"/><text x="56" y="365" font-size="22">3. Merchant commits source v42</text><text x="56" y="397" font-size="22">Durable update + version event</text>
+<rect x="35" y="459" width="490" height="88" rx="12" fill="#fff0d4" stroke="#a87931"/><text x="56" y="492" font-size="22">4. Owner processes INVALIDATE(42)</text><text x="56" y="524" font-size="22">gen 10 / floor 42 / cancel old token</text>
+<rect x="35" y="586" width="490" height="88" rx="12" fill="#f8e2df" stroke="#a95750"/><text x="56" y="619" font-size="22">5. Late FILL(gen 9, v41) is rejected</text><text x="56" y="651" font-size="22">A new read needs a new token</text>
+<g fill="none" stroke="#486375" stroke-width="3" marker-end="url(#a)"><path d="M280 166 V197"/><path d="M280 293 V324"/><path d="M280 420 V451"/><path d="M280 547 V578"/></g>
+<text x="535" y="703" text-anchor="end" font-size="9" fill="#566976">Scott Yo-Ru Chen · 2026-10-16</text>
+</g><style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#173347" i]{fill:#c8d7e2}[fill="#486375" i]{fill:#bcc6cd}[fill="#566976" i]{fill:#bcc3c8}[fill="#dcecf7" i]{fill:#1e2b35}[fill="#e3eddd" i]{fill:#2a3226}[fill="#f5f8fa" i]{fill:#1c2226}[fill="#f8e2df" i]{fill:#341f1c}[fill="#fff0d4" i]{fill:#3c2f17}[stroke="#486375" i]{stroke:#bcc6cd}[stroke="#487c9d" i]{stroke:#689aba}[stroke="#65834a" i]{stroke:#8bac6c}[stroke="#a87931" i]{stroke:#dab67f}[stroke="#a95750" i]{stroke:#bf7d77}}</style>
+</svg>
