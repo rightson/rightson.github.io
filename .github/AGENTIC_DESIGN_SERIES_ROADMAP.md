@@ -109,3 +109,13 @@
 - 相較最新 AD004 合成診斷回放與前次 Siemens Liberty scorer，Build-A-Chip-Bench 新增跨 RTL、實體實作與最終 GDS 的共同評量，以及把測試答案與 agent workspace 分離的方法。主接續 AD005／AD007，亦補 AD002／AD003：下一步取得完整評分定義與交集分母，核對功能回歸與 PPA 報告是否綁定同一版提交；再量測慢速工具工作、保留已通過候選及回復較佳版本的成本。案例使用開源工具／PDK，成熟度列「公開方法與初步 vendor-reported benchmark」，不外推先進製程 production signoff 或內部平台部署。
 - 去重與缺口：Siemens／NeMo Gym、Cadence 10 月 13 日 analog workflow 及 BTTF 既有成果不重報。SiliCAD EDA_MCP 的 10 月 13 日後 commit 查詢未回傳項目。AI-HDL 預印本原站顯示 v1 為 10 月 9 日，未見二手索引所稱 10 月 15 日更新，因此不當成本次新論文。museRISC 留作未完成的程式／實驗線索，本次未核驗其工具產物，不宣稱製造或實測完成。
 - 本次採對話短報與 roadmap 候選更新，不建立新文章，不將 AD001–AD003、AD005–AD009 標為完成；亦未執行新的 EDA／LLM 實驗或進行文章 build／deploy 核驗。
+
+## 2026-10-17 雷達查核與接續
+
+- 本次指令 commit：`d8b924619fcb5406ef48c52e0465bc785367768f`；研究紀錄：`agentic-design-radar｜2026-10-17`。只追加來源與研究進度，保留既有完成紀錄，不設定或改動 scheduler。
+- 事件識別 `cadence-aurastack-multiphysics-revalidation-workflow-20261015`。[Cadence 10 月 15 日技術說明](https://community.cadence.com/cadence_blogs_8/b/artificial-intelligence/posts/agentic-ai-for-pcb-and-advanced-packaging-design)補充 AuraStack 的具體迭代：工程意圖與約束進入設計脈絡，熱分析促成元件位置或散熱變更後，接續重查繞線與電氣／熱性能；分析由既有工具執行，工程師審查與接受。相較 AD004 診斷 skill，新增的是跨物理領域的變更與重驗依賴，接續 AD001／AD002／AD005／AD008。
+- AuraStack 並非本次新發售。[7 月原始公告](https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2026/cadence-introduces-aurastack-ai-super-agent-the-worlds-first.html)已涵蓋其效益宣稱；原頁標 7 月 16 日，產品頁索引標 15 日，保留日期差異。當時 availability 是 2026 年計畫，10 月新文未補 GA 證明。成熟度列供應商工作流說明；缺機器可讀的跨工具版本／失效 schema、實際恢復案例與獨立量測。下一步核對 placement 變更如何綁定並使 SI／PI／thermal 結果失效，以及重驗與人工複核成本。
+- 既有事件補讀 `chipagents-build-a-chip-bench-workload-to-gds-evaluation-20261014`：[技術頁 Results](https://chipagents.ai/research/build-a-chip-bench)已可核對公開公式：各 task 的功能條件、乾淨 GDS 條件與 PPA 分數相乘，再對全部 tasks 平均；任一條件失敗計零。功能與 GDS 各欄為全體比例，PPA 欄只在同時通過者上平均，不能直接把兩個邊際比例相乘。這是補齊前次紀錄的公開公式，不宣稱 10 月 17 日新發表或分數改善。精確交集數、樣本數、task pack、固定 scorer 與原始 runs 仍缺；AD005／AD007 保留未完成。
+- 去重與查核界限：Cadence IC26.1、analog workflow、Siemens Liberty verifier 與 BTTF 維持既有紀錄。RFChipAgent 原站僅列 10 月 7 日 v1，未見新修訂，不把近期索引當新發表。SiliCAD EDA_MCP 與 Konnect 的 10 月 14 日起 commit 查詢均未回傳項目；Konnect 二手近期介紹不據此算新 release。NeMo Gym 10 月 15 日的通用 verifier checkpoint 宣告未包含 CVDP／Solido，不外推為 EDA 工作已可恢復。Synopsys 官方目前可讀新聞與 Siemens EDA 索引未提供另一項同等強度的新設計流程證據；索引查核不代表完整客戶部署稽核。
+- 追加查核來源：[RFChipAgent 版本歷史](https://arxiv.org/abs/2610.10858)、[SiliCAD EDA_MCP](https://github.com/SiliCAD/EDA_MCP)、[Konnect](https://github.com/mixelpixx/Konnect)、[NeMo Gym verifier 宣告差異](https://github.com/NVIDIA-NeMo/Gym/commit/974d1a921b341dc6faf32144446a9278fa630326)、[Synopsys 官方新聞](https://news.synopsys.com/)、[Siemens EDA 索引](https://blogs.sw.siemens.com/eda/)。
+- 本次不建立公開文章：新工作流說明補強既有依賴與重驗問題，尚不足以另立完整論證；不以缺少 production 證據否定方法研究價值。未執行新的 EDA／LLM 實驗；未做文章 lint／build／deploy／正式頁核驗；AD004 歷史完成狀態與其他候選未完成狀態皆保留。
