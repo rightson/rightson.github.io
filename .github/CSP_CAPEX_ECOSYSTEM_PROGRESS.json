@@ -2883,12 +2883,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-18",
-      "checked_at": "2026-10-17T16:32:07Z",
-      "instruction_commit_sha": "a546c547295ea86c4ba13b434b039c49fcfdb90a",
+      "checked_at": "2026-10-17T17:24:20Z",
+      "instruction_commit_sha": "ec4c06b7a3c4038516c8f56b0b142abba1192091",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "All98 active companies included in14 fresh grouped discovery queries. Sixcore issuer indices,TSMC guidance,TPU procurement/NRE,fiveCSP indices andoutside opportunity/downside discovery checked. October16 JASM approval report retained as a candidate with explicit primary-source gap.",
+      "scope": "All98 active names included in14 fresh grouped discovery queries. Sixcore issuer indices,TSMC guidance,TPU procurement/NRE,fiveCSP indices andoutside opportunity/downside leads checked. Historical IQE production-order relationship added as candidate;not a fresh earnings event.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -2901,20 +2901,22 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://gmteight.com/content/detail/440337",
-        "https://money.udn.com/money/story/5710/9817537",
-        "https://www.ftnn.com.tw/news/588121",
-        "https://www.newsweekjapan.jp/articles/-/337196"
+        "https://www.sigurd.com.tw/zh-tw/monthly-revenue",
+        "https://www.lse.co.uk/rns/IQE/iqe-plc-14m-ai-datacentre-production-order-zqq97k5t1x0xtn8.html?page=2",
+        "https://compoundsemiconductor.net/article/124698/IQE_secures_14m_order_for_AI_data_centre_applications",
+        "https://www.datacenterdynamics.com/en/news/google-increases-2026-capex-195-205bn-as-it-accelerates-ai-data-center-buildout/",
+        "https://anuenews.cnyes.com/news/id/6632478"
       ],
       "source_limits": [
-        "Latest main instruction commita546c547295ea86c4ba13b434b039c49fcfdb90a. Mandatory instructions,specifications,current full ledger andthree related articles read completely at this revision; no truncated mandatory content orold prompt substituted.",
-        "Alpha-quant latestmain3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7;fullCSV blob88422949d38165d4757a1e24c27f8662bede14c1 contains98active companies. Fourteen fresh grouped searches are discovery only,not98individual primary validations. Many freshness-filtered results are old orreprints. Primary46,pending52,monthly20,product15,partner4,regulator3 unchanged.",
-        "Sixcore issuer indices andTSMC Q3/Q4 figures reopened. Available material did not authenticate a new MediaTek TPU allocation,NRE,design win orfinancial revision. October13 GF TPUv9 milestone-risk reproduction matches existing candidate;no original broker note obtained.",
-        "FiveCSP landing/index pages reopened;Amazon/Alphabet extraction dynamic/incomplete andOracle index not full current-filings verification. Existing Maia,Anthropic financing,CoreWeave credit-risk andOracle project items deduplicated;not treated as new budgets,cash receipts,default orcancellation.",
-        "October17 FTNN Holystone pricing/order headline repeats theOctober16 original-report candidate already recorded;directFTNN body unavailable. October16 Holtek original report read andmatched existing first-orders/small-shipment event;not a new award.",
-        "October16 Reuters JASM amendment approval report body read. New research candidate only;3nm direction previously announced inFebruary. METI index andamendment PDF403 prevented regulator-body verification. Third-party old/new capacity,subsidy andinvestment arithmetic not adopted as established fact;no active-universe primary-count credit.",
-        "Deduplicated against92public events,175prior candidates,89prior screenings andreadable notification baseline. Append onecandidate andonescreening only;no public event orarticle added. Preserve all historical arrays anddated blockers. No private quotations,valuation,positions,trading conditions orprivate market-monitoring data included.",
-        "Ledger-only JSON andhistory-preservation checks plus freshhead/targetblob,CAS forcefalse,exact remote readback andonly-target compare required;no articlelint,build,deploy orpublic-content completion claimed."
+        "Latest main instruction commitec4c06b7a3c4038516c8f56b0b142abba1192091. Mandatory instructions,specifications,current full ledger andthree related articles read at this same revision. Oversized displayed instruction output recovered in complete explicit chunks before research;no missing ortruncated instruction content used.",
+        "Fresh alpha-quant metadata/main andfullCSV read:commit3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7,blob88422949d38165d4757a1e24c27f8662bede14c1,98active companies. Fourteen grouped discovery queries do not establish98individual primary validations. Primary46,pending52,monthly20,product15,partner4,regulator3 unchanged.",
+        "Sixcore issuer indices reopened;TSMC Q3 actual/Q4 guidance andavailable dated entries match recorded baseline. Fresh TPU searches yielded historical role/pricing/risk reporting,no authenticated new allocation,NRE,design win orfinancial revision.",
+        "FiveCSP landing/index pages reopened. Amazon/Alphabet extraction remains dynamic/incomplete;Oracle index is not full filings verification. July22 Google annual-capex report rediscovered,not a new October revision;no annual-guidance primary credit added.",
+        "Funding/downside searches rediscovered recorded Anthropic/Blackstone,CoreWeave,Gartner andBroadcom capital-constraint items. Newly surfaced October17 USD3.3bn gas-plant-loan article andmarket-deal report could not be opened;no claim of fullbody verification,new DOE funding award ornew default/cancellation.",
+        "IQE July14 issuer RNS text read in fullthird-party reproduction andcross-checked with dated industry article. Historical USD14m multi-year Newport production order,not annual revenue ornew October award;customer andspecific product undisclosed. Candidate only,no active98 primary-count credit.",
+        "Sigurd monthly index freshly attempted,retried aftertimeout andreturned502;September numeric rows visible insearch index only. Direct monthpage unavailable. No new primary revenue fact claimed,no coverage increment. Irrelevant search spillovers excluded.",
+        "Deduplicated against92public events,176prior candidates,90prior screenings andvisible notification baseline. One historical candidate andone screening appended;no new public event orarticle. Preserve all earlier records anddated blockers. No private quotes,valuation,holdings,trading conditions orprivate market-monitoring data inpublic ledger.",
+        "Ledger-only JSON/schema/history checks,freshhead/targetblob,CAS forcefalse,exact remote readback andonly-target compare required. No articlelint,build,deploy orpublished-content completion claimed."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -5421,6 +5423,44 @@
           "October16 Reuters JASM amendment approval report body read. New research candidate only;3nm direction previously announced inFebruary. METI index andamendment PDF403 prevented regulator-body verification. Third-party old/new capacity,subsidy andinvestment arithmetic not adopted as established fact;no active-universe primary-count credit.",
           "Deduplicated against92public events,175prior candidates,89prior screenings andreadable notification baseline. Append onecandidate andonescreening only;no public event orarticle added. Preserve all historical arrays anddated blockers. No private quotations,valuation,positions,trading conditions orprivate market-monitoring data included.",
           "Ledger-only JSON andhistory-preservation checks plus freshhead/targetblob,CAS forcefalse,exact remote readback andonly-target compare required;no articlelint,build,deploy orpublic-content completion claimed."
+        ]
+      },
+      {
+        "date": "2026-10-18",
+        "checked_at": "2026-10-17T17:24:20Z",
+        "instruction_commit_sha": "ec4c06b7a3c4038516c8f56b0b142abba1192091",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "All98 active names included in14 fresh grouped discovery queries. Sixcore issuer indices,TSMC guidance,TPU procurement/NRE,fiveCSP indices andoutside opportunity/downside leads checked. Historical IQE production-order relationship added as candidate;not a fresh earnings event.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://www.sigurd.com.tw/zh-tw/monthly-revenue",
+          "https://www.lse.co.uk/rns/IQE/iqe-plc-14m-ai-datacentre-production-order-zqq97k5t1x0xtn8.html?page=2",
+          "https://compoundsemiconductor.net/article/124698/IQE_secures_14m_order_for_AI_data_centre_applications",
+          "https://www.datacenterdynamics.com/en/news/google-increases-2026-capex-195-205bn-as-it-accelerates-ai-data-center-buildout/",
+          "https://anuenews.cnyes.com/news/id/6632478"
+        ],
+        "source_limits": [
+          "Latest main instruction commitec4c06b7a3c4038516c8f56b0b142abba1192091. Mandatory instructions,specifications,current full ledger andthree related articles read at this same revision. Oversized displayed instruction output recovered in complete explicit chunks before research;no missing ortruncated instruction content used.",
+          "Fresh alpha-quant metadata/main andfullCSV read:commit3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7,blob88422949d38165d4757a1e24c27f8662bede14c1,98active companies. Fourteen grouped discovery queries do not establish98individual primary validations. Primary46,pending52,monthly20,product15,partner4,regulator3 unchanged.",
+          "Sixcore issuer indices reopened;TSMC Q3 actual/Q4 guidance andavailable dated entries match recorded baseline. Fresh TPU searches yielded historical role/pricing/risk reporting,no authenticated new allocation,NRE,design win orfinancial revision.",
+          "FiveCSP landing/index pages reopened. Amazon/Alphabet extraction remains dynamic/incomplete;Oracle index is not full filings verification. July22 Google annual-capex report rediscovered,not a new October revision;no annual-guidance primary credit added.",
+          "Funding/downside searches rediscovered recorded Anthropic/Blackstone,CoreWeave,Gartner andBroadcom capital-constraint items. Newly surfaced October17 USD3.3bn gas-plant-loan article andmarket-deal report could not be opened;no claim of fullbody verification,new DOE funding award ornew default/cancellation.",
+          "IQE July14 issuer RNS text read in fullthird-party reproduction andcross-checked with dated industry article. Historical USD14m multi-year Newport production order,not annual revenue ornew October award;customer andspecific product undisclosed. Candidate only,no active98 primary-count credit.",
+          "Sigurd monthly index freshly attempted,retried aftertimeout andreturned502;September numeric rows visible insearch index only. Direct monthpage unavailable. No new primary revenue fact claimed,no coverage increment. Irrelevant search spillovers excluded.",
+          "Deduplicated against92public events,176prior candidates,90prior screenings andvisible notification baseline. One historical candidate andone screening appended;no new public event orarticle. Preserve all earlier records anddated blockers. No private quotes,valuation,holdings,trading conditions orprivate market-monitoring data inpublic ledger.",
+          "Ledger-only JSON/schema/history checks,freshhead/targetblob,CAS forcefalse,exact remote readback andonly-target compare required. No articlelint,build,deploy orpublished-content completion claimed."
         ]
       }
     ],
@@ -10177,6 +10217,32 @@
         "Verify approved funding,tool orders,construction readiness,qualified customer demand andretained economics before estimating supplier revenue."
       ],
       "publication_status": "research_candidate_only_no_material_earnings_alert_not_drafted"
+    },
+    {
+      "key": "iqe-historical-ai-datacenter-newport-production-order-to-profit-and-cash",
+      "companies": [
+        "IQE"
+      ],
+      "date": "2026-10-18",
+      "instruction_commit_sha": "ec4c06b7a3c4038516c8f56b0b142abba1192091",
+      "sources": [
+        "https://www.lse.co.uk/rns/IQE/iqe-plc-14m-ai-datacentre-production-order-zqq97k5t1x0xtn8.html?page=2",
+        "https://compoundsemiconductor.net/article/124698/IQE_secures_14m_order_for_AI_data_centre_applications"
+      ],
+      "stage": "historical_july14_issuer_rns_reproduction_full_body_and_industry_report_read",
+      "facts": {
+        "announcement_date": "2026-07-14",
+        "rns_number": "1538M",
+        "order_value_usd": 14000000,
+        "scope": "Multi-year production order from an unnamed strategic global technology customer,manufactured at Newport for AI/data-center-related high-performance storage applications.",
+        "limits": "Historical outside-universe relationship discovery,not a new October order. RNS text read on a third-party reproduction,not issuer-hosted original. Broader InP,silicon-photonics andVCSEL portfolio references do not identify this order as CPO,optical chips orany named hyperscaler award. Revenue schedule,margin,acceptance andpayment terms undisclosed."
+      },
+      "questions": [
+        "Authenticate issuer-hosted announcement andsubsequent delivered/revenue status.",
+        "Quantify qualified production,margin,cash collection andremaining order balance;do not treat multi-year face value as annual revenue.",
+        "Check customer concentration andfollow-on orders before assuming repeatability."
+      ],
+      "publication_status": "historical_candidate_only_no_material_new_alert_not_drafted"
     }
   ],
   "blockers": [
@@ -10196,7 +10262,7 @@
     }
   ],
   "last_research_date": "2026-10-18",
-  "instruction_commit_sha": "a546c547295ea86c4ba13b434b039c49fcfdb90a",
+  "instruction_commit_sha": "ec4c06b7a3c4038516c8f56b0b142abba1192091",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
