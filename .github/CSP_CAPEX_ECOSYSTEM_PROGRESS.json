@@ -2959,40 +2959,36 @@
     ],
     "current_run_screening": {
       "date": "2026-10-18",
-      "checked_at": "2026-10-17T18:42:44Z",
-      "instruction_commit_sha": "97fd96d168c942cf85ad704e811bc3b91cdeff38",
-      "status": "grouped_discovery_screen_plus_one_historical_monthly_primary_gap_filled_not_full_universe_validation",
+      "checked_at": "2026-10-17T20:28:37Z",
+      "instruction_commit_sha": "5536eee80af2f8e896531026298602584c2163c6",
+      "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh14-query grouped discovery of all98 active names;core6/fiveCSP indices reopened;TPU design/NRE and outside opportunity/downside refreshed. Historical monthly event/candidate added;GlobalTek receives append-only scope clarification.",
+      "scope": "Fresh14 grouped queries cover all98 active names;sixcore and fiveCSP indices plus TPU allocation/NRE,outside opportunities and downside refreshed. One existing Solaria candidate receives issuer-body corroboration;no new event/article.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
         "https://nvidianews.nvidia.com/news",
         "https://ir.amd.com/news-events/press-releases",
-        "https://investors.broadcom.com/financial-information/financial-news-releases",
+        "https://investors.broadcom.com/",
         "https://investor.marvell.com/news-events/press-releases",
         "https://www.microsoft.com/en-us/investor/default",
         "https://ir.aboutamazon.com/overview/default.aspx",
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://www.psi.com.tw/investors.asp",
-        "https://www.psi.com.tw/",
-        "https://www.taipeitimes.com/News/biz/archives/2026/10/17/2003866097",
-        "https://www.globaltekww.com/tw/conferences",
-        "https://news.cnyes.com/news/id/6632790"
+        "https://solariaenergia.com/en/solaria-and-uruguay-sign-a-strategic-agreement-to-develop-a-data-center-technology-campus-of-up-to-500-mw/"
       ],
       "source_limits": [
-        "All mandatory instructions/specifications and related articles freshly fetched at instruction commit97fd96d168c942cf85ad704e811bc3b91cdeff38;unchanged blob identities verified. Long instruction display truncation recovered in explicit overlapping chunks;no mandatory text remains missing.",
-        "Fresh alpha-quant metadata/main/full CSV:3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7/blob88422949d38165d4757a1e24c27f8662bede14c1,98active. Grouped searches are discovery,not98 individually verified issuers. Distinct primary47/pending51;monthly21/product15/partner4/regulator3.",
-        "Six core issuer pages and TSMC quarterly table reopened. NVIDIA/AMD/Broadcom/Marvell index bodies incompletely exposed by extraction;not complete latest-filings validation. TSMC Q4 USD52.3–54.3bn/GM65–67%/OP56.5–58.5% unchanged. No authenticated new MediaTek TPU allocation,NRE or design win.",
-        "FiveCSP pages reopened;Amazon/Alphabet dynamically incomplete;Oracle landing not full filings review. No new aggregate capex/customer award/current commercial terms inferred from landing pages or secondary ASIC commentary.",
-        "October17 equipment recap rediscovers recorded October13 Enerflex/LS Electric awards and October16 Schneider guidance. Crawl dates not new events. CoreWeave financing risk,TrendForce revisions,CXMT outlook,Texas permit pause and Cipher funding stages deduplicated;no new default,supplier cancellation or acceptance established.",
-        "PSI September primary monthly numeric table read,unit TWDthousand. October5 filing date corroborated;homepage October13 not new revision. February inconsistency excluded. One gap filled without inferring AI-specific margin/profit.",
-        "GlobalTek October17 original report read:20% target includes other emerging businesses,unlike6.2% AI thermal share. Issuer deck/replay unavailable;clarification appended to existing candidate only,not authenticated new financial forecast.",
-        "Preserved94 events,179 candidates,92 screenings,all dated blockers/historical facts. Append1 historical monthly event,1 candidate,1 GlobalTek update,1 screening. No stock valuation,quotes,private positions/flows or article added.",
-        "Ledger-only JSON/history checks,fresh head/target blob,CAS forcefalse,exact readback/only-target diff required. No article lint,build,deploy or website-publication completion claimed."
+        "Latest main instruction commit5536eee80af2f8e896531026298602584c2163c6 recorded;all mandatory instructions/specifications,full ledger and recent related articles fetched at same revision. Unchanged blobs checked against fully read prior bodies;instruction output display truncation recovered with overlapping complete excerpts.",
+        "Fresh alpha-quant metadata/main/full CSV:3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7/blob88422949d38165d4757a1e24c27f8662bede14c1,98active. Fourteen grouped discovery queries not individual primary validation;47 distinct primary/51pending,monthly21/product15/partner4/regulator3 unchanged.",
+        "TSMC quarterly guidance table reopened:Q4 USD52.3–54.3bn,GM65–67%,OP56.5–58.5%,unchanged. MediaTek/NVIDIA/AMD/Marvell issuer indices and targeted TPU role/NRE searches refreshed;no authenticated new allocation,design win,commercial economics or earnings revision established.",
+        "Broadcom financial-news path failed twice;issuer IR homepage body successfully read with latest listed releases October13/October8. Distinguish index inspection from full filings verification;do not claim source failure means no company news.",
+        "FiveCSP pages reopened. Amazon/Alphabet dynamic extraction incomplete;Oracle index not full current-filings review. No new cross-company capex total or signed supplier award inferred from metadata,job postings or secondary commentary.",
+        "Deduplicated TSMC/ASML guidance,Schneider forecast,Enerflex/LS Electric orders,NiSource/EverWind contracts,CoreWeave financing risk,Oracle Jupiter delay,existing TPU competitive roles,DRAM reports and passive-component recaps against95events/180candidates/93screenings and available notification baseline. Stale articles/crawl dates and anonymous broker targets not new evidence.",
+        "Solaria issuer-body retrieval resolves an earlier webpage timeout and corroborates the recorded October14/15 development agreement. No new tenant,PPA economics,financing close or deployment fact;append verification update to existing candidate,not a fresh project/earnings event.",
+        "Preserve every prior public event,candidate fact,screening,dated blocker and article record. Append only1Solaria verification update and1screening;no private prices,valuation,positions or market-flow data added.",
+        "Ledger-only JSON/history/uniqueness checks,fresh head/target blob,CAS forcefalse,exact remote readback and only-target diff required. No article lint,build,deploy or website publication completion claimed."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -5615,6 +5611,40 @@
           "GlobalTek October17 original report read:20% target includes other emerging businesses,unlike6.2% AI thermal share. Issuer deck/replay unavailable;clarification appended to existing candidate only,not authenticated new financial forecast.",
           "Preserved94 events,179 candidates,92 screenings,all dated blockers/historical facts. Append1 historical monthly event,1 candidate,1 GlobalTek update,1 screening. No stock valuation,quotes,private positions/flows or article added.",
           "Ledger-only JSON/history checks,fresh head/target blob,CAS forcefalse,exact readback/only-target diff required. No article lint,build,deploy or website-publication completion claimed."
+        ]
+      },
+      {
+        "date": "2026-10-18",
+        "checked_at": "2026-10-17T20:28:37Z",
+        "instruction_commit_sha": "5536eee80af2f8e896531026298602584c2163c6",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh14 grouped queries cover all98 active names;sixcore and fiveCSP indices plus TPU allocation/NRE,outside opportunities and downside refreshed. One existing Solaria candidate receives issuer-body corroboration;no new event/article.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://solariaenergia.com/en/solaria-and-uruguay-sign-a-strategic-agreement-to-develop-a-data-center-technology-campus-of-up-to-500-mw/"
+        ],
+        "source_limits": [
+          "Latest main instruction commit5536eee80af2f8e896531026298602584c2163c6 recorded;all mandatory instructions/specifications,full ledger and recent related articles fetched at same revision. Unchanged blobs checked against fully read prior bodies;instruction output display truncation recovered with overlapping complete excerpts.",
+          "Fresh alpha-quant metadata/main/full CSV:3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7/blob88422949d38165d4757a1e24c27f8662bede14c1,98active. Fourteen grouped discovery queries not individual primary validation;47 distinct primary/51pending,monthly21/product15/partner4/regulator3 unchanged.",
+          "TSMC quarterly guidance table reopened:Q4 USD52.3–54.3bn,GM65–67%,OP56.5–58.5%,unchanged. MediaTek/NVIDIA/AMD/Marvell issuer indices and targeted TPU role/NRE searches refreshed;no authenticated new allocation,design win,commercial economics or earnings revision established.",
+          "Broadcom financial-news path failed twice;issuer IR homepage body successfully read with latest listed releases October13/October8. Distinguish index inspection from full filings verification;do not claim source failure means no company news.",
+          "FiveCSP pages reopened. Amazon/Alphabet dynamic extraction incomplete;Oracle index not full current-filings review. No new cross-company capex total or signed supplier award inferred from metadata,job postings or secondary commentary.",
+          "Deduplicated TSMC/ASML guidance,Schneider forecast,Enerflex/LS Electric orders,NiSource/EverWind contracts,CoreWeave financing risk,Oracle Jupiter delay,existing TPU competitive roles,DRAM reports and passive-component recaps against95events/180candidates/93screenings and available notification baseline. Stale articles/crawl dates and anonymous broker targets not new evidence.",
+          "Solaria issuer-body retrieval resolves an earlier webpage timeout and corroborates the recorded October14/15 development agreement. No new tenant,PPA economics,financing close or deployment fact;append verification update to existing candidate,not a fresh project/earnings event.",
+          "Preserve every prior public event,candidate fact,screening,dated blocker and article record. Append only1Solaria verification update and1screening;no private prices,valuation,positions or market-flow data added.",
+          "Ledger-only JSON/history/uniqueness checks,fresh head/target blob,CAS forcefalse,exact remote readback and only-target diff required. No article lint,build,deploy or website publication completion claimed."
         ]
       }
     ],
@@ -9793,7 +9823,19 @@
         "Separate Solaria retained land/services/power revenue from overall campus investment.",
         "Test timing,capital costs and customer demand before expecting recurring cash returns."
       ],
-      "publication_status": "development_stage_research_candidate_no_material_earnings_alert_no_article"
+      "publication_status": "development_stage_research_candidate_no_material_earnings_alert_no_article",
+      "verification_updates": [
+        {
+          "date": "2026-10-18",
+          "checked_at": "2026-10-17T20:28:37Z",
+          "stage": "issuer_webpage_body_now_read_corroborates_existing_development_agreement_only",
+          "sources": [
+            "https://solariaenergia.com/en/solaria-and-uruguay-sign-a-strategic-agreement-to-develop-a-data-center-technology-campus-of-up-to-500-mw/"
+          ],
+          "facts": "Previously timed-out issuer webpage now directly read. Confirms strategic agreement with Uruguay/UTE:up to500MW campus,up to350MW solar,500kV grid connection and200MW/300MW phases. UTE solar PPA envisaged for up to40years. Corroborates existing CNMV/government baseline,not a new agreement or PPA close.",
+          "limits": "No named tenant,definitive PPA tariff or executed terms,closed financing,equipment order,energized capacity,new earnings or cash verified. Potential recurring land/infrastructure/services revenue is issuer strategy,not contracted rental income. No new alert or active-universe primary credit."
+        }
+      ]
     },
     {
       "key": "drax-selby-ai-growth-zone-rejection-and-separate-100mw-plan",
@@ -10505,7 +10547,7 @@
     }
   ],
   "last_research_date": "2026-10-18",
-  "instruction_commit_sha": "97fd96d168c942cf85ad704e811bc3b91cdeff38",
+  "instruction_commit_sha": "5536eee80af2f8e896531026298602584c2163c6",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
