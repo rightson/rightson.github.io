@@ -2786,12 +2786,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-17",
-      "checked_at": "2026-10-17T06:02:55Z",
-      "instruction_commit_sha": "7e076840b8ba4a15ee2e8a5e0f9885c288f77387",
+      "checked_at": "2026-10-17T06:55:02Z",
+      "instruction_commit_sha": "2bd23d8d1c0d1525a25b11136324c864b0106123",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh98-name grouped discovery,six core issuer indices andseparate TPU procurement,five CSP pages andowner-domain discovery,outside opportunities anddownside. One Kaori historical baseline andone PJM operational-scope update added;no newmaterial alert orarticle.",
+      "scope": "Fresh full98-name grouped discovery,six core issuer indices,separate MediaTek/Google TPU procurement,five CSP landingpages plus owner-domain discovery,outside cooling and downside leads. Four research candidates and one Macronix source-gap update;no material alert or article.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -2804,21 +2804,25 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://emergencyprocedures.pjm.com/ep/pages/dashboard.jsf",
-        "https://www.pjm.com/library",
-        "https://www.kaori.com.tw/tw/modules/news/article.php?storyid=95",
-        "https://www.kaori.com.tw/tw/modules/nc_product/product/view/117-K560"
+        "https://www.rprna.com/amd-helios-rack-ramp-reportedly-slower-than-planned-with-under-1000-units-expected-in-2026/",
+        "https://www.amd.com/en/products/rackscale-solutions/helios.html",
+        "https://uecn.org/us-concerns-delay-advanced-ai-chip-deliveries-to-the-gulf/",
+        "https://news.cnyes.com/news/id/6632570",
+        "https://investors.nvent.com/press-releases/press-release-details/2026/nVent-and-AMD-Collaborate-on-Cooling-for-AMD-Helios-Rackscale-Solution/default.aspx",
+        "https://www.macronix.com/zh-tw/about/investor-relations/Pages/monthly-sales.aspx"
       ],
       "source_limits": [
-        "Latest alpha-quant default main3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7 andfull CSV88422949d38165d4757a1e24c27f8662bede14c1 read.98 active names covered by14 recent grouped searches,not98 individual latest-filings validations.",
-        "Kaori8996 dated June23 issuer expansion plan andK560 data-center liquid-cooling capability added as historical primary baseline. Distinct primary-company coverage42→43,pending56→55,product11→12;monthly18,partner4,regulator3 unchanged. October5 revenue reproduction is not an obtained numerical issuer/exchange original.",
-        "TSMC Q3 actual/Q4 guidance table andMediaTek release index rechecked. Core NVIDIA/AMD/Broadcom/Marvell current indexes retain previously recorded October announcements. Separate TPU discovery adds no authenticated allocation,NRE,production-economics orrenewal revision.",
-        "Five CSP landingpages andowner-domain discovery reviewed. Amazon/Alphabet dynamic financial content incomplete;Oracle landingpage isnot a fullrelease feed. No aggregate capex revision,fullcurrent-filings audit ornewprocurement award claimed.",
-        "Anthropic/Blackstone funding-cost story,MediaTek/ByteDance,Humufish timing,Marvell agreement,Fulltech profit andother existing reports deduplicated. No repeated notification or equity-price reaction substituted for financial evidence.",
-        "PJM notice105573 is a dated prospective operational assessment,not a four-day dispatch record. Library labelled compliance-report link returned AD26-8 technical-conference comments instead;actual dispatch/site costs unverified. No broad claim that emergency generators didnotrun orpowerconstraints disappeared.",
-        "Grouped results include historical sources and current scrape dates;these are not treated as new event dates. Kaori issuer June23 date overrides misleading search-date hints. Hong Kong Golik1118 result excluded as wrong company.",
-        "All90events,160prior candidates,79prior screenings,articles andhistorical blockers preserved. One candidate,one PJM verification update andone screening appended. Publicledger excludes price,valuation,target,position andtradingconditions.",
-        "No article drafted orpublished;no lint,build,deploy orHTTP-content completion claimed. Ledger-only exactremote readback andintended-file-only comparison required. No automation orother-repository watchlist mutation."
+        "Latest alpha-quant default main3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7 and full CSV88422949d38165d4757a1e24c27f8662bede14c1 read.98 active names received14 grouped discovery searches,not98 individual latest-primary-filings checks.",
+        "Distinct active-universe primary baseline remains43/98,pending55;monthly18,partner4,regulator3,product12 unchanged. nVent is outside the Taiwan universe. Macronix indexed numeric excerpt does not close its opened-body primary gap.",
+        "TSMC Q3 actual/Q4 guidance andMediaTek index rechecked;NVIDIA/AMD/Broadcom/Marvell issuer indices reviewed. Separate TPU discovery deduplicates ByteDance talks,Humufish estimates andhistorical Marvell relationship;no authenticated new design win,NRE,allocation or earnings revision.",
+        "Five CSP pages and owner-domain discovery checked. Amazon/Alphabet dynamic financial content remains incomplete;Oracle landingpage isnot a fullrelease feed. No cross-company comparable capex total or full current-filings audit claimed.",
+        "Anthropic/Blackstone proposed funding terms,AWS CFO payback claims,CoreWeave risk,Schneider guidance andother prior events deduplicated. New discovery dates and market declines are not new company events.",
+        "Helios rack reduction lead rests on secondary embedded social attribution;original KeyBanc note and company confirmation missing,X403. Helios andHelion not conflated. No guidance-cut alert issued from this lead.",
+        "UECN Gulf-chip story is a secondary automated-assisted summary;AGBI original robots-blocked,Google News redirect lacks article body,current named export action unverified. Not treated as a BIS ruling ornew broad export ban.",
+        "Lease-inclusive USD1.58tn estimate is media-attributed research with unavailable original and old/new same-scope bridge. Expanded denominator isnot equated to a demand upgrade;lessor/lessee double-counting requires reconciliation.",
+        "nVent October13 issuer collaboration andRDHx product scope read as historical platform relationship,not a new October17 order or recognized revenue.",
+        "All90 prior events,161 prior candidates,80 prior screenings,articles andhistorical blockers preserved;four candidates,one candidate verification update andone screening added. No current stock quote,valuation,target,position or tradingcondition saved publicly.",
+        "No article drafted/published;no lint,build,deploy orHTTP-content completion claimed. Ledger-only exactremote readback andintended-file-only compare required. No automation orother-repository watchlist changes."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -4932,6 +4936,47 @@
           "Grouped results include historical sources and current scrape dates;these are not treated as new event dates. Kaori issuer June23 date overrides misleading search-date hints. Hong Kong Golik1118 result excluded as wrong company.",
           "All90events,160prior candidates,79prior screenings,articles andhistorical blockers preserved. One candidate,one PJM verification update andone screening appended. Publicledger excludes price,valuation,target,position andtradingconditions.",
           "No article drafted orpublished;no lint,build,deploy orHTTP-content completion claimed. Ledger-only exactremote readback andintended-file-only comparison required. No automation orother-repository watchlist mutation."
+        ]
+      },
+      {
+        "date": "2026-10-17",
+        "checked_at": "2026-10-17T06:55:02Z",
+        "instruction_commit_sha": "2bd23d8d1c0d1525a25b11136324c864b0106123",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh full98-name grouped discovery,six core issuer indices,separate MediaTek/Google TPU procurement,five CSP landingpages plus owner-domain discovery,outside cooling and downside leads. Four research candidates and one Macronix source-gap update;no material alert or article.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://www.rprna.com/amd-helios-rack-ramp-reportedly-slower-than-planned-with-under-1000-units-expected-in-2026/",
+          "https://www.amd.com/en/products/rackscale-solutions/helios.html",
+          "https://uecn.org/us-concerns-delay-advanced-ai-chip-deliveries-to-the-gulf/",
+          "https://news.cnyes.com/news/id/6632570",
+          "https://investors.nvent.com/press-releases/press-release-details/2026/nVent-and-AMD-Collaborate-on-Cooling-for-AMD-Helios-Rackscale-Solution/default.aspx",
+          "https://www.macronix.com/zh-tw/about/investor-relations/Pages/monthly-sales.aspx"
+        ],
+        "source_limits": [
+          "Latest alpha-quant default main3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7 and full CSV88422949d38165d4757a1e24c27f8662bede14c1 read.98 active names received14 grouped discovery searches,not98 individual latest-primary-filings checks.",
+          "Distinct active-universe primary baseline remains43/98,pending55;monthly18,partner4,regulator3,product12 unchanged. nVent is outside the Taiwan universe. Macronix indexed numeric excerpt does not close its opened-body primary gap.",
+          "TSMC Q3 actual/Q4 guidance andMediaTek index rechecked;NVIDIA/AMD/Broadcom/Marvell issuer indices reviewed. Separate TPU discovery deduplicates ByteDance talks,Humufish estimates andhistorical Marvell relationship;no authenticated new design win,NRE,allocation or earnings revision.",
+          "Five CSP pages and owner-domain discovery checked. Amazon/Alphabet dynamic financial content remains incomplete;Oracle landingpage isnot a fullrelease feed. No cross-company comparable capex total or full current-filings audit claimed.",
+          "Anthropic/Blackstone proposed funding terms,AWS CFO payback claims,CoreWeave risk,Schneider guidance andother prior events deduplicated. New discovery dates and market declines are not new company events.",
+          "Helios rack reduction lead rests on secondary embedded social attribution;original KeyBanc note and company confirmation missing,X403. Helios andHelion not conflated. No guidance-cut alert issued from this lead.",
+          "UECN Gulf-chip story is a secondary automated-assisted summary;AGBI original robots-blocked,Google News redirect lacks article body,current named export action unverified. Not treated as a BIS ruling ornew broad export ban.",
+          "Lease-inclusive USD1.58tn estimate is media-attributed research with unavailable original and old/new same-scope bridge. Expanded denominator isnot equated to a demand upgrade;lessor/lessee double-counting requires reconciliation.",
+          "nVent October13 issuer collaboration andRDHx product scope read as historical platform relationship,not a new October17 order or recognized revenue.",
+          "All90 prior events,161 prior candidates,80 prior screenings,articles andhistorical blockers preserved;four candidates,one candidate verification update andone screening added. No current stock quote,valuation,target,position or tradingcondition saved publicly.",
+          "No article drafted/published;no lint,build,deploy orHTTP-content completion claimed. Ledger-only exactremote readback andintended-file-only compare required. No automation orother-repository watchlist changes."
         ]
       }
     ],
@@ -8557,7 +8602,16 @@
         "Verify AI exposure,product mix,ASP and inventory effects separately.",
         "Reconcile quarterly profit and cash with monthly sales before attributing earnings power to CSP demand."
       ],
-      "publication_status": "not_drafted"
+      "publication_status": "not_drafted",
+      "verification_updates": [
+        {
+          "date": "2026-10-17",
+          "instruction_commit_sha": "2bd23d8d1c0d1525a25b11136324c864b0106123",
+          "source": "https://www.macronix.com/zh-tw/about/investor-relations/Pages/monthly-sales.aspx",
+          "stage": "issuer_indexed_september_row_located_but_opened_primary_body_still_numeric_blank_no_coverage_credit",
+          "note": "Issuer-domain search excerpt shows September NTD8,367,275 thousand and October7 publication,consistent with the historical reproduction. Opened page exposes only headers/year selectors,no numeric rows;primary/company and monthly counters unchanged. Not a fresh revenue revision."
+        }
+      ]
     },
     {
       "key": "nisource-microsoft-cost-allocation-power-delivery-and-cash-conversion",
@@ -9233,6 +9287,105 @@
         "Test customer concentration,price retention and cash conversion as new capacity adds depreciation."
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "amd-helios-attributed-keybanc-rack-ramp-original-validation",
+      "companies": [
+        "AMD",
+        "Helios ODM partners"
+      ],
+      "date": "2026-10-17",
+      "instruction_commit_sha": "2bd23d8d1c0d1525a25b11136324c864b0106123",
+      "sources": [
+        "https://www.rprna.com/amd-helios-rack-ramp-reportedly-slower-than-planned-with-under-1000-units-expected-in-2026/",
+        "https://www.amd.com/en/products/rackscale-solutions/helios.html"
+      ],
+      "stage": "october17_secondary_social_attribution_read_original_keybanc_note_and_company_confirmation_unavailable",
+      "facts": {
+        "reported_lead": "RPRNA attributes to an embedded P Equity Research post a KeyBanc2026 Helios rack estimate change from about4,000 to below1,000,with OAM-board and cartridge-connector bottlenecks. Original institution note,date,forecast bridge and independent corroboration not obtained;X link returned403.",
+        "primary_baseline": "AMD product page confirms72 MI455X GPUs per Helios rack and ORW architecture,but gives no validation of the reported unit revision. Helion CPU-oriented reference design is a separate platform.",
+        "limits": "Unverified attributed forecast,not AMD guidance,confirmed delay,cancellation or delivered-volume disclosure. No new alert registered."
+      },
+      "questions": [
+        "Obtain dated KeyBanc original and exact old/new periods and definitions.",
+        "Reconcile ODM accepted shipments,board/connectors qualification and AMD next results before revising supplier-demand conclusions.",
+        "Test whether bottlenecks shift timing rather than lifetime orders;invalidate the lead if original attribution or unit scope differs."
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "gulf-ai-chip-delivery-delay-original-and-regulatory-scope-validation",
+      "companies": [
+        "US AI chip suppliers",
+        "Gulf data-center operators"
+      ],
+      "date": "2026-10-17",
+      "instruction_commit_sha": "2bd23d8d1c0d1525a25b11136324c864b0106123",
+      "sources": [
+        "https://uecn.org/us-concerns-delay-advanced-ai-chip-deliveries-to-the-gulf/"
+      ],
+      "stage": "october17_automated_assisted_secondary_summary_read_agbi_original_and_current_bis_case_not_obtained",
+      "facts": {
+        "reported_lead": "UECN October17 summary attributes delivery hold-ups to AGBI October16 reporting about US export scrutiny. Its source link routes through Google News;AGBI access was robots-blocked.",
+        "limits": "No original reporting body,named buyer,license decision,affected units,shipment date or financial exposure verified. An issuer/authority label in the summary is not a BIS decision. Do not infer a new regional export ban or supplier earnings cut."
+      },
+      "questions": [
+        "Obtain AGBI original and exact event date,named shipment and license scope.",
+        "Cross-check current BIS action and supplier/buyer responses,including UAE versus other Gulf jurisdictions.",
+        "Separate historical reviews from newly delayed accepted orders and quantify any revenue timing exposure."
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "morgan-stanley-ai-capex-lease-scope-original-and-double-count-reconciliation",
+      "companies": [
+        "Microsoft",
+        "Amazon/AWS",
+        "Alphabet/Google",
+        "Meta",
+        "Oracle",
+        "Neocloud operators"
+      ],
+      "date": "2026-10-17",
+      "instruction_commit_sha": "2bd23d8d1c0d1525a25b11136324c864b0106123",
+      "sources": [
+        "https://news.cnyes.com/news/id/6632570"
+      ],
+      "stage": "october17_media_attributed_lease_inclusive_forecast_read_institution_original_and_comparable_revision_bridge_pending",
+      "facts": {
+        "reported_scope": "Cnyes October17 06:30 attributes to Nicholas Lentini team's research a2027 lease-inclusive AI investment estimate of USD1.58tn,about14% above its cash-only scope. This is a reported research estimate,not company guidance.",
+        "limits": "Original note,date,universe,lease-recognition methodology and same-scope old/new bridge unavailable. Cannot call the denominator expansion an equivalent underlying-spending upgrade. No consensus,realized-return or supplier-award conclusion adopted."
+      },
+      "questions": [
+        "Obtain original note and historical same-scope forecast before recording an earnings/demand revision.",
+        "Reconcile lessor asset purchases with lessee lease additions to avoid double-counting the same campus or hardware.",
+        "Distinguish future lease commitments,newly recognized assets,cash principal payments and actual billable capacity;validate owner-specific cash coverage."
+      ],
+      "publication_status": "not_drafted"
+    },
+    {
+      "key": "nvent-amd-helios-rear-door-cooling-platform-to-orders-and-cash",
+      "companies": [
+        "nVent",
+        "AMD"
+      ],
+      "date": "2026-10-17",
+      "instruction_commit_sha": "2bd23d8d1c0d1525a25b11136324c864b0106123",
+      "sources": [
+        "https://investors.nvent.com/press-releases/press-release-details/2026/nVent-and-AMD-Collaborate-on-Cooling-for-AMD-Helios-Rackscale-Solution/default.aspx"
+      ],
+      "stage": "historical_october13_issuer_named_platform_cooling_collaboration_verified_not_new_october17_order",
+      "facts": {
+        "source_date": "2026-10-13",
+        "verified_relationship": "Issuer release announces AMD Helios cooling collaboration and a DC-powered dual rear-door heat exchanger for its double-wide rack. It removes residual heat after direct-to-chip cooling;first preview at OCP.",
+        "limits": "Explicit platform relationship supports an out-of-universe research candidate,but release discloses no named customer purchase,contract value,volume,margin or earnings revision. Not a new October17 award."
+      },
+      "questions": [
+        "Track customer qualification,repeat orders,accepted deliveries and nVent cooling revenue/margins.",
+        "Separate rear-door residual cooling content from direct-to-chip loops and total rack value.",
+        "Test whether platform integration retains pricing after competing cooling options qualify and whether working capital offsets profit."
+      ],
+      "publication_status": "not_drafted"
     }
   ],
   "blockers": [
@@ -9252,7 +9405,7 @@
     }
   ],
   "last_research_date": "2026-10-17",
-  "instruction_commit_sha": "7e076840b8ba4a15ee2e8a5e0f9885c288f77387",
+  "instruction_commit_sha": "2bd23d8d1c0d1525a25b11136324c864b0106123",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
