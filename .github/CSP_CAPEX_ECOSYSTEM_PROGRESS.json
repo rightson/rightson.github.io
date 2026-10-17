@@ -2822,12 +2822,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-17",
-      "checked_at": "2026-10-17T09:50:28Z",
-      "instruction_commit_sha": "b0a22500fc0a913fe0ca6a4f8bd9672e1a921c8b",
+      "checked_at": "2026-10-17T11:09:35Z",
+      "instruction_commit_sha": "994cec495e15973ef19084e6abac39ba17ec8719",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "All98 active names in fresh14 grouped discovery queries;six core issuer indices,TSMC guidance,separateTPU economics andfiveCSP pages plusowner-domain discovery. C SUN individual primary baseline added;outside opportunities/downside deduplicated.",
+      "scope": "Fresh14 grouped queries cover all98 active watchlist names for event discovery. Six core issuer indices,TSMC guidance,separateTPU research,fiveCSP pages andowner-domain opportunity/downside discovery rechecked. No additional individual active-company primary financial validation completed.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -2840,23 +2840,26 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://www.csun.com.tw/investor-relations/financial-reports/",
-        "https://s3.ap-northeast-1.amazonaws.com/csun.com.tw/wp-content/uploads/2026/02/202609-Revenue1.pdf",
-        "https://www.csun.com.tw/product/high-cleanliness-surround-radiant-furnace/",
-        "https://www.csun.com.tw/%E9%97%9C%E6%96%BC%E5%BF%97%E8%81%96/g2c-alliance/",
-        "https://www.csun.com.tw/corporate-presentation/",
-        "https://www.liteon.com/zh-tw/news/press-center/content/liteon-monthly-sales-sep-2026"
+        "https://www.trendforce.com/research/download/RP261013DZ3",
+        "https://www.axios.com/2026/10/16/amazon-web-services-ai-cfo",
+        "https://www.reuters.com/business/anthropic-offers-blackstone-double-digit-yield-chip-financing-deal-ft-reports-2026-10-17/",
+        "https://www.reuters.com/business/finance/central-bankers-eye-higher-rates-ai-boom-fuels-scramble-cash-2026-10-16/",
+        "https://www.gmmcorp.com.tw/investor/financial-information",
+        "https://www.gmmcorp.com.tw/en/investor/financial-information",
+        "https://www.kingslide.com/investor_financialinfo_financialreports",
+        "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=89a73388-f19a-447f-b283-e7b9ff1847b9",
+        "https://ec.ltn.com.tw/amp/article/breakingnews/5558110"
       ],
       "source_limits": [
-        "Latest alpha-quant metadata/main head3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7 andfullCSV88422949d38165d4757a1e24c27f8662bede14c1 obtained. Grouped screening isnot98 separate current-primary financial checks.",
-        "C SUN September company monthly PDF provides numerical original inTWDthousand. Company-fact45,pending53,monthly19,product14;partner4 andregulator3 unchanged. Do not infer quarterly margin,cashflow orAI-only share from total revenue.",
-        "Product catalog andG2C+body read;historical capability andalliance,not new October17 customer award. June12 PDF text extraction sparse;screenshot operation returned textual placeholders without inspectable image data,so no full deck visual audit claimed.",
-        "LITEON September monthly issuer page timedout. Prior unresolved individual issuer bodies remain incomplete;no new primary credit from search excerpts. Required repository instruction files fully retrieved.",
-        "TSMC Q3/Q4 guidance unchanged fromrecorded baseline. MediaTek index,separate TPU research andNVIDIA/AMD/Broadcom/Marvell issuer indices reviewed;no authenticated new allocation,NRE/design-win orprofit revision found in obtained material.",
-        "FiveCSP pages and owner-domain discovery reviewed. Amazon/Alphabet financial bodies dynamic/incomplete;Oracle landingpage not full feed. No whole-current-filings or comparableaggregatecapex completion claimed.",
-        "Anthropic/Blackstone,CoreWeave credit risk,TSMC results,Semtech/Schneider/AIXTRON/VAT,Camtek,Maia300,TPU brokerleads,Jupiter andSanFrancisco regulatory lead deduplicated against91 events,170 candidates,83 screenings andreadable prior notifications. Fresh crawl orreprint isnot a new event.",
-        "All prior events,candidates,articles anddated blockers preserved. One historical candidate andone screening added;no material new alert orarticle. Public ledger excludes stockprices,valuation,targets,positions andtrading conditions.",
-        "Ledger-only completion requires freshhead/blob,CAS forcefalse,exact remote readback andonly-target-file compare. No articlelint/build/deploy/HTTP completion claimed. No automation changes."
+        "Latest default-branch instruction994cec495e15973ef19084e6abac39ba17ec8719 andrequired files fully retrieved. Latest alpha-quant main3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7,CSV88422949d38165d4757a1e24c27f8662bede14c1 has98 active companies. Grouped discovery isnot98 complete current-filings checks.",
+        "Active primary-fact baselines remain45/98 with53 pending;monthly19,product14,partner4,regulator3 unchanged. GMM Chinese andEnglish financial pages andKingSlide financial-report page timedout;search excerpts do not earn primary-company credit.",
+        "TSMC Q3 actual/Q4 guidance matches recorded baseline. MediaTek,NVIDIA,AMD,Broadcom andMarvell indices reviewed;no new authenticated TPU allocation,NRE/design-win,customer cancellation orprofit revision established in obtained bodies. Broadcom generic news URL failed;financial-news URL succeeded.",
+        "TrendForce October13 public summary remains researcher-level TPU v9/EMIB-T andmulti-vendor thesis;paid report not obtained andno issuer award,substrate yield orsupplier profit validation inferred. AWS CFO interview remains management payback claim without audited methodology orfresh capex guide.",
+        "FiveCSP landing/index pages read;Amazon/Alphabet dynamically extracted financial details incomplete andOracle landingpage not whole feed. Owner-domain discovery supplements pages without establishing full current-filings completion orcomparableaggregate capex.",
+        "Anthropic/Blackstone andcentral-bank Reuters direct bodies inaccessible this run;indexed reporting isdiscovery only,not an upgrade of prior evidence. Financing,CoreWeave,TSMC,Camtek,Schneider,Semtech,AIXTRON,VAT andother existing events deduplicated against91 public events,171 candidates,84 historical screenings andreadable prior notifications. Reprints andnew crawl timestamps do not establish new events.",
+        "C SUN H1 AI70%/order-mix92% headline traced to August31 original reporting;historical management-attributed mix retained as candidate provenance only. Preview changing dates/subject attribution excluded from financial facts. No material incremental alert,new public event orarticle registered.",
+        "Only ledger research stages andsources updated;allprior events,candidates,articles,screenings anddated blockers preserved. Public ledger excludes private quotes,valuation,targets,positions,trading conditions andprivate market-monitoring observations.",
+        "Ledger-only source validation,JSON/preservation checks,freshhead/blob,CAS forcefalse,exact readback andonly-target compare required. No articlelint,build,deployment orHTTP-content completion claimed."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -5130,6 +5133,48 @@
           "Anthropic/Blackstone,CoreWeave credit risk,TSMC results,Semtech/Schneider/AIXTRON/VAT,Camtek,Maia300,TPU brokerleads,Jupiter andSanFrancisco regulatory lead deduplicated against91 events,170 candidates,83 screenings andreadable prior notifications. Fresh crawl orreprint isnot a new event.",
           "All prior events,candidates,articles anddated blockers preserved. One historical candidate andone screening added;no material new alert orarticle. Public ledger excludes stockprices,valuation,targets,positions andtrading conditions.",
           "Ledger-only completion requires freshhead/blob,CAS forcefalse,exact remote readback andonly-target-file compare. No articlelint/build/deploy/HTTP completion claimed. No automation changes."
+        ]
+      },
+      {
+        "date": "2026-10-17",
+        "checked_at": "2026-10-17T11:09:35Z",
+        "instruction_commit_sha": "994cec495e15973ef19084e6abac39ba17ec8719",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh14 grouped queries cover all98 active watchlist names for event discovery. Six core issuer indices,TSMC guidance,separateTPU research,fiveCSP pages andowner-domain opportunity/downside discovery rechecked. No additional individual active-company primary financial validation completed.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://www.trendforce.com/research/download/RP261013DZ3",
+          "https://www.axios.com/2026/10/16/amazon-web-services-ai-cfo",
+          "https://www.reuters.com/business/anthropic-offers-blackstone-double-digit-yield-chip-financing-deal-ft-reports-2026-10-17/",
+          "https://www.reuters.com/business/finance/central-bankers-eye-higher-rates-ai-boom-fuels-scramble-cash-2026-10-16/",
+          "https://www.gmmcorp.com.tw/investor/financial-information",
+          "https://www.gmmcorp.com.tw/en/investor/financial-information",
+          "https://www.kingslide.com/investor_financialinfo_financialreports",
+          "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=89a73388-f19a-447f-b283-e7b9ff1847b9",
+          "https://ec.ltn.com.tw/amp/article/breakingnews/5558110"
+        ],
+        "source_limits": [
+          "Latest default-branch instruction994cec495e15973ef19084e6abac39ba17ec8719 andrequired files fully retrieved. Latest alpha-quant main3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7,CSV88422949d38165d4757a1e24c27f8662bede14c1 has98 active companies. Grouped discovery isnot98 complete current-filings checks.",
+          "Active primary-fact baselines remain45/98 with53 pending;monthly19,product14,partner4,regulator3 unchanged. GMM Chinese andEnglish financial pages andKingSlide financial-report page timedout;search excerpts do not earn primary-company credit.",
+          "TSMC Q3 actual/Q4 guidance matches recorded baseline. MediaTek,NVIDIA,AMD,Broadcom andMarvell indices reviewed;no new authenticated TPU allocation,NRE/design-win,customer cancellation orprofit revision established in obtained bodies. Broadcom generic news URL failed;financial-news URL succeeded.",
+          "TrendForce October13 public summary remains researcher-level TPU v9/EMIB-T andmulti-vendor thesis;paid report not obtained andno issuer award,substrate yield orsupplier profit validation inferred. AWS CFO interview remains management payback claim without audited methodology orfresh capex guide.",
+          "FiveCSP landing/index pages read;Amazon/Alphabet dynamically extracted financial details incomplete andOracle landingpage not whole feed. Owner-domain discovery supplements pages without establishing full current-filings completion orcomparableaggregate capex.",
+          "Anthropic/Blackstone andcentral-bank Reuters direct bodies inaccessible this run;indexed reporting isdiscovery only,not an upgrade of prior evidence. Financing,CoreWeave,TSMC,Camtek,Schneider,Semtech,AIXTRON,VAT andother existing events deduplicated against91 public events,171 candidates,84 historical screenings andreadable prior notifications. Reprints andnew crawl timestamps do not establish new events.",
+          "C SUN H1 AI70%/order-mix92% headline traced to August31 original reporting;historical management-attributed mix retained as candidate provenance only. Preview changing dates/subject attribution excluded from financial facts. No material incremental alert,new public event orarticle registered.",
+          "Only ledger research stages andsources updated;allprior events,candidates,articles,screenings anddated blockers preserved. Public ledger excludes private quotes,valuation,targets,positions,trading conditions andprivate market-monitoring observations.",
+          "Ledger-only source validation,JSON/preservation checks,freshhead/blob,CAS forcefalse,exact readback andonly-target compare required. No articlelint,build,deployment orHTTP-content completion claimed."
         ]
       }
     ],
@@ -9694,7 +9739,9 @@
         "https://s3.ap-northeast-1.amazonaws.com/csun.com.tw/wp-content/uploads/2026/02/202609-Revenue1.pdf",
         "https://www.csun.com.tw/product/high-cleanliness-surround-radiant-furnace/",
         "https://www.csun.com.tw/%E9%97%9C%E6%96%BC%E5%BF%97%E8%81%96/g2c-alliance/",
-        "https://www.csun.com.tw/corporate-presentation/"
+        "https://www.csun.com.tw/corporate-presentation/",
+        "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=89a73388-f19a-447f-b283-e7b9ff1847b9",
+        "https://ec.ltn.com.tw/amp/article/breakingnews/5558110"
       ],
       "stage": "issuer_september_monthly_numeric_pdf_and_historical_advanced_packaging_capability_verified",
       "facts": {
@@ -9717,7 +9764,22 @@
         "Separate advanced packaging,PCB and other end-market mix;quantify service/consumable retention.",
         "Test customer concentration,thermal-process alternatives and whether higher output offsets R&D,depreciation and working-capital costs."
       ],
-      "publication_status": "historical_primary_baseline_only_no_material_alert_not_drafted"
+      "publication_status": "historical_primary_baseline_only_no_material_alert_not_drafted",
+      "verification_updates": [
+        {
+          "checked_at": "2026-10-17T11:09:35Z",
+          "instruction_commit_sha": "994cec495e15973ef19084e6abac39ba17ec8719",
+          "stage": "historical_august31_management_mix_reporting_verified_not_october17_order",
+          "sources": [
+            "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=89a73388-f19a-447f-b283-e7b9ff1847b9",
+            "https://ec.ltn.com.tw/amp/article/breakingnews/5558110"
+          ],
+          "source_date": "2026-08-31",
+          "facts": "Two dated original reports attribute H1 semiconductor revenue share of46% and combined AI-related semiconductor/advanced-PCB share of70% to management. Their reported outstanding-order mix was54% advanced packaging and38% advanced PCB,92% combined.",
+          "limits": "Historical management-attributed mix,not an audited AI segment or a fresh October17 order/revenue revision. Order mix gives no backlog amount,delivery schedule,acceptance,margin or cash conversion. A preview URL retrieved with changing October16/17 timestamps and inconsistent subject attribution was not used to revise issuer financial facts.",
+          "next_evidence": "Obtain issuer or exchange presentation/quarterly statements separating C SUN and GPM figures;reconcile accepted deliveries,margins,receivables and operating cash flow."
+        }
+      ]
     }
   ],
   "blockers": [
@@ -9737,7 +9799,7 @@
     }
   ],
   "last_research_date": "2026-10-17",
-  "instruction_commit_sha": "b0a22500fc0a913fe0ca6a4f8bd9672e1a921c8b",
+  "instruction_commit_sha": "994cec495e15973ef19084e6abac39ba17ec8719",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
