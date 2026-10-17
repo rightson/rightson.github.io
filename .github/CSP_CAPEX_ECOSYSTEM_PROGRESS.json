@@ -2758,6 +2758,66 @@
         "https://www.sec.gov/Archives/edgar/data/1109138/000117891326004769/zk2636226.htm"
       ],
       "status": "new_to_ledger_primary_forward_revenue_increment_recorded_no_article"
+    },
+    {
+      "fingerprint": "cxmt-nine-month-2026-preliminary-revenue-profit-20261017",
+      "event_date": "2026-10-17",
+      "publication_date": "2026-10-17",
+      "discovered_date": "2026-10-17",
+      "companies": [
+        "CXMT / 長鑫科技 (688825.SH)"
+      ],
+      "type": "issuer_preliminary_nine_month_financial_outlook_read_from_full_announcement_pdf_mirror",
+      "facts": {
+        "announcement_number": "2026-014",
+        "reporting_period": "2026-01-01 to 2026-09-30",
+        "currency": "CNY",
+        "unit": "100 million",
+        "nine_month_revenue_forecast": [
+          2650,
+          2700
+        ],
+        "prior_year_nine_month_revenue": 320.84,
+        "nine_month_attributable_profit_forecast": [
+          1310,
+          1325
+        ],
+        "prior_year_nine_month_attributable_loss": 52.8,
+        "h1_revenue_actual": 1503.1,
+        "h1_attributable_profit_actual": 776.05,
+        "q1_revenue_reported": 508,
+        "q1_attributable_profit_reported": 247.62,
+        "derived_q3_revenue_forecast": [
+          1146.9,
+          1196.9
+        ],
+        "derived_q3_attributable_profit_forecast": [
+          533.95,
+          548.95
+        ],
+        "derived_q3_revenue_qoq_pct": [
+          15.25,
+          20.28
+        ],
+        "derived_q3_attributable_profit_qoq_pct": [
+          1.04,
+          3.88
+        ],
+        "derivation": "Nine-month forecast less H1 actual; Q2 equals H1 less Q1. H1 values corroborated by issuer management at H1 earnings roadshow; Q1 values and reported Q2 comparison corroborated by August28 original reporting. Derived Q3 values are not separately reported actual results.",
+        "issuer_attribution": "AI-related DRAM demand,industry supply tightness and higher prices;capacity construction,process upgrades,higher unit-wafer output and utilization,and product mix optimization.",
+        "provenance": "Announcement is dated October17. Original reporting describes its October16 evening release. Both PDF pages read and visually checked from the issuer-announcement mirror;SSE/CNINFO original URLs located but direct retrieval unavailable.",
+        "limits": "Unaudited preliminary Chinese-GAAP estimate,not Q3 actuals or a quantified gross-margin/cash-flow forecast. Revenue and profit growth do not separately identify ASP,bit shipment,cost,subsidies,server product mix,new capacity or customer qualification. No verified consensus comparison. Existing G5/RDIMM product event remains separate;no new qualified server/HBM supply or imminent oversupply is established."
+      },
+      "sources": [
+        "https://static.cninfo.com.cn/finalpage/2026-10-17/1225609860.PDF",
+        "https://static.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-10-17/688825_20261017_W5VW.pdf",
+        "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-10/2026-10-17/12647223.PDF",
+        "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12647223&stockid=688825",
+        "https://roadshow.cnstock.com/fbh/cxkj202606/wzsl",
+        "https://www.thepaper.cn/newsDetail_forward_33968133",
+        "https://www.thepaper.cn/newsDetail_forward_34265309"
+      ],
+      "status": "new_financial_outlook_event_verified_no_article"
     }
   ],
   "articles": [],
@@ -2823,12 +2883,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-17",
-      "checked_at": "2026-10-17T11:59:56Z",
-      "instruction_commit_sha": "ebb6912c841c8456ac4186deefa729ec367e028f",
+      "checked_at": "2026-10-17T12:59:28Z",
+      "instruction_commit_sha": "b755f1db03f4e506bd9116d93c5f7ec53d36d731",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "All98 active names included in14 fresh grouped event-discovery queries. Six core issuer indices,TSMC guidance,separate TPU economics,five CSP pages and outside opportunity/downside discovery checked. TrueLight historical primary monthly and optical-capability baseline added.",
+      "scope": "All98 active names included in14 fresh grouped discovery queries;six core issuer indices,TSMC guidance,TPU economics,five CSP landing/index pages,and outside opportunity/downside discovery reviewed. CXMT preliminary nine-month financial announcement verified as outside-universe event.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -2841,26 +2901,23 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://www.trendforce.com/research/download/RP261013DZ3",
-        "https://www.truelight.com.tw/investor/report-detail/115/",
-        "https://www.truelight.com.tw/investor/report/Revenue/",
-        "https://www.truelight.com.tw/about/About_TrueLight/",
-        "https://www.truelight.com.tw/",
-        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b080c757-1f21-431a-85a1-c3c0a684faff",
-        "https://www.liteon.com/zh-tw/news/press-center/content/quarterly-second-eps-2026",
-        "https://www.theinformation.com/articles/to-reduce-ai-costs-google-wants-to-ditch-broadcom-as-its-tpu-server-chip-supplier",
-        "https://www.siemens-energy.com/global/en/home/investor-relations/financial-publications-ad-hoc-announcements.html"
+        "https://static.cninfo.com.cn/finalpage/2026-10-17/1225609860.PDF",
+        "https://static.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-10-17/688825_20261017_W5VW.pdf",
+        "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-10/2026-10-17/12647223.PDF",
+        "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12647223&stockid=688825",
+        "https://roadshow.cnstock.com/fbh/cxkj202606/wzsl",
+        "https://www.thepaper.cn/newsDetail_forward_33968133",
+        "https://www.thepaper.cn/newsDetail_forward_34265309"
       ],
       "source_limits": [
-        "Mandatory instruction files fetched completely at ebb6912c841c8456ac4186deefa729ec367e028f;display truncation recovered from complete stored content before research. Alpha-quant default main3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7 and full CSV88422949d38165d4757a1e24c27f8662bede14c1 confirm98 active names. Grouped discovery is not complete individual current-primary validation.",
-        "TrueLight issuer September/year-specific numeric reports and data-center optical capability bodies read. Distinct primary-fact coverage45 to46,pending53 to52,monthly19 to20,product14 to15;partner4 andregulator3 unchanged. Historical baseline only,no new order or profit revision.",
-        "TrueLight year-specific report provides comparable YTD growth38.14%. Prior-year full-year total in multi-year overview is not a comparable January-September denominator. Exact issuer table publication timestamp unavailable;October7 notice reproduction used for historical dating only.",
-        "TSMC Q3 actual/Q4 guidance matches recorded baseline. MediaTek,NVIDIA,AMD,Broadcom andMarvell issuer indices reviewed;no new authenticated TPU procurement allocation,NRE/design-win or financial revision established in obtained material. TrendForce October13 summary remains researcher-level;paid report and substrate-yield economics unverified.",
-        "FiveCSP landing/index pages read and fresh owner/company discovery performed. Amazon/Alphabet extracted financial content remains dynamic/incomplete;Oracle landing page is not a complete current-news feed. No comparable aggregate capex or whole-current-filings completion claimed.",
-        "LITEON Q2 issuer page returned502;no new individual primary validation credit. Siemens Energy financial-publications URL failed;secondary no-cancellation commentary was not adopted as company confirmation. The Information page exposed headline/paywall without body/date;not treated as a fresh Google supplier decision.",
-        "Anthropic/Blackstone,CoreWeave funding risk,TSMC results,TPU timing/packaging reports,Camtek,Schneider,Semtech,AIXTRON,VAT andother prior events deduplicated against91 events,171 candidates,85 screenings andreadable prior notifications. Reprints andfresh crawl times do not establish material new evidence.",
-        "One historical candidate and one screening added;no new public event,article or material alert. All prior events,candidates,articles,screenings and dated blockers preserved. Private quotes,valuation,targets,positions,trading conditions andprivate market monitoring excluded.",
-        "Ledger-only JSON/preservation checks,freshhead/blob,CAS forcefalse,exact remote readback andonly-target compare required. No articlelint,build,deploy orHTTP content completion claimed."
+        "Required instructions and related specifications read completely at b755f1db03f4e506bd9116d93c5f7ec53d36d731. Alpha-quant default main3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7 and CSV88422949d38165d4757a1e24c27f8662bede14c1 confirm98 active names. Grouped discovery does not establish individual current-primary verification.",
+        "Active-universe distinct primary-fact count remains46,pending52;monthly20,product15,partner4,regulator3 unchanged. Auras financial-report and home pages returned zero extracted lines;AVC website discovery did not yield a read financial primary. No coverage credit.",
+        "Six core indices read;TSMC Q3 actual/Q4 guide match recorded baseline. No new authenticated MediaTek TPU allocation,NRE,design-win or core-company earnings revision established from obtained content.",
+        "Microsoft investor page initial InternalError recovered on retry. Amazon/Alphabet extracted financial content remains dynamic/incomplete;Oracle landing is not a complete current-news feed. Fresh discovery complements indices,not a claim that all current filings were individually checked.",
+        "CXMT official-announcement PDF mirror read in full and both pages visually checked;SSE/CNINFO originals located but direct fetch unavailable. Preliminary estimate,not audited actual. Original October16 evening reporting distinguished from October17 document date. H1 issuer-roadshow numbers and August28 reporting used for labeled quarterly arithmetic;no forecast-consensus comparison.",
+        "CXMT is outside98 active names;new financial fingerprint distinct from recorded G5/RDIMM event. Other Anthropic/Blackstone,CoreWeave,TSMC,TPU supplier reports,Camtek,Schneider,Semtech,AIXTRON andVAT items were existing events/reprints. Ambiguous future-period October revenue headline excluded.",
+        "One public financial event,one candidate andone screening appended;no article drafted. All earlier events,candidates,articles,screenings and dated blockers preserved. Private quotes,valuations,positions,trade conditions andprivate market monitoring excluded.",
+        "Ledger-only JSON/preservation checks,freshhead/blob,CAS forcefalse,exact source readback andonly-target compare required. No articlelint,build,deploy orpublic article verification claimed."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -5218,6 +5275,45 @@
           "Anthropic/Blackstone,CoreWeave funding risk,TSMC results,TPU timing/packaging reports,Camtek,Schneider,Semtech,AIXTRON,VAT andother prior events deduplicated against91 events,171 candidates,85 screenings andreadable prior notifications. Reprints andfresh crawl times do not establish material new evidence.",
           "One historical candidate and one screening added;no new public event,article or material alert. All prior events,candidates,articles,screenings and dated blockers preserved. Private quotes,valuation,targets,positions,trading conditions andprivate market monitoring excluded.",
           "Ledger-only JSON/preservation checks,freshhead/blob,CAS forcefalse,exact remote readback andonly-target compare required. No articlelint,build,deploy orHTTP content completion claimed."
+        ]
+      },
+      {
+        "date": "2026-10-17",
+        "checked_at": "2026-10-17T12:59:28Z",
+        "instruction_commit_sha": "b755f1db03f4e506bd9116d93c5f7ec53d36d731",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "All98 active names included in14 fresh grouped discovery queries;six core issuer indices,TSMC guidance,TPU economics,five CSP landing/index pages,and outside opportunity/downside discovery reviewed. CXMT preliminary nine-month financial announcement verified as outside-universe event.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://static.cninfo.com.cn/finalpage/2026-10-17/1225609860.PDF",
+          "https://static.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-10-17/688825_20261017_W5VW.pdf",
+          "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-10/2026-10-17/12647223.PDF",
+          "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12647223&stockid=688825",
+          "https://roadshow.cnstock.com/fbh/cxkj202606/wzsl",
+          "https://www.thepaper.cn/newsDetail_forward_33968133",
+          "https://www.thepaper.cn/newsDetail_forward_34265309"
+        ],
+        "source_limits": [
+          "Required instructions and related specifications read completely at b755f1db03f4e506bd9116d93c5f7ec53d36d731. Alpha-quant default main3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7 and CSV88422949d38165d4757a1e24c27f8662bede14c1 confirm98 active names. Grouped discovery does not establish individual current-primary verification.",
+          "Active-universe distinct primary-fact count remains46,pending52;monthly20,product15,partner4,regulator3 unchanged. Auras financial-report and home pages returned zero extracted lines;AVC website discovery did not yield a read financial primary. No coverage credit.",
+          "Six core indices read;TSMC Q3 actual/Q4 guide match recorded baseline. No new authenticated MediaTek TPU allocation,NRE,design-win or core-company earnings revision established from obtained content.",
+          "Microsoft investor page initial InternalError recovered on retry. Amazon/Alphabet extracted financial content remains dynamic/incomplete;Oracle landing is not a complete current-news feed. Fresh discovery complements indices,not a claim that all current filings were individually checked.",
+          "CXMT official-announcement PDF mirror read in full and both pages visually checked;SSE/CNINFO originals located but direct fetch unavailable. Preliminary estimate,not audited actual. Original October16 evening reporting distinguished from October17 document date. H1 issuer-roadshow numbers and August28 reporting used for labeled quarterly arithmetic;no forecast-consensus comparison.",
+          "CXMT is outside98 active names;new financial fingerprint distinct from recorded G5/RDIMM event. Other Anthropic/Blackstone,CoreWeave,TSMC,TPU supplier reports,Camtek,Schneider,Semtech,AIXTRON andVAT items were existing events/reprints. Ambiguous future-period October revenue headline excluded.",
+          "One public financial event,one candidate andone screening appended;no article drafted. All earlier events,candidates,articles,screenings and dated blockers preserved. Private quotes,valuations,positions,trade conditions andprivate market monitoring excluded.",
+          "Ledger-only JSON/preservation checks,freshhead/blob,CAS forcefalse,exact source readback andonly-target compare required. No articlelint,build,deploy orpublic article verification claimed."
         ]
       }
     ],
@@ -9860,6 +9956,34 @@
         "Test capacity,yield,pricing and competitive substitution before attributing sustained profit growth to InP or CPO."
       ],
       "publication_status": "historical_primary_baseline_only_no_material_alert_not_drafted"
+    },
+    {
+      "key": "cxmt-quarterly-profit-conversion-versus-dram-bit-supply-expansion",
+      "companies": [
+        "CXMT / 長鑫科技 (688825.SH)"
+      ],
+      "date": "2026-10-17",
+      "instruction_commit_sha": "b755f1db03f4e506bd9116d93c5f7ec53d36d731",
+      "sources": [
+        "https://static.cninfo.com.cn/finalpage/2026-10-17/1225609860.PDF",
+        "https://static.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-10-17/688825_20261017_W5VW.pdf",
+        "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-10/2026-10-17/12647223.PDF",
+        "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12647223&stockid=688825",
+        "https://roadshow.cnstock.com/fbh/cxkj202606/wzsl",
+        "https://www.thepaper.cn/newsDetail_forward_33968133",
+        "https://www.thepaper.cn/newsDetail_forward_34265309"
+      ],
+      "stage": "full_preliminary_nine_month_announcement_pdf_and_historical_h1_baseline_checked",
+      "facts": {
+        "increment": "New nine-month financial estimate extends the previously recorded G5 product/efficiency evidence to preliminary revenue and attributable-profit scale. Calculated Q3 profit grows about1.04–3.88% sequentially versus revenue15.25–20.28%;not a7x sequential-profit acceleration.",
+        "limits": "ASP,product mix,bit output,customer acceptance and cash-conversion attribution remain incomplete. H1 is historical context,not newly issued October17 guidance. Outside active98 universe;no universe coverage credit."
+      },
+      "questions": [
+        "Reconcile the final Q3 report with forecast,quarterly gross margin,operating cash flow and receivables.",
+        "Separate price/mix gains from bit-shipment and unit-wafer productivity increases;quantify server DDR5/RDIMM qualification and customer shipments.",
+        "Compare capacity/ramp and contract-price evidence across competing DRAM suppliers before concluding a change in industry scarcity duration."
+      ],
+      "publication_status": "verified_event_and_research_questions_recorded_not_drafted"
     }
   ],
   "blockers": [
@@ -9879,7 +10003,7 @@
     }
   ],
   "last_research_date": "2026-10-17",
-  "instruction_commit_sha": "ebb6912c841c8456ac4186deefa729ec367e028f",
+  "instruction_commit_sha": "b755f1db03f4e506bd9116d93c5f7ec53d36d731",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
