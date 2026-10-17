@@ -2883,12 +2883,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-17",
-      "checked_at": "2026-10-17T14:30:53Z",
-      "instruction_commit_sha": "a954ef6a153c15d7fc78564b621a6bb5e76606d4",
+      "checked_at": "2026-10-17T14:35:54Z",
+      "instruction_commit_sha": "3d11396fd40be25dfd7d9e241691ce34381b5512",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "All98 active names included in14 fresh grouped discovery queries. Six core issuer indices,TSMC guidance,Google TPU allocation/NRE sources,five CSP landing/index pages,andoutside opportunity/downside discovery checked. Realtek historical monthly reproduction and official-page rendering gap recorded.",
+      "scope": "All98 active names included in14 fresh grouped discovery queries. Sixcore issuer indices,TSMC guidance,Google TPU procurement/NRE,fiveCSP indices,andoutside opportunity/downside discovery reviewed. October12 USFP issuer plan added as historical research candidate.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -2901,21 +2901,21 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4",
-        "https://www.realtek.com/InvestorRelations/MonthlyRevenues?menu_id=704",
-        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c6435728-4628-4292-ba2e-fc287fdd4b43",
-        "https://www.reuters.com/legal/transactional/why-coreweave-is-crosshairs-ai-scare-2026-10-16/",
-        "https://www.taisounds.com/news/content/75/293686"
+        "https://nvidianews.nvidia.com/news/nvidia-and-cisco-introduce-new-pluggable-optics-form-factor-to-scale-ai-factories",
+        "https://www.macronix.com/zh-tw/about/investor-relations/Pages/monthly-sales.aspx",
+        "https://www.trendforce.com.tw/research/download/RP261013LA",
+        "https://fortune.com/2026/10/17/ruth-porat-jefferies-chris-wood-ai-buildout-capital-destruction-chinese-open-source-models-differentiation/",
+        "https://datacentremagazine.com/news/this-weeks-top-five-stories-in-the-data-centre-industry-17-october-2026"
       ],
       "source_limits": [
-        "Mandatory files and related specifications fetched completely at a954ef6a153c15d7fc78564b621a6bb5e76606d4;display truncations recovered from stored complete content before research. Full JSON parsed. Alpha-quant latest main3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7 andCSV88422949d38165d4757a1e24c27f8662bede14c1 confirm98active names.",
-        "Fourteen grouped queries included all98names,but obtained many stale broad-theme results despite freshness filters. Discovery screen is not individual current-event clearance or complete current-primary validation. Primary-fact46,pending52,monthly20,product15,partner4,regulator3 unchanged.",
-        "TSMC Q3 actual/Q4 guidance unchanged from ledger. Six core issuer indices read;MediaTek latest listed September30 andprevious NVLink collaboration,Broadcom latest October13,andMarvell October13 entries. Fresh TPU searches recovered prior reported Humufish timing and supplier stories,not a newly authenticated procurement allocation,NRE ordesign-win change.",
-        "FiveCSP index/landing pages checked;Amazon/Alphabet extracted financial content remains dynamic/incomplete andOracle landing is not a full current news feed. July29 Microsoft issuer transcript reread confirms useful-life/lease classification effect andunchanged underlying2026 capex expectation;not a fresh October17 cut.",
-        "Fresh outside/downside searches recovered existing Anthropic/Blackstone funding-cost,CoreWeave credit fear,Schneider guidance andAWS payback items. Reuters CoreWeave original direct access failed;summary alone did not establish a new default,financing close orsupplier cancellation. BigGo spending-brakes aggregation inaccessible andnot adopted as confirmed CSP cut.",
-        "Realtek official indexed numbers corroborate historical September table,but direct issuer body has no numeric rows. Full October7 MoneyDJ reproduction read. Candidate records attribution/rendering gaps;no primary coverage credit andno material alert.",
-        "Deduplication against92public events,173prior candidates,87prior screenings andreadable notifications includes latest CXMT nine-month preliminary event;no new event orarticle. One research-gap candidate andone screening appended. All historical entries anddated blockers preserved;private quotes,valuation,positions,trade conditions andprivate market monitoring excluded.",
-        "Ledger-only JSON/preservation checks,freshhead/blob,CAS forcefalse,exact remote readback andonly-target compare required. No articlelint,build,deploy orpublic article verification claimed."
+        "Latest defaultmain instruction commit3d11396fd40be25dfd7d9e241691ce34381b5512. Mandatory instructions/specifications andthree related articles fetched completely at this samecommit;byte-for-byte equality with complete immediately preceding reads confirmed. Full current ledger parsed andcompared with preceding exact verified write. No guessed ortruncated mandatory content used.",
+        "Alpha-quant metadata/head andfull CSV reread:main3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7,blob88422949d38165d4757a1e24c27f8662bede14c1,98active names. Fourteen fresh grouped queries are discovery only;many results are stale thematic pages despite freshness filters. Primary-fact46,pending52,monthly20,product15,partner4,regulator3 unchanged.",
+        "Core issuer indices freshly opened;TSMC Q3/Q4 baseline,MediaTek September30/August31 index,Broadcom October13,andAMD/Marvell/NVIDIA dated index entries remain consistent with recorded events. Fresh searches did not establish a new authenticated TPU allocation,NRE,design-win orfinancial revision in obtained material.",
+        "FiveCSP landing/index pages reopened. Amazon/Alphabet financial extraction remains dynamic/incomplete;Oracle landing is not full current-filings validation. Existing Anthropic/Blackstone financing,CoreWeave credit fear,AWS payback,Maia andold Oracle Jupiter items deduplicated;fresh crawl dates are not new events.",
+        "October17 Fortune Porat/Jefferies lead andData Centre Magazine weekly roundup found,butdirect pages inaccessible;no claim of original body verification ornew CSP guidance. Roundup USFP lead traced to full October12 NVIDIA issuer release;product/connector ecosystem plan only,not confirmed production ororder economics.",
+        "Macronix Chinese monthly page opened andsearched;numeric year/month rows still absent from extraction despite indexed values. Existing historical candidate retained without increasing primary coverage. A future-period November cooling-revenue headline excluded as current evidence.",
+        "Deduplication against92public events,174prior candidates,88prior screenings andreadable notification baseline includes latest CXMT preliminary earnings. One historical platform candidate andone screening appended;no public event orarticle added. Preserve all earlier histories anddated blockers. No private quotes,valuation,positions,trading conditions orprivate market data inpublic ledger.",
+        "Ledger-only JSON/preservation checks,freshhead/blob,CAS forcefalse,exact remote readback andonly-target compare required. No articlelint,build,deploy orpublic-content completion claimed."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -5349,6 +5349,43 @@
           "Realtek official indexed numbers corroborate historical September table,but direct issuer body has no numeric rows. Full October7 MoneyDJ reproduction read. Candidate records attribution/rendering gaps;no primary coverage credit andno material alert.",
           "Deduplication against92public events,173prior candidates,87prior screenings andreadable notifications includes latest CXMT nine-month preliminary event;no new event orarticle. One research-gap candidate andone screening appended. All historical entries anddated blockers preserved;private quotes,valuation,positions,trade conditions andprivate market monitoring excluded.",
           "Ledger-only JSON/preservation checks,freshhead/blob,CAS forcefalse,exact remote readback andonly-target compare required. No articlelint,build,deploy orpublic article verification claimed."
+        ]
+      },
+      {
+        "date": "2026-10-17",
+        "checked_at": "2026-10-17T14:35:54Z",
+        "instruction_commit_sha": "3d11396fd40be25dfd7d9e241691ce34381b5512",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "All98 active names included in14 fresh grouped discovery queries. Sixcore issuer indices,TSMC guidance,Google TPU procurement/NRE,fiveCSP indices,andoutside opportunity/downside discovery reviewed. October12 USFP issuer plan added as historical research candidate.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://nvidianews.nvidia.com/news/nvidia-and-cisco-introduce-new-pluggable-optics-form-factor-to-scale-ai-factories",
+          "https://www.macronix.com/zh-tw/about/investor-relations/Pages/monthly-sales.aspx",
+          "https://www.trendforce.com.tw/research/download/RP261013LA",
+          "https://fortune.com/2026/10/17/ruth-porat-jefferies-chris-wood-ai-buildout-capital-destruction-chinese-open-source-models-differentiation/",
+          "https://datacentremagazine.com/news/this-weeks-top-five-stories-in-the-data-centre-industry-17-october-2026"
+        ],
+        "source_limits": [
+          "Latest defaultmain instruction commit3d11396fd40be25dfd7d9e241691ce34381b5512. Mandatory instructions/specifications andthree related articles fetched completely at this samecommit;byte-for-byte equality with complete immediately preceding reads confirmed. Full current ledger parsed andcompared with preceding exact verified write. No guessed ortruncated mandatory content used.",
+          "Alpha-quant metadata/head andfull CSV reread:main3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7,blob88422949d38165d4757a1e24c27f8662bede14c1,98active names. Fourteen fresh grouped queries are discovery only;many results are stale thematic pages despite freshness filters. Primary-fact46,pending52,monthly20,product15,partner4,regulator3 unchanged.",
+          "Core issuer indices freshly opened;TSMC Q3/Q4 baseline,MediaTek September30/August31 index,Broadcom October13,andAMD/Marvell/NVIDIA dated index entries remain consistent with recorded events. Fresh searches did not establish a new authenticated TPU allocation,NRE,design-win orfinancial revision in obtained material.",
+          "FiveCSP landing/index pages reopened. Amazon/Alphabet financial extraction remains dynamic/incomplete;Oracle landing is not full current-filings validation. Existing Anthropic/Blackstone financing,CoreWeave credit fear,AWS payback,Maia andold Oracle Jupiter items deduplicated;fresh crawl dates are not new events.",
+          "October17 Fortune Porat/Jefferies lead andData Centre Magazine weekly roundup found,butdirect pages inaccessible;no claim of original body verification ornew CSP guidance. Roundup USFP lead traced to full October12 NVIDIA issuer release;product/connector ecosystem plan only,not confirmed production ororder economics.",
+          "Macronix Chinese monthly page opened andsearched;numeric year/month rows still absent from extraction despite indexed values. Existing historical candidate retained without increasing primary coverage. A future-period November cooling-revenue headline excluded as current evidence.",
+          "Deduplication against92public events,174prior candidates,88prior screenings andreadable notification baseline includes latest CXMT preliminary earnings. One historical platform candidate andone screening appended;no public event orarticle added. Preserve all earlier histories anddated blockers. No private quotes,valuation,positions,trading conditions orprivate market data inpublic ledger.",
+          "Ledger-only JSON/preservation checks,freshhead/blob,CAS forcefalse,exact remote readback andonly-target compare required. No articlelint,build,deploy orpublic-content completion claimed."
         ]
       }
     ],
@@ -10052,6 +10089,33 @@
         "Separate PC,consumer,enterprise-networking anddatacenter products,and reconcile quarterly gross profit,receivables andcash flow."
       ],
       "publication_status": "research_gap_recorded_no_material_alert_not_drafted"
+    },
+    {
+      "key": "nvidia-cisco-usfp-pluggable-connector-plan-to-qualified-volume-and-profit",
+      "companies": [
+        "NVIDIA",
+        "Cisco",
+        "TE Connectivity",
+        "Amphenol"
+      ],
+      "date": "2026-10-17",
+      "instruction_commit_sha": "3d11396fd40be25dfd7d9e241691ce34381b5512",
+      "sources": [
+        "https://nvidianews.nvidia.com/news/nvidia-and-cisco-introduce-new-pluggable-optics-form-factor-to-scale-ai-factories"
+      ],
+      "stage": "historical_october12_issuer_joint_pluggable_form_factor_plan_and_named_ecosystem_read",
+      "facts": {
+        "source_date": "2026-10-12",
+        "scope": "Issuer announces a planned USFP pluggable form factor for400Gb/s-per-lane electrical interfaces. TE Connectivity andAmphenol named in cage,connector andmodule ecosystem;open industry specification/community-led multisource project planned.",
+        "mechanism": "A denser removable connector/module path offers an alternative to changing optical placement to CPO;qualification,signal integrity,serviceability andpower/cooling remain relevant to system adoption.",
+        "limits": "Historical plan,not an October17 commercial award. No firm customer deployment,volume order,revenue orprofit revision established. Vendor capability claims are forward-looking;not independent benchmarks. No named Taiwan supplier allocation inferred. Outside-universe relationship context only,no active98 primary-count credit."
+      },
+      "questions": [
+        "Obtain published specification,qualification milestones anddated production availability rather than treating a plan as mass adoption.",
+        "Compare total link cost,power,cooling andserviceability against OSFP andCPO at matched bandwidth anddistance.",
+        "Trace paid customer orders,content per system,qualified supplier shares andrealized margins before attributing financial benefit."
+      ],
+      "publication_status": "historical_platform_candidate_only_no_material_alert_not_drafted"
     }
   ],
   "blockers": [
@@ -10071,7 +10135,7 @@
     }
   ],
   "last_research_date": "2026-10-17",
-  "instruction_commit_sha": "a954ef6a153c15d7fc78564b621a6bb5e76606d4",
+  "instruction_commit_sha": "3d11396fd40be25dfd7d9e241691ce34381b5512",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
