@@ -2759,12 +2759,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-17",
-      "checked_at": "2026-10-17T02:16:11Z",
-      "instruction_commit_sha": "2d72ffe34479ab6ca1da1440a15abb09e856ee81",
+      "checked_at": "2026-10-17T03:24:08Z",
+      "instruction_commit_sha": "e922cd8da30bc3b9b0ee5deb1ba42035916f9b3c",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh98-name grouped discovery,core-six issuer pages,MediaTek/TPU procurement checks,five-CSP landing pages and owner-domain discovery,outside opportunities and downside. Historical Apacer product baseline and two development/status candidates added; no new material-event notification or article.",
+      "scope": "Fresh98-name grouped discovery,core-six issuer/news checks,MediaTek/TPU procurement checks,five-CSP pages andowner-domain discovery,outside opportunities anddownside. Two candidates andSchneider named-project verification appended;no newmaterial event orarticle.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -2777,29 +2777,24 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://www.apacer.com/en/news/news-and-events/content/2026-computex",
-        "https://www.apacer.com/en/html/monthly-sales-revenue",
-        "https://www.apacer.com/en/html/event-calendar",
-        "https://finance.technews.tw/2026/10/06/apacer-8271-202609-financial-report/",
-        "https://www.cnmv.es/webservices/verdocumento/ver?t=%7B6ca5f68e-1c4c-4683-9802-e9c854bcde0a%7D",
-        "https://www.gub.uy/ministerio-industria-energia-mineria/comunicacion/noticias/uruguay-recibira-inversion-historica-5700-millones-dolares-para-instalar",
-        "https://solariaenergia.com/en/solaria-and-uruguay-sign-a-strategic-agreement-to-develop-a-data-center-technology-campus-of-up-to-500-mw/",
-        "https://landclimate.org/drax-aigz/",
-        "https://www.datacenterdynamics.com/en/news/uk-govt-rejects-ai-growth-zone-bid-to-power-data-center-with-drax-biomass-plant-in-selby-north-yorkshire/",
-        "https://www.yorkshirepost.co.uk/business/north-yorkshires-hopes-for-ps85bn-boost-dashed-as-officials-confirm-ai-growth-zone-bid-rejected-but-drax-data-centre-plan-pushes-forward-9278212"
+        "https://www.mhi.com/news/26101502.html",
+        "https://blog.se.com/datacenter/2026/10/16/from-power-ai-readines-architecture-decisions-terawulfs-ai-high-performance-computing-campus/",
+        "https://www.investors.com/news/technology/google-stock-ai-chip-sales-cloud-revenue-boost/",
+        "https://www.auras.com.tw/",
+        "https://www.ttv.com.tw/finance/view/1020261610129A2A1E9D1890453FACDED147A2EDEBB7B036/587"
       ],
       "source_limits": [
-        "Fresh alpha-quant default main6aa19a55f33c995c8f703bfe0c65dcdf07e6b6d3 and CSVblob88422949d38165d4757a1e24c27f8662bede14c1 fully read. All98 active names included in14 grouped recent discovery queries; not98 individual current-filings validations.",
-        "Apacer8271 May26 dated issuer datacenter-SSD capability baseline adds one historical primary fact:40to41 distinct active companies,58to57 pending. Product baselines9to10;monthly18,partner4,regulator3 unchanged.",
-        "Apacer issuer monthly numeric body obtained,but extracted selector lacks explicit year. FY2026 calendar and dated secondary reproduction reconcile current numbers; monthly-year primary gap retained and no monthly coverage credit. Unchecked pending-company originals remain unchecked this run.",
-        "TSMC Q3 actual/Q4 guidance freshly rechecked;MediaTek current issuer index and ASIC/TPU discovery overlap prior baselines. No newly authenticated Google allocation,NRE,design responsibility,generation renewal or margin terms established.",
-        "NVIDIA latest PC/automotive items,AMD latest October12 Helion,AVGO October13 HyperArmor/October8 OCP andMRVL October13 retimer/security lists overlap existing baselines. Broadcom direct financial-news index accessible;no new quantified award or earnings revision verified.",
-        "Five CSP landing pages and owner-domain discovery reviewed. Amazon/Alphabet dynamic pages incomplete;no full current-filings audit or new aggregate capex total claimed. Historical country commitments and software/research news not new equipment purchases.",
-        "Solaria one-page CNMV original and Uruguay government agreement body read;issuer webpage timed out. Planned campus/PPA framework lacks named tenant,funding close andretained economics;candidate only,not hardware order or recurring earnings.",
-        "Drax October16 follow-up traced to October7 original reporting;special-zone rejection distinguished from separate100MW planning path. Official decision/company filing not obtained;no customer cancellation or currentprofit revision inferred.",
-        "Fresh grouped stock,business-model andfunding-risk reports include historical monthly releases,broker target stories andHock Tan October12 comments. No broker original/consensus panel obtained;price moves alone not earnings revisions. Prior Fermi,EverWind,NiSource,Fulltech,Wooriro andother material events deduplicated.",
-        "All89 public events,153 prior candidates,75 prior screenings,articles anddated blockers preserved. Three research candidates and one screening appended. No public quote,valuation,target,position ortrading condition;no individual stock valuation conclusion.",
-        "No newarticle,lint,build,deploy orpublic-page completion claimed. Ledger-only source readback required;noautomation orother-repository watchlist mutation."
+        "Fresh alpha-quant default main6aa19a55f33c995c8f703bfe0c65dcdf07e6b6d3 andCSVblob88422949d38165d4757a1e24c27f8662bede14c1 read fully.98 active names in14 recent grouped searches;not98 individual current-filings validations.",
+        "Historical primary-company baselines remain41/98 with57pending,monthly18,partner4,regulator3,product10. Auras issuer homepage returned zero-line body;searches found secondary reports butno current issuer financial body.3324 remains pending;other pending originals not individually audited.",
+        "TSMC Q3 actual/Q4 guidance andMediaTek currentrelease index rechecked. FreshTPU/ASIC reporting repeats known program/timing claims;no newly authenticated Google allocation,NRE,production economics orrenewal established.",
+        "NVIDIA October16 PC/automotive,AMD latestOctober12 Helion,AVGO October13 HyperArmor/October8 OCP andMRVL October13 product/security news overlapbaselines. Primaryindexes accessible;no fresh quantified award orfinancialrevision verified.",
+        "FiveCSP landingpages andowner-domain discovery reviewed. Amazon/Alphabet dynamiccontent incomplete;no full current-filings audit,newaggregate capex or procurement award claimed. Maia300,earnings calendars andhistoricalcountryplans notnewspending revisions.",
+        "MHI October15 full relevantissuer MOU body read. Initial commercialization collaboration hasnonamed customer,contractvalue,MW or earningsforecast;candidateonly.",
+        "Schneider October16 vendorcase establishes namedLakeMariner relationship,butgrossplannedcampus capacity doesnotmeasureaccepted IT,equippedMW or supplier revenue. Previousgroupguidance upgrade notalertedagain.",
+        "IBD October16 readable leadattributes TPU projectiontoEvercore;fullbrokeroriginal,old/newbridge andconsensuspanel unavailable. Search-index extrafigures nottreatedasvalidated revision;candidate andsourcegap only.",
+        "October16 optical summarytraced LuxNet monthlyprofit toalreadyrecorded October14 disclosure;HolyStone pricing report alsoalreadyregistered. No repeated alert. CoreWeave creditandprojectdelays remainknownrisk baselines,notnewdefault orcancellation.",
+        "All89events,156priorcandidates,76prior screenings,articles anddatedblockers preserved. Two candidates,onecandidateverification andonescreening appended. No publicprice,valuation,target,position ortradingcondition.",
+        "No newarticle,lint,build,deploy orpublicpagecompletion claimed. Ledger-onlyremote readback required;noautomation change or other-repositorywatchlist mutation."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -4758,6 +4753,46 @@
           "Fresh grouped stock,business-model andfunding-risk reports include historical monthly releases,broker target stories andHock Tan October12 comments. No broker original/consensus panel obtained;price moves alone not earnings revisions. Prior Fermi,EverWind,NiSource,Fulltech,Wooriro andother material events deduplicated.",
           "All89 public events,153 prior candidates,75 prior screenings,articles anddated blockers preserved. Three research candidates and one screening appended. No public quote,valuation,target,position ortrading condition;no individual stock valuation conclusion.",
           "No newarticle,lint,build,deploy orpublic-page completion claimed. Ledger-only source readback required;noautomation orother-repository watchlist mutation."
+        ]
+      },
+      {
+        "date": "2026-10-17",
+        "checked_at": "2026-10-17T03:24:08Z",
+        "instruction_commit_sha": "e922cd8da30bc3b9b0ee5deb1ba42035916f9b3c",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh98-name grouped discovery,core-six issuer/news checks,MediaTek/TPU procurement checks,five-CSP pages andowner-domain discovery,outside opportunities anddownside. Two candidates andSchneider named-project verification appended;no newmaterial event orarticle.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://www.mhi.com/news/26101502.html",
+          "https://blog.se.com/datacenter/2026/10/16/from-power-ai-readines-architecture-decisions-terawulfs-ai-high-performance-computing-campus/",
+          "https://www.investors.com/news/technology/google-stock-ai-chip-sales-cloud-revenue-boost/",
+          "https://www.auras.com.tw/",
+          "https://www.ttv.com.tw/finance/view/1020261610129A2A1E9D1890453FACDED147A2EDEBB7B036/587"
+        ],
+        "source_limits": [
+          "Fresh alpha-quant default main6aa19a55f33c995c8f703bfe0c65dcdf07e6b6d3 andCSVblob88422949d38165d4757a1e24c27f8662bede14c1 read fully.98 active names in14 recent grouped searches;not98 individual current-filings validations.",
+          "Historical primary-company baselines remain41/98 with57pending,monthly18,partner4,regulator3,product10. Auras issuer homepage returned zero-line body;searches found secondary reports butno current issuer financial body.3324 remains pending;other pending originals not individually audited.",
+          "TSMC Q3 actual/Q4 guidance andMediaTek currentrelease index rechecked. FreshTPU/ASIC reporting repeats known program/timing claims;no newly authenticated Google allocation,NRE,production economics orrenewal established.",
+          "NVIDIA October16 PC/automotive,AMD latestOctober12 Helion,AVGO October13 HyperArmor/October8 OCP andMRVL October13 product/security news overlapbaselines. Primaryindexes accessible;no fresh quantified award orfinancialrevision verified.",
+          "FiveCSP landingpages andowner-domain discovery reviewed. Amazon/Alphabet dynamiccontent incomplete;no full current-filings audit,newaggregate capex or procurement award claimed. Maia300,earnings calendars andhistoricalcountryplans notnewspending revisions.",
+          "MHI October15 full relevantissuer MOU body read. Initial commercialization collaboration hasnonamed customer,contractvalue,MW or earningsforecast;candidateonly.",
+          "Schneider October16 vendorcase establishes namedLakeMariner relationship,butgrossplannedcampus capacity doesnotmeasureaccepted IT,equippedMW or supplier revenue. Previousgroupguidance upgrade notalertedagain.",
+          "IBD October16 readable leadattributes TPU projectiontoEvercore;fullbrokeroriginal,old/newbridge andconsensuspanel unavailable. Search-index extrafigures nottreatedasvalidated revision;candidate andsourcegap only.",
+          "October16 optical summarytraced LuxNet monthlyprofit toalreadyrecorded October14 disclosure;HolyStone pricing report alsoalreadyregistered. No repeated alert. CoreWeave creditandprojectdelays remainknownrisk baselines,notnewdefault orcancellation.",
+          "All89events,156priorcandidates,76prior screenings,articles anddatedblockers preserved. Two candidates,onecandidateverification andonescreening appended. No publicprice,valuation,target,position ortradingcondition.",
+          "No newarticle,lint,build,deploy orpublicpagecompletion claimed. Ledger-onlyremote readback required;noautomation change or other-repositorywatchlist mutation."
         ]
       }
     ],
@@ -7902,6 +7937,19 @@
           ],
           "scope": "Issuer-disseminated release body confirms the already-recorded FY2026 guidance upgrade; Products growth is majority volume-driven with sequential pricing, while Systems growth includes prefab, UPS and cooling. Same release, not independent corroboration or a second revision. Secondary call Q&A supplies no quantified hyperscaler/colocation/neocloud exposure; credit safety cannot be inferred. Original issuer PDF/presentation and realized cash conversion remain pending. Direct URL retries intermittently failed; selected cached release sections were readable.",
           "publication_status": "no_repeat_alert_no_article"
+        },
+        {
+          "date": "2026-10-17",
+          "checked_at": "2026-10-17T03:24:08Z",
+          "instruction_commit_sha": "e922cd8da30bc3b9b0ee5deb1ba42035916f9b3c",
+          "stage": "october16_vendor_named_terawulf_lake_mariner_cooling_relationship_verified_not_new_order_value",
+          "sources": [
+            "https://blog.se.com/datacenter/2026/10/16/from-power-ai-readines-architecture-decisions-terawulfs-ai-high-performance-computing-campus/"
+          ],
+          "scope": "Motivair executive describes Lake Mariner cooling deployment,including ChilledDoor rear-door heat exchangers,in-rack manifolds/CDUs andDLC loop. Named vendor/customer relationship supports follow-up beyond generic cooling theme.",
+          "limits": "Vendor case study,not independent acceptance audit.500MW across six buildings andpotential750MW are campus planned gross scope,not all commissionedIT orSchneider contractedMW. No incremental order value,revenue-recognition date,margin orcash disclosed;already-notified group guidance not a secondrevision.",
+          "next_check": "Cross-check tenant/site acceptance and actual equippedcapacity,service attach andcash before quantifying repeatability.",
+          "publication_status": "no_repeat_alert_no_article"
         }
       ]
     },
@@ -8889,6 +8937,52 @@
         "Check whether missing designation changes delivery cost/schedule before inferring supplier demand loss."
       ],
       "publication_status": "historical_project_status_and_source_gap_candidate_no_material_alert_no_article"
+    },
+    {
+      "key": "mhi-ingeteam-us-datacenter-power-conversion-mou-to-commercial-orders",
+      "companies": [
+        "Mitsubishi Heavy Industries",
+        "Ingeteam",
+        "Concentric"
+      ],
+      "sources": [
+        "https://www.mhi.com/news/26101502.html"
+      ],
+      "stage": "october15_issuer_mou_body_verified_distribution_integration_and_future_architecture_evaluation_not_firm_order",
+      "facts": {
+        "source_date": "2026-10-15",
+        "scope": "MOU to distribute,integrate and jointly develop energy infrastructure for US data centers. Combines MHI power/cooling/system integration and Concentric service reach with Ingeteam power conversion,storage,grid quality and control capabilities.",
+        "maturity": "Initial US-focused collaboration. Medium-voltage distribution and next-generation architecture remain subject to technical/commercial evaluation.",
+        "limits": "No named CSP,binding customer purchase,capacity MW,contract value,delivery milestone or earnings guidance disclosed. Cooperation can expand distribution and integration scope; profit retention and repeat revenue remain unverified."
+      },
+      "questions": [
+        "Identify first definitive customer order,qualification and delivery schedule.",
+        "Separate resale,engineering,hardware and recurring service economics.",
+        "Test grid approvals,conversion losses,component costs and working capital before expecting durable margins."
+      ],
+      "publication_status": "commercialization_candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "google-tpu-external-sales-evercore-forecast-original-note-validation",
+      "companies": [
+        "Alphabet / Google",
+        "Evercore ISI"
+      ],
+      "sources": [
+        "https://www.investors.com/news/technology/google-stock-ai-chip-sales-cloud-revenue-boost/"
+      ],
+      "stage": "october16_original_reporting_readable_lead_only_broker_note_and_old_new_forecast_bridge_unavailable",
+      "facts": {
+        "report_date": "2026-10-16",
+        "scope": "Readable IBD lead attributes a possible35% contribution to2027 Google Cloud revenue from TPU systems to Evercore ISI. Institutional projection,not company guidance.",
+        "limits": "Full article/broker original,prior estimates,accounting model andconsensus panel not obtained. Indexed extra figures not adopted as authenticated revision. No MediaTek allocation,NRE or manufacturing margin inferred."
+      },
+      "questions": [
+        "Obtain original research date,old/new forecasts andforecast period.",
+        "Separate hardware sales,cloud rentals and JV accounting without double counting.",
+        "Reconcile firm customer commitments,production capacity andcash before translating demand forecasts into supplier profit."
+      ],
+      "publication_status": "source_gap_candidate_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -8908,7 +9002,7 @@
     }
   ],
   "last_research_date": "2026-10-17",
-  "instruction_commit_sha": "2d72ffe34479ab6ca1da1440a15abb09e856ee81",
+  "instruction_commit_sha": "e922cd8da30bc3b9b0ee5deb1ba42035916f9b3c",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
