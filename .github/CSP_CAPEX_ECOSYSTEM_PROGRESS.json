@@ -2959,12 +2959,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-18",
-      "checked_at": "2026-10-17T20:28:37Z",
-      "instruction_commit_sha": "5536eee80af2f8e896531026298602584c2163c6",
+      "checked_at": "2026-10-17T21:31:47Z",
+      "instruction_commit_sha": "efdea14ae9ce5940e5ee25b6bb08e82662a74918",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh14 grouped queries cover all98 active names;sixcore and fiveCSP indices plus TPU allocation/NRE,outside opportunities and downside refreshed. One existing Solaria candidate receives issuer-body corroboration;no new event/article.",
+      "scope": "Fresh14-query grouped discovery covers98 active names;sixcore/fiveCSP issuer indices,TPU economics and outside opportunity/downside checked. Two research candidates appended;no new public-event or article.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -2977,18 +2977,23 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://solariaenergia.com/en/solaria-and-uruguay-sign-a-strategic-agreement-to-develop-a-data-center-technology-campus-of-up-to-500-mw/"
+        "https://www.sigurd.com.tw/zh-tw/monthly-revenue",
+        "https://www.sinbon.com/tw/investors-news/1",
+        "https://www.tdlr.texas.gov/TABS/Search/Project/TABS2027000611",
+        "https://www.aol.com/articles/construction-begins-nearly-400-million-094024000.html",
+        "https://www.hitachienergy.com/at/de/news-and-events/press-releases/2026/10/hitachi-energy-and-ansaldo-energia-launch-a-strategic-partnership-to-bring-integrated-power-solutions-to-meet-surging-electricity-demand",
+        "https://www.hitachi.com/en/press/articles/2026/10/1016a/"
       ],
       "source_limits": [
-        "Latest main instruction commit5536eee80af2f8e896531026298602584c2163c6 recorded;all mandatory instructions/specifications,full ledger and recent related articles fetched at same revision. Unchanged blobs checked against fully read prior bodies;instruction output display truncation recovered with overlapping complete excerpts.",
-        "Fresh alpha-quant metadata/main/full CSV:3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7/blob88422949d38165d4757a1e24c27f8662bede14c1,98active. Fourteen grouped discovery queries not individual primary validation;47 distinct primary/51pending,monthly21/product15/partner4/regulator3 unchanged.",
-        "TSMC quarterly guidance table reopened:Q4 USD52.3–54.3bn,GM65–67%,OP56.5–58.5%,unchanged. MediaTek/NVIDIA/AMD/Marvell issuer indices and targeted TPU role/NRE searches refreshed;no authenticated new allocation,design win,commercial economics or earnings revision established.",
-        "Broadcom financial-news path failed twice;issuer IR homepage body successfully read with latest listed releases October13/October8. Distinguish index inspection from full filings verification;do not claim source failure means no company news.",
-        "FiveCSP pages reopened. Amazon/Alphabet dynamic extraction incomplete;Oracle index not full current-filings review. No new cross-company capex total or signed supplier award inferred from metadata,job postings or secondary commentary.",
-        "Deduplicated TSMC/ASML guidance,Schneider forecast,Enerflex/LS Electric orders,NiSource/EverWind contracts,CoreWeave financing risk,Oracle Jupiter delay,existing TPU competitive roles,DRAM reports and passive-component recaps against95events/180candidates/93screenings and available notification baseline. Stale articles/crawl dates and anonymous broker targets not new evidence.",
-        "Solaria issuer-body retrieval resolves an earlier webpage timeout and corroborates the recorded October14/15 development agreement. No new tenant,PPA economics,financing close or deployment fact;append verification update to existing candidate,not a fresh project/earnings event.",
-        "Preserve every prior public event,candidate fact,screening,dated blocker and article record. Append only1Solaria verification update and1screening;no private prices,valuation,positions or market-flow data added.",
-        "Ledger-only JSON/history/uniqueness checks,fresh head/target blob,CAS forcefalse,exact remote readback and only-target diff required. No article lint,build,deploy or website publication completion claimed."
+        "Latest default-main instruction efdea14ae9ce5940e5ee25b6bb08e82662a74918. Required instructions/specifications/full ledger and three related articles fetched at same commit;complete instruction bodies read in untruncated chunks. Recent article blobs unchanged from previously read versions.",
+        "Fresh alpha-quant default metadata/main and complete CSV read:3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7/blob88422949d38165d4757a1e24c27f8662bede14c1,98active. Grouped discovery not98 individual primary validations. Primary47/pending51,monthly21/product15/partner4/regulator3 unchanged.",
+        "TSMC Q4 table reopened USD52.3–54.3bn/GM65–67%/OP56.5–58.5%,unchanged. Sixcore indices inspected via available body/find excerpts;NVIDIA new October17 Spark launch blog is local-PC context,not new CSP orders. No verified new MediaTek TPU design/NRE/production allocation;old Marvell/AMD role reports and ByteDance talks not promoted to signed awards.",
+        "FiveCSP landing pages reopened;Amazon/Alphabet extraction dynamic/incomplete,Oracle page not complete filings verification. No new comparable capex aggregate,utilization or supplier earnings revision claimed.",
+        "Fresh outside/downside queries rediscovers prior Anthropic/Blackstone financing,NiSource/EverWind/AEP power,Schneider guidance,CoreWeave/Oracle risks,DRAM and passive-component reports;deduplicated against95events/180candidates/94screenings and available notification baseline. New crawl dates do not refresh old event dates.",
+        "Hut8 July20 issuer numeric highlights and June9 financing summary directly read;full press bodies incomplete. TDLR September9 architectural-barriers registration directly read. October16 construction headline not treated as new start;August issuer-indexed text already states underway. TCEQ status and timing reconciliation pending;no inferred exemption or confirmed delivery delay.",
+        "Hitachi Energy October16 MoU body read;generation-plus-grid cooperation explicitly targets data centers,without named award or financial terms. Candidate only,not material earnings alert.",
+        "Sigurd direct issuer monthly page again failed;Sinbon direct page onlyshell. Indexed numbers not credited as primary;no zero-fill or financial inference. Existing dated blockers preserved.",
+        "Append two candidates and one screening only;all prior facts/events/articles preserved. No current quotes,valuation,private holdings/flows or other private records written. Ledger-only JSON/history/fresh-head/blob/CAS/readback/only-target checks;no article build/deploy/publication claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -5645,6 +5650,45 @@
           "Solaria issuer-body retrieval resolves an earlier webpage timeout and corroborates the recorded October14/15 development agreement. No new tenant,PPA economics,financing close or deployment fact;append verification update to existing candidate,not a fresh project/earnings event.",
           "Preserve every prior public event,candidate fact,screening,dated blocker and article record. Append only1Solaria verification update and1screening;no private prices,valuation,positions or market-flow data added.",
           "Ledger-only JSON/history/uniqueness checks,fresh head/target blob,CAS forcefalse,exact remote readback and only-target diff required. No article lint,build,deploy or website publication completion claimed."
+        ]
+      },
+      {
+        "date": "2026-10-18",
+        "checked_at": "2026-10-17T21:31:47Z",
+        "instruction_commit_sha": "efdea14ae9ce5940e5ee25b6bb08e82662a74918",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh14-query grouped discovery covers98 active names;sixcore/fiveCSP issuer indices,TPU economics and outside opportunity/downside checked. Two research candidates appended;no new public-event or article.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://www.sigurd.com.tw/zh-tw/monthly-revenue",
+          "https://www.sinbon.com/tw/investors-news/1",
+          "https://www.tdlr.texas.gov/TABS/Search/Project/TABS2027000611",
+          "https://www.aol.com/articles/construction-begins-nearly-400-million-094024000.html",
+          "https://www.hitachienergy.com/at/de/news-and-events/press-releases/2026/10/hitachi-energy-and-ansaldo-energia-launch-a-strategic-partnership-to-bring-integrated-power-solutions-to-meet-surging-electricity-demand",
+          "https://www.hitachi.com/en/press/articles/2026/10/1016a/"
+        ],
+        "source_limits": [
+          "Latest default-main instruction efdea14ae9ce5940e5ee25b6bb08e82662a74918. Required instructions/specifications/full ledger and three related articles fetched at same commit;complete instruction bodies read in untruncated chunks. Recent article blobs unchanged from previously read versions.",
+          "Fresh alpha-quant default metadata/main and complete CSV read:3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7/blob88422949d38165d4757a1e24c27f8662bede14c1,98active. Grouped discovery not98 individual primary validations. Primary47/pending51,monthly21/product15/partner4/regulator3 unchanged.",
+          "TSMC Q4 table reopened USD52.3–54.3bn/GM65–67%/OP56.5–58.5%,unchanged. Sixcore indices inspected via available body/find excerpts;NVIDIA new October17 Spark launch blog is local-PC context,not new CSP orders. No verified new MediaTek TPU design/NRE/production allocation;old Marvell/AMD role reports and ByteDance talks not promoted to signed awards.",
+          "FiveCSP landing pages reopened;Amazon/Alphabet extraction dynamic/incomplete,Oracle page not complete filings verification. No new comparable capex aggregate,utilization or supplier earnings revision claimed.",
+          "Fresh outside/downside queries rediscovers prior Anthropic/Blackstone financing,NiSource/EverWind/AEP power,Schneider guidance,CoreWeave/Oracle risks,DRAM and passive-component reports;deduplicated against95events/180candidates/94screenings and available notification baseline. New crawl dates do not refresh old event dates.",
+          "Hut8 July20 issuer numeric highlights and June9 financing summary directly read;full press bodies incomplete. TDLR September9 architectural-barriers registration directly read. October16 construction headline not treated as new start;August issuer-indexed text already states underway. TCEQ status and timing reconciliation pending;no inferred exemption or confirmed delivery delay.",
+          "Hitachi Energy October16 MoU body read;generation-plus-grid cooperation explicitly targets data centers,without named award or financial terms. Candidate only,not material earnings alert.",
+          "Sigurd direct issuer monthly page again failed;Sinbon direct page onlyshell. Indexed numbers not credited as primary;no zero-fill or financial inference. Existing dated blockers preserved.",
+          "Append two candidates and one screening only;all prior facts/events/articles preserved. No current quotes,valuation,private holdings/flows or other private records written. Ledger-only JSON/history/fresh-head/blob/CAS/readback/only-target checks;no article build/deploy/publication claim."
         ]
       }
     ],
@@ -10528,6 +10572,60 @@
         "Invalidate AI-specific interpretation if non-AI business or timing explains the revenue change."
       ],
       "publication_status": "not_drafted"
+    },
+    {
+      "key": "hut8-beacon-point-historical-lease-financing-and-permit-to-delivery-reconciliation",
+      "companies": [
+        "Hut 8 / Beacon Point DC LLC",
+        "Vertiv",
+        "Jacobs"
+      ],
+      "sources": [
+        "https://www.hut8.com/news-insights/press-releases/hut-8-fully-commercializes-1-gw-beacon-point-ai-data-center-campus-with-second-352-mw-it-lease",
+        "https://www.hut8.com/news-insights/press-releases/hut-8-reports-second-quarter-2026-results",
+        "https://www.hut8.com/news-insights/press-releases/hut-8-closes-usd4-25-billion-of-investment-grade-senior-secured-notes-for-beacon-point-data",
+        "https://www.hut8.com/data-centers/beacon-point",
+        "https://www.aol.com/articles/construction-begins-nearly-400-million-094024000.html",
+        "https://www.tdlr.texas.gov/TABS/Search/Project/TABS2027000611"
+      ],
+      "stage": "historical_issuer_lease_financing_summary_and_state_building_registration_checked_full_execution_and_tceq_status_pending",
+      "facts": {
+        "baseline": "New to ledger,not a new October18 lease/financing. July20 issuer heading and numeric highlights directly read:second15-year352MW IT lease brings contracted campus IT capacity to704MW and base-term value toUSD19.6bn. 1GW is utility capacity,not IT capacity.",
+        "financing": "June9 issuer heading/highlights confirm USD4.25bn senior-secured financing closed,fully amortizing and nonrecourse. Full press body/coupon/indenture not exposed in direct extraction;do not promote search-indexed terms to completed document validation.",
+        "registration": "Texas TDLR Architectural Barriers record TABS2027000611:registered September9,planned start September28,completion November5 2027,estimated costUSD398,985,153 and657,130sqft building/support structures. Status is Project Registered;not TCEQ environmental permit approval,completed construction or whole-campus/compute capex.",
+        "reporting": "October16 Caller-Times original report viaAOL describes construction activity. August4 issuer search-indexed body already described construction underway;not verified as a newly begun project this week.",
+        "limits": "Tenant identity confidential in issuer summary;local report's operator count not reconciled. No Nvidia/Lambda/Anthropic tenant inferred. Exact TCEQ permits/exemptions,delivery/acceptance,phase-two funding and rental cash pending;do not infer statewide pause exemption or a proved delay from different construction/data-hall milestones."
+      },
+      "questions": [
+        "Read complete issuer filings and definitive lease/acceptance and phase-two financing terms.",
+        "Verify project-specific TCEQ permits and whether pause changes schedule,without equating TDLR registration to approval.",
+        "Reconcile building completion with energized IT delivery,retained project profit and rent;construction alone does not establish billable capacity."
+      ],
+      "publication_status": "historical_stage_reconciliation_candidate_no_material_alert_no_article"
+    },
+    {
+      "key": "hitachi-ansaldo-integrated-power-mou-to-customer-orders-and-profit",
+      "companies": [
+        "Hitachi Energy",
+        "Ansaldo Energia"
+      ],
+      "sources": [
+        "https://www.hitachienergy.com/at/de/news-and-events/press-releases/2026/10/hitachi-energy-and-ansaldo-energia-launch-a-strategic-partnership-to-bring-integrated-power-solutions-to-meet-surging-electricity-demand",
+        "https://www.hitachi.com/en/press/articles/2026/10/1016a/"
+      ],
+      "stage": "october16_issuer_mou_body_read_no_named_customer_order_or_financial_revision",
+      "facts": {
+        "event_date": "2026-10-16",
+        "relationship": "Signed MoU to develop/market integrated generation and grid solutions:Ansaldo gas turbines/generators with Hitachi high-voltage,transformers,automation,power electronics and system integration,for50Hz/60Hz markets including data centers.",
+        "mechanism": "Integrated power-to-load design may reduce interface/schedule burden;retained profit would require executable customer orders and service economics.",
+        "limits": "No named CSP,project award,capacity,contract amount,committed delivery,margin or cash disclosed. MoU is a collaboration stage,not a supplier order or delivered generation;not a new earnings forecast."
+      },
+      "questions": [
+        "Identify first contracted customer/project and scope allocation between partners.",
+        "Verify deployment timing,performance guarantees,working capital and margin retention.",
+        "Reassess if integration remains a marketing arrangement without orders or does not reduce time-to-power."
+      ],
+      "publication_status": "relationship_candidate_no_material_earnings_alert_no_article"
     }
   ],
   "blockers": [
@@ -10547,7 +10645,7 @@
     }
   ],
   "last_research_date": "2026-10-18",
-  "instruction_commit_sha": "5536eee80af2f8e896531026298602584c2163c6",
+  "instruction_commit_sha": "efdea14ae9ce5940e5ee25b6bb08e82662a74918",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
