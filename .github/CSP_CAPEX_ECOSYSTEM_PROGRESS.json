@@ -2821,12 +2821,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-17",
-      "checked_at": "2026-10-17T08:26:22Z",
-      "instruction_commit_sha": "3a346cf4529bcc8eb0d9f6bcf8b606523a9637cb",
+      "checked_at": "2026-10-17T08:56:30Z",
+      "instruction_commit_sha": "07b57e73c06a6a2f1637ddc698203fccee5d2d88",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh98-name grouped discovery,six core issuer indices,separate TPU procurement,five CSP pages and owner-domain discovery,outside opportunities and downside. Camtek historical primary outlook newly discovered;GPTC catalog baseline andVCI restructuring candidate added.",
+      "scope": "Fresh14-group discovery covers all98 active names;six core issuer indices andTSMC guidance table,separateTPU search,fiveCSP pages plusowner-domain discovery,outside supplier anddownside follow-up. Two research candidates added;no new material alert orarticle.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -2839,25 +2839,23 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://www.sec.gov/Archives/edgar/data/1109138/000117891326004767/zk2636225.htm",
-        "https://www.sec.gov/Archives/edgar/data/1109138/000117891326004769/zk2636226.htm",
-        "https://www.camtek.com/news-and-events/camtek-announces-results-for-the-second-quarter-of-2026/",
-        "https://www.gptc.com.tw/",
-        "https://www.gptc.com.tw/product/Combo-System/",
-        "https://www.gptc.com.tw/investors/Investor-Conference/",
-        "https://www.globenewswire.com/news-release/2026/10/16/3382838/0/en/vci-global-advances-ai-infrastructure-and-token-services-strategy-strengthens-balance-sheet-in-1h2026.html"
+        "https://www.sigurd.com.tw/zh-tw/monthly-revenue",
+        "https://www.liteon.com/zh-tw/news/press-center/content/quarterly-second-eps-2026",
+        "https://intestcorp.gcs-web.com/news-releases/news-release-details/intest-expects-record-orders-q3-2026-and-revenue-high-end",
+        "https://sfgov.legistar.com/LegislationDetail.aspx?GUID=AF7EB213-B55E-4BC5-9F8F-0F965226CB04&ID=8217305",
+        "https://sfstandard.com/2026/10/16/mayor-lurie-data-center-moratorium/"
       ],
       "source_limits": [
-        "Latest alpha-quant default main3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7 andfull CSV88422949d38165d4757a1e24c27f8662bede14c1 read. All98 active names received14 grouped discovery queries,not98 individual latest-filings validations.",
-        "Primary-company historical fact baseline44/98,pending54. AddedGPTC product capability only;no latest2026 financial/body credit. Monthly18,partner4,regulator3 unchanged;product13. Camtek/VCI outside universe;no watchlist mutation.",
-        "TSMC Q3/Q4 table andMediaTek index rechecked;NVIDIA/AMD/Broadcom/Marvell current issuer indices reviewed. Separate TPU search adds no authenticated new allocation,NRE,design-win orproduction-economics revision.",
-        "Five CSP pages plus owner-domain discovery checked. Amazon/Alphabet dynamic financial bodies incomplete;Oracle landingpage not a complete release feed. No comparable aggregate capex orwhole-current-filings conclusion claimed.",
-        "Camtek original event dateOctober14 overrides later reprints. SEC release,selected deck passages andAugust10 issuer baseline verified. Initial2027 revenue view is distinct from three-year target model;no confirmed EPS revision or market-wide consensus conclusion.",
-        "VCI original issuer summary obtained afterManilaTimes402. Portfolio disposals andfinancing explain reporting-scope/cash caveats;not an AI demand-collapse signal. Full filing andAI-only commercial economics pending.",
-        "GPTC legacy presentation endpoint failed;current conference listing exposes2025 andolder entries. Undated product catalog isnot a new October17 order. Separate other Taiwan issuer revenue leads remain reproductions,not additional primary counts.",
-        "Prior Anthropic/Blackstone financing,AWS CFO payback,CoreWeave risk,CMA proposal,Schneider/AIXTRON/Semtech/VAT,MediaTek talks andTPU delays deduplicated. New scrape date,price movement ortarget-price commentary not enough for a repeat alert.",
-        "All90 prior events,165 prior candidates,81 prior screenings,articles andhistorical blockers preserved. One primary event,three candidates andone screening added. Public ledger excludes stock prices,valuation,targets,positions andtrading conditions.",
-        "No article drafted/published;no lint,build,deploy orHTTP-content completion claimed. Ledger-only CAS,exactremote readback andintended-file-only compare required. No automation changes."
+        "Freshalpha-quant metadata/default main andhead3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7 obtained;fullCSV88422949d38165d4757a1e24c27f8662bede14c1 read. Grouped search isdiscovery,not98 individual currentfilings validation.",
+        "Distinct historical primary-fact baseline remains44/98,pending54;monthly18,partner4,regulator3,product13 unchanged. No watchlist mutation.",
+        "TSMC Q3 actual/Q4 guidance table unchanged fromrecorded release. MediaTek index andseparateTPU search establish no new authenticated allocation,NRE,design-win orcommercial-economics revision. NVIDIA/AMD/Broadcom/Marvell indices add no incremental relevant financial guidance.",
+        "FiveCSP pages andowner-domain discovery checked. Amazon/Alphabet financial bodies remain dynamic/incomplete;Oracle landingpage isnot a full currentreleasefeed. No exhaustive currentfiling oraggregatecapex completion claimed.",
+        "Sigurd monthly page twice timedout;LITEON historicalQ2 page twice502. Search-index figures were not promoted to obtained numerical primary-body validation. These gaps affect those companies,not proof of no news.",
+        "InTest October5 release fully read. Preliminary orders/backlog andAI-linked test relationship add historical candidate only;highend of existing revenueguide isnot a guide increase. FinalNovember6 results andprofit/cash conversion pending.",
+        "SanFrancisco officialregister confirmsOctober16 mayor approval/enactment afterOctober6 boardaction. Signedfinalattachment410 prevents exactdefinitions/exceptions check. Localoriginalbody obtained;Benzinga andPA Bulletin directbodies inaccessible. No namedproject/MWorCSP financialexposure inferred.",
+        "Camtek October14 quantified2027outlook already recorded andnotified;later reprints notnew. Anthropic/Blackstone,CoreWeavefinancing,Jupiterforce-majeure,Semtech/Schneider/AIXTRON/VAT andTPU brokerleads deduplicated. Price moves andtargets not earnings/consensus revisions.",
+        "All91 prior events,168 prior candidates,82 prior screenings,articles anddated blockers retained. Two candidates andone screening appended. Public ledger has no stockprices,valuation,targets,holdings ortrading conditions.",
+        "No article drafted,published orregistered;no lint/build/deploy/HTTP completion claimed. Ledger-only write requires freshhead/blob,CAS,no force,exact remote readback andonly-target-file compare. No automation changes."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -5053,6 +5051,45 @@
           "Prior Anthropic/Blackstone financing,AWS CFO payback,CoreWeave risk,CMA proposal,Schneider/AIXTRON/Semtech/VAT,MediaTek talks andTPU delays deduplicated. New scrape date,price movement ortarget-price commentary not enough for a repeat alert.",
           "All90 prior events,165 prior candidates,81 prior screenings,articles andhistorical blockers preserved. One primary event,three candidates andone screening added. Public ledger excludes stock prices,valuation,targets,positions andtrading conditions.",
           "No article drafted/published;no lint,build,deploy orHTTP-content completion claimed. Ledger-only CAS,exactremote readback andintended-file-only compare required. No automation changes."
+        ]
+      },
+      {
+        "date": "2026-10-17",
+        "checked_at": "2026-10-17T08:56:30Z",
+        "instruction_commit_sha": "07b57e73c06a6a2f1637ddc698203fccee5d2d88",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh14-group discovery covers all98 active names;six core issuer indices andTSMC guidance table,separateTPU search,fiveCSP pages plusowner-domain discovery,outside supplier anddownside follow-up. Two research candidates added;no new material alert orarticle.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://www.sigurd.com.tw/zh-tw/monthly-revenue",
+          "https://www.liteon.com/zh-tw/news/press-center/content/quarterly-second-eps-2026",
+          "https://intestcorp.gcs-web.com/news-releases/news-release-details/intest-expects-record-orders-q3-2026-and-revenue-high-end",
+          "https://sfgov.legistar.com/LegislationDetail.aspx?GUID=AF7EB213-B55E-4BC5-9F8F-0F965226CB04&ID=8217305",
+          "https://sfstandard.com/2026/10/16/mayor-lurie-data-center-moratorium/"
+        ],
+        "source_limits": [
+          "Freshalpha-quant metadata/default main andhead3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7 obtained;fullCSV88422949d38165d4757a1e24c27f8662bede14c1 read. Grouped search isdiscovery,not98 individual currentfilings validation.",
+          "Distinct historical primary-fact baseline remains44/98,pending54;monthly18,partner4,regulator3,product13 unchanged. No watchlist mutation.",
+          "TSMC Q3 actual/Q4 guidance table unchanged fromrecorded release. MediaTek index andseparateTPU search establish no new authenticated allocation,NRE,design-win orcommercial-economics revision. NVIDIA/AMD/Broadcom/Marvell indices add no incremental relevant financial guidance.",
+          "FiveCSP pages andowner-domain discovery checked. Amazon/Alphabet financial bodies remain dynamic/incomplete;Oracle landingpage isnot a full currentreleasefeed. No exhaustive currentfiling oraggregatecapex completion claimed.",
+          "Sigurd monthly page twice timedout;LITEON historicalQ2 page twice502. Search-index figures were not promoted to obtained numerical primary-body validation. These gaps affect those companies,not proof of no news.",
+          "InTest October5 release fully read. Preliminary orders/backlog andAI-linked test relationship add historical candidate only;highend of existing revenueguide isnot a guide increase. FinalNovember6 results andprofit/cash conversion pending.",
+          "SanFrancisco officialregister confirmsOctober16 mayor approval/enactment afterOctober6 boardaction. Signedfinalattachment410 prevents exactdefinitions/exceptions check. Localoriginalbody obtained;Benzinga andPA Bulletin directbodies inaccessible. No namedproject/MWorCSP financialexposure inferred.",
+          "Camtek October14 quantified2027outlook already recorded andnotified;later reprints notnew. Anthropic/Blackstone,CoreWeavefinancing,Jupiterforce-majeure,Semtech/Schneider/AIXTRON/VAT andTPU brokerleads deduplicated. Price moves andtargets not earnings/consensus revisions.",
+          "All91 prior events,168 prior candidates,82 prior screenings,articles anddated blockers retained. Two candidates andone screening appended. Public ledger has no stockprices,valuation,targets,holdings ortrading conditions.",
+          "No article drafted,published orregistered;no lint/build/deploy/HTTP completion claimed. Ledger-only write requires freshhead/blob,CAS,no force,exact remote readback andonly-target-file compare. No automation changes."
         ]
       }
     ],
@@ -9541,6 +9578,69 @@
         "Test dilution/funding requirements and productive-capacity milestones against marketing plans;no sector-wide inference from one small issuer."
       ],
       "publication_status": "below_material_ecosystem_alert_threshold_not_drafted"
+    },
+    {
+      "key": "intest-ai-backend-test-orders-backlog-and-profit-conversion",
+      "companies": [
+        "InTest Corporation (INTT)"
+      ],
+      "date": "2026-10-17",
+      "instruction_commit_sha": "07b57e73c06a6a2f1637ddc698203fccee5d2d88",
+      "sources": [
+        "https://intestcorp.gcs-web.com/news-releases/news-release-details/intest-expects-record-orders-q3-2026-and-revenue-high-end"
+      ],
+      "stage": "historical_october5_issuer_preliminary_orders_backlog_and_guidance_position_verified_not_new_october17_release",
+      "facts": {
+        "source_date": "2026-10-05",
+        "period": "Q3 ended 2026-09-30",
+        "orders_usd_million": [
+          48,
+          50
+        ],
+        "backlog_usd_million": [
+          58,
+          60
+        ],
+        "q3_revenue_guidance_usd_million": [
+          33,
+          35
+        ],
+        "verified_relationship": "Issuer links semiconductor test demand partly to AI data-center capacity expansion;high-power chillers and manipulators contribute.",
+        "limits": "Preliminary results;revenue expected at high end of existing range,not a raised range. Backlog is unrecognized firm orders with possible cancellation/suspension. No named CSP award,AI-only revenue share,margin or cash improvement established. Outside active Taiwan universe."
+      },
+      "questions": [
+        "Verify November6 final results,shipment acceptance,gross profit and operating cash conversion.",
+        "Separate AI-linked back-end testing from automotive/industrial and other end markets.",
+        "Test backlog cancellations,customer concentration and whether new product mix offsets expansion costs."
+      ],
+      "publication_status": "historical_research_candidate_below_new_material_alert_threshold_not_drafted"
+    },
+    {
+      "key": "san-francisco-data-center-moratorium-enactment-and-project-exposure",
+      "companies": [
+        "San Francisco data-center developers"
+      ],
+      "date": "2026-10-17",
+      "instruction_commit_sha": "07b57e73c06a6a2f1637ddc698203fccee5d2d88",
+      "sources": [
+        "https://sfgov.legistar.com/LegislationDetail.aspx?GUID=AF7EB213-B55E-4BC5-9F8F-0F965226CB04&ID=8217305",
+        "https://sfstandard.com/2026/10/16/mayor-lurie-data-center-moratorium/"
+      ],
+      "stage": "october16_primary_legislative_status_verified_final_signed_text_fetch_failed_project_scope_pending",
+      "facts": {
+        "file_number": "261021",
+        "ordinance_number": "215-26",
+        "board_action_date": "2026-10-06",
+        "mayor_approval_and_enactment_date": "2026-10-16",
+        "verified_scope": "Legislative register confirms a citywide45-day interim zoning moratorium for defined data centers;local original reporting confirms signature.",
+        "limits": "Official signed Leg Final attachment returned410 Gone. Exact definitions,exceptions,existing-site treatment and termination mechanics remain unverified. No named CSP capacity,MW,contract cancellation or supplier earnings effect established. Not a national ban or shutdown of all existing facilities."
+      },
+      "questions": [
+        "Obtain signed ordinance and compare defined uses,exceptions,extensions and protected existing approvals.",
+        "Identify affected projects,permitted capacity,tenant commitments and potential alternative locations before assigning financial exposure.",
+        "Track replacement zoning controls and any extension after initial moratorium;withdraw sector-wide implications absent material exposed capacity."
+      ],
+      "publication_status": "local_regulatory_candidate_below_material_ecosystem_alert_threshold_not_drafted"
     }
   ],
   "blockers": [
@@ -9560,7 +9660,7 @@
     }
   ],
   "last_research_date": "2026-10-17",
-  "instruction_commit_sha": "3a346cf4529bcc8eb0d9f6bcf8b606523a9637cb",
+  "instruction_commit_sha": "07b57e73c06a6a2f1637ddc698203fccee5d2d88",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
