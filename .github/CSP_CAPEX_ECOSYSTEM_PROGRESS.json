@@ -2758,12 +2758,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-17",
-      "checked_at": "2026-10-17T00:52:18Z",
-      "instruction_commit_sha": "f945fd53306d8858ac498612ad5298d4029692dc",
+      "checked_at": "2026-10-17T00:58:24Z",
+      "instruction_commit_sha": "7da4539958c1c91ee9076a6060e13d6b540ab4df",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh98-name grouped discovery,core-six issuer/index checks,five-CSP landing pages and owner-domain discovery,outside opportunities and downside; one historical FSP primary baseline added,no new material event or article.",
+      "scope": "Fresh complete active-universe grouped discovery,core-six issuer pages and TPU/ASIC checks,five-CSP landing pages/owner-domain discovery,outside opportunities and downside. Winbond cumulative-equipment disclosure added as candidate verification only; no new material event or article.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -2776,21 +2776,22 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://www.fsp-group.com/en/chairmanstatement.html",
-        "https://www.fsp-group.com/download/260929-6ABB638EF21C6.pdf",
-        "https://www.reuters.com/legal/transactional/why-coreweave-is-crosshairs-ai-scare-2026-10-16/"
+        "https://news.ustv.com.tw/companynews/261267",
+        "https://www.winbond.com/hq/about-winbond/investor/shareholder-services/material-information/?__locale=zh_TW",
+        "https://www.realtek.com/InvestorRelations/MonthlyRevenues?menu_id=704",
+        "https://www.realtek.com/InvestorRelations/MonthlyRevenues?lang=zh-TW&menu_id=459"
       ],
       "source_limits": [
-        "Latest alpha-quant default main6aa19a55f33c995c8f703bfe0c65dcdf07e6b6d3 and CSVblob88422949d38165d4757a1e24c27f8662bede14c1 read fully. All98 active names included in14 grouped recent discovery queries; this is not98 individual current-filing validations.",
-        "Historical FSP2025 issuer shareholder-letter financial and server-power capability baseline adds3015:distinct primary baselines39to40,remaining59to58. Monthly18,partner4,regulator3,product9 unchanged. No currentquarter or newmaterial event coverage inferred.",
-        "Initial FSP letter/investor-index fetches timed out; retries retrieved selected annual results and2026 business-plan passages. September30 conference index and PDF link identified,but numeric PDF-body retry timed out. Annual baseline only,not full current presentation validation.",
-        "TSMC current Q3/Q4 page and MediaTek issuer release index rechecked. Core-company fresh ASIC/TPU discovery repeats known procurement,timing and product reporting; no authenticated new Google allocation,NRE,margin or generation-contract terms established.",
-        "NVIDIA October16 PC/automotive items,AMD latest October12 Helion andMarvell current release/blog indexes overlap baselines. Broadcom direct financial-news index open failed; fresh indexed current list obtained,not a fullfilings audit.",
-        "Five-CSP landing pages and owner-domain discovery reviewed;Amazon/Alphabet dynamic content incomplete. Historical country investment andsoftware news notnewcapex. No new aggregate spending or supplier award established.",
-        "CoreWeave October16 explainer read and deduplicated against existing credit-risk updates; no newdefault,closed funding,capexcut or named cancellation verified. CMA process overlap retained below earnings threshold.",
-        "Fermi October16 amendment andEverWind/Anthropic lease alreadyregistered in latestledger andpriornotification. AWS payback claim remains method-limited candidate. No duplicate alert.",
-        "All89prior events,152prior candidates,73prior screenings,articles anddated blockers preserved. Onehistorical candidate and onecredit-source update appended; no price,valuation,target,position ortrading condition recorded.",
-        "No newarticle,lint,build,deploy orpublic-page completion claimed;noautomation change andnoother-repository watchlist mutation."
+        "Fresh alpha-quant main6aa19a55f33c995c8f703bfe0c65dcdf07e6b6d3 and CSVblob88422949d38165d4757a1e24c27f8662bede14c1 fully read. All98 active names included in14 recent grouped queries; not98 individual current-filings validations.",
+        "Distinct historical active-company primary baselines40/98,remaining58,monthly18,partner4,regulator3,product9 unchanged. Prior pending-source gaps not individually re-audited. Indexed numbers or notice reproductions do not add primary coverage.",
+        "TSMC Q3 actual/Q4 guidance and MediaTek release index remain existing baselines. Recent TPU/ASIC discovery establishes no new authenticated Google allocation,NRE,design responsibility,generation renewal or program-margin terms.",
+        "NVIDIA,AMD,Broadcom and Marvell current issuer lists checked. Broadcom direct list accessible this run; latest reviewed product/partner headlines overlap existing baselines. No fresh quantified core-company award or financial revision verified.",
+        "Five CSP landing pages and owner-domain discovery checked. Amazon/Alphabet dynamic content incomplete; no full current-filings audit,new cross-company capex total or procurement award claimed.",
+        "Winbond October16 equipment notice full reproduction read,including prior board approvals. Issuer-linked MOPS returned error page; MoneyDJ inaccessible and nStock body not rendered. Reproductions/index entries are one underlying disclosure. No new annual capex or capacity guidance established.",
+        "Realtek English/Chinese original monthly pages and retries expose headers only,without numeric rows. Indexed secondary September numbers not primary-validated;2379 remains pending. This is an access gap,not no-news evidence.",
+        "Outside-universe and downside discovery revisits Fermi,EverWind/Anthropic,AWS payback,CoreWeave and Prologis already recorded. No material incremental contract,funding close,default,capex cut or named cancellation verified; no repeated alert.",
+        "All89 public events,153 candidates,74 prior screenings,articles and dated blockers preserved. One existing candidate verification and one screening appended. No public quote,valuation,target,position or trading condition.",
+        "No article draft,lint,build,deploy or public-page completion claimed. Ledger-only remote readback is required; no automation or other-repository watchlist mutation."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -4666,6 +4667,44 @@
           "Fermi October16 amendment andEverWind/Anthropic lease alreadyregistered in latestledger andpriornotification. AWS payback claim remains method-limited candidate. No duplicate alert.",
           "All89prior events,152prior candidates,73prior screenings,articles anddated blockers preserved. Onehistorical candidate and onecredit-source update appended; no price,valuation,target,position ortrading condition recorded.",
           "No newarticle,lint,build,deploy orpublic-page completion claimed;noautomation change andnoother-repository watchlist mutation."
+        ]
+      },
+      {
+        "date": "2026-10-17",
+        "checked_at": "2026-10-17T00:58:24Z",
+        "instruction_commit_sha": "7da4539958c1c91ee9076a6060e13d6b540ab4df",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh complete active-universe grouped discovery,core-six issuer pages and TPU/ASIC checks,five-CSP landing pages/owner-domain discovery,outside opportunities and downside. Winbond cumulative-equipment disclosure added as candidate verification only; no new material event or article.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://news.ustv.com.tw/companynews/261267",
+          "https://www.winbond.com/hq/about-winbond/investor/shareholder-services/material-information/?__locale=zh_TW",
+          "https://www.realtek.com/InvestorRelations/MonthlyRevenues?menu_id=704",
+          "https://www.realtek.com/InvestorRelations/MonthlyRevenues?lang=zh-TW&menu_id=459"
+        ],
+        "source_limits": [
+          "Fresh alpha-quant main6aa19a55f33c995c8f703bfe0c65dcdf07e6b6d3 and CSVblob88422949d38165d4757a1e24c27f8662bede14c1 fully read. All98 active names included in14 recent grouped queries; not98 individual current-filings validations.",
+          "Distinct historical active-company primary baselines40/98,remaining58,monthly18,partner4,regulator3,product9 unchanged. Prior pending-source gaps not individually re-audited. Indexed numbers or notice reproductions do not add primary coverage.",
+          "TSMC Q3 actual/Q4 guidance and MediaTek release index remain existing baselines. Recent TPU/ASIC discovery establishes no new authenticated Google allocation,NRE,design responsibility,generation renewal or program-margin terms.",
+          "NVIDIA,AMD,Broadcom and Marvell current issuer lists checked. Broadcom direct list accessible this run; latest reviewed product/partner headlines overlap existing baselines. No fresh quantified core-company award or financial revision verified.",
+          "Five CSP landing pages and owner-domain discovery checked. Amazon/Alphabet dynamic content incomplete; no full current-filings audit,new cross-company capex total or procurement award claimed.",
+          "Winbond October16 equipment notice full reproduction read,including prior board approvals. Issuer-linked MOPS returned error page; MoneyDJ inaccessible and nStock body not rendered. Reproductions/index entries are one underlying disclosure. No new annual capex or capacity guidance established.",
+          "Realtek English/Chinese original monthly pages and retries expose headers only,without numeric rows. Indexed secondary September numbers not primary-validated;2379 remains pending. This is an access gap,not no-news evidence.",
+          "Outside-universe and downside discovery revisits Fermi,EverWind/Anthropic,AWS payback,CoreWeave and Prologis already recorded. No material incremental contract,funding close,default,capex cut or named cancellation verified; no repeated alert.",
+          "All89 public events,153 candidates,74 prior screenings,articles and dated blockers preserved. One existing candidate verification and one screening appended. No public quote,valuation,target,position or trading condition.",
+          "No article draft,lint,build,deploy or public-page completion claimed. Ledger-only remote readback is required; no automation or other-repository watchlist mutation."
         ]
       }
     ],
@@ -7162,7 +7201,38 @@
         "Separate price, volume, mix and subsidiary contributions, then reconcile quarterly gross profit and operating cash.",
         "Identify actual server/customer qualification and memory substitution exposure; incremental capacity or weaker demand could offset pricing."
       ],
-      "publication_status": "not_drafted"
+      "publication_status": "not_drafted",
+      "verification_updates": [
+        {
+          "date": "2026-10-17",
+          "checked_at": "2026-10-17T00:58:24Z",
+          "instruction_commit_sha": "7da4539958c1c91ee9076a6060e13d6b540ab4df",
+          "stage": "october16_cumulative_equipment_notice_reproduction_verified_original_mops_body_unavailable_no_new_capex_guidance",
+          "sources": [
+            "https://news.ustv.com.tw/companynews/261267",
+            "https://www.winbond.com/hq/about-winbond/investor/shareholder-services/material-information/?__locale=zh_TW",
+            "https://mops.twse.com.tw/mops/web/index"
+          ],
+          "facts": {
+            "announcement_date": "2026-10-16",
+            "transaction_period_start": "2026-05-22",
+            "transaction_period_end": "2026-10-16",
+            "cumulative_equipment_purchase_ntd": 3220187982,
+            "counterparty": "Lam Research International Sdn.Bhd",
+            "related_party": false,
+            "board_approval_dates": [
+              "2026-02-10",
+              "2026-05-05",
+              "2026-08-06"
+            ],
+            "payment": "Per purchase-order terms",
+            "purpose": "Production equipment"
+          },
+          "limits": "Complete USTV reproduction read through item31; it attributes disclosure to MOPS. Issuer material-information link redirects to MOPS error page; MoneyDJ reproduction inaccessible. One underlying notice,not independent confirmations. Cumulative purchases,not an October16 single-day order or newly raised annual budget. No site,node,incremental capacity,AI customer,mix,profit or cash-return revision established.",
+          "next_check": "Obtain issuer/exchange original and reconcile approved capex,delivery,utilization and operating cash before changing capacity or profit assumptions.",
+          "notification_status": "below_material_increment_threshold_no_repeat_alert"
+        }
+      ]
     },
     {
       "key": "sunon-mgx-liquid-cooling-showcase-to-qualified-orders-and-profit",
@@ -8706,7 +8776,7 @@
     }
   ],
   "last_research_date": "2026-10-17",
-  "instruction_commit_sha": "f945fd53306d8858ac498612ad5298d4029692dc",
+  "instruction_commit_sha": "7da4539958c1c91ee9076a6060e13d6b540ab4df",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
