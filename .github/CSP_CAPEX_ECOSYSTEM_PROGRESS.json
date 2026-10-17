@@ -2882,13 +2882,13 @@
       "3234"
     ],
     "current_run_screening": {
-      "date": "2026-10-17",
-      "checked_at": "2026-10-17T14:35:54Z",
-      "instruction_commit_sha": "3d11396fd40be25dfd7d9e241691ce34381b5512",
+      "date": "2026-10-18",
+      "checked_at": "2026-10-17T16:32:07Z",
+      "instruction_commit_sha": "a546c547295ea86c4ba13b434b039c49fcfdb90a",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "All98 active names included in14 fresh grouped discovery queries. Sixcore issuer indices,TSMC guidance,Google TPU procurement/NRE,fiveCSP indices,andoutside opportunity/downside discovery reviewed. October12 USFP issuer plan added as historical research candidate.",
+      "scope": "All98 active companies included in14 fresh grouped discovery queries. Sixcore issuer indices,TSMC guidance,TPU procurement/NRE,fiveCSP indices andoutside opportunity/downside discovery checked. October16 JASM approval report retained as a candidate with explicit primary-source gap.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -2901,21 +2901,20 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://nvidianews.nvidia.com/news/nvidia-and-cisco-introduce-new-pluggable-optics-form-factor-to-scale-ai-factories",
-        "https://www.macronix.com/zh-tw/about/investor-relations/Pages/monthly-sales.aspx",
-        "https://www.trendforce.com.tw/research/download/RP261013LA",
-        "https://fortune.com/2026/10/17/ruth-porat-jefferies-chris-wood-ai-buildout-capital-destruction-chinese-open-source-models-differentiation/",
-        "https://datacentremagazine.com/news/this-weeks-top-five-stories-in-the-data-centre-industry-17-october-2026"
+        "https://gmteight.com/content/detail/440337",
+        "https://money.udn.com/money/story/5710/9817537",
+        "https://www.ftnn.com.tw/news/588121",
+        "https://www.newsweekjapan.jp/articles/-/337196"
       ],
       "source_limits": [
-        "Latest defaultmain instruction commit3d11396fd40be25dfd7d9e241691ce34381b5512. Mandatory instructions/specifications andthree related articles fetched completely at this samecommit;byte-for-byte equality with complete immediately preceding reads confirmed. Full current ledger parsed andcompared with preceding exact verified write. No guessed ortruncated mandatory content used.",
-        "Alpha-quant metadata/head andfull CSV reread:main3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7,blob88422949d38165d4757a1e24c27f8662bede14c1,98active names. Fourteen fresh grouped queries are discovery only;many results are stale thematic pages despite freshness filters. Primary-fact46,pending52,monthly20,product15,partner4,regulator3 unchanged.",
-        "Core issuer indices freshly opened;TSMC Q3/Q4 baseline,MediaTek September30/August31 index,Broadcom October13,andAMD/Marvell/NVIDIA dated index entries remain consistent with recorded events. Fresh searches did not establish a new authenticated TPU allocation,NRE,design-win orfinancial revision in obtained material.",
-        "FiveCSP landing/index pages reopened. Amazon/Alphabet financial extraction remains dynamic/incomplete;Oracle landing is not full current-filings validation. Existing Anthropic/Blackstone financing,CoreWeave credit fear,AWS payback,Maia andold Oracle Jupiter items deduplicated;fresh crawl dates are not new events.",
-        "October17 Fortune Porat/Jefferies lead andData Centre Magazine weekly roundup found,butdirect pages inaccessible;no claim of original body verification ornew CSP guidance. Roundup USFP lead traced to full October12 NVIDIA issuer release;product/connector ecosystem plan only,not confirmed production ororder economics.",
-        "Macronix Chinese monthly page opened andsearched;numeric year/month rows still absent from extraction despite indexed values. Existing historical candidate retained without increasing primary coverage. A future-period November cooling-revenue headline excluded as current evidence.",
-        "Deduplication against92public events,174prior candidates,88prior screenings andreadable notification baseline includes latest CXMT preliminary earnings. One historical platform candidate andone screening appended;no public event orarticle added. Preserve all earlier histories anddated blockers. No private quotes,valuation,positions,trading conditions orprivate market data inpublic ledger.",
-        "Ledger-only JSON/preservation checks,freshhead/blob,CAS forcefalse,exact remote readback andonly-target compare required. No articlelint,build,deploy orpublic-content completion claimed."
+        "Latest main instruction commita546c547295ea86c4ba13b434b039c49fcfdb90a. Mandatory instructions,specifications,current full ledger andthree related articles read completely at this revision; no truncated mandatory content orold prompt substituted.",
+        "Alpha-quant latestmain3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7;fullCSV blob88422949d38165d4757a1e24c27f8662bede14c1 contains98active companies. Fourteen fresh grouped searches are discovery only,not98individual primary validations. Many freshness-filtered results are old orreprints. Primary46,pending52,monthly20,product15,partner4,regulator3 unchanged.",
+        "Sixcore issuer indices andTSMC Q3/Q4 figures reopened. Available material did not authenticate a new MediaTek TPU allocation,NRE,design win orfinancial revision. October13 GF TPUv9 milestone-risk reproduction matches existing candidate;no original broker note obtained.",
+        "FiveCSP landing/index pages reopened;Amazon/Alphabet extraction dynamic/incomplete andOracle index not full current-filings verification. Existing Maia,Anthropic financing,CoreWeave credit-risk andOracle project items deduplicated;not treated as new budgets,cash receipts,default orcancellation.",
+        "October17 FTNN Holystone pricing/order headline repeats theOctober16 original-report candidate already recorded;directFTNN body unavailable. October16 Holtek original report read andmatched existing first-orders/small-shipment event;not a new award.",
+        "October16 Reuters JASM amendment approval report body read. New research candidate only;3nm direction previously announced inFebruary. METI index andamendment PDF403 prevented regulator-body verification. Third-party old/new capacity,subsidy andinvestment arithmetic not adopted as established fact;no active-universe primary-count credit.",
+        "Deduplicated against92public events,175prior candidates,89prior screenings andreadable notification baseline. Append onecandidate andonescreening only;no public event orarticle added. Preserve all historical arrays anddated blockers. No private quotations,valuation,positions,trading conditions orprivate market-monitoring data included.",
+        "Ledger-only JSON andhistory-preservation checks plus freshhead/targetblob,CAS forcefalse,exact remote readback andonly-target compare required;no articlelint,build,deploy orpublic-content completion claimed."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -5386,6 +5385,42 @@
           "Macronix Chinese monthly page opened andsearched;numeric year/month rows still absent from extraction despite indexed values. Existing historical candidate retained without increasing primary coverage. A future-period November cooling-revenue headline excluded as current evidence.",
           "Deduplication against92public events,174prior candidates,88prior screenings andreadable notification baseline includes latest CXMT preliminary earnings. One historical platform candidate andone screening appended;no public event orarticle added. Preserve all earlier histories anddated blockers. No private quotes,valuation,positions,trading conditions orprivate market data inpublic ledger.",
           "Ledger-only JSON/preservation checks,freshhead/blob,CAS forcefalse,exact remote readback andonly-target compare required. No articlelint,build,deploy orpublic-content completion claimed."
+        ]
+      },
+      {
+        "date": "2026-10-18",
+        "checked_at": "2026-10-17T16:32:07Z",
+        "instruction_commit_sha": "a546c547295ea86c4ba13b434b039c49fcfdb90a",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "All98 active companies included in14 fresh grouped discovery queries. Sixcore issuer indices,TSMC guidance,TPU procurement/NRE,fiveCSP indices andoutside opportunity/downside discovery checked. October16 JASM approval report retained as a candidate with explicit primary-source gap.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://gmteight.com/content/detail/440337",
+          "https://money.udn.com/money/story/5710/9817537",
+          "https://www.ftnn.com.tw/news/588121",
+          "https://www.newsweekjapan.jp/articles/-/337196"
+        ],
+        "source_limits": [
+          "Latest main instruction commita546c547295ea86c4ba13b434b039c49fcfdb90a. Mandatory instructions,specifications,current full ledger andthree related articles read completely at this revision; no truncated mandatory content orold prompt substituted.",
+          "Alpha-quant latestmain3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7;fullCSV blob88422949d38165d4757a1e24c27f8662bede14c1 contains98active companies. Fourteen fresh grouped searches are discovery only,not98individual primary validations. Many freshness-filtered results are old orreprints. Primary46,pending52,monthly20,product15,partner4,regulator3 unchanged.",
+          "Sixcore issuer indices andTSMC Q3/Q4 figures reopened. Available material did not authenticate a new MediaTek TPU allocation,NRE,design win orfinancial revision. October13 GF TPUv9 milestone-risk reproduction matches existing candidate;no original broker note obtained.",
+          "FiveCSP landing/index pages reopened;Amazon/Alphabet extraction dynamic/incomplete andOracle index not full current-filings verification. Existing Maia,Anthropic financing,CoreWeave credit-risk andOracle project items deduplicated;not treated as new budgets,cash receipts,default orcancellation.",
+          "October17 FTNN Holystone pricing/order headline repeats theOctober16 original-report candidate already recorded;directFTNN body unavailable. October16 Holtek original report read andmatched existing first-orders/small-shipment event;not a new award.",
+          "October16 Reuters JASM amendment approval report body read. New research candidate only;3nm direction previously announced inFebruary. METI index andamendment PDF403 prevented regulator-body verification. Third-party old/new capacity,subsidy andinvestment arithmetic not adopted as established fact;no active-universe primary-count credit.",
+          "Deduplicated against92public events,175prior candidates,89prior screenings andreadable notification baseline. Append onecandidate andonescreening only;no public event orarticle added. Preserve all historical arrays anddated blockers. No private quotations,valuation,positions,trading conditions orprivate market-monitoring data included.",
+          "Ledger-only JSON andhistory-preservation checks plus freshhead/targetblob,CAS forcefalse,exact remote readback andonly-target compare required;no articlelint,build,deploy orpublic-content completion claimed."
         ]
       }
     ],
@@ -10116,6 +10151,32 @@
         "Trace paid customer orders,content per system,qualified supplier shares andrealized margins before attributing financial benefit."
       ],
       "publication_status": "historical_platform_candidate_only_no_material_alert_not_drafted"
+    },
+    {
+      "key": "jasm-kumamoto-fab2-3nm-plan-amendment-approval-and-subsidy-scope",
+      "companies": [
+        "TSMC",
+        "JASM"
+      ],
+      "date": "2026-10-18",
+      "instruction_commit_sha": "a546c547295ea86c4ba13b434b039c49fcfdb90a",
+      "sources": [
+        "https://www.newsweekjapan.jp/articles/-/337196",
+        "https://www.meti.go.jp/policy/mono_info_service/joho/laws/semiconductor/semiconductor_plan.html",
+        "https://www.meti.go.jp/policy/mono_info_service/joho/laws/semiconductor/semiconductor_plan/nintei_tokuteihandoutai_keikaku06-2.pdf"
+      ],
+      "stage": "october16_reuters_original_report_body_read_regulator_original_unavailable",
+      "facts": {
+        "source_date": "2026-10-16",
+        "source_nature": "Reuters Japan report reproduced by Newsweek Japan; not direct regulator-document verification.",
+        "reported_increment": "METI approved changing Kumamoto fab2 to3nm. Reuters reports an initial plan of6000 wafers/month, with quantity under further consideration subject to Japanese government support; TSMC had already announced the3nm direction inFebruary.",
+        "limits": "Plan approval is not completed equipment delivery,qualified customer allocation orrecognized revenue. METI plan index andlinked amendment PDFs returned403; official capacity/subsidy/investment tables were not read. Do not adopt third-party subtraction of different-node wafer plans as an equivalent global capacity reduction,or mix document-scoped investment with current two-fab aggregate comments."
+      },
+      "questions": [
+        "Read authenticated current andprior METI plan tables to reconcile capacity,subsidy ceilings,first-shipment dates andinvestment scope.",
+        "Verify approved funding,tool orders,construction readiness,qualified customer demand andretained economics before estimating supplier revenue."
+      ],
+      "publication_status": "research_candidate_only_no_material_earnings_alert_not_drafted"
     }
   ],
   "blockers": [
@@ -10134,8 +10195,8 @@
       "impact": "Search hits and reposted notices have not been individually checked against company or exchange originals."
     }
   ],
-  "last_research_date": "2026-10-17",
-  "instruction_commit_sha": "3d11396fd40be25dfd7d9e241691ce34381b5512",
+  "last_research_date": "2026-10-18",
+  "instruction_commit_sha": "a546c547295ea86c4ba13b434b039c49fcfdb90a",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
