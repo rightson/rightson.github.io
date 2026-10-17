@@ -2959,12 +2959,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-18",
-      "checked_at": "2026-10-17T21:31:47Z",
-      "instruction_commit_sha": "efdea14ae9ce5940e5ee25b6bb08e82662a74918",
+      "checked_at": "2026-10-17T21:56:35Z",
+      "instruction_commit_sha": "12862153006e12611d6239cd011f2bf6f4f595ba",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh14-query grouped discovery covers98 active names;sixcore/fiveCSP issuer indices,TPU economics and outside opportunity/downside checked. Two research candidates appended;no new public-event or article.",
+      "scope": "Fresh grouped discovery of all98active names; sixcore/fiveCSP available issuer bodies/indices plus TPU economics and outside opportunity/downside checked. No independently verified material increment;screening appended only,no new public_event,candidate or article.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -2977,23 +2977,25 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://www.sigurd.com.tw/zh-tw/monthly-revenue",
-        "https://www.sinbon.com/tw/investors-news/1",
-        "https://www.tdlr.texas.gov/TABS/Search/Project/TABS2027000611",
-        "https://www.aol.com/articles/construction-begins-nearly-400-million-094024000.html",
-        "https://www.hitachienergy.com/at/de/news-and-events/press-releases/2026/10/hitachi-energy-and-ansaldo-energia-launch-a-strategic-partnership-to-bring-integrated-power-solutions-to-meet-surging-electricity-demand",
-        "https://www.hitachi.com/en/press/articles/2026/10/1016a/"
+        "https://pr.tsmc.com/english/news/3346",
+        "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+        "https://www.ftnn.com.tw/news/587998",
+        "https://money.udn.com/money/story/5607/9820823",
+        "https://yageogroup.com/About/InvestorRelations",
+        "https://www.datacenterdigest.net/reuters-data-center-demand-forces-power-companies-to-scramble-for-equipment/"
       ],
       "source_limits": [
-        "Latest default-main instruction efdea14ae9ce5940e5ee25b6bb08e82662a74918. Required instructions/specifications/full ledger and three related articles fetched at same commit;complete instruction bodies read in untruncated chunks. Recent article blobs unchanged from previously read versions.",
-        "Fresh alpha-quant default metadata/main and complete CSV read:3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7/blob88422949d38165d4757a1e24c27f8662bede14c1,98active. Grouped discovery not98 individual primary validations. Primary47/pending51,monthly21/product15/partner4/regulator3 unchanged.",
-        "TSMC Q4 table reopened USD52.3–54.3bn/GM65–67%/OP56.5–58.5%,unchanged. Sixcore indices inspected via available body/find excerpts;NVIDIA new October17 Spark launch blog is local-PC context,not new CSP orders. No verified new MediaTek TPU design/NRE/production allocation;old Marvell/AMD role reports and ByteDance talks not promoted to signed awards.",
-        "FiveCSP landing pages reopened;Amazon/Alphabet extraction dynamic/incomplete,Oracle page not complete filings verification. No new comparable capex aggregate,utilization or supplier earnings revision claimed.",
-        "Fresh outside/downside queries rediscovers prior Anthropic/Blackstone financing,NiSource/EverWind/AEP power,Schneider guidance,CoreWeave/Oracle risks,DRAM and passive-component reports;deduplicated against95events/180candidates/94screenings and available notification baseline. New crawl dates do not refresh old event dates.",
-        "Hut8 July20 issuer numeric highlights and June9 financing summary directly read;full press bodies incomplete. TDLR September9 architectural-barriers registration directly read. October16 construction headline not treated as new start;August issuer-indexed text already states underway. TCEQ status and timing reconciliation pending;no inferred exemption or confirmed delivery delay.",
-        "Hitachi Energy October16 MoU body read;generation-plus-grid cooperation explicitly targets data centers,without named award or financial terms. Candidate only,not material earnings alert.",
-        "Sigurd direct issuer monthly page again failed;Sinbon direct page onlyshell. Indexed numbers not credited as primary;no zero-fill or financial inference. Existing dated blockers preserved.",
-        "Append two candidates and one screening only;all prior facts/events/articles preserved. No current quotes,valuation,private holdings/flows or other private records written. Ledger-only JSON/history/fresh-head/blob/CAS/readback/only-target checks;no article build/deploy/publication claim."
+        "Fresh default-main instruction12862153006e12611d6239cd011f2bf6f4f595ba;required instructions,specifications,full JSON ledger and three related article bodies fetched at same commit. AGENTS and article body read in untruncated chunks;all mandatory instruction bodies complete.",
+        "Fresh alpha-quant metadata/main/complete CSV3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7/blob88422949d38165d4757a1e24c27f8662bede14c1,98active.14queries grouped discovery is not98individual primary validations. Primary47,pending51,monthly21/product15/partner4/regulator3 unchanged.",
+        "TSMC quarterly landing twice failed;issuer press release and SEC EX99.1 fullbody readable restored verification of October15baseline,Q4 USD52.3–54.3bn,GM65–67%,OP56.5–58.5%,Q3EPS29.43. No new guidance revision inferred.",
+        "MediaTek press index and fresh targetedTPU queries checked. October17 repost of BofA/ByteDance talks traces to October16coverage and previously recorded October15talks;not signed award. September25UBS forecasts and August/SeptemberAMD/MarvellTPU role reports are old;original broker notes unavailable. No verified newNRE,production allocation,generation renewal or economics.",
+        "NVIDIA October17RTX SparkPCavailability repeats existing launch baseline,notCSP orders. AMDlatestOctober12Helion,MarvellOctober13connectivity/security and BroadcomOctober13VMware index entries did not establish new unrecorded supplier earnings revision.",
+        "FiveCSP available indices inspected;Amazon/Alphabet dynamic extraction incomplete,Oracle index not completefilings review. Microsoft next earningsOctober28. No claim of complete current utilization/capex/AI-monetization audit or new aggregate capex.",
+        "Active98 discovery mostly returns known monthly revenue and media broker recaps. October17ASE forecast of USD8.41bn2027 versusUSD4.14bn2026 and doubledWoS volume is previously tracked attributedBofA thesis;original note absent,not companyguidance. No media consensus promoted to verified forecast revision.",
+        "Yageo legacy monthly path failed,new groupIR body one-lineshell;search-indexed September NT$17,068million/MoM4.5%/YoY46.1% not credited as primary. No extra issuer-count credit or unsupported AI-margin inference.",
+        "October17DataCenterDigest transformer/switchgear shortage article claims Reuters attribution but exposed page provides no Reuterslink/byline/dated original. Targeted Reuters retrieval did not locate matching original;3–5yearlead-time not promoted to independently verified newfact or earningsalert.",
+        "Outside/downside fresh searches rediscover AnthropicBlackstone financing,CoreWeave bond stress,Texaspermits,NiSource/EverWindpower,Schneiderguidance and existingGoogleMonrovia/Cannoli approvals. Deduplicated against95events,182candidates,95prior screenings and available prior notifications;no new default,ordercancel or project-specific loss inferred.",
+        "Screening only;prior facts,candidates,events,articles and dated blockers preserved. No latest-stock-price comparison,valuation,private holdings or institutional-flow data written. Ledger JSON/history/CAS/readback/onlytarget verification required;no articlelint/build/deploy/publication claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -5689,6 +5691,47 @@
           "Hitachi Energy October16 MoU body read;generation-plus-grid cooperation explicitly targets data centers,without named award or financial terms. Candidate only,not material earnings alert.",
           "Sigurd direct issuer monthly page again failed;Sinbon direct page onlyshell. Indexed numbers not credited as primary;no zero-fill or financial inference. Existing dated blockers preserved.",
           "Append two candidates and one screening only;all prior facts/events/articles preserved. No current quotes,valuation,private holdings/flows or other private records written. Ledger-only JSON/history/fresh-head/blob/CAS/readback/only-target checks;no article build/deploy/publication claim."
+        ]
+      },
+      {
+        "date": "2026-10-18",
+        "checked_at": "2026-10-17T21:56:35Z",
+        "instruction_commit_sha": "12862153006e12611d6239cd011f2bf6f4f595ba",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh grouped discovery of all98active names; sixcore/fiveCSP available issuer bodies/indices plus TPU economics and outside opportunity/downside checked. No independently verified material increment;screening appended only,no new public_event,candidate or article.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://pr.tsmc.com/english/news/3346",
+          "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+          "https://www.ftnn.com.tw/news/587998",
+          "https://money.udn.com/money/story/5607/9820823",
+          "https://yageogroup.com/About/InvestorRelations",
+          "https://www.datacenterdigest.net/reuters-data-center-demand-forces-power-companies-to-scramble-for-equipment/"
+        ],
+        "source_limits": [
+          "Fresh default-main instruction12862153006e12611d6239cd011f2bf6f4f595ba;required instructions,specifications,full JSON ledger and three related article bodies fetched at same commit. AGENTS and article body read in untruncated chunks;all mandatory instruction bodies complete.",
+          "Fresh alpha-quant metadata/main/complete CSV3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7/blob88422949d38165d4757a1e24c27f8662bede14c1,98active.14queries grouped discovery is not98individual primary validations. Primary47,pending51,monthly21/product15/partner4/regulator3 unchanged.",
+          "TSMC quarterly landing twice failed;issuer press release and SEC EX99.1 fullbody readable restored verification of October15baseline,Q4 USD52.3–54.3bn,GM65–67%,OP56.5–58.5%,Q3EPS29.43. No new guidance revision inferred.",
+          "MediaTek press index and fresh targetedTPU queries checked. October17 repost of BofA/ByteDance talks traces to October16coverage and previously recorded October15talks;not signed award. September25UBS forecasts and August/SeptemberAMD/MarvellTPU role reports are old;original broker notes unavailable. No verified newNRE,production allocation,generation renewal or economics.",
+          "NVIDIA October17RTX SparkPCavailability repeats existing launch baseline,notCSP orders. AMDlatestOctober12Helion,MarvellOctober13connectivity/security and BroadcomOctober13VMware index entries did not establish new unrecorded supplier earnings revision.",
+          "FiveCSP available indices inspected;Amazon/Alphabet dynamic extraction incomplete,Oracle index not completefilings review. Microsoft next earningsOctober28. No claim of complete current utilization/capex/AI-monetization audit or new aggregate capex.",
+          "Active98 discovery mostly returns known monthly revenue and media broker recaps. October17ASE forecast of USD8.41bn2027 versusUSD4.14bn2026 and doubledWoS volume is previously tracked attributedBofA thesis;original note absent,not companyguidance. No media consensus promoted to verified forecast revision.",
+          "Yageo legacy monthly path failed,new groupIR body one-lineshell;search-indexed September NT$17,068million/MoM4.5%/YoY46.1% not credited as primary. No extra issuer-count credit or unsupported AI-margin inference.",
+          "October17DataCenterDigest transformer/switchgear shortage article claims Reuters attribution but exposed page provides no Reuterslink/byline/dated original. Targeted Reuters retrieval did not locate matching original;3–5yearlead-time not promoted to independently verified newfact or earningsalert.",
+          "Outside/downside fresh searches rediscover AnthropicBlackstone financing,CoreWeave bond stress,Texaspermits,NiSource/EverWindpower,Schneiderguidance and existingGoogleMonrovia/Cannoli approvals. Deduplicated against95events,182candidates,95prior screenings and available prior notifications;no new default,ordercancel or project-specific loss inferred.",
+          "Screening only;prior facts,candidates,events,articles and dated blockers preserved. No latest-stock-price comparison,valuation,private holdings or institutional-flow data written. Ledger JSON/history/CAS/readback/onlytarget verification required;no articlelint/build/deploy/publication claim."
         ]
       }
     ],
@@ -10645,7 +10688,7 @@
     }
   ],
   "last_research_date": "2026-10-18",
-  "instruction_commit_sha": "efdea14ae9ce5940e5ee25b6bb08e82662a74918",
+  "instruction_commit_sha": "12862153006e12611d6239cd011f2bf6f4f595ba",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
