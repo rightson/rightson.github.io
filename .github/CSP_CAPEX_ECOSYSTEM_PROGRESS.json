@@ -2959,12 +2959,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-18",
-      "checked_at": "2026-10-17T23:10:19Z",
-      "instruction_commit_sha": "15d7db462fa02a2601c24ed5b629720cbb205018",
+      "checked_at": "2026-10-17T23:54:17Z",
+      "instruction_commit_sha": "433d8825a9fb0704c09bc65fac3a5df6d60893e2",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh14 grouped queries cover98 active names;sixcore/fiveCSP issuer pages,TPU design/NRE/generation/allocation and outside opportunities/downside refreshed. No independently verified material increment;screening only,no new public_event,candidate or article.",
+      "scope": "Fresh14 grouped queries cover98 active names;sixcore/fiveCSP available issuer bodies and indices,TPU roles/NRE/allocation and outside opportunity/downside refreshed. No independently verified material increment;screening appended only,no new public_event,candidate or article.",
       "sources": [
         "https://pr.tsmc.com/english/news/3346",
         "https://www.mediatek.com/press-room",
@@ -2977,21 +2977,23 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://www.reuters.com/business/anthropic-offers-blackstone-double-digit-yield-chip-financing-deal-ft-reports-2026-10-17/",
-        "https://www.reuters.com/business/schneider-electric-raises-2026-targets-again-booming-data-centre-demand-2026-10-16/",
+        "https://www.liteon.com/zh-tw/news/press-center/content/quarterly-second-eps-2026",
+        "https://www.digitimes.com/newsshow/article.asp?datePublish=2026%2F09%2F17&pages=pd&seq=208",
         "https://www.taisounds.com/news/content/80/293686",
-        "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=770032"
+        "https://lgcorp.com/media/release/30644",
+        "https://gov.texas.gov/news/post/governor-abbott-directs-tceq-to-halt-data-center-permits"
       ],
       "source_limits": [
-        "Latest default-main instruction15d7db462fa02a2601c24ed5b629720cbb205018. All mandatory instructions/specifications and full JSON ledger fetched at same revision;complete instruction bodies read in chunks. Three recent related articles fetched with unchanged blobs matching previously read bodies. No mandatory instruction missing.",
-        "Fresh alpha-quant default-main and complete CSV3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7/blob88422949d38165d4757a1e24c27f8662bede14c1,98active.14grouped discovery queries are not98individual issuer validations. Primary47/pending51,monthly21/product15/partner4/regulator3 unchanged;dated historical blockers preserved.",
-        "TSMC October15issuer press release full numeric body reopened:Q3EPS NT$29.43,Q4revenueUSD52.3–54.3bn,GM65–67%,OP56.5–58.5%,unchanged from recorded baseline. No new process/packaging capacity,pricing or customer economics revision established.",
-        "MediaTek press index and targetedTPU searches refreshed;October1company-denial report,October13Guangfa Humufish delay forecast,AugustMarvell/AMD allocation reports and older UBS/BofA commentary remain historical or attributed. No authenticated new Google allocation,NRE,design win,generation renewal or actual commercial terms. Broker originals unavailable;not company guidance or market consensus.",
-        "NVIDIA latestOctober17RTX Spark blog repeats PC availability,not new CSP orders. AMDlatestOctober12Helion,MarvellOctober13retimer/security and BroadcomOctober13VMware/October8networking entries inspected;index availability does not constitute complete current-filings verification.",
-        "FiveCSP landing/index pages reopened and fresh targeted searches checked;Amazon/Alphabet dynamic extraction incomplete,Oracle news landing not financial-filings audit,Meta index not quantitative utilization validation. No comparable fresh capex total,customer deployment or AI monetization revision inferred.",
-        "Discovery rediscovers known monthly figures,equipment/self-reported profit and anonymous broker recaps. October18ASML/TSMC commentary is not a new earnings release. Search crawl dates and undated aggregator themes excluded as fresh facts;no primary-count credit from reproduced notices.",
-        "Outside opportunities/downside queries rediscovers SchneiderOctober16guidance,Anthropic/BlackstoneOctober17reported financing,OracleSeptember24force-majeure,Bloomcounterstatement,Texaspermit/power constraints and older funding risks. Deduplicated against95public_events,182candidates,96prior screenings and available notification baseline. No new financing close,default,supplier cancellation or project-specific financial loss verified.",
-        "Append only1screening,refresh current screening/instruction/date metadata;all prior event/candidate/article bodies,history and dated blockers preserved. No private quotes,valuation,positions or institutional-flow records written. No articlelint/build/deploy/website-publication claim."
+        "Latest default-main instruction433d8825a9fb0704c09bc65fac3a5df6d60893e2. Required instructions/specifications and full JSON ledger fetched at same revision;AGENTS read in complete chunks,three related ai-industry article bodies read in complete chunks. No mandatory instruction missing.",
+        "Fresh alpha-quant metadata/main/full CSV3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7/blob88422949d38165d4757a1e24c27f8662bede14c1,98active.14grouped searches are discovery,not individual primary verification.47distinct primary/51pending,monthly21/product15/partner4/regulator3 unchanged;dated historical blockers preserved.",
+        "TSMC October15issuer press body/Q4table reopened:revenueUSD52.3–54.3bn,GM65–67%,OP56.5–58.5%,unchanged. Older capacity/CoWoS/EMIB alternatives and October15/16earnings recaps not treated as new capacity awards.",
+        "MediaTek issuer index and targeted TPU role/NRE/generation/allocation searches refreshed. JuneTriggerfish forecasts,September17EMIB backup report and October13Guangfa Humufish schedule claims are historical attributed reports;original broker notes unavailable. No authenticated new Google allocation,NRE,design win,renewal or changed commercial economics established.",
+        "NVIDIA October17SparkPC launch blog,AMDOctober12Helion,BroadcomOctober13VMware/October8networking and MarvellOctober13retimer/security latest visible entries inspected. These do not establish new unrecorded CSP supplier earnings revisions;index inspection not full latest-filings verification.",
+        "FiveCSP landing/index pages reopened;Amazon/Alphabet dynamic extraction incomplete,Meta news index not utilization audit,Oracle landing not financial-filings audit. Microsoft next earningsOctober28. No new cross-company capex total,AI monetization or customer deployment inferred.",
+        "All98discovery mostly returns already recorded monthly revenue,old expansion,attributed forecasts and market recaps. Dates range fromJanuary–October;fresh crawl date does not make them new. Search results alone do not prove individual coverage complete or absence of company news.",
+        "LITEON Q2issuer numeric search excerpt rediscovered,but direct body retrieval failed twice. Prior candidate retains Julycapex baseline and October16reported TWD36bn facility;no primary-count credit,no confirmation of drawdown or new incremental capex. Repeated unchanged source limitation,not a new monitoring-failure event.",
+        "Outside/downside discovery rediscovers AnthropicBlackstone financing,Texaspermit pause,LG/AIR supply agreement,LS Electric awards,Oracle project/funding concerns and power/cooling themes. Deduplicated against95events,182candidates,97prior screenings and available notification baseline. No new funding close,default,order cancellation,project-specific loss or supplier earnings revision verified.",
+        "Append one screening and refresh current screening/instruction/date metadata only;all prior event/candidate/article facts,screening history and dated blockers preserved. No stock valuation,current quotes,private holdings or institutional-flow records written. Ledger-only JSON/history/fresh-head/blob/CAS/readback/onlytarget checks;no articlelint/build/deploy/publication claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -5765,6 +5767,45 @@
           "Discovery rediscovers known monthly figures,equipment/self-reported profit and anonymous broker recaps. October18ASML/TSMC commentary is not a new earnings release. Search crawl dates and undated aggregator themes excluded as fresh facts;no primary-count credit from reproduced notices.",
           "Outside opportunities/downside queries rediscovers SchneiderOctober16guidance,Anthropic/BlackstoneOctober17reported financing,OracleSeptember24force-majeure,Bloomcounterstatement,Texaspermit/power constraints and older funding risks. Deduplicated against95public_events,182candidates,96prior screenings and available notification baseline. No new financing close,default,supplier cancellation or project-specific financial loss verified.",
           "Append only1screening,refresh current screening/instruction/date metadata;all prior event/candidate/article bodies,history and dated blockers preserved. No private quotes,valuation,positions or institutional-flow records written. No articlelint/build/deploy/website-publication claim."
+        ]
+      },
+      {
+        "date": "2026-10-18",
+        "checked_at": "2026-10-17T23:54:17Z",
+        "instruction_commit_sha": "433d8825a9fb0704c09bc65fac3a5df6d60893e2",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh14 grouped queries cover98 active names;sixcore/fiveCSP available issuer bodies and indices,TPU roles/NRE/allocation and outside opportunity/downside refreshed. No independently verified material increment;screening appended only,no new public_event,candidate or article.",
+        "sources": [
+          "https://pr.tsmc.com/english/news/3346",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://www.liteon.com/zh-tw/news/press-center/content/quarterly-second-eps-2026",
+          "https://www.digitimes.com/newsshow/article.asp?datePublish=2026%2F09%2F17&pages=pd&seq=208",
+          "https://www.taisounds.com/news/content/80/293686",
+          "https://lgcorp.com/media/release/30644",
+          "https://gov.texas.gov/news/post/governor-abbott-directs-tceq-to-halt-data-center-permits"
+        ],
+        "source_limits": [
+          "Latest default-main instruction433d8825a9fb0704c09bc65fac3a5df6d60893e2. Required instructions/specifications and full JSON ledger fetched at same revision;AGENTS read in complete chunks,three related ai-industry article bodies read in complete chunks. No mandatory instruction missing.",
+          "Fresh alpha-quant metadata/main/full CSV3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7/blob88422949d38165d4757a1e24c27f8662bede14c1,98active.14grouped searches are discovery,not individual primary verification.47distinct primary/51pending,monthly21/product15/partner4/regulator3 unchanged;dated historical blockers preserved.",
+          "TSMC October15issuer press body/Q4table reopened:revenueUSD52.3–54.3bn,GM65–67%,OP56.5–58.5%,unchanged. Older capacity/CoWoS/EMIB alternatives and October15/16earnings recaps not treated as new capacity awards.",
+          "MediaTek issuer index and targeted TPU role/NRE/generation/allocation searches refreshed. JuneTriggerfish forecasts,September17EMIB backup report and October13Guangfa Humufish schedule claims are historical attributed reports;original broker notes unavailable. No authenticated new Google allocation,NRE,design win,renewal or changed commercial economics established.",
+          "NVIDIA October17SparkPC launch blog,AMDOctober12Helion,BroadcomOctober13VMware/October8networking and MarvellOctober13retimer/security latest visible entries inspected. These do not establish new unrecorded CSP supplier earnings revisions;index inspection not full latest-filings verification.",
+          "FiveCSP landing/index pages reopened;Amazon/Alphabet dynamic extraction incomplete,Meta news index not utilization audit,Oracle landing not financial-filings audit. Microsoft next earningsOctober28. No new cross-company capex total,AI monetization or customer deployment inferred.",
+          "All98discovery mostly returns already recorded monthly revenue,old expansion,attributed forecasts and market recaps. Dates range fromJanuary–October;fresh crawl date does not make them new. Search results alone do not prove individual coverage complete or absence of company news.",
+          "LITEON Q2issuer numeric search excerpt rediscovered,but direct body retrieval failed twice. Prior candidate retains Julycapex baseline and October16reported TWD36bn facility;no primary-count credit,no confirmation of drawdown or new incremental capex. Repeated unchanged source limitation,not a new monitoring-failure event.",
+          "Outside/downside discovery rediscovers AnthropicBlackstone financing,Texaspermit pause,LG/AIR supply agreement,LS Electric awards,Oracle project/funding concerns and power/cooling themes. Deduplicated against95events,182candidates,97prior screenings and available notification baseline. No new funding close,default,order cancellation,project-specific loss or supplier earnings revision verified.",
+          "Append one screening and refresh current screening/instruction/date metadata only;all prior event/candidate/article facts,screening history and dated blockers preserved. No stock valuation,current quotes,private holdings or institutional-flow records written. Ledger-only JSON/history/fresh-head/blob/CAS/readback/onlytarget checks;no articlelint/build/deploy/publication claim."
         ]
       }
     ],
@@ -10721,7 +10762,7 @@
     }
   ],
   "last_research_date": "2026-10-18",
-  "instruction_commit_sha": "15d7db462fa02a2601c24ed5b629720cbb205018",
+  "instruction_commit_sha": "433d8825a9fb0704c09bc65fac3a5df6d60893e2",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
