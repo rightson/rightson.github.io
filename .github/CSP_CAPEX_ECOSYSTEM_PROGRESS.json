@@ -2818,6 +2818,50 @@
         "https://www.thepaper.cn/newsDetail_forward_34265309"
       ],
       "status": "new_financial_outlook_event_verified_no_article"
+    },
+    {
+      "fingerprint": "texas-tceq-datacenter-permit-pause-20260921-current-construction-notice-verified-20261018",
+      "event_date": "2026-09-21",
+      "discovered_date": "2026-10-18",
+      "companies": [
+        "Texas data-center project developers"
+      ],
+      "type": "historical_governor_directive_and_current_agency_permitting_notice_primary_verified",
+      "facts": {
+        "baseline": "Previously absent from this ledger; not a new October18 directive.",
+        "directive": "Governor ordered TCEQ to halt data-center permits pending ERCOT audit; compliance update due October19, not an automatic reopening date.",
+        "agency_notice": "TCEQ construction-stormwater page, last modified October7, still displays a halt on associated applications, including TPDES Construction General Permit coverage.",
+        "limits": "No named project permit status, delayed MW, canceled supplier order or earnings effect verified. Do not infer shutdown of existing operating facilities. Isolated generation does not by itself establish exemption from environmental permits."
+      },
+      "sources": [
+        "https://gov.texas.gov/news/post/governor-abbott-directs-tceq-to-halt-data-center-permits",
+        "https://www.tceq.texas.gov/permitting/stormwater/construction"
+      ],
+      "status": "primary_policy_and_agency_notice_verified_project_exposure_pending"
+    },
+    {
+      "fingerprint": "cipher-digital-850m-notes-issued-and-2030-note-share-exchange-consummated-20261016",
+      "event_date": "2026-10-16",
+      "discovered_date": "2026-10-18",
+      "companies": [
+        "Cipher Digital"
+      ],
+      "type": "sec_primary_completed_note_issuance_and_equity_exchange",
+      "facts": {
+        "baseline": "October14 pricing and expected settlement previously recorded.",
+        "notes_issued_usd": 850000000,
+        "regular_coupon_percent": 0,
+        "principal_accretion": false,
+        "old_notes_exchanged_usd": 165900000,
+        "common_shares_issued_approximately": 40700000,
+        "old_notes_remaining_usd": 6600000,
+        "limits": "Closing is funding execution, not delivered compute or revenue. Additional USD150m option exercise and final net cash unverified; 2030 cash put remains. New notes' conversion settlement election differs from the changed default physical settlement for existing2030/2031 series."
+      },
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1819989/000119312526424297/d313847d8k.htm",
+        "https://www.sidley.com/en/newslanding/newsannouncements/2026/10/sidley-represents-cipher-digital-in-us-850-million-senior-notes-offering"
+      ],
+      "status": "issued_and_exchange_consummated_verified_project_cash_conversion_pending"
     }
   ],
   "articles": [],
@@ -2883,12 +2927,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-18",
-      "checked_at": "2026-10-17T17:24:20Z",
-      "instruction_commit_sha": "ec4c06b7a3c4038516c8f56b0b142abba1192091",
+      "checked_at": "2026-10-17T17:55:25Z",
+      "instruction_commit_sha": "e273f879d5188d88fd7f62b04e514b31107e01cc",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "All98 active names included in14 fresh grouped discovery queries. Sixcore issuer indices,TSMC guidance,TPU procurement/NRE,fiveCSP indices andoutside opportunity/downside leads checked. Historical IQE production-order relationship added as candidate;not a fresh earnings event.",
+      "scope": "Fresh14-query discovery covers all98 active names; sixcore issuer indices, TSMC guidance, TPU roles/NRE, fiveCSP indices and outside opportunities/downside checked. Two source-stage events and two candidates appended.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -2901,22 +2945,24 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://www.sigurd.com.tw/zh-tw/monthly-revenue",
-        "https://www.lse.co.uk/rns/IQE/iqe-plc-14m-ai-datacentre-production-order-zqq97k5t1x0xtn8.html?page=2",
-        "https://compoundsemiconductor.net/article/124698/IQE_secures_14m_order_for_AI_data_centre_applications",
-        "https://www.datacenterdynamics.com/en/news/google-increases-2026-capex-195-205bn-as-it-accelerates-ai-data-center-buildout/",
-        "https://anuenews.cnyes.com/news/id/6632478"
+        "https://gov.texas.gov/news/post/governor-abbott-directs-tceq-to-halt-data-center-permits",
+        "https://www.tceq.texas.gov/permitting/stormwater/construction",
+        "https://www.sec.gov/Archives/edgar/data/1819989/000119312526424297/d313847d8k.htm",
+        "https://usda.azureedge.us/about-usda/news/press-releases/2026/10/14/usda-makes-historic-33b-loan-build-electric-generation-facility-georgia",
+        "https://www.gpb.org/news/2026/10/15/usda-announces-33-billion-loan-oglethorpe-power-for-power-plant",
+        "https://www.sigurd.com.tw/zh-tw/monthly-revenue"
       ],
       "source_limits": [
-        "Latest main instruction commitec4c06b7a3c4038516c8f56b0b142abba1192091. Mandatory instructions,specifications,current full ledger andthree related articles read at this same revision. Oversized displayed instruction output recovered in complete explicit chunks before research;no missing ortruncated instruction content used.",
-        "Fresh alpha-quant metadata/main andfullCSV read:commit3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7,blob88422949d38165d4757a1e24c27f8662bede14c1,98active companies. Fourteen grouped discovery queries do not establish98individual primary validations. Primary46,pending52,monthly20,product15,partner4,regulator3 unchanged.",
-        "Sixcore issuer indices reopened;TSMC Q3 actual/Q4 guidance andavailable dated entries match recorded baseline. Fresh TPU searches yielded historical role/pricing/risk reporting,no authenticated new allocation,NRE,design win orfinancial revision.",
-        "FiveCSP landing/index pages reopened. Amazon/Alphabet extraction remains dynamic/incomplete;Oracle index is not full filings verification. July22 Google annual-capex report rediscovered,not a new October revision;no annual-guidance primary credit added.",
-        "Funding/downside searches rediscovered recorded Anthropic/Blackstone,CoreWeave,Gartner andBroadcom capital-constraint items. Newly surfaced October17 USD3.3bn gas-plant-loan article andmarket-deal report could not be opened;no claim of fullbody verification,new DOE funding award ornew default/cancellation.",
-        "IQE July14 issuer RNS text read in fullthird-party reproduction andcross-checked with dated industry article. Historical USD14m multi-year Newport production order,not annual revenue ornew October award;customer andspecific product undisclosed. Candidate only,no active98 primary-count credit.",
-        "Sigurd monthly index freshly attempted,retried aftertimeout andreturned502;September numeric rows visible insearch index only. Direct monthpage unavailable. No new primary revenue fact claimed,no coverage increment. Irrelevant search spillovers excluded.",
-        "Deduplicated against92public events,176prior candidates,90prior screenings andvisible notification baseline. One historical candidate andone screening appended;no new public event orarticle. Preserve all earlier records anddated blockers. No private quotes,valuation,holdings,trading conditions orprivate market-monitoring data inpublic ledger.",
-        "Ledger-only JSON/schema/history checks,freshhead/targetblob,CAS forcefalse,exact remote readback andonly-target compare required. No articlelint,build,deploy orpublished-content completion claimed."
+        "Latest main instruction commit e273f879d5188d88fd7f62b04e514b31107e01cc. All required instructions/specifications, full ledger and three related articles fetched at this revision. Long displayed material recovered in explicit complete chunks; no mandatory content missing or truncated.",
+        "Fresh alpha-quant metadata/main and full CSV read: commit3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7, blob88422949d38165d4757a1e24c27f8662bede14c1,98 active names. Grouped searches are discovery, not individual primary verification. Primary46/pending52, monthly20/product15/partner4/regulator3 unchanged.",
+        "Core issuer indices and TSMC Q3/Q4 figures reopened. TPU searches rediscovered previously recorded roles, packaging and broker-risk claims; no authenticated new MediaTek allocation, NRE, design win or earnings revision obtained.",
+        "Five CSP landing/index pages reopened. Amazon/Alphabet extraction remains incomplete/dynamic; Oracle landing is not full current-filings verification. No new aggregate capex total claimed.",
+        "Current Texas agency notice and September21 governor release read; historical regulatory baseline newly added. Exact project permits and financial exposure unresolved. October19 reporting deadline is not a promised reopening date; no supplier cancellation inferred.",
+        "October16 Cipher SEC8-K body read; issuance and exchange consummation verified, superseding only the earlier pending stage via append-only event/update. No option exercise, final net proceeds, project handover or rental cash receipt claimed.",
+        "October14 USDA loan announcement and GPB original report resolve the prior gas-loan lead. Cooperative generation financing is not a confirmed Google/CSP power purchase; retain the utility CEO's contrary attribution. Candidate only.",
+        "Sigurd monthly page again unavailable. Search-indexed numeric rows are not direct issuer-body validation; no primary-count credit. Grouped-query spillovers, stale dates and thematic broker targets excluded as new facts.",
+        "Deduplicated against92 prior public events,177 candidates,91 screenings and visible notification baseline. Preserve all earlier events, candidate facts, screening history and dated blockers. Append two events, two candidates and Cipher verification update; no article or private market data added.",
+        "Ledger-only JSON/history checks, fresh head/target blob, CAS forcefalse, exact remote readback and only-target comparison required. No article lint, build, deploy or website-publication completion claimed."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -5462,6 +5508,46 @@
           "Deduplicated against92public events,176prior candidates,90prior screenings andvisible notification baseline. One historical candidate andone screening appended;no new public event orarticle. Preserve all earlier records anddated blockers. No private quotes,valuation,holdings,trading conditions orprivate market-monitoring data inpublic ledger.",
           "Ledger-only JSON/schema/history checks,freshhead/targetblob,CAS forcefalse,exact remote readback andonly-target compare required. No articlelint,build,deploy orpublished-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-18",
+        "checked_at": "2026-10-17T17:55:25Z",
+        "instruction_commit_sha": "e273f879d5188d88fd7f62b04e514b31107e01cc",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh14-query discovery covers all98 active names; sixcore issuer indices, TSMC guidance, TPU roles/NRE, fiveCSP indices and outside opportunities/downside checked. Two source-stage events and two candidates appended.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://gov.texas.gov/news/post/governor-abbott-directs-tceq-to-halt-data-center-permits",
+          "https://www.tceq.texas.gov/permitting/stormwater/construction",
+          "https://www.sec.gov/Archives/edgar/data/1819989/000119312526424297/d313847d8k.htm",
+          "https://usda.azureedge.us/about-usda/news/press-releases/2026/10/14/usda-makes-historic-33b-loan-build-electric-generation-facility-georgia",
+          "https://www.gpb.org/news/2026/10/15/usda-announces-33-billion-loan-oglethorpe-power-for-power-plant",
+          "https://www.sigurd.com.tw/zh-tw/monthly-revenue"
+        ],
+        "source_limits": [
+          "Latest main instruction commit e273f879d5188d88fd7f62b04e514b31107e01cc. All required instructions/specifications, full ledger and three related articles fetched at this revision. Long displayed material recovered in explicit complete chunks; no mandatory content missing or truncated.",
+          "Fresh alpha-quant metadata/main and full CSV read: commit3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7, blob88422949d38165d4757a1e24c27f8662bede14c1,98 active names. Grouped searches are discovery, not individual primary verification. Primary46/pending52, monthly20/product15/partner4/regulator3 unchanged.",
+          "Core issuer indices and TSMC Q3/Q4 figures reopened. TPU searches rediscovered previously recorded roles, packaging and broker-risk claims; no authenticated new MediaTek allocation, NRE, design win or earnings revision obtained.",
+          "Five CSP landing/index pages reopened. Amazon/Alphabet extraction remains incomplete/dynamic; Oracle landing is not full current-filings verification. No new aggregate capex total claimed.",
+          "Current Texas agency notice and September21 governor release read; historical regulatory baseline newly added. Exact project permits and financial exposure unresolved. October19 reporting deadline is not a promised reopening date; no supplier cancellation inferred.",
+          "October16 Cipher SEC8-K body read; issuance and exchange consummation verified, superseding only the earlier pending stage via append-only event/update. No option exercise, final net proceeds, project handover or rental cash receipt claimed.",
+          "October14 USDA loan announcement and GPB original report resolve the prior gas-loan lead. Cooperative generation financing is not a confirmed Google/CSP power purchase; retain the utility CEO's contrary attribution. Candidate only.",
+          "Sigurd monthly page again unavailable. Search-indexed numeric rows are not direct issuer-body validation; no primary-count credit. Grouped-query spillovers, stale dates and thematic broker targets excluded as new facts.",
+          "Deduplicated against92 prior public events,177 candidates,91 screenings and visible notification baseline. Preserve all earlier events, candidate facts, screening history and dated blockers. Append two events, two candidates and Cipher verification update; no article or private market data added.",
+          "Ledger-only JSON/history checks, fresh head/target blob, CAS forcefalse, exact remote readback and only-target comparison required. No article lint, build, deploy or website-publication completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 15
@@ -7122,7 +7208,18 @@
         "Barber Lake actual equity draw, overrun allocation, phased handover and rent commencement",
         "Per-share recurring cash generation after construction costs, operating expenses and financing obligations"
       ],
-      "publication_status": "not_drafted"
+      "publication_status": "not_drafted",
+      "verification_updates": [
+        {
+          "date": "2026-10-18",
+          "source_date": "2026-10-16",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/1819989/000119312526424297/d313847d8k.htm"
+          ],
+          "stage": "issuance_and_exchange_completion_verified_final_cash_and_rent_pending",
+          "event_fingerprint": "cipher-digital-850m-notes-issued-and-2030-note-share-exchange-consummated-20261016"
+        }
+      ]
     },
     {
       "key": "aes-indiana-google-monrovia-cost-recovery-and-power-delivery",
@@ -10243,6 +10340,48 @@
         "Check customer concentration andfollow-on orders before assuming repeatability."
       ],
       "publication_status": "historical_candidate_only_no_material_new_alert_not_drafted"
+    },
+    {
+      "key": "texas-tceq-permit-pause-to-project-delivery-and-supplier-recognition",
+      "date": "2026-10-18",
+      "instruction_commit_sha": "e273f879d5188d88fd7f62b04e514b31107e01cc",
+      "companies": [
+        "Texas data-center developers"
+      ],
+      "sources": [
+        "https://gov.texas.gov/news/post/governor-abbott-directs-tceq-to-halt-data-center-permits",
+        "https://www.tceq.texas.gov/permitting/stormwater/construction"
+      ],
+      "stage": "historical_directive_and_current_agency_construction_notice_verified",
+      "questions": [
+        "Map pending environmental permits, grandfathered approvals and customers before assigning exposed capacity.",
+        "Obtain October19 compliance update and subsequent reopening/exception notices; do not use it as a fixed end date.",
+        "Check actual construction, equipment acceptance, rent commencement and contract remedies."
+      ],
+      "publication_status": "regulatory_risk_baseline_added_no_article"
+    },
+    {
+      "key": "oglethorpe-smarr-usda-loan-and-unproven-datacenter-allocation",
+      "date": "2026-10-18",
+      "instruction_commit_sha": "e273f879d5188d88fd7f62b04e514b31107e01cc",
+      "companies": [
+        "Oglethorpe Power"
+      ],
+      "sources": [
+        "https://usda.azureedge.us/about-usda/news/press-releases/2026/10/14/usda-makes-historic-33b-loan-build-electric-generation-facility-georgia",
+        "https://www.gpb.org/news/2026/10/15/usda-announces-33-billion-loan-oglethorpe-power-for-power-plant"
+      ],
+      "stage": "october14_agency_loan_announcement_and_october15_original_local_report_read",
+      "facts": {
+        "loan_announced_usd": 3300000000,
+        "project": "Smarr Combined-Cycle, Monroe County, Georgia",
+        "scope": "USDA announcement supports cooperative generation, not a named CSP purchase. GPB reports1.4GW and quotes utility CEO saying the addition is not for data centers; physical proximity to Google does not establish contracted allocation.",
+        "limits": "No loan drawdown, named hyperscaler offtake or incremental equipment-supplier order verified."
+      },
+      "questions": [
+        "Authenticate financing execution, generation delivery and any distribution-cooperative customer contracts before attributing AI demand."
+      ],
+      "publication_status": "candidate_only_no_confirmed_csp_award_not_drafted"
     }
   ],
   "blockers": [
@@ -10262,7 +10401,7 @@
     }
   ],
   "last_research_date": "2026-10-18",
-  "instruction_commit_sha": "ec4c06b7a3c4038516c8f56b0b142abba1192091",
+  "instruction_commit_sha": "e273f879d5188d88fd7f62b04e514b31107e01cc",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
