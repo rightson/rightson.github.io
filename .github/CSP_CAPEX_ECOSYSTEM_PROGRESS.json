@@ -2883,12 +2883,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-17",
-      "checked_at": "2026-10-17T12:59:28Z",
-      "instruction_commit_sha": "b755f1db03f4e506bd9116d93c5f7ec53d36d731",
+      "checked_at": "2026-10-17T14:30:53Z",
+      "instruction_commit_sha": "a954ef6a153c15d7fc78564b621a6bb5e76606d4",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "All98 active names included in14 fresh grouped discovery queries;six core issuer indices,TSMC guidance,TPU economics,five CSP landing/index pages,and outside opportunity/downside discovery reviewed. CXMT preliminary nine-month financial announcement verified as outside-universe event.",
+      "scope": "All98 active names included in14 fresh grouped discovery queries. Six core issuer indices,TSMC guidance,Google TPU allocation/NRE sources,five CSP landing/index pages,andoutside opportunity/downside discovery checked. Realtek historical monthly reproduction and official-page rendering gap recorded.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -2901,23 +2901,21 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://static.cninfo.com.cn/finalpage/2026-10-17/1225609860.PDF",
-        "https://static.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-10-17/688825_20261017_W5VW.pdf",
-        "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-10/2026-10-17/12647223.PDF",
-        "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12647223&stockid=688825",
-        "https://roadshow.cnstock.com/fbh/cxkj202606/wzsl",
-        "https://www.thepaper.cn/newsDetail_forward_33968133",
-        "https://www.thepaper.cn/newsDetail_forward_34265309"
+        "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4",
+        "https://www.realtek.com/InvestorRelations/MonthlyRevenues?menu_id=704",
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c6435728-4628-4292-ba2e-fc287fdd4b43",
+        "https://www.reuters.com/legal/transactional/why-coreweave-is-crosshairs-ai-scare-2026-10-16/",
+        "https://www.taisounds.com/news/content/75/293686"
       ],
       "source_limits": [
-        "Required instructions and related specifications read completely at b755f1db03f4e506bd9116d93c5f7ec53d36d731. Alpha-quant default main3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7 and CSV88422949d38165d4757a1e24c27f8662bede14c1 confirm98 active names. Grouped discovery does not establish individual current-primary verification.",
-        "Active-universe distinct primary-fact count remains46,pending52;monthly20,product15,partner4,regulator3 unchanged. Auras financial-report and home pages returned zero extracted lines;AVC website discovery did not yield a read financial primary. No coverage credit.",
-        "Six core indices read;TSMC Q3 actual/Q4 guide match recorded baseline. No new authenticated MediaTek TPU allocation,NRE,design-win or core-company earnings revision established from obtained content.",
-        "Microsoft investor page initial InternalError recovered on retry. Amazon/Alphabet extracted financial content remains dynamic/incomplete;Oracle landing is not a complete current-news feed. Fresh discovery complements indices,not a claim that all current filings were individually checked.",
-        "CXMT official-announcement PDF mirror read in full and both pages visually checked;SSE/CNINFO originals located but direct fetch unavailable. Preliminary estimate,not audited actual. Original October16 evening reporting distinguished from October17 document date. H1 issuer-roadshow numbers and August28 reporting used for labeled quarterly arithmetic;no forecast-consensus comparison.",
-        "CXMT is outside98 active names;new financial fingerprint distinct from recorded G5/RDIMM event. Other Anthropic/Blackstone,CoreWeave,TSMC,TPU supplier reports,Camtek,Schneider,Semtech,AIXTRON andVAT items were existing events/reprints. Ambiguous future-period October revenue headline excluded.",
-        "One public financial event,one candidate andone screening appended;no article drafted. All earlier events,candidates,articles,screenings and dated blockers preserved. Private quotes,valuations,positions,trade conditions andprivate market monitoring excluded.",
-        "Ledger-only JSON/preservation checks,freshhead/blob,CAS forcefalse,exact source readback andonly-target compare required. No articlelint,build,deploy orpublic article verification claimed."
+        "Mandatory files and related specifications fetched completely at a954ef6a153c15d7fc78564b621a6bb5e76606d4;display truncations recovered from stored complete content before research. Full JSON parsed. Alpha-quant latest main3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7 andCSV88422949d38165d4757a1e24c27f8662bede14c1 confirm98active names.",
+        "Fourteen grouped queries included all98names,but obtained many stale broad-theme results despite freshness filters. Discovery screen is not individual current-event clearance or complete current-primary validation. Primary-fact46,pending52,monthly20,product15,partner4,regulator3 unchanged.",
+        "TSMC Q3 actual/Q4 guidance unchanged from ledger. Six core issuer indices read;MediaTek latest listed September30 andprevious NVLink collaboration,Broadcom latest October13,andMarvell October13 entries. Fresh TPU searches recovered prior reported Humufish timing and supplier stories,not a newly authenticated procurement allocation,NRE ordesign-win change.",
+        "FiveCSP index/landing pages checked;Amazon/Alphabet extracted financial content remains dynamic/incomplete andOracle landing is not a full current news feed. July29 Microsoft issuer transcript reread confirms useful-life/lease classification effect andunchanged underlying2026 capex expectation;not a fresh October17 cut.",
+        "Fresh outside/downside searches recovered existing Anthropic/Blackstone funding-cost,CoreWeave credit fear,Schneider guidance andAWS payback items. Reuters CoreWeave original direct access failed;summary alone did not establish a new default,financing close orsupplier cancellation. BigGo spending-brakes aggregation inaccessible andnot adopted as confirmed CSP cut.",
+        "Realtek official indexed numbers corroborate historical September table,but direct issuer body has no numeric rows. Full October7 MoneyDJ reproduction read. Candidate records attribution/rendering gaps;no primary coverage credit andno material alert.",
+        "Deduplication against92public events,173prior candidates,87prior screenings andreadable notifications includes latest CXMT nine-month preliminary event;no new event orarticle. One research-gap candidate andone screening appended. All historical entries anddated blockers preserved;private quotes,valuation,positions,trade conditions andprivate market monitoring excluded.",
+        "Ledger-only JSON/preservation checks,freshhead/blob,CAS forcefalse,exact remote readback andonly-target compare required. No articlelint,build,deploy orpublic article verification claimed."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -5314,6 +5312,43 @@
           "CXMT is outside98 active names;new financial fingerprint distinct from recorded G5/RDIMM event. Other Anthropic/Blackstone,CoreWeave,TSMC,TPU supplier reports,Camtek,Schneider,Semtech,AIXTRON andVAT items were existing events/reprints. Ambiguous future-period October revenue headline excluded.",
           "One public financial event,one candidate andone screening appended;no article drafted. All earlier events,candidates,articles,screenings and dated blockers preserved. Private quotes,valuations,positions,trade conditions andprivate market monitoring excluded.",
           "Ledger-only JSON/preservation checks,freshhead/blob,CAS forcefalse,exact source readback andonly-target compare required. No articlelint,build,deploy orpublic article verification claimed."
+        ]
+      },
+      {
+        "date": "2026-10-17",
+        "checked_at": "2026-10-17T14:30:53Z",
+        "instruction_commit_sha": "a954ef6a153c15d7fc78564b621a6bb5e76606d4",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "All98 active names included in14 fresh grouped discovery queries. Six core issuer indices,TSMC guidance,Google TPU allocation/NRE sources,five CSP landing/index pages,andoutside opportunity/downside discovery checked. Realtek historical monthly reproduction and official-page rendering gap recorded.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4",
+          "https://www.realtek.com/InvestorRelations/MonthlyRevenues?menu_id=704",
+          "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c6435728-4628-4292-ba2e-fc287fdd4b43",
+          "https://www.reuters.com/legal/transactional/why-coreweave-is-crosshairs-ai-scare-2026-10-16/",
+          "https://www.taisounds.com/news/content/75/293686"
+        ],
+        "source_limits": [
+          "Mandatory files and related specifications fetched completely at a954ef6a153c15d7fc78564b621a6bb5e76606d4;display truncations recovered from stored complete content before research. Full JSON parsed. Alpha-quant latest main3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7 andCSV88422949d38165d4757a1e24c27f8662bede14c1 confirm98active names.",
+          "Fourteen grouped queries included all98names,but obtained many stale broad-theme results despite freshness filters. Discovery screen is not individual current-event clearance or complete current-primary validation. Primary-fact46,pending52,monthly20,product15,partner4,regulator3 unchanged.",
+          "TSMC Q3 actual/Q4 guidance unchanged from ledger. Six core issuer indices read;MediaTek latest listed September30 andprevious NVLink collaboration,Broadcom latest October13,andMarvell October13 entries. Fresh TPU searches recovered prior reported Humufish timing and supplier stories,not a newly authenticated procurement allocation,NRE ordesign-win change.",
+          "FiveCSP index/landing pages checked;Amazon/Alphabet extracted financial content remains dynamic/incomplete andOracle landing is not a full current news feed. July29 Microsoft issuer transcript reread confirms useful-life/lease classification effect andunchanged underlying2026 capex expectation;not a fresh October17 cut.",
+          "Fresh outside/downside searches recovered existing Anthropic/Blackstone funding-cost,CoreWeave credit fear,Schneider guidance andAWS payback items. Reuters CoreWeave original direct access failed;summary alone did not establish a new default,financing close orsupplier cancellation. BigGo spending-brakes aggregation inaccessible andnot adopted as confirmed CSP cut.",
+          "Realtek official indexed numbers corroborate historical September table,but direct issuer body has no numeric rows. Full October7 MoneyDJ reproduction read. Candidate records attribution/rendering gaps;no primary coverage credit andno material alert.",
+          "Deduplication against92public events,173prior candidates,87prior screenings andreadable notifications includes latest CXMT nine-month preliminary event;no new event orarticle. One research-gap candidate andone screening appended. All historical entries anddated blockers preserved;private quotes,valuation,positions,trade conditions andprivate market monitoring excluded.",
+          "Ledger-only JSON/preservation checks,freshhead/blob,CAS forcefalse,exact remote readback andonly-target compare required. No articlelint,build,deploy orpublic article verification claimed."
         ]
       }
     ],
@@ -9984,6 +10019,39 @@
         "Compare capacity/ramp and contract-price evidence across competing DRAM suppliers before concluding a change in industry scarcity duration."
       ],
       "publication_status": "verified_event_and_research_questions_recorded_not_drafted"
+    },
+    {
+      "key": "realtek-monthly-revenue-primary-rendering-and-datacenter-profit-attribution",
+      "companies": [
+        "Realtek / 瑞昱 (2379)"
+      ],
+      "date": "2026-10-17",
+      "instruction_commit_sha": "a954ef6a153c15d7fc78564b621a6bb5e76606d4",
+      "sources": [
+        "https://www.realtek.com/InvestorRelations/MonthlyRevenues?menu_id=704",
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c6435728-4628-4292-ba2e-fc287fdd4b43",
+        "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=ba71dbad-8cd4-420c-8850-2ccfd3f506f0"
+      ],
+      "stage": "historical_september_numeric_reproduction_read_official_indexed_rows_not_directly_rendered",
+      "facts": {
+        "period": "2026-09 and January-September2026",
+        "source_date": "2026-10-07",
+        "currency": "TWD",
+        "unit": "thousand",
+        "september_revenue_reported": 12377529,
+        "prior_september_revenue_reported": 10034210,
+        "ytd_revenue_reported": 111707580,
+        "prior_ytd_revenue_reported": 96427898,
+        "september_yoy_pct": 23.35,
+        "ytd_yoy_pct": 15.85,
+        "provenance": "October7 09:04 MoneyDJ numeric table read in full. Search-indexed official rows corroborate numbers,but direct issuer page extracts only headings and NT$K unit,not numeric rows.",
+        "limits": "Historical monthly baseline,not a new October17 earnings or order revision. Primary verification credit withheld. No AI/datacenter revenue allocation,new customer,ASIC award,margin orcash-conversion validation."
+      },
+      "questions": [
+        "Obtain directly readable issuer/exchange numeric rows and period before advancing primary coverage.",
+        "Separate PC,consumer,enterprise-networking anddatacenter products,and reconcile quarterly gross profit,receivables andcash flow."
+      ],
+      "publication_status": "research_gap_recorded_no_material_alert_not_drafted"
     }
   ],
   "blockers": [
@@ -10003,7 +10071,7 @@
     }
   ],
   "last_research_date": "2026-10-17",
-  "instruction_commit_sha": "b755f1db03f4e506bd9116d93c5f7ec53d36d731",
+  "instruction_commit_sha": "a954ef6a153c15d7fc78564b621a6bb5e76606d4",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
