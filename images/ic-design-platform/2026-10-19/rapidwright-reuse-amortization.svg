@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="880" viewBox="0 0 640 880" role="img" aria-labelledby="title desc">
+<title id="title">假設建庫成本如何影響重用收益</title><desc id="desc">假設建庫45工作小時，完整重跑每版6小時，重用每版2小時；12版才省3小時，20版省35小時，但十版重建一次則多花10小時。</desc>
+<rect width="640" height="880" fill="#f8fafc"/>
+<g font-family="sans-serif" fill="#172b4d"><text x="32" y="48" font-size="30" font-weight="700">先付建庫成本，再累積節省</text><text x="32" y="86" font-size="23">假設算例 · 單位為工作時數</text>
+<rect x="32" y="112" width="576" height="132" rx="14" fill="#e0f2fe" stroke="#0284c7"/><text x="54" y="152" font-size="26">建庫 45 h</text><text x="54" y="190" font-size="24">完整重跑每版 6 h</text><text x="54" y="224" font-size="24">重用後每版 2 h，平均節省 4 h</text>
+<text x="38" y="294" font-size="25">迭代數</text><text x="225" y="294" font-size="25">完整重跑</text><text x="445" y="294" font-size="25">建庫＋重用</text>
+<path d="M32 312h576M32 385h576M32 458h576M32 531h576M32 604h576" stroke="#94a3b8" fill="none"/>
+<g font-size="27"><text x="62" y="360">1</text><text x="258" y="360">6 h</text><text x="476" y="360">47 h</text>
+<text x="62" y="433">5</text><text x="250" y="433">30 h</text><text x="476" y="433">55 h</text>
+<text x="54" y="506">12</text><text x="250" y="506">72 h</text><text x="476" y="506">69 h</text>
+<text x="54" y="579">20</text><text x="241" y="579">120 h</text><text x="476" y="579">85 h</text></g>
+<rect x="32" y="638" width="576" height="154" rx="14" fill="#fef3c7" stroke="#b45309"/><text x="54" y="680" font-size="26">若每 10 版重建一次模組庫</text><text x="54" y="720" font-size="24">20 版成本＝2 × 45＋20 × 2</text><text x="54" y="760" font-size="26">合計 130 h，比完整重跑多 10 h</text>
+<text x="32" y="830" font-size="22">未量測 FPGA 效能、授權費或等待時間</text><text x="606" y="862" font-size="13" text-anchor="end" fill="#52637a">Scott Yo-Ru Chen · 2026-10-19</text></g><style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#172b4d" i]{fill:#c6d0e2}[fill="#52637a" i]{fill:#bbc1c9}[fill="#e0f2fe" i]{fill:#162936}[fill="#f8fafc" i]{fill:#1a2026}[fill="#fef3c7" i]{fill:#413919}[stroke="#0284c7" i]{stroke:#60bae8}[stroke="#94a3b8" i]{stroke:#5b6f8a}[stroke="#b45309" i]{stroke:#e79456}}</style>
+</svg>

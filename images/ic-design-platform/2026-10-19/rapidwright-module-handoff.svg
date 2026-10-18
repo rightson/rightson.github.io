@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="910" viewBox="0 0 640 910" role="img" aria-labelledby="title desc">
+<title id="title">從 RTL 到可重用實體模組的交接</title><desc id="desc">Vivado 先實作模組，RapidWright 重用與拼接，再回 Vivado 完成全域路由與檢查。</desc>
+<rect width="640" height="910" fill="#f8fafc"/>
+<g font-family="sans-serif" fill="#172b4d"><text x="32" y="48" font-size="30" font-weight="700">實體實作分成建庫與整合</text><text x="32" y="86" font-size="23">依據 RapidWright 公開流程整理</text>
+<rect x="32" y="116" width="576" height="112" rx="14" fill="#e0f2fe" stroke="#0284c7"/><text x="54" y="156" font-size="27">設計團隊固定輸入</text><text x="54" y="196" font-size="24">RTL · part · XDC · 功能與時脈需求</text>
+<path d="M320 234v32m-9-10 9 10 9-10" fill="none" stroke="#475569" stroke-width="3"/>
+<rect x="32" y="276" width="576" height="120" rx="14" fill="#e0f2fe" stroke="#0284c7"/><text x="54" y="316" font-size="27">Vivado 建立模組實體版本</text><text x="54" y="354" font-size="24">OOC 綜合、placement、routing</text><text x="54" y="382" font-size="22">交付 DCP、介面 metadata、報告</text>
+<path d="M320 402v32m-9-10 9 10 9-10" fill="none" stroke="#475569" stroke-width="3"/>
+<rect x="32" y="444" width="576" height="126" rx="14" fill="#dcfce7" stroke="#16803c"/><text x="54" y="484" font-size="27">RapidWright 組合模組</text><text x="54" y="522" font-size="24">選實體版本、合法位置、接埠連接</text><text x="54" y="554" font-size="22">輸出已放置、尚待全域完成的 DCP</text>
+<path d="M320 576v32m-9-10 9 10 9-10" fill="none" stroke="#475569" stroke-width="3"/>
+<rect x="32" y="618" width="576" height="126" rx="14" fill="#fef3c7" stroke="#b45309"/><text x="54" y="658" font-size="27">Vivado 完成全域實作</text><text x="54" y="696" font-size="24">時脈路由、跨模組路由、timing</text><text x="54" y="728" font-size="22">整合團隊檢查 DRC 與系統行為</text>
+<text x="32" y="794" font-size="25">重用的是局部實體解</text><text x="32" y="833" font-size="24">全域連線與最終需求仍由整合承擔</text><text x="606" y="886" font-size="13" text-anchor="end" fill="#52637a">Scott Yo-Ru Chen · 2026-10-19</text></g><style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#172b4d" i]{fill:#c6d0e2}[fill="#52637a" i]{fill:#bbc1c9}[fill="#dcfce7" i]{fill:#193723}[fill="#e0f2fe" i]{fill:#162936}[fill="#f8fafc" i]{fill:#1a2026}[fill="#fef3c7" i]{fill:#413919}[stroke="#0284c7" i]{stroke:#60bae8}[stroke="#16803c" i]{stroke:#48e07e}[stroke="#475569" i]{stroke:#c0c6cd}[stroke="#b45309" i]{stroke:#e79456}}</style>
+</svg>

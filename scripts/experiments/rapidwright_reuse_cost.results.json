@@ -1,0 +1,57 @@
+{
+  "kind": "synthetic_cost_model",
+  "assumptions": {
+    "exploration_jobs": 180,
+    "hours_per_exploration_job": 0.25,
+    "initial_library_job_hours": 45,
+    "flat_per_version_job_hours": 6,
+    "warm_per_version_job_hours": 2,
+    "excludes": [
+      "CPU core count",
+      "license token weights",
+      "queue wait",
+      "engineering time",
+      "timing failures",
+      "FPGA PPA"
+    ]
+  },
+  "stable_library": [
+    {
+      "versions": 1,
+      "libraries": 1,
+      "flat_job_hours": 6.0,
+      "reuse_job_hours": 47.0,
+      "saved_job_hours": -41.0
+    },
+    {
+      "versions": 5,
+      "libraries": 1,
+      "flat_job_hours": 30.0,
+      "reuse_job_hours": 55.0,
+      "saved_job_hours": -25.0
+    },
+    {
+      "versions": 12,
+      "libraries": 1,
+      "flat_job_hours": 72.0,
+      "reuse_job_hours": 69.0,
+      "saved_job_hours": 3.0
+    },
+    {
+      "versions": 20,
+      "libraries": 1,
+      "flat_job_hours": 120.0,
+      "reuse_job_hours": 85.0,
+      "saved_job_hours": 35.0
+    }
+  ],
+  "refresh_every_10_versions": {
+    "versions": 20,
+    "libraries": 2,
+    "flat_job_hours": 120.0,
+    "reuse_job_hours": 130.0,
+    "saved_job_hours": -10.0
+  },
+  "first_strictly_profitable_version": 12,
+  "no_break_even_if_warm_ge_flat": true
+}
