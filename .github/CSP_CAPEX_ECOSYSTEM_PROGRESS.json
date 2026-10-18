@@ -2983,20 +2983,15 @@
     ],
     "current_run_screening": {
       "date": "2026-10-18",
-      "checked_at": "2026-10-18T09:25:33Z",
-      "instruction_commit_sha": "165367068791a7651cd357d97e666c6b2965b598",
+      "checked_at": "2026-10-18T09:46:38Z",
+      "instruction_commit_sha": "2b55a69937f50a8b2f1fa72174226c88a4318b84",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh14grouped searches include98active names;core issuer and fiveCSP indices plus targeted TPU/NRE/procurement,outside opportunities and downside checked.One newly covered material reported Loughton customer-withdrawal event;no article.",
+      "scope": "Fresh grouped discovery includes98active names;core issuer and fiveCSP indices,targeted TPU/NRE/procurement,and outside opportunity/downside searches refreshed.No further authenticated material increment beyond recorded Loughton report;no new event,candidate or article.",
       "sources": [
-        "https://finance.yahoo.com/technology/ai/articles/microsoft-axes-ai-deal-setback-053000624.html",
-        "https://www.nscale.com/press-releases/nscale-uk-ai-infrastructure-announcement",
-        "https://www.nscale.com/press-releases/nscale-microsoft-2025",
-        "https://www.theguardian.com/technology/2026/sep/24/construction-largest-supercomputer-delayed",
         "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
         "https://www.mediatek.com/press-room",
-        "https://www.mediatek.com/tek-talk-blogs/inside-mediateks-approach-to-scalable-silicon-design",
         "https://nvidianews.nvidia.com/news",
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/",
@@ -3005,16 +3000,20 @@
         "https://ir.aboutamazon.com/overview/default.aspx",
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
-        "https://www.oracle.com/news/"
+        "https://www.oracle.com/news/",
+        "https://www.sinbon.com/tw/investors-news/1",
+        "https://finance.yahoo.com/technology/ai/articles/microsoft-axes-ai-deal-setback-053000624.html",
+        "https://www.nscale.com/newsroom?a48283e3_page=3",
+        "https://www.ft.com/content/9ea5a37d-15c9-4d5b-94d6-719048c9cd3c"
       ],
       "source_limits": [
-        "Required rules/specifications fetched at instruction165367068791a7651cd357d97e666c6b2965b598 and fully read;initial display truncation of AGENTS recovered with complete stored-text chunks before task actions.Full progress JSON parsed.Three related posts refetched,unchanged blobs matching previously read full bodies.",
-        "Fresh alpha-quant metadata/defaultmain f43ed0cd5d57d28c50b924f2b3614d4189eae69f and fullCSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active.Grouped OR discovery is not98individual audits.Primary historical48/pending50,monthly22,product16,partner4,regulator3 unchanged.",
-        "Core indices refreshed.TSMC October15 SEC results/guidance unchanged.MediaTek October15 scalable-design page is a video introduction without customer,NRE,award or production economics;video not transcribed.No new confirmed TPU procurement terms established.NVIDIA October17PC/October16PC+automotive,AMD October12Helion,Broadcom and Marvell known entries are not new financial revisions.",
-        "FiveCSP indices fetched;Amazon40line and Alphabet72line extractions incomplete.Meta/Oracle landing pages not a full current capex/utilization audit.No aggregate budget/AI monetization revision inferred.",
-        "Full-universe results largely older monthly results,broker previews and product/market recaps.Crawl recency is not event date.Outside scan newly discovers October18 Loughton withdrawal report;grid delay itself is older.Reposts not counted as independent reports.Report publication precedes this check;newly covered,not newly occurring at query time.",
-        "Dedup against95prior events,189candidates,106prior screenings and readable notification baseline.Loughton is distinct from Glomfjord;existing Nscale candidate receives append-only verification update.Other historical facts preserved.No new article,financial consensus estimate or supplier cancellation inferred.",
-        "Public ledger contains no current stock quotes,valuation,target prices,holdings,institutional flows or private investment decisions.Ledger-only JSON,preservation,freshhead/blob,CAS,readback and onlytarget verification;no articlelint,build,deploy or publicarticle claim."
+        "Fresh metadata/defaultmain2b55a69937f50a8b2f1fa72174226c88a4318b84;required rules and specifications read completely at same instruction revision.Full911329-character progress JSON parsed.Related posts refetched with unchanged blobs matching previously read complete bodies.No required instruction failure.",
+        "Fresh alpha-quant metadata/defaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f and completeCSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active.14OR discovery queries includeall98names;not98individual primary audits.Primary historical48/pending50,monthly22,product16,partner4,regulator3 remain unchanged.",
+        "Core indices fetched.TSMC October15SEC results and Q4guidance remain the available numeric baseline.MediaTek TPU/NRE/procurement discovery returns historical forecasts and capacity reports,not authenticated new design award,renewal or commercial terms.NVIDIA,AMD,Broadcom and Marvell visible indices checked;not comprehensive current-filing audits.",
+        "FiveCSP indices refreshed.Amazon40line/Alphabet72line extractions lack full financial bodies.Meta/Oracle landing pages do not establish full current capex,utilization or AI monetization;no budget aggregate or absence-of-news claim inferred.",
+        "Grouped results mostly older monthly releases,earnings previews,capacity/product reports and market commentary.Date-query/crawl recency is not event date.Sinbon official search index contains September numeric text,but direct opened page is a one-line shell;not promoted to completed primary financial validation.No new individual current-price or valuation judgment made.",
+        "Fresh Loughton searches rediscover the already recorded JamesTitcomb report and derivative translations;not independent confirmation or a second event.Nscale press-releases path failed,official newsroom index accessible via search shows older entries.No formal termination terms,new supplier cancellation or quantified earnings effect verified.Outside scan repeats FT pipeline and CoreWeave financing risk already recorded.",
+        "Dedup96events,189candidates,107prior screenings and readable notification baseline.No new event/candidate/article/blocker;all historical objects preserved.Only instruction/date/current-screening metadata and one append-only screening checkpoint updated.Public ledger excludes quotes,valuation,target prices,holdings,institutional flows and private decisions.Ledger-only JSON,preservation,freshhead/blob,CAS,readback and onlytarget checks;no articlelint/build/deploy/publicarticle claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -6167,6 +6166,41 @@
           "Full-universe results largely older monthly results,broker previews and product/market recaps.Crawl recency is not event date.Outside scan newly discovers October18 Loughton withdrawal report;grid delay itself is older.Reposts not counted as independent reports.Report publication precedes this check;newly covered,not newly occurring at query time.",
           "Dedup against95prior events,189candidates,106prior screenings and readable notification baseline.Loughton is distinct from Glomfjord;existing Nscale candidate receives append-only verification update.Other historical facts preserved.No new article,financial consensus estimate or supplier cancellation inferred.",
           "Public ledger contains no current stock quotes,valuation,target prices,holdings,institutional flows or private investment decisions.Ledger-only JSON,preservation,freshhead/blob,CAS,readback and onlytarget verification;no articlelint,build,deploy or publicarticle claim."
+        ]
+      },
+      {
+        "date": "2026-10-18",
+        "checked_at": "2026-10-18T09:46:38Z",
+        "instruction_commit_sha": "2b55a69937f50a8b2f1fa72174226c88a4318b84",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh grouped discovery includes98active names;core issuer and fiveCSP indices,targeted TPU/NRE/procurement,and outside opportunity/downside searches refreshed.No further authenticated material increment beyond recorded Loughton report;no new event,candidate or article.",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://www.sinbon.com/tw/investors-news/1",
+          "https://finance.yahoo.com/technology/ai/articles/microsoft-axes-ai-deal-setback-053000624.html",
+          "https://www.nscale.com/newsroom?a48283e3_page=3",
+          "https://www.ft.com/content/9ea5a37d-15c9-4d5b-94d6-719048c9cd3c"
+        ],
+        "source_limits": [
+          "Fresh metadata/defaultmain2b55a69937f50a8b2f1fa72174226c88a4318b84;required rules and specifications read completely at same instruction revision.Full911329-character progress JSON parsed.Related posts refetched with unchanged blobs matching previously read complete bodies.No required instruction failure.",
+          "Fresh alpha-quant metadata/defaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f and completeCSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active.14OR discovery queries includeall98names;not98individual primary audits.Primary historical48/pending50,monthly22,product16,partner4,regulator3 remain unchanged.",
+          "Core indices fetched.TSMC October15SEC results and Q4guidance remain the available numeric baseline.MediaTek TPU/NRE/procurement discovery returns historical forecasts and capacity reports,not authenticated new design award,renewal or commercial terms.NVIDIA,AMD,Broadcom and Marvell visible indices checked;not comprehensive current-filing audits.",
+          "FiveCSP indices refreshed.Amazon40line/Alphabet72line extractions lack full financial bodies.Meta/Oracle landing pages do not establish full current capex,utilization or AI monetization;no budget aggregate or absence-of-news claim inferred.",
+          "Grouped results mostly older monthly releases,earnings previews,capacity/product reports and market commentary.Date-query/crawl recency is not event date.Sinbon official search index contains September numeric text,but direct opened page is a one-line shell;not promoted to completed primary financial validation.No new individual current-price or valuation judgment made.",
+          "Fresh Loughton searches rediscover the already recorded JamesTitcomb report and derivative translations;not independent confirmation or a second event.Nscale press-releases path failed,official newsroom index accessible via search shows older entries.No formal termination terms,new supplier cancellation or quantified earnings effect verified.Outside scan repeats FT pipeline and CoreWeave financing risk already recorded.",
+          "Dedup96events,189candidates,107prior screenings and readable notification baseline.No new event/candidate/article/blocker;all historical objects preserved.Only instruction/date/current-screening metadata and one append-only screening checkpoint updated.Public ledger excludes quotes,valuation,target prices,holdings,institutional flows and private decisions.Ledger-only JSON,preservation,freshhead/blob,CAS,readback and onlytarget checks;no articlelint/build/deploy/publicarticle claim."
         ]
       }
     ],
@@ -11356,7 +11390,7 @@
     }
   ],
   "last_research_date": "2026-10-18",
-  "instruction_commit_sha": "165367068791a7651cd357d97e666c6b2965b598",
+  "instruction_commit_sha": "2b55a69937f50a8b2f1fa72174226c88a4318b84",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
