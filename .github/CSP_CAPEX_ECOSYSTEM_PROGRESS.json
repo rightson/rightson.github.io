@@ -2992,12 +2992,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-18",
-      "checked_at": "2026-10-18T11:30:14Z",
-      "instruction_commit_sha": "16a34ac0d972e9dc2a1ae99ac1d93cde9e459aae",
+      "checked_at": "2026-10-18T11:38:33Z",
+      "instruction_commit_sha": "73a8885a894f647631613f3fd501a2c2230cbc99",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh14grouped discovery queries include98active names;sixcore issuer/fiveCSP indices,targeted TPU commercial-role and outside opportunity/downside searches refreshed.Loughton Reuters source-version reconciliation appended to existing event/candidate;no new material event,notification or article.",
+      "scope": "Fresh14grouped queries covered98active names;sixcore issuer/fiveCSP indices and targeted TPU,capacity,financing,delivery/downside and outside-universe searches refreshed.Added one historical bilateral ERock/HD engine-supply candidate;no new material event or article.",
       "sources": [
         "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
         "https://www.mediatek.com/press-room",
@@ -3010,18 +3010,19 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/",
-        "https://935thelloyd.com/2026/10/18/microsoft-pulls-out-of-uk-data-center-deal-with-nscale-telegraph-reports/",
-        "https://www.ft.com/content/9ea5a37d-15c9-4d5b-94d6-719048c9cd3c"
+        "https://www.hd-xitesolution.com/pr/news/1944",
+        "https://erock.com/newsroom/erock-hd-construction-equipment-sign-multi-year-engine-long-block-supply-agreement-to-accelerate-manufacturing-capacity/",
+        "https://origin-web.hd-infracore.com/en/company/media/news-view/127",
+        "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/"
       ],
       "source_limits": [
-        "Fresh defaultmain16a34ac0d972e9dc2a1ae99ac1d93cde9e459aae instruction rules/specifications fetched at same revision and fully read.Full915746-character progress parsed.Related posts refetched with unchanged blobs matching previously read full bodies.No mandatory instruction missing or truncated.",
-        "Fresh alpha-quant metadata/defaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f/fullCSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active.All names included in14OR discovery queries,not individual primary audits.Historical primary48/pending50,monthly22,product16,partner4,regulator3 unchanged.",
-        "Core indices opened.TSMC October15SEC result/guidance baseline unchanged.MediaTek TPU/NRE/procurement searches return historical role/forecast/packaging and supplier contract material;no new authenticated award,renewal,NRE or manufacturing economics established.NVIDIA,AMD,Broadcom,Marvell visible entries checked,not full current-filing audit.",
-        "FiveCSP indices opened.Amazon40line/Alphabet72line extracted bodies incomplete.Meta/Oracle news landing do not establish comprehensive capex/utilization/monetization.No new aggregate spending conclusion drawn.",
-        "Grouped discoveries largely historical monthly revenue,broker commentary,product/capacity and market recaps.Crawl date not publication/event date.No individual latest-price,valuation or market-consensus claim made.",
-        "Reuters October18 Loughton coverage separately reconciled:withdrawal attributed to Telegraph;updated indexed version quotes Nscale directly,same response already covered.Earlier syndicated version has no company responses.Direct Reuters open inaccessible.No new termination terms,cash loss,other-contract impact or supplier cancellation.Not a second independent withdrawal report or repeated alert.",
-        "Dedup96events/189candidates/108prior screenings and readable notification baseline.Only append source verification to existing Loughton event/Nscale candidate,one screening checkpoint,and instruction/date metadata.Original facts and all other objects retained.No article or new blocker.Public ledger excludes quotes,valuation,targets,holdings,institutional flows and private decisions.Ledger-only checks;no articlelint/build/deploy/publication claim."
+        "Fresh same-revision required instructions/specifications fully fetched;unchanged blob identities match fully read bodies.Full921587-character progress parsed.Related posts refetched with unchanged d7b6628,bc1a65e,2bc5dfc blobs matching previously read bodies.No mandatory source missing;display truncation during redundant instruction output recovered by segmented reading.",
+        "Fresh alpha-quant defaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f/fullCSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active names.All included in14OR discovery searches,not98individual primary audits.Historical primary48/pending50,monthly22,product16,partner4,regulator3 unchanged.",
+        "TSMC October15 SEC result/guidance baseline unchanged.Core issuer indices opened;visible NVIDIA October17/16,AMD October12,Broadcom October13/8 and Marvell October13/12 entries compared with ledger.Targeted MediaTek/Google TPU responsibility,NRE and supplier searches mostly return historical reporting.No new authenticated award,renewal,NRE amount or manufacturing economics established.",
+        "FiveCSP indices opened.Amazon40line/Alphabet72line extractions incomplete;Meta/Oracle news pages are not full financial or deployment audits.No comprehensive aggregate capex/utilization or monetization conclusion.",
+        "Discovery recency filters often returned historical material,crawl-date updates,monthly revenue and market commentary.Current Loughton Reuters reports match already-recorded source-version baseline;no new authenticated termination terms,financial loss,other-contract effect or supplier cancellation established.No repeated alert.",
+        "Outside-universe engine relationship verified against both issuers:October7 agreement is historical,not an October18 award.HD group primary establishes KRW390billion;ERock original establishes2027–2028 supply purpose.October15 DX77 diesel first-firing is a separate product-development milestone and cannot be confused with22-liter gas long-block shipments.No new earnings revision,margin,accepted site delivery or cash collection established.",
+        "Dedup96events/189prior candidates/109prior screenings and readable notification baseline.One historical candidate and one screening appended;old objects preserved.No article,new blocker,quote,valuation,target,holding,institutional flow or private investment decision in public ledger.Ledger-only validation;no articlelint/build/deploy or publication-success claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -6243,6 +6244,41 @@
           "Grouped discoveries largely historical monthly revenue,broker commentary,product/capacity and market recaps.Crawl date not publication/event date.No individual latest-price,valuation or market-consensus claim made.",
           "Reuters October18 Loughton coverage separately reconciled:withdrawal attributed to Telegraph;updated indexed version quotes Nscale directly,same response already covered.Earlier syndicated version has no company responses.Direct Reuters open inaccessible.No new termination terms,cash loss,other-contract impact or supplier cancellation.Not a second independent withdrawal report or repeated alert.",
           "Dedup96events/189candidates/108prior screenings and readable notification baseline.Only append source verification to existing Loughton event/Nscale candidate,one screening checkpoint,and instruction/date metadata.Original facts and all other objects retained.No article or new blocker.Public ledger excludes quotes,valuation,targets,holdings,institutional flows and private decisions.Ledger-only checks;no articlelint/build/deploy/publication claim."
+        ]
+      },
+      {
+        "date": "2026-10-18",
+        "checked_at": "2026-10-18T11:38:33Z",
+        "instruction_commit_sha": "73a8885a894f647631613f3fd501a2c2230cbc99",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh14grouped queries covered98active names;sixcore issuer/fiveCSP indices and targeted TPU,capacity,financing,delivery/downside and outside-universe searches refreshed.Added one historical bilateral ERock/HD engine-supply candidate;no new material event or article.",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://www.hd-xitesolution.com/pr/news/1944",
+          "https://erock.com/newsroom/erock-hd-construction-equipment-sign-multi-year-engine-long-block-supply-agreement-to-accelerate-manufacturing-capacity/",
+          "https://origin-web.hd-infracore.com/en/company/media/news-view/127",
+          "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/"
+        ],
+        "source_limits": [
+          "Fresh same-revision required instructions/specifications fully fetched;unchanged blob identities match fully read bodies.Full921587-character progress parsed.Related posts refetched with unchanged d7b6628,bc1a65e,2bc5dfc blobs matching previously read bodies.No mandatory source missing;display truncation during redundant instruction output recovered by segmented reading.",
+          "Fresh alpha-quant defaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f/fullCSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active names.All included in14OR discovery searches,not98individual primary audits.Historical primary48/pending50,monthly22,product16,partner4,regulator3 unchanged.",
+          "TSMC October15 SEC result/guidance baseline unchanged.Core issuer indices opened;visible NVIDIA October17/16,AMD October12,Broadcom October13/8 and Marvell October13/12 entries compared with ledger.Targeted MediaTek/Google TPU responsibility,NRE and supplier searches mostly return historical reporting.No new authenticated award,renewal,NRE amount or manufacturing economics established.",
+          "FiveCSP indices opened.Amazon40line/Alphabet72line extractions incomplete;Meta/Oracle news pages are not full financial or deployment audits.No comprehensive aggregate capex/utilization or monetization conclusion.",
+          "Discovery recency filters often returned historical material,crawl-date updates,monthly revenue and market commentary.Current Loughton Reuters reports match already-recorded source-version baseline;no new authenticated termination terms,financial loss,other-contract effect or supplier cancellation established.No repeated alert.",
+          "Outside-universe engine relationship verified against both issuers:October7 agreement is historical,not an October18 award.HD group primary establishes KRW390billion;ERock original establishes2027–2028 supply purpose.October15 DX77 diesel first-firing is a separate product-development milestone and cannot be confused with22-liter gas long-block shipments.No new earnings revision,margin,accepted site delivery or cash collection established.",
+          "Dedup96events/189prior candidates/109prior screenings and readable notification baseline.One historical candidate and one screening appended;old objects preserved.No article,new blocker,quote,valuation,target,holding,institutional flow or private investment decision in public ledger.Ledger-only validation;no articlelint/build/deploy or publication-success claim."
         ]
       }
     ],
@@ -11427,6 +11463,27 @@
         "Test whether liquid-cooled pluggables sustain their serviceability advantage versus CPO;cost,interface incompatibility or slow adoption would weaken the opportunity."
       ],
       "publication_status": "historical_product_research_baseline_only_no_material_alert_no_article"
+    },
+    {
+      "key": "erock-hd-construction-engine-long-block-supply-to-delivered-power-and-profit",
+      "date": "2026-10-18",
+      "instruction_commit_sha": "73a8885a894f647631613f3fd501a2c2230cbc99",
+      "companies": [
+        "ERock",
+        "HD Construction Equipment"
+      ],
+      "sources": [
+        "https://www.hd-xitesolution.com/pr/news/1944",
+        "https://erock.com/newsroom/erock-hd-construction-equipment-sign-multi-year-engine-long-block-supply-agreement-to-accelerate-manufacturing-capacity/"
+      ],
+      "stage": "october7_bilateral_issuer_supply_agreement_verified_historical_baseline_not_new_today",
+      "facts": "October7 ERock and HD group releases establish a2027–2028 natural-gas engine long-block supply agreement for RockBlock generators.HD group reports KRW390billion and22-liter semi-finished engine bodies without fuel/ignition systems.ERock describes supply-chain support for data-center,utility and critical-infrastructure orders.This is an equipment-supply agreement,not completed generators,energized customer sites or recognized profit.Separate October15 HD release describes first firing of3MW-class DX77 and verification;that product-development stage is not delivery under this gas-engine contract.",
+      "questions": [
+        "Verify contract quantities,pricing,cancellation/acceptance conditions,capacity ramp and shipment-to-cash timing;neither issuer release establishes incremental margin or cash realization.",
+        "Trace specific downstream projects and fuel/permit readiness before allocating this supply order to any named CSP or treating onsite generation as exempt from construction restrictions.",
+        "Assess repeat orders,service economics and component bottlenecks versus alternative engines,turbines and grid supply;delivery delays,cost inflation or weak customer financing could prevent profit conversion."
+      ],
+      "publication_status": "historical_commercial_relationship_research_baseline_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -11446,7 +11503,7 @@
     }
   ],
   "last_research_date": "2026-10-18",
-  "instruction_commit_sha": "16a34ac0d972e9dc2a1ae99ac1d93cde9e459aae",
+  "instruction_commit_sha": "73a8885a894f647631613f3fd501a2c2230cbc99",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
