@@ -3022,13 +3022,13 @@
       "8021"
     ],
     "current_run_screening": {
-      "date": "2026-10-18",
-      "checked_at": "2026-10-18T15:57:35Z",
-      "instruction_commit_sha": "e0b214258c8372805166f32238ad79aa3a9aeec3",
+      "date": "2026-10-19",
+      "checked_at": "2026-10-18T17:05:40Z",
+      "instruction_commit_sha": "6824dd317ab87b2805f77063c27a620605d29b71",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh14grouped searches included98active names;sixcore issuer and fiveCSP indices refreshed.Targeted TPU,advanced capacity,NVHBM,delivery/financing downside and outside-universe discovery completed within available source limits.FT source cross-check appended to existing Loughton event/candidate.No new material event or article.",
+      "scope": "Fresh14grouped searches included98active names;sixcore issuer and fiveCSP indices refreshed.Targeted TPU,NVHBM,advanced capacity,delivery/financing downside and outside-universe discovery completed within source limits.One historical MPS financial/product-stage candidate added.No new material event or article.",
       "sources": [
         "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
         "https://www.mediatek.com/press-room",
@@ -3041,18 +3041,20 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://www.ft.com/content/35cc5cc6-f9b6-49cc-8fc2-bd61e09c8c40",
+        "https://www.sec.gov/Archives/edgar/data/1280452/000162828026051029/mpwr-20260630xexx991.htm",
+        "https://www.monolithicpower.com/en/about-mps/investor-relations/press-releases.html",
         "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/",
-        "https://www.reuters.com/world/asia-pacific/samsung-use-tsmc-technology-nvidias-next-generation-memory-chips-seoul-newspaper-2026-10-18/"
+        "https://www.ft.com/content/9ea5a37d-15c9-4d5b-94d6-719048c9cd3c",
+        "https://en.sedaily.com/finance/2026/10/18/samsung-to-use-tsmc-for-base-die-in-nvidias-custom-hbm"
       ],
       "source_limits": [
-        "Fresh defaultmain metadata and instruction commit e0b214258c8372805166f32238ad79aa3a9aeec3;required instructions/specifications fetched and completely read at this commit.Full947990-character ledger parsed.Related posts refetched with unchanged d7b6628,bc1a65e,2bc5dfc identities matching previously read bodies.No required instruction missing or truncated.",
-        "Fresh alpha-quant defaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f/fullCSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active names.All included in14grouped discovery queries,not98individual primary financial audits.Historical primary48/pending50,monthly22,product16,partner4,regulator3 unchanged.",
-        "TSMC October15 SEC baseline and visible MediaTek,NVIDIA,AMD,Broadcom,Marvell entries checked.TPU search returns historical supplier and reported procurement material;no newly authenticated MediaTek NRE,design award,renewal,production share or pricing change.Source dates verified where discovered;older Broadcom-supplier stories not treated as current changes.",
-        "FiveCSP landing indices refreshed.Amazon40line/Alphabet72line bodies incomplete;Meta/Oracle news landing pages not full financial or deployment audits.No comprehensive aggregate spending,utilization or monetization conclusion.Search recency may describe crawling;April/July/August guidance articles were not treated as October announcements.",
-        "NVHBM Reuters/SeoulEconomicDaily derivatives match previously recorded sourcing event,without new issuer confirmation or disclosed economics.Loughton FT original indexed body adds unnamed-source corroboration but no formal termination terms or supplier financial change;recorded as verification rather than a new event.",
-        "Outside-universe power,memory,optics,financing and project-disruption discovery produced historical or already-recorded leads.No new independently authenticated commercial milestone established within reviewed sources,not a claim that all companies had no news.",
-        "Dedup97events/193candidates/113prior screenings plus readable notified-event baseline.All prior facts and histories preserved.No quotes,valuation,targets,holdings,private investment judgments or B-item records in public ledger.Ledger-only source validation;no articlelint/build/deploy/publication-success claim."
+        "Fresh defaultmain6824dd317ab87b2805f77063c27a620605d29b71;all required instructions/specifications fully fetched and read at same commit.Full953405-character ledger parsed.Related posts refetched with unchanged d7b6628,bc1a65e,2bc5dfc identities matching previously read bodies.No required instruction missing or truncated.",
+        "Fresh alpha-quant defaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f/CSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active names.All included in14grouped discovery queries;recency/date filters returned older or crawled material too.This is not98individual financial audits.Historical active-universe primary48/pending50,monthly22,product16,partner4,regulator3 unchanged.MPS is outside universe.",
+        "TSMC October15 SEC baseline and visible MediaTek,NVIDIA,AMD,Broadcom,Marvell issuer entries checked.Targeted TPU search returns known partner roles and reported procurement material;no newly authenticated MediaTek award,NRE,renewal,allocation or pricing revision established.NVHBM source derivatives match existing event without new issuer commercial confirmation.",
+        "FiveCSP landing indices refreshed.Amazon40line/Alphabet72line extraction incomplete;Meta/Oracle news pages do not constitute full financial or deployment audits.No comprehensive aggregate spending,utilization or monetization conclusion.",
+        "Loughton and US project-pipeline reporting matches existing event/candidate baselines.No new verified termination economics or supplier cancellations.April/July/August commentary and forecast material not treated as October announcements.",
+        "Outside-universe MPS July30 SEC commentary directly read for historical revenue,mix,margin,cash and product maturity.Original Q1 transcript search dates the85%EnterpriseData floor to April30;not accepted as a new October18 revision.Wrong legacy IR subdomain and third-party analysis body fetch failed;correct issuer index and SEC source succeeded.No stock-price,valuation,consensus or institutional-flow judgment.",
+        "Dedup97events/193prior candidates/114prior screenings and readable notified-event baseline.All prior histories preserved.One candidate and one screening appended;no article,new blocker,quotes,valuation,targets,holdings,private investment judgments or B-item records in public ledger.Ledger-only source validation;no articlelint/build/deploy/publication-success claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -6451,6 +6453,42 @@
           "NVHBM Reuters/SeoulEconomicDaily derivatives match previously recorded sourcing event,without new issuer confirmation or disclosed economics.Loughton FT original indexed body adds unnamed-source corroboration but no formal termination terms or supplier financial change;recorded as verification rather than a new event.",
           "Outside-universe power,memory,optics,financing and project-disruption discovery produced historical or already-recorded leads.No new independently authenticated commercial milestone established within reviewed sources,not a claim that all companies had no news.",
           "Dedup97events/193candidates/113prior screenings plus readable notified-event baseline.All prior facts and histories preserved.No quotes,valuation,targets,holdings,private investment judgments or B-item records in public ledger.Ledger-only source validation;no articlelint/build/deploy/publication-success claim."
+        ]
+      },
+      {
+        "date": "2026-10-19",
+        "checked_at": "2026-10-18T17:05:40Z",
+        "instruction_commit_sha": "6824dd317ab87b2805f77063c27a620605d29b71",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh14grouped searches included98active names;sixcore issuer and fiveCSP indices refreshed.Targeted TPU,NVHBM,advanced capacity,delivery/financing downside and outside-universe discovery completed within source limits.One historical MPS financial/product-stage candidate added.No new material event or article.",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://www.sec.gov/Archives/edgar/data/1280452/000162828026051029/mpwr-20260630xexx991.htm",
+          "https://www.monolithicpower.com/en/about-mps/investor-relations/press-releases.html",
+          "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/",
+          "https://www.ft.com/content/9ea5a37d-15c9-4d5b-94d6-719048c9cd3c",
+          "https://en.sedaily.com/finance/2026/10/18/samsung-to-use-tsmc-for-base-die-in-nvidias-custom-hbm"
+        ],
+        "source_limits": [
+          "Fresh defaultmain6824dd317ab87b2805f77063c27a620605d29b71;all required instructions/specifications fully fetched and read at same commit.Full953405-character ledger parsed.Related posts refetched with unchanged d7b6628,bc1a65e,2bc5dfc identities matching previously read bodies.No required instruction missing or truncated.",
+          "Fresh alpha-quant defaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f/CSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active names.All included in14grouped discovery queries;recency/date filters returned older or crawled material too.This is not98individual financial audits.Historical active-universe primary48/pending50,monthly22,product16,partner4,regulator3 unchanged.MPS is outside universe.",
+          "TSMC October15 SEC baseline and visible MediaTek,NVIDIA,AMD,Broadcom,Marvell issuer entries checked.Targeted TPU search returns known partner roles and reported procurement material;no newly authenticated MediaTek award,NRE,renewal,allocation or pricing revision established.NVHBM source derivatives match existing event without new issuer commercial confirmation.",
+          "FiveCSP landing indices refreshed.Amazon40line/Alphabet72line extraction incomplete;Meta/Oracle news pages do not constitute full financial or deployment audits.No comprehensive aggregate spending,utilization or monetization conclusion.",
+          "Loughton and US project-pipeline reporting matches existing event/candidate baselines.No new verified termination economics or supplier cancellations.April/July/August commentary and forecast material not treated as October announcements.",
+          "Outside-universe MPS July30 SEC commentary directly read for historical revenue,mix,margin,cash and product maturity.Original Q1 transcript search dates the85%EnterpriseData floor to April30;not accepted as a new October18 revision.Wrong legacy IR subdomain and third-party analysis body fetch failed;correct issuer index and SEC source succeeded.No stock-price,valuation,consensus or institutional-flow judgment.",
+          "Dedup97events/193prior candidates/114prior screenings and readable notified-event baseline.All prior histories preserved.One candidate and one screening appended;no article,new blocker,quotes,valuation,targets,holdings,private investment judgments or B-item records in public ledger.Ledger-only source validation;no articlelint/build/deploy/publication-success claim."
         ]
       }
     ],
@@ -11735,6 +11773,27 @@
         "Test alternative internal-foundry qualification and whether outsourcing creates incremental demand or reallocates already-booked wafers."
       ],
       "publication_status": "source_event_registered_no_article"
+    },
+    {
+      "key": "monolithic-power-ai-server-optical-and-memory-power-profit-conversion",
+      "date": "2026-10-19",
+      "instruction_commit_sha": "6824dd317ab87b2805f77063c27a620605d29b71",
+      "companies": [
+        "Monolithic Power Systems"
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1280452/000162828026051029/mpwr-20260630xexx991.htm",
+        "https://www.monolithicpower.com/en/about-mps/investor-relations/press-releases.html",
+        "https://www.monolithicpower.com/en/about-mps/investor-relations/financials-and-filings/quarterly-results.html"
+      ],
+      "stage": "historical_july30_issuer_q2_financial_and_product_maturity_baseline_verified_not_october_revision",
+      "facts": "July30 SEC commentary:Q2 revenue USD980.6m,GAAP gross margin55.2%,operating margin31.0%.Enterprise Data revenue USD380.6m,+44.8%QoQ,linked to AI/server power management.Communications growth links to optical-module/switch power;DDR5 initial orders and800V AC/DC sampling are separate maturity stages.Operating cash flow USD227.9m versus250.3mQ1 despite profit growth.Issuer index lists October29 Q3 results;no Q3 actuals established.October18-dated analysis resurfaced April30 commentary,not a newly dated revision.",
+      "questions": [
+        "At October29 results,test realized AI/server power revenue,margins,inventory and cash conversion versus historical guidance.",
+        "Distinguish800V sampling from accepted production orders;verify content,qualification,pricing and capacity costs.",
+        "Track optical/switch and DDR5 demand independently;product substitution,customer concentration,patent disputes or deployment delays could weaken profit capture."
+      ],
+      "publication_status": "historical_primary_research_baseline_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -11753,8 +11812,8 @@
       "impact": "Search hits and reposted notices have not been individually checked against company or exchange originals."
     }
   ],
-  "last_research_date": "2026-10-18",
-  "instruction_commit_sha": "e0b214258c8372805166f32238ad79aa3a9aeec3",
+  "last_research_date": "2026-10-19",
+  "instruction_commit_sha": "6824dd317ab87b2805f77063c27a620605d29b71",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
