@@ -2925,6 +2925,30 @@
           "limits": "Direct Reuters page inaccessible;search returned updated body,while earlier Reuters syndication lacks Nscale response.Version distinction retained.No formal termination filing,compensation,capacity relocation,equipment cancellation or financial-loss disclosure established.Same event and same substantive response already notified;not a new material alert."
         }
       ]
+    },
+    {
+      "fingerprint": "samsung-nvhbm-tsmc-3nm-base-die-sourcing-reported-20261018",
+      "event_date": "2026-10-18",
+      "discovered_date": "2026-10-18",
+      "companies": [
+        "TSMC",
+        "Samsung Electronics",
+        "NVIDIA"
+      ],
+      "type": "original_industry_sourcing_report_not_issuer_confirmed_award",
+      "facts": {
+        "increment": "October18 Seoul Economic Daily reports Samsung accepted TSMC3nm base-die manufacturing for NVIDIA NVHBM.Sourcing decision is attributed to industry sources;Reuters repeats that report,not independent confirmation.",
+        "baseline": "Earlier October9 industry coverage described Samsung considering internal and external foundries.NVIDIA August26 technical material confirms controller relocation into custom HBM base dies.Samsung May29 standard-HBM4E sample release specifies its own4nm base die;different product scope.",
+        "limits": "Original article indexed excerpt retrieved;direct body failed.No issuer-confirmed contract,volume,price,capacity allocation,qualification or revenue timing obtained.Standard-HBM and other-customer sourcing must not be treated as displaced."
+      },
+      "sources": [
+        "https://en.sedaily.com/finance/2026/10/18/samsung-to-use-tsmc-for-base-die-in-nvidias-custom-hbm",
+        "https://www.reuters.com/world/asia-pacific/samsung-use-tsmc-technology-nvidias-next-generation-memory-chips-seoul-newspaper-2026-10-18/",
+        "https://developer.nvidia.com/ko-kr/blog/https-blogs-nvidia-co-kr-blog-nvlink-fusion-nvhbm-custom-high-bandwidth-memory/",
+        "https://news.samsung.com/global/samsung-electronics-begins-shipment-of-industry-first-hbm4e-samples",
+        "https://www.trendforce.com/news/2026/10/09/news-nvidias-nvhbm-reshapes-memory-makers-base-die-strategies-as-micron-samsung-turn-to-external-foundries"
+      ],
+      "status": "reported_customer_specific_sourcing_change_primary_commercial_confirmation_pending"
     }
   ],
   "articles": [],
@@ -2992,13 +3016,18 @@
     ],
     "current_run_screening": {
       "date": "2026-10-18",
-      "checked_at": "2026-10-18T13:37:52Z",
-      "instruction_commit_sha": "fa662624f94a36a0875a65da58218ccbe409177b",
+      "checked_at": "2026-10-18T14:50:33Z",
+      "instruction_commit_sha": "1a52862ab83c6c70341615f063f0fc4c698f49e7",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh14grouped searches included98active names;sixcore issuer/fiveCSP indices and targeted TPU,advanced capacity,delivery/financing downside and outside-universe searches refreshed.Added one historical AIB/Nebius colocation-financing candidate.No new material event or article.",
+      "scope": "Fresh14grouped searches included98active names;sixcore issuer and fiveCSP indices refreshed.Targeted TPU,capacity,delivery/financing downside and outside-universe discovery found reported Samsung NVHBM3nm sourcing change.One source event and candidate appended;no article.",
       "sources": [
+        "https://en.sedaily.com/finance/2026/10/18/samsung-to-use-tsmc-for-base-die-in-nvidias-custom-hbm",
+        "https://www.reuters.com/world/asia-pacific/samsung-use-tsmc-technology-nvidias-next-generation-memory-chips-seoul-newspaper-2026-10-18/",
+        "https://developer.nvidia.com/ko-kr/blog/https-blogs-nvidia-co-kr-blog-nvlink-fusion-nvhbm-custom-high-bandwidth-memory/",
+        "https://news.samsung.com/global/samsung-electronics-begins-shipment-of-industry-first-hbm4e-samples",
+        "https://www.trendforce.com/news/2026/10/09/news-nvidias-nvhbm-reshapes-memory-makers-base-die-strategies-as-micron-samsung-turn-to-external-foundries",
         "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
         "https://www.mediatek.com/press-room",
         "https://nvidianews.nvidia.com/news",
@@ -3010,18 +3039,16 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://www.sec.gov/Archives/edgar/data/2070542/000121390026105865/ea0307378-8k_aibdata.htm",
-        "https://www.globenewswire.com/news-release/2026/09/30/3371855/0/en/aib-data-centers-signs-contract-with-nebius-for-ai-data-center-capacity.html",
-        "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/"
+        "https://www.trendforce.com/presscenter/news/20261014-13269.html"
       ],
       "source_limits": [
-        "Fresh repo metadata/defaultmainfa662624f94a36a0875a65da58218ccbe409177b;required instructions/specifications fetched and completely read at same commit.Full934501-character ledger parsed.Related posts refetched;unchanged d7b6628,bc1a65e,2bc5dfc identities match previously read full bodies.No required instruction missing or truncated.",
-        "Fresh alpha-quant defaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f/fullCSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active names.All included in14OR discovery queries,not98individual primary audits.Historical primary48/pending50,monthly22,product16,partner4,regulator3 counts unchanged.",
-        "TSMC October15 SEC baseline and visible MediaTek,NVIDIA,AMD,Broadcom,Marvell issuer entries checked.Targeted TPU search returns historical partner-role and reported procurement material;no newly authenticated design award,NRE,renewal or production-share change established.No new verified advanced-node or packaging forecast revision.",
-        "FiveCSP landing indices refreshed.Amazon40line/Alphabet72line extraction incomplete;Meta/Oracle pages do not constitute full financial or deployment audit.No comprehensive aggregate spending,utilization or monetization conclusion.",
-        "Search recency often reflects crawling rather than publication;grouped results include historical revenue,broker commentary and market recaps.Current Loughton reports match already-notified event without new authenticated financial loss,supplier cancellation or other-contract impact.Azure cost-report rediscovery matches existing disputed software-cost candidate;not an authenticated infrastructure capex cut.",
-        "Outside-universe historical AIB/Nebius source checked via issuer release and SEC8-K;full executed agreement not obtained.No assumed financial close or accepted delivery.One research candidate preserves funding and service-commencement gaps.No latest-price,valuation,consensus or institutional-flow judgment.",
-        "Dedup96events/191prior candidates/111prior screenings and readable notified-event baseline.One historical candidate and one screening appended;all prior events,candidates and history retained.No article,new blocker,quotes,valuation,targets,holdings,private investment judgments or B-item records in public ledger.Ledger-only source validation;no articlelint/build/deploy/publication-success claim."
+        "Required instructions/specifications and full940115-character ledger read at instruction1a52862ab83c6c70341615f063f0fc4c698f49e7.Instruction display truncation was recovered by complete chunked reads before action.Related posts refetched with unchanged d7b6628,bc1a65e,2bc5dfc content identities matching previously read full bodies.",
+        "Fresh alpha-quant defaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f/CSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active names.All included in14OR discovery queries;search recency often reflects crawling and many results are historical.This is not98individual primary financial audits.Historical primary48/pending50,monthly22,product16,partner4,regulator3 unchanged.",
+        "TSMC October15 SEC baseline and visible MediaTek,NVIDIA,AMD,Broadcom,Marvell entries checked.Targeted TPU search does not authenticate new MediaTek design awards,NRE,renewal or production share;ByteDance and TPU schedule reports remain reported rather than company contracts.",
+        "FiveCSP landing indices refreshed.Amazon40line and Alphabet72line bodies incomplete;Meta/Oracle landing pages are not full financial,utilization or deployment audits.No aggregate spending or monetization conclusion.",
+        "Loughton Reuters/Telegraph reposts and October14 TrendForce capex forecast match registered baselines.No duplicate events for those reports;research-house capex forecasts not equated with firm purchases.",
+        "Samsung NVHBM report contrasted with prior dual-track coverage and official technical/standard-product baselines.Direct original body unavailable;indexed original excerpt and Reuters attribution are not issuer commercial confirmation.One new reported source event retained with gaps.",
+        "All prior events,candidates,screenings,blockers and article records preserved.No quotes,valuation,targets,holdings,private investment judgments or B-item records in public ledger.Ledger-only source verification;no articlelint,build,deploy or public article success claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -6349,6 +6376,43 @@
           "Search recency often reflects crawling rather than publication;grouped results include historical revenue,broker commentary and market recaps.Current Loughton reports match already-notified event without new authenticated financial loss,supplier cancellation or other-contract impact.Azure cost-report rediscovery matches existing disputed software-cost candidate;not an authenticated infrastructure capex cut.",
           "Outside-universe historical AIB/Nebius source checked via issuer release and SEC8-K;full executed agreement not obtained.No assumed financial close or accepted delivery.One research candidate preserves funding and service-commencement gaps.No latest-price,valuation,consensus or institutional-flow judgment.",
           "Dedup96events/191prior candidates/111prior screenings and readable notified-event baseline.One historical candidate and one screening appended;all prior events,candidates and history retained.No article,new blocker,quotes,valuation,targets,holdings,private investment judgments or B-item records in public ledger.Ledger-only source validation;no articlelint/build/deploy/publication-success claim."
+        ]
+      },
+      {
+        "date": "2026-10-18",
+        "checked_at": "2026-10-18T14:50:33Z",
+        "instruction_commit_sha": "1a52862ab83c6c70341615f063f0fc4c698f49e7",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh14grouped searches included98active names;sixcore issuer and fiveCSP indices refreshed.Targeted TPU,capacity,delivery/financing downside and outside-universe discovery found reported Samsung NVHBM3nm sourcing change.One source event and candidate appended;no article.",
+        "sources": [
+          "https://en.sedaily.com/finance/2026/10/18/samsung-to-use-tsmc-for-base-die-in-nvidias-custom-hbm",
+          "https://www.reuters.com/world/asia-pacific/samsung-use-tsmc-technology-nvidias-next-generation-memory-chips-seoul-newspaper-2026-10-18/",
+          "https://developer.nvidia.com/ko-kr/blog/https-blogs-nvidia-co-kr-blog-nvlink-fusion-nvhbm-custom-high-bandwidth-memory/",
+          "https://news.samsung.com/global/samsung-electronics-begins-shipment-of-industry-first-hbm4e-samples",
+          "https://www.trendforce.com/news/2026/10/09/news-nvidias-nvhbm-reshapes-memory-makers-base-die-strategies-as-micron-samsung-turn-to-external-foundries",
+          "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://www.trendforce.com/presscenter/news/20261014-13269.html"
+        ],
+        "source_limits": [
+          "Required instructions/specifications and full940115-character ledger read at instruction1a52862ab83c6c70341615f063f0fc4c698f49e7.Instruction display truncation was recovered by complete chunked reads before action.Related posts refetched with unchanged d7b6628,bc1a65e,2bc5dfc content identities matching previously read full bodies.",
+          "Fresh alpha-quant defaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f/CSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active names.All included in14OR discovery queries;search recency often reflects crawling and many results are historical.This is not98individual primary financial audits.Historical primary48/pending50,monthly22,product16,partner4,regulator3 unchanged.",
+          "TSMC October15 SEC baseline and visible MediaTek,NVIDIA,AMD,Broadcom,Marvell entries checked.Targeted TPU search does not authenticate new MediaTek design awards,NRE,renewal or production share;ByteDance and TPU schedule reports remain reported rather than company contracts.",
+          "FiveCSP landing indices refreshed.Amazon40line and Alphabet72line bodies incomplete;Meta/Oracle landing pages are not full financial,utilization or deployment audits.No aggregate spending or monetization conclusion.",
+          "Loughton Reuters/Telegraph reposts and October14 TrendForce capex forecast match registered baselines.No duplicate events for those reports;research-house capex forecasts not equated with firm purchases.",
+          "Samsung NVHBM report contrasted with prior dual-track coverage and official technical/standard-product baselines.Direct original body unavailable;indexed original excerpt and Reuters attribution are not issuer commercial confirmation.One new reported source event retained with gaps.",
+          "All prior events,candidates,screenings,blockers and article records preserved.No quotes,valuation,targets,holdings,private investment judgments or B-item records in public ledger.Ledger-only source verification;no articlelint,build,deploy or public article success claim."
         ]
       }
     ],
@@ -11595,6 +11659,31 @@
         "Track whether capacity is delivered and billed as contracted;delays or unavailable funding would weaken the conversion hypothesis."
       ],
       "publication_status": "historical_commercial_financing_research_baseline_only_no_material_alert_no_article"
+    },
+    {
+      "key": "samsung-nvhbm-tsmc-base-die-process-sourcing-and-profit-conversion",
+      "date": "2026-10-18",
+      "instruction_commit_sha": "1a52862ab83c6c70341615f063f0fc4c698f49e7",
+      "companies": [
+        "TSMC",
+        "Samsung Electronics",
+        "NVIDIA"
+      ],
+      "sources": [
+        "https://en.sedaily.com/finance/2026/10/18/samsung-to-use-tsmc-for-base-die-in-nvidias-custom-hbm",
+        "https://www.reuters.com/world/asia-pacific/samsung-use-tsmc-technology-nvidias-next-generation-memory-chips-seoul-newspaper-2026-10-18/",
+        "https://developer.nvidia.com/ko-kr/blog/https-blogs-nvidia-co-kr-blog-nvlink-fusion-nvhbm-custom-high-bandwidth-memory/",
+        "https://news.samsung.com/global/samsung-electronics-begins-shipment-of-industry-first-hbm4e-samples",
+        "https://www.trendforce.com/news/2026/10/09/news-nvidias-nvhbm-reshapes-memory-makers-base-die-strategies-as-micron-samsung-turn-to-external-foundries"
+      ],
+      "stage": "october18_original_indexed_sourcing_report_prior_dual_track_and_issuer_product_scope_compared",
+      "facts": "Reported customer-specific manufacturing change extends the custom-memory logic-foundry relationship;not a verified new purchase order or profit forecast. Earlier dual-track reports and standard-HBM4E internal4nm baseline retained separately.",
+      "questions": [
+        "Obtain issuer confirmation of NVHBM base-die process,qualification and production schedule.",
+        "Verify purchased wafer volume,die size,incremental capacity and realized margin without double-counting existing3nm guidance.",
+        "Test alternative internal-foundry qualification and whether outsourcing creates incremental demand or reallocates already-booked wafers."
+      ],
+      "publication_status": "source_event_registered_no_article"
     }
   ],
   "blockers": [
@@ -11614,7 +11703,7 @@
     }
   ],
   "last_research_date": "2026-10-18",
-  "instruction_commit_sha": "fa662624f94a36a0875a65da58218ccbe409177b",
+  "instruction_commit_sha": "1a52862ab83c6c70341615f063f0fc4c698f49e7",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
