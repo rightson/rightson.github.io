@@ -2930,6 +2930,13 @@
           "stage": "additional_original_reporting_with_unnamed_source_no_issuer_termination_confirmation",
           "facts": "FT October18 cites an unnamed source for the same Loughton withdrawal and50MW lease.It repeats Nscale's response and credits Telegraph with first reporting.",
           "limits": "Direct body fetch failed;indexed article retrieved.No termination document,compensation,new equipment cancellation or quantified financial loss.No new material event;retain existing site-specific risk scope."
+        },
+        {
+          "date": "2026-10-19",
+          "source": "https://www.schwab.wallst.com/schwab/Prospect/research/stocks/news.asp?doc=3200-nL1N464021-2&symbol=MSFT",
+          "stage": "reuters_update2_declined_comment_not_termination_confirmation",
+          "facts": "Reuters Update2 syndicated at October18,11:03amET changes Microsoft's response to declined comment;withdrawal remains attributed to Telegraph.Nscale response unchanged.",
+          "limits": "Direct Reuters/syndication body fetch failed;full indexed syndicated text retrieved.Earlier no-immediate-response versions retained historically.No new termination document,compensation,relocation or supplier cancellation.No material credibility or impact change;no repeat alert."
         }
       ]
     },
@@ -3023,12 +3030,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-19",
-      "checked_at": "2026-10-18T19:13:18Z",
-      "instruction_commit_sha": "a129cf1899d62bd25371965d724abf9de86d04b1",
+      "checked_at": "2026-10-18T19:55:22Z",
+      "instruction_commit_sha": "5e38a24d99e76d8cb25cc4fda78343d91a1cc093",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh14grouped queries included98active names;sixcore issuer and fiveCSP landing indices refreshed.Targeted TPU/NRE/procurement,NVHBM,project delivery/financing downside and outside-universe power/cooling/optical discovery checked.No new material event,candidate or article.",
+      "scope": "Fresh14grouped queries included98active names;sixcore issuer and fiveCSP indices refreshed.Targeted TPU/NRE/procurement,NVHBM,project delivery/financing downside and outside-universe discovery checked.Reuters Update2 response reconciled;one historical lease candidate added.No new material event or article.",
       "sources": [
         "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
         "https://www.mediatek.com/press-room",
@@ -3043,20 +3050,17 @@
         "https://www.oracle.com/news/",
         "https://www.reuters.com/world/asia-pacific/samsung-use-tsmc-technology-nvidias-next-generation-memory-chips-seoul-newspaper-2026-10-18/",
         "https://en.sedaily.com/finance/2026/10/18/samsung-to-tap-tsmc-3-nanometer-lines-for-nvidia-custom-hbm",
+        "https://www.schwab.wallst.com/schwab/Prospect/research/stocks/news.asp?doc=3200-nL1N464021-2&symbol=MSFT",
         "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/",
-        "https://www.ft.com/content/35cc5cc6-f9b6-49cc-8fc2-bd61e09c8c40",
-        "https://www.theinformation.com/features/exclusive/page/69",
-        "https://www.nstock.tw/news/article_c?id=20261018-036803680000",
-        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=39596cb9-26b2-42c4-afae-81356f38a496&c=MB070100"
+        "https://www.globenewswire.com/news-release/2026/09/16/3363071/0/en/blockfusion-signs-15-year-anchor-lease-with-coreweave-at-niagara-falls-ai-campus.html"
       ],
       "source_limits": [
-        "Fresh defaultmaina129cf1899d62bd25371965d724abf9de86d04b1.Required instruction/config/taxonomy/series/research specifications fully fetched and read at same commit.Full966313-character ledger parsed.Three related posts refetched with unchanged d7b6628,bc1a65e,2bc5dfc identities matching previously fully read bodies.No required instruction missing or truncated.",
-        "Fresh alpha-quant defaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f/CSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active names.All included in14grouped discovery queries;date/recency filters returned older and crawled material.This is not98individual primary audits.Historical active primary48/pending50,monthly22,product16,partner4,regulator3 unchanged.",
-        "TSMC October15 SEC baseline and current visible MediaTek,NVIDIA,AMD,Broadcom,Marvell issuer entries checked.Targeted TPU procurement/NRE search did not establish a newly authenticated award,commercial allocation,renewal or profit-sharing revision.Google/Broadcom headline resurfaced in search;publisher archive dates original article September21,2023.Paywalled body unavailable;not treated as current news.",
-        "FiveCSP landing indices refreshed.Amazon40line/Alphabet72line extraction remains incomplete;Meta/Oracle news pages do not constitute comprehensive financial or deployment audits.No aggregate capex,utilization,monetization or ROI conclusion.",
-        "Fresh NVHBM and Loughton source searches match existing October18 events and already-recorded company response.No new issuer commercial confirmation,termination economics,relocated equipment purchase or supplier cancellation verified.Syndications remain the same source chain;no duplicate alert.",
-        "Outside-universe dated discovery found product/market commentary,not a newly verified order or earnings revision.MIC October18 media backlog language is not a like-for-like revised company disclosure;October8/15 reports already discuss a higher figure.No inferred decline from differing reported thresholds.Fresh original MoneyLink body failed;indexed nStock syndication and dated MoneyDJ comparison retained only as discovery,not primary baseline.",
-        "Dedup97events/195candidates/116prior screenings and readable notified-event baseline.All prior events,candidates,articles,blockers and screening histories preserved.Only source-check screening appended.No quotes,valuation,targets,holdings,private investment judgments or market-flow records.No articlelint/build/deploy/publication-success claim."
+        "Fresh defaultmain5e38a24d99e76d8cb25cc4fda78343d91a1cc093.Required instruction/config/taxonomy/series/research specifications fully fetched and read at same commit.Full971077-character ledger parsed.Related three articles refetched with unchanged d7b6628,bc1a65e,2bc5dfc identities matching previously read full bodies.No required instruction missing or truncated.",
+        "Fresh alpha-quant defaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f/CSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active names.All included in14grouped discovery queries.Older/crawled material survives recency filters;not98individual primary audits.Historical active primary48/pending50,monthly22,product16,partner4,regulator3 unchanged.",
+        "TSMC October15 SEC and current MediaTek,NVIDIA,AMD,Broadcom,Marvell visible issuer entries checked.Targeted TPU commercial-role/NRE search returned known historical partnership/reporting;no new issuer-confirmed design award,renewal,allocation or pricing revision.NVHBM derivatives remain the same sourcing report without new issuer commercial confirmation.",
+        "FiveCSP landing indices refreshed.Amazon40line/Alphabet72line extraction incomplete;Meta/Oracle news pages are not full financial/deployment audits.No aggregate spending,utilization or monetization conclusion.",
+        "Reuters Update2 indexed syndicated body reconciled against earlier versions;Microsoft declined comment,not confirmed termination.Loughton substantive risk unchanged.Blockfusion September16 issuer release directly read for historical signed lease and conditional expansion;no current accepted capacity,cash or incremental supplier order inferred.",
+        "Dedup97events/195prior candidates/117prior screenings and readable notified-event baseline.All prior history retained.One verification update on existing event/candidate,one historical candidate and one screening appended.No new public event,article or blocker.No quotes,valuation,targets,holdings,private investment judgments or market-flow records.Ledger-only validation;no articlelint/build/deploy/publication-success claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -6566,6 +6570,41 @@
           "Fresh NVHBM and Loughton source searches match existing October18 events and already-recorded company response.No new issuer commercial confirmation,termination economics,relocated equipment purchase or supplier cancellation verified.Syndications remain the same source chain;no duplicate alert.",
           "Outside-universe dated discovery found product/market commentary,not a newly verified order or earnings revision.MIC October18 media backlog language is not a like-for-like revised company disclosure;October8/15 reports already discuss a higher figure.No inferred decline from differing reported thresholds.Fresh original MoneyLink body failed;indexed nStock syndication and dated MoneyDJ comparison retained only as discovery,not primary baseline.",
           "Dedup97events/195candidates/116prior screenings and readable notified-event baseline.All prior events,candidates,articles,blockers and screening histories preserved.Only source-check screening appended.No quotes,valuation,targets,holdings,private investment judgments or market-flow records.No articlelint/build/deploy/publication-success claim."
+        ]
+      },
+      {
+        "date": "2026-10-19",
+        "checked_at": "2026-10-18T19:55:22Z",
+        "instruction_commit_sha": "5e38a24d99e76d8cb25cc4fda78343d91a1cc093",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh14grouped queries included98active names;sixcore issuer and fiveCSP indices refreshed.Targeted TPU/NRE/procurement,NVHBM,project delivery/financing downside and outside-universe discovery checked.Reuters Update2 response reconciled;one historical lease candidate added.No new material event or article.",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://www.reuters.com/world/asia-pacific/samsung-use-tsmc-technology-nvidias-next-generation-memory-chips-seoul-newspaper-2026-10-18/",
+          "https://en.sedaily.com/finance/2026/10/18/samsung-to-tap-tsmc-3-nanometer-lines-for-nvidia-custom-hbm",
+          "https://www.schwab.wallst.com/schwab/Prospect/research/stocks/news.asp?doc=3200-nL1N464021-2&symbol=MSFT",
+          "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/",
+          "https://www.globenewswire.com/news-release/2026/09/16/3363071/0/en/blockfusion-signs-15-year-anchor-lease-with-coreweave-at-niagara-falls-ai-campus.html"
+        ],
+        "source_limits": [
+          "Fresh defaultmain5e38a24d99e76d8cb25cc4fda78343d91a1cc093.Required instruction/config/taxonomy/series/research specifications fully fetched and read at same commit.Full971077-character ledger parsed.Related three articles refetched with unchanged d7b6628,bc1a65e,2bc5dfc identities matching previously read full bodies.No required instruction missing or truncated.",
+          "Fresh alpha-quant defaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f/CSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active names.All included in14grouped discovery queries.Older/crawled material survives recency filters;not98individual primary audits.Historical active primary48/pending50,monthly22,product16,partner4,regulator3 unchanged.",
+          "TSMC October15 SEC and current MediaTek,NVIDIA,AMD,Broadcom,Marvell visible issuer entries checked.Targeted TPU commercial-role/NRE search returned known historical partnership/reporting;no new issuer-confirmed design award,renewal,allocation or pricing revision.NVHBM derivatives remain the same sourcing report without new issuer commercial confirmation.",
+          "FiveCSP landing indices refreshed.Amazon40line/Alphabet72line extraction incomplete;Meta/Oracle news pages are not full financial/deployment audits.No aggregate spending,utilization or monetization conclusion.",
+          "Reuters Update2 indexed syndicated body reconciled against earlier versions;Microsoft declined comment,not confirmed termination.Loughton substantive risk unchanged.Blockfusion September16 issuer release directly read for historical signed lease and conditional expansion;no current accepted capacity,cash or incremental supplier order inferred.",
+          "Dedup97events/195prior candidates/117prior screenings and readable notified-event baseline.All prior history retained.One verification update on existing event/candidate,one historical candidate and one screening appended.No new public event,article or blocker.No quotes,valuation,targets,holdings,private investment judgments or market-flow records.Ledger-only validation;no articlelint/build/deploy/publication-success claim."
         ]
       }
     ],
@@ -10167,6 +10206,19 @@
             "Microsoft formal confirmation,termination terms and compensation remain unverified.",
             "Alternative power,new tenant,relocation and supplier revenue effects remain unverified."
           ]
+        },
+        {
+          "date": "2026-10-19",
+          "event_fingerprint": "nscale-loughton-microsoft-anchor-tenant-withdrawal-reported-20261018",
+          "stage": "reuters_update2_declined_comment_not_termination_confirmation",
+          "sources": [
+            "https://www.schwab.wallst.com/schwab/Prospect/research/stocks/news.asp?doc=3200-nL1N464021-2&symbol=MSFT"
+          ],
+          "verified": "Reuters Update2 syndicated at October18,11:03amET changes Microsoft's response to declined comment;withdrawal remains attributed to Telegraph.Nscale response unchanged.",
+          "gaps": [
+            "Declined comment is not issuer confirmation of termination.",
+            "Contract clauses,compensation,capacity relocation and supplier revenue effects remain unverified."
+          ]
         }
       ]
     },
@@ -11895,6 +11947,28 @@
         "Track component content,accepted orders,pricing,manufacturing yield and cash conversion;standardization or competing implementations could reduce supplier pricing power."
       ],
       "publication_status": "historical_primary_research_candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "blockfusion-coreweave-niagara-lease-power-expansion-and-cash-conversion",
+      "date": "2026-10-19",
+      "event_date": "2026-09-16",
+      "instruction_commit_sha": "5e38a24d99e76d8cb25cc4fda78343d91a1cc093",
+      "companies": [
+        "Blockfusion",
+        "North East Data",
+        "CoreWeave"
+      ],
+      "sources": [
+        "https://www.globenewswire.com/news-release/2026/09/16/3363071/0/en/blockfusion-signs-15-year-anchor-lease-with-coreweave-at-niagara-falls-ai-campus.html"
+      ],
+      "stage": "historical_september16_counterparty_announcement_verified_not_current_delivery_confirmation",
+      "facts": "September16 counterparty release converts June30 nonbinding LOI into definitive anchor lease and companion expansion agreement.Initial term15years,two5yearrenewal options.Issuer describes existing grid interconnection and conversion to liquid-cooled AI infrastructure.Expansion depends on firm power and tenant approval;additional capacity is not an unconditional take-or-pay commitment.Financing,permits,delivery and business-combination closing remain conditional.Release does not establish currently accepted MW,recognized rent,collected cash or new supplier orders.MW/revenue figures in older LOI/media accounts not imported as definitive-lease facts.",
+      "questions": [
+        "Read amended registration statement and lease exhibits to reconcile committed versus optional MW,delivery dates,remedies and financing conditions.",
+        "Verify permits,firm power,accepted capacity,rent commencement and cash collection rather than applying total announced expansion to current revenue.",
+        "Test concentration,construction cost and funding risk;existing grid access alone does not establish expansion approval or timely delivery."
+      ],
+      "publication_status": "historical_primary_relationship_candidate_only_no_new_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -11914,7 +11988,7 @@
     }
   ],
   "last_research_date": "2026-10-19",
-  "instruction_commit_sha": "a129cf1899d62bd25371965d724abf9de86d04b1",
+  "instruction_commit_sha": "5e38a24d99e76d8cb25cc4fda78343d91a1cc093",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
