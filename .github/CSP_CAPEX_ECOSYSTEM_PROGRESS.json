@@ -2959,12 +2959,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-18",
-      "checked_at": "2026-10-17T23:54:17Z",
-      "instruction_commit_sha": "433d8825a9fb0704c09bc65fac3a5df6d60893e2",
+      "checked_at": "2026-10-18T01:18:35Z",
+      "instruction_commit_sha": "abc3c0dece8af64a2e187b6b5b61d4d389cd20f9",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh14 grouped queries cover98 active names;sixcore/fiveCSP available issuer bodies and indices,TPU roles/NRE/allocation and outside opportunity/downside refreshed. No independently verified material increment;screening appended only,no new public_event,candidate or article.",
+      "scope": "Fresh14 grouped queries cover98 active names;core issuer indices,sixcore/fiveCSP discovery,MediaTek TPU role/NRE/allocation and outside opportunity/downside checked. Add one historical funded-development candidate;no new material event or article.",
       "sources": [
         "https://pr.tsmc.com/english/news/3346",
         "https://www.mediatek.com/press-room",
@@ -2977,23 +2977,23 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://www.liteon.com/zh-tw/news/press-center/content/quarterly-second-eps-2026",
-        "https://www.digitimes.com/newsshow/article.asp?datePublish=2026%2F09%2F17&pages=pd&seq=208",
-        "https://www.taisounds.com/news/content/80/293686",
-        "https://lgcorp.com/media/release/30644",
-        "https://gov.texas.gov/news/post/governor-abbott-directs-tceq-to-halt-data-center-permits"
+        "https://www.saliencelabs.ai/salience-labs-125-million-series-b-funding/",
+        "https://towersemi.com/2026/02/25/02252026/",
+        "https://www.nstock.tw/news/article_c?id=20261002-033503350000",
+        "https://ec.ltn.com.tw/article/breakingnews/5606805",
+        "https://www.reuters.com/legal/transactional/coreweave-bond-rout-tests-markets-math-ai-buildout-2026-10-16/"
       ],
       "source_limits": [
-        "Latest default-main instruction433d8825a9fb0704c09bc65fac3a5df6d60893e2. Required instructions/specifications and full JSON ledger fetched at same revision;AGENTS read in complete chunks,three related ai-industry article bodies read in complete chunks. No mandatory instruction missing.",
-        "Fresh alpha-quant metadata/main/full CSV3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7/blob88422949d38165d4757a1e24c27f8662bede14c1,98active.14grouped searches are discovery,not individual primary verification.47distinct primary/51pending,monthly21/product15/partner4/regulator3 unchanged;dated historical blockers preserved.",
-        "TSMC October15issuer press body/Q4table reopened:revenueUSD52.3–54.3bn,GM65–67%,OP56.5–58.5%,unchanged. Older capacity/CoWoS/EMIB alternatives and October15/16earnings recaps not treated as new capacity awards.",
-        "MediaTek issuer index and targeted TPU role/NRE/generation/allocation searches refreshed. JuneTriggerfish forecasts,September17EMIB backup report and October13Guangfa Humufish schedule claims are historical attributed reports;original broker notes unavailable. No authenticated new Google allocation,NRE,design win,renewal or changed commercial economics established.",
-        "NVIDIA October17SparkPC launch blog,AMDOctober12Helion,BroadcomOctober13VMware/October8networking and MarvellOctober13retimer/security latest visible entries inspected. These do not establish new unrecorded CSP supplier earnings revisions;index inspection not full latest-filings verification.",
-        "FiveCSP landing/index pages reopened;Amazon/Alphabet dynamic extraction incomplete,Meta news index not utilization audit,Oracle landing not financial-filings audit. Microsoft next earningsOctober28. No new cross-company capex total,AI monetization or customer deployment inferred.",
-        "All98discovery mostly returns already recorded monthly revenue,old expansion,attributed forecasts and market recaps. Dates range fromJanuary–October;fresh crawl date does not make them new. Search results alone do not prove individual coverage complete or absence of company news.",
-        "LITEON Q2issuer numeric search excerpt rediscovered,but direct body retrieval failed twice. Prior candidate retains Julycapex baseline and October16reported TWD36bn facility;no primary-count credit,no confirmation of drawdown or new incremental capex. Repeated unchanged source limitation,not a new monitoring-failure event.",
-        "Outside/downside discovery rediscovers AnthropicBlackstone financing,Texaspermit pause,LG/AIR supply agreement,LS Electric awards,Oracle project/funding concerns and power/cooling themes. Deduplicated against95events,182candidates,97prior screenings and available notification baseline. No new funding close,default,order cancellation,project-specific loss or supplier earnings revision verified.",
-        "Append one screening and refresh current screening/instruction/date metadata only;all prior event/candidate/article facts,screening history and dated blockers preserved. No stock valuation,current quotes,private holdings or institutional-flow records written. Ledger-only JSON/history/fresh-head/blob/CAS/readback/onlytarget checks;no articlelint/build/deploy/publication claim."
+        "Latest default-main instructionabc3c0dece8af64a2e187b6b5b61d4d389cd20f9. Required instructions/specifications fetched at same revision and read completely after resolving display truncation through smaller chunks;three related ai-industry article bodies read in complete chunks. Full JSON ledger retrieved and parsed for history and deduplication;no mandatory instruction absent.",
+        "Fresh alpha-quant metadata/main/full CSV3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7/blob88422949d38165d4757a1e24c27f8662bede14c1 confirms98active.14grouped queries are discovery only,not98individual issuer validations. Distinct primary47/pending51 and monthly21/product15/partner4/regulator3 unchanged;dated historical blockers preserved.",
+        "TSMC October15issuer body and Q4table read:USD52.3–54.3bn revenue,GM65–67%,OP56.5–58.5%,unchanged from ledger. Older revenue/capacity and Terafab reports not new awards.",
+        "MediaTek press index and targeted TPU/NRE/generation/allocation searches refreshed. JuneTriggerfish,Augustv10role forecasts,Septembercapacity and October13/15schedule claims remain historical attributed reports;no original broker note,new authenticated award,NRE,renewal or changed economics obtained.",
+        "NVIDIA latest October17SparkPC blog and October16availability,AMDOctober12Helion,BroadcomOctober13VMware/October8networking,andMarvellOctober13retimer/security entries inspected. Index checks are not full latest-filings audits and establish no new supplier earnings revision.",
+        "FiveCSP indices reopened. Microsoft next earningsOctober28;Amazon40-line and Alphabet72-line dynamic pages omit financial/news bodies. Meta index is not a utilization audit;Oracle news landing is not a filing audit. No new total capex or monetization conclusion inferred.",
+        "Grouped discovery mostly returned previously recorded Septemberrevenue,old expansion and broker/market recaps. October16PCB logistics commentary checked against October2 company-response reporting:then-production normal,limited road/staff/logistics disruption. No new plant shutdown,quantified loss or delivery revision verified;later forecasts do not establish a new operational event.",
+        "Outside-universe Salience October14funding body,Tower February25manufacturing body,September20ECOC page and current product page verified. One candidate added with development/demo/commercial stages separated;not a new customer order or supplier earnings alert. No active-universe primary count increased.",
+        "Outside/downside results rediscover AnthropicBlackstone,CoreWeavebond stress,Oracleforce-majeure,ASML/Schneiderreports and Texaspermit pause. Deduplicated against95publicevents,182priorcandidates,98screenings and available notification baseline;no new financing close,default,cancellation or supplier loss verified. Some original/access gaps persist;absence of search hits is not proof of no news.",
+        "Only candidate/source-stage and one screening appended;current screening/instruction/date metadata refreshed. Prior events,candidates,articles,screenings and blockers preserved. No current stock prices,valuation,holdings,institutional-flow data or private decisions stored publicly. Ledger-only JSON/CAS/source-readback/onlytarget checks;no article publication claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -5806,6 +5806,45 @@
           "LITEON Q2issuer numeric search excerpt rediscovered,but direct body retrieval failed twice. Prior candidate retains Julycapex baseline and October16reported TWD36bn facility;no primary-count credit,no confirmation of drawdown or new incremental capex. Repeated unchanged source limitation,not a new monitoring-failure event.",
           "Outside/downside discovery rediscovers AnthropicBlackstone financing,Texaspermit pause,LG/AIR supply agreement,LS Electric awards,Oracle project/funding concerns and power/cooling themes. Deduplicated against95events,182candidates,97prior screenings and available notification baseline. No new funding close,default,order cancellation,project-specific loss or supplier earnings revision verified.",
           "Append one screening and refresh current screening/instruction/date metadata only;all prior event/candidate/article facts,screening history and dated blockers preserved. No stock valuation,current quotes,private holdings or institutional-flow records written. Ledger-only JSON/history/fresh-head/blob/CAS/readback/onlytarget checks;no articlelint/build/deploy/publication claim."
+        ]
+      },
+      {
+        "date": "2026-10-18",
+        "checked_at": "2026-10-18T01:18:35Z",
+        "instruction_commit_sha": "abc3c0dece8af64a2e187b6b5b61d4d389cd20f9",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh14 grouped queries cover98 active names;core issuer indices,sixcore/fiveCSP discovery,MediaTek TPU role/NRE/allocation and outside opportunity/downside checked. Add one historical funded-development candidate;no new material event or article.",
+        "sources": [
+          "https://pr.tsmc.com/english/news/3346",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://www.saliencelabs.ai/salience-labs-125-million-series-b-funding/",
+          "https://towersemi.com/2026/02/25/02252026/",
+          "https://www.nstock.tw/news/article_c?id=20261002-033503350000",
+          "https://ec.ltn.com.tw/article/breakingnews/5606805",
+          "https://www.reuters.com/legal/transactional/coreweave-bond-rout-tests-markets-math-ai-buildout-2026-10-16/"
+        ],
+        "source_limits": [
+          "Latest default-main instructionabc3c0dece8af64a2e187b6b5b61d4d389cd20f9. Required instructions/specifications fetched at same revision and read completely after resolving display truncation through smaller chunks;three related ai-industry article bodies read in complete chunks. Full JSON ledger retrieved and parsed for history and deduplication;no mandatory instruction absent.",
+          "Fresh alpha-quant metadata/main/full CSV3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7/blob88422949d38165d4757a1e24c27f8662bede14c1 confirms98active.14grouped queries are discovery only,not98individual issuer validations. Distinct primary47/pending51 and monthly21/product15/partner4/regulator3 unchanged;dated historical blockers preserved.",
+          "TSMC October15issuer body and Q4table read:USD52.3–54.3bn revenue,GM65–67%,OP56.5–58.5%,unchanged from ledger. Older revenue/capacity and Terafab reports not new awards.",
+          "MediaTek press index and targeted TPU/NRE/generation/allocation searches refreshed. JuneTriggerfish,Augustv10role forecasts,Septembercapacity and October13/15schedule claims remain historical attributed reports;no original broker note,new authenticated award,NRE,renewal or changed economics obtained.",
+          "NVIDIA latest October17SparkPC blog and October16availability,AMDOctober12Helion,BroadcomOctober13VMware/October8networking,andMarvellOctober13retimer/security entries inspected. Index checks are not full latest-filings audits and establish no new supplier earnings revision.",
+          "FiveCSP indices reopened. Microsoft next earningsOctober28;Amazon40-line and Alphabet72-line dynamic pages omit financial/news bodies. Meta index is not a utilization audit;Oracle news landing is not a filing audit. No new total capex or monetization conclusion inferred.",
+          "Grouped discovery mostly returned previously recorded Septemberrevenue,old expansion and broker/market recaps. October16PCB logistics commentary checked against October2 company-response reporting:then-production normal,limited road/staff/logistics disruption. No new plant shutdown,quantified loss or delivery revision verified;later forecasts do not establish a new operational event.",
+          "Outside-universe Salience October14funding body,Tower February25manufacturing body,September20ECOC page and current product page verified. One candidate added with development/demo/commercial stages separated;not a new customer order or supplier earnings alert. No active-universe primary count increased.",
+          "Outside/downside results rediscover AnthropicBlackstone,CoreWeavebond stress,Oracleforce-majeure,ASML/Schneiderreports and Texaspermit pause. Deduplicated against95publicevents,182priorcandidates,98screenings and available notification baseline;no new financing close,default,cancellation or supplier loss verified. Some original/access gaps persist;absence of search hits is not proof of no news.",
+          "Only candidate/source-stage and one screening appended;current screening/instruction/date metadata refreshed. Prior events,candidates,articles,screenings and blockers preserved. No current stock prices,valuation,holdings,institutional-flow data or private decisions stored publicly. Ledger-only JSON/CAS/source-readback/onlytarget checks;no article publication claim."
         ]
       }
     ],
@@ -10743,6 +10782,35 @@
         "Reassess if integration remains a marketing arrangement without orders or does not reduce time-to-power."
       ],
       "publication_status": "relationship_candidate_no_material_earnings_alert_no_article"
+    },
+    {
+      "key": "salience-ocs-funded-development-to-qualified-volume-and-profit",
+      "date": "2026-10-18",
+      "instruction_commit_sha": "abc3c0dece8af64a2e187b6b5b61d4d389cd20f9",
+      "companies": [
+        "Salience Labs",
+        "Tower Semiconductor",
+        "Keysight Technologies"
+      ],
+      "sources": [
+        "https://www.saliencelabs.ai/salience-labs-125-million-series-b-funding/",
+        "https://towersemi.com/2026/02/25/02252026/",
+        "https://www.saliencelabs.ai/salience-labs-showcases-64-port-all-optical-circuit-switch-at-ecoc-2026/",
+        "https://www.saliencelabs.ai/product/"
+      ],
+      "stage": "october14_issuer_funding_and_historical_manufacturing_relationship_verified_no_quantified_customer_order_or_earnings_revision",
+      "facts": {
+        "funding": "October14 issuer reports completed USD125m SeriesB led by Bullhound,including AMD Ventures and Intel Capital;intended for optical-switch development,manufacturing and U.S.expansion.",
+        "maturity": "September20 issuer page announced a64-port ECOC demonstration;128/256-port devices remain future development. Current32-port OC-32M evaluation platform is not evidence of customer volume acceptance.",
+        "relationship": "February25 Tower issuer release confirms PIC-based OCS partnership on PH18DA/TPS45PH platforms,moving from development to pre-production at that date.",
+        "limits": "No named CSP award,committed wafer volume,recognized revenue,margin or cash conversion disclosed. Equity funding is not a supplier purchase order;investors are not inferred customers. Outside active98-company universe;no Taiwan allocation inferred."
+      },
+      "questions": [
+        "Verify paid customer qualification,repeat orders and accepted shipments.",
+        "Reconcile qualified yield,pricing and manufacturing/test costs with recurring gross profit and cash.",
+        "Test workload-level savings against electrical-switch and other optical alternatives;weak adoption or costly integration would undermine conversion."
+      ],
+      "publication_status": "research_candidate_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -10762,7 +10830,7 @@
     }
   ],
   "last_research_date": "2026-10-18",
-  "instruction_commit_sha": "433d8825a9fb0704c09bc65fac3a5df6d60893e2",
+  "instruction_commit_sha": "abc3c0dece8af64a2e187b6b5b61d4d389cd20f9",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
