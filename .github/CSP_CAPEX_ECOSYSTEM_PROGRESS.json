@@ -2960,12 +2960,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-18",
-      "checked_at": "2026-10-18T04:51:11Z",
-      "instruction_commit_sha": "cfaef1a5ada1eff8a083b7cc3e3dde552df2011e",
+      "checked_at": "2026-10-18T06:22:22Z",
+      "instruction_commit_sha": "b52d9788c352d1d039dbff76d45e2667eec97cfa",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh14grouped searches cover98active names;sixcore/fiveCSP indices,TPU economics,full-universe discovery and outside/downside checked. Add provisional KYEC broker-revision lead and historical WIN revenue verification;no independently authenticated material event or article.",
+      "scope": "Fresh14grouped discovery queries include98active names;sixcore/fiveCSP indices,TPU responsibility/NRE/allocation,external opportunities and downside checked. Append one provisional aggregate-risk research lead and one historical PJM operator-source verification;no material new notification or article.",
       "sources": [
         "https://pr.tsmc.com/english/news/3346",
         "https://www.mediatek.com/press-room",
@@ -2978,23 +2978,22 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://www.mirrormedia.mg/external/setn_1924279",
-        "https://vocus.cc/article/6ad0ccd3fd89780001ed8c73",
-        "https://www.kyec.com.tw/zh-tw/Ir/Revenue",
-        "https://www.winfoundry.com/en-US/Invest/invest_news_content/8597",
-        "https://anuenews.cnyes.com/news/id/6632468"
+        "https://www.ft.com/content/9ea5a37d-15c9-4d5b-94d6-719048c9cd3c",
+        "https://insidelines.pjm.com/ferc-accepts-pjm-reliability-backstop-proposal/",
+        "https://ir.towersemi.com/news-releases/news-release-details/tower-semiconductor-and-semtech-expand-sige-partnership-scale",
+        "https://www.reuters.com/business/autos-transportation/tesla-ceo-musk-says-company-plans-use-intels-14a-process-terafab-2026-04-22/"
       ],
       "source_limits": [
-        "Instructioncfaef1a5ada1eff8a083b7cc3e3dde552df2011e;all required instruction/specification bodies read completely at same revision. Full ledger parsed;three related articles refetched with unchanged blobs matching previously read complete bodies. No mandatory instruction missing or truncated.",
-        "Fresh alpha-quant defaultmain f43ed0cd5d57d28c50b924f2b3614d4189eae69f and completeCSV88422949d38165d4757a1e24c27f8662bede14c1 confirm98active.14grouped discovery queries includeall98,not98individual primary audits. Distinct primary48/pending50,monthly22/product16/partner4/regulator3 unchanged.",
-        "TSMC October15issuer Q4table remainsUSD52.3–54.3bn revenue,65–67%GM,56.5–58.5%OP. MediaTek press index and fresh TPU/NRE/allocation queries rediscover older role,packaging and capacity reports;no authenticated fresh design win,NRE,renewal or changed economics. Original institution notes unavailable.",
-        "NVIDIA October17SparkPC,AMD October12Helion,Broadcom October13VMware/October8networking and Marvell October13retimer/security visible entries refreshed. No new unrecorded CSP earnings revision established;indices not full latest-filing audits.",
-        "FiveCSP indices opened and available text checked. Microsoft next earningsOctober28;Amazon40-line/Alphabet72-line extraction lacks financial bodies,Meta index not utilization audit,Oracle news landing not complete filings. No new aggregate capex,paid deployment or monetization revision inferred.",
-        "All98discovery largely returns known monthly revenue,older expansion,broker forecasts and market recaps. Search/crawl freshness notevent date. No complete current company coverage or absence-of-news claim.",
-        "KYEC October17/18syndicated forecast-cut article read;targeted retrieval finds October15blog attribution but no original broker report. One provisional candidate added with period,old/new revenue,source/date uncertainty and7.89%versusreported8.4%QoQ mismatch. Not company guidance or consensus,and not a confirmed order cancellation. Historical primary counts unchanged.",
-        "WIN October5issuer September numeric revenue body obtained;append historical verification to existing candidate without overwriting prior facts. Aggregate revenue does not verify optical mix,EML/CW orders or profit. Outside98;no primary-count increase. Official alias timeout resolved through winfoundry domain.",
-        "Outside/downside results repeat known Oracle/financing/power risks and dated researcher opinions. October18OCP hardware recap establishes no customer award;direct body failed. Fund/forum commentary not authenticated fresh company earnings revisions. Dedup95events,185priorcandidates,102prior screenings and readable notification baseline;no material new event or article.",
-        "One candidate,one candidate verification and one screening appended;current date/instruction/screening metadata refreshed. All historical events,candidate facts,articles,screenings and dated blockers preserved. No quotes,valuation,holdings,institutional-flow or private decisions saved. Ledger-only JSON/history/CAS/readback/onlytarget checks;no articlelint/build/deploy/publication claim."
+        "All mandatory instructions/specifications read completely at instruction commitb52d9788c352d1d039dbff76d45e2667eec97cfa;full ledger parsed.Three related articles refetched;unchanged blobs match previously read complete bodies.No mandatory instruction missing or truncated.",
+        "Fresh alpha-quant defaultmain f43ed0cd5d57d28c50b924f2b3614d4189eae69f and completeCSV88422949d38165d4757a1e24c27f8662bede14c1 confirm98active.14grouped discovery queries coverall98names,not98individual primary audits.Primary48,pending50,monthly22,product16,partner4,regulator3 unchanged.",
+        "TSMC October15primary results/Q4guidance unchanged atUSD52.3–54.3bn revenue,65–67%GM,56.5–58.5%OP.MediaTek index and fresh TPU/NRE/allocation searches yield older June/May/August/September reports and known October13Humufish story;original broker notes/current commercial terms unavailable.No authenticated new award,renewal or revised NRE economics established.",
+        "NVIDIA latestvisibleOctober17SparkPC/October16PC and automotive;AMD October12Helion;Broadcom October13VMware/October8networking;Marvell October13retimer/security and October12StructeraX are known index entries,not a full latest-filing audit.",
+        "FiveCSP indices opened.Microsoft next earningsOctober28.Amazon40line and Alphabet72line extraction lack financial numeric bodies.Meta newsroom and Oracle landing do not establish current utilization,cash returns or comprehensive capex revisions.No aggregate budget inference from these gaps.",
+        "Grouped discovery returns largely older revenue,capacity,product and broker/market recaps;event date checked against crawl date.Known KYEC forecast-cut lead remains original-note pending.No source was promoted to consensus or company guidance.",
+        "Tower/Semtech October13primary multi-year SiGe capacity agreement directly reread and deduplicated against existing Semtech event/candidate.Intel/Tesla October18commentary traces to April22reported plan,not a verified new October18customer award.",
+        "Fresh FT original reporting retrieved through search;direct URL access failed.Original RegLayer dataset and Bernstein note not obtained;one research candidate records source/method gaps,no new quantified public event or material alert.Nscale AugustGPU figures rediscovered in SeptemberIPO reproductions are historical active/contracted counts,not utilization.",
+        "PJM September30operator notice directly verified and appended to existing candidate.October18secondary retelling is not a new delay;proposal accepted with suspension,not blanket rejection.No named-project outage or lost revenue inferred.",
+        "Dedup95public events,186priorcandidates,103prior screenings and readable prior notification baseline.One candidate and one historical verification appended,not a full article.All historical event/candidate facts,articles,screenings and dated blockers retained.No quotes,valuation,holdings,institutional flows or private decisions stored.Ledger-only JSON/history/CAS/readback/onlytarget verification;no articlelint,build,deploy or publication claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -6001,6 +6000,44 @@
           "Outside/downside results repeat known Oracle/financing/power risks and dated researcher opinions. October18OCP hardware recap establishes no customer award;direct body failed. Fund/forum commentary not authenticated fresh company earnings revisions. Dedup95events,185priorcandidates,102prior screenings and readable notification baseline;no material new event or article.",
           "One candidate,one candidate verification and one screening appended;current date/instruction/screening metadata refreshed. All historical events,candidate facts,articles,screenings and dated blockers preserved. No quotes,valuation,holdings,institutional-flow or private decisions saved. Ledger-only JSON/history/CAS/readback/onlytarget checks;no articlelint/build/deploy/publication claim."
         ]
+      },
+      {
+        "date": "2026-10-18",
+        "checked_at": "2026-10-18T06:22:22Z",
+        "instruction_commit_sha": "b52d9788c352d1d039dbff76d45e2667eec97cfa",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh14grouped discovery queries include98active names;sixcore/fiveCSP indices,TPU responsibility/NRE/allocation,external opportunities and downside checked. Append one provisional aggregate-risk research lead and one historical PJM operator-source verification;no material new notification or article.",
+        "sources": [
+          "https://pr.tsmc.com/english/news/3346",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://www.ft.com/content/9ea5a37d-15c9-4d5b-94d6-719048c9cd3c",
+          "https://insidelines.pjm.com/ferc-accepts-pjm-reliability-backstop-proposal/",
+          "https://ir.towersemi.com/news-releases/news-release-details/tower-semiconductor-and-semtech-expand-sige-partnership-scale",
+          "https://www.reuters.com/business/autos-transportation/tesla-ceo-musk-says-company-plans-use-intels-14a-process-terafab-2026-04-22/"
+        ],
+        "source_limits": [
+          "All mandatory instructions/specifications read completely at instruction commitb52d9788c352d1d039dbff76d45e2667eec97cfa;full ledger parsed.Three related articles refetched;unchanged blobs match previously read complete bodies.No mandatory instruction missing or truncated.",
+          "Fresh alpha-quant defaultmain f43ed0cd5d57d28c50b924f2b3614d4189eae69f and completeCSV88422949d38165d4757a1e24c27f8662bede14c1 confirm98active.14grouped discovery queries coverall98names,not98individual primary audits.Primary48,pending50,monthly22,product16,partner4,regulator3 unchanged.",
+          "TSMC October15primary results/Q4guidance unchanged atUSD52.3–54.3bn revenue,65–67%GM,56.5–58.5%OP.MediaTek index and fresh TPU/NRE/allocation searches yield older June/May/August/September reports and known October13Humufish story;original broker notes/current commercial terms unavailable.No authenticated new award,renewal or revised NRE economics established.",
+          "NVIDIA latestvisibleOctober17SparkPC/October16PC and automotive;AMD October12Helion;Broadcom October13VMware/October8networking;Marvell October13retimer/security and October12StructeraX are known index entries,not a full latest-filing audit.",
+          "FiveCSP indices opened.Microsoft next earningsOctober28.Amazon40line and Alphabet72line extraction lack financial numeric bodies.Meta newsroom and Oracle landing do not establish current utilization,cash returns or comprehensive capex revisions.No aggregate budget inference from these gaps.",
+          "Grouped discovery returns largely older revenue,capacity,product and broker/market recaps;event date checked against crawl date.Known KYEC forecast-cut lead remains original-note pending.No source was promoted to consensus or company guidance.",
+          "Tower/Semtech October13primary multi-year SiGe capacity agreement directly reread and deduplicated against existing Semtech event/candidate.Intel/Tesla October18commentary traces to April22reported plan,not a verified new October18customer award.",
+          "Fresh FT original reporting retrieved through search;direct URL access failed.Original RegLayer dataset and Bernstein note not obtained;one research candidate records source/method gaps,no new quantified public event or material alert.Nscale AugustGPU figures rediscovered in SeptemberIPO reproductions are historical active/contracted counts,not utilization.",
+          "PJM September30operator notice directly verified and appended to existing candidate.October18secondary retelling is not a new delay;proposal accepted with suspension,not blanket rejection.No named-project outage or lost revenue inferred.",
+          "Dedup95public events,186priorcandidates,103prior screenings and readable prior notification baseline.One candidate and one historical verification appended,not a full article.All historical event/candidate facts,articles,screenings and dated blockers retained.No quotes,valuation,holdings,institutional flows or private decisions stored.Ledger-only JSON/history/CAS/readback/onlytarget verification;no articlelint,build,deploy or publication claim."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16
@@ -6351,6 +6388,17 @@
           "stage": "october14_operational_applicability_notice_read_not_all_period_actual_dispatch_validation",
           "facts": "PJM notice105573 effective October14 at17:45EPT says no reliability need identified for ExhibitA resources on October15–16 operating days. It clarifies that DOE authority is not a maximum/full-load dispatch instruction. This is a dated operational assessment,not proof that no backup generation ran throughout October13–16.",
           "limits": "Library item labelled Daily Compliance Report for Order202-26-50 linked instead to AD26-8-000 technical-conference comments. That document is not a dispatch compliance report;cover/header dates differ from October21 conference body. Actual all-period dispatch,site costs and supplier demand remain unresolved. No new material event registered."
+        },
+        {
+          "date": "2026-10-18",
+          "instruction_commit_sha": "b52d9788c352d1d039dbff76d45e2667eec97cfa",
+          "sources": [
+            "https://insidelines.pjm.com/ferc-accepts-pjm-reliability-backstop-proposal/",
+            "https://www.pjm.com/library/filing-order"
+          ],
+          "stage": "historical_september30_operator_notice_verified_not_october18_new_delay",
+          "facts": "September30 PJM notice directly read:September29 FERC order accepts proposed Reliability Backstop Procurement but suspends effectiveness five months toFebruary28,2027,subject to refund and additional proceedings;September30 procurement did not proceed and revised timetable remained to be communicated. Bilateral matchmaking is separate;eligible new resources must start commercial operation byJune1,2032. PJM filing index identifies ER26-3380-000 and separate EL26-108-000 cost/transmission/collateral proceedings.",
+          "limits": "October18 aggregator recycles September event. Not a blanket rejection,all-project halt or quantification of lost supplier revenue. Original FERC order itself not opened in this update;operator notice and filing index are sources. Distinct from October9 registry/IRAS decision and October12 DOE backup-generation order. No new material event registered."
         }
       ]
     },
@@ -11068,6 +11116,25 @@
         "Distinguish temporary short-material/ramp constraints from order cancellation;test gross-profit and cash effects as revenue is recognized."
       ],
       "publication_status": "research_candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "us-datacenter-pipeline-financing-and-construction-conversion-october18-ft-lead",
+      "date": "2026-10-18",
+      "instruction_commit_sha": "b52d9788c352d1d039dbff76d45e2667eec97cfa",
+      "companies": [
+        "U.S. data-center developers and AI infrastructure customers"
+      ],
+      "sources": [
+        "https://www.ft.com/content/9ea5a37d-15c9-4d5b-94d6-719048c9cd3c"
+      ],
+      "stage": "original_reporting_retrieved_via_search_original_statistical_dataset_and_broker_methodology_pending",
+      "facts": "October18 FT reports broader financing and construction stress, citing RegLayer project data and Bernstein pipeline estimates. Direct open failed; search returned article body. Source datasets, denominators and original broker methodology were not obtained; aggregate figures are not independently validated.",
+      "questions": [
+        "Obtain original project-level dataset and dated broker methodology before quantifying cancelled or delayed capacity.",
+        "Compare against previously recorded project-specific financing,lease,permit and delivery milestones;avoid counting repetitions as new events.",
+        "Separate newly funded and delivered capacity from contracted pipeline;identify supplier revenue-recognition timing without equating GPU counts with utilization."
+      ],
+      "publication_status": "research_candidate_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -11087,7 +11154,7 @@
     }
   ],
   "last_research_date": "2026-10-18",
-  "instruction_commit_sha": "cfaef1a5ada1eff8a083b7cc3e3dde552df2011e",
+  "instruction_commit_sha": "b52d9788c352d1d039dbff76d45e2667eec97cfa",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
