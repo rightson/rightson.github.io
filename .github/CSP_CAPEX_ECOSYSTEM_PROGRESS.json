@@ -2960,12 +2960,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-18",
-      "checked_at": "2026-10-18T07:21:24Z",
-      "instruction_commit_sha": "921e0fda1129dd99e2f662c33c71ecb940189172",
+      "checked_at": "2026-10-18T07:34:40Z",
+      "instruction_commit_sha": "f714ce05a32b380acd620a75809e9c54ad928074",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh14grouped searches include98active names;sixcore/fiveCSP indices,TPU design/NRE/allocation and outside/downside discovery checked.Two historical product/collaboration candidates and contrasting unverified broker lead retained;no material new event or article.",
+      "scope": "Fresh14grouped discovery queries include98active names;core issuer indices,fiveCSP indices,TPU design/NRE/procurement and outside opportunity/downside refreshed.No new event,candidate,article or material notification.",
       "sources": [
         "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
         "https://www.mediatek.com/press-room",
@@ -2978,22 +2978,19 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://celestica.gcs-web.com/news-releases/news-release-details/celestica-introduces-ds6005-data-center-switch-co-packaged",
-        "https://www.staubli.com/us/en/news/global/2026/coolit-ciena-optic-liquid-cooling-press-release.html",
-        "https://www.mirrormedia.mg/external/setn_1923531",
-        "https://www.sigurd.com.tw/zh-tw/investors-conference"
+        "https://www.ft.com/content/9ea5a37d-15c9-4d5b-94d6-719048c9cd3c",
+        "https://www.reuters.com/legal/transactional/coreweaves-ai-contracts-lenders-financing-its-build-out-2026-10-15/",
+        "https://www.mirrormedia.mg/external/setn_1923531"
       ],
       "source_limits": [
-        "Required rules/specifications fetched at instruction921e0fda1129dd99e2f662c33c71ecb940189172 and read completely;full ledger parsed.Three related articles refetched with unchanged blobs matching complete bodies already read.No mandatory missing/truncated instruction.",
-        "Fresh alpha-quant defaultmain f43ed0cd5d57d28c50b924f2b3614d4189eae69f and fullCSV88422949d38165d4757a1e24c27f8662bede14c1 confirm98active.All98included in14grouped discovery queries,not98individual issuer audits.Historical primary48/pending50,monthly22,product16,partner4,regulator3 unchanged.",
-        "TSMC press page twice timed out;October15issuer SEC exhibit read in full and resolves numeric primary-source access.Q4revenueUSD52.3–54.3bn,GM65–67%,OP56.5–58.5% unchanged.No new revision inferred.MediaTek index and targeted TPU queries repeat known design/timing/allocation claims;original broker notes/NRE/commercial terms unavailable.",
-        "NVIDIA latestvisibleOctober17SparkPC/October16PC and automotive,AMD October12Helion,Broadcom October13VMware/October8networking and Marvell October13retimer/security visible entries checked.These are index checks,not full current-filings audits.",
-        "FiveCSP indices reopened.Microsoft next earningsOctober28.Amazon40-line and Alphabet72-line extraction lack financial bodies;Meta newsroom and Oracle landing do not establish current utilization/monetization or complete capex revisions.No new comparable aggregate inferred.",
-        "Grouped98-name discovery predominantly yields older monthly revenue,expansion,broker forecasts and market recaps.Search recency/crawl time is not event date;not complete current-company coverage or absence-of-news proof.",
-        "Celestica October12CPO switch and Stäubli October7CoolIT/Ciena liquid-cooled optics original bodies read.Two outside-universe product research candidates added,without customer award,financial revision or primary-universe-count credit.Competing architectures are not assumed mutually exclusive.",
-        "KYEC contrasting October18indexed unnamed-broker forecast retained in existing candidate;direct body failed.Identity,original note/date and comparable models unavailable.No consensus/company revision or duplicated NVIDIA agreement inferred.Sigurd Chinese/English conference originals timed out;indexed calendar and third-party transcript do not count as primary financial validation.",
-        "TaiSounds preview item for C SUN contains editing placeholders and inconsistent company attribution;not used as new quantified issuer evidence.No new financial revision or primary-count credit.Outside/downside discovery repeats known financing,power,OracleSeptemberdelay and market commentary,not new default or cancellation.",
-        "Dedup95events,187priorcandidates,104prior screenings and readable prior notifications.Two candidates,one existing-candidate update and one screening appended.Prior events,articles,candidate facts,screenings and blockers preserved.No prices,valuation,holdings,institutional flows or private decisions stored.Ledger-only JSON/history/freshhead/blob/CAS/exactreadback/onlytarget checks;no articlelint,build,deploy or publication claim."
+        "Instruction f714ce05a32b380acd620a75809e9c54ad928074:required rules/specifications fetched at same revision and read completely;full progress JSON parsed.Three related posts refetched with unchanged blobs matching previously read complete bodies.No required instruction missing/truncated.",
+        "Fresh alpha-quant defaultmain f43ed0cd5d57d28c50b924f2b3614d4189eae69f/fullCSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active.14grouped queries includeall98names,not98individual primary audits.Primary48/pending50,monthly22,product16,partner4,regulator3 unchanged.",
+        "TSMC October15SEC numeric results/Q4guidance rechecked:USD52.3–54.3bn revenue,GM65–67%,OP56.5–58.5%,unchanged.MediaTek index and fresh TPU/NRE/procurement searches rediscover known June,August,September roles and forecasts.No authenticated new award,renewal,NRE or commercial terms established;original institution notes unavailable.",
+        "NVIDIA latestvisibleOctober17SparkPC/October16PC and automotive,AMD October12Helion,Broadcom October13VMware/October8networking and Marvell October13retimer/security/October12StructeraX visible entries inspected.Not a full current-filing audit or proof of absence of news.",
+        "FiveCSP indices opened.Microsoft next earningsOctober28.Amazon40line/Alphabet72line extraction lacks numeric financial bodies.Meta news and Oracle landing do not establish complete current capex,utilization or monetization.No new comparable budget aggregate inferred.",
+        "Full-universe search results largely older monthly revenue,capacity,broker forecasts and market recaps.Search/crawl recency is not event date.Original financial validation remains partial;missing sources are not zero growth or stability.",
+        "Outside/downside discovery repeats known FT pipeline-financing stress,AnthropicBlackstone offer,CoreWeave risk,LG/AIR contract and PJM study.Known KYEC optimistic unnamed-broker account remains original-note pending;existing contrasting forecast lead not resolved or promoted to consensus.No fresh confirmed default,cancellation,financing close or supplier earnings revision established.",
+        "Dedup95events,189candidates,105prior screenings and readable notification baseline.No new candidate added merely from a recycled headline.Only screening/instruction/date metadata refreshed;all event,candidate,article,blocker and screening-history contents preserved.No prices,valuation,holdings,institutional flows or private decisions stored.Ledger-only JSON/preservation/freshhead/blob/CAS/readback/onlytarget checks;no articlelint/build/deploy/publication claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -6075,6 +6072,41 @@
           "KYEC contrasting October18indexed unnamed-broker forecast retained in existing candidate;direct body failed.Identity,original note/date and comparable models unavailable.No consensus/company revision or duplicated NVIDIA agreement inferred.Sigurd Chinese/English conference originals timed out;indexed calendar and third-party transcript do not count as primary financial validation.",
           "TaiSounds preview item for C SUN contains editing placeholders and inconsistent company attribution;not used as new quantified issuer evidence.No new financial revision or primary-count credit.Outside/downside discovery repeats known financing,power,OracleSeptemberdelay and market commentary,not new default or cancellation.",
           "Dedup95events,187priorcandidates,104prior screenings and readable prior notifications.Two candidates,one existing-candidate update and one screening appended.Prior events,articles,candidate facts,screenings and blockers preserved.No prices,valuation,holdings,institutional flows or private decisions stored.Ledger-only JSON/history/freshhead/blob/CAS/exactreadback/onlytarget checks;no articlelint,build,deploy or publication claim."
+        ]
+      },
+      {
+        "date": "2026-10-18",
+        "checked_at": "2026-10-18T07:34:40Z",
+        "instruction_commit_sha": "f714ce05a32b380acd620a75809e9c54ad928074",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh14grouped discovery queries include98active names;core issuer indices,fiveCSP indices,TPU design/NRE/procurement and outside opportunity/downside refreshed.No new event,candidate,article or material notification.",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://www.ft.com/content/9ea5a37d-15c9-4d5b-94d6-719048c9cd3c",
+          "https://www.reuters.com/legal/transactional/coreweaves-ai-contracts-lenders-financing-its-build-out-2026-10-15/",
+          "https://www.mirrormedia.mg/external/setn_1923531"
+        ],
+        "source_limits": [
+          "Instruction f714ce05a32b380acd620a75809e9c54ad928074:required rules/specifications fetched at same revision and read completely;full progress JSON parsed.Three related posts refetched with unchanged blobs matching previously read complete bodies.No required instruction missing/truncated.",
+          "Fresh alpha-quant defaultmain f43ed0cd5d57d28c50b924f2b3614d4189eae69f/fullCSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active.14grouped queries includeall98names,not98individual primary audits.Primary48/pending50,monthly22,product16,partner4,regulator3 unchanged.",
+          "TSMC October15SEC numeric results/Q4guidance rechecked:USD52.3–54.3bn revenue,GM65–67%,OP56.5–58.5%,unchanged.MediaTek index and fresh TPU/NRE/procurement searches rediscover known June,August,September roles and forecasts.No authenticated new award,renewal,NRE or commercial terms established;original institution notes unavailable.",
+          "NVIDIA latestvisibleOctober17SparkPC/October16PC and automotive,AMD October12Helion,Broadcom October13VMware/October8networking and Marvell October13retimer/security/October12StructeraX visible entries inspected.Not a full current-filing audit or proof of absence of news.",
+          "FiveCSP indices opened.Microsoft next earningsOctober28.Amazon40line/Alphabet72line extraction lacks numeric financial bodies.Meta news and Oracle landing do not establish complete current capex,utilization or monetization.No new comparable budget aggregate inferred.",
+          "Full-universe search results largely older monthly revenue,capacity,broker forecasts and market recaps.Search/crawl recency is not event date.Original financial validation remains partial;missing sources are not zero growth or stability.",
+          "Outside/downside discovery repeats known FT pipeline-financing stress,AnthropicBlackstone offer,CoreWeave risk,LG/AIR contract and PJM study.Known KYEC optimistic unnamed-broker account remains original-note pending;existing contrasting forecast lead not resolved or promoted to consensus.No fresh confirmed default,cancellation,financing close or supplier earnings revision established.",
+          "Dedup95events,189candidates,105prior screenings and readable notification baseline.No new candidate added merely from a recycled headline.Only screening/instruction/date metadata refreshed;all event,candidate,article,blocker and screening-history contents preserved.No prices,valuation,holdings,institutional flows or private decisions stored.Ledger-only JSON/preservation/freshhead/blob/CAS/readback/onlytarget checks;no articlelint/build/deploy/publication claim."
         ]
       }
     ],
@@ -11245,7 +11277,7 @@
     }
   ],
   "last_research_date": "2026-10-18",
-  "instruction_commit_sha": "921e0fda1129dd99e2f662c33c71ecb940189172",
+  "instruction_commit_sha": "f714ce05a32b380acd620a75809e9c54ad928074",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
