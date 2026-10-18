@@ -2899,7 +2899,7 @@
   "coverage": {
     "universe_source": "rightson/alpha-quant:seeds/watchlists/ai_supply_chain_universe.csv",
     "status": "all_98_search_screened_primary_validation_partial",
-    "universe_commit_sha": "3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7",
+    "universe_commit_sha": "f43ed0cd5d57d28c50b924f2b3614d4189eae69f",
     "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
     "active_count": 98,
     "search_screened_count": 98,
@@ -2959,12 +2959,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-18",
-      "checked_at": "2026-10-18T01:37:15Z",
-      "instruction_commit_sha": "58b587266c2cbef46fe523f89ebfbacf40044ee6",
+      "checked_at": "2026-10-18T03:12:38Z",
+      "instruction_commit_sha": "c4c1a4c7e0b83ae42148c6e057503365a069c3dd",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh14 grouped discovery queries cover98 active names;required core companies,CSP indices,TPU roles and outside opportunity/downside refreshed. No independently verified material increment;one screening only,no new public_event,candidate or article.",
+      "scope": "Fresh14grouped searches cover98active names;core issuer indices,sixcore/fiveCSP discovery,TPU role/NRE/allocation and outside opportunity/downside refreshed. One outside-universe historical-capability research lead retained;no material new event or article.",
       "sources": [
         "https://pr.tsmc.com/english/news/3346",
         "https://www.mediatek.com/press-room",
@@ -2977,23 +2977,22 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://www.zdtco.com/en/investor/events",
-        "https://www.zdtco.com/public/en/investor/events",
-        "https://www.zdtco.com/en/investor/messages",
-        "https://www.zdtco.com/public/en/investor",
-        "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&id=0000765469_GVC3MZT47QJJ118P5B7HC",
-        "https://dev.taisounds.news/news/content/76/293686"
+        "https://www.winfoundry.com/en-US/Tech/tech_development",
+        "https://www.winfoundry.com/zh-TW/Invest/invest_quarter_reports?year=2026",
+        "https://money.udn.com/money/story/5612/9821349",
+        "https://news.cnyes.com/news/id/6632471"
       ],
       "source_limits": [
-        "Latest default-main instruction58b587266c2cbef46fe523f89ebfbacf40044ee6. Required rules/specifications retrieved at same commit;AGENTS completely read in chunks. Full progress JSON retrieved and parsed for deduplication and latest stages. Three related ai-industry articles re-fetched at same commit with unchanged blobs d7b6628191b66f017a5040f7ab11e38609e6f944,bc1a65ec6305658254124855f465e1a3adbfbd91,2bc5dfc12a09ebe7f15c8e81f85869db8b588419. No required instruction read failure.",
-        "Fresh alpha-quant metadata/main/full CSV3165ec3abb32ffa8c96afcbb9b129e7e1bdc70e7/blob88422949d38165d4757a1e24c27f8662bede14c1 confirms98active. All98included across14grouped queries;discovery is not individual primary validation. Distinct primary47/pending51,monthly21/product15/partner4/regulator3 unchanged.",
-        "TSMC October15issuer Q3body/Q4table rechecked:USD52.3–54.3bn revenue,65–67%GM,56.5–58.5%OP unchanged. MediaTek press index and targeted TPU design/NRE/allocation searches show no authenticated new award,renewal or economics;August19multi-vendor interpretation and October13Humufish schedule claims remain historical attributed reports,original institution note unavailable.",
-        "NVIDIA October17SparkPC blog/October16availability,AMDOctober12Helion,BroadcomOctober13VMware/October8networking and MarvellOctober13retimer/security visible entries inspected. Index refresh is not a full latest-filing audit;no unrecorded CSP earnings revision verified.",
-        "FiveCSP indices refreshed. Microsoft next earningsOctober28;Amazon40-line and Alphabet72-line extraction omit financial/news bodies. Meta news is not utilization evidence;Oracle landing is not a filing audit. No new combined capex,paid utilization or monetization conclusion inferred.",
-        "All98discovery predominantly returns historical monthly revenue,expansion,broker forecasts and market recaps,including years before2026. Search/crawl recency is not event date. These results do not establish complete current-company coverage or absence of news.",
-        "Zhen Ding issuer indexed calendar corroborates October13–14QIC forum and October8Septemberrevenue release;direct English/public calendar,IR and news pages fail retrieval. Forum-summary capex/mix figures not promoted to issuer facts. No primary-count credit,new order or financial revision established;access gap remains partial,not whole-monitor failure.",
-        "Outside/downside discovery includes existing financing/power concerns,TrendForce capex forecasts,old infrastructure and optical stories. Deduplicated against95publicevents,183candidates,99prior screenings and readable notification baseline. No independently verified new default,cancellation,funding close or order/profit revision;unverified leads are not material alerts.",
-        "Only one screening appended and current screening/instruction/date metadata refreshed. All prior events,candidates,articles,screenings and dated blockers preserved. No stock quotes,valuation,current institutional flows,holdings or private decisions stored. Ledger-only JSON,concurrency lease,exact remote readback and only-target diff verification;no article publication claim."
+        "Instruction commitc4c1a4c7e0b83ae42148c6e057503365a069c3dd;all required rules/specifications fetched at this revision and read completely. Full ledger parsed for history/dedup;three related articles refetched at same revision,unchanged blobs and complete bodies read. No mandatory instruction read failure.",
+        "Fresh alpha-quant main f43ed0cd5d57d28c50b924f2b3614d4189eae69f and full CSV blob88422949d38165d4757a1e24c27f8662bede14c1 confirm98active names unchanged. All98included in14grouped discovery queries,not98individual primary validations. Distinct primary47/pending51,monthly21/product15/partner4/regulator3 unchanged.",
+        "TSMC October15issuer numeric body/Q4table read:revenueUSD52.3–54.3bn,GM65–67%,OP56.5–58.5%,unchanged from recorded baseline. New crawl/repeated report does not establish new capacity,pricing or customer economics.",
+        "MediaTek press index and fresh TPU/NRE/allocation search refreshed. August multi-vendor reports and older design forecasts remain historical/attributed;no authenticated new award,NRE,generation renewal or commercial economics. Original institution notes unavailable;not company guidance or a consensus measure.",
+        "NVIDIA October17SparkPC blog/October16availability,AMD October12Helion,Broadcom October13VMware/October8networking and Marvell October13retimer/security visible entries inspected. Index screening is not full latest-filings validation;no new unrecorded CSP supplier earnings revision established.",
+        "FiveCSP available indices reopened;Microsoft next earningsOctober28. Amazon40-line/Alphabet72-line extraction lacks financial/news bodies;Meta news is not utilization evidence,Oracle landing not full financial-filings audit. No new comparable capex aggregate,paid deployment or monetization revision inferred.",
+        "All98discovery mainly returns historical monthly revenue,old expansion,attributed broker forecasts and market recaps,including pre-2026 stories. Search recency/crawl time is not event date;results do not establish complete current issuer coverage or absence of company news.",
+        "Outside-universe WIN issuer historical optoelectronic catalog and October23call calendar read. October18 original media body read;current EML/VCSEL volume and CW qualification claims remain attributed,pending original financial/product-stage validation. Q2PDF535/532 Unicode decode failures and filename-free retry failures recorded in candidate;no active-primary-count credit or alert.",
+        "Fresh outside/downside searches rediscover Schneider/AIXTRON guidance,Oracle Septemberforce-majeure,financing and power risks. October18 allocation commentary supplies no authenticated company-level new earnings revision;deduplicated against95events,183priorcandidates,100prior screenings and available notification baseline. No new default,cancellation,funding close or supplier loss verified.",
+        "Only one candidate and one screening appended;current instruction/date/universe/screening metadata refreshed. Prior events,candidates,articles,screenings and dated blockers preserved. No current quotes,valuation,holdings,institutional-flow or private investment judgments stored. Ledger-only JSON/concurrency/readback/onlytarget validation;no articlelint/build/deploy/publication claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -5884,6 +5883,44 @@
           "Zhen Ding issuer indexed calendar corroborates October13–14QIC forum and October8Septemberrevenue release;direct English/public calendar,IR and news pages fail retrieval. Forum-summary capex/mix figures not promoted to issuer facts. No primary-count credit,new order or financial revision established;access gap remains partial,not whole-monitor failure.",
           "Outside/downside discovery includes existing financing/power concerns,TrendForce capex forecasts,old infrastructure and optical stories. Deduplicated against95publicevents,183candidates,99prior screenings and readable notification baseline. No independently verified new default,cancellation,funding close or order/profit revision;unverified leads are not material alerts.",
           "Only one screening appended and current screening/instruction/date metadata refreshed. All prior events,candidates,articles,screenings and dated blockers preserved. No stock quotes,valuation,current institutional flows,holdings or private decisions stored. Ledger-only JSON,concurrency lease,exact remote readback and only-target diff verification;no article publication claim."
+        ]
+      },
+      {
+        "date": "2026-10-18",
+        "checked_at": "2026-10-18T03:12:38Z",
+        "instruction_commit_sha": "c4c1a4c7e0b83ae42148c6e057503365a069c3dd",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh14grouped searches cover98active names;core issuer indices,sixcore/fiveCSP discovery,TPU role/NRE/allocation and outside opportunity/downside refreshed. One outside-universe historical-capability research lead retained;no material new event or article.",
+        "sources": [
+          "https://pr.tsmc.com/english/news/3346",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://www.winfoundry.com/en-US/Tech/tech_development",
+          "https://www.winfoundry.com/zh-TW/Invest/invest_quarter_reports?year=2026",
+          "https://money.udn.com/money/story/5612/9821349",
+          "https://news.cnyes.com/news/id/6632471"
+        ],
+        "source_limits": [
+          "Instruction commitc4c1a4c7e0b83ae42148c6e057503365a069c3dd;all required rules/specifications fetched at this revision and read completely. Full ledger parsed for history/dedup;three related articles refetched at same revision,unchanged blobs and complete bodies read. No mandatory instruction read failure.",
+          "Fresh alpha-quant main f43ed0cd5d57d28c50b924f2b3614d4189eae69f and full CSV blob88422949d38165d4757a1e24c27f8662bede14c1 confirm98active names unchanged. All98included in14grouped discovery queries,not98individual primary validations. Distinct primary47/pending51,monthly21/product15/partner4/regulator3 unchanged.",
+          "TSMC October15issuer numeric body/Q4table read:revenueUSD52.3–54.3bn,GM65–67%,OP56.5–58.5%,unchanged from recorded baseline. New crawl/repeated report does not establish new capacity,pricing or customer economics.",
+          "MediaTek press index and fresh TPU/NRE/allocation search refreshed. August multi-vendor reports and older design forecasts remain historical/attributed;no authenticated new award,NRE,generation renewal or commercial economics. Original institution notes unavailable;not company guidance or a consensus measure.",
+          "NVIDIA October17SparkPC blog/October16availability,AMD October12Helion,Broadcom October13VMware/October8networking and Marvell October13retimer/security visible entries inspected. Index screening is not full latest-filings validation;no new unrecorded CSP supplier earnings revision established.",
+          "FiveCSP available indices reopened;Microsoft next earningsOctober28. Amazon40-line/Alphabet72-line extraction lacks financial/news bodies;Meta news is not utilization evidence,Oracle landing not full financial-filings audit. No new comparable capex aggregate,paid deployment or monetization revision inferred.",
+          "All98discovery mainly returns historical monthly revenue,old expansion,attributed broker forecasts and market recaps,including pre-2026 stories. Search recency/crawl time is not event date;results do not establish complete current issuer coverage or absence of company news.",
+          "Outside-universe WIN issuer historical optoelectronic catalog and October23call calendar read. October18 original media body read;current EML/VCSEL volume and CW qualification claims remain attributed,pending original financial/product-stage validation. Q2PDF535/532 Unicode decode failures and filename-free retry failures recorded in candidate;no active-primary-count credit or alert.",
+          "Fresh outside/downside searches rediscover Schneider/AIXTRON guidance,Oracle Septemberforce-majeure,financing and power risks. October18 allocation commentary supplies no authenticated company-level new earnings revision;deduplicated against95events,183priorcandidates,100prior screenings and available notification baseline. No new default,cancellation,funding close or supplier loss verified.",
+          "Only one candidate and one screening appended;current instruction/date/universe/screening metadata refreshed. Prior events,candidates,articles,screenings and dated blockers preserved. No current quotes,valuation,holdings,institutional-flow or private investment judgments stored. Ledger-only JSON/concurrency/readback/onlytarget validation;no articlelint/build/deploy/publication claim."
         ]
       }
     ],
@@ -10850,6 +10887,32 @@
         "Test workload-level savings against electrical-switch and other optical alternatives;weak adoption or costly integration would undermine conversion."
       ],
       "publication_status": "research_candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "win-semiconductors-optical-foundry-product-mix-to-qualified-volume-and-profit",
+      "date": "2026-10-18",
+      "instruction_commit_sha": "c4c1a4c7e0b83ae42148c6e057503365a069c3dd",
+      "companies": [
+        "WIN Semiconductors (3105)"
+      ],
+      "sources": [
+        "https://www.winfoundry.com/en-US/Tech/tech_development",
+        "https://www.winfoundry.com/zh-TW/Invest/invest_quarter_reports?year=2026",
+        "https://money.udn.com/money/story/5612/9821349"
+      ],
+      "stage": "historical_issuer_capability_and_upcoming_call_verified_optical_volume_claim_media_attributed_pending_original_financial_validation",
+      "facts": {
+        "relationship": "Undated issuer technical catalog identifies epitaxy,wafer processing,device characterization and reliability services for optical components,and lists data centers among application markets. This supports a potential foundry demand path,not a named CSP customer or current advanced-optical production award.",
+        "calendar": "Issuer calendar lists October23,2026 at14:00 for3Q2026 operating-results webcast. This is a future disclosure checkpoint,not already released Q3 results.",
+        "media_report": "October18 Economic Daily report attributes EML/VCSEL volume-production progress and slower CW-laser qualification to prior company statements. Optical shipment volumes,revenue mix,customer commitments and product profitability are not independently established.",
+        "limits": "Linked issuer Q2 presentation535 and press release532 failed extraction with Unicode decoding errors;retry without filenames also inaccessible. Catalog is historical capability,not verification of the report's current EML/CW maturity. WIN is outside98active Taiwan names;watchlist and primary47count unchanged."
+      },
+      "questions": [
+        "Obtain October23 issuer materials and distinguish product qualification,volume shipments and recurring customer orders.",
+        "Reconcile optical revenue mix,utilization,yield,pricing and depreciation with gross profit and operating cash;do not infer margin from total revenue.",
+        "Check whether CW qualification or slower handset demand offsets optical growth;test competing foundry capacity and customer insourcing."
+      ],
+      "publication_status": "research_candidate_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -10869,7 +10932,7 @@
     }
   ],
   "last_research_date": "2026-10-18",
-  "instruction_commit_sha": "58b587266c2cbef46fe523f89ebfbacf40044ee6",
+  "instruction_commit_sha": "c4c1a4c7e0b83ae42148c6e057503365a069c3dd",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
