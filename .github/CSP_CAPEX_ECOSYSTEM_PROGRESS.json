@@ -2915,7 +2915,16 @@
         "https://www.nscale.com/press-releases/nscale-microsoft-2025",
         "https://www.theguardian.com/technology/2026/sep/24/construction-largest-supercomputer-delayed"
       ],
-      "status": "reported_site_specific_customer_withdrawal_alert_primary_termination_confirmation_pending"
+      "status": "reported_site_specific_customer_withdrawal_alert_primary_termination_confirmation_pending",
+      "verification_updates": [
+        {
+          "date": "2026-10-18",
+          "source": "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/",
+          "stage": "same_report_with_direct_company_response_not_independent_termination_verification",
+          "facts": "Reuters October18 article remains attributed to Telegraph for withdrawal and says precise reason unspecified;updated indexed body attributes the same other-contracts-unaffected/alternative-power response directly to Nscale spokesperson. Microsoft had not responded outside regular business hours.",
+          "limits": "Direct Reuters page inaccessible;search returned updated body,while earlier Reuters syndication lacks Nscale response.Version distinction retained.No formal termination filing,compensation,capacity relocation,equipment cancellation or financial-loss disclosure established.Same event and same substantive response already notified;not a new material alert."
+        }
+      ]
     }
   ],
   "articles": [],
@@ -2983,12 +2992,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-18",
-      "checked_at": "2026-10-18T09:46:38Z",
-      "instruction_commit_sha": "2b55a69937f50a8b2f1fa72174226c88a4318b84",
+      "checked_at": "2026-10-18T11:30:14Z",
+      "instruction_commit_sha": "16a34ac0d972e9dc2a1ae99ac1d93cde9e459aae",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh grouped discovery includes98active names;core issuer and fiveCSP indices,targeted TPU/NRE/procurement,and outside opportunity/downside searches refreshed.No further authenticated material increment beyond recorded Loughton report;no new event,candidate or article.",
+      "scope": "Fresh14grouped discovery queries include98active names;sixcore issuer/fiveCSP indices,targeted TPU commercial-role and outside opportunity/downside searches refreshed.Loughton Reuters source-version reconciliation appended to existing event/candidate;no new material event,notification or article.",
       "sources": [
         "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
         "https://www.mediatek.com/press-room",
@@ -3001,19 +3010,18 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://www.sinbon.com/tw/investors-news/1",
-        "https://finance.yahoo.com/technology/ai/articles/microsoft-axes-ai-deal-setback-053000624.html",
-        "https://www.nscale.com/newsroom?a48283e3_page=3",
+        "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/",
+        "https://935thelloyd.com/2026/10/18/microsoft-pulls-out-of-uk-data-center-deal-with-nscale-telegraph-reports/",
         "https://www.ft.com/content/9ea5a37d-15c9-4d5b-94d6-719048c9cd3c"
       ],
       "source_limits": [
-        "Fresh metadata/defaultmain2b55a69937f50a8b2f1fa72174226c88a4318b84;required rules and specifications read completely at same instruction revision.Full911329-character progress JSON parsed.Related posts refetched with unchanged blobs matching previously read complete bodies.No required instruction failure.",
-        "Fresh alpha-quant metadata/defaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f and completeCSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active.14OR discovery queries includeall98names;not98individual primary audits.Primary historical48/pending50,monthly22,product16,partner4,regulator3 remain unchanged.",
-        "Core indices fetched.TSMC October15SEC results and Q4guidance remain the available numeric baseline.MediaTek TPU/NRE/procurement discovery returns historical forecasts and capacity reports,not authenticated new design award,renewal or commercial terms.NVIDIA,AMD,Broadcom and Marvell visible indices checked;not comprehensive current-filing audits.",
-        "FiveCSP indices refreshed.Amazon40line/Alphabet72line extractions lack full financial bodies.Meta/Oracle landing pages do not establish full current capex,utilization or AI monetization;no budget aggregate or absence-of-news claim inferred.",
-        "Grouped results mostly older monthly releases,earnings previews,capacity/product reports and market commentary.Date-query/crawl recency is not event date.Sinbon official search index contains September numeric text,but direct opened page is a one-line shell;not promoted to completed primary financial validation.No new individual current-price or valuation judgment made.",
-        "Fresh Loughton searches rediscover the already recorded JamesTitcomb report and derivative translations;not independent confirmation or a second event.Nscale press-releases path failed,official newsroom index accessible via search shows older entries.No formal termination terms,new supplier cancellation or quantified earnings effect verified.Outside scan repeats FT pipeline and CoreWeave financing risk already recorded.",
-        "Dedup96events,189candidates,107prior screenings and readable notification baseline.No new event/candidate/article/blocker;all historical objects preserved.Only instruction/date/current-screening metadata and one append-only screening checkpoint updated.Public ledger excludes quotes,valuation,target prices,holdings,institutional flows and private decisions.Ledger-only JSON,preservation,freshhead/blob,CAS,readback and onlytarget checks;no articlelint/build/deploy/publicarticle claim."
+        "Fresh defaultmain16a34ac0d972e9dc2a1ae99ac1d93cde9e459aae instruction rules/specifications fetched at same revision and fully read.Full915746-character progress parsed.Related posts refetched with unchanged blobs matching previously read full bodies.No mandatory instruction missing or truncated.",
+        "Fresh alpha-quant metadata/defaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f/fullCSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active.All names included in14OR discovery queries,not individual primary audits.Historical primary48/pending50,monthly22,product16,partner4,regulator3 unchanged.",
+        "Core indices opened.TSMC October15SEC result/guidance baseline unchanged.MediaTek TPU/NRE/procurement searches return historical role/forecast/packaging and supplier contract material;no new authenticated award,renewal,NRE or manufacturing economics established.NVIDIA,AMD,Broadcom,Marvell visible entries checked,not full current-filing audit.",
+        "FiveCSP indices opened.Amazon40line/Alphabet72line extracted bodies incomplete.Meta/Oracle news landing do not establish comprehensive capex/utilization/monetization.No new aggregate spending conclusion drawn.",
+        "Grouped discoveries largely historical monthly revenue,broker commentary,product/capacity and market recaps.Crawl date not publication/event date.No individual latest-price,valuation or market-consensus claim made.",
+        "Reuters October18 Loughton coverage separately reconciled:withdrawal attributed to Telegraph;updated indexed version quotes Nscale directly,same response already covered.Earlier syndicated version has no company responses.Direct Reuters open inaccessible.No new termination terms,cash loss,other-contract impact or supplier cancellation.Not a second independent withdrawal report or repeated alert.",
+        "Dedup96events/189candidates/108prior screenings and readable notification baseline.Only append source verification to existing Loughton event/Nscale candidate,one screening checkpoint,and instruction/date metadata.Original facts and all other objects retained.No article or new blocker.Public ledger excludes quotes,valuation,targets,holdings,institutional flows and private decisions.Ledger-only checks;no articlelint/build/deploy/publication claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -6201,6 +6209,40 @@
           "Grouped results mostly older monthly releases,earnings previews,capacity/product reports and market commentary.Date-query/crawl recency is not event date.Sinbon official search index contains September numeric text,but direct opened page is a one-line shell;not promoted to completed primary financial validation.No new individual current-price or valuation judgment made.",
           "Fresh Loughton searches rediscover the already recorded JamesTitcomb report and derivative translations;not independent confirmation or a second event.Nscale press-releases path failed,official newsroom index accessible via search shows older entries.No formal termination terms,new supplier cancellation or quantified earnings effect verified.Outside scan repeats FT pipeline and CoreWeave financing risk already recorded.",
           "Dedup96events,189candidates,107prior screenings and readable notification baseline.No new event/candidate/article/blocker;all historical objects preserved.Only instruction/date/current-screening metadata and one append-only screening checkpoint updated.Public ledger excludes quotes,valuation,target prices,holdings,institutional flows and private decisions.Ledger-only JSON,preservation,freshhead/blob,CAS,readback and onlytarget checks;no articlelint/build/deploy/publicarticle claim."
+        ]
+      },
+      {
+        "date": "2026-10-18",
+        "checked_at": "2026-10-18T11:30:14Z",
+        "instruction_commit_sha": "16a34ac0d972e9dc2a1ae99ac1d93cde9e459aae",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh14grouped discovery queries include98active names;sixcore issuer/fiveCSP indices,targeted TPU commercial-role and outside opportunity/downside searches refreshed.Loughton Reuters source-version reconciliation appended to existing event/candidate;no new material event,notification or article.",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/",
+          "https://935thelloyd.com/2026/10/18/microsoft-pulls-out-of-uk-data-center-deal-with-nscale-telegraph-reports/",
+          "https://www.ft.com/content/9ea5a37d-15c9-4d5b-94d6-719048c9cd3c"
+        ],
+        "source_limits": [
+          "Fresh defaultmain16a34ac0d972e9dc2a1ae99ac1d93cde9e459aae instruction rules/specifications fetched at same revision and fully read.Full915746-character progress parsed.Related posts refetched with unchanged blobs matching previously read full bodies.No mandatory instruction missing or truncated.",
+          "Fresh alpha-quant metadata/defaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f/fullCSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active.All names included in14OR discovery queries,not individual primary audits.Historical primary48/pending50,monthly22,product16,partner4,regulator3 unchanged.",
+          "Core indices opened.TSMC October15SEC result/guidance baseline unchanged.MediaTek TPU/NRE/procurement searches return historical role/forecast/packaging and supplier contract material;no new authenticated award,renewal,NRE or manufacturing economics established.NVIDIA,AMD,Broadcom,Marvell visible entries checked,not full current-filing audit.",
+          "FiveCSP indices opened.Amazon40line/Alphabet72line extracted bodies incomplete.Meta/Oracle news landing do not establish comprehensive capex/utilization/monetization.No new aggregate spending conclusion drawn.",
+          "Grouped discoveries largely historical monthly revenue,broker commentary,product/capacity and market recaps.Crawl date not publication/event date.No individual latest-price,valuation or market-consensus claim made.",
+          "Reuters October18 Loughton coverage separately reconciled:withdrawal attributed to Telegraph;updated indexed version quotes Nscale directly,same response already covered.Earlier syndicated version has no company responses.Direct Reuters open inaccessible.No new termination terms,cash loss,other-contract impact or supplier cancellation.Not a second independent withdrawal report or repeated alert.",
+          "Dedup96events/189candidates/108prior screenings and readable notification baseline.Only append source verification to existing Loughton event/Nscale candidate,one screening checkpoint,and instruction/date metadata.Original facts and all other objects retained.No article or new blocker.Public ledger excludes quotes,valuation,targets,holdings,institutional flows and private decisions.Ledger-only checks;no articlelint/build/deploy/publication claim."
         ]
       }
     ],
@@ -9775,6 +9817,20 @@
             "Verify revised Loughton customer,power timeline,financing and contract revenue disclosure;avoid applying redacted separate Anthropic contract.",
             "Check relocation or replacement capacity versus actual system/GPU order cancellations and cash effects before supplier financial attribution."
           ]
+        },
+        {
+          "date": "2026-10-18",
+          "event_fingerprint": "nscale-loughton-microsoft-anchor-tenant-withdrawal-reported-20261018",
+          "stage": "reuters_source_version_reconciliation_no_new_financial_fact",
+          "sources": [
+            "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/",
+            "https://935thelloyd.com/2026/10/18/microsoft-pulls-out-of-uk-data-center-deal-with-nscale-telegraph-reports/"
+          ],
+          "verified": "Updated Reuters indexed body carries a direct Nscale response,consistent with prior Telegraph syndication;withdrawal still attributed to Telegraph.Earlier Reuters syndicated version says neither company responded.Same material baseline,not independent termination proof.",
+          "gaps": [
+            "Formal termination clauses,date and compensation.",
+            "New tenant/power/relocation and supplier order economics remain unverified."
+          ]
         }
       ]
     },
@@ -11390,7 +11446,7 @@
     }
   ],
   "last_research_date": "2026-10-18",
-  "instruction_commit_sha": "2b55a69937f50a8b2f1fa72174226c88a4318b84",
+  "instruction_commit_sha": "16a34ac0d972e9dc2a1ae99ac1d93cde9e459aae",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
