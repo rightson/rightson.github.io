@@ -3023,12 +3023,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-19",
-      "checked_at": "2026-10-18T18:19:56Z",
-      "instruction_commit_sha": "8da0b18b006bbf1b8527ecf18127145636cdcce6",
+      "checked_at": "2026-10-18T19:13:18Z",
+      "instruction_commit_sha": "a129cf1899d62bd25371965d724abf9de86d04b1",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh14grouped queries included all98active names;sixcore issuers and fiveCSP landing indices refreshed.Targeted TPU procurement,NVHBM,project delivery/financing downside and outside-universe optical alternatives checked.One historical SRMO standardization candidate added.No new material event or article.",
+      "scope": "Fresh14grouped queries included98active names;sixcore issuer and fiveCSP landing indices refreshed.Targeted TPU/NRE/procurement,NVHBM,project delivery/financing downside and outside-universe power/cooling/optical discovery checked.No new material event,candidate or article.",
       "sources": [
         "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
         "https://www.mediatek.com/press-room",
@@ -3041,21 +3041,22 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Launches-Short-Reach-Micro-Emitter-Optics-SRMO-Standardization-for-AI-Data-Center-Scale-Up-and-Scale-Out-Applications/default.aspx",
-        "https://www.opencompute.org/projects/semi-private-workstreams/short-reach-micro-emitter-optics-srmo/",
+        "https://www.reuters.com/world/asia-pacific/samsung-use-tsmc-technology-nvidias-next-generation-memory-chips-seoul-newspaper-2026-10-18/",
         "https://en.sedaily.com/finance/2026/10/18/samsung-to-tap-tsmc-3-nanometer-lines-for-nvidia-custom-hbm",
         "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/",
         "https://www.ft.com/content/35cc5cc6-f9b6-49cc-8fc2-bd61e09c8c40",
-        "https://www.trendforce.com.tw/research/download/RP261013LA"
+        "https://www.theinformation.com/features/exclusive/page/69",
+        "https://www.nstock.tw/news/article_c?id=20261018-036803680000",
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=39596cb9-26b2-42c4-afae-81356f38a496&c=MB070100"
       ],
       "source_limits": [
-        "Fresh defaultmain8da0b18b006bbf1b8527ecf18127145636cdcce6;required AGENTS/common/topic/config/taxonomy/series/research specifications fully read at same commit.Full959776-character ledger parsed.Related three articles refetched;full bodies read with unchanged hashes.No required instruction missing or truncated.",
-        "Fresh alpha-quant mainf43ed0cd5d57d28c50b924f2b3614d4189eae69f/CSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active names,all included in14grouped discovery queries.Date/recency filtering still retrieves old or crawled content.Not98individual primary audits.Historical active primary48/pending50,monthly22,product16,partner4,regulator3 unchanged.",
-        "TSMC October15 SEC baseline and latest visible MediaTek,NVIDIA,AMD,Broadcom,Marvell issuer indices refreshed.Targeted TPU search returns previously known roles and research/media scenarios.No new issuer-confirmed MediaTek award,NRE,renewal,procurement allocation or pricing revision established.",
-        "FiveCSP landing indices refreshed.Amazon40line and Alphabet72line extraction incomplete;Meta/Oracle news indices are not comprehensive financial/deployment audits.No aggregate capex,utilization or ROI conclusion.",
-        "NVHBM derivatives match existing October18 sourcing event without new issuer commercial confirmation.Loughton Reuters/FT reports match existing withdrawal and company-response baseline.No new verified termination economics or supplier cancellation.FT project-pipeline commentary remains contextual,not a capacity-weighted cancellation measure.",
-        "Outside-universe Credo October12 issuer release and OCP workstream page directly verified.Standardization target and participant relationship are historical product-development evidence,not a new order or earnings revision.No quantified performance extrapolation or participant supply award inferred.Liteon historical Q2 issuer body again returned502;search excerpt not counted as new primary audit.",
-        "Dedup97events/194prior candidates/115prior screenings and readable notification baseline.Prior histories preserved.One historical candidate and one screening appended.No article,new blocker,quotes,valuation,targets,holdings,private investment judgment or market-flow records.Ledger-only source validation;no articlelint/build/deploy/publication-success claim."
+        "Fresh defaultmaina129cf1899d62bd25371965d724abf9de86d04b1.Required instruction/config/taxonomy/series/research specifications fully fetched and read at same commit.Full966313-character ledger parsed.Three related posts refetched with unchanged d7b6628,bc1a65e,2bc5dfc identities matching previously fully read bodies.No required instruction missing or truncated.",
+        "Fresh alpha-quant defaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f/CSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active names.All included in14grouped discovery queries;date/recency filters returned older and crawled material.This is not98individual primary audits.Historical active primary48/pending50,monthly22,product16,partner4,regulator3 unchanged.",
+        "TSMC October15 SEC baseline and current visible MediaTek,NVIDIA,AMD,Broadcom,Marvell issuer entries checked.Targeted TPU procurement/NRE search did not establish a newly authenticated award,commercial allocation,renewal or profit-sharing revision.Google/Broadcom headline resurfaced in search;publisher archive dates original article September21,2023.Paywalled body unavailable;not treated as current news.",
+        "FiveCSP landing indices refreshed.Amazon40line/Alphabet72line extraction remains incomplete;Meta/Oracle news pages do not constitute comprehensive financial or deployment audits.No aggregate capex,utilization,monetization or ROI conclusion.",
+        "Fresh NVHBM and Loughton source searches match existing October18 events and already-recorded company response.No new issuer commercial confirmation,termination economics,relocated equipment purchase or supplier cancellation verified.Syndications remain the same source chain;no duplicate alert.",
+        "Outside-universe dated discovery found product/market commentary,not a newly verified order or earnings revision.MIC October18 media backlog language is not a like-for-like revised company disclosure;October8/15 reports already discuss a higher figure.No inferred decline from differing reported thresholds.Fresh original MoneyLink body failed;indexed nStock syndication and dated MoneyDJ comparison retained only as discovery,not primary baseline.",
+        "Dedup97events/195candidates/116prior screenings and readable notified-event baseline.All prior events,candidates,articles,blockers and screening histories preserved.Only source-check screening appended.No quotes,valuation,targets,holdings,private investment judgments or market-flow records.No articlelint/build/deploy/publication-success claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -6527,6 +6528,44 @@
           "NVHBM derivatives match existing October18 sourcing event without new issuer commercial confirmation.Loughton Reuters/FT reports match existing withdrawal and company-response baseline.No new verified termination economics or supplier cancellation.FT project-pipeline commentary remains contextual,not a capacity-weighted cancellation measure.",
           "Outside-universe Credo October12 issuer release and OCP workstream page directly verified.Standardization target and participant relationship are historical product-development evidence,not a new order or earnings revision.No quantified performance extrapolation or participant supply award inferred.Liteon historical Q2 issuer body again returned502;search excerpt not counted as new primary audit.",
           "Dedup97events/194prior candidates/115prior screenings and readable notification baseline.Prior histories preserved.One historical candidate and one screening appended.No article,new blocker,quotes,valuation,targets,holdings,private investment judgment or market-flow records.Ledger-only source validation;no articlelint/build/deploy/publication-success claim."
+        ]
+      },
+      {
+        "date": "2026-10-19",
+        "checked_at": "2026-10-18T19:13:18Z",
+        "instruction_commit_sha": "a129cf1899d62bd25371965d724abf9de86d04b1",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh14grouped queries included98active names;sixcore issuer and fiveCSP landing indices refreshed.Targeted TPU/NRE/procurement,NVHBM,project delivery/financing downside and outside-universe power/cooling/optical discovery checked.No new material event,candidate or article.",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://www.reuters.com/world/asia-pacific/samsung-use-tsmc-technology-nvidias-next-generation-memory-chips-seoul-newspaper-2026-10-18/",
+          "https://en.sedaily.com/finance/2026/10/18/samsung-to-tap-tsmc-3-nanometer-lines-for-nvidia-custom-hbm",
+          "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/",
+          "https://www.ft.com/content/35cc5cc6-f9b6-49cc-8fc2-bd61e09c8c40",
+          "https://www.theinformation.com/features/exclusive/page/69",
+          "https://www.nstock.tw/news/article_c?id=20261018-036803680000",
+          "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=39596cb9-26b2-42c4-afae-81356f38a496&c=MB070100"
+        ],
+        "source_limits": [
+          "Fresh defaultmaina129cf1899d62bd25371965d724abf9de86d04b1.Required instruction/config/taxonomy/series/research specifications fully fetched and read at same commit.Full966313-character ledger parsed.Three related posts refetched with unchanged d7b6628,bc1a65e,2bc5dfc identities matching previously fully read bodies.No required instruction missing or truncated.",
+          "Fresh alpha-quant defaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f/CSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active names.All included in14grouped discovery queries;date/recency filters returned older and crawled material.This is not98individual primary audits.Historical active primary48/pending50,monthly22,product16,partner4,regulator3 unchanged.",
+          "TSMC October15 SEC baseline and current visible MediaTek,NVIDIA,AMD,Broadcom,Marvell issuer entries checked.Targeted TPU procurement/NRE search did not establish a newly authenticated award,commercial allocation,renewal or profit-sharing revision.Google/Broadcom headline resurfaced in search;publisher archive dates original article September21,2023.Paywalled body unavailable;not treated as current news.",
+          "FiveCSP landing indices refreshed.Amazon40line/Alphabet72line extraction remains incomplete;Meta/Oracle news pages do not constitute comprehensive financial or deployment audits.No aggregate capex,utilization,monetization or ROI conclusion.",
+          "Fresh NVHBM and Loughton source searches match existing October18 events and already-recorded company response.No new issuer commercial confirmation,termination economics,relocated equipment purchase or supplier cancellation verified.Syndications remain the same source chain;no duplicate alert.",
+          "Outside-universe dated discovery found product/market commentary,not a newly verified order or earnings revision.MIC October18 media backlog language is not a like-for-like revised company disclosure;October8/15 reports already discuss a higher figure.No inferred decline from differing reported thresholds.Fresh original MoneyLink body failed;indexed nStock syndication and dated MoneyDJ comparison retained only as discovery,not primary baseline.",
+          "Dedup97events/195candidates/116prior screenings and readable notified-event baseline.All prior events,candidates,articles,blockers and screening histories preserved.Only source-check screening appended.No quotes,valuation,targets,holdings,private investment judgments or market-flow records.No articlelint/build/deploy/publication-success claim."
         ]
       }
     ],
@@ -11875,7 +11914,7 @@
     }
   ],
   "last_research_date": "2026-10-19",
-  "instruction_commit_sha": "8da0b18b006bbf1b8527ecf18127145636cdcce6",
+  "instruction_commit_sha": "a129cf1899d62bd25371965d724abf9de86d04b1",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
