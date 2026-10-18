@@ -35,6 +35,8 @@
 - [ ] **Qualcomm 後續 R2G 案例：constraint、IP 整合或實體實作。** 只有找到具名公開報告、足夠方法和資料流，才能立題。已有 FunCovr.ai／Bedrock 文章，不能再用同一三組來源改寫。
 - [ ] **AMD／Marvell 的 IP／SoC configuration 與 integration。** 優先能核實 design intent → generated RTL／constraints → verification → physical handoff 的技術文件。產品架構、chiplet 規格和客戶方案介紹不能充當設計平台資料；來源不足就暫留佇列。
 
+- [x] **AMD Research RapidWright 的預先實作模組交接與重用。** [正式文章](https://rightson.github.io/ic-design-platform/2026/10/19/rapidwright-preimplemented-module-handoff.html)；repo path `_posts/2026-10-19-rapidwright-preimplemented-module-handoff.md`。2026-10-19 完成。原始公司研究為 Xilinx Research Labs／FCCM 2018，現行 AMD Research 文件與官方程式碼分開標示；主問題是局部實體模組建庫、DCP／metadata 與 Vivado 全域整合的工作分工，不是單一 placement 引擎。包含兩張深淺色 SVG、可重跑合成成本模型與結果，未執行 FPGA PPA／Vivado 實驗。instruction commit `e7a31a8204dc75dbe2273271ae42e2d0bd55367c`；文章 commit `44a55010045c04672f4bda6fd74833b177007613`。Post lint gate、Pages build／deploy 成功，正式頁標題、正文及 canonical 已核對，兩張正式 SVG 均 HTTP 200 且與提交內容一致；依站點閱讀算法約 15 分鐘。本地缺少 Ruby／Bundler，未做本地 Jekyll build。後續實驗是量測真實變更序列中模組庫有效壽命與全域連線成本；Marvell 等候選仍須完整原始技術資料才立題。
+
 章節可依公開原文充分程度調序。每次先選最能補上 R2G 因果鏈缺口、且未重複的案例；不要為平均分配公司名稱而寫低證據密度文章。若當日沒有合格素材，在對話說明研究結果與缺口，不發湊數文章，也不改寫既有日期／permalink。每篇結尾指出此系統與前一篇的實際 artifact／constraint／證據交接，及下一個尚未解的工程問題。
 
 ## 發布時更新
