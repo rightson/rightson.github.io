@@ -2893,6 +2893,29 @@
         "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=4e2b9969-8427-4590-94cb-284c91e1ddc3"
       ],
       "status": "primary_monthly_baseline_verified_not_new_material_alert"
+    },
+    {
+      "fingerprint": "nscale-loughton-microsoft-anchor-tenant-withdrawal-reported-20261018",
+      "event_date": "2026-10-18",
+      "discovered_date": "2026-10-18",
+      "companies": [
+        "Nscale",
+        "Microsoft"
+      ],
+      "type": "original_reporting_via_syndication_customer_withdrawal_primary_historical_scope_verified",
+      "facts": {
+        "baseline": "Nscale September16,2025 announcement: Loughton50MW scalable90MW,initial23040GB300 GPUs,Q1 2027 delivery;October15,2025 expanded multicountry agreement retained that UK project. September24,2026 reporting already identified grid-related delay into2030s.",
+        "increment": "James Titcomb October18,2026 report,05:30UTC,via Yahoo syndication: Microsoft recently informed Nscale it was withdrawing from the Loughton agreement;exact withdrawal date and termination terms not disclosed. This is distinct from previously recorded Glomfjord construction delay.",
+        "company_response": "Nscale quoted as remaining committed to Loughton and exploring alternative power and other UK sites;relationship with Microsoft strong/long-term and other contracts unaffected. Microsoft did not comment in the report.",
+        "limits": "Original publisher page not obtained;Yahoo direct open failed but search returned complete syndicated article including company response. Reposts are not independent corroboration. Grid operator original notice,new customer contract/termination filing,site-specific revenue/cash exposure and equipment order cancellation unverified. Planned50MW/23040GPUs is historical project scope,not established lost orders or delivered capacity. No inference that all Microsoft/Nscale commitments,UK capex or GPU supplier revenue have been cancelled."
+      },
+      "sources": [
+        "https://finance.yahoo.com/technology/ai/articles/microsoft-axes-ai-deal-setback-053000624.html",
+        "https://www.nscale.com/press-releases/nscale-uk-ai-infrastructure-announcement",
+        "https://www.nscale.com/press-releases/nscale-microsoft-2025",
+        "https://www.theguardian.com/technology/2026/sep/24/construction-largest-supercomputer-delayed"
+      ],
+      "status": "reported_site_specific_customer_withdrawal_alert_primary_termination_confirmation_pending"
     }
   ],
   "articles": [],
@@ -2960,15 +2983,20 @@
     ],
     "current_run_screening": {
       "date": "2026-10-18",
-      "checked_at": "2026-10-18T07:34:40Z",
-      "instruction_commit_sha": "f714ce05a32b380acd620a75809e9c54ad928074",
+      "checked_at": "2026-10-18T09:25:33Z",
+      "instruction_commit_sha": "165367068791a7651cd357d97e666c6b2965b598",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh14grouped discovery queries include98active names;core issuer indices,fiveCSP indices,TPU design/NRE/procurement and outside opportunity/downside refreshed.No new event,candidate,article or material notification.",
+      "scope": "Fresh14grouped searches include98active names;core issuer and fiveCSP indices plus targeted TPU/NRE/procurement,outside opportunities and downside checked.One newly covered material reported Loughton customer-withdrawal event;no article.",
       "sources": [
+        "https://finance.yahoo.com/technology/ai/articles/microsoft-axes-ai-deal-setback-053000624.html",
+        "https://www.nscale.com/press-releases/nscale-uk-ai-infrastructure-announcement",
+        "https://www.nscale.com/press-releases/nscale-microsoft-2025",
+        "https://www.theguardian.com/technology/2026/sep/24/construction-largest-supercomputer-delayed",
         "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
         "https://www.mediatek.com/press-room",
+        "https://www.mediatek.com/tek-talk-blogs/inside-mediateks-approach-to-scalable-silicon-design",
         "https://nvidianews.nvidia.com/news",
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/",
@@ -2977,20 +3005,16 @@
         "https://ir.aboutamazon.com/overview/default.aspx",
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
-        "https://www.oracle.com/news/",
-        "https://www.ft.com/content/9ea5a37d-15c9-4d5b-94d6-719048c9cd3c",
-        "https://www.reuters.com/legal/transactional/coreweaves-ai-contracts-lenders-financing-its-build-out-2026-10-15/",
-        "https://www.mirrormedia.mg/external/setn_1923531"
+        "https://www.oracle.com/news/"
       ],
       "source_limits": [
-        "Instruction f714ce05a32b380acd620a75809e9c54ad928074:required rules/specifications fetched at same revision and read completely;full progress JSON parsed.Three related posts refetched with unchanged blobs matching previously read complete bodies.No required instruction missing/truncated.",
-        "Fresh alpha-quant defaultmain f43ed0cd5d57d28c50b924f2b3614d4189eae69f/fullCSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active.14grouped queries includeall98names,not98individual primary audits.Primary48/pending50,monthly22,product16,partner4,regulator3 unchanged.",
-        "TSMC October15SEC numeric results/Q4guidance rechecked:USD52.3–54.3bn revenue,GM65–67%,OP56.5–58.5%,unchanged.MediaTek index and fresh TPU/NRE/procurement searches rediscover known June,August,September roles and forecasts.No authenticated new award,renewal,NRE or commercial terms established;original institution notes unavailable.",
-        "NVIDIA latestvisibleOctober17SparkPC/October16PC and automotive,AMD October12Helion,Broadcom October13VMware/October8networking and Marvell October13retimer/security/October12StructeraX visible entries inspected.Not a full current-filing audit or proof of absence of news.",
-        "FiveCSP indices opened.Microsoft next earningsOctober28.Amazon40line/Alphabet72line extraction lacks numeric financial bodies.Meta news and Oracle landing do not establish complete current capex,utilization or monetization.No new comparable budget aggregate inferred.",
-        "Full-universe search results largely older monthly revenue,capacity,broker forecasts and market recaps.Search/crawl recency is not event date.Original financial validation remains partial;missing sources are not zero growth or stability.",
-        "Outside/downside discovery repeats known FT pipeline-financing stress,AnthropicBlackstone offer,CoreWeave risk,LG/AIR contract and PJM study.Known KYEC optimistic unnamed-broker account remains original-note pending;existing contrasting forecast lead not resolved or promoted to consensus.No fresh confirmed default,cancellation,financing close or supplier earnings revision established.",
-        "Dedup95events,189candidates,105prior screenings and readable notification baseline.No new candidate added merely from a recycled headline.Only screening/instruction/date metadata refreshed;all event,candidate,article,blocker and screening-history contents preserved.No prices,valuation,holdings,institutional flows or private decisions stored.Ledger-only JSON/preservation/freshhead/blob/CAS/readback/onlytarget checks;no articlelint/build/deploy/publication claim."
+        "Required rules/specifications fetched at instruction165367068791a7651cd357d97e666c6b2965b598 and fully read;initial display truncation of AGENTS recovered with complete stored-text chunks before task actions.Full progress JSON parsed.Three related posts refetched,unchanged blobs matching previously read full bodies.",
+        "Fresh alpha-quant metadata/defaultmain f43ed0cd5d57d28c50b924f2b3614d4189eae69f and fullCSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active.Grouped OR discovery is not98individual audits.Primary historical48/pending50,monthly22,product16,partner4,regulator3 unchanged.",
+        "Core indices refreshed.TSMC October15 SEC results/guidance unchanged.MediaTek October15 scalable-design page is a video introduction without customer,NRE,award or production economics;video not transcribed.No new confirmed TPU procurement terms established.NVIDIA October17PC/October16PC+automotive,AMD October12Helion,Broadcom and Marvell known entries are not new financial revisions.",
+        "FiveCSP indices fetched;Amazon40line and Alphabet72line extractions incomplete.Meta/Oracle landing pages not a full current capex/utilization audit.No aggregate budget/AI monetization revision inferred.",
+        "Full-universe results largely older monthly results,broker previews and product/market recaps.Crawl recency is not event date.Outside scan newly discovers October18 Loughton withdrawal report;grid delay itself is older.Reposts not counted as independent reports.Report publication precedes this check;newly covered,not newly occurring at query time.",
+        "Dedup against95prior events,189candidates,106prior screenings and readable notification baseline.Loughton is distinct from Glomfjord;existing Nscale candidate receives append-only verification update.Other historical facts preserved.No new article,financial consensus estimate or supplier cancellation inferred.",
+        "Public ledger contains no current stock quotes,valuation,target prices,holdings,institutional flows or private investment decisions.Ledger-only JSON,preservation,freshhead/blob,CAS,readback and onlytarget verification;no articlelint,build,deploy or publicarticle claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -6107,6 +6131,42 @@
           "Full-universe search results largely older monthly revenue,capacity,broker forecasts and market recaps.Search/crawl recency is not event date.Original financial validation remains partial;missing sources are not zero growth or stability.",
           "Outside/downside discovery repeats known FT pipeline-financing stress,AnthropicBlackstone offer,CoreWeave risk,LG/AIR contract and PJM study.Known KYEC optimistic unnamed-broker account remains original-note pending;existing contrasting forecast lead not resolved or promoted to consensus.No fresh confirmed default,cancellation,financing close or supplier earnings revision established.",
           "Dedup95events,189candidates,105prior screenings and readable notification baseline.No new candidate added merely from a recycled headline.Only screening/instruction/date metadata refreshed;all event,candidate,article,blocker and screening-history contents preserved.No prices,valuation,holdings,institutional flows or private decisions stored.Ledger-only JSON/preservation/freshhead/blob/CAS/readback/onlytarget checks;no articlelint/build/deploy/publication claim."
+        ]
+      },
+      {
+        "date": "2026-10-18",
+        "checked_at": "2026-10-18T09:25:33Z",
+        "instruction_commit_sha": "165367068791a7651cd357d97e666c6b2965b598",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh14grouped searches include98active names;core issuer and fiveCSP indices plus targeted TPU/NRE/procurement,outside opportunities and downside checked.One newly covered material reported Loughton customer-withdrawal event;no article.",
+        "sources": [
+          "https://finance.yahoo.com/technology/ai/articles/microsoft-axes-ai-deal-setback-053000624.html",
+          "https://www.nscale.com/press-releases/nscale-uk-ai-infrastructure-announcement",
+          "https://www.nscale.com/press-releases/nscale-microsoft-2025",
+          "https://www.theguardian.com/technology/2026/sep/24/construction-largest-supercomputer-delayed",
+          "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+          "https://www.mediatek.com/press-room",
+          "https://www.mediatek.com/tek-talk-blogs/inside-mediateks-approach-to-scalable-silicon-design",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/"
+        ],
+        "source_limits": [
+          "Required rules/specifications fetched at instruction165367068791a7651cd357d97e666c6b2965b598 and fully read;initial display truncation of AGENTS recovered with complete stored-text chunks before task actions.Full progress JSON parsed.Three related posts refetched,unchanged blobs matching previously read full bodies.",
+          "Fresh alpha-quant metadata/defaultmain f43ed0cd5d57d28c50b924f2b3614d4189eae69f and fullCSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active.Grouped OR discovery is not98individual audits.Primary historical48/pending50,monthly22,product16,partner4,regulator3 unchanged.",
+          "Core indices refreshed.TSMC October15 SEC results/guidance unchanged.MediaTek October15 scalable-design page is a video introduction without customer,NRE,award or production economics;video not transcribed.No new confirmed TPU procurement terms established.NVIDIA October17PC/October16PC+automotive,AMD October12Helion,Broadcom and Marvell known entries are not new financial revisions.",
+          "FiveCSP indices fetched;Amazon40line and Alphabet72line extractions incomplete.Meta/Oracle landing pages not a full current capex/utilization audit.No aggregate budget/AI monetization revision inferred.",
+          "Full-universe results largely older monthly results,broker previews and product/market recaps.Crawl recency is not event date.Outside scan newly discovers October18 Loughton withdrawal report;grid delay itself is older.Reposts not counted as independent reports.Report publication precedes this check;newly covered,not newly occurring at query time.",
+          "Dedup against95prior events,189candidates,106prior screenings and readable notification baseline.Loughton is distinct from Glomfjord;existing Nscale candidate receives append-only verification update.Other historical facts preserved.No new article,financial consensus estimate or supplier cancellation inferred.",
+          "Public ledger contains no current stock quotes,valuation,target prices,holdings,institutional flows or private investment decisions.Ledger-only JSON,preservation,freshhead/blob,CAS,readback and onlytarget verification;no articlelint,build,deploy or publicarticle claim."
         ]
       }
     ],
@@ -9663,7 +9723,26 @@
         "Test temporary bottleneck versus structural execution failure using sustained accepted deployments; do not treat Glomfjord as the redacted Anthropic site.",
         "Check disclosed supplier shipment,acceptance and payment changes before asserting equipment order cancellation or supplier earnings revision."
       ],
-      "publication_status": "material_risk_alert_no_article"
+      "publication_status": "material_risk_alert_no_article",
+      "verification_updates": [
+        {
+          "date": "2026-10-18",
+          "event_fingerprint": "nscale-loughton-microsoft-anchor-tenant-withdrawal-reported-20261018",
+          "stage": "reported_customer_withdrawal_at_loughton_distinct_from_glomfjord",
+          "sources": [
+            "https://finance.yahoo.com/technology/ai/articles/microsoft-axes-ai-deal-setback-053000624.html",
+            "https://www.nscale.com/press-releases/nscale-uk-ai-infrastructure-announcement",
+            "https://www.nscale.com/press-releases/nscale-microsoft-2025",
+            "https://www.theguardian.com/technology/2026/sep/24/construction-largest-supercomputer-delayed"
+          ],
+          "verified": "Historical issuer announcements directly establish Loughton scope and separate Texas/Portugal/Narvik agreements. New original-report syndication reports withdrawal and quotes Nscale limiting impact to this grid issue.",
+          "gaps": [
+            "Obtain Microsoft/issuer formal termination confirmation,date,clauses and any compensation.",
+            "Verify revised Loughton customer,power timeline,financing and contract revenue disclosure;avoid applying redacted separate Anthropic contract.",
+            "Check relocation or replacement capacity versus actual system/GPU order cancellations and cash effects before supplier financial attribution."
+          ]
+        }
+      ]
     },
     {
       "key": "aspeed-monthly-revenue-and-bmc-supply-profit-conversion-primary-gap",
@@ -11277,7 +11356,7 @@
     }
   ],
   "last_research_date": "2026-10-18",
-  "instruction_commit_sha": "f714ce05a32b380acd620a75809e9c54ad928074",
+  "instruction_commit_sha": "165367068791a7651cd357d97e666c6b2965b598",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
