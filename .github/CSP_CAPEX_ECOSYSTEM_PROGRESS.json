@@ -2962,7 +2962,16 @@
         "https://news.samsung.com/global/samsung-electronics-begins-shipment-of-industry-first-hbm4e-samples",
         "https://www.trendforce.com/news/2026/10/09/news-nvidias-nvhbm-reshapes-memory-makers-base-die-strategies-as-micron-samsung-turn-to-external-foundries"
       ],
-      "status": "reported_customer_specific_sourcing_change_primary_commercial_confirmation_pending"
+      "status": "reported_customer_specific_sourcing_change_primary_commercial_confirmation_pending",
+      "verification_updates": [
+        {
+          "date": "2026-10-19",
+          "stage": "same_october18_report_expanded_indexed_body_and_internal_foundry_alternative_checked",
+          "source": "https://en.sedaily.com/finance/2026/10/18/samsung-to-tap-tsmc-3-nanometer-lines-for-nvidia-custom-hbm",
+          "facts": "Same-day follow-up attributes own-foundry2nm NVHBM base-die validation to an industry source.This preserves a possible internal-supply alternative rather than establishing permanent exclusive outsourcing.",
+          "limits": "Indexed article body read;direct fetch unavailable.AI-translated reporting,not issuer qualification or commercial confirmation.No validated volumes,price,allocation or earnings revision.No new material alert."
+        }
+      ]
     }
   ],
   "articles": [],
@@ -3030,12 +3039,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-19",
-      "checked_at": "2026-10-18T19:55:22Z",
-      "instruction_commit_sha": "5e38a24d99e76d8cb25cc4fda78343d91a1cc093",
+      "checked_at": "2026-10-18T21:25:58Z",
+      "instruction_commit_sha": "85d54fe0e5d867460acf3a15106b4509f275eb67",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh14grouped queries included98active names;sixcore issuer and fiveCSP indices refreshed.Targeted TPU/NRE/procurement,NVHBM,project delivery/financing downside and outside-universe discovery checked.Reuters Update2 response reconciled;one historical lease candidate added.No new material event or article.",
+      "scope": "Fresh14grouped discovery queries include all98active names.Core6 andCSP5 refreshed;targeted TPU/NRE/procurement,NVHBM,delivery/financing downside and outside-universe sources checked.Historical Monarch tenant change reconciled;no new material event or article.",
       "sources": [
         "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
         "https://www.mediatek.com/press-room",
@@ -3048,19 +3057,21 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://www.reuters.com/world/asia-pacific/samsung-use-tsmc-technology-nvidias-next-generation-memory-chips-seoul-newspaper-2026-10-18/",
+        "https://www.aboutamazon.com/news/aws",
+        "https://www.nscale.com/press-releases/nscale-west-virginia-ai-factory",
+        "https://www.semafor.com/article/08/28/2026/google-and-microsoft-were-in-talks-for-nscale-compute-deal-that-went-to-anthropic",
+        "https://www.ft.com/content/35cc5cc6-f9b6-49cc-8fc2-bd61e09c8c40",
+        "https://www.sec.gov/Archives/edgar/data/2110365/000119312526395475/ck0002110365-20260918.htm",
         "https://en.sedaily.com/finance/2026/10/18/samsung-to-tap-tsmc-3-nanometer-lines-for-nvidia-custom-hbm",
-        "https://www.schwab.wallst.com/schwab/Prospect/research/stocks/news.asp?doc=3200-nL1N464021-2&symbol=MSFT",
-        "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/",
-        "https://www.globenewswire.com/news-release/2026/09/16/3363071/0/en/blockfusion-signs-15-year-anchor-lease-with-coreweave-at-niagara-falls-ai-campus.html"
+        "https://investors.ventureglobal.com/news/news-details/2026/Venture-Global-Secures-New-Agreements-to-Support-Expansion-of-Existing-Grid-Independent-Power-Network/default.aspx"
       ],
       "source_limits": [
-        "Fresh defaultmain5e38a24d99e76d8cb25cc4fda78343d91a1cc093.Required instruction/config/taxonomy/series/research specifications fully fetched and read at same commit.Full971077-character ledger parsed.Related three articles refetched with unchanged d7b6628,bc1a65e,2bc5dfc identities matching previously read full bodies.No required instruction missing or truncated.",
-        "Fresh alpha-quant defaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f/CSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active names.All included in14grouped discovery queries.Older/crawled material survives recency filters;not98individual primary audits.Historical active primary48/pending50,monthly22,product16,partner4,regulator3 unchanged.",
-        "TSMC October15 SEC and current MediaTek,NVIDIA,AMD,Broadcom,Marvell visible issuer entries checked.Targeted TPU commercial-role/NRE search returned known historical partnership/reporting;no new issuer-confirmed design award,renewal,allocation or pricing revision.NVHBM derivatives remain the same sourcing report without new issuer commercial confirmation.",
-        "FiveCSP landing indices refreshed.Amazon40line/Alphabet72line extraction incomplete;Meta/Oracle news pages are not full financial/deployment audits.No aggregate spending,utilization or monetization conclusion.",
-        "Reuters Update2 indexed syndicated body reconciled against earlier versions;Microsoft declined comment,not confirmed termination.Loughton substantive risk unchanged.Blockfusion September16 issuer release directly read for historical signed lease and conditional expansion;no current accepted capacity,cash or incremental supplier order inferred.",
-        "Dedup97events/195prior candidates/117prior screenings and readable notified-event baseline.All prior history retained.One verification update on existing event/candidate,one historical candidate and one screening appended.No new public event,article or blocker.No quotes,valuation,targets,holdings,private investment judgments or market-flow records.Ledger-only validation;no articlelint/build/deploy/publication-success claim."
+        "Mandatory instructions/config/taxonomy/series/research specifications fully fetched and read at same defaultmain commit85d54fe0e5d867460acf3a15106b4509f275eb67.Full978287-character progress JSON parsed;three relevant articles refetched with unchanged identities matching previously read full bodies.No required instruction missing or truncated.",
+        "Fresh alpha-quant defaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV88422949d38165d4757a1e24c27f8662bede14c1 confirm98active names.All included in14grouped discovery queries.Older material survives recency filters;not98individual primary audits.Historical primary48/pending50,monthly22,product16,partner4,regulator3 unchanged.",
+        "TSMC October15 SEC and current MediaTek,NVIDIA,AMD,Broadcom,Marvell visible news entries checked.TPU commercial-role/NRE searches returned known partnerships and historical reporting;no new issuer-confirmed award,renewal,allocation or pricing revision.NVHBM same-report internal2nm alternative retained as reported,not qualified production.",
+        "FiveCSP landing indices refreshed;Amazon40line/Alphabet72line financial extraction incomplete.AWS indexed news list supplements discovery.Meta/Oracle visible news entries are not full financial,deployment,utilization or ROI audits.No aggregate capex/monetization conclusion.",
+        "Monarch March16LOI,August28 historical withdrawal report andOctober18FT context reconciled.Full SEC prospectus exceeds4MB tool limit;no full-filing or draft-version verification claim.VentureGlobal October15 framework already recorded,not a new firm order.",
+        "Dedup97events/196candidates/118prior screenings and readable notified-event baseline.History retained;one existing event verification and one existing candidate verification appended.No new event,candidate,article or blocker.No prices,valuation,holdings,private judgment or market-flow records.Ledger-only validation;no articlelint/build/deploy/publication-success claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -6605,6 +6616,43 @@
           "FiveCSP landing indices refreshed.Amazon40line/Alphabet72line extraction incomplete;Meta/Oracle news pages are not full financial/deployment audits.No aggregate spending,utilization or monetization conclusion.",
           "Reuters Update2 indexed syndicated body reconciled against earlier versions;Microsoft declined comment,not confirmed termination.Loughton substantive risk unchanged.Blockfusion September16 issuer release directly read for historical signed lease and conditional expansion;no current accepted capacity,cash or incremental supplier order inferred.",
           "Dedup97events/195prior candidates/117prior screenings and readable notified-event baseline.All prior history retained.One verification update on existing event/candidate,one historical candidate and one screening appended.No new public event,article or blocker.No quotes,valuation,targets,holdings,private investment judgments or market-flow records.Ledger-only validation;no articlelint/build/deploy/publication-success claim."
+        ]
+      },
+      {
+        "date": "2026-10-19",
+        "checked_at": "2026-10-18T21:25:58Z",
+        "instruction_commit_sha": "85d54fe0e5d867460acf3a15106b4509f275eb67",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh14grouped discovery queries include all98active names.Core6 andCSP5 refreshed;targeted TPU/NRE/procurement,NVHBM,delivery/financing downside and outside-universe sources checked.Historical Monarch tenant change reconciled;no new material event or article.",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://www.aboutamazon.com/news/aws",
+          "https://www.nscale.com/press-releases/nscale-west-virginia-ai-factory",
+          "https://www.semafor.com/article/08/28/2026/google-and-microsoft-were-in-talks-for-nscale-compute-deal-that-went-to-anthropic",
+          "https://www.ft.com/content/35cc5cc6-f9b6-49cc-8fc2-bd61e09c8c40",
+          "https://www.sec.gov/Archives/edgar/data/2110365/000119312526395475/ck0002110365-20260918.htm",
+          "https://en.sedaily.com/finance/2026/10/18/samsung-to-tap-tsmc-3-nanometer-lines-for-nvidia-custom-hbm",
+          "https://investors.ventureglobal.com/news/news-details/2026/Venture-Global-Secures-New-Agreements-to-Support-Expansion-of-Existing-Grid-Independent-Power-Network/default.aspx"
+        ],
+        "source_limits": [
+          "Mandatory instructions/config/taxonomy/series/research specifications fully fetched and read at same defaultmain commit85d54fe0e5d867460acf3a15106b4509f275eb67.Full978287-character progress JSON parsed;three relevant articles refetched with unchanged identities matching previously read full bodies.No required instruction missing or truncated.",
+          "Fresh alpha-quant defaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV88422949d38165d4757a1e24c27f8662bede14c1 confirm98active names.All included in14grouped discovery queries.Older material survives recency filters;not98individual primary audits.Historical primary48/pending50,monthly22,product16,partner4,regulator3 unchanged.",
+          "TSMC October15 SEC and current MediaTek,NVIDIA,AMD,Broadcom,Marvell visible news entries checked.TPU commercial-role/NRE searches returned known partnerships and historical reporting;no new issuer-confirmed award,renewal,allocation or pricing revision.NVHBM same-report internal2nm alternative retained as reported,not qualified production.",
+          "FiveCSP landing indices refreshed;Amazon40line/Alphabet72line financial extraction incomplete.AWS indexed news list supplements discovery.Meta/Oracle visible news entries are not full financial,deployment,utilization or ROI audits.No aggregate capex/monetization conclusion.",
+          "Monarch March16LOI,August28 historical withdrawal report andOctober18FT context reconciled.Full SEC prospectus exceeds4MB tool limit;no full-filing or draft-version verification claim.VentureGlobal October15 framework already recorded,not a new firm order.",
+          "Dedup97events/196candidates/118prior screenings and readable notified-event baseline.History retained;one existing event verification and one existing candidate verification appended.No new event,candidate,article or blocker.No prices,valuation,holdings,private judgment or market-flow records.Ledger-only validation;no articlelint/build/deploy/publication-success claim."
         ]
       }
     ],
@@ -10219,6 +10267,19 @@
             "Declined comment is not issuer confirmation of termination.",
             "Contract clauses,compensation,capacity relocation and supplier revenue effects remain unverified."
           ]
+        },
+        {
+          "date": "2026-10-19",
+          "instruction_commit_sha": "85d54fe0e5d867460acf3a15106b4509f275eb67",
+          "stage": "historical_monarch_loi_and_summer_tenant_change_reconciled_not_new_october_cancellation",
+          "sources": [
+            "https://www.nscale.com/press-releases/nscale-west-virginia-ai-factory",
+            "https://www.semafor.com/article/08/28/2026/google-and-microsoft-were-in-talks-for-nscale-compute-deal-that-went-to-anthropic",
+            "https://www.ft.com/content/35cc5cc6-f9b6-49cc-8fc2-bd61e09c8c40",
+            "https://www.sec.gov/Archives/edgar/data/2110365/000119312526395475/ck0002110365-20260918.htm"
+          ],
+          "facts": "March16 issuer announcement identifies up-to1.35GW Microsoft letter of intent,not accepted capacity.August28 Semafor already reported Microsoft walked away over summer and Anthropic took a portion.FT October18 says Microsoft references disappeared from draft documents by lateJune.This is historical context,not a new October18 cancellation of1.35GW or of all Nscale contracts.",
+          "limits": "Issuer historical release and Semafor body directly read;FT indexed full body retrieved,direct fetch unavailable.LateJune document-version comparison not independently reproduced.SEC September18 full prospectus exceeds4MB tool limit;selected indexed passages are not full-filing validation.No new termination economics,supplier cancellation or incremental financial-loss disclosure established."
         }
       ]
     },
@@ -11988,7 +12049,7 @@
     }
   ],
   "last_research_date": "2026-10-19",
-  "instruction_commit_sha": "5e38a24d99e76d8cb25cc4fda78343d91a1cc093",
+  "instruction_commit_sha": "85d54fe0e5d867460acf3a15106b4509f275eb67",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
