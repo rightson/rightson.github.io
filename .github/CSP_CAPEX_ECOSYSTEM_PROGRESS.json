@@ -2960,14 +2960,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-18",
-      "checked_at": "2026-10-18T06:22:22Z",
-      "instruction_commit_sha": "b52d9788c352d1d039dbff76d45e2667eec97cfa",
+      "checked_at": "2026-10-18T07:21:24Z",
+      "instruction_commit_sha": "921e0fda1129dd99e2f662c33c71ecb940189172",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh14grouped discovery queries include98active names;sixcore/fiveCSP indices,TPU responsibility/NRE/allocation,external opportunities and downside checked. Append one provisional aggregate-risk research lead and one historical PJM operator-source verification;no material new notification or article.",
+      "scope": "Fresh14grouped searches include98active names;sixcore/fiveCSP indices,TPU design/NRE/allocation and outside/downside discovery checked.Two historical product/collaboration candidates and contrasting unverified broker lead retained;no material new event or article.",
       "sources": [
-        "https://pr.tsmc.com/english/news/3346",
+        "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
         "https://www.mediatek.com/press-room",
         "https://nvidianews.nvidia.com/news",
         "https://ir.amd.com/news-events/press-releases",
@@ -2978,22 +2978,22 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://www.ft.com/content/9ea5a37d-15c9-4d5b-94d6-719048c9cd3c",
-        "https://insidelines.pjm.com/ferc-accepts-pjm-reliability-backstop-proposal/",
-        "https://ir.towersemi.com/news-releases/news-release-details/tower-semiconductor-and-semtech-expand-sige-partnership-scale",
-        "https://www.reuters.com/business/autos-transportation/tesla-ceo-musk-says-company-plans-use-intels-14a-process-terafab-2026-04-22/"
+        "https://celestica.gcs-web.com/news-releases/news-release-details/celestica-introduces-ds6005-data-center-switch-co-packaged",
+        "https://www.staubli.com/us/en/news/global/2026/coolit-ciena-optic-liquid-cooling-press-release.html",
+        "https://www.mirrormedia.mg/external/setn_1923531",
+        "https://www.sigurd.com.tw/zh-tw/investors-conference"
       ],
       "source_limits": [
-        "All mandatory instructions/specifications read completely at instruction commitb52d9788c352d1d039dbff76d45e2667eec97cfa;full ledger parsed.Three related articles refetched;unchanged blobs match previously read complete bodies.No mandatory instruction missing or truncated.",
-        "Fresh alpha-quant defaultmain f43ed0cd5d57d28c50b924f2b3614d4189eae69f and completeCSV88422949d38165d4757a1e24c27f8662bede14c1 confirm98active.14grouped discovery queries coverall98names,not98individual primary audits.Primary48,pending50,monthly22,product16,partner4,regulator3 unchanged.",
-        "TSMC October15primary results/Q4guidance unchanged atUSD52.3–54.3bn revenue,65–67%GM,56.5–58.5%OP.MediaTek index and fresh TPU/NRE/allocation searches yield older June/May/August/September reports and known October13Humufish story;original broker notes/current commercial terms unavailable.No authenticated new award,renewal or revised NRE economics established.",
-        "NVIDIA latestvisibleOctober17SparkPC/October16PC and automotive;AMD October12Helion;Broadcom October13VMware/October8networking;Marvell October13retimer/security and October12StructeraX are known index entries,not a full latest-filing audit.",
-        "FiveCSP indices opened.Microsoft next earningsOctober28.Amazon40line and Alphabet72line extraction lack financial numeric bodies.Meta newsroom and Oracle landing do not establish current utilization,cash returns or comprehensive capex revisions.No aggregate budget inference from these gaps.",
-        "Grouped discovery returns largely older revenue,capacity,product and broker/market recaps;event date checked against crawl date.Known KYEC forecast-cut lead remains original-note pending.No source was promoted to consensus or company guidance.",
-        "Tower/Semtech October13primary multi-year SiGe capacity agreement directly reread and deduplicated against existing Semtech event/candidate.Intel/Tesla October18commentary traces to April22reported plan,not a verified new October18customer award.",
-        "Fresh FT original reporting retrieved through search;direct URL access failed.Original RegLayer dataset and Bernstein note not obtained;one research candidate records source/method gaps,no new quantified public event or material alert.Nscale AugustGPU figures rediscovered in SeptemberIPO reproductions are historical active/contracted counts,not utilization.",
-        "PJM September30operator notice directly verified and appended to existing candidate.October18secondary retelling is not a new delay;proposal accepted with suspension,not blanket rejection.No named-project outage or lost revenue inferred.",
-        "Dedup95public events,186priorcandidates,103prior screenings and readable prior notification baseline.One candidate and one historical verification appended,not a full article.All historical event/candidate facts,articles,screenings and dated blockers retained.No quotes,valuation,holdings,institutional flows or private decisions stored.Ledger-only JSON/history/CAS/readback/onlytarget verification;no articlelint,build,deploy or publication claim."
+        "Required rules/specifications fetched at instruction921e0fda1129dd99e2f662c33c71ecb940189172 and read completely;full ledger parsed.Three related articles refetched with unchanged blobs matching complete bodies already read.No mandatory missing/truncated instruction.",
+        "Fresh alpha-quant defaultmain f43ed0cd5d57d28c50b924f2b3614d4189eae69f and fullCSV88422949d38165d4757a1e24c27f8662bede14c1 confirm98active.All98included in14grouped discovery queries,not98individual issuer audits.Historical primary48/pending50,monthly22,product16,partner4,regulator3 unchanged.",
+        "TSMC press page twice timed out;October15issuer SEC exhibit read in full and resolves numeric primary-source access.Q4revenueUSD52.3–54.3bn,GM65–67%,OP56.5–58.5% unchanged.No new revision inferred.MediaTek index and targeted TPU queries repeat known design/timing/allocation claims;original broker notes/NRE/commercial terms unavailable.",
+        "NVIDIA latestvisibleOctober17SparkPC/October16PC and automotive,AMD October12Helion,Broadcom October13VMware/October8networking and Marvell October13retimer/security visible entries checked.These are index checks,not full current-filings audits.",
+        "FiveCSP indices reopened.Microsoft next earningsOctober28.Amazon40-line and Alphabet72-line extraction lack financial bodies;Meta newsroom and Oracle landing do not establish current utilization/monetization or complete capex revisions.No new comparable aggregate inferred.",
+        "Grouped98-name discovery predominantly yields older monthly revenue,expansion,broker forecasts and market recaps.Search recency/crawl time is not event date;not complete current-company coverage or absence-of-news proof.",
+        "Celestica October12CPO switch and Stäubli October7CoolIT/Ciena liquid-cooled optics original bodies read.Two outside-universe product research candidates added,without customer award,financial revision or primary-universe-count credit.Competing architectures are not assumed mutually exclusive.",
+        "KYEC contrasting October18indexed unnamed-broker forecast retained in existing candidate;direct body failed.Identity,original note/date and comparable models unavailable.No consensus/company revision or duplicated NVIDIA agreement inferred.Sigurd Chinese/English conference originals timed out;indexed calendar and third-party transcript do not count as primary financial validation.",
+        "TaiSounds preview item for C SUN contains editing placeholders and inconsistent company attribution;not used as new quantified issuer evidence.No new financial revision or primary-count credit.Outside/downside discovery repeats known financing,power,OracleSeptemberdelay and market commentary,not new default or cancellation.",
+        "Dedup95events,187priorcandidates,104prior screenings and readable prior notifications.Two candidates,one existing-candidate update and one screening appended.Prior events,articles,candidate facts,screenings and blockers preserved.No prices,valuation,holdings,institutional flows or private decisions stored.Ledger-only JSON/history/freshhead/blob/CAS/exactreadback/onlytarget checks;no articlelint,build,deploy or publication claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -6037,6 +6037,44 @@
           "Fresh FT original reporting retrieved through search;direct URL access failed.Original RegLayer dataset and Bernstein note not obtained;one research candidate records source/method gaps,no new quantified public event or material alert.Nscale AugustGPU figures rediscovered in SeptemberIPO reproductions are historical active/contracted counts,not utilization.",
           "PJM September30operator notice directly verified and appended to existing candidate.October18secondary retelling is not a new delay;proposal accepted with suspension,not blanket rejection.No named-project outage or lost revenue inferred.",
           "Dedup95public events,186priorcandidates,103prior screenings and readable prior notification baseline.One candidate and one historical verification appended,not a full article.All historical event/candidate facts,articles,screenings and dated blockers retained.No quotes,valuation,holdings,institutional flows or private decisions stored.Ledger-only JSON/history/CAS/readback/onlytarget verification;no articlelint,build,deploy or publication claim."
+        ]
+      },
+      {
+        "date": "2026-10-18",
+        "checked_at": "2026-10-18T07:21:24Z",
+        "instruction_commit_sha": "921e0fda1129dd99e2f662c33c71ecb940189172",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh14grouped searches include98active names;sixcore/fiveCSP indices,TPU design/NRE/allocation and outside/downside discovery checked.Two historical product/collaboration candidates and contrasting unverified broker lead retained;no material new event or article.",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://celestica.gcs-web.com/news-releases/news-release-details/celestica-introduces-ds6005-data-center-switch-co-packaged",
+          "https://www.staubli.com/us/en/news/global/2026/coolit-ciena-optic-liquid-cooling-press-release.html",
+          "https://www.mirrormedia.mg/external/setn_1923531",
+          "https://www.sigurd.com.tw/zh-tw/investors-conference"
+        ],
+        "source_limits": [
+          "Required rules/specifications fetched at instruction921e0fda1129dd99e2f662c33c71ecb940189172 and read completely;full ledger parsed.Three related articles refetched with unchanged blobs matching complete bodies already read.No mandatory missing/truncated instruction.",
+          "Fresh alpha-quant defaultmain f43ed0cd5d57d28c50b924f2b3614d4189eae69f and fullCSV88422949d38165d4757a1e24c27f8662bede14c1 confirm98active.All98included in14grouped discovery queries,not98individual issuer audits.Historical primary48/pending50,monthly22,product16,partner4,regulator3 unchanged.",
+          "TSMC press page twice timed out;October15issuer SEC exhibit read in full and resolves numeric primary-source access.Q4revenueUSD52.3–54.3bn,GM65–67%,OP56.5–58.5% unchanged.No new revision inferred.MediaTek index and targeted TPU queries repeat known design/timing/allocation claims;original broker notes/NRE/commercial terms unavailable.",
+          "NVIDIA latestvisibleOctober17SparkPC/October16PC and automotive,AMD October12Helion,Broadcom October13VMware/October8networking and Marvell October13retimer/security visible entries checked.These are index checks,not full current-filings audits.",
+          "FiveCSP indices reopened.Microsoft next earningsOctober28.Amazon40-line and Alphabet72-line extraction lack financial bodies;Meta newsroom and Oracle landing do not establish current utilization/monetization or complete capex revisions.No new comparable aggregate inferred.",
+          "Grouped98-name discovery predominantly yields older monthly revenue,expansion,broker forecasts and market recaps.Search recency/crawl time is not event date;not complete current-company coverage or absence-of-news proof.",
+          "Celestica October12CPO switch and Stäubli October7CoolIT/Ciena liquid-cooled optics original bodies read.Two outside-universe product research candidates added,without customer award,financial revision or primary-universe-count credit.Competing architectures are not assumed mutually exclusive.",
+          "KYEC contrasting October18indexed unnamed-broker forecast retained in existing candidate;direct body failed.Identity,original note/date and comparable models unavailable.No consensus/company revision or duplicated NVIDIA agreement inferred.Sigurd Chinese/English conference originals timed out;indexed calendar and third-party transcript do not count as primary financial validation.",
+          "TaiSounds preview item for C SUN contains editing placeholders and inconsistent company attribution;not used as new quantified issuer evidence.No new financial revision or primary-count credit.Outside/downside discovery repeats known financing,power,OracleSeptemberdelay and market commentary,not new default or cancellation.",
+          "Dedup95events,187priorcandidates,104prior screenings and readable prior notifications.Two candidates,one existing-candidate update and one screening appended.Prior events,articles,candidate facts,screenings and blockers preserved.No prices,valuation,holdings,institutional flows or private decisions stored.Ledger-only JSON/history/freshhead/blob/CAS/exactreadback/onlytarget checks;no articlelint,build,deploy or publication claim."
         ]
       }
     ],
@@ -11115,7 +11153,19 @@
         "Verify actual incoming wafers,shipment/acceptance timing,utilization and new-capacity ramp with issuer data.",
         "Distinguish temporary short-material/ramp constraints from order cancellation;test gross-profit and cash effects as revenue is recognized."
       ],
-      "publication_status": "research_candidate_only_no_material_alert_no_article"
+      "publication_status": "research_candidate_only_no_material_alert_no_article",
+      "verification_updates": [
+        {
+          "date": "2026-10-18",
+          "instruction_commit_sha": "921e0fda1129dd99e2f662c33c71ecb940189172",
+          "sources": [
+            "https://www.mirrormedia.mg/external/setn_1923531"
+          ],
+          "stage": "contrasting_broker_media_lead_indexed_only_original_note_and_report_date_unverified",
+          "facts": "A separate October18indexed syndicated SETN account describes an unnamed domestic house raising2027revenue-growth forecast from30%to40%,and projectsQ4growth15–16%. Direct body retrieval failed. Broker identity,original report date and prior/new model not authenticated. This differs from the existing Q4forecast-cut lead;do not treat either as consensus or reconcile differing periods/assumptions silently.",
+          "limits": "Known NVIDIA prepayment/US capacity relationship is not a new order here. No additional company guidance,EPS revision percentage or material alert registered."
+        }
+      ]
     },
     {
       "key": "us-datacenter-pipeline-financing-and-construction-conversion-october18-ft-lead",
@@ -11135,6 +11185,47 @@
         "Separate newly funded and delivered capacity from contracted pipeline;identify supplier revenue-recognition timing without equating GPU counts with utilization."
       ],
       "publication_status": "research_candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "celestica-ds6005-cpo-switch-product-to-paid-deployment-and-profit",
+      "date": "2026-10-18",
+      "instruction_commit_sha": "921e0fda1129dd99e2f662c33c71ecb940189172",
+      "companies": [
+        "Celestica",
+        "Broadcom"
+      ],
+      "sources": [
+        "https://celestica.gcs-web.com/news-releases/news-release-details/celestica-introduces-ds6005-data-center-switch-co-packaged"
+      ],
+      "stage": "october12_issuer_product_original_verified_not_customer_award_or_earnings_revision",
+      "facts": "October12 issuer release introduces DS6005:Broadcom Tomahawk6–Davisson,up to102.4Tbps,64x1.6TbE,1.5OU ORv3,liquid cooling,replaceable external lasers and SONiC support. Product introduction and OCP showcase are verified;named customer,order value,volume delivery,measured system savings and margin contribution are not disclosed.",
+      "questions": [
+        "Track customer qualification,accepted deployments and recognized revenue before treating product availability as demand conversion.",
+        "Determine how optical-engine integration,external laser serviceability and liquid-cooling requirements allocate component content and manufacturing profit.",
+        "Compare CPO with pluggable and near-package alternatives;yield,repair cost,adoption timing or weak utilization could offset advertised benefits."
+      ],
+      "publication_status": "historical_product_research_baseline_only_no_material_alert_no_article"
+    },
+    {
+      "key": "coolit-staubli-ciena-liquid-cooled-pluggable-optics-commercial-conversion",
+      "date": "2026-10-18",
+      "instruction_commit_sha": "921e0fda1129dd99e2f662c33c71ecb940189172",
+      "companies": [
+        "CoolIT",
+        "Stäubli",
+        "Ciena"
+      ],
+      "sources": [
+        "https://www.staubli.com/us/en/news/global/2026/coolit-ciena-optic-liquid-cooling-press-release.html"
+      ],
+      "stage": "october7_issuer_collaboration_original_verified_no_quantified_commercial_award",
+      "facts": "October7 Stäubli release describes MiniQD developed with Ciena and CoolIT CP-OSFP coldplates for liquid-cooled pluggable optics,including3.2Tb/s-and-beyond thermal requirements. The architecture preserves module removability while connecting optics to a cooling loop. Release establishes collaboration and design direction,not named CSP orders,revenue,measured field reliability or standardized interoperability.",
+      "questions": [
+        "Verify qualification,shipment stage and paid customer deployments;distinguish prior demonstrations from production.",
+        "Quantify coldplate/connector content,service costs,leakage performance and supplier margin rather than extrapolating from GPU cooling.",
+        "Test whether liquid-cooled pluggables sustain their serviceability advantage versus CPO;cost,interface incompatibility or slow adoption would weaken the opportunity."
+      ],
+      "publication_status": "historical_product_research_baseline_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -11154,7 +11245,7 @@
     }
   ],
   "last_research_date": "2026-10-18",
-  "instruction_commit_sha": "b52d9788c352d1d039dbff76d45e2667eec97cfa",
+  "instruction_commit_sha": "921e0fda1129dd99e2f662c33c71ecb940189172",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
