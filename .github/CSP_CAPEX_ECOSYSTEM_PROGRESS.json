@@ -3039,39 +3039,38 @@
     ],
     "current_run_screening": {
       "date": "2026-10-19",
-      "checked_at": "2026-10-18T21:25:58Z",
-      "instruction_commit_sha": "85d54fe0e5d867460acf3a15106b4509f275eb67",
+      "checked_at": "2026-10-18T21:48:02Z",
+      "instruction_commit_sha": "3ffb96de1ed725fc0be0c51f7369f18badab06d1",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh14grouped discovery queries include all98active names.Core6 andCSP5 refreshed;targeted TPU/NRE/procurement,NVHBM,delivery/financing downside and outside-universe sources checked.Historical Monarch tenant change reconciled;no new material event or article.",
+      "scope": "Fresh14grouped queries include98active names.Core6,CSP5,TPU/NRE/procurement and existing NVHBM/Loughton reports rechecked;outside-universe historical Volato primary contract and conditional equity facility researched.No new material event or article.",
       "sources": [
         "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
         "https://www.mediatek.com/press-room",
         "https://nvidianews.nvidia.com/news",
         "https://ir.amd.com/news-events/press-releases",
-        "https://investors.broadcom.com/",
+        "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://investor.marvell.com/news-events/press-releases",
         "https://www.microsoft.com/en-us/investor/default",
         "https://ir.aboutamazon.com/overview/default.aspx",
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://www.aboutamazon.com/news/aws",
-        "https://www.nscale.com/press-releases/nscale-west-virginia-ai-factory",
-        "https://www.semafor.com/article/08/28/2026/google-and-microsoft-were-in-talks-for-nscale-compute-deal-that-went-to-anthropic",
-        "https://www.ft.com/content/35cc5cc6-f9b6-49cc-8fc2-bd61e09c8c40",
-        "https://www.sec.gov/Archives/edgar/data/2110365/000119312526395475/ck0002110365-20260918.htm",
-        "https://en.sedaily.com/finance/2026/10/18/samsung-to-tap-tsmc-3-nanometer-lines-for-nvidia-custom-hbm",
-        "https://investors.ventureglobal.com/news/news-details/2026/Venture-Global-Secures-New-Agreements-to-Support-Expansion-of-Existing-Grid-Independent-Power-Network/default.aspx"
+        "https://www.reuters.com/world/asia-pacific/samsung-use-tsmc-technology-nvidias-next-generation-memory-chips-seoul-newspaper-2026-10-18/",
+        "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/",
+        "https://ir.flyvolato.com/financial-information/sec-filings/content/0001493152-26-044456/form8-k.htm",
+        "https://ir.flyvolato.com/financial-information/sec-filings/content/0001493152-26-044456/ex99-1.htm",
+        "https://ir.flyvolato.com/news-events/press-releases/detail/165/soar-ai-secures-up-to-1-billion-equity-facility-to-fund-expansion-of-its-ai-infrastructure-platform",
+        "https://ir.flyvolato.com/news-events/press-releases"
       ],
       "source_limits": [
-        "Mandatory instructions/config/taxonomy/series/research specifications fully fetched and read at same defaultmain commit85d54fe0e5d867460acf3a15106b4509f275eb67.Full978287-character progress JSON parsed;three relevant articles refetched with unchanged identities matching previously read full bodies.No required instruction missing or truncated.",
-        "Fresh alpha-quant defaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV88422949d38165d4757a1e24c27f8662bede14c1 confirm98active names.All included in14grouped discovery queries.Older material survives recency filters;not98individual primary audits.Historical primary48/pending50,monthly22,product16,partner4,regulator3 unchanged.",
-        "TSMC October15 SEC and current MediaTek,NVIDIA,AMD,Broadcom,Marvell visible news entries checked.TPU commercial-role/NRE searches returned known partnerships and historical reporting;no new issuer-confirmed award,renewal,allocation or pricing revision.NVHBM same-report internal2nm alternative retained as reported,not qualified production.",
-        "FiveCSP landing indices refreshed;Amazon40line/Alphabet72line financial extraction incomplete.AWS indexed news list supplements discovery.Meta/Oracle visible news entries are not full financial,deployment,utilization or ROI audits.No aggregate capex/monetization conclusion.",
-        "Monarch March16LOI,August28 historical withdrawal report andOctober18FT context reconciled.Full SEC prospectus exceeds4MB tool limit;no full-filing or draft-version verification claim.VentureGlobal October15 framework already recorded,not a new firm order.",
-        "Dedup97events/196candidates/118prior screenings and readable notified-event baseline.History retained;one existing event verification and one existing candidate verification appended.No new event,candidate,article or blocker.No prices,valuation,holdings,private judgment or market-flow records.Ledger-only validation;no articlelint/build/deploy/publication-success claim."
+        "Mandatory instructions/config/taxonomy/series/specifications fully fetched and read at same defaultmain3ffb96de1ed725fc0be0c51f7369f18badab06d1.Full984517-character progress parsed;three related posts refetched with unchanged identities matching previously read full bodies.Required instructions complete.",
+        "Fresh alpha-quant defaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f/CSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active names,all included in14grouped searches.Not individual latest-primary validation of98names.Older material survives recency filters.Historical primary48/pending50,monthly22,product16,partner4,regulator3 unchanged.",
+        "TSMC October15 SEC and visible MediaTek,NVIDIA,AMD,Marvell issuer entries refreshed.Broadcom direct index failed;fresh indexed official financial-news list used,not full release-by-release review.Targeted TPU/NRE/procurement returned known historical reporting rather than new confirmed award,renewal or commercial terms.",
+        "FiveCSP landing indices refreshed;Amazon40line/Alphabet72line extraction incomplete.Meta/Oracle visible news entries are not complete financial/deployment/utilization audits.No aggregate spending,monetization or ROI conclusion.",
+        "NVHBM and Loughton reporting remains previously recorded event scope and company-response stage.No new issuer commercial sourcing,termination economics,supplier cancellation or quantified financial-loss disclosure established.Volato primary MSA summary,issuer release and equity-facility body read;historical contractual commitments retained as a candidate,not current receipts or delivered compute.",
+        "Dedup97events/196prior candidates/119prior screenings and readable notified-event baseline.One historical candidate and one screening appended;prior events,candidates and history retained.No new public event,article or blocker.No quotes,valuation,targets,holdings,private judgments or market-flow records.Ledger-only validation;no articlelint/build/deploy/publication-success claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -6653,6 +6652,42 @@
           "FiveCSP landing indices refreshed;Amazon40line/Alphabet72line financial extraction incomplete.AWS indexed news list supplements discovery.Meta/Oracle visible news entries are not full financial,deployment,utilization or ROI audits.No aggregate capex/monetization conclusion.",
           "Monarch March16LOI,August28 historical withdrawal report andOctober18FT context reconciled.Full SEC prospectus exceeds4MB tool limit;no full-filing or draft-version verification claim.VentureGlobal October15 framework already recorded,not a new firm order.",
           "Dedup97events/196candidates/118prior screenings and readable notified-event baseline.History retained;one existing event verification and one existing candidate verification appended.No new event,candidate,article or blocker.No prices,valuation,holdings,private judgment or market-flow records.Ledger-only validation;no articlelint/build/deploy/publication-success claim."
+        ]
+      },
+      {
+        "date": "2026-10-19",
+        "checked_at": "2026-10-18T21:48:02Z",
+        "instruction_commit_sha": "3ffb96de1ed725fc0be0c51f7369f18badab06d1",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh14grouped queries include98active names.Core6,CSP5,TPU/NRE/procurement and existing NVHBM/Loughton reports rechecked;outside-universe historical Volato primary contract and conditional equity facility researched.No new material event or article.",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://www.reuters.com/world/asia-pacific/samsung-use-tsmc-technology-nvidias-next-generation-memory-chips-seoul-newspaper-2026-10-18/",
+          "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/",
+          "https://ir.flyvolato.com/financial-information/sec-filings/content/0001493152-26-044456/form8-k.htm",
+          "https://ir.flyvolato.com/financial-information/sec-filings/content/0001493152-26-044456/ex99-1.htm",
+          "https://ir.flyvolato.com/news-events/press-releases/detail/165/soar-ai-secures-up-to-1-billion-equity-facility-to-fund-expansion-of-its-ai-infrastructure-platform",
+          "https://ir.flyvolato.com/news-events/press-releases"
+        ],
+        "source_limits": [
+          "Mandatory instructions/config/taxonomy/series/specifications fully fetched and read at same defaultmain3ffb96de1ed725fc0be0c51f7369f18badab06d1.Full984517-character progress parsed;three related posts refetched with unchanged identities matching previously read full bodies.Required instructions complete.",
+          "Fresh alpha-quant defaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f/CSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active names,all included in14grouped searches.Not individual latest-primary validation of98names.Older material survives recency filters.Historical primary48/pending50,monthly22,product16,partner4,regulator3 unchanged.",
+          "TSMC October15 SEC and visible MediaTek,NVIDIA,AMD,Marvell issuer entries refreshed.Broadcom direct index failed;fresh indexed official financial-news list used,not full release-by-release review.Targeted TPU/NRE/procurement returned known historical reporting rather than new confirmed award,renewal or commercial terms.",
+          "FiveCSP landing indices refreshed;Amazon40line/Alphabet72line extraction incomplete.Meta/Oracle visible news entries are not complete financial/deployment/utilization audits.No aggregate spending,monetization or ROI conclusion.",
+          "NVHBM and Loughton reporting remains previously recorded event scope and company-response stage.No new issuer commercial sourcing,termination economics,supplier cancellation or quantified financial-loss disclosure established.Volato primary MSA summary,issuer release and equity-facility body read;historical contractual commitments retained as a candidate,not current receipts or delivered compute.",
+          "Dedup97events/196prior candidates/119prior screenings and readable notified-event baseline.One historical candidate and one screening appended;prior events,candidates and history retained.No new public event,article or blocker.No quotes,valuation,targets,holdings,private judgments or market-flow records.Ledger-only validation;no articlelint/build/deploy/publication-success claim."
         ]
       }
     ],
@@ -12030,6 +12065,31 @@
         "Test concentration,construction cost and funding risk;existing grid access alone does not establish expansion approval or timely delivery."
       ],
       "publication_status": "historical_primary_relationship_candidate_only_no_new_material_alert_no_article"
+    },
+    {
+      "key": "volato-alignment-engine-ohio-contracted-compute-prepayments-and-equity-draw",
+      "date": "2026-10-19",
+      "event_date": "2026-09-22",
+      "instruction_commit_sha": "3ffb96de1ed725fc0be0c51f7369f18badab06d1",
+      "companies": [
+        "Volato / SOAR AI",
+        "Alignment Engine",
+        "AMD"
+      ],
+      "sources": [
+        "https://ir.flyvolato.com/financial-information/sec-filings/content/0001493152-26-044456/form8-k.htm",
+        "https://ir.flyvolato.com/financial-information/sec-filings/content/0001493152-26-044456/ex99-1.htm",
+        "https://ir.flyvolato.com/news-events/press-releases/detail/165/soar-ai-secures-up-to-1-billion-equity-facility-to-fund-expansion-of-its-ai-infrastructure-platform",
+        "https://ir.flyvolato.com/news-events/press-releases"
+      ],
+      "stage": "historical_september22_signed_msa_september28_announcement_and_october12_conditional_equity_facility_primary_bodies_verified",
+      "facts": "September22 MSA and two48-month dedicated AMD GPU-cluster orders total approximatelyUSD1.17bn;contractual starts December31,2026 and June30,2027,not accepted deployments.September28 issuer release describes take-or-pay subject to delivery,acceptance and service requirements;approximatelyUSD133m contractual prepayments,includingUSD40m due after execution,not verified collected cash.October12 release describes up-toUSD1bn discretionary equity facility:resale registration effectiveness required,volume and daily limits,19.99% issuance cap without stockholder approval.Facility ceiling is not funded cash;154MW available power claim is not energized IT capacity.",
+      "questions": [
+        "Obtain actual customer identity,credit support,prepayment receipts and accepted/billable GPU capacity before interpreting headline order value as realized demand.",
+        "Read equity agreement and verify registration effectiveness,draws,net proceeds and issuance dilution;test financing sufficiency against equipment/construction costs.",
+        "Track delivery,service obligations,gross margin and cash conversion;termination remedies,procurement failures or inadequate funding could prevent contracted capacity becoming profitable revenue."
+      ],
+      "publication_status": "historical_primary_candidate_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -12049,7 +12109,7 @@
     }
   ],
   "last_research_date": "2026-10-19",
-  "instruction_commit_sha": "85d54fe0e5d867460acf3a15106b4509f275eb67",
+  "instruction_commit_sha": "3ffb96de1ed725fc0be0c51f7369f18badab06d1",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
