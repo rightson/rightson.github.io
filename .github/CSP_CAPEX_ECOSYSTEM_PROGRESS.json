@@ -2992,12 +2992,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-18",
-      "checked_at": "2026-10-18T11:38:33Z",
-      "instruction_commit_sha": "73a8885a894f647631613f3fd501a2c2230cbc99",
+      "checked_at": "2026-10-18T12:42:57Z",
+      "instruction_commit_sha": "2f00943cafd08e4de9789c07ff51801d561c4e1a",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh14grouped queries covered98active names;sixcore issuer/fiveCSP indices and targeted TPU,capacity,financing,delivery/downside and outside-universe searches refreshed.Added one historical bilateral ERock/HD engine-supply candidate;no new material event or article.",
+      "scope": "Fresh14grouped searches include98active names;sixcore issuer/fiveCSP indices plus targeted TPU,capacity,delivery,financing/downside and outside-universe discovery refreshed.One Siemens Energy historical contract-quality candidate added after original transcript verification.No new material event or article.",
       "sources": [
         "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
         "https://www.mediatek.com/press-room",
@@ -3010,19 +3010,21 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://www.hd-xitesolution.com/pr/news/1944",
-        "https://erock.com/newsroom/erock-hd-construction-equipment-sign-multi-year-engine-long-block-supply-agreement-to-accelerate-manufacturing-capacity/",
-        "https://origin-web.hd-infracore.com/en/company/media/news-view/127",
-        "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/"
+        "https://assets.siemens-energy.com/dam/e8ced7ab-8dcc-48e5-b0b5-b4d500fee9a5/2026-09-30---Q4-FY26-Pre-Close-Call_transcript-pdf_Original%20file.pdf",
+        "https://www.siemensenergy.com/global/en/home/investor-relations.html",
+        "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/",
+        "https://www.theguardian.com/uk-news/2026/oct/18/microsoft-drops-huge-ai-datacentre-project-in-essex-over-power-supply-concerns",
+        "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=760392"
       ],
       "source_limits": [
-        "Fresh same-revision required instructions/specifications fully fetched;unchanged blob identities match fully read bodies.Full921587-character progress parsed.Related posts refetched with unchanged d7b6628,bc1a65e,2bc5dfc blobs matching previously read bodies.No mandatory source missing;display truncation during redundant instruction output recovered by segmented reading.",
-        "Fresh alpha-quant defaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f/fullCSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active names.All included in14OR discovery searches,not98individual primary audits.Historical primary48/pending50,monthly22,product16,partner4,regulator3 unchanged.",
-        "TSMC October15 SEC result/guidance baseline unchanged.Core issuer indices opened;visible NVIDIA October17/16,AMD October12,Broadcom October13/8 and Marvell October13/12 entries compared with ledger.Targeted MediaTek/Google TPU responsibility,NRE and supplier searches mostly return historical reporting.No new authenticated award,renewal,NRE amount or manufacturing economics established.",
-        "FiveCSP indices opened.Amazon40line/Alphabet72line extractions incomplete;Meta/Oracle news pages are not full financial or deployment audits.No comprehensive aggregate capex/utilization or monetization conclusion.",
-        "Discovery recency filters often returned historical material,crawl-date updates,monthly revenue and market commentary.Current Loughton Reuters reports match already-recorded source-version baseline;no new authenticated termination terms,financial loss,other-contract effect or supplier cancellation established.No repeated alert.",
-        "Outside-universe engine relationship verified against both issuers:October7 agreement is historical,not an October18 award.HD group primary establishes KRW390billion;ERock original establishes2027–2028 supply purpose.October15 DX77 diesel first-firing is a separate product-development milestone and cannot be confused with22-liter gas long-block shipments.No new earnings revision,margin,accepted site delivery or cash collection established.",
-        "Dedup96events/189prior candidates/109prior screenings and readable notification baseline.One historical candidate and one screening appended;old objects preserved.No article,new blocker,quote,valuation,target,holding,institutional flow or private investment decision in public ledger.Ledger-only validation;no articlelint/build/deploy or publication-success claim."
+        "Fresh metadata/defaultmain2f00943cafd08e4de9789c07ff51801d561c4e1a;all required same-commit instruction/specification files fetched and fully read without missing/truncated bodies.Full928107-character progress parsed.Related posts refetched and unchanged d7b6628,bc1a65e,2bc5dfc identities match previously read complete bodies.",
+        "Fresh alpha-quant defaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f/fullCSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active names.All names included in14OR discovery queries,not individual primary financial audits.Historical primary48/pending50,monthly22,product16,partner4,regulator3 counts unchanged.",
+        "TSMC October15 SEC results/guidance and sixcore visible issuer-index baselines compared.No newly authenticated MediaTek/Google design award,NRE amount,renewal or procurement allocation established by targeted searches.Older Marvell/Broadcom TPU role reporting is not an October commercial change.",
+        "FiveCSP landing pages checked.Amazon40line and Alphabet72line extracts incomplete;Meta/Oracle news pages are not comprehensive financial,utilization or deployment audits.No aggregate absence-of-change or spending conclusion.",
+        "Grouped discovery contains old results and recrawled market commentary.DigiTimes packaging-price headline verified as July1,2026,not a new October pricing notice.No individual price/valuation,market-consensus or current institutional-flow judgment.",
+        "October18 Loughton coverage remains the already-notified event.Guardian metadata located;not treated as independent termination confirmation or changed terms.No new authenticated contract filing,site revenue loss,equipment cancellation or other-contract impact established.",
+        "Siemens Energy recent commentary traced to September30 company transcript through official IR link;text and relevant PDF pages inspected.Separate historical reservations,firm orders and delivery stages retained.No assumption September30 statements prove unchanged conditions in mid-October.No fresh quantified earnings revision established.",
+        "Dedup96events/190prior candidates/110prior screenings and readable prior notification baseline.One historical candidate and one screening appended;all prior events,candidates and history preserved.No article,new blocker,quotes,valuation,targets,holdings,private decisions or B-item data in public ledger.Ledger-only source validation;no articlelint/build/deploy/publication-success claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -6279,6 +6281,43 @@
           "Discovery recency filters often returned historical material,crawl-date updates,monthly revenue and market commentary.Current Loughton Reuters reports match already-recorded source-version baseline;no new authenticated termination terms,financial loss,other-contract effect or supplier cancellation established.No repeated alert.",
           "Outside-universe engine relationship verified against both issuers:October7 agreement is historical,not an October18 award.HD group primary establishes KRW390billion;ERock original establishes2027–2028 supply purpose.October15 DX77 diesel first-firing is a separate product-development milestone and cannot be confused with22-liter gas long-block shipments.No new earnings revision,margin,accepted site delivery or cash collection established.",
           "Dedup96events/189prior candidates/109prior screenings and readable notification baseline.One historical candidate and one screening appended;old objects preserved.No article,new blocker,quote,valuation,target,holding,institutional flow or private investment decision in public ledger.Ledger-only validation;no articlelint/build/deploy or publication-success claim."
+        ]
+      },
+      {
+        "date": "2026-10-18",
+        "checked_at": "2026-10-18T12:42:57Z",
+        "instruction_commit_sha": "2f00943cafd08e4de9789c07ff51801d561c4e1a",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh14grouped searches include98active names;sixcore issuer/fiveCSP indices plus targeted TPU,capacity,delivery,financing/downside and outside-universe discovery refreshed.One Siemens Energy historical contract-quality candidate added after original transcript verification.No new material event or article.",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://assets.siemens-energy.com/dam/e8ced7ab-8dcc-48e5-b0b5-b4d500fee9a5/2026-09-30---Q4-FY26-Pre-Close-Call_transcript-pdf_Original%20file.pdf",
+          "https://www.siemensenergy.com/global/en/home/investor-relations.html",
+          "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/",
+          "https://www.theguardian.com/uk-news/2026/oct/18/microsoft-drops-huge-ai-datacentre-project-in-essex-over-power-supply-concerns",
+          "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=760392"
+        ],
+        "source_limits": [
+          "Fresh metadata/defaultmain2f00943cafd08e4de9789c07ff51801d561c4e1a;all required same-commit instruction/specification files fetched and fully read without missing/truncated bodies.Full928107-character progress parsed.Related posts refetched and unchanged d7b6628,bc1a65e,2bc5dfc identities match previously read complete bodies.",
+          "Fresh alpha-quant defaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f/fullCSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active names.All names included in14OR discovery queries,not individual primary financial audits.Historical primary48/pending50,monthly22,product16,partner4,regulator3 counts unchanged.",
+          "TSMC October15 SEC results/guidance and sixcore visible issuer-index baselines compared.No newly authenticated MediaTek/Google design award,NRE amount,renewal or procurement allocation established by targeted searches.Older Marvell/Broadcom TPU role reporting is not an October commercial change.",
+          "FiveCSP landing pages checked.Amazon40line and Alphabet72line extracts incomplete;Meta/Oracle news pages are not comprehensive financial,utilization or deployment audits.No aggregate absence-of-change or spending conclusion.",
+          "Grouped discovery contains old results and recrawled market commentary.DigiTimes packaging-price headline verified as July1,2026,not a new October pricing notice.No individual price/valuation,market-consensus or current institutional-flow judgment.",
+          "October18 Loughton coverage remains the already-notified event.Guardian metadata located;not treated as independent termination confirmation or changed terms.No new authenticated contract filing,site revenue loss,equipment cancellation or other-contract impact established.",
+          "Siemens Energy recent commentary traced to September30 company transcript through official IR link;text and relevant PDF pages inspected.Separate historical reservations,firm orders and delivery stages retained.No assumption September30 statements prove unchanged conditions in mid-October.No fresh quantified earnings revision established.",
+          "Dedup96events/190prior candidates/110prior screenings and readable prior notification baseline.One historical candidate and one screening appended;all prior events,candidates and history preserved.No article,new blocker,quotes,valuation,targets,holdings,private decisions or B-item data in public ledger.Ledger-only source validation;no articlelint/build/deploy/publication-success claim."
         ]
       }
     ],
@@ -11484,6 +11523,26 @@
         "Assess repeat orders,service economics and component bottlenecks versus alternative engines,turbines and grid supply;delivery delays,cost inflation or weak customer financing could prevent profit conversion."
       ],
       "publication_status": "historical_commercial_relationship_research_baseline_only_no_material_alert_no_article"
+    },
+    {
+      "key": "siemens-energy-gas-grid-contract-protection-backlog-to-margin-cash",
+      "date": "2026-10-18",
+      "instruction_commit_sha": "2f00943cafd08e4de9789c07ff51801d561c4e1a",
+      "companies": [
+        "Siemens Energy"
+      ],
+      "sources": [
+        "https://www.siemensenergy.com/global/en/home/investor-relations.html",
+        "https://assets.siemens-energy.com/dam/e8ced7ab-8dcc-48e5-b0b5-b4d500fee9a5/2026-09-30---Q4-FY26-Pre-Close-Call_transcript-pdf_Original%20file.pdf"
+      ],
+      "stage": "september30_issuer_transcript_primary_historical_baseline_verified",
+      "facts": "September30 issuer transcript distinguishes approximately40GW firm gas-turbine orders in the first three fiscal quarters from95GW customer commitments including reservations.Management reported no signed-reservation/order delays or cancellations as of that call,reservation fees/advances and termination protection,and stronger new-order margins supporting multi-year conversion into equipment and recurring service economics.These statements predate October delivery/financing news and are not current independent proof of no cancellations.",
+      "questions": [
+        "Recheck cancellations,site substitutions and acceptance at November11 results;separate reservations,firm orders,deliveries and cash.",
+        "Quantify recognized backlog margin,capacity costs and service attachment;customer financing,permitting or execution delays can offset favorable bookings.",
+        "Obtain original contractual terms before assuming all supplier orders have equivalent protection."
+      ],
+      "publication_status": "historical_contract_quality_research_baseline_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -11503,7 +11562,7 @@
     }
   ],
   "last_research_date": "2026-10-18",
-  "instruction_commit_sha": "73a8885a894f647631613f3fd501a2c2230cbc99",
+  "instruction_commit_sha": "2f00943cafd08e4de9789c07ff51801d561c4e1a",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
