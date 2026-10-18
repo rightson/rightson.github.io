@@ -3039,12 +3039,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-19",
-      "checked_at": "2026-10-18T21:48:02Z",
-      "instruction_commit_sha": "3ffb96de1ed725fc0be0c51f7369f18badab06d1",
+      "checked_at": "2026-10-18T23:24:55Z",
+      "instruction_commit_sha": "5d8ec38e8ea60416d8c8eb4e45a8bd99a65ac52f",
       "status": "grouped_discovery_screen_only_not_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh14grouped queries include98active names.Core6,CSP5,TPU/NRE/procurement and existing NVHBM/Loughton reports rechecked;outside-universe historical Volato primary contract and conditional equity facility researched.No new material event or article.",
+      "scope": "Fresh grouped discovery includes all98 active names;core6 issuer sources,CSP5 landing indices and targeted procurement/capex reporting refreshed.One outside-universe contract candidate retained;no newly qualified material event or article.",
       "sources": [
         "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
         "https://www.mediatek.com/press-room",
@@ -3057,20 +3057,22 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://www.reuters.com/world/asia-pacific/samsung-use-tsmc-technology-nvidias-next-generation-memory-chips-seoul-newspaper-2026-10-18/",
+        "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=056fc266819344d6bd629e448bc375ac",
+        "https://en.sedaily.com/finance/2026/10/18/samsung-to-use-tsmc-for-base-die-in-nvidias-custom-hbm",
         "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/",
-        "https://ir.flyvolato.com/financial-information/sec-filings/content/0001493152-26-044456/form8-k.htm",
-        "https://ir.flyvolato.com/financial-information/sec-filings/content/0001493152-26-044456/ex99-1.htm",
-        "https://ir.flyvolato.com/news-events/press-releases/detail/165/soar-ai-secures-up-to-1-billion-equity-facility-to-fund-expansion-of-its-ai-infrastructure-platform",
-        "https://ir.flyvolato.com/news-events/press-releases"
+        "https://www.ft.com/content/35cc5cc6-f9b6-49cc-8fc2-bd61e09c8c40",
+        "https://www.ft.com/content/9ea5a37d-15c9-4d5b-94d6-719048c9cd3c",
+        "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12647486&stockid=002929",
+        "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESZ_STOCK/2026/2026-10/2026-10-19/12647486.PDF"
       ],
       "source_limits": [
-        "Mandatory instructions/config/taxonomy/series/specifications fully fetched and read at same defaultmain3ffb96de1ed725fc0be0c51f7369f18badab06d1.Full984517-character progress parsed;three related posts refetched with unchanged identities matching previously read full bodies.Required instructions complete.",
-        "Fresh alpha-quant defaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f/CSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active names,all included in14grouped searches.Not individual latest-primary validation of98names.Older material survives recency filters.Historical primary48/pending50,monthly22,product16,partner4,regulator3 unchanged.",
-        "TSMC October15 SEC and visible MediaTek,NVIDIA,AMD,Marvell issuer entries refreshed.Broadcom direct index failed;fresh indexed official financial-news list used,not full release-by-release review.Targeted TPU/NRE/procurement returned known historical reporting rather than new confirmed award,renewal or commercial terms.",
-        "FiveCSP landing indices refreshed;Amazon40line/Alphabet72line extraction incomplete.Meta/Oracle visible news entries are not complete financial/deployment/utilization audits.No aggregate spending,monetization or ROI conclusion.",
-        "NVHBM and Loughton reporting remains previously recorded event scope and company-response stage.No new issuer commercial sourcing,termination economics,supplier cancellation or quantified financial-loss disclosure established.Volato primary MSA summary,issuer release and equity-facility body read;historical contractual commitments retained as a candidate,not current receipts or delivered compute.",
-        "Dedup97events/196prior candidates/119prior screenings and readable notified-event baseline.One historical candidate and one screening appended;prior events,candidates and history retained.No new public event,article or blocker.No quotes,valuation,targets,holdings,private judgments or market-flow records.Ledger-only validation;no articlelint/build/deploy/publication-success claim."
+        "Mandatory instructions,specifications and full progress read at pinned default-main commit;three related industry articles read.Full alpha-quant default-main f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV88422949d38165d4757a1e24c27f8662bede14c1 confirm98 active names.",
+        "Fourteen grouped discovery queries cover98 names,not98 individual latest-primary audits.Search recency filters returned older items;no assumption that missing discovery equals no event.Historical primary48/pending50,monthly22,partner4,regulator3,product16 unchanged.",
+        "TSMC October15 SEC results/guidance and core issuer visible news lists refreshed.Broadcom financial-news list directly readable this time.MediaTek/Google TPU,NRE and procurement targeted search found no new authenticated commercial terms.Indices are not complete release-by-release or financial audits.",
+        "CSP5 landing sources refreshed;Amazon and Alphabet extract navigation rather than substantive current financial updates.Meta/Oracle visible indices and targeted search do not establish complete capex,lease,deployment,utilization or ROI coverage.",
+        "October19 ASIC headline repeats existing January2027 tape-out/Q1 2028 shipment estimate;no new company confirmation or old/new financial revision.IEK direct open failed but indexed report obtained.Samsung NVHBM/internal-foundry option and Nscale Loughton/Monarch scope match prior recorded evidence;no new verified termination economics or supplier cancellation.FT aggregate infrastructure-risk body paywalled;headline/indexed statistics not authenticated or promoted to an event.",
+        "Runjian announcement HTML and four-page PDF reproduction read;direct exchange original and customer/supplier links pending.New candidate only,not a new active-universe member or quantified supplier earnings revision.",
+        "Prior97 public events,197 candidates and120 screenings retained.One candidate and one screening appended.No quotes,valuation,targets,holdings,private judgments or market-flow data.Ledger-only source/JSON preservation checks;no articlelint/build/deploy/publication-success claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -6688,6 +6690,44 @@
           "FiveCSP landing indices refreshed;Amazon40line/Alphabet72line extraction incomplete.Meta/Oracle visible news entries are not complete financial/deployment/utilization audits.No aggregate spending,monetization or ROI conclusion.",
           "NVHBM and Loughton reporting remains previously recorded event scope and company-response stage.No new issuer commercial sourcing,termination economics,supplier cancellation or quantified financial-loss disclosure established.Volato primary MSA summary,issuer release and equity-facility body read;historical contractual commitments retained as a candidate,not current receipts or delivered compute.",
           "Dedup97events/196prior candidates/119prior screenings and readable notified-event baseline.One historical candidate and one screening appended;prior events,candidates and history retained.No new public event,article or blocker.No quotes,valuation,targets,holdings,private judgments or market-flow records.Ledger-only validation;no articlelint/build/deploy/publication-success claim."
+        ]
+      },
+      {
+        "date": "2026-10-19",
+        "checked_at": "2026-10-18T23:24:55Z",
+        "instruction_commit_sha": "5d8ec38e8ea60416d8c8eb4e45a8bd99a65ac52f",
+        "status": "grouped_discovery_screen_only_not_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh grouped discovery includes all98 active names;core6 issuer sources,CSP5 landing indices and targeted procurement/capex reporting refreshed.One outside-universe contract candidate retained;no newly qualified material event or article.",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=056fc266819344d6bd629e448bc375ac",
+          "https://en.sedaily.com/finance/2026/10/18/samsung-to-use-tsmc-for-base-die-in-nvidias-custom-hbm",
+          "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/",
+          "https://www.ft.com/content/35cc5cc6-f9b6-49cc-8fc2-bd61e09c8c40",
+          "https://www.ft.com/content/9ea5a37d-15c9-4d5b-94d6-719048c9cd3c",
+          "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12647486&stockid=002929",
+          "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESZ_STOCK/2026/2026-10/2026-10-19/12647486.PDF"
+        ],
+        "source_limits": [
+          "Mandatory instructions,specifications and full progress read at pinned default-main commit;three related industry articles read.Full alpha-quant default-main f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV88422949d38165d4757a1e24c27f8662bede14c1 confirm98 active names.",
+          "Fourteen grouped discovery queries cover98 names,not98 individual latest-primary audits.Search recency filters returned older items;no assumption that missing discovery equals no event.Historical primary48/pending50,monthly22,partner4,regulator3,product16 unchanged.",
+          "TSMC October15 SEC results/guidance and core issuer visible news lists refreshed.Broadcom financial-news list directly readable this time.MediaTek/Google TPU,NRE and procurement targeted search found no new authenticated commercial terms.Indices are not complete release-by-release or financial audits.",
+          "CSP5 landing sources refreshed;Amazon and Alphabet extract navigation rather than substantive current financial updates.Meta/Oracle visible indices and targeted search do not establish complete capex,lease,deployment,utilization or ROI coverage.",
+          "October19 ASIC headline repeats existing January2027 tape-out/Q1 2028 shipment estimate;no new company confirmation or old/new financial revision.IEK direct open failed but indexed report obtained.Samsung NVHBM/internal-foundry option and Nscale Loughton/Monarch scope match prior recorded evidence;no new verified termination economics or supplier cancellation.FT aggregate infrastructure-risk body paywalled;headline/indexed statistics not authenticated or promoted to an event.",
+          "Runjian announcement HTML and four-page PDF reproduction read;direct exchange original and customer/supplier links pending.New candidate only,not a new active-universe member or quantified supplier earnings revision.",
+          "Prior97 public events,197 candidates and120 screenings retained.One candidate and one screening appended.No quotes,valuation,targets,holdings,private judgments or market-flow data.Ledger-only source/JSON preservation checks;no articlelint/build/deploy/publication-success claim."
         ]
       }
     ],
@@ -12090,6 +12130,30 @@
         "Track delivery,service obligations,gross margin and cash conversion;termination remedies,procurement failures or inadequate funding could prevent contracted capacity becoming profitable revenue."
       ],
       "publication_status": "historical_primary_candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "runjian-wuxiangyungu-crossborder-token-minimum-purchase-cash-conversion",
+      "companies": [
+        "Runjian / 润建股份",
+        "Wuxiang Yungu / 五象云谷"
+      ],
+      "sources": [
+        "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12647486&stockid=002929",
+        "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESZ_STOCK/2026/2026-10/2026-10-19/12647486.PDF"
+      ],
+      "stage": "four_page_issuer_announcement_reproduction_read_direct_exchange_copy_and_customer_economics_pending",
+      "facts": {
+        "announcement_date": "2026-10-19",
+        "announcement_number": "2026-083",
+        "scope": "Issuer announcement reproduced by Sina: subsidiary contracts USD200m annual minimum token API purchases for October19,2026–October18,2027. Compute remains in China; foreign customer unidentified. Monthly postpaid settlement is in CNY, with annual shortfall reconciliation.",
+        "limits": "Contract minimum is not collected cash or recognized revenue. No disclosed unit price,margin,realized utilization,hardware supplier or named CSP relationship. Issuer warns of execution,policy,service interruption and capital-investment risks. Direct exchange-hosted copy not retrieved."
+      },
+      "questions": [
+        "Authenticate the exchange copy and subsequent service receipts.",
+        "Verify customer credit,actual token consumption,cost and cash conversion before treating minimum purchases as durable earnings.",
+        "Establish named supplier or CSP links before attributing hardware demand; keep outside the active universe."
+      ],
+      "publication_status": "research_candidate_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -12109,7 +12173,7 @@
     }
   ],
   "last_research_date": "2026-10-19",
-  "instruction_commit_sha": "3ffb96de1ed725fc0be0c51f7369f18badab06d1",
+  "instruction_commit_sha": "5d8ec38e8ea60416d8c8eb4e45a8bd99a65ac52f",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
