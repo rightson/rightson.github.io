@@ -3041,12 +3041,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-19",
-      "checked_at": "2026-10-19T05:21:46Z",
-      "instruction_commit_sha": "2af3a4f6514e8adbae9699ccc48d4591e4437adb",
+      "checked_at": "2026-10-19T05:39:52Z",
+      "instruction_commit_sha": "b259b38887248067bc7ec425d29304f2626c1f2f",
       "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh14grouped searches include98 active names;core6 issuer sources,CSP5 landing indices and targeted ASIC/procurement/capex reporting refreshed.TrendForce reprint traced to October14 original.Voltronic primary financial-table extraction remains incomplete.No newly qualified material event or article.",
+      "scope": "Fresh14grouped discovery queries include98 active names;core6 issuer indices,CSP5 landing sources and targeted ASIC/capex/outside-universe leads refreshed.Shengyi October17 preliminary profit disclosure retained as a new research candidate.No newly qualified material event or article.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -3059,20 +3059,23 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://www.trendforce.com.tw/presscenter/news/20261014-13268.html",
-        "https://www.mem.com.tw/trendforce%EF%BC%9A2027%E5%B9%B4csp%E8%B3%87%E6%9C%AC%E6%94%AF%E5%87%BA%E5%B0%871-5%E5%85%86%E7%BE%8E%E5%85%83/",
-        "https://voltronicpower.com/zh-TW/Investors/Financial-Information",
-        "https://voltronicpower.com/en-us/Investors/Financial-Information",
-        "https://marklapedus.substack.com/p/foundryecosystem-report-ai-capex"
+        "https://www.trendforce.com/news/2026/10/19/news-mediateks-google-tpu-v9-shipments-may-slip-to-1q28-asic-race-heats-up-as-taiwan-firms-eye-new-opportunities/",
+        "https://www.syst.com.cn/cn/gsgg/list_45.aspx",
+        "https://www.syst.com.cn/Ajax/Download.aspx?name=2026%2F10%2F20261017154400215.pdf",
+        "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12645926&stockid=600183",
+        "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-10/2026-10-17/12645926.PDF",
+        "https://www.viking.com.tw/zh-TW/investors/Investors-T0301.html",
+        "https://www.viking.com.tw/Templates/att/Law%20says_115-1.pdf?lng=zh-TW"
       ],
       "source_limits": [
-        "Required instructions and directly related specifications retrieved fully at pinned default-main 2af3a4f6514e8adbae9699ccc48d4591e4437adb.Initial combined display truncated part of AGENTS;complete content was reread in two smaller untruncated outputs before research.Full progress JSON retrieved and parsed;fingerprints,candidate keys and prior recorded facts used for dedup.Three relevant articles retrieved at same commit and unchanged blobs match full texts already read in visible context.Latest repository tree checked.",
-        "Alpha-quant latest default-main f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV88422949d38165d4757a1e24c27f8662bede14c1 confirm98 active names.All included in14fresh grouped discovery queries,not98 individual current-primary audits.Recency filters returned historical material;missing search hits are not evidence of no event.Historical primary50,pending48,monthly24,partner4,regulator3,product16 unchanged.",
-        "TSMC Q3/Q4 issuer guidance and MediaTek,NVIDIA,AMD,Broadcom,Marvell visible issuer news entries refreshed.Broadcom latest October13 entry obtained through direct-index find.No newly authenticated TPU design,NRE,renewal,production economics,procurement allocation or earnings revision established.Visible indices are not complete financial or release-by-release audits.",
-        "CSP5 landing sources plus targeted independent reporting refreshed.Microsoft lists October28 earnings;Amazon40line/Alphabet72line extraction remains navigation-only.Meta/Oracle visible news entries do not establish complete capex,leases,accepted deployment,utilization or ROI.Alphabet annual capex/full lease baseline remains incomplete.",
-        "October19 TrendForce reprint matches October14 original nine-CSP2027 growth50-to60-percent forecast already registered.Pricing and prepayment assumptions remain separate from realized equipment volume,accepted deployment or supplier profits.Fulltech profit headlines and historical TPU/Marvell allocation stories overlap prior records.No new duplicate event.",
-        "Voltronic Chinese/English issuer financial indices read;2026 report controls do not expose numeric monthly body.The apparent PDF control resolves to a PDF icon image,not a financial document.Media September revenue values were not promoted to primary verification and no company/monthly counter increased.Foundryecosystem newsletter direct body inaccessible;no substantive claim derived from headline.",
-        "All prior97 public events,201 candidates and126 screenings retained.One current screening appended only;no new candidate,article or blocker.No quotes,valuation,targets,holdings,private investment judgments or market-flow records.Ledger-only JSON preservation and remote-source readback validation;no articlelint,build,deploy or publication-success claim."
+        "All mandatory instruction files and directly related specifications fetched completely at pinned default-main b259b38887248067bc7ec425d29304f2626c1f2f.AGENTS combined display truncation resolved by two complete smaller segment reads.Full progress JSON parsed and all event fingerprints plus candidate records searched for dedup.Three related articles fetched at the same commit with unchanged blobs;latest repository tree checked.",
+        "Latest alpha-quant main f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV 88422949d38165d4757a1e24c27f8662bede14c1 confirm98 active names included in14fresh grouped discovery queries.This is not98 individual current issuer/financial audits.Historical primary50,pending48,monthly24,partner4,regulator3,product16 unchanged;missing hits are not evidence of no event.",
+        "Core6 visible issuer indices refreshed,including TSMC Q3 actual/Q4 guidance and MediaTek September30,NVIDIA October17,AMD October12,Broadcom October13,Marvell October13 entries.No newly authenticated TPU design,NRE,renewal,production economics,procurement allocation or earnings revision established.",
+        "CSP5 landing indices and targeted reporting refreshed.Microsoft lists October28 earnings;Amazon40line/Alphabet72line outputs remain navigation-only.Meta and Oracle news pages do not establish complete budget,leases,accepted deployment,utilization or ROI.Alphabet annual-capex/full-lease baseline remains incomplete.",
+        "October19 TrendForce TPU article repeats existing Humufish three-week design revision,November samples,January2027 tape-out,Q2 production-version tape-out and Q1 2028 shipment reporting,plus existing EMIB-T and ByteDance leads.Not a new issuer-confirmed delay or award.Nscale withdrawal reporting overlaps the prior event.",
+        "Shengyi outside-universe October17 announcement2026-057 authenticated by issuer index;two-page reproduction read.Direct issuer PDF download fails unsupported content type.Numeric figures remain preliminary and unaudited;October19 reprint is not a new disclosure.Investment income and cash conversion need reconciliation.No fresh consensus old/new revision or supplier displacement established.No active-universe counter or watchlist change.",
+        "Global Tek October19 cooling-order headline overlaps the existing October1/16/17 candidate.Viking issuer115 deck contains Q1 financials and historicalAI12-percent mix,not the reported October7 update;do not treat it as current numeric confirmation.Digitimes OSAT direct body timed out and Yahoo ODM lead returned404;no substantive earnings conclusion from inaccessible bodies.",
+        "All97public events,201prior candidates,127prior screenings,articles,blockers and CSP baseline preserved.One outside-universe candidate and one screening appended.No currentquotes,valuation,targets,holdings,private investment judgment or market-flow records.Ledger-only JSON/source verification;no articlelint/build/deploy/publication-success claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -6942,6 +6945,45 @@
           "October19 TrendForce reprint matches October14 original nine-CSP2027 growth50-to60-percent forecast already registered.Pricing and prepayment assumptions remain separate from realized equipment volume,accepted deployment or supplier profits.Fulltech profit headlines and historical TPU/Marvell allocation stories overlap prior records.No new duplicate event.",
           "Voltronic Chinese/English issuer financial indices read;2026 report controls do not expose numeric monthly body.The apparent PDF control resolves to a PDF icon image,not a financial document.Media September revenue values were not promoted to primary verification and no company/monthly counter increased.Foundryecosystem newsletter direct body inaccessible;no substantive claim derived from headline.",
           "All prior97 public events,201 candidates and126 screenings retained.One current screening appended only;no new candidate,article or blocker.No quotes,valuation,targets,holdings,private investment judgments or market-flow records.Ledger-only JSON preservation and remote-source readback validation;no articlelint,build,deploy or publication-success claim."
+        ]
+      },
+      {
+        "date": "2026-10-19",
+        "checked_at": "2026-10-19T05:39:52Z",
+        "instruction_commit_sha": "b259b38887248067bc7ec425d29304f2626c1f2f",
+        "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh14grouped discovery queries include98 active names;core6 issuer indices,CSP5 landing sources and targeted ASIC/capex/outside-universe leads refreshed.Shengyi October17 preliminary profit disclosure retained as a new research candidate.No newly qualified material event or article.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://www.trendforce.com/news/2026/10/19/news-mediateks-google-tpu-v9-shipments-may-slip-to-1q28-asic-race-heats-up-as-taiwan-firms-eye-new-opportunities/",
+          "https://www.syst.com.cn/cn/gsgg/list_45.aspx",
+          "https://www.syst.com.cn/Ajax/Download.aspx?name=2026%2F10%2F20261017154400215.pdf",
+          "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12645926&stockid=600183",
+          "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-10/2026-10-17/12645926.PDF",
+          "https://www.viking.com.tw/zh-TW/investors/Investors-T0301.html",
+          "https://www.viking.com.tw/Templates/att/Law%20says_115-1.pdf?lng=zh-TW"
+        ],
+        "source_limits": [
+          "All mandatory instruction files and directly related specifications fetched completely at pinned default-main b259b38887248067bc7ec425d29304f2626c1f2f.AGENTS combined display truncation resolved by two complete smaller segment reads.Full progress JSON parsed and all event fingerprints plus candidate records searched for dedup.Three related articles fetched at the same commit with unchanged blobs;latest repository tree checked.",
+          "Latest alpha-quant main f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV 88422949d38165d4757a1e24c27f8662bede14c1 confirm98 active names included in14fresh grouped discovery queries.This is not98 individual current issuer/financial audits.Historical primary50,pending48,monthly24,partner4,regulator3,product16 unchanged;missing hits are not evidence of no event.",
+          "Core6 visible issuer indices refreshed,including TSMC Q3 actual/Q4 guidance and MediaTek September30,NVIDIA October17,AMD October12,Broadcom October13,Marvell October13 entries.No newly authenticated TPU design,NRE,renewal,production economics,procurement allocation or earnings revision established.",
+          "CSP5 landing indices and targeted reporting refreshed.Microsoft lists October28 earnings;Amazon40line/Alphabet72line outputs remain navigation-only.Meta and Oracle news pages do not establish complete budget,leases,accepted deployment,utilization or ROI.Alphabet annual-capex/full-lease baseline remains incomplete.",
+          "October19 TrendForce TPU article repeats existing Humufish three-week design revision,November samples,January2027 tape-out,Q2 production-version tape-out and Q1 2028 shipment reporting,plus existing EMIB-T and ByteDance leads.Not a new issuer-confirmed delay or award.Nscale withdrawal reporting overlaps the prior event.",
+          "Shengyi outside-universe October17 announcement2026-057 authenticated by issuer index;two-page reproduction read.Direct issuer PDF download fails unsupported content type.Numeric figures remain preliminary and unaudited;October19 reprint is not a new disclosure.Investment income and cash conversion need reconciliation.No fresh consensus old/new revision or supplier displacement established.No active-universe counter or watchlist change.",
+          "Global Tek October19 cooling-order headline overlaps the existing October1/16/17 candidate.Viking issuer115 deck contains Q1 financials and historicalAI12-percent mix,not the reported October7 update;do not treat it as current numeric confirmation.Digitimes OSAT direct body timed out and Yahoo ODM lead returned404;no substantive earnings conclusion from inaccessible bodies.",
+          "All97public events,201prior candidates,127prior screenings,articles,blockers and CSP baseline preserved.One outside-universe candidate and one screening appended.No currentquotes,valuation,targets,holdings,private investment judgment or market-flow records.Ledger-only JSON/source verification;no articlelint/build/deploy/publication-success claim."
         ]
       }
     ],
@@ -12469,6 +12511,53 @@
         "Identify committed customers,equipment suppliers,qualification and utilization before inferring earnings or competitive displacement."
       ],
       "publication_status": "research_candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "shengyi-high-end-ccl-pcb-preliminary-profit-to-cash-conversion",
+      "date": "2026-10-19",
+      "event_date": "2026-10-17",
+      "instruction_commit_sha": "b259b38887248067bc7ec425d29304f2626c1f2f",
+      "companies": [
+        "Shengyi Technology (600183.SH), outside active universe",
+        "Shengyi Electronics"
+      ],
+      "sources": [
+        "https://www.syst.com.cn/cn/gsgg/list_45.aspx",
+        "https://www.syst.com.cn/Ajax/Download.aspx?name=2026%2F10%2F20261017154400215.pdf",
+        "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12645926&stockid=600183",
+        "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-10/2026-10-17/12645926.PDF"
+      ],
+      "stage": "october17_issuer_index_and_two_page_announcement_reproduction_read_direct_issuer_pdf_body_unavailable",
+      "facts": {
+        "announcement_number": "2026-057",
+        "announcement_date": "2026-10-17",
+        "period": "2026-01-01/2026-09-30",
+        "currency": "CNY",
+        "preliminary_attributable_net_profit_range": [
+          6460000000,
+          6870000000
+        ],
+        "preliminary_attributable_net_profit_yoy_percent": [
+          164,
+          181
+        ],
+        "preliminary_excluding_nonrecurring_net_profit_range": [
+          6120000000,
+          6530000000
+        ],
+        "preliminary_excluding_nonrecurring_yoy_percent": [
+          157,
+          174
+        ],
+        "accounting_status": "Unaudited preliminary calculation;formal quarterly report scheduled October30.",
+        "relationship": "Issuer attributes CCL profit growth to high-end demand,product mix and released capacity despite input inflation;PCB subsidiary cites AI-compute demand.Investment income also contributes.",
+        "source_limits": "Issuer index dates disclosure October17,not October19 reprint.Direct issuer download unsupported;numeric body from reproduced announcement/PDF.No named CSP order,segment cash flow,latest trade or comparable consensus revision verified."
+      },
+      "questions": [
+        "Reconcile formal October30 segment margins,investment income,receivables and operating cash.",
+        "Verify customer allocations and pricing durability;do not infer Taiwan supplier displacement from aggregate profit growth."
+      ],
+      "publication_status": "research_candidate_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -12488,7 +12577,7 @@
     }
   ],
   "last_research_date": "2026-10-19",
-  "instruction_commit_sha": "2af3a4f6514e8adbae9699ccc48d4591e4437adb",
+  "instruction_commit_sha": "b259b38887248067bc7ec425d29304f2626c1f2f",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
