@@ -3078,12 +3078,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-19",
-      "checked_at": "2026-10-19T11:06:00Z",
-      "instruction_commit_sha": "a0a5581f5e99337aeea4bd50382525e5c6fc5cb0",
+      "checked_at": "2026-10-19T11:59:00Z",
+      "instruction_commit_sha": "fe29f1fa0b73673d5db935e3f917aeccb7e3a3d3",
       "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh 14-query grouped discovery includes all 98 active names; core 6 and CSP 5 issuer indices refreshed. Existing Global Tek and Nscale leads deduplicated. No newly qualified material event or article.",
+      "scope": "Fresh 14-query grouped discovery covers all 98 active names; core6 and CSP5 issuer indices refreshed, with separate recent financing/deployment and outside-universe discovery. No newly qualified material event, candidate or article.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -3095,18 +3095,15 @@
         "https://ir.aboutamazon.com/overview/default.aspx",
         "https://abc.xyz/investor/",
         "https://investor.atmeta.com/home/default.aspx",
-        "https://www.oracle.com/news/",
-        "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf",
-        "https://www.ft.com/content/35cc5cc6-f9b6-49cc-8fc2-bd61e09c8c40",
-        "https://uanalyze.com.tw/index.php/articles/1198057339"
+        "https://www.oracle.com/news/"
       ],
       "source_limits": [
-        "Complete required instructions/specifications and latest related articles fetched at instruction a0a5581f5e99337aeea4bd50382525e5c6fc5cb0. AGENTS display truncation resolved through consecutive complete segments; full progress JSON obtained via exact blob d405cc3471cb0b9981a609f39d95e00b533daf53 and parsed. Latest recursive tree checked. No instruction-source failure.",
-        "Latest alpha-quant main f43ed0cd5d57d28c50b924f2b3614d4189eae69f, CSV 88422949d38165d4757a1e24c27f8662bede14c1, remains 98 active. Fourteen fresh grouped queries are discovery coverage, not 98 independent current primary audits. Historical primary 50, pending 48, monthly 24, partner 4, regulator 3 and product 16 unchanged; no watchlist mutation.",
-        "TSMC quarterly landing page timed out on refresh; October15 issuer-hosted transcript retrieved and selected capex/demand passages checked instead. MediaTek, NVIDIA, AMD, Broadcom and Marvell indices checked; no fresh authenticated TPU commercial responsibility, NRE, generation renewal or procurement revision established in read sources. Financial indices not a full current filing audit.",
-        "CSP5 indices refreshed and targeted latest financing/delivery/cancellation search executed. Landing/navigation pages do not establish new reported results or accepted deployment. FT Loughton October18 withdrawal article is already in the event's verification history; paywall on direct fetch retained, not bypassed. No new termination filing, relocation or supplier order loss established.",
-        "Global Tek October19 secondary recap overlaps October1/16 project already retained. Direct new recap body unavailable; search-level excerpt does not establish a fresh award or forecast. Existing historical issuer relationship and source limitations retained. No candidate added or new coverage credit.",
-        "All 98 events, 205 candidates, 132 prior screenings, articles, blockers and CSP baseline retained; one screening appended. Public update contains only source checks and completion limits, no prices, holdings, valuation, target or private market-flow work. Ledger-only JSON and exact source readback verification; no article lint/build/deploy/publication claim."
+        "Required instructions, specifications, legacy research and latest related articles read completely at pinned instruction fe29f1fa0b73673d5db935e3f917aeccb7e3a3d3. Full progress obtained through exact blob112aba5b251869dae1c78e69dd726f7795320d59 and parsed; recursive tree not truncated. No instruction-source failure.",
+        "Latest alpha-quant main f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV88422949d38165d4757a1e24c27f8662bede14c1 retain98 active names. Fourteen grouped queries are discovery coverage, not98 independent current primary audits. Historical primary50,pending48,monthly24,partner4,regulator3,product16 unchanged. No watchlist mutation.",
+        "TSMC quarterly page recovered and unchanged Q3 actual/Q4 guidance checked; MediaTek, NVIDIA, AMD, Broadcom and Marvell issuer indices refreshed. Latest index items include product/platform releases already below new earnings-event threshold. No newly authenticated TPU commercial responsibility,NRE,renewal or procurement revision established in read sources; index checks are not full financial filing audits.",
+        "CSP5 landing/IR pages and targeted recent financing/deployment/cancellation queries refreshed. Budget, commitments, accepted deployment, utilization and monetization remain separate; landing pages alone do not validate their latest detailed values. Existing Nscale Loughton report remains previously retained; no new supplier-order loss or termination original established.",
+        "Grouped discovery yields historical monthly-revenue, product and broker/media recaps; Global Tek project and reported Nscale risks overlap retained baselines. Out-of-universe search leads require original date/economic-scope validation before any new candidate or earnings conclusion. No new material incremental fact established in sources actually read, not a whole-market no-news conclusion.",
+        "All98 events,205 candidates,133 previous screenings,articles,blockers and CSP baseline preserved; one screening appended. Public ledger contains only research-source checks and completion limits, no stock prices, holdings,valuation,private institutional-flow work or investment triggers. Ledger-only JSON and exact remote readback verification; no article lint/build/deploy/publication claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -7186,6 +7183,36 @@
           "CSP5 indices refreshed and targeted latest financing/delivery/cancellation search executed. Landing/navigation pages do not establish new reported results or accepted deployment. FT Loughton October18 withdrawal article is already in the event's verification history; paywall on direct fetch retained, not bypassed. No new termination filing, relocation or supplier order loss established.",
           "Global Tek October19 secondary recap overlaps October1/16 project already retained. Direct new recap body unavailable; search-level excerpt does not establish a fresh award or forecast. Existing historical issuer relationship and source limitations retained. No candidate added or new coverage credit.",
           "All 98 events, 205 candidates, 132 prior screenings, articles, blockers and CSP baseline retained; one screening appended. Public update contains only source checks and completion limits, no prices, holdings, valuation, target or private market-flow work. Ledger-only JSON and exact source readback verification; no article lint/build/deploy/publication claim."
+        ]
+      },
+      {
+        "date": "2026-10-19",
+        "checked_at": "2026-10-19T11:59:00Z",
+        "instruction_commit_sha": "fe29f1fa0b73673d5db935e3f917aeccb7e3a3d3",
+        "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh 14-query grouped discovery covers all 98 active names; core6 and CSP5 issuer indices refreshed, with separate recent financing/deployment and outside-universe discovery. No newly qualified material event, candidate or article.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://investor.atmeta.com/home/default.aspx",
+          "https://www.oracle.com/news/"
+        ],
+        "source_limits": [
+          "Required instructions, specifications, legacy research and latest related articles read completely at pinned instruction fe29f1fa0b73673d5db935e3f917aeccb7e3a3d3. Full progress obtained through exact blob112aba5b251869dae1c78e69dd726f7795320d59 and parsed; recursive tree not truncated. No instruction-source failure.",
+          "Latest alpha-quant main f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV88422949d38165d4757a1e24c27f8662bede14c1 retain98 active names. Fourteen grouped queries are discovery coverage, not98 independent current primary audits. Historical primary50,pending48,monthly24,partner4,regulator3,product16 unchanged. No watchlist mutation.",
+          "TSMC quarterly page recovered and unchanged Q3 actual/Q4 guidance checked; MediaTek, NVIDIA, AMD, Broadcom and Marvell issuer indices refreshed. Latest index items include product/platform releases already below new earnings-event threshold. No newly authenticated TPU commercial responsibility,NRE,renewal or procurement revision established in read sources; index checks are not full financial filing audits.",
+          "CSP5 landing/IR pages and targeted recent financing/deployment/cancellation queries refreshed. Budget, commitments, accepted deployment, utilization and monetization remain separate; landing pages alone do not validate their latest detailed values. Existing Nscale Loughton report remains previously retained; no new supplier-order loss or termination original established.",
+          "Grouped discovery yields historical monthly-revenue, product and broker/media recaps; Global Tek project and reported Nscale risks overlap retained baselines. Out-of-universe search leads require original date/economic-scope validation before any new candidate or earnings conclusion. No new material incremental fact established in sources actually read, not a whole-market no-news conclusion.",
+          "All98 events,205 candidates,133 previous screenings,articles,blockers and CSP baseline preserved; one screening appended. Public ledger contains only research-source checks and completion limits, no stock prices, holdings,valuation,private institutional-flow work or investment triggers. Ledger-only JSON and exact remote readback verification; no article lint/build/deploy/publication claim."
         ]
       }
     ],
@@ -12878,7 +12905,7 @@
     }
   ],
   "last_research_date": "2026-10-19",
-  "instruction_commit_sha": "a0a5581f5e99337aeea4bd50382525e5c6fc5cb0",
+  "instruction_commit_sha": "fe29f1fa0b73673d5db935e3f917aeccb7e3a3d3",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
