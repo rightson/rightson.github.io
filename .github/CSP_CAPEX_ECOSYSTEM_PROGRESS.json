@@ -3078,12 +3078,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-19",
-      "checked_at": "2026-10-19T07:50:47Z",
-      "instruction_commit_sha": "0fd81e5509c281d965a61320c558485c8b138876",
+      "checked_at": "2026-10-19T09:31:30Z",
+      "instruction_commit_sha": "e2693f1bc61a624eee8e89c7c8b1c6c14c68c52c",
       "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh14grouped queries include98active names.Core6/CSP5 sources refreshed.Alphabet historical lease baseline supplemented from SEC10-Q and Dynapack historical preliminary Q3/BBU candidate added.No newly qualified material event or article.",
+      "scope": "All98 active names included in14fresh grouped discovery queries;core6 issuer and CSP5 sources refreshed.One outside-universe NSRC lead and a historical Semtech/Tower primary-source supplement retained.No newly qualified material alert or article.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -3096,22 +3096,19 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm",
-        "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/0001652044-26-000071-index.html",
-        "https://news.cnyes.com/news/id/6632242",
-        "https://pchome.megatime.com.tw/m/news/cat2/20261016/9700003211202610161.html",
-        "https://www.dynapack.com.tw/h/data?cat=3809&key=03w18&set=24",
-        "https://www.ft.com/content/35cc5cc6-f9b6-49cc-8fc2-bd61e09c8c40",
-        "https://www.ft.com/content/5970614a-b1f7-4b4e-b1e5-6038e1dde654"
+        "https://investor.atmeta.com/home/default.aspx",
+        "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-to-Announce-Third-Quarter-2026-Results/default.aspx",
+        "https://towersemi.com/2026/10/13/10132026-2/",
+        "https://mobile.newsis.com/view_amp.html?ar_id=NISX20261019_0003831630",
+        "https://kind.krx.co.kr/external/2026/05/15/001378/20260515003002/11013.htm"
       ],
       "source_limits": [
-        "Mandatory instruction/specification files fully fetched at pinned main 0fd81e5509c281d965a61320c558485c8b138876;blobs match complete texts already read in visible context.Full progress JSON parsed and event/candidate records searched for dedup;latest tree and three related same-domain articles retrieved at unchanged blobs.No missing/truncated source instruction.",
-        "Latest alpha-quant main f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV 88422949d38165d4757a1e24c27f8662bede14c1 confirm98 active names.All included in14fresh grouped queries,not98 current individual filings audits.Historical primary50,pending48,monthly24,partner4,regulator3,product16 unchanged.Dynapack outside active universe;no watchlist change.",
-        "Core6 visible issuer entries refreshed.TSMC Q3/Q4 guidance unchanged;MediaTekSeptember30,NVIDIAOctober17,AMDOctober12,BroadcomOctober13,MarvellOctober13 news indices do not establish new TPU design,NRE,renewal,procurement allocation or profit revision.FADU event already registered and notified;no duplicate.",
-        "CSP5 landing sources plus targeted reporting refreshed.MicrosoftOctober28 earnings entry unchanged;Amazon40line/Alphabet72line landing outputs remain navigation-only.Meta/Oracle product-news indices are not complete financial audits.Alphabet July23 SEC10-Q Note4/5 lease passages now read directly and appended as historical baseline;annual guidance original still pending.No uncommenced lease treated as delivered capacity or added to annual cash capex.",
-        "FT Nscale and data-center bond leads resolve to subscription walls;full originals not read.No latest bond-price,spread or independent termination-document confirmation claimed.October19 Fulltech,Shengyi and TPU stories overlap prior records;no repeated material alert.",
-        "Dynapack October16 preliminary notice numeric bodies read in two reproductions.Issuer BBU/UPS/ESS product catalog read;Q3 financial report body unavailable and July29deck timeout.October19 article describes BBU shipment adjustment and IT weakness but no verified new customer award or profit attribution.New historical candidate only;no active-company primary counter increase.",
-        "All98 prior events,203prior candidates,129prior screenings,articles and blockers preserved.One candidate,one Alphabet historical baseline verification and one screening appended.CSP previous fields/verification history retained.No currentquotes,valuation,targets,holdings,private investment judgment or market-flow records.Ledger-only JSON preservation and remote source readback;no articlelint/build/deploy/publication-success claim."
+        "Mandatory instruction/specification sources completely fetched at pinned e2693f1bc61a624eee8e89c7c8b1c6c14c68c52c.AGENTS content re-read in full consecutive segments after initial display truncation.Full progress JSON obtained through exact Git blob882d5cdb54f9941b459af058d162719d68bd8390 because Contents omits inline text above1MiB;parsed successfully.Event/candidate records compared for dedup;latest tree and three related same-domain articles fetched at pinned commit.",
+        "Latest alpha-quant default main f43ed0cd5d57d28c50b924f2b3614d4189eae69f CSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active.All14grouped queries executed,not98individual current filing audits.Historical primary50,pending48,monthly24,partner4,regulator3,product16 remain unchanged.NSRC outside active universe;no watchlist edits.",
+        "Core6 issuer indices and TSMCQ3/Q4 table refreshed;no new authenticated TPU design responsibility,NRE,renewal,procurement or profit change identified in read sources.TPUHumufish revisions andFulltech/FADU/NVHBM reports overlap prior events;no repeated material alert.VicorUSITC investigation and respondent statements already registered;no new ruling established.",
+        "CSP5 sources and targeted issuer queries refreshed.MicrosoftOctober28 andMetaOctober21 future results dates distinguished from actual new results.Amazon/Alphabet landing pages remain navigation-only;financial audit and project-allocation coverage incomplete.Meta/Oracle product indices not substitutes for full capex filings.No latest financing,termination or accepted-deployment confirmation invented.",
+        "NSRC October19 order reports read in full and historical KRX business identity checked;direct October contract not obtained.No disclosed amount,accepted delivery or profit revision.July USD1.1m report is historical and not assigned to October contract.Semtech/Tower October13 issuer capacity agreement supplements existing candidate,not a fresh October19 forecast revision.",
+        "All98events,204prior candidates,130prior screenings,articles,blockers andCSPbaseline retained.One candidate,one existing-candidate verification and one screening appended.No quotes,valuations,targets,holdings,private investment judgment or market-flow records.Ledger-only JSON/source verification;no articlelint/build/deploy/publication claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -7095,6 +7092,41 @@
           "Dynapack October16 preliminary notice numeric bodies read in two reproductions.Issuer BBU/UPS/ESS product catalog read;Q3 financial report body unavailable and July29deck timeout.October19 article describes BBU shipment adjustment and IT weakness but no verified new customer award or profit attribution.New historical candidate only;no active-company primary counter increase.",
           "All98 prior events,203prior candidates,129prior screenings,articles and blockers preserved.One candidate,one Alphabet historical baseline verification and one screening appended.CSP previous fields/verification history retained.No currentquotes,valuation,targets,holdings,private investment judgment or market-flow records.Ledger-only JSON preservation and remote source readback;no articlelint/build/deploy/publication-success claim."
         ]
+      },
+      {
+        "date": "2026-10-19",
+        "checked_at": "2026-10-19T09:31:30Z",
+        "instruction_commit_sha": "e2693f1bc61a624eee8e89c7c8b1c6c14c68c52c",
+        "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "All98 active names included in14fresh grouped discovery queries;core6 issuer and CSP5 sources refreshed.One outside-universe NSRC lead and a historical Semtech/Tower primary-source supplement retained.No newly qualified material alert or article.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://investor.atmeta.com/home/default.aspx",
+          "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-to-Announce-Third-Quarter-2026-Results/default.aspx",
+          "https://towersemi.com/2026/10/13/10132026-2/",
+          "https://mobile.newsis.com/view_amp.html?ar_id=NISX20261019_0003831630",
+          "https://kind.krx.co.kr/external/2026/05/15/001378/20260515003002/11013.htm"
+        ],
+        "source_limits": [
+          "Mandatory instruction/specification sources completely fetched at pinned e2693f1bc61a624eee8e89c7c8b1c6c14c68c52c.AGENTS content re-read in full consecutive segments after initial display truncation.Full progress JSON obtained through exact Git blob882d5cdb54f9941b459af058d162719d68bd8390 because Contents omits inline text above1MiB;parsed successfully.Event/candidate records compared for dedup;latest tree and three related same-domain articles fetched at pinned commit.",
+          "Latest alpha-quant default main f43ed0cd5d57d28c50b924f2b3614d4189eae69f CSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98active.All14grouped queries executed,not98individual current filing audits.Historical primary50,pending48,monthly24,partner4,regulator3,product16 remain unchanged.NSRC outside active universe;no watchlist edits.",
+          "Core6 issuer indices and TSMCQ3/Q4 table refreshed;no new authenticated TPU design responsibility,NRE,renewal,procurement or profit change identified in read sources.TPUHumufish revisions andFulltech/FADU/NVHBM reports overlap prior events;no repeated material alert.VicorUSITC investigation and respondent statements already registered;no new ruling established.",
+          "CSP5 sources and targeted issuer queries refreshed.MicrosoftOctober28 andMetaOctober21 future results dates distinguished from actual new results.Amazon/Alphabet landing pages remain navigation-only;financial audit and project-allocation coverage incomplete.Meta/Oracle product indices not substitutes for full capex filings.No latest financing,termination or accepted-deployment confirmation invented.",
+          "NSRC October19 order reports read in full and historical KRX business identity checked;direct October contract not obtained.No disclosed amount,accepted delivery or profit revision.July USD1.1m report is historical and not assigned to October contract.Semtech/Tower October13 issuer capacity agreement supplements existing candidate,not a fresh October19 forecast revision.",
+          "All98events,204prior candidates,130prior screenings,articles,blockers andCSPbaseline retained.One candidate,one existing-candidate verification and one screening appended.No quotes,valuations,targets,holdings,private investment judgment or market-flow records.Ledger-only JSON/source verification;no articlelint/build/deploy/publication claim."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16
@@ -10347,7 +10379,19 @@
         "Check next actual quarterly report for data-center shipments, continuing-scope margin, operating cash flow, capex/capacity commitments and customer concentration.",
         "Track Tower dedicated capacity qualification, output and commitment terms; do not infer orders for Taiwan suppliers."
       ],
-      "publication_status": "not_drafted"
+      "publication_status": "not_drafted",
+      "verification_updates": [
+        {
+          "date": "2026-10-19",
+          "checked_at": "2026-10-19T09:31:30Z",
+          "instruction_commit_sha": "e2693f1bc61a624eee8e89c7c8b1c6c14c68c52c",
+          "source": "https://towersemi.com/2026/10/13/10132026-2/",
+          "source_date": "2026-10-13",
+          "stage": "historical_joint_issuer_multiyear_sige_capacity_agreement_full_body_read",
+          "facts": "Semtech plans investment to secure dedicated SiGe capacity across Tower fabs in US,Israel,Japan.TIA,driver and equalizer products serve multiple optical and copper architectures;agreement builds on current production.",
+          "limits": "No disclosed investment amount,wafer allocation,pricing,take-or-pay or acceptance schedule in announcement.Not fresh October19 guidance or separately quantified earnings revision;do not equate secured capacity with delivered orders or universally replaceable DSP content."
+        }
+      ]
     },
     {
       "key": "alchip-north-america-3nm-accelerator-volume-margin-and-cash-conversion",
@@ -12728,6 +12772,33 @@
         "Verify reported Q4 high-power product/customers and2027high-voltage roadmap against issuer originals;separate planned qualification from accepted orders."
       ],
       "publication_status": "historical_research_candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "aroot-nsrc-power-semiconductor-lithography-order-to-accepted-delivery-and-cash",
+      "date": "2026-10-19",
+      "event_date": "2026-10-19",
+      "instruction_commit_sha": "e2693f1bc61a624eee8e89c7c8b1c6c14c68c52c",
+      "companies": [
+        "AROOT / NSRC, outside active universe",
+        "Unnamed Taiwanese power-semiconductor IDM P"
+      ],
+      "sources": [
+        "https://mobile.newsis.com/view_amp.html?ar_id=NISX20261019_0003831630",
+        "https://www.thebell.co.kr/front/newsview.asp?code=0409&key=202610191344370480102672",
+        "https://kind.krx.co.kr/external/2026/05/15/001378/20260515003002/11013.htm",
+        "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03155366645514848"
+      ],
+      "stage": "october19_company_attributed_order_reporting_and_historical_exchange_subsidiary_business_read_contract_original_pending",
+      "facts": {
+        "relationship": "October19 company-attributed reporting says NSRC obtained lithography equipment for unnamed Taiwanese power-semiconductor IDM P.Company says customer's components serve data-center power and cooling;no named CSP confirmation.",
+        "historical_primary_scope": "May15 KRX filing identifies NSRC as AROOT semiconductor-equipment refurbishment/service subsidiary;this verifies business identity,not the October contract.",
+        "limits": "No October contract amount,delivery schedule,acceptance,payment,margin or earnings revision disclosed in read reports.Reported July15 USD1.1million Taiwan equipment order is a different dated report and must not be assigned to October19.No guess of unnamed customer identity;multiple media repeating company statement are not independent contract confirmations."
+      },
+      "questions": [
+        "Obtain issuer or exchange original and reconcile contract date,amount,customer scope and any relation to July order.",
+        "Verify acceptance,recognized revenue,refurbishment and installation cost,receivables and cash before attributing durable AI profits."
+      ],
+      "publication_status": "research_candidate_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -12747,7 +12818,7 @@
     }
   ],
   "last_research_date": "2026-10-19",
-  "instruction_commit_sha": "0fd81e5509c281d965a61320c558485c8b138876",
+  "instruction_commit_sha": "e2693f1bc61a624eee8e89c7c8b1c6c14c68c52c",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
