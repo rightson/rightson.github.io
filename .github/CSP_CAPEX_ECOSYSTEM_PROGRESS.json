@@ -3133,12 +3133,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-20",
-      "checked_at": "2026-10-19T20:45:46Z",
-      "instruction_commit_sha": "466f5b867799b67846ab4e81179a806cd9c77363",
+      "checked_at": "2026-10-19T21:36:13Z",
+      "instruction_commit_sha": "3cff23c388bd64ab81a9dca72d983317df84b8e1",
       "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh14grouped queries across98active names,core6/CSP5 primary index checks and outside-universe discovery.One new negotiation candidate and one existing candidate evidence update;no new qualifying event/article.",
+      "scope": "Fresh14grouped discovery queries across98active names,core6/CSP5 source/index checks,outside-universe cooling/power/compute leads.One historical productcandidate and2candidate sourceupdates,no new qualifyingevent or article.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -3151,17 +3151,19 @@
         "https://abc.xyz/investor/",
         "https://investor.atmeta.com/home/default.aspx",
         "https://www.oracle.com/news/",
-        "https://www.reuters.com/technology/nscale-anthropic-talks-45-billion-cloud-computing-deal-bloomberg-news-reports-2026-10-19/",
-        "https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=153a0218-a4aa-455e-b447-10439d02d0ea",
+        "https://www.sec.gov/Archives/edgar/data/2007855/000200785526000081/vg-20261009.htm",
+        "https://news.bloomberglaw.com/capital-markets/nscale-anthropic-in-talks-for-45-billion-cloud-computing-deal",
+        "https://www.hitachi.com/ja-jp/press/articles/2026/10/1009/",
+        "https://prtimes.jp/main/html/rd/p/000000262.000027680.html",
         "https://investors.broadcom.com/news-releases/news-release-details/broadcom-introduces-vmware-hyperarmor-expanding-hypervisor"
       ],
       "source_limits": [
-        "All required pinned instructions/specifications,legacy reference and3recent related articles fully read;progress80aab230861d7ec2694455f37dc9708e6cf5e1ea fully parsed;recursive tree untruncated.No required instruction failure.",
-        "Fresh alpha-quant mainf43ed0cd5d57d28c50b924f2b3614d4189eae69f,CSV88422949d38165d4757a1e24c27f8662bede14c1,98active.All14query groups inspected,not98fresh issuer financial audits.Primary50/pending48,monthly24,partner4,regulator3,product16 unchanged.",
-        "TSMCQ3/Q4guidance andMTKSeptember30/August31indices unchanged.AMDlatestOctober12Helion;MarvellOctober13products/security.BroadcomdirectindexreturnedolderJuneportion whilefreshindexedissuerOctober13HyperArmor/October8OCP retained asindexevidence,not new order.CSP5landingpages sparse/dynamic,not fullfilingcoverage.NVIDIAOctober19Germanintent/quantum/media items overlap baseline.",
-        "Nscale new reported secondMonarch talks separated from Augustagreement,Glomfjorddelay andLoughtonwithdrawal.Couldchange,not signed.Bloombergorigin not independently corroborated.Candidateonly.AcBelOctober19originalreport addsreportedmix/productmaturity,not issuerprofitrevision;no primarycoveragepromotion.",
-        "Existing S&Pcreditvisibility,AWSrackpayment,TrendForceprojection andLoughtonreport matchpreviousrecords;no new material increment from reposts.No article or private valuation written.",
-        "Preserved100events,213prior candidates,142prior screenings,allarticles/blockers/CSPbaseline.Added1candidate,1evidenceupdate,1screening.Publicledger excludesBflows,quotes,holdings,valuation.JSON-only;no lint/build/deploy/publication claim."
+        "All pinned requiredinstructions/specifications,legacyreference and3recent relatedarticles fullyread at3cff23c388bd64ab81a9dca72d983317df84b8e1;progress01f71e09ffa35e19c0a4f9bf508c9f9606f75a0a fullyparsed;recursive treeuntruncated.No requiredinstructiongap.",
+        "Fresh alpha-quantdefaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f andCSV88422949d38165d4757a1e24c27f8662bede14c1,98active.14freshgroupedqueries are discovery,not98current individualissueraudits.Primary50/pending48,monthly24,partner4,regulator3,product16 unchanged.",
+        "TSMCQ3/Q4guidance andMTKSeptember30/August31index remain baseline.NVIDIAOctober19Germanintent/quantum/media,AMDOctober12Helion,MarvellOctober13platforms unchanged.Broadcomindex fetchfailed;October13HyperArmor individualissuerbody recovered,not newAIorder.CSP5landingpages sparse/dynamic,not fullfilingcoverage.",
+        "VentureGlobalhistorical8-K distinguishes8powerisland/5grid reservations,conditionalUSD17.2billion fullscenario andfuture purchaseorders;fullagreements deferred.No newAIcustomer or incrementalearningsrevision.Nscaleoriginalopening recovered,fullbodypaywall retained;still unconfirmedtalks,not signeddeal.",
+        "HitachiOctober19tradepress traces toOctober9issuerproductannouncement,plannedApril2027orderopening andpaidmonitoringpathway;candidateonly.No claimed realizedorders/savings/profit.Groupedresults otherwise prior monthly,broker andpricerecaps;ByteDanceMTK andexistingframeworkreports deduplicated.",
+        "Preserved100events,214priorcandidates,143prior screenings,articles,blockers andCSPbaseline;added1candidate/2candidateverificationupdates/1screening.No publicBflows,quotes,holdings orvaluation.JSON-only,no articlelint/build/deployclaim;exact remotereadbackrequired."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -7575,6 +7577,41 @@
           "Existing S&Pcreditvisibility,AWSrackpayment,TrendForceprojection andLoughtonreport matchpreviousrecords;no new material increment from reposts.No article or private valuation written.",
           "Preserved100events,213prior candidates,142prior screenings,allarticles/blockers/CSPbaseline.Added1candidate,1evidenceupdate,1screening.Publicledger excludesBflows,quotes,holdings,valuation.JSON-only;no lint/build/deploy/publication claim."
         ]
+      },
+      {
+        "date": "2026-10-20",
+        "checked_at": "2026-10-19T21:36:13Z",
+        "instruction_commit_sha": "3cff23c388bd64ab81a9dca72d983317df84b8e1",
+        "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh14grouped discovery queries across98active names,core6/CSP5 source/index checks,outside-universe cooling/power/compute leads.One historical productcandidate and2candidate sourceupdates,no new qualifyingevent or article.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://investor.atmeta.com/home/default.aspx",
+          "https://www.oracle.com/news/",
+          "https://www.sec.gov/Archives/edgar/data/2007855/000200785526000081/vg-20261009.htm",
+          "https://news.bloomberglaw.com/capital-markets/nscale-anthropic-in-talks-for-45-billion-cloud-computing-deal",
+          "https://www.hitachi.com/ja-jp/press/articles/2026/10/1009/",
+          "https://prtimes.jp/main/html/rd/p/000000262.000027680.html",
+          "https://investors.broadcom.com/news-releases/news-release-details/broadcom-introduces-vmware-hyperarmor-expanding-hypervisor"
+        ],
+        "source_limits": [
+          "All pinned requiredinstructions/specifications,legacyreference and3recent relatedarticles fullyread at3cff23c388bd64ab81a9dca72d983317df84b8e1;progress01f71e09ffa35e19c0a4f9bf508c9f9606f75a0a fullyparsed;recursive treeuntruncated.No requiredinstructiongap.",
+          "Fresh alpha-quantdefaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f andCSV88422949d38165d4757a1e24c27f8662bede14c1,98active.14freshgroupedqueries are discovery,not98current individualissueraudits.Primary50/pending48,monthly24,partner4,regulator3,product16 unchanged.",
+          "TSMCQ3/Q4guidance andMTKSeptember30/August31index remain baseline.NVIDIAOctober19Germanintent/quantum/media,AMDOctober12Helion,MarvellOctober13platforms unchanged.Broadcomindex fetchfailed;October13HyperArmor individualissuerbody recovered,not newAIorder.CSP5landingpages sparse/dynamic,not fullfilingcoverage.",
+          "VentureGlobalhistorical8-K distinguishes8powerisland/5grid reservations,conditionalUSD17.2billion fullscenario andfuture purchaseorders;fullagreements deferred.No newAIcustomer or incrementalearningsrevision.Nscaleoriginalopening recovered,fullbodypaywall retained;still unconfirmedtalks,not signeddeal.",
+          "HitachiOctober19tradepress traces toOctober9issuerproductannouncement,plannedApril2027orderopening andpaidmonitoringpathway;candidateonly.No claimed realizedorders/savings/profit.Groupedresults otherwise prior monthly,broker andpricerecaps;ByteDanceMTK andexistingframeworkreports deduplicated.",
+          "Preserved100events,214priorcandidates,143prior screenings,articles,blockers andCSPbaseline;added1candidate/2candidateverificationupdates/1screening.No publicBflows,quotes,holdings orvaluation.JSON-only,no articlelint/build/deployclaim;exact remotereadbackrequired."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16
@@ -9856,6 +9893,18 @@
             "https://www.globenewswire.com/news-release/2026/10/15/3381773/0/en/baker-hughes-and-venture-global-expand-strategic-long-term-power-generation-partnership.html"
           ],
           "scope": "Earlier retrieval-failure stage is preserved. New event records the verified framework and dates; firm orders, AI customers and returns remain open."
+        },
+        {
+          "date": "2026-10-20",
+          "event_date": "2026-10-09",
+          "disclosure_date": "2026-10-15",
+          "instruction_commit_sha": "3cff23c388bd64ab81a9dca72d983317df84b8e1",
+          "stage": "historical_sec_8k_summary_body_read_reservation_vs_purchase_obligations_distinguished",
+          "sources": [
+            "https://www.sec.gov/Archives/edgar/data/2007855/000200785526000081/vg-20261009.htm"
+          ],
+          "facts": "8-K confirms definitive manufacturing reservation for8powerislands and5grid-equipmentpackages;firstorders expected late2026/early2027.Full-elected power+grid scenario approximatelyUSD17.2billion includingreservationfees,subjectadjustments;not currentfirmbacklog.Outsidefees/reservations,purchase/supply obligations await definitiveagreements/orders.Gridframeworkcoversup to21projects;powerframeworkup to16islands.Terminationmayrequirefee.",
+          "limits": "Historical disclosure,not October20award.Executedframework exhibits deferred toQ3Form10-Q,not fullcontractaudit.No reservationfee amount,current purchaseorder,AIcustomer allocation or profitrevision verified.No repeatmaterialalert."
         }
       ]
     },
@@ -13481,6 +13530,38 @@
         "Issuer-confirmed executed agreement,term and delivery obligations",
         "Binding financing,power readiness,acceptance and actual cash conversion"
       ],
+      "publication_status": "candidate_only_no_alert_no_article",
+      "verification_updates": [
+        {
+          "date": "2026-10-20",
+          "instruction_commit_sha": "3cff23c388bd64ab81a9dca72d983317df84b8e1",
+          "stage": "bloomberg_original_timestamp_and_opening_excerpt_read_full_text_subscription_gated",
+          "sources": [
+            "https://news.bloomberglaw.com/capital-markets/nscale-anthropic-in-talks-for-45-billion-cloud-computing-deal"
+          ],
+          "facts": "OriginalOctober19at19:24UTC headline/opening corroborates reportedsecondMonarchnegotiations aroundUSD45billion and separatesexisting agreements up toUSD44.6billion,attributedtoIPO filing.",
+          "limits": "Fullbody remains subscriptiongated;460MW andVeraRubin details remain same-origin Reutersrelay,not independentconfirmation.No signedagreement,fundingclose or purchaseorder established.No materialconfidence/impactchange beyond sourceprovenance,no alert."
+        }
+      ]
+    },
+    {
+      "key": "hitachi-gls-aixross-planned-2027-order-opening-to-recurring-cooling-economics",
+      "date": "2026-10-20",
+      "event_date": "2026-10-09",
+      "companies": [
+        "Hitachi",
+        "Hitachi Global Life Solutions"
+      ],
+      "sources": [
+        "https://www.hitachi.com/ja-jp/press/articles/2026/10/1009/",
+        "https://prtimes.jp/main/html/rd/p/000000262.000027680.html"
+      ],
+      "stage": "historical_issuer_distributed_text_read_planned_product_not_customer_order",
+      "facts": "October19tradepress lead traces toOctober9issuerrelease.Plans April2027orderopening forAIXROSSdatacentercooling;exiida remote monitoringrequiresseparatepaidcontract.Futurephysical-AI maintenance/control isplanned.Productcapability and serviceattachment pathway,not recognizedrecurringrevenue.Specifications describedasplanned;unreadimage-table not used.",
+      "questions": [
+        "Namedcustomerorders,qualification,delivery and serviceattachment",
+        "Realizedenergyperformance versuscomparable alternatives,pricing,grossmargin and cashconversion"
+      ],
       "publication_status": "candidate_only_no_alert_no_article"
     }
   ],
@@ -13501,7 +13582,7 @@
     }
   ],
   "last_research_date": "2026-10-20",
-  "instruction_commit_sha": "466f5b867799b67846ab4e81179a806cd9c77363",
+  "instruction_commit_sha": "3cff23c388bd64ab81a9dca72d983317df84b8e1",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
