@@ -3064,6 +3064,29 @@
         "limits": "Historical source backfill,not new October20orders.Order total includes complete systems,not all networking or AMD revenue.No delivered capacity,market-share gain or realized EPS upgrade established."
       },
       "status": "primary_order_segment_revision_and_prior_exclusion_verified_delivery_cash_and_earnings_conversion_pending_no_article"
+    },
+    {
+      "fingerprint": "3m-amazon-purchase-linked-warrant-and-gseo-ebo-manufacturing-20261019",
+      "event_date": "2026-10-19",
+      "discovered_date": "2026-10-20",
+      "instruction_commit_sha": "280e29ddbaf645d0ef5e7d894494ebb841d5891d",
+      "companies": [
+        "3M",
+        "Amazon",
+        "Genius Electronic Optical"
+      ],
+      "type": "primary_commercial_relationship_and_named_manufacturing_partner",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/66740/000006674026000303/mmm-20261019.htm",
+        "https://www.prnewswire.com/news-releases/3m-announces-collaboration-with-gseo-to-advance-expanded-beam-optical-manufacturing-and-development-302913170.html"
+      ],
+      "facts": {
+        "baseline": "July15 Microsoft EBO partnership and October15 Taiwan reports of planned GSEO private placement are historical,not new October19 awards.",
+        "increment": "October19 8-K: seven-year warrant for up to3,162,015 shares atUSD164.89;85%vests with Amazon optical-connectivity/other data-center product payments,fully atUSD6billion cumulative payments;remaining15%event-based.",
+        "manufacturing": "October19 issuer release names GSEO manufacturing/development partner for EBO ferrules,CPO and related applications;approximately4.7%proposed equity investment expectedQ42026,subject to closing.",
+        "limits": "USD6billion is vesting threshold,not disclosed guaranteed purchase/backlog or annual revenue.No product mix,GSEO allocation,exclusive supply,accepted volume,margin or earnings revision disclosed.Not all Amazon purchases are EBO/CPO."
+      },
+      "status": "primary_relationship_and_threshold_verified_supplier_allocation_profit_and_cash_conversion_pending_no_article"
     }
   ],
   "articles": [],
@@ -3133,12 +3156,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-20",
-      "checked_at": "2026-10-19T21:36:13Z",
-      "instruction_commit_sha": "3cff23c388bd64ab81a9dca72d983317df84b8e1",
+      "checked_at": "2026-10-19T23:12:21Z",
+      "instruction_commit_sha": "280e29ddbaf645d0ef5e7d894494ebb841d5891d",
       "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh14grouped discovery queries across98active names,core6/CSP5 source/index checks,outside-universe cooling/power/compute leads.One historical productcandidate and2candidate sourceupdates,no new qualifyingevent or article.",
+      "scope": "Fresh14 grouped discovery queries across98 active names;core6/CSP5 issuer-index checks;outside-universe optical,power and custom-compute leads.1 qualifying public source event,2 research candidates,1 provenance update;no article.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -3151,19 +3174,22 @@
         "https://abc.xyz/investor/",
         "https://investor.atmeta.com/home/default.aspx",
         "https://www.oracle.com/news/",
-        "https://www.sec.gov/Archives/edgar/data/2007855/000200785526000081/vg-20261009.htm",
-        "https://news.bloomberglaw.com/capital-markets/nscale-anthropic-in-talks-for-45-billion-cloud-computing-deal",
-        "https://www.hitachi.com/ja-jp/press/articles/2026/10/1009/",
-        "https://prtimes.jp/main/html/rd/p/000000262.000027680.html",
-        "https://investors.broadcom.com/news-releases/news-release-details/broadcom-introduces-vmware-hyperarmor-expanding-hypervisor"
+        "https://www.sec.gov/Archives/edgar/data/66740/000006674026000303/mmm-20261019.htm",
+        "https://www.prnewswire.com/news-releases/3m-announces-collaboration-with-gseo-to-advance-expanded-beam-optical-manufacturing-and-development-302913170.html",
+        "https://investors.3m.com/news-events/press-releases/detail/1937/3m-and-microsoft-announce-strategic-partnership-to-advance",
+        "https://www.aboutamazon.com/news/innovation-at-amazon/torchneuron-pytorch-aws-trainium-chips-ai",
+        "https://awsdocs-neuron.readthedocs-hosted.com/en/latest/release-notes/components/torchneuron.html",
+        "https://www.infineon.com/press-release/2026/infpr202609-146",
+        "https://www.reuters.com/technology/nscale-anthropic-talks-45-billion-cloud-computing-deal-bloomberg-news-reports-2026-10-19/"
       ],
       "source_limits": [
-        "All pinned requiredinstructions/specifications,legacyreference and3recent relatedarticles fullyread at3cff23c388bd64ab81a9dca72d983317df84b8e1;progress01f71e09ffa35e19c0a4f9bf508c9f9606f75a0a fullyparsed;recursive treeuntruncated.No requiredinstructiongap.",
-        "Fresh alpha-quantdefaultmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f andCSV88422949d38165d4757a1e24c27f8662bede14c1,98active.14freshgroupedqueries are discovery,not98current individualissueraudits.Primary50/pending48,monthly24,partner4,regulator3,product16 unchanged.",
-        "TSMCQ3/Q4guidance andMTKSeptember30/August31index remain baseline.NVIDIAOctober19Germanintent/quantum/media,AMDOctober12Helion,MarvellOctober13platforms unchanged.Broadcomindex fetchfailed;October13HyperArmor individualissuerbody recovered,not newAIorder.CSP5landingpages sparse/dynamic,not fullfilingcoverage.",
-        "VentureGlobalhistorical8-K distinguishes8powerisland/5grid reservations,conditionalUSD17.2billion fullscenario andfuture purchaseorders;fullagreements deferred.No newAIcustomer or incrementalearningsrevision.Nscaleoriginalopening recovered,fullbodypaywall retained;still unconfirmedtalks,not signeddeal.",
-        "HitachiOctober19tradepress traces toOctober9issuerproductannouncement,plannedApril2027orderopening andpaidmonitoringpathway;candidateonly.No claimed realizedorders/savings/profit.Groupedresults otherwise prior monthly,broker andpricerecaps;ByteDanceMTK andexistingframeworkreports deduplicated.",
-        "Preserved100events,214priorcandidates,143prior screenings,articles,blockers andCSPbaseline;added1candidate/2candidateverificationupdates/1screening.No publicBflows,quotes,holdings orvaluation.JSON-only,no articlelint/build/deployclaim;exact remotereadbackrequired."
+        "Pinned required instructions/specs and3 recent related articles fully read;progress blob7c98999ed9fd0d9eda02961132ab2242a5c291dd fully parsed;recursive tree untruncated.No required-instruction gap.",
+        "Fresh alpha-quant default main f43ed0cd5d57d28c50b924f2b3614d4189eae69f,CSV88422949d38165d4757a1e24c27f8662bede14c1,98 active.Grouped search is discovery,not98 current issuer audits.Primary50/pending48,monthly24,partner4,regulator3,product16 unchanged.",
+        "TSMC Q3/Q4 figures and MediaTek September30/August31 index remain baseline.NVIDIA October19,AMD October12,Marvell October13 index unchanged.Broadcom and CSP landing pages dynamic/sparse;not full filing or complete announcement coverage.",
+        "3M Amazon 8-K and issuer-distributed GSEO release fully read.New demand-link architecture,not guaranteedUSD6billion order or automatic Taiwan earnings increase.GSEO October15 investment news is historical.No full stand-alone article until allocation,maturity and financial conversion support deeper thesis.",
+        "TorchNeuron issuer-indexed full text and release-note excerpt recovered but direct original pages inaccessible.Public beta and planned open-source date kept separate.No unsupported universal no-rewrite or quantified cost-saving claims.",
+        "Infineon September29 primary body recovered;October19 discovery is not new order.Nscale Reuters now uses own-source attribution;confidence update recorded without claiming independent source identities,signed contract or repeated alert.",
+        "Preserved100 prior events,215 prior candidates,144 prior screenings,articles and blockers.Added1 event,2 candidates and1 candidate update.No B flows,quotes,holdings or valuation in public JSON.JSON-only,no article lint/build/deploy claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -7611,6 +7637,44 @@
           "VentureGlobalhistorical8-K distinguishes8powerisland/5grid reservations,conditionalUSD17.2billion fullscenario andfuture purchaseorders;fullagreements deferred.No newAIcustomer or incrementalearningsrevision.Nscaleoriginalopening recovered,fullbodypaywall retained;still unconfirmedtalks,not signeddeal.",
           "HitachiOctober19tradepress traces toOctober9issuerproductannouncement,plannedApril2027orderopening andpaidmonitoringpathway;candidateonly.No claimed realizedorders/savings/profit.Groupedresults otherwise prior monthly,broker andpricerecaps;ByteDanceMTK andexistingframeworkreports deduplicated.",
           "Preserved100events,214priorcandidates,143prior screenings,articles,blockers andCSPbaseline;added1candidate/2candidateverificationupdates/1screening.No publicBflows,quotes,holdings orvaluation.JSON-only,no articlelint/build/deployclaim;exact remotereadbackrequired."
+        ]
+      },
+      {
+        "date": "2026-10-20",
+        "checked_at": "2026-10-19T23:12:21Z",
+        "instruction_commit_sha": "280e29ddbaf645d0ef5e7d894494ebb841d5891d",
+        "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh14 grouped discovery queries across98 active names;core6/CSP5 issuer-index checks;outside-universe optical,power and custom-compute leads.1 qualifying public source event,2 research candidates,1 provenance update;no article.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://investor.atmeta.com/home/default.aspx",
+          "https://www.oracle.com/news/",
+          "https://www.sec.gov/Archives/edgar/data/66740/000006674026000303/mmm-20261019.htm",
+          "https://www.prnewswire.com/news-releases/3m-announces-collaboration-with-gseo-to-advance-expanded-beam-optical-manufacturing-and-development-302913170.html",
+          "https://investors.3m.com/news-events/press-releases/detail/1937/3m-and-microsoft-announce-strategic-partnership-to-advance",
+          "https://www.aboutamazon.com/news/innovation-at-amazon/torchneuron-pytorch-aws-trainium-chips-ai",
+          "https://awsdocs-neuron.readthedocs-hosted.com/en/latest/release-notes/components/torchneuron.html",
+          "https://www.infineon.com/press-release/2026/infpr202609-146",
+          "https://www.reuters.com/technology/nscale-anthropic-talks-45-billion-cloud-computing-deal-bloomberg-news-reports-2026-10-19/"
+        ],
+        "source_limits": [
+          "Pinned required instructions/specs and3 recent related articles fully read;progress blob7c98999ed9fd0d9eda02961132ab2242a5c291dd fully parsed;recursive tree untruncated.No required-instruction gap.",
+          "Fresh alpha-quant default main f43ed0cd5d57d28c50b924f2b3614d4189eae69f,CSV88422949d38165d4757a1e24c27f8662bede14c1,98 active.Grouped search is discovery,not98 current issuer audits.Primary50/pending48,monthly24,partner4,regulator3,product16 unchanged.",
+          "TSMC Q3/Q4 figures and MediaTek September30/August31 index remain baseline.NVIDIA October19,AMD October12,Marvell October13 index unchanged.Broadcom and CSP landing pages dynamic/sparse;not full filing or complete announcement coverage.",
+          "3M Amazon 8-K and issuer-distributed GSEO release fully read.New demand-link architecture,not guaranteedUSD6billion order or automatic Taiwan earnings increase.GSEO October15 investment news is historical.No full stand-alone article until allocation,maturity and financial conversion support deeper thesis.",
+          "TorchNeuron issuer-indexed full text and release-note excerpt recovered but direct original pages inaccessible.Public beta and planned open-source date kept separate.No unsupported universal no-rewrite or quantified cost-saving claims.",
+          "Infineon September29 primary body recovered;October19 discovery is not new order.Nscale Reuters now uses own-source attribution;confidence update recorded without claiming independent source identities,signed contract or repeated alert.",
+          "Preserved100 prior events,215 prior candidates,144 prior screenings,articles and blockers.Added1 event,2 candidates and1 candidate update.No B flows,quotes,holdings or valuation in public JSON.JSON-only,no article lint/build/deploy claim."
         ]
       }
     ],
@@ -13541,6 +13605,16 @@
           ],
           "facts": "OriginalOctober19at19:24UTC headline/opening corroborates reportedsecondMonarchnegotiations aroundUSD45billion and separatesexisting agreements up toUSD44.6billion,attributedtoIPO filing.",
           "limits": "Fullbody remains subscriptiongated;460MW andVeraRubin details remain same-origin Reutersrelay,not independentconfirmation.No signedagreement,fundingclose or purchaseorder established.No materialconfidence/impactchange beyond sourceprovenance,no alert."
+        },
+        {
+          "date": "2026-10-20",
+          "instruction_commit_sha": "280e29ddbaf645d0ef5e7d894494ebb841d5891d",
+          "stage": "reuters_updated_to_own_person_familiar_source_still_negotiations",
+          "sources": [
+            "https://www.reuters.com/technology/nscale-anthropic-talks-45-billion-cloud-computing-deal-bloomberg-news-reports-2026-10-19/"
+          ],
+          "facts": "Current body explicitly changes paragraphs1-3/5 to a person familiar speaking toReuters,including secondbuilding460MW/VeraRubin.Updates previous relay-only provenance;not issuer confirmation.",
+          "limits": "Bloomberg remains first report;do not assume separate source identities.Discussions ongoing,details maychange,no executed agreement or funding close."
         }
       ]
     },
@@ -13563,6 +13637,46 @@
         "Realizedenergyperformance versuscomparable alternatives,pricing,grossmargin and cashconversion"
       ],
       "publication_status": "candidate_only_no_alert_no_article"
+    },
+    {
+      "key": "aws-torchneuron-native-pytorch-public-beta-to-trainium-utilization-20261019",
+      "date": "2026-10-20",
+      "event_date": "2026-10-19",
+      "companies": [
+        "Amazon",
+        "AWS"
+      ],
+      "sources": [
+        "https://www.aboutamazon.com/news/innovation-at-amazon/torchneuron-pytorch-aws-trainium-chips-ai",
+        "https://awsdocs-neuron.readthedocs-hosted.com/en/latest/release-notes/components/torchneuron.html",
+        "https://awsdocs-neuron.readthedocs-hosted.com/en/latest/torch/about-pytorch-neuron.html"
+      ],
+      "stage": "issuer_indexed_text_and_release_notes_recovered_direct_body_fetch_unavailable",
+      "facts": "Issuer search text describes native PyTorch support for Trainium2/3,planned Apache2.0 open source October20;release notes date October19,Neuron2.33 public beta with PrivateUse1 neuron device,eager/torch.compile and standard distributed APIs.Not universal CUDA compatibility or measured migration cost savings.",
+      "questions": [
+        "Independent supported/unsupported operator and custom CUDA kernel migration tests",
+        "Sustained production utilization,customer spend and AWS margin change versus migration subsidies"
+      ],
+      "publication_status": "candidate_only_no_alert_no_article"
+    },
+    {
+      "key": "infineon-eaton-sic-mvsst-800vdc-historical-relationship-20260929",
+      "date": "2026-10-20",
+      "event_date": "2026-09-29",
+      "companies": [
+        "Infineon",
+        "Eaton"
+      ],
+      "sources": [
+        "https://www.infineon.com/press-release/2026/infpr202609-146"
+      ],
+      "stage": "historical_issuer_relationship_body_checked_not_new_october19_order",
+      "facts": "September29 issuer identifies Infineon SiC supply for Eaton MVSST2.0 targeting800VDC AI datacenter architecture.APAC deployment and future higher-voltage collaboration;October19 tradepress repeats prior release.No order value,qualified deployment,ASP or profit revision verified.",
+      "questions": [
+        "Named paid deployments,volume and qualified products",
+        "Power conversion efficiency versus total system costs and supplier margin"
+      ],
+      "publication_status": "candidate_only_no_alert_no_article"
     }
   ],
   "blockers": [
@@ -13582,7 +13696,7 @@
     }
   ],
   "last_research_date": "2026-10-20",
-  "instruction_commit_sha": "3cff23c388bd64ab81a9dca72d983317df84b8e1",
+  "instruction_commit_sha": "280e29ddbaf645d0ef5e7d894494ebb841d5891d",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
