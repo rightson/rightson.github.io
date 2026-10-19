@@ -3105,12 +3105,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-19",
-      "checked_at": "2026-10-19T15:29:00Z",
-      "instruction_commit_sha": "a4c3a1abbe0401080ce03b1d2051c427916b5d95",
+      "checked_at": "2026-10-19T15:43:21Z",
+      "instruction_commit_sha": "58065cc6fa6bcc575cf6032a983552ee238ae754",
       "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "14fresh grouped queries covering98 active names for discovery,core6/CSP5 issuer indices and out-of-universe project searches;one reported cash-timing event,no new candidate/article.",
+      "scope": "14fresh grouped queries covering98 active names for discovery;core6/CSP5 issuer indices refreshed;outside-universe/CSP searches;no independently confirmed earnings-changing increment,no new event/candidate/article.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -3123,18 +3123,18 @@
         "https://abc.xyz/investor/",
         "https://investor.atmeta.com/home/default.aspx",
         "https://www.oracle.com/news/",
+        "https://blogs.nvidia.com/blog/media-agentic-security-european-public-service-broadcasting-global-content-production/",
+        "https://www.trendforce.com/news/2026/10/19/news-mediateks-google-tpu-v9-shipments-may-slip-to-1q28-asic-race-heats-up-as-taiwan-firms-eye-new-opportunities/",
         "https://www.businessinsider.com/amazon-220-billion-ai-bet-data-centers-spending-challenges-2026-10",
-        "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx",
-        "https://winbond.com/hq/about-winbond/news-and-events/news/news00582.html?__locale=zh_TW",
-        "https://finance.yahoo.com/technology/ai/articles/google-next-ai-chip-running-133854381.html"
+        "https://www.wsj.com/tech/microsoft-pulls-out-of-nscale-u-k-data-center-deal-over-power-supply-issues-f804c434"
       ],
       "source_limits": [
-        "All required pinned instructions,specifications,legacy references and recent3 related articles read at a4c3a1abbe0401080ce03b1d2051c427916b5d95. Full progress exact blob5f117bb8b47d590b628d206061e0cd23367c0b41 parsed;recursive tree untruncated. No required-instruction failure.",
-        "Alpha-quant metadata/default head f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV88422949d38165d4757a1e24c27f8662bede14c1 freshly retrieved;98 active unchanged. Grouped discovery is not98latest issuer audits. Historical primary50,pending48,monthly24,partner4,regulator3,product16 unchanged.",
-        "TSMC Q3 landing now retrieved and shows Q4 revenue52.3-54.3USD billion,gross margin65-67%,operating margin56.5-58.5%;source recovery,not newly dated guidance versus already-read October15 call. Other core issuer indices refreshed. TPUv9 recent recaps trace to existing October13GF estimate,not independent confirmation;volume-production wording must not replace production-version tapeout.",
-        "CSP5 indices refreshed,not full filing audit. Amazon original Q2 financial release rechecked as historical baseline. New public original reporting retained as cash-timing event;budget,hardware receipts,energized deployment and cloud monetization remain separate. No private document retrieved or published.",
-        "Outside-universe searches mainly revisit existing InTest,Carrier,Host and other project candidates;Roze fire-safety MOA lacks established CSP economic linkage and is not added. Winbond official Q2 body retrieved but already has primary coverage credit;not new October19 results.",
-        "Preserved98prior events,207candidates,136prior screenings,articles,blockers and baseline;appended1event and1screening. No public quotes,valuation,holdings or Bfund-flow data. Ledger-only JSON;no article/build/deploy claim. Full exact remote readback required."
+        "Required pinned instructions,specifications,legacy references and3recent related articles read completely at58065cc6fa6bcc575cf6032a983552ee238ae754;progress blob816d6b24777c13299f94e0addd56e4feb19eac7a fully parsed,recursive tree untruncated.No required-instruction failure.",
+        "Alpha-quant metadata/default head f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV88422949d38165d4757a1e24c27f8662bede14c1 freshly retrieved;98 active unchanged. Grouped discovery is not98latest primary-company audits. Historical primary50,pending48,monthly24,partner4,regulator3,product16 unchanged.",
+        "NVIDIA October19 media/EBU/Adobe blog newly dated and read:sovereign frameworks/reference architectures and application-level acceleration,not quantified CSP orders,capital expenditure or supplier earnings.No new event or coverage credit inferred.Core6 other indices continue existing results/product baseline.",
+        "CSP5 landing pages refreshed;some dynamic IR pages expose navigation or sparse text,not complete filing coverage.Outside searches revisit AWS early-rack cash-timing report and Nscale Loughton withdrawal already recorded;no new executed terms,company capex cut or independent supplier earnings revision. No duplicate alert. TPUv9October19 recap remains underlying GF/CommercialTimes estimate,not new company guidance;production-version tapeout is not volume production.",
+        "Grouped name results mainly prior monthly disclosures,broker recaps and price reactions.ZhenDing university/PCB talent chair not earnings-changing,Fuchiao price recap not new self-assessed profit. No new out-of-universe opportunity passed primary economic-materiality threshold.",
+        "Preserved99events,207candidates,137prior screenings,articles,blockers and baseline;appended1screening only.No public quotes,valuation,holdings or Bfund-flow data.Ledger-only JSON,no article/build/deploy claim.Exact remote readback required."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -7346,6 +7346,40 @@
           "CSP5 indices refreshed,not full filing audit. Amazon original Q2 financial release rechecked as historical baseline. New public original reporting retained as cash-timing event;budget,hardware receipts,energized deployment and cloud monetization remain separate. No private document retrieved or published.",
           "Outside-universe searches mainly revisit existing InTest,Carrier,Host and other project candidates;Roze fire-safety MOA lacks established CSP economic linkage and is not added. Winbond official Q2 body retrieved but already has primary coverage credit;not new October19 results.",
           "Preserved98prior events,207candidates,136prior screenings,articles,blockers and baseline;appended1event and1screening. No public quotes,valuation,holdings or Bfund-flow data. Ledger-only JSON;no article/build/deploy claim. Full exact remote readback required."
+        ]
+      },
+      {
+        "date": "2026-10-19",
+        "checked_at": "2026-10-19T15:43:21Z",
+        "instruction_commit_sha": "58065cc6fa6bcc575cf6032a983552ee238ae754",
+        "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "14fresh grouped queries covering98 active names for discovery;core6/CSP5 issuer indices refreshed;outside-universe/CSP searches;no independently confirmed earnings-changing increment,no new event/candidate/article.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://investor.atmeta.com/home/default.aspx",
+          "https://www.oracle.com/news/",
+          "https://blogs.nvidia.com/blog/media-agentic-security-european-public-service-broadcasting-global-content-production/",
+          "https://www.trendforce.com/news/2026/10/19/news-mediateks-google-tpu-v9-shipments-may-slip-to-1q28-asic-race-heats-up-as-taiwan-firms-eye-new-opportunities/",
+          "https://www.businessinsider.com/amazon-220-billion-ai-bet-data-centers-spending-challenges-2026-10",
+          "https://www.wsj.com/tech/microsoft-pulls-out-of-nscale-u-k-data-center-deal-over-power-supply-issues-f804c434"
+        ],
+        "source_limits": [
+          "Required pinned instructions,specifications,legacy references and3recent related articles read completely at58065cc6fa6bcc575cf6032a983552ee238ae754;progress blob816d6b24777c13299f94e0addd56e4feb19eac7a fully parsed,recursive tree untruncated.No required-instruction failure.",
+          "Alpha-quant metadata/default head f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV88422949d38165d4757a1e24c27f8662bede14c1 freshly retrieved;98 active unchanged. Grouped discovery is not98latest primary-company audits. Historical primary50,pending48,monthly24,partner4,regulator3,product16 unchanged.",
+          "NVIDIA October19 media/EBU/Adobe blog newly dated and read:sovereign frameworks/reference architectures and application-level acceleration,not quantified CSP orders,capital expenditure or supplier earnings.No new event or coverage credit inferred.Core6 other indices continue existing results/product baseline.",
+          "CSP5 landing pages refreshed;some dynamic IR pages expose navigation or sparse text,not complete filing coverage.Outside searches revisit AWS early-rack cash-timing report and Nscale Loughton withdrawal already recorded;no new executed terms,company capex cut or independent supplier earnings revision. No duplicate alert. TPUv9October19 recap remains underlying GF/CommercialTimes estimate,not new company guidance;production-version tapeout is not volume production.",
+          "Grouped name results mainly prior monthly disclosures,broker recaps and price reactions.ZhenDing university/PCB talent chair not earnings-changing,Fuchiao price recap not new self-assessed profit. No new out-of-universe opportunity passed primary economic-materiality threshold.",
+          "Preserved99events,207candidates,137prior screenings,articles,blockers and baseline;appended1screening only.No public quotes,valuation,holdings or Bfund-flow data.Ledger-only JSON,no article/build/deploy claim.Exact remote readback required."
         ]
       }
     ],
@@ -13088,7 +13122,7 @@
     }
   ],
   "last_research_date": "2026-10-19",
-  "instruction_commit_sha": "a4c3a1abbe0401080ce03b1d2051c427916b5d95",
+  "instruction_commit_sha": "58065cc6fa6bcc575cf6032a983552ee238ae754",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
