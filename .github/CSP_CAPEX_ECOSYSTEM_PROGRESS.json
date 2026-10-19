@@ -2972,6 +2972,43 @@
           "limits": "Indexed article body read;direct fetch unavailable.AI-translated reporting,not issuer qualification or commercial confirmation.No validated volumes,price,allocation or earnings revision.No new material alert."
         }
       ]
+    },
+    {
+      "fingerprint": "fadu-q3-2026-preliminary-operating-profit-and-margin-conversion-20261019",
+      "event_date": "2026-10-19",
+      "discovered_date": "2026-10-19",
+      "companies": [
+        "FADU (440110.KQ), outside active universe"
+      ],
+      "type": "preliminary_consolidated_results_reproduced_issuer_regulator_direct_body_unavailable",
+      "facts": {
+        "currency": "KRW",
+        "unit": "million",
+        "period": "2026-07-01/2026-09-30",
+        "q3_revenue": 143561,
+        "q2_revenue": 73174,
+        "q3_operating_profit": 36269,
+        "q2_operating_profit": 16224,
+        "reported_revenue_qoq_percent": 96.2,
+        "reported_operating_profit_qoq_percent": 123.6,
+        "derived_operating_margin_percent": {
+          "q2": 22.1718,
+          "q3": 25.2638,
+          "increase_percentage_points": 3.092
+        },
+        "relationship": "Issuer product page identifies enterprise SSD controllers for AI infrastructure and hyperscale data centers.Original Korean reporting attributes demand growth to enterpriseSSD procurement.",
+        "maturity": "K-IFRS consolidated preliminary results,external review incomplete.Net income fields blank,not zero;cash conversion undisclosed.",
+        "limits": "DART20261019900192 numerical table reproduced by Bosoop and cross-checked with Dartbrief and original reporting.Direct DART body unavailable;issuerIR403.No authenticated institution-original consensus comparison or named incremental CSP order."
+      },
+      "sources": [
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900192",
+        "https://www.bosoop.com/disclosures/20261019900192/",
+        "https://dartbrief.com/disclosures/20261019900192",
+        "https://biz.chosun.com/en/en-it/2026/10/19/ACFILCSPTJB67IVZN6URNKEBXI/",
+        "https://search.newspim.com/news/view/20261019000714",
+        "https://www.fadu.io/product/ssd-controllers/"
+      ],
+      "status": "preliminary_profit_conversion_reported_direct_filing_and_cash_confirmation_pending"
     }
   ],
   "articles": [],
@@ -3041,12 +3078,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-19",
-      "checked_at": "2026-10-19T05:39:52Z",
-      "instruction_commit_sha": "b259b38887248067bc7ec425d29304f2626c1f2f",
+      "checked_at": "2026-10-19T07:05:39Z",
+      "instruction_commit_sha": "21ebee0ea0c766b6adc5ed92ab437d43ec167709",
       "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh14grouped discovery queries include98 active names;core6 issuer indices,CSP5 landing sources and targeted ASIC/capex/outside-universe leads refreshed.Shengyi October17 preliminary profit disclosure retained as a new research candidate.No newly qualified material event or article.",
+      "scope": "All98 active names included in14fresh grouped discovery queries.Core6 issuer indices andCSP5 landing sources refreshed.FADU outside-universe preliminary result reproductions add one material profit-conversion event and research candidate.No new article.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -3059,23 +3096,20 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://www.trendforce.com/news/2026/10/19/news-mediateks-google-tpu-v9-shipments-may-slip-to-1q28-asic-race-heats-up-as-taiwan-firms-eye-new-opportunities/",
-        "https://www.syst.com.cn/cn/gsgg/list_45.aspx",
-        "https://www.syst.com.cn/Ajax/Download.aspx?name=2026%2F10%2F20261017154400215.pdf",
-        "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12645926&stockid=600183",
-        "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-10/2026-10-17/12645926.PDF",
-        "https://www.viking.com.tw/zh-TW/investors/Investors-T0301.html",
-        "https://www.viking.com.tw/Templates/att/Law%20says_115-1.pdf?lng=zh-TW"
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900192",
+        "https://www.bosoop.com/disclosures/20261019900192/",
+        "https://dartbrief.com/disclosures/20261019900192",
+        "https://biz.chosun.com/en/en-it/2026/10/19/ACFILCSPTJB67IVZN6URNKEBXI/",
+        "https://search.newspim.com/news/view/20261019000714",
+        "https://www.fadu.io/product/ssd-controllers/"
       ],
       "source_limits": [
-        "All mandatory instruction files and directly related specifications fetched completely at pinned default-main b259b38887248067bc7ec425d29304f2626c1f2f.AGENTS combined display truncation resolved by two complete smaller segment reads.Full progress JSON parsed and all event fingerprints plus candidate records searched for dedup.Three related articles fetched at the same commit with unchanged blobs;latest repository tree checked.",
-        "Latest alpha-quant main f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV 88422949d38165d4757a1e24c27f8662bede14c1 confirm98 active names included in14fresh grouped discovery queries.This is not98 individual current issuer/financial audits.Historical primary50,pending48,monthly24,partner4,regulator3,product16 unchanged;missing hits are not evidence of no event.",
-        "Core6 visible issuer indices refreshed,including TSMC Q3 actual/Q4 guidance and MediaTek September30,NVIDIA October17,AMD October12,Broadcom October13,Marvell October13 entries.No newly authenticated TPU design,NRE,renewal,production economics,procurement allocation or earnings revision established.",
-        "CSP5 landing indices and targeted reporting refreshed.Microsoft lists October28 earnings;Amazon40line/Alphabet72line outputs remain navigation-only.Meta and Oracle news pages do not establish complete budget,leases,accepted deployment,utilization or ROI.Alphabet annual-capex/full-lease baseline remains incomplete.",
-        "October19 TrendForce TPU article repeats existing Humufish three-week design revision,November samples,January2027 tape-out,Q2 production-version tape-out and Q1 2028 shipment reporting,plus existing EMIB-T and ByteDance leads.Not a new issuer-confirmed delay or award.Nscale withdrawal reporting overlaps the prior event.",
-        "Shengyi outside-universe October17 announcement2026-057 authenticated by issuer index;two-page reproduction read.Direct issuer PDF download fails unsupported content type.Numeric figures remain preliminary and unaudited;October19 reprint is not a new disclosure.Investment income and cash conversion need reconciliation.No fresh consensus old/new revision or supplier displacement established.No active-universe counter or watchlist change.",
-        "Global Tek October19 cooling-order headline overlaps the existing October1/16/17 candidate.Viking issuer115 deck contains Q1 financials and historicalAI12-percent mix,not the reported October7 update;do not treat it as current numeric confirmation.Digitimes OSAT direct body timed out and Yahoo ODM lead returned404;no substantive earnings conclusion from inaccessible bodies.",
-        "All97public events,201prior candidates,127prior screenings,articles,blockers and CSP baseline preserved.One outside-universe candidate and one screening appended.No currentquotes,valuation,targets,holdings,private investment judgment or market-flow records.Ledger-only JSON/source verification;no articlelint/build/deploy/publication-success claim."
+        "Mandatory instruction/specification files fully retrieved at pinned default-main 21ebee0ea0c766b6adc5ed92ab437d43ec167709.Their blobs match the complete texts read in the immediately preceding visible turn;no changed instruction inferred.Entire progress JSON retrieved/parsed,all events/candidates searched for dedup.Latest tree and three same-domain article blobs fetched and unchanged.",
+        "Fresh alpha-quant default-main f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV 88422949d38165d4757a1e24c27f8662bede14c1 confirm98 active names;14fresh grouped discovery queries are not98 individual current filings audits.Historical primary50,pending48,monthly24,partner4,regulator3,product16 unchanged.FADU outside universe;no watchlist edit.",
+        "TSMC Q3 actual/Q4 guidance and visible MediaTek,NVIDIA,AMD,Broadcom,Marvell news entries refreshed.No newly authenticated TPU design,NRE,renewal,volume economics or Google procurement allocation established.October19 Humufish/ByteDance reports overlap existing events;recency filters also returned historical material.",
+        "CSP5 landing indices and targeted reporting refreshed.Microsoft October28 earnings entry read.Amazon40line/Alphabet72line outputs remain navigation-only.Meta/Oracle product-news pages are not complete capex,lease,accepted deployment,utilization or monetization audits.Alphabet annual-capex/full-lease baseline remains incomplete.",
+        "FADU consolidated preliminary Q3/Q2 numeric table and review caveat read in disclosure reproductions and original Korean reporting.DART original failed timeout/inaccessible;issuerIR403,issuer press-room shell lacks numeric releases.Primary product page establishes enterpriseSSD/AI-hyperscale application only.No direct filing verification,net-income/cash conversion or broad supplier earnings conclusion claimed.",
+        "One public event and one research candidate appended;all prior97 events,202candidates,128screenings,articles,blockers,CSP baseline and historical counts preserved.No currentquote,valuation,target,holdings,market-flow or private investment judgment written.Ledger-only JSON preservation and source readback;no articlelint/build/deploy/publication-success claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -6984,6 +7018,42 @@
           "Shengyi outside-universe October17 announcement2026-057 authenticated by issuer index;two-page reproduction read.Direct issuer PDF download fails unsupported content type.Numeric figures remain preliminary and unaudited;October19 reprint is not a new disclosure.Investment income and cash conversion need reconciliation.No fresh consensus old/new revision or supplier displacement established.No active-universe counter or watchlist change.",
           "Global Tek October19 cooling-order headline overlaps the existing October1/16/17 candidate.Viking issuer115 deck contains Q1 financials and historicalAI12-percent mix,not the reported October7 update;do not treat it as current numeric confirmation.Digitimes OSAT direct body timed out and Yahoo ODM lead returned404;no substantive earnings conclusion from inaccessible bodies.",
           "All97public events,201prior candidates,127prior screenings,articles,blockers and CSP baseline preserved.One outside-universe candidate and one screening appended.No currentquotes,valuation,targets,holdings,private investment judgment or market-flow records.Ledger-only JSON/source verification;no articlelint/build/deploy/publication-success claim."
+        ]
+      },
+      {
+        "date": "2026-10-19",
+        "checked_at": "2026-10-19T07:05:39Z",
+        "instruction_commit_sha": "21ebee0ea0c766b6adc5ed92ab437d43ec167709",
+        "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "All98 active names included in14fresh grouped discovery queries.Core6 issuer indices andCSP5 landing sources refreshed.FADU outside-universe preliminary result reproductions add one material profit-conversion event and research candidate.No new article.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900192",
+          "https://www.bosoop.com/disclosures/20261019900192/",
+          "https://dartbrief.com/disclosures/20261019900192",
+          "https://biz.chosun.com/en/en-it/2026/10/19/ACFILCSPTJB67IVZN6URNKEBXI/",
+          "https://search.newspim.com/news/view/20261019000714",
+          "https://www.fadu.io/product/ssd-controllers/"
+        ],
+        "source_limits": [
+          "Mandatory instruction/specification files fully retrieved at pinned default-main 21ebee0ea0c766b6adc5ed92ab437d43ec167709.Their blobs match the complete texts read in the immediately preceding visible turn;no changed instruction inferred.Entire progress JSON retrieved/parsed,all events/candidates searched for dedup.Latest tree and three same-domain article blobs fetched and unchanged.",
+          "Fresh alpha-quant default-main f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV 88422949d38165d4757a1e24c27f8662bede14c1 confirm98 active names;14fresh grouped discovery queries are not98 individual current filings audits.Historical primary50,pending48,monthly24,partner4,regulator3,product16 unchanged.FADU outside universe;no watchlist edit.",
+          "TSMC Q3 actual/Q4 guidance and visible MediaTek,NVIDIA,AMD,Broadcom,Marvell news entries refreshed.No newly authenticated TPU design,NRE,renewal,volume economics or Google procurement allocation established.October19 Humufish/ByteDance reports overlap existing events;recency filters also returned historical material.",
+          "CSP5 landing indices and targeted reporting refreshed.Microsoft October28 earnings entry read.Amazon40line/Alphabet72line outputs remain navigation-only.Meta/Oracle product-news pages are not complete capex,lease,accepted deployment,utilization or monetization audits.Alphabet annual-capex/full-lease baseline remains incomplete.",
+          "FADU consolidated preliminary Q3/Q2 numeric table and review caveat read in disclosure reproductions and original Korean reporting.DART original failed timeout/inaccessible;issuerIR403,issuer press-room shell lacks numeric releases.Primary product page establishes enterpriseSSD/AI-hyperscale application only.No direct filing verification,net-income/cash conversion or broad supplier earnings conclusion claimed.",
+          "One public event and one research candidate appended;all prior97 events,202candidates,128screenings,articles,blockers,CSP baseline and historical counts preserved.No currentquote,valuation,target,holdings,market-flow or private investment judgment written.Ledger-only JSON preservation and source readback;no articlelint/build/deploy/publication-success claim."
         ]
       }
     ],
@@ -12558,6 +12628,30 @@
         "Verify customer allocations and pricing durability;do not infer Taiwan supplier displacement from aggregate profit growth."
       ],
       "publication_status": "research_candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "fadu-enterprise-ssd-controller-volume-to-retained-profit-and-cash",
+      "date": "2026-10-19",
+      "instruction_commit_sha": "21ebee0ea0c766b6adc5ed92ab437d43ec167709",
+      "companies": [
+        "FADU (440110.KQ), outside active universe"
+      ],
+      "sources": [
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900192",
+        "https://www.bosoop.com/disclosures/20261019900192/",
+        "https://dartbrief.com/disclosures/20261019900192",
+        "https://biz.chosun.com/en/en-it/2026/10/19/ACFILCSPTJB67IVZN6URNKEBXI/",
+        "https://search.newspim.com/news/view/20261019000714",
+        "https://www.fadu.io/product/ssd-controllers/"
+      ],
+      "stage": "october19_preliminary_result_reproductions_and_issuer_product_relationship_checked",
+      "event_fingerprint": "fadu-q3-2026-preliminary-operating-profit-and-margin-conversion-20261019",
+      "questions": [
+        "Reconcile final results,receivables,customer concentration and operating cash before treating reported profit as durable earnings.",
+        "Separate cumulative new contract awards from remaining backlog and accepted shipments;verify cancellation and payment terms.",
+        "Track company-reported year-end Gen6 sales plan and2028Gen7 samples separately from currentGen5 revenue.Demand,qualification or funding setbacks could prevent commercialization."
+      ],
+      "publication_status": "material_evidence_identified_no_article"
     }
   ],
   "blockers": [
@@ -12577,7 +12671,7 @@
     }
   ],
   "last_research_date": "2026-10-19",
-  "instruction_commit_sha": "b259b38887248067bc7ec425d29304f2626c1f2f",
+  "instruction_commit_sha": "21ebee0ea0c766b6adc5ed92ab437d43ec167709",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
