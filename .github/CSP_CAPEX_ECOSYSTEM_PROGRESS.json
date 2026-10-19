@@ -3078,12 +3078,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-19",
-      "checked_at": "2026-10-19T07:05:39Z",
-      "instruction_commit_sha": "21ebee0ea0c766b6adc5ed92ab437d43ec167709",
+      "checked_at": "2026-10-19T07:50:47Z",
+      "instruction_commit_sha": "0fd81e5509c281d965a61320c558485c8b138876",
       "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "All98 active names included in14fresh grouped discovery queries.Core6 issuer indices andCSP5 landing sources refreshed.FADU outside-universe preliminary result reproductions add one material profit-conversion event and research candidate.No new article.",
+      "scope": "Fresh14grouped queries include98active names.Core6/CSP5 sources refreshed.Alphabet historical lease baseline supplemented from SEC10-Q and Dynapack historical preliminary Q3/BBU candidate added.No newly qualified material event or article.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -3096,20 +3096,22 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900192",
-        "https://www.bosoop.com/disclosures/20261019900192/",
-        "https://dartbrief.com/disclosures/20261019900192",
-        "https://biz.chosun.com/en/en-it/2026/10/19/ACFILCSPTJB67IVZN6URNKEBXI/",
-        "https://search.newspim.com/news/view/20261019000714",
-        "https://www.fadu.io/product/ssd-controllers/"
+        "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/0001652044-26-000071-index.html",
+        "https://news.cnyes.com/news/id/6632242",
+        "https://pchome.megatime.com.tw/m/news/cat2/20261016/9700003211202610161.html",
+        "https://www.dynapack.com.tw/h/data?cat=3809&key=03w18&set=24",
+        "https://www.ft.com/content/35cc5cc6-f9b6-49cc-8fc2-bd61e09c8c40",
+        "https://www.ft.com/content/5970614a-b1f7-4b4e-b1e5-6038e1dde654"
       ],
       "source_limits": [
-        "Mandatory instruction/specification files fully retrieved at pinned default-main 21ebee0ea0c766b6adc5ed92ab437d43ec167709.Their blobs match the complete texts read in the immediately preceding visible turn;no changed instruction inferred.Entire progress JSON retrieved/parsed,all events/candidates searched for dedup.Latest tree and three same-domain article blobs fetched and unchanged.",
-        "Fresh alpha-quant default-main f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV 88422949d38165d4757a1e24c27f8662bede14c1 confirm98 active names;14fresh grouped discovery queries are not98 individual current filings audits.Historical primary50,pending48,monthly24,partner4,regulator3,product16 unchanged.FADU outside universe;no watchlist edit.",
-        "TSMC Q3 actual/Q4 guidance and visible MediaTek,NVIDIA,AMD,Broadcom,Marvell news entries refreshed.No newly authenticated TPU design,NRE,renewal,volume economics or Google procurement allocation established.October19 Humufish/ByteDance reports overlap existing events;recency filters also returned historical material.",
-        "CSP5 landing indices and targeted reporting refreshed.Microsoft October28 earnings entry read.Amazon40line/Alphabet72line outputs remain navigation-only.Meta/Oracle product-news pages are not complete capex,lease,accepted deployment,utilization or monetization audits.Alphabet annual-capex/full-lease baseline remains incomplete.",
-        "FADU consolidated preliminary Q3/Q2 numeric table and review caveat read in disclosure reproductions and original Korean reporting.DART original failed timeout/inaccessible;issuerIR403,issuer press-room shell lacks numeric releases.Primary product page establishes enterpriseSSD/AI-hyperscale application only.No direct filing verification,net-income/cash conversion or broad supplier earnings conclusion claimed.",
-        "One public event and one research candidate appended;all prior97 events,202candidates,128screenings,articles,blockers,CSP baseline and historical counts preserved.No currentquote,valuation,target,holdings,market-flow or private investment judgment written.Ledger-only JSON preservation and source readback;no articlelint/build/deploy/publication-success claim."
+        "Mandatory instruction/specification files fully fetched at pinned main 0fd81e5509c281d965a61320c558485c8b138876;blobs match complete texts already read in visible context.Full progress JSON parsed and event/candidate records searched for dedup;latest tree and three related same-domain articles retrieved at unchanged blobs.No missing/truncated source instruction.",
+        "Latest alpha-quant main f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV 88422949d38165d4757a1e24c27f8662bede14c1 confirm98 active names.All included in14fresh grouped queries,not98 current individual filings audits.Historical primary50,pending48,monthly24,partner4,regulator3,product16 unchanged.Dynapack outside active universe;no watchlist change.",
+        "Core6 visible issuer entries refreshed.TSMC Q3/Q4 guidance unchanged;MediaTekSeptember30,NVIDIAOctober17,AMDOctober12,BroadcomOctober13,MarvellOctober13 news indices do not establish new TPU design,NRE,renewal,procurement allocation or profit revision.FADU event already registered and notified;no duplicate.",
+        "CSP5 landing sources plus targeted reporting refreshed.MicrosoftOctober28 earnings entry unchanged;Amazon40line/Alphabet72line landing outputs remain navigation-only.Meta/Oracle product-news indices are not complete financial audits.Alphabet July23 SEC10-Q Note4/5 lease passages now read directly and appended as historical baseline;annual guidance original still pending.No uncommenced lease treated as delivered capacity or added to annual cash capex.",
+        "FT Nscale and data-center bond leads resolve to subscription walls;full originals not read.No latest bond-price,spread or independent termination-document confirmation claimed.October19 Fulltech,Shengyi and TPU stories overlap prior records;no repeated material alert.",
+        "Dynapack October16 preliminary notice numeric bodies read in two reproductions.Issuer BBU/UPS/ESS product catalog read;Q3 financial report body unavailable and July29deck timeout.October19 article describes BBU shipment adjustment and IT weakness but no verified new customer award or profit attribution.New historical candidate only;no active-company primary counter increase.",
+        "All98 prior events,203prior candidates,129prior screenings,articles and blockers preserved.One candidate,one Alphabet historical baseline verification and one screening appended.CSP previous fields/verification history retained.No currentquotes,valuation,targets,holdings,private investment judgment or market-flow records.Ledger-only JSON preservation and remote source readback;no articlelint/build/deploy/publication-success claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -7054,6 +7056,44 @@
           "CSP5 landing indices and targeted reporting refreshed.Microsoft October28 earnings entry read.Amazon40line/Alphabet72line outputs remain navigation-only.Meta/Oracle product-news pages are not complete capex,lease,accepted deployment,utilization or monetization audits.Alphabet annual-capex/full-lease baseline remains incomplete.",
           "FADU consolidated preliminary Q3/Q2 numeric table and review caveat read in disclosure reproductions and original Korean reporting.DART original failed timeout/inaccessible;issuerIR403,issuer press-room shell lacks numeric releases.Primary product page establishes enterpriseSSD/AI-hyperscale application only.No direct filing verification,net-income/cash conversion or broad supplier earnings conclusion claimed.",
           "One public event and one research candidate appended;all prior97 events,202candidates,128screenings,articles,blockers,CSP baseline and historical counts preserved.No currentquote,valuation,target,holdings,market-flow or private investment judgment written.Ledger-only JSON preservation and source readback;no articlelint/build/deploy/publication-success claim."
+        ]
+      },
+      {
+        "date": "2026-10-19",
+        "checked_at": "2026-10-19T07:50:47Z",
+        "instruction_commit_sha": "0fd81e5509c281d965a61320c558485c8b138876",
+        "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh14grouped queries include98active names.Core6/CSP5 sources refreshed.Alphabet historical lease baseline supplemented from SEC10-Q and Dynapack historical preliminary Q3/BBU candidate added.No newly qualified material event or article.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm",
+          "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/0001652044-26-000071-index.html",
+          "https://news.cnyes.com/news/id/6632242",
+          "https://pchome.megatime.com.tw/m/news/cat2/20261016/9700003211202610161.html",
+          "https://www.dynapack.com.tw/h/data?cat=3809&key=03w18&set=24",
+          "https://www.ft.com/content/35cc5cc6-f9b6-49cc-8fc2-bd61e09c8c40",
+          "https://www.ft.com/content/5970614a-b1f7-4b4e-b1e5-6038e1dde654"
+        ],
+        "source_limits": [
+          "Mandatory instruction/specification files fully fetched at pinned main 0fd81e5509c281d965a61320c558485c8b138876;blobs match complete texts already read in visible context.Full progress JSON parsed and event/candidate records searched for dedup;latest tree and three related same-domain articles retrieved at unchanged blobs.No missing/truncated source instruction.",
+          "Latest alpha-quant main f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV 88422949d38165d4757a1e24c27f8662bede14c1 confirm98 active names.All included in14fresh grouped queries,not98 current individual filings audits.Historical primary50,pending48,monthly24,partner4,regulator3,product16 unchanged.Dynapack outside active universe;no watchlist change.",
+          "Core6 visible issuer entries refreshed.TSMC Q3/Q4 guidance unchanged;MediaTekSeptember30,NVIDIAOctober17,AMDOctober12,BroadcomOctober13,MarvellOctober13 news indices do not establish new TPU design,NRE,renewal,procurement allocation or profit revision.FADU event already registered and notified;no duplicate.",
+          "CSP5 landing sources plus targeted reporting refreshed.MicrosoftOctober28 earnings entry unchanged;Amazon40line/Alphabet72line landing outputs remain navigation-only.Meta/Oracle product-news indices are not complete financial audits.Alphabet July23 SEC10-Q Note4/5 lease passages now read directly and appended as historical baseline;annual guidance original still pending.No uncommenced lease treated as delivered capacity or added to annual cash capex.",
+          "FT Nscale and data-center bond leads resolve to subscription walls;full originals not read.No latest bond-price,spread or independent termination-document confirmation claimed.October19 Fulltech,Shengyi and TPU stories overlap prior records;no repeated material alert.",
+          "Dynapack October16 preliminary notice numeric bodies read in two reproductions.Issuer BBU/UPS/ESS product catalog read;Q3 financial report body unavailable and July29deck timeout.October19 article describes BBU shipment adjustment and IT weakness but no verified new customer award or profit attribution.New historical candidate only;no active-company primary counter increase.",
+          "All98 prior events,203prior candidates,129prior screenings,articles and blockers preserved.One candidate,one Alphabet historical baseline verification and one screening appended.CSP previous fields/verification history retained.No currentquotes,valuation,targets,holdings,private investment judgment or market-flow records.Ledger-only JSON preservation and remote source readback;no articlelint/build/deploy/publication-success claim."
         ]
       }
     ],
@@ -12652,6 +12692,42 @@
         "Track company-reported year-end Gen6 sales plan and2028Gen7 samples separately from currentGen5 revenue.Demand,qualification or funding setbacks could prevent commercialization."
       ],
       "publication_status": "material_evidence_identified_no_article"
+    },
+    {
+      "key": "dynapack-bbu-mix-versus-it-demand-and-preliminary-profit-conversion",
+      "date": "2026-10-19",
+      "event_date": "2026-10-16",
+      "instruction_commit_sha": "0fd81e5509c281d965a61320c558485c8b138876",
+      "companies": [
+        "Dynapack / 順達 (3211), outside active universe"
+      ],
+      "sources": [
+        "https://news.cnyes.com/news/id/6632242",
+        "https://pchome.megatime.com.tw/m/news/cat2/20261016/9700003211202610161.html",
+        "https://www.dynapack.com.tw/h/Data?key=iczce&set=9",
+        "https://www.dynapack.com.tw/h/data?cat=3809&key=03w18&set=24",
+        "https://www.nstock.tw/news/article_c?id=20261019-046704670000"
+      ],
+      "stage": "october16_preliminary_q3_notice_reproductions_and_issuer_bbu_catalog_read_current_mix_margin_and_cash_pending",
+      "facts": {
+        "announcement_date": "2026-10-16",
+        "currency": "TWD",
+        "unit": "thousand",
+        "period": "2026-Q3",
+        "revenue": 3681630,
+        "operating_profit": 394833,
+        "pretax_profit": 430265,
+        "net_profit": 335913,
+        "basic_eps_twd": 2.33,
+        "accounting_status": "Self-reported consolidated figures,not accountant-reviewed;October19 coverage is not a new disclosure.",
+        "relationship": "Issuer catalog confirms BBU/UPS/ESS application.Reported BBU shipment adjustments and weak IT demand may offset nonIT growth;not quantified in the notice.",
+        "limits": "No product-specific retained margin,cash flow,named CSP award or authenticated new forecast revision.Q3 issuer financial-report link lacks downloadable body;July29presentation timed out.Do not attribute all consolidated profit to AI."
+      },
+      "questions": [
+        "Reconcile final quarterly statements,BBU versus IT mix,product margins,receivables and cash.",
+        "Verify reported Q4 high-power product/customers and2027high-voltage roadmap against issuer originals;separate planned qualification from accepted orders."
+      ],
+      "publication_status": "historical_research_candidate_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -12671,7 +12747,7 @@
     }
   ],
   "last_research_date": "2026-10-19",
-  "instruction_commit_sha": "21ebee0ea0c766b6adc5ed92ab437d43ec167709",
+  "instruction_commit_sha": "0fd81e5509c281d965a61320c558485c8b138876",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
@@ -12736,6 +12812,36 @@
           "atm_shares_sold_as_of_june_30_2026": false
         },
         "limits": "July22 historical disclosure,not new October financing.Equity proceeds are for general corporate purposes including AI infrastructure/global compute;not all proceeds assigned to AI or supplier orders.Notes proceeds are for general corporate purposes.ATM ceiling is not cash raised;stated primary purpose is employee-equity tax obligations.No annual capex outlook,uncommenced lease commitments,project allocation or latest financing completion established."
+      },
+      {
+        "date": "2026-10-19",
+        "checked_at": "2026-10-19T07:50:47Z",
+        "instruction_commit_sha": "0fd81e5509c281d965a61320c558485c8b138876",
+        "company": "Alphabet",
+        "source": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm",
+        "source_date": "2026-07-23",
+        "period_end": "2026-06-30",
+        "stage": "historical_q2_10q_note4_lease_commitments_and_note5_double_counting_scope_primary_verified_annual_guidance_original_pending",
+        "currency": "USD",
+        "unit": "million",
+        "lease_baseline": {
+          "operating_lease_undiscounted_payments": 21333,
+          "finance_lease_undiscounted_payments": 2920,
+          "operating_lease_recorded_liability": 18037,
+          "finance_lease_recorded_liability": 2590,
+          "uncommenced_future_payments": 85200,
+          "expected_commencement_years": [
+            2026,
+            2031
+          ],
+          "noncancelable_terms_years": [
+            1,
+            26
+          ],
+          "separately_disclosed_short_term_noncancelable_commitment": 5800,
+          "short_term_expected_start": "2026-Q3"
+        },
+        "limits": "July23 filing,not October19 new spending or accepted deployment.Uncommenced leases primarily data centers;not annual cash capex or all AI.Invoice/commencement and cash payment differ.Data-center VIE finance leases are already included inNote4,not incremental sums.Additional short-term commitment kept separate,no combined capex total.Annual2026guidance original and current project allocations still pending;June180-190bn presentation cannot substitute for later guidance."
       }
     ]
   }
