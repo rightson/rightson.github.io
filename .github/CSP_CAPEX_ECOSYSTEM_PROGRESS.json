@@ -3133,12 +3133,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-20",
-      "checked_at": "2026-10-19T17:28:04Z",
-      "instruction_commit_sha": "f42816a748002ced6e28e8c6b0d76b00cb2b0279",
+      "checked_at": "2026-10-19T17:57:04Z",
+      "instruction_commit_sha": "138ff3f381e53eed71471825491aa7079480670e",
       "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "14fresh grouped discovery queries covering98active names;core6/CSP5 index/source checks;out-of-universe HPE primary historical order/guidance backfill plus credit-visibility lead.One new historical event,two candidates,no article.",
+      "scope": "14 fresh grouped discovery queries covering 98 active names; core6/CSP5 source/index checks and outside-universe leads. No new material public event, candidate or article.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -3151,20 +3151,16 @@
         "https://abc.xyz/investor/",
         "https://investor.atmeta.com/home/default.aspx",
         "https://www.oracle.com/news/",
-        "https://www.hpe.com/us/en/newsroom/press-release/2026/09/hpe-secures-its-first-amd-helios-order-in-12-billion-deal-with-vultr.html",
-        "https://www.hpe.com/us/en/newsroom/press-release/2026/09/hpe-to-outline-networking-priorities-for-long-term-value-creation.html",
-        "https://investors.hpe.com/~/media/Files/H/HP-Enterprise-IR/documents/hpe-networking-investor-day-transcript-09-30-2026.pdf",
-        "https://investors.hpe.com/~/media/Files/H/HP-Enterprise-IR/documents/q3-2026/q3-2026-transcript.pdf",
-        "https://www.reuters.com/business/top-hyperscalers-likely-have-more-ai-linked-debt-than-now-known-sp-global-warns-2026-10-19/",
-        "https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/10/us-ig-credit-no-sector-is-an-island"
+        "https://www.lgcorp.com/media/release/30644",
+        "https://www.zdtco.com/en/news/Financials"
       ],
       "source_limits": [
-        "All required pinned instructions/specifications/legacy references and3recent related articles fully read atf42816a748002ced6e28e8c6b0d76b00cb2b0279.Progress exact blob1b9317a629ae5b9df82b201bec64dd1002bad7a9 parsed;recursive tree untruncated.No required-instruction failure.",
-        "Fresh alpha-quant default headf43ed0cd5d57d28c50b924f2b3614d4189eae69f CSV88422949d38165d4757a1e24c27f8662bede14c1 has98active names.Grouped discovery not98latest issuer audits.Primary50,pending48,monthly24,partner4,regulator3,product16 unchanged.",
-        "TSMCQ3guidance,MTKSeptember30pressroom,NVIDIAOctober19media blog,AMDHelionOctober12 andMarvellOctober13indices continue baseline.Broadcomindex inaccessible twice this run,not claimed refreshed.CSP5landing pages refreshed but sparse/dynamic pages not full filing coverage.",
-        "HPESept30USD1.2billion customer order andFY27Networking growth revision absent from priorledger.Primary announcements andSeptember2/30transcript sections read;comparison explicitly separates new revenue guidance from already-guided margin.Full-rack working-capital and back-end timing counterevidence retained.No current quotes or valuation public.",
-        "S&Pqualitative liability-visibility warning candidateonly:no quantified additional debt,rating action or equipment cut.Reutersoriginal read;S&Pprimary market commentary readable;regulatoryFAQ titleonly,FTpaywall retained.LITEONQ2source retry502,coveragecredit unchanged.Grouped results mostly historicalmonthly,broker/price recaps.",
-        "Preserved99prior events,207prior candidates,138prior screenings,articles,blockers andbaseline;added1event,2candidates,1screening.No Bfund-flow/privateholdings/quotes inpublicledger.JSON-only change;no article/build/deployclaim.Exact remote readback required."
+        "All required pinned instructions/specifications/legacy references and three recent related articles fully read at 138ff3f381e53eed71471825491aa7079480670e. Exact progress blob 1517ad9a0689f02badb55c1f4c11e68443d4bd9a parsed; recursive tree untruncated. No required-instruction failure.",
+        "Fresh alpha-quant head f43ed0cd5d57d28c50b924f2b3614d4189eae69f; CSV blob 88422949d38165d4757a1e24c27f8662bede14c1; 98 active names. Grouped discovery is not 98 current individual issuer audits. Primary50/pending48, monthly24, partner4, regulator3 and product16 unchanged.",
+        "Core6/CSP5 landing pages checked. Broadcom index failed to fetch and is not claimed refreshed. Other sparse/dynamic landing pages do not constitute full filing coverage. NVIDIA October19 media blog, AMD October12 Helion and Marvell October13 platform index items did not supply a distinct earnings/order revision.",
+        "HPE September30 historical order/guidance, AWS rack financing, S&P qualitative credit-visibility warning, TPU/GlobalFoundries and LG/AIR cooling contract leads match existing events/candidates; no distinct new contracted award, quantified incremental credit action or revenue acceptance evidence established. Price reactions and repost timestamps not new fundamentals.",
+        "Zhen Ding 4958 first-half AI product-mix lead indexed at company source, but direct article and financial-news index failed to fetch (index 502). Original body not verified; no primary coverage credit, investment conclusion or fresh event. Grouped results otherwise historical monthly disclosures, company indices and broker/price recaps.",
+        "Preserved 100 events, 209 candidates, all prior139 screenings, articles, blockers and CSP baseline. Added one screening only. No private B fund-flow/holdings/quotes/valuation in public ledger. JSON-only update; no article/build/deploy claim. Exact remote readback required."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -7446,6 +7442,38 @@
           "HPESept30USD1.2billion customer order andFY27Networking growth revision absent from priorledger.Primary announcements andSeptember2/30transcript sections read;comparison explicitly separates new revenue guidance from already-guided margin.Full-rack working-capital and back-end timing counterevidence retained.No current quotes or valuation public.",
           "S&Pqualitative liability-visibility warning candidateonly:no quantified additional debt,rating action or equipment cut.Reutersoriginal read;S&Pprimary market commentary readable;regulatoryFAQ titleonly,FTpaywall retained.LITEONQ2source retry502,coveragecredit unchanged.Grouped results mostly historicalmonthly,broker/price recaps.",
           "Preserved99prior events,207prior candidates,138prior screenings,articles,blockers andbaseline;added1event,2candidates,1screening.No Bfund-flow/privateholdings/quotes inpublicledger.JSON-only change;no article/build/deployclaim.Exact remote readback required."
+        ]
+      },
+      {
+        "date": "2026-10-20",
+        "checked_at": "2026-10-19T17:57:04Z",
+        "instruction_commit_sha": "138ff3f381e53eed71471825491aa7079480670e",
+        "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "14 fresh grouped discovery queries covering 98 active names; core6/CSP5 source/index checks and outside-universe leads. No new material public event, candidate or article.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://investor.atmeta.com/home/default.aspx",
+          "https://www.oracle.com/news/",
+          "https://www.lgcorp.com/media/release/30644",
+          "https://www.zdtco.com/en/news/Financials"
+        ],
+        "source_limits": [
+          "All required pinned instructions/specifications/legacy references and three recent related articles fully read at 138ff3f381e53eed71471825491aa7079480670e. Exact progress blob 1517ad9a0689f02badb55c1f4c11e68443d4bd9a parsed; recursive tree untruncated. No required-instruction failure.",
+          "Fresh alpha-quant head f43ed0cd5d57d28c50b924f2b3614d4189eae69f; CSV blob 88422949d38165d4757a1e24c27f8662bede14c1; 98 active names. Grouped discovery is not 98 current individual issuer audits. Primary50/pending48, monthly24, partner4, regulator3 and product16 unchanged.",
+          "Core6/CSP5 landing pages checked. Broadcom index failed to fetch and is not claimed refreshed. Other sparse/dynamic landing pages do not constitute full filing coverage. NVIDIA October19 media blog, AMD October12 Helion and Marvell October13 platform index items did not supply a distinct earnings/order revision.",
+          "HPE September30 historical order/guidance, AWS rack financing, S&P qualitative credit-visibility warning, TPU/GlobalFoundries and LG/AIR cooling contract leads match existing events/candidates; no distinct new contracted award, quantified incremental credit action or revenue acceptance evidence established. Price reactions and repost timestamps not new fundamentals.",
+          "Zhen Ding 4958 first-half AI product-mix lead indexed at company source, but direct article and financial-news index failed to fetch (index 502). Original body not verified; no primary coverage credit, investment conclusion or fresh event. Grouped results otherwise historical monthly disclosures, company indices and broker/price recaps.",
+          "Preserved 100 events, 209 candidates, all prior139 screenings, articles, blockers and CSP baseline. Added one screening only. No private B fund-flow/holdings/quotes/valuation in public ledger. JSON-only update; no article/build/deploy claim. Exact remote readback required."
         ]
       }
     ],
@@ -13242,7 +13270,7 @@
     }
   ],
   "last_research_date": "2026-10-20",
-  "instruction_commit_sha": "f42816a748002ced6e28e8c6b0d76b00cb2b0279",
+  "instruction_commit_sha": "138ff3f381e53eed71471825491aa7079480670e",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
