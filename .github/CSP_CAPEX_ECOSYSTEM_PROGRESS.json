@@ -3016,6 +3016,26 @@
         "https://www.fadu.io/product/ssd-controllers/"
       ],
       "status": "preliminary_profit_conversion_reported_direct_filing_and_cash_confirmation_pending"
+    },
+    {
+      "fingerprint": "amazon-early-rack-receipt-cash-versus-energization-reported-20261019",
+      "event_date": "2026-10-19",
+      "reported_underlying_period": "August-September2026",
+      "discovered_date": "2026-10-19",
+      "companies": [
+        "Amazon/AWS"
+      ],
+      "type": "public_original_reporting_cash_timing_mechanism_primary_commercial_terms_pending",
+      "sources": [
+        "https://www.businessinsider.com/amazon-220-billion-ai-bet-data-centers-spending-challenges-2026-10",
+        "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx"
+      ],
+      "facts": {
+        "baseline": "Issuer July30 Q2 release already reported trailing12-month free-cash outflow USD7.6billion and AWS sales growth37%. Those are historical results,not newly disclosed October19.",
+        "increment": "Public reporting describes earlier rack ownership/payment before energization.",
+        "limits": "Original-report evidence,not obtained executed commercial terms. No issuer-announced capex cut or validated named-supplier profit revision."
+      },
+      "status": "public_report_read_cash_timing_risk_recorded_no_article"
     }
   ],
   "articles": [],
@@ -3085,12 +3105,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-19",
-      "checked_at": "2026-10-19T14:27:00Z",
-      "instruction_commit_sha": "e049ae2af938464e24d52281b961c67ea6ead8b3",
+      "checked_at": "2026-10-19T15:29:00Z",
+      "instruction_commit_sha": "a4c3a1abbe0401080ce03b1d2051c427916b5d95",
       "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh14-query grouped discovery covers98 active names; core6/CSP5 indices and outside-universe financing/deployment searches refreshed.2 research candidates; no material alert/article.",
+      "scope": "14fresh grouped queries covering98 active names for discovery,core6/CSP5 issuer indices and out-of-universe project searches;one reported cash-timing event,no new candidate/article.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -3103,18 +3123,18 @@
         "https://abc.xyz/investor/",
         "https://investor.atmeta.com/home/default.aspx",
         "https://www.oracle.com/news/",
-        "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf",
-        "https://www.newsfilecorp.com/release/319533/Carrier-Connect-Data-Solutions-Secures-CAD-88.9-Million-FiveYear-Data-Center-Contract-for-Atlanta-Expansion",
-        "https://www.newsfilecorp.com/release/304885",
-        "https://www.globenewswire.com/news-release/2026/10/19/3383507/0/en/money-rates-and-megawatts-the-three-questions-deciding-the-ai-buildout.html"
+        "https://www.businessinsider.com/amazon-220-billion-ai-bet-data-centers-spending-challenges-2026-10",
+        "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx",
+        "https://winbond.com/hq/about-winbond/news-and-events/news/news00582.html?__locale=zh_TW",
+        "https://finance.yahoo.com/technology/ai/articles/google-next-ai-chip-running-133854381.html"
       ],
       "source_limits": [
-        "Complete pinned required instructions,specifications,legacy,recent posts and exact progress blob ac7a3bffab87193950db7b4e9c9185713590a74d read at e049ae2af938464e24d52281b961c67ea6ead8b3. No required-instruction failure.",
-        "Alpha-quant head f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV88422949d38165d4757a1e24c27f8662bede14c1 retain98 active names. Grouped discovery is not98 latest issuer audits. Distinct primary50,pending48,monthly24,partner4,regulator3,product16 unchanged; no watchlist edit.",
-        "TSMC Q3 landing page timed out twice; issuer-hosted October15 transcript recovered. Selected capex and packaging sections confirm already-recorded demand baseline,not new October19 disclosure. Other core issuer indices retrieved; no newly verified NRE,customer award or earnings revision from grouped recaps.",
-        "CSP5 issuer landing pages refreshed,not full filing audit. Budget,conditional commitments,delivery,utilization and monetization kept separate. Nscale October19 Breakingviews/FT commentary adds no verified termination document,quantified supplier loss or independent evidence beyond existing event.",
-        "Carrier first4MW contract/deposit advances July25MW LOI,but deployment future and power pass-through not retained service revenue. Host letter mainly restates prior lease; expected backstop and unfinished financing not executed credit support or accepted capacity. Neither assigned to named CSP.",
-        "Sigurd issuer page timed out; FT restricted material and unavailable originals remain limitations. All98 events,205 earlier candidates,135 earlier screenings,articles,blockers and baseline preserved;2 candidates and1 screening added. Public ledger excludes quotes,valuation,holdings and private flows. Ledger-only JSON/exact remote readback; no article lint/build/deploy/publication claim."
+        "All required pinned instructions,specifications,legacy references and recent3 related articles read at a4c3a1abbe0401080ce03b1d2051c427916b5d95. Full progress exact blob5f117bb8b47d590b628d206061e0cd23367c0b41 parsed;recursive tree untruncated. No required-instruction failure.",
+        "Alpha-quant metadata/default head f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV88422949d38165d4757a1e24c27f8662bede14c1 freshly retrieved;98 active unchanged. Grouped discovery is not98latest issuer audits. Historical primary50,pending48,monthly24,partner4,regulator3,product16 unchanged.",
+        "TSMC Q3 landing now retrieved and shows Q4 revenue52.3-54.3USD billion,gross margin65-67%,operating margin56.5-58.5%;source recovery,not newly dated guidance versus already-read October15 call. Other core issuer indices refreshed. TPUv9 recent recaps trace to existing October13GF estimate,not independent confirmation;volume-production wording must not replace production-version tapeout.",
+        "CSP5 indices refreshed,not full filing audit. Amazon original Q2 financial release rechecked as historical baseline. New public original reporting retained as cash-timing event;budget,hardware receipts,energized deployment and cloud monetization remain separate. No private document retrieved or published.",
+        "Outside-universe searches mainly revisit existing InTest,Carrier,Host and other project candidates;Roze fire-safety MOA lacks established CSP economic linkage and is not added. Winbond official Q2 body retrieved but already has primary coverage credit;not new October19 results.",
+        "Preserved98prior events,207candidates,136prior screenings,articles,blockers and baseline;appended1event and1screening. No public quotes,valuation,holdings or Bfund-flow data. Ledger-only JSON;no article/build/deploy claim. Full exact remote readback required."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -7292,6 +7312,40 @@
           "CSP5 issuer landing pages refreshed,not full filing audit. Budget,conditional commitments,delivery,utilization and monetization kept separate. Nscale October19 Breakingviews/FT commentary adds no verified termination document,quantified supplier loss or independent evidence beyond existing event.",
           "Carrier first4MW contract/deposit advances July25MW LOI,but deployment future and power pass-through not retained service revenue. Host letter mainly restates prior lease; expected backstop and unfinished financing not executed credit support or accepted capacity. Neither assigned to named CSP.",
           "Sigurd issuer page timed out; FT restricted material and unavailable originals remain limitations. All98 events,205 earlier candidates,135 earlier screenings,articles,blockers and baseline preserved;2 candidates and1 screening added. Public ledger excludes quotes,valuation,holdings and private flows. Ledger-only JSON/exact remote readback; no article lint/build/deploy/publication claim."
+        ]
+      },
+      {
+        "date": "2026-10-19",
+        "checked_at": "2026-10-19T15:29:00Z",
+        "instruction_commit_sha": "a4c3a1abbe0401080ce03b1d2051c427916b5d95",
+        "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "14fresh grouped queries covering98 active names for discovery,core6/CSP5 issuer indices and out-of-universe project searches;one reported cash-timing event,no new candidate/article.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://investor.atmeta.com/home/default.aspx",
+          "https://www.oracle.com/news/",
+          "https://www.businessinsider.com/amazon-220-billion-ai-bet-data-centers-spending-challenges-2026-10",
+          "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx",
+          "https://winbond.com/hq/about-winbond/news-and-events/news/news00582.html?__locale=zh_TW",
+          "https://finance.yahoo.com/technology/ai/articles/google-next-ai-chip-running-133854381.html"
+        ],
+        "source_limits": [
+          "All required pinned instructions,specifications,legacy references and recent3 related articles read at a4c3a1abbe0401080ce03b1d2051c427916b5d95. Full progress exact blob5f117bb8b47d590b628d206061e0cd23367c0b41 parsed;recursive tree untruncated. No required-instruction failure.",
+          "Alpha-quant metadata/default head f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV88422949d38165d4757a1e24c27f8662bede14c1 freshly retrieved;98 active unchanged. Grouped discovery is not98latest issuer audits. Historical primary50,pending48,monthly24,partner4,regulator3,product16 unchanged.",
+          "TSMC Q3 landing now retrieved and shows Q4 revenue52.3-54.3USD billion,gross margin65-67%,operating margin56.5-58.5%;source recovery,not newly dated guidance versus already-read October15 call. Other core issuer indices refreshed. TPUv9 recent recaps trace to existing October13GF estimate,not independent confirmation;volume-production wording must not replace production-version tapeout.",
+          "CSP5 indices refreshed,not full filing audit. Amazon original Q2 financial release rechecked as historical baseline. New public original reporting retained as cash-timing event;budget,hardware receipts,energized deployment and cloud monetization remain separate. No private document retrieved or published.",
+          "Outside-universe searches mainly revisit existing InTest,Carrier,Host and other project candidates;Roze fire-safety MOA lacks established CSP economic linkage and is not added. Winbond official Q2 body retrieved but already has primary coverage credit;not new October19 results.",
+          "Preserved98prior events,207candidates,136prior screenings,articles,blockers and baseline;appended1event and1screening. No public quotes,valuation,holdings or Bfund-flow data. Ledger-only JSON;no article/build/deploy claim. Full exact remote readback required."
         ]
       }
     ],
@@ -13034,7 +13088,7 @@
     }
   ],
   "last_research_date": "2026-10-19",
-  "instruction_commit_sha": "e049ae2af938464e24d52281b961c67ea6ead8b3",
+  "instruction_commit_sha": "a4c3a1abbe0401080ce03b1d2051c427916b5d95",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
