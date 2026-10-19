@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="875" viewBox="0 0 640 875" role="img">
+<title>One submission, one checked result</title>
+<rect width="640" height="100%" fill="#ffffff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#315e86"/></marker></defs>
+<g font-family="sans-serif" fill="#172c3d">
+<text x="32" y="42" font-size="25" font-weight="bold">One submission, one checked result</text>
+<text x="32" y="75" font-size="18" fill="#475c6d">Reference design · Tools check, engineers accept</text>
+<rect x="32" y="100" width="576" height="108" rx="12" fill="#eef5fb" stroke="#a7bfd1"/>
+<text x="52" y="130" font-size="23" font-weight="bold">1  Pin the task and inputs</text>
+<text x="52" y="161" font-size="20">RTL · test · seed · SDC · tool recipe</text>
+<text x="52" y="188" font-size="20">Method owner sets versions and criteria</text>
+<path d="M320,212 V230" stroke="#315e86" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="32" y="236" width="576" height="108" rx="12" fill="#eef5fb" stroke="#a7bfd1"/>
+<text x="52" y="266" font-size="23" font-weight="bold">2  Agent proposes a candidate</text>
+<text x="52" y="297" font-size="20">Write test or RTL patch; request tool jobs</text>
+<text x="52" y="324" font-size="20">Keep passing versions; submit each change</text>
+<path d="M320,348 V366" stroke="#315e86" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="32" y="372" width="576" height="108" rx="12" fill="#eef5fb" stroke="#a7bfd1"/>
+<text x="52" y="402" font-size="23" font-weight="bold">3  Runner executes and seals</text>
+<text x="52" y="433" font-size="20">Trace and reports share one execution</text>
+<text x="52" y="460" font-size="20">Coverage and checker use matching inputs</text>
+<path d="M320,484 V502" stroke="#315e86" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="32" y="508" width="576" height="108" rx="12" fill="#eef5fb" stroke="#a7bfd1"/>
+<text x="52" y="538" font-size="23" font-weight="bold">4  Grader reads immutable outputs</text>
+<text x="52" y="569" font-size="20">Check completeness and identity first</text>
+<text x="52" y="596" font-size="20">Record missing data, failure and timeout</text>
+<path d="M320,620 V638" stroke="#315e86" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="32" y="644" width="576" height="108" rx="12" fill="#eef5fb" stroke="#a7bfd1"/>
+<text x="52" y="674" font-size="23" font-weight="bold">5  Deliver quality and cost together</text>
+<text x="52" y="705" font-size="20">Versions · checks · CPU / license / labor</text>
+<text x="52" y="732" font-size="20">Engineer accepts through the design flow</text>
+<text x="32" y="820" font-size="17">Arrows show order, not measured timing or throughput.</text>
+<text x="608" y="855" text-anchor="end" font-size="10" fill="#475c6d">Scott Yo-Ru Chen · 2026-10-20</text>
+</g><style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#172c3d" i]{fill:#ccd8e2}[fill="#475c6d" i]{fill:#bfc7cd}[fill="#eef5fb" i]{fill:#19242d}[fill="#ffffff" i]{fill:#1b1f20}[stroke="#315e86" i]{stroke:#6d9eca}[stroke="#a7bfd1" i]{stroke:#a1bbce}}</style>
+</svg>

@@ -1,0 +1,130 @@
+{
+  "kind": "synthetic-protocol-test",
+  "llm_executed": false,
+  "eda_executed": false,
+  "producer_isolation_enforced": false,
+  "fixtures_digest": "85f3d06bfd8597dfb7fd2e125bd53a65b0065a1f2c6503b8181fd8320785c678",
+  "cases": [
+    {
+      "name": "valid",
+      "eligible": true,
+      "naive_accept": true,
+      "strict_accept": true,
+      "reasons": []
+    },
+    {
+      "name": "valid-second-value",
+      "eligible": true,
+      "naive_accept": true,
+      "strict_accept": true,
+      "reasons": []
+    },
+    {
+      "name": "bad-generated-data",
+      "eligible": false,
+      "naive_accept": true,
+      "strict_accept": false,
+      "reasons": [
+        "same_trace_check"
+      ]
+    },
+    {
+      "name": "stale-rtl",
+      "eligible": false,
+      "naive_accept": true,
+      "strict_accept": false,
+      "reasons": [
+        "input_identity"
+      ]
+    },
+    {
+      "name": "different-stimulus",
+      "eligible": false,
+      "naive_accept": true,
+      "strict_accept": false,
+      "reasons": [
+        "input_identity",
+        "execution_identity"
+      ]
+    },
+    {
+      "name": "missing-checker",
+      "eligible": false,
+      "naive_accept": true,
+      "strict_accept": false,
+      "reasons": [
+        "missing_checker"
+      ]
+    },
+    {
+      "name": "modified-after-seal",
+      "eligible": false,
+      "naive_accept": true,
+      "strict_accept": false,
+      "reasons": [
+        "content_digest",
+        "same_trace_check"
+      ]
+    },
+    {
+      "name": "timeout-with-partial-report",
+      "eligible": false,
+      "naive_accept": true,
+      "strict_accept": false,
+      "reasons": [
+        "incomplete"
+      ]
+    },
+    {
+      "name": "coverage-gap",
+      "eligible": false,
+      "naive_accept": false,
+      "strict_accept": false,
+      "reasons": [
+        "coverage"
+      ]
+    },
+    {
+      "name": "reported-failure",
+      "eligible": false,
+      "naive_accept": false,
+      "strict_accept": false,
+      "reasons": [
+        "same_trace_check"
+      ]
+    }
+  ],
+  "summary": {
+    "naive_accept": 8,
+    "naive_false_accept": 6,
+    "strict_accept": 2,
+    "strict_false_accept": 0
+  },
+  "joint_score": {
+    "functional": [
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "physical": [
+      0,
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    "qualified_ppa": 0.8,
+    "joint": 0.26666666666666666,
+    "incorrect_marginal_product": 0.35555555555555557
+  },
+  "cost_example": {
+    "attempts": 10,
+    "qualified": 2,
+    "total_core_hours": 160,
+    "core_hours_per_qualified": 80
+  }
+}
