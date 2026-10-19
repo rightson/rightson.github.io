@@ -3133,12 +3133,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-20",
-      "checked_at": "2026-10-19T20:25:27Z",
-      "instruction_commit_sha": "17d2fad0fbf2f5f8857639d09f55f51a4ba265e9",
+      "checked_at": "2026-10-19T20:45:46Z",
+      "instruction_commit_sha": "466f5b867799b67846ab4e81179a806cd9c77363",
       "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh14grouped queries covering98active names;core6/CSP5 checks;outside-universe proposed nuclear power and industrial-AI leads.Two candidates,no new qualifying event or article.",
+      "scope": "Fresh14grouped queries across98active names,core6/CSP5 primary index checks and outside-universe discovery.One new negotiation candidate and one existing candidate evidence update;no new qualifying event/article.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -3151,17 +3151,17 @@
         "https://abc.xyz/investor/",
         "https://investor.atmeta.com/home/default.aspx",
         "https://www.oracle.com/news/",
-        "https://www.aboutamazon.com/news/sustainability/amazon-nuclear-energy-indiana-x-energy-aep",
-        "https://pr.aep.com/news/releases/read/12330/AEP-Partners-with-Amazon-and-Xenergy-to-Explore-Advanced-Nuclear-Energy-in-Indiana",
-        "https://blogs.nvidia.com/blog/germany-wants-to-lead-the-world-in-industrial-ai-how-nvidia-will-help/"
+        "https://www.reuters.com/technology/nscale-anthropic-talks-45-billion-cloud-computing-deal-bloomberg-news-reports-2026-10-19/",
+        "https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=153a0218-a4aa-455e-b447-10439d02d0ea",
+        "https://investors.broadcom.com/news-releases/news-release-details/broadcom-introduces-vmware-hyperarmor-expanding-hypervisor"
       ],
       "source_limits": [
-        "All required instructions/specifications/legacy references and3recent related articles fully read at 17d2fad0fbf2f5f8857639d09f55f51a4ba265e9.Exact progress1191155ca39dceeb663be874795467623886be39 parsed;recursive tree untruncated.No required-instruction failure.",
-        "Fresh alpha-quant default headf43ed0cd5d57d28c50b924f2b3614d4189eae69f;CSV88422949d38165d4757a1e24c27f8662bede14c1;98active names.Grouped discovery not98current issuer audits.Primary50/pending48,monthly24,partner4,regulator3,product16 unchanged.",
-        "TSMCQ3guidance andMTKSeptember30pressroom remain baseline.AMDHelionOctober12,BroadcomOctober13/8 andMarvellOctober13indices refreshed.CSP5landing checks remain sparse/dynamic,not fullfiling coverage.NVIDIAOctober19German declaration/planned investments read;no quantified new contracted GPUdemand.",
-        "Amazon/AEP/X-energy960MW proposedIndiana feasibility lead:full indexedAmazonoriginal text available,direct primary/presswire/utility article fetches failed.No final plant,firm-priced PPA or near-term power-delivery assumption.Germanyplanned investments part of existingEuropecommitment,not incrementalUSD10billion.",
-        "NscaleGlomfjord,Semtech/Tower andLoughton leads matchexisting events;fresh reposts not distinct facts.Only secondary institutional upgrade/rebound discovery,no originalGoldman estimates obtained or consensus inferred.All14grouped results inspected for leads,not latestfinancial validation.",
-        "Preserved100events,211prior candidates,141prior screenings,articles,blockers andCSPbaseline.Added2candidates/1screening only.No privateBflows,holdings,quotes or valuation public.JSON-only update,no article/build/deploy claim.Exact remote readback required."
+        "All required pinned instructions/specifications,legacy reference and3recent related articles fully read;progress80aab230861d7ec2694455f37dc9708e6cf5e1ea fully parsed;recursive tree untruncated.No required instruction failure.",
+        "Fresh alpha-quant mainf43ed0cd5d57d28c50b924f2b3614d4189eae69f,CSV88422949d38165d4757a1e24c27f8662bede14c1,98active.All14query groups inspected,not98fresh issuer financial audits.Primary50/pending48,monthly24,partner4,regulator3,product16 unchanged.",
+        "TSMCQ3/Q4guidance andMTKSeptember30/August31indices unchanged.AMDlatestOctober12Helion;MarvellOctober13products/security.BroadcomdirectindexreturnedolderJuneportion whilefreshindexedissuerOctober13HyperArmor/October8OCP retained asindexevidence,not new order.CSP5landingpages sparse/dynamic,not fullfilingcoverage.NVIDIAOctober19Germanintent/quantum/media items overlap baseline.",
+        "Nscale new reported secondMonarch talks separated from Augustagreement,Glomfjorddelay andLoughtonwithdrawal.Couldchange,not signed.Bloombergorigin not independently corroborated.Candidateonly.AcBelOctober19originalreport addsreportedmix/productmaturity,not issuerprofitrevision;no primarycoveragepromotion.",
+        "Existing S&Pcreditvisibility,AWSrackpayment,TrendForceprojection andLoughtonreport matchpreviousrecords;no new material increment from reposts.No article or private valuation written.",
+        "Preserved100events,213prior candidates,142prior screenings,allarticles/blockers/CSPbaseline.Added1candidate,1evidenceupdate,1screening.Publicledger excludesBflows,quotes,holdings,valuation.JSON-only;no lint/build/deploy/publication claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -7542,6 +7542,39 @@
           "NscaleGlomfjord,Semtech/Tower andLoughton leads matchexisting events;fresh reposts not distinct facts.Only secondary institutional upgrade/rebound discovery,no originalGoldman estimates obtained or consensus inferred.All14grouped results inspected for leads,not latestfinancial validation.",
           "Preserved100events,211prior candidates,141prior screenings,articles,blockers andCSPbaseline.Added2candidates/1screening only.No privateBflows,holdings,quotes or valuation public.JSON-only update,no article/build/deploy claim.Exact remote readback required."
         ]
+      },
+      {
+        "date": "2026-10-20",
+        "checked_at": "2026-10-19T20:45:46Z",
+        "instruction_commit_sha": "466f5b867799b67846ab4e81179a806cd9c77363",
+        "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh14grouped queries across98active names,core6/CSP5 primary index checks and outside-universe discovery.One new negotiation candidate and one existing candidate evidence update;no new qualifying event/article.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://investor.atmeta.com/home/default.aspx",
+          "https://www.oracle.com/news/",
+          "https://www.reuters.com/technology/nscale-anthropic-talks-45-billion-cloud-computing-deal-bloomberg-news-reports-2026-10-19/",
+          "https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=153a0218-a4aa-455e-b447-10439d02d0ea",
+          "https://investors.broadcom.com/news-releases/news-release-details/broadcom-introduces-vmware-hyperarmor-expanding-hypervisor"
+        ],
+        "source_limits": [
+          "All required pinned instructions/specifications,legacy reference and3recent related articles fully read;progress80aab230861d7ec2694455f37dc9708e6cf5e1ea fully parsed;recursive tree untruncated.No required instruction failure.",
+          "Fresh alpha-quant mainf43ed0cd5d57d28c50b924f2b3614d4189eae69f,CSV88422949d38165d4757a1e24c27f8662bede14c1,98active.All14query groups inspected,not98fresh issuer financial audits.Primary50/pending48,monthly24,partner4,regulator3,product16 unchanged.",
+          "TSMCQ3/Q4guidance andMTKSeptember30/August31indices unchanged.AMDlatestOctober12Helion;MarvellOctober13products/security.BroadcomdirectindexreturnedolderJuneportion whilefreshindexedissuerOctober13HyperArmor/October8OCP retained asindexevidence,not new order.CSP5landingpages sparse/dynamic,not fullfilingcoverage.NVIDIAOctober19Germanintent/quantum/media items overlap baseline.",
+          "Nscale new reported secondMonarch talks separated from Augustagreement,Glomfjorddelay andLoughtonwithdrawal.Couldchange,not signed.Bloombergorigin not independently corroborated.Candidateonly.AcBelOctober19originalreport addsreportedmix/productmaturity,not issuerprofitrevision;no primarycoveragepromotion.",
+          "Existing S&Pcreditvisibility,AWSrackpayment,TrendForceprojection andLoughtonreport matchpreviousrecords;no new material increment from reposts.No article or private valuation written.",
+          "Preserved100events,213prior candidates,142prior screenings,allarticles/blockers/CSPbaseline.Added1candidate,1evidenceupdate,1screening.Publicledger excludesBflows,quotes,holdings,valuation.JSON-only;no lint/build/deploy/publication claim."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16
@@ -10150,7 +10183,20 @@
         "Reconcile higher-power product mix with realized pricing, gross margin, utilization, receivables and operating cash flow.",
         "Check competition, component costs and architecture changes that could offset content growth."
       ],
-      "publication_status": "not_drafted"
+      "publication_status": "not_drafted",
+      "verification_updates": [
+        {
+          "date": "2026-10-20",
+          "event_date": "2026-10-19",
+          "instruction_commit_sha": "466f5b867799b67846ab4e81179a806cd9c77363",
+          "sources": [
+            "https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=153a0218-a4aa-455e-b447-10439d02d0ea"
+          ],
+          "stage": "original_reporting_body_read_issuer_mix_and_profit_validation_pending",
+          "facts": "MoneyDJ reports Septemberenterprise-power mix63%,33kW inproduction;72kWcertification planned2H2026,25kWPSU/100kWshelf qualification plannedQ12027,production earliest2H2027.Unnamedinstitution forecasts are not issuer guidance or consensus.",
+          "limits": "Earlier issuer showcase specifications do not establish product qualification.New reported mix not confirmed against issuer segment disclosure.No named CSPorder,contractamount,incrementalmargin/cash revision verified;no coveragepromotion or duplicatealert."
+        }
+      ]
     },
     {
       "key": "iteq-ccl-price-mix-margin-and-cash-conversion",
@@ -13412,6 +13458,30 @@
         "Industrial-AI adoption translating to recurring revenue and cash"
       ],
       "publication_status": "candidate_only_no_alert_no_article"
+    },
+    {
+      "key": "nscale-anthropic-second-monarch-building-reported-negotiations-20261019",
+      "date": "2026-10-20",
+      "event_date": "2026-10-19",
+      "companies": [
+        "Nscale",
+        "Anthropic",
+        "NVIDIA"
+      ],
+      "sources": [
+        "https://www.reuters.com/technology/nscale-anthropic-talks-45-billion-cloud-computing-deal-bloomberg-news-reports-2026-10-19/"
+      ],
+      "stage": "reuters_body_read_bloomberg_origin_unconfirmed_negotiations_not_signed_contract",
+      "facts": {
+        "baseline": "August agreement and historical conditional Anthropic contract are separate existing baselines.",
+        "increment": "October19Reuters relay of Bloomberg says talks for another approximatelyUSD45billion,secondMonarchbuilding,460MWusingVeraRubin;thirdbuildingright-of-first-refusal reported.",
+        "limits": "Reuters explicitly could not independently verify;companies did not respond.Bloomberg full original not obtained.Discussions ongoing,terms may change;not signedbacklog,fundedcapex,energizedcapacity,GPUorder or supplierprofitrevision."
+      },
+      "questions": [
+        "Issuer-confirmed executed agreement,term and delivery obligations",
+        "Binding financing,power readiness,acceptance and actual cash conversion"
+      ],
+      "publication_status": "candidate_only_no_alert_no_article"
     }
   ],
   "blockers": [
@@ -13431,7 +13501,7 @@
     }
   ],
   "last_research_date": "2026-10-20",
-  "instruction_commit_sha": "17d2fad0fbf2f5f8857639d09f55f51a4ba265e9",
+  "instruction_commit_sha": "466f5b867799b67846ab4e81179a806cd9c77363",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
