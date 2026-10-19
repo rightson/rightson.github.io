@@ -3040,12 +3040,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-19",
-      "checked_at": "2026-10-18T23:47:58Z",
-      "instruction_commit_sha": "2b6c346126c2599a92819275ab84aacfcd616afe",
-      "status": "grouped_discovery_and_one_historical_issuer_baseline_not_full_individual_primary_validation",
+      "checked_at": "2026-10-19T01:05:13Z",
+      "instruction_commit_sha": "e69b3c9bcaba114471bd6c7c336ed152313e3460",
+      "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh grouped discovery includes98 active names;core6 issuer sources,CSP5 landing pages and targeted ASIC/capex reporting refreshed.Inventec September issuer revenue table adds one historical primary-company baseline.No newly qualified material event or article.",
+      "scope": "Fresh grouped discovery queries include all98 active companies;five core issuer source bodies and CSP5 landing pages refreshed.Broadcom financial-news index returned403;LITEON September release body failed.No newly qualified material event or article.",
       "sources": [
         "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
         "https://www.mediatek.com/press-room",
@@ -3058,17 +3058,19 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=056fc266819344d6bd629e448bc375ac",
-        "https://www.inventec.com/en/investor/9/10"
+        "https://www.trendforce.com.tw/research/download/RP261013LA",
+        "https://www.trendforce.com.tw/presscenter/news/20261014-13268.html",
+        "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/",
+        "https://www.liteon.com/zh-tw/news/press-center/content/liteon-monthly-sales-sep-2026"
       ],
       "source_limits": [
-        "Instructions,specifications,full ledger and three related articles read at pinned default-main commit2b6c346126c2599a92819275ab84aacfcd616afe.Alpha-quant default-main f43ed0cd5d57d28c50b924f2b3614d4189eae69f CSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98 active names.",
-        "Fourteen grouped discovery queries include all98 names,not98 individual latest-primary audits.Search recency filters returned older results;missing discovery is not evidence of no event.Historical issuer-primary coverage advances48 to49,pending50 to49,monthly22 to23 on Inventec alone;partner4,regulator3,product16 unchanged.",
-        "TSMC October15 SEC results/guidance and MediaTek,NVIDIA,AMD,Broadcom,Marvell visible issuer news lists refreshed.Targeted ASIC/TPU/NRE/procurement search found no newly authenticated commercial terms;indices are not full release-by-release or financial audits.",
-        "CSP5 landing pages refreshed.Microsoft lists October28 earnings;Amazon/Alphabet extraction is navigation only.Meta and Oracle visible newsroom sections plus targeted reporting do not complete capex,lease,deployment,utilization or ROI audits.Alphabet original capex baseline remains incomplete.",
-        "October19 ASIC article repeats existing broker January2027 tape-out/Q1 2028 shipment estimate;no original broker note,new company confirmation or quantified old/new financial revision.Samsung custom-HBM and Nscale Loughton headlines overlap prior recorded events;FT aggregate pipeline body remains paywalled and unverified.No duplicate event appended.",
-        "Inventec official table reports September2026 consolidated revenue TWD98,635,776 thousand,against August83,267,681 and September2025 60,560,719;January–September742,261,384.Publication timestamp not provided.Historical baseline only,no AI-segment margin or cash attribution.",
-        "All prior97 public events,198 candidates and121 screenings retained.One candidate and one screening appended.No quotes,valuation,targets,holdings,private judgments or market-flow data.Ledger-only source/JSON preservation checks;no article,lint,build,deploy or publication-success claim."
+        "Mandatory instructions,specifications,taxonomy,full JSON ledger and three related ai-industry articles retrieved at instruction commit e69b3c9bcaba114471bd6c7c336ed152313e3460.Latest alpha-quant default-main f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV88422949d38165d4757a1e24c27f8662bede14c1 confirm98 active companies.",
+        "Fourteen grouped queries include98 names,not98 current individual issuer audits.Recency filters return older and occasionally inconsistent future-period results;such results do not establish current facts.Historical issuer-primary49,pending49,monthly23,partner4,regulator3,product16 unchanged.",
+        "TSMC October15 SEC results/guidance,MediaTek,NVIDIA,AMD and Marvell visible issuer news bodies refreshed.No new authenticated TPU design responsibility,NRE,production economics,procurement allocation or earnings revision established.Broadcom current financial-news index failed403;indexed September result is not substituted for full current-news coverage.",
+        "CSP5 landing pages and targeted independent reporting screened.Microsoft lists October28 earnings;Amazon and Alphabet extraction is navigation only.Meta/Oracle visible news lists do not establish complete capex,leases,accepted deployment,utilization or ROI coverage.Alphabet annual capex/lease baseline remains incomplete.",
+        "TrendForce October13 TPU EMIB-T summary and October14 capex revision,ASML guidance,Schneider results and Nscale Loughton/Monarch reports overlap existing records.No newly verified company confirmation,termination economics or supplier cancellation found;do not treat duplicate reporting as independent evidence.",
+        "LITEON September2026 monthly-release URL discovered in index,but direct body returned internal error;no values promoted to primary verification and no coverage-counter increase.Missing source bodies are not evidence of no change.",
+        "All prior97 public events,199 research candidates and122 screenings retained.One current screening appended.No article,quote,valuation,holdings,private investment judgment or market-flow data added.Ledger-only JSON/preservation and remote-source readback validation;no article lint,build,deploy or publication-success claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -6757,6 +6759,41 @@
           "October19 ASIC article repeats existing broker January2027 tape-out/Q1 2028 shipment estimate;no original broker note,new company confirmation or quantified old/new financial revision.Samsung custom-HBM and Nscale Loughton headlines overlap prior recorded events;FT aggregate pipeline body remains paywalled and unverified.No duplicate event appended.",
           "Inventec official table reports September2026 consolidated revenue TWD98,635,776 thousand,against August83,267,681 and September2025 60,560,719;January–September742,261,384.Publication timestamp not provided.Historical baseline only,no AI-segment margin or cash attribution.",
           "All prior97 public events,198 candidates and121 screenings retained.One candidate and one screening appended.No quotes,valuation,targets,holdings,private judgments or market-flow data.Ledger-only source/JSON preservation checks;no article,lint,build,deploy or publication-success claim."
+        ]
+      },
+      {
+        "date": "2026-10-19",
+        "checked_at": "2026-10-19T01:05:13Z",
+        "instruction_commit_sha": "e69b3c9bcaba114471bd6c7c336ed152313e3460",
+        "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh grouped discovery queries include all98 active companies;five core issuer source bodies and CSP5 landing pages refreshed.Broadcom financial-news index returned403;LITEON September release body failed.No newly qualified material event or article.",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://www.trendforce.com.tw/research/download/RP261013LA",
+          "https://www.trendforce.com.tw/presscenter/news/20261014-13268.html",
+          "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/",
+          "https://www.liteon.com/zh-tw/news/press-center/content/liteon-monthly-sales-sep-2026"
+        ],
+        "source_limits": [
+          "Mandatory instructions,specifications,taxonomy,full JSON ledger and three related ai-industry articles retrieved at instruction commit e69b3c9bcaba114471bd6c7c336ed152313e3460.Latest alpha-quant default-main f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV88422949d38165d4757a1e24c27f8662bede14c1 confirm98 active companies.",
+          "Fourteen grouped queries include98 names,not98 current individual issuer audits.Recency filters return older and occasionally inconsistent future-period results;such results do not establish current facts.Historical issuer-primary49,pending49,monthly23,partner4,regulator3,product16 unchanged.",
+          "TSMC October15 SEC results/guidance,MediaTek,NVIDIA,AMD and Marvell visible issuer news bodies refreshed.No new authenticated TPU design responsibility,NRE,production economics,procurement allocation or earnings revision established.Broadcom current financial-news index failed403;indexed September result is not substituted for full current-news coverage.",
+          "CSP5 landing pages and targeted independent reporting screened.Microsoft lists October28 earnings;Amazon and Alphabet extraction is navigation only.Meta/Oracle visible news lists do not establish complete capex,leases,accepted deployment,utilization or ROI coverage.Alphabet annual capex/lease baseline remains incomplete.",
+          "TrendForce October13 TPU EMIB-T summary and October14 capex revision,ASML guidance,Schneider results and Nscale Loughton/Monarch reports overlap existing records.No newly verified company confirmation,termination economics or supplier cancellation found;do not treat duplicate reporting as independent evidence.",
+          "LITEON September2026 monthly-release URL discovered in index,but direct body returned internal error;no values promoted to primary verification and no coverage-counter increase.Missing source bodies are not evidence of no change.",
+          "All prior97 public events,199 research candidates and122 screenings retained.One current screening appended.No article,quote,valuation,holdings,private investment judgment or market-flow data added.Ledger-only JSON/preservation and remote-source readback validation;no article lint,build,deploy or publication-success claim."
         ]
       }
     ],
@@ -12232,7 +12269,7 @@
     }
   ],
   "last_research_date": "2026-10-19",
-  "instruction_commit_sha": "2b6c346126c2599a92819275ab84aacfcd616afe",
+  "instruction_commit_sha": "e69b3c9bcaba114471bd6c7c336ed152313e3460",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
