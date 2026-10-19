@@ -3036,6 +3036,34 @@
         "limits": "Original-report evidence,not obtained executed commercial terms. No issuer-announced capex cut or validated named-supplier profit revision."
       },
       "status": "public_report_read_cash_timing_risk_recorded_no_article"
+    },
+    {
+      "fingerprint": "hpe-vultr-helios-order-networking-outlook-revision-20260930",
+      "event_date": "2026-09-30",
+      "discovered_date": "2026-10-20",
+      "instruction_commit_sha": "f42816a748002ced6e28e8c6b0d76b00cb2b0279",
+      "companies": [
+        "Hewlett Packard Enterprise",
+        "AMD",
+        "Vultr"
+      ],
+      "type": "historical_primary_order_and_segment_guidance_increment_new_to_ledger_not_new_today",
+      "sources": [
+        "https://www.hpe.com/us/en/newsroom/press-release/2026/09/hpe-secures-its-first-amd-helios-order-in-12-billion-deal-with-vultr.html",
+        "https://www.hpe.com/us/en/newsroom/press-release/2026/09/hpe-to-outline-networking-priorities-for-long-term-value-creation.html",
+        "https://investors.hpe.com/~/media/Files/H/HP-Enterprise-IR/documents/hpe-networking-investor-day-transcript-09-30-2026.pdf",
+        "https://investors.hpe.com/~/media/Files/H/HP-Enterprise-IR/documents/q3-2026/q3-2026-transcript.pdf"
+      ],
+      "facts": {
+        "baseline": "September2Q3call FY27Networking growth14-17% explicitly excluded Helios.Separate October12Helion reference design/partner-support event is not this Helios customer order.",
+        "increment": "September30 issuer announced USD1.2billion Vultr order for AMD Helios AI Rack by HPE at US datacenters,first HPE Helios order;FY27Networking revenue growth raised to high-teens/low20s,linked to portfolio demand,incremental Helios and improved order conversion.",
+        "product_scope": "Issuer design specifies72MI455XGPUs and6HPEJuniperQFX5252scale-up Ethernet switch trays per rack;no aggregate rack/GPU count inferred from order amount.",
+        "value_capture": "Issuer can supply complete rack and independently sell scale-up switch trays to other rack providers.Naming is Helios,not Helion.No Taiwan supplier allocation inferred.",
+        "profit_limit": "FY27Networking mid/high20s operating margin already guided September2,not newly raised September30.Management says data-center switching lower gross margin but approximately operating-margin neutral after R&D/sales costs.September30 does not update full-company forecast.",
+        "cash_and_timing": "Management expects FY27revenue more back-end loaded from Helios/Oracle timing and balances full-rack working capital against previously stated at-leastUSD5billionFY27FCF ambition.Customer acceptance,payment terms,current delivery and realized margins not disclosed in these sources.",
+        "limits": "Historical source backfill,not new October20orders.Order total includes complete systems,not all networking or AMD revenue.No delivered capacity,market-share gain or realized EPS upgrade established."
+      },
+      "status": "primary_order_segment_revision_and_prior_exclusion_verified_delivery_cash_and_earnings_conversion_pending_no_article"
     }
   ],
   "articles": [],
@@ -3104,13 +3132,13 @@
       "2324"
     ],
     "current_run_screening": {
-      "date": "2026-10-19",
-      "checked_at": "2026-10-19T15:43:21Z",
-      "instruction_commit_sha": "58065cc6fa6bcc575cf6032a983552ee238ae754",
+      "date": "2026-10-20",
+      "checked_at": "2026-10-19T17:28:04Z",
+      "instruction_commit_sha": "f42816a748002ced6e28e8c6b0d76b00cb2b0279",
       "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "14fresh grouped queries covering98 active names for discovery;core6/CSP5 issuer indices refreshed;outside-universe/CSP searches;no independently confirmed earnings-changing increment,no new event/candidate/article.",
+      "scope": "14fresh grouped discovery queries covering98active names;core6/CSP5 index/source checks;out-of-universe HPE primary historical order/guidance backfill plus credit-visibility lead.One new historical event,two candidates,no article.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -3123,18 +3151,20 @@
         "https://abc.xyz/investor/",
         "https://investor.atmeta.com/home/default.aspx",
         "https://www.oracle.com/news/",
-        "https://blogs.nvidia.com/blog/media-agentic-security-european-public-service-broadcasting-global-content-production/",
-        "https://www.trendforce.com/news/2026/10/19/news-mediateks-google-tpu-v9-shipments-may-slip-to-1q28-asic-race-heats-up-as-taiwan-firms-eye-new-opportunities/",
-        "https://www.businessinsider.com/amazon-220-billion-ai-bet-data-centers-spending-challenges-2026-10",
-        "https://www.wsj.com/tech/microsoft-pulls-out-of-nscale-u-k-data-center-deal-over-power-supply-issues-f804c434"
+        "https://www.hpe.com/us/en/newsroom/press-release/2026/09/hpe-secures-its-first-amd-helios-order-in-12-billion-deal-with-vultr.html",
+        "https://www.hpe.com/us/en/newsroom/press-release/2026/09/hpe-to-outline-networking-priorities-for-long-term-value-creation.html",
+        "https://investors.hpe.com/~/media/Files/H/HP-Enterprise-IR/documents/hpe-networking-investor-day-transcript-09-30-2026.pdf",
+        "https://investors.hpe.com/~/media/Files/H/HP-Enterprise-IR/documents/q3-2026/q3-2026-transcript.pdf",
+        "https://www.reuters.com/business/top-hyperscalers-likely-have-more-ai-linked-debt-than-now-known-sp-global-warns-2026-10-19/",
+        "https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/10/us-ig-credit-no-sector-is-an-island"
       ],
       "source_limits": [
-        "Required pinned instructions,specifications,legacy references and3recent related articles read completely at58065cc6fa6bcc575cf6032a983552ee238ae754;progress blob816d6b24777c13299f94e0addd56e4feb19eac7a fully parsed,recursive tree untruncated.No required-instruction failure.",
-        "Alpha-quant metadata/default head f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV88422949d38165d4757a1e24c27f8662bede14c1 freshly retrieved;98 active unchanged. Grouped discovery is not98latest primary-company audits. Historical primary50,pending48,monthly24,partner4,regulator3,product16 unchanged.",
-        "NVIDIA October19 media/EBU/Adobe blog newly dated and read:sovereign frameworks/reference architectures and application-level acceleration,not quantified CSP orders,capital expenditure or supplier earnings.No new event or coverage credit inferred.Core6 other indices continue existing results/product baseline.",
-        "CSP5 landing pages refreshed;some dynamic IR pages expose navigation or sparse text,not complete filing coverage.Outside searches revisit AWS early-rack cash-timing report and Nscale Loughton withdrawal already recorded;no new executed terms,company capex cut or independent supplier earnings revision. No duplicate alert. TPUv9October19 recap remains underlying GF/CommercialTimes estimate,not new company guidance;production-version tapeout is not volume production.",
-        "Grouped name results mainly prior monthly disclosures,broker recaps and price reactions.ZhenDing university/PCB talent chair not earnings-changing,Fuchiao price recap not new self-assessed profit. No new out-of-universe opportunity passed primary economic-materiality threshold.",
-        "Preserved99events,207candidates,137prior screenings,articles,blockers and baseline;appended1screening only.No public quotes,valuation,holdings or Bfund-flow data.Ledger-only JSON,no article/build/deploy claim.Exact remote readback required."
+        "All required pinned instructions/specifications/legacy references and3recent related articles fully read atf42816a748002ced6e28e8c6b0d76b00cb2b0279.Progress exact blob1b9317a629ae5b9df82b201bec64dd1002bad7a9 parsed;recursive tree untruncated.No required-instruction failure.",
+        "Fresh alpha-quant default headf43ed0cd5d57d28c50b924f2b3614d4189eae69f CSV88422949d38165d4757a1e24c27f8662bede14c1 has98active names.Grouped discovery not98latest issuer audits.Primary50,pending48,monthly24,partner4,regulator3,product16 unchanged.",
+        "TSMCQ3guidance,MTKSeptember30pressroom,NVIDIAOctober19media blog,AMDHelionOctober12 andMarvellOctober13indices continue baseline.Broadcomindex inaccessible twice this run,not claimed refreshed.CSP5landing pages refreshed but sparse/dynamic pages not full filing coverage.",
+        "HPESept30USD1.2billion customer order andFY27Networking growth revision absent from priorledger.Primary announcements andSeptember2/30transcript sections read;comparison explicitly separates new revenue guidance from already-guided margin.Full-rack working-capital and back-end timing counterevidence retained.No current quotes or valuation public.",
+        "S&Pqualitative liability-visibility warning candidateonly:no quantified additional debt,rating action or equipment cut.Reutersoriginal read;S&Pprimary market commentary readable;regulatoryFAQ titleonly,FTpaywall retained.LITEONQ2source retry502,coveragecredit unchanged.Grouped results mostly historicalmonthly,broker/price recaps.",
+        "Preserved99prior events,207prior candidates,138prior screenings,articles,blockers andbaseline;added1event,2candidates,1screening.No Bfund-flow/privateholdings/quotes inpublicledger.JSON-only change;no article/build/deployclaim.Exact remote readback required."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -7380,6 +7410,42 @@
           "CSP5 landing pages refreshed;some dynamic IR pages expose navigation or sparse text,not complete filing coverage.Outside searches revisit AWS early-rack cash-timing report and Nscale Loughton withdrawal already recorded;no new executed terms,company capex cut or independent supplier earnings revision. No duplicate alert. TPUv9October19 recap remains underlying GF/CommercialTimes estimate,not new company guidance;production-version tapeout is not volume production.",
           "Grouped name results mainly prior monthly disclosures,broker recaps and price reactions.ZhenDing university/PCB talent chair not earnings-changing,Fuchiao price recap not new self-assessed profit. No new out-of-universe opportunity passed primary economic-materiality threshold.",
           "Preserved99events,207candidates,137prior screenings,articles,blockers and baseline;appended1screening only.No public quotes,valuation,holdings or Bfund-flow data.Ledger-only JSON,no article/build/deploy claim.Exact remote readback required."
+        ]
+      },
+      {
+        "date": "2026-10-20",
+        "checked_at": "2026-10-19T17:28:04Z",
+        "instruction_commit_sha": "f42816a748002ced6e28e8c6b0d76b00cb2b0279",
+        "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "14fresh grouped discovery queries covering98active names;core6/CSP5 index/source checks;out-of-universe HPE primary historical order/guidance backfill plus credit-visibility lead.One new historical event,two candidates,no article.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://investor.atmeta.com/home/default.aspx",
+          "https://www.oracle.com/news/",
+          "https://www.hpe.com/us/en/newsroom/press-release/2026/09/hpe-secures-its-first-amd-helios-order-in-12-billion-deal-with-vultr.html",
+          "https://www.hpe.com/us/en/newsroom/press-release/2026/09/hpe-to-outline-networking-priorities-for-long-term-value-creation.html",
+          "https://investors.hpe.com/~/media/Files/H/HP-Enterprise-IR/documents/hpe-networking-investor-day-transcript-09-30-2026.pdf",
+          "https://investors.hpe.com/~/media/Files/H/HP-Enterprise-IR/documents/q3-2026/q3-2026-transcript.pdf",
+          "https://www.reuters.com/business/top-hyperscalers-likely-have-more-ai-linked-debt-than-now-known-sp-global-warns-2026-10-19/",
+          "https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/10/us-ig-credit-no-sector-is-an-island"
+        ],
+        "source_limits": [
+          "All required pinned instructions/specifications/legacy references and3recent related articles fully read atf42816a748002ced6e28e8c6b0d76b00cb2b0279.Progress exact blob1b9317a629ae5b9df82b201bec64dd1002bad7a9 parsed;recursive tree untruncated.No required-instruction failure.",
+          "Fresh alpha-quant default headf43ed0cd5d57d28c50b924f2b3614d4189eae69f CSV88422949d38165d4757a1e24c27f8662bede14c1 has98active names.Grouped discovery not98latest issuer audits.Primary50,pending48,monthly24,partner4,regulator3,product16 unchanged.",
+          "TSMCQ3guidance,MTKSeptember30pressroom,NVIDIAOctober19media blog,AMDHelionOctober12 andMarvellOctober13indices continue baseline.Broadcomindex inaccessible twice this run,not claimed refreshed.CSP5landing pages refreshed but sparse/dynamic pages not full filing coverage.",
+          "HPESept30USD1.2billion customer order andFY27Networking growth revision absent from priorledger.Primary announcements andSeptember2/30transcript sections read;comparison explicitly separates new revenue guidance from already-guided margin.Full-rack working-capital and back-end timing counterevidence retained.No current quotes or valuation public.",
+          "S&Pqualitative liability-visibility warning candidateonly:no quantified additional debt,rating action or equipment cut.Reutersoriginal read;S&Pprimary market commentary readable;regulatoryFAQ titleonly,FTpaywall retained.LITEONQ2source retry502,coveragecredit unchanged.Grouped results mostly historicalmonthly,broker/price recaps.",
+          "Preserved99prior events,207prior candidates,138prior screenings,articles,blockers andbaseline;added1event,2candidates,1screening.No Bfund-flow/privateholdings/quotes inpublicledger.JSON-only change;no article/build/deployclaim.Exact remote readback required."
         ]
       }
     ],
@@ -13103,6 +13169,60 @@
         "Verify construction and customer acceptance; absent credit support or timely financing invalidates low-cost-capital thesis."
       ],
       "publication_status": "research_candidate_only_historical_baseline_no_material_alert_no_article"
+    },
+    {
+      "key": "hpe-helios-scale-up-networking-order-to-cash",
+      "date": "2026-10-20",
+      "event_date": "2026-09-30",
+      "companies": [
+        "Hewlett Packard Enterprise",
+        "AMD",
+        "Vultr"
+      ],
+      "sources": [
+        "https://www.hpe.com/us/en/newsroom/press-release/2026/09/hpe-secures-its-first-amd-helios-order-in-12-billion-deal-with-vultr.html",
+        "https://www.hpe.com/us/en/newsroom/press-release/2026/09/hpe-to-outline-networking-priorities-for-long-term-value-creation.html",
+        "https://investors.hpe.com/~/media/Files/H/HP-Enterprise-IR/documents/hpe-networking-investor-day-transcript-09-30-2026.pdf",
+        "https://investors.hpe.com/~/media/Files/H/HP-Enterprise-IR/documents/q3-2026/q3-2026-transcript.pdf"
+      ],
+      "stage": "primary_historical_order_segment_revision_prior_baseline_verified",
+      "facts": {
+        "baseline": "September2Q3call FY27Networking growth14-17% explicitly excluded Helios.Separate October12Helion reference design/partner-support event is not this Helios customer order.",
+        "increment": "September30 issuer announced USD1.2billion Vultr order for AMD Helios AI Rack by HPE at US datacenters,first HPE Helios order;FY27Networking revenue growth raised to high-teens/low20s,linked to portfolio demand,incremental Helios and improved order conversion.",
+        "product_scope": "Issuer design specifies72MI455XGPUs and6HPEJuniperQFX5252scale-up Ethernet switch trays per rack;no aggregate rack/GPU count inferred from order amount.",
+        "value_capture": "Issuer can supply complete rack and independently sell scale-up switch trays to other rack providers.Naming is Helios,not Helion.No Taiwan supplier allocation inferred.",
+        "profit_limit": "FY27Networking mid/high20s operating margin already guided September2,not newly raised September30.Management says data-center switching lower gross margin but approximately operating-margin neutral after R&D/sales costs.September30 does not update full-company forecast.",
+        "cash_and_timing": "Management expects FY27revenue more back-end loaded from Helios/Oracle timing and balances full-rack working capital against previously stated at-leastUSD5billionFY27FCF ambition.Customer acceptance,payment terms,current delivery and realized margins not disclosed in these sources.",
+        "limits": "Historical source backfill,not new October20orders.Order total includes complete systems,not all networking or AMD revenue.No delivered capacity,market-share gain or realized EPS upgrade established."
+      },
+      "questions": [
+        "Verify FY27back-end shipment/acceptance and Networking organic growth,margins and cash conversion.",
+        "Disaggregate total-rack revenue from networking trays and AMD content;track standalone tray customers,not assumed GPU market share."
+      ],
+      "publication_status": "material_private_notification_no_article"
+    },
+    {
+      "key": "spglobal-hyperscaler-liability-visibility-versus-actual-credit-action",
+      "date": "2026-10-20",
+      "event_date": "2026-10-19",
+      "companies": [
+        "CSP5",
+        "S&P Global Ratings"
+      ],
+      "sources": [
+        "https://www.reuters.com/business/top-hyperscalers-likely-have-more-ai-linked-debt-than-now-known-sp-global-warns-2026-10-19/",
+        "https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/10/us-ig-credit-no-sector-is-an-island"
+      ],
+      "stage": "reported_roundtable_visibility_warning_primary_market_commentary_read_no_quantified_new_liability_or_rating_action",
+      "facts": {
+        "reported": "Reuters October19roundtable reports incomplete visibility into interconnected liabilities;no quantified additional debt or present rating-change need.Primary commentary describes credit interconnection,not issuer default or supplier order cut.",
+        "limits": "S&PregulatoryFAQ page exposed title only;FTarticle paywalled,no bypass.No new investment alert from qualitative repetition of existing financing risk."
+      },
+      "questions": [
+        "Executed guarantee/recourse disclosures and new credit decisions",
+        "Actual cost of capital,cash-flow deterioration and capex/order transmission"
+      ],
+      "publication_status": "candidate_only_no_alert_no_article"
     }
   ],
   "blockers": [
@@ -13121,8 +13241,8 @@
       "impact": "Search hits and reposted notices have not been individually checked against company or exchange originals."
     }
   ],
-  "last_research_date": "2026-10-19",
-  "instruction_commit_sha": "58065cc6fa6bcc575cf6032a983552ee238ae754",
+  "last_research_date": "2026-10-20",
+  "instruction_commit_sha": "f42816a748002ced6e28e8c6b0d76b00cb2b0279",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
