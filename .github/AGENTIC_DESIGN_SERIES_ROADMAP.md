@@ -17,7 +17,7 @@
 - [ ] AD002. Artifact lineage：修改後哪些證據失效、何時能交付下一個階段。
 - [ ] AD003. Durable execution：長程工具呼叫、checkpoint、重試、duplicate 與恢復。
 - [x] AD004. Agent memory／skill：驗證成功的經驗如何帶著適用條件重用。2026-10-13 完成帶條件診斷 skill、離線回放與可撤回發布的完整研究；真實 LLM／EDA 泛化與多機實驗另列未完成。
-- [ ] AD005. Evaluation：功能、PPA、工程介入、tool budget 與成本的共同 baseline。
+- [x] AD005. Evaluation：功能、PPA、工程介入、tool budget 與成本的共同 baseline。2026-10-20 完成同份產物評分與成本研究；真實 LLM／EDA、隔離及全成本實驗另列未完成。
 - [ ] AD006. Authority／sandbox／policy：授權如何綁定輸出版本與生效邊界。
 - [ ] AD007. Spec-to-RTL／verification／physical optimization 的閉環與驗收差異。
 - [ ] AD008. 跨廠商 agent integration：狀態匯出、工具介面、治理與自建／採購邊界。
@@ -140,3 +140,14 @@
 - 10 月 16 日起的 GitHub commit 查詢：SiliCAD EDA_MCP、Konnect、AMBU-CovAgent、OpenROAD-MCP 及 NeMo Gym 的 resources_servers/cvdp 路徑均回傳空列表。NeMo Gym 本體有 [10 月 17 日 rollout 取消／drain 變更](https://github.com/NVIDIA-NeMo/Gym/commit/b3103ea8ac462e4ca30aa06fb151198271b8e3dd)及 [10 月 16 日 Claude Code timeout／部分 transcript 變更](https://github.com/NVIDIA-NeMo/Gym/commit/9ef5ed0f80a9f81c5d82af6588cd4cc956c4f5d1)；其公開 commit 說明與差異屬共用 runtime／adapter，未證明 Solido、CVDP 或商用 EDA 作業已完成取消、資源釋放或恢復。故不把通用功能重報為 EDA 成果，也未執行這些測試。
 - 日期核對：[IBM agent-factory 原文](https://research.ibm.com/blog/open-agent-factories-and-distributed-inference-for-chip-design)仍為 10 月 13 日，10 月 16 日轉載不算新發表；原始研究與全成本驗證仍待深讀。[Vinci 官方首頁](https://www.getvinci.ai/)將 Series B 公告列為 10 月 6 日，近期訪談未提供足以核驗的新 agent input／action／artifact／acceptance 或新比較實驗，不據此新增成熟度／效能結論。
 - AD005／AD007 優先缺口仍是每份生成測試的獨立 checker、隔離評估與完整成本；AD003 要另有具名 EDA 工具的取消確認、殘留程序與 checkpoint 實驗，才採用通用 runtime 改動。AD004 歷史完成狀態保留；未執行新 EDA／LLM 實驗，未做文章 lint／build／deploy／正式頁核驗。
+
+## 2026-10-20 AD005 架構深掘與接續
+
+- instruction commit：`c9f9b787dbaf0d0ca0800a3df46b316b1506f38b`；單元 `AD005`，series `agentic-design-deep-dive`。本次只執行指定主題，不變動 scheduler 或其他研究責任。
+- 完成研究文章：[EDA Agent 的評分要跟著同一份設計與執行結果走](https://rightson.github.io/ic-design-platform/2026/10/20/eda-agent-artifact-grader.html)；source `_posts/2026-10-20-eda-agent-artifact-grader.md`，首次建立 `2026-10-20 06:01:36 +0800`。文章、兩張深淺色 SVG、合成實驗與輸出、圖形產生程式同 commit `99498b9d642f70d2243ea540787b4022339fe9fc`。
+- 原始材料：Siemens／NVIDIA 2026-10-14 Liberty grader、ChipAgents 2026 年 10 月 Build-A-Chip-Bench、AMBU-CovAgent 2026-10-15 v1 與固定 `2a9041dd488e1890daa072cae1577c6e8f9a5892` agent.py、Accellera 2012-06-04 UCIS 1.0 公告。不同案例的分數不跨系統排名；產品能力與參考 runner／manifest 設計分開。
+- 新增機制：相同 RTL／test／seed／工具及 execution 身分、同軌跡 checker、完成狀態與內容固定、只合併有效 coverage、功能／物理交集分母，以及將失敗工具工作分攤到合格交付。比較人工配既有腳本、原 runner 加 grader、隔離重跑與有限操作 Agent；包含完整 FIFO 交付案例及半成品殘留情境。
+- 已實跑 `scripts/experiments/agentic_artifact_grader.py`，輸出 `scripts/experiments/agentic_artifact_grader.results.json`。十個手工 fixture：弱基準接受 8／誤收 6，版本與同軌跡檢查接受 2／誤收 0；兩個有效案例保留。合成六 task 的正確交集平均為 26.67%，錯誤邊際比例乘積為 35.56%。fixture digest `85f3d06bfd8597dfb7fd2e125bd53a65b0065a1f2c6503b8181fd8320785c678`。這是協定與算式測試，無統計泛化／安全保證。
+- 核驗：[Post lint gate](https://github.com/rightson/rightson.github.io/actions/runs/39332203285) success；[Pages build／deploy](https://github.com/rightson/rightson.github.io/actions/runs/39332202287) success。六個遠端 source 逐一完全相符；正式 HTML HTTP 200，標題、正文數字、canonical 及 source 版本核對，兩張正式 SVG HTTP 200 且內容相符。圖在 375 px 深淺色 raster render 已檢視；圖內英文標籤搭配中文正文與圖說。本地無 Ruby／Bundler，未做本地 Jekyll build；Playwright 無可用 browser binary，未做瀏覽器整頁視覺檢查。正文有效中文字 4,082；公開正文依站點算法 4,473 CJK／736 non-CJK words，15 分鐘。
+- 未完成：真實 LLM／RTL／EDA、每份生成 stimulus 的 simulator monitor 接線與 reset-heavy 誤報、可信 producer／sandbox 隔離、資料庫交易、競態／多機崩潰持久性，以及同品質的人工／script／Agent 全成本實驗。AD005 本次研究完成不表示這些實驗完成；AD001–AD003、AD006–AD009 狀態保留。
+- 接續優先量測固定版本的公開小任務：每份測試獨立 checker、未見過設計家族／工具版本、總 tool-hours／人工及超時；以原 runner adapter 與隔離重跑作公平比較。會議摘要只留對話，整合 10 月 13 日 AD004 與 10 月 19 日 RapidWright，沒有推定其他 session 的私人進度。
