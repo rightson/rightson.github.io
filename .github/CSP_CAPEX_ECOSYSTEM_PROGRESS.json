@@ -3040,14 +3040,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-19",
-      "checked_at": "2026-10-19T01:05:13Z",
-      "instruction_commit_sha": "e69b3c9bcaba114471bd6c7c336ed152313e3460",
-      "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
+      "checked_at": "2026-10-19T01:49:47Z",
+      "instruction_commit_sha": "c5a26a8f71bdd4a377ca95a6de4380f2f1dca88e",
+      "status": "grouped_discovery_and_historical_csp_financing_baseline_not_full_individual_primary_validation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh grouped discovery queries include all98 active companies;five core issuer source bodies and CSP5 landing pages refreshed.Broadcom financial-news index returned403;LITEON September release body failed.No newly qualified material event or article.",
+      "scope": "Fresh grouped discovery includes98 active companies.Core6 issuer lists/TSMC Q3 guidance and CSP5 sources refreshed;Alphabet July22 SEC historical financing section added.No newly qualified material event or article.",
       "sources": [
-        "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+        "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
         "https://nvidianews.nvidia.com/news",
         "https://ir.amd.com/news-events/press-releases",
@@ -3055,22 +3055,20 @@
         "https://investor.marvell.com/news-events/press-releases",
         "https://www.microsoft.com/en-us/investor/default",
         "https://ir.aboutamazon.com/overview/default.aspx",
-        "https://abc.xyz/investor/",
+        "https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2026/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://www.trendforce.com.tw/research/download/RP261013LA",
-        "https://www.trendforce.com.tw/presscenter/news/20261014-13268.html",
-        "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/",
-        "https://www.liteon.com/zh-tw/news/press-center/content/liteon-monthly-sales-sep-2026"
+        "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm",
+        "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/"
       ],
       "source_limits": [
-        "Mandatory instructions,specifications,taxonomy,full JSON ledger and three related ai-industry articles retrieved at instruction commit e69b3c9bcaba114471bd6c7c336ed152313e3460.Latest alpha-quant default-main f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV88422949d38165d4757a1e24c27f8662bede14c1 confirm98 active companies.",
-        "Fourteen grouped queries include98 names,not98 current individual issuer audits.Recency filters return older and occasionally inconsistent future-period results;such results do not establish current facts.Historical issuer-primary49,pending49,monthly23,partner4,regulator3,product16 unchanged.",
-        "TSMC October15 SEC results/guidance,MediaTek,NVIDIA,AMD and Marvell visible issuer news bodies refreshed.No new authenticated TPU design responsibility,NRE,production economics,procurement allocation or earnings revision established.Broadcom current financial-news index failed403;indexed September result is not substituted for full current-news coverage.",
-        "CSP5 landing pages and targeted independent reporting screened.Microsoft lists October28 earnings;Amazon and Alphabet extraction is navigation only.Meta/Oracle visible news lists do not establish complete capex,leases,accepted deployment,utilization or ROI coverage.Alphabet annual capex/lease baseline remains incomplete.",
-        "TrendForce October13 TPU EMIB-T summary and October14 capex revision,ASML guidance,Schneider results and Nscale Loughton/Monarch reports overlap existing records.No newly verified company confirmation,termination economics or supplier cancellation found;do not treat duplicate reporting as independent evidence.",
-        "LITEON September2026 monthly-release URL discovered in index,but direct body returned internal error;no values promoted to primary verification and no coverage-counter increase.Missing source bodies are not evidence of no change.",
-        "All prior97 public events,199 research candidates and122 screenings retained.One current screening appended.No article,quote,valuation,holdings,private investment judgment or market-flow data added.Ledger-only JSON/preservation and remote-source readback validation;no article lint,build,deploy or publication-success claim."
+        "Mandatory instructions and directly related specifications retrieved fully at pinned default-main c5a26a8f71bdd4a377ca95a6de4380f2f1dca88e.Full JSON ledger parsed.Three related ai-industry articles retrieved;blob SHAs match full texts already read in visible context.Latest repository tree checked;no new same-domain article found.",
+        "Alpha-quant latest default-main f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV88422949d38165d4757a1e24c27f8662bede14c1 confirm98 active names.Fourteen grouped discovery queries include98 names,not98 individual current issuer audits.Recency filters returned older articles;these are not current event evidence.Historical issuer-primary49,pending49,monthly23,partner4,regulator3,product16 unchanged.",
+        "TSMC Q3 issuer table reproduces October15 actuals/Q4 guidance;MediaTek,NVIDIA,AMD,Marvell and Broadcom visible issuer news lists refreshed.Broadcom previously failed403 but is readable this time.No new authenticated TPU design,NRE,procurement allocation,production economics or quantified financial revision established;visible indices are not complete financial audits.",
+        "Microsoft,Amazon,Meta and Oracle landing/news sources plus issuer-focused searches refreshed;Amazon body remains navigation-only.Google July22 CEO edited remarks and SEC financing/FCF sections are historical,not October guidance.Original annual capex outlook and full lease-commitment baseline remain incomplete;do not infer current project acceptance,utilization or supplier orders from landing pages.",
+        "Nscale Loughton/Monarch,FT aggregate infrastructure risk,ASML/Schneider revisions and older TPU supplier stories overlap existing records or remain unverified/paywalled.Recency and repeated coverage do not establish independent confirmation or changed cancellation economics.No duplicate event appended.",
+        "Alphabet historical financing section is appended separately from its prior cash-PPE baseline;equity/net debt proceeds,ATM authorization and collected funding are distinguished.No current capital-raise claim or change in supplier earnings assumed.",
+        "All prior97 public events,199 candidates and123 screenings retained.One historical CSP verification update and one screening appended.No article,quotes,valuation,holdings,private judgment or market-flow data.Ledger-only JSON preservation and remote-source readback validation;no article lint,build,deploy or publication-success claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -6794,6 +6792,39 @@
           "TrendForce October13 TPU EMIB-T summary and October14 capex revision,ASML guidance,Schneider results and Nscale Loughton/Monarch reports overlap existing records.No newly verified company confirmation,termination economics or supplier cancellation found;do not treat duplicate reporting as independent evidence.",
           "LITEON September2026 monthly-release URL discovered in index,but direct body returned internal error;no values promoted to primary verification and no coverage-counter increase.Missing source bodies are not evidence of no change.",
           "All prior97 public events,199 research candidates and122 screenings retained.One current screening appended.No article,quote,valuation,holdings,private investment judgment or market-flow data added.Ledger-only JSON/preservation and remote-source readback validation;no article lint,build,deploy or publication-success claim."
+        ]
+      },
+      {
+        "date": "2026-10-19",
+        "checked_at": "2026-10-19T01:49:47Z",
+        "instruction_commit_sha": "c5a26a8f71bdd4a377ca95a6de4380f2f1dca88e",
+        "status": "grouped_discovery_and_historical_csp_financing_baseline_not_full_individual_primary_validation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh grouped discovery includes98 active companies.Core6 issuer lists/TSMC Q3 guidance and CSP5 sources refreshed;Alphabet July22 SEC historical financing section added.No newly qualified material event or article.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2026/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm",
+          "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/"
+        ],
+        "source_limits": [
+          "Mandatory instructions and directly related specifications retrieved fully at pinned default-main c5a26a8f71bdd4a377ca95a6de4380f2f1dca88e.Full JSON ledger parsed.Three related ai-industry articles retrieved;blob SHAs match full texts already read in visible context.Latest repository tree checked;no new same-domain article found.",
+          "Alpha-quant latest default-main f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV88422949d38165d4757a1e24c27f8662bede14c1 confirm98 active names.Fourteen grouped discovery queries include98 names,not98 individual current issuer audits.Recency filters returned older articles;these are not current event evidence.Historical issuer-primary49,pending49,monthly23,partner4,regulator3,product16 unchanged.",
+          "TSMC Q3 issuer table reproduces October15 actuals/Q4 guidance;MediaTek,NVIDIA,AMD,Marvell and Broadcom visible issuer news lists refreshed.Broadcom previously failed403 but is readable this time.No new authenticated TPU design,NRE,procurement allocation,production economics or quantified financial revision established;visible indices are not complete financial audits.",
+          "Microsoft,Amazon,Meta and Oracle landing/news sources plus issuer-focused searches refreshed;Amazon body remains navigation-only.Google July22 CEO edited remarks and SEC financing/FCF sections are historical,not October guidance.Original annual capex outlook and full lease-commitment baseline remain incomplete;do not infer current project acceptance,utilization or supplier orders from landing pages.",
+          "Nscale Loughton/Monarch,FT aggregate infrastructure risk,ASML/Schneider revisions and older TPU supplier stories overlap existing records or remain unverified/paywalled.Recency and repeated coverage do not establish independent confirmation or changed cancellation economics.No duplicate event appended.",
+          "Alphabet historical financing section is appended separately from its prior cash-PPE baseline;equity/net debt proceeds,ATM authorization and collected funding are distinguished.No current capital-raise claim or change in supplier earnings assumed.",
+          "All prior97 public events,199 candidates and123 screenings retained.One historical CSP verification update and one screening appended.No article,quotes,valuation,holdings,private judgment or market-flow data.Ledger-only JSON preservation and remote-source readback validation;no article lint,build,deploy or publication-success claim."
         ]
       }
     ],
@@ -12269,7 +12300,7 @@
     }
   ],
   "last_research_date": "2026-10-19",
-  "instruction_commit_sha": "e69b3c9bcaba114471bd6c7c336ed152313e3460",
+  "instruction_commit_sha": "c5a26a8f71bdd4a377ca95a6de4380f2f1dca88e",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
@@ -12316,6 +12347,24 @@
           "purchases_of_property_and_equipment": 80598
         },
         "limits": "Earlier alphabet_status is retained as historical. This update fills a cash-capex baseline only; annual guidance, leases and project/customer allocations remain incomplete. Whole-company cash PPE purchases are not all AI spending, nor a fresh October cut or supplier award."
+      },
+      {
+        "date": "2026-10-19",
+        "checked_at": "2026-10-19T01:49:47Z",
+        "instruction_commit_sha": "c5a26a8f71bdd4a377ca95a6de4380f2f1dca88e",
+        "company": "Alphabet",
+        "source": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm",
+        "source_date": "2026-07-22",
+        "stage": "historical_q2_financing_terms_read_annual_capex_guidance_and_lease_commitments_still_pending",
+        "currency": "USD",
+        "unit": "million",
+        "historical_financing": {
+          "june_2026_equity_and_mandatory_convertible_preferred_net_proceeds": 49600,
+          "q2_2026_senior_unsecured_notes_net_proceeds": 20300,
+          "atm_authorized_ceiling": 40000,
+          "atm_shares_sold_as_of_june_30_2026": false
+        },
+        "limits": "July22 historical disclosure,not new October financing.Equity proceeds are for general corporate purposes including AI infrastructure/global compute;not all proceeds assigned to AI or supplier orders.Notes proceeds are for general corporate purposes.ATM ceiling is not cash raised;stated primary purpose is employee-equity tax obligations.No annual capex outlook,uncommenced lease commitments,project allocation or latest financing completion established."
       }
     ]
   }
