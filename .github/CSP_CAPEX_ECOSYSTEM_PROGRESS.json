@@ -3133,12 +3133,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-20",
-      "checked_at": "2026-10-19T18:49:12Z",
-      "instruction_commit_sha": "860b2e512501bb915ca3288613ba43fe059c8c23",
+      "checked_at": "2026-10-19T20:25:27Z",
+      "instruction_commit_sha": "17d2fad0fbf2f5f8857639d09f55f51a4ba265e9",
       "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh14grouped queries covering98active names;core6/CSP5 landing/source checks and out-of-universe leads.Two candidates,no new material event or article.",
+      "scope": "Fresh14grouped queries covering98active names;core6/CSP5 checks;outside-universe proposed nuclear power and industrial-AI leads.Two candidates,no new qualifying event or article.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -3151,17 +3151,17 @@
         "https://abc.xyz/investor/",
         "https://investor.atmeta.com/home/default.aspx",
         "https://www.oracle.com/news/",
-        "https://www.sec.gov/Archives/edgar/data/1181412/000162828026041150/spacexagreementfwp.htm",
-        "https://www.citizen.org/news/business-as-usual-despite-governors-directive-tceq-continues-processing-and-issuing-data-center-permits/",
-        "https://www.tceq.texas.gov/permitting/stormwater/construction"
+        "https://www.aboutamazon.com/news/sustainability/amazon-nuclear-energy-indiana-x-energy-aep",
+        "https://pr.aep.com/news/releases/read/12330/AEP-Partners-with-Amazon-and-Xenergy-to-Explore-Advanced-Nuclear-Energy-in-Indiana",
+        "https://blogs.nvidia.com/blog/germany-wants-to-lead-the-world-in-industrial-ai-how-nvidia-will-help/"
       ],
       "source_limits": [
-        "Required instructions/specifications and3related articles obtained at 860b2e512501bb915ca3288613ba43fe059c8c23 and read in full windows after display truncation was recovered.Exact progress blob73f179df21115584d079afdcd9da79d963e71c97 parsed;recursive tree untruncated.No outstanding required-instruction gap.",
+        "All required instructions/specifications/legacy references and3recent related articles fully read at 17d2fad0fbf2f5f8857639d09f55f51a4ba265e9.Exact progress1191155ca39dceeb663be874795467623886be39 parsed;recursive tree untruncated.No required-instruction failure.",
         "Fresh alpha-quant default headf43ed0cd5d57d28c50b924f2b3614d4189eae69f;CSV88422949d38165d4757a1e24c27f8662bede14c1;98active names.Grouped discovery not98current issuer audits.Primary50/pending48,monthly24,partner4,regulator3,product16 unchanged.",
-        "Broadcom index recovered,latestOctober13HyperArmor andOctober8OCP;core6/CSP5 index checks not full filings.TSMCQ3guidance andMTKSeptember30pressroom remain baseline.NVIDIAOctober19quantum-simulation release newly visible;no quantified incremental contracted demand or earnings revision established.Sparse CSPlanding pages retained as coverage limits.",
-        "Google/SpaceX historical June5FWP delivery/termination terms recorded as candidate,not Octobernew order or recognized revenue.TexasNGO reported permit progression kept candidate pending dated official records;agency page still states pause.No claim of general reopening.",
-        "All14fresh grouped results inspected for leads;primarily historical monthly/company notices,broker recaps and price reactions.Do not count repeated citations as independent events or current financial validation.",
-        "Preserved100events,209prior candidates,140prior screenings,articles,blockers andCSPbaseline.Added2candidates and1screening only.No privateBflows,holdings,quotes or valuation public.JSON-only update,no article/build/deploy claim;remote exact readback required."
+        "TSMCQ3guidance andMTKSeptember30pressroom remain baseline.AMDHelionOctober12,BroadcomOctober13/8 andMarvellOctober13indices refreshed.CSP5landing checks remain sparse/dynamic,not fullfiling coverage.NVIDIAOctober19German declaration/planned investments read;no quantified new contracted GPUdemand.",
+        "Amazon/AEP/X-energy960MW proposedIndiana feasibility lead:full indexedAmazonoriginal text available,direct primary/presswire/utility article fetches failed.No final plant,firm-priced PPA or near-term power-delivery assumption.Germanyplanned investments part of existingEuropecommitment,not incrementalUSD10billion.",
+        "NscaleGlomfjord,Semtech/Tower andLoughton leads matchexisting events;fresh reposts not distinct facts.Only secondary institutional upgrade/rebound discovery,no originalGoldman estimates obtained or consensus inferred.All14grouped results inspected for leads,not latestfinancial validation.",
+        "Preserved100events,211prior candidates,141prior screenings,articles,blockers andCSPbaseline.Added2candidates/1screening only.No privateBflows,holdings,quotes or valuation public.JSON-only update,no article/build/deploy claim.Exact remote readback required."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -7508,6 +7508,39 @@
           "Google/SpaceX historical June5FWP delivery/termination terms recorded as candidate,not Octobernew order or recognized revenue.TexasNGO reported permit progression kept candidate pending dated official records;agency page still states pause.No claim of general reopening.",
           "All14fresh grouped results inspected for leads;primarily historical monthly/company notices,broker recaps and price reactions.Do not count repeated citations as independent events or current financial validation.",
           "Preserved100events,209prior candidates,140prior screenings,articles,blockers andCSPbaseline.Added2candidates and1screening only.No privateBflows,holdings,quotes or valuation public.JSON-only update,no article/build/deploy claim;remote exact readback required."
+        ]
+      },
+      {
+        "date": "2026-10-20",
+        "checked_at": "2026-10-19T20:25:27Z",
+        "instruction_commit_sha": "17d2fad0fbf2f5f8857639d09f55f51a4ba265e9",
+        "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh14grouped queries covering98active names;core6/CSP5 checks;outside-universe proposed nuclear power and industrial-AI leads.Two candidates,no new qualifying event or article.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://investor.atmeta.com/home/default.aspx",
+          "https://www.oracle.com/news/",
+          "https://www.aboutamazon.com/news/sustainability/amazon-nuclear-energy-indiana-x-energy-aep",
+          "https://pr.aep.com/news/releases/read/12330/AEP-Partners-with-Amazon-and-Xenergy-to-Explore-Advanced-Nuclear-Energy-in-Indiana",
+          "https://blogs.nvidia.com/blog/germany-wants-to-lead-the-world-in-industrial-ai-how-nvidia-will-help/"
+        ],
+        "source_limits": [
+          "All required instructions/specifications/legacy references and3recent related articles fully read at 17d2fad0fbf2f5f8857639d09f55f51a4ba265e9.Exact progress1191155ca39dceeb663be874795467623886be39 parsed;recursive tree untruncated.No required-instruction failure.",
+          "Fresh alpha-quant default headf43ed0cd5d57d28c50b924f2b3614d4189eae69f;CSV88422949d38165d4757a1e24c27f8662bede14c1;98active names.Grouped discovery not98current issuer audits.Primary50/pending48,monthly24,partner4,regulator3,product16 unchanged.",
+          "TSMCQ3guidance andMTKSeptember30pressroom remain baseline.AMDHelionOctober12,BroadcomOctober13/8 andMarvellOctober13indices refreshed.CSP5landing checks remain sparse/dynamic,not fullfiling coverage.NVIDIAOctober19German declaration/planned investments read;no quantified new contracted GPUdemand.",
+          "Amazon/AEP/X-energy960MW proposedIndiana feasibility lead:full indexedAmazonoriginal text available,direct primary/presswire/utility article fetches failed.No final plant,firm-priced PPA or near-term power-delivery assumption.Germanyplanned investments part of existingEuropecommitment,not incrementalUSD10billion.",
+          "NscaleGlomfjord,Semtech/Tower andLoughton leads matchexisting events;fresh reposts not distinct facts.Only secondary institutional upgrade/rebound discovery,no originalGoldman estimates obtained or consensus inferred.All14grouped results inspected for leads,not latestfinancial validation.",
+          "Preserved100events,211prior candidates,141prior screenings,articles,blockers andCSPbaseline.Added2candidates/1screening only.No privateBflows,holdings,quotes or valuation public.JSON-only update,no article/build/deploy claim.Exact remote readback required."
         ]
       }
     ],
@@ -13331,6 +13364,54 @@
         "Separate preliminary notices from final approvals and power-ready deployment"
       ],
       "publication_status": "candidate_only_no_alert_no_article"
+    },
+    {
+      "key": "amazon-aep-xenergy-indiana-960mw-feasibility-to-firm-power-20261019",
+      "date": "2026-10-20",
+      "event_date": "2026-10-19",
+      "companies": [
+        "Amazon",
+        "AEP",
+        "X-energy"
+      ],
+      "sources": [
+        "https://www.aboutamazon.com/news/sustainability/amazon-nuclear-energy-indiana-x-energy-aep",
+        "https://pr.aep.com/news/releases/read/12330/AEP-Partners-with-Amazon-and-Xenergy-to-Explore-Advanced-Nuclear-Energy-in-Indiana",
+        "https://x-energy.com/news/x-energy-amazon-american-electric-power-partner-to-bring-smr-project-to-indiana/"
+      ],
+      "stage": "issuer_indexed_original_text_read_direct_article_fetches_failed_feasibility_not_commissioned_capacity",
+      "facts": {
+        "baseline": "Existing Amazon/X-energy goal exceeds5GW by2039;2024funding historical,not a new October19 capital raise.",
+        "increment": "Amazon original says signed agreement to explore12Xe-100units totaling960MW at former Breed site in Indiana;Amazon project-development funder and intended first power customer.",
+        "limits": "Proposed capacity,not energized power or delivered reactor order.Funding amount,final investment decision,executed power price,construction timing and supplier margin not established.Direct issuer/presswire/utility pages failed;indexed issuer text supplies limited baseline only."
+      },
+      "questions": [
+        "Definitive funding/PPA terms,permits and final investment decision",
+        "Construction acceptance,power delivery and returns versus invested capital"
+      ],
+      "publication_status": "candidate_only_no_alert_no_article"
+    },
+    {
+      "key": "nvidia-germany-industrial-ai-declaration-and-planned-startup-investments-20261019",
+      "date": "2026-10-20",
+      "event_date": "2026-10-19",
+      "companies": [
+        "NVIDIA",
+        "German federal government"
+      ],
+      "sources": [
+        "https://blogs.nvidia.com/blog/germany-wants-to-lead-the-world-in-industrial-ai-how-nvidia-will-help/"
+      ],
+      "stage": "primary_blog_full_body_read_intent_and_planned_investments_not_quantified_orders",
+      "facts": {
+        "increment": "October19joint declaration of intent on physical-AI models;new planned investments in four German startups.",
+        "limits": "Investments are part of nearlyUSD10billion Europe commitment,not an additionalUSD10billion.No startup-specific amounts,closed financing,newGPUorders,CSPbudget or supplierprofit revision established."
+      },
+      "questions": [
+        "Closed financing amounts and actual commercial compute purchases",
+        "Industrial-AI adoption translating to recurring revenue and cash"
+      ],
+      "publication_status": "candidate_only_no_alert_no_article"
     }
   ],
   "blockers": [
@@ -13350,7 +13431,7 @@
     }
   ],
   "last_research_date": "2026-10-20",
-  "instruction_commit_sha": "860b2e512501bb915ca3288613ba43fe059c8c23",
+  "instruction_commit_sha": "17d2fad0fbf2f5f8857639d09f55f51a4ba265e9",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
