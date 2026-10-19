@@ -3133,12 +3133,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-20",
-      "checked_at": "2026-10-19T17:57:04Z",
-      "instruction_commit_sha": "138ff3f381e53eed71471825491aa7079480670e",
+      "checked_at": "2026-10-19T18:49:12Z",
+      "instruction_commit_sha": "860b2e512501bb915ca3288613ba43fe059c8c23",
       "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "14 fresh grouped discovery queries covering 98 active names; core6/CSP5 source/index checks and outside-universe leads. No new material public event, candidate or article.",
+      "scope": "Fresh14grouped queries covering98active names;core6/CSP5 landing/source checks and out-of-universe leads.Two candidates,no new material event or article.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -3151,16 +3151,17 @@
         "https://abc.xyz/investor/",
         "https://investor.atmeta.com/home/default.aspx",
         "https://www.oracle.com/news/",
-        "https://www.lgcorp.com/media/release/30644",
-        "https://www.zdtco.com/en/news/Financials"
+        "https://www.sec.gov/Archives/edgar/data/1181412/000162828026041150/spacexagreementfwp.htm",
+        "https://www.citizen.org/news/business-as-usual-despite-governors-directive-tceq-continues-processing-and-issuing-data-center-permits/",
+        "https://www.tceq.texas.gov/permitting/stormwater/construction"
       ],
       "source_limits": [
-        "All required pinned instructions/specifications/legacy references and three recent related articles fully read at 138ff3f381e53eed71471825491aa7079480670e. Exact progress blob 1517ad9a0689f02badb55c1f4c11e68443d4bd9a parsed; recursive tree untruncated. No required-instruction failure.",
-        "Fresh alpha-quant head f43ed0cd5d57d28c50b924f2b3614d4189eae69f; CSV blob 88422949d38165d4757a1e24c27f8662bede14c1; 98 active names. Grouped discovery is not 98 current individual issuer audits. Primary50/pending48, monthly24, partner4, regulator3 and product16 unchanged.",
-        "Core6/CSP5 landing pages checked. Broadcom index failed to fetch and is not claimed refreshed. Other sparse/dynamic landing pages do not constitute full filing coverage. NVIDIA October19 media blog, AMD October12 Helion and Marvell October13 platform index items did not supply a distinct earnings/order revision.",
-        "HPE September30 historical order/guidance, AWS rack financing, S&P qualitative credit-visibility warning, TPU/GlobalFoundries and LG/AIR cooling contract leads match existing events/candidates; no distinct new contracted award, quantified incremental credit action or revenue acceptance evidence established. Price reactions and repost timestamps not new fundamentals.",
-        "Zhen Ding 4958 first-half AI product-mix lead indexed at company source, but direct article and financial-news index failed to fetch (index 502). Original body not verified; no primary coverage credit, investment conclusion or fresh event. Grouped results otherwise historical monthly disclosures, company indices and broker/price recaps.",
-        "Preserved 100 events, 209 candidates, all prior139 screenings, articles, blockers and CSP baseline. Added one screening only. No private B fund-flow/holdings/quotes/valuation in public ledger. JSON-only update; no article/build/deploy claim. Exact remote readback required."
+        "Required instructions/specifications and3related articles obtained at 860b2e512501bb915ca3288613ba43fe059c8c23 and read in full windows after display truncation was recovered.Exact progress blob73f179df21115584d079afdcd9da79d963e71c97 parsed;recursive tree untruncated.No outstanding required-instruction gap.",
+        "Fresh alpha-quant default headf43ed0cd5d57d28c50b924f2b3614d4189eae69f;CSV88422949d38165d4757a1e24c27f8662bede14c1;98active names.Grouped discovery not98current issuer audits.Primary50/pending48,monthly24,partner4,regulator3,product16 unchanged.",
+        "Broadcom index recovered,latestOctober13HyperArmor andOctober8OCP;core6/CSP5 index checks not full filings.TSMCQ3guidance andMTKSeptember30pressroom remain baseline.NVIDIAOctober19quantum-simulation release newly visible;no quantified incremental contracted demand or earnings revision established.Sparse CSPlanding pages retained as coverage limits.",
+        "Google/SpaceX historical June5FWP delivery/termination terms recorded as candidate,not Octobernew order or recognized revenue.TexasNGO reported permit progression kept candidate pending dated official records;agency page still states pause.No claim of general reopening.",
+        "All14fresh grouped results inspected for leads;primarily historical monthly/company notices,broker recaps and price reactions.Do not count repeated citations as independent events or current financial validation.",
+        "Preserved100events,209prior candidates,140prior screenings,articles,blockers andCSPbaseline.Added2candidates and1screening only.No privateBflows,holdings,quotes or valuation public.JSON-only update,no article/build/deploy claim;remote exact readback required."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -7474,6 +7475,39 @@
           "HPE September30 historical order/guidance, AWS rack financing, S&P qualitative credit-visibility warning, TPU/GlobalFoundries and LG/AIR cooling contract leads match existing events/candidates; no distinct new contracted award, quantified incremental credit action or revenue acceptance evidence established. Price reactions and repost timestamps not new fundamentals.",
           "Zhen Ding 4958 first-half AI product-mix lead indexed at company source, but direct article and financial-news index failed to fetch (index 502). Original body not verified; no primary coverage credit, investment conclusion or fresh event. Grouped results otherwise historical monthly disclosures, company indices and broker/price recaps.",
           "Preserved 100 events, 209 candidates, all prior139 screenings, articles, blockers and CSP baseline. Added one screening only. No private B fund-flow/holdings/quotes/valuation in public ledger. JSON-only update; no article/build/deploy claim. Exact remote readback required."
+        ]
+      },
+      {
+        "date": "2026-10-20",
+        "checked_at": "2026-10-19T18:49:12Z",
+        "instruction_commit_sha": "860b2e512501bb915ca3288613ba43fe059c8c23",
+        "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh14grouped queries covering98active names;core6/CSP5 landing/source checks and out-of-universe leads.Two candidates,no new material event or article.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://investor.atmeta.com/home/default.aspx",
+          "https://www.oracle.com/news/",
+          "https://www.sec.gov/Archives/edgar/data/1181412/000162828026041150/spacexagreementfwp.htm",
+          "https://www.citizen.org/news/business-as-usual-despite-governors-directive-tceq-continues-processing-and-issuing-data-center-permits/",
+          "https://www.tceq.texas.gov/permitting/stormwater/construction"
+        ],
+        "source_limits": [
+          "Required instructions/specifications and3related articles obtained at 860b2e512501bb915ca3288613ba43fe059c8c23 and read in full windows after display truncation was recovered.Exact progress blob73f179df21115584d079afdcd9da79d963e71c97 parsed;recursive tree untruncated.No outstanding required-instruction gap.",
+          "Fresh alpha-quant default headf43ed0cd5d57d28c50b924f2b3614d4189eae69f;CSV88422949d38165d4757a1e24c27f8662bede14c1;98active names.Grouped discovery not98current issuer audits.Primary50/pending48,monthly24,partner4,regulator3,product16 unchanged.",
+          "Broadcom index recovered,latestOctober13HyperArmor andOctober8OCP;core6/CSP5 index checks not full filings.TSMCQ3guidance andMTKSeptember30pressroom remain baseline.NVIDIAOctober19quantum-simulation release newly visible;no quantified incremental contracted demand or earnings revision established.Sparse CSPlanding pages retained as coverage limits.",
+          "Google/SpaceX historical June5FWP delivery/termination terms recorded as candidate,not Octobernew order or recognized revenue.TexasNGO reported permit progression kept candidate pending dated official records;agency page still states pause.No claim of general reopening.",
+          "All14fresh grouped results inspected for leads;primarily historical monthly/company notices,broker recaps and price reactions.Do not count repeated citations as independent events or current financial validation.",
+          "Preserved100events,209prior candidates,140prior screenings,articles,blockers andCSPbaseline.Added2candidates and1screening only.No privateBflows,holdings,quotes or valuation public.JSON-only update,no article/build/deploy claim;remote exact readback required."
         ]
       }
     ],
@@ -13251,6 +13285,52 @@
         "Actual cost of capital,cash-flow deterioration and capex/order transmission"
       ],
       "publication_status": "candidate_only_no_alert_no_article"
+    },
+    {
+      "key": "google-spacex-historical-compute-rental-delivery-and-termination-terms",
+      "date": "2026-10-20",
+      "event_date": "2026-06-05",
+      "companies": [
+        "Alphabet/Google",
+        "SpaceX"
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1181412/000162828026041150/spacexagreementfwp.htm"
+      ],
+      "stage": "historical_primary_fwp_summary_read_current_delivery_and_payments_unverified",
+      "facts": {
+        "baseline": "June5 agreement,not a new October19 award. Issuer FWP says approximately110000 NVIDIA GPUs with related compute components; USD920million monthly October2026-June2029 after reduced-fee ramp.",
+        "terms": "Underdelivery by September30 plus one-month grace gives Google termination or prorated-fee rights. After December31 either party may terminate on90days notice.",
+        "limits": "Do not treat nominal full-period payments as irrevocable backlog or fulfilled revenue. Executed full agreement,current delivery,actual payment and current termination status not obtained. No Google TPU allocation change established."
+      },
+      "questions": [
+        "Capacity acceptance and exercise or waiver of delivery remedies",
+        "Actual rental payments and net margins; how cash cost relates to issuer capex and leases without double counting"
+      ],
+      "publication_status": "candidate_only_no_alert_no_article"
+    },
+    {
+      "key": "texas-tceq-permit-processing-versus-pause-public-citizen-20261019",
+      "date": "2026-10-20",
+      "event_date": "2026-10-19",
+      "companies": [
+        "Texas data-center permitting"
+      ],
+      "sources": [
+        "https://www.citizen.org/news/business-as-usual-despite-governors-directive-tceq-continues-processing-and-issuing-data-center-permits/",
+        "https://www.tceq.texas.gov/permitting/stormwater/construction"
+      ],
+      "stage": "advocacy_group_original_indexed_text_read_official_case_records_pending",
+      "facts": {
+        "reported": "Public Citizen says16 permits advanced or issued after the directive,including preliminary air decisions,one wastewater permit and at least7new stormwater authorizations. Mixed procedural stages are not16final completed approvals.",
+        "counterevidence": "TCEQ official construction page still states data-center applications paused;no verified general reopening.",
+        "limits": "Underlying dated permit decisions and legal exceptions not obtained. Search found an earlier Rockdale air application,not proof of the alleged later wastewater issuance. NGO monitoring is not regulator confirmation."
+      },
+      "questions": [
+        "Identify dated official permits,scope and exceptions",
+        "Separate preliminary notices from final approvals and power-ready deployment"
+      ],
+      "publication_status": "candidate_only_no_alert_no_article"
     }
   ],
   "blockers": [
@@ -13270,7 +13350,7 @@
     }
   ],
   "last_research_date": "2026-10-20",
-  "instruction_commit_sha": "138ff3f381e53eed71471825491aa7079480670e",
+  "instruction_commit_sha": "860b2e512501bb915ca3288613ba43fe059c8c23",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
