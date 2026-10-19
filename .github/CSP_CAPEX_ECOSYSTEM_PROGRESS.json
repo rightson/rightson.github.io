@@ -2937,6 +2937,13 @@
           "stage": "reuters_update2_declined_comment_not_termination_confirmation",
           "facts": "Reuters Update2 syndicated at October18,11:03amET changes Microsoft's response to declined comment;withdrawal remains attributed to Telegraph.Nscale response unchanged.",
           "limits": "Direct Reuters/syndication body fetch failed;full indexed syndicated text retrieved.Earlier no-immediate-response versions retained historically.No new termination document,compensation,relocation or supplier cancellation.No material credibility or impact change;no repeat alert."
+        },
+        {
+          "date": "2026-10-19",
+          "source": "https://www.wsj.com/tech/microsoft-pulls-out-of-nscale-u-k-data-center-deal-over-power-supply-issues-f804c434",
+          "stage": "additional_original_report_with_microsoft_response_visible_termination_document_pending",
+          "facts": "WSJ October19 readable introduction reports the Loughton withdrawal. Its visible subheading attributes to Microsoft a continued Nscale partnership and single-site scope; indexed body also names a Microsoft spokesperson. This adds a customer response after earlier declined-comment versions.",
+          "limits": "Only visible original introduction/subheading and indexed excerpt read, not full restricted article. No termination terms,compensation,capacity relocation,equipment cancellation or supplier earnings revision established. Previously notified site-specific downside remains; no new material investment-impact alert."
         }
       ]
     },
@@ -3078,12 +3085,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-19",
-      "checked_at": "2026-10-19T11:59:00Z",
-      "instruction_commit_sha": "fe29f1fa0b73673d5db935e3f917aeccb7e3a3d3",
+      "checked_at": "2026-10-19T12:41:00Z",
+      "instruction_commit_sha": "b8a7853063b48375214efed5e33876823f68f2d7",
       "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh 14-query grouped discovery covers all 98 active names; core6 and CSP5 issuer indices refreshed, with separate recent financing/deployment and outside-universe discovery. No newly qualified material event, candidate or article.",
+      "scope": "Fresh14-query discovery covers all98 active names; core6/CSP5 issuer indices and separate outside-universe/recent capex-financing searches refreshed. Nscale additional reporting retained as verification update; no new event,candidate or article.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -3095,15 +3102,19 @@
         "https://ir.aboutamazon.com/overview/default.aspx",
         "https://abc.xyz/investor/",
         "https://investor.atmeta.com/home/default.aspx",
-        "https://www.oracle.com/news/"
+        "https://www.oracle.com/news/",
+        "https://www.wsj.com/tech/microsoft-pulls-out-of-nscale-u-k-data-center-deal-over-power-supply-issues-f804c434",
+        "https://www.trendforce.com/news/2026/10/19/news-mediateks-google-tpu-v9-shipments-may-slip-to-1q28-asic-race-heats-up-as-taiwan-firms-eye-new-opportunities/",
+        "https://www.ft.com/content/5970614a-b1f7-4b4e-b1e5-6038e1dde654",
+        "https://www.liteon.com/zh-tw/news/press-center/content/quarterly-second-eps-2026"
       ],
       "source_limits": [
-        "Required instructions, specifications, legacy research and latest related articles read completely at pinned instruction fe29f1fa0b73673d5db935e3f917aeccb7e3a3d3. Full progress obtained through exact blob112aba5b251869dae1c78e69dd726f7795320d59 and parsed; recursive tree not truncated. No instruction-source failure.",
-        "Latest alpha-quant main f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV88422949d38165d4757a1e24c27f8662bede14c1 retain98 active names. Fourteen grouped queries are discovery coverage, not98 independent current primary audits. Historical primary50,pending48,monthly24,partner4,regulator3,product16 unchanged. No watchlist mutation.",
-        "TSMC quarterly page recovered and unchanged Q3 actual/Q4 guidance checked; MediaTek, NVIDIA, AMD, Broadcom and Marvell issuer indices refreshed. Latest index items include product/platform releases already below new earnings-event threshold. No newly authenticated TPU commercial responsibility,NRE,renewal or procurement revision established in read sources; index checks are not full financial filing audits.",
-        "CSP5 landing/IR pages and targeted recent financing/deployment/cancellation queries refreshed. Budget, commitments, accepted deployment, utilization and monetization remain separate; landing pages alone do not validate their latest detailed values. Existing Nscale Loughton report remains previously retained; no new supplier-order loss or termination original established.",
-        "Grouped discovery yields historical monthly-revenue, product and broker/media recaps; Global Tek project and reported Nscale risks overlap retained baselines. Out-of-universe search leads require original date/economic-scope validation before any new candidate or earnings conclusion. No new material incremental fact established in sources actually read, not a whole-market no-news conclusion.",
-        "All98 events,205 candidates,133 previous screenings,articles,blockers and CSP baseline preserved; one screening appended. Public ledger contains only research-source checks and completion limits, no stock prices, holdings,valuation,private institutional-flow work or investment triggers. Ledger-only JSON and exact remote readback verification; no article lint/build/deploy/publication claim."
+        "Required pinned instructions and referenced specifications fetched completely at b8a7853063b48375214efed5e33876823f68f2d7; display truncation repaired through consecutive segments. Full progress exact blob7a0a56fae913f43358c985429df504c53941bf35 parsed; recent related posts and untruncated recursive tree checked. No instruction-source failure.",
+        "Fresh alpha-quant default head f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV88422949d38165d4757a1e24c27f8662bede14c1 retain98 active names. Fourteen grouped queries are discovery,not98 current issuer audits. Historical primary50,pending48,monthly24,partner4,regulator3,product16 unchanged; no watchlist edit.",
+        "TSMC Q3 actual/Q4 guidance and MediaTek/NVIDIA/AMD/Broadcom/Marvell indices rechecked. October19 TPUv9 article repeats previously retained single-institution Humufish schedule estimates; Commercial Times linked original restricted. No independent company confirmation or new NRE,procurement,design-responsibility or financial revision inferred.",
+        "CSP5 issuer landing pages and recent project-financing/deployment searches refreshed,not a full current filing audit. Budget,lease commitments,accepted deployment,utilization and monetization kept separate. Nscale WSJ verification adds a customer response but no quantified new supplier loss or group-wide cancellation.",
+        "FT Investors turn on data centres remains restricted to headline/indexed summary; no bond-price/spread series or new financing failure inferred. LITEON historical Q2 issuer body timed out; fresh search excerpts alone do not increase primary-company coverage. Other grouped leads mainly historical monthly results,product and broker recaps.",
+        "All98 events,205 candidates,134 earlier screenings,articles,blockers and CSP baseline retained. One verification update and one screening appended. Public content excludes current quotes,holdings,valuation and all private institutional-flow monitoring. Ledger-only JSON and full exact remote readback; no article lint/build/deploy/publication claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -7213,6 +7224,40 @@
           "CSP5 landing/IR pages and targeted recent financing/deployment/cancellation queries refreshed. Budget, commitments, accepted deployment, utilization and monetization remain separate; landing pages alone do not validate their latest detailed values. Existing Nscale Loughton report remains previously retained; no new supplier-order loss or termination original established.",
           "Grouped discovery yields historical monthly-revenue, product and broker/media recaps; Global Tek project and reported Nscale risks overlap retained baselines. Out-of-universe search leads require original date/economic-scope validation before any new candidate or earnings conclusion. No new material incremental fact established in sources actually read, not a whole-market no-news conclusion.",
           "All98 events,205 candidates,133 previous screenings,articles,blockers and CSP baseline preserved; one screening appended. Public ledger contains only research-source checks and completion limits, no stock prices, holdings,valuation,private institutional-flow work or investment triggers. Ledger-only JSON and exact remote readback verification; no article lint/build/deploy/publication claim."
+        ]
+      },
+      {
+        "date": "2026-10-19",
+        "checked_at": "2026-10-19T12:41:00Z",
+        "instruction_commit_sha": "b8a7853063b48375214efed5e33876823f68f2d7",
+        "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh14-query discovery covers all98 active names; core6/CSP5 issuer indices and separate outside-universe/recent capex-financing searches refreshed. Nscale additional reporting retained as verification update; no new event,candidate or article.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://investor.atmeta.com/home/default.aspx",
+          "https://www.oracle.com/news/",
+          "https://www.wsj.com/tech/microsoft-pulls-out-of-nscale-u-k-data-center-deal-over-power-supply-issues-f804c434",
+          "https://www.trendforce.com/news/2026/10/19/news-mediateks-google-tpu-v9-shipments-may-slip-to-1q28-asic-race-heats-up-as-taiwan-firms-eye-new-opportunities/",
+          "https://www.ft.com/content/5970614a-b1f7-4b4e-b1e5-6038e1dde654",
+          "https://www.liteon.com/zh-tw/news/press-center/content/quarterly-second-eps-2026"
+        ],
+        "source_limits": [
+          "Required pinned instructions and referenced specifications fetched completely at b8a7853063b48375214efed5e33876823f68f2d7; display truncation repaired through consecutive segments. Full progress exact blob7a0a56fae913f43358c985429df504c53941bf35 parsed; recent related posts and untruncated recursive tree checked. No instruction-source failure.",
+          "Fresh alpha-quant default head f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV88422949d38165d4757a1e24c27f8662bede14c1 retain98 active names. Fourteen grouped queries are discovery,not98 current issuer audits. Historical primary50,pending48,monthly24,partner4,regulator3,product16 unchanged; no watchlist edit.",
+          "TSMC Q3 actual/Q4 guidance and MediaTek/NVIDIA/AMD/Broadcom/Marvell indices rechecked. October19 TPUv9 article repeats previously retained single-institution Humufish schedule estimates; Commercial Times linked original restricted. No independent company confirmation or new NRE,procurement,design-responsibility or financial revision inferred.",
+          "CSP5 issuer landing pages and recent project-financing/deployment searches refreshed,not a full current filing audit. Budget,lease commitments,accepted deployment,utilization and monetization kept separate. Nscale WSJ verification adds a customer response but no quantified new supplier loss or group-wide cancellation.",
+          "FT Investors turn on data centres remains restricted to headline/indexed summary; no bond-price/spread series or new financing failure inferred. LITEON historical Q2 issuer body timed out; fresh search excerpts alone do not increase primary-company coverage. Other grouped leads mainly historical monthly results,product and broker recaps.",
+          "All98 events,205 candidates,134 earlier screenings,articles,blockers and CSP baseline retained. One verification update and one screening appended. Public content excludes current quotes,holdings,valuation and all private institutional-flow monitoring. Ledger-only JSON and full exact remote readback; no article lint/build/deploy/publication claim."
         ]
       }
     ],
@@ -12905,7 +12950,7 @@
     }
   ],
   "last_research_date": "2026-10-19",
-  "instruction_commit_sha": "fe29f1fa0b73673d5db935e3f917aeccb7e3a3d3",
+  "instruction_commit_sha": "b8a7853063b48375214efed5e33876823f68f2d7",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
