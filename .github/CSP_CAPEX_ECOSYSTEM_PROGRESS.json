@@ -3041,12 +3041,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-19",
-      "checked_at": "2026-10-19T04:30:38Z",
-      "instruction_commit_sha": "a0c8b5b88c37bc48f4ffd0c369954a15bfb0e7c9",
-      "status": "grouped_discovery_and_existing_issuer_capacity_baseline_reconciliation_latest_individual_primary_validation_partial",
+      "checked_at": "2026-10-19T05:21:46Z",
+      "instruction_commit_sha": "2af3a4f6514e8adbae9699ccc48d4591e4437adb",
+      "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh14grouped discovery queries include98 active names;core6 issuer sources,CSP5 landing pages and targeted TPU/NRE/procurement/capex reporting refreshed.Selected TSMC original-capacity chronology reconciled with current media.No newly qualified material event or article.",
+      "scope": "Fresh14grouped searches include98 active names;core6 issuer sources,CSP5 landing indices and targeted ASIC/procurement/capex reporting refreshed.TrendForce reprint traced to October14 original.Voltronic primary financial-table extraction remains incomplete.No newly qualified material event or article.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -3059,24 +3059,20 @@
         "https://abc.xyz/investor/",
         "https://about.fb.com/news/",
         "https://www.oracle.com/news/",
-        "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf",
-        "https://www.ftnn.com.tw/news/588379",
-        "https://udn.com/news/story/7240/9822782?from=udn-relatednews_ch2",
-        "https://www.sinbon.com/tw/investors-news/1",
-        "https://www.liteon.com/zh-tw/news/press-center/content/liteon-monthly-sales-sep-2026",
-        "https://ir.amkor.com/news-releases",
-        "https://www.trendforce.com.tw/research/download/RP261013LA",
-        "https://www.ft.com/content/35cc5cc6-f9b6-49cc-8fc2-bd61e09c8c40"
+        "https://www.trendforce.com.tw/presscenter/news/20261014-13268.html",
+        "https://www.mem.com.tw/trendforce%EF%BC%9A2027%E5%B9%B4csp%E8%B3%87%E6%9C%AC%E6%94%AF%E5%87%BA%E5%B0%871-5%E5%85%86%E7%BE%8E%E5%85%83/",
+        "https://voltronicpower.com/zh-TW/Investors/Financial-Information",
+        "https://voltronicpower.com/en-us/Investors/Financial-Information",
+        "https://marklapedus.substack.com/p/foundryecosystem-report-ai-capex"
       ],
       "source_limits": [
-        "Mandatory instructions,specifications,taxonomy and series files retrieved fully at pinned default-main a0c8b5b88c37bc48f4ffd0c369954a15bfb0e7c9.Full JSON ledger retrieved and parsed;event fingerprints,candidate keys,blockers and focused prior records checked.Three latest relevant ai-industry articles retrieved at same commit;unchanged content matches prior baseline.",
-        "Latest alpha-quant default-main f43ed0cd5d57d28c50b924f2b3614d4189eae69f/CSV88422949d38165d4757a1e24c27f8662bede14c1 confirms98 active names.All included in14fresh grouped discovery queries,not98 current individual issuer audits.Recency filters return older and inconsistent future-period results;not current event evidence.Historical primary50,pending48,monthly24,partner4,regulator3,product16 unchanged.",
-        "TSMC Q3/Q4 issuer guidance and MediaTek,NVIDIA,AMD,Broadcom,Marvell visible issuer news entries refreshed.No newly authenticated TPU design responsibility,NRE,production economics,procurement allocation or quantified financial revision established.Indices are not full financial or release-by-release audits.",
-        "CSP5 landing sources and targeted capex/financing reporting refreshed.Microsoft lists October28 earnings;Amazon40line/Alphabet72line extraction remains navigation-only.Meta/Oracle visible news entries do not establish full capex,lease,accepted deployment,utilization or ROI coverage.Alphabet annual capex/full lease baseline remains incomplete.",
-        "October19 MediaTek article uses unnamed institution/market forecasts without original note,date,old/new estimates or consensus population;revenue-range wording contains inconsistent units.Do not promote it to verified earnings revision.TSMC third-Arizona-fab2028 timing remains industry-attributed;selected October15 original transcript confirms second-fab and A14 baselines but not that date.",
-        "Fulltech monthly gross-profit,TPU broker timing/EMIB summary,Nscale Loughton/Monarch,NVHBM and prior ASML guidance reporting overlap existing records or remain original-body incomplete.No duplicate public event.Nscale currently reindexed FT report does not itself establish new cancellation economics or supplier order reductions.",
-        "SINBON direct issuer extraction remains one-line shell without numeric body;LITEON September release timed out.Amkor attempted news index returned404;no issuer confirmation or coverage credit added.No missing body is treated as evidence of stability.Outside-universe expansion/procurement leads remain research stages.",
-        "All prior97 public events,201 research candidates and125 screenings retained.One existing candidate verification and one current screening appended.No new article,quotes,valuation,holdings,private investment judgment or market-flow records.Ledger-only preservation/JSON and remote-source readback validation;no articlelint,build,deploy or publication-success claim."
+        "Required instructions and directly related specifications retrieved fully at pinned default-main 2af3a4f6514e8adbae9699ccc48d4591e4437adb.Initial combined display truncated part of AGENTS;complete content was reread in two smaller untruncated outputs before research.Full progress JSON retrieved and parsed;fingerprints,candidate keys and prior recorded facts used for dedup.Three relevant articles retrieved at same commit and unchanged blobs match full texts already read in visible context.Latest repository tree checked.",
+        "Alpha-quant latest default-main f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV88422949d38165d4757a1e24c27f8662bede14c1 confirm98 active names.All included in14fresh grouped discovery queries,not98 individual current-primary audits.Recency filters returned historical material;missing search hits are not evidence of no event.Historical primary50,pending48,monthly24,partner4,regulator3,product16 unchanged.",
+        "TSMC Q3/Q4 issuer guidance and MediaTek,NVIDIA,AMD,Broadcom,Marvell visible issuer news entries refreshed.Broadcom latest October13 entry obtained through direct-index find.No newly authenticated TPU design,NRE,renewal,production economics,procurement allocation or earnings revision established.Visible indices are not complete financial or release-by-release audits.",
+        "CSP5 landing sources plus targeted independent reporting refreshed.Microsoft lists October28 earnings;Amazon40line/Alphabet72line extraction remains navigation-only.Meta/Oracle visible news entries do not establish complete capex,leases,accepted deployment,utilization or ROI.Alphabet annual capex/full lease baseline remains incomplete.",
+        "October19 TrendForce reprint matches October14 original nine-CSP2027 growth50-to60-percent forecast already registered.Pricing and prepayment assumptions remain separate from realized equipment volume,accepted deployment or supplier profits.Fulltech profit headlines and historical TPU/Marvell allocation stories overlap prior records.No new duplicate event.",
+        "Voltronic Chinese/English issuer financial indices read;2026 report controls do not expose numeric monthly body.The apparent PDF control resolves to a PDF icon image,not a financial document.Media September revenue values were not promoted to primary verification and no company/monthly counter increased.Foundryecosystem newsletter direct body inaccessible;no substantive claim derived from headline.",
+        "All prior97 public events,201 candidates and126 screenings retained.One current screening appended only;no new candidate,article or blocker.No quotes,valuation,targets,holdings,private investment judgments or market-flow records.Ledger-only JSON preservation and remote-source readback validation;no articlelint,build,deploy or publication-success claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -6910,6 +6906,42 @@
           "Fulltech monthly gross-profit,TPU broker timing/EMIB summary,Nscale Loughton/Monarch,NVHBM and prior ASML guidance reporting overlap existing records or remain original-body incomplete.No duplicate public event.Nscale currently reindexed FT report does not itself establish new cancellation economics or supplier order reductions.",
           "SINBON direct issuer extraction remains one-line shell without numeric body;LITEON September release timed out.Amkor attempted news index returned404;no issuer confirmation or coverage credit added.No missing body is treated as evidence of stability.Outside-universe expansion/procurement leads remain research stages.",
           "All prior97 public events,201 research candidates and125 screenings retained.One existing candidate verification and one current screening appended.No new article,quotes,valuation,holdings,private investment judgment or market-flow records.Ledger-only preservation/JSON and remote-source readback validation;no articlelint,build,deploy or publication-success claim."
+        ]
+      },
+      {
+        "date": "2026-10-19",
+        "checked_at": "2026-10-19T05:21:46Z",
+        "instruction_commit_sha": "2af3a4f6514e8adbae9699ccc48d4591e4437adb",
+        "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh14grouped searches include98 active names;core6 issuer sources,CSP5 landing indices and targeted ASIC/procurement/capex reporting refreshed.TrendForce reprint traced to October14 original.Voltronic primary financial-table extraction remains incomplete.No newly qualified material event or article.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://about.fb.com/news/",
+          "https://www.oracle.com/news/",
+          "https://www.trendforce.com.tw/presscenter/news/20261014-13268.html",
+          "https://www.mem.com.tw/trendforce%EF%BC%9A2027%E5%B9%B4csp%E8%B3%87%E6%9C%AC%E6%94%AF%E5%87%BA%E5%B0%871-5%E5%85%86%E7%BE%8E%E5%85%83/",
+          "https://voltronicpower.com/zh-TW/Investors/Financial-Information",
+          "https://voltronicpower.com/en-us/Investors/Financial-Information",
+          "https://marklapedus.substack.com/p/foundryecosystem-report-ai-capex"
+        ],
+        "source_limits": [
+          "Required instructions and directly related specifications retrieved fully at pinned default-main 2af3a4f6514e8adbae9699ccc48d4591e4437adb.Initial combined display truncated part of AGENTS;complete content was reread in two smaller untruncated outputs before research.Full progress JSON retrieved and parsed;fingerprints,candidate keys and prior recorded facts used for dedup.Three relevant articles retrieved at same commit and unchanged blobs match full texts already read in visible context.Latest repository tree checked.",
+          "Alpha-quant latest default-main f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV88422949d38165d4757a1e24c27f8662bede14c1 confirm98 active names.All included in14fresh grouped discovery queries,not98 individual current-primary audits.Recency filters returned historical material;missing search hits are not evidence of no event.Historical primary50,pending48,monthly24,partner4,regulator3,product16 unchanged.",
+          "TSMC Q3/Q4 issuer guidance and MediaTek,NVIDIA,AMD,Broadcom,Marvell visible issuer news entries refreshed.Broadcom latest October13 entry obtained through direct-index find.No newly authenticated TPU design,NRE,renewal,production economics,procurement allocation or earnings revision established.Visible indices are not complete financial or release-by-release audits.",
+          "CSP5 landing sources plus targeted independent reporting refreshed.Microsoft lists October28 earnings;Amazon40line/Alphabet72line extraction remains navigation-only.Meta/Oracle visible news entries do not establish complete capex,leases,accepted deployment,utilization or ROI.Alphabet annual capex/full lease baseline remains incomplete.",
+          "October19 TrendForce reprint matches October14 original nine-CSP2027 growth50-to60-percent forecast already registered.Pricing and prepayment assumptions remain separate from realized equipment volume,accepted deployment or supplier profits.Fulltech profit headlines and historical TPU/Marvell allocation stories overlap prior records.No new duplicate event.",
+          "Voltronic Chinese/English issuer financial indices read;2026 report controls do not expose numeric monthly body.The apparent PDF control resolves to a PDF icon image,not a financial document.Media September revenue values were not promoted to primary verification and no company/monthly counter increased.Foundryecosystem newsletter direct body inaccessible;no substantive claim derived from headline.",
+          "All prior97 public events,201 candidates and126 screenings retained.One current screening appended only;no new candidate,article or blocker.No quotes,valuation,targets,holdings,private investment judgments or market-flow records.Ledger-only JSON preservation and remote-source readback validation;no articlelint,build,deploy or publication-success claim."
         ]
       }
     ],
@@ -12456,7 +12488,7 @@
     }
   ],
   "last_research_date": "2026-10-19",
-  "instruction_commit_sha": "a0c8b5b88c37bc48f4ffd0c369954a15bfb0e7c9",
+  "instruction_commit_sha": "2af3a4f6514e8adbae9699ccc48d4591e4437adb",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
