@@ -3216,6 +3216,29 @@
         "limits": "Management outlook,not bookedorders/customerqualification proof.No quantified EPS/margin/cash revision.PTFE criticism lacks comparative customer testdata;USinvestmentconditional."
       },
       "status": "original_reporting_body_verified_management_outlook_only_no_article"
+    },
+    {
+      "fingerprint": "co-tech-penang-hvlp4-capacity-timetable-and-financing-scope-20261020",
+      "event_date": "2026-10-20",
+      "discovered_date": "2026-10-20",
+      "instruction_commit_sha": "32bc6511f5f2143f837eaa05e5e38f097202a2d8",
+      "companies": [
+        "Co-Tech (8358)"
+      ],
+      "type": "reported_management_expansion_scope_not_booked_order_or_near_term_earnings_revision",
+      "sources": [
+        "https://www.cna.com.tw/news/afe/202610200365.aspx",
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a657f257-2c5c-4260-a8b6-e0ce9a3f2fc0",
+        "https://news.cnyes.com/news/id/6632193"
+      ],
+      "facts": {
+        "source_time": "CNA October20 21:45 Asia/Taipei;MoneyDJ October20 14:27:31;October16 filing reproduction.",
+        "increment": "Management describes Penang HVLP4-oriented planned annual capacity of30000tonnes,phase1 starting aroundQ3/Q4 2028 andphase2 inH2 2029.CNA estimates totalprojectTWD8–10bn;MoneyDJ TWD8–11bn,still dependent onbuild/equipmentcosts.",
+        "baseline": "October16 subsidiarycapitalinjection TWD1.4bn is priorpreparation funding,not the samepopulation as fullprojectbudget.Not an amendmentfrom1.4to8–11bn.",
+        "product_scope": "CNA reports GP999 systemvalidation andsmallshipments,withQ3 broadlydefinedhigh-endmix15–20%.GP999 sampling/smallshipments were reported beforetoday;not first-ever certification/order.",
+        "limits": "No namedCSPvolumeaward,ASP/margindata orfundedfull-capacitydelivery.No assumptionentireplannedcapacityis incrementalnetindustrysupplyorbookedrevenue."
+      },
+      "status": "original_reporting_verified_expansion_scope_no_article"
     }
   ],
   "articles": [],
@@ -3287,13 +3310,13 @@
     ],
     "current_run_screening": {
       "date": "2026-10-20",
-      "checked_at": "2026-10-20T12:41:25Z",
-      "instruction_commit_sha": "26c9f25a406ef87d0bafdb521de5d2ec9dc8301a",
-      "status": "original_reported_emc_management_roadmap_added_tsmc_construction_scope_candidate",
+      "checked_at": "2026-10-20T14:18:51Z",
+      "instruction_commit_sha": "32bc6511f5f2143f837eaa05e5e38f097202a2d8",
+      "status": "co_tech_expansion_scope_added_historical_product_and_iteq_roadmaps_deduplicated",
       "company_count": 98,
       "grouped_query_count": 14,
-      "additional_targeted_query_count": 9,
-      "scope": "Fourteen seven-name grouped discovery attempts across98active names;not98individualcurrentissuerchecks.Core6/CSP5originalentrypointsrefreshed.CNAoriginalCCL andconstructionreport bodiesverified.",
+      "additional_targeted_query_count": 19,
+      "scope": "Fourteen grouped seven-name discoveryattempts across98active names;not98individualissuerchecks.Core6/CSP5originalentrypoints refreshed.Targetedoriginaljournalism andCo-Tech issuerrevenue/IRread.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -3306,14 +3329,18 @@
         "https://abc.xyz/investor/",
         "https://investor.atmeta.com/home/default.aspx",
         "https://www.oracle.com/news/",
-        "https://www.cna.com.tw/news/afe/202610200135.aspx",
-        "https://www.cna.com.tw/news/asoc/202610200328.aspx",
-        "https://www.sinbon.com/tw/investors-news/1"
+        "https://www.cna.com.tw/news/afe/202610200365.aspx",
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a657f257-2c5c-4260-a8b6-e0ce9a3f2fc0",
+        "https://news.cnyes.com/news/id/6632193",
+        "https://www.cna.com.tw/news/afe/202610200326.aspx",
+        "https://www.cna.com.tw/news/asoc/202610200361.aspx",
+        "https://www.co-tech.com/tw/ir/operation"
       ],
       "company_check_scope": {
         "new_active_universe_primary_issuer_originals": [],
         "original_journalism_company_statement_reads": [
-          "2383",
+          "8358",
+          "6213",
           "2330"
         ],
         "grouped_discovery_only": [
@@ -3417,14 +3444,17 @@
           "2375"
         ],
         "cumulative_primary_company_fact_count": 52,
-        "cumulative_pending": 46
+        "cumulative_pending": 46,
+        "outside_universe_issuer_revenue_read": [
+          "8358"
+        ]
       },
       "source_limits": [
-        "Freshsame-commitmandatoryinstructions/specifications fullyretrieved;allblobsidentical to completeinstructiontextalreadyread in thisconversation.Three relatedarticlesfullyretrievedwithsameblobs.Full progress3e753ea0e73c5ea59ad71d40ad024a686d7d813eparsed.",
-        "Freshalpha-quantmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f,CSV88422949d38165d4757a1e24c27f8662bede14c1,98active.Groupedresultsmostlyaggregated/prices/historical;notcompleteprimaryvalidation.Primarycoverage52/98unchanged.",
-        "CoreTSMCQ3/Q4,MediaTekSeptember,NVIDIAOctober19,AMDOctober12,MarvellOctober13,BroadcomOctober19retainrecordedbaselines.CSPsitesdynamic/sparse;notcomprehensivefilingscoverage.",
-        "CNAoriginalCCLinterviewrecoveredviaindexed-refread afterdirectInternalError.Otherdirectreportbodiesfailed;notclaimedindependentconfirmation.CNAconstructionstatementbodyread.No privateprices,flows,valuation,holdingsorBdata inpublicfile.",
-        "SinbonissuerIRJS-only;nooriginalrevenueverificationorprimarycoveragecredit.FCCroboticsstory remainedunverifieddiscovery;notadoptedasregulatoryfact.1event/2candidates/1screeningappended.Allpriorhistorypreserved.Noarticle/lint/build/deployclaim."
+        "Samecommitmandatoryinstructions/specificationscomplete;AGENTSdisplaytruncationrecoveredbysecondread.Three relatedarticlesretrievedwithunchangedblobs;fullprogressparsed.Noarticlecreated.",
+        "Freshalpha-quantdefaultheadandCSVread98active.Cumulativeprimary52/98unchanged;groupeddiscoverymostlyvendoraggregates/prices/history,notcompleteprimaryaudit.",
+        "CoreTSMCQ3/Q4,MediaTekSeptember,NVIDIAOct19,AMDOct12,MarvellOct13retainbaselines.BroadcomandCSPlandingpagespartlydynamic/sparse;notcomprehensivefilingcoverage.",
+        "GP999 smallshipmentsalreadyreportedJuly/September;ITEQ5.7→9.1mroadmapSeptember24.Notnewdesignwinsorforecastrevisions.Co-Techfullprojectcapexrangeconflicts8–10/8–11bn;preservednotaveraged.",
+        "Onlypublicindustryfactsandstagehere.No privatequotes,valuation,holdings,flows orBdata.Noarticle/lint/build/deployclaim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -8876,6 +8906,155 @@
           "CoreTSMCQ3/Q4,MediaTekSeptember,NVIDIAOctober19,AMDOctober12,MarvellOctober13,BroadcomOctober19retainrecordedbaselines.CSPsitesdynamic/sparse;notcomprehensivefilingscoverage.",
           "CNAoriginalCCLinterviewrecoveredviaindexed-refread afterdirectInternalError.Otherdirectreportbodiesfailed;notclaimedindependentconfirmation.CNAconstructionstatementbodyread.No privateprices,flows,valuation,holdingsorBdata inpublicfile.",
           "SinbonissuerIRJS-only;nooriginalrevenueverificationorprimarycoveragecredit.FCCroboticsstory remainedunverifieddiscovery;notadoptedasregulatoryfact.1event/2candidates/1screeningappended.Allpriorhistorypreserved.Noarticle/lint/build/deployclaim."
+        ]
+      },
+      {
+        "date": "2026-10-20",
+        "checked_at": "2026-10-20T14:18:51Z",
+        "instruction_commit_sha": "32bc6511f5f2143f837eaa05e5e38f097202a2d8",
+        "status": "co_tech_expansion_scope_added_historical_product_and_iteq_roadmaps_deduplicated",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "additional_targeted_query_count": 19,
+        "scope": "Fourteen grouped seven-name discoveryattempts across98active names;not98individualissuerchecks.Core6/CSP5originalentrypoints refreshed.Targetedoriginaljournalism andCo-Tech issuerrevenue/IRread.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://investor.atmeta.com/home/default.aspx",
+          "https://www.oracle.com/news/",
+          "https://www.cna.com.tw/news/afe/202610200365.aspx",
+          "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a657f257-2c5c-4260-a8b6-e0ce9a3f2fc0",
+          "https://news.cnyes.com/news/id/6632193",
+          "https://www.cna.com.tw/news/afe/202610200326.aspx",
+          "https://www.cna.com.tw/news/asoc/202610200361.aspx",
+          "https://www.co-tech.com/tw/ir/operation"
+        ],
+        "company_check_scope": {
+          "new_active_universe_primary_issuer_originals": [],
+          "original_journalism_company_statement_reads": [
+            "8358",
+            "6213",
+            "2330"
+          ],
+          "grouped_discovery_only": [
+            "2330",
+            "2454",
+            "3661",
+            "3443",
+            "3035",
+            "5274",
+            "3711",
+            "2449",
+            "6257",
+            "6239",
+            "3264",
+            "8150",
+            "6223",
+            "6510",
+            "6515",
+            "6683",
+            "2360",
+            "3131",
+            "2467",
+            "6187",
+            "6640",
+            "3583",
+            "3413",
+            "6196",
+            "1560",
+            "8028",
+            "3037",
+            "8046",
+            "3189",
+            "2383",
+            "6274",
+            "6213",
+            "2368",
+            "2313",
+            "4958",
+            "3044",
+            "2367",
+            "6191",
+            "5469",
+            "8021",
+            "1815",
+            "1802",
+            "2317",
+            "2382",
+            "3231",
+            "6669",
+            "2356",
+            "2324",
+            "3706",
+            "2308",
+            "2301",
+            "6412",
+            "6282",
+            "3015",
+            "6409",
+            "3017",
+            "3324",
+            "2421",
+            "3653",
+            "8996",
+            "3338",
+            "2059",
+            "8210",
+            "3013",
+            "6117",
+            "3533",
+            "3665",
+            "6197",
+            "3023",
+            "3526",
+            "3605",
+            "2345",
+            "2379",
+            "6285",
+            "5388",
+            "3596",
+            "3081",
+            "3163",
+            "3363",
+            "4979",
+            "6442",
+            "3450",
+            "4977",
+            "3234",
+            "4908",
+            "2408",
+            "2344",
+            "2337",
+            "8299",
+            "3260",
+            "8271",
+            "5289",
+            "6770",
+            "3006",
+            "2327",
+            "2492",
+            "3026",
+            "2375"
+          ],
+          "cumulative_primary_company_fact_count": 52,
+          "cumulative_pending": 46,
+          "outside_universe_issuer_revenue_read": [
+            "8358"
+          ]
+        },
+        "source_limits": [
+          "Samecommitmandatoryinstructions/specificationscomplete;AGENTSdisplaytruncationrecoveredbysecondread.Three relatedarticlesretrievedwithunchangedblobs;fullprogressparsed.Noarticlecreated.",
+          "Freshalpha-quantdefaultheadandCSVread98active.Cumulativeprimary52/98unchanged;groupeddiscoverymostlyvendoraggregates/prices/history,notcompleteprimaryaudit.",
+          "CoreTSMCQ3/Q4,MediaTekSeptember,NVIDIAOct19,AMDOct12,MarvellOct13retainbaselines.BroadcomandCSPlandingpagespartlydynamic/sparse;notcomprehensivefilingcoverage.",
+          "GP999 smallshipmentsalreadyreportedJuly/September;ITEQ5.7→9.1mroadmapSeptember24.Notnewdesignwinsorforecastrevisions.Co-Techfullprojectcapexrangeconflicts8–10/8–11bn;preservednotaveraged.",
+          "Onlypublicindustryfactsandstagehere.No privatequotes,valuation,holdings,flows orBdata.Noarticle/lint/build/deployclaim."
         ]
       }
     ],
@@ -15253,6 +15432,77 @@
         "Any issuerproduction/capacity/capexguidancerevision"
       ],
       "publication_status": "scope_candidate_only_no_material_investment_alert_no_article"
+    },
+    {
+      "key": "co-tech-penang-capacity-cash-return-and-gp999-conversion-20261020",
+      "date": "2026-10-20",
+      "instruction_commit_sha": "32bc6511f5f2143f837eaa05e5e38f097202a2d8",
+      "companies": [
+        "Co-Tech (8358)"
+      ],
+      "sources": [
+        "https://www.cna.com.tw/news/afe/202610200365.aspx",
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a657f257-2c5c-4260-a8b6-e0ce9a3f2fc0",
+        "https://news.cnyes.com/news/id/6632193"
+      ],
+      "stage": "original_management_reporting_read_filing_reproduction_not_primary_filing",
+      "facts": {
+        "event_fingerprint": "co-tech-penang-hvlp4-capacity-timetable-and-financing-scope-20261020",
+        "alternative": "Phasedcapexmaylead demand ratherthanprovebacklog;highermixprofitcanbe offsetbycosts,qualificationdelay andlowutilization."
+      },
+      "questions": [
+        "Fullprojectfunding,phasedcapex andoperatingcashcoverage",
+        "AcceptedHVLP4/GP999volumes,realizedmixandgrossprofit",
+        "Constructionand2028/2029rampmilestones"
+      ],
+      "publication_status": "event_only_no_article"
+    },
+    {
+      "key": "iteq-capacity-roadmap-historical-baseline-and-glasscloth-cost-20261020",
+      "date": "2026-10-20",
+      "instruction_commit_sha": "32bc6511f5f2143f837eaa05e5e38f097202a2d8",
+      "companies": [
+        "ITEQ (6213)",
+        "Topoint (8021)"
+      ],
+      "sources": [
+        "https://www.cna.com.tw/news/afe/202610200326.aspx",
+        "https://money.udn.com/money/amp/story/5710/9775340"
+      ],
+      "stage": "original_management_interview_and_historical_report_compared",
+      "facts": {
+        "roadmap": "PlannedmonthlyCCLcapacity5.7m sheetsend2026,6.3mend2027,8.25m2028,9.1m2029;5.7→9.1m alreadyreportedSeptember24,notnewguidanceupgrade.",
+        "costs": "ManagementseesglassclothsupplyreliefonlyH2 2027/2028andPCBPTFEprocessingchallenges;vendoropinionnotindependentbenchmark.",
+        "limits": "MoneyDJheadline9.15m differsfromCNA9.1m;noissuerresolutionobtained.Noquantifiedgrossmarginrevision."
+      },
+      "questions": [
+        "Customerpricepass-throughversusglassclothcost",
+        "Actualhigh-endqualifiedmixandutilization"
+      ],
+      "publication_status": "baseline_deduplicated_candidate_no_alert_no_article"
+    },
+    {
+      "key": "tsmc-f22-p4-steel-installation-stop-regulator-attributed-update-20261020",
+      "date": "2026-10-20",
+      "instruction_commit_sha": "32bc6511f5f2143f837eaa05e5e38f097202a2d8",
+      "companies": [
+        "TSMC"
+      ],
+      "sources": [
+        "https://www.cna.com.tw/news/asoc/202610200361.aspx"
+      ],
+      "stage": "original_reporting_of_regulator_statement_read",
+      "facts": {
+        "source_time": "CNA October20 21:28 updated22:11 Asia/Taipei",
+        "increment": "STSPadministrationattributedreport:threeworkersdied,oneinICU;F22P4steelinstallationworkstopped.",
+        "baseline": "Earlier19:41reportonlycontractor-relatedvoluntarystop;nowphaseandworktypeidentified.",
+        "limits": "No officialorderdocument,restartdate,criticalpath/productionorcapacityguidancerevision obtained.Do notinferoperatingfabsstopped."
+      },
+      "questions": [
+        "Stoporderworkscope/restartconditions",
+        "Criticalpathandtoolinstallationimpact"
+      ],
+      "publication_status": "followup_candidate_only_no_investment_alert_no_article"
     }
   ],
   "blockers": [
@@ -15272,7 +15522,7 @@
     }
   ],
   "last_research_date": "2026-10-20",
-  "instruction_commit_sha": "26c9f25a406ef87d0bafdb521de5d2ec9dc8301a",
+  "instruction_commit_sha": "32bc6511f5f2143f837eaa05e5e38f097202a2d8",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
