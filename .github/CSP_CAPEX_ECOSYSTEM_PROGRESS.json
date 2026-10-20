@@ -3376,13 +3376,13 @@
     ],
     "current_run_screening": {
       "date": "2026-10-21",
-      "checked_at": "2026-10-20T18:40:22Z",
-      "instruction_commit_sha": "acdd08dc653b39322776f7cdf7f43950bd979b64",
-      "status": "issuer_quarterly_result_and_media_scope_followups_recorded_no_new_material_alert",
+      "checked_at": "2026-10-20T19:52:49Z",
+      "instruction_commit_sha": "d27d45c46ed15d68af998416ec61029db30cf7fb",
+      "status": "historical_engineering_candidate_and_primary_capability_followup_no_new_material_alert",
       "company_count": 98,
       "grouped_query_count": 14,
-      "additional_targeted_query_count": 9,
-      "scope": "14 seven-name grouped discovery queries across98 active names,not98 individual issuer checks.Core6/CSP5 entrypoints refreshed;6 current discovery and3 issuer-result followup queries.",
+      "additional_targeted_query_count": 6,
+      "scope": "14 seven-name grouped discovery queries across98 active names,not98 individualissuer checks;core6/CSP5 entrypoints refreshed;4 current-discovery and2 historical-source queries.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -3395,16 +3395,15 @@
         "https://abc.xyz/investor/",
         "https://investor.atmeta.com/home/default.aspx",
         "https://www.oracle.com/news/",
-        "https://investors.3m.com/financials/sec-filings/content/0000066740-26-000308/q32026-8kerexx991.htm",
-        "https://www.marketbeat.com/earnings/reports/2026-10-20-3m-stock/",
-        "https://news.ustv.com.tw/newsdetail/20261020A001017",
-        "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771936_S1EL12IA2J94BA7U44MUF",
-        "https://investors.broadcom.com/news-releases/news-release-details/broadcom-announces-continued-infrastructure-agreement-fedex"
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=39596cb9-26b2-42c4-afae-81356f38a496&c=MB06",
+        "https://www.micb2b.com/about/introduction/",
+        "https://www.micb2b.com/investors/finance/month/",
+        "https://www.micb2b.com/investors/finance/season/"
       ],
       "company_check_scope": {
-        "new_active_universe_primary_issuer_originals": [],
-        "outside_universe_originals": [
-          "3M"
+        "new_active_universe_primary_issuer_operating_financial_originals": [],
+        "undated_issuer_capability_only": [
+          "6196"
         ],
         "grouped_discovery_only": [
           "2330",
@@ -3510,14 +3509,13 @@
         "cumulative_pending": 46
       },
       "source_limits": [
-        "Mandatory instructions/specs/taxonomy/progress and3 recent related articles acquired at the same commit;AGENTS output pagination completed.No article created.",
-        "Universe15737456c090bdcb099718fe47a1b85562ddbe5c/CSV88422949d38165d4757a1e24c27f8662bede14c1 unchanged98 active.Primary coverage52/98 unchanged.",
-        "TSMCQ3/Q4guidance and MediaTek/NVIDIA/AMD/Marvell indexes retain recorded baselines.Some CSP landing pages sparse/dynamic;not full filing coverage.",
-        "Broadcom October20 FedEx continuation is infrastructure software without quantified newAI hardware orders;not a new CSP capex award.",
-        "MediaTek v9 October20 teaser/attributed summary repeats recorded candidate;full original paywalled,cause and timing unconfirmed.Not converted to confirmed delay.",
-        "3M reporting-basis bridge matters;EBO estimate is hosted transcript rather than originalcall document.No disclosed GSEO economics.HolyStone report contains conflicting capacity magnitudes without denominator.",
-        "Nscale confirmation,NVIDIA China orders,TPCA material roadmaps already recorded and notified;no new verified equipment cancellation or contract economics.",
-        "LITEON Q2 original direct open failed;indexed excerpt not promoted to newlyverified fact.Public ledger excludes private flows,quotes,valuations,holdings and B data."
+        "Same-commit mandatory instructions/specs/taxonomy/progress and3 related recent articles fully acquired.AGENTS output completed in two chunks.No article created.",
+        "Universe15737456c090bdcb099718fe47a1b85562ddbe5c/CSV88422949d38165d4757a1e24c27f8662bede14c1 unchanged98active. Undated MIC profile not promoted to current financial verification;coverage52/98 unchanged.",
+        "TSMCQ3/Q4 guidance and MediaTek/NVIDIA/AMD/Marvell baselines unchanged.Some CSP entrypoints sparse/dynamic,not full latestfiling coverage.Broadcom FedEx software continuation already checked.",
+        "Nscale confirmation,ChinaGPU demand,3M results,HolyStone pricing claims and TPCA management roadmaps already recorded;no verified new order cancellation or changed supplier economics.",
+        "MIC historical October15 report is not an October21 announcement. Numerical primary financial tables not rendered;no current profit revision asserted.",
+        "Grouped optical lead explicitly discusses nextyear2026 and is historical2025,not fresh2026 news;September institutional optical forecast lead not treated asnew demand revision.",
+        "Public record excludes quotes,valuation,private flows,holdings and B data.No article/lint/build/deploy claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -9841,6 +9839,150 @@
           "3M reporting-basis bridge matters;EBO estimate is hosted transcript rather than originalcall document.No disclosed GSEO economics.HolyStone report contains conflicting capacity magnitudes without denominator.",
           "Nscale confirmation,NVIDIA China orders,TPCA material roadmaps already recorded and notified;no new verified equipment cancellation or contract economics.",
           "LITEON Q2 original direct open failed;indexed excerpt not promoted to newlyverified fact.Public ledger excludes private flows,quotes,valuations,holdings and B data."
+        ]
+      },
+      {
+        "date": "2026-10-21",
+        "checked_at": "2026-10-20T19:52:49Z",
+        "instruction_commit_sha": "d27d45c46ed15d68af998416ec61029db30cf7fb",
+        "status": "historical_engineering_candidate_and_primary_capability_followup_no_new_material_alert",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "additional_targeted_query_count": 6,
+        "scope": "14 seven-name grouped discovery queries across98 active names,not98 individualissuer checks;core6/CSP5 entrypoints refreshed;4 current-discovery and2 historical-source queries.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://investor.atmeta.com/home/default.aspx",
+          "https://www.oracle.com/news/",
+          "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=39596cb9-26b2-42c4-afae-81356f38a496&c=MB06",
+          "https://www.micb2b.com/about/introduction/",
+          "https://www.micb2b.com/investors/finance/month/",
+          "https://www.micb2b.com/investors/finance/season/"
+        ],
+        "company_check_scope": {
+          "new_active_universe_primary_issuer_operating_financial_originals": [],
+          "undated_issuer_capability_only": [
+            "6196"
+          ],
+          "grouped_discovery_only": [
+            "2330",
+            "2454",
+            "3661",
+            "3443",
+            "3035",
+            "5274",
+            "3711",
+            "2449",
+            "6257",
+            "6239",
+            "3264",
+            "8150",
+            "6223",
+            "6510",
+            "6515",
+            "6683",
+            "2360",
+            "3131",
+            "2467",
+            "6187",
+            "6640",
+            "3583",
+            "3413",
+            "6196",
+            "1560",
+            "8028",
+            "3037",
+            "8046",
+            "3189",
+            "2383",
+            "6274",
+            "6213",
+            "2368",
+            "2313",
+            "4958",
+            "3044",
+            "2367",
+            "6191",
+            "5469",
+            "8021",
+            "1815",
+            "1802",
+            "2317",
+            "2382",
+            "3231",
+            "6669",
+            "2356",
+            "2324",
+            "3706",
+            "2308",
+            "2301",
+            "6412",
+            "6282",
+            "3015",
+            "6409",
+            "3017",
+            "3324",
+            "2421",
+            "3653",
+            "8996",
+            "3338",
+            "2059",
+            "8210",
+            "3013",
+            "6117",
+            "3533",
+            "3665",
+            "6197",
+            "3023",
+            "3526",
+            "3605",
+            "2345",
+            "2379",
+            "6285",
+            "5388",
+            "3596",
+            "3081",
+            "3163",
+            "3363",
+            "4979",
+            "6442",
+            "3450",
+            "4977",
+            "3234",
+            "4908",
+            "2408",
+            "2344",
+            "2337",
+            "8299",
+            "3260",
+            "8271",
+            "5289",
+            "6770",
+            "3006",
+            "2327",
+            "2492",
+            "3026",
+            "2375"
+          ],
+          "cumulative_primary_company_fact_count": 52,
+          "cumulative_pending": 46
+        },
+        "source_limits": [
+          "Same-commit mandatory instructions/specs/taxonomy/progress and3 related recent articles fully acquired.AGENTS output completed in two chunks.No article created.",
+          "Universe15737456c090bdcb099718fe47a1b85562ddbe5c/CSV88422949d38165d4757a1e24c27f8662bede14c1 unchanged98active. Undated MIC profile not promoted to current financial verification;coverage52/98 unchanged.",
+          "TSMCQ3/Q4 guidance and MediaTek/NVIDIA/AMD/Marvell baselines unchanged.Some CSP entrypoints sparse/dynamic,not full latestfiling coverage.Broadcom FedEx software continuation already checked.",
+          "Nscale confirmation,ChinaGPU demand,3M results,HolyStone pricing claims and TPCA management roadmaps already recorded;no verified new order cancellation or changed supplier economics.",
+          "MIC historical October15 report is not an October21 announcement. Numerical primary financial tables not rendered;no current profit revision asserted.",
+          "Grouped optical lead explicitly discusses nextyear2026 and is historical2025,not fresh2026 news;September institutional optical forecast lead not treated asnew demand revision.",
+          "Public record excludes quotes,valuation,private flows,holdings and B data.No article/lint/build/deploy claim."
         ]
       }
     ],
@@ -16542,6 +16684,33 @@
         "Product margins and cash after inventory build"
       ],
       "publication_status": "candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "marketech-ai-data-center-engineering-capability-and-historical-backlog-scope-20261015",
+      "date": "2026-10-21",
+      "event_date": "2026-10-15",
+      "instruction_commit_sha": "d27d45c46ed15d68af998416ec61029db30cf7fb",
+      "companies": [
+        "Marketech International"
+      ],
+      "sources": [
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=39596cb9-26b2-42c4-afae-81356f38a496&c=MB06",
+        "https://www.micb2b.com/about/introduction/",
+        "https://www.micb2b.com/investors/finance/month/",
+        "https://www.micb2b.com/investors/finance/season/"
+      ],
+      "stage": "historical_original_reporting_and_undated_issuer_capability_verified_current_financial_tables_not_rendered",
+      "facts": {
+        "relationship": "Issuer profile describes semiconductor equipment/engineering and data-center electromechanical work,with claimed TierIII design/facility certifications;undated profile,not a newlydated award.",
+        "historical_report": "October15 MoneyDJ reportsTWD157.8bn backlog visibility to2028 and a TaiwanAI data-center integration project with unnamed international partner.Q3 revenueTWD21.913bn,+3.4%QoQ;H1EPS13.26 reported,not freshlyverifiedissuerfinancialfigures.",
+        "limits": "Quarterly/monthly issuer pages open but numeric tables do not render. Full backlog is not AI-only;no namedCSP allocation,projectvalue,incremental margin or cash quantified."
+      },
+      "questions": [
+        "Dated issuer revenue and financial statements",
+        "Engineering backlog acceptance,contractassets and cash",
+        "AI project partner,scope,profit and repeat awards"
+      ],
+      "publication_status": "historical_followup_candidate_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -16561,7 +16730,7 @@
     }
   ],
   "last_research_date": "2026-10-21",
-  "instruction_commit_sha": "acdd08dc653b39322776f7cdf7f43950bd979b64",
+  "instruction_commit_sha": "d27d45c46ed15d68af998416ec61029db30cf7fb",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
