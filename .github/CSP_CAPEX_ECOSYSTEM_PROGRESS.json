@@ -3144,6 +3144,58 @@
         "derived_mix_limit": "IntegratedMemoryaccounts forapproximately91.2%ofQ4totalrevenueYoYincrement((340.784-132.159)/(566.685-337.922));AdvancedComputinggrowthapproximately11.35%.CompanyAIInfrastructurelabelnotassumedidenticaltothewholeAdvancedComputingsegment."
       },
       "status": "primary_revision_margin_mix_cash_and_original_period_verified_earnings_conversion_followup_no_article"
+    },
+    {
+      "fingerprint": "abb-q3-2026-data-center-orders-operational-margin-and-cash-20261020",
+      "event_date": "2026-10-20",
+      "period_end": "2026-09-30",
+      "discovered_date": "2026-10-20",
+      "instruction_commit_sha": "1ca3043ab7ccc214461d06bf654504080ca750b7",
+      "companies": [
+        "ABB"
+      ],
+      "type": "primary_quarterly_orders_operational_profit_and_cash_conversion",
+      "sources": [
+        "https://new.abb.com/news/detail/139696/q3-2026-results",
+        "https://search.abb.com/library/Download.aspx?Action=Launch&DocumentID=9AKK108473A4462&DocumentPartId=&LanguageCode=en",
+        "https://new.abb.com/news/detail/137496/q2-2026-results"
+      ],
+      "facts": {
+        "currency": "USD",
+        "unit": "million_except_per_share_and_percent",
+        "q3": {
+          "orders": 12055,
+          "prior_year_orders": 8606,
+          "revenue": 9701,
+          "prior_year_revenue": 8491,
+          "operational_ebita": 2026,
+          "prior_year_operational_ebita": 1633,
+          "operational_ebita_margin_percent": 20.8,
+          "prior_year_margin_percent": 19.2,
+          "gaap_operating_income": 1846,
+          "gaap_operating_margin_percent": 19,
+          "operating_cash_flow": 1862,
+          "prior_year_operating_cash_flow": 1777,
+          "issuer_defined_free_cash_flow": 1576,
+          "prior_year_free_cash_flow": 1552,
+          "basic_eps": 0.65,
+          "prior_year_basic_eps": 0.66,
+          "gross_margin_percent": 40.6,
+          "prior_year_gross_margin_percent": 41.2
+        },
+        "q2_baseline": {
+          "orders": 12042,
+          "revenue": 9475,
+          "operational_ebita_margin_percent": 20.2,
+          "operating_cash_flow": 1150
+        },
+        "demand": "Issuer reports triple-digit data-center order growth; group book-to-bill 1.24. Group amounts are not all AI orders or cash earned from a named CSP.",
+        "quality_limits": "Orders essentially flat sequentially. Net earnings affected by non-cash Rotork deal FX hedge and discontinued-operation tax charge. Working capital benefits include payables/customer advances; no pure collection-only explanation.",
+        "outlook": "Q4 comparable growth expected similar to Q3; operational EBITA margin expected to soften sequentially excluding about CHF240m property-sale gain. FY2026 comparable growth now low teens versus July low-double-digit to low-teens range. Reported margin improvement includes non-operating effects.",
+        "source_stage": "Q3 issuer page recovered through indexed-ref read after direct failures; full key sections and issuer-hosted 12-page interim-report PDF read. Q2 issuer original read. Separate financial-information link failed; not required for the reported checked fields.",
+        "scope": "Outside active Taiwan universe; no watchlist change or inferred Taiwan supplier award. Infinitus SST availability remains planned for H2 2027, not current accepted deployment."
+      },
+      "status": "primary_earnings_event_verified_no_article_profit_and_cash_followup"
     }
   ],
   "articles": [],
@@ -3215,13 +3267,13 @@
     ],
     "current_run_screening": {
       "date": "2026-10-20",
-      "checked_at": "2026-10-20T08:51:28Z",
-      "instruction_commit_sha": "820b5fdf344e563ce55c763d34f6bb424ab61beb",
-      "status": "grouped_discovery_partial_historical_primary_relationship_added_no_new_material_alert",
+      "checked_at": "2026-10-20T09:53:27Z",
+      "instruction_commit_sha": "1ca3043ab7ccc214461d06bf654504080ca750b7",
+      "status": "fresh_primary_abb_earnings_event_added_grouped_universe_discovery_partial",
       "company_count": 98,
       "grouped_query_count": 14,
-      "additional_targeted_query_count": 7,
-      "scope": "All 98 names included in 14 grouped discovery attempts, not 98 individual current-issuer checks. Core six and CSP five official entrypoints refreshed. Schneider, MediaTek and previously notified events deduplicated.",
+      "additional_targeted_query_count": 13,
+      "scope": "Fourteen grouped discovery attempts across 98 active names, not individual current issuer validation. Core six and CSP five official entrypoints refreshed. ABB is outside the universe.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -3234,18 +3286,13 @@
         "https://abc.xyz/investor/",
         "https://investor.atmeta.com/home/default.aspx",
         "https://www.oracle.com/news/",
-        "https://www.bizlinktech.com/news/bizlink-partners-with-ams-osram-to-advance-photonics-for-ai-data-center-interconnects",
-        "https://ams-osram.com/news/press-releases/ecoc-datacom",
-        "https://ec.ltn.com.tw/article/breakingnews/5612098",
-        "https://news.cnyes.com/news/id/6634049",
-        "https://www.ttv.com.tw/finance/view/default.asp?from=587&i=102026201130C6C5D1FD8C4046448B11BE99892740E327C6",
-        "https://www.tongtaimachinetool.com/news/news/"
+        "https://new.abb.com/news/detail/139696/q3-2026-results",
+        "https://search.abb.com/library/Download.aspx?Action=Launch&DocumentID=9AKK108473A4462&DocumentPartId=&LanguageCode=en",
+        "https://new.abb.com/news/detail/137496/q2-2026-results"
       ],
       "company_check_scope": {
-        "current_run_primary_relationship_originals": [
-          "3665"
-        ],
-        "grouped_discovery_only_not_individual_current_primary_audit": [
+        "new_active_universe_primary_originals": [],
+        "grouped_discovery_only": [
           "2330",
           "2454",
           "3661",
@@ -3312,6 +3359,7 @@
           "3013",
           "6117",
           "3533",
+          "3665",
           "6197",
           "3023",
           "3526",
@@ -3344,15 +3392,15 @@
           "3026",
           "2375"
         ],
-        "cumulative_primary_baseline_count": 52,
-        "cumulative_remaining_count": 46
+        "cumulative_primary_company_fact_count": 52,
+        "cumulative_pending": 46
       },
       "source_limits": [
-        "Required instructions, specifications and three unchanged related articles fully retrieved at one commit. Full progress blob 8ed089bb8860e4e4cb8c7a8a6d4640794d4ac285 parsed; no required instruction gap.",
-        "Fresh alpha-quant main f43ed0cd5d57d28c50b924f2b3614d4189eae69f, CSV 88422949d38165d4757a1e24c27f8662bede14c1, 98 active. Grouped searches mostly returned aggregated, historical or membership content; not individual current-company validation.",
-        "TSMC Q3 actuals / Q4 guidance retain the baseline. MediaTek September index, NVIDIA October 19, AMD October 12, Marvell October 13 and Broadcom October 19 remain recorded entrypoints. CSP sites are dynamic or sparse; no complete current-filings claim.",
-        "BizLink / ams OSRAM original bodies establish a historical named relationship only, not a CSP order or volume production. Vendor benchmarks are not independent validation. Tongtai reporting is indexed only; issuer list is outdated and direct bodies unavailable. Candidate only.",
-        "No article, new material alert, quote, valuation, holding, private flow or B analysis in public file. No Pages, lint, build or deploy claim. All prior history preserved."
+        "Fresh required instructions/specifications fully retrieved at this commit, unchanged blobs match previous complete reads; three related article blobs unchanged. Full progress blob7286ee43b3dda751831079117bffa8f543e060d3 parsed. No required instruction gap.",
+        "Fresh alpha-quant head f43ed0cd5d57d28c50b924f2b3614d4189eae69f, CSV 88422949d38165d4757a1e24c27f8662bede14c1,98 active. Grouped results mostly aggregated/historical; primary active-company coverage unchanged52/98,46pending.",
+        "TSMC Q3/Q4 baseline, MediaTek September, NVIDIA October19, AMD October12, Marvell October13, Broadcom October19 retained. Sparse CSP entrypoints do not prove complete current filings coverage.",
+        "ABB Q3 original page sections and 12-page issuer interim report checked, compared with Q2 original; forecast, non-cash items, property gain and group versus AI scope separated.",
+        "ABB quotes have inconsistent timestamp/timezone or estimate/venue labels; no prices, current valuation or private trade judgment stored publicly. No article/lint/build/deploy claim. Prior events/candidates/history retained."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -8252,6 +8300,144 @@
           "TSMC Q3 actuals / Q4 guidance retain the baseline. MediaTek September index, NVIDIA October 19, AMD October 12, Marvell October 13 and Broadcom October 19 remain recorded entrypoints. CSP sites are dynamic or sparse; no complete current-filings claim.",
           "BizLink / ams OSRAM original bodies establish a historical named relationship only, not a CSP order or volume production. Vendor benchmarks are not independent validation. Tongtai reporting is indexed only; issuer list is outdated and direct bodies unavailable. Candidate only.",
           "No article, new material alert, quote, valuation, holding, private flow or B analysis in public file. No Pages, lint, build or deploy claim. All prior history preserved."
+        ]
+      },
+      {
+        "date": "2026-10-20",
+        "checked_at": "2026-10-20T09:53:27Z",
+        "instruction_commit_sha": "1ca3043ab7ccc214461d06bf654504080ca750b7",
+        "status": "fresh_primary_abb_earnings_event_added_grouped_universe_discovery_partial",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "additional_targeted_query_count": 13,
+        "scope": "Fourteen grouped discovery attempts across 98 active names, not individual current issuer validation. Core six and CSP five official entrypoints refreshed. ABB is outside the universe.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://investor.atmeta.com/home/default.aspx",
+          "https://www.oracle.com/news/",
+          "https://new.abb.com/news/detail/139696/q3-2026-results",
+          "https://search.abb.com/library/Download.aspx?Action=Launch&DocumentID=9AKK108473A4462&DocumentPartId=&LanguageCode=en",
+          "https://new.abb.com/news/detail/137496/q2-2026-results"
+        ],
+        "company_check_scope": {
+          "new_active_universe_primary_originals": [],
+          "grouped_discovery_only": [
+            "2330",
+            "2454",
+            "3661",
+            "3443",
+            "3035",
+            "5274",
+            "3711",
+            "2449",
+            "6257",
+            "6239",
+            "3264",
+            "8150",
+            "6223",
+            "6510",
+            "6515",
+            "6683",
+            "2360",
+            "3131",
+            "2467",
+            "6187",
+            "6640",
+            "3583",
+            "3413",
+            "6196",
+            "1560",
+            "8028",
+            "3037",
+            "8046",
+            "3189",
+            "2383",
+            "6274",
+            "6213",
+            "2368",
+            "2313",
+            "4958",
+            "3044",
+            "2367",
+            "6191",
+            "5469",
+            "8021",
+            "1815",
+            "1802",
+            "2317",
+            "2382",
+            "3231",
+            "6669",
+            "2356",
+            "2324",
+            "3706",
+            "2308",
+            "2301",
+            "6412",
+            "6282",
+            "3015",
+            "6409",
+            "3017",
+            "3324",
+            "2421",
+            "3653",
+            "8996",
+            "3338",
+            "2059",
+            "8210",
+            "3013",
+            "6117",
+            "3533",
+            "3665",
+            "6197",
+            "3023",
+            "3526",
+            "3605",
+            "2345",
+            "2379",
+            "6285",
+            "5388",
+            "3596",
+            "3081",
+            "3163",
+            "3363",
+            "4979",
+            "6442",
+            "3450",
+            "4977",
+            "3234",
+            "4908",
+            "2408",
+            "2344",
+            "2337",
+            "8299",
+            "3260",
+            "8271",
+            "5289",
+            "6770",
+            "3006",
+            "2327",
+            "2492",
+            "3026",
+            "2375"
+          ],
+          "cumulative_primary_company_fact_count": 52,
+          "cumulative_pending": 46
+        },
+        "source_limits": [
+          "Fresh required instructions/specifications fully retrieved at this commit, unchanged blobs match previous complete reads; three related article blobs unchanged. Full progress blob7286ee43b3dda751831079117bffa8f543e060d3 parsed. No required instruction gap.",
+          "Fresh alpha-quant head f43ed0cd5d57d28c50b924f2b3614d4189eae69f, CSV 88422949d38165d4757a1e24c27f8662bede14c1,98 active. Grouped results mostly aggregated/historical; primary active-company coverage unchanged52/98,46pending.",
+          "TSMC Q3/Q4 baseline, MediaTek September, NVIDIA October19, AMD October12, Marvell October13, Broadcom October19 retained. Sparse CSP entrypoints do not prove complete current filings coverage.",
+          "ABB Q3 original page sections and 12-page issuer interim report checked, compared with Q2 original; forecast, non-cash items, property gain and group versus AI scope separated.",
+          "ABB quotes have inconsistent timestamp/timezone or estimate/venue labels; no prices, current valuation or private trade judgment stored publicly. No article/lint/build/deploy claim. Prior events/candidates/history retained."
         ]
       }
     ],
@@ -14556,6 +14742,32 @@
         "Capacity expansion, working capital and sustained operating profit"
       ],
       "publication_status": "candidate_only_no_alert_no_article"
+    },
+    {
+      "key": "abb-data-center-power-orders-to-recurring-profit-and-cash",
+      "date": "2026-10-20",
+      "event_date": "2026-10-20",
+      "instruction_commit_sha": "1ca3043ab7ccc214461d06bf654504080ca750b7",
+      "companies": [
+        "ABB"
+      ],
+      "sources": [
+        "https://new.abb.com/news/detail/139696/q3-2026-results",
+        "https://search.abb.com/library/Download.aspx?Action=Launch&DocumentID=9AKK108473A4462&DocumentPartId=&LanguageCode=en",
+        "https://new.abb.com/news/detail/137496/q2-2026-results"
+      ],
+      "stage": "primary_q3_interim_report_and_q2_baseline_verified",
+      "facts": {
+        "event_fingerprint": "abb-q3-2026-data-center-orders-operational-margin-and-cash-20261020",
+        "relationship": "Issuer directly identifies data-center demand and source-to-rack power portfolio.",
+        "limits": "Group financial performance not attributed entirely to data centers. Forward property gains and future product availability kept separate."
+      },
+      "questions": [
+        "Order conversion and margins excluding property gains",
+        "Receivables/inventory and customer-advance normalization",
+        "Named project acceptance and repeat orders versus group backlog"
+      ],
+      "publication_status": "research_event_only_no_article"
     }
   ],
   "blockers": [
@@ -14575,7 +14787,7 @@
     }
   ],
   "last_research_date": "2026-10-20",
-  "instruction_commit_sha": "820b5fdf344e563ce55c763d34f6bb424ab61beb",
+  "instruction_commit_sha": "1ca3043ab7ccc214461d06bf654504080ca750b7",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
