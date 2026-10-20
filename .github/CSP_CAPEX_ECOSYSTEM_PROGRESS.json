@@ -3157,12 +3157,13 @@
     ],
     "current_run_screening": {
       "date": "2026-10-20",
-      "checked_at": "2026-10-20T04:25:35Z",
-      "instruction_commit_sha": "45ae42ddbba16ba876d46c9b12318f30501fa6ae",
-      "status": "grouped_discovery_quality_limited_indexed_baseline_added_live_primary_partial",
+      "checked_at": "2026-10-20T04:54:05Z",
+      "instruction_commit_sha": "e05f353a1aed650033475ffb2bc61936e8dee119",
+      "status": "grouped_discovery_partial_primary_sources_and_retry_limits_recorded",
       "company_count": 98,
-      "grouped_query_count": 18,
-      "scope": "14initial grouped discovery attempts across98active names;four clearly poor groups retried on secondengine. Core6 official news/IR andCSP5 entrypoints refreshed. Indexed Sigurd monthly baseline added;no article.",
+      "grouped_query_count": 14,
+      "additional_targeted_query_count": 8,
+      "scope": "Fresh fourteen seven-name grouped discovery attempts across98active names;core6 official news/IR entrypoints andCSP5 entrypoints attempted.Targeted Taiwan andglobal current-source followup.No individual full98-company current-release audit claimed.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -3175,14 +3176,18 @@
         "https://abc.xyz/investor/",
         "https://investor.atmeta.com/home/default.aspx",
         "https://www.oracle.com/news/",
-        "https://www.sigurd.com.tw/zh-tw/monthly-revenue"
+        "https://www.sigurd.com.tw/zh-tw/monthly-revenue",
+        "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771936_S1EL12IA2J94BA7U44MUF",
+        "https://www.reuters.com/business/top-hyperscalers-likely-have-more-ai-linked-debt-than-now-known-sp-global-warns-2026-10-19/",
+        "https://www.aboutamazon.com/news/sustainability/amazon-nuclear-energy-indiana-x-energy-aep"
       ],
       "source_limits": [
-        "Fresh defaultmain45ae42ddbba16ba876d46c9b12318f30501fa6ae pinned.Eight required instruction/specification files fully retrieved;identical blobs to prior complete reads. Three related articles retrieved unchanged;full progressb2e8a2add43f42098933ad7f28fcc09fa9f357ce parsed,101events/222priorcandidates.",
-        "Fresh alpha-quantmain f43ed0cd5d57d28c50b924f2b3614d4189eae69f andCSV88422949d38165d4757a1e24c27f8662bede14c1,98active.18groupedqueries are attempts,not effective latest full98company audits. Some results irrelevant or historical;four poor groups retried. Primary historical coverage51/47pending unchanged.",
-        "TSMCQ3/Q4,MediaTekSeptember index,NVIDIAOctober19,AMDOctober12,MarvellOctober13,BroadcomDOCOMOOctober19 retain previously recorded baselines. Sparse/dynamicCSPentrypoints not fullfilingcoverage. TPUtiming/packaging reports,3M/Amazon andTorchNeuron recaps not new confirmed economics.",
-        "Sigurd issuer-indexed September table provides2089TWDmillion versus2069August and1654priorSeptember;consolidated/unaudited. Direct live monthly page andsitemap timedout. Explicit indexed-only evidence;no extra direct-live company coverage credit.",
-        "Preserved publicevent/article/candidatehistory;added1candidate/1screening. No privateflows,quotes,valuation,holdings ortradejudgment published. No article/build/deploy claim."
+        "Required same-commit instructions/specifications fully retrieved and read;untruncated tree and full progress blob3f4c2dbe71e8ca4f077e209d0446c757a00e2e4a retrieved and JSON parsed.Three related articles reread with unchanged source blobs.",
+        "Fresh alpha-quant main f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV88422949d38165d4757a1e24c27f8662bede14c1;98active.Fourteen grouped discovery attempts returned historical/aggregated and some irrelevant results;not98 latest issuer validations.Primary historical coverage51checked/47pending unchanged.",
+        "TSMC Q3actual/Q4guidance,MediaTekSeptember30/August31 index,NVIDIAOctober19,AMDOctober12 andMarvellOctober13 retain logged baselines.Broadcom news index andDOCOMO detail returned inaccessible InternalError this run;prior obtained source preserved,not claimed fresh successful fullbody read.CSPentrypoints sparse/dynamic,not comprehensive filing coverage.",
+        "TargetedOctober20TPU glass-substrate report matches existing candidate with unconfirmed causal speculation.3M/Amazon,AWS receipt timing,Nscale withdrawal/negotiations,S&Pfinancing warning andAmazon/AEP/X-energy exploration already logged;fresh rediscovery is not a new contract,earningsrevision or deployed capacity.Mature-foundry/PCBshow reporting does not establish a new quantified customer award.",
+        "Sigurd direct monthly page again timedout;indexed prior baseline retained without direct-live coverage credit.No new candidate required.No article or notification supported by obtained incremental evidence.",
+        "Only one screening appended.Public events,candidates,articles,blockers andCSPbaseline preserved.No stockquotes,valuation,holdings,flows or private Bdata saved publicly.No article/lint/build/deploy claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -7801,6 +7806,41 @@
           "TSMCQ3/Q4,MediaTekSeptember index,NVIDIAOctober19,AMDOctober12,MarvellOctober13,BroadcomDOCOMOOctober19 retain previously recorded baselines. Sparse/dynamicCSPentrypoints not fullfilingcoverage. TPUtiming/packaging reports,3M/Amazon andTorchNeuron recaps not new confirmed economics.",
           "Sigurd issuer-indexed September table provides2089TWDmillion versus2069August and1654priorSeptember;consolidated/unaudited. Direct live monthly page andsitemap timedout. Explicit indexed-only evidence;no extra direct-live company coverage credit.",
           "Preserved publicevent/article/candidatehistory;added1candidate/1screening. No privateflows,quotes,valuation,holdings ortradejudgment published. No article/build/deploy claim."
+        ]
+      },
+      {
+        "date": "2026-10-20",
+        "checked_at": "2026-10-20T04:54:05Z",
+        "instruction_commit_sha": "e05f353a1aed650033475ffb2bc61936e8dee119",
+        "status": "grouped_discovery_partial_primary_sources_and_retry_limits_recorded",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "additional_targeted_query_count": 8,
+        "scope": "Fresh fourteen seven-name grouped discovery attempts across98active names;core6 official news/IR entrypoints andCSP5 entrypoints attempted.Targeted Taiwan andglobal current-source followup.No individual full98-company current-release audit claimed.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://investor.atmeta.com/home/default.aspx",
+          "https://www.oracle.com/news/",
+          "https://www.sigurd.com.tw/zh-tw/monthly-revenue",
+          "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771936_S1EL12IA2J94BA7U44MUF",
+          "https://www.reuters.com/business/top-hyperscalers-likely-have-more-ai-linked-debt-than-now-known-sp-global-warns-2026-10-19/",
+          "https://www.aboutamazon.com/news/sustainability/amazon-nuclear-energy-indiana-x-energy-aep"
+        ],
+        "source_limits": [
+          "Required same-commit instructions/specifications fully retrieved and read;untruncated tree and full progress blob3f4c2dbe71e8ca4f077e209d0446c757a00e2e4a retrieved and JSON parsed.Three related articles reread with unchanged source blobs.",
+          "Fresh alpha-quant main f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV88422949d38165d4757a1e24c27f8662bede14c1;98active.Fourteen grouped discovery attempts returned historical/aggregated and some irrelevant results;not98 latest issuer validations.Primary historical coverage51checked/47pending unchanged.",
+          "TSMC Q3actual/Q4guidance,MediaTekSeptember30/August31 index,NVIDIAOctober19,AMDOctober12 andMarvellOctober13 retain logged baselines.Broadcom news index andDOCOMO detail returned inaccessible InternalError this run;prior obtained source preserved,not claimed fresh successful fullbody read.CSPentrypoints sparse/dynamic,not comprehensive filing coverage.",
+          "TargetedOctober20TPU glass-substrate report matches existing candidate with unconfirmed causal speculation.3M/Amazon,AWS receipt timing,Nscale withdrawal/negotiations,S&Pfinancing warning andAmazon/AEP/X-energy exploration already logged;fresh rediscovery is not a new contract,earningsrevision or deployed capacity.Mature-foundry/PCBshow reporting does not establish a new quantified customer award.",
+          "Sigurd direct monthly page again timedout;indexed prior baseline retained without direct-live coverage credit.No new candidate required.No article or notification supported by obtained incremental evidence.",
+          "Only one screening appended.Public events,candidates,articles,blockers andCSPbaseline preserved.No stockquotes,valuation,holdings,flows or private Bdata saved publicly.No article/lint/build/deploy claim."
         ]
       }
     ],
@@ -13992,7 +14032,7 @@
     }
   ],
   "last_research_date": "2026-10-20",
-  "instruction_commit_sha": "45ae42ddbba16ba876d46c9b12318f30501fa6ae",
+  "instruction_commit_sha": "e05f353a1aed650033475ffb2bc61936e8dee119",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
