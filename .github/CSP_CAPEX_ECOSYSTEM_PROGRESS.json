@@ -3214,13 +3214,13 @@
     ],
     "current_run_screening": {
       "date": "2026-10-20",
-      "checked_at": "2026-10-20T06:37:47Z",
-      "instruction_commit_sha": "ef3e2c3ae482e8e16695558ed91e5864b695b62e",
-      "status": "grouped_discovery_quality_limited_historical_order_candidate_added",
+      "checked_at": "2026-10-20T08:21:39Z",
+      "instruction_commit_sha": "15b2875be7a7269a78aabb2aad083ede21f0593f",
+      "status": "grouped_discovery_and_targeted_original_retries_partial_no_new_verified_material_event",
       "company_count": 98,
       "grouped_query_count": 14,
-      "additional_targeted_query_count": 11,
-      "scope": "Fourteen seven-name grouped discovery attempts across fresh active universe; core6/CSP5 entrypoints refreshed. One outside-universe historical issuer order candidate; no article or new material notification.",
+      "additional_targeted_query_count": 12,
+      "scope": "Fresh98activeuniverse;14seven-namegroupeddiscoveryattempts plus12targetedqueries.Core6andCSP5officialentrypointsrefreshed.Onehistoricalindexedcandidateadded;nofulluniversecurrentprimarycompletionclaim.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -3233,17 +3233,19 @@
         "https://abc.xyz/investor/",
         "https://investor.atmeta.com/home/default.aspx",
         "https://www.oracle.com/news/",
-        "https://www.businesswire.com/news/home/20261005478911/en/",
-        "https://via.tt.se/pressmeddelande/4580467/am-intelligence-expands-nvidia-vera-rubin-ai-factory-buildout-in-india-and-malaysia?lang=en&publisherId=259167",
-        "https://www.webnewswire.com/2026/10/05/am-intelligence-expands-nvidia-vera-rubin-ai-factory-buildout-in-india-and-malaysia/?noamp=mobile"
+        "https://www.liteon.com/en/news/press-center/content/liteon-monthly-sales-sep-2026",
+        "https://www.liteon.com/zh-tw/news/press-center/content/liteon-monthly-sales-sep-2026",
+        "https://www.kinik.com.tw/en-us/",
+        "https://www.kingslide.com/investor-relations/",
+        "https://abmedia.io/mediateks-google-tpu-v9-shipments-may-slip-to-1q28"
       ],
       "source_limits": [
-        "Fresh same-commit required instruction/specification files fully retrieved, unchanged blobs match prior complete reads. Three related articles retrieved unchanged. Full progress ba440c7a7ca7c6831004c941c96332fb9632468b parsed; no required instruction gap.",
-        "Fresh alpha-quant main f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV88422949d38165d4757a1e24c27f8662bede14c1:98active. Grouped searches are discovery attempts, mostly historical or aggregated results, not98 current issuer audits. Primary historical coverage remains51/98 with47pending. Watchlist unchanged.",
-        "TSMC Q3actual/Q4guidance, MediaTek September index, NVIDIA October19 BSC/Germany, AMD October12 and Marvell October13 retain recorded baselines. Broadcom financial-news list recovered this run and contains October19 DOCOMO/October13 software/October8 networking; recovery does not establish a new order. CSP entrypoints are sparse/dynamic, not complete filing coverage.",
-        "TPUv9 packaging reports repeat the existing speculative candidate. Penguin October6 earnings event already notified and retained without duplicate. Promotional and third-party roundup material not adopted as original financial evidence.",
-        "AM Intelligence October5 issuer release traced to Business Wire-distributed full text. Orders, planned delivery, development pipeline and investment ambitions kept separate. No fresh financial revision, current funded deployment or supplier allocation established; candidate only.",
-        "Added one candidate and one screening; all prior public events/articles/history preserved. No prices, valuation, holdings, private flows or B analysis in public file. No article/lint/build/deploy claim."
+        "Required instructions/specifications fully retrieved at instruction commit; unchanged blobs checked against complete reads. Three related articles retrieved and read. Full progress blob69745beb363b2163f82413f1aac4bcbfe02eb9bc parsed; history retained.",
+        "Freshalpha-quantmain f43ed0cd5d57d28c50b924f2b3614d4189eae69f,CSV88422949d38165d4757a1e24c27f8662bede14c1,98active.Groupedqueryresultsmostlyaggregated/historicalandnotindividualcurrentissuerchecks.Primaryhistoricalcoverage51/98,47pending.",
+        "TSMCQ3actual46.72bnUSD/GM66.4%andQ4guidance52.3-54.3bn/GM65-67%unchanged.MediaTekSeptemberindex,NVIDIAOctober19,AMDOctober12,MarvellOctober13andBroadcomOctober19DOCOMOretainrecordedbaselines.CSPentrypointssparse/dynamic;notcomprehensivefilingcoverage.",
+        "LITEONindexedOctober8revenue/mixcandidateonly:originalChinese/Englishbody502/InternalErrorafterlimitedretry.KingSlideoriginalunavailable,Kinikhomepageempty/sparse;noadditionalprimaryfinancialcoveragecredit.",
+        "TPUv9glass-substratecausalclaimhasconflictingattributedanalystreporting;originalsocialstatementandissuerconfirmationnotobtained.Noverifiedyield,designwinloss,newmilestoneorEPSrevision.Existingcandidatekeptunconfirmed.",
+        "Penguin,3M/Amazon,Nscale/AWSandotherrecordedeventsdeduplicated.Noarticleornewmaterialalert.Noquotes,privateflows,valuation,holdingsorBanalysisinpublicledger;noPages/lint/build/deployclaim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -7965,6 +7967,42 @@
           "TPUv9 packaging reports repeat the existing speculative candidate. Penguin October6 earnings event already notified and retained without duplicate. Promotional and third-party roundup material not adopted as original financial evidence.",
           "AM Intelligence October5 issuer release traced to Business Wire-distributed full text. Orders, planned delivery, development pipeline and investment ambitions kept separate. No fresh financial revision, current funded deployment or supplier allocation established; candidate only.",
           "Added one candidate and one screening; all prior public events/articles/history preserved. No prices, valuation, holdings, private flows or B analysis in public file. No article/lint/build/deploy claim."
+        ]
+      },
+      {
+        "date": "2026-10-20",
+        "checked_at": "2026-10-20T08:21:39Z",
+        "instruction_commit_sha": "15b2875be7a7269a78aabb2aad083ede21f0593f",
+        "status": "grouped_discovery_and_targeted_original_retries_partial_no_new_verified_material_event",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "additional_targeted_query_count": 12,
+        "scope": "Fresh98activeuniverse;14seven-namegroupeddiscoveryattempts plus12targetedqueries.Core6andCSP5officialentrypointsrefreshed.Onehistoricalindexedcandidateadded;nofulluniversecurrentprimarycompletionclaim.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://investor.atmeta.com/home/default.aspx",
+          "https://www.oracle.com/news/",
+          "https://www.liteon.com/en/news/press-center/content/liteon-monthly-sales-sep-2026",
+          "https://www.liteon.com/zh-tw/news/press-center/content/liteon-monthly-sales-sep-2026",
+          "https://www.kinik.com.tw/en-us/",
+          "https://www.kingslide.com/investor-relations/",
+          "https://abmedia.io/mediateks-google-tpu-v9-shipments-may-slip-to-1q28"
+        ],
+        "source_limits": [
+          "Required instructions/specifications fully retrieved at instruction commit; unchanged blobs checked against complete reads. Three related articles retrieved and read. Full progress blob69745beb363b2163f82413f1aac4bcbfe02eb9bc parsed; history retained.",
+          "Freshalpha-quantmain f43ed0cd5d57d28c50b924f2b3614d4189eae69f,CSV88422949d38165d4757a1e24c27f8662bede14c1,98active.Groupedqueryresultsmostlyaggregated/historicalandnotindividualcurrentissuerchecks.Primaryhistoricalcoverage51/98,47pending.",
+          "TSMCQ3actual46.72bnUSD/GM66.4%andQ4guidance52.3-54.3bn/GM65-67%unchanged.MediaTekSeptemberindex,NVIDIAOctober19,AMDOctober12,MarvellOctober13andBroadcomOctober19DOCOMOretainrecordedbaselines.CSPentrypointssparse/dynamic;notcomprehensivefilingcoverage.",
+          "LITEONindexedOctober8revenue/mixcandidateonly:originalChinese/Englishbody502/InternalErrorafterlimitedretry.KingSlideoriginalunavailable,Kinikhomepageempty/sparse;noadditionalprimaryfinancialcoveragecredit.",
+          "TPUv9glass-substratecausalclaimhasconflictingattributedanalystreporting;originalsocialstatementandissuerconfirmationnotobtained.Noverifiedyield,designwinloss,newmilestoneorEPSrevision.Existingcandidatekeptunconfirmed.",
+          "Penguin,3M/Amazon,Nscale/AWSandotherrecordedeventsdeduplicated.Noarticleornewmaterialalert.Noquotes,privateflows,valuation,holdingsorBanalysisinpublicledger;noPages/lint/build/deployclaim."
         ]
       }
     ],
@@ -14191,6 +14229,31 @@
         "Named paying tenants, utilization and supplier profit/cash conversion"
       ],
       "publication_status": "candidate_only_no_alert_no_article"
+    },
+    {
+      "key": "liteon-september-2026-revenue-mix-indexed-original-body-pending",
+      "date": "2026-10-20",
+      "event_date": "2026-10-08",
+      "period": "2026-09",
+      "instruction_commit_sha": "15b2875be7a7269a78aabb2aad083ede21f0593f",
+      "companies": [
+        "LITEON Technology (2301)"
+      ],
+      "sources": [
+        "https://www.liteon.com/en/news/press-center/content/liteon-monthly-sales-sep-2026",
+        "https://www.liteon.com/zh-tw/news/press-center/content/liteon-monthly-sales-sep-2026"
+      ],
+      "stage": "historical_issuer_indexed_excerpt_only_direct_original_body_failed",
+      "facts": {
+        "indexed_release": "October8 issuer index: September consolidated revenue TWD18.8bn,+22%YoY;January-September TWD153.6bn,+26%. Cloud/IoT share59%,segmentgrowthover50%YoY;AI/serverpowerandBBU cited as drivers.",
+        "limits": "Historical October8,not new order today.Chinese and English originals returned502/InternalError.No complete original body,segmentprofit,cashconversion or revised guidance verified.No added primary coverage credit;watchlist unchanged."
+      },
+      "questions": [
+        "Read complete issuer release and subsequent quarterly mix/margins",
+        "Separate AI/server power and BBU growth from other Cloud/IoT products",
+        "Reconcile overseas investment,working capital and operating cash"
+      ],
+      "publication_status": "candidate_only_no_alert_no_article"
     }
   ],
   "blockers": [
@@ -14210,7 +14273,7 @@
     }
   ],
   "last_research_date": "2026-10-20",
-  "instruction_commit_sha": "ef3e2c3ae482e8e16695558ed91e5864b695b62e",
+  "instruction_commit_sha": "15b2875be7a7269a78aabb2aad083ede21f0593f",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
