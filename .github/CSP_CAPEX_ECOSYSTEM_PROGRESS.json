@@ -3087,6 +3087,63 @@
         "limits": "USD6billion is vesting threshold,not disclosed guaranteed purchase/backlog or annual revenue.No product mix,GSEO allocation,exclusive supply,accepted volume,margin or earnings revision disclosed.Not all Amazon purchases are EBO/CPO."
       },
       "status": "primary_relationship_and_threshold_verified_supplier_allocation_profit_and_cash_conversion_pending_no_article"
+    },
+    {
+      "fingerprint": "penguin-solutions-fy2027-outlook-raise-and-working-capital-cash-divergence-20261006",
+      "event_date": "2026-10-06",
+      "period_end": "2026-08-28",
+      "discovered_date": "2026-10-20",
+      "instruction_commit_sha": "2056991106171e0af18d475cddd108ef91bdab91",
+      "companies": [
+        "Penguin Solutions"
+      ],
+      "type": "historical_primary_earnings_and_outlook_revision_new_to_ledger_not_new_today",
+      "sources": [
+        "https://ir.penguinsolutions.com/news/news-details/2026/Penguin-Solutions-Announces-Fourth-Quarter-and-Full-Year-Fiscal-2026-Results/",
+        "https://ir.penguinsolutions.com/financials/quarterly-results/default.aspx"
+      ],
+      "facts": {
+        "currency": "USD",
+        "unit": "million_except_per_share",
+        "baseline": "Issuer October6 expressly compares FY2027 revenue outlook midpoint with prior preliminary USD2170m; prior approximately30% growth view used then-currentFY2026outlook,not finalFY2026actual. No mixed-denominator30-to40 growth revision inferred.",
+        "fy2027_guidance": {
+          "revenue_midpoint": 2430,
+          "prior_revenue_midpoint": 2170,
+          "midpoint_revision_percent": 11.981566820276512,
+          "growth_vs_final_fy2026_actual_percent": 40,
+          "growth_range_percentage_points": 10,
+          "gaap_diluted_eps": 3.5,
+          "non_gaap_diluted_eps": 4.45,
+          "eps_range": 0.7
+        },
+        "q4_actual": {
+          "revenue": 566.685,
+          "prior_quarter_revenue": 478.713,
+          "prior_year_revenue": 337.922,
+          "gaap_operating_income": 69.462,
+          "prior_quarter_gaap_operating_income": 50.863,
+          "gaap_operating_margin_percent": 12.3,
+          "prior_quarter_margin_percent": 10.6,
+          "advanced_computing_revenue": 154.039,
+          "prior_year_advanced_computing_revenue": 138.336,
+          "integrated_memory_revenue": 340.784,
+          "prior_year_integrated_memory_revenue": 132.159
+        },
+        "cash_and_quality": {
+          "q4_operating_cash_flow": -163.136,
+          "q3_operating_cash_flow": -74.788,
+          "fy2026_operating_cash_flow": -151.914,
+          "accounts_receivable": 796.264,
+          "prior_fiscal_year_end_accounts_receivable": 307.904,
+          "inventories": 748.785,
+          "prior_fiscal_year_end_inventories": 255.182,
+          "q4_income_tax_benefit": 57.595
+        },
+        "demand_transmission": "Issuer reports six newAIInfrastructurecustomers inQ4,fourneoclouds;oneNorwayengagement covers deployment/operationof36000GPUs.Companydesigns/builds/managesAIinfrastructureandmemory.No unnamedcustomer identityorTaiwansupplierallocationinferred.",
+        "scope_limits": "HistoricOctober6earnings,not newOctober20order.IssuerUNAUDITEDtables;forwardguidanceisnotrealizedFY27profit.USD3bn/10bn figures describe customers'underlyingcontracts,notPenguinbacklog.GAAPnetincomeincludeslargetaxbenefit.Hardwareandmemorygrowthnotassumedrecurringsoftwareprofit.",
+        "derived_mix_limit": "IntegratedMemoryaccounts forapproximately91.2%ofQ4totalrevenueYoYincrement((340.784-132.159)/(566.685-337.922));AdvancedComputinggrowthapproximately11.35%.CompanyAIInfrastructurelabelnotassumedidenticaltothewholeAdvancedComputingsegment."
+      },
+      "status": "primary_revision_margin_mix_cash_and_original_period_verified_earnings_conversion_followup_no_article"
     }
   ],
   "articles": [],
@@ -3157,13 +3214,13 @@
     ],
     "current_run_screening": {
       "date": "2026-10-20",
-      "checked_at": "2026-10-20T04:54:05Z",
-      "instruction_commit_sha": "e05f353a1aed650033475ffb2bc61936e8dee119",
-      "status": "grouped_discovery_partial_primary_sources_and_retry_limits_recorded",
+      "checked_at": "2026-10-20T06:15:25Z",
+      "instruction_commit_sha": "2056991106171e0af18d475cddd108ef91bdab91",
+      "status": "grouped_discovery_quality_limited_historical_primary_earnings_increment_added",
       "company_count": 98,
       "grouped_query_count": 14,
-      "additional_targeted_query_count": 8,
-      "scope": "Fresh fourteen seven-name grouped discovery attempts across98active names;core6 official news/IR entrypoints andCSP5 entrypoints attempted.Targeted Taiwan andglobal current-source followup.No individual full98-company current-release audit claimed.",
+      "additional_targeted_query_count": 14,
+      "scope": "Fourteen seven-name discoveryattempts acrossfresh98activeuniverse;core6/CSP5entrypointsattempted.Penguinoutsideuniversehistoricalearningsoriginalverified;noarticle.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -3176,18 +3233,17 @@
         "https://abc.xyz/investor/",
         "https://investor.atmeta.com/home/default.aspx",
         "https://www.oracle.com/news/",
-        "https://www.sigurd.com.tw/zh-tw/monthly-revenue",
-        "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771936_S1EL12IA2J94BA7U44MUF",
-        "https://www.reuters.com/business/top-hyperscalers-likely-have-more-ai-linked-debt-than-now-known-sp-global-warns-2026-10-19/",
-        "https://www.aboutamazon.com/news/sustainability/amazon-nuclear-energy-indiana-x-energy-aep"
+        "https://ir.penguinsolutions.com/news/news-details/2026/Penguin-Solutions-Announces-Fourth-Quarter-and-Full-Year-Fiscal-2026-Results/",
+        "https://www.tuc.com.tw/en-us/corporate/id/133",
+        "https://blogs.nvidia.com/blog/spain-startups-barcelona-supercomputing-center/"
       ],
       "source_limits": [
-        "Required same-commit instructions/specifications fully retrieved and read;untruncated tree and full progress blob3f4c2dbe71e8ca4f077e209d0446c757a00e2e4a retrieved and JSON parsed.Three related articles reread with unchanged source blobs.",
-        "Fresh alpha-quant main f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV88422949d38165d4757a1e24c27f8662bede14c1;98active.Fourteen grouped discovery attempts returned historical/aggregated and some irrelevant results;not98 latest issuer validations.Primary historical coverage51checked/47pending unchanged.",
-        "TSMC Q3actual/Q4guidance,MediaTekSeptember30/August31 index,NVIDIAOctober19,AMDOctober12 andMarvellOctober13 retain logged baselines.Broadcom news index andDOCOMO detail returned inaccessible InternalError this run;prior obtained source preserved,not claimed fresh successful fullbody read.CSPentrypoints sparse/dynamic,not comprehensive filing coverage.",
-        "TargetedOctober20TPU glass-substrate report matches existing candidate with unconfirmed causal speculation.3M/Amazon,AWS receipt timing,Nscale withdrawal/negotiations,S&Pfinancing warning andAmazon/AEP/X-energy exploration already logged;fresh rediscovery is not a new contract,earningsrevision or deployed capacity.Mature-foundry/PCBshow reporting does not establish a new quantified customer award.",
-        "Sigurd direct monthly page again timedout;indexed prior baseline retained without direct-live coverage credit.No new candidate required.No article or notification supported by obtained incremental evidence.",
-        "Only one screening appended.Public events,candidates,articles,blockers andCSPbaseline preserved.No stockquotes,valuation,holdings,flows or private Bdata saved publicly.No article/lint/build/deploy claim."
+        "Requiredsame-commitinstructions/specificationsfullyretrievedandread;fullprogressbc6bd373137e784d8a64fb2796bceeef5faf5df2parsed;threepriorrelatedarticlesretrievedwithsameblobsaspriorcompletereads.No requiredinstructiongap.",
+        "Freshalpha-quantmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f,CSV88422949d38165d4757a1e24c27f8662bede14c1;98active.Fourteengroupedattemptsmostlyaggregated,historicalorirrelevant;not98currentissuerannouncementaudits.Primaryhistoricalcoverage51checked/47pendingunchanged.",
+        "TSMCQ3actual/Q4guidance,MediaTekSeptemberindex,AMDOctober12,MarvellOctober13retainbaselines.BroadcomindexinaccessibleInternalError;notclaimedfreshsuccessfulread.CSPdynamic/sparseentrypointsnotcompletefilingcoverage.TPUv9glasssubstratereportrepeatsloggedcandidate.",
+        "NVIDIAOctober19BSC/Inceptionaccessmilestoneoriginalread:800services sinceApril2025andplannedMareNostrumextension;not800GPUorders,paidutilizationornewquantifiedearnings.TUCQ2presentationindexreadbutPDFclickinaccessible;noadditionalprimarycompanycoveragecredit.",
+        "PenguinOctober6issueroriginalsupportsFY27midpointUSD2.17bn-to2.43bnandQ4operatingmarginimprovement,butmemorydominatesincrementalrevenueandQ4cashoutflowUSD163.136m.Historicalbackfill,notnewtoday.Auditfinancialperiodsandgrowthdenominatorsseparately.",
+        "Addedonepublicevent,onecandidate,onescreening;preservedpriorhistory.Noquotes,holdings,valuation,privateflowsorBjudgmentinpublicfile.Noarticle/lint/build/deployclaim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -7841,6 +7897,40 @@
           "TargetedOctober20TPU glass-substrate report matches existing candidate with unconfirmed causal speculation.3M/Amazon,AWS receipt timing,Nscale withdrawal/negotiations,S&Pfinancing warning andAmazon/AEP/X-energy exploration already logged;fresh rediscovery is not a new contract,earningsrevision or deployed capacity.Mature-foundry/PCBshow reporting does not establish a new quantified customer award.",
           "Sigurd direct monthly page again timedout;indexed prior baseline retained without direct-live coverage credit.No new candidate required.No article or notification supported by obtained incremental evidence.",
           "Only one screening appended.Public events,candidates,articles,blockers andCSPbaseline preserved.No stockquotes,valuation,holdings,flows or private Bdata saved publicly.No article/lint/build/deploy claim."
+        ]
+      },
+      {
+        "date": "2026-10-20",
+        "checked_at": "2026-10-20T06:15:25Z",
+        "instruction_commit_sha": "2056991106171e0af18d475cddd108ef91bdab91",
+        "status": "grouped_discovery_quality_limited_historical_primary_earnings_increment_added",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "additional_targeted_query_count": 14,
+        "scope": "Fourteen seven-name discoveryattempts acrossfresh98activeuniverse;core6/CSP5entrypointsattempted.Penguinoutsideuniversehistoricalearningsoriginalverified;noarticle.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://investor.atmeta.com/home/default.aspx",
+          "https://www.oracle.com/news/",
+          "https://ir.penguinsolutions.com/news/news-details/2026/Penguin-Solutions-Announces-Fourth-Quarter-and-Full-Year-Fiscal-2026-Results/",
+          "https://www.tuc.com.tw/en-us/corporate/id/133",
+          "https://blogs.nvidia.com/blog/spain-startups-barcelona-supercomputing-center/"
+        ],
+        "source_limits": [
+          "Requiredsame-commitinstructions/specificationsfullyretrievedandread;fullprogressbc6bd373137e784d8a64fb2796bceeef5faf5df2parsed;threepriorrelatedarticlesretrievedwithsameblobsaspriorcompletereads.No requiredinstructiongap.",
+          "Freshalpha-quantmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f,CSV88422949d38165d4757a1e24c27f8662bede14c1;98active.Fourteengroupedattemptsmostlyaggregated,historicalorirrelevant;not98currentissuerannouncementaudits.Primaryhistoricalcoverage51checked/47pendingunchanged.",
+          "TSMCQ3actual/Q4guidance,MediaTekSeptemberindex,AMDOctober12,MarvellOctober13retainbaselines.BroadcomindexinaccessibleInternalError;notclaimedfreshsuccessfulread.CSPdynamic/sparseentrypointsnotcompletefilingcoverage.TPUv9glasssubstratereportrepeatsloggedcandidate.",
+          "NVIDIAOctober19BSC/Inceptionaccessmilestoneoriginalread:800services sinceApril2025andplannedMareNostrumextension;not800GPUorders,paidutilizationornewquantifiedearnings.TUCQ2presentationindexreadbutPDFclickinaccessible;noadditionalprimarycompanycoveragecredit.",
+          "PenguinOctober6issueroriginalsupportsFY27midpointUSD2.17bn-to2.43bnandQ4operatingmarginimprovement,butmemorydominatesincrementalrevenueandQ4cashoutflowUSD163.136m.Historicalbackfill,notnewtoday.Auditfinancialperiodsandgrowthdenominatorsseparately.",
+          "Addedonepublicevent,onecandidate,onescreening;preservedpriorhistory.Noquotes,holdings,valuation,privateflowsorBjudgmentinpublicfile.Noarticle/lint/build/deployclaim."
         ]
       }
     ],
@@ -14013,6 +14103,30 @@
         "Gross profit and working-capital conversion"
       ],
       "publication_status": "baseline_only_no_alert_no_article"
+    },
+    {
+      "key": "penguin-ai-infrastructure-memory-growth-to-recurring-margin-and-cash",
+      "date": "2026-10-20",
+      "event_date": "2026-10-06",
+      "instruction_commit_sha": "2056991106171e0af18d475cddd108ef91bdab91",
+      "companies": [
+        "Penguin Solutions"
+      ],
+      "sources": [
+        "https://ir.penguinsolutions.com/news/news-details/2026/Penguin-Solutions-Announces-Fourth-Quarter-and-Full-Year-Fiscal-2026-Results/"
+      ],
+      "stage": "historical_issuer_fullbody_outlook_and_cashflow_verified",
+      "facts": {
+        "event_fingerprint": "penguin-solutions-fy2027-outlook-raise-and-working-capital-cash-divergence-20261006",
+        "relationship": "Outside98activeuniverse;issuerhasexplicitNVIDIAplatform,AIdeploymentandmemoryrelationships;watchlistunchanged.",
+        "limits": "Workingcapitalcanexplaingrowth-relatedcashoutflowbutdoesnotprovecollectionorloss.Customers'largecomputecommitmentsnotPenguinorders.Nopure-softwaremultipleorrealizedFY27EPSinferred."
+      },
+      "questions": [
+        "HowmuchFY27growthcomesfrommemorypriceversusAIinfrastructurehardware/software/services",
+        "Whethercustomeracceptanceandreceivablescollectionreversecashoutflowwithoutnewfunding",
+        "Repeatorders,retainedoperatingmarginsandcreditconcentration"
+      ],
+      "publication_status": "research_event_only_no_article"
     }
   ],
   "blockers": [
@@ -14032,7 +14146,7 @@
     }
   ],
   "last_research_date": "2026-10-20",
-  "instruction_commit_sha": "e05f353a1aed650033475ffb2bc61936e8dee119",
+  "instruction_commit_sha": "2056991106171e0af18d475cddd108ef91bdab91",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
