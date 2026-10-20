@@ -3305,6 +3305,42 @@
         "limits": "Group results include multiple end markets,pricing,productivity and acquisitions;not isolated EBO or Taiwan supplier profit."
       },
       "status": "issuer_release_read_no_article"
+    },
+    {
+      "fingerprint": "spacex-q3-2026-si-operating-profit-inflection-and-capex-cash-gap-20261020",
+      "event_date": "2026-10-20",
+      "discovered_date": "2026-10-21",
+      "instruction_commit_sha": "efb57cd1fa660a4a9b56775db93f3c59d8161bcf",
+      "companies": [
+        "SpaceX"
+      ],
+      "type": "issuer_quarterly_financial_and_cashflow_increment",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm",
+        "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm"
+      ],
+      "facts": {
+        "currency": "USD",
+        "unit": "million",
+        "si_q3": {
+          "revenue": 7560,
+          "operating_income": 431,
+          "capex": 16444
+        },
+        "si_q2": {
+          "revenue": 2561,
+          "operating_income": -1257,
+          "capex": 15828
+        },
+        "cursor_acquired_revenue": 608,
+        "company_q3_capex": 19593,
+        "nine_month_company_ocf": 13097,
+        "h1_company_ocf": 3466,
+        "derived_q3_ocf": 9631,
+        "derived_q3_ocf_minus_ppe": -9962,
+        "limits": "Quarter cash flow derived by subtraction,not issuer-defined FCF;excludes separately presented rebates/intangibles/leases.SI includes advertising,software and acquired Cursor,not pure compute rental.Nameplate1.7GW is not utilization."
+      },
+      "status": "issuer_release_and_historical_10q_read_no_article"
     }
   ],
   "articles": [],
@@ -3376,13 +3412,13 @@
     ],
     "current_run_screening": {
       "date": "2026-10-21",
-      "checked_at": "2026-10-20T19:52:49Z",
-      "instruction_commit_sha": "d27d45c46ed15d68af998416ec61029db30cf7fb",
-      "status": "historical_engineering_candidate_and_primary_capability_followup_no_new_material_alert",
+      "checked_at": "2026-10-20T20:47:50Z",
+      "instruction_commit_sha": "efb57cd1fa660a4a9b56775db93f3c59d8161bcf",
+      "status": "spacex_issuer_financial_increment_and_cbre_conditional_acquisition_followup",
       "company_count": 98,
       "grouped_query_count": 14,
-      "additional_targeted_query_count": 6,
-      "scope": "14 seven-name grouped discovery queries across98 active names,not98 individualissuer checks;core6/CSP5 entrypoints refreshed;4 current-discovery and2 historical-source queries.",
+      "additional_targeted_query_count": 28,
+      "scope": "14 seven-name grouped discovery queries across98 active names,not98 individualissuer checks;core6/CSP5 entrypoints refreshed.28 targeted current-discovery andfollowup queries.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -3395,15 +3431,17 @@
         "https://abc.xyz/investor/",
         "https://investor.atmeta.com/home/default.aspx",
         "https://www.oracle.com/news/",
-        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=39596cb9-26b2-42c4-afae-81356f38a496&c=MB06",
-        "https://www.micb2b.com/about/introduction/",
-        "https://www.micb2b.com/investors/finance/month/",
-        "https://www.micb2b.com/investors/finance/season/"
+        "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm",
+        "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm",
+        "https://ir.cbre.com/press-releases/detail/270/cbre-expands-critical-infrastructure-capabilities",
+        "https://www.sinbon.com/investors-news/1",
+        "https://www.liteon.com/zh-tw/news/press-center/content/quarterly-second-eps-2026"
       ],
       "company_check_scope": {
-        "new_active_universe_primary_issuer_operating_financial_originals": [],
-        "undated_issuer_capability_only": [
-          "6196"
+        "new_active_universe_primary_issuer_originals": [],
+        "outside_universe_originals": [
+          "SpaceX",
+          "CBRE"
         ],
         "grouped_discovery_only": [
           "2330",
@@ -3509,13 +3547,11 @@
         "cumulative_pending": 46
       },
       "source_limits": [
-        "Same-commit mandatory instructions/specs/taxonomy/progress and3 related recent articles fully acquired.AGENTS output completed in two chunks.No article created.",
-        "Universe15737456c090bdcb099718fe47a1b85562ddbe5c/CSV88422949d38165d4757a1e24c27f8662bede14c1 unchanged98active. Undated MIC profile not promoted to current financial verification;coverage52/98 unchanged.",
-        "TSMCQ3/Q4 guidance and MediaTek/NVIDIA/AMD/Marvell baselines unchanged.Some CSP entrypoints sparse/dynamic,not full latestfiling coverage.Broadcom FedEx software continuation already checked.",
-        "Nscale confirmation,ChinaGPU demand,3M results,HolyStone pricing claims and TPCA management roadmaps already recorded;no verified new order cancellation or changed supplier economics.",
-        "MIC historical October15 report is not an October21 announcement. Numerical primary financial tables not rendered;no current profit revision asserted.",
-        "Grouped optical lead explicitly discusses nextyear2026 and is historical2025,not fresh2026 news;September institutional optical forecast lead not treated asnew demand revision.",
-        "Public record excludes quotes,valuation,private flows,holdings and B data.No article/lint/build/deploy claim."
+        "Mandatory instructions/specs/taxonomy/progress and3related recentarticles acquired at samecommit.AGENTS output pagination completed.",
+        "Universe15737456c090bdcb099718fe47a1b85562ddbe5c/CSV88422949d38165d4757a1e24c27f8662bede14c1 unchanged98active.Primary baselines52/98,46pending.",
+        "SpaceX andCBRE originals initially InternalError,later successful bodyreads;historical access failures retained.SINBON onlyJavaScriptshell,LITEONQ2 502,no primary-count increase.",
+        "TSMCQ3/Q4 andothercoreindexes retain priorbaselines.SomeCSP entrypoints dynamic/sparse,notfull filingcoverage.Nscale/3M/TPCA priornotified events notnew.",
+        "SpaceX released income/cash tables establish sourceincrement;customer economics,call/Q&A anddurability unresolved,so nofullarticle.Public ledger excludes prices,private flows,valuation,holdings andB data.Noarticle/lint/build/deploy claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -9983,6 +10019,150 @@
           "MIC historical October15 report is not an October21 announcement. Numerical primary financial tables not rendered;no current profit revision asserted.",
           "Grouped optical lead explicitly discusses nextyear2026 and is historical2025,not fresh2026 news;September institutional optical forecast lead not treated asnew demand revision.",
           "Public record excludes quotes,valuation,private flows,holdings and B data.No article/lint/build/deploy claim."
+        ]
+      },
+      {
+        "date": "2026-10-21",
+        "checked_at": "2026-10-20T20:47:50Z",
+        "instruction_commit_sha": "efb57cd1fa660a4a9b56775db93f3c59d8161bcf",
+        "status": "spacex_issuer_financial_increment_and_cbre_conditional_acquisition_followup",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "additional_targeted_query_count": 28,
+        "scope": "14 seven-name grouped discovery queries across98 active names,not98 individualissuer checks;core6/CSP5 entrypoints refreshed.28 targeted current-discovery andfollowup queries.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://investor.atmeta.com/home/default.aspx",
+          "https://www.oracle.com/news/",
+          "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm",
+          "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm",
+          "https://ir.cbre.com/press-releases/detail/270/cbre-expands-critical-infrastructure-capabilities",
+          "https://www.sinbon.com/investors-news/1",
+          "https://www.liteon.com/zh-tw/news/press-center/content/quarterly-second-eps-2026"
+        ],
+        "company_check_scope": {
+          "new_active_universe_primary_issuer_originals": [],
+          "outside_universe_originals": [
+            "SpaceX",
+            "CBRE"
+          ],
+          "grouped_discovery_only": [
+            "2330",
+            "2454",
+            "3661",
+            "3443",
+            "3035",
+            "5274",
+            "3711",
+            "2449",
+            "6257",
+            "6239",
+            "3264",
+            "8150",
+            "6223",
+            "6510",
+            "6515",
+            "6683",
+            "2360",
+            "3131",
+            "2467",
+            "6187",
+            "6640",
+            "3583",
+            "3413",
+            "6196",
+            "1560",
+            "8028",
+            "3037",
+            "8046",
+            "3189",
+            "2383",
+            "6274",
+            "6213",
+            "2368",
+            "2313",
+            "4958",
+            "3044",
+            "2367",
+            "6191",
+            "5469",
+            "8021",
+            "1815",
+            "1802",
+            "2317",
+            "2382",
+            "3231",
+            "6669",
+            "2356",
+            "2324",
+            "3706",
+            "2308",
+            "2301",
+            "6412",
+            "6282",
+            "3015",
+            "6409",
+            "3017",
+            "3324",
+            "2421",
+            "3653",
+            "8996",
+            "3338",
+            "2059",
+            "8210",
+            "3013",
+            "6117",
+            "3533",
+            "3665",
+            "6197",
+            "3023",
+            "3526",
+            "3605",
+            "2345",
+            "2379",
+            "6285",
+            "5388",
+            "3596",
+            "3081",
+            "3163",
+            "3363",
+            "4979",
+            "6442",
+            "3450",
+            "4977",
+            "3234",
+            "4908",
+            "2408",
+            "2344",
+            "2337",
+            "8299",
+            "3260",
+            "8271",
+            "5289",
+            "6770",
+            "3006",
+            "2327",
+            "2492",
+            "3026",
+            "2375"
+          ],
+          "cumulative_primary_company_fact_count": 52,
+          "cumulative_pending": 46
+        },
+        "source_limits": [
+          "Mandatory instructions/specs/taxonomy/progress and3related recentarticles acquired at samecommit.AGENTS output pagination completed.",
+          "Universe15737456c090bdcb099718fe47a1b85562ddbe5c/CSV88422949d38165d4757a1e24c27f8662bede14c1 unchanged98active.Primary baselines52/98,46pending.",
+          "SpaceX andCBRE originals initially InternalError,later successful bodyreads;historical access failures retained.SINBON onlyJavaScriptshell,LITEONQ2 502,no primary-count increase.",
+          "TSMCQ3/Q4 andothercoreindexes retain priorbaselines.SomeCSP entrypoints dynamic/sparse,notfull filingcoverage.Nscale/3M/TPCA priornotified events notnew.",
+          "SpaceX released income/cash tables establish sourceincrement;customer economics,call/Q&A anddurability unresolved,so nofullarticle.Public ledger excludes prices,private flows,valuation,holdings andB data.Noarticle/lint/build/deploy claim."
         ]
       }
     ],
@@ -16711,6 +16891,51 @@
         "AI project partner,scope,profit and repeat awards"
       ],
       "publication_status": "historical_followup_candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "spacex-q3-2026-si-operating-profit-inflection-and-capex-cash-gap-20261020",
+      "date": "2026-10-21",
+      "event_date": "2026-10-20",
+      "instruction_commit_sha": "efb57cd1fa660a4a9b56775db93f3c59d8161bcf",
+      "companies": [
+        "SpaceX"
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm",
+        "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm"
+      ],
+      "stage": "issuer_financial_inflection_and_cash_reconciliation_verified_followup_pending",
+      "questions": [
+        "Separate recurring compute pricing/utilization from acquired software revenue",
+        "Reconcile customer concentration,prepayments and future funding",
+        "Test repeatable margins after depreciation and capex"
+      ],
+      "publication_status": "material_source_increment_recorded_no_article"
+    },
+    {
+      "key": "cbre-onnec-conditional-acquisition-and-infrastructure-services-scope-20261020",
+      "date": "2026-10-21",
+      "event_date": "2026-10-20",
+      "instruction_commit_sha": "efb57cd1fa660a4a9b56775db93f3c59d8161bcf",
+      "companies": [
+        "CBRE",
+        "Onnec"
+      ],
+      "sources": [
+        "https://ir.cbre.com/press-releases/detail/270/cbre-expands-critical-infrastructure-capabilities"
+      ],
+      "stage": "issuer_definitive_agreement_read_closing_and_realized_economics_pending",
+      "facts": {
+        "consideration": "GBP460m initialcash plus up toGBP300m contingentearnout;closing expectedaroundyearend subjectapprovals.",
+        "outlook": "Onnec2027 revenueGBP370m/coreEBITDA>GBP50m expected,not realized.CBRE infrastructure services2027~USD7bn includes criticalinfrastructure~4.5bn andother~2.5bn;not allnewAIorders.",
+        "relationship": "Network,fiber anddata-center design/deployment/maintenance servinghyperscalers inEurope/APAC."
+      },
+      "questions": [
+        "Closing and earnout targets",
+        "Organic growth versus acquired revenue",
+        "Cash conversion and customer concentration"
+      ],
+      "publication_status": "candidate_only_no_separate_alert_no_article"
     }
   ],
   "blockers": [
@@ -16730,7 +16955,7 @@
     }
   ],
   "last_research_date": "2026-10-21",
-  "instruction_commit_sha": "d27d45c46ed15d68af998416ec61029db30cf7fb",
+  "instruction_commit_sha": "efb57cd1fa660a4a9b56775db93f3c59d8161bcf",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
