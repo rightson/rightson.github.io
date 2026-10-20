@@ -3264,6 +3264,28 @@
         "limits": "Separate Tansun contract corroborates product procurement,not the three buyers' quantities. No verified realizedASP,revenue recognition,export-license classification or named Taiwan supplier order."
       },
       "status": "original_reporting_product_original_and_issuer_document_read_no_article"
+    },
+    {
+      "fingerprint": "nscale-loughton-microsoft-spokesperson-confirmation-and-single-site-scope-20261019",
+      "event_date": "2026-10-19",
+      "discovered_date": "2026-10-21",
+      "instruction_commit_sha": "698d8af833656e7645aca74278e6c498e85f2c88",
+      "companies": [
+        "Microsoft",
+        "Nscale"
+      ],
+      "type": "original_reporting_with_direct_company_response_confidence_upgrade",
+      "sources": [
+        "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/",
+        "https://www.nscale.com/press-releases/nscale-uk-ai-infrastructure-announcement"
+      ],
+      "facts": {
+        "new_evidence": "Reuters October19 body adds Microsoft spokesperson confirmation of termination of the single Loughton site agreement; broader Nscale partnership remains. This upgrades the October18 media-only baseline, not a new October20 announcement.",
+        "historical_project_scope": "Nscale September16,2025 announcement planned initial50MW and23040GB300 GPUs forQ1 2027;project scope is not verified lost equipment orders.",
+        "counterevidence": "Nscale says other contracts are unaffected and is exploring alternative power and sites.",
+        "limits": "Grid-delay timing remains reported,without grid-operator original. No verified equipment cancellation,termination value,impairment or lost-revenue amount."
+      },
+      "status": "original_report_and_historical_issuer_baseline_read_no_article"
     }
   ],
   "articles": [],
@@ -3335,13 +3357,13 @@
     ],
     "current_run_screening": {
       "date": "2026-10-21",
-      "checked_at": "2026-10-20T16:42:51Z",
-      "instruction_commit_sha": "7c94426e7e6dd4a7114739dda99132df34b2d766",
-      "status": "four_followup_candidates_recorded_no_new_material_hypothesis_revision",
+      "checked_at": "2026-10-20T18:23:42Z",
+      "instruction_commit_sha": "698d8af833656e7645aca74278e6c498e85f2c88",
+      "status": "single_site_contract_termination_confidence_upgrade_and_construction_followup_recorded",
       "company_count": 98,
       "grouped_query_count": 14,
-      "additional_targeted_query_count": 8,
-      "scope": "14seven-name grouped discovery attempts across98active names;not98individualissuerchecks.Core6andCSP5entrypointsrefreshed;4targeteddiscovery plus4baseline/sourcequeries.",
+      "additional_targeted_query_count": 6,
+      "scope": "14 seven-name grouped discovery queries across98 active names,not98 individual issuer checks.Core6 and CSP5 entrypoints refreshed;6 targeted discovery/date-verification queries.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -3354,18 +3376,16 @@
         "https://abc.xyz/investor/",
         "https://investor.atmeta.com/home/default.aspx",
         "https://www.oracle.com/news/",
-        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=33c2bc9d-86ea-4935-ae82-557280c2d8df",
-        "https://m.moneydj.com/f1a.aspx?a=c15e30b7-7783-4da7-9675-3f24ae04eef3&c=MB06",
-        "https://www.ttv.com.tw/finance/view/102026201111FE0A0BE9D66645A089B47C61A5895F487AD3/587",
-        "https://www.cna.com.tw/news/afe/202608140276.aspx",
-        "https://www.goldmansachs.com/what-we-do/investment-banking/insights/articles/navigating-a-system-of-ai-bottlenecks"
+        "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/",
+        "https://www.nscale.com/press-releases/nscale-uk-ai-infrastructure-announcement",
+        "https://ir.soarai.com/news-events/press-releases/detail/166/soar-ais-ohio-ai-compute-campus-on-track-for-december-31-in-service-date-with-contracted-revenue-expected-to-begin-january-2027"
       ],
       "company_check_scope": {
         "new_active_universe_primary_issuer_originals": [],
-        "original_journalism_company_statement_reads": [
-          "6683",
-          "4958",
-          "8021"
+        "original_journalism_company_statement_reads": [],
+        "outside_universe_originals": [
+          "Nscale",
+          "SOAR AI"
         ],
         "grouped_discovery_only": [
           "2330",
@@ -3471,13 +3491,12 @@
         "cumulative_pending": 46
       },
       "source_limits": [
-        "Samecommitmandatoryinstructions/specs/taxonomy/progressand3recentrelatedarticlesfullyretrieved.Noarticlecreated.",
-        "alpha-quantmain15737456c090bdcb099718fe47a1b85562ddbe5c;CSV88422949d38165d4757a1e24c27f8662bede14c1unchanged98active.Primarycoverage52/98unchanged.",
-        "TSMCQ3/Q4guidance,MediaTek/NVIDIA/AMD/Marvellindexesretainrecordedbaselines.CSP/Broadcomlandingpagespartlydynamic/sparse:notfullfilingcoverage.",
-        "NVIDIAChinaRTXPRO5500andFulltechmonthlygrossprofitarealreadyrecorded;nochangedconfirmedallocationoreconomicsfound.",
-        "KSMT/ZDTreportedoutlooksneedorder,denominatorandprofitconfirmation.TopointcapacityroadmapalreadyAugust;PTFEstilltesting/samples.",
-        "GSoriginalOctober19 articleprovidesforecastandcoordinationriskfollowup,notnewconfirmedcapexcut.FTLexfullbodyrestricted.CNAF22followupopenfailed;priorstopworkscopewasnotupdated.",
-        "Publicledgerexcludesquotes,valuation,privateflows,holdingsandBdata.Noarticle/lint/build/deployclaim."
+        "Same-commit mandatory instructions/specs/taxonomy/progress and3 recent related articles retrieved;no article created.",
+        "alpha-quant main15737456c090bdcb099718fe47a1b85562ddbe5c;CSV88422949d38165d4757a1e24c27f8662bede14c1 unchanged98 active.Cumulative primary coverage52/98 unchanged.",
+        "Core issuer baselines refreshed;some CSP/Broadcom entrypoints sparse/dynamic,not full filing coverage.",
+        "Reuters body is datedOctober19;October20 syndication timestamp is not a new corporate announcement.Direct Microsoft response raises confidence versus October18 baseline.No verified equipment-order cuts.",
+        "SOAR issuer construction/revenue targets remain conditional on delivery/acceptance and financing,not booked revenue or proof of cash receipt.",
+        "Public ledger excludes quotes,valuations,private flows,holdings and B data.No article/lint/build/deploy claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -9511,6 +9530,150 @@
           "KSMT/ZDTreportedoutlooksneedorder,denominatorandprofitconfirmation.TopointcapacityroadmapalreadyAugust;PTFEstilltesting/samples.",
           "GSoriginalOctober19 articleprovidesforecastandcoordinationriskfollowup,notnewconfirmedcapexcut.FTLexfullbodyrestricted.CNAF22followupopenfailed;priorstopworkscopewasnotupdated.",
           "Publicledgerexcludesquotes,valuation,privateflows,holdingsandBdata.Noarticle/lint/build/deployclaim."
+        ]
+      },
+      {
+        "date": "2026-10-21",
+        "checked_at": "2026-10-20T18:23:42Z",
+        "instruction_commit_sha": "698d8af833656e7645aca74278e6c498e85f2c88",
+        "status": "single_site_contract_termination_confidence_upgrade_and_construction_followup_recorded",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "additional_targeted_query_count": 6,
+        "scope": "14 seven-name grouped discovery queries across98 active names,not98 individual issuer checks.Core6 and CSP5 entrypoints refreshed;6 targeted discovery/date-verification queries.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://investor.atmeta.com/home/default.aspx",
+          "https://www.oracle.com/news/",
+          "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/",
+          "https://www.nscale.com/press-releases/nscale-uk-ai-infrastructure-announcement",
+          "https://ir.soarai.com/news-events/press-releases/detail/166/soar-ais-ohio-ai-compute-campus-on-track-for-december-31-in-service-date-with-contracted-revenue-expected-to-begin-january-2027"
+        ],
+        "company_check_scope": {
+          "new_active_universe_primary_issuer_originals": [],
+          "original_journalism_company_statement_reads": [],
+          "outside_universe_originals": [
+            "Nscale",
+            "SOAR AI"
+          ],
+          "grouped_discovery_only": [
+            "2330",
+            "2454",
+            "3661",
+            "3443",
+            "3035",
+            "5274",
+            "3711",
+            "2449",
+            "6257",
+            "6239",
+            "3264",
+            "8150",
+            "6223",
+            "6510",
+            "6515",
+            "6683",
+            "2360",
+            "3131",
+            "2467",
+            "6187",
+            "6640",
+            "3583",
+            "3413",
+            "6196",
+            "1560",
+            "8028",
+            "3037",
+            "8046",
+            "3189",
+            "2383",
+            "6274",
+            "6213",
+            "2368",
+            "2313",
+            "4958",
+            "3044",
+            "2367",
+            "6191",
+            "5469",
+            "8021",
+            "1815",
+            "1802",
+            "2317",
+            "2382",
+            "3231",
+            "6669",
+            "2356",
+            "2324",
+            "3706",
+            "2308",
+            "2301",
+            "6412",
+            "6282",
+            "3015",
+            "6409",
+            "3017",
+            "3324",
+            "2421",
+            "3653",
+            "8996",
+            "3338",
+            "2059",
+            "8210",
+            "3013",
+            "6117",
+            "3533",
+            "3665",
+            "6197",
+            "3023",
+            "3526",
+            "3605",
+            "2345",
+            "2379",
+            "6285",
+            "5388",
+            "3596",
+            "3081",
+            "3163",
+            "3363",
+            "4979",
+            "6442",
+            "3450",
+            "4977",
+            "3234",
+            "4908",
+            "2408",
+            "2344",
+            "2337",
+            "8299",
+            "3260",
+            "8271",
+            "5289",
+            "6770",
+            "3006",
+            "2327",
+            "2492",
+            "3026",
+            "2375"
+          ],
+          "cumulative_primary_company_fact_count": 52,
+          "cumulative_pending": 46
+        },
+        "source_limits": [
+          "Same-commit mandatory instructions/specs/taxonomy/progress and3 recent related articles retrieved;no article created.",
+          "alpha-quant main15737456c090bdcb099718fe47a1b85562ddbe5c;CSV88422949d38165d4757a1e24c27f8662bede14c1 unchanged98 active.Cumulative primary coverage52/98 unchanged.",
+          "Core issuer baselines refreshed;some CSP/Broadcom entrypoints sparse/dynamic,not full filing coverage.",
+          "Reuters body is datedOctober19;October20 syndication timestamp is not a new corporate announcement.Direct Microsoft response raises confidence versus October18 baseline.No verified equipment-order cuts.",
+          "SOAR issuer construction/revenue targets remain conditional on delivery/acceptance and financing,not booked revenue or proof of cash receipt.",
+          "Public ledger excludes quotes,valuations,private flows,holdings and B data.No article/lint/build/deploy claim."
         ]
       }
     ],
@@ -16114,6 +16277,54 @@
         "Named-project slippage reaching equipment delivery"
       ],
       "publication_status": "research_candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "nscale-loughton-microsoft-spokesperson-confirmation-and-single-site-scope-20261019",
+      "date": "2026-10-21",
+      "event_date": "2026-10-19",
+      "instruction_commit_sha": "698d8af833656e7645aca74278e6c498e85f2c88",
+      "companies": [
+        "Microsoft",
+        "Nscale"
+      ],
+      "sources": [
+        "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/",
+        "https://www.nscale.com/press-releases/nscale-uk-ai-infrastructure-announcement"
+      ],
+      "stage": "single_site_termination_company_response_verified_via_original_reporting",
+      "prior_fingerprint": "nscale-loughton-microsoft-anchor-tenant-withdrawal-reported-20261018",
+      "questions": [
+        "Alternative power and replacement-site capacity and delivery dates",
+        "Whether the site termination changes equipment orders or only deployment location",
+        "Actual contract loss,acceptance and cash-recovery disclosures"
+      ],
+      "publication_status": "public_event_and_candidate_recorded_no_article"
+    },
+    {
+      "key": "soar-ohio-commissioned-power-and-datahall-installation-scope-20261020",
+      "date": "2026-10-21",
+      "event_date": "2026-10-20",
+      "instruction_commit_sha": "698d8af833656e7645aca74278e6c498e85f2c88",
+      "companies": [
+        "SOAR AI",
+        "AMD"
+      ],
+      "sources": [
+        "https://ir.soarai.com/news-events/press-releases/detail/166/soar-ais-ohio-ai-compute-campus-on-track-for-december-31-in-service-date-with-contracted-revenue-expected-to-begin-january-2027"
+      ],
+      "stage": "issuer_construction_update_and_conditional_revenue_outlook_read_not_operating_acceptance",
+      "facts": {
+        "progress": "Issuer says substation,medium-voltage distribution and turbine backup are commissioned;datahall transformers and cooling installation underway. Not proof of completed GPU service or customer acceptance.",
+        "outlook": "First4096MI355X service targetDecember31,2026;revenueJanuary2027 subjectdelivery/acceptance.4032MI455X contractualserviceJune30,2027;hallreadyFebruary target.",
+        "economics": "Issuer expectsUSD175m–200m2027revenue from previously announcedUSD1.17bn aggregate four-year orders;backlog is not all2027revenue.",
+        "limits": "154MW available claim is not energizedITload;PUE1.08 is design target. Additionaltranches requirefinancing/contracts. No newlyverifiedprepaymentreceipt."
+      },
+      "questions": [
+        "Actual GPU installation and customer acceptance",
+        "Received prepayments versus amounts due",
+        "Financed equipment delivery and measured energizedITload"
+      ],
+      "publication_status": "candidate_only_no_additional_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -16133,7 +16344,7 @@
     }
   ],
   "last_research_date": "2026-10-21",
-  "instruction_commit_sha": "7c94426e7e6dd4a7114739dda99132df34b2d766",
+  "instruction_commit_sha": "698d8af833656e7645aca74278e6c498e85f2c88",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
