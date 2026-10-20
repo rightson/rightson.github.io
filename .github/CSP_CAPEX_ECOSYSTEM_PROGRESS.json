@@ -3412,13 +3412,13 @@
     ],
     "current_run_screening": {
       "date": "2026-10-21",
-      "checked_at": "2026-10-20T20:52:31Z",
-      "instruction_commit_sha": "8a007d06f32e07fc519df80791d5f585a0cdd780",
-      "status": "nscale_anthropic_second_monarch_talks_unsigned_followup_no_alert",
+      "checked_at": "2026-10-20T21:42:12Z",
+      "instruction_commit_sha": "31e06e77a519077d2fb1835c3d25cd97c72609af",
+      "status": "unimicron_conditional_2027_material_gap_estimate_added_as_research_candidate_no_alert",
       "company_count": 98,
       "grouped_query_count": 14,
-      "additional_targeted_query_count": 15,
-      "scope": "14 grouped discovery queries across98 active names plus4 core/CSP current-news queries and11 Nscale/Anthropic/SEC follow-up queries;not98 individualissuer checks.",
+      "additional_targeted_query_count": 8,
+      "scope": "14 grouped discovery queries across98 active names plus4 core/CSP current-news queries and4 TPCA/issuer follow-up queries;not98 individual issuer checks.",
       "sources": [
         "https://nvidianews.nvidia.com/news/",
         "https://ir.amd.com/news-events/press-releases",
@@ -3431,17 +3431,13 @@
         "https://www.oracle.com/news/",
         "https://pr.tsmc.com/",
         "https://www.mediatek.com/press-room",
-        "https://www.reuters.com/technology/nscale-anthropic-talks-45-billion-cloud-computing-deal-bloomberg-news-reports-2026-10-19/",
-        "https://www.ft.com/content/26a604d8-1a9d-4801-bd73-6ac588b63bdc",
-        "https://www.sec.gov/Archives/edgar/data/2110365/000119312526395475/ck0002110365-20260918.htm",
-        "https://www.sec.gov/Archives/edgar/data/2110365/000119312526395475/ck0002110365-ex10_25.htm"
+        "https://money.udn.com/money/story/5612/9825666",
+        "https://money.udn.com/money/story/5612/9827372",
+        "https://www.zdtco.com/tw/news/"
       ],
       "company_check_scope": {
         "new_active_universe_primary_issuer_originals": [],
-        "outside_universe_originals": [
-          "Nscale",
-          "Anthropic"
-        ],
+        "outside_universe_originals": [],
         "grouped_discovery_only": [
           "2330",
           "2454",
@@ -3546,10 +3542,10 @@
         "cumulative_pending": 46
       },
       "source_limits": [
-        "Mandatory instructions/specs/taxonomy/progress and3 recent related articles fully acquired at the same commit.",
+        "Mandatory instructions/specs/taxonomy/progress and3 recent related articles were fully acquired at instruction commit31e06e77a519077d2fb1835c3d25cd97c72609af.",
         "Universe15737456c090bdcb099718fe47a1b85562ddbe5c/CSV88422949d38165d4757a1e24c27f8662bede14c1 remains98 active;primary baselines52/98,46pending.",
-        "Second Monarch deal is reported as talks,not signed;Anthropic didnotcomment and details may change.",
-        "SEC first-building agreement confirms financing and termination mechanics only for the existing order;prospective second-building terms remain unverified.",
+        "Unimicron's approximately20% figure is explicitly conditional on actual2027 demand,limited to selected critical materials and not a firm order,realized shortage or earnings guide.",
+        "Original issuer presentation/transcript,material-by-material denominator,pricing,retained margin,EPS and cash conversion were not obtained;Zhen Ding official page exposed product positioning but no new quantified profit guidance.",
         "No new core-company guidance or named Taiwan supplier order was found.Noarticle/lint/build/deploy claim.Public ledger excludes prices,private flows,valuation,holdings andB data."
       ]
     },
@@ -10304,6 +10300,145 @@
           "Universe15737456c090bdcb099718fe47a1b85562ddbe5c/CSV88422949d38165d4757a1e24c27f8662bede14c1 remains98 active;primary baselines52/98,46pending.",
           "Second Monarch deal is reported as talks,not signed;Anthropic didnotcomment and details may change.",
           "SEC first-building agreement confirms financing and termination mechanics only for the existing order;prospective second-building terms remain unverified.",
+          "No new core-company guidance or named Taiwan supplier order was found.Noarticle/lint/build/deploy claim.Public ledger excludes prices,private flows,valuation,holdings andB data."
+        ]
+      },
+      {
+        "date": "2026-10-21",
+        "checked_at": "2026-10-20T21:42:12Z",
+        "instruction_commit_sha": "31e06e77a519077d2fb1835c3d25cd97c72609af",
+        "status": "unimicron_conditional_2027_material_gap_estimate_added_as_research_candidate_no_alert",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "additional_targeted_query_count": 8,
+        "scope": "14 grouped discovery queries across98 active names plus4 core/CSP current-news queries and4 TPCA/issuer follow-up queries;not98 individual issuer checks.",
+        "sources": [
+          "https://nvidianews.nvidia.com/news/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://news.microsoft.com/",
+          "https://aws.amazon.com/",
+          "https://blog.google/",
+          "https://about.fb.com/",
+          "https://www.oracle.com/news/",
+          "https://pr.tsmc.com/",
+          "https://www.mediatek.com/press-room",
+          "https://money.udn.com/money/story/5612/9825666",
+          "https://money.udn.com/money/story/5612/9827372",
+          "https://www.zdtco.com/tw/news/"
+        ],
+        "company_check_scope": {
+          "new_active_universe_primary_issuer_originals": [],
+          "outside_universe_originals": [],
+          "grouped_discovery_only": [
+            "2330",
+            "2454",
+            "3661",
+            "3443",
+            "3035",
+            "5274",
+            "3711",
+            "2449",
+            "6257",
+            "6239",
+            "3264",
+            "8150",
+            "6223",
+            "6510",
+            "6515",
+            "6683",
+            "2360",
+            "3131",
+            "2467",
+            "6187",
+            "6640",
+            "3583",
+            "3413",
+            "6196",
+            "1560",
+            "8028",
+            "3037",
+            "8046",
+            "3189",
+            "2383",
+            "6274",
+            "6213",
+            "2368",
+            "2313",
+            "4958",
+            "3044",
+            "2367",
+            "6191",
+            "5469",
+            "8021",
+            "1815",
+            "1802",
+            "2317",
+            "2382",
+            "3231",
+            "6669",
+            "2356",
+            "2324",
+            "3706",
+            "2308",
+            "2301",
+            "6412",
+            "6282",
+            "3015",
+            "6409",
+            "3017",
+            "3324",
+            "2421",
+            "3653",
+            "8996",
+            "3338",
+            "2059",
+            "8210",
+            "3013",
+            "6117",
+            "3533",
+            "3665",
+            "6197",
+            "3023",
+            "3526",
+            "3605",
+            "2345",
+            "2379",
+            "6285",
+            "5388",
+            "3596",
+            "3081",
+            "3163",
+            "3363",
+            "4979",
+            "6442",
+            "3450",
+            "4977",
+            "3234",
+            "4908",
+            "2408",
+            "2344",
+            "2337",
+            "8299",
+            "3260",
+            "8271",
+            "5289",
+            "6770",
+            "3006",
+            "2327",
+            "2492",
+            "3026",
+            "2375"
+          ],
+          "cumulative_primary_company_fact_count": 52,
+          "cumulative_pending": 46
+        },
+        "source_limits": [
+          "Mandatory instructions/specs/taxonomy/progress and3 recent related articles were fully acquired at instruction commit31e06e77a519077d2fb1835c3d25cd97c72609af.",
+          "Universe15737456c090bdcb099718fe47a1b85562ddbe5c/CSV88422949d38165d4757a1e24c27f8662bede14c1 remains98 active;primary baselines52/98,46pending.",
+          "Unimicron's approximately20% figure is explicitly conditional on actual2027 demand,limited to selected critical materials and not a firm order,realized shortage or earnings guide.",
+          "Original issuer presentation/transcript,material-by-material denominator,pricing,retained margin,EPS and cash conversion were not obtained;Zhen Ding official page exposed product positioning but no new quantified profit guidance.",
           "No new core-company guidance or named Taiwan supplier order was found.Noarticle/lint/build/deploy claim.Public ledger excludes prices,private flows,valuation,holdings andB data."
         ]
       }
@@ -17114,6 +17249,31 @@
         "Power plant, chip delivery, commissioning and revenue recognition schedule"
       ],
       "publication_status": "candidate_only_no_alert_no_article"
+    },
+    {
+      "key": "unimicron-2027-critical-substrate-material-gap-estimate-20261020",
+      "date": "2026-10-21",
+      "event_date": "2026-10-20",
+      "instruction_commit_sha": "31e06e77a519077d2fb1835c3d25cd97c72609af",
+      "companies": [
+        "Unimicron (3037)"
+      ],
+      "sources": [
+        "https://money.udn.com/money/story/5612/9825666"
+      ],
+      "stage": "management_conference_estimate_read_material_scope_demand_base_and_profit_conversion_pending",
+      "facts": {
+        "increment": "Chairman Chien Shan-chieh estimated an approximately20% gap in selected critical materials for2027,not all materials,including T-glass cloth,CCL andABF;he also cited some equipment lead times up to30months and supplier capacity responses after customer-chain discussions.",
+        "conditionality": "Management explicitly said whether the gap is actually20% depends on demand development and required volume;this is a planning estimate,not a booked shortage or accepted order.",
+        "mechanism": "The constraint is presented as ecosystem-wide material and equipment synchronization rather than Unimicron plant capacity alone.",
+        "limits": "Original conference presentation or issuer transcript was not obtained.No material-by-material denominator,named supplier/customer,firm purchase commitment,price pass-through,margin/EPS/cash revision or accepted shipment was verified."
+      },
+      "questions": [
+        "Obtain the issuer presentation/transcript and define the denominator for the approximately20% estimate.",
+        "Separate T-glass cloth,CCL andABF qualified supply,inventory and equipment bottlenecks.",
+        "Verify pricing,retained gross profit,capex and working-capital conversion rather than treating a shortage estimate as earnings."
+      ],
+      "publication_status": "research_candidate_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -17133,7 +17293,7 @@
     }
   ],
   "last_research_date": "2026-10-21",
-  "instruction_commit_sha": "8a007d06f32e07fc519df80791d5f585a0cdd780",
+  "instruction_commit_sha": "31e06e77a519077d2fb1835c3d25cd97c72609af",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
