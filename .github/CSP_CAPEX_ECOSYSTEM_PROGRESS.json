@@ -3335,13 +3335,13 @@
     ],
     "current_run_screening": {
       "date": "2026-10-21",
-      "checked_at": "2026-10-20T16:11:55Z",
-      "instruction_commit_sha": "15206a22e7bc89bc858cca8b5ead6b9334be3c44",
-      "status": "new_china_workstation_gpu_demand_report_and_delivery_constraints_recorded",
+      "checked_at": "2026-10-20T16:42:51Z",
+      "instruction_commit_sha": "7c94426e7e6dd4a7114739dda99132df34b2d766",
+      "status": "four_followup_candidates_recorded_no_new_material_hypothesis_revision",
       "company_count": 98,
       "grouped_query_count": 14,
       "additional_targeted_query_count": 8,
-      "scope": "Fourteen seven-name grouped discovery checks;not98individualissuer-originalchecks.Core6andCSP5entrypointsread;newReutersNVIDIAreport,officialproductspecsandissuerPDFread.",
+      "scope": "14seven-name grouped discovery attempts across98active names;not98individualissuerchecks.Core6andCSP5entrypointsrefreshed;4targeteddiscovery plus4baseline/sourcequeries.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -3354,14 +3354,18 @@
         "https://abc.xyz/investor/",
         "https://investor.atmeta.com/home/default.aspx",
         "https://www.oracle.com/news/",
-        "https://www.reuters.com/business/retail-consumer/bytedance-alibaba-tencent-place-over-35-billion-worth-nvidia-chip-orders-2026-10-20/",
-        "https://www.nvidia.com/en-us/products/workstations/professional-desktop-gpus/rtx-pro-5500/",
-        "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESZ_STOCK/2026/2026-10/2026-10-13/12638891.PDF"
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=33c2bc9d-86ea-4935-ae82-557280c2d8df",
+        "https://m.moneydj.com/f1a.aspx?a=c15e30b7-7783-4da7-9675-3f24ae04eef3&c=MB06",
+        "https://www.ttv.com.tw/finance/view/102026201111FE0A0BE9D66645A089B47C61A5895F487AD3/587",
+        "https://www.cna.com.tw/news/afe/202608140276.aspx",
+        "https://www.goldmansachs.com/what-we-do/investment-banking/insights/articles/navigating-a-system-of-ai-bottlenecks"
       ],
       "company_check_scope": {
         "new_active_universe_primary_issuer_originals": [],
         "original_journalism_company_statement_reads": [
-          "NVDA"
+          "6683",
+          "4958",
+          "8021"
         ],
         "grouped_discovery_only": [
           "2330",
@@ -3467,11 +3471,13 @@
         "cumulative_pending": 46
       },
       "source_limits": [
-        "Samecommitmandatoryinstructions,specifications,taxonomy,progressandthree recentrelatedarticlesreadfully.Noarticlecreated.",
-        "Freshalpha-quantmain15737456c090bdcb099718fe47a1b85562ddbe5c;CSV88422949d38165d4757a1e24c27f8662bede14c1unchanged98active.Noadditionalactivecompanyprimarycoveragecounted.",
-        "Coreindexesretainrecordedbaselines.CSPandBroadcomlandingpageshavepartialdynamic/sparsecontent;notcompletefilingcoverage.",
-        "Three-buyerpurchasequantitiesremainanonymousoriginalreporting;Tansundocumentisindependentbutdoesnotverifythosequantities.ProductpreliminaryandComingSoon.",
-        "Noquotes,valuations,privatefundflows,holdingsorBdatainpublicledger.Noarticle/lint/build/deploycompletionclaimed."
+        "Samecommitmandatoryinstructions/specs/taxonomy/progressand3recentrelatedarticlesfullyretrieved.Noarticlecreated.",
+        "alpha-quantmain15737456c090bdcb099718fe47a1b85562ddbe5c;CSV88422949d38165d4757a1e24c27f8662bede14c1unchanged98active.Primarycoverage52/98unchanged.",
+        "TSMCQ3/Q4guidance,MediaTek/NVIDIA/AMD/Marvellindexesretainrecordedbaselines.CSP/Broadcomlandingpagespartlydynamic/sparse:notfullfilingcoverage.",
+        "NVIDIAChinaRTXPRO5500andFulltechmonthlygrossprofitarealreadyrecorded;nochangedconfirmedallocationoreconomicsfound.",
+        "KSMT/ZDTreportedoutlooksneedorder,denominatorandprofitconfirmation.TopointcapacityroadmapalreadyAugust;PTFEstilltesting/samples.",
+        "GSoriginalOctober19 articleprovidesforecastandcoordinationriskfollowup,notnewconfirmedcapexcut.FTLexfullbodyrestricted.CNAF22followupopenfailed;priorstopworkscopewasnotupdated.",
+        "Publicledgerexcludesquotes,valuation,privateflows,holdingsandBdata.Noarticle/lint/build/deployclaim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -9358,6 +9364,153 @@
           "Coreindexesretainrecordedbaselines.CSPandBroadcomlandingpageshavepartialdynamic/sparsecontent;notcompletefilingcoverage.",
           "Three-buyerpurchasequantitiesremainanonymousoriginalreporting;Tansundocumentisindependentbutdoesnotverifythosequantities.ProductpreliminaryandComingSoon.",
           "Noquotes,valuations,privatefundflows,holdingsorBdatainpublicledger.Noarticle/lint/build/deploycompletionclaimed."
+        ]
+      },
+      {
+        "date": "2026-10-21",
+        "checked_at": "2026-10-20T16:42:51Z",
+        "instruction_commit_sha": "7c94426e7e6dd4a7114739dda99132df34b2d766",
+        "status": "four_followup_candidates_recorded_no_new_material_hypothesis_revision",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "additional_targeted_query_count": 8,
+        "scope": "14seven-name grouped discovery attempts across98active names;not98individualissuerchecks.Core6andCSP5entrypointsrefreshed;4targeteddiscovery plus4baseline/sourcequeries.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://investor.atmeta.com/home/default.aspx",
+          "https://www.oracle.com/news/",
+          "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=33c2bc9d-86ea-4935-ae82-557280c2d8df",
+          "https://m.moneydj.com/f1a.aspx?a=c15e30b7-7783-4da7-9675-3f24ae04eef3&c=MB06",
+          "https://www.ttv.com.tw/finance/view/102026201111FE0A0BE9D66645A089B47C61A5895F487AD3/587",
+          "https://www.cna.com.tw/news/afe/202608140276.aspx",
+          "https://www.goldmansachs.com/what-we-do/investment-banking/insights/articles/navigating-a-system-of-ai-bottlenecks"
+        ],
+        "company_check_scope": {
+          "new_active_universe_primary_issuer_originals": [],
+          "original_journalism_company_statement_reads": [
+            "6683",
+            "4958",
+            "8021"
+          ],
+          "grouped_discovery_only": [
+            "2330",
+            "2454",
+            "3661",
+            "3443",
+            "3035",
+            "5274",
+            "3711",
+            "2449",
+            "6257",
+            "6239",
+            "3264",
+            "8150",
+            "6223",
+            "6510",
+            "6515",
+            "6683",
+            "2360",
+            "3131",
+            "2467",
+            "6187",
+            "6640",
+            "3583",
+            "3413",
+            "6196",
+            "1560",
+            "8028",
+            "3037",
+            "8046",
+            "3189",
+            "2383",
+            "6274",
+            "6213",
+            "2368",
+            "2313",
+            "4958",
+            "3044",
+            "2367",
+            "6191",
+            "5469",
+            "8021",
+            "1815",
+            "1802",
+            "2317",
+            "2382",
+            "3231",
+            "6669",
+            "2356",
+            "2324",
+            "3706",
+            "2308",
+            "2301",
+            "6412",
+            "6282",
+            "3015",
+            "6409",
+            "3017",
+            "3324",
+            "2421",
+            "3653",
+            "8996",
+            "3338",
+            "2059",
+            "8210",
+            "3013",
+            "6117",
+            "3533",
+            "3665",
+            "6197",
+            "3023",
+            "3526",
+            "3605",
+            "2345",
+            "2379",
+            "6285",
+            "5388",
+            "3596",
+            "3081",
+            "3163",
+            "3363",
+            "4979",
+            "6442",
+            "3450",
+            "4977",
+            "3234",
+            "4908",
+            "2408",
+            "2344",
+            "2337",
+            "8299",
+            "3260",
+            "8271",
+            "5289",
+            "6770",
+            "3006",
+            "2327",
+            "2492",
+            "3026",
+            "2375"
+          ],
+          "cumulative_primary_company_fact_count": 52,
+          "cumulative_pending": 46
+        },
+        "source_limits": [
+          "Samecommitmandatoryinstructions/specs/taxonomy/progressand3recentrelatedarticlesfullyretrieved.Noarticlecreated.",
+          "alpha-quantmain15737456c090bdcb099718fe47a1b85562ddbe5c;CSV88422949d38165d4757a1e24c27f8662bede14c1unchanged98active.Primarycoverage52/98unchanged.",
+          "TSMCQ3/Q4guidance,MediaTek/NVIDIA/AMD/Marvellindexesretainrecordedbaselines.CSP/Broadcomlandingpagespartlydynamic/sparse:notfullfilingcoverage.",
+          "NVIDIAChinaRTXPRO5500andFulltechmonthlygrossprofitarealreadyrecorded;nochangedconfirmedallocationoreconomicsfound.",
+          "KSMT/ZDTreportedoutlooksneedorder,denominatorandprofitconfirmation.TopointcapacityroadmapalreadyAugust;PTFEstilltesting/samples.",
+          "GSoriginalOctober19 articleprovidesforecastandcoordinationriskfollowup,notnewconfirmedcapexcut.FTLexfullbodyrestricted.CNAF22followupopenfailed;priorstopworkscopewasnotupdated.",
+          "Publicledgerexcludesquotes,valuation,privateflows,holdingsandBdata.Noarticle/lint/build/deployclaim."
         ]
       }
     ],
@@ -15862,6 +16015,105 @@
         "GDDR7 supplier awards;do not map workstation demand automatically to HBM or CoWoS"
       ],
       "publication_status": "event_recorded_no_article"
+    },
+    {
+      "key": "ksmt-reported-asic-probe-card-allocation-and-margin-conversion-20261020",
+      "date": "2026-10-21",
+      "event_date": "2026-10-20",
+      "instruction_commit_sha": "7c94426e7e6dd4a7114739dda99132df34b2d766",
+      "companies": [
+        "KSMT (6683)"
+      ],
+      "sources": [
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=33c2bc9d-86ea-4935-ae82-557280c2d8df"
+      ],
+      "stage": "original_reporting_read_customer_allocation_and_economics_not_issuer_confirmed",
+      "facts": {
+        "increment": "October20 MoneyDJ reports nonexclusive ASIC project allocations,shipments beginning end2026/2027,and possible doubling of probe-card business in2027.",
+        "baseline": "Named FormFactor designated-product partnership datedJuly28 remains historical;new report does not identify customer/project or allocation size.",
+        "counter_evidence": "Report notes externally sourced probe heads and initial efficiency pressure on margin;Augustnetprofit reportedly down22%YoY despite revenue growth.",
+        "limits": "No obtained issuer order/revenue/margin forecast or client confirmation;doubling is reported outlook,not bookedrevenue or whole-company earnings revision."
+      },
+      "questions": [
+        "Named design award and actual delivery",
+        "Probe-head cost and retained grossprofit",
+        "Cash conversion at ramp"
+      ],
+      "publication_status": "research_candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "zdt-reported-optical-pcb-growth-and-hdi-mix-roadmap-20261020",
+      "date": "2026-10-21",
+      "event_date": "2026-10-20",
+      "instruction_commit_sha": "7c94426e7e6dd4a7114739dda99132df34b2d766",
+      "companies": [
+        "Zhen Ding (4958)"
+      ],
+      "sources": [
+        "https://m.moneydj.com/f1a.aspx?a=c15e30b7-7783-4da7-9675-3f24ae04eef3&c=MB06"
+      ],
+      "stage": "original_management_interview_read_growth_base_and_economics_pending",
+      "facts": {
+        "increment": "Chairman interview October20 expects multiple growth in optical-related business in2027 and HDI revenue overtaking flex in2028;2030 mix HDI37–38%,substratesover20%,flexbelow30%.",
+        "mechanism": "800G/1.6T optical PCB uses higher-spec mSAP processes;planned additional plants/capacity support demand.",
+        "limits": "No optical revenue denominator,namednewcustomer,quantifiedmargin/EPS/cash revision or verified old-to-new guide comparison.No claim manufacturer sells entire optical module or all capacity already operational."
+      },
+      "questions": [
+        "OpticalPCB revenue base and accepted shipments",
+        "Incremental margins and capital intensity",
+        "Utilization and cash recovery"
+      ],
+      "publication_status": "research_candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "topoint-ptfe-sampling-scope-and-unchanged-capacity-roadmap-20261020",
+      "date": "2026-10-21",
+      "event_date": "2026-10-20",
+      "instruction_commit_sha": "7c94426e7e6dd4a7114739dda99132df34b2d766",
+      "companies": [
+        "Topoint (8021)"
+      ],
+      "sources": [
+        "https://www.ttv.com.tw/finance/view/102026201111FE0A0BE9D66645A089B47C61A5895F487AD3/587",
+        "https://www.cna.com.tw/news/afe/202608140276.aspx"
+      ],
+      "stage": "original_reporting_syndication_read_and_historical_capacity_baseline_cross_checked",
+      "facts": {
+        "increment": "October20 MoneyDJ interview syndicated byTTV distinguishes PTFE drill testing/early samples from customer-dependent actual volume timing.",
+        "baseline": "45m/70m/90m drills permonth planned at end2026/2027/2028 and high-end coated mix56% were already reported inAugust;not new capacity upgrade.",
+        "limits": "PTFE samples do not establish qualified volume,newcustomer order,ASP or margin revision.No automatic displacement of conventionalmaterials inferred."
+      },
+      "questions": [
+        "Customer qualification and volumetiming",
+        "Drillconsumption and margin per board",
+        "Accepted capacity and dilution/cash impact"
+      ],
+      "publication_status": "research_candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "goldman-ai-power-financing-coordination-original-report-20261019",
+      "date": "2026-10-21",
+      "event_date": "2026-10-19",
+      "instruction_commit_sha": "7c94426e7e6dd4a7114739dda99132df34b2d766",
+      "companies": [
+        "AI infrastructure ecosystem"
+      ],
+      "sources": [
+        "https://www.goldmansachs.com/what-we-do/investment-banking/insights/articles/navigating-a-system-of-ai-bottlenecks"
+      ],
+      "stage": "original_institutional_article_read_forecast_not_realized_debt_or_equipment_cut",
+      "facts": {
+        "date_scope": "Goldman original datedOctober19;Axios followupOctober20 is not another independent report.",
+        "estimates": "GS forecasts data-center power demand+170%2025–2030 and globalhyperscalerdebtissuanceUSD420bn2027,over60% above its2026estimate.",
+        "mechanism": "Power,permits,equipment,localexecution andfinancing jointly constrain billable deployment;slowerbuildout can also absorb demand more gradually.",
+        "limits": "Forecasts and broad project statistics,not verified namedCSPcapexcut,new Taiwanese supplieraward,actualdefault or realizeddeliverycancellation. No institutionalconsensus or old/newforecast revision asserted."
+      },
+      "questions": [
+        "Secured energized power and accepted billable capacity",
+        "Actual debt cost/maturity and cash recovery",
+        "Named-project slippage reaching equipment delivery"
+      ],
+      "publication_status": "research_candidate_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -15881,7 +16133,7 @@
     }
   ],
   "last_research_date": "2026-10-21",
-  "instruction_commit_sha": "15206a22e7bc89bc858cca8b5ead6b9334be3c44",
+  "instruction_commit_sha": "7c94426e7e6dd4a7114739dda99132df34b2d766",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
