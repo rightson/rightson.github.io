@@ -3157,14 +3157,13 @@
     ],
     "current_run_screening": {
       "date": "2026-10-20",
-      "checked_at": "2026-10-20T00:42:45Z",
-      "instruction_commit_sha": "c212957d1d0872b6cff40f5ba78f882631c52a77",
-      "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
+      "checked_at": "2026-10-20T02:32:35Z",
+      "instruction_commit_sha": "89f3020ab6463e85dabad984e34ed5ad370e73d7",
+      "status": "grouped_discovery_quality_limited_individual_primary_validation_partial",
       "company_count": 98,
-      "grouped_query_count": 14,
-      "scope": "Fresh14grouped discovery queries across98active names;6core and5CSPentrypoints,original media followups;1historical issuer baseline added,no new qualifying notification event or article.",
+      "grouped_query_count": 28,
+      "scope": "14initial grouped queries attempted across98active names;irrelevant hits prompted14quoted-group queries on secondengine.Core6 official news/IR andCSP5 entrypoints refreshed.Two candidates added;no article.",
       "sources": [
-        "https://www.compeq.com.tw/accomplishments01_1.php",
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
         "https://nvidianews.nvidia.com/news/",
@@ -3176,18 +3175,17 @@
         "https://abc.xyz/investor/",
         "https://investor.atmeta.com/home/default.aspx",
         "https://www.oracle.com/news/",
-        "https://blogs.nvidia.com/blog/germany-wants-to-lead-the-world-in-industrial-ai-how-nvidia-will-help/",
-        "https://blogs.nvidia.com/blog/media-agentic-security-european-public-service-broadcasting-global-content-production/",
-        "https://www.reuters.com/business/nvidia-wins-fast-growing-ai-startup-modal-new-central-processors-2026-10-19/",
-        "https://www.reuters.com/business/top-hyperscalers-likely-have-more-ai-linked-debt-than-now-known-sp-global-warns-2026-10-19/"
+        "https://investors.broadcom.com/news-releases/news-release-details/broadcom-advance-ntt-docomos-private-cloud-vmware-cloud",
+        "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771936_S1EL12IA2J94BA7U44MUF",
+        "https://ww2.money-link.com.tw/RealtimeNews/NewsContent.aspx?PU=0010&SN=2433457002"
       ],
       "source_limits": [
-        "Pinned required instructions/specs fully read;progress55365a7f3f29caf4c248b875324f600a75694c9c completely retrieved and JSON parsed,101events/219priorcandidates/146screenings.3recentrelatedarticles fully read;tree untruncated.No required-instruction gap.",
-        "Freshalpha-quant defaultmain f43ed0cd5d57d28c50b924f2b3614d4189eae69f andCSV88422949d38165d4757a1e24c27f8662bede14c1,98active.Grouped discovery not current issuer audits across98.OnlyCompeq2313 added to primary fact coverage;51checked/47pending,monthly25.Partner4/regulator3/product16 unchanged.",
-        "Coreissuer pages retain TSMCQ3/Q4 baseline,MediaTekSeptember30/August31 index,AMDOctober12,MarvellOctober13,BroadcomOctober13software/October8networking.CSPentrypoints dynamic/sparse;not full filing coverage or proof of no undisclosed/new announcement.",
-        "GermanyNVIDIA October19 joint intent and planned investments already registered;media blog sovereign framework and vendor throughput claims not quantified new equipment award or supplier profit revision.ModalVera andS&Pwarnings remain existing research candidates;not repeated as new alerts.",
-        "Compeq table reportsSeptember8,617,380 andJanuary-September62,124,650 TWDthousand,15.02%SeptemberYoY;internally settled unaudited,consolidation scope andpublication date unprinted.Historicalbaseline,not neworder or realizedAIprofit.",
-        "Preserved101events,219priorcandidates,146screenings,articles,blockers,CSPbaseline;added1candidate/1screening.No Bflows,prices,holdings orvaluation inpublicJSON.No article/lint/build/deploy claim."
+        "Requiredinstructions/specs freshly retrieved atsame89f3020commit.Progressad9e8e3093b72126e04c3fb55b3f6d1bef8b9582 completelyretrieved andJSONparsed;recentrelatedHBM/SSDarticlesreread andunchangedopticalarticle pinned tosamepriorcomplete-read revision.",
+        "Alpha-quantmain f43ed0cd5d57d28c50b924f2b3614d4189eae69f andCSV88422949d38165d4757a1e24c27f8662bede14c1 freshlyverified,98active.28groupedattempts arediscoveryonly.Some firstengine results irrelevant;secondengine stillreturned historical/aggregateddata.Not proof of current98companycompletevalidation;51primaryhistoricalfacts/47pending unchanged.",
+        "TSMCQ3/Q4guidance retained;MediaTekofficial index no newASICaward.China/Japan foundryreports andTPUdesign-delay recaps not adopted asnewissuerconfirmation.CSPdynamic/sparseentrypoints notcomprehensivefilingcoverage.",
+        "BroadcomOctober19DOCOMO10-yearsoftwareagreement newissuerfact;value,incrementalrecurringrevenue,profitandcashunquantified.No semiconductororder inferred.DIGITIMESglasssubstratecause unconfirmed;originalfullbodypaywalled andnotbypassed.",
+        "FTOctober19financingarticle directbodyunavailable;headlineonlydoesnotestablish newcreditloss or equipmentordercut.PriorS&P/Nscale/AWSfinancing-riskrecords retained.",
+        "Added2candidates and1screening only;priorpublicevents/articles/blockers/CSPbaseline preserved.No privateflows,quotes,valuation,holdings ortradejudgment inpublicfile.No articlebuild/deployclaim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -7743,6 +7741,39 @@
           "GermanyNVIDIA October19 joint intent and planned investments already registered;media blog sovereign framework and vendor throughput claims not quantified new equipment award or supplier profit revision.ModalVera andS&Pwarnings remain existing research candidates;not repeated as new alerts.",
           "Compeq table reportsSeptember8,617,380 andJanuary-September62,124,650 TWDthousand,15.02%SeptemberYoY;internally settled unaudited,consolidation scope andpublication date unprinted.Historicalbaseline,not neworder or realizedAIprofit.",
           "Preserved101events,219priorcandidates,146screenings,articles,blockers,CSPbaseline;added1candidate/1screening.No Bflows,prices,holdings orvaluation inpublicJSON.No article/lint/build/deploy claim."
+        ]
+      },
+      {
+        "date": "2026-10-20",
+        "checked_at": "2026-10-20T02:32:35Z",
+        "instruction_commit_sha": "89f3020ab6463e85dabad984e34ed5ad370e73d7",
+        "status": "grouped_discovery_quality_limited_individual_primary_validation_partial",
+        "company_count": 98,
+        "grouped_query_count": 28,
+        "scope": "14initial grouped queries attempted across98active names;irrelevant hits prompted14quoted-group queries on secondengine.Core6 official news/IR andCSP5 entrypoints refreshed.Two candidates added;no article.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://investor.atmeta.com/home/default.aspx",
+          "https://www.oracle.com/news/",
+          "https://investors.broadcom.com/news-releases/news-release-details/broadcom-advance-ntt-docomos-private-cloud-vmware-cloud",
+          "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771936_S1EL12IA2J94BA7U44MUF",
+          "https://ww2.money-link.com.tw/RealtimeNews/NewsContent.aspx?PU=0010&SN=2433457002"
+        ],
+        "source_limits": [
+          "Requiredinstructions/specs freshly retrieved atsame89f3020commit.Progressad9e8e3093b72126e04c3fb55b3f6d1bef8b9582 completelyretrieved andJSONparsed;recentrelatedHBM/SSDarticlesreread andunchangedopticalarticle pinned tosamepriorcomplete-read revision.",
+          "Alpha-quantmain f43ed0cd5d57d28c50b924f2b3614d4189eae69f andCSV88422949d38165d4757a1e24c27f8662bede14c1 freshlyverified,98active.28groupedattempts arediscoveryonly.Some firstengine results irrelevant;secondengine stillreturned historical/aggregateddata.Not proof of current98companycompletevalidation;51primaryhistoricalfacts/47pending unchanged.",
+          "TSMCQ3/Q4guidance retained;MediaTekofficial index no newASICaward.China/Japan foundryreports andTPUdesign-delay recaps not adopted asnewissuerconfirmation.CSPdynamic/sparseentrypoints notcomprehensivefilingcoverage.",
+          "BroadcomOctober19DOCOMO10-yearsoftwareagreement newissuerfact;value,incrementalrecurringrevenue,profitandcashunquantified.No semiconductororder inferred.DIGITIMESglasssubstratecause unconfirmed;originalfullbodypaywalled andnotbypassed.",
+          "FTOctober19financingarticle directbodyunavailable;headlineonlydoesnotestablish newcreditloss or equipmentordercut.PriorS&P/Nscale/AWSfinancing-riskrecords retained.",
+          "Added2candidates and1screening only;priorpublicevents/articles/blockers/CSPbaseline preserved.No privateflows,quotes,valuation,holdings ortradejudgment inpublicfile.No articlebuild/deployclaim."
         ]
       }
     ],
@@ -13831,6 +13862,59 @@
         "Product mix,gross profit,working capital and repeat customer purchases"
       ],
       "publication_status": "baseline_only_no_alert_no_article"
+    },
+    {
+      "key": "broadcom-docomo-ten-year-vmware-agreement-economics-20261019",
+      "date": "2026-10-20",
+      "event_date": "2026-10-19",
+      "instruction_commit_sha": "89f3020ab6463e85dabad984e34ed5ad370e73d7",
+      "companies": [
+        "Broadcom",
+        "NTT DOCOMO"
+      ],
+      "sources": [
+        "https://investors.broadcom.com/news-releases/news-release-details/broadcom-advance-ntt-docomos-private-cloud-vmware-cloud"
+      ],
+      "stage": "issuer_full_body_verified_signed_software_agreement_unquantified_economics",
+      "facts": {
+        "baseline": "VMware collaboration since2019;not a new semiconductor customer.",
+        "increment": "Issuer October19 release announces signed10-year VMware agreement covering licenses,technical assistance and maintenance support.Private-cloud evolution includesVMs,containers andAI.",
+        "date_scope": "Release datedOctober19;Japan first10-year comprehensive agreement qualification is asofOctober20.",
+        "limits": "No disclosed contractvalue,incremental recurring revenue,pricing,margin,cash collection,hardware purchase or semiconductor earnings revision.Established software relationship,not a confirmed CSP AI-ASIC order."
+      },
+      "questions": [
+        "Incremental contract value and revenue-recognition profile versus prior agreement",
+        "Support cost and recurring margin",
+        "Actual new AI capacity and economics rather than roadmap intent"
+      ],
+      "publication_status": "candidate_only_no_alert_no_article"
+    },
+    {
+      "key": "mediatek-tpu-v9-glass-substrate-yield-risk-reported-20261020",
+      "date": "2026-10-20",
+      "event_date": "2026-10-20",
+      "instruction_commit_sha": "89f3020ab6463e85dabad984e34ed5ad370e73d7",
+      "companies": [
+        "MediaTek",
+        "Google",
+        "Intel"
+      ],
+      "sources": [
+        "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771936_S1EL12IA2J94BA7U44MUF",
+        "https://ww2.money-link.com.tw/RealtimeNews/NewsContent.aspx?PU=0010&SN=2433457002"
+      ],
+      "stage": "original_public_teaser_and_attributed_summary_read_full_original_paywalled_unconfirmed_cause",
+      "facts": {
+        "baseline": "October13GF Securities reported design milestone risk;July31 issuer call alreadytargeted early2028 secondASIC production.Recorded earlier,not a new one-year delay.",
+        "increment": "October20DIGITIMES title raises glass-substrate yield question.AttributedFinancialExpress summary saysoriginal plan usedIntelEMIB plusglasssubstrate andspeculates packaging issues may motivate designrevision.",
+        "limits": "Original fullbody behindmembership;not bypassed.Attributed summary isnot independentconfirmation.No issuer/customer confirmation,measuredyield,confirmedpackagechange,newtapeoutdate,ordercancellation,NRE or earnings revision obtained.Causal speculation retained asunverified,not established programfailure."
+      },
+      "questions": [
+        "Issuer/customer confirmation of packaging choice and yield",
+        "Whether designmilestones or production guidance actually changed",
+        "NRE,rework cost,substrate qualification and volume economics"
+      ],
+      "publication_status": "candidate_only_no_alert_no_article"
     }
   ],
   "blockers": [
@@ -13850,7 +13934,7 @@
     }
   ],
   "last_research_date": "2026-10-20",
-  "instruction_commit_sha": "c212957d1d0872b6cff40f5ba78f882631c52a77",
+  "instruction_commit_sha": "89f3020ab6463e85dabad984e34ed5ad370e73d7",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
