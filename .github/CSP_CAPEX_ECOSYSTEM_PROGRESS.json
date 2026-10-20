@@ -3157,12 +3157,12 @@
     ],
     "current_run_screening": {
       "date": "2026-10-20",
-      "checked_at": "2026-10-20T02:32:35Z",
-      "instruction_commit_sha": "89f3020ab6463e85dabad984e34ed5ad370e73d7",
-      "status": "grouped_discovery_quality_limited_individual_primary_validation_partial",
+      "checked_at": "2026-10-20T04:25:35Z",
+      "instruction_commit_sha": "45ae42ddbba16ba876d46c9b12318f30501fa6ae",
+      "status": "grouped_discovery_quality_limited_indexed_baseline_added_live_primary_partial",
       "company_count": 98,
-      "grouped_query_count": 28,
-      "scope": "14initial grouped queries attempted across98active names;irrelevant hits prompted14quoted-group queries on secondengine.Core6 official news/IR andCSP5 entrypoints refreshed.Two candidates added;no article.",
+      "grouped_query_count": 18,
+      "scope": "14initial grouped discovery attempts across98active names;four clearly poor groups retried on secondengine. Core6 official news/IR andCSP5 entrypoints refreshed. Indexed Sigurd monthly baseline added;no article.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -3175,17 +3175,14 @@
         "https://abc.xyz/investor/",
         "https://investor.atmeta.com/home/default.aspx",
         "https://www.oracle.com/news/",
-        "https://investors.broadcom.com/news-releases/news-release-details/broadcom-advance-ntt-docomos-private-cloud-vmware-cloud",
-        "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771936_S1EL12IA2J94BA7U44MUF",
-        "https://ww2.money-link.com.tw/RealtimeNews/NewsContent.aspx?PU=0010&SN=2433457002"
+        "https://www.sigurd.com.tw/zh-tw/monthly-revenue"
       ],
       "source_limits": [
-        "Requiredinstructions/specs freshly retrieved atsame89f3020commit.Progressad9e8e3093b72126e04c3fb55b3f6d1bef8b9582 completelyretrieved andJSONparsed;recentrelatedHBM/SSDarticlesreread andunchangedopticalarticle pinned tosamepriorcomplete-read revision.",
-        "Alpha-quantmain f43ed0cd5d57d28c50b924f2b3614d4189eae69f andCSV88422949d38165d4757a1e24c27f8662bede14c1 freshlyverified,98active.28groupedattempts arediscoveryonly.Some firstengine results irrelevant;secondengine stillreturned historical/aggregateddata.Not proof of current98companycompletevalidation;51primaryhistoricalfacts/47pending unchanged.",
-        "TSMCQ3/Q4guidance retained;MediaTekofficial index no newASICaward.China/Japan foundryreports andTPUdesign-delay recaps not adopted asnewissuerconfirmation.CSPdynamic/sparseentrypoints notcomprehensivefilingcoverage.",
-        "BroadcomOctober19DOCOMO10-yearsoftwareagreement newissuerfact;value,incrementalrecurringrevenue,profitandcashunquantified.No semiconductororder inferred.DIGITIMESglasssubstratecause unconfirmed;originalfullbodypaywalled andnotbypassed.",
-        "FTOctober19financingarticle directbodyunavailable;headlineonlydoesnotestablish newcreditloss or equipmentordercut.PriorS&P/Nscale/AWSfinancing-riskrecords retained.",
-        "Added2candidates and1screening only;priorpublicevents/articles/blockers/CSPbaseline preserved.No privateflows,quotes,valuation,holdings ortradejudgment inpublicfile.No articlebuild/deployclaim."
+        "Fresh defaultmain45ae42ddbba16ba876d46c9b12318f30501fa6ae pinned.Eight required instruction/specification files fully retrieved;identical blobs to prior complete reads. Three related articles retrieved unchanged;full progressb2e8a2add43f42098933ad7f28fcc09fa9f357ce parsed,101events/222priorcandidates.",
+        "Fresh alpha-quantmain f43ed0cd5d57d28c50b924f2b3614d4189eae69f andCSV88422949d38165d4757a1e24c27f8662bede14c1,98active.18groupedqueries are attempts,not effective latest full98company audits. Some results irrelevant or historical;four poor groups retried. Primary historical coverage51/47pending unchanged.",
+        "TSMCQ3/Q4,MediaTekSeptember index,NVIDIAOctober19,AMDOctober12,MarvellOctober13,BroadcomDOCOMOOctober19 retain previously recorded baselines. Sparse/dynamicCSPentrypoints not fullfilingcoverage. TPUtiming/packaging reports,3M/Amazon andTorchNeuron recaps not new confirmed economics.",
+        "Sigurd issuer-indexed September table provides2089TWDmillion versus2069August and1654priorSeptember;consolidated/unaudited. Direct live monthly page andsitemap timedout. Explicit indexed-only evidence;no extra direct-live company coverage credit.",
+        "Preserved publicevent/article/candidatehistory;added1candidate/1screening. No privateflows,quotes,valuation,holdings ortradejudgment published. No article/build/deploy claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -7774,6 +7771,36 @@
           "BroadcomOctober19DOCOMO10-yearsoftwareagreement newissuerfact;value,incrementalrecurringrevenue,profitandcashunquantified.No semiconductororder inferred.DIGITIMESglasssubstratecause unconfirmed;originalfullbodypaywalled andnotbypassed.",
           "FTOctober19financingarticle directbodyunavailable;headlineonlydoesnotestablish newcreditloss or equipmentordercut.PriorS&P/Nscale/AWSfinancing-riskrecords retained.",
           "Added2candidates and1screening only;priorpublicevents/articles/blockers/CSPbaseline preserved.No privateflows,quotes,valuation,holdings ortradejudgment inpublicfile.No articlebuild/deployclaim."
+        ]
+      },
+      {
+        "date": "2026-10-20",
+        "checked_at": "2026-10-20T04:25:35Z",
+        "instruction_commit_sha": "45ae42ddbba16ba876d46c9b12318f30501fa6ae",
+        "status": "grouped_discovery_quality_limited_indexed_baseline_added_live_primary_partial",
+        "company_count": 98,
+        "grouped_query_count": 18,
+        "scope": "14initial grouped discovery attempts across98active names;four clearly poor groups retried on secondengine. Core6 official news/IR andCSP5 entrypoints refreshed. Indexed Sigurd monthly baseline added;no article.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://investor.atmeta.com/home/default.aspx",
+          "https://www.oracle.com/news/",
+          "https://www.sigurd.com.tw/zh-tw/monthly-revenue"
+        ],
+        "source_limits": [
+          "Fresh defaultmain45ae42ddbba16ba876d46c9b12318f30501fa6ae pinned.Eight required instruction/specification files fully retrieved;identical blobs to prior complete reads. Three related articles retrieved unchanged;full progressb2e8a2add43f42098933ad7f28fcc09fa9f357ce parsed,101events/222priorcandidates.",
+          "Fresh alpha-quantmain f43ed0cd5d57d28c50b924f2b3614d4189eae69f andCSV88422949d38165d4757a1e24c27f8662bede14c1,98active.18groupedqueries are attempts,not effective latest full98company audits. Some results irrelevant or historical;four poor groups retried. Primary historical coverage51/47pending unchanged.",
+          "TSMCQ3/Q4,MediaTekSeptember index,NVIDIAOctober19,AMDOctober12,MarvellOctober13,BroadcomDOCOMOOctober19 retain previously recorded baselines. Sparse/dynamicCSPentrypoints not fullfilingcoverage. TPUtiming/packaging reports,3M/Amazon andTorchNeuron recaps not new confirmed economics.",
+          "Sigurd issuer-indexed September table provides2089TWDmillion versus2069August and1654priorSeptember;consolidated/unaudited. Direct live monthly page andsitemap timedout. Explicit indexed-only evidence;no extra direct-live company coverage credit.",
+          "Preserved publicevent/article/candidatehistory;added1candidate/1screening. No privateflows,quotes,valuation,holdings ortradejudgment published. No article/build/deploy claim."
         ]
       }
     ],
@@ -13915,6 +13942,37 @@
         "NRE,rework cost,substrate qualification and volume economics"
       ],
       "publication_status": "candidate_only_no_alert_no_article"
+    },
+    {
+      "key": "sigurd-september-2026-indexed-issuer-monthly-revenue-baseline-20261020",
+      "date": "2026-10-20",
+      "period": "2026-09",
+      "source_publication_date": null,
+      "instruction_commit_sha": "45ae42ddbba16ba876d46c9b12318f30501fa6ae",
+      "companies": [
+        "Sigurd Microelectronics (6257)"
+      ],
+      "sources": [
+        "https://www.sigurd.com.tw/zh-tw/monthly-revenue"
+      ],
+      "stage": "indexed_issuer_numerical_table_read_direct_live_page_timeout",
+      "facts": {
+        "currency": "TWD",
+        "unit": "million",
+        "september_consolidated_revenue": 2089,
+        "august_consolidated_revenue": 2069,
+        "september_2025_consolidated_revenue": 1654,
+        "issuer_mom_percent": 1,
+        "issuer_yoy_percent": 26.3,
+        "scope": "Issuer table states company plus subsidiaries,unaudited. Values rounded to millions; no additional precision inferred.",
+        "limits": "Original publication date not printed in retrieved indexed body. Direct live index and sitemap fetches timed out. Historical baseline,not new October20 award,AI-specific income,margin,cash flow or guidance revision. No direct-live primary-coverage credit."
+      },
+      "questions": [
+        "Obtain live issuer detail or original announcement and publication date",
+        "Separate AI/HPC testing mix,qualified acquired capacity and utilization",
+        "Gross profit and working-capital conversion"
+      ],
+      "publication_status": "baseline_only_no_alert_no_article"
     }
   ],
   "blockers": [
@@ -13934,7 +13992,7 @@
     }
   ],
   "last_research_date": "2026-10-20",
-  "instruction_commit_sha": "89f3020ab6463e85dabad984e34ed5ad370e73d7",
+  "instruction_commit_sha": "45ae42ddbba16ba876d46c9b12318f30501fa6ae",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
