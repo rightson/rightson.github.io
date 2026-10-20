@@ -3239,13 +3239,38 @@
         "limits": "No namedCSPvolumeaward,ASP/margindata orfundedfull-capacitydelivery.No assumptionentireplannedcapacityis incrementalnetindustrysupplyorbookedrevenue."
       },
       "status": "original_reporting_verified_expansion_scope_no_article"
+    },
+    {
+      "fingerprint": "nvidia-china-rtx-pro-5500-reported-orders-and-allocation-constraint-20261020",
+      "event_date": "2026-10-20",
+      "discovered_date": "2026-10-21",
+      "instruction_commit_sha": "15206a22e7bc89bc858cca8b5ead6b9334be3c44",
+      "companies": [
+        "NVIDIA",
+        "ByteDance",
+        "Alibaba",
+        "Tencent"
+      ],
+      "type": "original_reporting_of_purchase_demand_with_unconfirmed_fulfilment",
+      "sources": [
+        "https://www.reuters.com/business/retail-consumer/bytedance-alibaba-tencent-place-over-35-billion-worth-nvidia-chip-orders-2026-10-20/",
+        "https://www.nvidia.com/en-us/products/workstations/professional-desktop-gpus/rtx-pro-5500/",
+        "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESZ_STOCK/2026/2026-10/2026-10-13/12638891.PDF"
+      ],
+      "facts": {
+        "report": "Reuters October20 09:04 UTC reports three Chinese buyers requesting over3m RTX PRO5500 cards,sticker value overUSD35bn;full delivery unguaranteed. Anonymous sourcing;not issuer-confirmed backlog.",
+        "product": "NVIDIA official preliminary specifications:workstation Blackwell,84GB GDDR7,PCIeGen5,inference/graphics;availability Coming Soon.",
+        "filing": "Tansun issuer notice2026-070 datedOctober13,PDF hosted bySina:20000-card purchase from unnamed counterparty;split delivery/payment and manufacturer-caused shortfall/delay risk.",
+        "limits": "Separate Tansun contract corroborates product procurement,not the three buyers' quantities. No verified realizedASP,revenue recognition,export-license classification or named Taiwan supplier order."
+      },
+      "status": "original_reporting_product_original_and_issuer_document_read_no_article"
     }
   ],
   "articles": [],
   "coverage": {
     "universe_source": "rightson/alpha-quant:seeds/watchlists/ai_supply_chain_universe.csv",
     "status": "all_98_search_screened_primary_validation_partial",
-    "universe_commit_sha": "f43ed0cd5d57d28c50b924f2b3614d4189eae69f",
+    "universe_commit_sha": "15737456c090bdcb099718fe47a1b85562ddbe5c",
     "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
     "active_count": 98,
     "search_screened_count": 98,
@@ -3309,14 +3334,14 @@
       "3665"
     ],
     "current_run_screening": {
-      "date": "2026-10-20",
-      "checked_at": "2026-10-20T15:22:22Z",
-      "instruction_commit_sha": "dc3dc0f05e432fa58a713b5ab323acb96e9b9f08",
-      "status": "micron_labor_scope_candidate_added_no_new_material_revision_verified",
+      "date": "2026-10-21",
+      "checked_at": "2026-10-20T16:11:55Z",
+      "instruction_commit_sha": "15206a22e7bc89bc858cca8b5ead6b9334be3c44",
+      "status": "new_china_workstation_gpu_demand_report_and_delivery_constraints_recorded",
       "company_count": 98,
       "grouped_query_count": 14,
-      "additional_targeted_query_count": 9,
-      "scope": "Fourteen seven-name grouped discovery attempts across98active names;not98individualissuerchecks.Core6andCSP5originalentrypointsrefreshed.MicronoriginalreportsandTSMCreportedregulatorscopefollowedup.",
+      "additional_targeted_query_count": 8,
+      "scope": "Fourteen seven-name grouped discovery checks;not98individualissuer-originalchecks.Core6andCSP5entrypointsread;newReutersNVIDIAreport,officialproductspecsandissuerPDFread.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -3329,17 +3354,14 @@
         "https://abc.xyz/investor/",
         "https://investor.atmeta.com/home/default.aspx",
         "https://www.oracle.com/news/",
-        "https://www.cna.com.tw/news/afe/202610200191.aspx",
-        "https://www.taisounds.com/news/content/75/295191",
-        "https://www.reuters.com/business/world-at-work/micron-union-taiwan-launch-strike-bonus-dispute-escalates-2026-10-20/",
-        "https://www.cna.com.tw/news/asoc/202610200361.aspx",
-        "https://newtalk.tw/news/view/2026-10-20/1066575"
+        "https://www.reuters.com/business/retail-consumer/bytedance-alibaba-tencent-place-over-35-billion-worth-nvidia-chip-orders-2026-10-20/",
+        "https://www.nvidia.com/en-us/products/workstations/professional-desktop-gpus/rtx-pro-5500/",
+        "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESZ_STOCK/2026/2026-10/2026-10-13/12638891.PDF"
       ],
       "company_check_scope": {
         "new_active_universe_primary_issuer_originals": [],
         "original_journalism_company_statement_reads": [
-          "MU",
-          "2330"
+          "NVDA"
         ],
         "grouped_discovery_only": [
           "2330",
@@ -3445,12 +3467,11 @@
         "cumulative_pending": 46
       },
       "source_limits": [
-        "Freshsamecommitmandatoryinstructions,specifications,taxonomyandthree relatedarticlesretrievedfully;unchangedknownblobs.Progress268a180fd5c35f0a299afeaeb0128ba465f8db89parsed.Noarticlecreated.",
-        "Freshalpha-quantdefaulthead15737456c090bdcb099718fe47a1b85562ddbe5c;universeCSV88422949d38165d4757a1e24c27f8662bede14c1unchanged98active.Groupedresultsmostlyaggregates/prices/history;primarycoverage52/98unchanged.",
-        "TSMCQ3/Q4guidanceandMediaTek/NVIDIA/AMD/Marvellindexesretainrecordedbaselines.Broadcom/CSPlandingpagespartlydynamic/sparse:notfullfilingcoverage.",
-        "Micronplannedone-daylaboractionhasnoverifiedoutput/delivery/earningsimpact.TSMCCNA23:02updatekeepsF22P4steel-installationstopscope;nooperatingfabshutdownorcriticalpathchangeobtained.",
-        "NewtalkTPUv9delayreportattributesCommerceTimes/fund-sourcechain;notindependentissuerconfirmation.NorenewedNRE,allocationorfinancialrevisionadopted.",
-        "Co-Tech,EMC,ABB,HPE,Penguin,AWSand3Mnotre-notifiedwithoutnewmaterialevidence.Publicfilecontainsnoquotes,valuation,holdings,privateflowsorBdata.Noarticle/lint/build/deployclaim."
+        "Samecommitmandatoryinstructions,specifications,taxonomy,progressandthree recentrelatedarticlesreadfully.Noarticlecreated.",
+        "Freshalpha-quantmain15737456c090bdcb099718fe47a1b85562ddbe5c;CSV88422949d38165d4757a1e24c27f8662bede14c1unchanged98active.Noadditionalactivecompanyprimarycoveragecounted.",
+        "Coreindexesretainrecordedbaselines.CSPandBroadcomlandingpageshavepartialdynamic/sparsecontent;notcompletefilingcoverage.",
+        "Three-buyerpurchasequantitiesremainanonymousoriginalreporting;Tansundocumentisindependentbutdoesnotverifythosequantities.ProductpreliminaryandComingSoon.",
+        "Noquotes,valuations,privatefundflows,holdingsorBdatainpublicledger.Noarticle/lint/build/deploycompletionclaimed."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -9196,6 +9217,147 @@
           "Micronplannedone-daylaboractionhasnoverifiedoutput/delivery/earningsimpact.TSMCCNA23:02updatekeepsF22P4steel-installationstopscope;nooperatingfabshutdownorcriticalpathchangeobtained.",
           "NewtalkTPUv9delayreportattributesCommerceTimes/fund-sourcechain;notindependentissuerconfirmation.NorenewedNRE,allocationorfinancialrevisionadopted.",
           "Co-Tech,EMC,ABB,HPE,Penguin,AWSand3Mnotre-notifiedwithoutnewmaterialevidence.Publicfilecontainsnoquotes,valuation,holdings,privateflowsorBdata.Noarticle/lint/build/deployclaim."
+        ]
+      },
+      {
+        "date": "2026-10-21",
+        "checked_at": "2026-10-20T16:11:55Z",
+        "instruction_commit_sha": "15206a22e7bc89bc858cca8b5ead6b9334be3c44",
+        "status": "new_china_workstation_gpu_demand_report_and_delivery_constraints_recorded",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "additional_targeted_query_count": 8,
+        "scope": "Fourteen seven-name grouped discovery checks;not98individualissuer-originalchecks.Core6andCSP5entrypointsread;newReutersNVIDIAreport,officialproductspecsandissuerPDFread.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://investor.atmeta.com/home/default.aspx",
+          "https://www.oracle.com/news/",
+          "https://www.reuters.com/business/retail-consumer/bytedance-alibaba-tencent-place-over-35-billion-worth-nvidia-chip-orders-2026-10-20/",
+          "https://www.nvidia.com/en-us/products/workstations/professional-desktop-gpus/rtx-pro-5500/",
+          "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESZ_STOCK/2026/2026-10/2026-10-13/12638891.PDF"
+        ],
+        "company_check_scope": {
+          "new_active_universe_primary_issuer_originals": [],
+          "original_journalism_company_statement_reads": [
+            "NVDA"
+          ],
+          "grouped_discovery_only": [
+            "2330",
+            "2454",
+            "3661",
+            "3443",
+            "3035",
+            "5274",
+            "3711",
+            "2449",
+            "6257",
+            "6239",
+            "3264",
+            "8150",
+            "6223",
+            "6510",
+            "6515",
+            "6683",
+            "2360",
+            "3131",
+            "2467",
+            "6187",
+            "6640",
+            "3583",
+            "3413",
+            "6196",
+            "1560",
+            "8028",
+            "3037",
+            "8046",
+            "3189",
+            "2383",
+            "6274",
+            "6213",
+            "2368",
+            "2313",
+            "4958",
+            "3044",
+            "2367",
+            "6191",
+            "5469",
+            "8021",
+            "1815",
+            "1802",
+            "2317",
+            "2382",
+            "3231",
+            "6669",
+            "2356",
+            "2324",
+            "3706",
+            "2308",
+            "2301",
+            "6412",
+            "6282",
+            "3015",
+            "6409",
+            "3017",
+            "3324",
+            "2421",
+            "3653",
+            "8996",
+            "3338",
+            "2059",
+            "8210",
+            "3013",
+            "6117",
+            "3533",
+            "3665",
+            "6197",
+            "3023",
+            "3526",
+            "3605",
+            "2345",
+            "2379",
+            "6285",
+            "5388",
+            "3596",
+            "3081",
+            "3163",
+            "3363",
+            "4979",
+            "6442",
+            "3450",
+            "4977",
+            "3234",
+            "4908",
+            "2408",
+            "2344",
+            "2337",
+            "8299",
+            "3260",
+            "8271",
+            "5289",
+            "6770",
+            "3006",
+            "2327",
+            "2492",
+            "3026",
+            "2375"
+          ],
+          "cumulative_primary_company_fact_count": 52,
+          "cumulative_pending": 46
+        },
+        "source_limits": [
+          "Samecommitmandatoryinstructions,specifications,taxonomy,progressandthree recentrelatedarticlesreadfully.Noarticlecreated.",
+          "Freshalpha-quantmain15737456c090bdcb099718fe47a1b85562ddbe5c;CSV88422949d38165d4757a1e24c27f8662bede14c1unchanged98active.Noadditionalactivecompanyprimarycoveragecounted.",
+          "Coreindexesretainrecordedbaselines.CSPandBroadcomlandingpageshavepartialdynamic/sparsecontent;notcompletefilingcoverage.",
+          "Three-buyerpurchasequantitiesremainanonymousoriginalreporting;Tansundocumentisindependentbutdoesnotverifythosequantities.ProductpreliminaryandComingSoon.",
+          "Noquotes,valuations,privatefundflows,holdingsorBdatainpublicledger.Noarticle/lint/build/deploycompletionclaimed."
         ]
       }
     ],
@@ -15670,6 +15832,36 @@
         "Anyprolongedaction,costorfinancialguidancechange"
       ],
       "publication_status": "candidate_only_no_material_investment_alert_no_article"
+    },
+    {
+      "key": "nvidia-china-rtx-pro-5500-reported-orders-and-allocation-constraint-20261020",
+      "date": "2026-10-21",
+      "event_date": "2026-10-20",
+      "instruction_commit_sha": "15206a22e7bc89bc858cca8b5ead6b9334be3c44",
+      "companies": [
+        "NVIDIA",
+        "ByteDance",
+        "Alibaba",
+        "Tencent"
+      ],
+      "sources": [
+        "https://www.reuters.com/business/retail-consumer/bytedance-alibaba-tencent-place-over-35-billion-worth-nvidia-chip-orders-2026-10-20/",
+        "https://www.nvidia.com/en-us/products/workstations/professional-desktop-gpus/rtx-pro-5500/",
+        "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESZ_STOCK/2026/2026-10/2026-10-13/12638891.PDF"
+      ],
+      "stage": "demand_report_and_product_memory_scope_verified_delivery_economics_pending",
+      "facts": {
+        "report": "Reuters October20 09:04 UTC reports three Chinese buyers requesting over3m RTX PRO5500 cards,sticker value overUSD35bn;full delivery unguaranteed. Anonymous sourcing;not issuer-confirmed backlog.",
+        "product": "NVIDIA official preliminary specifications:workstation Blackwell,84GB GDDR7,PCIeGen5,inference/graphics;availability Coming Soon.",
+        "filing": "Tansun issuer notice2026-070 datedOctober13,PDF hosted bySina:20000-card purchase from unnamed counterparty;split delivery/payment and manufacturer-caused shortfall/delay risk.",
+        "limits": "Separate Tansun contract corroborates product procurement,not the three buyers' quantities. No verified realizedASP,revenue recognition,export-license classification or named Taiwan supplier order."
+      },
+      "questions": [
+        "Issuer/buyer-confirmed allocations and first delivered quantities",
+        "Actual selling prices,incremental versus reallocated manufacturing capacity and revenue recognition",
+        "GDDR7 supplier awards;do not map workstation demand automatically to HBM or CoWoS"
+      ],
+      "publication_status": "event_recorded_no_article"
     }
   ],
   "blockers": [
@@ -15688,8 +15880,8 @@
       "impact": "Search hits and reposted notices have not been individually checked against company or exchange originals."
     }
   ],
-  "last_research_date": "2026-10-20",
-  "instruction_commit_sha": "dc3dc0f05e432fa58a713b5ab323acb96e9b9f08",
+  "last_research_date": "2026-10-21",
+  "instruction_commit_sha": "15206a22e7bc89bc858cca8b5ead6b9334be3c44",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
