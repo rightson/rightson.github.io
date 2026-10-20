@@ -3417,8 +3417,8 @@
       "status": "spacex_issuer_financial_increment_and_cbre_conditional_acquisition_followup",
       "company_count": 98,
       "grouped_query_count": 14,
-      "additional_targeted_query_count": 28,
-      "scope": "14 seven-name grouped discovery queries across98 active names,not98 individualissuer checks;core6/CSP5 entrypoints refreshed.28 targeted current-discovery andfollowup queries.",
+      "additional_targeted_query_count": 32,
+      "scope": "14 seven-name grouped discovery queries across98 active names,not98 individualissuer checks;core6/CSP5 entrypoints refreshed.32 targeted current-discovery andfollowup queries.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -10166,7 +10166,16 @@
         ]
       }
     ],
-    "primary_product_platform_company_fact_checked_count": 16
+    "primary_product_platform_company_fact_checked_count": 16,
+    "query_count_corrections": [
+      {
+        "checked_at": "2026-10-20T20:47:50Z",
+        "instruction_commit_sha": "efb57cd1fa660a4a9b56775db93f3c59d8161bcf",
+        "recorded_count": 28,
+        "correct_count": 32,
+        "reason": "Clerical total corrected:3+2+3+3+2+3+3+3+4+3+3 targeted queries;14 grouped discovery queries excluded.Historical screening entry retained."
+      }
+    ]
   },
   "research_candidates": [
     {
