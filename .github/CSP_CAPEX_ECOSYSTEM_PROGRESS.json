@@ -3214,13 +3214,13 @@
     ],
     "current_run_screening": {
       "date": "2026-10-20",
-      "checked_at": "2026-10-20T06:15:25Z",
-      "instruction_commit_sha": "2056991106171e0af18d475cddd108ef91bdab91",
-      "status": "grouped_discovery_quality_limited_historical_primary_earnings_increment_added",
+      "checked_at": "2026-10-20T06:37:47Z",
+      "instruction_commit_sha": "ef3e2c3ae482e8e16695558ed91e5864b695b62e",
+      "status": "grouped_discovery_quality_limited_historical_order_candidate_added",
       "company_count": 98,
       "grouped_query_count": 14,
-      "additional_targeted_query_count": 14,
-      "scope": "Fourteen seven-name discoveryattempts acrossfresh98activeuniverse;core6/CSP5entrypointsattempted.Penguinoutsideuniversehistoricalearningsoriginalverified;noarticle.",
+      "additional_targeted_query_count": 11,
+      "scope": "Fourteen seven-name grouped discovery attempts across fresh active universe; core6/CSP5 entrypoints refreshed. One outside-universe historical issuer order candidate; no article or new material notification.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
@@ -3233,17 +3233,17 @@
         "https://abc.xyz/investor/",
         "https://investor.atmeta.com/home/default.aspx",
         "https://www.oracle.com/news/",
-        "https://ir.penguinsolutions.com/news/news-details/2026/Penguin-Solutions-Announces-Fourth-Quarter-and-Full-Year-Fiscal-2026-Results/",
-        "https://www.tuc.com.tw/en-us/corporate/id/133",
-        "https://blogs.nvidia.com/blog/spain-startups-barcelona-supercomputing-center/"
+        "https://www.businesswire.com/news/home/20261005478911/en/",
+        "https://via.tt.se/pressmeddelande/4580467/am-intelligence-expands-nvidia-vera-rubin-ai-factory-buildout-in-india-and-malaysia?lang=en&publisherId=259167",
+        "https://www.webnewswire.com/2026/10/05/am-intelligence-expands-nvidia-vera-rubin-ai-factory-buildout-in-india-and-malaysia/?noamp=mobile"
       ],
       "source_limits": [
-        "Requiredsame-commitinstructions/specificationsfullyretrievedandread;fullprogressbc6bd373137e784d8a64fb2796bceeef5faf5df2parsed;threepriorrelatedarticlesretrievedwithsameblobsaspriorcompletereads.No requiredinstructiongap.",
-        "Freshalpha-quantmainf43ed0cd5d57d28c50b924f2b3614d4189eae69f,CSV88422949d38165d4757a1e24c27f8662bede14c1;98active.Fourteengroupedattemptsmostlyaggregated,historicalorirrelevant;not98currentissuerannouncementaudits.Primaryhistoricalcoverage51checked/47pendingunchanged.",
-        "TSMCQ3actual/Q4guidance,MediaTekSeptemberindex,AMDOctober12,MarvellOctober13retainbaselines.BroadcomindexinaccessibleInternalError;notclaimedfreshsuccessfulread.CSPdynamic/sparseentrypointsnotcompletefilingcoverage.TPUv9glasssubstratereportrepeatsloggedcandidate.",
-        "NVIDIAOctober19BSC/Inceptionaccessmilestoneoriginalread:800services sinceApril2025andplannedMareNostrumextension;not800GPUorders,paidutilizationornewquantifiedearnings.TUCQ2presentationindexreadbutPDFclickinaccessible;noadditionalprimarycompanycoveragecredit.",
-        "PenguinOctober6issueroriginalsupportsFY27midpointUSD2.17bn-to2.43bnandQ4operatingmarginimprovement,butmemorydominatesincrementalrevenueandQ4cashoutflowUSD163.136m.Historicalbackfill,notnewtoday.Auditfinancialperiodsandgrowthdenominatorsseparately.",
-        "Addedonepublicevent,onecandidate,onescreening;preservedpriorhistory.Noquotes,holdings,valuation,privateflowsorBjudgmentinpublicfile.Noarticle/lint/build/deployclaim."
+        "Fresh same-commit required instruction/specification files fully retrieved, unchanged blobs match prior complete reads. Three related articles retrieved unchanged. Full progress ba440c7a7ca7c6831004c941c96332fb9632468b parsed; no required instruction gap.",
+        "Fresh alpha-quant main f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV88422949d38165d4757a1e24c27f8662bede14c1:98active. Grouped searches are discovery attempts, mostly historical or aggregated results, not98 current issuer audits. Primary historical coverage remains51/98 with47pending. Watchlist unchanged.",
+        "TSMC Q3actual/Q4guidance, MediaTek September index, NVIDIA October19 BSC/Germany, AMD October12 and Marvell October13 retain recorded baselines. Broadcom financial-news list recovered this run and contains October19 DOCOMO/October13 software/October8 networking; recovery does not establish a new order. CSP entrypoints are sparse/dynamic, not complete filing coverage.",
+        "TPUv9 packaging reports repeat the existing speculative candidate. Penguin October6 earnings event already notified and retained without duplicate. Promotional and third-party roundup material not adopted as original financial evidence.",
+        "AM Intelligence October5 issuer release traced to Business Wire-distributed full text. Orders, planned delivery, development pipeline and investment ambitions kept separate. No fresh financial revision, current funded deployment or supplier allocation established; candidate only.",
+        "Added one candidate and one screening; all prior public events/articles/history preserved. No prices, valuation, holdings, private flows or B analysis in public file. No article/lint/build/deploy claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -7931,6 +7931,40 @@
           "NVIDIAOctober19BSC/Inceptionaccessmilestoneoriginalread:800services sinceApril2025andplannedMareNostrumextension;not800GPUorders,paidutilizationornewquantifiedearnings.TUCQ2presentationindexreadbutPDFclickinaccessible;noadditionalprimarycompanycoveragecredit.",
           "PenguinOctober6issueroriginalsupportsFY27midpointUSD2.17bn-to2.43bnandQ4operatingmarginimprovement,butmemorydominatesincrementalrevenueandQ4cashoutflowUSD163.136m.Historicalbackfill,notnewtoday.Auditfinancialperiodsandgrowthdenominatorsseparately.",
           "Addedonepublicevent,onecandidate,onescreening;preservedpriorhistory.Noquotes,holdings,valuation,privateflowsorBjudgmentinpublicfile.Noarticle/lint/build/deployclaim."
+        ]
+      },
+      {
+        "date": "2026-10-20",
+        "checked_at": "2026-10-20T06:37:47Z",
+        "instruction_commit_sha": "ef3e2c3ae482e8e16695558ed91e5864b695b62e",
+        "status": "grouped_discovery_quality_limited_historical_order_candidate_added",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "additional_targeted_query_count": 11,
+        "scope": "Fourteen seven-name grouped discovery attempts across fresh active universe; core6/CSP5 entrypoints refreshed. One outside-universe historical issuer order candidate; no article or new material notification.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://investor.atmeta.com/home/default.aspx",
+          "https://www.oracle.com/news/",
+          "https://www.businesswire.com/news/home/20261005478911/en/",
+          "https://via.tt.se/pressmeddelande/4580467/am-intelligence-expands-nvidia-vera-rubin-ai-factory-buildout-in-india-and-malaysia?lang=en&publisherId=259167",
+          "https://www.webnewswire.com/2026/10/05/am-intelligence-expands-nvidia-vera-rubin-ai-factory-buildout-in-india-and-malaysia/?noamp=mobile"
+        ],
+        "source_limits": [
+          "Fresh same-commit required instruction/specification files fully retrieved, unchanged blobs match prior complete reads. Three related articles retrieved unchanged. Full progress ba440c7a7ca7c6831004c941c96332fb9632468b parsed; no required instruction gap.",
+          "Fresh alpha-quant main f43ed0cd5d57d28c50b924f2b3614d4189eae69f and CSV88422949d38165d4757a1e24c27f8662bede14c1:98active. Grouped searches are discovery attempts, mostly historical or aggregated results, not98 current issuer audits. Primary historical coverage remains51/98 with47pending. Watchlist unchanged.",
+          "TSMC Q3actual/Q4guidance, MediaTek September index, NVIDIA October19 BSC/Germany, AMD October12 and Marvell October13 retain recorded baselines. Broadcom financial-news list recovered this run and contains October19 DOCOMO/October13 software/October8 networking; recovery does not establish a new order. CSP entrypoints are sparse/dynamic, not complete filing coverage.",
+          "TPUv9 packaging reports repeat the existing speculative candidate. Penguin October6 earnings event already notified and retained without duplicate. Promotional and third-party roundup material not adopted as original financial evidence.",
+          "AM Intelligence October5 issuer release traced to Business Wire-distributed full text. Orders, planned delivery, development pipeline and investment ambitions kept separate. No fresh financial revision, current funded deployment or supplier allocation established; candidate only.",
+          "Added one candidate and one screening; all prior public events/articles/history preserved. No prices, valuation, holdings, private flows or B analysis in public file. No article/lint/build/deploy claim."
         ]
       }
     ],
@@ -14127,6 +14161,36 @@
         "Repeatorders,retainedoperatingmarginsandcreditconcentration"
       ],
       "publication_status": "research_event_only_no_article"
+    },
+    {
+      "key": "am-intelligence-historical-rubin-orders-to-funded-delivery-utilization-and-profit",
+      "date": "2026-10-20",
+      "event_date": "2026-10-05",
+      "instruction_commit_sha": "ef3e2c3ae482e8e16695558ed91e5864b695b62e",
+      "companies": [
+        "AM Intelligence",
+        "NVIDIA"
+      ],
+      "sources": [
+        "https://www.businesswire.com/news/home/20261005478911/en/",
+        "https://via.tt.se/pressmeddelande/4580467/am-intelligence-expands-nvidia-vera-rubin-ai-factory-buildout-in-india-and-malaysia?lang=en&publisherId=259167",
+        "https://www.webnewswire.com/2026/10/05/am-intelligence-expands-nvidia-vera-rubin-ai-factory-buildout-in-india-and-malaysia/?noamp=mobile"
+      ],
+      "stage": "historical_issuer_release_distributor_full_body_verified_canonical_direct_read_unavailable",
+      "facts": {
+        "source_publication_time": "2026-10-05 20:16:00 CEST",
+        "baseline": "August 25 issuer commitment for 9,000 Rubin GPUs at Hyderabad.",
+        "increment": "October 5 issuer release states two further firm and binding orders totaling 20,000 Rubin GPUs for India and Malaysia; scheduled Q2 2027 delivery, approximately 70 MW. Total committed tranche approximately 29,000 GPUs and 100 MW.",
+        "planned_pipeline": "Issuer separately describes 400 MW global development pipeline, another 300 MW planned over 15 months, longer-term 1 GW compute and 5 GW powered data-center ambitions. These stages are not added together as firm orders.",
+        "financial_scope": "Issuer describes USD6bn committed investment for initial 100 MW and more than USD20bn planned for additional 300 MW; neither proves completed financing, deposits paid, GPU-only purchase value or accepted deployment.",
+        "limits": "Historical October 5 baseline, not new October 20 award. Distributor bodies reproduce one issuer release, not independent confirmations. Business Wire canonical URL inaccessible; Yahoo distributor returned429. No executed contract, funding close, named tenant, utilization, supplier margin or earnings revision obtained. Issuer labels rack platform NVL72; final configuration not independently verified. No Taiwan supplier allocation inferred."
+      },
+      "questions": [
+        "Funded capital, deposit and binding commercial/cancellation terms",
+        "Power readiness, Q2 2027 delivery and customer acceptance",
+        "Named paying tenants, utilization and supplier profit/cash conversion"
+      ],
+      "publication_status": "candidate_only_no_alert_no_article"
     }
   ],
   "blockers": [
@@ -14146,7 +14210,7 @@
     }
   ],
   "last_research_date": "2026-10-20",
-  "instruction_commit_sha": "2056991106171e0af18d475cddd108ef91bdab91",
+  "instruction_commit_sha": "ef3e2c3ae482e8e16695558ed91e5864b695b62e",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
