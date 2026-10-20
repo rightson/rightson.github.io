@@ -3156,40 +3156,37 @@
     ],
     "current_run_screening": {
       "date": "2026-10-20",
-      "checked_at": "2026-10-19T23:12:21Z",
-      "instruction_commit_sha": "280e29ddbaf645d0ef5e7d894494ebb841d5891d",
+      "checked_at": "2026-10-20T00:31:01Z",
+      "instruction_commit_sha": "4b131abc4b57bd00a870a4136e7564d1a3c75578",
       "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
       "company_count": 98,
       "grouped_query_count": 14,
-      "scope": "Fresh14 grouped discovery queries across98 active names;core6/CSP5 issuer-index checks;outside-universe optical,power and custom-compute leads.1 qualifying public source event,2 research candidates,1 provenance update;no article.",
+      "scope": "Fresh14 grouped discovery queries across98 active names;6core/CSP5 public entrypoints and original-media followups.2 outside-universe research candidates,no new qualifying event or article.",
       "sources": [
         "https://investor.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.mediatek.com/press-room",
-        "https://nvidianews.nvidia.com/news",
+        "https://www.mediatek.com/tek-talk-blogs/inside-mediateks-approach-to-scalable-silicon-design",
+        "https://nvidianews.nvidia.com/news/",
         "https://ir.amd.com/news-events/press-releases",
-        "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://investor.marvell.com/news-events/press-releases",
+        "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://www.microsoft.com/en-us/investor/default",
         "https://ir.aboutamazon.com/overview/default.aspx",
         "https://abc.xyz/investor/",
         "https://investor.atmeta.com/home/default.aspx",
         "https://www.oracle.com/news/",
-        "https://www.sec.gov/Archives/edgar/data/66740/000006674026000303/mmm-20261019.htm",
-        "https://www.prnewswire.com/news-releases/3m-announces-collaboration-with-gseo-to-advance-expanded-beam-optical-manufacturing-and-development-302913170.html",
-        "https://investors.3m.com/news-events/press-releases/detail/1937/3m-and-microsoft-announce-strategic-partnership-to-advance",
-        "https://www.aboutamazon.com/news/innovation-at-amazon/torchneuron-pytorch-aws-trainium-chips-ai",
-        "https://awsdocs-neuron.readthedocs-hosted.com/en/latest/release-notes/components/torchneuron.html",
-        "https://www.infineon.com/press-release/2026/infpr202609-146",
-        "https://www.reuters.com/technology/nscale-anthropic-talks-45-billion-cloud-computing-deal-bloomberg-news-reports-2026-10-19/"
+        "https://www.reuters.com/business/nvidia-wins-fast-growing-ai-startup-modal-new-central-processors-2026-10-19/",
+        "https://modal.com/blog/nvidia-vera-sandboxes",
+        "https://www.reuters.com/business/top-hyperscalers-likely-have-more-ai-linked-debt-than-now-known-sp-global-warns-2026-10-19/",
+        "https://www.spglobal.com/ratings/en?lang=en"
       ],
       "source_limits": [
-        "Pinned required instructions/specs and3 recent related articles fully read;progress blob7c98999ed9fd0d9eda02961132ab2242a5c291dd fully parsed;recursive tree untruncated.No required-instruction gap.",
-        "Fresh alpha-quant default main f43ed0cd5d57d28c50b924f2b3614d4189eae69f,CSV88422949d38165d4757a1e24c27f8662bede14c1,98 active.Grouped search is discovery,not98 current issuer audits.Primary50/pending48,monthly24,partner4,regulator3,product16 unchanged.",
-        "TSMC Q3/Q4 figures and MediaTek September30/August31 index remain baseline.NVIDIA October19,AMD October12,Marvell October13 index unchanged.Broadcom and CSP landing pages dynamic/sparse;not full filing or complete announcement coverage.",
-        "3M Amazon 8-K and issuer-distributed GSEO release fully read.New demand-link architecture,not guaranteedUSD6billion order or automatic Taiwan earnings increase.GSEO October15 investment news is historical.No full stand-alone article until allocation,maturity and financial conversion support deeper thesis.",
-        "TorchNeuron issuer-indexed full text and release-note excerpt recovered but direct original pages inaccessible.Public beta and planned open-source date kept separate.No unsupported universal no-rewrite or quantified cost-saving claims.",
-        "Infineon September29 primary body recovered;October19 discovery is not new order.Nscale Reuters now uses own-source attribution;confidence update recorded without claiming independent source identities,signed contract or repeated alert.",
-        "Preserved100 prior events,215 prior candidates,144 prior screenings,articles and blockers.Added1 event,2 candidates and1 candidate update.No B flows,quotes,holdings or valuation in public JSON.JSON-only,no article lint/build/deploy claim."
+        "Pinned required instructions/specs fully read.Sized progress contents API returned empty text because blob exceeds1MB;Git blob read recovered complete1140064-character JSON and parsed101 events/217 prior candidates/145 prior screenings.3 related articles read;recursive tree untruncated.No missing required instruction.",
+        "Fresh alpha-quant main f43ed0cd5d57d28c50b924f2b3614d4189eae69f,CSV88422949d38165d4757a1e24c27f8662bede14c1,98active.Grouped discovery is not98 latest issuer financial audits.Primary50/pending48,monthly24,partner4,regulator3,product16 unchanged.",
+        "TSMC Q3/Q4 guidance unchanged.MediaTek October15 scalable-design page is video-introduction text,not transcript or newASIC award/NRE economics.Latest issuer press index September30/August31 historical;ByteDance negotiations not treated as signed order.",
+        "AMD IR latestOctober12;MarvellOctober13;BroadcomOctober13 software/October8 networking.NVIDIAOctober19 quantum simulation not a newly quantified supplier earnings event.CSP pages dynamic/sparse;readable entrypoints do not prove complete filing/announcement coverage.",
+        "Modal Vera planned adoption adds a distinct compute-demand research question;reported customer tests and planned mixed fleet do not establish scale,completed migration or earnings revision.S&P agency capex assumption predates October19 warning.No new rating action or quantified incremental liability recovered.",
+        "Preserved101 events,217 prior candidates,145 screenings,articles,blockers andCSPbaseline;added2 candidates/1screening.No stock quotes,valuations,holdings or Bmarket data in public JSON.No article,lint/build/deploy claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -7675,6 +7672,41 @@
           "TorchNeuron issuer-indexed full text and release-note excerpt recovered but direct original pages inaccessible.Public beta and planned open-source date kept separate.No unsupported universal no-rewrite or quantified cost-saving claims.",
           "Infineon September29 primary body recovered;October19 discovery is not new order.Nscale Reuters now uses own-source attribution;confidence update recorded without claiming independent source identities,signed contract or repeated alert.",
           "Preserved100 prior events,215 prior candidates,144 prior screenings,articles and blockers.Added1 event,2 candidates and1 candidate update.No B flows,quotes,holdings or valuation in public JSON.JSON-only,no article lint/build/deploy claim."
+        ]
+      },
+      {
+        "date": "2026-10-20",
+        "checked_at": "2026-10-20T00:31:01Z",
+        "instruction_commit_sha": "4b131abc4b57bd00a870a4136e7564d1a3c75578",
+        "status": "grouped_discovery_only_latest_individual_primary_validation_partial",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "scope": "Fresh14 grouped discovery queries across98 active names;6core/CSP5 public entrypoints and original-media followups.2 outside-universe research candidates,no new qualifying event or article.",
+        "sources": [
+          "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "https://www.mediatek.com/press-room",
+          "https://www.mediatek.com/tek-talk-blogs/inside-mediateks-approach-to-scalable-silicon-design",
+          "https://nvidianews.nvidia.com/news/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.microsoft.com/en-us/investor/default",
+          "https://ir.aboutamazon.com/overview/default.aspx",
+          "https://abc.xyz/investor/",
+          "https://investor.atmeta.com/home/default.aspx",
+          "https://www.oracle.com/news/",
+          "https://www.reuters.com/business/nvidia-wins-fast-growing-ai-startup-modal-new-central-processors-2026-10-19/",
+          "https://modal.com/blog/nvidia-vera-sandboxes",
+          "https://www.reuters.com/business/top-hyperscalers-likely-have-more-ai-linked-debt-than-now-known-sp-global-warns-2026-10-19/",
+          "https://www.spglobal.com/ratings/en?lang=en"
+        ],
+        "source_limits": [
+          "Pinned required instructions/specs fully read.Sized progress contents API returned empty text because blob exceeds1MB;Git blob read recovered complete1140064-character JSON and parsed101 events/217 prior candidates/145 prior screenings.3 related articles read;recursive tree untruncated.No missing required instruction.",
+          "Fresh alpha-quant main f43ed0cd5d57d28c50b924f2b3614d4189eae69f,CSV88422949d38165d4757a1e24c27f8662bede14c1,98active.Grouped discovery is not98 latest issuer financial audits.Primary50/pending48,monthly24,partner4,regulator3,product16 unchanged.",
+          "TSMC Q3/Q4 guidance unchanged.MediaTek October15 scalable-design page is video-introduction text,not transcript or newASIC award/NRE economics.Latest issuer press index September30/August31 historical;ByteDance negotiations not treated as signed order.",
+          "AMD IR latestOctober12;MarvellOctober13;BroadcomOctober13 software/October8 networking.NVIDIAOctober19 quantum simulation not a newly quantified supplier earnings event.CSP pages dynamic/sparse;readable entrypoints do not prove complete filing/announcement coverage.",
+          "Modal Vera planned adoption adds a distinct compute-demand research question;reported customer tests and planned mixed fleet do not establish scale,completed migration or earnings revision.S&P agency capex assumption predates October19 warning.No new rating action or quantified incremental liability recovered.",
+          "Preserved101 events,217 prior candidates,145 screenings,articles,blockers andCSPbaseline;added2 candidates/1screening.No stock quotes,valuations,holdings or Bmarket data in public JSON.No article,lint/build/deploy claim."
         ]
       }
     ],
@@ -13677,6 +13709,63 @@
         "Power conversion efficiency versus total system costs and supplier margin"
       ],
       "publication_status": "candidate_only_no_alert_no_article"
+    },
+    {
+      "key": "modal-nvidia-vera-agent-sandbox-adoption-planned-20261019",
+      "date": "2026-10-20",
+      "event_date": "2026-10-19",
+      "companies": [
+        "Modal",
+        "NVIDIA",
+        "Intel",
+        "AMD"
+      ],
+      "sources": [
+        "https://www.reuters.com/business/nvidia-wins-fast-growing-ai-startup-modal-new-central-processors-2026-10-19/",
+        "https://modal.com/blog/nvidia-vera-sandboxes"
+      ],
+      "stage": "original_reuters_report_read_customer_blog_direct_fetch_unavailable",
+      "facts": {
+        "baseline": "Prior October14 Modal financing/monetization event did not establish a named CPU adoption.",
+        "increment": "October19 Reuters reports Modal plans first Vera use for agent hosting after an all-Intel/AMD CPU fleet;existing x86 offerings retained. Tests are customer-reported against existing chips,not independently reproduced.",
+        "limits": "Customer blog URL discovered but direct body unavailable.No purchased CPU count,contract value,production rollout completion,supplier margin or earnings revision established.No claimed wholesale x86 replacement."
+      },
+      "questions": [
+        "Customer original benchmark setup,CPU configurations and Arm migration costs",
+        "Paid production rollout,order size,utilization and repeat purchases",
+        "Comparison with newer competing CPUs and realized service margin"
+      ],
+      "publication_status": "candidate_only_no_alert_no_article"
+    },
+    {
+      "key": "sp-global-hyperscaler-interconnected-financing-visibility-warning-reported-20261019",
+      "date": "2026-10-20",
+      "event_date": "2026-10-19",
+      "companies": [
+        "S&P Global Ratings",
+        "Amazon",
+        "Microsoft",
+        "Alphabet",
+        "Oracle",
+        "Meta",
+        "SpaceX"
+      ],
+      "sources": [
+        "https://www.reuters.com/business/top-hyperscalers-likely-have-more-ai-linked-debt-than-now-known-sp-global-warns-2026-10-19/",
+        "https://www.spglobal.com/ratings/en?lang=en"
+      ],
+      "stage": "original_reuters_reporting_and_historical_rating_agency_index_checked_no_new_rating_action",
+      "facts": {
+        "increment": "October19 Reuters reports S&P analyst warning that interconnected financing obscures AI-linked liabilities;no extra-debt estimate and no current rating change.",
+        "historical_scope": "Agency September3 indexed outlook already used aboveUSD7trillion2025-2030 capex assumption;not a new October19 forecast revision.",
+        "limits": "No newly quantified hidden obligation,issuer filing reconciliation,credit downgrade or supplier order cancellation established.Reuters direct page inaccessible;indexed original report retrieved."
+      },
+      "questions": [
+        "Issuer guarantees,leases and off-balance-sheet obligations reconciled without double counting",
+        "New ratings action or quantified financing/interest burden change",
+        "Whether funding constraints change accepted equipment orders and delivery"
+      ],
+      "publication_status": "candidate_only_no_alert_no_article"
     }
   ],
   "blockers": [
@@ -13696,7 +13785,7 @@
     }
   ],
   "last_research_date": "2026-10-20",
-  "instruction_commit_sha": "280e29ddbaf645d0ef5e7d894494ebb841d5891d",
+  "instruction_commit_sha": "4b131abc4b57bd00a870a4136e7564d1a3c75578",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
