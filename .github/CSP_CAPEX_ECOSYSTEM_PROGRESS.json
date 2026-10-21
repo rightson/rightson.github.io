@@ -5605,6 +5605,28 @@
         "limits": "Historical September sales baseline. Retrieval on October21 is not a new disclosure, earnings revision or order. Consolidated sales and issuer remarks do not establish AI-only revenue, named customer allocations, margins, cash conversion or profitability. Group/company comparisons may reflect mix, currency and consolidation scope."
       },
       "status": "all_98_primary_monthly_numeric_baselines_verified_no_material_alert_no_article"
+    },
+    {
+      "fingerprint": "vertiv-nvidia-dsx-polar-41mw-deployment-and-modeled-time-to-capacity-20261021",
+      "event_date": "2026-10-21",
+      "discovered_date": "2026-10-22",
+      "instruction_commit_sha": "98b415cd00e820bea087abe67dabaafe113952bc",
+      "companies": [
+        "Vertiv",
+        "NVIDIA",
+        "Polar Data Centers",
+        "Dassault Systèmes"
+      ],
+      "type": "issuer_disclosed_field_project_with_separately_labeled_modeled_deployment_efficiency",
+      "sources": [
+        "https://www.vertiv.com/en-asia/about/news-and-events/news-releases/2026/vertiv-targets-up-to-30-more-cumulative-ai-token-output-in-first-12-months-using-nvidia-dsx-polar-deploys-approach-at-norway-site/"
+      ],
+      "facts": {
+        "field_project": "Polar is using Vertiv prefabricated infrastructure for the first41MW Herøya phase;100MW is campus scalability,not completed or accepted capacity.",
+        "modeled_comparison": "Configured/validated initial design3vs30days;on-site power/cooling deployment45vs90days;combined48vs120days. At equal installed capacity,317vs245productive days in first365days implies approximately29.4%more cumulative output.",
+        "stage_and_limits": "Issuer supplies power/thermal modules,SmartRun,SmartMod andUnify. Model outcomes vary by project;not measured GPU throughput,power efficiency or proof of Polar acceptance. Contract value,incremental backlog,recognition timing,margin and customer utilization are undisclosed."
+      },
+      "status": "original_issuer_body_read_research_event_registered_no_material_earnings_revision_or_article"
     }
   ],
   "articles": [],
@@ -5721,15 +5743,15 @@
       "2375"
     ],
     "current_run_screening": {
-      "date": "2026-10-21",
-      "checked_at": "2026-10-21 15:31:59 UTC",
-      "instruction_commit_sha": "9703d09ff8b57ab95199039c2f7a8866286f00a0",
-      "status": "full_98_name_primary_revenue_baseline_completed_no_new_material_earnings_revision",
+      "date": "2026-10-22",
+      "checked_at": "2026-10-21 16:28:27 UTC",
+      "instruction_commit_sha": "98b415cd00e820bea087abe67dabaafe113952bc",
+      "status": "full_98_name_discovery_complete_new_deployment_candidate_no_material_revision_established",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "40d8a41e9067fb18c3becf64527795cb83fa932f",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All98active names submitted in14grouped discovery queries. Fresh six-core issuer index checks and original exchange monthly tables;98of98 September numeric revenue records verified,not98complete current-filings/economics audits.",
+      "scope": "All98active names submitted in14grouped discovery queries;fresh six-core issuer index checks plus CSP/financing andUS supplier discovery. Discovery is not a complete individual current-filings audit.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -5737,65 +5759,24 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://investor.marvell.com/news-events/press-releases",
-        "https://mops.twse.com.tw/mops/#/web/t21sc03",
-        "https://www.tpex.org.tw/zh-tw/mainboard/listed/financial/rank-revenue.html"
+        "https://www.vertiv.com/en-asia/about/news-and-events/news-releases/2026/vertiv-targets-up-to-30-more-cumulative-ai-token-output-in-first-12-months-using-nvidia-dsx-polar-deploys-approach-at-norway-site/",
+        "https://investors.vertiv.com/news/default.aspx",
+        "https://investors.amphenol.com/news-and-events/financial-news/default.aspx",
+        "https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1"
       ],
       "company_check_scope": {
-        "newly_primary_verified_symbols": [
-          "6257",
-          "6187",
-          "6640",
-          "3583",
-          "3413",
-          "6196",
-          "1560",
-          "8046",
-          "6274",
-          "4958",
-          "3044",
-          "2367",
-          "6191",
-          "5469",
-          "1815",
-          "1802",
-          "2301",
-          "6409",
-          "3017",
-          "3324",
-          "3653",
-          "3338",
-          "2059",
-          "6117",
-          "3533",
-          "3023",
-          "3526",
-          "2379",
-          "5388",
-          "3596",
-          "3163",
-          "3363",
-          "4979",
-          "6442",
-          "3450",
-          "4977",
-          "4908",
-          "2337",
-          "3260",
-          "3006",
-          "2327",
-          "2492",
-          "2375"
-        ],
+        "newly_primary_verified_symbols": [],
         "cumulative_distinct_primary_fact_count": 98,
         "cumulative_monthly_revenue_count": 98,
         "remaining_without_any_primary_fact": 0
       },
       "source_limits": [
-        "Mandatory instructions, specified specs/taxonomy and complete progress JSON fetched at locked commit. Instruction blobs match the previously fully read versions; three related article blobs also fetched and unchanged.",
-        "Historical September numeric revenue table now covers77listed and21OTCactive names. October17table date and October21retrieval dates kept separate. No new EPSrevision,AI-onlysales orOctober21order inferred.",
-        "Coreissuer indexes retain the already recorded TSMC October15, MediaTek September30, NVIDIA October21, AMD October12, Broadcom October21 andMarvell October13 baselines. Existing major events deduplicated; no new verified procurement allocation or capexrevision established.",
-        "Grouped discovery includes stale and future-period monthly-news hits; no such date-mismatched hit accepted. Final two memory/passive groups returned empty discovery results; original exchange revenue matched all names, but empty news results do not prove no company event.",
-        "Historical source blockers and prior counts retained as dated records; this run appends their resolution and new coverage counts. No new article,material alert,stockprice,valuation,privateholding orprivate market-monitor data included in public ledger."
+        "All required instruction/specification and related article contents read at the locked instruction commit. Complete1,478,730-character progress JSON read viaGitblob because ContentsAPIreturned empty content for thelarge file.",
+        "Existing98-company September revenue baseline is retained;no fresh October monthly period or complete current-filings/economics audit claimed. Grouped searches returned stale/mixed-date,calendar,price andsocial results;none promoted to new issuer orders or forecasts.",
+        "TSMC,MediaTek,NVIDIA,AMD,Broadcom andMarvell indexes were freshly checked;already registered events deduplicated. No new verified MediaTek TPUallocation,NREsplit orhyperscaler capexcut established.",
+        "Vertiv original issuer HTML body read directly after webopen errors. Newdeployment candidate keeps modeled schedule/productivity separate fromactual acceptance andeconomics. VertivIRputsQ3releaseOctober28;AmphenolQ3expectations remain oldguidance,not actualnewquarterly results.",
+        "WSJdraft-prospectusreport is thealready registeredOctober20event;recrawl/todaylabels andsecondarycommentary do not establish a newAnthropicfundingorcapexrevision. Public prospectus/contract reconciliation remains pending.",
+        "Noarticle,stockquote,valuation,privateholding orprivate market-monitor data added. No material notification established."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -13501,6 +13482,43 @@
           "Grouped discovery includes stale and future-period monthly-news hits; no such date-mismatched hit accepted. Final two memory/passive groups returned empty discovery results; original exchange revenue matched all names, but empty news results do not prove no company event.",
           "Historical source blockers and prior counts retained as dated records; this run appends their resolution and new coverage counts. No new article,material alert,stockprice,valuation,privateholding orprivate market-monitor data included in public ledger."
         ]
+      },
+      {
+        "date": "2026-10-22",
+        "checked_at": "2026-10-21 16:28:27 UTC",
+        "instruction_commit_sha": "98b415cd00e820bea087abe67dabaafe113952bc",
+        "status": "full_98_name_discovery_complete_new_deployment_candidate_no_material_revision_established",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "40d8a41e9067fb18c3becf64527795cb83fa932f",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All98active names submitted in14grouped discovery queries;fresh six-core issuer index checks plus CSP/financing andUS supplier discovery. Discovery is not a complete individual current-filings audit.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.vertiv.com/en-asia/about/news-and-events/news-releases/2026/vertiv-targets-up-to-30-more-cumulative-ai-token-output-in-first-12-months-using-nvidia-dsx-polar-deploys-approach-at-norway-site/",
+          "https://investors.vertiv.com/news/default.aspx",
+          "https://investors.amphenol.com/news-and-events/financial-news/default.aspx",
+          "https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1"
+        ],
+        "company_check_scope": {
+          "newly_primary_verified_symbols": [],
+          "cumulative_distinct_primary_fact_count": 98,
+          "cumulative_monthly_revenue_count": 98,
+          "remaining_without_any_primary_fact": 0
+        },
+        "source_limits": [
+          "All required instruction/specification and related article contents read at the locked instruction commit. Complete1,478,730-character progress JSON read viaGitblob because ContentsAPIreturned empty content for thelarge file.",
+          "Existing98-company September revenue baseline is retained;no fresh October monthly period or complete current-filings/economics audit claimed. Grouped searches returned stale/mixed-date,calendar,price andsocial results;none promoted to new issuer orders or forecasts.",
+          "TSMC,MediaTek,NVIDIA,AMD,Broadcom andMarvell indexes were freshly checked;already registered events deduplicated. No new verified MediaTek TPUallocation,NREsplit orhyperscaler capexcut established.",
+          "Vertiv original issuer HTML body read directly after webopen errors. Newdeployment candidate keeps modeled schedule/productivity separate fromactual acceptance andeconomics. VertivIRputsQ3releaseOctober28;AmphenolQ3expectations remain oldguidance,not actualnewquarterly results.",
+          "WSJdraft-prospectusreport is thealready registeredOctober20event;recrawl/todaylabels andsecondarycommentary do not establish a newAnthropicfundingorcapexrevision. Public prospectus/contract reconciliation remains pending.",
+          "Noarticle,stockquote,valuation,privateholding orprivate market-monitor data added. No material notification established."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -20936,6 +20954,25 @@
         "Verify realised BT/mSAP pricing, qualified capacity and company product mix, margins and cash conversion against issuer originals."
       ],
       "publication_status": "research_candidate_only_no_repeat_news_alert_no_article"
+    },
+    {
+      "key": "vertiv-nvidia-dsx-polar-41mw-deployment-and-modeled-time-to-capacity-20261021",
+      "date": "2026-10-22",
+      "instruction_commit_sha": "98b415cd00e820bea087abe67dabaafe113952bc",
+      "companies": [
+        "Vertiv",
+        "NVIDIA",
+        "Polar Data Centers"
+      ],
+      "sources": [
+        "https://www.vertiv.com/en-asia/about/news-and-events/news-releases/2026/vertiv-targets-up-to-30-more-cumulative-ai-token-output-in-first-12-months-using-nvidia-dsx-polar-deploys-approach-at-norway-site/"
+      ],
+      "stage": "issuer_field_project_and_modeled_claim_separated_acceptance_and_financial_conversion_pending",
+      "questions": [
+        "Verify actual energized and accepted capacity,construction schedule and repeat deployments against the modeled baseline.",
+        "Obtain attributable contract economics,recognized revenue,margin and cash conversion before changing the supplier profit thesis."
+      ],
+      "publication_status": "candidate_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -20954,8 +20991,8 @@
       "impact": "Search hits and reposted notices have not been individually checked against company or exchange originals."
     }
   ],
-  "last_research_date": "2026-10-21",
-  "instruction_commit_sha": "9703d09ff8b57ab95199039c2f7a8866286f00a0",
+  "last_research_date": "2026-10-22",
+  "instruction_commit_sha": "98b415cd00e820bea087abe67dabaafe113952bc",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
