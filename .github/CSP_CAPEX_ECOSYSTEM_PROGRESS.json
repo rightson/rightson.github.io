@@ -6161,14 +6161,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-22",
-      "checked_at": "2026-10-21 22:53:50 UTC",
-      "instruction_commit_sha": "45700cdb22ae4e652c17bc4723276a02cbbf9e00",
-      "status": "98_name_discovery_core_indices_and_lam_transcript_source_completion_no_new_material_revision",
+      "checked_at": "2026-10-21 23:40:48 UTC",
+      "instruction_commit_sha": "378d061abf51e0a4022fc45b54e3a939fcb95f73",
+      "status": "98_name_discovery_core_indices_and_nextera_q3_historical_baseline_comparison_no_new_material_revision",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "40d8a41e9067fb18c3becf64527795cb83fa932f",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All98 active names included in14 grouped discovery queries;core issuer indices checked;not98 full current-filing audits.",
+      "scope": "All98 active names included in14 fresh grouped discovery queries;core issuer news indices checked.Not98 full current-filing audits.Active-universe primary baseline counts unchanged.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -6176,15 +6176,19 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://www.marvell.com/company/newsroom.html",
-        "https://www.benzinga.com/news/26/10/62514820/lam-research-q1-2027-earnings-call-transcript"
+        "https://www.investor.nexteraenergy.com/~/media/Files/N/NEE-IR/reports-and-fillings/quarterly-earnings/2026/Q3%202026/2026-1021%20NEEQ32026News%20Release%20vFinal.pdf",
+        "https://www.investor.nexteraenergy.com/~/media/Files/N/NEE-IR/reports-and-fillings/quarterly-earnings/2026/Q3%202026/Q3%202026%20Earnings%20Script_VF.pdf",
+        "https://www.investor.nexteraenergy.com/~/media/Files/N/NEE-IR/reports-and-fillings/quarterly-earnings/2026/Q3%202026/Q3%202026%20Earnings%20Slides_v%20F.pdf",
+        "https://www.investor.nexteraenergy.com/~/media/Files/N/NEE-IR/news-and-events/events-and-presentations/2026/Wolfe%20Conference%20%20Presentation_v%20F.pdf",
+        "https://www.investing.com/news/transcripts/nextera-energy-at-wolfe-research-conference-growth-plan-accelerates-93CH-4927990"
       ],
       "source_limits": [
-        "Mandatory instructions and specifications fully read at locked commit;large progress JSON obtained in full and parsed;event fingerprints,latest coverage,candidates andthree related ai-industry articles checked.",
-        "Broad search results predominantly historical articles,social posts and commentary. No newconfirmedTSMC/MediaTek customerallocation,NRE/productioneconomics orsame-basis CSPbudgetcut established.",
-        "Newly available Lam third-party automated transcript read including Q&A;contains transcription errors in product names. Official audio notauthenticated;prior issuer-slides evidence retained asprimary baseline. Source completion doesnot establish another earnings revision.",
-        "Apollo October21 delay scenario andHolland&Knight October21 BayArea permitting summary discovered/read asresearchleads;not evidence ofanew customer cancellation orsupplierprofitrevision. Underlying municipal originals notread.",
-        "No fresh official dailyissuer table retrieved thisround;prior snapshots remain historical. Currentfullfiling andcompanyeconomics coverage remains partial.",
-        "Publicevent/coverage only;no stockquote,valuation,holding orprivateflow data included. No newarticle orpublicationverification."
+        "Mandatory instructions/specifications andthree related ai-industry articles read at locked instruction commit;complete progress JSON parsed fordeduplication.",
+        "Fresh discovery mostly returned historical reports,repeated NVIDIA prepayment claims andmarket commentary.No new confirmed TSMC/MediaTek customer allocation,NRE/production economics orsame-basis CSP budget cut established.Core index dates are publication dates,not evidence ofcomplete current earnings validation.",
+        "NextEra October21 issuer release,script andslides compared withOctober1 issuer presentation andthird-party conference transcription.Federal-hub funding/fee-model headlines predate thequarterly result;guidance unchanged.Reclassified as historical baseline/source completion,not a fresh material event.",
+        "No fresh daily exchange issuer-notice table obtained thisround;historical baselines do not establish full current-filing oreconomic coverage.",
+        "KinderMorgan gas-project andTesla storage headlines discovered but issuer bodies notvalidated thisround;no economic claims oralert based onthem.",
+        "Public research progress only;no stockquote,valuation,holding orprivate fund-flow data included.No article orwebsite-publication claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -14339,6 +14343,38 @@
           "No fresh official dailyissuer table retrieved thisround;prior snapshots remain historical. Currentfullfiling andcompanyeconomics coverage remains partial.",
           "Publicevent/coverage only;no stockquote,valuation,holding orprivateflow data included. No newarticle orpublicationverification."
         ]
+      },
+      {
+        "date": "2026-10-22",
+        "checked_at": "2026-10-21 23:40:48 UTC",
+        "instruction_commit_sha": "378d061abf51e0a4022fc45b54e3a939fcb95f73",
+        "status": "98_name_discovery_core_indices_and_nextera_q3_historical_baseline_comparison_no_new_material_revision",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "40d8a41e9067fb18c3becf64527795cb83fa932f",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All98 active names included in14 fresh grouped discovery queries;core issuer news indices checked.Not98 full current-filing audits.Active-universe primary baseline counts unchanged.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.marvell.com/company/newsroom.html",
+          "https://www.investor.nexteraenergy.com/~/media/Files/N/NEE-IR/reports-and-fillings/quarterly-earnings/2026/Q3%202026/2026-1021%20NEEQ32026News%20Release%20vFinal.pdf",
+          "https://www.investor.nexteraenergy.com/~/media/Files/N/NEE-IR/reports-and-fillings/quarterly-earnings/2026/Q3%202026/Q3%202026%20Earnings%20Script_VF.pdf",
+          "https://www.investor.nexteraenergy.com/~/media/Files/N/NEE-IR/reports-and-fillings/quarterly-earnings/2026/Q3%202026/Q3%202026%20Earnings%20Slides_v%20F.pdf",
+          "https://www.investor.nexteraenergy.com/~/media/Files/N/NEE-IR/news-and-events/events-and-presentations/2026/Wolfe%20Conference%20%20Presentation_v%20F.pdf",
+          "https://www.investing.com/news/transcripts/nextera-energy-at-wolfe-research-conference-growth-plan-accelerates-93CH-4927990"
+        ],
+        "source_limits": [
+          "Mandatory instructions/specifications andthree related ai-industry articles read at locked instruction commit;complete progress JSON parsed fordeduplication.",
+          "Fresh discovery mostly returned historical reports,repeated NVIDIA prepayment claims andmarket commentary.No new confirmed TSMC/MediaTek customer allocation,NRE/production economics orsame-basis CSP budget cut established.Core index dates are publication dates,not evidence ofcomplete current earnings validation.",
+          "NextEra October21 issuer release,script andslides compared withOctober1 issuer presentation andthird-party conference transcription.Federal-hub funding/fee-model headlines predate thequarterly result;guidance unchanged.Reclassified as historical baseline/source completion,not a fresh material event.",
+          "No fresh daily exchange issuer-notice table obtained thisround;historical baselines do not establish full current-filing oreconomic coverage.",
+          "KinderMorgan gas-project andTesla storage headlines discovered but issuer bodies notvalidated thisround;no economic claims oralert based onthem.",
+          "Public research progress only;no stockquote,valuation,holding orprivate fund-flow data included.No article orwebsite-publication claim."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -21975,6 +22011,36 @@
         "Keep multi-month cumulative equipment purchases, board budgets, contract awards, completed conversion and new cash financing separate."
       ],
       "publication_status": "public_evidence_completion_no_new_material_revision_no_article"
+    },
+    {
+      "key": "nextera-october21-results-federal-hubs-fee-economics-historical-baseline-comparison-20261022",
+      "date": "2026-10-22",
+      "event_date": "2026-10-21",
+      "instruction_commit_sha": "378d061abf51e0a4022fc45b54e3a939fcb95f73",
+      "companies": [
+        "NextEra Energy",
+        "NextEra Energy Resources"
+      ],
+      "sources": [
+        "https://www.investor.nexteraenergy.com/~/media/Files/N/NEE-IR/reports-and-fillings/quarterly-earnings/2026/Q3%202026/2026-1021%20NEEQ32026News%20Release%20vFinal.pdf",
+        "https://www.investor.nexteraenergy.com/~/media/Files/N/NEE-IR/reports-and-fillings/quarterly-earnings/2026/Q3%202026/Q3%202026%20Earnings%20Script_VF.pdf",
+        "https://www.investor.nexteraenergy.com/~/media/Files/N/NEE-IR/reports-and-fillings/quarterly-earnings/2026/Q3%202026/Q3%202026%20Earnings%20Slides_v%20F.pdf",
+        "https://www.investor.nexteraenergy.com/~/media/Files/N/NEE-IR/news-and-events/events-and-presentations/2026/Wolfe%20Conference%20%20Presentation_v%20F.pdf",
+        "https://www.investing.com/news/transcripts/nextera-energy-at-wolfe-research-conference-growth-plan-accelerates-93CH-4927990"
+      ],
+      "stage": "issuer_q3_results_script_slides_and_october1_presentation_verified_historical_funding_deduplicated",
+      "facts": {
+        "issuer_q3_results": "October21 release: adjusted EPS USD1.24 versus1.13 a year earlier (+9.7%). Renewables/storage backlog additions3.7GW,including2.4GW storage;total36.7GW after1.8GW commissioned. Three federal hubs under definitive agreements total16.5GW withUSD5.7bn initial funding year-to-date. 2026 adjusted EPS guidance remainsUSD3.92–4.02,targeting highend;long-term forecasts unchanged.",
+        "fee_and_delivery_scope": "Issuer call script: federal-hub development/construction fees follow a predetermined schedule;operating fees cover first20years. NextEra supplies no project capital and expects about50% of the adjusted EPS of ownership across first20operatingyears. PPA solicitation,construction andpermitting advance inparallel;initial load expected2028–29,full ramp2030–32. Optional6–11GW storage is opportunity,not contracted backlog.",
+        "baseline_comparison": "October1 issuer deck already showed >20GW large-load projects,capital-free fee structure,approximately50% ownership-equivalent EPS,USD3.3bn Japan funding and6–11GW storage potential. An October1 third-party conference transcript also reported USD2.4bn Project Star funding;not issuer-certified. Thus USD5.7bn YTD is not established as fresh October21 funding. Q3slides separately show0.3GW backlog removals sinceJuly24.",
+        "limits": "Out-of-universe company with explicit data-center power relationship. Origination includes non-AI demand;no disclosed named Taiwan hardware allocation,fully financed completion orincremental fee margin. Historical funding/source completion andquarterly execution donot establish a fresh CSP capex reversal."
+      },
+      "questions": [
+        "Verify further capital calls,permits,executed customer PPAs andcommissioning milestones before converting nameplate opportunities into delivered data-center load.",
+        "Separate earned development/construction fees andcash collection from long-dated operating-fee forecasts;quantify incremental margins andrisk allocation.",
+        "Track storage contracts andbacklog removals on the same basis;the6–11GW opportunity must not be counted as signed orders."
+      ],
+      "publication_status": "research_candidate_and_historical_baseline_only_no_new_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -21994,7 +22060,7 @@
     }
   ],
   "last_research_date": "2026-10-22",
-  "instruction_commit_sha": "45700cdb22ae4e652c17bc4723276a02cbbf9e00",
+  "instruction_commit_sha": "378d061abf51e0a4022fc45b54e3a939fcb95f73",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
