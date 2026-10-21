@@ -3626,15 +3626,15 @@
     ],
     "current_run_screening": {
       "date": "2026-10-21",
-      "checked_at": "2026-10-21T05:43:56Z",
-      "instruction_commit_sha": "fd28093482413d0b3c662a9fd0abe5d1e26c7bed",
-      "status": "fresh_discovery_deduplicated_regional_plan_and_product_stage_context_no_new_material_revision",
+      "checked_at": "2026-10-21T07:26:04Z",
+      "instruction_commit_sha": "3aed7a862f05c6c7eb54c4be96b0e9923fb9e494",
+      "status": "fresh_discovery_and_primary_source_recheck_no_additional_material_event",
       "company_count": 98,
       "grouped_query_count": 14,
-      "additional_targeted_query_count": 16,
+      "additional_targeted_query_count": 18,
       "universe_commit_sha": "15737456c090bdcb099718fe47a1b85562ddbe5c",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "98 active names in14 grouped discovery queries;16 targeted core/CSP and original-source discovery queries;six core issuer index attempts.Not98 individual current issuer-filings audits.",
+      "scope": "98 active company names submitted in14 grouped discovery queries;18 additional targeted core/CSP,earnings,original-source and dedup queries;six core issuer index attempts.Individual current issuer-filings validation remains partial.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -3642,9 +3642,12 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://investor.marvell.com/news-events/press-releases",
-        "https://press.aboutamazon.com/de/2026/10/invest-in-germany-summit-amazon-announces-16-billion-euro-investment-in-germany-in-2027",
-        "https://cloud.google.com/blog/topics/hybrid-cloud/new-innovations-in-google-distributed-cloud",
-        "https://www.powerchip.com/zh-tw/financials/index/monthly-revenues-2026"
+        "https://www.powerchip.com/zh-tw/financials/quarterlyincome?target=target_title",
+        "https://www.powerchip.com/zh-tw/financials/quarterly?target=target_title",
+        "https://www.unimicron.com/",
+        "https://www.macronix.com/zh-tw/about/investor-relations/Pages/monthly-sales.aspx",
+        "https://www.reuters.com/business/retail-consumer/3m-expands-amazon-data-center-partnership-shares-gain-2026-10-19/",
+        "https://www.ft.com/content/4fb42dd7-a72c-4e20-9e7c-cdc9d3215159"
       ],
       "company_check_scope": {
         "new_active_universe_primary_issuer_originals": [],
@@ -3652,13 +3655,15 @@
         "cumulative_pending": 45
       },
       "source_limits": [
-        "Mandatory instruction/specification bodies and complete progress JSON acquired at locked commit;recent related posts read.Latest head and target blob checked before mutation.",
-        "TSMC,MediaTek,NVIDIA,AMD andMarvell indexes read;Broadcom index403.Meta IR extracted lists omit dynamic release entries;not comprehensive Meta release validation.",
-        "PSMC official monthly table cross-checks historical September salesTWD7,665,064thousand;monthly and distinct-company baseline counts unchanged.Quarterly income and quarterly report links timed out;no new Q3 result asserted.",
-        "Amazon regional plan amount is not a global capex guidance increase or AI-only budget.Google GDC availability is not a purchase contract.No Taiwan supplier order inferred from either.",
-        "Supermicro preliminary completed-quarter revision,Pichai interview,NEXTDC,Anthropic,SpaceX and previously tracked supply-chain reports deduplicated.ABF pricing and Qisda leads lack a newly verified issuer numeric body.",
-        "53of98 distinct names have an identified historical primary fact;45remain pending.This is not full current financial/filing validation and grouped discovery cannot prove absence of events.",
-        "No new article,lint/build/deploy or public-content claim.No quotes,valuation,private holdings or private market-monitor data stored."
+        "All mandatory instruction/specification files and three recent related articles acquired in full at locked commit;complete progress JSON parsed.No instruction fallback from historical prompts.",
+        "Five core issuer indexes read,with latest listed dates unchanged;Broadcom index403.Search discovery is not complete current original-source validation.",
+        "PSMC quarterly pages now readable after preceding timeout.The extracted first income table has blank Q3 fields and report list exposesQ1/Q2only.Year selectors are not expanded;no newQ3 numerical result or zero-valued quarter inferred.No material forecast revision established from meeting calendar.",
+        "Unimicron homepage502.Macronix monthly page body omits numeric sales table despite indexed excerpts;neither adds a distinct primary numerical baseline.",
+        "3M/Amazon purchase-linked warrant report repeats existing October19 primary event;USD6bn remains a vesting-payment threshold,not guaranteed orders.No repeat event or supplier profit attribution.",
+        "FT CoreWeave/SVB article body remains registration-gated.Indexed synopsis is not a verified fresh financing,default,capital-spending revision or full original analysis.",
+        "Supermicro,NEXTDC,Anthropic,SpaceX,Amazon regional plan,Google GDC availability andPichai allocation interview deduplicated.Circulated ABF,TPCA andserver outlooks do not add a newly verified issuer earnings revision in this check.",
+        "Cumulative53of98 distinct active names have identified historical primary facts;45pending.No claim that all98 latest financials/orders are validated.",
+        "No new article or lint/build/deploy/public-content claim.No quote,valuation,private holding or private market-monitoring record stored in public ledger."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -10938,6 +10943,48 @@
           "53of98 distinct names have an identified historical primary fact;45remain pending.This is not full current financial/filing validation and grouped discovery cannot prove absence of events.",
           "No new article,lint/build/deploy or public-content claim.No quotes,valuation,private holdings or private market-monitor data stored."
         ]
+      },
+      {
+        "date": "2026-10-21",
+        "checked_at": "2026-10-21T07:26:04Z",
+        "instruction_commit_sha": "3aed7a862f05c6c7eb54c4be96b0e9923fb9e494",
+        "status": "fresh_discovery_and_primary_source_recheck_no_additional_material_event",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "additional_targeted_query_count": 18,
+        "universe_commit_sha": "15737456c090bdcb099718fe47a1b85562ddbe5c",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "98 active company names submitted in14 grouped discovery queries;18 additional targeted core/CSP,earnings,original-source and dedup queries;six core issuer index attempts.Individual current issuer-filings validation remains partial.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.powerchip.com/zh-tw/financials/quarterlyincome?target=target_title",
+          "https://www.powerchip.com/zh-tw/financials/quarterly?target=target_title",
+          "https://www.unimicron.com/",
+          "https://www.macronix.com/zh-tw/about/investor-relations/Pages/monthly-sales.aspx",
+          "https://www.reuters.com/business/retail-consumer/3m-expands-amazon-data-center-partnership-shares-gain-2026-10-19/",
+          "https://www.ft.com/content/4fb42dd7-a72c-4e20-9e7c-cdc9d3215159"
+        ],
+        "company_check_scope": {
+          "new_active_universe_primary_issuer_originals": [],
+          "cumulative_primary_company_fact_count": 53,
+          "cumulative_pending": 45
+        },
+        "source_limits": [
+          "All mandatory instruction/specification files and three recent related articles acquired in full at locked commit;complete progress JSON parsed.No instruction fallback from historical prompts.",
+          "Five core issuer indexes read,with latest listed dates unchanged;Broadcom index403.Search discovery is not complete current original-source validation.",
+          "PSMC quarterly pages now readable after preceding timeout.The extracted first income table has blank Q3 fields and report list exposesQ1/Q2only.Year selectors are not expanded;no newQ3 numerical result or zero-valued quarter inferred.No material forecast revision established from meeting calendar.",
+          "Unimicron homepage502.Macronix monthly page body omits numeric sales table despite indexed excerpts;neither adds a distinct primary numerical baseline.",
+          "3M/Amazon purchase-linked warrant report repeats existing October19 primary event;USD6bn remains a vesting-payment threshold,not guaranteed orders.No repeat event or supplier profit attribution.",
+          "FT CoreWeave/SVB article body remains registration-gated.Indexed synopsis is not a verified fresh financing,default,capital-spending revision or full original analysis.",
+          "Supermicro,NEXTDC,Anthropic,SpaceX,Amazon regional plan,Google GDC availability andPichai allocation interview deduplicated.Circulated ABF,TPCA andserver outlooks do not add a newly verified issuer earnings revision in this check.",
+          "Cumulative53of98 distinct active names have identified historical primary facts;45pending.No claim that all98 latest financials/orders are validated.",
+          "No new article or lint/build/deploy/public-content claim.No quote,valuation,private holding or private market-monitoring record stored in public ledger."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -18058,7 +18105,7 @@
     }
   ],
   "last_research_date": "2026-10-21",
-  "instruction_commit_sha": "fd28093482413d0b3c662a9fd0abe5d1e26c7bed",
+  "instruction_commit_sha": "3aed7a862f05c6c7eb54c4be96b0e9923fb9e494",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
