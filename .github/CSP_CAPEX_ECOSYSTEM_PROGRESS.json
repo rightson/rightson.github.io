@@ -3554,6 +3554,54 @@
         "limits": "Product availability does not disclose incremental equipment procurement,customer accepted deployments,utilisation,AI revenue or supplier margin."
       },
       "status": "issuer_product_stage_body_read_no_quantified_order_or_earnings_revision_no_article"
+    },
+    {
+      "fingerprint": "psmc-q3-2026-reported-margin-price-and-capacity-outlook-20261021",
+      "event_date": "2026-10-21",
+      "discovered_date": "2026-10-21",
+      "instruction_commit_sha": "ae0519574f4ef019cf7177984ba3d4b910845801",
+      "companies": [
+        "PSMC"
+      ],
+      "type": "original_media_reporting_of_results_and_management_outlook",
+      "sources": [
+        "https://news.nextapple.com/finance/20261021/7F03DFEC2C5CC87AB953A88310E71560",
+        "https://news.nextapple.com/finance/20261021/24CF90CE636AFD5FBE44FA33EAF6F0F0",
+        "https://news.nextapple.com/finance/20261021/190415E3D008DA9ABD515EAA42CA3101"
+      ],
+      "facts": {
+        "source_times_taipei": [
+          "15:19",
+          "15:41",
+          "15:51"
+        ],
+        "reported_q3": {
+          "currency": "TWD",
+          "revenue_billion_approx": 21.3,
+          "net_profit_billion_approx": 6.5,
+          "eps": 1.38,
+          "gross_margin_percent": 48,
+          "reported_q2_gross_margin_percent": 28,
+          "wafer_shipments_thousand_approx": 416,
+          "dram_revenue_share_percent": ">60",
+          "three_d_ai_foundry_revenue_share_percent": 1.4
+        },
+        "management_outlook_reported": {
+          "q4_revenue": "Double-digit growth;article does not explicitly label comparison period.",
+          "q3_asp_sequential_growth_percent_approx": 20,
+          "foundry_price_target_2027": "10-20% increase;negotiating,not fully contracted realised prices.",
+          "ai_server_pmic": "55nm BCD products reportedly in volume production;some customers request3-year LTAs.",
+          "lta_scope": "~80%of2027MOSFET/IGBTcapacity reportedly contracted;notallDRAM/AIcapacity.",
+          "factory_plan": "Evaluating20-40thousand wafers/month over3-5years;customer participation30-60%desired,not committedcapacity."
+        },
+        "limitations": [
+          "Three articles by one reporter count one source family.Q3 issuer financial table remains blank,report index exposesQ1/Q2;conference link has no readable presentation/transcript.",
+          "Gross-margin improvement includes ASP/utilisation,銅鑼 shutdown and manufacturing-cost transfer to operating expenses.No constant-basis operating-margin/cash-flow bridge obtained.",
+          "Result article says P5 closing pending;issuer March16 release says transaction completed.Closing timing requires reconciliation.",
+          "Reported nine-monthEPS5.42 differs from simpleH1EPS4.08plusQ3EPS1.38;share-weighting or reporting discrepancy unresolved.No annualised EPS calculation."
+        ]
+      },
+      "status": "original_report_bodies_read_material_financial_candidate_issuer_documents_pending_no_article"
     }
   ],
   "articles": [],
@@ -3626,15 +3674,15 @@
     ],
     "current_run_screening": {
       "date": "2026-10-21",
-      "checked_at": "2026-10-21T07:26:04Z",
-      "instruction_commit_sha": "3aed7a862f05c6c7eb54c4be96b0e9923fb9e494",
-      "status": "fresh_discovery_and_primary_source_recheck_no_additional_material_event",
+      "checked_at": "2026-10-21T08:03:17Z",
+      "instruction_commit_sha": "ae0519574f4ef019cf7177984ba3d4b910845801",
+      "status": "new_psmc_reported_results_registered_issuer_document_reconciliation_pending",
       "company_count": 98,
       "grouped_query_count": 14,
-      "additional_targeted_query_count": 18,
+      "additional_targeted_query_count": 20,
       "universe_commit_sha": "15737456c090bdcb099718fe47a1b85562ddbe5c",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "98 active company names submitted in14 grouped discovery queries;18 additional targeted core/CSP,earnings,original-source and dedup queries;six core issuer index attempts.Individual current issuer-filings validation remains partial.",
+      "scope": "98active names submitted in14grouped discovery queries;20additional targeted discovery/earnings/source-confirmation queries;sixcoreissuerindex attempts.Individual currentissuer-filings validation remains partial.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -3642,12 +3690,11 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://investor.marvell.com/news-events/press-releases",
-        "https://www.powerchip.com/zh-tw/financials/quarterlyincome?target=target_title",
-        "https://www.powerchip.com/zh-tw/financials/quarterly?target=target_title",
-        "https://www.unimicron.com/",
-        "https://www.macronix.com/zh-tw/about/investor-relations/Pages/monthly-sales.aspx",
-        "https://www.reuters.com/business/retail-consumer/3m-expands-amazon-data-center-partnership-shares-gain-2026-10-19/",
-        "https://www.ft.com/content/4fb42dd7-a72c-4e20-9e7c-cdc9d3215159"
+        "https://news.nextapple.com/finance/20261021/7F03DFEC2C5CC87AB953A88310E71560",
+        "https://news.nextapple.com/finance/20261021/24CF90CE636AFD5FBE44FA33EAF6F0F0",
+        "https://news.nextapple.com/finance/20261021/190415E3D008DA9ABD515EAA42CA3101",
+        "https://www.powerchip.com/zh-tw/stock/conferences?target=target_title",
+        "https://www.taiwannews.com.tw/zh/news/6461928"
       ],
       "company_check_scope": {
         "new_active_universe_primary_issuer_originals": [],
@@ -3655,15 +3702,13 @@
         "cumulative_pending": 45
       },
       "source_limits": [
-        "All mandatory instruction/specification files and three recent related articles acquired in full at locked commit;complete progress JSON parsed.No instruction fallback from historical prompts.",
-        "Five core issuer indexes read,with latest listed dates unchanged;Broadcom index403.Search discovery is not complete current original-source validation.",
-        "PSMC quarterly pages now readable after preceding timeout.The extracted first income table has blank Q3 fields and report list exposesQ1/Q2only.Year selectors are not expanded;no newQ3 numerical result or zero-valued quarter inferred.No material forecast revision established from meeting calendar.",
-        "Unimicron homepage502.Macronix monthly page body omits numeric sales table despite indexed excerpts;neither adds a distinct primary numerical baseline.",
-        "3M/Amazon purchase-linked warrant report repeats existing October19 primary event;USD6bn remains a vesting-payment threshold,not guaranteed orders.No repeat event or supplier profit attribution.",
-        "FT CoreWeave/SVB article body remains registration-gated.Indexed synopsis is not a verified fresh financing,default,capital-spending revision or full original analysis.",
-        "Supermicro,NEXTDC,Anthropic,SpaceX,Amazon regional plan,Google GDC availability andPichai allocation interview deduplicated.Circulated ABF,TPCA andserver outlooks do not add a newly verified issuer earnings revision in this check.",
-        "Cumulative53of98 distinct active names have identified historical primary facts;45pending.No claim that all98 latest financials/orders are validated.",
-        "No new article or lint/build/deploy/public-content claim.No quote,valuation,private holding or private market-monitoring record stored in public ledger."
+        "Allmandatoryfiles andthreerelatedarticles acquiredinfull atlockedcommit;completeprogressJSONparsed.",
+        "Fivecoreissuerindexesread;Broadcom403.No newcoreprocurementallocation orcapexrevision established.",
+        "PSMCoriginalreporting recordsresults/managementtargets,not verifiedissuerfinancialdocuments.Threearticlescountonesourcefamily;Q3documents/P5closing/year-to-dateEPSreconciliation pending.",
+        "TSMCconstructionpausescope widened inattributedcompanystatement.No operatingfabshutdown orcapacityguidancerevision inferred.",
+        "Anthropic,NEXTDC,SpaceX,Supermicro,3M/Amazon,GDC/regionalinvestment eventsdeduplicated.Oldpartner/forecastnewsnotneworders.",
+        "Cumulativeprimaryfacts53of98;45pending.Groupedsearchnotfullcurrentfilingvalidation.",
+        "No newarticle orlint/build/deployclaim.No quote,valuation,privateholdings orprivatemarketmonitor data storedinpublicledger."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -10985,6 +11030,45 @@
           "Cumulative53of98 distinct active names have identified historical primary facts;45pending.No claim that all98 latest financials/orders are validated.",
           "No new article or lint/build/deploy/public-content claim.No quote,valuation,private holding or private market-monitoring record stored in public ledger."
         ]
+      },
+      {
+        "date": "2026-10-21",
+        "checked_at": "2026-10-21T08:03:17Z",
+        "instruction_commit_sha": "ae0519574f4ef019cf7177984ba3d4b910845801",
+        "status": "new_psmc_reported_results_registered_issuer_document_reconciliation_pending",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "additional_targeted_query_count": 20,
+        "universe_commit_sha": "15737456c090bdcb099718fe47a1b85562ddbe5c",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "98active names submitted in14grouped discovery queries;20additional targeted discovery/earnings/source-confirmation queries;sixcoreissuerindex attempts.Individual currentissuer-filings validation remains partial.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://news.nextapple.com/finance/20261021/7F03DFEC2C5CC87AB953A88310E71560",
+          "https://news.nextapple.com/finance/20261021/24CF90CE636AFD5FBE44FA33EAF6F0F0",
+          "https://news.nextapple.com/finance/20261021/190415E3D008DA9ABD515EAA42CA3101",
+          "https://www.powerchip.com/zh-tw/stock/conferences?target=target_title",
+          "https://www.taiwannews.com.tw/zh/news/6461928"
+        ],
+        "company_check_scope": {
+          "new_active_universe_primary_issuer_originals": [],
+          "cumulative_primary_company_fact_count": 53,
+          "cumulative_pending": 45
+        },
+        "source_limits": [
+          "Allmandatoryfiles andthreerelatedarticles acquiredinfull atlockedcommit;completeprogressJSONparsed.",
+          "Fivecoreissuerindexesread;Broadcom403.No newcoreprocurementallocation orcapexrevision established.",
+          "PSMCoriginalreporting recordsresults/managementtargets,not verifiedissuerfinancialdocuments.Threearticlescountonesourcefamily;Q3documents/P5closing/year-to-dateEPSreconciliation pending.",
+          "TSMCconstructionpausescope widened inattributedcompanystatement.No operatingfabshutdown orcapacityguidancerevision inferred.",
+          "Anthropic,NEXTDC,SpaceX,Supermicro,3M/Amazon,GDC/regionalinvestment eventsdeduplicated.Oldpartner/forecastnewsnotneworders.",
+          "Cumulativeprimaryfacts53of98;45pending.Groupedsearchnotfullcurrentfilingvalidation.",
+          "No newarticle orlint/build/deployclaim.No quote,valuation,privateholdings orprivatemarketmonitor data storedinpublicledger."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -18086,6 +18170,55 @@
         "Separate availability and preview stages from new procurement and retained earnings."
       ],
       "publication_status": "public_source_context_recorded_no_article"
+    },
+    {
+      "key": "psmc-q3-2026-reported-margin-price-and-capacity-outlook-20261021",
+      "date": "2026-10-21",
+      "event_date": "2026-10-21",
+      "instruction_commit_sha": "ae0519574f4ef019cf7177984ba3d4b910845801",
+      "companies": [
+        "PSMC"
+      ],
+      "sources": [
+        "https://news.nextapple.com/finance/20261021/7F03DFEC2C5CC87AB953A88310E71560",
+        "https://news.nextapple.com/finance/20261021/24CF90CE636AFD5FBE44FA33EAF6F0F0",
+        "https://news.nextapple.com/finance/20261021/190415E3D008DA9ABD515EAA42CA3101",
+        "https://www.powerchip.com/zh-tw/stock/conferences?target=target_title",
+        "https://www.powerchip.com/zh-tw/financials/quarterlyincome?target=target_title",
+        "https://www.powerchip.com/zh-tw/insights/press-releases/content/20260316"
+      ],
+      "stage": "original_report_bodies_read_material_financial_candidate_issuer_documents_pending_no_article",
+      "questions": [
+        "Obtain originalQ3 financial statements/slides and reconcileP5closing andyear-to-dateEPS discrepancies.",
+        "Separate price/mix/utilisation from expense reclassification using operating margin,cashflow andreceivables.",
+        "Verify2027contracted price/volume andIPD/Interposer/WoWrecovery withquantified revenue."
+      ],
+      "publication_status": "public_reported_facts_registered_no_article"
+    },
+    {
+      "key": "tsmc-f22-steelworks-all-new-sites-voluntary-pause-scope-update-20261021",
+      "date": "2026-10-21",
+      "event_date": "2026-10-21",
+      "instruction_commit_sha": "ae0519574f4ef019cf7177984ba3d4b910845801",
+      "companies": [
+        "TSMC"
+      ],
+      "sources": [
+        "https://www.taiwannews.com.tw/zh/news/6461928",
+        "https://www.cna.com.tw/news/asoc/202610210060.aspx"
+      ],
+      "stage": "public_reproduction_of_company_and_regulator_statements_read",
+      "facts": {
+        "source_updated": "2026-10-21 11:49 Asia/Taipei",
+        "increment": "Fourth worker's death confirmed;company-attributed voluntary pause covers Kaohsiung site andsteelwork atallnewTaiwanfabconstruction sites.",
+        "baseline": "October20candidate identifiedF22P4steelinstallation stoponly.",
+        "limits": "TaiwanNewsbody attributes toCNA;directCNApage unavailable.No restart/critical-path/capacity-guide revision verified.Existing operatingfabs not reportedstopped."
+      },
+      "questions": [
+        "Obtain restart conditions/duration.",
+        "Verify tool-installation criticalpath and anychange to2nmcapacity guidance."
+      ],
+      "publication_status": "scope_update_candidate_only_no_capacity_revision_or_article"
     }
   ],
   "blockers": [
@@ -18105,7 +18238,7 @@
     }
   ],
   "last_research_date": "2026-10-21",
-  "instruction_commit_sha": "3aed7a862f05c6c7eb54c4be96b0e9923fb9e494",
+  "instruction_commit_sha": "ae0519574f4ef019cf7177984ba3d4b910845801",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
