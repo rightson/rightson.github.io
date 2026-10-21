@@ -3341,6 +3341,26 @@
         "limits": "Quarter cash flow derived by subtraction,not issuer-defined FCF;excludes separately presented rebates/intangibles/leases.SI includes advertising,software and acquired Cursor,not pure compute rental.Nameplate1.7GW is not utilization."
       },
       "status": "issuer_release_and_historical_10q_read_no_article"
+    },
+    {
+      "fingerprint": "anthropic-draft-ipo-financial-disclosure-compute-obligations-20261020",
+      "event_date": "2026-10-20",
+      "discovered_date": "2026-10-21",
+      "instruction_commit_sha": "6b6424bfb22e36dbc7b1d51551b564dd850eda15",
+      "companies": [
+        "Anthropic"
+      ],
+      "type": "reported_draft_prospectus_financial_disclosure",
+      "sources": [
+        "https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1",
+        "https://www.reuters.com/business/anthropic-recorded-net-loss-over-80-billion-first-half-this-year-wsj-reports-2026-10-20/"
+      ],
+      "facts": {
+        "increment": "Original reporting adds first-half financial and future-compute-obligation details beyond the previously tracked IPO valuation discussion.",
+        "scope": "Media-reported draft prospectus, not an independently retrieved public filing. Signed obligations and still-negotiated capacity must be separated. Funding-instrument fair-value charges must be separated from operating cash use.",
+        "limits": "No new hyperscaler annual capex cut, equipment cancellation, accepted Taiwan supplier order, or supplier earnings revision established. Reuters attributes the financial disclosure to WSJ and is not an independent confirmation."
+      },
+      "status": "original_reporting_read_public_filing_reconciliation_pending_no_article"
     }
   ],
   "articles": [],
@@ -3412,136 +3432,34 @@
     ],
     "current_run_screening": {
       "date": "2026-10-21",
-      "checked_at": "2026-10-20T22:57:14Z",
-      "instruction_commit_sha": "5d88cc5ecf77616ad90dbb44cb6d43e561c55ef4",
-      "status": "resolight_specification_support_lead_added_primary_commercial_evidence_pending_no_alert",
+      "checked_at": "2026-10-21T00:22:30Z",
+      "instruction_commit_sha": "6b6424bfb22e36dbc7b1d51551b564dd850eda15",
+      "status": "new_reported_anthropic_financial_disclosure_registered_no_article",
       "company_count": 98,
-      "grouped_query_count": 14,
-      "additional_targeted_query_count": 8,
-      "scope": "14 grouped discovery searches across the 98 active names, plus 4 core/CSP searches and 4 follow-up searches; issuer news indexes and candidate sources read selectively. Not 98 individual issuer-original checks.",
+      "grouped_query_count": 28,
+      "scope": "Two sets of14 grouped discovery queries; first set had poor recall and second set was repeated with simpler company names. Selective issuer indexes, core-company and event follow-ups; not98 individual current issuer-original audits.",
+      "universe_commit_sha": "15737456c090bdcb099718fe47a1b85562ddbe5c",
+      "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
       "sources": [
+        "https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1",
+        "https://www.reuters.com/business/anthropic-recorded-net-loss-over-80-billion-first-half-this-year-wsj-reports-2026-10-20/",
+        "https://modal.com/blog/nvidia-vera-sandboxes",
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
         "https://nvidianews.nvidia.com/news/",
-        "https://ir.amd.com/news-events/press-releases",
-        "https://investors.broadcom.com/financial-information/financial-news-releases",
-        "https://investor.marvell.com/news-events/press-releases",
-        "https://resolight.ai/"
+        "https://ir.amd.com/news-events/press-releases"
       ],
       "company_check_scope": {
         "new_active_universe_primary_issuer_originals": [],
-        "outside_universe_originals": [
-          "Resolight undated issuer homepage; linked release incomplete"
-        ],
-        "grouped_discovery_only": [
-          "2330",
-          "2454",
-          "3661",
-          "3443",
-          "3035",
-          "5274",
-          "3711",
-          "2449",
-          "6257",
-          "6239",
-          "3264",
-          "8150",
-          "6223",
-          "6510",
-          "6515",
-          "6683",
-          "2360",
-          "3131",
-          "2467",
-          "6187",
-          "6640",
-          "3583",
-          "3413",
-          "6196",
-          "1560",
-          "8028",
-          "3037",
-          "8046",
-          "3189",
-          "2383",
-          "6274",
-          "6213",
-          "2368",
-          "2313",
-          "4958",
-          "3044",
-          "2367",
-          "6191",
-          "5469",
-          "8021",
-          "1815",
-          "1802",
-          "2317",
-          "2382",
-          "3231",
-          "6669",
-          "2356",
-          "2324",
-          "3706",
-          "2308",
-          "2301",
-          "6412",
-          "6282",
-          "3015",
-          "6409",
-          "3017",
-          "3324",
-          "2421",
-          "3653",
-          "8996",
-          "3338",
-          "2059",
-          "8210",
-          "3013",
-          "6117",
-          "3533",
-          "3665",
-          "6197",
-          "3023",
-          "3526",
-          "3605",
-          "2345",
-          "2379",
-          "6285",
-          "5388",
-          "3596",
-          "3081",
-          "3163",
-          "3363",
-          "4979",
-          "6442",
-          "3450",
-          "4977",
-          "3234",
-          "4908",
-          "2408",
-          "2344",
-          "2337",
-          "8299",
-          "3260",
-          "8271",
-          "5289",
-          "6770",
-          "3006",
-          "2327",
-          "2492",
-          "3026",
-          "2375"
-        ],
         "cumulative_primary_company_fact_count": 52,
         "cumulative_pending": 46
       },
       "source_limits": [
-        "Mandatory instruction/specification/taxonomy/configuration files acquired at locked instruction commit. Full progress JSON acquired and parsed; current coverage, event/candidate histories and relevant recent articles reviewed for deduplication.",
-        "Universe commit15737456c090bdcb099718fe47a1b85562ddbe5c and CSV88422949d38165d4757a1e24c27f8662bede14c1 contain98 active companies. Cumulative primary baselines remain52/98 with46 pending.",
-        "Anthropic IPO valuation report, Nscale second-building talks, Microsoft single-site cancellation, MediaTek TPUv9 media reports, Unimicron material estimate and other repeated items remain existing evidence; no newly verified core-company capex/earnings revision or named Taiwan supplier order established.",
-        "Resolight homepage supports an architecture/specification candidate only; full issuer release, original coalition specification, independently measured conditions and commercial conversion not retrieved.",
-        "No new article or article lint/build/deploy claim. Public ledger contains no private market-flow data, prices, valuation, holdings or B monitoring state."
+        "Mandatory instructions and specifications read completely at instruction commit; latest main and progress blob rechecked before write.",
+        "Fresh grouped discovery covers all98 active names, not complete individual original validation. Cumulative primary baselines unchanged.",
+        "Anthropic report is original media evidence; independently retrieved public prospectus unavailable. No newly verified core-company capex or earnings reduction.",
+        "Modal original improves provenance for existing candidate only. Broadcom news index returned502; some CSP indexes were sparse/dynamic.",
+        "No article, lint/build/deploy claim, private market-flow data, stock quote, valuation, holdings or B monitor state in this ledger."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -10570,6 +10488,38 @@
           "Resolight homepage supports an architecture/specification candidate only; full issuer release, original coalition specification, independently measured conditions and commercial conversion not retrieved.",
           "No new article or article lint/build/deploy claim. Public ledger contains no private market-flow data, prices, valuation, holdings or B monitoring state."
         ]
+      },
+      {
+        "date": "2026-10-21",
+        "checked_at": "2026-10-21T00:22:30Z",
+        "instruction_commit_sha": "6b6424bfb22e36dbc7b1d51551b564dd850eda15",
+        "status": "new_reported_anthropic_financial_disclosure_registered_no_article",
+        "company_count": 98,
+        "grouped_query_count": 28,
+        "scope": "Two sets of14 grouped discovery queries; first set had poor recall and second set was repeated with simpler company names. Selective issuer indexes, core-company and event follow-ups; not98 individual current issuer-original audits.",
+        "universe_commit_sha": "15737456c090bdcb099718fe47a1b85562ddbe5c",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "sources": [
+          "https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1",
+          "https://www.reuters.com/business/anthropic-recorded-net-loss-over-80-billion-first-half-this-year-wsj-reports-2026-10-20/",
+          "https://modal.com/blog/nvidia-vera-sandboxes",
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news/",
+          "https://ir.amd.com/news-events/press-releases"
+        ],
+        "company_check_scope": {
+          "new_active_universe_primary_issuer_originals": [],
+          "cumulative_primary_company_fact_count": 52,
+          "cumulative_pending": 46
+        },
+        "source_limits": [
+          "Mandatory instructions and specifications read completely at instruction commit; latest main and progress blob rechecked before write.",
+          "Fresh grouped discovery covers all98 active names, not complete individual original validation. Cumulative primary baselines unchanged.",
+          "Anthropic report is original media evidence; independently retrieved public prospectus unavailable. No newly verified core-company capex or earnings reduction.",
+          "Modal original improves provenance for existing candidate only. Broadcom news index returned502; some CSP indexes were sparse/dynamic.",
+          "No article, lint/build/deploy claim, private market-flow data, stock quote, valuation, holdings or B monitor state in this ledger."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -17428,6 +17378,41 @@
         "Obtain named customer deployment and conversion into supplier revenue, margin and cash."
       ],
       "publication_status": "research_candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "anthropic-draft-ipo-financial-disclosure-compute-obligations-20261020",
+      "date": "2026-10-21",
+      "event_date": "2026-10-20",
+      "instruction_commit_sha": "6b6424bfb22e36dbc7b1d51551b564dd850eda15",
+      "companies": [
+        "Anthropic"
+      ],
+      "sources": [
+        "https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1",
+        "https://www.reuters.com/business/anthropic-recorded-net-loss-over-80-billion-first-half-this-year-wsj-reports-2026-10-20/"
+      ],
+      "stage": "reported_financial_disclosure_read_public_prospectus_and_contract_reconciliation_pending",
+      "questions": [
+        "Obtain the public prospectus and reconcile commitment definitions, financing instruments and operating cash flow.",
+        "Separate signed contracts, contingent capacity and ongoing negotiations; establish cancellation and funding conditions.",
+        "Verify actual customer equipment delivery changes and supplier guidance rather than extrapolating valuation sentiment."
+      ],
+      "publication_status": "source_event_registered_no_article"
+    },
+    {
+      "key": "modal-vera-sandboxes-primary-source-followup-20261021",
+      "date": "2026-10-21",
+      "instruction_commit_sha": "6b6424bfb22e36dbc7b1d51551b564dd850eda15",
+      "parent_candidate": "modal-nvidia-vera-agent-sandbox-adoption-planned-20261019",
+      "sources": [
+        "https://modal.com/blog/nvidia-vera-sandboxes"
+      ],
+      "stage": "customer_original_blog_read_adoption_planned_commercial_economics_pending",
+      "facts": {
+        "increment": "Customer original confirms receipt of first server and planned Arm sandbox rollout; original-source access gap in the October19 candidate is resolved.",
+        "limits": "Vendor/customer benchmark conditions do not establish end-to-end agent speedup, production volume, supplier earnings or margin."
+      },
+      "publication_status": "evidence_quality_followup_no_repeat_alert_no_article"
     }
   ],
   "blockers": [
@@ -17447,7 +17432,7 @@
     }
   ],
   "last_research_date": "2026-10-21",
-  "instruction_commit_sha": "5d88cc5ecf77616ad90dbb44cb6d43e561c55ef4",
+  "instruction_commit_sha": "6b6424bfb22e36dbc7b1d51551b564dd850eda15",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
