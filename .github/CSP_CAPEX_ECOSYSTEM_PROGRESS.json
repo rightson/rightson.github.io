@@ -5744,14 +5744,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-22",
-      "checked_at": "2026-10-21 16:28:27 UTC",
-      "instruction_commit_sha": "98b415cd00e820bea087abe67dabaafe113952bc",
-      "status": "full_98_name_discovery_complete_new_deployment_candidate_no_material_revision_established",
+      "checked_at": "2026-10-21 16:38:17 UTC",
+      "instruction_commit_sha": "255868e37c84ac6fbd92c203f525f357ba746b52",
+      "status": "full_98_name_discovery_checked_no_new_material_revision_verified",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "40d8a41e9067fb18c3becf64527795cb83fa932f",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All98active names submitted in14grouped discovery queries;fresh six-core issuer index checks plus CSP/financing andUS supplier discovery. Discovery is not a complete individual current-filings audit.",
+      "scope": "Full98active names submitted in14grouped discovery queries. Sixcoreissuerindices andtargetedCSP/financing/counterparty checks. Discovery isnot acomplete current-filings audit.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -5759,10 +5759,8 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://investor.marvell.com/news-events/press-releases",
-        "https://www.vertiv.com/en-asia/about/news-and-events/news-releases/2026/vertiv-targets-up-to-30-more-cumulative-ai-token-output-in-first-12-months-using-nvidia-dsx-polar-deploys-approach-at-norway-site/",
-        "https://investors.vertiv.com/news/default.aspx",
-        "https://investors.amphenol.com/news-and-events/financial-news/default.aspx",
-        "https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1"
+        "https://mops.twse.com.tw/mops/#/web/t05st01",
+        "https://investor.fermiamerica.com/fermi-announces-binding-lease-agreement-with-tensorwave"
       ],
       "company_check_scope": {
         "newly_primary_verified_symbols": [],
@@ -5771,12 +5769,13 @@
         "remaining_without_any_primary_fact": 0
       },
       "source_limits": [
-        "All required instruction/specification and related article contents read at the locked instruction commit. Complete1,478,730-character progress JSON read viaGitblob because ContentsAPIreturned empty content for thelarge file.",
-        "Existing98-company September revenue baseline is retained;no fresh October monthly period or complete current-filings/economics audit claimed. Grouped searches returned stale/mixed-date,calendar,price andsocial results;none promoted to new issuer orders or forecasts.",
-        "TSMC,MediaTek,NVIDIA,AMD,Broadcom andMarvell indexes were freshly checked;already registered events deduplicated. No new verified MediaTek TPUallocation,NREsplit orhyperscaler capexcut established.",
-        "Vertiv original issuer HTML body read directly after webopen errors. Newdeployment candidate keeps modeled schedule/productivity separate fromactual acceptance andeconomics. VertivIRputsQ3releaseOctober28;AmphenolQ3expectations remain oldguidance,not actualnewquarterly results.",
-        "WSJdraft-prospectusreport is thealready registeredOctober20event;recrawl/todaylabels andsecondarycommentary do not establish a newAnthropicfundingorcapexrevision. Public prospectus/contract reconciliation remains pending.",
-        "Noarticle,stockquote,valuation,privateholding orprivate market-monitor data added. No material notification established."
+        "Requiredinstructions,classification,specifications,completeprogress andthreerelatedarticles fetched atsame instructioncommit;unchangedinstructionblobhashes. Largeprogress JSON read throughGitblob,notemptyContentsAPIresponse.",
+        "All98Septembermonthlyrecords remain historical baseline,not a newperiod or98complete companyaudits. Current groupeddiscoveryreturned calendar,mixed/stale-datenews,social andrecycledheadlines;date-mismatched claims were excluded.",
+        "TSMC latest-news HTML wasread directly afterwebextractor omitted entries:latestOctober15Q3 andOctober8Septemberrevenue. MediaTek latestSeptember30;NVIDIAOctober21supplychain/A5X,AMDOctober12,BroadcomOctober21Arcot andMarvellOctober13 remain recordedbaselines.",
+        "ExistingAnthropic,NextDC,Supermicro,PSMC,NVIDIAsupplychain,GoogleOpenAI andVertivPolarevents deduplicated. Fermi initialTensorWavelease isAugust10,not anewOctober21lease;October13creditsupport andOctober16loanamendment remain separatestages.",
+        "Officialexchange materialtable datedOctober21 containsOctober20ASEequipmentfiling. October21SPIL/Acterengineeringheadline remains a separatecandidate pendingoriginal,not a confirmed additionto anAIorder. Noequipmentmodel,AIcustomerallocation ormargin assumed.",
+        "TargetedcurrentCSPofficial-domain searches producedemptyresults;this doesnot demonstrateabsenceofnews. No newverified hyperscalercapexcut,MediaTekTPUallocation,NREsplit orsupplierforecastrevision established.",
+        "Researchledger only;noarticle,prices,valuation,holdings orprivatemarket-monitor dataadded."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -13519,6 +13518,42 @@
           "WSJdraft-prospectusreport is thealready registeredOctober20event;recrawl/todaylabels andsecondarycommentary do not establish a newAnthropicfundingorcapexrevision. Public prospectus/contract reconciliation remains pending.",
           "Noarticle,stockquote,valuation,privateholding orprivate market-monitor data added. No material notification established."
         ]
+      },
+      {
+        "date": "2026-10-22",
+        "checked_at": "2026-10-21 16:38:17 UTC",
+        "instruction_commit_sha": "255868e37c84ac6fbd92c203f525f357ba746b52",
+        "status": "full_98_name_discovery_checked_no_new_material_revision_verified",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "40d8a41e9067fb18c3becf64527795cb83fa932f",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "Full98active names submitted in14grouped discovery queries. Sixcoreissuerindices andtargetedCSP/financing/counterparty checks. Discovery isnot acomplete current-filings audit.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://mops.twse.com.tw/mops/#/web/t05st01",
+          "https://investor.fermiamerica.com/fermi-announces-binding-lease-agreement-with-tensorwave"
+        ],
+        "company_check_scope": {
+          "newly_primary_verified_symbols": [],
+          "cumulative_distinct_primary_fact_count": 98,
+          "cumulative_monthly_revenue_count": 98,
+          "remaining_without_any_primary_fact": 0
+        },
+        "source_limits": [
+          "Requiredinstructions,classification,specifications,completeprogress andthreerelatedarticles fetched atsame instructioncommit;unchangedinstructionblobhashes. Largeprogress JSON read throughGitblob,notemptyContentsAPIresponse.",
+          "All98Septembermonthlyrecords remain historical baseline,not a newperiod or98complete companyaudits. Current groupeddiscoveryreturned calendar,mixed/stale-datenews,social andrecycledheadlines;date-mismatched claims were excluded.",
+          "TSMC latest-news HTML wasread directly afterwebextractor omitted entries:latestOctober15Q3 andOctober8Septemberrevenue. MediaTek latestSeptember30;NVIDIAOctober21supplychain/A5X,AMDOctober12,BroadcomOctober21Arcot andMarvellOctober13 remain recordedbaselines.",
+          "ExistingAnthropic,NextDC,Supermicro,PSMC,NVIDIAsupplychain,GoogleOpenAI andVertivPolarevents deduplicated. Fermi initialTensorWavelease isAugust10,not anewOctober21lease;October13creditsupport andOctober16loanamendment remain separatestages.",
+          "Officialexchange materialtable datedOctober21 containsOctober20ASEequipmentfiling. October21SPIL/Acterengineeringheadline remains a separatecandidate pendingoriginal,not a confirmed additionto anAIorder. Noequipmentmodel,AIcustomerallocation ormargin assumed.",
+          "TargetedcurrentCSPofficial-domain searches producedemptyresults;this doesnot demonstrateabsenceofnews. No newverified hyperscalercapexcut,MediaTekTPUallocation,NREsplit orsupplierforecastrevision established.",
+          "Researchledger only;noarticle,prices,valuation,holdings orprivatemarket-monitor dataadded."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -20973,6 +21008,41 @@
         "Obtain attributable contract economics,recognized revenue,margin and cash conversion before changing the supplier profit thesis."
       ],
       "publication_status": "candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "spil-advantest-october20-equipment-and-october21-facility-engineering-lead-20261022",
+      "date": "2026-10-22",
+      "instruction_commit_sha": "255868e37c84ac6fbd92c203f525f357ba746b52",
+      "companies": [
+        "ASE Technology Holding",
+        "Siliconware Precision Industries",
+        "Advantest",
+        "Acter"
+      ],
+      "stage": "october20_official_equipment_filing_verified_october21_construction_lead_original_pending",
+      "sources": [
+        "https://mops.twse.com.tw/mops/#/web/t05st01",
+        "https://www.nstock.tw/3711"
+      ],
+      "facts": {
+        "primary_disclosure": {
+          "company_code": "3711",
+          "published_at": "2026-10-20 18:05:18 Asia/Taipei",
+          "event_period": "2026-10-05 through2026-10-20",
+          "asset": "Fourbatches ofbusiness-use equipment purchased bySPIL fromAdvantest",
+          "amount_TWD": 1594674905,
+          "payment": "wire transfer",
+          "official_table_as_of": "2026-10-21",
+          "retrieval_time": "2026-10-21 16:38:17 UTC"
+        },
+        "separate_media_lead": "October21media headline reports approximatelyTWD805million facility-engineering procurement fromActer. The current official exchange snapshot coversOctober20announcements and doesnot verify thisOctober21contract.",
+        "limits": "Historical procurement,newtoledger;no AI-onlyuse,incrementalNVIDIAallocation,capacityunits,deliveryacceptance,supplierrevenue ormarginrevision disclosed. Do notattach theequipment amount to the separateengineering contract or treat routinecapex asproof ofnewenddemand."
+      },
+      "questions": [
+        "Retrieve the datedOctober21materialannouncement to verify facilityscope,value andcounterparty.",
+        "Verify commissioning,AI-specificcustomer allocation andprofitconversion beforechanging theearningsassessment."
+      ],
+      "publication_status": "candidate_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -20992,7 +21062,7 @@
     }
   ],
   "last_research_date": "2026-10-22",
-  "instruction_commit_sha": "98b415cd00e820bea087abe67dabaafe113952bc",
+  "instruction_commit_sha": "255868e37c84ac6fbd92c203f525f357ba746b52",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
