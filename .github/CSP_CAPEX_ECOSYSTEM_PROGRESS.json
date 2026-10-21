@@ -3759,7 +3759,7 @@
   "coverage": {
     "universe_source": "rightson/alpha-quant:seeds/watchlists/ai_supply_chain_universe.csv",
     "status": "all_98_search_screened_primary_validation_partial",
-    "universe_commit_sha": "15737456c090bdcb099718fe47a1b85562ddbe5c",
+    "universe_commit_sha": "fe46ee4e96c79c10cd1d06abce9b0224bda0b686",
     "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
     "active_count": 98,
     "search_screened_count": 98,
@@ -3827,14 +3827,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-21",
-      "checked_at": "2026-10-21T12:26:05Z",
-      "instruction_commit_sha": "2a0f432b3b1950db796ae979cabcd8d31988bb9a",
-      "status": "existing_material_events_deduplicated_no_new_verified_revision",
+      "checked_at": "2026-10-21 13:49:54 UTC",
+      "instruction_commit_sha": "af6dc0873849324b005ea4c1d363895c3b6b90e3",
+      "status": "no_new_verified_material_event_after_source_age_reconciliation",
       "company_count": 98,
       "grouped_query_count": 14,
-      "universe_commit_sha": "15737456c090bdcb099718fe47a1b85562ddbe5c",
+      "universe_commit_sha": "fe46ee4e96c79c10cd1d06abce9b0224bda0b686",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All98active names submitted in14grouped discovery queries;five core issuer indexes readable,Broadcom403 with targeted official-domain search.Not a full current individual-filings audit.",
+      "scope": "All 98 active names submitted in 14 grouped discovery queries. Six core issuer indexes read, including recovered Broadcom access. Discovery screening does not constitute a complete current company-filings audit.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -3842,15 +3842,15 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://investor.marvell.com/news-events/press-releases",
-        "https://xenospectrum.com/en/nvidia-customer-backstop-equity-ratio/",
-        "https://www.reuters.com/business/retail-consumer/openai-sell-its-top-models-google-cloud-latest-enterprise-push-2026-10-21/"
+        "https://www.cna.com.tw/news/afe/202601300336.aspx",
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=85938d69-0816-4636-b554-86ac9b67297a"
       ],
       "source_limits": [
-        "Mandatory instructions and specifications read at lockedcommit;completeprogressJSONparsed andthree relatedarticles read.55distinct historical primarycompanybaselines,43pending unchanged.",
-        "October21NVIDIAKYEC/Unimicron/SPIL commitments andA5Xplans alreadyregistered.No repeatnotification based onsamefacts.",
-        "NVIDIA164.5billion headline is secondaryauthor aggregation of historicalAugustfiling items,not anewOctober21guarantee,lossorforecast.Primarysumand overlappingcommitments not independentlyrevalidatedthisrun.",
-        "OpenAI-GoogleCloud distribution report discovered;Reutersbody inaccessible andcurrent issueroriginalnot obtained.No inference of a newhardwareprocurement,TPUdesignwin orMediaTekallocation.",
-        "Freshuniverse discovery mainlyreturned historicalmonthlyrevenue,TPCAproductclaims andexistingbrokercommentary.No new verifiedearnings/capexrevision established.No articleorpublicationclaim;no privateprices,valuations orBdata savedhere."
+        "Mandatory instructions, specified research and taxonomy files, complete progress JSON and three recent related articles read at the same locked instruction commit. Historical primary-company coverage remains 55 of 98; 43 still pending individual primary validation.",
+        "October 21 Kinsus NT$23.5 billion expansion headline reconciles to the January 30 board-approved annual capital budget. No newly verified budget revision established; historical budget not treated as an incremental announcement.",
+        "Broadcom October 21 Arcot software announcement contains no verified incremental CSP procurement or supply-chain allocation change. Latest visible TSMC, MediaTek, AMD and Marvell issuer indexes establish no new capex, NRE or customer-allocation revision in this check.",
+        "Previously registered NVIDIA KYEC/Unimicron/SPIL commitments, A5X plans and GF-TSMC interposer agreement deduplicated. Historical NVIDIA commitment aggregation and OpenAI-GoogleCloud distribution lead remain subject to the previously recorded original-source limits.",
+        "No new public event or article created. No private prices, valuations, holdings, institution-flow data or private market-structure analysis included in this repository update."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -11361,6 +11361,34 @@
           "OpenAI-GoogleCloud distribution report discovered;Reutersbody inaccessible andcurrent issueroriginalnot obtained.No inference of a newhardwareprocurement,TPUdesignwin orMediaTekallocation.",
           "Freshuniverse discovery mainlyreturned historicalmonthlyrevenue,TPCAproductclaims andexistingbrokercommentary.No new verifiedearnings/capexrevision established.No articleorpublicationclaim;no privateprices,valuations orBdata savedhere."
         ]
+      },
+      {
+        "date": "2026-10-21",
+        "checked_at": "2026-10-21 13:49:54 UTC",
+        "instruction_commit_sha": "af6dc0873849324b005ea4c1d363895c3b6b90e3",
+        "status": "no_new_verified_material_event_after_source_age_reconciliation",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "fe46ee4e96c79c10cd1d06abce9b0224bda0b686",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All 98 active names submitted in 14 grouped discovery queries. Six core issuer indexes read, including recovered Broadcom access. Discovery screening does not constitute a complete current company-filings audit.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.cna.com.tw/news/afe/202601300336.aspx",
+          "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=85938d69-0816-4636-b554-86ac9b67297a"
+        ],
+        "source_limits": [
+          "Mandatory instructions, specified research and taxonomy files, complete progress JSON and three recent related articles read at the same locked instruction commit. Historical primary-company coverage remains 55 of 98; 43 still pending individual primary validation.",
+          "October 21 Kinsus NT$23.5 billion expansion headline reconciles to the January 30 board-approved annual capital budget. No newly verified budget revision established; historical budget not treated as an incremental announcement.",
+          "Broadcom October 21 Arcot software announcement contains no verified incremental CSP procurement or supply-chain allocation change. Latest visible TSMC, MediaTek, AMD and Marvell issuer indexes establish no new capex, NRE or customer-allocation revision in this check.",
+          "Previously registered NVIDIA KYEC/Unimicron/SPIL commitments, A5X plans and GF-TSMC interposer agreement deduplicated. Historical NVIDIA commitment aggregation and OpenAI-GoogleCloud distribution lead remain subject to the previously recorded original-source limits.",
+          "No new public event or article created. No private prices, valuations, holdings, institution-flow data or private market-structure analysis included in this repository update."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -18700,7 +18728,7 @@
     }
   ],
   "last_research_date": "2026-10-21",
-  "instruction_commit_sha": "2a0f432b3b1950db796ae979cabcd8d31988bb9a",
+  "instruction_commit_sha": "af6dc0873849324b005ea4c1d363895c3b6b90e3",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
