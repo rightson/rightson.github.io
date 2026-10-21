@@ -5744,14 +5744,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-22",
-      "checked_at": "2026-10-21 16:38:17 UTC",
-      "instruction_commit_sha": "255868e37c84ac6fbd92c203f525f357ba746b52",
-      "status": "full_98_name_discovery_checked_no_new_material_revision_verified",
+      "checked_at": "2026-10-21 18:18:30 UTC",
+      "instruction_commit_sha": "2ccc5e054250592d75a50d3f17638c59a654c5e7",
+      "status": "full_98_name_discovery_and_dated_material_notice_screen_no_new_material_revision",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "40d8a41e9067fb18c3becf64527795cb83fa932f",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "Full98active names submitted in14grouped discovery queries. Sixcoreissuerindices andtargetedCSP/financing/counterparty checks. Discovery isnot acomplete current-filings audit.",
+      "scope": "All98active names in14groupeddiscoveryqueries;freshsixcoreissuerindices,Meta/Amphenolindices anddatedexchange-materialsnapshot. Not a98completecurrent-filingsaudit.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -5759,8 +5759,11 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://investor.marvell.com/news-events/press-releases",
+        "https://investor.atmeta.com/investor-news/default.aspx",
+        "https://investors.amphenol.com/news-and-events/financial-news/default.aspx",
         "https://mops.twse.com.tw/mops/#/web/t05st01",
-        "https://investor.fermiamerica.com/fermi-announces-binding-lease-agreement-with-tensorwave"
+        "https://www.tradingview.com/news/seekingalpha:80afd954b094b:0-google-s-tpu-v9-faces-slight-delay-marvell-remains-well-positioned-long-term-in-supply-chain-gf/",
+        "https://money.udn.com/money/story/5739/9829498"
       ],
       "company_check_scope": {
         "newly_primary_verified_symbols": [],
@@ -5769,13 +5772,14 @@
         "remaining_without_any_primary_fact": 0
       },
       "source_limits": [
-        "Requiredinstructions,classification,specifications,completeprogress andthreerelatedarticles fetched atsame instructioncommit;unchangedinstructionblobhashes. Largeprogress JSON read throughGitblob,notemptyContentsAPIresponse.",
-        "All98Septembermonthlyrecords remain historical baseline,not a newperiod or98complete companyaudits. Current groupeddiscoveryreturned calendar,mixed/stale-datenews,social andrecycledheadlines;date-mismatched claims were excluded.",
-        "TSMC latest-news HTML wasread directly afterwebextractor omitted entries:latestOctober15Q3 andOctober8Septemberrevenue. MediaTek latestSeptember30;NVIDIAOctober21supplychain/A5X,AMDOctober12,BroadcomOctober21Arcot andMarvellOctober13 remain recordedbaselines.",
-        "ExistingAnthropic,NextDC,Supermicro,PSMC,NVIDIAsupplychain,GoogleOpenAI andVertivPolarevents deduplicated. Fermi initialTensorWavelease isAugust10,not anewOctober21lease;October13creditsupport andOctober16loanamendment remain separatestages.",
-        "Officialexchange materialtable datedOctober21 containsOctober20ASEequipmentfiling. October21SPIL/Acterengineeringheadline remains a separatecandidate pendingoriginal,not a confirmed additionto anAIorder. Noequipmentmodel,AIcustomerallocation ormargin assumed.",
-        "TargetedcurrentCSPofficial-domain searches producedemptyresults;this doesnot demonstrateabsenceofnews. No newverified hyperscalercapexcut,MediaTekTPUallocation,NREsplit orsupplierforecastrevision established.",
-        "Researchledger only;noarticle,prices,valuation,holdings orprivatemarket-monitor dataadded."
+        "All requiredinstructionfiles,specifications,classification andthree relatedarticles fetched fullyatlockedcommit withunchangedblobs. CompleteprogressJSONread throughGitblob;emptyContentsAPIcontentwasnot treatedasfullread.",
+        "Septemberrevenuebaseline98retained. All98names submittedforcurrentdiscovery;stale2018/2025,datedmonthlyreports,socialcontent andrecycledforecastheadlinesexcluded asnewfacts.",
+        "TSMC directHTMLstillshowsOctober15Q3 andOctober8monthlybaseline;webtext omittedtheseentries. MediaTekSeptember30,NVIDIAOctober21,AMDOctober12,BroadcomOctober21Arcot andMarvellOctober13 indicesremain prioreventbaselines. No newverifiedTPUallocation,NREorcoreguidancechange.",
+        "OfficialTWSEsnapshot has112totalnotices,tabledateOctober21 andactive-pooldisclosuresdatedOctober20;12noticesacross8activeissuersread. ThisisnotOctober21completefilingcoverage. PSMCequipmentandKaoriproceedsoriginalverificationappended toexistingcandidates;no financialrevisioninferred.",
+        "AttemptedTPExmaterialroute returnednonJSON;route/contentavailabilityunresolved,not evidenceofanexchangeoutage ornoOTCevents. OTCcurrentannouncementsremainpartialdiscoverycoverage.",
+        "GFHumufishdelaybody matchesalreadyrecordedOctober13institutionalresearch;originalnote/currentissuerconfirmationandquantifiedearningsrevisionstillpending. Syndicationisnotnewindependentconfirmation. 弘塑October21lateheadline iswarrant commentary citingknownQ3revenueandmaintainedrating;not a newcompanyforecast.",
+        "Meta/Amphenolwebindicesdidnotexposecurrentresultbodies. Preview/analystcommentarynotpromotedtoissuedquarterlyresults. VertivQ3scheduledOctober28;noactualQ3revisionverified.",
+        "Onlypublicsourceandverificationstagesrecorded;noarticle,individualquote,valuation,holdings orprivatemarket-monitor dataadded."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -13554,6 +13558,46 @@
           "TargetedcurrentCSPofficial-domain searches producedemptyresults;this doesnot demonstrateabsenceofnews. No newverified hyperscalercapexcut,MediaTekTPUallocation,NREsplit orsupplierforecastrevision established.",
           "Researchledger only;noarticle,prices,valuation,holdings orprivatemarket-monitor dataadded."
         ]
+      },
+      {
+        "date": "2026-10-22",
+        "checked_at": "2026-10-21 18:18:30 UTC",
+        "instruction_commit_sha": "2ccc5e054250592d75a50d3f17638c59a654c5e7",
+        "status": "full_98_name_discovery_and_dated_material_notice_screen_no_new_material_revision",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "40d8a41e9067fb18c3becf64527795cb83fa932f",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All98active names in14groupeddiscoveryqueries;freshsixcoreissuerindices,Meta/Amphenolindices anddatedexchange-materialsnapshot. Not a98completecurrent-filingsaudit.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://investor.atmeta.com/investor-news/default.aspx",
+          "https://investors.amphenol.com/news-and-events/financial-news/default.aspx",
+          "https://mops.twse.com.tw/mops/#/web/t05st01",
+          "https://www.tradingview.com/news/seekingalpha:80afd954b094b:0-google-s-tpu-v9-faces-slight-delay-marvell-remains-well-positioned-long-term-in-supply-chain-gf/",
+          "https://money.udn.com/money/story/5739/9829498"
+        ],
+        "company_check_scope": {
+          "newly_primary_verified_symbols": [],
+          "cumulative_distinct_primary_fact_count": 98,
+          "cumulative_monthly_revenue_count": 98,
+          "remaining_without_any_primary_fact": 0
+        },
+        "source_limits": [
+          "All requiredinstructionfiles,specifications,classification andthree relatedarticles fetched fullyatlockedcommit withunchangedblobs. CompleteprogressJSONread throughGitblob;emptyContentsAPIcontentwasnot treatedasfullread.",
+          "Septemberrevenuebaseline98retained. All98names submittedforcurrentdiscovery;stale2018/2025,datedmonthlyreports,socialcontent andrecycledforecastheadlinesexcluded asnewfacts.",
+          "TSMC directHTMLstillshowsOctober15Q3 andOctober8monthlybaseline;webtext omittedtheseentries. MediaTekSeptember30,NVIDIAOctober21,AMDOctober12,BroadcomOctober21Arcot andMarvellOctober13 indicesremain prioreventbaselines. No newverifiedTPUallocation,NREorcoreguidancechange.",
+          "OfficialTWSEsnapshot has112totalnotices,tabledateOctober21 andactive-pooldisclosuresdatedOctober20;12noticesacross8activeissuersread. ThisisnotOctober21completefilingcoverage. PSMCequipmentandKaoriproceedsoriginalverificationappended toexistingcandidates;no financialrevisioninferred.",
+          "AttemptedTPExmaterialroute returnednonJSON;route/contentavailabilityunresolved,not evidenceofanexchangeoutage ornoOTCevents. OTCcurrentannouncementsremainpartialdiscoverycoverage.",
+          "GFHumufishdelaybody matchesalreadyrecordedOctober13institutionalresearch;originalnote/currentissuerconfirmationandquantifiedearningsrevisionstillpending. Syndicationisnotnewindependentconfirmation. 弘塑October21lateheadline iswarrant commentary citingknownQ3revenueandmaintainedrating;not a newcompanyforecast.",
+          "Meta/Amphenolwebindicesdidnotexposecurrentresultbodies. Preview/analystcommentarynotpromotedtoissuedquarterlyresults. VertivQ3scheduledOctober28;noactualQ3revisionverified.",
+          "Onlypublicsourceandverificationstagesrecorded;noarticle,individualquote,valuation,holdings orprivatemarket-monitor dataadded."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -18099,7 +18143,26 @@
         "Separate SOFC/thermal energy content from liquid-cooling exchanger sales and industrial demand.",
         "Test customer concentration,price retention and cash conversion as new capacity adds depreciation."
       ],
-      "publication_status": "not_drafted"
+      "publication_status": "not_drafted",
+      "verification_updates": [
+        {
+          "date": "2026-10-22",
+          "checked_at": "2026-10-21 18:18:30 UTC",
+          "instruction_commit_sha": "2ccc5e054250592d75a50d3f17638c59a654c5e7",
+          "stage": "historical_october20_convertible_bond_proceeds_received_primary_notice_verified",
+          "sources": [
+            "https://mops.twse.com.tw/mops/#/web/t05st01"
+          ],
+          "facts": {
+            "issuer_code": "8996",
+            "announcement_time": "2026-10-20 14:30:55 Asia/Taipei",
+            "amount_TWD": 2064715500,
+            "stage": "Issuer says collectionbank received allsubscriptionproceeds forthe sixthdomestic unsecuredconvertiblebond andtransferred fundsto designatedaccount.",
+            "table_as_of": "2026-10-21"
+          },
+          "limits": "Newtoverificationhistory,notnewOctober22financing.Notproof ofspecificAIplantspending,customerqualification,capacitycommissioning orprofitrevision;useofproceedsnotdetailed inthisnotice."
+        }
+      ]
     },
     {
       "key": "amd-helios-attributed-keybanc-rack-ramp-original-validation",
@@ -20616,7 +20679,28 @@
         "Obtain issuer/exchange original and separate cumulative purchases from new incremental capex guidance.",
         "Verify product/process allocation before connecting this purchase to CSP demand."
       ],
-      "publication_status": "provisional_lead_no_material_alert_no_article"
+      "publication_status": "provisional_lead_no_material_alert_no_article",
+      "verification_updates": [
+        {
+          "date": "2026-10-22",
+          "checked_at": "2026-10-21 18:18:30 UTC",
+          "instruction_commit_sha": "2ccc5e054250592d75a50d3f17638c59a654c5e7",
+          "stage": "original_exchange_notice_verified_historical_purchase_no_ai_allocation_or_guidance_change",
+          "sources": [
+            "https://mops.twse.com.tw/mops/#/web/t05st01"
+          ],
+          "facts": {
+            "issuer_code": "6770",
+            "announcement_time": "2026-10-20 16:59:29 Asia/Taipei",
+            "event_period": "2026-06-22 through2026-10-20",
+            "counterparty": "TOKYO ELECTRON LIMITED",
+            "amount_TWD": 1060300000,
+            "purpose": "Wafer manufacturing facilities andequipment",
+            "table_as_of": "2026-10-21"
+          },
+          "limits": "Resolves theprior missingoriginalfortheprocurementamount;not a newOctober22contract,incremental annualcapexguidance orAI-specificcapacity. Product/processallocation,deliveryandprofitcontribution remainundisclosed."
+        }
+      ]
     },
     {
       "key": "supermicro-fq1-2027-preliminary-revenue-margin-upward-revision-20261020",
@@ -21062,7 +21146,7 @@
     }
   ],
   "last_research_date": "2026-10-22",
-  "instruction_commit_sha": "255868e37c84ac6fbd92c203f525f357ba746b52",
+  "instruction_commit_sha": "2ccc5e054250592d75a50d3f17638c59a654c5e7",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
