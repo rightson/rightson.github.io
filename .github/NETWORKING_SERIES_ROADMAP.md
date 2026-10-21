@@ -33,12 +33,28 @@ series: networking-deep-dive，domain/categories: networking。每次先讀最�
 - Public content：2026-10-14 19:24:06 +0800 核對正式頁面標題、正文、數值與 Liquid 連結；四張公開 SVG 與提交檔案逐 byte 相符。正式 article text 依現行 site.js（CJK／400＋其他詞／220，向上取整）為約 19 分鐘。
 - 歷史文章未修改日期、URL、分類或篇號。本條僅記錄本次已成立的發布與算例階段。
 
+## 已核驗完成記錄
+
+### IRN 讓失序封包先落地，補齊缺口後才宣告 RDMA 完成
+
+- 文章：[IRN 讓失序封包先落地，補齊缺口後才宣告 RDMA 完成](https://rightson.github.io/networking/2026/10/21/irn-selective-retransmission-rdma-completion.html)。
+- 原稿：`_posts/2026-10-21-irn-selective-retransmission-rdma-completion.md`；series／domain：networking-deep-dive／networking。
+- Instruction commit：`832e329b3f352868b8079106bc3f97e206939726`；文章、四張 SVG、試算程式與結果同 commit：`bded9a7fe2f627e1708006dae41135870d96a320`。
+- 原始依據：IRN extended paper（2018-06-21，SIGCOMM 2018）；RFC 5040／5041；DCQCN（SIGCOMM 2015）。
+- 新增理解：累積 ACK／SACK bitmap／recovery sequence 的修補路徑，BDP-FC 對 queue 與 bitmap 的雙重上限，Write／Read／Send／Atomic 的 OOO placement 與 completion gating，以及 tail packet 先到時仍不可交付 CQE 的條件。
+- 量化階段：已執行 `scripts/experiments/irn_selective_retransmission.py`，結果在相鄰 `.results.json`；64 包、PSN 7／29 遺失的固定案例中，go-back-N 總傳送 121 包，選擇性重傳 66 包；12 包 completion 案例到 PSN 2 補洞後才可見。這是 deterministic packet accounting 與 BDP 公式，不是 network simulation、RTL 或實體 RNIC 實驗。
+- 靜態檢查：本地文章 lint 通過；GitHub Post lint gate run [39590115212](https://github.com/rightson/rightson.github.io/actions/runs/39590115212) 成功；四張 SVG 的 XML、引用路徑、深淺色、日期簽名及正式頁面載入均通過。
+- Source：七個新增檔案依文章 commit 完整回讀，blob SHA 全部相符。
+- Build／deploy：GitHub Pages run [39590115159](https://github.com/rightson/rightson.github.io/actions/runs/39590115159) 對應上述文章 commit，建置與部署成功。
+- Public content：2026-10-21 19:13:05 +0800 以正式頁面核對標題、正文、121→66 包數值、證據範圍、內部連結與四張公開 SVG；現行 site.js 顯示約 12 分鐘閱讀。
+- 歷史文章未修改日期、URL、分類或篇號。本條僅記錄已成立的發布與算例階段。
+
 ## 接續候選
 
-### IRN 的選擇性重傳如何維持 RDMA 完成語意
+### Eunomia 如何讓 RDMA 承受多路徑造成的大範圍失序
 
-- 原始日期／來源：2018-06-21，[Revisiting Network Support for RDMA extended version](https://arxiv.org/html/1806.08159v1)，SIGCOMM 2018 工作。
-- 主要問題：失序資料、SACK bitmap、BDP-FC 與 operation completion 如何共同控制丟包後的傳送與交付。
-- 先備：QP、packet sequence、ACK／NACK、RDMA WRITE／READ／SEND 與完成通知；本次 PFC／ECN 資料預算。
-- 相關文章：本次 RoCE buffer 長文、STORM RNIC 排程。
-- 尚缺：逐 operation 的完整機制推導、原文 §5／§6 及 Appendix B 的語意核對、有限在途狀態的量化與故障重播。當前僅完成選材，不宣稱已實作或已驗證 production transport。
+- 原始日期／來源：2024-12-11，[Orderly Management of Packets in RDMA by Eunomia](https://arxiv.org/abs/2412.08540)，後收錄 APNet 2025。
+- 主要問題：當失序不是偶發丟包的副作用，而是 packet spraying、fine-grained load balancing 或 expander topology 的常態，hybrid-dynamic bitmap 如何控制 on-chip memory 與 reordering window。
+- 先備：IRN 的 SACK／arrival bitmap、BDP-FC、OOO placement 與 completion gating；ECMP／flowlet／packet spraying 的 path-level 失序來源。
+- 相關文章：本次 IRN 長文、RoCE PFC／ECN、ConWeave 與 topology mapping。
+- 尚缺：Eunomia bitmap expansion／reclamation、memory controller 與 ACK/SACK data path 的逐步推導；FPGA 與 simulation 假設核對；與 IRN 固定 BDP-sized bitmap、in-network reordering 及現代 RNIC context cache 的量化比較。當前僅完成選材。
