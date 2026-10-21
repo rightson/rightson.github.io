@@ -3450,6 +3450,67 @@
         "limits": "Historical company-total revenue only;no AI-specific revenue,customer order,profit revision or new October21 guidance inferred."
       },
       "status": "issuer_numeric_body_verified_historical_baseline_no_material_alert"
+    },
+    {
+      "fingerprint": "supermicro-fq1-2027-preliminary-revenue-margin-upward-revision-20261020",
+      "event_date": "2026-10-20",
+      "discovered_date": "2026-10-21",
+      "instruction_commit_sha": "99bde0d998d1f0ea670f7ad538ec417d8ea45a80",
+      "companies": [
+        "Supermicro"
+      ],
+      "type": "issuer_preliminary_completed_quarter_revenue_and_margin_revision",
+      "sources": [
+        "https://ir.supermicro.com/news/news-details/2026/Supermicro-Provides-First-Quarter-of-Fiscal-Year-2027-Preliminary-Business-Update/default.aspx",
+        "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000025/smcifirstquarterfy2027busi.htm",
+        "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx"
+      ],
+      "facts": {
+        "period": "FY2027Q1 ended September30,2026",
+        "currency": "USD",
+        "revenue_unit": "billion",
+        "previous_revenue_guidance": [
+          14.5,
+          15.5
+        ],
+        "preliminary_revenue": [
+          18.5,
+          19.5
+        ],
+        "derived_revenue_midpoint_increase_percent": 26.6667,
+        "previous_gross_margin_guidance_percent": [
+          10.4,
+          10.8
+        ],
+        "preliminary_gross_margin_percent": [
+          12,
+          12.5
+        ],
+        "prior_quarter_gaap_gross_margin_percent": 17.5,
+        "attribution": "Issuer cites increased AI-platform demand for revenue revision and customer/product mix for margin revision.",
+        "limits": "Unaudited preliminary completed-quarter estimates;auditor has not performed procedures.Not next-quarter/annual guidance,new cash receipts,all-industry demand or named Taiwan supplier order.No EPS/FCF revision quantified.",
+        "next_company_check": "November3,2026 full quarterly results and cash/receivable/order conversion."
+      },
+      "status": "issuer_release_sec_exhibit_and_historical_guide_read_no_article"
+    },
+    {
+      "fingerprint": "google-pichai-frontier-compute-allocation-cloud-opportunity-cost-interview-20261020",
+      "event_date": "2026-10-20",
+      "discovered_date": "2026-10-21",
+      "instruction_commit_sha": "99bde0d998d1f0ea670f7ad538ec417d8ea45a80",
+      "companies": [
+        "Alphabet/Google"
+      ],
+      "type": "executive_original_interview_capacity_allocation_statement",
+      "sources": [
+        "https://www.bigtechnology.com/p/sundar-pichai-googles-frontier-imperative"
+      ],
+      "facts": {
+        "statement": "Pichai says frontier research receives priority compute and Google forgoes some near-term cloud revenue;2027 incremental customer capacity remains difficult to accommodate.",
+        "qualification": "Executive interview,not quantified financial guidance.Cloud contracts guide planning;management also acknowledges constrained components can cause overbuilds and macro shocks.",
+        "limits": "No annual capex change,revenue amount,utilization measurement,TPU procurement split,MediaTek allocation or supplier earnings revision disclosed."
+      },
+      "status": "original_interview_selected_compute_allocation_sections_read_no_separate_repeat_alert_no_article"
     }
   ],
   "articles": [],
@@ -3522,15 +3583,15 @@
     ],
     "current_run_screening": {
       "date": "2026-10-21",
-      "checked_at": "2026-10-21T03:41:02Z",
-      "instruction_commit_sha": "d06c0f72985e786f9cfc84cab1a72f7261802d72",
-      "status": "fresh_screening_no_new_material_increment_historical_psmc_primary_baseline_added",
+      "checked_at": "2026-10-21T05:31:30Z",
+      "instruction_commit_sha": "99bde0d998d1f0ea670f7ad538ec417d8ea45a80",
+      "status": "new_supermicro_preliminary_earnings_increment_and_google_compute_allocation_original",
       "company_count": 98,
       "grouped_query_count": 14,
-      "additional_targeted_query_count": 8,
+      "additional_targeted_query_count": 12,
       "universe_commit_sha": "15737456c090bdcb099718fe47a1b85562ddbe5c",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "98 active names in14 grouped discovery queries,8 targeted core/CSP and issuer-source queries,and six core issuer news indexes;not98 issuer-by-issuer current filing audits.",
+      "scope": "98 active names in14 grouped discovery searches,12 targeted core/CSP,preliminary-results and source/quote queries,and six core issuer index attempts.Not98 current issuer-filings audits.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -3538,21 +3599,22 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://investor.marvell.com/news-events/press-releases",
-        "https://www.powerchip.com/ja-jp/insights/press-releases/content/20261008"
+        "https://ir.supermicro.com/news/news-details/2026/Supermicro-Provides-First-Quarter-of-Fiscal-Year-2027-Preliminary-Business-Update/default.aspx",
+        "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000025/smcifirstquarterfy2027busi.htm",
+        "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx",
+        "https://www.bigtechnology.com/p/sundar-pichai-googles-frontier-imperative"
       ],
       "company_check_scope": {
-        "new_active_universe_primary_issuer_originals": [
-          "6770"
-        ],
+        "new_active_universe_primary_issuer_originals": [],
         "cumulative_primary_company_fact_count": 53,
         "cumulative_pending": 45
       },
       "source_limits": [
-        "All mandatory instruction/specification files acquired at locked commit;full progress JSON parsed and related posts acquired with unchanged blobs.Latest head/target blob rechecked before writing.",
-        "PSMC historical issuer September revenue body adds one baseline,not a new order or profit alert.Equipment acquisition remains an indexed reproduction lead.",
-        "NEXTDC revised guidance and SpaceX reported Q4 capex are already recorded;no further substantive increment established.Core issuer indexes have no newer pertinent disclosure.",
-        "Grouped search includes intraday rebounds,dated monthly releases and calendar items;these are not confirmed post-close market reversals or new supplier order evidence.",
-        "ZhenDing issuer index and specificTPCA release failed502;FT CoreWeave column inaccessible;Yahoo GF/TPU article failed429.No full-body confirmation or new quantitative conclusion adopted.",
+        "Mandatory instructions/specifications and recent related posts acquired at locked commit with unchanged blobs;complete progress JSON parsed.Latest head and target blob checked before writing.",
+        "Supermicro and Google are outside the98-name Taiwan universe;watchlist and active primary counts unchanged.Supermicro record is preliminary completed-quarter estimates,not forward full-year growth or cash-flow validation.",
+        "Google original interview selected compute-allocation sections read;unquantified executive statements not a new budget or chip procurement contract.",
+        "Core TSMC,MediaTek,NVIDIA,AMD andMarvell indexes read;Broadcom direct index403.No claim of fully current original-source coverage across six issuers.",
+        "NEXTDC,Anthropic,SpaceX and prior TPU timing reports deduplicated.Qisda andABF/Ibiden leads remain excerpt-level or original-body unavailable;no new earnings conclusion adopted from them.",
         "No article,lint/build/deploy claim,quotes,valuation,private holdings or B-market monitoring data in public ledger."
       ]
     },
@@ -10759,6 +10821,43 @@
           "ZhenDing issuer index and specificTPCA release failed502;FT CoreWeave column inaccessible;Yahoo GF/TPU article failed429.No full-body confirmation or new quantitative conclusion adopted.",
           "No article,lint/build/deploy claim,quotes,valuation,private holdings or B-market monitoring data in public ledger."
         ]
+      },
+      {
+        "date": "2026-10-21",
+        "checked_at": "2026-10-21T05:31:30Z",
+        "instruction_commit_sha": "99bde0d998d1f0ea670f7ad538ec417d8ea45a80",
+        "status": "new_supermicro_preliminary_earnings_increment_and_google_compute_allocation_original",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "additional_targeted_query_count": 12,
+        "universe_commit_sha": "15737456c090bdcb099718fe47a1b85562ddbe5c",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "98 active names in14 grouped discovery searches,12 targeted core/CSP,preliminary-results and source/quote queries,and six core issuer index attempts.Not98 current issuer-filings audits.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://ir.supermicro.com/news/news-details/2026/Supermicro-Provides-First-Quarter-of-Fiscal-Year-2027-Preliminary-Business-Update/default.aspx",
+          "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000025/smcifirstquarterfy2027busi.htm",
+          "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx",
+          "https://www.bigtechnology.com/p/sundar-pichai-googles-frontier-imperative"
+        ],
+        "company_check_scope": {
+          "new_active_universe_primary_issuer_originals": [],
+          "cumulative_primary_company_fact_count": 53,
+          "cumulative_pending": 45
+        },
+        "source_limits": [
+          "Mandatory instructions/specifications and recent related posts acquired at locked commit with unchanged blobs;complete progress JSON parsed.Latest head and target blob checked before writing.",
+          "Supermicro and Google are outside the98-name Taiwan universe;watchlist and active primary counts unchanged.Supermicro record is preliminary completed-quarter estimates,not forward full-year growth or cash-flow validation.",
+          "Google original interview selected compute-allocation sections read;unquantified executive statements not a new budget or chip procurement contract.",
+          "Core TSMC,MediaTek,NVIDIA,AMD andMarvell indexes read;Broadcom direct index403.No claim of fully current original-source coverage across six issuers.",
+          "NEXTDC,Anthropic,SpaceX and prior TPU timing reports deduplicated.Qisda andABF/Ibiden leads remain excerpt-level or original-body unavailable;no new earnings conclusion adopted from them.",
+          "No article,lint/build/deploy claim,quotes,valuation,private holdings or B-market monitoring data in public ledger."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -17763,6 +17862,66 @@
         "Verify product/process allocation before connecting this purchase to CSP demand."
       ],
       "publication_status": "provisional_lead_no_material_alert_no_article"
+    },
+    {
+      "key": "supermicro-fq1-2027-preliminary-revenue-margin-upward-revision-20261020",
+      "date": "2026-10-21",
+      "event_date": "2026-10-20",
+      "instruction_commit_sha": "99bde0d998d1f0ea670f7ad538ec417d8ea45a80",
+      "companies": [
+        "Supermicro"
+      ],
+      "sources": [
+        "https://ir.supermicro.com/news/news-details/2026/Supermicro-Provides-First-Quarter-of-Fiscal-Year-2027-Preliminary-Business-Update/default.aspx",
+        "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000025/smcifirstquarterfy2027busi.htm",
+        "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx"
+      ],
+      "stage": "issuer_release_sec_exhibit_and_historical_guide_read_no_article",
+      "questions": [
+        "Reconcile preliminary estimates with November3 statements,receivables and operating cash.",
+        "Separate new demand,backlog fulfilment and competitor share transfer.",
+        "Verify future quarter guidance and named supply-chain order economics."
+      ],
+      "publication_status": "public_event_recorded_no_article"
+    },
+    {
+      "key": "google-pichai-frontier-compute-allocation-cloud-opportunity-cost-interview-20261020",
+      "date": "2026-10-21",
+      "event_date": "2026-10-20",
+      "instruction_commit_sha": "99bde0d998d1f0ea670f7ad538ec417d8ea45a80",
+      "companies": [
+        "Alphabet/Google"
+      ],
+      "sources": [
+        "https://www.bigtechnology.com/p/sundar-pichai-googles-frontier-imperative"
+      ],
+      "stage": "original_interview_selected_compute_allocation_sections_read_no_separate_repeat_alert_no_article",
+      "questions": [
+        "Quantify internal-versus-external compute allocation,cloud margins and monetisation.",
+        "Compare capex and accepted deployments with contractual cloud demand;do not infer supplier allocation from capacity scarcity."
+      ],
+      "publication_status": "public_event_recorded_no_article"
+    },
+    {
+      "key": "qisda-reported-ai-server-order-and-limited-production-ramp-20261021",
+      "date": "2026-10-21",
+      "instruction_commit_sha": "99bde0d998d1f0ea670f7ad538ec417d8ea45a80",
+      "companies": [
+        "Qisda"
+      ],
+      "sources": [
+        "https://money.udn.com/money/story/5710/9827328"
+      ],
+      "stage": "indexed_original_news_excerpt_only_full_body_and_issuer_confirmation_pending",
+      "facts": {
+        "lead": "October21 indexed EconomicDailyNews report attributes AI-server orders/Q4 delivery plan and1.6T liquid-cooled switch small-production goal to management.",
+        "limits": "Direct original body fetch failed.No named customer,order value,accepted shipment,margin or EPS verified;not a confirmed material earnings revision."
+      },
+      "questions": [
+        "Obtain full issuer/management original and reconcile small production with accepted shipments.",
+        "Identify customer/product revenue and retained economics before treating as a new supplier opportunity."
+      ],
+      "publication_status": "provisional_candidate_no_alert_no_article"
     }
   ],
   "blockers": [
@@ -17782,7 +17941,7 @@
     }
   ],
   "last_research_date": "2026-10-21",
-  "instruction_commit_sha": "d06c0f72985e786f9cfc84cab1a72f7261802d72",
+  "instruction_commit_sha": "99bde0d998d1f0ea670f7ad538ec417d8ea45a80",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
