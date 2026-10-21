@@ -3432,22 +3432,26 @@
     ],
     "current_run_screening": {
       "date": "2026-10-21",
-      "checked_at": "2026-10-21T00:22:30Z",
-      "instruction_commit_sha": "6b6424bfb22e36dbc7b1d51551b564dd850eda15",
-      "status": "new_reported_anthropic_financial_disclosure_registered_no_article",
+      "checked_at": "2026-10-21T01:22:28Z",
+      "instruction_commit_sha": "693cdd6b8baab7677ae99f78f5a01fc98f11c36d",
+      "status": "fresh_grouped_discovery_and_core_issuer_checks_no_new_material_alert",
       "company_count": 98,
-      "grouped_query_count": 28,
-      "scope": "Two sets of14 grouped discovery queries; first set had poor recall and second set was repeated with simpler company names. Selective issuer indexes, core-company and event follow-ups; not98 individual current issuer-original audits.",
+      "grouped_query_count": 14,
+      "additional_targeted_query_count": 9,
+      "scope": "All98 active names in14 discovery groups, targeted core/CSP and supplier follow-ups, and six core issuer indexes. Search discovery is not individual current issuer-original validation.",
       "universe_commit_sha": "15737456c090bdcb099718fe47a1b85562ddbe5c",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
       "sources": [
-        "https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1",
-        "https://www.reuters.com/business/anthropic-recorded-net-loss-over-80-billion-first-half-this-year-wsj-reports-2026-10-20/",
-        "https://modal.com/blog/nvidia-vera-sandboxes",
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
         "https://nvidianews.nvidia.com/news/",
-        "https://ir.amd.com/news-events/press-releases"
+        "https://ir.amd.com/news-events/press-releases",
+        "https://investors.broadcom.com/financial-information/financial-news-releases",
+        "https://investor.marvell.com/news-events/press-releases",
+        "https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1",
+        "https://www.abb.com/global/en/news/139696/q3-2026-results",
+        "https://www.sigurd.com.tw/zh-tw/monthly-revenue",
+        "https://www.sigurd.com.tw/investors/news-center/news"
       ],
       "company_check_scope": {
         "new_active_universe_primary_issuer_originals": [],
@@ -3455,11 +3459,13 @@
         "cumulative_pending": 46
       },
       "source_limits": [
-        "Mandatory instructions and specifications read completely at instruction commit; latest main and progress blob rechecked before write.",
-        "Fresh grouped discovery covers all98 active names, not complete individual original validation. Cumulative primary baselines unchanged.",
-        "Anthropic report is original media evidence; independently retrieved public prospectus unavailable. No newly verified core-company capex or earnings reduction.",
-        "Modal original improves provenance for existing candidate only. Broadcom news index returned502; some CSP indexes were sparse/dynamic.",
-        "No article, lint/build/deploy claim, private market-flow data, stock quote, valuation, holdings or B monitor state in this ledger."
+        "All mandatory instruction/specification/configuration/taxonomy files acquired at locked instruction commit; full progress JSON parsed; recent related articles and existing fingerprints reviewed. Latest main and target blob checked before write.",
+        "Anthropic draft-disclosure report and ABB Q3 results are already registered events; no new disclosure, delivery change, core capex/earnings revision or supplier order established.",
+        "Broadcom original news index recovered this run; latest FedEx/NTT DOCOMO infrastructure agreements do not establish an incremental hyperscale AI chip procurement or Taiwan supplier earnings revision.",
+        "October20 King Slide Q4 pull-in reporting repeats the prior October8 platform-transition thesis; issuer acceptance, purchase allocation and economics remain unverified. No alert or primary-count increase.",
+        "Sigurd issuer monthly-revenue page and news index timed out. Indexed excerpts have ambiguous month/table association; no amount assigned to September and no primary-company baseline added.",
+        "Microsoft blog and Alphabet investor-news reads failed. Amazon/Meta/Oracle indexes returned sparse or dynamic information, so this is not a complete audit of all CSP filings.",
+        "No new article, lint/build/deploy claim, private prices, valuation, market-flow data, holdings or B-monitor state saved in public ledger."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -10520,6 +10526,44 @@
           "Modal original improves provenance for existing candidate only. Broadcom news index returned502; some CSP indexes were sparse/dynamic.",
           "No article, lint/build/deploy claim, private market-flow data, stock quote, valuation, holdings or B monitor state in this ledger."
         ]
+      },
+      {
+        "date": "2026-10-21",
+        "checked_at": "2026-10-21T01:22:28Z",
+        "instruction_commit_sha": "693cdd6b8baab7677ae99f78f5a01fc98f11c36d",
+        "status": "fresh_grouped_discovery_and_core_issuer_checks_no_new_material_alert",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "additional_targeted_query_count": 9,
+        "scope": "All98 active names in14 discovery groups, targeted core/CSP and supplier follow-ups, and six core issuer indexes. Search discovery is not individual current issuer-original validation.",
+        "universe_commit_sha": "15737456c090bdcb099718fe47a1b85562ddbe5c",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1",
+          "https://www.abb.com/global/en/news/139696/q3-2026-results",
+          "https://www.sigurd.com.tw/zh-tw/monthly-revenue",
+          "https://www.sigurd.com.tw/investors/news-center/news"
+        ],
+        "company_check_scope": {
+          "new_active_universe_primary_issuer_originals": [],
+          "cumulative_primary_company_fact_count": 52,
+          "cumulative_pending": 46
+        },
+        "source_limits": [
+          "All mandatory instruction/specification/configuration/taxonomy files acquired at locked instruction commit; full progress JSON parsed; recent related articles and existing fingerprints reviewed. Latest main and target blob checked before write.",
+          "Anthropic draft-disclosure report and ABB Q3 results are already registered events; no new disclosure, delivery change, core capex/earnings revision or supplier order established.",
+          "Broadcom original news index recovered this run; latest FedEx/NTT DOCOMO infrastructure agreements do not establish an incremental hyperscale AI chip procurement or Taiwan supplier earnings revision.",
+          "October20 King Slide Q4 pull-in reporting repeats the prior October8 platform-transition thesis; issuer acceptance, purchase allocation and economics remain unverified. No alert or primary-count increase.",
+          "Sigurd issuer monthly-revenue page and news index timed out. Indexed excerpts have ambiguous month/table association; no amount assigned to September and no primary-company baseline added.",
+          "Microsoft blog and Alphabet investor-news reads failed. Amazon/Meta/Oracle indexes returned sparse or dynamic information, so this is not a complete audit of all CSP filings.",
+          "No new article, lint/build/deploy claim, private prices, valuation, market-flow data, holdings or B-monitor state saved in public ledger."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -17432,7 +17476,7 @@
     }
   ],
   "last_research_date": "2026-10-21",
-  "instruction_commit_sha": "6b6424bfb22e36dbc7b1d51551b564dd850eda15",
+  "instruction_commit_sha": "693cdd6b8baab7677ae99f78f5a01fc98f11c36d",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
