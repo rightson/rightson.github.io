@@ -5952,6 +5952,78 @@
         "limits": "Webscreenshotcallsreturnedtextplaceholders;directPDFdownload403. No visual/chart-only segment shares used;full earningsaudio notlistened."
       },
       "status": "new_primary_quantified_outlook_and_reported_cash_quality_registered_no_article"
+    },
+    {
+      "fingerprint": "twse-october21-selected-notices-primary-completion-and-capital-project-facts-20261022",
+      "event_date": "2026-10-21",
+      "discovered_date": "2026-10-22",
+      "instruction_commit_sha": "7f8dd5bf31595acfe8c3eb0667e457f81eded83e",
+      "companies": [
+        "ChipMOS",
+        "Tripod",
+        "ASE Technology Holding",
+        "SPIL",
+        "PSMC",
+        "Nanya Technology",
+        "PCL Technologies",
+        "Zhen Ding Technology"
+      ],
+      "type": "official_exchange_issuer_notice_source_completion_and_dated_capital_project_disclosures",
+      "sources": [
+        "https://mops.twse.com.tw/mops/#/web/t05st01"
+      ],
+      "verification": {
+        "source": "TWSE official daily issuer material-information open-data table; table date1151022, announcement date1151021, company code/time/subject/body matched.",
+        "checked_at": "2026-10-21 21:36:37 UTC",
+        "source_sha256": "b8289faa293e9af605805a2d9d6f5ee5d220babb473da30c5ed81dd0e109fbe3",
+        "scope": "11 notices for seven active-universe listed issuers; not full active-universe current-filing coverage."
+      },
+      "facts": {
+        "official_announcement_times_Asia_Taipei": {
+          "8150_equipment": "15:15:00",
+          "3044_Hubei_facility_award": "15:20:06",
+          "3711_SPIL_Acter": "16:44:52",
+          "6770_Applied_Materials": "16:45:19",
+          "3711_SPIL_Liming": "16:45:30",
+          "3711_ASE_Zhengmei": "16:48:24",
+          "2408_facility": "17:03:01",
+          "6770_Q3_preliminary": "17:05:39",
+          "4977_subscription_payment_deadline": "17:05:49",
+          "4958_fifth_overseas_CB_fully_converted": "18:33:24",
+          "4958_Atotech_equipment": "18:41:52"
+        },
+        "source_completion": "ChipMOS acquisition/disposal, ASE/SPIL three procurement/facility notices, PSMC Applied Materials procurement and Q3 preliminary results matched previously registered amounts. Official issuer times above differ from broker republication display times; no retrospective rewrite.",
+        "Tripod": {
+          "subsidiary": "健鼎(湖北)電子有限公司",
+          "counterparty": "蘇州崇越工程有限公司",
+          "project": "Hubei Xiantao factory supporting facilities",
+          "award_amount_CNY_ex_tax": 215000000,
+          "issuer_converted_TWD": 1043709000,
+          "issuer_FX_TWD_per_CNY": 4.85446,
+          "decision_date": "2026-10-21",
+          "limits": "Award disclosed; subsequent purchase order and contract to be signed on a later date. No customer allocation, AI-only capacity, accepted equipment or profit revision disclosed."
+        },
+        "Nanya": {
+          "counterparty": "台塑工程股份有限公司",
+          "related_party": true,
+          "expected_amount_TWD": 16000000,
+          "purpose": "Factory construction for production/operations",
+          "limits": "Further audit committee and board submission planned. No disclosed new AI order or annual budget revision."
+        },
+        "Zhen_Ding": {
+          "subsidiary": "慶鼎精密電子(淮安)有限公司",
+          "counterparty": "ATOTECH ASIA PACIFIC LTD.",
+          "equipment_amount_TWD": 2206979419,
+          "transaction_period": "2026-06-05 through2026-10-21",
+          "payment": "According to purchase contract",
+          "limits": "Cumulative operating equipment acquisition, not a single-day shipment or confirmed incremental AI customer revenue. Separate announcement confirms fifth overseas unsecured convertible bonds fully converted; conversion does not itself raise new cash."
+        },
+        "PCL": {
+          "facts": "Subscription payment reminder period ended October21; paid subscriptions expected credited November4.",
+          "limits": "No new financing size, proceeds or operating forecast established in this notice."
+        }
+      },
+      "status": "primary_source_completion_and_nonmaterial_project_details_registered_no_article"
     }
   ],
   "articles": [],
@@ -6069,14 +6141,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-22",
-      "checked_at": "2026-10-21 21:13:00 UTC",
-      "instruction_commit_sha": "1c69c9a7ddff04074e9890208e9c5767a3ece955",
-      "status": "full_98_name_discovery_complete_new_lam_primary_outlook_and_cash_quality",
+      "checked_at": "2026-10-21 21:36:37 UTC",
+      "instruction_commit_sha": "7f8dd5bf31595acfe8c3eb0667e457f81eded83e",
+      "status": "full_98_name_discovery_and_selected_primary_notice_completion_no_new_material_revision",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "40d8a41e9067fb18c3becf64527795cb83fa932f",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "Fresh14groupedqueriescoverall98activenames;sixcoreissuerindices,CSP/financingdiscovery,officialdaily materialtables andselectedprimaryissuerdocuments. Monthlybaselineandcurrentselectedchecks keptseparate;not98currentfilingaudits.",
+      "scope": "All 98 active names covered by 14 fresh grouped discovery queries; six core issuer indices and selected current issuer documents checked. Historical monthly-revenue baseline is separate from current notice checks; no claim of 98 current full-filing audits.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -6086,47 +6158,37 @@
         "https://www.marvell.com/company/newsroom.html",
         "https://investor.atmeta.com/home/default.aspx",
         "https://investor.atmeta.com/financials/",
-        "https://investor.lamresearch.com/quarterly-results",
-        "https://investor.lamresearch.com/image/Q1_2027-slides_final.pdf",
-        "https://investor.lamresearch.com/image/Q4_2026_slides_full_final.pdf",
         "https://investor.lamresearch.com/events?item=105",
-        "https://www.uneec.net/tw/major"
+        "https://mops.twse.com.tw/mops/#/web/t05st01"
       ],
-      "company_check_scope": {
-        "newly_direct_primary_verified_universe_symbols": [],
-        "additional_outside_universe_issuer": "Lam Research",
-        "cumulative_distinct_primary_fact_count": 98,
-        "cumulative_monthly_revenue_count": 98,
-        "remaining_without_any_primary_fact": 0
-      },
       "material_snapshot": {
-        "table_as_of": "2026-10-21",
-        "announcements_date": "2026-10-20",
-        "unchanged_from_preceding_snapshot": true,
         "TWSE": {
-          "rows": 112,
-          "active_universe_notices": 12,
-          "active_issuers": 8,
-          "retrieved_at": "2026-10-21T21:10:30.599874+00:00",
-          "sha256": "b2951536efbdaf5224c73da57f3d67e3554c5f5906a574e3b7fa1c1ab334a9ca"
+          "table_as_of": "2026-10-22",
+          "announcements_date": "2026-10-21",
+          "rows": 79,
+          "active_universe_notices": 11,
+          "active_issuers": 7,
+          "sha256": "b8289faa293e9af605805a2d9d6f5ee5d220babb473da30c5ed81dd0e109fbe3",
+          "retrieved_at": "2026-10-21T21:35:48.509509+00:00"
         },
         "TPEx": {
+          "table_as_of": "2026-10-21",
+          "announcements_date": "2026-10-20",
           "rows": 30,
           "active_universe_notices": 3,
           "active_issuers": 3,
-          "retrieved_at": "2026-10-21T21:10:29.875097+00:00",
-          "sha256": "e516692226a9f84030fb9b2e176630392e754239eb5404a8c652e0bb442b60eb"
+          "sha256": "e516692226a9f84030fb9b2e176630392e754239eb5404a8c652e0bb442b60eb",
+          "retrieved_at": "2026-10-21T21:35:50.138719+00:00"
         }
       },
       "source_limits": [
-        "Latestdefaultbranchmetadataandlockedcommitobtained;requiredinstructions/specifications/classification,three relatedarticles andcompleteprogressJSONfetched. Instruction/relatedarticleblobsunchanged;largeprogressreadviaGitblob.",
-        "14groupedqueriescoverall98namesfordiscovery;resultsincludeoldfinancialperiods,calendarpages,proxyaggregation,pricecommentary andnon-Taiwanhomonyms. No falseclaimthatall98currentfilingsorprofitabilitybridgesareverified.",
-        "TSMC,MediaTek,NVIDIA,AMD,Broadcom,Marvellofficialindicesreadfresh. No newconfirmedMediaTekTPUdesignallocation,NRE/productioneconomics orsametermCSPspendingcut established. Previouslyregisteredsupplychainfunding,GoogleA5XandMetaresultsevents deduplicated.",
-        "Metaofficialhomeandcorrectfinancialspageavailablebutdynamicquarterdocumentlistnotexposed;old Q1/Q2transcriptsreturnedbysearcharenotQ3callproof. Q3releaseopenunavailable;nonew2027numericalMetaoutlookinferred.",
-        "LamOct21andJuly29originalPDFtextretrievedandcompared. Newprimary2027WFEpreliminaryforecast,servicesoutlook andcashflowqualityfacts added;not called a same-periodnumeric2027revisionorfullauditedcalltranscript.",
-        "OfficialTWSE/TPExmaterialtablesstillcoverOctober20notices withunchangedhashes,notcompleteOctober21/22coverage. PreviousOctober21ASE/SPIL/PSMC/ChipMOSfilingreproductionsretainedasreproductions.",
-        "Uneec3013officialmajorinformationpagetimeoutoninitialandretry;indexeditemsreferSeptember/H1,notnewQ3results. Company-specificlatestoriginalcoverageincomplete,buthistoricalmonthlybaselinepreserved.",
-        "Publicfacts/stagesonly;no article,stockquote,valuation,holding orprivateflowmonitordataadded."
+        "Mandatory instructions/specifications/classification and three related articles fully read at the locked instruction commit; complete large JSON recovered through Git blob.",
+        "Six core issuer indices read fresh. No new confirmed MediaTek TPU design allocation, NRE or production economics obtained; index silence does not prove absence of private deals.",
+        "Meta official home links current Q3 webcast, but webcast requires JavaScript and quarterly financial page exposes no document list in available text. Lam current event exposes webcast and presentation, no transcript link. Search returns old Q1/Q2 Meta and June-quarter Lam calls; those are not October21 call verification.",
+        "Previously registered Meta capex/FCF/Class C and Lam preliminary 2027 WFE/services/cash-conversion evidence deduplicated. New media repetitions do not establish an additional forecast revision.",
+        "TWSE daily issuer table refreshed to October21 notices; 11 active-name notices across seven issuers read. TPEx snapshot remains October20 and is not complete October21 coverage.",
+        "Primary TWSE notice times supersede broker-page display times only in appended verification record; prior historical reproductions preserved. Procurement/facility amounts do not establish AI-only end-demand, annual capex increases, named customer orders or supplier earnings revisions.",
+        "No article, stock quote, valuation, holding or private market-flow data added."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -14201,6 +14263,58 @@
           "Uneec3013officialmajorinformationpagetimeoutoninitialandretry;indexeditemsreferSeptember/H1,notnewQ3results. Company-specificlatestoriginalcoverageincomplete,buthistoricalmonthlybaselinepreserved.",
           "Publicfacts/stagesonly;no article,stockquote,valuation,holding orprivateflowmonitordataadded."
         ]
+      },
+      {
+        "date": "2026-10-22",
+        "checked_at": "2026-10-21 21:36:37 UTC",
+        "instruction_commit_sha": "7f8dd5bf31595acfe8c3eb0667e457f81eded83e",
+        "status": "full_98_name_discovery_and_selected_primary_notice_completion_no_new_material_revision",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "40d8a41e9067fb18c3becf64527795cb83fa932f",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All 98 active names covered by 14 fresh grouped discovery queries; six core issuer indices and selected current issuer documents checked. Historical monthly-revenue baseline is separate from current notice checks; no claim of 98 current full-filing audits.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.marvell.com/company/newsroom.html",
+          "https://investor.atmeta.com/home/default.aspx",
+          "https://investor.atmeta.com/financials/",
+          "https://investor.lamresearch.com/events?item=105",
+          "https://mops.twse.com.tw/mops/#/web/t05st01"
+        ],
+        "material_snapshot": {
+          "TWSE": {
+            "table_as_of": "2026-10-22",
+            "announcements_date": "2026-10-21",
+            "rows": 79,
+            "active_universe_notices": 11,
+            "active_issuers": 7,
+            "sha256": "b8289faa293e9af605805a2d9d6f5ee5d220babb473da30c5ed81dd0e109fbe3",
+            "retrieved_at": "2026-10-21T21:35:48.509509+00:00"
+          },
+          "TPEx": {
+            "table_as_of": "2026-10-21",
+            "announcements_date": "2026-10-20",
+            "rows": 30,
+            "active_universe_notices": 3,
+            "active_issuers": 3,
+            "sha256": "e516692226a9f84030fb9b2e176630392e754239eb5404a8c652e0bb442b60eb",
+            "retrieved_at": "2026-10-21T21:35:50.138719+00:00"
+          }
+        },
+        "source_limits": [
+          "Mandatory instructions/specifications/classification and three related articles fully read at the locked instruction commit; complete large JSON recovered through Git blob.",
+          "Six core issuer indices read fresh. No new confirmed MediaTek TPU design allocation, NRE or production economics obtained; index silence does not prove absence of private deals.",
+          "Meta official home links current Q3 webcast, but webcast requires JavaScript and quarterly financial page exposes no document list in available text. Lam current event exposes webcast and presentation, no transcript link. Search returns old Q1/Q2 Meta and June-quarter Lam calls; those are not October21 call verification.",
+          "Previously registered Meta capex/FCF/Class C and Lam preliminary 2027 WFE/services/cash-conversion evidence deduplicated. New media repetitions do not establish an additional forecast revision.",
+          "TWSE daily issuer table refreshed to October21 notices; 11 active-name notices across seven issuers read. TPEx snapshot remains October20 and is not complete October21 coverage.",
+          "Primary TWSE notice times supersede broker-page display times only in appended verification record; prior historical reproductions preserved. Procurement/facility amounts do not establish AI-only end-demand, annual capex increases, named customer orders or supplier earnings revisions.",
+          "No article, stock quote, valuation, holding or private market-flow data added."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -21813,6 +21927,30 @@
         "Test cashconversionpersistence andDSO/receivables/inventorybehaviour;onequarterworkingcapitalreleaseisnotrecurringprofit."
       ],
       "publication_status": "new_material_primary_evidence_registered_no_article"
+    },
+    {
+      "key": "twse-october21-selected-notices-primary-completion-and-capital-project-facts-20261022",
+      "date": "2026-10-22",
+      "instruction_commit_sha": "7f8dd5bf31595acfe8c3eb0667e457f81eded83e",
+      "companies": [
+        "ChipMOS",
+        "Tripod",
+        "ASE Technology Holding",
+        "SPIL",
+        "PSMC",
+        "Nanya Technology",
+        "PCL Technologies",
+        "Zhen Ding Technology"
+      ],
+      "sources": [
+        "https://mops.twse.com.tw/mops/#/web/t05st01"
+      ],
+      "stage": "eleven_selected_official_exchange_notices_read_source_completion_and_project_details_recorded",
+      "questions": [
+        "Verify signed contract, site commissioning, AI customer allocation, accepted capacity and incremental margins before connecting capital-project amounts to supplier earnings.",
+        "Keep multi-month cumulative equipment purchases, board budgets, contract awards, completed conversion and new cash financing separate."
+      ],
+      "publication_status": "public_evidence_completion_no_new_material_revision_no_article"
     }
   ],
   "blockers": [
@@ -21832,7 +21970,7 @@
     }
   ],
   "last_research_date": "2026-10-22",
-  "instruction_commit_sha": "1c69c9a7ddff04074e9890208e9c5767a3ece955",
+  "instruction_commit_sha": "7f8dd5bf31595acfe8c3eb0667e457f81eded83e",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
