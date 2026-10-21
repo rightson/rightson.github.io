@@ -3361,6 +3361,72 @@
         "limits": "No new hyperscaler annual capex cut, equipment cancellation, accepted Taiwan supplier order, or supplier earnings revision established. Reuters attributes the financial disclosure to WSJ and is not an independent confirmation."
       },
       "status": "original_reporting_read_public_filing_reconciliation_pending_no_article"
+    },
+    {
+      "fingerprint": "nextdc-m3-power-delay-fy27-guidance-like-for-like-capex-cut-20261021",
+      "event_date": "2026-10-21",
+      "discovered_date": "2026-10-21",
+      "instruction_commit_sha": "454300ff39aae5899b0ce3ac8b5b02fc07236b8f",
+      "companies": [
+        "NEXTDC"
+      ],
+      "type": "issuer_disclosed_guidance_revision_and_delivery_financing_risk",
+      "sources": [
+        "https://www.eqs-news.com/de/news/ad-hoc/nextdc-limited-m3-melbourne-power-delay-and-revised-fy27-guidance/bb803c03-73bf-497f-9ec1-c6c2a5ec2c77_en",
+        "https://www.marketindex.com.au/asx/nxt/announcements/m3-melbourne-power-delay-revised-fy27-guidance-2A1705181"
+      ],
+      "facts": {
+        "period": "FY27 ending June30,2027;AUD million",
+        "net_revenue_old": [
+          615,
+          640
+        ],
+        "net_revenue_new": [
+          475,
+          500
+        ],
+        "underlying_ebitda_old": [
+          385,
+          410
+        ],
+        "underlying_ebitda_new": [
+          245,
+          265
+        ],
+        "capex_old": [
+          5250,
+          5750
+        ],
+        "capex_new": [
+          4500,
+          5000
+        ],
+        "capex_scope": "New guidance includes230 capitalised interest absent from old guidance.Excluding it,new4270-4770;like-for-like reduction980 or17-19%,not just headline13-14%.",
+        "delivery": "Next M3 grid increase expected FY28.Affected contracts remain subject to customer rights;credits/termination/force-majeure outcomes unresolved.Excluded contracts include capacity already billing.",
+        "financing": "September30 liquidity8675 includes cash1275,undrawn senior6700,hybrid700.Undrawn senior debt availability depends on future billing profiles and covenants;liquidity is not all cash.",
+        "limits": "Issuer release via EQS read;ASX PDF mirror denied.No named customer cancellation,Taiwan supplier award/cancellation or hyperscaler-wide annual budget cut established."
+      },
+      "status": "issuer_disclosure_read_guidance_and_accounting_scope_verified_no_article"
+    },
+    {
+      "fingerprint": "spacex-q4-2026-reported-capex-guidance-20261020",
+      "event_date": "2026-10-20",
+      "discovered_date": "2026-10-21",
+      "instruction_commit_sha": "454300ff39aae5899b0ce3ac8b5b02fc07236b8f",
+      "companies": [
+        "SpaceX"
+      ],
+      "type": "original_media_attributed_earnings_call_forward_guidance_increment",
+      "sources": [
+        "https://www.businessinsider.com/spacex-ai-spending-third-quarter-earnings-2026-10",
+        "https://www.marketwatch.com/livecoverage/spacex-earnings-stock-results-musk-spcx/card/here-s-how-spacex-plans-to-fund-its-ai-expansion-BpO99x0CHLm1OM4IIcqh"
+      ],
+      "facts": {
+        "increment": "BusinessInsider and MarketWatch attribute Q4 total physical-asset capex forecast of USD35-40bn to CFO BretJohnsen,beyond prior registered Q3 actual USD19.593bn.",
+        "scope": "Forward company-total capex,not all AI expenditure or achieved deployment.Reported less-than-one-year compute payback is management expectation,not independently audited unit economics.",
+        "limits": "Original media body/attributed remarks read;full original issuer call not authenticated.No funded purchase orders,named Taiwan supplier earnings revision or guaranteed returns inferred."
+      },
+      "status": "attributed_forward_guidance_registered_original_call_and_funding_validation_pending_no_article"
     }
   ],
   "articles": [],
@@ -3432,15 +3498,15 @@
     ],
     "current_run_screening": {
       "date": "2026-10-21",
-      "checked_at": "2026-10-21T01:51:56Z",
-      "instruction_commit_sha": "dd6a72ea15b332413046edd8879b8a6b3a8a73a5",
-      "status": "fresh_screening_two_scope_limited_candidates_no_material_alert",
+      "checked_at": "2026-10-21T02:45:52Z",
+      "instruction_commit_sha": "454300ff39aae5899b0ce3ac8b5b02fc07236b8f",
+      "status": "new_nextdc_issuer_guidance_revision_and_spacex_attributed_forward_guidance",
       "company_count": 98,
       "grouped_query_count": 14,
-      "additional_targeted_query_count": 5,
+      "additional_targeted_query_count": 21,
       "universe_commit_sha": "15737456c090bdcb099718fe47a1b85562ddbe5c",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "98 active names in14 grouped discovery searches,5 targeted core/CSP and supplier/credit queries,and six core issuer news indexes;not98 individual original current-filings audits.",
+      "scope": "98 active names in14 grouped discovery searches,21 additional core/CSP,project,original-disclosure and quote searches,and six core issuer news indexes.Not98 issuer-by-issuer current filing audits.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -3448,9 +3514,9 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://investor.marvell.com/news-events/press-releases",
-        "https://www.ft.com/content/6dd31584-064c-4015-bf5d-e5747799ccd5",
-        "https://moneydj.emega.com.tw/ETFData/djhtm/ETKMDJNEWSContentRwd.djhtm?A=%7BEEC48674-2247-4707-AF9B-F8D147746630%7D&TYPE=5",
-        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=33c2bc9d-86ea-4935-ae82-557280c2d8df"
+        "https://www.eqs-news.com/de/news/ad-hoc/nextdc-limited-m3-melbourne-power-delay-and-revised-fy27-guidance/bb803c03-73bf-497f-9ec1-c6c2a5ec2c77_en",
+        "https://www.businessinsider.com/spacex-ai-spending-third-quarter-earnings-2026-10",
+        "https://www.marketwatch.com/livecoverage/spacex-earnings-stock-results-musk-spcx/card/here-s-how-spacex-plans-to-fund-its-ai-expansion-BpO99x0CHLm1OM4IIcqh"
       ],
       "company_check_scope": {
         "new_active_universe_primary_issuer_originals": [],
@@ -3458,11 +3524,10 @@
         "cumulative_pending": 46
       },
       "source_limits": [
-        "Mandatory instructions/specifications read at locked commit;complete progress JSON parsed and recent related article blobs acquired. Instruction blobs unchanged from prior verified versions. Latest head and target blob rechecked before write.",
-        "Anthropic reported prospectus disclosures,ABB and SpaceX results remain existing events.No new verified core capex/earnings revision or supplier cancellation established.",
-        "FT credit-protection lead is based on public headline/indexed excerpt only;full body paywalled,underlying data unavailable.No quantitative credit-risk claim or material alert registered.",
-        "Keystone October20 story traced to October6 reporting;historical forecast candidate only.No current named ASIC/TPU design win or issuer earnings revision inferred.",
-        "Keystone issuer investor-relations page timed out.Other grouped hits include historical revenue,broker commentary and price movement;not fresh original commercial evidence.",
+        "Complete mandatory instructions,progress and related posts acquired at locked instruction commit;latest head and target blob checked before write.",
+        "NEXTDC is outside the98-name active universe;no watchlist modification.Issuer disclosure validates a project-linked spending revision,not a five-CSP aggregate forecast.",
+        "Core issuer indexes show no new capex or ASIC design-win disclosure;MTK TPU v9 yield story remains reported,not issuer confirmation.",
+        "NVIDIA China workstation requests,Anthropic draft disclosures,ABB orders and SpaceXQ3 actuals deduplicated against existing events.",
         "No article,lint/build/deploy claim,quotes,valuation,private holdings or B-market monitoring data in public ledger."
       ]
     },
@@ -10598,6 +10663,41 @@
           "Keystone issuer investor-relations page timed out.Other grouped hits include historical revenue,broker commentary and price movement;not fresh original commercial evidence.",
           "No article,lint/build/deploy claim,quotes,valuation,private holdings or B-market monitoring data in public ledger."
         ]
+      },
+      {
+        "date": "2026-10-21",
+        "checked_at": "2026-10-21T02:45:52Z",
+        "instruction_commit_sha": "454300ff39aae5899b0ce3ac8b5b02fc07236b8f",
+        "status": "new_nextdc_issuer_guidance_revision_and_spacex_attributed_forward_guidance",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "additional_targeted_query_count": 21,
+        "universe_commit_sha": "15737456c090bdcb099718fe47a1b85562ddbe5c",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "98 active names in14 grouped discovery searches,21 additional core/CSP,project,original-disclosure and quote searches,and six core issuer news indexes.Not98 issuer-by-issuer current filing audits.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.eqs-news.com/de/news/ad-hoc/nextdc-limited-m3-melbourne-power-delay-and-revised-fy27-guidance/bb803c03-73bf-497f-9ec1-c6c2a5ec2c77_en",
+          "https://www.businessinsider.com/spacex-ai-spending-third-quarter-earnings-2026-10",
+          "https://www.marketwatch.com/livecoverage/spacex-earnings-stock-results-musk-spcx/card/here-s-how-spacex-plans-to-fund-its-ai-expansion-BpO99x0CHLm1OM4IIcqh"
+        ],
+        "company_check_scope": {
+          "new_active_universe_primary_issuer_originals": [],
+          "cumulative_primary_company_fact_count": 52,
+          "cumulative_pending": 46
+        },
+        "source_limits": [
+          "Complete mandatory instructions,progress and related posts acquired at locked instruction commit;latest head and target blob checked before write.",
+          "NEXTDC is outside the98-name active universe;no watchlist modification.Issuer disclosure validates a project-linked spending revision,not a five-CSP aggregate forecast.",
+          "Core issuer indexes show no new capex or ASIC design-win disclosure;MTK TPU v9 yield story remains reported,not issuer confirmation.",
+          "NVIDIA China workstation requests,Anthropic draft disclosures,ABB orders and SpaceXQ3 actuals deduplicated against existing events.",
+          "No article,lint/build/deploy claim,quotes,valuation,private holdings or B-market monitoring data in public ledger."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -17540,6 +17640,45 @@
         "Compare actual2027 shipments with the dated2026 forecast;no conversion from customer identity to a named TPU design win."
       ],
       "publication_status": "historical_candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "nextdc-m3-power-delay-fy27-guidance-like-for-like-capex-cut-20261021",
+      "date": "2026-10-21",
+      "event_date": "2026-10-21",
+      "instruction_commit_sha": "454300ff39aae5899b0ce3ac8b5b02fc07236b8f",
+      "companies": [
+        "NEXTDC"
+      ],
+      "sources": [
+        "https://www.eqs-news.com/de/news/ad-hoc/nextdc-limited-m3-melbourne-power-delay-and-revised-fy27-guidance/bb803c03-73bf-497f-9ec1-c6c2a5ec2c77_en",
+        "https://www.marketindex.com.au/asx/nxt/announcements/m3-melbourne-power-delay-revised-fy27-guidance-2A1705181"
+      ],
+      "stage": "issuer_disclosure_read_guidance_and_accounting_scope_verified_no_article",
+      "questions": [
+        "Track November20 spending review,customer contract outcomes and restored energisation/billing schedule.",
+        "Verify credit availability against revised billing profiles and any asset disposal;distinguish deferred demand from cancellations.",
+        "Obtain named supplier/project linkage before assigning Taiwan earnings impact."
+      ],
+      "publication_status": "event_registered_no_article"
+    },
+    {
+      "key": "spacex-q4-2026-reported-capex-guidance-20261020",
+      "date": "2026-10-21",
+      "event_date": "2026-10-20",
+      "instruction_commit_sha": "454300ff39aae5899b0ce3ac8b5b02fc07236b8f",
+      "companies": [
+        "SpaceX"
+      ],
+      "sources": [
+        "https://www.businessinsider.com/spacex-ai-spending-third-quarter-earnings-2026-10",
+        "https://www.marketwatch.com/livecoverage/spacex-earnings-stock-results-musk-spcx/card/here-s-how-spacex-plans-to-fund-its-ai-expansion-BpO99x0CHLm1OM4IIcqh"
+      ],
+      "stage": "attributed_forward_guidance_registered_original_call_and_funding_validation_pending_no_article",
+      "questions": [
+        "Authenticate full issuer call,capex financing and actualQ4 equipment acceptance.",
+        "Reconcile total capex with AI-only investment and cash generation."
+      ],
+      "publication_status": "event_registered_no_article"
     }
   ],
   "blockers": [
@@ -17559,7 +17698,7 @@
     }
   ],
   "last_research_date": "2026-10-21",
-  "instruction_commit_sha": "dd6a72ea15b332413046edd8879b8a6b3a8a73a5",
+  "instruction_commit_sha": "454300ff39aae5899b0ce3ac8b5b02fc07236b8f",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
