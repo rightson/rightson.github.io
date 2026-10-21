@@ -3753,6 +3753,29 @@
         "limits": "Future scale ceiling/plannedavailability,not deliveredGPUcount,realisedutilisation,acceptedrevenue or incremental procurement allocation.No inference thatGoogleTPU/MediaTekshare was cut."
       },
       "status": "supplier_primary_plan_verified_customer_original_and_delivery_pending"
+    },
+    {
+      "fingerprint": "google-cloud-openai-private-preview-dedicated-infrastructure-20261021",
+      "event_date": "2026-10-21",
+      "discovered_date": "2026-10-21",
+      "instruction_commit_sha": "00a34b235d8ae6dff0263c2371a530d6822d0dfa",
+      "companies": [
+        "Alphabet/Google",
+        "OpenAI"
+      ],
+      "type": "customer_primary_model_hosting_and_distribution_stage_confirmation",
+      "sources": [
+        "https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-brings-openai-models-to-customers"
+      ],
+      "facts": {
+        "prior_stage": "Reuters discovery and original-source gap previously recorded; no quantitative hardware procurement inferred.",
+        "commercial_stage": "GPT-6 Astra, GPT-6.1 Sol and GPT-6 Luna rolling out in private preview to selected enterprise customers; not general availability.",
+        "hosting": "Issuer says OpenAI models run on dedicated Google Cloud infrastructure.",
+        "billing": "Marketplace usage draws down existing customer Google Cloud commitments and counts toward Flexible Savings Plans.",
+        "future_features": "Zero Data Retention and Confidential Compute described as coming soon.",
+        "limits": "No incremental compute procurement amount, capex revision, accelerator identity/count, GPU/TPU allocation, delivered utilisation or realised revenue disclosed. No inference of a MediaTek TPU design win, NRE change, lost allocation or supplier EPS revision."
+      },
+      "status": "issuer_body_verified_prior_source_gap_closed_no_material_earnings_or_capex_revision_no_alert_no_article"
     }
   ],
   "articles": [],
@@ -3827,14 +3850,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-21",
-      "checked_at": "2026-10-21 13:52:13 UTC",
-      "instruction_commit_sha": "af6dc0873849324b005ea4c1d363895c3b6b90e3",
-      "status": "source_period_correction_no_change_to_event_judgment",
+      "checked_at": "2026-10-21 14:26:35 UTC",
+      "instruction_commit_sha": "00a34b235d8ae6dff0263c2371a530d6822d0dfa",
+      "status": "customer_primary_source_gap_closed_no_new_verified_material_earnings_revision",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "fe46ee4e96c79c10cd1d06abce9b0224bda0b686",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All 98 active names submitted in 14 grouped discovery queries. Six core issuer indexes read, including recovered Broadcom access. Discovery screening does not constitute a complete current company-filings audit.",
+      "scope": "All 98 active names submitted in 14 grouped discovery queries; six core issuer indexes freshly accessed. Individual current-filings audit remains partial; grouped searches are not full primary validation.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -3842,18 +3865,17 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://investor.marvell.com/news-events/press-releases",
-        "https://www.cna.com.tw/news/afe/202601300336.aspx",
-        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=85938d69-0816-4636-b554-86ac9b67297a"
+        "https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-brings-openai-models-to-customers",
+        "https://money.udn.com/money/story/5607/9829431",
+        "https://www.mirrormedia.mg/external/setn_1923742"
       ],
       "source_limits": [
-        "Mandatory instructions, specified research and taxonomy files, complete progress JSON and three recent related articles read at the same locked instruction commit. Historical primary-company coverage remains 55 of 98; 43 still pending individual primary validation.",
-        "Kinsus (景碩, 3189) announced on January 30, 2026 that the board approved NT$23.5 billion in new project capital expenditure for ABF equipment expansion over the following THREE YEARS. The preceding screening entry's characterization as an annual budget was erroneous. No newly verified October 21 budget revision is established. This is not Unimicron/欣興.",
-        "Broadcom October 21 Arcot software announcement contains no verified incremental CSP procurement or supply-chain allocation change. Latest visible TSMC, MediaTek, AMD and Marvell issuer indexes establish no new capex, NRE or customer-allocation revision in this check.",
-        "Previously registered NVIDIA KYEC/Unimicron/SPIL commitments, A5X plans and GF-TSMC interposer agreement deduplicated. Historical NVIDIA commitment aggregation and OpenAI-GoogleCloud distribution lead remain subject to the previously recorded original-source limits.",
-        "No new public event or article created. No private prices, valuations, holdings, institution-flow data or private market-structure analysis included in this repository update."
-      ],
-      "supersedes_screening_checked_at": "2026-10-21 13:49:54 UTC",
-      "audit_note": "Latest screening metadata reconciled to the actual locked instruction commit and active-universe revision. Original screening entry retained in history; repository commit history also preserves each change."
+        "Mandatory instructions, specified research/taxonomy and complete progress JSON read at locked commit; three same-commit recent related articles read. Historical primary-company count remains 55 of 98, with 43 requiring individual primary validation.",
+        "Google original now readable: private preview and dedicated Google Cloud infrastructure confirmed; existing customer commitments may pay for usage. No quantified incremental procurement, capex or Taiwan supplier allocation established.",
+        "October21 BT/mSAP media forecasts match those already published October16. Full Goldman original and dated old/new earnings estimates remain unavailable. Historical report not described as a new October21 revision or market consensus.",
+        "Universe discovery included historical product/revenue news, routine conversion/rights notices and existing sector commentary. No new verified company earnings/capex revision established. Zhen Ding PDF and Nan Ya PCB original access attempts did not yield a readable body; no primary-coverage increment inferred.",
+        "Previously registered NVIDIA capacity-reservation and A5X plans, PSMC preliminary earnings and NextDC power-delay events deduplicated. No new article or material alert; private prices, valuations, holdings and market-structure records excluded."
+      ]
     },
     "primary_regulator_company_fact_checked_count": 3,
     "screening_history": [
@@ -11451,6 +11473,35 @@
         ],
         "supersedes_screening_checked_at": "2026-10-21 13:49:54 UTC",
         "audit_note": "Latest screening metadata reconciled to the actual locked instruction commit and active-universe revision. Original screening entry retained in history; repository commit history also preserves each change."
+      },
+      {
+        "date": "2026-10-21",
+        "checked_at": "2026-10-21 14:26:35 UTC",
+        "instruction_commit_sha": "00a34b235d8ae6dff0263c2371a530d6822d0dfa",
+        "status": "customer_primary_source_gap_closed_no_new_verified_material_earnings_revision",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "fe46ee4e96c79c10cd1d06abce9b0224bda0b686",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All 98 active names submitted in 14 grouped discovery queries; six core issuer indexes freshly accessed. Individual current-filings audit remains partial; grouped searches are not full primary validation.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-brings-openai-models-to-customers",
+          "https://money.udn.com/money/story/5607/9829431",
+          "https://www.mirrormedia.mg/external/setn_1923742"
+        ],
+        "source_limits": [
+          "Mandatory instructions, specified research/taxonomy and complete progress JSON read at locked commit; three same-commit recent related articles read. Historical primary-company count remains 55 of 98, with 43 requiring individual primary validation.",
+          "Google original now readable: private preview and dedicated Google Cloud infrastructure confirmed; existing customer commitments may pay for usage. No quantified incremental procurement, capex or Taiwan supplier allocation established.",
+          "October21 BT/mSAP media forecasts match those already published October16. Full Goldman original and dated old/new earnings estimates remain unavailable. Historical report not described as a new October21 revision or market consensus.",
+          "Universe discovery included historical product/revenue news, routine conversion/rights notices and existing sector commentary. No new verified company earnings/capex revision established. Zhen Ding PDF and Nan Ya PCB original access attempts did not yield a readable body; no primary-coverage increment inferred.",
+          "Previously registered NVIDIA capacity-reservation and A5X plans, PSMC preliminary earnings and NextDC power-delay events deduplicated. No new article or material alert; private prices, valuations, holdings and market-structure records excluded."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -18771,6 +18822,62 @@
         "Separate modeldistribution from computeprocurement,hardwareallocation and realisedrevenue"
       ],
       "publication_status": "candidate_only_no_alert_no_article"
+    },
+    {
+      "key": "openai-google-cloud-distribution-primary-confirmation-followup-20261021",
+      "date": "2026-10-21",
+      "instruction_commit_sha": "00a34b235d8ae6dff0263c2371a530d6822d0dfa",
+      "companies": [
+        "Alphabet/Google",
+        "OpenAI"
+      ],
+      "sources": [
+        "https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-brings-openai-models-to-customers"
+      ],
+      "stage": "customer_primary_body_read_private_preview_and_dedicated_hosting_confirmed",
+      "questions": [
+        "Measure incremental inference usage and retained cloud economics versus existing committed spending.",
+        "Verify hardware procurement, delivery, power and accelerator allocation before attributing Taiwan supplier earnings."
+      ],
+      "publication_status": "source_confidence_improved_no_material_market_alert_no_article"
+    },
+    {
+      "key": "bt-msap-goldman-model-source-age-and-original-report-gap-20261021",
+      "date": "2026-10-21",
+      "instruction_commit_sha": "00a34b235d8ae6dff0263c2371a530d6822d0dfa",
+      "companies": [
+        "Nan Ya PCB",
+        "Kinsus",
+        "Zhen Ding Technology",
+        "Unimicron"
+      ],
+      "sources": [
+        "https://money.udn.com/money/story/5607/9829431",
+        "https://www.mirrormedia.mg/external/setn_1923742"
+      ],
+      "stage": "October21_original_media_body_read_same_forecasts_already_in_October16_report_broker_original_unavailable",
+      "facts": {
+        "media_publication_dates": [
+          "2026-10-21 20:19:32 Asia/Taipei",
+          "2026-10-16 17:12 Asia/Taipei; updated October17"
+        ],
+        "forecast_period": "2026-2028",
+        "reported_industry_BT_demand_supply_gap_pct": {
+          "2026": 1,
+          "2027": 11,
+          "2028": 14
+        },
+        "reported_BT_memory_demand_CAGR_pct": 41,
+        "reported_total_BT_market_CAGR_pct": 32,
+        "reported_capacity_CAGR_pct": 6,
+        "reported_future_12_month_msap_price_increase_pct": "10-20",
+        "limits": "Media descriptions of one Goldman model, not two independent forecasts, company guidance or confirmed pricing. Original broker publication date, full model and changes to old earnings estimates not obtained. No new October21 EPS revision established; no price target or current valuation saved."
+      },
+      "questions": [
+        "Obtain dated Goldman original and comparable old/new earnings estimates.",
+        "Verify realised BT/mSAP pricing, qualified capacity and company product mix, margins and cash conversion against issuer originals."
+      ],
+      "publication_status": "research_candidate_only_no_repeat_news_alert_no_article"
     }
   ],
   "blockers": [
@@ -18790,7 +18897,7 @@
     }
   ],
   "last_research_date": "2026-10-21",
-  "instruction_commit_sha": "af6dc0873849324b005ea4c1d363895c3b6b90e3",
+  "instruction_commit_sha": "00a34b235d8ae6dff0263c2371a530d6822d0dfa",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
