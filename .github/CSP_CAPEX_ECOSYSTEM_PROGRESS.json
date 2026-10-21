@@ -5764,6 +5764,112 @@
         "limits": "December outlook is a new next-quarter estimate, not an upward revision to the same previously-guided December period. September actuals are within the July guidance ranges. Geographic revenue does not establish AI-only demand or named Taiwan suppliers. No primary consensus population or complete October21call obtained;no market-surprise claim."
       },
       "status": "issuer_supplied_original_body_and_prior_guidance_read_research_candidate_no_article"
+    },
+    {
+      "fingerprint": "ase-spil-october21-equipment-and-facility-contract-notice-reproductions-20261022",
+      "event_date": "2026-10-21",
+      "discovered_date": "2026-10-22",
+      "instruction_commit_sha": "4f69398746bd1a46d06d5c539543f88f9507d9af",
+      "companies": [
+        "ASE Technology Holding",
+        "ASE Semiconductor Manufacturing",
+        "SPIL",
+        "政美應用股份有限公司",
+        "聖暉工程科技股份有限公司",
+        "麗明營造股份有限公司"
+      ],
+      "type": "dated_company_material_announcement_full_text_reproduced_by_broker",
+      "sources": [
+        "https://mops.twse.com.tw/mops/#/web/t05st01",
+        "https://just.honsec.com.tw/z/zf/zfz/zfz_EE243A7F-DBD5-49FD-8536-BA8843560F3E.djhtm",
+        "https://just.honsec.com.tw/z/zf/zfz/zfz_FDAF33EB-D956-4C0A-BB16-61D1A61F16FE.djhtm",
+        "https://just.honsec.com.tw/z/zf/zfz/zfz_438FCD38-CC0F-435D-8BA7-632B971CA696.djhtm"
+      ],
+      "facts": {
+        "source_nature": "a broker-hosted page reproduction attributes each complete notice toMOPS. Directexchange October21snapshot still contains October20notices only;latest originals notobtained.",
+        "currency": "TWD",
+        "equipment": {
+          "issuer_subsidiary": "ASE Semiconductor Manufacturing,notSPIL",
+          "counterparty": "政美應用股份有限公司",
+          "announcement_at": "2026-10-21 16:54:12 Asia/Taipei",
+          "transaction_period": "2025-12-26 through2026-10-21",
+          "cumulative_amount_ex_tax": 1083281000,
+          "payment": "Wiretransfer orletterofcredit",
+          "purpose": "Production andoperations"
+        },
+        "facility_contracts": [
+          {
+            "issuer_subsidiary": "SPIL",
+            "counterparty": "麗明營造股份有限公司",
+            "announcement_at": "2026-10-21 16:54:07 Asia/Taipei",
+            "amount": 595800000,
+            "contract_start": "2026-10-20",
+            "contract_end": "2027-12-31"
+          },
+          {
+            "issuer_subsidiary": "SPIL",
+            "counterparty": "聖暉工程科技股份有限公司",
+            "announcement_at": "2026-10-21 16:49:14 Asia/Taipei",
+            "amount": 805995000,
+            "contract_start": "2026-10-14",
+            "contract_end": "2028-12-31"
+          }
+        ],
+        "limits": "Acterfulltext fills prior headline-detail gap but remains a filing reproduction,not directMOPSretrieval. Facilitycontracts,ASEequipment andOctober20SPIL/Advantestequipment are separate. Amounts spanmulti-month/multi-year periods;notannualbudgetincreases,AI-onlyallocation,customerorders,accepted capacity orattributable supplierprofit."
+      },
+      "status": "full_dated_notice_reproductions_read_direct_original_and_economics_pending_no_material_alert_no_article"
+    },
+    {
+      "fingerprint": "psmc-applied-materials-cumulative-equipment-october21-notice-reproduction-20261022",
+      "event_date": "2026-10-21",
+      "discovered_date": "2026-10-22",
+      "instruction_commit_sha": "4f69398746bd1a46d06d5c539543f88f9507d9af",
+      "companies": [
+        "PSMC",
+        "Applied Materials"
+      ],
+      "type": "dated_company_equipment_notice_reproduction",
+      "sources": [
+        "https://mops.twse.com.tw/mops/#/web/t05st01",
+        "https://just.honsec.com.tw/z/zf/zfz/zfz_21276CB8-351C-4FD2-B702-2274FC7059A4.djhtm"
+      ],
+      "facts": {
+        "source_nature": "CompleteMOPS-attributed issuerannouncement reproducedbya broker-hosted page;direct originalpending.",
+        "announcement_at": "2026-10-21 16:54:06 Asia/Taipei",
+        "transaction_period": "2026-06-09 through2026-10-21",
+        "counterparty": "Applied Materials South East Asia Pte. Ltd.",
+        "cumulative_amount_TWD": 1062396000,
+        "purpose": "Waferproduction facilities/equipment",
+        "limits": "Differentcounterparty andaccumulation period fromOctober20TokyoElectronequipmentTWD1060300000. Do nottreat near-equalamounts asone amendeddeal orcombineinto annualAIcapex. No disclosed utilisation,AI-onlyuse,newcustomer allocation orprofitguidancechange."
+      },
+      "status": "full_dated_notice_reproduction_read_no_material_earnings_revision_or_article"
+    },
+    {
+      "fingerprint": "chipmos-equipment-acquisition-disposal-notice-20261022",
+      "event_date": "2026-10-21",
+      "discovered_date": "2026-10-22",
+      "instruction_commit_sha": "4f69398746bd1a46d06d5c539543f88f9507d9af",
+      "companies": [
+        "ChipMOS",
+        "泛泰科技股份有限公司"
+      ],
+      "type": "dated_company_equipment_notice_reproduction",
+      "sources": [
+        "https://mops.twse.com.tw/mops/#/web/t05st01",
+        "https://just.honsec.com.tw/z/zf/zfz/zfz_EACBA010-AD98-46BD-AE5F-29AD3683C3BD.djhtm"
+      ],
+      "facts": {
+        "source_nature": "CompleteMOPS-attributed issuerannouncement reproducedbya broker-hosted page;direct originalpending.",
+        "announcement_at": "2026-10-21 15:19:08 Asia/Taipei",
+        "transaction_period": "2026-03-15 through2026-10-21",
+        "counterparty": "泛泰科技股份有限公司",
+        "equipment_acquisition_TWD": 1237950000,
+        "equipment_disposal_consideration_TWD": 58557000,
+        "reported_disposal_gain_TWD": 37904000,
+        "purpose": "Production",
+        "limits": "Acquisition,disposal proceeds anddisposal gain aredifferent quantities. Cumulativeprocurement doesnotestablish anannualbudgetincrease,AI-onlyequipment ornewenddemand. Non-recurringdisposalgain keptseparatefromrecurring operatingearnings;no supplierprofitrevisiondisclosed."
+      },
+      "status": "full_dated_notice_reproduction_read_no_material_earnings_revision_or_article"
     }
   ],
   "articles": [],
@@ -5881,14 +5987,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-22",
-      "checked_at": "2026-10-21 20:31:30 UTC",
-      "instruction_commit_sha": "2589d1122677e8927b2e2e392b6c53c09e71363b",
-      "status": "full_98_name_discovery_complete_new_meta_results_and_lam_original_financial_facts_registered",
+      "checked_at": "2026-10-21 20:38:48 UTC",
+      "instruction_commit_sha": "4f69398746bd1a46d06d5c539543f88f9507d9af",
+      "status": "full_98_name_discovery_complete_selected_notice_reproductions_added_no_material_increment",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "40d8a41e9067fb18c3becf64527795cb83fa932f",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All98active companies submitted in14grouped discoveryqueries; sixcoreissuerindices refreshed,selectedCSPandfinancingdiscovery andoriginalexchange daily materialtables read. This isdiscovery plus selectedprimarychecking,not98currentfinancialfilingaudits.",
+      "scope": "Fresh14groupedqueriescoverall98activenames,sixcoreissuerindices,CSPandfinancingdiscovery,officialdaily materialtables andselectedOctober21company-notice reproductions. Historicalmonthlybaselineandcurrentselectednoticechecks keptseparate;not98currentfilingaudits.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -5896,47 +6002,49 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://www.marvell.com/company/newsroom.html",
-        "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
-        "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx",
-        "https://www.prnewswire.com/news-releases/lam-research-corporation-reports-financial-results-for-the-quarter-ended-september-27-2026-302915810.html",
-        "https://newsroom.lamresearch.com/2026-07-29-Lam-Research-Corporation-Reports-Financial-Results-for-the-Quarter-Ended-June-28,-2026",
-        "https://mops.twse.com.tw/mops/#/web/t05st01"
+        "https://investor.atmeta.com/financials/quarterly-results/default.aspx",
+        "https://investor.lamresearch.com/",
+        "https://just.honsec.com.tw/z/zf/zf_I_E.djhtm",
+        "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=905a24b3-156f-4c14-9695-a6b7e0be04dd"
       ],
       "company_check_scope": {
-        "newly_primary_verified_universe_symbols": [],
+        "new_direct_primary_company_fact_symbols": [],
+        "selected_filing_reproduction_symbols": [
+          "3711",
+          "6770",
+          "8150"
+        ],
         "cumulative_distinct_primary_fact_count": 98,
         "cumulative_monthly_revenue_count": 98,
-        "remaining_without_any_primary_fact": 0,
-        "additional_outside_universe_issuers": [
-          "Meta Platforms",
-          "Lam Research"
-        ]
+        "remaining_without_any_primary_fact": 0
       },
       "material_snapshot": {
         "table_as_of": "2026-10-21",
         "announcements_date": "2026-10-20",
+        "unchanged_from_preceding_snapshot": true,
         "TWSE": {
           "rows": 112,
           "active_universe_notices": 12,
           "active_issuers": 8,
-          "retrieved_at": "2026-10-21T20:30:49.738235+00:00"
+          "retrieved_at": "2026-10-21T20:37:27.293689+00:00",
+          "sha256": "b2951536efbdaf5224c73da57f3d67e3554c5f5906a574e3b7fa1c1ab334a9ca"
         },
         "TPEx": {
           "rows": 30,
           "active_universe_notices": 3,
           "active_issuers": 3,
-          "retrieved_at": "2026-10-21T20:30:49.503621+00:00"
-        },
-        "limits": "Both originaltables still containOctober20notices. No completeOctober21/22filing coverage claimed;historicalnoticesandcalendar/financingstages notnewfinancialguidance."
+          "retrieved_at": "2026-10-21T20:37:25.547318+00:00",
+          "sha256": "e516692226a9f84030fb9b2e176630392e754239eb5404a8c652e0bb442b60eb"
+        }
       },
       "source_limits": [
-        "Mandatorysame-commitinstructions/specifications,classification,three relatedarticles andcompleteJSONprogress read;fullhistorypreserved.",
-        "Grouped discoverycontains mixed-date/recyclednews,rankingsandmarketcommentary. September monthlyprimarybaseline98retained separately fromcurrentfilingsandcompanyeconomics.",
-        "Core indices:TSMC/MediaTek,AMD,Broadcom andMarvell disclosedno newlyverified TPUallocation,NREsplit orsametermsupplierearningsrevision in thesereadpages. NVIDIAA5Xheadline reread:body saysNovemberGA andup-to960000planned GPUs,notOctober21deliveredcapacity;existingeventdeduplicated.",
-        "Meta originalfullrelease andcashflowreconciliation read;Q3capexincludescashPPEandfinanceleaseprincipal. Expense/legalcharge,cashpayment andcapitalstructure/fundraisingstages keptseparate. Latertransport failures do not erase theearliercomplete originalread.",
-        "Lam issuer-suppliedreleasebody andJuly29 originalguide read. September revenue/EPSwithinpreviousranges;Decemberoutlooknewperiod,not same-periodupwardrevision;no analystconsensusclaimed.",
-        "Anthropicpotentialcomputecommitment/IPOcommentary,SpaceXQ4capexreport,Google/OpenAIdistribution andNVIDIAsuppliercommitments arepreviouslyregisteredevents;no newverifiedfundingclose orcapexcut established.",
-        "Publicresearchfacts/stagesonly;no article,currentstockquote,valuation,holdings orprivatemarketmonitorinformation added."
+        "Requiredinstructions/specifications,classification,three relatedarticles andcompleteprogressJSON fetchedatsame latestcommit;instructionandarticleblobsunchanged. Largeprogress obtainedbyGitblob afterContentsAPIreturnedemptycontent.",
+        "Sixcoreissuerindices readfresh. TSMC/MediaTek/AMD/Broadcom/Marvell currentreadpages do notsupply newconfirmedTPUallocation,NREeconomics orCSPsametermcapexcut;NVIDIAcapacityplanalreadyregistered. BroadcomOctober21Arcotscamdefense concernssecuritysoftware,notAIhardwareprocurement.",
+        "MetaQ3capex,FCFandClassCfacts alreadyregisteredandnotified;freshdiscovery repeatsrelease-levelinformation. DirectIRreleaseandquarterlypageopens unavailable;no newfullQ3calltranscriptorquantified2027budget obtained. Lamindex stilllistsOctober21releaseandfuture14:00PDTcall;existingreleasefacts notnewrevision.",
+        "Groupeddiscoveryincludesolderfinancialperiods,currentcalendarpages andrecycledcommentary. MoneyDJopticalprofitarticle fullbody dated2025-12-04 09:01:21;itsOctoberprofitfigures and2026outlook arehistorical,notOctober2026results.",
+        "Officialdailytablesunchanged andlimitedtoOctober20notices. FivecompleteOctober21MOPS-attributed notices obtainedvia brokerreproduction forASE/SPIL,PSMCandChipMOS;newdetail isnot a directoriginal-sourceupgrade.",
+        "ASE/SPILfacilitycontracts andcumulativeequipmenttransactions distinguishsubsidiaries,counterparties,contractperiods andfinancialstages. No newAI-onlyorder,acceptedcapacity,annualcapexincrease orretainedprofitrevision established.",
+        "Publicledgerfacts/stagesonly;no article,currentstockquote,valuation,holding orprivateflowmonitorinformation added."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -13887,6 +13995,68 @@
           "Anthropicpotentialcomputecommitment/IPOcommentary,SpaceXQ4capexreport,Google/OpenAIdistribution andNVIDIAsuppliercommitments arepreviouslyregisteredevents;no newverifiedfundingclose orcapexcut established.",
           "Publicresearchfacts/stagesonly;no article,currentstockquote,valuation,holdings orprivatemarketmonitorinformation added."
         ]
+      },
+      {
+        "date": "2026-10-22",
+        "checked_at": "2026-10-21 20:38:48 UTC",
+        "instruction_commit_sha": "4f69398746bd1a46d06d5c539543f88f9507d9af",
+        "status": "full_98_name_discovery_complete_selected_notice_reproductions_added_no_material_increment",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "40d8a41e9067fb18c3becf64527795cb83fa932f",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "Fresh14groupedqueriescoverall98activenames,sixcoreissuerindices,CSPandfinancingdiscovery,officialdaily materialtables andselectedOctober21company-notice reproductions. Historicalmonthlybaselineandcurrentselectednoticechecks keptseparate;not98currentfilingaudits.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.marvell.com/company/newsroom.html",
+          "https://investor.atmeta.com/financials/quarterly-results/default.aspx",
+          "https://investor.lamresearch.com/",
+          "https://just.honsec.com.tw/z/zf/zf_I_E.djhtm",
+          "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=905a24b3-156f-4c14-9695-a6b7e0be04dd"
+        ],
+        "company_check_scope": {
+          "new_direct_primary_company_fact_symbols": [],
+          "selected_filing_reproduction_symbols": [
+            "3711",
+            "6770",
+            "8150"
+          ],
+          "cumulative_distinct_primary_fact_count": 98,
+          "cumulative_monthly_revenue_count": 98,
+          "remaining_without_any_primary_fact": 0
+        },
+        "material_snapshot": {
+          "table_as_of": "2026-10-21",
+          "announcements_date": "2026-10-20",
+          "unchanged_from_preceding_snapshot": true,
+          "TWSE": {
+            "rows": 112,
+            "active_universe_notices": 12,
+            "active_issuers": 8,
+            "retrieved_at": "2026-10-21T20:37:27.293689+00:00",
+            "sha256": "b2951536efbdaf5224c73da57f3d67e3554c5f5906a574e3b7fa1c1ab334a9ca"
+          },
+          "TPEx": {
+            "rows": 30,
+            "active_universe_notices": 3,
+            "active_issuers": 3,
+            "retrieved_at": "2026-10-21T20:37:25.547318+00:00",
+            "sha256": "e516692226a9f84030fb9b2e176630392e754239eb5404a8c652e0bb442b60eb"
+          }
+        },
+        "source_limits": [
+          "Requiredinstructions/specifications,classification,three relatedarticles andcompleteprogressJSON fetchedatsame latestcommit;instructionandarticleblobsunchanged. Largeprogress obtainedbyGitblob afterContentsAPIreturnedemptycontent.",
+          "Sixcoreissuerindices readfresh. TSMC/MediaTek/AMD/Broadcom/Marvell currentreadpages do notsupply newconfirmedTPUallocation,NREeconomics orCSPsametermcapexcut;NVIDIAcapacityplanalreadyregistered. BroadcomOctober21Arcotscamdefense concernssecuritysoftware,notAIhardwareprocurement.",
+          "MetaQ3capex,FCFandClassCfacts alreadyregisteredandnotified;freshdiscovery repeatsrelease-levelinformation. DirectIRreleaseandquarterlypageopens unavailable;no newfullQ3calltranscriptorquantified2027budget obtained. Lamindex stilllistsOctober21releaseandfuture14:00PDTcall;existingreleasefacts notnewrevision.",
+          "Groupeddiscoveryincludesolderfinancialperiods,currentcalendarpages andrecycledcommentary. MoneyDJopticalprofitarticle fullbody dated2025-12-04 09:01:21;itsOctoberprofitfigures and2026outlook arehistorical,notOctober2026results.",
+          "Officialdailytablesunchanged andlimitedtoOctober20notices. FivecompleteOctober21MOPS-attributed notices obtainedvia brokerreproduction forASE/SPIL,PSMCandChipMOS;newdetail isnot a directoriginal-sourceupgrade.",
+          "ASE/SPILfacilitycontracts andcumulativeequipmenttransactions distinguishsubsidiaries,counterparties,contractperiods andfinancialstages. No newAI-onlyorder,acceptedcapacity,annualcapexincrease orretainedprofitrevision established.",
+          "Publicledgerfacts/stagesonly;no article,currentstockquote,valuation,holding orprivateflowmonitorinformation added."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -21453,6 +21623,31 @@
         "Verify recurring customer-support growth andcashconversion versus systems shipment growth."
       ],
       "publication_status": "public_facts_registered_no_article"
+    },
+    {
+      "key": "ase-spil-october21-equipment-and-facility-contract-notice-reproductions-20261022",
+      "date": "2026-10-22",
+      "instruction_commit_sha": "4f69398746bd1a46d06d5c539543f88f9507d9af",
+      "companies": [
+        "ASE Technology Holding",
+        "ASE Semiconductor Manufacturing",
+        "SPIL",
+        "政美應用股份有限公司",
+        "聖暉工程科技股份有限公司",
+        "麗明營造股份有限公司"
+      ],
+      "sources": [
+        "https://mops.twse.com.tw/mops/#/web/t05st01",
+        "https://just.honsec.com.tw/z/zf/zfz/zfz_EE243A7F-DBD5-49FD-8536-BA8843560F3E.djhtm",
+        "https://just.honsec.com.tw/z/zf/zfz/zfz_FDAF33EB-D956-4C0A-BB16-61D1A61F16FE.djhtm",
+        "https://just.honsec.com.tw/z/zf/zfz/zfz_438FCD38-CC0F-435D-8BA7-632B971CA696.djhtm"
+      ],
+      "stage": "prior_acter_headline_expanded_to_complete_dated_notice_reproduction_direct_original_pending",
+      "questions": [
+        "Obtain directOctober21MOPS/companydocuments forASEequipment andtwoSPILfacilitycontracts.",
+        "Verify sites,AIcustomerallocation,commissioning,acceptedcapacity,contractrecognition andmargin beforeinferring supplierprofitgrowth."
+      ],
+      "publication_status": "public_disclosure_detail_recorded_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -21472,7 +21667,7 @@
     }
   ],
   "last_research_date": "2026-10-22",
-  "instruction_commit_sha": "2589d1122677e8927b2e2e392b6c53c09e71363b",
+  "instruction_commit_sha": "4f69398746bd1a46d06d5c539543f88f9507d9af",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
