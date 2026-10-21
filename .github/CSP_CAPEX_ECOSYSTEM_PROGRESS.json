@@ -6024,6 +6024,26 @@
         }
       },
       "status": "primary_source_completion_and_nonmaterial_project_details_registered_no_article"
+    },
+    {
+      "fingerprint": "lam-october21-call-transcript-source-completion-and-constraints-20261022",
+      "event_date": "2026-10-21",
+      "discovered_date": "2026-10-22",
+      "instruction_commit_sha": "45700cdb22ae4e652c17bc4723276a02cbbf9e00",
+      "companies": [
+        "Lam Research"
+      ],
+      "type": "third_party_automated_call_transcript_source_completion",
+      "sources": [
+        "https://www.benzinga.com/news/26/10/62514820/lam-research-q1-2027-earnings-call-transcript",
+        "https://investor.lamresearch.com/events?item=105"
+      ],
+      "facts": {
+        "source_nature": "Benzinga automated transcript,October21 18:09 displaytime;timezone unspecified.Not issuer-certified;product-name transcription errors.",
+        "management_comments_summary": "December component-related shipment slippage expected in March. No new2027WFE estimate beyond prior slides;January precision depends oncleanroom schedules andsuppliers. China domestic mix expected lower inDecember;near-term grossmargin around currentlevel. Panelpackaging remains early;SLC adoption rate unquantified. No supplier co-investment announced.",
+        "limits": "Forwardlooking reported remarks,not measured deliveries ororders.No namedTaiwan allocation,economic terms ornewprofitforecast. Originalaudio notverified."
+      },
+      "status": "supporting_source_completion_no_repeat_material_alert_no_article"
     }
   ],
   "articles": [],
@@ -6141,14 +6161,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-22",
-      "checked_at": "2026-10-21 21:36:37 UTC",
-      "instruction_commit_sha": "7f8dd5bf31595acfe8c3eb0667e457f81eded83e",
-      "status": "full_98_name_discovery_and_selected_primary_notice_completion_no_new_material_revision",
+      "checked_at": "2026-10-21 22:53:50 UTC",
+      "instruction_commit_sha": "45700cdb22ae4e652c17bc4723276a02cbbf9e00",
+      "status": "98_name_discovery_core_indices_and_lam_transcript_source_completion_no_new_material_revision",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "40d8a41e9067fb18c3becf64527795cb83fa932f",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All 98 active names covered by 14 fresh grouped discovery queries; six core issuer indices and selected current issuer documents checked. Historical monthly-revenue baseline is separate from current notice checks; no claim of 98 current full-filing audits.",
+      "scope": "All98 active names included in14 grouped discovery queries;core issuer indices checked;not98 full current-filing audits.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -6156,39 +6176,15 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://www.marvell.com/company/newsroom.html",
-        "https://investor.atmeta.com/home/default.aspx",
-        "https://investor.atmeta.com/financials/",
-        "https://investor.lamresearch.com/events?item=105",
-        "https://mops.twse.com.tw/mops/#/web/t05st01"
+        "https://www.benzinga.com/news/26/10/62514820/lam-research-q1-2027-earnings-call-transcript"
       ],
-      "material_snapshot": {
-        "TWSE": {
-          "table_as_of": "2026-10-22",
-          "announcements_date": "2026-10-21",
-          "rows": 79,
-          "active_universe_notices": 11,
-          "active_issuers": 7,
-          "sha256": "b8289faa293e9af605805a2d9d6f5ee5d220babb473da30c5ed81dd0e109fbe3",
-          "retrieved_at": "2026-10-21T21:35:48.509509+00:00"
-        },
-        "TPEx": {
-          "table_as_of": "2026-10-21",
-          "announcements_date": "2026-10-20",
-          "rows": 30,
-          "active_universe_notices": 3,
-          "active_issuers": 3,
-          "sha256": "e516692226a9f84030fb9b2e176630392e754239eb5404a8c652e0bb442b60eb",
-          "retrieved_at": "2026-10-21T21:35:50.138719+00:00"
-        }
-      },
       "source_limits": [
-        "Mandatory instructions/specifications/classification and three related articles fully read at the locked instruction commit; complete large JSON recovered through Git blob.",
-        "Six core issuer indices read fresh. No new confirmed MediaTek TPU design allocation, NRE or production economics obtained; index silence does not prove absence of private deals.",
-        "Meta official home links current Q3 webcast, but webcast requires JavaScript and quarterly financial page exposes no document list in available text. Lam current event exposes webcast and presentation, no transcript link. Search returns old Q1/Q2 Meta and June-quarter Lam calls; those are not October21 call verification.",
-        "Previously registered Meta capex/FCF/Class C and Lam preliminary 2027 WFE/services/cash-conversion evidence deduplicated. New media repetitions do not establish an additional forecast revision.",
-        "TWSE daily issuer table refreshed to October21 notices; 11 active-name notices across seven issuers read. TPEx snapshot remains October20 and is not complete October21 coverage.",
-        "Primary TWSE notice times supersede broker-page display times only in appended verification record; prior historical reproductions preserved. Procurement/facility amounts do not establish AI-only end-demand, annual capex increases, named customer orders or supplier earnings revisions.",
-        "No article, stock quote, valuation, holding or private market-flow data added."
+        "Mandatory instructions and specifications fully read at locked commit;large progress JSON obtained in full and parsed;event fingerprints,latest coverage,candidates andthree related ai-industry articles checked.",
+        "Broad search results predominantly historical articles,social posts and commentary. No newconfirmedTSMC/MediaTek customerallocation,NRE/productioneconomics orsame-basis CSPbudgetcut established.",
+        "Newly available Lam third-party automated transcript read including Q&A;contains transcription errors in product names. Official audio notauthenticated;prior issuer-slides evidence retained asprimary baseline. Source completion doesnot establish another earnings revision.",
+        "Apollo October21 delay scenario andHolland&Knight October21 BayArea permitting summary discovered/read asresearchleads;not evidence ofanew customer cancellation orsupplierprofitrevision. Underlying municipal originals notread.",
+        "No fresh official dailyissuer table retrieved thisround;prior snapshots remain historical. Currentfullfiling andcompanyeconomics coverage remains partial.",
+        "Publicevent/coverage only;no stockquote,valuation,holding orprivateflow data included. No newarticle orpublicationverification."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -14315,6 +14311,34 @@
           "Primary TWSE notice times supersede broker-page display times only in appended verification record; prior historical reproductions preserved. Procurement/facility amounts do not establish AI-only end-demand, annual capex increases, named customer orders or supplier earnings revisions.",
           "No article, stock quote, valuation, holding or private market-flow data added."
         ]
+      },
+      {
+        "date": "2026-10-22",
+        "checked_at": "2026-10-21 22:53:50 UTC",
+        "instruction_commit_sha": "45700cdb22ae4e652c17bc4723276a02cbbf9e00",
+        "status": "98_name_discovery_core_indices_and_lam_transcript_source_completion_no_new_material_revision",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "40d8a41e9067fb18c3becf64527795cb83fa932f",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All98 active names included in14 grouped discovery queries;core issuer indices checked;not98 full current-filing audits.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.marvell.com/company/newsroom.html",
+          "https://www.benzinga.com/news/26/10/62514820/lam-research-q1-2027-earnings-call-transcript"
+        ],
+        "source_limits": [
+          "Mandatory instructions and specifications fully read at locked commit;large progress JSON obtained in full and parsed;event fingerprints,latest coverage,candidates andthree related ai-industry articles checked.",
+          "Broad search results predominantly historical articles,social posts and commentary. No newconfirmedTSMC/MediaTek customerallocation,NRE/productioneconomics orsame-basis CSPbudgetcut established.",
+          "Newly available Lam third-party automated transcript read including Q&A;contains transcription errors in product names. Official audio notauthenticated;prior issuer-slides evidence retained asprimary baseline. Source completion doesnot establish another earnings revision.",
+          "Apollo October21 delay scenario andHolland&Knight October21 BayArea permitting summary discovered/read asresearchleads;not evidence ofanew customer cancellation orsupplierprofitrevision. Underlying municipal originals notread.",
+          "No fresh official dailyissuer table retrieved thisround;prior snapshots remain historical. Currentfullfiling andcompanyeconomics coverage remains partial.",
+          "Publicevent/coverage only;no stockquote,valuation,holding orprivateflow data included. No newarticle orpublicationverification."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -21970,7 +21994,7 @@
     }
   ],
   "last_research_date": "2026-10-22",
-  "instruction_commit_sha": "7f8dd5bf31595acfe8c3eb0667e457f81eded83e",
+  "instruction_commit_sha": "45700cdb22ae4e652c17bc4723276a02cbbf9e00",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
