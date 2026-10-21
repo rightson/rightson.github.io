@@ -3602,6 +3602,55 @@
         ]
       },
       "status": "original_report_bodies_read_material_financial_candidate_issuer_documents_pending_no_article"
+    },
+    {
+      "fingerprint": "psmc-q3-2026-official-self-assessed-operating-income-confirmation-20261021",
+      "event_date": "2026-10-21",
+      "discovered_date": "2026-10-21",
+      "instruction_commit_sha": "fee44b991761893b60484442bb3b18112908da08",
+      "companies": [
+        "PSMC"
+      ],
+      "type": "issuer_quarterly_self_assessed_results_source_upgrade",
+      "sources": [
+        "https://www.powerchip.com/zh-tw/financials/quarterlyincome?target=target_title",
+        "https://www.powerchip.com/en-global/financials/quarterlyincome?target=target_title"
+      ],
+      "facts": {
+        "period": "2026 Q3; comparisons with2026 Q2",
+        "currency": "TWD",
+        "unit": "thousand except EPS",
+        "q3": {
+          "operating_revenue": 21342792,
+          "operating_income": 7830361,
+          "income_before_tax": 8140470,
+          "eps": 1.38
+        },
+        "q2": {
+          "operating_revenue": 17290184,
+          "operating_income": 3684085,
+          "income_before_tax": 3887979,
+          "eps": 0.76
+        },
+        "year_to_date_eps": 5.42,
+        "calculated_comparisons": {
+          "revenue_growth_percent": 23.438778904839875,
+          "operating_income_growth_percent": 112.54561173262832,
+          "operating_margin_q3_percent": 36.688550401465754,
+          "operating_margin_q2_percent": 21.307378799439032,
+          "formulas": "Growth=new/old-1; operating margin=operating income/revenue."
+        },
+        "source_upgrade": "Previous observation had blankQ3 cells. Chinese andEnglish issuer tables now contain matching Q3 revenue/operating income/pretax income/EPS and nine-monthEPS.",
+        "source_time_limit": "Issuer page does not print publication date/time;discovery date is not asserted as publication clock.",
+        "limitations": [
+          "Company self-assessed preliminary figures,not CPA reviewed/audited.",
+          "No gross-margin,net-income,cash-flow,receivables or other-operating-income breakdown in this table;media gross-margin48%is not independently verified here.",
+          "Reported aggregate operating income must not be equated with recurring earnings;P5/closure/other-operating items require a detailed bridge.",
+          "Issuer itself reports nine-monthEPS5.42;per-share period amounts need not add because denominators may differ.Weighted-share reconciliation not obtained.",
+          "Quarterly PDF index still exposesQ1/Q2only;noQ3call slides acquired.2027pricing targets/LTAs remain media-attributed negotiations,not verified realised contracts."
+        ]
+      },
+      "status": "bilingual_issuer_self_assessed_table_verified_incremental_operating_result_no_article"
     }
   ],
   "articles": [],
@@ -3674,15 +3723,15 @@
     ],
     "current_run_screening": {
       "date": "2026-10-21",
-      "checked_at": "2026-10-21T08:03:17Z",
-      "instruction_commit_sha": "ae0519574f4ef019cf7177984ba3d4b910845801",
-      "status": "new_psmc_reported_results_registered_issuer_document_reconciliation_pending",
+      "checked_at": "2026-10-21T09:16:22Z",
+      "instruction_commit_sha": "fee44b991761893b60484442bb3b18112908da08",
+      "status": "psmc_official_self_assessed_q3_source_upgrade_registered",
       "company_count": 98,
       "grouped_query_count": 14,
-      "additional_targeted_query_count": 20,
+      "additional_targeted_query_count": 12,
       "universe_commit_sha": "15737456c090bdcb099718fe47a1b85562ddbe5c",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "98active names submitted in14grouped discovery queries;20additional targeted discovery/earnings/source-confirmation queries;sixcoreissuerindex attempts.Individual currentissuer-filings validation remains partial.",
+      "scope": "All98active names submitted in14grouped discovery queries;12additional targeted core/CSP,earnings andmaterials queries.Sixcoreissuer index attempts.Individual latest filing validation remains partial.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -3690,25 +3739,27 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://investor.marvell.com/news-events/press-releases",
-        "https://news.nextapple.com/finance/20261021/7F03DFEC2C5CC87AB953A88310E71560",
-        "https://news.nextapple.com/finance/20261021/24CF90CE636AFD5FBE44FA33EAF6F0F0",
-        "https://news.nextapple.com/finance/20261021/190415E3D008DA9ABD515EAA42CA3101",
+        "https://www.powerchip.com/zh-tw/financials/quarterlyincome?target=target_title",
+        "https://www.powerchip.com/en-global/financials/quarterlyincome?target=target_title",
+        "https://www.powerchip.com/zh-tw/financials/quarterly?target=target_title",
         "https://www.powerchip.com/zh-tw/stock/conferences?target=target_title",
-        "https://www.taiwannews.com.tw/zh/news/6461928"
+        "https://investor.atmeta.com/home/default.aspx"
       ],
       "company_check_scope": {
         "new_active_universe_primary_issuer_originals": [],
+        "previously_counted_company_with_new_primary_facts": [
+          "6770"
+        ],
         "cumulative_primary_company_fact_count": 53,
         "cumulative_pending": 45
       },
       "source_limits": [
-        "Allmandatoryfiles andthreerelatedarticles acquiredinfull atlockedcommit;completeprogressJSONparsed.",
-        "Fivecoreissuerindexesread;Broadcom403.No newcoreprocurementallocation orcapexrevision established.",
-        "PSMCoriginalreporting recordsresults/managementtargets,not verifiedissuerfinancialdocuments.Threearticlescountonesourcefamily;Q3documents/P5closing/year-to-dateEPSreconciliation pending.",
-        "TSMCconstructionpausescope widened inattributedcompanystatement.No operatingfabshutdown orcapacityguidancerevision inferred.",
-        "Anthropic,NEXTDC,SpaceX,Supermicro,3M/Amazon,GDC/regionalinvestment eventsdeduplicated.Oldpartner/forecastnewsnotneworders.",
-        "Cumulativeprimaryfacts53of98;45pending.Groupedsearchnotfullcurrentfilingvalidation.",
-        "No newarticle orlint/build/deployclaim.No quote,valuation,privateholdings orprivatemarketmonitor data storedinpublicledger."
+        "Allmandatory instructions/specifications and three related articles fetched in full at lockedcommit.Complete progress JSON parsed.",
+        "PSMC Chinese andEnglish Q3self-assessed tables now match;this is a source upgrade plus new operating-income comparison,not a repeated media headline.Unreviewed figures and missing recurring/cashflow bridge preserved.",
+        "Fivecoreissuer indexes read;Broadcom403.Latestlisted TSMC/MediaTek/NVIDIA/AMD/Marvell release dates remainOctober15/September30/October19/October12/October13.No new core procurement allocation established.",
+        "CSP,Anthropic,NEXTDC,SpaceX,Supermicro andPSMC media events deduplicated.NextDC/FT/TPCA commentary not treated as newly confirmed issuer capex/order changes.",
+        "98-name grouped discovery is not complete current issuer-financial/order validation.Cumulative53historical primary-company facts;45pending.",
+        "Noarticle created orclaimed lint/build/deploy.Noquotes,valuations,privateholdings orprivate market-monitoring data in publicledger."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -11069,6 +11120,47 @@
           "Cumulativeprimaryfacts53of98;45pending.Groupedsearchnotfullcurrentfilingvalidation.",
           "No newarticle orlint/build/deployclaim.No quote,valuation,privateholdings orprivatemarketmonitor data storedinpublicledger."
         ]
+      },
+      {
+        "date": "2026-10-21",
+        "checked_at": "2026-10-21T09:16:22Z",
+        "instruction_commit_sha": "fee44b991761893b60484442bb3b18112908da08",
+        "status": "psmc_official_self_assessed_q3_source_upgrade_registered",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "additional_targeted_query_count": 12,
+        "universe_commit_sha": "15737456c090bdcb099718fe47a1b85562ddbe5c",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All98active names submitted in14grouped discovery queries;12additional targeted core/CSP,earnings andmaterials queries.Sixcoreissuer index attempts.Individual latest filing validation remains partial.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.powerchip.com/zh-tw/financials/quarterlyincome?target=target_title",
+          "https://www.powerchip.com/en-global/financials/quarterlyincome?target=target_title",
+          "https://www.powerchip.com/zh-tw/financials/quarterly?target=target_title",
+          "https://www.powerchip.com/zh-tw/stock/conferences?target=target_title",
+          "https://investor.atmeta.com/home/default.aspx"
+        ],
+        "company_check_scope": {
+          "new_active_universe_primary_issuer_originals": [],
+          "previously_counted_company_with_new_primary_facts": [
+            "6770"
+          ],
+          "cumulative_primary_company_fact_count": 53,
+          "cumulative_pending": 45
+        },
+        "source_limits": [
+          "Allmandatory instructions/specifications and three related articles fetched in full at lockedcommit.Complete progress JSON parsed.",
+          "PSMC Chinese andEnglish Q3self-assessed tables now match;this is a source upgrade plus new operating-income comparison,not a repeated media headline.Unreviewed figures and missing recurring/cashflow bridge preserved.",
+          "Fivecoreissuer indexes read;Broadcom403.Latestlisted TSMC/MediaTek/NVIDIA/AMD/Marvell release dates remainOctober15/September30/October19/October12/October13.No new core procurement allocation established.",
+          "CSP,Anthropic,NEXTDC,SpaceX,Supermicro andPSMC media events deduplicated.NextDC/FT/TPCA commentary not treated as newly confirmed issuer capex/order changes.",
+          "98-name grouped discovery is not complete current issuer-financial/order validation.Cumulative53historical primary-company facts;45pending.",
+          "Noarticle created orclaimed lint/build/deploy.Noquotes,valuations,privateholdings orprivate market-monitoring data in publicledger."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -18219,6 +18311,26 @@
         "Verify tool-installation criticalpath and anychange to2nmcapacity guidance."
       ],
       "publication_status": "scope_update_candidate_only_no_capacity_revision_or_article"
+    },
+    {
+      "key": "psmc-q3-2026-official-self-assessed-operating-income-confirmation-20261021",
+      "date": "2026-10-21",
+      "event_date": "2026-10-21",
+      "instruction_commit_sha": "fee44b991761893b60484442bb3b18112908da08",
+      "companies": [
+        "PSMC"
+      ],
+      "sources": [
+        "https://www.powerchip.com/zh-tw/financials/quarterlyincome?target=target_title",
+        "https://www.powerchip.com/en-global/financials/quarterlyincome?target=target_title"
+      ],
+      "stage": "issuer_preliminary_results_verified_detailed_quality_bridge_pending",
+      "questions": [
+        "Obtain Q3 full statements and separate other-operating/one-off gains from ongoing operating earnings.",
+        "Verify cash conversion,receivables and contribution of recovered AI product lines.",
+        "Reconcile weighted-average share counts and closing/closure timing with issuer documents."
+      ],
+      "publication_status": "source_upgrade_registered_no_article"
     }
   ],
   "blockers": [
@@ -18238,7 +18350,7 @@
     }
   ],
   "last_research_date": "2026-10-21",
-  "instruction_commit_sha": "ae0519574f4ef019cf7177984ba3d4b910845801",
+  "instruction_commit_sha": "fee44b991761893b60484442bb3b18112908da08",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
