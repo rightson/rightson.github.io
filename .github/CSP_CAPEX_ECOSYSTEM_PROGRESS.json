@@ -5744,14 +5744,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-22",
-      "checked_at": "2026-10-21 18:18:30 UTC",
-      "instruction_commit_sha": "2ccc5e054250592d75a50d3f17638c59a654c5e7",
-      "status": "full_98_name_discovery_and_dated_material_notice_screen_no_new_material_revision",
+      "checked_at": "2026-10-21 19:29:10 UTC",
+      "instruction_commit_sha": "2f9012d776b9e2979d68da7895036811b06dbcc7",
+      "status": "full_98_name_discovery_complete_tpex_material_route_resolved_no_material_revision",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "40d8a41e9067fb18c3becf64527795cb83fa932f",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All98active names in14groupeddiscoveryqueries;freshsixcoreissuerindices,Meta/Amphenolindices anddatedexchange-materialsnapshot. Not a98completecurrent-filingsaudit.",
+      "scope": "All98active names submitted in14grouped discoveryqueries;freshsixcoreissuerindices,CSP/financingdiscovery andoriginalTWSE/TPExdaily materialtables. Historicalnotice snapshots,notcompleteOctober21/22individualfilingsaudits.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -5760,10 +5760,7 @@
         "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://investor.marvell.com/news-events/press-releases",
         "https://investor.atmeta.com/investor-news/default.aspx",
-        "https://investors.amphenol.com/news-and-events/financial-news/default.aspx",
-        "https://mops.twse.com.tw/mops/#/web/t05st01",
-        "https://www.tradingview.com/news/seekingalpha:80afd954b094b:0-google-s-tpu-v9-faces-slight-delay-marvell-remains-well-positioned-long-term-in-supply-chain-gf/",
-        "https://money.udn.com/money/story/5739/9829498"
+        "https://mops.twse.com.tw/mops/#/web/t05st01"
       ],
       "company_check_scope": {
         "newly_primary_verified_symbols": [],
@@ -5771,15 +5768,50 @@
         "cumulative_monthly_revenue_count": 98,
         "remaining_without_any_primary_fact": 0
       },
+      "material_snapshot": {
+        "table_as_of": "2026-10-21",
+        "announcements_date": "2026-10-20",
+        "TWSE": {
+          "rows": 112,
+          "active_universe_notices": 12,
+          "active_issuers": 8,
+          "retrieved_at": "2026-10-21T19:28:31.491511+00:00",
+          "endpoint_path": "/v1/opendata/t187ap04_L"
+        },
+        "TPEx": {
+          "rows": 30,
+          "active_universe_notices": 3,
+          "active_issuers": 3,
+          "retrieved_at": "2026-10-21T19:28:29.247360+00:00",
+          "endpoint_path": "/openapi/v1/mopsfin_t187ap04_O",
+          "notices": [
+            {
+              "symbol": "3081",
+              "announcement_time": "15:29:18 Asia/Taipei",
+              "stage": "InvitedOctober28onlineQ3operatingoverview;meetingnotyetheld."
+            },
+            {
+              "symbol": "3131",
+              "announcement_time": "16:23:43 Asia/Taipei",
+              "stage": "InvitedOctober29Singaporecorporateday;not newfinancialresults."
+            },
+            {
+              "symbol": "6274",
+              "announcement_time": "18:37:05 Asia/Taipei",
+              "stage": "SixthdomesticunsecuredconvertiblebondconversiontermssetafterOctober6filingeffectiveness;thisnotice doesnotconfirmproceedsreceived."
+            }
+          ]
+        }
+      },
       "source_limits": [
-        "All requiredinstructionfiles,specifications,classification andthree relatedarticles fetched fullyatlockedcommit withunchangedblobs. CompleteprogressJSONread throughGitblob;emptyContentsAPIcontentwasnot treatedasfullread.",
-        "Septemberrevenuebaseline98retained. All98names submittedforcurrentdiscovery;stale2018/2025,datedmonthlyreports,socialcontent andrecycledforecastheadlinesexcluded asnewfacts.",
-        "TSMC directHTMLstillshowsOctober15Q3 andOctober8monthlybaseline;webtext omittedtheseentries. MediaTekSeptember30,NVIDIAOctober21,AMDOctober12,BroadcomOctober21Arcot andMarvellOctober13 indicesremain prioreventbaselines. No newverifiedTPUallocation,NREorcoreguidancechange.",
-        "OfficialTWSEsnapshot has112totalnotices,tabledateOctober21 andactive-pooldisclosuresdatedOctober20;12noticesacross8activeissuersread. ThisisnotOctober21completefilingcoverage. PSMCequipmentandKaoriproceedsoriginalverificationappended toexistingcandidates;no financialrevisioninferred.",
-        "AttemptedTPExmaterialroute returnednonJSON;route/contentavailabilityunresolved,not evidenceofanexchangeoutage ornoOTCevents. OTCcurrentannouncementsremainpartialdiscoverycoverage.",
-        "GFHumufishdelaybody matchesalreadyrecordedOctober13institutionalresearch;originalnote/currentissuerconfirmationandquantifiedearningsrevisionstillpending. Syndicationisnotnewindependentconfirmation. 弘塑October21lateheadline iswarrant commentary citingknownQ3revenueandmaintainedrating;not a newcompanyforecast.",
-        "Meta/Amphenolwebindicesdidnotexposecurrentresultbodies. Preview/analystcommentarynotpromotedtoissuedquarterlyresults. VertivQ3scheduledOctober28;noactualQ3revisionverified.",
-        "Onlypublicsourceandverificationstagesrecorded;noarticle,individualquote,valuation,holdings orprivatemarket-monitor dataadded."
+        "Mandatoryinstructions,specifications,classification,three relatedarticlesandcompleteprogress readatlockedcommit;instructionandarticleblobsunchanged. Largeprogress recoveredviaGitblob becauseContentsAPIcontent isempty.",
+        "Septembermonthlyprimarybaseline remains98;currentgroupeddiscovery returnedmixed-date/recyclednews,rankingsandmarketcommentary. No currentfinancialfilingcountof98claimed;emptyresults notabsenceproof.",
+        "TSMC directHTMLlatestOctober15Q3/October8monthly;MediaTeklatestSeptember30. NVIDIAOctober21supplychain/A5X andcore AMD,Broadcom,Marvell indexbaselinesunchanged;prior materialeventsdeduplicated. No newverifiedTPUallocation,NREsplit orsupplierguidancerevision.",
+        "TPExoriginalAPIdefinition identifiesmopsfin_t187ap04_O;priorattemptedmops_t05st02route waswrong,not anexchangeoutage. Successfuloriginalsnapshot fixesrouteavailabilityonly:bothmarkets tabledateOctober21anddisclosuresOctober20,notcompleteOctober21/22coverage.",
+        "15matchednoticesacross11activeissuers screened. PriorPSMC/Kaori/ASE factsretained;newlyreadOTC3notices arecalendar/financingstages,notprocurementwins,receivedfundingor revisedearnings.",
+        "CurrentCSPofficial-domainsearchesempty;MetaindexnotexposingresultbodyandmarketpreviewcommentarydonotestablishissuedQ3resultsorcapexrevision. No inferenceofunchangedactualspendingfrommissingdata.",
+        "August13EpochAI authoredanalysis ishistoricalfinancingcontext,notOctober21newfundingclose. September29Reuterscommitmentheadline andOctober21Anthropiccommentary do notupgradeexistingdraftfilingtoverifiedpublicprospectus.",
+        "Publicresearchledgeronly;noarticle,stockquote,valuation,holding orprivatemarket-monitordataadded."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -13598,6 +13630,78 @@
           "Meta/Amphenolwebindicesdidnotexposecurrentresultbodies. Preview/analystcommentarynotpromotedtoissuedquarterlyresults. VertivQ3scheduledOctober28;noactualQ3revisionverified.",
           "Onlypublicsourceandverificationstagesrecorded;noarticle,individualquote,valuation,holdings orprivatemarket-monitor dataadded."
         ]
+      },
+      {
+        "date": "2026-10-22",
+        "checked_at": "2026-10-21 19:29:10 UTC",
+        "instruction_commit_sha": "2f9012d776b9e2979d68da7895036811b06dbcc7",
+        "status": "full_98_name_discovery_complete_tpex_material_route_resolved_no_material_revision",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "40d8a41e9067fb18c3becf64527795cb83fa932f",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All98active names submitted in14grouped discoveryqueries;freshsixcoreissuerindices,CSP/financingdiscovery andoriginalTWSE/TPExdaily materialtables. Historicalnotice snapshots,notcompleteOctober21/22individualfilingsaudits.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://investor.atmeta.com/investor-news/default.aspx",
+          "https://mops.twse.com.tw/mops/#/web/t05st01"
+        ],
+        "company_check_scope": {
+          "newly_primary_verified_symbols": [],
+          "cumulative_distinct_primary_fact_count": 98,
+          "cumulative_monthly_revenue_count": 98,
+          "remaining_without_any_primary_fact": 0
+        },
+        "material_snapshot": {
+          "table_as_of": "2026-10-21",
+          "announcements_date": "2026-10-20",
+          "TWSE": {
+            "rows": 112,
+            "active_universe_notices": 12,
+            "active_issuers": 8,
+            "retrieved_at": "2026-10-21T19:28:31.491511+00:00",
+            "endpoint_path": "/v1/opendata/t187ap04_L"
+          },
+          "TPEx": {
+            "rows": 30,
+            "active_universe_notices": 3,
+            "active_issuers": 3,
+            "retrieved_at": "2026-10-21T19:28:29.247360+00:00",
+            "endpoint_path": "/openapi/v1/mopsfin_t187ap04_O",
+            "notices": [
+              {
+                "symbol": "3081",
+                "announcement_time": "15:29:18 Asia/Taipei",
+                "stage": "InvitedOctober28onlineQ3operatingoverview;meetingnotyetheld."
+              },
+              {
+                "symbol": "3131",
+                "announcement_time": "16:23:43 Asia/Taipei",
+                "stage": "InvitedOctober29Singaporecorporateday;not newfinancialresults."
+              },
+              {
+                "symbol": "6274",
+                "announcement_time": "18:37:05 Asia/Taipei",
+                "stage": "SixthdomesticunsecuredconvertiblebondconversiontermssetafterOctober6filingeffectiveness;thisnotice doesnotconfirmproceedsreceived."
+              }
+            ]
+          }
+        },
+        "source_limits": [
+          "Mandatoryinstructions,specifications,classification,three relatedarticlesandcompleteprogress readatlockedcommit;instructionandarticleblobsunchanged. Largeprogress recoveredviaGitblob becauseContentsAPIcontent isempty.",
+          "Septembermonthlyprimarybaseline remains98;currentgroupeddiscovery returnedmixed-date/recyclednews,rankingsandmarketcommentary. No currentfinancialfilingcountof98claimed;emptyresults notabsenceproof.",
+          "TSMC directHTMLlatestOctober15Q3/October8monthly;MediaTeklatestSeptember30. NVIDIAOctober21supplychain/A5X andcore AMD,Broadcom,Marvell indexbaselinesunchanged;prior materialeventsdeduplicated. No newverifiedTPUallocation,NREsplit orsupplierguidancerevision.",
+          "TPExoriginalAPIdefinition identifiesmopsfin_t187ap04_O;priorattemptedmops_t05st02route waswrong,not anexchangeoutage. Successfuloriginalsnapshot fixesrouteavailabilityonly:bothmarkets tabledateOctober21anddisclosuresOctober20,notcompleteOctober21/22coverage.",
+          "15matchednoticesacross11activeissuers screened. PriorPSMC/Kaori/ASE factsretained;newlyreadOTC3notices arecalendar/financingstages,notprocurementwins,receivedfundingor revisedearnings.",
+          "CurrentCSPofficial-domainsearchesempty;MetaindexnotexposingresultbodyandmarketpreviewcommentarydonotestablishissuedQ3resultsorcapexrevision. No inferenceofunchangedactualspendingfrommissingdata.",
+          "August13EpochAI authoredanalysis ishistoricalfinancingcontext,notOctober21newfundingclose. September29Reuterscommitmentheadline andOctober21Anthropiccommentary do notupgradeexistingdraftfilingtoverifiedpublicprospectus.",
+          "Publicresearchledgeronly;noarticle,stockquote,valuation,holding orprivatemarket-monitordataadded."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -21146,7 +21250,7 @@
     }
   ],
   "last_research_date": "2026-10-22",
-  "instruction_commit_sha": "2ccc5e054250592d75a50d3f17638c59a654c5e7",
+  "instruction_commit_sha": "2f9012d776b9e2979d68da7895036811b06dbcc7",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
@@ -21252,6 +21356,16 @@
       "scope": "Latest available September2026 TWSE/TPEx original tables, snapshotOctober17",
       "status": "original_numeric_tables_obtained_all_98_active_companies_matched",
       "historical_limit": "Historical failed attempts remain unchanged. First listed-table attempt503; subsequent original HTTPS retry succeeded. Optional legacy HTML paths returned404 and were not used."
+    },
+    {
+      "key": "tpex-daily-material-announcement-route",
+      "resolved_at": "2026-10-21 19:29:10 UTC",
+      "instruction_commit_sha": "2f9012d776b9e2979d68da7895036811b06dbcc7",
+      "status": "correct_official_route_discovered_and_snapshot_read",
+      "source": "https://mops.twse.com.tw/mops/#/web/t05st01",
+      "endpoint_path": "/openapi/v1/mopsfin_t187ap04_O",
+      "scope": "30originalOTCnotices,October21snapshotcoveringOctober20;threeactiveuniversematchesfullyread.",
+      "historical_limit": "Priorfailedpathleftunchangedashistory;itwasanincorrectroute,notproofTPExoutage. Resolvestransportavailability,notlatestOctober21/22filingcoverage."
     }
   ]
 }
