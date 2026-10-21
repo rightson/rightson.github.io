@@ -1,0 +1,174 @@
+{
+  "bdp_cases": [
+    {
+      "bdp_bytes": 120000,
+      "bdp_packets": 118,
+      "five_bitmap_bits_per_qp": 590,
+      "five_bitmap_bytes_per_qp": 74,
+      "link_gbps": 40,
+      "mtu_bytes": 1024,
+      "rtt_us": 24
+    },
+    {
+      "bdp_bytes": 300000,
+      "bdp_packets": 293,
+      "five_bitmap_bits_per_qp": 1465,
+      "five_bitmap_bytes_per_qp": 184,
+      "link_gbps": 100,
+      "mtu_bytes": 1024,
+      "rtt_us": 24
+    },
+    {
+      "bdp_bytes": 300000,
+      "bdp_packets": 293,
+      "five_bitmap_bits_per_qp": 1465,
+      "five_bitmap_bytes_per_qp": 184,
+      "link_gbps": 200,
+      "mtu_bytes": 1024,
+      "rtt_us": 12
+    },
+    {
+      "bdp_bytes": 600000,
+      "bdp_packets": 586,
+      "five_bitmap_bits_per_qp": 2930,
+      "five_bitmap_bytes_per_qp": 367,
+      "link_gbps": 400,
+      "mtu_bytes": 1024,
+      "rtt_us": 12
+    },
+    {
+      "bdp_bytes": 1200000,
+      "bdp_packets": 1172,
+      "five_bitmap_bits_per_qp": 5860,
+      "five_bitmap_bytes_per_qp": 733,
+      "link_gbps": 800,
+      "mtu_bytes": 1024,
+      "rtt_us": 12
+    }
+  ],
+  "completion_case": {
+    "arrival_order": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      2
+    ],
+    "completion_event_index": 11,
+    "packet_count": 12,
+    "trace": [
+      {
+        "completion_visible": false,
+        "contiguous_prefix_packets": 1,
+        "last_packet_present": false,
+        "phase": "first_arrival",
+        "psn": 0
+      },
+      {
+        "completion_visible": false,
+        "contiguous_prefix_packets": 2,
+        "last_packet_present": false,
+        "phase": "first_arrival",
+        "psn": 1
+      },
+      {
+        "completion_visible": false,
+        "contiguous_prefix_packets": 2,
+        "last_packet_present": false,
+        "phase": "first_arrival",
+        "psn": 3
+      },
+      {
+        "completion_visible": false,
+        "contiguous_prefix_packets": 2,
+        "last_packet_present": false,
+        "phase": "first_arrival",
+        "psn": 4
+      },
+      {
+        "completion_visible": false,
+        "contiguous_prefix_packets": 2,
+        "last_packet_present": false,
+        "phase": "first_arrival",
+        "psn": 5
+      },
+      {
+        "completion_visible": false,
+        "contiguous_prefix_packets": 2,
+        "last_packet_present": false,
+        "phase": "first_arrival",
+        "psn": 6
+      },
+      {
+        "completion_visible": false,
+        "contiguous_prefix_packets": 2,
+        "last_packet_present": false,
+        "phase": "first_arrival",
+        "psn": 7
+      },
+      {
+        "completion_visible": false,
+        "contiguous_prefix_packets": 2,
+        "last_packet_present": false,
+        "phase": "first_arrival",
+        "psn": 8
+      },
+      {
+        "completion_visible": false,
+        "contiguous_prefix_packets": 2,
+        "last_packet_present": false,
+        "phase": "first_arrival",
+        "psn": 9
+      },
+      {
+        "completion_visible": false,
+        "contiguous_prefix_packets": 2,
+        "last_packet_present": false,
+        "phase": "first_arrival",
+        "psn": 10
+      },
+      {
+        "completion_visible": false,
+        "contiguous_prefix_packets": 2,
+        "last_packet_present": true,
+        "phase": "first_arrival",
+        "psn": 11
+      },
+      {
+        "completion_visible": true,
+        "contiguous_prefix_packets": 12,
+        "last_packet_present": true,
+        "phase": "repair",
+        "psn": 2
+      }
+    ]
+  },
+  "loss_case": {
+    "go_back_n": {
+      "initial_transmissions": 64,
+      "redundant_retransmissions": 55,
+      "retransmissions": 57,
+      "total_transmissions": 121
+    },
+    "lost_psns": [
+      7,
+      29
+    ],
+    "selective": {
+      "initial_transmissions": 64,
+      "redundant_retransmissions": 0,
+      "retransmissions": 2,
+      "total_transmissions": 66
+    },
+    "window_packets": 64
+  },
+  "model": "deterministic packet-accounting example; not a network simulation"
+}
+

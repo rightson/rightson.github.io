@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+<title id="title">尾包先到仍不能宣告 RDMA operation 完成</title>
+<desc id="desc">12 包 operation 中 PSN 2 遺失，PSN 11 尾包已到並完成 DMA，但連續前綴仍停在 2；補上 PSN 2 後 bitmap 才連成 0 到 11 並交付 CQE。</desc>
+<style>
+:root{color-scheme:light dark}.bg{fill:#f8fafc}.t{font:700 27px system-ui,sans-serif;fill:#0f172a}.s{font:20px system-ui,sans-serif;fill:#334155}.cell{fill:#86efac;stroke:#166534;stroke-width:2}.hole{fill:#fee2e2;stroke:#dc2626;stroke-width:3}.last{fill:#c4b5fd;stroke:#6d28d9;stroke-width:3}.gate{fill:#ffedd5;stroke:#ea580c;stroke-width:3}.arrow{stroke:#ea580c;stroke-width:4;marker-end:url(#a)}.sig{font:14px system-ui,sans-serif;fill:#64748b}</style>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#ea580c"/></marker></defs>
+<rect class="bg" width="1200" height="700"/><text class="t" x="55" y="62">第一輪抵達後，資料已分散落到最終位址</text>
+<g transform="translate(65,120)">
+<rect class="cell" x="0" y="0" width="78" height="68"/><rect class="cell" x="84" y="0" width="78" height="68"/><rect class="hole" x="168" y="0" width="78" height="68"/>
+<rect class="cell" x="252" y="0" width="78" height="68"/><rect class="cell" x="336" y="0" width="78" height="68"/><rect class="cell" x="420" y="0" width="78" height="68"/><rect class="cell" x="504" y="0" width="78" height="68"/><rect class="cell" x="588" y="0" width="78" height="68"/><rect class="cell" x="672" y="0" width="78" height="68"/><rect class="cell" x="756" y="0" width="78" height="68"/><rect class="cell" x="840" y="0" width="78" height="68"/><rect class="last" x="924" y="0" width="78" height="68"/>
+<g class="s" text-anchor="middle"><text x="39" y="44">0</text><text x="123" y="44">1</text><text x="207" y="44">2</text><text x="291" y="44">3</text><text x="375" y="44">4</text><text x="459" y="44">5</text><text x="543" y="44">6</text><text x="627" y="44">7</text><text x="711" y="44">8</text><text x="795" y="44">9</text><text x="879" y="44">10</text><text x="963" y="44">11</text></g></g>
+<text class="s" x="65" y="235">綠：已到　紅：缺口　紫：尾包與 completion metadata 已到</text>
+<rect class="gate" x="310" y="290" rx="20" width="580" height="110"/><text class="t" x="375" y="335">連續前綴 = 0、1</text><text class="s" x="375" y="372">MSN、Receive WQE 與 CQE 仍停住</text>
+<line class="arrow" x1="600" y1="410" x2="600" y2="470"/>
+<text class="t" x="350" y="515">PSN 2 重傳抵達 → bitmap 連成 0–11</text>
+<rect class="cell" x="335" y="550" rx="18" width="530" height="75"/><text class="t" x="405" y="597">現在才把 CQE 交給 application</text>
+<text class="sig" x="950" y="675">Scott Yo-Ru Chen · 2026-10-21</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#ea580c" i]{fill:#eda782}.bg{fill:#1a2026}.t{fill:#d1d7e6}.s{fill:#c6ccd5}.cell{fill:#82eda9;stroke:#4fd983}.hole{fill:#351616;stroke:#eb8484}.last{fill:#261d48;stroke:#ad86ea}.gate{fill:#3b2c16;stroke:#eda782}.arrow{stroke:#eda782}.sig{fill:#929eb0}}</style>
+</svg>

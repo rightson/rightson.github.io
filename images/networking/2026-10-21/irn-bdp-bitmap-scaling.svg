@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+<title id="title">BDP cap 與五張 bitmap 的每 QP 狀態隨鏈路速率增加</title>
+<desc id="desc">假設 1 KiB MTU，40Gbps 24微秒需要118包與74 bytes，400Gbps 12微秒需要586包與367 bytes，800Gbps 12微秒需要1172包與733 bytes。</desc>
+<style>
+:root{color-scheme:light dark}.bg{fill:#f8fafc}.t{font:700 27px system-ui,sans-serif;fill:#0f172a}.s{font:19px system-ui,sans-serif;fill:#334155}.axis{stroke:#64748b;stroke-width:2}.bar{fill:#3b82f6}.bar2{fill:#8b5cf6}.grid{stroke:#cbd5e1;stroke-width:1}.sig{font:14px system-ui,sans-serif;fill:#64748b}</style>
+<rect class="bg" width="1200" height="760"/><text class="t" x="55" y="58">BDP cap 同時限制在途封包與 bitmap 長度</text>
+<text class="s" x="55" y="95">假設 1 KiB MTU；狀態量採 IRN 論文的五張 BDP-sized bitmap</text>
+<line class="axis" x1="205" y1="620" x2="1120" y2="620"/><line class="axis" x1="205" y1="150" x2="205" y2="620"/>
+<line class="grid" x1="205" y1="500" x2="1120" y2="500"/><line class="grid" x1="205" y1="380" x2="1120" y2="380"/><line class="grid" x1="205" y1="260" x2="1120" y2="260"/>
+<text class="s" x="55" y="625">0</text><text class="s" x="55" y="505">300</text><text class="s" x="55" y="385">600</text><text class="s" x="55" y="265">900</text><text class="s" x="55" y="155">1,200 包</text>
+<rect class="bar" x="260" y="573" width="105" height="47"/><text class="s" x="275" y="555">118</text><text class="s" x="230" y="660">40G / 24μs</text><text class="s" x="255" y="692">74 B/QP</text>
+<rect class="bar" x="465" y="503" width="105" height="117"/><text class="s" x="480" y="485">293</text><text class="s" x="430" y="660">100G / 24μs</text><text class="s" x="460" y="692">184 B/QP</text>
+<rect class="bar" x="670" y="386" width="105" height="234"/><text class="s" x="685" y="368">586</text><text class="s" x="635" y="660">400G / 12μs</text><text class="s" x="665" y="692">367 B/QP</text>
+<rect class="bar2" x="875" y="151" width="105" height="469"/><text class="s" x="885" y="135">1,172</text><text class="s" x="840" y="660">800G / 12μs</text><text class="s" x="870" y="692">733 B/QP</text>
+<text class="s" x="805" y="730">bytes/QP 僅計五張 bitmap</text><text class="sig" x="960" y="752">Scott Yo-Ru Chen · 2026-10-21</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}.bg{fill:#1a2026}.t{fill:#d1d7e6}.s{fill:#c6ccd5}.axis{stroke:#929eb0}.bar{fill:#82abed}.bar2{fill:#a382ed}.grid{stroke:#2e333a}.sig{fill:#929eb0}}</style>
+</svg>

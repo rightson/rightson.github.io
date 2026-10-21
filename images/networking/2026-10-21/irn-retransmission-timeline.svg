@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+<title id="title">Go-back-N 與 IRN 選擇性重傳的差異</title>
+<desc id="desc">同一個 64 包視窗遺失 PSN 7 與 29，go-back-N 從 7 起重送 57 包，IRN 只補 2 包。</desc>
+<style>
+:root{color-scheme:light dark}.bg{fill:#f8fafc}.t{font:700 27px system-ui,sans-serif;fill:#0f172a}.s{font:20px system-ui,sans-serif;fill:#334155}.axis{stroke:#64748b;stroke-width:2}.ok{fill:#93c5fd}.lost{fill:#ef4444}.redo{fill:#fdba74}.sel{fill:#34d399}.box{fill:#fff;stroke:#cbd5e1;stroke-width:2}.sig{font:14px system-ui,sans-serif;fill:#64748b}
+</style>
+<rect class="bg" width="1200" height="720"/><text class="t" x="55" y="62">64 包視窗，PSN 7 與 29 發生暫時性丟失</text>
+<text class="s" x="55" y="132">首次傳送</text><line class="axis" x1="215" y1="125" x2="1120" y2="125"/>
+<rect class="ok" x="220" y="100" width="95" height="48"/><text class="s" x="242" y="132">0–6</text>
+<rect class="lost" x="322" y="100" width="34" height="48"/><text class="s" x="329" y="132">7</text>
+<rect class="ok" x="363" y="100" width="255" height="48"/><text class="s" x="430" y="132">8–28</text>
+<rect class="lost" x="625" y="100" width="45" height="48"/><text class="s" x="631" y="132">29</text>
+<rect class="ok" x="677" y="100" width="440" height="48"/><text class="s" x="835" y="132">30–63</text>
+<rect class="box" x="55" y="205" rx="18" width="1090" height="175"/><text class="t" x="85" y="252">Go-back-N</text><text class="s" x="85" y="292">receiver 丟棄 8–63；sender 從第一個缺口 PSN 7 起重送</text>
+<rect class="redo" x="220" y="320" width="897" height="38"/><text class="s" x="560" y="347">重送 57 包，其中 55 包原已送達</text>
+<rect class="box" x="55" y="420" rx="18" width="1090" height="175"/><text class="t" x="85" y="467">IRN selective retransmission</text><text class="s" x="85" y="507">receiver 保留 8–63；sender 由 bitmap 找出缺口</text>
+<rect class="sel" x="322" y="535" width="34" height="38"/><rect class="sel" x="625" y="535" width="45" height="38"/><text class="s" x="715" y="562">只補 PSN 7、29，共 2 包</text>
+<text class="s" x="55" y="650">假設算例：總傳送量由 121 包降為 66 包；未模擬 queue、RTT 或壅塞控制。</text><text class="sig" x="950" y="692">Scott Yo-Ru Chen · 2026-10-21</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}.bg{fill:#1a2026}.t{fill:#d1d7e6}.s{fill:#c6ccd5}.axis{stroke:#929eb0}.ok{fill:#82b5ed}.lost{fill:#ed8282}.redo{fill:#edb982}.sel{fill:#8ae6c4}.box{fill:#1b1f20;stroke:#2e333a}.sig{fill:#929eb0}}</style>
+</svg>
