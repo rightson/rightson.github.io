@@ -3511,6 +3511,49 @@
         "limits": "No annual capex change,revenue amount,utilization measurement,TPU procurement split,MediaTek allocation or supplier earnings revision disclosed."
       },
       "status": "original_interview_selected_compute_allocation_sections_read_no_separate_repeat_alert_no_article"
+    },
+    {
+      "fingerprint": "amazon-germany-2027-investment-aws-frankfurt-scope-20261020",
+      "event_date": "2026-10-20",
+      "discovered_date": "2026-10-21",
+      "instruction_commit_sha": "fd28093482413d0b3c662a9fd0abe5d1e26c7bed",
+      "companies": [
+        "Amazon/AWS"
+      ],
+      "type": "issuer_regional_investment_plan_scope",
+      "sources": [
+        "https://press.aboutamazon.com/de/2026/10/invest-in-germany-summit-amazon-announces-16-billion-euro-investment-in-germany-in-2027"
+      ],
+      "facts": {
+        "currency": "EUR",
+        "unit": "billion",
+        "germany_total_investment_plan_2027": 16,
+        "aws_frankfurt_cloud_and_ai_infrastructure_component": 4.8,
+        "time_scope_note": "Headline/body frame investment in2027;one executive quote says Frankfurt expansion through2027.Keep wording distinction pending reconciliation.",
+        "limits": "Total includes logistics,Leo,PrimeVideo and other activities.AWS component combines cloud and AI.No AI-only equipment allocation,increment versus global capex guide,accepted supplier orders or deployment utilisation disclosed.",
+        "total_amount_qualifier": "Issuer headline says16billion;body says more than16billion.Planned,not realised spending."
+      },
+      "status": "issuer_body_read_plan_scope_registered_no_material_earnings_revision_no_article"
+    },
+    {
+      "fingerprint": "google-distributed-cloud-b300-gemini-availability-20261020",
+      "event_date": "2026-10-20",
+      "discovered_date": "2026-10-21",
+      "instruction_commit_sha": "fd28093482413d0b3c662a9fd0abe5d1e26c7bed",
+      "companies": [
+        "Alphabet/Google",
+        "NVIDIA"
+      ],
+      "type": "issuer_product_availability_not_order",
+      "sources": [
+        "https://cloud.google.com/blog/topics/hybrid-cloud/new-innovations-in-google-distributed-cloud"
+      ],
+      "facts": {
+        "availability": "Issuer says HGX B300 and Gemini3.5Flash generally available on air-gapped GDC;enterprise search remains preview.",
+        "networking": "Per-VM network support rises25 to32Gbps;IPsec hardware offload up to100Gbps.",
+        "limits": "Product availability does not disclose incremental equipment procurement,customer accepted deployments,utilisation,AI revenue or supplier margin."
+      },
+      "status": "issuer_product_stage_body_read_no_quantified_order_or_earnings_revision_no_article"
     }
   ],
   "articles": [],
@@ -3583,15 +3626,15 @@
     ],
     "current_run_screening": {
       "date": "2026-10-21",
-      "checked_at": "2026-10-21T05:31:30Z",
-      "instruction_commit_sha": "99bde0d998d1f0ea670f7ad538ec417d8ea45a80",
-      "status": "new_supermicro_preliminary_earnings_increment_and_google_compute_allocation_original",
+      "checked_at": "2026-10-21T05:43:56Z",
+      "instruction_commit_sha": "fd28093482413d0b3c662a9fd0abe5d1e26c7bed",
+      "status": "fresh_discovery_deduplicated_regional_plan_and_product_stage_context_no_new_material_revision",
       "company_count": 98,
       "grouped_query_count": 14,
-      "additional_targeted_query_count": 12,
+      "additional_targeted_query_count": 16,
       "universe_commit_sha": "15737456c090bdcb099718fe47a1b85562ddbe5c",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "98 active names in14 grouped discovery searches,12 targeted core/CSP,preliminary-results and source/quote queries,and six core issuer index attempts.Not98 current issuer-filings audits.",
+      "scope": "98 active names in14 grouped discovery queries;16 targeted core/CSP and original-source discovery queries;six core issuer index attempts.Not98 individual current issuer-filings audits.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -3599,10 +3642,9 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://investor.marvell.com/news-events/press-releases",
-        "https://ir.supermicro.com/news/news-details/2026/Supermicro-Provides-First-Quarter-of-Fiscal-Year-2027-Preliminary-Business-Update/default.aspx",
-        "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000025/smcifirstquarterfy2027busi.htm",
-        "https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx",
-        "https://www.bigtechnology.com/p/sundar-pichai-googles-frontier-imperative"
+        "https://press.aboutamazon.com/de/2026/10/invest-in-germany-summit-amazon-announces-16-billion-euro-investment-in-germany-in-2027",
+        "https://cloud.google.com/blog/topics/hybrid-cloud/new-innovations-in-google-distributed-cloud",
+        "https://www.powerchip.com/zh-tw/financials/index/monthly-revenues-2026"
       ],
       "company_check_scope": {
         "new_active_universe_primary_issuer_originals": [],
@@ -3610,12 +3652,13 @@
         "cumulative_pending": 45
       },
       "source_limits": [
-        "Mandatory instructions/specifications and recent related posts acquired at locked commit with unchanged blobs;complete progress JSON parsed.Latest head and target blob checked before writing.",
-        "Supermicro and Google are outside the98-name Taiwan universe;watchlist and active primary counts unchanged.Supermicro record is preliminary completed-quarter estimates,not forward full-year growth or cash-flow validation.",
-        "Google original interview selected compute-allocation sections read;unquantified executive statements not a new budget or chip procurement contract.",
-        "Core TSMC,MediaTek,NVIDIA,AMD andMarvell indexes read;Broadcom direct index403.No claim of fully current original-source coverage across six issuers.",
-        "NEXTDC,Anthropic,SpaceX and prior TPU timing reports deduplicated.Qisda andABF/Ibiden leads remain excerpt-level or original-body unavailable;no new earnings conclusion adopted from them.",
-        "No article,lint/build/deploy claim,quotes,valuation,private holdings or B-market monitoring data in public ledger."
+        "Mandatory instruction/specification bodies and complete progress JSON acquired at locked commit;recent related posts read.Latest head and target blob checked before mutation.",
+        "TSMC,MediaTek,NVIDIA,AMD andMarvell indexes read;Broadcom index403.Meta IR extracted lists omit dynamic release entries;not comprehensive Meta release validation.",
+        "PSMC official monthly table cross-checks historical September salesTWD7,665,064thousand;monthly and distinct-company baseline counts unchanged.Quarterly income and quarterly report links timed out;no new Q3 result asserted.",
+        "Amazon regional plan amount is not a global capex guidance increase or AI-only budget.Google GDC availability is not a purchase contract.No Taiwan supplier order inferred from either.",
+        "Supermicro preliminary completed-quarter revision,Pichai interview,NEXTDC,Anthropic,SpaceX and previously tracked supply-chain reports deduplicated.ABF pricing and Qisda leads lack a newly verified issuer numeric body.",
+        "53of98 distinct names have an identified historical primary fact;45remain pending.This is not full current financial/filing validation and grouped discovery cannot prove absence of events.",
+        "No new article,lint/build/deploy or public-content claim.No quotes,valuation,private holdings or private market-monitor data stored."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -10858,6 +10901,43 @@
           "NEXTDC,Anthropic,SpaceX and prior TPU timing reports deduplicated.Qisda andABF/Ibiden leads remain excerpt-level or original-body unavailable;no new earnings conclusion adopted from them.",
           "No article,lint/build/deploy claim,quotes,valuation,private holdings or B-market monitoring data in public ledger."
         ]
+      },
+      {
+        "date": "2026-10-21",
+        "checked_at": "2026-10-21T05:43:56Z",
+        "instruction_commit_sha": "fd28093482413d0b3c662a9fd0abe5d1e26c7bed",
+        "status": "fresh_discovery_deduplicated_regional_plan_and_product_stage_context_no_new_material_revision",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "additional_targeted_query_count": 16,
+        "universe_commit_sha": "15737456c090bdcb099718fe47a1b85562ddbe5c",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "98 active names in14 grouped discovery queries;16 targeted core/CSP and original-source discovery queries;six core issuer index attempts.Not98 individual current issuer-filings audits.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://press.aboutamazon.com/de/2026/10/invest-in-germany-summit-amazon-announces-16-billion-euro-investment-in-germany-in-2027",
+          "https://cloud.google.com/blog/topics/hybrid-cloud/new-innovations-in-google-distributed-cloud",
+          "https://www.powerchip.com/zh-tw/financials/index/monthly-revenues-2026"
+        ],
+        "company_check_scope": {
+          "new_active_universe_primary_issuer_originals": [],
+          "cumulative_primary_company_fact_count": 53,
+          "cumulative_pending": 45
+        },
+        "source_limits": [
+          "Mandatory instruction/specification bodies and complete progress JSON acquired at locked commit;recent related posts read.Latest head and target blob checked before mutation.",
+          "TSMC,MediaTek,NVIDIA,AMD andMarvell indexes read;Broadcom index403.Meta IR extracted lists omit dynamic release entries;not comprehensive Meta release validation.",
+          "PSMC official monthly table cross-checks historical September salesTWD7,665,064thousand;monthly and distinct-company baseline counts unchanged.Quarterly income and quarterly report links timed out;no new Q3 result asserted.",
+          "Amazon regional plan amount is not a global capex guidance increase or AI-only budget.Google GDC availability is not a purchase contract.No Taiwan supplier order inferred from either.",
+          "Supermicro preliminary completed-quarter revision,Pichai interview,NEXTDC,Anthropic,SpaceX and previously tracked supply-chain reports deduplicated.ABF pricing and Qisda leads lack a newly verified issuer numeric body.",
+          "53of98 distinct names have an identified historical primary fact;45remain pending.This is not full current financial/filing validation and grouped discovery cannot prove absence of events.",
+          "No new article,lint/build/deploy or public-content claim.No quotes,valuation,private holdings or private market-monitor data stored."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -17922,6 +18002,43 @@
         "Identify customer/product revenue and retained economics before treating as a new supplier opportunity."
       ],
       "publication_status": "provisional_candidate_no_alert_no_article"
+    },
+    {
+      "key": "amazon-germany-2027-investment-aws-frankfurt-scope-20261020",
+      "date": "2026-10-21",
+      "event_date": "2026-10-20",
+      "instruction_commit_sha": "fd28093482413d0b3c662a9fd0abe5d1e26c7bed",
+      "companies": [
+        "Amazon/AWS"
+      ],
+      "sources": [
+        "https://press.aboutamazon.com/de/2026/10/invest-in-germany-summit-amazon-announces-16-billion-euro-investment-in-germany-in-2027"
+      ],
+      "stage": "issuer_body_read_plan_scope_registered_no_material_earnings_revision_no_article",
+      "questions": [
+        "Reconcile2027 versus through2027 wording and amount incremental to existing global capital plans.",
+        "Obtain AI/cloud split,power and accepted equipment deployment,utilisation and retained economics."
+      ],
+      "publication_status": "public_source_context_recorded_no_article"
+    },
+    {
+      "key": "google-distributed-cloud-b300-gemini-availability-20261020",
+      "date": "2026-10-21",
+      "event_date": "2026-10-20",
+      "instruction_commit_sha": "fd28093482413d0b3c662a9fd0abe5d1e26c7bed",
+      "companies": [
+        "Alphabet/Google",
+        "NVIDIA"
+      ],
+      "sources": [
+        "https://cloud.google.com/blog/topics/hybrid-cloud/new-innovations-in-google-distributed-cloud"
+      ],
+      "stage": "issuer_product_stage_body_read_no_quantified_order_or_earnings_revision_no_article",
+      "questions": [
+        "Obtain incremental sovereign customer contracts and accepted installations.",
+        "Separate availability and preview stages from new procurement and retained earnings."
+      ],
+      "publication_status": "public_source_context_recorded_no_article"
     }
   ],
   "blockers": [
@@ -17941,7 +18058,7 @@
     }
   ],
   "last_research_date": "2026-10-21",
-  "instruction_commit_sha": "99bde0d998d1f0ea670f7ad538ec417d8ea45a80",
+  "instruction_commit_sha": "fd28093482413d0b3c662a9fd0abe5d1e26c7bed",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
