@@ -5627,6 +5627,143 @@
         "stage_and_limits": "Issuer supplies power/thermal modules,SmartRun,SmartMod andUnify. Model outcomes vary by project;not measured GPU throughput,power efficiency or proof of Polar acceptance. Contract value,incremental backlog,recognition timing,margin and customer utilization are undisclosed."
       },
       "status": "original_issuer_body_read_research_event_registered_no_material_earnings_revision_or_article"
+    },
+    {
+      "fingerprint": "meta-q3-2026-capex-floor-free-cash-flow-and-class-c-capital-structure-20261021",
+      "event_date": "2026-10-21",
+      "discovered_date": "2026-10-22",
+      "instruction_commit_sha": "2589d1122677e8927b2e2e392b6c53c09e71363b",
+      "companies": [
+        "Meta Platforms"
+      ],
+      "type": "issuer_reported_quarterly_financial_results_outlook_and_approved_capital_structure",
+      "sources": [
+        "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+        "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx"
+      ],
+      "facts": {
+        "currency": "USD",
+        "unit": "billion except percentages and per-share amounts",
+        "reporting_period_end": "2026-09-30",
+        "q3_2026": {
+          "revenue": 64.601,
+          "revenue_yoy_pct": 26,
+          "operating_income": 12.988,
+          "reported_operating_margin_pct": 20,
+          "operating_cash_flow": 32.786,
+          "purchases_of_property_and_equipment": 33.942,
+          "principal_payments_on_finance_leases": 0.964,
+          "capex_including_finance_lease_principal": 34.906,
+          "issuer_defined_free_cash_flow": -2.12,
+          "cash_and_marketable_securities_reported_rounded": 82.45
+        },
+        "q2_2026_comparison": {
+          "capex_including_finance_lease_principal_reported_rounded": 31.08,
+          "issuer_defined_free_cash_flow": 0.784
+        },
+        "full_year_2026_capex_guidance": {
+          "definition": "Includes principal payments on finance leases; whole-company spending, not exclusively AI or named supplier purchases.",
+          "old_range": [
+            130,
+            145
+          ],
+          "new_range": [
+            135,
+            145
+          ],
+          "prior_guidance_date": "2026-07-29",
+          "derived_midpoint_change_pct": 1.8181818181818077,
+          "upper_bound_unchanged": true
+        },
+        "q4_2026_revenue_guidance": [
+          73,
+          76
+        ],
+        "legal_charge": {
+          "quarter_charge": 9.89,
+          "agreement": "August2026 settlement with52attorneys general;payments up toapproximately18.59bn.",
+          "issuer_operating_income_excluding_charge_reported_rounded": 22.88,
+          "issuer_eps_excluding_charge": 7.4,
+          "reported_eps": 3.83,
+          "limits": "Reported operating margin contraction must not be attributed wholly to AI costs. Charge recognition is not identical to current-quarter cash payment."
+        },
+        "class_c_common_stock": {
+          "stage": "Board-approved new publicly listed non-voting class, with amended certificate approved by shareholder written consent.",
+          "expected_effective_date": "2027-01-19",
+          "stated_uses": [
+            "Capital raising",
+            "Employee compensation",
+            "Potential acquisitions",
+            "Other general corporate purposes"
+          ],
+          "contingent_stock_dividend": "One ClassCshare per outstanding ClassA orClassBshare after amendment effectiveness;record andpayment dates tobedetermined.",
+          "issuer_expected_split_effect": "Two-for-one economic stock split;shareholder votingpower unchanged.",
+          "funding_limit": "Establishing the class and proportional stock dividend do not themselves deliver cash proceeds or establish a completed outside fundraising. No issuance proceeds, financing price or subsequent offering size disclosed."
+        },
+        "forward_scope": "No quantified full-year2027capexbudget disclosed. Management expects continued aggressive investment and plans to reallocate investment from RealityLabs toward priorityareas, primarilyAI. Named supplier allocations,incremental orders,accepted capacity,utilisation andretained supplier profit are not disclosed."
+      },
+      "verification": {
+        "issuer_full_body": "Full25993-character issuerrelease retrieved and financialtables read. Later direct webopens/retryreturned accesserror;company-supplied syndication link returned404. Subsequent index/media corroborate guidance and classcreation;not substitutes for full original financialtables.",
+        "checked_at": "2026-10-21 20:31:30 UTC"
+      },
+      "status": "issuer_original_results_and_capital_structure_verified_no_article"
+    },
+    {
+      "fingerprint": "lam-research-september-2026-results-and-december-outlook-20261021",
+      "event_date": "2026-10-21",
+      "discovered_date": "2026-10-22",
+      "instruction_commit_sha": "2589d1122677e8927b2e2e392b6c53c09e71363b",
+      "companies": [
+        "Lam Research"
+      ],
+      "type": "issuer_supplied_reported_results_and_next_quarter_guidance",
+      "sources": [
+        "https://www.prnewswire.com/news-releases/lam-research-corporation-reports-financial-results-for-the-quarter-ended-september-27-2026-302915810.html",
+        "https://newsroom.lamresearch.com/2026-07-29-Lam-Research-Corporation-Reports-Financial-Results-for-the-Quarter-Ended-June-28,-2026"
+      ],
+      "facts": {
+        "publication_time": "2026-10-21 16:05 America/New_York (EDT,UTC-4)",
+        "period_end": "2026-09-27",
+        "currency": "USD",
+        "unit": "million except EPS and percentages",
+        "reported": {
+          "revenue": 8219.418,
+          "prior_quarter_revenue": 6722.238,
+          "prior_year_quarter_revenue": 5324.173,
+          "non_gaap_gross_margin_pct": 52.4,
+          "non_gaap_operating_margin_pct": 40.2,
+          "non_gaap_eps": 2.2,
+          "systems_revenue": 5732.907,
+          "prior_quarter_systems_revenue": 4249.848,
+          "customer_support_and_other_revenue": 2486.511,
+          "prior_quarter_customer_support_and_other_revenue": 2472.39
+        },
+        "july_29_guidance_for_september_quarter": {
+          "revenue_midpoint": 8100,
+          "revenue_range": 400,
+          "non_gaap_eps_midpoint": 2.15,
+          "non_gaap_eps_range": 0.15
+        },
+        "december_27_quarter_guidance": {
+          "revenue_midpoint": 8600,
+          "revenue_range": 400,
+          "non_gaap_gross_margin_pct": 52.5,
+          "non_gaap_operating_margin_pct": 40.5,
+          "non_gaap_eps_midpoint": 2.33,
+          "non_gaap_eps_range": 0.15
+        },
+        "geography_pct": {
+          "China": 35,
+          "Korea": 20,
+          "Taiwan": 18,
+          "Japan": 9,
+          "US": 8,
+          "Southeast_Asia": 6,
+          "Europe": 4
+        },
+        "limits": "December outlook is a new next-quarter estimate, not an upward revision to the same previously-guided December period. September actuals are within the July guidance ranges. Geographic revenue does not establish AI-only demand or named Taiwan suppliers. No primary consensus population or complete October21call obtained;no market-surprise claim."
+      },
+      "status": "issuer_supplied_original_body_and_prior_guidance_read_research_candidate_no_article"
     }
   ],
   "articles": [],
@@ -5744,29 +5881,36 @@
     ],
     "current_run_screening": {
       "date": "2026-10-22",
-      "checked_at": "2026-10-21 19:29:10 UTC",
-      "instruction_commit_sha": "2f9012d776b9e2979d68da7895036811b06dbcc7",
-      "status": "full_98_name_discovery_complete_tpex_material_route_resolved_no_material_revision",
+      "checked_at": "2026-10-21 20:31:30 UTC",
+      "instruction_commit_sha": "2589d1122677e8927b2e2e392b6c53c09e71363b",
+      "status": "full_98_name_discovery_complete_new_meta_results_and_lam_original_financial_facts_registered",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "40d8a41e9067fb18c3becf64527795cb83fa932f",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All98active names submitted in14grouped discoveryqueries;freshsixcoreissuerindices,CSP/financingdiscovery andoriginalTWSE/TPExdaily materialtables. Historicalnotice snapshots,notcompleteOctober21/22individualfilingsaudits.",
+      "scope": "All98active companies submitted in14grouped discoveryqueries; sixcoreissuerindices refreshed,selectedCSPandfinancingdiscovery andoriginalexchange daily materialtables read. This isdiscovery plus selectedprimarychecking,not98currentfinancialfilingaudits.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
-        "https://nvidianews.nvidia.com/news/",
+        "https://nvidianews.nvidia.com/news",
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
-        "https://investor.marvell.com/news-events/press-releases",
-        "https://investor.atmeta.com/investor-news/default.aspx",
+        "https://www.marvell.com/company/newsroom.html",
+        "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+        "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx",
+        "https://www.prnewswire.com/news-releases/lam-research-corporation-reports-financial-results-for-the-quarter-ended-september-27-2026-302915810.html",
+        "https://newsroom.lamresearch.com/2026-07-29-Lam-Research-Corporation-Reports-Financial-Results-for-the-Quarter-Ended-June-28,-2026",
         "https://mops.twse.com.tw/mops/#/web/t05st01"
       ],
       "company_check_scope": {
-        "newly_primary_verified_symbols": [],
+        "newly_primary_verified_universe_symbols": [],
         "cumulative_distinct_primary_fact_count": 98,
         "cumulative_monthly_revenue_count": 98,
-        "remaining_without_any_primary_fact": 0
+        "remaining_without_any_primary_fact": 0,
+        "additional_outside_universe_issuers": [
+          "Meta Platforms",
+          "Lam Research"
+        ]
       },
       "material_snapshot": {
         "table_as_of": "2026-10-21",
@@ -5775,43 +5919,24 @@
           "rows": 112,
           "active_universe_notices": 12,
           "active_issuers": 8,
-          "retrieved_at": "2026-10-21T19:28:31.491511+00:00",
-          "endpoint_path": "/v1/opendata/t187ap04_L"
+          "retrieved_at": "2026-10-21T20:30:49.738235+00:00"
         },
         "TPEx": {
           "rows": 30,
           "active_universe_notices": 3,
           "active_issuers": 3,
-          "retrieved_at": "2026-10-21T19:28:29.247360+00:00",
-          "endpoint_path": "/openapi/v1/mopsfin_t187ap04_O",
-          "notices": [
-            {
-              "symbol": "3081",
-              "announcement_time": "15:29:18 Asia/Taipei",
-              "stage": "InvitedOctober28onlineQ3operatingoverview;meetingnotyetheld."
-            },
-            {
-              "symbol": "3131",
-              "announcement_time": "16:23:43 Asia/Taipei",
-              "stage": "InvitedOctober29Singaporecorporateday;not newfinancialresults."
-            },
-            {
-              "symbol": "6274",
-              "announcement_time": "18:37:05 Asia/Taipei",
-              "stage": "SixthdomesticunsecuredconvertiblebondconversiontermssetafterOctober6filingeffectiveness;thisnotice doesnotconfirmproceedsreceived."
-            }
-          ]
-        }
+          "retrieved_at": "2026-10-21T20:30:49.503621+00:00"
+        },
+        "limits": "Both originaltables still containOctober20notices. No completeOctober21/22filing coverage claimed;historicalnoticesandcalendar/financingstages notnewfinancialguidance."
       },
       "source_limits": [
-        "Mandatoryinstructions,specifications,classification,three relatedarticlesandcompleteprogress readatlockedcommit;instructionandarticleblobsunchanged. Largeprogress recoveredviaGitblob becauseContentsAPIcontent isempty.",
-        "Septembermonthlyprimarybaseline remains98;currentgroupeddiscovery returnedmixed-date/recyclednews,rankingsandmarketcommentary. No currentfinancialfilingcountof98claimed;emptyresults notabsenceproof.",
-        "TSMC directHTMLlatestOctober15Q3/October8monthly;MediaTeklatestSeptember30. NVIDIAOctober21supplychain/A5X andcore AMD,Broadcom,Marvell indexbaselinesunchanged;prior materialeventsdeduplicated. No newverifiedTPUallocation,NREsplit orsupplierguidancerevision.",
-        "TPExoriginalAPIdefinition identifiesmopsfin_t187ap04_O;priorattemptedmops_t05st02route waswrong,not anexchangeoutage. Successfuloriginalsnapshot fixesrouteavailabilityonly:bothmarkets tabledateOctober21anddisclosuresOctober20,notcompleteOctober21/22coverage.",
-        "15matchednoticesacross11activeissuers screened. PriorPSMC/Kaori/ASE factsretained;newlyreadOTC3notices arecalendar/financingstages,notprocurementwins,receivedfundingor revisedearnings.",
-        "CurrentCSPofficial-domainsearchesempty;MetaindexnotexposingresultbodyandmarketpreviewcommentarydonotestablishissuedQ3resultsorcapexrevision. No inferenceofunchangedactualspendingfrommissingdata.",
-        "August13EpochAI authoredanalysis ishistoricalfinancingcontext,notOctober21newfundingclose. September29Reuterscommitmentheadline andOctober21Anthropiccommentary do notupgradeexistingdraftfilingtoverifiedpublicprospectus.",
-        "Publicresearchledgeronly;noarticle,stockquote,valuation,holding orprivatemarket-monitordataadded."
+        "Mandatorysame-commitinstructions/specifications,classification,three relatedarticles andcompleteJSONprogress read;fullhistorypreserved.",
+        "Grouped discoverycontains mixed-date/recyclednews,rankingsandmarketcommentary. September monthlyprimarybaseline98retained separately fromcurrentfilingsandcompanyeconomics.",
+        "Core indices:TSMC/MediaTek,AMD,Broadcom andMarvell disclosedno newlyverified TPUallocation,NREsplit orsametermsupplierearningsrevision in thesereadpages. NVIDIAA5Xheadline reread:body saysNovemberGA andup-to960000planned GPUs,notOctober21deliveredcapacity;existingeventdeduplicated.",
+        "Meta originalfullrelease andcashflowreconciliation read;Q3capexincludescashPPEandfinanceleaseprincipal. Expense/legalcharge,cashpayment andcapitalstructure/fundraisingstages keptseparate. Latertransport failures do not erase theearliercomplete originalread.",
+        "Lam issuer-suppliedreleasebody andJuly29 originalguide read. September revenue/EPSwithinpreviousranges;Decemberoutlooknewperiod,not same-periodupwardrevision;no analystconsensusclaimed.",
+        "Anthropicpotentialcomputecommitment/IPOcommentary,SpaceXQ4capexreport,Google/OpenAIdistribution andNVIDIAsuppliercommitments arepreviouslyregisteredevents;no newverifiedfundingclose orcapexcut established.",
+        "Publicresearchfacts/stagesonly;no article,currentstockquote,valuation,holdings orprivatemarketmonitorinformation added."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -13702,6 +13827,66 @@
           "August13EpochAI authoredanalysis ishistoricalfinancingcontext,notOctober21newfundingclose. September29Reuterscommitmentheadline andOctober21Anthropiccommentary do notupgradeexistingdraftfilingtoverifiedpublicprospectus.",
           "Publicresearchledgeronly;noarticle,stockquote,valuation,holding orprivatemarket-monitordataadded."
         ]
+      },
+      {
+        "date": "2026-10-22",
+        "checked_at": "2026-10-21 20:31:30 UTC",
+        "instruction_commit_sha": "2589d1122677e8927b2e2e392b6c53c09e71363b",
+        "status": "full_98_name_discovery_complete_new_meta_results_and_lam_original_financial_facts_registered",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "40d8a41e9067fb18c3becf64527795cb83fa932f",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All98active companies submitted in14grouped discoveryqueries; sixcoreissuerindices refreshed,selectedCSPandfinancingdiscovery andoriginalexchange daily materialtables read. This isdiscovery plus selectedprimarychecking,not98currentfinancialfilingaudits.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.marvell.com/company/newsroom.html",
+          "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+          "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx",
+          "https://www.prnewswire.com/news-releases/lam-research-corporation-reports-financial-results-for-the-quarter-ended-september-27-2026-302915810.html",
+          "https://newsroom.lamresearch.com/2026-07-29-Lam-Research-Corporation-Reports-Financial-Results-for-the-Quarter-Ended-June-28,-2026",
+          "https://mops.twse.com.tw/mops/#/web/t05st01"
+        ],
+        "company_check_scope": {
+          "newly_primary_verified_universe_symbols": [],
+          "cumulative_distinct_primary_fact_count": 98,
+          "cumulative_monthly_revenue_count": 98,
+          "remaining_without_any_primary_fact": 0,
+          "additional_outside_universe_issuers": [
+            "Meta Platforms",
+            "Lam Research"
+          ]
+        },
+        "material_snapshot": {
+          "table_as_of": "2026-10-21",
+          "announcements_date": "2026-10-20",
+          "TWSE": {
+            "rows": 112,
+            "active_universe_notices": 12,
+            "active_issuers": 8,
+            "retrieved_at": "2026-10-21T20:30:49.738235+00:00"
+          },
+          "TPEx": {
+            "rows": 30,
+            "active_universe_notices": 3,
+            "active_issuers": 3,
+            "retrieved_at": "2026-10-21T20:30:49.503621+00:00"
+          },
+          "limits": "Both originaltables still containOctober20notices. No completeOctober21/22filing coverage claimed;historicalnoticesandcalendar/financingstages notnewfinancialguidance."
+        },
+        "source_limits": [
+          "Mandatorysame-commitinstructions/specifications,classification,three relatedarticles andcompleteJSONprogress read;fullhistorypreserved.",
+          "Grouped discoverycontains mixed-date/recyclednews,rankingsandmarketcommentary. September monthlyprimarybaseline98retained separately fromcurrentfilingsandcompanyeconomics.",
+          "Core indices:TSMC/MediaTek,AMD,Broadcom andMarvell disclosedno newlyverified TPUallocation,NREsplit orsametermsupplierearningsrevision in thesereadpages. NVIDIAA5Xheadline reread:body saysNovemberGA andup-to960000planned GPUs,notOctober21deliveredcapacity;existingeventdeduplicated.",
+          "Meta originalfullrelease andcashflowreconciliation read;Q3capexincludescashPPEandfinanceleaseprincipal. Expense/legalcharge,cashpayment andcapitalstructure/fundraisingstages keptseparate. Latertransport failures do not erase theearliercomplete originalread.",
+          "Lam issuer-suppliedreleasebody andJuly29 originalguide read. September revenue/EPSwithinpreviousranges;Decemberoutlooknewperiod,not same-periodupwardrevision;no analystconsensusclaimed.",
+          "Anthropicpotentialcomputecommitment/IPOcommentary,SpaceXQ4capexreport,Google/OpenAIdistribution andNVIDIAsuppliercommitments arepreviouslyregisteredevents;no newverifiedfundingclose orcapexcut established.",
+          "Publicresearchfacts/stagesonly;no article,currentstockquote,valuation,holdings orprivatemarketmonitorinformation added."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -21231,6 +21416,43 @@
         "Verify commissioning,AI-specificcustomer allocation andprofitconversion beforechanging theearningsassessment."
       ],
       "publication_status": "candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "meta-q3-2026-capex-floor-free-cash-flow-and-class-c-capital-structure-20261021",
+      "date": "2026-10-22",
+      "instruction_commit_sha": "2589d1122677e8927b2e2e392b6c53c09e71363b",
+      "companies": [
+        "Meta Platforms"
+      ],
+      "sources": [
+        "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+        "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx"
+      ],
+      "stage": "issuer_results_and_approved_class_structure_verified_funding_and_supplier_conversion_pending",
+      "questions": [
+        "Obtain quantified2027budget,actual deployment/acceptance andutilisation rather than inferring orders from capex.",
+        "Verify anysubsequentClassCoffering size,price,cashproceeds andconditions;stockdividend itself isnot fundraising.",
+        "Reconcile operatingcashflow,leaseprincipal,legalcharge andfuturecashsettlement;separate advertising monetisation fromlonger-durationfrontier-model returns."
+      ],
+      "publication_status": "public_facts_registered_no_article"
+    },
+    {
+      "key": "lam-research-september-2026-results-and-december-outlook-20261021",
+      "date": "2026-10-22",
+      "instruction_commit_sha": "2589d1122677e8927b2e2e392b6c53c09e71363b",
+      "companies": [
+        "Lam Research"
+      ],
+      "sources": [
+        "https://www.prnewswire.com/news-releases/lam-research-corporation-reports-financial-results-for-the-quarter-ended-september-27-2026-302915810.html",
+        "https://newsroom.lamresearch.com/2026-07-29-Lam-Research-Corporation-Reports-Financial-Results-for-the-Quarter-Ended-June-28,-2026"
+      ],
+      "stage": "quarterly_results_and_prior_guide_compared_next_period_outlook_recorded",
+      "questions": [
+        "Obtain application mix,accepted equipment demand and China/export-control exposure from originalcall.",
+        "Verify recurring customer-support growth andcashconversion versus systems shipment growth."
+      ],
+      "publication_status": "public_facts_registered_no_article"
     }
   ],
   "blockers": [
@@ -21250,7 +21472,7 @@
     }
   ],
   "last_research_date": "2026-10-22",
-  "instruction_commit_sha": "2f9012d776b9e2979d68da7895036811b06dbcc7",
+  "instruction_commit_sha": "2589d1122677e8927b2e2e392b6c53c09e71363b",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
@@ -21345,6 +21567,18 @@
           "short_term_expected_start": "2026-Q3"
         },
         "limits": "July23 filing,not October19 new spending or accepted deployment.Uncommenced leases primarily data centers;not annual cash capex or all AI.Invoice/commencement and cash payment differ.Data-center VIE finance leases are already included inNote4,not incremental sums.Additional short-term commitment kept separate,no combined capex total.Annual2026guidance original and current project allocations still pending;June180-190bn presentation cannot substitute for later guidance."
+      },
+      {
+        "date": "2026-10-22",
+        "checked_at": "2026-10-21 20:31:30 UTC",
+        "instruction_commit_sha": "2589d1122677e8927b2e2e392b6c53c09e71363b",
+        "company": "Meta",
+        "source": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+        "source_date": "2026-10-21",
+        "period_end": "2026-09-30",
+        "stage": "quarterly_actual_capex_cashflow_guidance_and_capital_structure_primary_verified",
+        "public_event_fingerprint": "meta-q3-2026-capex-floor-free-cash-flow-and-class-c-capital-structure-20261021",
+        "limits": "PriorQ2baselinepreserved;newlyapprovedClassCandstockdividendnotcashfunding;2027quantifiedcapexandnamedsupplierallocationpending."
       }
     ]
   },
