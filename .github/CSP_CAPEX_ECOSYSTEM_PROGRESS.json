@@ -5870,6 +5870,88 @@
         "limits": "Acquisition,disposal proceeds anddisposal gain aredifferent quantities. Cumulativeprocurement doesnotestablish anannualbudgetincrease,AI-onlyequipment ornewenddemand. Non-recurringdisposalgain keptseparatefromrecurring operatingearnings;no supplierprofitrevisiondisclosed."
       },
       "status": "full_dated_notice_reproduction_read_no_material_earnings_revision_or_article"
+    },
+    {
+      "fingerprint": "lam-october21-2027-wfe-outlook-services-and-cash-conversion-primary-slides-20261022",
+      "event_date": "2026-10-21",
+      "discovered_date": "2026-10-22",
+      "instruction_commit_sha": "1c69c9a7ddff04074e9890208e9c5767a3ece955",
+      "companies": [
+        "Lam Research"
+      ],
+      "type": "issuer_primary_industry_outlook_product_adoption_and_reported_cash_conversion",
+      "sources": [
+        "https://investor.lamresearch.com/image/Q1_2027-slides_final.pdf",
+        "https://investor.lamresearch.com/image/Q4_2026_slides_full_final.pdf",
+        "https://investor.lamresearch.com/events?item=105"
+      ],
+      "facts": {
+        "source_dates": {
+          "september_quarter_presentation": "2026-10-21",
+          "june_quarter_presentation": "2026-07-29"
+        },
+        "wfe_outlook": {
+          "scope": "Calendar-year industry wafer-fabrication equipment spending;notLamrevenue,notallAIspending,andnot a CSPpurchase commitment.",
+          "october21_2026": "Mid-USD150bnrange",
+          "october21_2027": "PreliminarymorethanUSD200bn",
+          "july29_2026": "Low-USD150bnrange",
+          "july29_2027": "Qualitativeextraordinarysetup andmulti-yearnewfabprojects;no numeric2027WFEtotal in thereadJulydeck.",
+          "comparison_limit": "Differentcalendar-yearforecast levels,not a same-period2027upwardrevision from anobtainedpriornumericestimate. Interveningconference originals andfullOctober21audio notauthenticated;do notclaim first-everpublicforecast.",
+          "capacity_constraint": "Management identifies cleanroomspaceavailability andcertaincomponentsupplyconstraints limitingfulfilment ofenddemand.",
+          "visibility": "Issuerclaims customer visibilityextendingthrough2028;not disclosedfirm backlog orminimumvolume."
+        },
+        "customer_support_business_group": {
+          "expected_calendar_2026_revenue_yoy_pct": "morethan30",
+          "expected_calendar_2027_revenue_yoy_pct": "morethan15",
+          "drivers": "Upgrades,spares,services,highfabutilisation andinstalledbaseefficiency.",
+          "contracts": "Issuerreports performance-basedservicecontractswithmultiplememorymanufacturers,helpedbyEquipmentIntelligence andDextrocobots.",
+          "limits": "No named customers,contractvalues,term,renewalrate orservice-specificmargin. Do notclassifywholeCSBGasrecurringsubscriptionrevenue. June/Septemberdecksystemfootnotes andpress-releasecustomer-supportfootnotes differ inReliantproductscope;no Reliantreclassification orconstant-scopegrowthbridge established."
+        },
+        "process_and_product_claims": {
+          "nand": "QLC,TLCandSLC-classstoragetiers expectedtogrow;SLCadoptioncouldrequiremorewafercapacityforthesamebitdemand. Managementexpectation,notrealisedbitvolumeorconfirmedincrementalorders.",
+          "foundry_dram": "Akaraadoptedbymultiplechipmakers;AetherdryresistrampinginHBMhigh-volumemanufacturing;approximatelyUSD2.5bncumulativerevenuetargetbyendofdecade.",
+          "advanced_packaging": "Syndionfournewpositions acrossmultiplecustomersforadvancedlogic/HBMTSV;StrikerTSVlinerwins;panelplatingsystemsshippedtoover20customers.",
+          "limits": "Unnamedwins andshipmentsdo notestablishnamedTaiwanallocations,acceptance,projectmargins orcashcollections."
+        },
+        "reported_financial_quality": {
+          "currency": "USD",
+          "unit": "million",
+          "september_quarter_end": "2026-09-27",
+          "june_quarter_end": "2026-06-28",
+          "operating_cash_flow": {
+            "september": 3497.652,
+            "june": 1457.228
+          },
+          "capex_and_intangibles_cash_outflow": {
+            "september": 257.697,
+            "june": 188.801
+          },
+          "issuer_defined_free_cash_flow": {
+            "september": 3239.955,
+            "june": 1268.427,
+            "derived_qoq_pct": 155.43093926572044
+          },
+          "receivables_days_sales_outstanding": {
+            "september": 63,
+            "june": 72
+          },
+          "receivables_net": {
+            "september": 5658,
+            "june": 5340
+          },
+          "inventory_turns": {
+            "september": 3.4,
+            "june": 3
+          },
+          "limits": "Onequartercashconversionmayreflectworkingcapitaltiming;cashflowgrowthdoesnotprove sustainablemarginsor2027orders. Non-GAAPresultsandscope/cashflowdefinitions keptseparate."
+        }
+      },
+      "verification": {
+        "checked_at": "2026-10-21 21:13:00 UTC",
+        "stage": "All25pagesofOctoberissuerPDFtextand27pagesofJulyissuerPDFtextretrieved;relevantoutlook,cashflowandDSOtablesread.",
+        "limits": "Webscreenshotcallsreturnedtextplaceholders;directPDFdownload403. No visual/chart-only segment shares used;full earningsaudio notlistened."
+      },
+      "status": "new_primary_quantified_outlook_and_reported_cash_quality_registered_no_article"
     }
   ],
   "articles": [],
@@ -5987,14 +6069,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-22",
-      "checked_at": "2026-10-21 20:38:48 UTC",
-      "instruction_commit_sha": "4f69398746bd1a46d06d5c539543f88f9507d9af",
-      "status": "full_98_name_discovery_complete_selected_notice_reproductions_added_no_material_increment",
+      "checked_at": "2026-10-21 21:13:00 UTC",
+      "instruction_commit_sha": "1c69c9a7ddff04074e9890208e9c5767a3ece955",
+      "status": "full_98_name_discovery_complete_new_lam_primary_outlook_and_cash_quality",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "40d8a41e9067fb18c3becf64527795cb83fa932f",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "Fresh14groupedqueriescoverall98activenames,sixcoreissuerindices,CSPandfinancingdiscovery,officialdaily materialtables andselectedOctober21company-notice reproductions. Historicalmonthlybaselineandcurrentselectednoticechecks keptseparate;not98currentfilingaudits.",
+      "scope": "Fresh14groupedqueriescoverall98activenames;sixcoreissuerindices,CSP/financingdiscovery,officialdaily materialtables andselectedprimaryissuerdocuments. Monthlybaselineandcurrentselectedchecks keptseparate;not98currentfilingaudits.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -6002,18 +6084,17 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://www.marvell.com/company/newsroom.html",
-        "https://investor.atmeta.com/financials/quarterly-results/default.aspx",
-        "https://investor.lamresearch.com/",
-        "https://just.honsec.com.tw/z/zf/zf_I_E.djhtm",
-        "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=905a24b3-156f-4c14-9695-a6b7e0be04dd"
+        "https://investor.atmeta.com/home/default.aspx",
+        "https://investor.atmeta.com/financials/",
+        "https://investor.lamresearch.com/quarterly-results",
+        "https://investor.lamresearch.com/image/Q1_2027-slides_final.pdf",
+        "https://investor.lamresearch.com/image/Q4_2026_slides_full_final.pdf",
+        "https://investor.lamresearch.com/events?item=105",
+        "https://www.uneec.net/tw/major"
       ],
       "company_check_scope": {
-        "new_direct_primary_company_fact_symbols": [],
-        "selected_filing_reproduction_symbols": [
-          "3711",
-          "6770",
-          "8150"
-        ],
+        "newly_direct_primary_verified_universe_symbols": [],
+        "additional_outside_universe_issuer": "Lam Research",
         "cumulative_distinct_primary_fact_count": 98,
         "cumulative_monthly_revenue_count": 98,
         "remaining_without_any_primary_fact": 0
@@ -6026,25 +6107,26 @@
           "rows": 112,
           "active_universe_notices": 12,
           "active_issuers": 8,
-          "retrieved_at": "2026-10-21T20:37:27.293689+00:00",
+          "retrieved_at": "2026-10-21T21:10:30.599874+00:00",
           "sha256": "b2951536efbdaf5224c73da57f3d67e3554c5f5906a574e3b7fa1c1ab334a9ca"
         },
         "TPEx": {
           "rows": 30,
           "active_universe_notices": 3,
           "active_issuers": 3,
-          "retrieved_at": "2026-10-21T20:37:25.547318+00:00",
+          "retrieved_at": "2026-10-21T21:10:29.875097+00:00",
           "sha256": "e516692226a9f84030fb9b2e176630392e754239eb5404a8c652e0bb442b60eb"
         }
       },
       "source_limits": [
-        "Requiredinstructions/specifications,classification,three relatedarticles andcompleteprogressJSON fetchedatsame latestcommit;instructionandarticleblobsunchanged. Largeprogress obtainedbyGitblob afterContentsAPIreturnedemptycontent.",
-        "Sixcoreissuerindices readfresh. TSMC/MediaTek/AMD/Broadcom/Marvell currentreadpages do notsupply newconfirmedTPUallocation,NREeconomics orCSPsametermcapexcut;NVIDIAcapacityplanalreadyregistered. BroadcomOctober21Arcotscamdefense concernssecuritysoftware,notAIhardwareprocurement.",
-        "MetaQ3capex,FCFandClassCfacts alreadyregisteredandnotified;freshdiscovery repeatsrelease-levelinformation. DirectIRreleaseandquarterlypageopens unavailable;no newfullQ3calltranscriptorquantified2027budget obtained. Lamindex stilllistsOctober21releaseandfuture14:00PDTcall;existingreleasefacts notnewrevision.",
-        "Groupeddiscoveryincludesolderfinancialperiods,currentcalendarpages andrecycledcommentary. MoneyDJopticalprofitarticle fullbody dated2025-12-04 09:01:21;itsOctoberprofitfigures and2026outlook arehistorical,notOctober2026results.",
-        "Officialdailytablesunchanged andlimitedtoOctober20notices. FivecompleteOctober21MOPS-attributed notices obtainedvia brokerreproduction forASE/SPIL,PSMCandChipMOS;newdetail isnot a directoriginal-sourceupgrade.",
-        "ASE/SPILfacilitycontracts andcumulativeequipmenttransactions distinguishsubsidiaries,counterparties,contractperiods andfinancialstages. No newAI-onlyorder,acceptedcapacity,annualcapexincrease orretainedprofitrevision established.",
-        "Publicledgerfacts/stagesonly;no article,currentstockquote,valuation,holding orprivateflowmonitorinformation added."
+        "Latestdefaultbranchmetadataandlockedcommitobtained;requiredinstructions/specifications/classification,three relatedarticles andcompleteprogressJSONfetched. Instruction/relatedarticleblobsunchanged;largeprogressreadviaGitblob.",
+        "14groupedqueriescoverall98namesfordiscovery;resultsincludeoldfinancialperiods,calendarpages,proxyaggregation,pricecommentary andnon-Taiwanhomonyms. No falseclaimthatall98currentfilingsorprofitabilitybridgesareverified.",
+        "TSMC,MediaTek,NVIDIA,AMD,Broadcom,Marvellofficialindicesreadfresh. No newconfirmedMediaTekTPUdesignallocation,NRE/productioneconomics orsametermCSPspendingcut established. Previouslyregisteredsupplychainfunding,GoogleA5XandMetaresultsevents deduplicated.",
+        "Metaofficialhomeandcorrectfinancialspageavailablebutdynamicquarterdocumentlistnotexposed;old Q1/Q2transcriptsreturnedbysearcharenotQ3callproof. Q3releaseopenunavailable;nonew2027numericalMetaoutlookinferred.",
+        "LamOct21andJuly29originalPDFtextretrievedandcompared. Newprimary2027WFEpreliminaryforecast,servicesoutlook andcashflowqualityfacts added;not called a same-periodnumeric2027revisionorfullauditedcalltranscript.",
+        "OfficialTWSE/TPExmaterialtablesstillcoverOctober20notices withunchangedhashes,notcompleteOctober21/22coverage. PreviousOctober21ASE/SPIL/PSMC/ChipMOSfilingreproductionsretainedasreproductions.",
+        "Uneec3013officialmajorinformationpagetimeoutoninitialandretry;indexeditemsreferSeptember/H1,notnewQ3results. Company-specificlatestoriginalcoverageincomplete,buthistoricalmonthlybaselinepreserved.",
+        "Publicfacts/stagesonly;no article,stockquote,valuation,holding orprivateflowmonitordataadded."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -14057,6 +14139,68 @@
           "ASE/SPILfacilitycontracts andcumulativeequipmenttransactions distinguishsubsidiaries,counterparties,contractperiods andfinancialstages. No newAI-onlyorder,acceptedcapacity,annualcapexincrease orretainedprofitrevision established.",
           "Publicledgerfacts/stagesonly;no article,currentstockquote,valuation,holding orprivateflowmonitorinformation added."
         ]
+      },
+      {
+        "date": "2026-10-22",
+        "checked_at": "2026-10-21 21:13:00 UTC",
+        "instruction_commit_sha": "1c69c9a7ddff04074e9890208e9c5767a3ece955",
+        "status": "full_98_name_discovery_complete_new_lam_primary_outlook_and_cash_quality",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "40d8a41e9067fb18c3becf64527795cb83fa932f",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "Fresh14groupedqueriescoverall98activenames;sixcoreissuerindices,CSP/financingdiscovery,officialdaily materialtables andselectedprimaryissuerdocuments. Monthlybaselineandcurrentselectedchecks keptseparate;not98currentfilingaudits.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.marvell.com/company/newsroom.html",
+          "https://investor.atmeta.com/home/default.aspx",
+          "https://investor.atmeta.com/financials/",
+          "https://investor.lamresearch.com/quarterly-results",
+          "https://investor.lamresearch.com/image/Q1_2027-slides_final.pdf",
+          "https://investor.lamresearch.com/image/Q4_2026_slides_full_final.pdf",
+          "https://investor.lamresearch.com/events?item=105",
+          "https://www.uneec.net/tw/major"
+        ],
+        "company_check_scope": {
+          "newly_direct_primary_verified_universe_symbols": [],
+          "additional_outside_universe_issuer": "Lam Research",
+          "cumulative_distinct_primary_fact_count": 98,
+          "cumulative_monthly_revenue_count": 98,
+          "remaining_without_any_primary_fact": 0
+        },
+        "material_snapshot": {
+          "table_as_of": "2026-10-21",
+          "announcements_date": "2026-10-20",
+          "unchanged_from_preceding_snapshot": true,
+          "TWSE": {
+            "rows": 112,
+            "active_universe_notices": 12,
+            "active_issuers": 8,
+            "retrieved_at": "2026-10-21T21:10:30.599874+00:00",
+            "sha256": "b2951536efbdaf5224c73da57f3d67e3554c5f5906a574e3b7fa1c1ab334a9ca"
+          },
+          "TPEx": {
+            "rows": 30,
+            "active_universe_notices": 3,
+            "active_issuers": 3,
+            "retrieved_at": "2026-10-21T21:10:29.875097+00:00",
+            "sha256": "e516692226a9f84030fb9b2e176630392e754239eb5404a8c652e0bb442b60eb"
+          }
+        },
+        "source_limits": [
+          "Latestdefaultbranchmetadataandlockedcommitobtained;requiredinstructions/specifications/classification,three relatedarticles andcompleteprogressJSONfetched. Instruction/relatedarticleblobsunchanged;largeprogressreadviaGitblob.",
+          "14groupedqueriescoverall98namesfordiscovery;resultsincludeoldfinancialperiods,calendarpages,proxyaggregation,pricecommentary andnon-Taiwanhomonyms. No falseclaimthatall98currentfilingsorprofitabilitybridgesareverified.",
+          "TSMC,MediaTek,NVIDIA,AMD,Broadcom,Marvellofficialindicesreadfresh. No newconfirmedMediaTekTPUdesignallocation,NRE/productioneconomics orsametermCSPspendingcut established. Previouslyregisteredsupplychainfunding,GoogleA5XandMetaresultsevents deduplicated.",
+          "Metaofficialhomeandcorrectfinancialspageavailablebutdynamicquarterdocumentlistnotexposed;old Q1/Q2transcriptsreturnedbysearcharenotQ3callproof. Q3releaseopenunavailable;nonew2027numericalMetaoutlookinferred.",
+          "LamOct21andJuly29originalPDFtextretrievedandcompared. Newprimary2027WFEpreliminaryforecast,servicesoutlook andcashflowqualityfacts added;not called a same-periodnumeric2027revisionorfullauditedcalltranscript.",
+          "OfficialTWSE/TPExmaterialtablesstillcoverOctober20notices withunchangedhashes,notcompleteOctober21/22coverage. PreviousOctober21ASE/SPIL/PSMC/ChipMOSfilingreproductionsretainedasreproductions.",
+          "Uneec3013officialmajorinformationpagetimeoutoninitialandretry;indexeditemsreferSeptember/H1,notnewQ3results. Company-specificlatestoriginalcoverageincomplete,buthistoricalmonthlybaselinepreserved.",
+          "Publicfacts/stagesonly;no article,stockquote,valuation,holding orprivateflowmonitordataadded."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -21648,6 +21792,27 @@
         "Verify sites,AIcustomerallocation,commissioning,acceptedcapacity,contractrecognition andmargin beforeinferring supplierprofitgrowth."
       ],
       "publication_status": "public_disclosure_detail_recorded_no_material_alert_no_article"
+    },
+    {
+      "key": "lam-october21-2027-wfe-outlook-services-and-cash-conversion-primary-slides-20261022",
+      "date": "2026-10-22",
+      "event_date": "2026-10-21",
+      "instruction_commit_sha": "1c69c9a7ddff04074e9890208e9c5767a3ece955",
+      "companies": [
+        "Lam Research"
+      ],
+      "sources": [
+        "https://investor.lamresearch.com/image/Q1_2027-slides_final.pdf",
+        "https://investor.lamresearch.com/image/Q4_2026_slides_full_final.pdf",
+        "https://investor.lamresearch.com/events?item=105"
+      ],
+      "stage": "primary_2027_industry_and_services_forecasts_plus_current_cash_conversion_verified",
+      "questions": [
+        "Verify customer2027fundedbudgets,cleanroomavailability,componentdeliveries andequipmentacceptance againstpreliminaryWFEforecast.",
+        "Separate toolcontent/sharegains andservicecontractrenewals fromindustrygrowth;obtain contracteconomics andconstant-scopeCSBGbridge.",
+        "Test cashconversionpersistence andDSO/receivables/inventorybehaviour;onequarterworkingcapitalreleaseisnotrecurringprofit."
+      ],
+      "publication_status": "new_material_primary_evidence_registered_no_article"
     }
   ],
   "blockers": [
@@ -21667,7 +21832,7 @@
     }
   ],
   "last_research_date": "2026-10-22",
-  "instruction_commit_sha": "4f69398746bd1a46d06d5c539543f88f9507d9af",
+  "instruction_commit_sha": "1c69c9a7ddff04074e9890208e9c5767a3ece955",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
