@@ -6530,14 +6530,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-23",
-      "checked_at": "2026-10-22 16:15:29 UTC",
-      "instruction_commit_sha": "51e71681207446c34d1746845ce9eb8e357c9daf",
-      "status": "98_name_grouped_discovery_six_core_indices_new_jcet_capex_event_and_research_candidates_verified",
+      "checked_at": "2026-10-22 16:47:28 UTC",
+      "instruction_commit_sha": "3436bf9acafca9608bcd4e906d423db7243dbae5",
+      "status": "98_name_grouped_discovery_six_core_indices_source_completions_and_candidates_recorded",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All98 active names included in14 fresh grouped discovery queries. Six mandatory core issuer indices read; targeted CSP/ASIC/power/optical/memory discovery and outside-universe JCET followed up. No watchlist edit.",
+      "scope": "All98 active names included in14 fresh grouped discovery queries. Six core issuer indices read; CSP funding, ASIC, power and optical leads followed. No universe edit.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -6545,22 +6545,20 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/",
         "https://investor.marvell.com/news-events/press-releases",
-        "https://www.prnewswire.com/news-releases/building-out-advanced-packaging-portfolio-jcet-delivers-steady-revenue-growth-and-improved-profitability-in-q3-ytd-2026-302916994.html",
-        "https://tools.prnewswire.com/en-us/live/20813/release/20260820EN30595",
-        "https://finance.sina.com.cn/jjxw/2026-10-22/doc-iniwcaff5246950.shtml",
-        "https://www.trendforce.com/presscenter/news/20261022-13279.html",
-        "https://www.trendforce.com/presscenter/news/20261019-13275.html",
-        "https://www.reuters.com/business/metas-credit-risk-indicator-jumps-record-high-after-results-2026-10-22/",
-        "https://money.udn.com/money/story/5612/9831431"
+        "https://www.reuters.com/business/besis-quarterly-orders-beat-expectations-ai-data-centre-demand-stays-strong-2026-10-22/",
+        "https://ec.ltn.com.tw/article/breakingnews/5615670",
+        "https://www.businessinsider.com/ai-infrastructure-stocks-to-buy-hyperscaler-spending-capex-2026-10",
+        "https://www.marketwatch.com/story/spacexs-massive-ai-targets-will-test-the-limits-of-reality-4f23a624"
       ],
       "source_limits": [
-        "Same-commit required instructions and specifications retrieved completely; full ledger parsed and three recent related articles fetched. No alternate topic selected.",
-        "Grouped results included many historical or generic articles despite date filters.98 names in discovery is not98 fresh primary filings. Existing monthly-revenue baseline retained; current company economics coverage remains partial.",
-        "Core issuer indices: TSMC latest October15 results, MediaTek September30 product news and August31 NVLinkFusion collaboration, NVIDIA October22 Minerva, AMD October12 Helion, Broadcom October21 Arcot and Marvell October13 connectivity remain registered baselines.",
-        "JCET current and August issuer releases read; new budget revision and computing/margin figures verified, while shareholder approval requirement and broader investment-plan scope attributed to October22 original financial reporting. Complete original regulatory financials/cash table not obtained. Company finance index403 and direct PR-page download403; indexed original issuer body accessible.",
-        "TrendForce CPU report datedOctober22 and fiber report datedOctober19 are research-house forecasts, not new issuer orders or realized profit. Prior directly comparable forecasts and contract/cash conversion pending. Candidates retained without speculative supplier earnings attribution.",
-        "Reuters October22 credit-market original body read; no new completed issuer funding, default or supplier cancellation established. Credit-market quotes and equity prices omitted from public ledger. Sinbon Q3 original reporting discovered, but issuer newsroom index did not authenticate full new financial release; no new AI-only conclusion.",
-        "Prior Nexans, Nokia, Kuehne+Nagel, Besi, Tesla, Lam and NVIDIA supplier commitments preserved for deduplication. Public event/source/candidate records only; no current quotes, valuation, fund flows, holdings, private investment judgment or trading conditions. No new article or website-publication claim."
+        "Same-commit instructions and required specifications fetched completely; full ledger parsed and three unchanged recent related articles read.",
+        "Date-filtered grouped discovery includes historical and generic results.98 names screened does not mean98 fresh primary filings or a complete economics audit. Existing primary monthly-revenue and company coverage gaps remain.",
+        "TSMC October15 results, MediaTek September30 product announcement and August31 NVLinkFusion, NVIDIA October22 Minerva, AMD October12 Helion, Broadcom October21 Arcot and Marvell October13 connectivity remain registered baselines.",
+        "Besi body completion is management attribution, not an independently confirmed competitive change. Issuer Q3 document index discovered through MarketScreener but direct body retrieval failed.",
+        "Foxconn operational claims retained with their measurement limits and target/achievement distinction. Issuer original presentation and realized economics remain pending.",
+        "Morgan Stanley original note unavailable; no selection-list earnings or cross-survey revision inferred.",
+        "SpaceX commentary page is dated October21 16:15 ET despite fresh search labeling; paywall prevented full-body verification. It does not establish a new issuer funding or deployment revision.",
+        "Prior material public events preserved. Only public sources and research stages appended; no quotes, valuation, holdings, fund flows or private investment judgments. No article or website-publication claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -15249,6 +15247,39 @@
           "Reuters October22 credit-market original body read; no new completed issuer funding, default or supplier cancellation established. Credit-market quotes and equity prices omitted from public ledger. Sinbon Q3 original reporting discovered, but issuer newsroom index did not authenticate full new financial release; no new AI-only conclusion.",
           "Prior Nexans, Nokia, Kuehne+Nagel, Besi, Tesla, Lam and NVIDIA supplier commitments preserved for deduplication. Public event/source/candidate records only; no current quotes, valuation, fund flows, holdings, private investment judgment or trading conditions. No new article or website-publication claim."
         ]
+      },
+      {
+        "date": "2026-10-23",
+        "checked_at": "2026-10-22 16:47:28 UTC",
+        "instruction_commit_sha": "3436bf9acafca9608bcd4e906d423db7243dbae5",
+        "status": "98_name_grouped_discovery_six_core_indices_source_completions_and_candidates_recorded",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All98 active names included in14 fresh grouped discovery queries. Six core issuer indices read; CSP funding, ASIC, power and optical leads followed. No universe edit.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.reuters.com/business/besis-quarterly-orders-beat-expectations-ai-data-centre-demand-stays-strong-2026-10-22/",
+          "https://ec.ltn.com.tw/article/breakingnews/5615670",
+          "https://www.businessinsider.com/ai-infrastructure-stocks-to-buy-hyperscaler-spending-capex-2026-10",
+          "https://www.marketwatch.com/story/spacexs-massive-ai-targets-will-test-the-limits-of-reality-4f23a624"
+        ],
+        "source_limits": [
+          "Same-commit instructions and required specifications fetched completely; full ledger parsed and three unchanged recent related articles read.",
+          "Date-filtered grouped discovery includes historical and generic results.98 names screened does not mean98 fresh primary filings or a complete economics audit. Existing primary monthly-revenue and company coverage gaps remain.",
+          "TSMC October15 results, MediaTek September30 product announcement and August31 NVLinkFusion, NVIDIA October22 Minerva, AMD October12 Helion, Broadcom October21 Arcot and Marvell October13 connectivity remain registered baselines.",
+          "Besi body completion is management attribution, not an independently confirmed competitive change. Issuer Q3 document index discovered through MarketScreener but direct body retrieval failed.",
+          "Foxconn operational claims retained with their measurement limits and target/achievement distinction. Issuer original presentation and realized economics remain pending.",
+          "Morgan Stanley original note unavailable; no selection-list earnings or cross-survey revision inferred.",
+          "SpaceX commentary page is dated October21 16:15 ET despite fresh search labeling; paywall prevented full-body verification. It does not establish a new issuer funding or deployment revision.",
+          "Prior material public events preserved. Only public sources and research stages appended; no quotes, valuation, holdings, fund flows or private investment judgments. No article or website-publication claim."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -23503,6 +23534,68 @@
         "Check preform capacity commissioning and customer deployment rather than extrapolating shortages"
       ],
       "publication_status": "research_candidate_only_no_article"
+    },
+    {
+      "key": "besi-q3-2026-reuters-body-source-completion-20261023",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "3436bf9acafca9608bcd4e906d423db7243dbae5",
+      "companies": [
+        "BE Semiconductor Industries"
+      ],
+      "related_candidate": "besi-hybrid-bonding-backlog-conversion-and-competitive-economics-20261022",
+      "stage": "original_report_body_read_management_delivery_and_competitive_scope_clarified_primary_q3_tables_pending",
+      "sources": [
+        "https://www.reuters.com/business/besis-quarterly-orders-beat-expectations-ai-data-centre-demand-stays-strong-2026-10-22/"
+      ],
+      "facts": "October22 Reuters body: management attributes timing to production-line readiness and denies unexpected customer postponement. Management characterizes ASML cooperation as complementary; ASML has not confirmed the reported rival tool. No independent competitive-scope resolution or new customer allocation established.",
+      "questions": [
+        "Obtain issuer Q3 tables and independently verify product competition and accepted delivery."
+      ],
+      "publication_status": "source_completion_candidate_only_no_article"
+    },
+    {
+      "key": "foxconn-fii-npi-and-yield-claims-to-realized-manufacturing-economics-20261022",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "3436bf9acafca9608bcd4e906d423db7243dbae5",
+      "companies": [
+        "Hon Hai/Foxconn",
+        "Foxconn Industrial Internet"
+      ],
+      "stage": "dated_original_reporting_read_issuer_primary_and_cost_margin_bridge_pending",
+      "sources": [
+        "https://ec.ltn.com.tw/article/breakingnews/5615670"
+      ],
+      "facts": {
+        "source_publication": "2026-10-22 21:31 Asia/Taipei",
+        "attribution": "Liberty Times original report of FII CIO statements; indexed article body accessible, direct page open failed.",
+        "reported_automation_coverage_pct": 94,
+        "reported_first_pass_yield_pct": 97,
+        "reported_current_npi_months": 3.5,
+        "target_npi_weeks": 10,
+        "limits": "Ten weeks is a future objective. Process coverage and first-pass yield are different measures. No consistent prior yield denominator, cost saving, margin revision or paid incremental volume authenticated."
+      },
+      "questions": [
+        "Authenticate issuer presentation and measurement populations.",
+        "Verify achieved NPI time, repeatable yield and realized cost or margin change."
+      ],
+      "publication_status": "research_candidate_only_no_article"
+    },
+    {
+      "key": "morgan-stanley-oct15-ai-infrastructure-pricing-power-selection-original-note-pending-20261023",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "3436bf9acafca9608bcd4e906d423db7243dbae5",
+      "companies": [
+        "Morgan Stanley"
+      ],
+      "stage": "dated_secondary_account_identified_original_note_and_comparable_forecast_population_pending",
+      "sources": [
+        "https://www.businessinsider.com/ai-infrastructure-stocks-to-buy-hyperscaler-spending-capex-2026-10"
+      ],
+      "facts": "Business Insider October22 09:15 UTC attributes a 24-name infrastructure selection to Nicholas Lentini's October15 note. Original note, comparable prior forecasts and company earnings revisions not obtained. Forecast scope cannot be equated with the existing nine-CSP survey.",
+      "questions": [
+        "Obtain original institution note and reconcile forecast population, periods and old/new estimates."
+      ],
+      "publication_status": "source_candidate_only_no_article"
     }
   ],
   "blockers": [
@@ -23522,7 +23615,7 @@
     }
   ],
   "last_research_date": "2026-10-23",
-  "instruction_commit_sha": "51e71681207446c34d1746845ce9eb8e357c9daf",
+  "instruction_commit_sha": "3436bf9acafca9608bcd4e906d423db7243dbae5",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
