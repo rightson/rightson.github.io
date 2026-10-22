@@ -6557,6 +6557,200 @@
         "limits": "Infrastructure includes optical data-center, high-performance analog and wireless-backhaul products; not all AI revenue. Companywide margins not optical-only profitability. No named Taiwan supplier allocation or achieved1.6T volume inferred. GAAP/non-GAAP and realised/forecast periods kept separate."
       },
       "status": "issuer_q3_release_10q_and_prior_guidance_verified_product_cash_and_customer_followup_pending_no_article"
+    },
+    {
+      "fingerprint": "western-digital-fq1-2027-margin-outlook-and-cash-conversion-20261022",
+      "event_date": "2026-10-22",
+      "discovered_date": "2026-10-23",
+      "instruction_commit_sha": "79b37b6ca86406492af22ea3d4a9a3ce989aacd7",
+      "companies": [
+        "Western Digital"
+      ],
+      "type": "issuer_hdd_revenue_and_margin_above_prior_guidance_and_next_quarter_outlook",
+      "sources": [
+        "https://investor.wdc.com/news-releases/news-release-details/wd-reports-fiscal-first-quarter-2027-financial-results",
+        "https://investor.wdc.com/static-files/a6470e24-6dec-4fae-9b35-69777f704e3a",
+        "https://investor.wdc.com/static-files/0c54ec27-0e0d-46b1-a56b-2c72b02815ff",
+        "https://stockstory.org/us/stocks/nasdaq/wdc/news/earnings/western-digital-nasdaqwdc-surprises-with-strong-q3-but-inventory-levels-increase"
+      ],
+      "facts": {
+        "quarter": "Fiscal Q1 2027, ended October 2, 2026; announced October22. Calendar and fiscal periods kept separate.",
+        "currency": "USD",
+        "unit": "million except per-share figures and percentages",
+        "reported": {
+          "revenue": 4381,
+          "gaap_gross_margin_pct": 57.8,
+          "gaap_operating_income": 2046,
+          "non_gaap_gross_margin_pct": 58.1,
+          "non_gaap_operating_margin_pct": 49.1,
+          "non_gaap_eps": 4.64,
+          "operating_cash_flow": 1604,
+          "free_cash_flow": 1377,
+          "net_property_plant_equipment_purchases": 227,
+          "inventories": 1781
+        },
+        "prior_quarter": {
+          "revenue": 3747,
+          "gaap_gross_margin_pct": 54.1,
+          "gaap_operating_income": 1563,
+          "non_gaap_gross_margin_pct": 54.4,
+          "non_gaap_operating_margin_pct": 44.2,
+          "non_gaap_eps": 3.56,
+          "operating_cash_flow": 1389,
+          "free_cash_flow": 1281,
+          "net_property_plant_equipment_purchases": 108,
+          "inventories": 1511
+        },
+        "prior_fq1_guidance": {
+          "revenue": [
+            4000,
+            4200
+          ],
+          "non_gaap_gross_margin_pct": [
+            55,
+            56
+          ],
+          "non_gaap_eps": [
+            3.85,
+            4.15
+          ]
+        },
+        "fq2_guidance": {
+          "revenue": [
+            5000,
+            5200
+          ],
+          "non_gaap_gross_margin_pct": [
+            60,
+            61
+          ],
+          "non_gaap_eps": [
+            5.6,
+            6
+          ]
+        },
+        "consensus_scope": "StockStory original October22 report attributes FQ2 revenue consensusUSD4.58bn and EPS4.82, with data-source footer naming StockStory,S&PGlobal and VisibleAlpha. Original survey/provider sample and timestamps not obtained. TheFly reports a slightly different revenue estimateUSD4.57bn; not one directly retrieved consensus population.",
+        "relationship": "Issuer identifies hyperscalers, cloud providers and AI-driven storage workloads. HDD continuing operations are distinct from the separated Sandisk flash business; no direct NAND pricing or Taiwan supplier award inferred.",
+        "cash_and_comparison_limits": "Revenue exceeded prior issuer guidance high end by4.31%. Freecashflow grew7.49% sequentially while revenue grew16.92%, alongside netPPE purchases rising108m to227m. FCF uses issuer definition operatingcashflow minus netPPE. GAAP netincome sequential decline includes prior Sandisk valuation gains; operatingprofit and like-for-like nonGAAP figures used separately. Forecasts are management estimates, not delivered next-quarter orders."
+      },
+      "status": "issuer_current_results_prior_guidance_and_cash_tables_verified_customer_mix_and_future_capital_intensity_followup_pending_no_article"
+    },
+    {
+      "fingerprint": "ttm-q3-2026-book-to-bill-margin-and-acquisition-guidance-scope-20261022",
+      "event_date": "2026-10-22",
+      "discovered_date": "2026-10-23",
+      "instruction_commit_sha": "79b37b6ca86406492af22ea3d4a9a3ce989aacd7",
+      "companies": [
+        "TTM Technologies"
+      ],
+      "type": "issuer_pcb_data_center_networking_revenue_order_ratio_and_margin_results",
+      "sources": [
+        "https://investors.ttm.com/news-events/press-releases/detail/420/ttm-technologies-inc-reports-third-quarter-2026-results",
+        "https://investors.ttm.com/news-events/press-releases/detail/411/ttm-technologies-inc-reports-second-quarter-2026-results"
+      ],
+      "facts": {
+        "quarter": "Q3 2026 endedSeptember28; issuer releaseOctober22 06:00EDT.",
+        "currency": "USD",
+        "unit": "million except per-share amounts and ratios",
+        "q3": {
+          "revenue": 1203.855,
+          "gaap_operating_income": 162.253,
+          "gaap_net_income": 84.803,
+          "gaap_eps": 0.79,
+          "adjusted_ebitda": 242.307,
+          "adjusted_ebitda_margin_pct": 20.1,
+          "non_gaap_eps": 1.46,
+          "operating_cash_flow": 154.711,
+          "net_capital_expenditure": 79.921,
+          "free_cash_flow": 74.79,
+          "book_to_bill": 2.13,
+          "data_center_networking_revenue_share_pct": 41,
+          "data_center_networking_revenue_yoy_pct": 115
+        },
+        "q2_baseline": {
+          "book_to_bill": 1.49,
+          "adjusted_ebitda_margin_pct": 16.6,
+          "non_gaap_eps": 0.99,
+          "operating_cash_flow": 96.4,
+          "prior_q3_revenue_guidance": [
+            1100,
+            1140
+          ],
+          "prior_q3_non_gaap_eps_guidance": [
+            1.21,
+            1.27
+          ],
+          "prior_fy2026_revenue_approximate": 4400,
+          "prior_fy2026_non_gaap_eps": "approachUSD5.00; pending acquisitions excluded"
+        },
+        "new_outlook": {
+          "q4_revenue": [
+            1420,
+            1440
+          ],
+          "q4_non_gaap_eps": [
+            1.77,
+            1.83
+          ],
+          "fy2026_revenue": [
+            4470,
+            4490
+          ],
+          "fy2026_non_gaap_eps": [
+            4.97,
+            5.03
+          ],
+          "acquisition_scope": "Includes closed STG and Epiq and associated financing costs; excludes proposed Ophir,Merlin and ILFA transactions. Not a clean like-for-like organic guidance revision."
+        },
+        "balance_sheet": "Post-quarter September30 net leverage2.8x proforma adjustedTTM EBITDA after Epiq; Q2reported0.9x. Different transaction perimeter and dates; not solely operating deterioration.",
+        "limits": "Book-to-bill2.13 covers all end markets includingA&D, not an AI-only order ratio. DataCenter&Networking is broader thanAI. Companywide adjustedEBITDA is not product-level operatingprofit. No named Taiwan customer allocation, rawmaterial transfer or supplier EPS increase established."
+      },
+      "status": "issuer_q3_and_prior_quarter_guidance_verified_order_mix_organic_contribution_and_leverage_followup_pending_no_article"
+    },
+    {
+      "fingerprint": "comfort-systems-q3-2026-firm-backlog-and-advance-funded-cash-growth-20261022",
+      "event_date": "2026-10-22",
+      "discovered_date": "2026-10-23",
+      "instruction_commit_sha": "79b37b6ca86406492af22ea3d4a9a3ce989aacd7",
+      "companies": [
+        "Comfort Systems USA"
+      ],
+      "type": "issuer_mechanical_electrical_data_center_backlog_cash_and_contract_liabilities",
+      "sources": [
+        "https://investors.comfortsystemsusa.com/news-releases/news-release-details/comfort-systems-usa-reports-third-quarter-2026-results",
+        "https://investors.comfortsystemsusa.com/node/18731/html",
+        "https://investors.comfortsystemsusa.com/news-releases/news-release-details/comfort-systems-usa-reports-second-quarter-2026-results"
+      ],
+      "facts": {
+        "quarter": "Q3 2026 endedSeptember30; issuer releaseand10-Q filedOctober22.",
+        "currency": "USD",
+        "unit": "million except per-share figures and percentages",
+        "q3": {
+          "revenue": 3766.302,
+          "net_income": 489,
+          "diluted_eps": 13.91,
+          "operating_cash_flow": 1010.126,
+          "free_cash_flow": 805.623,
+          "property_equipment_purchases": 210.6
+        },
+        "backlog": {
+          "september30_2026": 17810,
+          "june30_2026": 14060,
+          "september30_2025": 9380,
+          "september30_2026_same_store": 17390,
+          "scope": "10-Q remainingconstructionperformanceobligations represent firmorders, exclude unexercised options; management expects65-75% revenue recognition over next12months. Does not establish every project's completion, energization or cloud utilisation."
+        },
+        "demand_relationship": "10-Q says demand especially strong in technology, particularlydata centers. Q3totalrevenue growth53.7% comprises7.4percentagepoint contribution from acquisitions and46.3points from same-store activity. This is a company-reported growth decomposition, not allAI revenue or an independently restated same-store denominator.",
+        "cash_context": {
+          "nine_month_operating_cash_flow": 2538.38,
+          "nine_month_increase_in_billings_exceeding_costs_and_deferred_revenue_cash_flow": 1692.696,
+          "september30_contract_liabilities": 3872.012,
+          "december31_2025_contract_liabilities": 2120.262,
+          "scope": "Contract liabilities include advances and billings ahead of recognised revenue. Nine-monthcashflow bridge is not a standaloneQ3 cause allocation. These advances fund workingcapital for future obligations; not all recurring distributable earnings. Freecashflow definition subtracts customarycapex and addsassetdisposals; acquisitions not deducted."
+        },
+        "limits": "Company provides mechanical/HVAC/electrical contracting across sectors; fullbacklog and cash are not AI-only, and no named newCSP equipment award, Taiwan supplyallocation or acceptedbillablecompute inferred. Conferencecall scheduledOctober23, not completed research."
+      },
+      "status": "issuer_q3_release_and_selected_10q_cash_contract_and_demand_sections_verified_project_mix_and_cash_normalisation_pending_no_article"
     }
   ],
   "articles": [],
@@ -6674,14 +6868,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-23",
-      "checked_at": "2026-10-22 21:24:27 UTC",
-      "instruction_commit_sha": "fa2cfdd7814fa265ccce0649326909113efc2499",
-      "status": "98_name_grouped_discovery_five_core_indices_and_new_maxlinear_profit_cash_event_verified",
+      "checked_at": "2026-10-22 21:36:28 UTC",
+      "instruction_commit_sha": "79b37b6ca86406492af22ea3d4a9a3ce989aacd7",
+      "status": "98_name_grouped_discovery_and_three_new_global_supplier_results_verified",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All98 active names included in fresh14 grouped discovery queries. TSMC/MediaTek/NVIDIA/AMD/Marvell issuer indices read; Broadcom homepage unavailable, partial quarterly-result-index fallback read. MaxLinear is outside the active Taiwan universe and adds no active-company primary count. Watchlist unchanged.",
+      "scope": "Fresh14 grouped discovery queries included all98 activeTaiwan names. Five core issuerindices read;Broadcomhomepage403 remainspartial. Newoutside-universe WesternDigital,TTM,andComfortSystems issuerresults/priorbaselines verified. No activewatchlist modification or fresh98-individual-filings completion claimed.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -6689,20 +6883,23 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/",
         "https://investor.marvell.com/news-events/press-releases",
-        "https://investors.broadcom.com/financial-information/quarterly-results",
-        "https://investors.maxlinear.com/press-releases/detail/629/maxlinear-inc-announces-third-quarter-2026-financial",
-        "https://investors.maxlinear.com/all-sec-filings/content/0001288469-26-000061/mxl-20260930.htm",
-        "https://investors.maxlinear.com/press-releases/detail/617/maxlinear-inc-announces-second-quarter-2026-financial",
-        "https://www.investors.com/news/technology/maxlinear-stock-mxl-q3-2026-earnings/"
+        "https://investor.wdc.com/news-releases/news-release-details/wd-reports-fiscal-first-quarter-2027-financial-results",
+        "https://investor.wdc.com/static-files/a6470e24-6dec-4fae-9b35-69777f704e3a",
+        "https://investors.ttm.com/news-events/press-releases/detail/420/ttm-technologies-inc-reports-third-quarter-2026-results",
+        "https://investors.ttm.com/news-events/press-releases/detail/411/ttm-technologies-inc-reports-second-quarter-2026-results",
+        "https://investors.comfortsystemsusa.com/news-releases/news-release-details/comfort-systems-usa-reports-third-quarter-2026-results",
+        "https://investors.comfortsystemsusa.com/node/18731/html"
       ],
       "source_limits": [
-        "Mandatory same-commit instructions/specifications fetched in full with unchanged blob versions. Full ledger parsed; three recent related articles freshly fetched, matched unchanged versions and reviewed for duplicate scope.",
-        "Grouped discovery returned many historical, theme and quotation pages. Inclusion of98 names is not98 fresh individually verified current filings; existing company-economics validation gaps remain.",
-        "TSMC latest index retainsOctober15 Q3 release; MediaTek latest index retainsSeptember30 release. No new primary-confirmed TPU NRE, customer procurement allocation, design award or revised production terms established. NVIDIA/AMD/Marvell indices retain previously registered baselines.",
-        "Broadcom homepage failed and retry returned403; alternate news path returned404. Quarterly-result index readable but incomplete/stale versus previously registered releases. No fresh all-release completion or no-change conclusion asserted for Broadcom.",
-        "MaxLinear Q3issuer release and10-Q provide new optical demand/profitability and cash-consumption facts. Q3revenue within Julyguidance; attributed Q4consensus is not independently retrievedFactSet. Infrastructure revenues are not exclusivelyAI.",
-        "Full-current-filings review of all global suppliers not claimed. Issuer IRcall deck failed; authenticated release and10-Q numerical bodies were available. No call-transcript completion claimed.",
-        "Only public sources, reported results, guidance and research stages appended. No current quotations, valuations, holdings, private fund flows, trading conditions or investment judgment saved. No new article or website-publication claim."
+        "All mandatory same-commit instruction bodies retrieved in full; AGENTS output reread in bounded chunks to eliminate display truncation. Config,taxonomy,series,specifications,fullJSONledger andthree recentrelatedarticles read. Instructioncommit79b37b6ca86406492af22ea3d4a9a3ce989aacd7.",
+        "Groupeddiscovery included98names but returned primarilyhistorical/theme/quote pages; not98freshcurrent regulatoryfilings. Existingprimarybaselinecoverage and company-economics gaps unchanged.",
+        "TSMCindex latestOctober15Q3,MediaTekSeptember30release;NVIDIAOctober22Minerva/GeForceNOW,AMDOctober12Helion,MarvellOctober13retimer/security. No new primaryconfirmed TPUdesignresponsibility,NRE,Googleprocurementallocation or revisedvolume terms established.",
+        "Broadcomhomepage returned403; freshtargetedsearch didnotresolve currentissuerreleasebody. No allreleasecompletion/no-change conclusion forBroadcom.",
+        "WesternDigital pressreleaseandtables establish actualcash,outlook and priorguide comparisons; decktext order forcashflow highlightlabels ambiguous,so use numericaltables. StockStoryandTheFly consensus differ slightly; provider originalpopulation notobtained. No calltranscript completion or futurecapexheadlines accepted asverifiedissuerfact.",
+        "TTMcurrentguide includesclosedacquisitions whilepriorguide excludedpendingacquisitions. Companywidebook-to-bill is notAI-only, and adjustedEBITDA notGAAPoperatingprofit.",
+        "ComfortSystems selected10-Qdemand,contractliabilities,remainingperformanceobligations andcashflow sections read. Revenuegrowthdecomposition46.3/7.4percentagepoints retained; fullbacklognotAI-only. Customeradvancesmateriallyaffectcash; no campusenergization/paidutilisation inference.",
+        "Bloom financialindicesand guessedcurrentrelease paths didnotprovide authenticatedQ3numericalbody; candidatekeptpending ratherthanrelyingonsecondaryheadline. Not allglobalsuppliercurrentfilings completed.",
+        "Only publicreportedfacts,sources,andresearchstages appended. No currentquotes,valuations,holdings,fundflows orprivatejudgment saved. Noarticle,websitepublicationor deployment claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -15558,6 +15755,42 @@
           "Full-current-filings review of all global suppliers not claimed. Issuer IRcall deck failed; authenticated release and10-Q numerical bodies were available. No call-transcript completion claimed.",
           "Only public sources, reported results, guidance and research stages appended. No current quotations, valuations, holdings, private fund flows, trading conditions or investment judgment saved. No new article or website-publication claim."
         ]
+      },
+      {
+        "date": "2026-10-23",
+        "checked_at": "2026-10-22 21:36:28 UTC",
+        "instruction_commit_sha": "79b37b6ca86406492af22ea3d4a9a3ce989aacd7",
+        "status": "98_name_grouped_discovery_and_three_new_global_supplier_results_verified",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "Fresh14 grouped discovery queries included all98 activeTaiwan names. Five core issuerindices read;Broadcomhomepage403 remainspartial. Newoutside-universe WesternDigital,TTM,andComfortSystems issuerresults/priorbaselines verified. No activewatchlist modification or fresh98-individual-filings completion claimed.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://investor.wdc.com/news-releases/news-release-details/wd-reports-fiscal-first-quarter-2027-financial-results",
+          "https://investor.wdc.com/static-files/a6470e24-6dec-4fae-9b35-69777f704e3a",
+          "https://investors.ttm.com/news-events/press-releases/detail/420/ttm-technologies-inc-reports-third-quarter-2026-results",
+          "https://investors.ttm.com/news-events/press-releases/detail/411/ttm-technologies-inc-reports-second-quarter-2026-results",
+          "https://investors.comfortsystemsusa.com/news-releases/news-release-details/comfort-systems-usa-reports-third-quarter-2026-results",
+          "https://investors.comfortsystemsusa.com/node/18731/html"
+        ],
+        "source_limits": [
+          "All mandatory same-commit instruction bodies retrieved in full; AGENTS output reread in bounded chunks to eliminate display truncation. Config,taxonomy,series,specifications,fullJSONledger andthree recentrelatedarticles read. Instructioncommit79b37b6ca86406492af22ea3d4a9a3ce989aacd7.",
+          "Groupeddiscovery included98names but returned primarilyhistorical/theme/quote pages; not98freshcurrent regulatoryfilings. Existingprimarybaselinecoverage and company-economics gaps unchanged.",
+          "TSMCindex latestOctober15Q3,MediaTekSeptember30release;NVIDIAOctober22Minerva/GeForceNOW,AMDOctober12Helion,MarvellOctober13retimer/security. No new primaryconfirmed TPUdesignresponsibility,NRE,Googleprocurementallocation or revisedvolume terms established.",
+          "Broadcomhomepage returned403; freshtargetedsearch didnotresolve currentissuerreleasebody. No allreleasecompletion/no-change conclusion forBroadcom.",
+          "WesternDigital pressreleaseandtables establish actualcash,outlook and priorguide comparisons; decktext order forcashflow highlightlabels ambiguous,so use numericaltables. StockStoryandTheFly consensus differ slightly; provider originalpopulation notobtained. No calltranscript completion or futurecapexheadlines accepted asverifiedissuerfact.",
+          "TTMcurrentguide includesclosedacquisitions whilepriorguide excludedpendingacquisitions. Companywidebook-to-bill is notAI-only, and adjustedEBITDA notGAAPoperatingprofit.",
+          "ComfortSystems selected10-Qdemand,contractliabilities,remainingperformanceobligations andcashflow sections read. Revenuegrowthdecomposition46.3/7.4percentagepoints retained; fullbacklognotAI-only. Customeradvancesmateriallyaffectcash; no campusenergization/paidutilisation inference.",
+          "Bloom financialindicesand guessedcurrentrelease paths didnotprovide authenticatedQ3numericalbody; candidatekeptpending ratherthanrelyingonsecondaryheadline. Not allglobalsuppliercurrentfilings completed.",
+          "Only publicreportedfacts,sources,andresearchstages appended. No currentquotes,valuations,holdings,fundflows orprivatejudgment saved. Noarticle,websitepublicationor deployment claim."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -24079,6 +24312,87 @@
         "Check Q4 guidance delivery, sustained GAAP margin, recurring equity compensation and operatingcashflow before attributing durable supplier economics."
       ],
       "publication_status": "event_and_candidate_only_no_article"
+    },
+    {
+      "key": "wdc-hdd-pricing-capital-intensity-and-cash-after-guidance-beat-20261023",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "79b37b6ca86406492af22ea3d4a9a3ce989aacd7",
+      "companies": [
+        "Western Digital"
+      ],
+      "related_public_event": "western-digital-fq1-2027-margin-outlook-and-cash-conversion-20261022",
+      "stage": "issuer_results_and_prior_baseline_verified_followup_pending",
+      "sources": [
+        "https://investor.wdc.com/news-releases/news-release-details/wd-reports-fiscal-first-quarter-2027-financial-results",
+        "https://investor.wdc.com/static-files/a6470e24-6dec-4fae-9b35-69777f704e3a",
+        "https://investor.wdc.com/static-files/0c54ec27-0e0d-46b1-a56b-2c72b02815ff"
+      ],
+      "questions": [
+        "Separate shipment capacity,price perTB and mix against customer delivery schedules and multi-year commitments.",
+        "Verify future capex and inventory build against subsequent operatingcashflow/freecashflow, using original call or filing rather than attributed headline alone.",
+        "Keep HDD economics separate from NAND and identify any specific incremental component supply contracts before extending conclusions."
+      ],
+      "publication_status": "event_or_candidate_only_no_article"
+    },
+    {
+      "key": "ttm-pcb-order-growth-organic-margin-and-acquisition-leverage-20261023",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "79b37b6ca86406492af22ea3d4a9a3ce989aacd7",
+      "companies": [
+        "TTM Technologies"
+      ],
+      "related_public_event": "ttm-q3-2026-book-to-bill-margin-and-acquisition-guidance-scope-20261022",
+      "stage": "issuer_results_and_prior_baseline_verified_followup_pending",
+      "sources": [
+        "https://investors.ttm.com/news-events/press-releases/detail/420/ttm-technologies-inc-reports-third-quarter-2026-results",
+        "https://investors.ttm.com/news-events/press-releases/detail/411/ttm-technologies-inc-reports-second-quarter-2026-results"
+      ],
+      "questions": [
+        "Disaggregate companywide book-to-bill byDataCenter&Networking,A&D,and deliveryperiod; obtain cancellation/commitment terms.",
+        "Reconcile 2026/2027 organic expectations with STG/Epiq contributions, financing and pendingacquisitions.",
+        "Verify planned China/Malaysia capacity spending, qualifiedproduction and cashreturns without treating earlierOctober12investment announcement as new."
+      ],
+      "publication_status": "event_or_candidate_only_no_article"
+    },
+    {
+      "key": "comfort-mechanical-electrical-backlog-advance-funding-and-project-delivery-20261023",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "79b37b6ca86406492af22ea3d4a9a3ce989aacd7",
+      "companies": [
+        "Comfort Systems USA"
+      ],
+      "related_public_event": "comfort-systems-q3-2026-firm-backlog-and-advance-funded-cash-growth-20261022",
+      "stage": "issuer_results_and_prior_baseline_verified_followup_pending",
+      "sources": [
+        "https://investors.comfortsystemsusa.com/news-releases/news-release-details/comfort-systems-usa-reports-third-quarter-2026-results",
+        "https://investors.comfortsystemsusa.com/node/18731/html",
+        "https://investors.comfortsystemsusa.com/news-releases/news-release-details/comfort-systems-usa-reports-second-quarter-2026-results"
+      ],
+      "questions": [
+        "Separate project-level datacenter backlog and construction completion from grid/power energization and paidcomputeutilisation.",
+        "Track execution margins and conversion of advancefunded obligations; normalise cashflow for contractliabilities,capex andacquisitions.",
+        "Read October23call and updatedprojectmix; reconcile labour,costestimates,cancellationrisk and65-75%12month revenue conversion."
+      ],
+      "publication_status": "event_or_candidate_only_no_article"
+    },
+    {
+      "key": "bloom-q3-2026-primary-financial-release-retrieval-pending-20261023",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "79b37b6ca86406492af22ea3d4a9a3ce989aacd7",
+      "companies": [
+        "Bloom Energy"
+      ],
+      "stage": "current_financial_primary_body_not_obtained",
+      "sources": [
+        "https://investor.bloomenergy.com/press-releases/default.aspx",
+        "https://investor.bloomenergy.com/financials-and-filings/quarterly-results/default.aspx",
+        "https://www.bloomenergy.com/news/bloom-energy-to-announce-third-quarter-2026-financial-results-on-october-22-2026/"
+      ],
+      "questions": [
+        "Obtain currentQ3financial release,statements andguidance fromissuerorfiling; availableissuerindicesdidnotexposecurrentnumericalbody.",
+        "Reconcile any guidancechange againstJuly baseline and distinguish ProjectJupiter fuel/permit risk from equipment acceptance and redeployment terms."
+      ],
+      "publication_status": "event_or_candidate_only_no_article"
     }
   ],
   "blockers": [
@@ -24098,7 +24412,7 @@
     }
   ],
   "last_research_date": "2026-10-23",
-  "instruction_commit_sha": "fa2cfdd7814fa265ccce0649326909113efc2499",
+  "instruction_commit_sha": "79b37b6ca86406492af22ea3d4a9a3ce989aacd7",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
