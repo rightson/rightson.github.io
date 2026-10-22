@@ -6298,6 +6298,64 @@
       "event_date": "2026-10-22",
       "discovered_date": "2026-10-22",
       "instruction_commit_sha": "2ed521cea6876c43c18a154d9b3665e573bdacbc"
+    },
+    {
+      "fingerprint": "nexans-mv-accessories-capacity-expansion-and-grid-demand-20261022",
+      "event_date": "2026-10-22",
+      "discovered_date": "2026-10-22",
+      "instruction_commit_sha": "b0f7a2958038c46babe150b4714fe0bfa8b7eb80",
+      "companies": [
+        "Nexans"
+      ],
+      "type": "primary_capacity_plan_reported_segment_sales_and_original_cfo_interview",
+      "sources": [
+        "https://www.globenewswire.com/news-release/2026/10/22/3386015/0/en/nexans-9m-2026-exceptionally-high-momentum-in-pwr-grid-and-pwr-connect-pwr-transmission-continued-growth-normalization-2026-guidance-confirmed.html",
+        "https://www.nexans.com/app/uploads/2026/10/2026-10-22-presentation-nexans-q3-2026.pdf",
+        "https://www.nexans.com/regulated-informations/h1-2026-financial-results/",
+        "https://www.reuters.com/technology/cable-capacity-emerges-bottleneck-ai-data-centres-nexans-says-2026-10-22/"
+      ],
+      "facts": {
+        "issuer_publication_time": "2026-10-22 01:00 ET",
+        "capacity_plan": {
+          "investment_EUR_million": 62,
+          "scope": "Medium-voltage accessories in Europe and US, including Republic Wire brownfield",
+          "capacity_increase_pct": 39,
+          "comparison_period": "2026 to2028",
+          "US_lead_time_reduction_target_up_to_pct": 60,
+          "source_slide": 10,
+          "status": "Management investment and capacity targets, not completed capacity or realized pricing"
+        },
+        "reported_Q3": {
+          "PWR_Grid_organic_growth_yoy_pct": 14.8,
+          "PWR_Grid_standard_sales_EUR_million": 363.9,
+          "PWR_Connect_organic_growth_yoy_pct": 10.5,
+          "PWR_Connect_standard_sales_EUR_million": 749.8,
+          "PWR_Connect_reported_growth_yoy_pct": 36,
+          "PWR_Connect_scope_effect_pct": 24.4,
+          "Group_organic_growth_yoy_pct": 9
+        },
+        "baseline_and_guidance": {
+          "prior_issuer_date": "2026-07-29",
+          "FY2026_adjusted_EBITDA_EUR_million": [
+            770,
+            840
+          ],
+          "FY2026_FCF_EUR_million": [
+            235,
+            325
+          ],
+          "October_revision": "Unchanged from July. July raised EBITDA from730-810 and FCF from210-310.",
+          "comparison": "PWR-Grid Q3 organic14.8% exceeds issuer mid-single-digit medium-term guideline; not a same-period analyst-consensus beat."
+        },
+        "demand_relationship": "Issuer identifies North American data centers alongside utilities for PWR-Grid and hyperscale data centers for PWR-Connect. European capacity described as saturated. No new named CSP purchase commitment disclosed.",
+        "original_reporting": {
+          "published_at": "2026-10-22 14:41:28 UTC",
+          "attribution": "Reuters original interview with CFO Vincent Piquet",
+          "claims": "CFO describes tight global cable capacity, around three years for a new XLPE CV production line, and Enedis procurement extending to six-seven years. Distinct products and evidence from the accessories brownfield target."
+        },
+        "limits": "Q3 sales release does not disclose Q3 EBITDA, AI-only profit or cash conversion. Acquisitions, solar, residential and seasonal European activity also contribute. Subsea backlog is not attributed wholly to AI. Capacity targets are not completed output. No issuer-level earnings revision established."
+      },
+      "status": "issuer_current_prior_and_presentation_verified_slide10_visually_checked_original_reporting_read_no_article"
     }
   ],
   "articles": [],
@@ -6415,33 +6473,37 @@
     ],
     "current_run_screening": {
       "date": "2026-10-22",
-      "checked_at": "2026-10-22 14:13:02 UTC",
-      "instruction_commit_sha": "e6c71db713762ccdd7c0862e9315b7598fecfe33",
-      "status": "98_name_grouped_discovery_core_indices_one_results_source_completion_candidate_no_material_notification",
+      "checked_at": "2026-10-22 15:23:24 UTC",
+      "instruction_commit_sha": "b0f7a2958038c46babe150b4714fe0bfa8b7eb80",
+      "status": "98_name_grouped_discovery_six_core_indices_new_off_universe_power_accessories_event_verified",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All98 active watchlist companies included in fresh grouped discovery. Six core issuer indices and targeted CSP, TPU, optical and power-chain discovery checked. No universe edit.",
+      "scope": "All98 active watchlist names included in fresh grouped discovery. Six mandatory core issuer indices read. Off-universe Nexans capacity event verified; no watchlist edit.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
         "https://nvidianews.nvidia.com/",
         "https://ir.amd.com/news-events/press-releases",
-        "https://investors.broadcom.com/financial-information/financial-news-releases",
-        "https://investor.marvell.com/news-events/press-releases",
         "https://investors.broadcom.com/",
-        "https://blogs.nvidia.com/blog/geforce-now-thursday-call-of-duty-modern-warfare-4/",
-        "https://www.ardentec.com/?m=113&u=34.69f31e424df2d9.26408755",
-        "https://stockchannelnew.sinotrade.com.tw/z/zf/zfz/zfz_4E4E771B-19A2-41CA-B39D-613C43A9A45E.djhtm"
+        "https://investor.marvell.com/news-events/press-releases",
+        "https://www.globenewswire.com/news-release/2026/10/22/3386015/0/en/nexans-9m-2026-exceptionally-high-momentum-in-pwr-grid-and-pwr-connect-pwr-transmission-continued-growth-normalization-2026-guidance-confirmed.html",
+        "https://www.nexans.com/app/uploads/2026/10/2026-10-22-presentation-nexans-q3-2026.pdf",
+        "https://www.nexans.com/regulated-informations/h1-2026-financial-results/",
+        "https://www.reuters.com/technology/cable-capacity-emerges-bottleneck-ai-data-centres-nexans-says-2026-10-22/",
+        "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+        "https://www.prnewswire.com/news-releases/verda-and-compal-expand-global-ai-infrastructure-collaboration-at-gtc-berlin-2026-302913748.html",
+        "https://www.compal.com/esg/en/news/verda-and-compal-announce-partnership-to-acce/"
       ],
       "source_limits": [
-        "Same-commit required instructions and related specifications completely retrieved; full public ledger parsed and three unchanged recent related ai-industry articles fetched. Only specified topic executed.",
-        "All98 included in discovery, not98 fresh primary filings or a complete company economics audit. Historical monthly-revenue baseline98 retained; current order, margin and cash conversion coverage remains partial.",
-        "Broadcom financial-news index web retrieval returned403; fresh original HTTPS succeeded, and issuer investor-center index also read. Latest listed release remains October21 Arcot. TSMC/MediaTek/AMD/Marvell indices retain registered dates. NVIDIA October22 update concerns GeForceNOW games/billing, without a verified AI-infrastructure procurement or earnings revision.",
-        "Ardentec results-table lead compared with prior dated forecasts and current primary baseline. Q3 primary financial statement/cash flow not yet retrieved, source completion retained as candidate; not called a new earnings surprise.",
-        "Previously notified NVIDIA commitments, Meta/Tesla results, Lam, Besi, Nokia and Kuehne+Nagel remain baselines. Later Besi/ASML headline discovered but full updatedReuters body inaccessible; no new competitive conclusion asserted.",
-        "Public source coverage and one candidate only; no quotes, valuation, fund flows, holdings, private investment judgment or trading conditions. No new long-form article or website-publication claim."
+        "Required same-commit instructions and related specifications completely fetched and matched previously read blob SHAs. Full public ledger parsed and three recent unchanged related articles read.",
+        "All98 included in discovery; not98 newly retrieved primary filings or a full current economics audit. Existing monthly-revenue baseline preserved. Current order, margin and cash coverage remains partial.",
+        "TSMC, MediaTek, AMD, Broadcom and Marvell issuer indices retain registered releases. NVIDIA October22 Minerva original body read: IREN use and other planned deployments/ODM offerings, but no quantified paid orders, recurring revenue or realized yield improvement disclosed.",
+        "Compal-Verda expansion original release is October21 07:30 ET, despite October22 Taiwanese rediscovery. May7 partnership is the baseline; new B300 platform and Daxi/US manufacturing details give no firm shipment volume, revenue commitment or margin/cash bridge.",
+        "Nexans is outside existing universe. Issuer identified data-center demand and a specific accessories capacity plan; current and July guidance compared. Slide10 visually checked; XLPE CV-line timeline is separately attributed original reporting, not the accessories commissioning schedule.",
+        "Previously recorded Ardentec source-completion and Besi source limitations remain unresolved; no new claims inferred from recycled headlines. Prior material events retained for deduplication.",
+        "Public source event, research candidate and coverage only. No quote, valuation, cash-market fund flow, holdings, private investment judgment or trading conditions stored. No new article or website-publication claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -15060,6 +15122,41 @@
           "Previously notified NVIDIA commitments, Meta/Tesla results, Lam, Besi, Nokia and Kuehne+Nagel remain baselines. Later Besi/ASML headline discovered but full updatedReuters body inaccessible; no new competitive conclusion asserted.",
           "Public source coverage and one candidate only; no quotes, valuation, fund flows, holdings, private investment judgment or trading conditions. No new long-form article or website-publication claim."
         ]
+      },
+      {
+        "date": "2026-10-22",
+        "checked_at": "2026-10-22 15:23:24 UTC",
+        "instruction_commit_sha": "b0f7a2958038c46babe150b4714fe0bfa8b7eb80",
+        "status": "98_name_grouped_discovery_six_core_indices_new_off_universe_power_accessories_event_verified",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All98 active watchlist names included in fresh grouped discovery. Six mandatory core issuer indices read. Off-universe Nexans capacity event verified; no watchlist edit.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.globenewswire.com/news-release/2026/10/22/3386015/0/en/nexans-9m-2026-exceptionally-high-momentum-in-pwr-grid-and-pwr-connect-pwr-transmission-continued-growth-normalization-2026-guidance-confirmed.html",
+          "https://www.nexans.com/app/uploads/2026/10/2026-10-22-presentation-nexans-q3-2026.pdf",
+          "https://www.nexans.com/regulated-informations/h1-2026-financial-results/",
+          "https://www.reuters.com/technology/cable-capacity-emerges-bottleneck-ai-data-centres-nexans-says-2026-10-22/",
+          "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+          "https://www.prnewswire.com/news-releases/verda-and-compal-expand-global-ai-infrastructure-collaboration-at-gtc-berlin-2026-302913748.html",
+          "https://www.compal.com/esg/en/news/verda-and-compal-announce-partnership-to-acce/"
+        ],
+        "source_limits": [
+          "Required same-commit instructions and related specifications completely fetched and matched previously read blob SHAs. Full public ledger parsed and three recent unchanged related articles read.",
+          "All98 included in discovery; not98 newly retrieved primary filings or a full current economics audit. Existing monthly-revenue baseline preserved. Current order, margin and cash coverage remains partial.",
+          "TSMC, MediaTek, AMD, Broadcom and Marvell issuer indices retain registered releases. NVIDIA October22 Minerva original body read: IREN use and other planned deployments/ODM offerings, but no quantified paid orders, recurring revenue or realized yield improvement disclosed.",
+          "Compal-Verda expansion original release is October21 07:30 ET, despite October22 Taiwanese rediscovery. May7 partnership is the baseline; new B300 platform and Daxi/US manufacturing details give no firm shipment volume, revenue commitment or margin/cash bridge.",
+          "Nexans is outside existing universe. Issuer identified data-center demand and a specific accessories capacity plan; current and July guidance compared. Slide10 visually checked; XLPE CV-line timeline is separately attributed original reporting, not the accessories commissioning schedule.",
+          "Previously recorded Ardentec source-completion and Besi source limitations remain unresolved; no new claims inferred from recycled headlines. Prior material events retained for deduplication.",
+          "Public source event, research candidate and coverage only. No quote, valuation, cash-market fund flow, holdings, private investment judgment or trading conditions stored. No new article or website-publication claim."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -23207,6 +23304,28 @@
         "Test Q4 utilization and orders against previously forecast44%-plus gross margin rather than extrapolating Q3"
       ],
       "publication_status": "candidate_only_no_article"
+    },
+    {
+      "key": "nexans-medium-voltage-accessories-expansion-to-profit-and-cash-conversion-20261022",
+      "date": "2026-10-22",
+      "instruction_commit_sha": "b0f7a2958038c46babe150b4714fe0bfa8b7eb80",
+      "companies": [
+        "Nexans"
+      ],
+      "stage": "capacity_targets_and_reported_organic_growth_verified_incremental_margin_cash_and_contract_economics_pending",
+      "related_public_event": "nexans-mv-accessories-capacity-expansion-and-grid-demand-20261022",
+      "sources": [
+        "https://www.globenewswire.com/news-release/2026/10/22/3386015/0/en/nexans-9m-2026-exceptionally-high-momentum-in-pwr-grid-and-pwr-connect-pwr-transmission-continued-growth-normalization-2026-guidance-confirmed.html",
+        "https://www.nexans.com/app/uploads/2026/10/2026-10-22-presentation-nexans-q3-2026.pdf",
+        "https://www.nexans.com/regulated-informations/h1-2026-financial-results/",
+        "https://www.reuters.com/technology/cable-capacity-emerges-bottleneck-ai-data-centres-nexans-says-2026-10-22/"
+      ],
+      "questions": [
+        "Verify capacity commissioning and lead-time reduction against2026-2028 targets",
+        "Separate organic volume, price and mix from acquired sales and non-data-center demand",
+        "Obtain segment incremental margins, cash conversion and customer-contract duration before attributing sustainable earnings improvement"
+      ],
+      "publication_status": "source_event_and_research_candidate_only_no_article"
     }
   ],
   "blockers": [
@@ -23226,7 +23345,7 @@
     }
   ],
   "last_research_date": "2026-10-22",
-  "instruction_commit_sha": "e6c71db713762ccdd7c0862e9315b7598fecfe33",
+  "instruction_commit_sha": "b0f7a2958038c46babe150b4714fe0bfa8b7eb80",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
