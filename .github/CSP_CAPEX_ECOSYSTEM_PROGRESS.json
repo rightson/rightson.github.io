@@ -6044,6 +6044,29 @@
         "limits": "Forwardlooking reported remarks,not measured deliveries ororders.No namedTaiwan allocation,economic terms ornewprofitforecast. Originalaudio notverified."
       },
       "status": "supporting_source_completion_no_repeat_material_alert_no_article"
+    },
+    {
+      "fingerprint": "kmi-october21-permian-link-fid-hyperscaler-take-or-pay-and-backlog-20261022",
+      "event_date": "2026-10-21",
+      "discovered_date": "2026-10-22",
+      "instruction_commit_sha": "1dcb1226e8a3ee9d8fd4063f3db912b4d16c8e13",
+      "companies": [
+        "Kinder Morgan",
+        "Natural Gas Pipeline Company of America",
+        "Southern Natural Gas"
+      ],
+      "type": "issuer_final_investment_decisions_and_contracted_datacenter_power_gas_transport",
+      "sources": [
+        "https://ir.kindermorgan.com/news/news-details/2026/Kinder-Morgan-Reports-Record-Third-Quarter-2026-Financial-Results/default.aspx",
+        "https://ir.kindermorgan.com/news/news-details/2026/Kinder-Morgan-Reports-Second-Quarter-2026-Financial-Results/default.aspx",
+        "https://pipeline2.kindermorgan.com/Notices/NoticeDetail.aspx?code=NGPL&notc_nbr=46946"
+      ],
+      "facts": {
+        "october21": "Permian Link FID:2.8Bcf/day,USD4.2bn total/KMI1.6bn;long-term take-or-pay transport supports generation for an unnamed A-rated hyperscaler;target Q3-2030,permits conditional. Southeast Connector FID:2.6Bcf/day,KMI3.1bn;phased service from Q4-2030. Backlog additionsUSD5.4bn,commissioned0.7bn,total14.4bn. Adjusted EPS outlook>13% above original1.36 budget;EBITDA>6% above8.6bn budget.",
+        "prior": "May12 issuer notice was non-binding solicitation;2.6million Dth/day design is an energy unit,not directly comparable to October Bcf/day. July22 backlogUSD9.6bn;outlook>12%/>5% above respective EPS/EBITDA budgets. October statement reports backlog netincrease4.7bn versus prior quarter;rounded release totals do not fully reconcile.",
+        "limits": "Capacity reservation supports future toll revenue;no hyperscaler identity,take-or-pay term length,tariff,project margin orcash collection disclosed. Backlog is capital projects,not revenue;growth also serves non-AI markets."
+      },
+      "status": "new_contract_maturity_and_demand_transmission_event_primary_verified_no_article"
     }
   ],
   "articles": [],
@@ -6161,14 +6184,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-22",
-      "checked_at": "2026-10-21 23:40:48 UTC",
-      "instruction_commit_sha": "378d061abf51e0a4022fc45b54e3a939fcb95f73",
-      "status": "98_name_discovery_core_indices_and_nextera_q3_historical_baseline_comparison_no_new_material_revision",
+      "checked_at": "2026-10-22 01:16:39 UTC",
+      "instruction_commit_sha": "1dcb1226e8a3ee9d8fd4063f3db912b4d16c8e13",
+      "status": "98_name_discovery_core_indices_and_kmi_hyperscaler_transport_contract_maturity_verified",
       "company_count": 98,
       "grouped_query_count": 14,
-      "universe_commit_sha": "40d8a41e9067fb18c3becf64527795cb83fa932f",
+      "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All98 active names included in14 fresh grouped discovery queries;core issuer news indices checked.Not98 full current-filing audits.Active-universe primary baseline counts unchanged.",
+      "scope": "All98 active names in14 fresh grouped discovery queries;core issuer indices read.Not98 full current-filing oreconomics audits.Noactive-universe primary baseline count change.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -6176,19 +6199,17 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://www.marvell.com/company/newsroom.html",
-        "https://www.investor.nexteraenergy.com/~/media/Files/N/NEE-IR/reports-and-fillings/quarterly-earnings/2026/Q3%202026/2026-1021%20NEEQ32026News%20Release%20vFinal.pdf",
-        "https://www.investor.nexteraenergy.com/~/media/Files/N/NEE-IR/reports-and-fillings/quarterly-earnings/2026/Q3%202026/Q3%202026%20Earnings%20Script_VF.pdf",
-        "https://www.investor.nexteraenergy.com/~/media/Files/N/NEE-IR/reports-and-fillings/quarterly-earnings/2026/Q3%202026/Q3%202026%20Earnings%20Slides_v%20F.pdf",
-        "https://www.investor.nexteraenergy.com/~/media/Files/N/NEE-IR/news-and-events/events-and-presentations/2026/Wolfe%20Conference%20%20Presentation_v%20F.pdf",
-        "https://www.investing.com/news/transcripts/nextera-energy-at-wolfe-research-conference-growth-plan-accelerates-93CH-4927990"
+        "https://ir.kindermorgan.com/news/news-details/2026/Kinder-Morgan-Reports-Record-Third-Quarter-2026-Financial-Results/default.aspx",
+        "https://ir.kindermorgan.com/news/news-details/2026/Kinder-Morgan-Reports-Second-Quarter-2026-Financial-Results/default.aspx",
+        "https://pipeline2.kindermorgan.com/Notices/NoticeDetail.aspx?code=NGPL&notc_nbr=46946"
       ],
       "source_limits": [
-        "Mandatory instructions/specifications andthree related ai-industry articles read at locked instruction commit;complete progress JSON parsed fordeduplication.",
-        "Fresh discovery mostly returned historical reports,repeated NVIDIA prepayment claims andmarket commentary.No new confirmed TSMC/MediaTek customer allocation,NRE/production economics orsame-basis CSP budget cut established.Core index dates are publication dates,not evidence ofcomplete current earnings validation.",
-        "NextEra October21 issuer release,script andslides compared withOctober1 issuer presentation andthird-party conference transcription.Federal-hub funding/fee-model headlines predate thequarterly result;guidance unchanged.Reclassified as historical baseline/source completion,not a fresh material event.",
-        "No fresh daily exchange issuer-notice table obtained thisround;historical baselines do not establish full current-filing oreconomic coverage.",
-        "KinderMorgan gas-project andTesla storage headlines discovered but issuer bodies notvalidated thisround;no economic claims oralert based onthem.",
-        "Public research progress only;no stockquote,valuation,holding orprivate fund-flow data included.No article orwebsite-publication claim."
+        "Full instruction/specification files andprogress JSON retrieved at instruction commit;three related ai-industry articles read.",
+        "Grouped discovery predominantly historical media,social commentary andstock-price reports;no new confirmed TSMC/MediaTek customer allocation,NRE/production economics orsame-basis CSPbudget cut established.",
+        "LatestTSMC index:October15 earnings;MediaTek:September30 platform release;NVIDIA:October21 previously recorded announcements;AMD:October12;Marvell:October13.Broadcom financial-news index is narrower thanall corporate press releases.",
+        "KMI outside-universe issuer-backed candidate has explicit hyperscaler power linkage;otherindustry demand andcapital-project definitions remain separate.No watchlist modification.",
+        "No fresh full exchange issuer-notice table retrieved;prior monthlyrevenue baselines do not establish current economic validation.TrendForceOctober19 fiber report rediscovered;no new supplier earnings inference.",
+        "Public ledger contains no stockquote,valuation,holding,private fund-flow state ortrading condition.No newarticle orwebsite-publication claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -14375,6 +14396,36 @@
           "KinderMorgan gas-project andTesla storage headlines discovered but issuer bodies notvalidated thisround;no economic claims oralert based onthem.",
           "Public research progress only;no stockquote,valuation,holding orprivate fund-flow data included.No article orwebsite-publication claim."
         ]
+      },
+      {
+        "date": "2026-10-22",
+        "checked_at": "2026-10-22 01:16:39 UTC",
+        "instruction_commit_sha": "1dcb1226e8a3ee9d8fd4063f3db912b4d16c8e13",
+        "status": "98_name_discovery_core_indices_and_kmi_hyperscaler_transport_contract_maturity_verified",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All98 active names in14 fresh grouped discovery queries;core issuer indices read.Not98 full current-filing oreconomics audits.Noactive-universe primary baseline count change.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.marvell.com/company/newsroom.html",
+          "https://ir.kindermorgan.com/news/news-details/2026/Kinder-Morgan-Reports-Record-Third-Quarter-2026-Financial-Results/default.aspx",
+          "https://ir.kindermorgan.com/news/news-details/2026/Kinder-Morgan-Reports-Second-Quarter-2026-Financial-Results/default.aspx",
+          "https://pipeline2.kindermorgan.com/Notices/NoticeDetail.aspx?code=NGPL&notc_nbr=46946"
+        ],
+        "source_limits": [
+          "Full instruction/specification files andprogress JSON retrieved at instruction commit;three related ai-industry articles read.",
+          "Grouped discovery predominantly historical media,social commentary andstock-price reports;no new confirmed TSMC/MediaTek customer allocation,NRE/production economics orsame-basis CSPbudget cut established.",
+          "LatestTSMC index:October15 earnings;MediaTek:September30 platform release;NVIDIA:October21 previously recorded announcements;AMD:October12;Marvell:October13.Broadcom financial-news index is narrower thanall corporate press releases.",
+          "KMI outside-universe issuer-backed candidate has explicit hyperscaler power linkage;otherindustry demand andcapital-project definitions remain separate.No watchlist modification.",
+          "No fresh full exchange issuer-notice table retrieved;prior monthlyrevenue baselines do not establish current economic validation.TrendForceOctober19 fiber report rediscovered;no new supplier earnings inference.",
+          "Public ledger contains no stockquote,valuation,holding,private fund-flow state ortrading condition.No newarticle orwebsite-publication claim."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -22041,6 +22092,26 @@
         "Track storage contracts andbacklog removals on the same basis;the6–11GW opportunity must not be counted as signed orders."
       ],
       "publication_status": "research_candidate_and_historical_baseline_only_no_new_material_alert_no_article"
+    },
+    {
+      "key": "kmi-october21-permian-link-fid-hyperscaler-take-or-pay-and-backlog-20261022",
+      "date": "2026-10-22",
+      "instruction_commit_sha": "1dcb1226e8a3ee9d8fd4063f3db912b4d16c8e13",
+      "companies": [
+        "Kinder Morgan"
+      ],
+      "sources": [
+        "https://ir.kindermorgan.com/news/news-details/2026/Kinder-Morgan-Reports-Record-Third-Quarter-2026-Financial-Results/default.aspx",
+        "https://ir.kindermorgan.com/news/news-details/2026/Kinder-Morgan-Reports-Second-Quarter-2026-Financial-Results/default.aspx",
+        "https://pipeline2.kindermorgan.com/Notices/NoticeDetail.aspx?code=NGPL&notc_nbr=46946"
+      ],
+      "stage": "outside_universe_signed_transport_commitments_and_final_investment_decisions_verified",
+      "questions": [
+        "Track FERC andother permits,land access,customer credit,construction cost andservice milestones.",
+        "Check transport tariffs,contract duration,termination provisions andcash conversion before estimating incremental profit.",
+        "Separate long-dated power infrastructure commitments from current CSP equipment procurement andnear-term utilisation."
+      ],
+      "publication_status": "new_public_event_registered_no_long_form_article"
     }
   ],
   "blockers": [
@@ -22060,7 +22131,7 @@
     }
   ],
   "last_research_date": "2026-10-22",
-  "instruction_commit_sha": "378d061abf51e0a4022fc45b54e3a939fcb95f73",
+  "instruction_commit_sha": "1dcb1226e8a3ee9d8fd4063f3db912b4d16c8e13",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
