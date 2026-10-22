@@ -6530,14 +6530,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-23",
-      "checked_at": "2026-10-22 16:47:28 UTC",
-      "instruction_commit_sha": "3436bf9acafca9608bcd4e906d423db7243dbae5",
-      "status": "98_name_grouped_discovery_six_core_indices_source_completions_and_candidates_recorded",
+      "checked_at": "2026-10-22 18:25:01 UTC",
+      "instruction_commit_sha": "318ab707bf96c03361b30be561dbecff04d3c5da",
+      "status": "98_name_grouped_discovery_six_core_indices_historical_expansion_and_power_candidates_checked",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All98 active names included in14 fresh grouped discovery queries. Six core issuer indices read; CSP funding, ASIC, power and optical leads followed. No universe edit.",
+      "scope": "All98 active names included in fresh grouped discovery; six core issuer indices read and outside-universe manufacturing/power leads checked. No watchlist change.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -6545,20 +6545,22 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/",
         "https://investor.marvell.com/news-events/press-releases",
-        "https://www.reuters.com/business/besis-quarterly-orders-beat-expectations-ai-data-centre-demand-stays-strong-2026-10-22/",
-        "https://ec.ltn.com.tw/article/breakingnews/5615670",
-        "https://www.businessinsider.com/ai-infrastructure-stocks-to-buy-hyperscaler-spending-capex-2026-10",
-        "https://www.marketwatch.com/story/spacexs-massive-ai-targets-will-test-the-limits-of-reality-4f23a624"
+        "https://www.prnewswire.com/news-releases/dover-reports-third-quarter-2026-results-302916126.html",
+        "https://investors.dovercorporation.com/static-files/4b0b6654-303b-4bfd-b229-0bf0832cdbdd",
+        "https://investors.dovercorporation.com/static-files/c2bc162d-aec0-4b2b-a269-e10d5ab53984",
+        "https://www.ttv.com.tw/finance/view/default.asp?from=587&i=09202630095208FC115C37EC4011B190C66F09DF080A4D3A",
+        "https://ttv.com.tw/finance/view/default.asp?from=588&i=1020262210521489F124C52B4045A5CF70F784C04949F8E4",
+        "https://www.trivano.com/persbericht/pg-e-corporation-reports-third-quarter-2026-results-on-track-to-deliver-solid-2026-reaffirms-2026-and-2027-guidance-769494.html",
+        "https://www.prnewswire.com/news-releases/pge-corporation-reports-third-quarter-2026-results-on-track-to-deliver-solid-2026-reaffirms-2026-and-2027-guidance-302916185.html"
       ],
       "source_limits": [
-        "Same-commit instructions and required specifications fetched completely; full ledger parsed and three unchanged recent related articles read.",
-        "Date-filtered grouped discovery includes historical and generic results.98 names screened does not mean98 fresh primary filings or a complete economics audit. Existing primary monthly-revenue and company coverage gaps remain.",
-        "TSMC October15 results, MediaTek September30 product announcement and August31 NVLinkFusion, NVIDIA October22 Minerva, AMD October12 Helion, Broadcom October21 Arcot and Marvell October13 connectivity remain registered baselines.",
-        "Besi body completion is management attribution, not an independently confirmed competitive change. Issuer Q3 document index discovered through MarketScreener but direct body retrieval failed.",
-        "Foxconn operational claims retained with their measurement limits and target/achievement distinction. Issuer original presentation and realized economics remain pending.",
-        "Morgan Stanley original note unavailable; no selection-list earnings or cross-survey revision inferred.",
-        "SpaceX commentary page is dated October21 16:15 ET despite fresh search labeling; paywall prevented full-body verification. It does not establish a new issuer funding or deployment revision.",
-        "Prior material public events preserved. Only public sources and research stages appended; no quotes, valuation, holdings, fund flows or private investment judgments. No article or website-publication claim."
+        "Same-commit mandatory instructions and specifications fully retrieved. Full ledger parsed; three recent related article blobs freshly fetched and matched previously read content.",
+        "Grouped discovery returns historical articles, calendar pages and secondary reports. It is not98 individual current primary-filings checks. Existing monthly-revenue and company-economics gaps remain.",
+        "Core indices retain registered releases: TSMC October15, MediaTek September30 and August31 collaboration, NVIDIA October22, AMD October12, Broadcom October21 and Marvell October13. No new authenticated MediaTek TPU allocation or economic terms.",
+        "Dover company release, selected slides and July23 company-hosted call read. Heat-exchanger doubling predates this check; mixed-segment results do not isolate liquid-cooling profit. Slides6,8,13 visually checked.",
+        "GIS-KY optical/Vietnam plan traced to September30 rather than presumed October22 new capacity. PG&E174MW is cumulative since2024 and2027 capital reduction is explicitly previously announced.",
+        "FT debt-rating commentary and Reuters Meta equity-reaction original direct bodies unavailable; existing issuer financial baseline retained. No new completed funding, default, customer cancellation or supplier order revision inferred from headline or market price.",
+        "Only public sources and research completion stages recorded. No prices, valuation, holdings, private fund-flow checks or investment judgments added. No article or website-publication claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -15280,6 +15282,41 @@
           "SpaceX commentary page is dated October21 16:15 ET despite fresh search labeling; paywall prevented full-body verification. It does not establish a new issuer funding or deployment revision.",
           "Prior material public events preserved. Only public sources and research stages appended; no quotes, valuation, holdings, fund flows or private investment judgments. No article or website-publication claim."
         ]
+      },
+      {
+        "date": "2026-10-23",
+        "checked_at": "2026-10-22 18:25:01 UTC",
+        "instruction_commit_sha": "318ab707bf96c03361b30be561dbecff04d3c5da",
+        "status": "98_name_grouped_discovery_six_core_indices_historical_expansion_and_power_candidates_checked",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All98 active names included in fresh grouped discovery; six core issuer indices read and outside-universe manufacturing/power leads checked. No watchlist change.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.prnewswire.com/news-releases/dover-reports-third-quarter-2026-results-302916126.html",
+          "https://investors.dovercorporation.com/static-files/4b0b6654-303b-4bfd-b229-0bf0832cdbdd",
+          "https://investors.dovercorporation.com/static-files/c2bc162d-aec0-4b2b-a269-e10d5ab53984",
+          "https://www.ttv.com.tw/finance/view/default.asp?from=587&i=09202630095208FC115C37EC4011B190C66F09DF080A4D3A",
+          "https://ttv.com.tw/finance/view/default.asp?from=588&i=1020262210521489F124C52B4045A5CF70F784C04949F8E4",
+          "https://www.trivano.com/persbericht/pg-e-corporation-reports-third-quarter-2026-results-on-track-to-deliver-solid-2026-reaffirms-2026-and-2027-guidance-769494.html",
+          "https://www.prnewswire.com/news-releases/pge-corporation-reports-third-quarter-2026-results-on-track-to-deliver-solid-2026-reaffirms-2026-and-2027-guidance-302916185.html"
+        ],
+        "source_limits": [
+          "Same-commit mandatory instructions and specifications fully retrieved. Full ledger parsed; three recent related article blobs freshly fetched and matched previously read content.",
+          "Grouped discovery returns historical articles, calendar pages and secondary reports. It is not98 individual current primary-filings checks. Existing monthly-revenue and company-economics gaps remain.",
+          "Core indices retain registered releases: TSMC October15, MediaTek September30 and August31 collaboration, NVIDIA October22, AMD October12, Broadcom October21 and Marvell October13. No new authenticated MediaTek TPU allocation or economic terms.",
+          "Dover company release, selected slides and July23 company-hosted call read. Heat-exchanger doubling predates this check; mixed-segment results do not isolate liquid-cooling profit. Slides6,8,13 visually checked.",
+          "GIS-KY optical/Vietnam plan traced to September30 rather than presumed October22 new capacity. PG&E174MW is cumulative since2024 and2027 capital reduction is explicitly previously announced.",
+          "FT debt-rating commentary and Reuters Meta equity-reaction original direct bodies unavailable; existing issuer financial baseline retained. No new completed funding, default, customer cancellation or supplier order revision inferred from headline or market price.",
+          "Only public sources and research completion stages recorded. No prices, valuation, holdings, private fund-flow checks or investment judgments added. No article or website-publication claim."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -23596,6 +23633,112 @@
         "Obtain original institution note and reconcile forecast population, periods and old/new estimates."
       ],
       "publication_status": "source_candidate_only_no_article"
+    },
+    {
+      "key": "dover-q3-2026-liquid-cooling-exposure-and-historical-capacity-baseline-20261023",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "318ab707bf96c03361b30be561dbecff04d3c5da",
+      "companies": [
+        "Dover",
+        "SWEP",
+        "OPW"
+      ],
+      "stage": "issuer_q3_release_selected_slides_and_july_call_compared_product_economics_pending",
+      "sources": [
+        "https://www.prnewswire.com/news-releases/dover-reports-third-quarter-2026-results-302916126.html",
+        "https://investors.dovercorporation.com/static-files/4b0b6654-303b-4bfd-b229-0bf0832cdbdd",
+        "https://investors.dovercorporation.com/static-files/c2bc162d-aec0-4b2b-a269-e10d5ab53984"
+      ],
+      "facts": {
+        "source_date": "2026-10-22",
+        "scope": "Outside-universe relationship: SWEP supplies heat exchangers for data-center CDUs/chillers; OPW supplies connectors and infrastructure. Company-hosted July23 call verifies these relationships.",
+        "q3_dcst": {
+          "revenue_usd_million": 481.452,
+          "organic_growth_yoy_pct": 17.9,
+          "bookings_usd_million_rounded": 594,
+          "prior_year_bookings_usd_million_rounded": 415,
+          "adjusted_segment_ebitda_margin_pct": 18.4,
+          "prior_year_margin_pct": 20.5
+        },
+        "q3_company": {
+          "bookings_usd_million_rounded": 2310,
+          "book_to_bill": 1.03,
+          "free_cash_flow_usd_million_rounded": 383,
+          "prior_year_free_cash_flow_usd_million_rounded": 370,
+          "adjusted_eps_guidance": [
+            10.6,
+            10.75
+          ]
+        },
+        "historical_capacity": "Large-heat-exchanger doubling was already discussed July23. October slides retain expansion progressively through2027; not a new doubling announcement.",
+        "limits": "DCST includes food retail refrigeration and heat pumps. Ramp/consolidation costs affect segment margins; AI-only profit is undisclosed. Bookings exclude de-bookings of prior-period orders. Slides6,8,13 visually checked."
+      },
+      "questions": [
+        "Separate data-center volume, price and margin from food-retail ramp costs.",
+        "Verify commissioned heat-exchanger capacity and net cancellations.",
+        "Retrieve comparable July EPS guidance before quantifying any forecast revision."
+      ],
+      "publication_status": "research_candidate_only_no_article"
+    },
+    {
+      "key": "gis-ky-optical-packaging-vietnam-historical-september-baseline-20261023",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "318ab707bf96c03361b30be561dbecff04d3c5da",
+      "companies": [
+        "GIS-KY"
+      ],
+      "stage": "september_original_reporting_reproduction_read_october_rediscovery_deduplicated_issuer_validation_pending",
+      "sources": [
+        "https://www.ttv.com.tw/finance/view/default.asp?from=587&i=09202630095208FC115C37EC4011B190C66F09DF080A4D3A",
+        "https://ttv.com.tw/finance/view/default.asp?from=588&i=1020262210521489F124C52B4045A5CF70F784C04949F8E4"
+      ],
+      "facts": {
+        "original_report_date": "2026-09-30 09:52:19 Asia/Taipei",
+        "attribution": "MoneyDJ article syndicated by TTV; historical body accessible, October22 direct body failed.",
+        "historical_plan": "Capex raised from TWD5-6bn to above8bn; TWD4-5bn allocated to optical laser packaging/testing. Vietnam completion targeted year-end2026 with some products ramping late2026/early2027.",
+        "limits": "Outside-universe discovery. CW Laser/EML and800G-plus packaging are reported relationships, without named customer economics. October22 headline is not confirmation of achieved production; historical target retained."
+      },
+      "questions": [
+        "Obtain issuer capex approval and qualification milestones.",
+        "Verify actual optical shipments, utilization and cash contribution against September plans."
+      ],
+      "publication_status": "historical_baseline_candidate_only_no_article"
+    },
+    {
+      "key": "pge-q3-2026-energized-data-center-load-and-prior-capital-plan-scope-20261023",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "318ab707bf96c03361b30be561dbecff04d3c5da",
+      "companies": [
+        "PG&E Corporation",
+        "Pacific Gas and Electric Company"
+      ],
+      "stage": "company_release_syndication_read_energized_load_scope_verified_prior_plan_and_increment_pending",
+      "sources": [
+        "https://www.trivano.com/persbericht/pg-e-corporation-reports-third-quarter-2026-results-on-track-to-deliver-solid-2026-reaffirms-2026-and-2027-guidance-769494.html",
+        "https://www.prnewswire.com/news-releases/pge-corporation-reports-third-quarter-2026-results-on-track-to-deliver-solid-2026-reaffirms-2026-and-2027-guidance-302916185.html"
+      ],
+      "facts": {
+        "source_date": "2026-10-22",
+        "attribution": "Company-supplied PRNewswire release mirrored by Trivano; original PR URL direct retrieval failed.",
+        "energized_data_center_mw": 174,
+        "measurement_period": "Cumulative since2024, not third-quarter additions or contracted pipeline.",
+        "core_eps_guidance_2026": [
+          1.64,
+          1.66
+        ],
+        "core_eps_guidance_2027": [
+          1.78,
+          1.82
+        ],
+        "capital_plan": "Release describes USD2bn2027 capital reduction as previously announced, not a new cut.",
+        "limits": "No earlier like-for-like energized baseline, customer tariff/return bridge or supplier order change established. Guidance reaffirmed; cumulative load does not establish AI-only earnings."
+      },
+      "questions": [
+        "Reconcile cumulative energized load with earlier dated disclosures and contracted projects.",
+        "Identify prior capital-plan announcement and separate utility investment scope from customer compute capex.",
+        "Verify tariffs, allowed returns and connection cost recovery."
+      ],
+      "publication_status": "research_candidate_only_no_article"
     }
   ],
   "blockers": [
@@ -23615,7 +23758,7 @@
     }
   ],
   "last_research_date": "2026-10-23",
-  "instruction_commit_sha": "3436bf9acafca9608bcd4e906d423db7243dbae5",
+  "instruction_commit_sha": "318ab707bf96c03361b30be561dbecff04d3c5da",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
