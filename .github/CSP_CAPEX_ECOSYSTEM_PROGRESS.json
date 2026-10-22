@@ -6751,6 +6751,58 @@
         "limits": "Company provides mechanical/HVAC/electrical contracting across sectors; fullbacklog and cash are not AI-only, and no named newCSP equipment award, Taiwan supplyallocation or acceptedbillablecompute inferred. Conferencecall scheduledOctober23, not completed research."
       },
       "status": "issuer_q3_release_and_selected_10q_cash_contract_and_demand_sections_verified_project_mix_and_cash_normalisation_pending_no_article"
+    },
+    {
+      "fingerprint": "bloom-q3-2026-guidance-upgrade-and-negative-operating-cash-flow-20261022",
+      "event_date": "2026-10-22",
+      "discovered_date": "2026-10-23",
+      "instruction_commit_sha": "184526c600151db94aa65dfbd6f66126b663d88f",
+      "companies": [
+        "Bloom Energy"
+      ],
+      "type": "issuer_results_guidance_revision_and_cash_conversion_divergence",
+      "sources": [
+        "https://www.bloomenergy.com/news/bloom-energy-reports-record-third-quarter-2026-financial-results-and-raises-full-year-2026-guidance/",
+        "https://investor.bloomenergy.com/press-releases/press-release-details/2026/Bloom-Energy-Reports-Record-Second-Quarter-2026-Financial-Results-and-Raises-Full-Year-2026-Guidance/default.aspx"
+      ],
+      "facts": {
+        "period": "Q3 2026 ended September30; USD million unless stated. Unaudited issuer financial statements.",
+        "q3": {
+          "revenue": 1235.837,
+          "gaap_operating_margin_pct": 18.2,
+          "operating_cash_flow": -27.147,
+          "property_plant_equipment_purchases": 153.487
+        },
+        "q2": {
+          "gaap_operating_margin_pct": 17.1,
+          "operating_cash_flow": 226.432,
+          "property_plant_equipment_purchases": 51.641
+        },
+        "fy2026_guidance": {
+          "revenue": [
+            4400,
+            4600
+          ],
+          "prior_revenue": [
+            3900,
+            4200
+          ],
+          "revenue_midpoint_revision_pct": 11.1111,
+          "non_gaap_operating_income": [
+            960,
+            1030
+          ],
+          "prior_non_gaap_operating_income": [
+            800,
+            900
+          ],
+          "non_gaap_gross_margin_pct": 34
+        },
+        "cash_bridge": "Quarterly cash-flow table records contract-assets outflow430.348, inventories170.401, receivables175.235; deferred revenue/customer deposits provide309.333. Growth investment and slower conversion need subsequent verification.",
+        "relationship": "Onsite fuel-cell electricity for data centers; July issuer release identifies hyperscaler validation. Companywide results are not AI-only.",
+        "limits": "No newly named Taiwan supplier award, project-level return, or full current10-Q/call audit. Guidance is prospective."
+      },
+      "status": "current_and_prior_issuer_financial_tables_verified_no_article"
     }
   ],
   "articles": [],
@@ -6868,14 +6920,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-23",
-      "checked_at": "2026-10-22 21:36:28 UTC",
-      "instruction_commit_sha": "79b37b6ca86406492af22ea3d4a9a3ce989aacd7",
-      "status": "98_name_grouped_discovery_and_three_new_global_supplier_results_verified",
+      "checked_at": "2026-10-22 23:21:44 UTC",
+      "instruction_commit_sha": "184526c600151db94aa65dfbd6f66126b663d88f",
+      "status": "98_name_grouped_discovery_six_core_indices_and_bloom_primary_results_verified",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "Fresh14 grouped discovery queries included all98 activeTaiwan names. Five core issuerindices read;Broadcomhomepage403 remainspartial. Newoutside-universe WesternDigital,TTM,andComfortSystems issuerresults/priorbaselines verified. No activewatchlist modification or fresh98-individual-filings completion claimed.",
+      "scope": "All98 activeTaiwan names included in grouped discovery; six coreissuer indices read. Outside-universeBloom release and July baseline read. No watchlist modification.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -6883,23 +6935,16 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/",
         "https://investor.marvell.com/news-events/press-releases",
-        "https://investor.wdc.com/news-releases/news-release-details/wd-reports-fiscal-first-quarter-2027-financial-results",
-        "https://investor.wdc.com/static-files/a6470e24-6dec-4fae-9b35-69777f704e3a",
-        "https://investors.ttm.com/news-events/press-releases/detail/420/ttm-technologies-inc-reports-third-quarter-2026-results",
-        "https://investors.ttm.com/news-events/press-releases/detail/411/ttm-technologies-inc-reports-second-quarter-2026-results",
-        "https://investors.comfortsystemsusa.com/news-releases/news-release-details/comfort-systems-usa-reports-third-quarter-2026-results",
-        "https://investors.comfortsystemsusa.com/node/18731/html"
+        "https://www.bloomenergy.com/news/bloom-energy-reports-record-third-quarter-2026-financial-results-and-raises-full-year-2026-guidance/",
+        "https://investor.bloomenergy.com/press-releases/press-release-details/2026/Bloom-Energy-Reports-Record-Second-Quarter-2026-Financial-Results-and-Raises-Full-Year-2026-Guidance/default.aspx"
       ],
       "source_limits": [
-        "All mandatory same-commit instruction bodies retrieved in full; AGENTS output reread in bounded chunks to eliminate display truncation. Config,taxonomy,series,specifications,fullJSONledger andthree recentrelatedarticles read. Instructioncommit79b37b6ca86406492af22ea3d4a9a3ce989aacd7.",
-        "Groupeddiscovery included98names but returned primarilyhistorical/theme/quote pages; not98freshcurrent regulatoryfilings. Existingprimarybaselinecoverage and company-economics gaps unchanged.",
-        "TSMCindex latestOctober15Q3,MediaTekSeptember30release;NVIDIAOctober22Minerva/GeForceNOW,AMDOctober12Helion,MarvellOctober13retimer/security. No new primaryconfirmed TPUdesignresponsibility,NRE,Googleprocurementallocation or revisedvolume terms established.",
-        "Broadcomhomepage returned403; freshtargetedsearch didnotresolve currentissuerreleasebody. No allreleasecompletion/no-change conclusion forBroadcom.",
-        "WesternDigital pressreleaseandtables establish actualcash,outlook and priorguide comparisons; decktext order forcashflow highlightlabels ambiguous,so use numericaltables. StockStoryandTheFly consensus differ slightly; provider originalpopulation notobtained. No calltranscript completion or futurecapexheadlines accepted asverifiedissuerfact.",
-        "TTMcurrentguide includesclosedacquisitions whilepriorguide excludedpendingacquisitions. Companywidebook-to-bill is notAI-only, and adjustedEBITDA notGAAPoperatingprofit.",
-        "ComfortSystems selected10-Qdemand,contractliabilities,remainingperformanceobligations andcashflow sections read. Revenuegrowthdecomposition46.3/7.4percentagepoints retained; fullbacklognotAI-only. Customeradvancesmateriallyaffectcash; no campusenergization/paidutilisation inference.",
-        "Bloom financialindicesand guessedcurrentrelease paths didnotprovide authenticatedQ3numericalbody; candidatekeptpending ratherthanrelyingonsecondaryheadline. Not allglobalsuppliercurrentfilings completed.",
-        "Only publicreportedfacts,sources,andresearchstages appended. No currentquotes,valuations,holdings,fundflows orprivatejudgment saved. Noarticle,websitepublicationor deployment claim."
+        "Samecommit mandatoryinstructions,config,taxonomy,series,specification andlegacyresearch read. AGENTS displaytruncation resolved by boundedreads. Contentswrapper returned emptyledger; exactblob returned fullJSON, parsed withouttruncation.",
+        "Groupeddiscovery is not98 individuallyverified currentfilings. Existing98company monthlyrevenuebaseline retained; currentorder,margin andcash economics remainpartial.",
+        "TSMCindex latestOctober15Q3 andMediaTekSeptember30release. No newlyauthenticated TPUdesignaward,NRE,Googleprocurement split orvolume terms established. Othercoreindices retainregisteredbaselines.",
+        "Broadcomhomepage became readable,showingOctober21Arcot,October20FedEx andOctober19DOCOMO releases; resolves thisround's indextransport,not acompleteallrelease audit.",
+        "Bloomissuer newsroomlink openedcurrent numericalbody where earlierdirectpaths andIRindices hadfailed. Q3current/priorfinancialtables andJulyguidance verified. Priorretrievalfailure retainedashistory. Call/full10-Qnotcompleted.",
+        "Three related ai-industry articleblobs reread. No independentlongformarticle created. Publicledger contains onlysourcefacts,researchcoverage andstages; no currentquotes,valuation,holdings,fundflows,tradingconditions orprivatejudgment."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -15791,6 +15836,35 @@
           "Bloom financialindicesand guessedcurrentrelease paths didnotprovide authenticatedQ3numericalbody; candidatekeptpending ratherthanrelyingonsecondaryheadline. Not allglobalsuppliercurrentfilings completed.",
           "Only publicreportedfacts,sources,andresearchstages appended. No currentquotes,valuations,holdings,fundflows orprivatejudgment saved. Noarticle,websitepublicationor deployment claim."
         ]
+      },
+      {
+        "date": "2026-10-23",
+        "checked_at": "2026-10-22 23:21:44 UTC",
+        "instruction_commit_sha": "184526c600151db94aa65dfbd6f66126b663d88f",
+        "status": "98_name_grouped_discovery_six_core_indices_and_bloom_primary_results_verified",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All98 activeTaiwan names included in grouped discovery; six coreissuer indices read. Outside-universeBloom release and July baseline read. No watchlist modification.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.bloomenergy.com/news/bloom-energy-reports-record-third-quarter-2026-financial-results-and-raises-full-year-2026-guidance/",
+          "https://investor.bloomenergy.com/press-releases/press-release-details/2026/Bloom-Energy-Reports-Record-Second-Quarter-2026-Financial-Results-and-Raises-Full-Year-2026-Guidance/default.aspx"
+        ],
+        "source_limits": [
+          "Samecommit mandatoryinstructions,config,taxonomy,series,specification andlegacyresearch read. AGENTS displaytruncation resolved by boundedreads. Contentswrapper returned emptyledger; exactblob returned fullJSON, parsed withouttruncation.",
+          "Groupeddiscovery is not98 individuallyverified currentfilings. Existing98company monthlyrevenuebaseline retained; currentorder,margin andcash economics remainpartial.",
+          "TSMCindex latestOctober15Q3 andMediaTekSeptember30release. No newlyauthenticated TPUdesignaward,NRE,Googleprocurement split orvolume terms established. Othercoreindices retainregisteredbaselines.",
+          "Broadcomhomepage became readable,showingOctober21Arcot,October20FedEx andOctober19DOCOMO releases; resolves thisround's indextransport,not acompleteallrelease audit.",
+          "Bloomissuer newsroomlink openedcurrent numericalbody where earlierdirectpaths andIRindices hadfailed. Q3current/priorfinancialtables andJulyguidance verified. Priorretrievalfailure retainedashistory. Call/full10-Qnotcompleted.",
+          "Three related ai-industry articleblobs reread. No independentlongformarticle created. Publicledger contains onlysourcefacts,researchcoverage andstages; no currentquotes,valuation,holdings,fundflows,tradingconditions orprivatejudgment."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -24393,6 +24467,26 @@
         "Reconcile any guidancechange againstJuly baseline and distinguish ProjectJupiter fuel/permit risk from equipment acceptance and redeployment terms."
       ],
       "publication_status": "event_or_candidate_only_no_article"
+    },
+    {
+      "key": "bloom-guidance-to-contract-asset-collection-and-expansion-returns-20261023",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "184526c600151db94aa65dfbd6f66126b663d88f",
+      "companies": [
+        "Bloom Energy"
+      ],
+      "related_public_event": "bloom-q3-2026-guidance-upgrade-and-negative-operating-cash-flow-20261022",
+      "stage": "prior_primary_retrieval_gap_resolved_current_and_prior_results_verified",
+      "sources": [
+        "https://www.bloomenergy.com/news/bloom-energy-reports-record-third-quarter-2026-financial-results-and-raises-full-year-2026-guidance/",
+        "https://investor.bloomenergy.com/press-releases/press-release-details/2026/Bloom-Energy-Reports-Record-Second-Quarter-2026-Financial-Results-and-Raises-Full-Year-2026-Guidance/default.aspx"
+      ],
+      "questions": [
+        "Track contract assets and receivables converting into collections and operatingcashflow.",
+        "Verify commissioned capacity, utilisation and customer acceptance against expansion spending.",
+        "Reconcile subsequent2026 guidance delivery and product/service returns with site fuel/permit milestones."
+      ],
+      "publication_status": "event_and_candidate_only_no_article"
     }
   ],
   "blockers": [
@@ -24412,7 +24506,7 @@
     }
   ],
   "last_research_date": "2026-10-23",
-  "instruction_commit_sha": "79b37b6ca86406492af22ea3d4a9a3ce989aacd7",
+  "instruction_commit_sha": "184526c600151db94aa65dfbd6f66126b663d88f",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
