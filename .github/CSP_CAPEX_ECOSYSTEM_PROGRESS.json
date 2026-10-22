@@ -6073,7 +6073,7 @@
   "coverage": {
     "universe_source": "rightson/alpha-quant:seeds/watchlists/ai_supply_chain_universe.csv",
     "status": "all_98_primary_september_revenue_verified_other_current_filings_partial",
-    "universe_commit_sha": "40d8a41e9067fb18c3becf64527795cb83fa932f",
+    "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
     "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
     "active_count": 98,
     "search_screened_count": 98,
@@ -6184,14 +6184,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-22",
-      "checked_at": "2026-10-22 01:33:23 UTC",
-      "instruction_commit_sha": "838f469d8d501e3399c55b1629fbc8a393737dab",
-      "status": "98_name_discovery_core_indices_and_historical_tpu_rumor_deduplication_no_new_material_revision",
+      "checked_at": "2026-10-22 03:25:19 UTC",
+      "instruction_commit_sha": "b83b376d5be147755ae05acd687806f833ec4cac",
+      "status": "98_name_grouped_discovery_core_issuer_indices_and_outside_universe_connectivity_cooling_candidate_checks_complete_no_new_material_alert",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All98active names included in14 fresh groupeddiscovery queries.Core issuer indices checked;not98full current-filing audits.Historical primary-baseline counts unchanged.",
+      "scope": "All 98 active names included in 14 fresh grouped discovery queries. Core issuer indices checked. This is discovery screening, not a full current-filing or company-economics audit.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -6199,18 +6199,20 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://www.marvell.com/company/newsroom.html",
-        "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771936_S1EL12IA2J94BA7U44MUF",
-        "https://ww2.money-link.com.tw/RealtimeNews/NewsContent.aspx?PU=0010&SN=2433457002",
-        "https://abmedia.io/mediateks-google-tpu-v9-shipments-may-slip-to-1q28"
+        "https://investors.att.com/~/media/Files/A/ATT-IR-V2/financial-reports/quarterly-earnings/2026/3Q-2026/t-usq-transcript-2026-10-21.pdf",
+        "https://about.att.com/story/2026/3q-earnings.html",
+        "https://about.att.com/story/2026/aws-collaboration-scalable-business-ai.html",
+        "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-announces-AWS-interconnect-last-mile-ATT-gated-preview/",
+        "https://www.vinci.com/en/newsroom/press-releases/vinci-wins-contract-data-center-iberian-peninsula"
       ],
       "source_limits": [
-        "Latest mandatory instructions/specifications retrieved in full atlocked commit;large progress JSON parsed anddeduplicated.Three related ai-industry articles fetched atsamecommit withunchanged blobs.",
-        "Grouped discovery results predominantly historical media,stock commentary andsocial posts.No newconfirmed TSMC/MediaTek orderallocation,NRE/production economics orsame-basis CSPbudget revision obtained.",
-        "TSMC latest indexOctober15 earnings;MediaTekSeptember30;NVIDIAOctober21 previously registered releases;AMD October12;MarvellOctober13.Broadcom financial-news indexdoesnot cover allcorporate releases.",
-        "TPU glass-substrate headline isOctober20 historicalmaterial alreadyregistered,notnewOctober22 news.Contrary analyst claim onlyindirectly attributed bymedia;no authenticated customer/issuer package specification.",
-        "Meta newstockclass andspending headlines were alreadycovered;equitystructure isnot itselfnew cash raised.KMI signedtransport event wasregistered andnotrepeated.",
-        "No fresh full exchange issuer-notice table obtained.Currentfiling andcompanyeconomics coverage remains partial.Searchaccess failures do not imply marketcalm.",
-        "Public researchprogress only;no privatefund-flow data,stockquotes,valuation,holdings ortrading conditions.No newarticle orwebsitepublication claim."
+        "Required instructions and specifications fetched at the same locked instruction commit; complete large progress JSON parsed and historical records preserved. Three related ai-industry articles fetched with unchanged blobs.",
+        "Grouped searches mostly returned historical reporting, commentary and social posts; none substitutes for issuer confirmation. Historical September monthly-revenue baseline coverage remains 98; current order, margin and cash-conversion validation remains partial.",
+        "TSMC latest listed release October15; MediaTek September30; NVIDIA October21 releases already registered; AMD October12; Marvell October13. Broadcom financial-news index is narrower than its complete corporate newsroom.",
+        "AT&T issuer-hosted earnings call names AWS and Microsoft connectivity demand, but does not quantify incremental AI revenue, contract value or margin. March/June AWS connectivity collaboration predates the October call. Lower 2027/2028 capital investment partly reflects Mexico divestment and construction efficiencies; not a verified hyperscaler equipment-spending cut.",
+        "VINCI October20 cooling-plant award is a dated primary contract candidate. Customer, AI workload, delivery schedule and project margin are undisclosed. Further bidding is not awarded backlog.",
+        "No new verified core-company customer allocation, NRE/production economics, or same-basis CSP budget revision established. No full current exchange-notice table obtained. Data gaps are not evidence of market stability.",
+        "Public research progress only. No stock quotes, valuation, holdings, private fund-flow records or trading conditions included. No new article or website-publication claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -14458,6 +14460,39 @@
           "No fresh full exchange issuer-notice table obtained.Currentfiling andcompanyeconomics coverage remains partial.Searchaccess failures do not imply marketcalm.",
           "Public researchprogress only;no privatefund-flow data,stockquotes,valuation,holdings ortrading conditions.No newarticle orwebsitepublication claim."
         ]
+      },
+      {
+        "date": "2026-10-22",
+        "checked_at": "2026-10-22 03:25:19 UTC",
+        "instruction_commit_sha": "b83b376d5be147755ae05acd687806f833ec4cac",
+        "status": "98_name_grouped_discovery_core_issuer_indices_and_outside_universe_connectivity_cooling_candidate_checks_complete_no_new_material_alert",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All 98 active names included in 14 fresh grouped discovery queries. Core issuer indices checked. This is discovery screening, not a full current-filing or company-economics audit.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.marvell.com/company/newsroom.html",
+          "https://investors.att.com/~/media/Files/A/ATT-IR-V2/financial-reports/quarterly-earnings/2026/3Q-2026/t-usq-transcript-2026-10-21.pdf",
+          "https://about.att.com/story/2026/3q-earnings.html",
+          "https://about.att.com/story/2026/aws-collaboration-scalable-business-ai.html",
+          "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-announces-AWS-interconnect-last-mile-ATT-gated-preview/",
+          "https://www.vinci.com/en/newsroom/press-releases/vinci-wins-contract-data-center-iberian-peninsula"
+        ],
+        "source_limits": [
+          "Required instructions and specifications fetched at the same locked instruction commit; complete large progress JSON parsed and historical records preserved. Three related ai-industry articles fetched with unchanged blobs.",
+          "Grouped searches mostly returned historical reporting, commentary and social posts; none substitutes for issuer confirmation. Historical September monthly-revenue baseline coverage remains 98; current order, margin and cash-conversion validation remains partial.",
+          "TSMC latest listed release October15; MediaTek September30; NVIDIA October21 releases already registered; AMD October12; Marvell October13. Broadcom financial-news index is narrower than its complete corporate newsroom.",
+          "AT&T issuer-hosted earnings call names AWS and Microsoft connectivity demand, but does not quantify incremental AI revenue, contract value or margin. March/June AWS connectivity collaboration predates the October call. Lower 2027/2028 capital investment partly reflects Mexico divestment and construction efficiencies; not a verified hyperscaler equipment-spending cut.",
+          "VINCI October20 cooling-plant award is a dated primary contract candidate. Customer, AI workload, delivery schedule and project margin are undisclosed. Further bidding is not awarded backlog.",
+          "No new verified core-company customer allocation, NRE/production economics, or same-basis CSP budget revision established. No full current exchange-notice table obtained. Data gaps are not evidence of market stability.",
+          "Public research progress only. No stock quotes, valuation, holdings, private fund-flow records or trading conditions included. No new article or website-publication claim."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -22170,6 +22205,57 @@
         "Compare upcoming issuer productionguidance withprior early2028 baseline;separate designrework fromsubstrate-yield claims."
       ],
       "publication_status": "supporting_source_comparison_only_no_new_material_alert_no_article"
+    },
+    {
+      "key": "att-october21-csp-fiber-demand-and-capital-investment-scope-20261022",
+      "date": "2026-10-22",
+      "instruction_commit_sha": "b83b376d5be147755ae05acd687806f833ec4cac",
+      "companies": [
+        "AT&T",
+        "Amazon Web Services",
+        "Microsoft"
+      ],
+      "sources": [
+        "https://investors.att.com/~/media/Files/A/ATT-IR-V2/financial-reports/quarterly-earnings/2026/3Q-2026/t-usq-transcript-2026-10-21.pdf",
+        "https://about.att.com/story/2026/3q-earnings.html",
+        "https://about.att.com/story/2026/aws-collaboration-scalable-business-ai.html",
+        "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-announces-AWS-interconnect-last-mile-ATT-gated-preview/"
+      ],
+      "stage": "outside_universe_named_csp_relationship_primary_verified_economic_attribution_pending",
+      "facts": {
+        "october21": "Issuer-hosted call identifies AWS high-capacity fiber usage and work with Microsoft. Management says over90% of mapped US data centers are within10miles of its fiber,over80% within1mile. Approximate USD1bn lower annual2027/2028 capital investment includes USD300-400m Mexico wireless exclusion; balance is described as construction efficiency. The call does not quantify AI contract economics.",
+        "release": "October21 release reports Q3 revenueUSD32.3bn,adjusted EPS0.65,FCF5.0bn. 2026 adjusted EPS outlook approximately2.40; capital investmentUSD23-24bn in2026 and22-23bn annually2027/2028. Consolidated growth also reflects consumer connectivity and acquisitions.",
+        "historical": "March3 AT&T/AWS announcement introduced last-mile preview; June30 AWS original confirms gated preview. Connectivity relationship is not first announced October21.",
+        "limits": "No separate AI service revenue,margin,contract size or customer-level earnings bridge. Company-wide EPS and capital-allocation revisions cannot be assigned wholly to CSP demand."
+      },
+      "questions": [
+        "Obtain AI/fiber contract economics and revenue recognition evidence.",
+        "Separate cloud connectivity from consumer subscriber growth and Mexico disposal effects."
+      ],
+      "publication_status": "research_candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "vinci-cobra-iberian-datacenter-cooling-award-20261020",
+      "date": "2026-10-22",
+      "instruction_commit_sha": "b83b376d5be147755ae05acd687806f833ec4cac",
+      "companies": [
+        "VINCI",
+        "Cobra IS"
+      ],
+      "sources": [
+        "https://www.vinci.com/en/newsroom/press-releases/vinci-wins-contract-data-center-iberian-peninsula"
+      ],
+      "stage": "outside_universe_primary_datacenter_cooling_contract_verified_customer_and_ai_scope_pending",
+      "facts": {
+        "source_date": "2026-10-20",
+        "award": "Cobra IS awarded EUR165m cooling-plant contract for an Iberian data-center campus; MEP installations for126 dry coolers support equivalent200MW computing capacity. Issuer reports2025 digital-infrastructure revenueEUR7bn.",
+        "limits": "Several-billion-euro further phases are bidding opportunities,not awarded contracts. Customer,AI workload,service date andmargin undisclosed. No specific CSP or Taiwan supplier award inferred."
+      },
+      "questions": [
+        "Identify customer,AI workload,delivery schedule andproject economics.",
+        "Track actual awards for further phases rather than adding bid pipeline to backlog."
+      ],
+      "publication_status": "dated_primary_contract_candidate_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -22189,7 +22275,7 @@
     }
   ],
   "last_research_date": "2026-10-22",
-  "instruction_commit_sha": "838f469d8d501e3399c55b1629fbc8a393737dab",
+  "instruction_commit_sha": "b83b376d5be147755ae05acd687806f833ec4cac",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
