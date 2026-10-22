@@ -6415,14 +6415,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-22",
-      "checked_at": "2026-10-22 12:43:34 UTC",
-      "instruction_commit_sha": "710847275ab0f4b784f9ab00d29a63366f5d2c12",
-      "status": "98_name_grouped_discovery_core_indices_checked_no_new_material_event",
+      "checked_at": "2026-10-22 14:13:02 UTC",
+      "instruction_commit_sha": "e6c71db713762ccdd7c0862e9315b7598fecfe33",
+      "status": "98_name_grouped_discovery_core_indices_one_results_source_completion_candidate_no_material_notification",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All98 active names included in fresh grouped discovery; six core issuer indices and targeted CSP/TPU and off-universe economic discovery checked. No watchlist change.",
+      "scope": "All98 active watchlist companies included in fresh grouped discovery. Six core issuer indices and targeted CSP, TPU, optical and power-chain discovery checked. No universe edit.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -6430,16 +6430,18 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://investor.marvell.com/news-events/press-releases",
-        "https://www.reuters.com/business/autos-transportation/tesla-drops-spending-pullback-clouds-ai-robotics-ambitions-2026-10-22/",
-        "https://www.businessinsider.com/ai-infrastructure-stocks-to-buy-hyperscaler-spending-capex-2026-10"
+        "https://investors.broadcom.com/",
+        "https://blogs.nvidia.com/blog/geforce-now-thursday-call-of-duty-modern-warfare-4/",
+        "https://www.ardentec.com/?m=113&u=34.69f31e424df2d9.26408755",
+        "https://stockchannelnew.sinotrade.com.tw/z/zf/zfz/zfz_4E4E771B-19A2-41CA-B39D-613C43A9A45E.djhtm"
       ],
       "source_limits": [
-        "Required instructions and related specifications completely retrieved at the locked commit; full progress parsed and three related ai-industry articles read. No other topic executed.",
-        "Discovery includes98 active names, not98 fresh issuer filings or a complete company-economics audit. Historical primary monthly revenue baseline remains98; current orders, margins and cash conversion coverage remains partial.",
-        "Six core issuer indices retain previously registered latest dates. Targeted MediaTek/TSMC searches did not establish a newly confirmed commercial allocation.",
-        "Nokia and Kuehne+Nagel current/prior issuer economics, NVIDIA capacity commitments, Meta/Tesla results, Lam and Besi remain registered baselines; no new material evidence or repeat notification. Latest Tesla price-reaction reporting does not establish a project-specific spending cancellation.",
-        "Reported Morgan Stanley article points to an October15 note; original report, homogeneous estimate revision and consensus population unavailable. Not treated as a new October22 institutional upgrade or issuer order.",
-        "Coverage record only; no new article or economic event. No private quotes, valuation, fund flows, holdings, investment conclusions or trading conditions. Ledger source confirmation is distinct from website publication."
+        "Same-commit required instructions and related specifications completely retrieved; full public ledger parsed and three unchanged recent related ai-industry articles fetched. Only specified topic executed.",
+        "All98 included in discovery, not98 fresh primary filings or a complete company economics audit. Historical monthly-revenue baseline98 retained; current order, margin and cash conversion coverage remains partial.",
+        "Broadcom financial-news index web retrieval returned403; fresh original HTTPS succeeded, and issuer investor-center index also read. Latest listed release remains October21 Arcot. TSMC/MediaTek/AMD/Marvell indices retain registered dates. NVIDIA October22 update concerns GeForceNOW games/billing, without a verified AI-infrastructure procurement or earnings revision.",
+        "Ardentec results-table lead compared with prior dated forecasts and current primary baseline. Q3 primary financial statement/cash flow not yet retrieved, source completion retained as candidate; not called a new earnings surprise.",
+        "Previously notified NVIDIA commitments, Meta/Tesla results, Lam, Besi, Nokia and Kuehne+Nagel remain baselines. Later Besi/ASML headline discovered but full updatedReuters body inaccessible; no new competitive conclusion asserted.",
+        "Public source coverage and one candidate only; no quotes, valuation, fund flows, holdings, private investment judgment or trading conditions. No new long-form article or website-publication claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -15027,6 +15029,37 @@
           "Reported Morgan Stanley article points to an October15 note; original report, homogeneous estimate revision and consensus population unavailable. Not treated as a new October22 institutional upgrade or issuer order.",
           "Coverage record only; no new article or economic event. No private quotes, valuation, fund flows, holdings, investment conclusions or trading conditions. Ledger source confirmation is distinct from website publication."
         ]
+      },
+      {
+        "date": "2026-10-22",
+        "checked_at": "2026-10-22 14:13:02 UTC",
+        "instruction_commit_sha": "e6c71db713762ccdd7c0862e9315b7598fecfe33",
+        "status": "98_name_grouped_discovery_core_indices_one_results_source_completion_candidate_no_material_notification",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All98 active watchlist companies included in fresh grouped discovery. Six core issuer indices and targeted CSP, TPU, optical and power-chain discovery checked. No universe edit.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://blogs.nvidia.com/blog/geforce-now-thursday-call-of-duty-modern-warfare-4/",
+          "https://www.ardentec.com/?m=113&u=34.69f31e424df2d9.26408755",
+          "https://stockchannelnew.sinotrade.com.tw/z/zf/zfz/zfz_4E4E771B-19A2-41CA-B39D-613C43A9A45E.djhtm"
+        ],
+        "source_limits": [
+          "Same-commit required instructions and related specifications completely retrieved; full public ledger parsed and three unchanged recent related ai-industry articles fetched. Only specified topic executed.",
+          "All98 included in discovery, not98 fresh primary filings or a complete company economics audit. Historical monthly-revenue baseline98 retained; current order, margin and cash conversion coverage remains partial.",
+          "Broadcom financial-news index web retrieval returned403; fresh original HTTPS succeeded, and issuer investor-center index also read. Latest listed release remains October21 Arcot. TSMC/MediaTek/AMD/Marvell indices retain registered dates. NVIDIA October22 update concerns GeForceNOW games/billing, without a verified AI-infrastructure procurement or earnings revision.",
+          "Ardentec results-table lead compared with prior dated forecasts and current primary baseline. Q3 primary financial statement/cash flow not yet retrieved, source completion retained as candidate; not called a new earnings surprise.",
+          "Previously notified NVIDIA commitments, Meta/Tesla results, Lam, Besi, Nokia and Kuehne+Nagel remain baselines. Later Besi/ASML headline discovered but full updatedReuters body inaccessible; no new competitive conclusion asserted.",
+          "Public source coverage and one candidate only; no quotes, valuation, fund flows, holdings, private investment judgment or trading conditions. No new long-form article or website-publication claim."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -23116,6 +23149,64 @@
         "Obtain full cash-flow and cloud customer concentration detail."
       ],
       "publication_status": "no_article"
+    },
+    {
+      "key": "ardentec-q3-2026-reported-margin-versus-preview-primary-completion-20261022",
+      "date": "2026-10-22",
+      "instruction_commit_sha": "e6c71db713762ccdd7c0862e9315b7598fecfe33",
+      "companies": [
+        "Ardentec"
+      ],
+      "related_prior_candidate": "ardentec-q3-profit-preview-ai-test-capacity-conversion",
+      "stage": "dated_results_reproduction_compared_with_pre_release_forecast_primary_q3_financials_pending",
+      "sources": [
+        "https://stockchannelnew.sinotrade.com.tw/z/zf/zfz/zfz_4E4E771B-19A2-41CA-B39D-613C43A9A45E.djhtm",
+        "https://www.ardentec.com/?m=113&u=34.69f31e424df2d9.26408755",
+        "https://money.udn.com/money/story/5607/9767834?from=edn_next_story",
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e6b62ba9-8b19-4971-aaea-01f92e5e94d1"
+      ],
+      "facts": {
+        "reported_source": "Broker-hosted MOPS financial-table reproduction indexed2026-10-22 17:34:04; direct broker-page retrieval unavailable. Not authenticated as full reviewed Q3 issuer filing.",
+        "currency": "TWD",
+        "unit": "thousand except EPS",
+        "reported_q3": {
+          "revenue": 5336872,
+          "gross_profit": 2424579,
+          "gross_margin_pct": 45.43,
+          "net_profit_attributable_to_parent": 1473400,
+          "EPS": 3.1,
+          "prior_year_same_quarter_net_profit": 827250,
+          "prior_year_same_quarter_EPS": 1.75
+        },
+        "reported_ytd_reconciliation": {
+          "revenue": 13853941,
+          "gross_profit": 5773467,
+          "net_profit": 3553593,
+          "EPS": 7.49
+        },
+        "primary_baseline": {
+          "source_kind": "Original TPEx issuer-report income table",
+          "table_as_of": "1151022",
+          "Year": "115",
+          "Season": "2",
+          "scope": "Six-month cumulative, not Q2 alone",
+          "revenue": 8517069,
+          "gross_profit": 3348888,
+          "net_profit": 2080193,
+          "EPS": 4.39,
+          "endpoint_path": "/openapi/v1/mopsfin_t187ap06_O_ci",
+          "retrieved_at": "2026-10-22T14:11:37.928014+00:00"
+        },
+        "comparison": "September21 original reporting cited an unnamed institution forecast of45% Q3 gross margin; reproduced45.43% is only0.43percentagepoint higher. October14 preview already expected record profit. No whole-market surprise or fresh forecast revision established.",
+        "arithmetic": "Six-month primary amounts plus reproducedQ3 match reproduced nine-month revenue, gross profit and net profit. Net profit year-on-year growth reconstructed78.108%. Reconciliation does not authenticate missing reviewed filing.",
+        "limits": "Issuer2026 financial-report page currently listsQ1/Q2 only; official TPEx aggregate income table stillSeason2 despite updatedtabledate. Current material-information snapshot contains October21 subsidiary lease notice, not Q3 approval body. No completeQ3 operating-profit bridge, cash-flow or AI-only contribution authenticated."
+      },
+      "questions": [
+        "Obtain issuer/MOPS Q3 financials and cash-flow plus review opinion",
+        "Reconcile gross and operating profit, depreciation lives, nonoperating items and receivables",
+        "Test Q4 utilization and orders against previously forecast44%-plus gross margin rather than extrapolating Q3"
+      ],
+      "publication_status": "candidate_only_no_article"
     }
   ],
   "blockers": [
@@ -23135,7 +23226,7 @@
     }
   ],
   "last_research_date": "2026-10-22",
-  "instruction_commit_sha": "710847275ab0f4b784f9ab00d29a63366f5d2c12",
+  "instruction_commit_sha": "e6c71db713762ccdd7c0862e9315b7598fecfe33",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
