@@ -6184,14 +6184,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-22",
-      "checked_at": "2026-10-22 03:25:19 UTC",
-      "instruction_commit_sha": "b83b376d5be147755ae05acd687806f833ec4cac",
-      "status": "98_name_grouped_discovery_core_issuer_indices_and_outside_universe_connectivity_cooling_candidate_checks_complete_no_new_material_alert",
+      "checked_at": "2026-10-22 03:32:40 UTC",
+      "instruction_commit_sha": "7695ff6a4ebb033a08392f2a6a6a873463398c1c",
+      "status": "98_name_discovery_core_indices_and_labor_policy_source_comparisons_complete_no_new_material_alert",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All 98 active names included in 14 fresh grouped discovery queries. Core issuer indices checked. This is discovery screening, not a full current-filing or company-economics audit.",
+      "scope": "All 98 active names included in14 fresh grouped discovery queries. Six core issuer news indices checked. Historical primary monthly baselines remain complete; current filings andcompany economics remain partial.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -6199,20 +6199,21 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://www.marvell.com/company/newsroom.html",
-        "https://investors.att.com/~/media/Files/A/ATT-IR-V2/financial-reports/quarterly-earnings/2026/3Q-2026/t-usq-transcript-2026-10-21.pdf",
-        "https://about.att.com/story/2026/3q-earnings.html",
-        "https://about.att.com/story/2026/aws-collaboration-scalable-business-ai.html",
-        "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-announces-AWS-interconnect-last-mile-ATT-gated-preview/",
-        "https://www.vinci.com/en/newsroom/press-releases/vinci-wins-contract-data-center-iberian-peninsula"
+        "https://www.reuters.com/business/world-at-work/micron-says-it-has-reached-agreement-with-taiwan-union-2026-10-21/",
+        "https://www.reuters.com/business/retail-consumer/trump-says-companies-should-pay-dividend-communities-make-data-centers-popular-2026-10-21/",
+        "https://www.whitehouse.gov/releases/2026/03/ratepayer-protection-pledge/",
+        "https://www.whitehouse.gov/presidential-actions/2026/03/ratepayer-protection-pledge-proclamation/",
+        "https://www.whitehouse.gov/releases/2026/07/president-trumps-ratepayer-protection-pledge-secures-american-ai-dominance-protects-consumers/",
+        "https://news.skhynix.com/en/q3-2026-earnings-conference-call-invitation/"
       ],
       "source_limits": [
-        "Required instructions and specifications fetched at the same locked instruction commit; complete large progress JSON parsed and historical records preserved. Three related ai-industry articles fetched with unchanged blobs.",
-        "Grouped searches mostly returned historical reporting, commentary and social posts; none substitutes for issuer confirmation. Historical September monthly-revenue baseline coverage remains 98; current order, margin and cash-conversion validation remains partial.",
-        "TSMC latest listed release October15; MediaTek September30; NVIDIA October21 releases already registered; AMD October12; Marvell October13. Broadcom financial-news index is narrower than its complete corporate newsroom.",
-        "AT&T issuer-hosted earnings call names AWS and Microsoft connectivity demand, but does not quantify incremental AI revenue, contract value or margin. March/June AWS connectivity collaboration predates the October call. Lower 2027/2028 capital investment partly reflects Mexico divestment and construction efficiencies; not a verified hyperscaler equipment-spending cut.",
-        "VINCI October20 cooling-plant award is a dated primary contract candidate. Customer, AI workload, delivery schedule and project margin are undisclosed. Further bidding is not awarded backlog.",
-        "No new verified core-company customer allocation, NRE/production economics, or same-basis CSP budget revision established. No full current exchange-notice table obtained. Data gaps are not evidence of market stability.",
-        "Public research progress only. No stock quotes, valuation, holdings, private fund-flow records or trading conditions included. No new article or website-publication claim."
+        "Required same-commit instruction/specification bodies fetched in full and compared byte-for-byte with the fully read prior versions; unchanged. Latest full progress JSON parsed,articles andrecent post metadata read;history preserved.",
+        "Grouped search discovery mainly surfaced historical media,commentary andsocial posts. It is not individual current-release validation for98companies. No fresh full exchange-notice table obtained.",
+        "Core issuer index dates andpreviously registered NVIDIA releases unchanged. Broadcom financial-news index does notcover allcorporate announcements.",
+        "Micron reported settlement concerns Taichung; Taoyuan plan andactualproduction are separate. No verified output loss orcustomer-delivery revision. Direct joint-statement original notobtained;Reuters remains attributed originalreporting.",
+        "October21 power-policy rhetoric compared with official March/July baselines. No newimplementing text orquantified procurement/budget effect verified. Lack ofobtained text isnot aclaim thatnoneexists.",
+        "SK hynix original invitation lists earnings October28 at09:00 Seoul time,not October22. No premature Q3actualresults inferred.",
+        "No new material-event notification orarticle registered. Public progress contains no privatefund-flow data,stockquotes,valuation,holdings ortradingconditions."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -14493,6 +14494,40 @@
           "No new verified core-company customer allocation, NRE/production economics, or same-basis CSP budget revision established. No full current exchange-notice table obtained. Data gaps are not evidence of market stability.",
           "Public research progress only. No stock quotes, valuation, holdings, private fund-flow records or trading conditions included. No new article or website-publication claim."
         ]
+      },
+      {
+        "date": "2026-10-22",
+        "checked_at": "2026-10-22 03:32:40 UTC",
+        "instruction_commit_sha": "7695ff6a4ebb033a08392f2a6a6a873463398c1c",
+        "status": "98_name_discovery_core_indices_and_labor_policy_source_comparisons_complete_no_new_material_alert",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All 98 active names included in14 fresh grouped discovery queries. Six core issuer news indices checked. Historical primary monthly baselines remain complete; current filings andcompany economics remain partial.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.marvell.com/company/newsroom.html",
+          "https://www.reuters.com/business/world-at-work/micron-says-it-has-reached-agreement-with-taiwan-union-2026-10-21/",
+          "https://www.reuters.com/business/retail-consumer/trump-says-companies-should-pay-dividend-communities-make-data-centers-popular-2026-10-21/",
+          "https://www.whitehouse.gov/releases/2026/03/ratepayer-protection-pledge/",
+          "https://www.whitehouse.gov/presidential-actions/2026/03/ratepayer-protection-pledge-proclamation/",
+          "https://www.whitehouse.gov/releases/2026/07/president-trumps-ratepayer-protection-pledge-secures-american-ai-dominance-protects-consumers/",
+          "https://news.skhynix.com/en/q3-2026-earnings-conference-call-invitation/"
+        ],
+        "source_limits": [
+          "Required same-commit instruction/specification bodies fetched in full and compared byte-for-byte with the fully read prior versions; unchanged. Latest full progress JSON parsed,articles andrecent post metadata read;history preserved.",
+          "Grouped search discovery mainly surfaced historical media,commentary andsocial posts. It is not individual current-release validation for98companies. No fresh full exchange-notice table obtained.",
+          "Core issuer index dates andpreviously registered NVIDIA releases unchanged. Broadcom financial-news index does notcover allcorporate announcements.",
+          "Micron reported settlement concerns Taichung; Taoyuan plan andactualproduction are separate. No verified output loss orcustomer-delivery revision. Direct joint-statement original notobtained;Reuters remains attributed originalreporting.",
+          "October21 power-policy rhetoric compared with official March/July baselines. No newimplementing text orquantified procurement/budget effect verified. Lack ofobtained text isnot aclaim thatnoneexists.",
+          "SK hynix original invitation lists earnings October28 at09:00 Seoul time,not October22. No premature Q3actualresults inferred.",
+          "No new material-event notification orarticle registered. Public progress contains no privatefund-flow data,stockquotes,valuation,holdings ortradingconditions."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -22256,6 +22291,58 @@
         "Track actual awards for further phases rather than adding bid pipeline to backlog."
       ],
       "publication_status": "dated_primary_contract_candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "micron-taichung-agreement-versus-taoyuan-strike-scope-20261022",
+      "date": "2026-10-22",
+      "event_date": "2026-10-21",
+      "instruction_commit_sha": "7695ff6a4ebb033a08392f2a6a6a873463398c1c",
+      "companies": [
+        "Micron Technology"
+      ],
+      "sources": [
+        "https://www.reuters.com/business/world-at-work/micron-says-it-has-reached-agreement-with-taiwan-union-2026-10-21/"
+      ],
+      "stage": "original_reporting_of_joint_statement_and_separate_union_plan_read_actual_output_impact_pending",
+      "facts": {
+        "increment": "Reuters October21 reports Micron and Taichung union agreed and withdrew October22 mediation; terms undisclosed. Taoyuan union separately retained its planned24-hour action starting09:00 October22 Taiwan time.",
+        "comparison": "October20 candidate retained as history; Taichung mediation is no longer pending under the reported agreement. Separate unions and sites must remain distinct.",
+        "limits": "No actual participation,affected production line,wafer loss,delivery delay orissuer financial revision verified. Planned action is not verified shutdown."
+      },
+      "questions": [
+        "Verify actual Taoyuan participation andcritical process staffing.",
+        "Obtain issuer/customer evidence of qualified output ordelivery impact.",
+        "Verify agreement terms andany prolonged action."
+      ],
+      "publication_status": "research_source_followup_only_no_material_alert_no_article"
+    },
+    {
+      "key": "us-datacenter-own-power-remarks-versus-ratepayer-pledge-20261022",
+      "date": "2026-10-22",
+      "event_date": "2026-10-21",
+      "instruction_commit_sha": "7695ff6a4ebb033a08392f2a6a6a873463398c1c",
+      "companies": [
+        "US hyperscalers",
+        "Data-center power providers"
+      ],
+      "sources": [
+        "https://www.reuters.com/business/retail-consumer/trump-says-companies-should-pay-dividend-communities-make-data-centers-popular-2026-10-21/",
+        "https://www.whitehouse.gov/releases/2026/03/ratepayer-protection-pledge/",
+        "https://www.whitehouse.gov/presidential-actions/2026/03/ratepayer-protection-pledge-proclamation/",
+        "https://www.whitehouse.gov/releases/2026/07/president-trumps-ratepayer-protection-pledge-secures-american-ai-dominance-protects-consumers/"
+      ],
+      "stage": "reported_october21_remarks_compared_with_dated_official_policy_baselines_enforcement_and_project_economics_pending",
+      "facts": {
+        "reported": "Reuters October21 describes presidential social-post remarks about self-supplied electricity and community financial payments. This is reporting of a statement,not an obtained new implementing instrument.",
+        "primary_baseline": "March4 White House pledge andproclamation specify building,bringing orbuying additive generation,paying delivery upgrades,andvoluntarily negotiating separate rates paid regardless ofusage. July23 official release expanded coalition. These predate October21.",
+        "limits": "No new dated implementing order,mandatory onsite-generation specification,community-payment formula,project cancellation orsame-basis CSP budget revision obtained. No inference that all grid purchases are prohibited orall generation vendors receive orders."
+      },
+      "questions": [
+        "Obtain any new implementing text andits scope versus build/bring/buy baseline.",
+        "Track actual interconnection,cost-allocation andcommunity agreements.",
+        "Verify resulting delivery,capex andcash-return changes atnamedprojects."
+      ],
+      "publication_status": "policy_source_comparison_candidate_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -22275,7 +22362,7 @@
     }
   ],
   "last_research_date": "2026-10-22",
-  "instruction_commit_sha": "b83b376d5be147755ae05acd687806f833ec4cac",
+  "instruction_commit_sha": "7695ff6a4ebb033a08392f2a6a6a873463398c1c",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
