@@ -6308,32 +6308,33 @@
     ],
     "current_run_screening": {
       "date": "2026-10-22",
-      "checked_at": "2026-10-22 10:21:59 UTC",
-      "instruction_commit_sha": "5bc4616d48544372b6d1b26e262125dff83de615",
-      "status": "98_name_grouped_discovery_core_issuer_indices_and_selected_report_dates_checked_no_new_material_event",
+      "checked_at": "2026-10-22 10:42:06 UTC",
+      "instruction_commit_sha": "2790e811b4acc9beefe4a2a0185277305ee26fe3",
+      "status": "98_name_grouped_discovery_core_indices_and_selected_originals_checked_candidates_only",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All active names included in fresh grouped discovery; six core issuer indices and selected originals checked. Search coverage is not a current-filing or economics audit for every company. Active watchlist unchanged.",
+      "scope": "All 98 active names included in fresh grouped discovery; six core issuer indices and selected originals checked. No active watchlist change.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
-        "https://nvidianews.nvidia.com/news",
+        "https://nvidianews.nvidia.com/",
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://investor.marvell.com/news-events/press-releases",
-        "https://web.ardentec.com/?m=113&u=34.69f31e424df2d9.26408755",
-        "https://www.skhynix.com/ir/UI-FR-IR06/",
-        "https://www.cna.com.tw/news/afe/202610210339.aspx"
+        "https://www.reuters.com/world/china/tsmc-seeks-factory-equipment-alternatives-thwart-chinas-rare-earths-grip-sources-2026-10-22/",
+        "https://www.trendforce.com/news/2026/10/22/breaking-google-reportedly-sticks-with-intel-emib-t-despite-35-substrate-yields-as-humufish-schedule-tightens/",
+        "https://cwnewsroom.substack.com/p/how-intel-emib-t-could-challenge-tsmc-why-mediatek-is-making-a-5billion-bet",
+        "https://www.ftnn.com.tw/news/589390"
       ],
       "source_limits": [
-        "Required instruction/specification bodies fetched in full at locked commit; complete progress parsed and recent ai-industry article bodies fetched. No other topic or schedule branch executed.",
-        "Grouped discovery results largely resolve to historical forecasts, prior company events or syndicated summaries. Historical primary and monthly revenue coverage unchanged; current orders, margins and cash conversion remain partial.",
-        "TSMC index latest October15; MediaTek September30; NVIDIA October21; AMD October12; Broadcom October21 software release; Marvell October13. Index checks do not establish absence of all issuer disclosures. Focused TPU/ASIC search yields older reports, with no new verified commercial allocation.",
-        "Ardentec issuer financial page still exposes Q1/Q2 financial reports; a planned October22 board date and pre-results forecasts are not reported Q3 profit. SK hynix IR lists October28 Q3 results; October22 broker HBM estimates are not issuer results or independently obtained institution originals.",
-        "Previously registered NVIDIA capacity commitments, Meta spending/financing disclosure, Tesla capex revision and Besi orders/delivery timing remain baselines; no new independent economics revision established. No repeat notification or forced article.",
-        "Only public research coverage and instruction version appended. No private quotes, valuation, holdings, fund flows, market-structure analysis or trading conditions added. Source readback is distinct from website publication."
+        "Required instructions and related specifications read at the locked commit; complete progress parsed and three recent ai-industry article bodies retrieved. No other topic executed.",
+        "Grouped discovery does not establish 98 current filings or complete company-economics checks. Historical monthly-revenue coverage remains98; current customer orders, margins and cash conversion remain partial.",
+        "Core indices retain previously registered dates and events. Broadcom obsolete /news-releases URL returned404; current financial-news index successfully read. Index checks do not establish absence of all disclosures.",
+        "TSMC rare-earth survey is early original reporting with no verified rollout or financial revision. TPU yield and Citi forecast leads have original-source/date/methodology gaps, retained as candidates only.",
+        "Previously notified NVIDIA, Meta, Tesla and Besi facts remain baseline; no new independently established material economics revision. No repeat notification or forced article.",
+        "Only public sources, candidates and research coverage appended. No quotes, valuation, holdings, fund flows, private market analysis or trading conditions. Remote ledger readback is distinct from website publication."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -14828,6 +14829,37 @@
           "Previously registered NVIDIA capacity commitments, Meta spending/financing disclosure, Tesla capex revision and Besi orders/delivery timing remain baselines; no new independent economics revision established. No repeat notification or forced article.",
           "Only public research coverage and instruction version appended. No private quotes, valuation, holdings, fund flows, market-structure analysis or trading conditions added. Source readback is distinct from website publication."
         ]
+      },
+      {
+        "date": "2026-10-22",
+        "checked_at": "2026-10-22 10:42:06 UTC",
+        "instruction_commit_sha": "2790e811b4acc9beefe4a2a0185277305ee26fe3",
+        "status": "98_name_grouped_discovery_core_indices_and_selected_originals_checked_candidates_only",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All 98 active names included in fresh grouped discovery; six core issuer indices and selected originals checked. No active watchlist change.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.reuters.com/world/china/tsmc-seeks-factory-equipment-alternatives-thwart-chinas-rare-earths-grip-sources-2026-10-22/",
+          "https://www.trendforce.com/news/2026/10/22/breaking-google-reportedly-sticks-with-intel-emib-t-despite-35-substrate-yields-as-humufish-schedule-tightens/",
+          "https://cwnewsroom.substack.com/p/how-intel-emib-t-could-challenge-tsmc-why-mediatek-is-making-a-5billion-bet",
+          "https://www.ftnn.com.tw/news/589390"
+        ],
+        "source_limits": [
+          "Required instructions and related specifications read at the locked commit; complete progress parsed and three recent ai-industry article bodies retrieved. No other topic executed.",
+          "Grouped discovery does not establish 98 current filings or complete company-economics checks. Historical monthly-revenue coverage remains98; current customer orders, margins and cash conversion remain partial.",
+          "Core indices retain previously registered dates and events. Broadcom obsolete /news-releases URL returned404; current financial-news index successfully read. Index checks do not establish absence of all disclosures.",
+          "TSMC rare-earth survey is early original reporting with no verified rollout or financial revision. TPU yield and Citi forecast leads have original-source/date/methodology gaps, retained as candidates only.",
+          "Previously notified NVIDIA, Meta, Tesla and Besi facts remain baseline; no new independently established material economics revision. No repeat notification or forced article.",
+          "Only public sources, candidates and research coverage appended. No quotes, valuation, holdings, fund flows, private market analysis or trading conditions. Remote ledger readback is distinct from website publication."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -22804,6 +22836,74 @@
         "Separate management's view of ASML cooperation from independently verified competitive product scope; verify customer qualification and repeat orders."
       ],
       "publication_status": "material_public_event_recorded_no_article"
+    },
+    {
+      "key": "tsmc-reported-rare-earth-free-fab-automation-survey-20261022",
+      "companies": [
+        "TSMC"
+      ],
+      "sources": [
+        "https://www.reuters.com/world/china/tsmc-seeks-factory-equipment-alternatives-thwart-chinas-rare-earths-grip-sources-2026-10-22/"
+      ],
+      "facts": {
+        "source_date": "2026-10-22 08:15 UTC",
+        "report": "Reuters attributes early supplier discussions on reducing rare-earth motor dependence to three informed sources.",
+        "limits": "TSMC declined comment; no broad rollout, named new equipment award, cost effect, production disruption or capacity-guidance revision verified."
+      },
+      "questions": [
+        "Does a qualified alternative enter actual procurement, and at what cost or delivery impact?"
+      ],
+      "date": "2026-10-22",
+      "instruction_commit_sha": "2790e811b4acc9beefe4a2a0185277305ee26fe3",
+      "stage": "discovery_read_original_or_issuer_economic_confirmation_pending",
+      "publication_status": "candidate_only_no_article"
+    },
+    {
+      "key": "google-humufish-emib-t-reported-yield-source-quality-20261022",
+      "companies": [
+        "Google",
+        "MediaTek",
+        "Intel",
+        "Unimicron"
+      ],
+      "sources": [
+        "https://www.trendforce.com/news/2026/10/22/breaking-google-reportedly-sticks-with-intel-emib-t-despite-35-substrate-yields-as-humufish-schedule-tightens/",
+        "https://cwnewsroom.substack.com/p/how-intel-emib-t-could-challenge-tsmc-why-mediatek-is-making-a-5billion-bet"
+      ],
+      "facts": {
+        "source_date": "2026-10-22",
+        "report": "TrendForce News curates unidentified-source packaging yield and continued EMIB-T commitment claims. News site explicitly operates independently of its research team.",
+        "verification": "Linked Common Wealth original is dated August7 and its relevant full body is paywalled. Linked Commercial Times URL dates October19 and could not be read. One related-link label resolves to unrelated March NAND coverage.",
+        "limits": "Not an authenticated measured yield series or new issuer guidance. Existing Humufish design/timing candidate retained; no confirmed package switch, current purchase split or incremental earnings revision."
+      },
+      "questions": [
+        "Obtain dated original yield methodology and issuer/customer milestones before upgrading confidence."
+      ],
+      "date": "2026-10-22",
+      "instruction_commit_sha": "2790e811b4acc9beefe4a2a0185277305ee26fe3",
+      "stage": "discovery_read_original_or_issuer_economic_confirmation_pending",
+      "publication_status": "candidate_only_no_article"
+    },
+    {
+      "key": "mediatek-attributed-citi-q4-revenue-and-v10-forecast-original-validation-20261022",
+      "companies": [
+        "MediaTek"
+      ],
+      "sources": [
+        "https://www.ftnn.com.tw/news/589390"
+      ],
+      "facts": {
+        "source_date": "2026-10-22 14:45 Asia/Taipei",
+        "report": "FTNN attributes Q4 revenue and future TPU program projections to Citi ahead of issuer earnings.",
+        "limits": "Institutional original, original report date, prior forecast and consensus population unavailable. Company or customer award and package allocation not verified. No authenticated estimate revision established."
+      },
+      "questions": [
+        "Obtain institution original old/new forecast periods and issuer confirmation of future program economics."
+      ],
+      "date": "2026-10-22",
+      "instruction_commit_sha": "2790e811b4acc9beefe4a2a0185277305ee26fe3",
+      "stage": "discovery_read_original_or_issuer_economic_confirmation_pending",
+      "publication_status": "candidate_only_no_article"
     }
   ],
   "blockers": [
@@ -22823,7 +22923,7 @@
     }
   ],
   "last_research_date": "2026-10-22",
-  "instruction_commit_sha": "5bc4616d48544372b6d1b26e262125dff83de615",
+  "instruction_commit_sha": "2790e811b4acc9beefe4a2a0185277305ee26fe3",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
