@@ -6184,14 +6184,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-22",
-      "checked_at": "2026-10-22 01:16:39 UTC",
-      "instruction_commit_sha": "1dcb1226e8a3ee9d8fd4063f3db912b4d16c8e13",
-      "status": "98_name_discovery_core_indices_and_kmi_hyperscaler_transport_contract_maturity_verified",
+      "checked_at": "2026-10-22 01:33:23 UTC",
+      "instruction_commit_sha": "838f469d8d501e3399c55b1629fbc8a393737dab",
+      "status": "98_name_discovery_core_indices_and_historical_tpu_rumor_deduplication_no_new_material_revision",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All98 active names in14 fresh grouped discovery queries;core issuer indices read.Not98 full current-filing oreconomics audits.Noactive-universe primary baseline count change.",
+      "scope": "All98active names included in14 fresh groupeddiscovery queries.Core issuer indices checked;not98full current-filing audits.Historical primary-baseline counts unchanged.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -6199,17 +6199,18 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://www.marvell.com/company/newsroom.html",
-        "https://ir.kindermorgan.com/news/news-details/2026/Kinder-Morgan-Reports-Record-Third-Quarter-2026-Financial-Results/default.aspx",
-        "https://ir.kindermorgan.com/news/news-details/2026/Kinder-Morgan-Reports-Second-Quarter-2026-Financial-Results/default.aspx",
-        "https://pipeline2.kindermorgan.com/Notices/NoticeDetail.aspx?code=NGPL&notc_nbr=46946"
+        "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771936_S1EL12IA2J94BA7U44MUF",
+        "https://ww2.money-link.com.tw/RealtimeNews/NewsContent.aspx?PU=0010&SN=2433457002",
+        "https://abmedia.io/mediateks-google-tpu-v9-shipments-may-slip-to-1q28"
       ],
       "source_limits": [
-        "Full instruction/specification files andprogress JSON retrieved at instruction commit;three related ai-industry articles read.",
-        "Grouped discovery predominantly historical media,social commentary andstock-price reports;no new confirmed TSMC/MediaTek customer allocation,NRE/production economics orsame-basis CSPbudget cut established.",
-        "LatestTSMC index:October15 earnings;MediaTek:September30 platform release;NVIDIA:October21 previously recorded announcements;AMD:October12;Marvell:October13.Broadcom financial-news index is narrower thanall corporate press releases.",
-        "KMI outside-universe issuer-backed candidate has explicit hyperscaler power linkage;otherindustry demand andcapital-project definitions remain separate.No watchlist modification.",
-        "No fresh full exchange issuer-notice table retrieved;prior monthlyrevenue baselines do not establish current economic validation.TrendForceOctober19 fiber report rediscovered;no new supplier earnings inference.",
-        "Public ledger contains no stockquote,valuation,holding,private fund-flow state ortrading condition.No newarticle orwebsite-publication claim."
+        "Latest mandatory instructions/specifications retrieved in full atlocked commit;large progress JSON parsed anddeduplicated.Three related ai-industry articles fetched atsamecommit withunchanged blobs.",
+        "Grouped discovery results predominantly historical media,stock commentary andsocial posts.No newconfirmed TSMC/MediaTek orderallocation,NRE/production economics orsame-basis CSPbudget revision obtained.",
+        "TSMC latest indexOctober15 earnings;MediaTekSeptember30;NVIDIAOctober21 previously registered releases;AMD October12;MarvellOctober13.Broadcom financial-news indexdoesnot cover allcorporate releases.",
+        "TPU glass-substrate headline isOctober20 historicalmaterial alreadyregistered,notnewOctober22 news.Contrary analyst claim onlyindirectly attributed bymedia;no authenticated customer/issuer package specification.",
+        "Meta newstockclass andspending headlines were alreadycovered;equitystructure isnot itselfnew cash raised.KMI signedtransport event wasregistered andnotrepeated.",
+        "No fresh full exchange issuer-notice table obtained.Currentfiling andcompanyeconomics coverage remains partial.Searchaccess failures do not imply marketcalm.",
+        "Public researchprogress only;no privatefund-flow data,stockquotes,valuation,holdings ortrading conditions.No newarticle orwebsitepublication claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -14426,6 +14427,37 @@
           "No fresh full exchange issuer-notice table retrieved;prior monthlyrevenue baselines do not establish current economic validation.TrendForceOctober19 fiber report rediscovered;no new supplier earnings inference.",
           "Public ledger contains no stockquote,valuation,holding,private fund-flow state ortrading condition.No newarticle orwebsite-publication claim."
         ]
+      },
+      {
+        "date": "2026-10-22",
+        "checked_at": "2026-10-22 01:33:23 UTC",
+        "instruction_commit_sha": "838f469d8d501e3399c55b1629fbc8a393737dab",
+        "status": "98_name_discovery_core_indices_and_historical_tpu_rumor_deduplication_no_new_material_revision",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All98active names included in14 fresh groupeddiscovery queries.Core issuer indices checked;not98full current-filing audits.Historical primary-baseline counts unchanged.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.marvell.com/company/newsroom.html",
+          "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771936_S1EL12IA2J94BA7U44MUF",
+          "https://ww2.money-link.com.tw/RealtimeNews/NewsContent.aspx?PU=0010&SN=2433457002",
+          "https://abmedia.io/mediateks-google-tpu-v9-shipments-may-slip-to-1q28"
+        ],
+        "source_limits": [
+          "Latest mandatory instructions/specifications retrieved in full atlocked commit;large progress JSON parsed anddeduplicated.Three related ai-industry articles fetched atsamecommit withunchanged blobs.",
+          "Grouped discovery results predominantly historical media,stock commentary andsocial posts.No newconfirmed TSMC/MediaTek orderallocation,NRE/production economics orsame-basis CSPbudget revision obtained.",
+          "TSMC latest indexOctober15 earnings;MediaTekSeptember30;NVIDIAOctober21 previously registered releases;AMD October12;MarvellOctober13.Broadcom financial-news indexdoesnot cover allcorporate releases.",
+          "TPU glass-substrate headline isOctober20 historicalmaterial alreadyregistered,notnewOctober22 news.Contrary analyst claim onlyindirectly attributed bymedia;no authenticated customer/issuer package specification.",
+          "Meta newstockclass andspending headlines were alreadycovered;equitystructure isnot itselfnew cash raised.KMI signedtransport event wasregistered andnotrepeated.",
+          "No fresh full exchange issuer-notice table obtained.Currentfiling andcompanyeconomics coverage remains partial.Searchaccess failures do not imply marketcalm.",
+          "Public researchprogress only;no privatefund-flow data,stockquotes,valuation,holdings ortrading conditions.No newarticle orwebsitepublication claim."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -22112,6 +22144,32 @@
         "Separate long-dated power infrastructure commitments from current CSP equipment procurement andnear-term utilisation."
       ],
       "publication_status": "new_public_event_registered_no_long_form_article"
+    },
+    {
+      "key": "mediatek-tpu-v9-glass-substrate-rumor-source-comparison-20261022",
+      "date": "2026-10-22",
+      "instruction_commit_sha": "838f469d8d501e3399c55b1629fbc8a393737dab",
+      "companies": [
+        "MediaTek",
+        "Google",
+        "Intel"
+      ],
+      "sources": [
+        "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771936_S1EL12IA2J94BA7U44MUF",
+        "https://ww2.money-link.com.tw/RealtimeNews/NewsContent.aspx?PU=0010&SN=2433457002",
+        "https://abmedia.io/mediateks-google-tpu-v9-shipments-may-slip-to-1q28"
+      ],
+      "stage": "historical_october20_teaser_rechecked_and_conflicting_media_attribution_read_no_primary_resolution",
+      "facts": {
+        "source_dates": "DIGITIMES original explicitly datedOctober20,notOctober22;fullbody remains membership-only.FinancialExpress attributedsummary datedOctober20 08:00.ABMedia displays relative1day,without exactpublicationtime in obtainedbody.",
+        "comparison": "ABMedia repeatsdesign-delay claims andattributes a contrary glass-substrate interpretation toCitrini analystZephyr viaa socialpost.The underlying analystpost,customer specification andissuer confirmation were notvalidated;neither packaging claim is elevated toverifiedfact.",
+        "limits": "Earlier candidate already classified substrate-yield cause asunconfirmed.No newconfirmed schedule,package choice,customerallocation,NRE,production economics orprofit revision.No material confidence change."
+      },
+      "questions": [
+        "Obtain issuer/customer confirmation of actual package materials andmilestone dates.",
+        "Compare upcoming issuer productionguidance withprior early2028 baseline;separate designrework fromsubstrate-yield claims."
+      ],
+      "publication_status": "supporting_source_comparison_only_no_new_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -22131,7 +22189,7 @@
     }
   ],
   "last_research_date": "2026-10-22",
-  "instruction_commit_sha": "1dcb1226e8a3ee9d8fd4063f3db912b4d16c8e13",
+  "instruction_commit_sha": "838f469d8d501e3399c55b1629fbc8a393737dab",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
