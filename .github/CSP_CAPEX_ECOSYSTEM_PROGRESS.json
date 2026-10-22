@@ -6356,6 +6356,63 @@
         "limits": "Q3 sales release does not disclose Q3 EBITDA, AI-only profit or cash conversion. Acquisitions, solar, residential and seasonal European activity also contribute. Subsea backlog is not attributed wholly to AI. Capacity targets are not completed output. No issuer-level earnings revision established."
       },
       "status": "issuer_current_prior_and_presentation_verified_slide10_visually_checked_original_reporting_read_no_article"
+    },
+    {
+      "fingerprint": "jcet-q3-2026-computing-mix-profit-and-capex-budget-increase-20261022",
+      "event_date": "2026-10-22",
+      "discovered_date": "2026-10-23",
+      "instruction_commit_sha": "51e71681207446c34d1746845ce9eb8e357c9daf",
+      "companies": [
+        "JCET"
+      ],
+      "type": "issuer_reported_results_computing_growth_and_board_capex_budget_revision",
+      "sources": [
+        "https://www.prnewswire.com/news-releases/building-out-advanced-packaging-portfolio-jcet-delivers-steady-revenue-growth-and-improved-profitability-in-q3-ytd-2026-302916994.html",
+        "https://tools.prnewswire.com/en-us/live/20813/release/20260820EN30595",
+        "https://finance.sina.com.cn/jjxw/2026-10-22/doc-iniwcaff5246950.shtml"
+      ],
+      "facts": {
+        "issuer_publication_time": "2026-10-22 09:20 ET",
+        "currency": "CNY",
+        "unit": "billion except growth and mix percentages",
+        "reported_nine_months": {
+          "revenue": 30.95,
+          "revenue_yoy_pct": 8,
+          "net_profit_attributable_to_shareholders": 1.62,
+          "net_profit_yoy_pct": 69.6,
+          "net_profit_excluding_nonrecurring_items": 1.56,
+          "net_profit_excluding_nonrecurring_items_yoy_pct": 99.2,
+          "gross_margin_yoy_change_percentage_points": 2.3,
+          "computing_electronics_revenue_growth_yoy_pct": 54,
+          "computing_electronics_share_of_company_revenue_pct": 30.9
+        },
+        "reported_Q3": {
+          "revenue": 11.43,
+          "revenue_growth_yoy_pct": 13.5,
+          "revenue_growth_qoq_pct": 10.3,
+          "net_profit_attributable_to_shareholders": 0.77,
+          "net_profit_growth_yoy_pct": 60,
+          "net_profit_growth_qoq_pct": 39.4
+        },
+        "capex_budget_revision": {
+          "period": "FY2026",
+          "old": 9.98,
+          "new": 17.31,
+          "derived_increase_pct": 73.44689378757514,
+          "status": "Issuer release says board approved the budget increase. Original financial reporting of October22 board resolution states shareholder review remains required; not final shareholder approval, actual spent cash or completed capacity.",
+          "definition": "Fixed-asset capex. Distinct from total investment plan11.01 to18.20bn reported by original financial journalism."
+        },
+        "prior_issuer_baseline": {
+          "publication_date": "2026-08-20",
+          "H1_computing_electronics_revenue_growth_yoy_pct": 40.4,
+          "Q2_revenue": 10.36,
+          "Q2_net_profit": 0.55,
+          "existing_project": "June-announced Shanghai advanced-packaging facility investment7.8bn and July subsidiary incorporation already historical. Not a newly announced October project."
+        },
+        "demand_relationship": "Issuer identifies computing, memory, interconnect and power solutions for AI data-center infrastructure; computing category is not all AI revenue. Glass-substrate and panel-level programs described as joint development progressing to pilot-line construction, not volume production.",
+        "limits": "No named CSP minimum purchase, AI-only profit, quantified competitor order transfer or fully authenticated Q3 cash-flow/capex table. Current/prior issuer releases provide rounded figures. Shareholder vote and commissioning remain pending; equipment supplier allocations undisclosed."
+      },
+      "status": "current_and_prior_issuer_release_original_reporting_verified_full_regulatory_financials_and_shareholder_approval_pending_no_article"
     }
   ],
   "articles": [],
@@ -6472,15 +6529,15 @@
       "2375"
     ],
     "current_run_screening": {
-      "date": "2026-10-22",
-      "checked_at": "2026-10-22 15:23:24 UTC",
-      "instruction_commit_sha": "b0f7a2958038c46babe150b4714fe0bfa8b7eb80",
-      "status": "98_name_grouped_discovery_six_core_indices_new_off_universe_power_accessories_event_verified",
+      "date": "2026-10-23",
+      "checked_at": "2026-10-22 16:15:29 UTC",
+      "instruction_commit_sha": "51e71681207446c34d1746845ce9eb8e357c9daf",
+      "status": "98_name_grouped_discovery_six_core_indices_new_jcet_capex_event_and_research_candidates_verified",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All98 active watchlist names included in fresh grouped discovery. Six mandatory core issuer indices read. Off-universe Nexans capacity event verified; no watchlist edit.",
+      "scope": "All98 active names included in14 fresh grouped discovery queries. Six mandatory core issuer indices read; targeted CSP/ASIC/power/optical/memory discovery and outside-universe JCET followed up. No watchlist edit.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -6488,22 +6545,22 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/",
         "https://investor.marvell.com/news-events/press-releases",
-        "https://www.globenewswire.com/news-release/2026/10/22/3386015/0/en/nexans-9m-2026-exceptionally-high-momentum-in-pwr-grid-and-pwr-connect-pwr-transmission-continued-growth-normalization-2026-guidance-confirmed.html",
-        "https://www.nexans.com/app/uploads/2026/10/2026-10-22-presentation-nexans-q3-2026.pdf",
-        "https://www.nexans.com/regulated-informations/h1-2026-financial-results/",
-        "https://www.reuters.com/technology/cable-capacity-emerges-bottleneck-ai-data-centres-nexans-says-2026-10-22/",
-        "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
-        "https://www.prnewswire.com/news-releases/verda-and-compal-expand-global-ai-infrastructure-collaboration-at-gtc-berlin-2026-302913748.html",
-        "https://www.compal.com/esg/en/news/verda-and-compal-announce-partnership-to-acce/"
+        "https://www.prnewswire.com/news-releases/building-out-advanced-packaging-portfolio-jcet-delivers-steady-revenue-growth-and-improved-profitability-in-q3-ytd-2026-302916994.html",
+        "https://tools.prnewswire.com/en-us/live/20813/release/20260820EN30595",
+        "https://finance.sina.com.cn/jjxw/2026-10-22/doc-iniwcaff5246950.shtml",
+        "https://www.trendforce.com/presscenter/news/20261022-13279.html",
+        "https://www.trendforce.com/presscenter/news/20261019-13275.html",
+        "https://www.reuters.com/business/metas-credit-risk-indicator-jumps-record-high-after-results-2026-10-22/",
+        "https://money.udn.com/money/story/5612/9831431"
       ],
       "source_limits": [
-        "Required same-commit instructions and related specifications completely fetched and matched previously read blob SHAs. Full public ledger parsed and three recent unchanged related articles read.",
-        "All98 included in discovery; not98 newly retrieved primary filings or a full current economics audit. Existing monthly-revenue baseline preserved. Current order, margin and cash coverage remains partial.",
-        "TSMC, MediaTek, AMD, Broadcom and Marvell issuer indices retain registered releases. NVIDIA October22 Minerva original body read: IREN use and other planned deployments/ODM offerings, but no quantified paid orders, recurring revenue or realized yield improvement disclosed.",
-        "Compal-Verda expansion original release is October21 07:30 ET, despite October22 Taiwanese rediscovery. May7 partnership is the baseline; new B300 platform and Daxi/US manufacturing details give no firm shipment volume, revenue commitment or margin/cash bridge.",
-        "Nexans is outside existing universe. Issuer identified data-center demand and a specific accessories capacity plan; current and July guidance compared. Slide10 visually checked; XLPE CV-line timeline is separately attributed original reporting, not the accessories commissioning schedule.",
-        "Previously recorded Ardentec source-completion and Besi source limitations remain unresolved; no new claims inferred from recycled headlines. Prior material events retained for deduplication.",
-        "Public source event, research candidate and coverage only. No quote, valuation, cash-market fund flow, holdings, private investment judgment or trading conditions stored. No new article or website-publication claim."
+        "Same-commit required instructions and specifications retrieved completely; full ledger parsed and three recent related articles fetched. No alternate topic selected.",
+        "Grouped results included many historical or generic articles despite date filters.98 names in discovery is not98 fresh primary filings. Existing monthly-revenue baseline retained; current company economics coverage remains partial.",
+        "Core issuer indices: TSMC latest October15 results, MediaTek September30 product news and August31 NVLinkFusion collaboration, NVIDIA October22 Minerva, AMD October12 Helion, Broadcom October21 Arcot and Marvell October13 connectivity remain registered baselines.",
+        "JCET current and August issuer releases read; new budget revision and computing/margin figures verified, while shareholder approval requirement and broader investment-plan scope attributed to October22 original financial reporting. Complete original regulatory financials/cash table not obtained. Company finance index403 and direct PR-page download403; indexed original issuer body accessible.",
+        "TrendForce CPU report datedOctober22 and fiber report datedOctober19 are research-house forecasts, not new issuer orders or realized profit. Prior directly comparable forecasts and contract/cash conversion pending. Candidates retained without speculative supplier earnings attribution.",
+        "Reuters October22 credit-market original body read; no new completed issuer funding, default or supplier cancellation established. Credit-market quotes and equity prices omitted from public ledger. Sinbon Q3 original reporting discovered, but issuer newsroom index did not authenticate full new financial release; no new AI-only conclusion.",
+        "Prior Nexans, Nokia, Kuehne+Nagel, Besi, Tesla, Lam and NVIDIA supplier commitments preserved for deduplication. Public event/source/candidate records only; no current quotes, valuation, fund flows, holdings, private investment judgment or trading conditions. No new article or website-publication claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -15157,6 +15214,41 @@
           "Previously recorded Ardentec source-completion and Besi source limitations remain unresolved; no new claims inferred from recycled headlines. Prior material events retained for deduplication.",
           "Public source event, research candidate and coverage only. No quote, valuation, cash-market fund flow, holdings, private investment judgment or trading conditions stored. No new article or website-publication claim."
         ]
+      },
+      {
+        "date": "2026-10-23",
+        "checked_at": "2026-10-22 16:15:29 UTC",
+        "instruction_commit_sha": "51e71681207446c34d1746845ce9eb8e357c9daf",
+        "status": "98_name_grouped_discovery_six_core_indices_new_jcet_capex_event_and_research_candidates_verified",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All98 active names included in14 fresh grouped discovery queries. Six mandatory core issuer indices read; targeted CSP/ASIC/power/optical/memory discovery and outside-universe JCET followed up. No watchlist edit.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.prnewswire.com/news-releases/building-out-advanced-packaging-portfolio-jcet-delivers-steady-revenue-growth-and-improved-profitability-in-q3-ytd-2026-302916994.html",
+          "https://tools.prnewswire.com/en-us/live/20813/release/20260820EN30595",
+          "https://finance.sina.com.cn/jjxw/2026-10-22/doc-iniwcaff5246950.shtml",
+          "https://www.trendforce.com/presscenter/news/20261022-13279.html",
+          "https://www.trendforce.com/presscenter/news/20261019-13275.html",
+          "https://www.reuters.com/business/metas-credit-risk-indicator-jumps-record-high-after-results-2026-10-22/",
+          "https://money.udn.com/money/story/5612/9831431"
+        ],
+        "source_limits": [
+          "Same-commit required instructions and specifications retrieved completely; full ledger parsed and three recent related articles fetched. No alternate topic selected.",
+          "Grouped results included many historical or generic articles despite date filters.98 names in discovery is not98 fresh primary filings. Existing monthly-revenue baseline retained; current company economics coverage remains partial.",
+          "Core issuer indices: TSMC latest October15 results, MediaTek September30 product news and August31 NVLinkFusion collaboration, NVIDIA October22 Minerva, AMD October12 Helion, Broadcom October21 Arcot and Marvell October13 connectivity remain registered baselines.",
+          "JCET current and August issuer releases read; new budget revision and computing/margin figures verified, while shareholder approval requirement and broader investment-plan scope attributed to October22 original financial reporting. Complete original regulatory financials/cash table not obtained. Company finance index403 and direct PR-page download403; indexed original issuer body accessible.",
+          "TrendForce CPU report datedOctober22 and fiber report datedOctober19 are research-house forecasts, not new issuer orders or realized profit. Prior directly comparable forecasts and contract/cash conversion pending. Candidates retained without speculative supplier earnings attribution.",
+          "Reuters October22 credit-market original body read; no new completed issuer funding, default or supplier cancellation established. Credit-market quotes and equity prices omitted from public ledger. Sinbon Q3 original reporting discovered, but issuer newsroom index did not authenticate full new financial release; no new AI-only conclusion.",
+          "Prior Nexans, Nokia, Kuehne+Nagel, Besi, Tesla, Lam and NVIDIA supplier commitments preserved for deduplication. Public event/source/candidate records only; no current quotes, valuation, fund flows, holdings, private investment judgment or trading conditions. No new article or website-publication claim."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -23326,6 +23418,91 @@
         "Obtain segment incremental margins, cash conversion and customer-contract duration before attributing sustainable earnings improvement"
       ],
       "publication_status": "source_event_and_research_candidate_only_no_article"
+    },
+    {
+      "key": "jcet-expanded-capex-to-advanced-packaging-cash-returns-20261023",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "51e71681207446c34d1746845ce9eb8e357c9daf",
+      "companies": [
+        "JCET"
+      ],
+      "stage": "issuer_budget_revision_and_reported_margin_mix_verified_cash_returns_and_capacity_delivery_pending",
+      "related_public_event": "jcet-q3-2026-computing-mix-profit-and-capex-budget-increase-20261022",
+      "sources": [
+        "https://www.prnewswire.com/news-releases/building-out-advanced-packaging-portfolio-jcet-delivers-steady-revenue-growth-and-improved-profitability-in-q3-ytd-2026-302916994.html",
+        "https://tools.prnewswire.com/en-us/live/20813/release/20260820EN30595",
+        "https://finance.sina.com.cn/jjxw/2026-10-22/doc-iniwcaff5246950.shtml"
+      ],
+      "questions": [
+        "Obtain complete Q3 regulatory financials and reconcile cash capex, depreciation, working capital and operating cash",
+        "Verify shareholder approval and project commissioning against budget",
+        "Identify customer qualification, contracted utilization and product-specific competitive overlap before inferring Taiwan supplier effects"
+      ],
+      "publication_status": "source_event_and_candidate_only_no_article"
+    },
+    {
+      "key": "trendforce-server-cpu-unit-mix-forecast-to-realized-economics-20261022",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "51e71681207446c34d1746845ce9eb8e357c9daf",
+      "companies": [
+        "TrendForce",
+        "AMD",
+        "Intel",
+        "NVIDIA",
+        "Arm",
+        "Amazon/AWS",
+        "Google",
+        "Microsoft"
+      ],
+      "stage": "research_house_original_unit_and_architecture_mix_forecast_read_no_prior_comparable_forecast_or_supplier_economic_revision_verified",
+      "sources": [
+        "https://www.trendforce.com/presscenter/news/20261022-13279.html"
+      ],
+      "facts": {
+        "source_date": "2026-10-22",
+        "forecast_population": "Server CPU unit shipments and unit share, not revenue or installed accelerator share",
+        "forecast_2026_shipment_growth_pct": 31,
+        "forecast_2027_shipment_growth_pct": "more than40",
+        "forecast_Arm_unit_share_2026_pct": "above20",
+        "forecast_Arm_unit_share_2027_pct": "approximately30",
+        "forecast_AMD_unit_share_2026_pct": "approximately27",
+        "configuration_hypothesis": "CPU-to-GPU/ASIC ratio from traditional1:8 toward1:2 or1:1, based on planned rack configurations; not fleetwide observed conversion.",
+        "limits": "Original research estimate, not issuer purchase commitments, a verified forecast revision or earnings consensus. TSMC capacity constraints and Intel process/packaging delays are research-house assessments. No new confirmed MediaTek TPU design responsibility or economic terms disclosed."
+      },
+      "questions": [
+        "Locate comparable earlier unit forecasts and market definition",
+        "Verify paid deployments and manufacturing capacity with issuers",
+        "Test ASP, product mix, licensing model and margins separately from unit share"
+      ],
+      "publication_status": "research_candidate_only_no_article"
+    },
+    {
+      "key": "trendforce-optical-fiber-shortage-finished-price-to-producer-economics-20261019",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "51e71681207446c34d1746845ce9eb8e357c9daf",
+      "companies": [
+        "TrendForce",
+        "Corning",
+        "Verizon"
+      ],
+      "stage": "dated_original_industry_research_read_supplier_contract_and_realized_margin_comparison_pending",
+      "sources": [
+        "https://www.trendforce.com/presscenter/news/20261019-13275.html"
+      ],
+      "facts": {
+        "source_date": "2026-10-19",
+        "forecast_2026_demand_million_fiber_km": 577,
+        "forecast_2026_supply_shortfall_million_fiber_km": 180,
+        "reported_2026_utilization_pct": 92,
+        "forecast_preform_capacity_expansion_months": "18-24",
+        "limits": "Research forecasts and finished-fiber spot quotations, not transceiver prices or supplier realized ASP/margins. Long-term contract economics and conversion to cash pending; original named contract has not been independently authenticated this check."
+      },
+      "questions": [
+        "Verify named supplier/customer original contracts and distinguish fiber-km from cable-km",
+        "Compare realized supplier prices, costs and contract coverage against spot indications",
+        "Check preform capacity commissioning and customer deployment rather than extrapolating shortages"
+      ],
+      "publication_status": "research_candidate_only_no_article"
     }
   ],
   "blockers": [
@@ -23344,8 +23521,8 @@
       "impact": "Search hits and reposted notices have not been individually checked against company or exchange originals."
     }
   ],
-  "last_research_date": "2026-10-22",
-  "instruction_commit_sha": "b0f7a2958038c46babe150b4714fe0bfa8b7eb80",
+  "last_research_date": "2026-10-23",
+  "instruction_commit_sha": "51e71681207446c34d1746845ce9eb8e357c9daf",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
