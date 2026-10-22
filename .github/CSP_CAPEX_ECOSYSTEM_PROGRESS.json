@@ -6207,14 +6207,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-22",
-      "checked_at": "2026-10-22 05:15:37 UTC",
-      "instruction_commit_sha": "35cc7f2908f350c171b3e06f0ba5582ae70b41a9",
-      "status": "98_name_discovery_and_core_issuer_checks_with_new_liberty_power_customer_commitment_event",
+      "checked_at": "2026-10-22 06:20:04 UTC",
+      "instruction_commit_sha": "fe1276441f5a605c9549fafe52542dc0ffd4a72a",
+      "status": "98_name_discovery_and_core_indices_checked_umc_apmemory_candidate_added_no_material_alert",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All 98 active names included in 14 fresh grouped discovery queries. Core news indices and selected originals checked; not 98 current-filing or company-economics audits.",
+      "scope": "All 98 active names included in 14 fresh grouped discovery queries. Six core issuer indices and selected original leads checked. Discovery coverage is not 98-company current-filing or economics validation. UMC and AP Memory are additional relationship leads outside the active universe; watchlist unchanged.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -6222,19 +6222,16 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://investor.marvell.com/news-events/press-releases",
-        "https://investors.libertyenergy.com/news-and-events/press-releases/2026/10-21-2026-223015990",
-        "https://investors.libertyenergy.com/news-and-events/press-releases/2026/07-22-2026-230509078",
-        "https://investors.libertyenergy.com/news-and-events/press-releases/2026/07-22-2026-231109602",
-        "https://www.peoplenews.tw/articles/economic-news/63034",
-        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=662b9972-3ef2-439d-b648-617f0ee77704",
-        "https://admin.uanalyze.com.tw/articles/5524057565"
+        "https://www.umc.com/en/News/press_release/Content/technology_related/20261022",
+        "https://www.ftnn.com.tw/news/589236",
+        "https://news.cnyes.com/news/id/6635643"
       ],
       "source_limits": [
-        "Required instructions and specifications retrieved in full at the locked commit. Complete progress JSON parsed; recent post metadata and three ai-industry article bodies fetched with unchanged, previously read blobs.",
-        "Grouped discovery mainly returned historical media, commentary and social posts. Historical 98-company monthly baselines unchanged; current orders, margins, earnings and cash-conversion validation remain partial. No fresh full exchange-notice table obtained.",
-        "TSMC index October 15; MediaTek September 30; NVIDIA October 21 registered releases; AMD October 12; Broadcom financial index October 8. Marvell corporate newsroom returned maintenance; IR press index remained readable with latest October 13 releases.",
-        "Liberty development agreement and prepayment provision checked against July JV and Q2 baselines; final ESAs and project economics remain pending. Micron officials' action is not verified whole-workforce stoppage. Tongtai secondary forecast scope and cutoff remain unresolved.",
-        "One new primary public event; no long-form article. No private fund flows, stock quotes, valuation, holdings or trading conditions in public progress. Remote commit verification does not establish website publication."
+        "Required instructions, specifications, complete progress JSON and recent article bodies retrieved at the locked commit. All historical public events and prior candidates retained.",
+        "Grouped queries returned many historical, social and secondary items. Historical 98-name monthly-revenue baseline unchanged; current orders, profitability and cash-conversion validation remain partial. No fresh full exchange-notice table obtained.",
+        "Core indices: TSMC October 15; MediaTek September 30; NVIDIA October 21 previously registered releases; AMD October 12; Broadcom financial index October 8; Marvell IR October 13. Financial index coverage is narrower than all corporate announcements.",
+        "UMC primary announcement supports a technical milestone, with commercial economics pending. AP Memory /en/news returned 502; joint announcement was read at UMC. Holy Stone article lacks a named original and comparable old estimate. Latest Micron negotiation report supplies no verified output or shipment loss beyond the existing action candidate.",
+        "No new material alert or long-form article. No stock quotes, valuation, holdings, fund flows or trading conditions added to public progress. Source readback alone does not establish website publication."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -14581,6 +14578,35 @@
           "Liberty development agreement and prepayment provision checked against July JV and Q2 baselines; final ESAs and project economics remain pending. Micron officials' action is not verified whole-workforce stoppage. Tongtai secondary forecast scope and cutoff remain unresolved.",
           "One new primary public event; no long-form article. No private fund flows, stock quotes, valuation, holdings or trading conditions in public progress. Remote commit verification does not establish website publication."
         ]
+      },
+      {
+        "date": "2026-10-22",
+        "checked_at": "2026-10-22 06:20:04 UTC",
+        "instruction_commit_sha": "fe1276441f5a605c9549fafe52542dc0ffd4a72a",
+        "status": "98_name_discovery_and_core_indices_checked_umc_apmemory_candidate_added_no_material_alert",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All 98 active names included in 14 fresh grouped discovery queries. Six core issuer indices and selected original leads checked. Discovery coverage is not 98-company current-filing or economics validation. UMC and AP Memory are additional relationship leads outside the active universe; watchlist unchanged.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.umc.com/en/News/press_release/Content/technology_related/20261022",
+          "https://www.ftnn.com.tw/news/589236",
+          "https://news.cnyes.com/news/id/6635643"
+        ],
+        "source_limits": [
+          "Required instructions, specifications, complete progress JSON and recent article bodies retrieved at the locked commit. All historical public events and prior candidates retained.",
+          "Grouped queries returned many historical, social and secondary items. Historical 98-name monthly-revenue baseline unchanged; current orders, profitability and cash-conversion validation remain partial. No fresh full exchange-notice table obtained.",
+          "Core indices: TSMC October 15; MediaTek September 30; NVIDIA October 21 previously registered releases; AMD October 12; Broadcom financial index October 8; Marvell IR October 13. Financial index coverage is narrower than all corporate announcements.",
+          "UMC primary announcement supports a technical milestone, with commercial economics pending. AP Memory /en/news returned 502; joint announcement was read at UMC. Holy Stone article lacks a named original and comparable old estimate. Latest Micron negotiation report supplies no verified output or shipment loss beyond the existing action candidate.",
+          "No new material alert or long-form article. No stock quotes, valuation, holdings, fund flows or trading conditions added to public progress. Source readback alone does not establish website publication."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -16251,6 +16277,20 @@
             "Confirm actual customer price acceptance and effective shipment period.",
             "Check Q4 gross profit and cash conversion after materials costs; unchanged margins or inventory accumulation would challenge pricing benefits."
           ]
+        },
+        {
+          "date": "2026-10-22",
+          "instruction_commit_sha": "fe1276441f5a605c9549fafe52542dc0ffd4a72a",
+          "stage": "unnamed_institution_forecast_media_body_read_original_estimate_revision_unverified",
+          "sources": [
+            "https://www.ftnn.com.tw/news/589236"
+          ],
+          "facts": "October 22 07:20 media article forecasts higher future earnings and margins, attributed to unnamed institutions. Named broker original, forecast revision date and comparable old estimate were not obtained. March issuer product relationship and September revenue baselines remain the established primary evidence.",
+          "questions": [
+            "Obtain named institution original and old/new period-consistent estimates",
+            "Confirm accepted customer pricing and product margin through issuer results"
+          ],
+          "publication_status": "source_provenance_only_no_material_alert_no_article"
         }
       ]
     },
@@ -22462,6 +22502,30 @@
         "Separate dedicated electronics from broader end-use classification."
       ],
       "publication_status": "source_comparison_only_no_material_alert_no_article"
+    },
+    {
+      "key": "umc-ap-memory-dtc-silicon-capacitor-gen2d-initial-validation-20261022",
+      "date": "2026-10-22",
+      "instruction_commit_sha": "fe1276441f5a605c9549fafe52542dc0ffd4a72a",
+      "companies": [
+        "United Microelectronics Corporation",
+        "AP Memory"
+      ],
+      "sources": [
+        "https://www.umc.com/en/News/press_release/Content/technology_related/20261022"
+      ],
+      "stage": "issuer_collaboration_and_initial_functional_validation_verified_system_reliability_and_commercial_economics_pending",
+      "facts": {
+        "milestone": "October 22 issuer announcement: AP Memory S-SiCap Gen2D designs completed tape-out and initial functional validation in Q3 using UMC DTC technology. System-level performance and reliability testing is next.",
+        "scope": "Discrete capacitors are the current milestone; embedded interposers and landside capacitors are exploratory extensions.",
+        "limits": "Release supplies no named end customer, contracted wafer volume, mass-production date, realized pricing or margin. Its capacity-investment statement supplies no project-specific amount or commissioning date. Neither company is in the current 98-name active universe."
+      },
+      "questions": [
+        "System/package qualification results and production schedule",
+        "Accepted customer orders, wafer allocation and incremental margins",
+        "Whether this manufacturing path adds capacity or reallocates existing supply; no displacement inferred"
+      ],
+      "publication_status": "candidate_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -22481,7 +22545,7 @@
     }
   ],
   "last_research_date": "2026-10-22",
-  "instruction_commit_sha": "35cc7f2908f350c171b3e06f0ba5582ae70b41a9",
+  "instruction_commit_sha": "fe1276441f5a605c9549fafe52542dc0ffd4a72a",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
