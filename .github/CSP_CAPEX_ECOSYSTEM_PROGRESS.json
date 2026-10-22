@@ -6146,6 +6146,51 @@
         "verification": "Q3 issuer-hosted 8-K attachment text, Q2 SEC filing and issuer consensus table read. Direct shareholder-deck links were inaccessible; issuer-hosted 8-K attachment supplied quarterly tables. Full issuer audio not authenticated; guidance is explicitly attributed to the reproduced CFO remarks."
       },
       "status": "reported_actuals_and_prior_guidance_primary_verified_current_cut_attributed_and_cross_checked_no_article"
+    },
+    {
+      "fingerprint": "besi-q3-2026-orders-surprise-hybrid-bonding-delivery-timing-20261022",
+      "event_date": "2026-10-22",
+      "discovered_date": "2026-10-22",
+      "instruction_commit_sha": "5f4c3073fd54e1f8262143ae6d0625081a3bdb33",
+      "companies": [
+        "BE Semiconductor Industries"
+      ],
+      "type": "original_reported_equipment_order_surprise_and_delivery_timing_constraint",
+      "sources": [
+        "https://www.reuters.com/business/besis-quarterly-orders-beat-expectations-ai-data-centre-demand-stays-strong-2026-10-22/",
+        "https://www.globenewswire.com/news-release/2026/07/23/3331898/0/en/be-semiconductor-industries-n-v-announces-q2-26-and-h1-26-results.html",
+        "https://live.euronext.com/en/product/equities/NL0012866412-XAMS"
+      ],
+      "facts": {
+        "reported_q3": {
+          "currency": "EUR",
+          "unit": "million",
+          "orders": 342.6,
+          "orders_qoq_pct": 17,
+          "orders_yoy_pct": 96,
+          "revenue": 283.4,
+          "attribution": "Reuters October 22 original reporting; full issuer Q3 numerical document not retrieved."
+        },
+        "comparison": {
+          "orders_visible_alpha_survey": 298,
+          "orders_above_survey_pct": 14.966442953020142,
+          "survey_sample_count": "not supplied",
+          "q2_orders_primary": 292.9,
+          "scope": "Order expectation is Visible Alpha; revenue expectations below are a different LSEG survey."
+        },
+        "delivery_and_outlook": {
+          "q4_revenue_guidance": "Q3 level plus or minus 5%",
+          "q4_midpoint": 283.4,
+          "q4_lseg_survey": 291.5,
+          "q4_midpoint_vs_survey_pct": -2.778730703259013,
+          "delivery": "Some Q3 orders scheduled to align with customers' H1 2027 production plans.",
+          "attribution": "Reuters report of issuer statement; guidance is not realized revenue."
+        },
+        "hybrid_bonding": "Reuters reports year-to-date system orders above twice full-year 2025, not Q3 alone. This establishes a demand-transmission lead beyond the current active universe; no named Taiwan supplier order allocation established.",
+        "baseline": "Issuer Q2 release reports EUR292.9m orders and Q3 revenue guidance 10–15% above Q2 EUR249.9m. Q3 reported revenue EUR283.4m lies within that prior range.",
+        "verification": "Euronext issuer index confirms October 22 Q3 release listing, but not its numerical body. Besi IR requests did not yield the Q3 document. Issuer Q2 release read through GlobeNewswire; Reuters original report read. Syndicated copies counted as one report."
+      },
+      "status": "original_report_read_primary_q3_numeric_body_pending_no_article"
     }
   ],
   "articles": [],
@@ -6263,14 +6308,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-22",
-      "checked_at": "2026-10-22 07:55:47 UTC",
-      "instruction_commit_sha": "ce3d46b815475202adb6538e7e48f4af12dbd2eb",
-      "status": "98_name_grouped_discovery_core_indices_and_tpca_source_comparison_completed_no_new_material_event",
+      "checked_at": "2026-10-22 09:20:07 UTC",
+      "instruction_commit_sha": "5f4c3073fd54e1f8262143ae6d0625081a3bdb33",
+      "status": "98_name_grouped_discovery_core_indices_and_new_besi_reported_order_event_checked",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All 98 active names included in 14 fresh grouped discovery queries; six core issuer indices and selected original reporting read. Search coverage is not current-filing or economics validation for all 98 companies. No watchlist modification.",
+      "scope": "All 98 active names included in 14 fresh grouped discovery queries; six core issuer indices and selected original reporting checked. Besi is an additional advanced-packaging equipment lead outside the active universe. No watchlist modification.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -6278,15 +6323,18 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://investor.marvell.com/news-events/press-releases",
-        "https://money.udn.com/money/story/5612/9826145",
-        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7cd69823-4892-46a4-a11d-a6b58d907a71"
+        "https://www.reuters.com/business/besis-quarterly-orders-beat-expectations-ai-data-centre-demand-stays-strong-2026-10-22/",
+        "https://www.globenewswire.com/news-release/2026/07/23/3331898/0/en/be-semiconductor-industries-n-v-announces-q2-26-and-h1-26-results.html",
+        "https://live.euronext.com/en/product/equities/NL0012866412-XAMS",
+        "https://web.ardentec.com/?m=113&u=34.69f31e424df2d9.26408755"
       ],
       "source_limits": [
-        "Required instruction and specification bodies fetched in full at the locked commit; blob SHAs match previously fully read versions. Complete progress JSON parsed and three recent ai-industry article bodies retrieved with unchanged previously read blobs.",
-        "All 98 names searched; grouped discovery returned many historical, social or secondary items. Historical monthly-revenue baseline remains 98 names; current filings, customer orders, margins and cash conversion remain partial. No fresh full exchange-notice table obtained.",
-        "Core indices: TSMC October 15, MediaTek September 30, NVIDIA October 21 previously registered releases, AMD October 12, Broadcom October 21 software announcement, Marvell IR October 13. Index inspection does not prove absence of all issuer disclosures.",
-        "TPCA material-tightness leads were dated back to October 20 and compared with the registered Elite Material event. No new booked order, accepted price or company earnings revision established. Global memory and TPU searches returned primarily older forecasts and previously tracked reports.",
-        "No new public event or long-form article. Existing events and candidates retained; only a source-comparison update and coverage record appended. No quotes, valuation, holdings, fund flows or trading conditions included. Source readback is not website publication."
+        "Required instructions and related specifications read at the locked instruction commit; complete progress parsed and three recent ai-industry article bodies read.",
+        "Grouped discovery is not 98 fresh filings or company-economics audits. Historical monthly revenue baseline remains 98; current customer orders, margins and cash conversion remain partial. No fresh full exchange-notice table obtained.",
+        "Core issuer indices continue to show previously registered events or software/product announcements without a new established AI hardware economics revision. An index check does not establish absence of all issuer disclosures.",
+        "Ardentec board-date and profit-preview reports do not establish actual Q3 financial results; retrieved issuer 2026 financial page exposes Q1 and Q2 only. Existing candidate retained without upgrade.",
+        "New Besi event is attributed to Reuters original reporting; official Q3 release listing and Q2 baseline verified, but the Q3 numerical primary body remains unavailable. No Taiwan supplier order, margin or allocation inference treated as fact.",
+        "One new public event and follow-up candidate; no article. Existing histories retained. No quotes, valuation, holdings, fund flows or trading conditions added. Remote source readback does not establish website publication."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -14720,6 +14768,37 @@
           "TPCA material-tightness leads were dated back to October 20 and compared with the registered Elite Material event. No new booked order, accepted price or company earnings revision established. Global memory and TPU searches returned primarily older forecasts and previously tracked reports.",
           "No new public event or long-form article. Existing events and candidates retained; only a source-comparison update and coverage record appended. No quotes, valuation, holdings, fund flows or trading conditions included. Source readback is not website publication."
         ]
+      },
+      {
+        "date": "2026-10-22",
+        "checked_at": "2026-10-22 09:20:07 UTC",
+        "instruction_commit_sha": "5f4c3073fd54e1f8262143ae6d0625081a3bdb33",
+        "status": "98_name_grouped_discovery_core_indices_and_new_besi_reported_order_event_checked",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All 98 active names included in 14 fresh grouped discovery queries; six core issuer indices and selected original reporting checked. Besi is an additional advanced-packaging equipment lead outside the active universe. No watchlist modification.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.reuters.com/business/besis-quarterly-orders-beat-expectations-ai-data-centre-demand-stays-strong-2026-10-22/",
+          "https://www.globenewswire.com/news-release/2026/07/23/3331898/0/en/be-semiconductor-industries-n-v-announces-q2-26-and-h1-26-results.html",
+          "https://live.euronext.com/en/product/equities/NL0012866412-XAMS",
+          "https://web.ardentec.com/?m=113&u=34.69f31e424df2d9.26408755"
+        ],
+        "source_limits": [
+          "Required instructions and related specifications read at the locked instruction commit; complete progress parsed and three recent ai-industry article bodies read.",
+          "Grouped discovery is not 98 fresh filings or company-economics audits. Historical monthly revenue baseline remains 98; current customer orders, margins and cash conversion remain partial. No fresh full exchange-notice table obtained.",
+          "Core issuer indices continue to show previously registered events or software/product announcements without a new established AI hardware economics revision. An index check does not establish absence of all issuer disclosures.",
+          "Ardentec board-date and profit-preview reports do not establish actual Q3 financial results; retrieved issuer 2026 financial page exposes Q1 and Q2 only. Existing candidate retained without upgrade.",
+          "New Besi event is attributed to Reuters original reporting; official Q3 release listing and Q2 baseline verified, but the Q3 numerical primary body remains unavailable. No Taiwan supplier order, margin or allocation inference treated as fact.",
+          "One new public event and follow-up candidate; no article. Existing histories retained. No quotes, valuation, holdings, fund flows or trading conditions added. Remote source readback does not establish website publication."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -22676,6 +22755,26 @@
         "Compare 2027 project budgets and cash needs; separate available borrowing capacity from actual funding drawn."
       ],
       "publication_status": "material_public_event_recorded_private_notification_prepared_no_article"
+    },
+    {
+      "key": "besi-hybrid-bonding-backlog-conversion-and-competitive-economics-20261022",
+      "date": "2026-10-22",
+      "instruction_commit_sha": "5f4c3073fd54e1f8262143ae6d0625081a3bdb33",
+      "companies": [
+        "BE Semiconductor Industries"
+      ],
+      "sources": [
+        "https://www.reuters.com/business/besis-quarterly-orders-beat-expectations-ai-data-centre-demand-stays-strong-2026-10-22/",
+        "https://www.globenewswire.com/news-release/2026/07/23/3331898/0/en/be-semiconductor-industries-n-v-announces-q2-26-and-h1-26-results.html",
+        "https://live.euronext.com/en/product/equities/NL0012866412-XAMS"
+      ],
+      "stage": "reported_order_growth_identified_delivery_margin_and_cash_conversion_pending",
+      "questions": [
+        "Obtain full issuer Q3 tables and confirm order mix, cancellations, gross margin and cash flow.",
+        "Track accepted delivery and revenue conversion against H1 2027 customer production plans.",
+        "Separate management's view of ASML cooperation from independently verified competitive product scope; verify customer qualification and repeat orders."
+      ],
+      "publication_status": "material_public_event_recorded_no_article"
     }
   ],
   "blockers": [
@@ -22695,7 +22794,7 @@
     }
   ],
   "last_research_date": "2026-10-22",
-  "instruction_commit_sha": "ce3d46b815475202adb6538e7e48f4af12dbd2eb",
+  "instruction_commit_sha": "5f4c3073fd54e1f8262143ae6d0625081a3bdb33",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
