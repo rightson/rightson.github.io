@@ -6191,6 +6191,113 @@
         "verification": "Euronext issuer index confirms October 22 Q3 release listing, but not its numerical body. Besi IR requests did not yield the Q3 document. Issuer Q2 release read through GlobeNewswire; Reuters original report read. Syndicated copies counted as one report."
       },
       "status": "original_report_read_primary_q3_numeric_body_pending_no_article"
+    },
+    {
+      "fingerprint": "nokia-q3-2026-ai-cloud-orders-and-cash-conversion-outlook-divergence-20261022",
+      "companies": [
+        "Nokia"
+      ],
+      "type": "primary_reported_customer_orders_and_results_with_cash_flow_assumption_revision",
+      "sources": [
+        "https://www.nokia.com/newsroom/nokia-corporation-interim-report-for-q3-2026/",
+        "https://www.nokia.com/system/files/2026-10/nokia_results_2026_q3.pdf",
+        "https://www.nokia.com/newsroom/nokia-corporation-report-for-q2-and-half-year-2026/",
+        "https://www.nokia.com/system/files/2026-10/nokia_slides_2026_q3.pdf"
+      ],
+      "facts": {
+        "issuer_publication_time": "2026-10-22 08:00 EEST",
+        "unit": "EUR million unless stated",
+        "reported_q3": {
+          "AI_cloud_orders": 1500,
+          "AI_cloud_orders_yoy_pct": 118,
+          "AI_cloud_sales_yoy_pct": 123,
+          "group_sales": 5154,
+          "comparable_operating_profit": 605,
+          "prior_year_comparable_operating_profit": 448,
+          "reported_operating_profit": 196,
+          "prior_year_reported_operating_profit": 252,
+          "free_cash_flow": -99,
+          "prior_year_free_cash_flow": 429
+        },
+        "prior_baseline": {
+          "publication_date": "2026-07-23",
+          "Q2_AI_cloud_orders": 2800,
+          "FY2026_FCF_conversion_from_comparable_operating_profit_pct": [
+            55,
+            75
+          ],
+          "FY2026_comparable_operating_profit_billion": [
+            2.1,
+            2.6
+          ]
+        },
+        "revisions": {
+          "FY2026_FCF_conversion_pct": [
+            35,
+            55
+          ],
+          "conversion_midpoint_change_percentage_points": -20,
+          "additional_planned_working_capital": 400,
+          "FY2026_comparable_operating_profit_billion": [
+            2.1,
+            2.6
+          ],
+          "profit_range_status": "unchanged",
+          "Q3_orders_vs_Q2_pct": -46.42857142857143
+        },
+        "business_transmission": "Issuer reports Optical Networks and IP Networks constant-currency sales growth18%/43%, with new AI/cloud products and client demand. Two additional IP hyperscaler design wins and 800G coherent pluggable shipment growth2.4x quarter-on-quarter appear in issuer presentation; no Taiwan supplier allocation inferred.",
+        "limits": "AI/cloud is a customer grouping, not an independently disclosed AI profit segment. Order intake can be lumpy; Q3 is below Q2's large long-term orders. Cash-flow definition includes continuing and discontinued operations. Working-capital investment and accelerated restructuring are issuer explanations, not proof of impaired customer demand. Detailed report tables take precedence over presentation text extraction where graphical labels interleave. No webcast or whole-market consensus revision authenticated."
+      },
+      "status": "issuer_current_and_prior_sources_detailed_cash_flow_and_reconciliation_read_no_article",
+      "event_date": "2026-10-22",
+      "discovered_date": "2026-10-22",
+      "instruction_commit_sha": "2ed521cea6876c43c18a154d9b3665e573bdacbc"
+    },
+    {
+      "fingerprint": "kuehne-nagel-q3-2026-cloud-semiconductor-logistics-and-ebit-outlook-raise-20261022",
+      "companies": [
+        "Kuehne+Nagel"
+      ],
+      "type": "primary_logistics_volume_profit_and_full_year_recurring_ebit_revision",
+      "sources": [
+        "https://newsroom.kuehne-nagel.com/kuehnenagel-significantly-improves-profitability--in-third-quarter-of-2026/",
+        "https://newsroom.kuehne-nagel.com/kuehnenagel-reports-strong-second-quarter-2026/",
+        "https://www.reuters.com/business/kuehnenagel-lifts-2026-outlook-third-time-growth-air-sea-logistics-2026-10-22/"
+      ],
+      "facts": {
+        "issuer_publication_time": "2026-10-22 06:45 Europe/Berlin",
+        "currency": "CHF",
+        "unit": "million",
+        "reported_q3": {
+          "group_net_turnover": 7400,
+          "group_EBIT": 435,
+          "group_EBIT_yoy_pct": 53,
+          "air_logistics_net_turnover": 2400,
+          "air_logistics_EBIT": 169,
+          "air_EBIT_yoy_pct": 84,
+          "air_volume_growth_rate_pct": 10,
+          "Q2_air_volume_growth_rate_pct": 3
+        },
+        "guidance": {
+          "period": "FY2026 recurring EBIT",
+          "prior": [
+            1350,
+            1550
+          ],
+          "new": [
+            1500,
+            1600
+          ],
+          "midpoint_revision_pct": 6.896551724137923,
+          "prior_issuer_source_date": "2026-07-23"
+        },
+        "demand_relationship": "Issuer identifies cloud-infrastructure and semiconductor customers as a key Air Logistics growth driver. Prior July release explicitly describes cloud equipment transportation for Google from Asia to US; not a new October customer win.",
+        "limits": "Whole-group forecast also includes sea/road/contract logistics, market-share gains, pricing and cost actions; not all incremental EBIT attributable to AI hardware. No cloud-only profit, long-term freight price, order backlog or complete cash-flow decomposition obtained. Operational conversion rate is not EBIT divided by turnover. No watchlist change or Taiwan supplier order inference."
+      },
+      "status": "issuer_current_and_prior_release_verified_original_reporting_read_no_article",
+      "event_date": "2026-10-22",
+      "discovered_date": "2026-10-22",
+      "instruction_commit_sha": "2ed521cea6876c43c18a154d9b3665e573bdacbc"
     }
   ],
   "articles": [],
@@ -6308,14 +6415,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-22",
-      "checked_at": "2026-10-22 10:42:06 UTC",
-      "instruction_commit_sha": "2790e811b4acc9beefe4a2a0185277305ee26fe3",
-      "status": "98_name_grouped_discovery_core_indices_and_selected_originals_checked_candidates_only",
+      "checked_at": "2026-10-22 11:36:22 UTC",
+      "instruction_commit_sha": "2ed521cea6876c43c18a154d9b3665e573bdacbc",
+      "status": "98_name_grouped_discovery_core_indices_two_new_off_universe_primary_economic_events",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All 98 active names included in fresh grouped discovery; six core issuer indices and selected originals checked. No active watchlist change.",
+      "scope": "All98 active names included in fresh grouped discovery, six core issuer indices checked; Nokia and Kuehne+Nagel sourced outside the universe through explicit AI/cloud demand transmission. No universe edit.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -6323,18 +6430,20 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://investor.marvell.com/news-events/press-releases",
-        "https://www.reuters.com/world/china/tsmc-seeks-factory-equipment-alternatives-thwart-chinas-rare-earths-grip-sources-2026-10-22/",
-        "https://www.trendforce.com/news/2026/10/22/breaking-google-reportedly-sticks-with-intel-emib-t-despite-35-substrate-yields-as-humufish-schedule-tightens/",
-        "https://cwnewsroom.substack.com/p/how-intel-emib-t-could-challenge-tsmc-why-mediatek-is-making-a-5billion-bet",
-        "https://www.ftnn.com.tw/news/589390"
+        "https://www.nokia.com/newsroom/nokia-corporation-interim-report-for-q3-2026/",
+        "https://www.nokia.com/system/files/2026-10/nokia_results_2026_q3.pdf",
+        "https://www.nokia.com/newsroom/nokia-corporation-report-for-q2-and-half-year-2026/",
+        "https://www.nokia.com/system/files/2026-10/nokia_slides_2026_q3.pdf",
+        "https://newsroom.kuehne-nagel.com/kuehnenagel-significantly-improves-profitability--in-third-quarter-of-2026/",
+        "https://newsroom.kuehne-nagel.com/kuehnenagel-reports-strong-second-quarter-2026/",
+        "https://www.reuters.com/business/kuehnenagel-lifts-2026-outlook-third-time-growth-air-sea-logistics-2026-10-22/"
       ],
       "source_limits": [
-        "Required instructions and related specifications read at the locked commit; complete progress parsed and three recent ai-industry article bodies retrieved. No other topic executed.",
-        "Grouped discovery does not establish 98 current filings or complete company-economics checks. Historical monthly-revenue coverage remains98; current customer orders, margins and cash conversion remain partial.",
-        "Core indices retain previously registered dates and events. Broadcom obsolete /news-releases URL returned404; current financial-news index successfully read. Index checks do not establish absence of all disclosures.",
-        "TSMC rare-earth survey is early original reporting with no verified rollout or financial revision. TPU yield and Citi forecast leads have original-source/date/methodology gaps, retained as candidates only.",
-        "Previously notified NVIDIA, Meta, Tesla and Besi facts remain baseline; no new independently established material economics revision. No repeat notification or forced article.",
-        "Only public sources, candidates and research coverage appended. No quotes, valuation, holdings, fund flows, private market analysis or trading conditions. Remote ledger readback is distinct from website publication."
+        "Required same-commit instructions and related specifications read; complete ledger parsed and three recent ai-industry article bodies fetched and reviewed. No other topic or timing branch executed.",
+        "98-name discovery is not98 fresh original filings or a complete economics audit. Historical primary monthly-revenue coverage remains98; current order, margin and cash conversion coverage remains partial.",
+        "Core issuer indices retain registered dates/events; targeted MediaTek/TPU and TSMC searches did not establish a new commercial allocation. Previously reported capacity commitments, Meta/Tesla updates and Besi orders remain baselines.",
+        "Nokia current and prior issuer disclosures verify demand strength and weaker cash conversion; year-on-year order growth is not sequential acceleration. Kuehne+Nagel issuer releases verify forecast revision and direct cloud/semiconductor demand contribution, not AI-only profit attribution.",
+        "Two new public factual events and follow-up candidates; no long-form article. Existing history preserved. No quotes, valuation, holdings, fund flows, private investment conclusions or trading conditions in public ledger. Source readback is distinct from site publication."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -14860,6 +14969,39 @@
           "Previously notified NVIDIA, Meta, Tesla and Besi facts remain baseline; no new independently established material economics revision. No repeat notification or forced article.",
           "Only public sources, candidates and research coverage appended. No quotes, valuation, holdings, fund flows, private market analysis or trading conditions. Remote ledger readback is distinct from website publication."
         ]
+      },
+      {
+        "date": "2026-10-22",
+        "checked_at": "2026-10-22 11:36:22 UTC",
+        "instruction_commit_sha": "2ed521cea6876c43c18a154d9b3665e573bdacbc",
+        "status": "98_name_grouped_discovery_core_indices_two_new_off_universe_primary_economic_events",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All98 active names included in fresh grouped discovery, six core issuer indices checked; Nokia and Kuehne+Nagel sourced outside the universe through explicit AI/cloud demand transmission. No universe edit.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.nokia.com/newsroom/nokia-corporation-interim-report-for-q3-2026/",
+          "https://www.nokia.com/system/files/2026-10/nokia_results_2026_q3.pdf",
+          "https://www.nokia.com/newsroom/nokia-corporation-report-for-q2-and-half-year-2026/",
+          "https://www.nokia.com/system/files/2026-10/nokia_slides_2026_q3.pdf",
+          "https://newsroom.kuehne-nagel.com/kuehnenagel-significantly-improves-profitability--in-third-quarter-of-2026/",
+          "https://newsroom.kuehne-nagel.com/kuehnenagel-reports-strong-second-quarter-2026/",
+          "https://www.reuters.com/business/kuehnenagel-lifts-2026-outlook-third-time-growth-air-sea-logistics-2026-10-22/"
+        ],
+        "source_limits": [
+          "Required same-commit instructions and related specifications read; complete ledger parsed and three recent ai-industry article bodies fetched and reviewed. No other topic or timing branch executed.",
+          "98-name discovery is not98 fresh original filings or a complete economics audit. Historical primary monthly-revenue coverage remains98; current order, margin and cash conversion coverage remains partial.",
+          "Core issuer indices retain registered dates/events; targeted MediaTek/TPU and TSMC searches did not establish a new commercial allocation. Previously reported capacity commitments, Meta/Tesla updates and Besi orders remain baselines.",
+          "Nokia current and prior issuer disclosures verify demand strength and weaker cash conversion; year-on-year order growth is not sequential acceleration. Kuehne+Nagel issuer releases verify forecast revision and direct cloud/semiconductor demand contribution, not AI-only profit attribution.",
+          "Two new public factual events and follow-up candidates; no long-form article. Existing history preserved. No quotes, valuation, holdings, fund flows, private investment conclusions or trading conditions in public ledger. Source readback is distinct from site publication."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -22904,6 +23046,51 @@
       "instruction_commit_sha": "2790e811b4acc9beefe4a2a0185277305ee26fe3",
       "stage": "discovery_read_original_or_issuer_economic_confirmation_pending",
       "publication_status": "candidate_only_no_article"
+    },
+    {
+      "key": "nokia-q3-2026-ai-cloud-orders-and-cash-conversion-outlook-divergence-20261022-followup",
+      "date": "2026-10-22",
+      "instruction_commit_sha": "2ed521cea6876c43c18a154d9b3665e573bdacbc",
+      "companies": [
+        "Nokia"
+      ],
+      "sources": [
+        "https://www.nokia.com/newsroom/nokia-corporation-interim-report-for-q3-2026/",
+        "https://www.nokia.com/system/files/2026-10/nokia_results_2026_q3.pdf",
+        "https://www.nokia.com/newsroom/nokia-corporation-report-for-q2-and-half-year-2026/",
+        "https://www.nokia.com/system/files/2026-10/nokia_slides_2026_q3.pdf"
+      ],
+      "stage": "primary_economic_change_verified_contract_and_cash_followup_pending",
+      "facts": {
+        "event_fingerprint": "nokia-q3-2026-ai-cloud-orders-and-cash-conversion-outlook-divergence-20261022"
+      },
+      "questions": [
+        "Do orders convert to cash and does working-capital investment normalize?",
+        "Does network infrastructure margin recover without added restructuring?"
+      ],
+      "publication_status": "no_article"
+    },
+    {
+      "key": "kuehne-nagel-q3-2026-cloud-semiconductor-logistics-and-ebit-outlook-raise-20261022-followup",
+      "date": "2026-10-22",
+      "instruction_commit_sha": "2ed521cea6876c43c18a154d9b3665e573bdacbc",
+      "companies": [
+        "Kuehne+Nagel"
+      ],
+      "sources": [
+        "https://newsroom.kuehne-nagel.com/kuehnenagel-significantly-improves-profitability--in-third-quarter-of-2026/",
+        "https://newsroom.kuehne-nagel.com/kuehnenagel-reports-strong-second-quarter-2026/",
+        "https://www.reuters.com/business/kuehnenagel-lifts-2026-outlook-third-time-growth-air-sea-logistics-2026-10-22/"
+      ],
+      "stage": "primary_economic_change_verified_contract_and_cash_followup_pending",
+      "facts": {
+        "event_fingerprint": "kuehne-nagel-q3-2026-cloud-semiconductor-logistics-and-ebit-outlook-raise-20261022"
+      },
+      "questions": [
+        "How much of air profit growth persists without unusually high freight rates?",
+        "Obtain full cash-flow and cloud customer concentration detail."
+      ],
+      "publication_status": "no_article"
     }
   ],
   "blockers": [
@@ -22923,7 +23110,7 @@
     }
   ],
   "last_research_date": "2026-10-22",
-  "instruction_commit_sha": "2790e811b4acc9beefe4a2a0185277305ee26fe3",
+  "instruction_commit_sha": "2ed521cea6876c43c18a154d9b3665e573bdacbc",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
