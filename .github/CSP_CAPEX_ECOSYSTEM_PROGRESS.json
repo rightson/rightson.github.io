@@ -6308,14 +6308,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-22",
-      "checked_at": "2026-10-22 09:20:07 UTC",
-      "instruction_commit_sha": "5f4c3073fd54e1f8262143ae6d0625081a3bdb33",
-      "status": "98_name_grouped_discovery_core_indices_and_new_besi_reported_order_event_checked",
+      "checked_at": "2026-10-22 10:21:59 UTC",
+      "instruction_commit_sha": "5bc4616d48544372b6d1b26e262125dff83de615",
+      "status": "98_name_grouped_discovery_core_issuer_indices_and_selected_report_dates_checked_no_new_material_event",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All 98 active names included in 14 fresh grouped discovery queries; six core issuer indices and selected original reporting checked. Besi is an additional advanced-packaging equipment lead outside the active universe. No watchlist modification.",
+      "scope": "All active names included in fresh grouped discovery; six core issuer indices and selected originals checked. Search coverage is not a current-filing or economics audit for every company. Active watchlist unchanged.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -6323,18 +6323,17 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://investor.marvell.com/news-events/press-releases",
-        "https://www.reuters.com/business/besis-quarterly-orders-beat-expectations-ai-data-centre-demand-stays-strong-2026-10-22/",
-        "https://www.globenewswire.com/news-release/2026/07/23/3331898/0/en/be-semiconductor-industries-n-v-announces-q2-26-and-h1-26-results.html",
-        "https://live.euronext.com/en/product/equities/NL0012866412-XAMS",
-        "https://web.ardentec.com/?m=113&u=34.69f31e424df2d9.26408755"
+        "https://web.ardentec.com/?m=113&u=34.69f31e424df2d9.26408755",
+        "https://www.skhynix.com/ir/UI-FR-IR06/",
+        "https://www.cna.com.tw/news/afe/202610210339.aspx"
       ],
       "source_limits": [
-        "Required instructions and related specifications read at the locked instruction commit; complete progress parsed and three recent ai-industry article bodies read.",
-        "Grouped discovery is not 98 fresh filings or company-economics audits. Historical monthly revenue baseline remains 98; current customer orders, margins and cash conversion remain partial. No fresh full exchange-notice table obtained.",
-        "Core issuer indices continue to show previously registered events or software/product announcements without a new established AI hardware economics revision. An index check does not establish absence of all issuer disclosures.",
-        "Ardentec board-date and profit-preview reports do not establish actual Q3 financial results; retrieved issuer 2026 financial page exposes Q1 and Q2 only. Existing candidate retained without upgrade.",
-        "New Besi event is attributed to Reuters original reporting; official Q3 release listing and Q2 baseline verified, but the Q3 numerical primary body remains unavailable. No Taiwan supplier order, margin or allocation inference treated as fact.",
-        "One new public event and follow-up candidate; no article. Existing histories retained. No quotes, valuation, holdings, fund flows or trading conditions added. Remote source readback does not establish website publication."
+        "Required instruction/specification bodies fetched in full at locked commit; complete progress parsed and recent ai-industry article bodies fetched. No other topic or schedule branch executed.",
+        "Grouped discovery results largely resolve to historical forecasts, prior company events or syndicated summaries. Historical primary and monthly revenue coverage unchanged; current orders, margins and cash conversion remain partial.",
+        "TSMC index latest October15; MediaTek September30; NVIDIA October21; AMD October12; Broadcom October21 software release; Marvell October13. Index checks do not establish absence of all issuer disclosures. Focused TPU/ASIC search yields older reports, with no new verified commercial allocation.",
+        "Ardentec issuer financial page still exposes Q1/Q2 financial reports; a planned October22 board date and pre-results forecasts are not reported Q3 profit. SK hynix IR lists October28 Q3 results; October22 broker HBM estimates are not issuer results or independently obtained institution originals.",
+        "Previously registered NVIDIA capacity commitments, Meta spending/financing disclosure, Tesla capex revision and Besi orders/delivery timing remain baselines; no new independent economics revision established. No repeat notification or forced article.",
+        "Only public research coverage and instruction version appended. No private quotes, valuation, holdings, fund flows, market-structure analysis or trading conditions added. Source readback is distinct from website publication."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -14799,6 +14798,36 @@
           "New Besi event is attributed to Reuters original reporting; official Q3 release listing and Q2 baseline verified, but the Q3 numerical primary body remains unavailable. No Taiwan supplier order, margin or allocation inference treated as fact.",
           "One new public event and follow-up candidate; no article. Existing histories retained. No quotes, valuation, holdings, fund flows or trading conditions added. Remote source readback does not establish website publication."
         ]
+      },
+      {
+        "date": "2026-10-22",
+        "checked_at": "2026-10-22 10:21:59 UTC",
+        "instruction_commit_sha": "5bc4616d48544372b6d1b26e262125dff83de615",
+        "status": "98_name_grouped_discovery_core_issuer_indices_and_selected_report_dates_checked_no_new_material_event",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All active names included in fresh grouped discovery; six core issuer indices and selected originals checked. Search coverage is not a current-filing or economics audit for every company. Active watchlist unchanged.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://web.ardentec.com/?m=113&u=34.69f31e424df2d9.26408755",
+          "https://www.skhynix.com/ir/UI-FR-IR06/",
+          "https://www.cna.com.tw/news/afe/202610210339.aspx"
+        ],
+        "source_limits": [
+          "Required instruction/specification bodies fetched in full at locked commit; complete progress parsed and recent ai-industry article bodies fetched. No other topic or schedule branch executed.",
+          "Grouped discovery results largely resolve to historical forecasts, prior company events or syndicated summaries. Historical primary and monthly revenue coverage unchanged; current orders, margins and cash conversion remain partial.",
+          "TSMC index latest October15; MediaTek September30; NVIDIA October21; AMD October12; Broadcom October21 software release; Marvell October13. Index checks do not establish absence of all issuer disclosures. Focused TPU/ASIC search yields older reports, with no new verified commercial allocation.",
+          "Ardentec issuer financial page still exposes Q1/Q2 financial reports; a planned October22 board date and pre-results forecasts are not reported Q3 profit. SK hynix IR lists October28 Q3 results; October22 broker HBM estimates are not issuer results or independently obtained institution originals.",
+          "Previously registered NVIDIA capacity commitments, Meta spending/financing disclosure, Tesla capex revision and Besi orders/delivery timing remain baselines; no new independent economics revision established. No repeat notification or forced article.",
+          "Only public research coverage and instruction version appended. No private quotes, valuation, holdings, fund flows, market-structure analysis or trading conditions added. Source readback is distinct from website publication."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -22794,7 +22823,7 @@
     }
   ],
   "last_research_date": "2026-10-22",
-  "instruction_commit_sha": "5f4c3073fd54e1f8262143ae6d0625081a3bdb33",
+  "instruction_commit_sha": "5bc4616d48544372b6d1b26e262125dff83de615",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
