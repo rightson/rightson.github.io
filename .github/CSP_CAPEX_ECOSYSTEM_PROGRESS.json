@@ -6067,6 +6067,29 @@
         "limits": "Capacity reservation supports future toll revenue;no hyperscaler identity,take-or-pay term length,tariff,project margin orcash collection disclosed. Backlog is capital projects,not revenue;growth also serves non-AI markets."
       },
       "status": "new_contract_maturity_and_demand_transmission_event_primary_verified_no_article"
+    },
+    {
+      "fingerprint": "liberty-energy-frontier-ai-lab-1p2gw-development-agreement-capacity-prepayment-20261021",
+      "event_date": "2026-10-21",
+      "discovered_date": "2026-10-22",
+      "instruction_commit_sha": "35cc7f2908f350c171b3e06f0ba5582ae70b41a9",
+      "companies": [
+        "Liberty Energy",
+        "Liberty Power Innovations"
+      ],
+      "type": "issuer_ai_datacenter_power_development_agreement_with_capacity_fee_prepayment",
+      "sources": [
+        "https://investors.libertyenergy.com/news-and-events/press-releases/2026/10-21-2026-223015990",
+        "https://investors.libertyenergy.com/news-and-events/press-releases/2026/07-22-2026-230509078",
+        "https://investors.libertyenergy.com/news-and-events/press-releases/2026/07-22-2026-231109602"
+      ],
+      "facts": {
+        "increment": "October 21 issuer release: executed development agreement with an unnamed frontier AI lab and infrastructure platform for 1.2 GW integrated power services, including capacity-fee prepayment. First approximately 500 MW ESA targeted for signature by December 2026; phased energization Q4 2027–Q1 2029.",
+        "baseline": "July 22 PowerBridge JV covered a planned 2 GW West Texas campus with an initial 300 MW-plus phase from Q4 2027, subject to further agreements and approvals. Relationship between the July and October scopes is unconfirmed; capacities are not added.",
+        "limits": "Development agreement is not all final ESAs or recognized revenue. Prepayment amount, receipt, refund rights, customer identity, tariff and project margin are undisclosed. December 2026 refers to ESA signature.",
+        "capital_context": "Company-wide Q3 net capital expenditure USD621.933m versus Q2 USD221.484m; these amounts are not allocated wholly to this AI project."
+      },
+      "status": "new_primary_customer_commitment_stage_and_power_demand_transmission_event_verified_no_article"
     }
   ],
   "articles": [],
@@ -6184,36 +6207,34 @@
     ],
     "current_run_screening": {
       "date": "2026-10-22",
-      "checked_at": "2026-10-22 03:32:40 UTC",
-      "instruction_commit_sha": "7695ff6a4ebb033a08392f2a6a6a873463398c1c",
-      "status": "98_name_discovery_core_indices_and_labor_policy_source_comparisons_complete_no_new_material_alert",
+      "checked_at": "2026-10-22 05:15:37 UTC",
+      "instruction_commit_sha": "35cc7f2908f350c171b3e06f0ba5582ae70b41a9",
+      "status": "98_name_discovery_and_core_issuer_checks_with_new_liberty_power_customer_commitment_event",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All 98 active names included in14 fresh grouped discovery queries. Six core issuer news indices checked. Historical primary monthly baselines remain complete; current filings andcompany economics remain partial.",
+      "scope": "All 98 active names included in 14 fresh grouped discovery queries. Core news indices and selected originals checked; not 98 current-filing or company-economics audits.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
         "https://nvidianews.nvidia.com/news",
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
-        "https://www.marvell.com/company/newsroom.html",
-        "https://www.reuters.com/business/world-at-work/micron-says-it-has-reached-agreement-with-taiwan-union-2026-10-21/",
-        "https://www.reuters.com/business/retail-consumer/trump-says-companies-should-pay-dividend-communities-make-data-centers-popular-2026-10-21/",
-        "https://www.whitehouse.gov/releases/2026/03/ratepayer-protection-pledge/",
-        "https://www.whitehouse.gov/presidential-actions/2026/03/ratepayer-protection-pledge-proclamation/",
-        "https://www.whitehouse.gov/releases/2026/07/president-trumps-ratepayer-protection-pledge-secures-american-ai-dominance-protects-consumers/",
-        "https://news.skhynix.com/en/q3-2026-earnings-conference-call-invitation/"
+        "https://investor.marvell.com/news-events/press-releases",
+        "https://investors.libertyenergy.com/news-and-events/press-releases/2026/10-21-2026-223015990",
+        "https://investors.libertyenergy.com/news-and-events/press-releases/2026/07-22-2026-230509078",
+        "https://investors.libertyenergy.com/news-and-events/press-releases/2026/07-22-2026-231109602",
+        "https://www.peoplenews.tw/articles/economic-news/63034",
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=662b9972-3ef2-439d-b648-617f0ee77704",
+        "https://admin.uanalyze.com.tw/articles/5524057565"
       ],
       "source_limits": [
-        "Required same-commit instruction/specification bodies fetched in full and compared byte-for-byte with the fully read prior versions; unchanged. Latest full progress JSON parsed,articles andrecent post metadata read;history preserved.",
-        "Grouped search discovery mainly surfaced historical media,commentary andsocial posts. It is not individual current-release validation for98companies. No fresh full exchange-notice table obtained.",
-        "Core issuer index dates andpreviously registered NVIDIA releases unchanged. Broadcom financial-news index does notcover allcorporate announcements.",
-        "Micron reported settlement concerns Taichung; Taoyuan plan andactualproduction are separate. No verified output loss orcustomer-delivery revision. Direct joint-statement original notobtained;Reuters remains attributed originalreporting.",
-        "October21 power-policy rhetoric compared with official March/July baselines. No newimplementing text orquantified procurement/budget effect verified. Lack ofobtained text isnot aclaim thatnoneexists.",
-        "SK hynix original invitation lists earnings October28 at09:00 Seoul time,not October22. No premature Q3actualresults inferred.",
-        "No new material-event notification orarticle registered. Public progress contains no privatefund-flow data,stockquotes,valuation,holdings ortradingconditions."
+        "Required instructions and specifications retrieved in full at the locked commit. Complete progress JSON parsed; recent post metadata and three ai-industry article bodies fetched with unchanged, previously read blobs.",
+        "Grouped discovery mainly returned historical media, commentary and social posts. Historical 98-company monthly baselines unchanged; current orders, margins, earnings and cash-conversion validation remain partial. No fresh full exchange-notice table obtained.",
+        "TSMC index October 15; MediaTek September 30; NVIDIA October 21 registered releases; AMD October 12; Broadcom financial index October 8. Marvell corporate newsroom returned maintenance; IR press index remained readable with latest October 13 releases.",
+        "Liberty development agreement and prepayment provision checked against July JV and Q2 baselines; final ESAs and project economics remain pending. Micron officials' action is not verified whole-workforce stoppage. Tongtai secondary forecast scope and cutoff remain unresolved.",
+        "One new primary public event; no long-form article. No private fund flows, stock quotes, valuation, holdings or trading conditions in public progress. Remote commit verification does not establish website publication."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -14528,6 +14549,38 @@
           "SK hynix original invitation lists earnings October28 at09:00 Seoul time,not October22. No premature Q3actualresults inferred.",
           "No new material-event notification orarticle registered. Public progress contains no privatefund-flow data,stockquotes,valuation,holdings ortradingconditions."
         ]
+      },
+      {
+        "date": "2026-10-22",
+        "checked_at": "2026-10-22 05:15:37 UTC",
+        "instruction_commit_sha": "35cc7f2908f350c171b3e06f0ba5582ae70b41a9",
+        "status": "98_name_discovery_and_core_issuer_checks_with_new_liberty_power_customer_commitment_event",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All 98 active names included in 14 fresh grouped discovery queries. Core news indices and selected originals checked; not 98 current-filing or company-economics audits.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://investors.libertyenergy.com/news-and-events/press-releases/2026/10-21-2026-223015990",
+          "https://investors.libertyenergy.com/news-and-events/press-releases/2026/07-22-2026-230509078",
+          "https://investors.libertyenergy.com/news-and-events/press-releases/2026/07-22-2026-231109602",
+          "https://www.peoplenews.tw/articles/economic-news/63034",
+          "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=662b9972-3ef2-439d-b648-617f0ee77704",
+          "https://admin.uanalyze.com.tw/articles/5524057565"
+        ],
+        "source_limits": [
+          "Required instructions and specifications retrieved in full at the locked commit. Complete progress JSON parsed; recent post metadata and three ai-industry article bodies fetched with unchanged, previously read blobs.",
+          "Grouped discovery mainly returned historical media, commentary and social posts. Historical 98-company monthly baselines unchanged; current orders, margins, earnings and cash-conversion validation remain partial. No fresh full exchange-notice table obtained.",
+          "TSMC index October 15; MediaTek September 30; NVIDIA October 21 registered releases; AMD October 12; Broadcom financial index October 8. Marvell corporate newsroom returned maintenance; IR press index remained readable with latest October 13 releases.",
+          "Liberty development agreement and prepayment provision checked against July JV and Q2 baselines; final ESAs and project economics remain pending. Micron officials' action is not verified whole-workforce stoppage. Tongtai secondary forecast scope and cutoff remain unresolved.",
+          "One new primary public event; no long-form article. No private fund flows, stock quotes, valuation, holdings or trading conditions in public progress. Remote commit verification does not establish website publication."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -22343,6 +22396,72 @@
         "Verify resulting delivery,capex andcash-return changes atnamedprojects."
       ],
       "publication_status": "policy_source_comparison_candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "liberty-energy-frontier-ai-lab-1p2gw-development-agreement-capacity-prepayment-20261021",
+      "date": "2026-10-22",
+      "instruction_commit_sha": "35cc7f2908f350c171b3e06f0ba5582ae70b41a9",
+      "companies": [
+        "Liberty Energy",
+        "Liberty Power Innovations"
+      ],
+      "sources": [
+        "https://investors.libertyenergy.com/news-and-events/press-releases/2026/10-21-2026-223015990",
+        "https://investors.libertyenergy.com/news-and-events/press-releases/2026/07-22-2026-230509078",
+        "https://investors.libertyenergy.com/news-and-events/press-releases/2026/07-22-2026-231109602"
+      ],
+      "stage": "outside_universe_development_agreement_and_prepayment_provision_verified_final_esas_and_profit_pending",
+      "event_fingerprint": "liberty-energy-frontier-ai-lab-1p2gw-development-agreement-capacity-prepayment-20261021",
+      "questions": [
+        "Verify first 500 MW ESA signature by December 2026 and remaining long-term ESAs.",
+        "Check prepayment amount, receipt, refund rights and customer credit.",
+        "Check project capital, equipment, permits, energization and retained margin."
+      ],
+      "publication_status": "new_public_event_registered_no_article"
+    },
+    {
+      "key": "micron-taoyuan-eleven-union-officials-action-and-output-scope-20261022",
+      "date": "2026-10-22",
+      "instruction_commit_sha": "35cc7f2908f350c171b3e06f0ba5582ae70b41a9",
+      "companies": [
+        "Micron Technology"
+      ],
+      "sources": [
+        "https://www.peoplenews.tw/articles/economic-news/63034",
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=662b9972-3ef2-439d-b648-617f0ee77704"
+      ],
+      "stage": "october22_original_reporting_of_union_official_action_read_manufacturing_effect_unverified",
+      "facts": {
+        "increment": "October 22 reporting describes 11 union officials beginning a 24-hour action at 09:00 outside the Taoyuan plant. MoneyDJ reports a planned member vote and 13:00 media Q&A.",
+        "comparison": "Prior planned action is now reported as officials' action. No inference that all 2,335 reported members or all Taiwan employees stopped work; Taichung agreement remains separate.",
+        "limits": "No verified wafer-output loss, critical staffing disruption, shipment delay or issuer profit revision. Direct union statement and issuer production original not obtained."
+      },
+      "questions": [
+        "Verify broader participation, voting result and critical staffing.",
+        "Obtain issuer or customer evidence of production and delivery impact."
+      ],
+      "publication_status": "supporting_source_followup_no_material_alert_no_article"
+    },
+    {
+      "key": "tongtai-october22-order-horizon-and-electronics-definition-source-comparison",
+      "date": "2026-10-22",
+      "instruction_commit_sha": "35cc7f2908f350c171b3e06f0ba5582ae70b41a9",
+      "companies": [
+        "Tongtai Machine & Tool"
+      ],
+      "sources": [
+        "https://admin.uanalyze.com.tw/articles/5524057565"
+      ],
+      "stage": "dated_secondary_body_read_against_prior_october20_candidate_primary_order_scope_pending",
+      "facts": {
+        "reported": "October 22 secondary article describes some PCB drilling orders into H1 2028. Broad semiconductor/electronics-related scope is approximately 40%, including tool-machine end uses; dedicated electronics business is separately approximately 30% as of September.",
+        "limits": "Issuer original not obtained. Prior October 20 report referred to end-2027; comparable scope unresolved. Article uses first-ten-month language before October ends. No newly confirmed order value, margin or cash revision."
+      },
+      "questions": [
+        "Obtain issuer original and order-horizon cutoff.",
+        "Separate dedicated electronics from broader end-use classification."
+      ],
+      "publication_status": "source_comparison_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -22362,7 +22481,7 @@
     }
   ],
   "last_research_date": "2026-10-22",
-  "instruction_commit_sha": "7695ff6a4ebb033a08392f2a6a6a873463398c1c",
+  "instruction_commit_sha": "35cc7f2908f350c171b3e06f0ba5582ae70b41a9",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
