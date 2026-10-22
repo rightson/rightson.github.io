@@ -6090,6 +6090,62 @@
         "capital_context": "Company-wide Q3 net capital expenditure USD621.933m versus Q2 USD221.484m; these amounts are not allocated wholly to this AI project."
       },
       "status": "new_primary_customer_commitment_stage_and_power_demand_transmission_event_verified_no_article"
+    },
+    {
+      "fingerprint": "tesla-q3-2026-capex-guidance-cut-versus-consensus-and-compute-scope-20261021",
+      "event_date": "2026-10-21",
+      "discovered_date": "2026-10-22",
+      "instruction_commit_sha": "1e1e2e219d3231c79b0deeed66e46e7e15b73c01",
+      "companies": [
+        "Tesla"
+      ],
+      "type": "issuer_reported_quarterly_capex_and_attributed_full_year_guidance_revision",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://ir.tesla.com/_flysystem/s3/sec/000162828026066738/tsla-20261021-gen.pdf",
+        "https://ir.tesla.com/press-release/earnings-consensus-third-quarter-2026",
+        "https://stockanalysis.com/stocks/tsla/transcripts/712902-q3-2026/",
+        "https://www.reuters.com/business/media-telecom/tesla-revenue-beats-estimates-deliveries-rebound-energy-storage-grows-2026-10-21/"
+      ],
+      "facts": {
+        "guidance": {
+          "currency": "USD",
+          "unit": "billion",
+          "period": "calendar 2026",
+          "prior": "in excess of 25",
+          "current": "approximately 20",
+          "prior_source": "Q2 Form 10-Q, Cash Flow and Capital Expenditure Trends",
+          "current_source": "October 21 CFO remarks reproduced by Quartr/Stock Analysis; Reuters independently reports the cut. Not stated in the retrieved Q3 shareholder update."
+        },
+        "reported_q3_2026": {
+          "unit": "USD billion",
+          "capex": 4.732,
+          "prior_quarter_capex": 5.789,
+          "prior_year_quarter_capex": 2.248,
+          "operating_cash_flow": 6.263,
+          "free_cash_flow": 1.531
+        },
+        "october19_company_compiled_consensus": {
+          "unit": "USD billion",
+          "q3_capex_mean": 7.771,
+          "capex_inputs": 21,
+          "q3_operating_cash_flow_mean": 3.267,
+          "q3_free_cash_flow_mean": -4.506,
+          "cash_flow_inputs": 20,
+          "scope": "Company compiled sell-side estimates, not issuer guidance; Tesla does not endorse them."
+        },
+        "calculations": {
+          "q3_capex_vs_consensus_pct": -39.10693604426715,
+          "q3_capex_yoy_pct": 110.4982206405694,
+          "free_cash_flow_beat_usd_billion": 6.037,
+          "operating_cash_flow_beat_usd_billion": 2.996,
+          "lower_capex_contribution_to_free_cash_flow_beat_usd_billion": 3.039,
+          "limits": "Cash-flow forecast beat reflects both operating cash flow and lower capital spending; it is not wholly spending deferral or wholly recurring profitability."
+        },
+        "scope": "Whole-company spending includes manufacturing and other assets. No spending-cut allocation or named supplier cancellation obtained. Q3 issuer update targets 400 MW SI training compute at year-end; installed capacity is distinct from utilization. Efficiency, project milestones and payment timing are alternative explanations.",
+        "verification": "Q3 issuer-hosted 8-K attachment text, Q2 SEC filing and issuer consensus table read. Direct shareholder-deck links were inaccessible; issuer-hosted 8-K attachment supplied quarterly tables. Full issuer audio not authenticated; guidance is explicitly attributed to the reproduced CFO remarks."
+      },
+      "status": "reported_actuals_and_prior_guidance_primary_verified_current_cut_attributed_and_cross_checked_no_article"
     }
   ],
   "articles": [],
@@ -6207,14 +6263,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-22",
-      "checked_at": "2026-10-22 06:20:04 UTC",
-      "instruction_commit_sha": "fe1276441f5a605c9549fafe52542dc0ffd4a72a",
-      "status": "98_name_discovery_and_core_indices_checked_umc_apmemory_candidate_added_no_material_alert",
+      "checked_at": "2026-10-22 07:03:00 UTC",
+      "instruction_commit_sha": "1e1e2e219d3231c79b0deeed66e46e7e15b73c01",
+      "status": "98_name_discovery_core_indices_and_tesla_capex_revision_checked",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All 98 active names included in 14 fresh grouped discovery queries. Six core issuer indices and selected original leads checked. Discovery coverage is not 98-company current-filing or economics validation. UMC and AP Memory are additional relationship leads outside the active universe; watchlist unchanged.",
+      "scope": "All 98 active names included in 14 fresh grouped discovery queries. Six core issuer indices and selected originals checked; not 98 current-filing or company-economics audits. Tesla additional demand-side lead; active watchlist unchanged.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -6222,16 +6278,17 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://investor.marvell.com/news-events/press-releases",
-        "https://www.umc.com/en/News/press_release/Content/technology_related/20261022",
-        "https://www.ftnn.com.tw/news/589236",
-        "https://news.cnyes.com/news/id/6635643"
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://ir.tesla.com/_flysystem/s3/sec/000162828026066738/tsla-20261021-gen.pdf",
+        "https://ir.tesla.com/press-release/earnings-consensus-third-quarter-2026",
+        "https://stockanalysis.com/stocks/tsla/transcripts/712902-q3-2026/"
       ],
       "source_limits": [
-        "Required instructions, specifications, complete progress JSON and recent article bodies retrieved at the locked commit. All historical public events and prior candidates retained.",
-        "Grouped queries returned many historical, social and secondary items. Historical 98-name monthly-revenue baseline unchanged; current orders, profitability and cash-conversion validation remain partial. No fresh full exchange-notice table obtained.",
-        "Core indices: TSMC October 15; MediaTek September 30; NVIDIA October 21 previously registered releases; AMD October 12; Broadcom financial index October 8; Marvell IR October 13. Financial index coverage is narrower than all corporate announcements.",
-        "UMC primary announcement supports a technical milestone, with commercial economics pending. AP Memory /en/news returned 502; joint announcement was read at UMC. Holy Stone article lacks a named original and comparable old estimate. Latest Micron negotiation report supplies no verified output or shipment loss beyond the existing action candidate.",
-        "No new material alert or long-form article. No stock quotes, valuation, holdings, fund flows or trading conditions added to public progress. Source readback alone does not establish website publication."
+        "All required instructions and specifications fetched in full at the locked commit; complete progress parsed and recent article bodies fetched with unchanged previously read blobs.",
+        "Many grouped-query results were historical, social or secondary. Historical monthly revenue coverage remains 98; current filings, orders, margins and cash conversion remain partial. No fresh full exchange-notice table obtained.",
+        "Core indices: TSMC October 15; MediaTek September 30; NVIDIA October 21 previously registered releases; AMD October 12; Marvell IR October 13. Broadcom index now includes October 21 Arcot fraud defense and October 20/19 software customer agreements; no new AI hardware economics established by those titles.",
+        "Tesla quarter actuals and old spending guidance verified against original documents; new annual cut attributed to reproduced CFO remarks and corroborating Reuters reporting. No authenticated full issuer audio. Neither project-level cuts nor Taiwan supplier cancellations established.",
+        "One new material public event and follow-up candidate; no long-form article. No quotes, valuation, holdings, fund flows or trading conditions added to public progress. Remote source verification does not establish website publication."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -14607,6 +14664,36 @@
           "UMC primary announcement supports a technical milestone, with commercial economics pending. AP Memory /en/news returned 502; joint announcement was read at UMC. Holy Stone article lacks a named original and comparable old estimate. Latest Micron negotiation report supplies no verified output or shipment loss beyond the existing action candidate.",
           "No new material alert or long-form article. No stock quotes, valuation, holdings, fund flows or trading conditions added to public progress. Source readback alone does not establish website publication."
         ]
+      },
+      {
+        "date": "2026-10-22",
+        "checked_at": "2026-10-22 07:03:00 UTC",
+        "instruction_commit_sha": "1e1e2e219d3231c79b0deeed66e46e7e15b73c01",
+        "status": "98_name_discovery_core_indices_and_tesla_capex_revision_checked",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All 98 active names included in 14 fresh grouped discovery queries. Six core issuer indices and selected originals checked; not 98 current-filing or company-economics audits. Tesla additional demand-side lead; active watchlist unchanged.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+          "https://ir.tesla.com/_flysystem/s3/sec/000162828026066738/tsla-20261021-gen.pdf",
+          "https://ir.tesla.com/press-release/earnings-consensus-third-quarter-2026",
+          "https://stockanalysis.com/stocks/tsla/transcripts/712902-q3-2026/"
+        ],
+        "source_limits": [
+          "All required instructions and specifications fetched in full at the locked commit; complete progress parsed and recent article bodies fetched with unchanged previously read blobs.",
+          "Many grouped-query results were historical, social or secondary. Historical monthly revenue coverage remains 98; current filings, orders, margins and cash conversion remain partial. No fresh full exchange-notice table obtained.",
+          "Core indices: TSMC October 15; MediaTek September 30; NVIDIA October 21 previously registered releases; AMD October 12; Marvell IR October 13. Broadcom index now includes October 21 Arcot fraud defense and October 20/19 software customer agreements; no new AI hardware economics established by those titles.",
+          "Tesla quarter actuals and old spending guidance verified against original documents; new annual cut attributed to reproduced CFO remarks and corroborating Reuters reporting. No authenticated full issuer audio. Neither project-level cuts nor Taiwan supplier cancellations established.",
+          "One new material public event and follow-up candidate; no long-form article. No quotes, valuation, holdings, fund flows or trading conditions added to public progress. Remote source verification does not establish website publication."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -22526,6 +22613,25 @@
         "Whether this manufacturing path adds capacity or reallocates existing supply; no displacement inferred"
       ],
       "publication_status": "candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "tesla-capex-project-allocation-compute-delivery-and-cash-conversion-20261022",
+      "date": "2026-10-22",
+      "instruction_commit_sha": "1e1e2e219d3231c79b0deeed66e46e7e15b73c01",
+      "companies": [
+        "Tesla"
+      ],
+      "sources": [
+        "https://ir.tesla.com/_flysystem/s3/sec/000162828026066738/tsla-20261021-gen.pdf",
+        "https://stockanalysis.com/stocks/tsla/transcripts/712902-q3-2026/"
+      ],
+      "stage": "aggregate_spending_revision_verified_allocation_to_compute_and_supplier_orders_pending",
+      "questions": [
+        "Split reduced cash spending among compute, robotics, automotive and other projects; verify payment timing versus fewer deliveries.",
+        "Check year-end 400 MW compute milestone, utilization and accepted supplier deliveries.",
+        "Compare 2027 project budgets and cash needs; separate available borrowing capacity from actual funding drawn."
+      ],
+      "publication_status": "material_public_event_recorded_private_notification_prepared_no_article"
     }
   ],
   "blockers": [
@@ -22545,7 +22651,7 @@
     }
   ],
   "last_research_date": "2026-10-22",
-  "instruction_commit_sha": "fe1276441f5a605c9549fafe52542dc0ffd4a72a",
+  "instruction_commit_sha": "1e1e2e219d3231c79b0deeed66e46e7e15b73c01",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
