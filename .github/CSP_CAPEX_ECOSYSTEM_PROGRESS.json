@@ -6451,6 +6451,41 @@
         "verification": "Issuer Q3 page5 and Q2 page5 read; Q3 pages1/5 visually checked. Finwire attributes adjusted operating-profit survey shortfall0.7% to FactSet; original survey/sample unavailable."
       },
       "status": "issuer_results_and_prior_quarter_verified_no_article"
+    },
+    {
+      "fingerprint": "nebius-citi-senior-secured-364-day-facility-20261022",
+      "event_date": "2026-10-22",
+      "discovered_date": "2026-10-23",
+      "instruction_commit_sha": "71b92785f48279a1ba8ba3bab862889442d58d75",
+      "companies": [
+        "Nebius",
+        "Citi"
+      ],
+      "type": "issuer_signed_short_term_senior_secured_capacity_financing_facility",
+      "sources": [
+        "https://nebius.com/newsroom/nebius-secures-3-5-billion-financing-facility-with-citi",
+        "https://nebius.com/newsroom/nebius-raises-775-million-in-first-secured-debt-financing-to-accelerate-global-buildout",
+        "https://www.reuters.com/technology/nebius-gets-35-billion-citi-facility-data-center-growth-2026-10-22/"
+      ],
+      "facts": {
+        "currency": "USD",
+        "new_facility_billion": 3.5,
+        "maturity_days": 364,
+        "pricing": "Initially Term SOFR+2.75% per annum, increasing to a maximum margin of3.50% per annum, subject to other adjustments. Floating reference rate, not an all-in fixed borrowing cost.",
+        "stated_use": "Data-center development, GPU procurement and general corporate purposes.",
+        "stage": "Issuer says entered into senior secured facility. The announcement does not disclose the amount drawn, complete draw conditions, collateral schedule, covenants or a completed refinancing.",
+        "existing_customer_contracts": "Management describes more thanUSD40bn in long-term investment-grade customer commitments as potential backing for future asset-level financing; notUSD40bn of cash or new orders in this release.",
+        "prior_primary_baseline": {
+          "date": "2026-07-17",
+          "facility_billion": 0.775,
+          "security": "Deployed GPU infrastructure and contracted cash flows from an investment-grade customer agreement",
+          "maturity": "2030-10-31",
+          "pricing": "SOFR+2.50%",
+          "limit": "Separate asset-backed vehicle; October facility is not established as an amendment or a directly comparable increase in the same loan. July and October maturities and security scopes differ."
+        },
+        "supplier_economics_limit": "No named incremental GPU vendor allocation, Taiwan supplier award, delivered capacity, incremental revenue, project margin or capital-return calculation disclosed. Financing access supports capacity plans, not verified equipment delivery or supplier earnings."
+      },
+      "status": "current_and_historical_issuer_originals_verified_drawdown_long_term_refinancing_and_delivery_pending_no_article"
     }
   ],
   "articles": [],
@@ -6568,14 +6603,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-23",
-      "checked_at": "2026-10-22 18:37:08 UTC",
-      "instruction_commit_sha": "093b38e9b851ebd437bb524da57ccb9ae711efe3",
-      "status": "98_name_grouped_discovery_six_core_indices_new_vacuum_segment_event_verified",
+      "checked_at": "2026-10-22 20:21:06 UTC",
+      "instruction_commit_sha": "71b92785f48279a1ba8ba3bab862889442d58d75",
+      "status": "98_name_grouped_discovery_six_core_indices_and_new_nebius_short_term_facility_verified",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All98 active names included in fresh grouped discovery; six core issuer indices read. Outside-universe Atlas Copco followed to issuer Q3/Q2 documents. No universe edit.",
+      "scope": "All98 active names included in14 fresh grouped discovery queries; six mandatory core issuer indices read. Outside-universe Nebius financing followed to current and historical issuer originals. No watchlist edit.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -6583,21 +6618,19 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/",
         "https://investor.marvell.com/news-events/press-releases",
-        "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20261022-en-q3-2026-dd.pdf",
-        "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20260716-en-Q2_2026.pdf",
-        "https://www.marketscreener.com/news/atlas-copco-s-operating-profit-increased-but-came-in-below-expectations-order-intake-above-expectat-ce785cd9d081f42d",
-        "https://www.idc.com/resource-center/blog/ai-is-short-of-capacity-not-demand/",
-        "https://www.reuters.com/business/retail-consumer/amazon-seeks-offload-8-billion-nvidia-chips-investors-ft-reports-2026-10-02/",
-        "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/"
+        "https://nebius.com/newsroom/nebius-secures-3-5-billion-financing-facility-with-citi",
+        "https://nebius.com/newsroom/nebius-raises-775-million-in-first-secured-debt-financing-to-accelerate-global-buildout",
+        "https://www.reuters.com/technology/nebius-gets-35-billion-citi-facility-data-center-growth-2026-10-22/",
+        "https://www.businessinsider.com/ai-infrastructure-stocks-to-buy-hyperscaler-spending-capex-2026-10",
+        "https://ec.ltn.com.tw/amp/article/breakingnews/5614560"
       ],
       "source_limits": [
-        "Required same-commit instructions/specifications fetched in full and matched known unchanged blob versions. Full ledger parsed; three recent related article blobs freshly fetched and matched previously read versions.",
-        "Fresh14 grouped queries include all98 active names, but returned many quotation, calendar and historical pages. This is not98 individual fresh primary-filings checks; existing monthly-revenue/company-economics gaps remain.",
-        "Core issuer indices retain registered baseline releases. No new authenticated MediaTek TPU allocation, NRE, mass-production terms or Google purchasing split established.",
-        "Atlas Copco new segment numbers verified against July report. Primary document distinguishes reported and adjusted prior-year margins. Named AI customers and segment cash returns remain undisclosed; no Taiwan supplier order transfer inferred.",
-        "IDC original commentary read with underlying survey dates distinguished from article date. No project-by-project confirmation or supplier economic revision inferred.",
-        "Amazon leaseback lead traced to October2 original Reuters attribution. Micron USD54.23bn-quarter headline traced to September30 issuer results rather than October22 new financial disclosure.",
-        "Only public sources and research stages recorded. No prices, valuation, holdings, fund-flow checks, trading conditions or private investment judgment stored. No article or website-publication claim."
+        "Same-commit mandatory instructions/specifications fetched in full; unchanged blob versions confirmed. Full ledger parsed, three related articles freshly fetched and reviewed for source/duplicate comparison.",
+        "All98 names appeared in discovery queries; returned many historical, quotation and broad sector pages. This is not98 individually verified current filings. Existing company-economics validation gaps remain.",
+        "Core issuer indices retain prior registered baselines. No new primary-confirmed MediaTek TPUv9/v10 award, yield-driven redesign, purchasing split, NRE or mass-production terms authenticated.",
+        "October22 MediaTek risk and upbeat broker reporting remain attributed, conflicting and without a newly obtained issuer or institution original; prior research candidates retained. Morgan Stanley selection article attributes October15 note and is already registered, not a new revision.",
+        "Nebius new364-day facility and July2030-maturity asset facility are separate financing populations; no drawn amount, all-in fixed rate or named new supplier earnings assumed.",
+        "Only public source facts and research completion stages appended. No quotations, valuations, holdings, institutional trading data, private market-structure checks or investment judgment saved. No new article or website-publication claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -15388,6 +15421,38 @@
           "Amazon leaseback lead traced to October2 original Reuters attribution. Micron USD54.23bn-quarter headline traced to September30 issuer results rather than October22 new financial disclosure.",
           "Only public sources and research stages recorded. No prices, valuation, holdings, fund-flow checks, trading conditions or private investment judgment stored. No article or website-publication claim."
         ]
+      },
+      {
+        "date": "2026-10-23",
+        "checked_at": "2026-10-22 20:21:06 UTC",
+        "instruction_commit_sha": "71b92785f48279a1ba8ba3bab862889442d58d75",
+        "status": "98_name_grouped_discovery_six_core_indices_and_new_nebius_short_term_facility_verified",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All98 active names included in14 fresh grouped discovery queries; six mandatory core issuer indices read. Outside-universe Nebius financing followed to current and historical issuer originals. No watchlist edit.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://nebius.com/newsroom/nebius-secures-3-5-billion-financing-facility-with-citi",
+          "https://nebius.com/newsroom/nebius-raises-775-million-in-first-secured-debt-financing-to-accelerate-global-buildout",
+          "https://www.reuters.com/technology/nebius-gets-35-billion-citi-facility-data-center-growth-2026-10-22/",
+          "https://www.businessinsider.com/ai-infrastructure-stocks-to-buy-hyperscaler-spending-capex-2026-10",
+          "https://ec.ltn.com.tw/amp/article/breakingnews/5614560"
+        ],
+        "source_limits": [
+          "Same-commit mandatory instructions/specifications fetched in full; unchanged blob versions confirmed. Full ledger parsed, three related articles freshly fetched and reviewed for source/duplicate comparison.",
+          "All98 names appeared in discovery queries; returned many historical, quotation and broad sector pages. This is not98 individually verified current filings. Existing company-economics validation gaps remain.",
+          "Core issuer indices retain prior registered baselines. No new primary-confirmed MediaTek TPUv9/v10 award, yield-driven redesign, purchasing split, NRE or mass-production terms authenticated.",
+          "October22 MediaTek risk and upbeat broker reporting remain attributed, conflicting and without a newly obtained issuer or institution original; prior research candidates retained. Morgan Stanley selection article attributes October15 note and is already registered, not a new revision.",
+          "Nebius new364-day facility and July2030-maturity asset facility are separate financing populations; no drawn amount, all-in fixed rate or named new supplier earnings assumed.",
+          "Only public source facts and research completion stages appended. No quotations, valuations, holdings, institutional trading data, private market-structure checks or investment judgment saved. No new article or website-publication claim."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -23868,6 +23933,26 @@
         "Verify consolidation, recourse, funded proceeds and supplier-payment impact."
       ],
       "publication_status": "historical_candidate_only_no_article"
+    },
+    {
+      "key": "nebius-364-day-funding-to-asset-finance-and-accepted-capacity-20261023",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "71b92785f48279a1ba8ba3bab862889442d58d75",
+      "companies": [
+        "Nebius"
+      ],
+      "related_public_event": "nebius-citi-senior-secured-364-day-facility-20261022",
+      "stage": "issuer_signed_facility_and_july_asset_level_baseline_verified_funding_conversion_pending",
+      "sources": [
+        "https://nebius.com/newsroom/nebius-secures-3-5-billion-financing-facility-with-citi",
+        "https://nebius.com/newsroom/nebius-raises-775-million-in-first-secured-debt-financing-to-accelerate-global-buildout"
+      ],
+      "questions": [
+        "Obtain credit agreement, drawdown milestones, collateral, recourse, covenants and refinancing conditions.",
+        "Verify subsequent longer-duration asset-backed financing against signed customer schedules without double counting existing contracts.",
+        "Trace actual proceeds to accepted capacity, paid utilisation, supplier payments and cash returns."
+      ],
+      "publication_status": "event_and_research_candidate_only_no_article"
     }
   ],
   "blockers": [
@@ -23887,7 +23972,7 @@
     }
   ],
   "last_research_date": "2026-10-23",
-  "instruction_commit_sha": "093b38e9b851ebd437bb524da57ccb9ae711efe3",
+  "instruction_commit_sha": "71b92785f48279a1ba8ba3bab862889442d58d75",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
