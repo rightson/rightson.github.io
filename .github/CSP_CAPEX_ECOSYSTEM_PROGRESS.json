@@ -6415,14 +6415,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-22",
-      "checked_at": "2026-10-22 11:36:22 UTC",
-      "instruction_commit_sha": "2ed521cea6876c43c18a154d9b3665e573bdacbc",
-      "status": "98_name_grouped_discovery_core_indices_two_new_off_universe_primary_economic_events",
+      "checked_at": "2026-10-22 12:43:34 UTC",
+      "instruction_commit_sha": "710847275ab0f4b784f9ab00d29a63366f5d2c12",
+      "status": "98_name_grouped_discovery_core_indices_checked_no_new_material_event",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All98 active names included in fresh grouped discovery, six core issuer indices checked; Nokia and Kuehne+Nagel sourced outside the universe through explicit AI/cloud demand transmission. No universe edit.",
+      "scope": "All98 active names included in fresh grouped discovery; six core issuer indices and targeted CSP/TPU and off-universe economic discovery checked. No watchlist change.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -6430,20 +6430,16 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://investor.marvell.com/news-events/press-releases",
-        "https://www.nokia.com/newsroom/nokia-corporation-interim-report-for-q3-2026/",
-        "https://www.nokia.com/system/files/2026-10/nokia_results_2026_q3.pdf",
-        "https://www.nokia.com/newsroom/nokia-corporation-report-for-q2-and-half-year-2026/",
-        "https://www.nokia.com/system/files/2026-10/nokia_slides_2026_q3.pdf",
-        "https://newsroom.kuehne-nagel.com/kuehnenagel-significantly-improves-profitability--in-third-quarter-of-2026/",
-        "https://newsroom.kuehne-nagel.com/kuehnenagel-reports-strong-second-quarter-2026/",
-        "https://www.reuters.com/business/kuehnenagel-lifts-2026-outlook-third-time-growth-air-sea-logistics-2026-10-22/"
+        "https://www.reuters.com/business/autos-transportation/tesla-drops-spending-pullback-clouds-ai-robotics-ambitions-2026-10-22/",
+        "https://www.businessinsider.com/ai-infrastructure-stocks-to-buy-hyperscaler-spending-capex-2026-10"
       ],
       "source_limits": [
-        "Required same-commit instructions and related specifications read; complete ledger parsed and three recent ai-industry article bodies fetched and reviewed. No other topic or timing branch executed.",
-        "98-name discovery is not98 fresh original filings or a complete economics audit. Historical primary monthly-revenue coverage remains98; current order, margin and cash conversion coverage remains partial.",
-        "Core issuer indices retain registered dates/events; targeted MediaTek/TPU and TSMC searches did not establish a new commercial allocation. Previously reported capacity commitments, Meta/Tesla updates and Besi orders remain baselines.",
-        "Nokia current and prior issuer disclosures verify demand strength and weaker cash conversion; year-on-year order growth is not sequential acceleration. Kuehne+Nagel issuer releases verify forecast revision and direct cloud/semiconductor demand contribution, not AI-only profit attribution.",
-        "Two new public factual events and follow-up candidates; no long-form article. Existing history preserved. No quotes, valuation, holdings, fund flows, private investment conclusions or trading conditions in public ledger. Source readback is distinct from site publication."
+        "Required instructions and related specifications completely retrieved at the locked commit; full progress parsed and three related ai-industry articles read. No other topic executed.",
+        "Discovery includes98 active names, not98 fresh issuer filings or a complete company-economics audit. Historical primary monthly revenue baseline remains98; current orders, margins and cash conversion coverage remains partial.",
+        "Six core issuer indices retain previously registered latest dates. Targeted MediaTek/TSMC searches did not establish a newly confirmed commercial allocation.",
+        "Nokia and Kuehne+Nagel current/prior issuer economics, NVIDIA capacity commitments, Meta/Tesla results, Lam and Besi remain registered baselines; no new material evidence or repeat notification. Latest Tesla price-reaction reporting does not establish a project-specific spending cancellation.",
+        "Reported Morgan Stanley article points to an October15 note; original report, homogeneous estimate revision and consensus population unavailable. Not treated as a new October22 institutional upgrade or issuer order.",
+        "Coverage record only; no new article or economic event. No private quotes, valuation, fund flows, holdings, investment conclusions or trading conditions. Ledger source confirmation is distinct from website publication."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -15002,6 +14998,35 @@
           "Nokia current and prior issuer disclosures verify demand strength and weaker cash conversion; year-on-year order growth is not sequential acceleration. Kuehne+Nagel issuer releases verify forecast revision and direct cloud/semiconductor demand contribution, not AI-only profit attribution.",
           "Two new public factual events and follow-up candidates; no long-form article. Existing history preserved. No quotes, valuation, holdings, fund flows, private investment conclusions or trading conditions in public ledger. Source readback is distinct from site publication."
         ]
+      },
+      {
+        "date": "2026-10-22",
+        "checked_at": "2026-10-22 12:43:34 UTC",
+        "instruction_commit_sha": "710847275ab0f4b784f9ab00d29a63366f5d2c12",
+        "status": "98_name_grouped_discovery_core_indices_checked_no_new_material_event",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All98 active names included in fresh grouped discovery; six core issuer indices and targeted CSP/TPU and off-universe economic discovery checked. No watchlist change.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.reuters.com/business/autos-transportation/tesla-drops-spending-pullback-clouds-ai-robotics-ambitions-2026-10-22/",
+          "https://www.businessinsider.com/ai-infrastructure-stocks-to-buy-hyperscaler-spending-capex-2026-10"
+        ],
+        "source_limits": [
+          "Required instructions and related specifications completely retrieved at the locked commit; full progress parsed and three related ai-industry articles read. No other topic executed.",
+          "Discovery includes98 active names, not98 fresh issuer filings or a complete company-economics audit. Historical primary monthly revenue baseline remains98; current orders, margins and cash conversion coverage remains partial.",
+          "Six core issuer indices retain previously registered latest dates. Targeted MediaTek/TSMC searches did not establish a newly confirmed commercial allocation.",
+          "Nokia and Kuehne+Nagel current/prior issuer economics, NVIDIA capacity commitments, Meta/Tesla results, Lam and Besi remain registered baselines; no new material evidence or repeat notification. Latest Tesla price-reaction reporting does not establish a project-specific spending cancellation.",
+          "Reported Morgan Stanley article points to an October15 note; original report, homogeneous estimate revision and consensus population unavailable. Not treated as a new October22 institutional upgrade or issuer order.",
+          "Coverage record only; no new article or economic event. No private quotes, valuation, fund flows, holdings, investment conclusions or trading conditions. Ledger source confirmation is distinct from website publication."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -23110,7 +23135,7 @@
     }
   ],
   "last_research_date": "2026-10-22",
-  "instruction_commit_sha": "2ed521cea6876c43c18a154d9b3665e573bdacbc",
+  "instruction_commit_sha": "710847275ab0f4b784f9ab00d29a63366f5d2c12",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
