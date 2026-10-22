@@ -6263,14 +6263,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-22",
-      "checked_at": "2026-10-22 07:03:00 UTC",
-      "instruction_commit_sha": "1e1e2e219d3231c79b0deeed66e46e7e15b73c01",
-      "status": "98_name_discovery_core_indices_and_tesla_capex_revision_checked",
+      "checked_at": "2026-10-22 07:55:47 UTC",
+      "instruction_commit_sha": "ce3d46b815475202adb6538e7e48f4af12dbd2eb",
+      "status": "98_name_grouped_discovery_core_indices_and_tpca_source_comparison_completed_no_new_material_event",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All 98 active names included in 14 fresh grouped discovery queries. Six core issuer indices and selected originals checked; not 98 current-filing or company-economics audits. Tesla additional demand-side lead; active watchlist unchanged.",
+      "scope": "All 98 active names included in 14 fresh grouped discovery queries; six core issuer indices and selected original reporting read. Search coverage is not current-filing or economics validation for all 98 companies. No watchlist modification.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -6278,17 +6278,15 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/financial-information/financial-news-releases",
         "https://investor.marvell.com/news-events/press-releases",
-        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
-        "https://ir.tesla.com/_flysystem/s3/sec/000162828026066738/tsla-20261021-gen.pdf",
-        "https://ir.tesla.com/press-release/earnings-consensus-third-quarter-2026",
-        "https://stockanalysis.com/stocks/tsla/transcripts/712902-q3-2026/"
+        "https://money.udn.com/money/story/5612/9826145",
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7cd69823-4892-46a4-a11d-a6b58d907a71"
       ],
       "source_limits": [
-        "All required instructions and specifications fetched in full at the locked commit; complete progress parsed and recent article bodies fetched with unchanged previously read blobs.",
-        "Many grouped-query results were historical, social or secondary. Historical monthly revenue coverage remains 98; current filings, orders, margins and cash conversion remain partial. No fresh full exchange-notice table obtained.",
-        "Core indices: TSMC October 15; MediaTek September 30; NVIDIA October 21 previously registered releases; AMD October 12; Marvell IR October 13. Broadcom index now includes October 21 Arcot fraud defense and October 20/19 software customer agreements; no new AI hardware economics established by those titles.",
-        "Tesla quarter actuals and old spending guidance verified against original documents; new annual cut attributed to reproduced CFO remarks and corroborating Reuters reporting. No authenticated full issuer audio. Neither project-level cuts nor Taiwan supplier cancellations established.",
-        "One new material public event and follow-up candidate; no long-form article. No quotes, valuation, holdings, fund flows or trading conditions added to public progress. Remote source verification does not establish website publication."
+        "Required instruction and specification bodies fetched in full at the locked commit; blob SHAs match previously fully read versions. Complete progress JSON parsed and three recent ai-industry article bodies retrieved with unchanged previously read blobs.",
+        "All 98 names searched; grouped discovery returned many historical, social or secondary items. Historical monthly-revenue baseline remains 98 names; current filings, customer orders, margins and cash conversion remain partial. No fresh full exchange-notice table obtained.",
+        "Core indices: TSMC October 15, MediaTek September 30, NVIDIA October 21 previously registered releases, AMD October 12, Broadcom October 21 software announcement, Marvell IR October 13. Index inspection does not prove absence of all issuer disclosures.",
+        "TPCA material-tightness leads were dated back to October 20 and compared with the registered Elite Material event. No new booked order, accepted price or company earnings revision established. Global memory and TPU searches returned primarily older forecasts and previously tracked reports.",
+        "No new public event or long-form article. Existing events and candidates retained; only a source-comparison update and coverage record appended. No quotes, valuation, holdings, fund flows or trading conditions included. Source readback is not website publication."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -14694,6 +14692,34 @@
           "Tesla quarter actuals and old spending guidance verified against original documents; new annual cut attributed to reproduced CFO remarks and corroborating Reuters reporting. No authenticated full issuer audio. Neither project-level cuts nor Taiwan supplier cancellations established.",
           "One new material public event and follow-up candidate; no long-form article. No quotes, valuation, holdings, fund flows or trading conditions added to public progress. Remote source verification does not establish website publication."
         ]
+      },
+      {
+        "date": "2026-10-22",
+        "checked_at": "2026-10-22 07:55:47 UTC",
+        "instruction_commit_sha": "ce3d46b815475202adb6538e7e48f4af12dbd2eb",
+        "status": "98_name_grouped_discovery_core_indices_and_tpca_source_comparison_completed_no_new_material_event",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All 98 active names included in 14 fresh grouped discovery queries; six core issuer indices and selected original reporting read. Search coverage is not current-filing or economics validation for all 98 companies. No watchlist modification.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://money.udn.com/money/story/5612/9826145",
+          "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7cd69823-4892-46a4-a11d-a6b58d907a71"
+        ],
+        "source_limits": [
+          "Required instruction and specification bodies fetched in full at the locked commit; blob SHAs match previously fully read versions. Complete progress JSON parsed and three recent ai-industry article bodies retrieved with unchanged previously read blobs.",
+          "All 98 names searched; grouped discovery returned many historical, social or secondary items. Historical monthly-revenue baseline remains 98 names; current filings, customer orders, margins and cash conversion remain partial. No fresh full exchange-notice table obtained.",
+          "Core indices: TSMC October 15, MediaTek September 30, NVIDIA October 21 previously registered releases, AMD October 12, Broadcom October 21 software announcement, Marvell IR October 13. Index inspection does not prove absence of all issuer disclosures.",
+          "TPCA material-tightness leads were dated back to October 20 and compared with the registered Elite Material event. No new booked order, accepted price or company earnings revision established. Global memory and TPU searches returned primarily older forecasts and previously tracked reports.",
+          "No new public event or long-form article. Existing events and candidates retained; only a source-comparison update and coverage record appended. No quotes, valuation, holdings, fund flows or trading conditions included. Source readback is not website publication."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -21146,7 +21172,25 @@
         "M9/M10mix,realizedpricesandgrossprofit aftermaterialcosts",
         "Utilization,cashflowandcapex after2028plannedcapacity"
       ],
-      "publication_status": "research_event_only_no_article"
+      "publication_status": "research_event_only_no_article",
+      "verification_updates": [
+        {
+          "date": "2026-10-22",
+          "instruction_commit_sha": "ce3d46b815475202adb6538e7e48f4af12dbd2eb",
+          "stage": "october20_interview_reports_read_against_existing_event_no_new_contract_or_earnings_revision",
+          "sources": [
+            "https://money.udn.com/money/story/5612/9826145",
+            "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7cd69823-4892-46a4-a11d-a6b58d907a71",
+            "https://www.sinotrade.com.tw/richclub/hotstock/PCB%E7%94%A2%E5%80%BC%E9%A6%96%E5%BA%A6%E7%A0%B4%E5%85%86%E5%85%83-TPCA-Show-2026%E9%96%8B%E5%B9%95-%E8%BC%89%E6%9D%BF-CCL-%E9%91%BD%E9%87%9D%E5%A4%A7%E5%BB%A0%E8%AB%872027%E5%B9%B4%E7%BC%BA%E6%96%99%E8%88%87%E6%93%B4%E7%94%A2%E6%99%82%E7%A8%8B-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-6ad72acfd03a4f016004f1ab"
+          ],
+          "facts": "October 22 discovery leads resolve to October 20 reporting and the already registered management outlook: high-end CCL tightness through 2030, Taiwan capacity at three times the current level around 2028, and M9/M10 roadmap. These are not contracted orders through 2030 or three times global capacity. No accepted pricing, new customer qualification or earnings revision obtained.",
+          "questions": [
+            "Product-specific qualification and shipment mix",
+            "Realized pricing relative to input costs, depreciation and cash conversion"
+          ],
+          "publication_status": "source_comparison_only_no_repeat_alert_no_article"
+        }
+      ]
     },
     {
       "key": "tsmc-kaohsiung-construction-incident-work-stoppage-scope-20261020",
@@ -22651,7 +22695,7 @@
     }
   ],
   "last_research_date": "2026-10-22",
-  "instruction_commit_sha": "1e1e2e219d3231c79b0deeed66e46e7e15b73c01",
+  "instruction_commit_sha": "ce3d46b815475202adb6538e7e48f4af12dbd2eb",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
