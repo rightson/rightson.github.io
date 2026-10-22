@@ -6413,6 +6413,44 @@
         "limits": "No named CSP minimum purchase, AI-only profit, quantified competitor order transfer or fully authenticated Q3 cash-flow/capex table. Current/prior issuer releases provide rounded figures. Shareholder vote and commissioning remain pending; equipment supplier allocations undisclosed."
       },
       "status": "current_and_prior_issuer_release_original_reporting_verified_full_regulatory_financials_and_shareholder_approval_pending_no_article"
+    },
+    {
+      "fingerprint": "atlas-copco-q3-2026-vacuum-order-acceleration-and-profit-conversion-20261022",
+      "event_date": "2026-10-22",
+      "discovered_date": "2026-10-23",
+      "instruction_commit_sha": "093b38e9b851ebd437bb524da57ccb9ae711efe3",
+      "companies": [
+        "Atlas Copco"
+      ],
+      "type": "issuer_vacuum_segment_orders_and_profit_growth",
+      "sources": [
+        "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20261022-en-q3-2026-dd.pdf",
+        "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20260716-en-Q2_2026.pdf",
+        "https://www.marketscreener.com/news/atlas-copco-s-operating-profit-increased-but-came-in-below-expectations-order-intake-above-expectat-ce785cd9d081f42d"
+      ],
+      "facts": {
+        "unit": "MSEK",
+        "q3_vacuum": {
+          "orders": 16659,
+          "organic_order_yoy_pct": 82,
+          "revenue": 12257,
+          "operating_profit": 2726,
+          "operating_margin_pct": 22.2,
+          "prior_year_reported_margin_pct": 18.5,
+          "prior_year_adjusted_margin_pct": 20.1
+        },
+        "q2_vacuum": {
+          "orders": 14409,
+          "organic_order_yoy_pct": 59,
+          "revenue": 10531,
+          "operating_profit": 2216,
+          "operating_margin_pct": 21
+        },
+        "scope": "Semiconductor/flat-panel, industrial and scientific vacuum demand; AI-only share undisclosed.",
+        "group": "Adjusted margin21.3% unchanged year-on-year; near-term customer-activity outlook unchanged.",
+        "verification": "Issuer Q3 page5 and Q2 page5 read; Q3 pages1/5 visually checked. Finwire attributes adjusted operating-profit survey shortfall0.7% to FactSet; original survey/sample unavailable."
+      },
+      "status": "issuer_results_and_prior_quarter_verified_no_article"
     }
   ],
   "articles": [],
@@ -6530,14 +6568,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-23",
-      "checked_at": "2026-10-22 18:25:01 UTC",
-      "instruction_commit_sha": "318ab707bf96c03361b30be561dbecff04d3c5da",
-      "status": "98_name_grouped_discovery_six_core_indices_historical_expansion_and_power_candidates_checked",
+      "checked_at": "2026-10-22 18:37:08 UTC",
+      "instruction_commit_sha": "093b38e9b851ebd437bb524da57ccb9ae711efe3",
+      "status": "98_name_grouped_discovery_six_core_indices_new_vacuum_segment_event_verified",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All98 active names included in fresh grouped discovery; six core issuer indices read and outside-universe manufacturing/power leads checked. No watchlist change.",
+      "scope": "All98 active names included in fresh grouped discovery; six core issuer indices read. Outside-universe Atlas Copco followed to issuer Q3/Q2 documents. No universe edit.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -6545,22 +6583,21 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/",
         "https://investor.marvell.com/news-events/press-releases",
-        "https://www.prnewswire.com/news-releases/dover-reports-third-quarter-2026-results-302916126.html",
-        "https://investors.dovercorporation.com/static-files/4b0b6654-303b-4bfd-b229-0bf0832cdbdd",
-        "https://investors.dovercorporation.com/static-files/c2bc162d-aec0-4b2b-a269-e10d5ab53984",
-        "https://www.ttv.com.tw/finance/view/default.asp?from=587&i=09202630095208FC115C37EC4011B190C66F09DF080A4D3A",
-        "https://ttv.com.tw/finance/view/default.asp?from=588&i=1020262210521489F124C52B4045A5CF70F784C04949F8E4",
-        "https://www.trivano.com/persbericht/pg-e-corporation-reports-third-quarter-2026-results-on-track-to-deliver-solid-2026-reaffirms-2026-and-2027-guidance-769494.html",
-        "https://www.prnewswire.com/news-releases/pge-corporation-reports-third-quarter-2026-results-on-track-to-deliver-solid-2026-reaffirms-2026-and-2027-guidance-302916185.html"
+        "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20261022-en-q3-2026-dd.pdf",
+        "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20260716-en-Q2_2026.pdf",
+        "https://www.marketscreener.com/news/atlas-copco-s-operating-profit-increased-but-came-in-below-expectations-order-intake-above-expectat-ce785cd9d081f42d",
+        "https://www.idc.com/resource-center/blog/ai-is-short-of-capacity-not-demand/",
+        "https://www.reuters.com/business/retail-consumer/amazon-seeks-offload-8-billion-nvidia-chips-investors-ft-reports-2026-10-02/",
+        "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/"
       ],
       "source_limits": [
-        "Same-commit mandatory instructions and specifications fully retrieved. Full ledger parsed; three recent related article blobs freshly fetched and matched previously read content.",
-        "Grouped discovery returns historical articles, calendar pages and secondary reports. It is not98 individual current primary-filings checks. Existing monthly-revenue and company-economics gaps remain.",
-        "Core indices retain registered releases: TSMC October15, MediaTek September30 and August31 collaboration, NVIDIA October22, AMD October12, Broadcom October21 and Marvell October13. No new authenticated MediaTek TPU allocation or economic terms.",
-        "Dover company release, selected slides and July23 company-hosted call read. Heat-exchanger doubling predates this check; mixed-segment results do not isolate liquid-cooling profit. Slides6,8,13 visually checked.",
-        "GIS-KY optical/Vietnam plan traced to September30 rather than presumed October22 new capacity. PG&E174MW is cumulative since2024 and2027 capital reduction is explicitly previously announced.",
-        "FT debt-rating commentary and Reuters Meta equity-reaction original direct bodies unavailable; existing issuer financial baseline retained. No new completed funding, default, customer cancellation or supplier order revision inferred from headline or market price.",
-        "Only public sources and research completion stages recorded. No prices, valuation, holdings, private fund-flow checks or investment judgments added. No article or website-publication claim."
+        "Required same-commit instructions/specifications fetched in full and matched known unchanged blob versions. Full ledger parsed; three recent related article blobs freshly fetched and matched previously read versions.",
+        "Fresh14 grouped queries include all98 active names, but returned many quotation, calendar and historical pages. This is not98 individual fresh primary-filings checks; existing monthly-revenue/company-economics gaps remain.",
+        "Core issuer indices retain registered baseline releases. No new authenticated MediaTek TPU allocation, NRE, mass-production terms or Google purchasing split established.",
+        "Atlas Copco new segment numbers verified against July report. Primary document distinguishes reported and adjusted prior-year margins. Named AI customers and segment cash returns remain undisclosed; no Taiwan supplier order transfer inferred.",
+        "IDC original commentary read with underlying survey dates distinguished from article date. No project-by-project confirmation or supplier economic revision inferred.",
+        "Amazon leaseback lead traced to October2 original Reuters attribution. Micron USD54.23bn-quarter headline traced to September30 issuer results rather than October22 new financial disclosure.",
+        "Only public sources and research stages recorded. No prices, valuation, holdings, fund-flow checks, trading conditions or private investment judgment stored. No article or website-publication claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -15317,6 +15354,40 @@
           "FT debt-rating commentary and Reuters Meta equity-reaction original direct bodies unavailable; existing issuer financial baseline retained. No new completed funding, default, customer cancellation or supplier order revision inferred from headline or market price.",
           "Only public sources and research completion stages recorded. No prices, valuation, holdings, private fund-flow checks or investment judgments added. No article or website-publication claim."
         ]
+      },
+      {
+        "date": "2026-10-23",
+        "checked_at": "2026-10-22 18:37:08 UTC",
+        "instruction_commit_sha": "093b38e9b851ebd437bb524da57ccb9ae711efe3",
+        "status": "98_name_grouped_discovery_six_core_indices_new_vacuum_segment_event_verified",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All98 active names included in fresh grouped discovery; six core issuer indices read. Outside-universe Atlas Copco followed to issuer Q3/Q2 documents. No universe edit.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20261022-en-q3-2026-dd.pdf",
+          "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20260716-en-Q2_2026.pdf",
+          "https://www.marketscreener.com/news/atlas-copco-s-operating-profit-increased-but-came-in-below-expectations-order-intake-above-expectat-ce785cd9d081f42d",
+          "https://www.idc.com/resource-center/blog/ai-is-short-of-capacity-not-demand/",
+          "https://www.reuters.com/business/retail-consumer/amazon-seeks-offload-8-billion-nvidia-chips-investors-ft-reports-2026-10-02/",
+          "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/"
+        ],
+        "source_limits": [
+          "Required same-commit instructions/specifications fetched in full and matched known unchanged blob versions. Full ledger parsed; three recent related article blobs freshly fetched and matched previously read versions.",
+          "Fresh14 grouped queries include all98 active names, but returned many quotation, calendar and historical pages. This is not98 individual fresh primary-filings checks; existing monthly-revenue/company-economics gaps remain.",
+          "Core issuer indices retain registered baseline releases. No new authenticated MediaTek TPU allocation, NRE, mass-production terms or Google purchasing split established.",
+          "Atlas Copco new segment numbers verified against July report. Primary document distinguishes reported and adjusted prior-year margins. Named AI customers and segment cash returns remain undisclosed; no Taiwan supplier order transfer inferred.",
+          "IDC original commentary read with underlying survey dates distinguished from article date. No project-by-project confirmation or supplier economic revision inferred.",
+          "Amazon leaseback lead traced to October2 original Reuters attribution. Micron USD54.23bn-quarter headline traced to September30 issuer results rather than October22 new financial disclosure.",
+          "Only public sources and research stages recorded. No prices, valuation, holdings, fund-flow checks, trading conditions or private investment judgment stored. No article or website-publication claim."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -23739,6 +23810,64 @@
         "Verify tariffs, allowed returns and connection cost recovery."
       ],
       "publication_status": "research_candidate_only_no_article"
+    },
+    {
+      "key": "atlas-copco-vacuum-order-to-qualified-delivery-and-cash-20261023",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "093b38e9b851ebd437bb524da57ccb9ae711efe3",
+      "companies": [
+        "Atlas Copco"
+      ],
+      "related_public_event": "atlas-copco-q3-2026-vacuum-order-acceleration-and-profit-conversion-20261022",
+      "stage": "issuer_segment_economic_change_verified_customer_and_cash_conversion_pending",
+      "sources": [
+        "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20261022-en-q3-2026-dd.pdf",
+        "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20260716-en-Q2_2026.pdf"
+      ],
+      "questions": [
+        "Reconcile orders with accepted deliveries, backlog cancellations and working capital.",
+        "Identify semiconductor process/customer mix and isolate sustainable margin from prior-year adjustments.",
+        "Verify capacity ramp costs and service revenue durability."
+      ],
+      "publication_status": "source_event_and_candidate_only_no_article"
+    },
+    {
+      "key": "idc-october22-capacity-constraint-surveys-and-forecast-scope-20261023",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "093b38e9b851ebd437bb524da57ccb9ae711efe3",
+      "companies": [
+        "IDC"
+      ],
+      "stage": "institution_original_commentary_read_underlying_tracker_methodology_and_project_validation_pending",
+      "sources": [
+        "https://www.idc.com/resource-center/blog/ai-is-short-of-capacity-not-demand/"
+      ],
+      "facts": "October22 commentary combines June/July2026 surveys and tracker forecasts. IDC claims almost7GW of2026 US planned capacity delayed/canceled for power constraints and forecasts shortages through2027-2028. Underlying project list and original tracker methodology were not obtained; not a verified new forecast revision or named supplier order change.",
+      "questions": [
+        "Reconcile forecast populations, observation dates and earlier versions.",
+        "Authenticate delayed projects and distinguish canceled from rescheduled capacity.",
+        "Compare paid utilization and supplier cash returns with survey intent."
+      ],
+      "publication_status": "research_candidate_only_no_article"
+    },
+    {
+      "key": "amazon-eight-billion-gpu-spv-talks-historical-october2-baseline-20261023",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "093b38e9b851ebd437bb524da57ccb9ae711efe3",
+      "companies": [
+        "Amazon/AWS",
+        "NVIDIA"
+      ],
+      "stage": "october2_reuters_attribution_read_historical_proposal_not_completed_financing",
+      "sources": [
+        "https://www.reuters.com/business/retail-consumer/amazon-seeks-offload-8-billion-nvidia-chips-investors-ft-reports-2026-10-02/"
+      ],
+      "facts": "October2 Reuters attributes proposed USD8bn Grace Blackwell SPV/leaseback to FT unnamed sources. Parties had not responded; no completed transaction authenticated. Recent secondary rediscovery does not establish new funding or equipment cancellation.",
+      "questions": [
+        "Obtain original FT report and signed financing/lease terms.",
+        "Verify consolidation, recourse, funded proceeds and supplier-payment impact."
+      ],
+      "publication_status": "historical_candidate_only_no_article"
     }
   ],
   "blockers": [
@@ -23758,7 +23887,7 @@
     }
   ],
   "last_research_date": "2026-10-23",
-  "instruction_commit_sha": "318ab707bf96c03361b30be561dbecff04d3c5da",
+  "instruction_commit_sha": "093b38e9b851ebd437bb524da57ccb9ae711efe3",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
