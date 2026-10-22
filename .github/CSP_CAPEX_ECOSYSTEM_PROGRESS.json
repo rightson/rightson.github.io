@@ -6486,6 +6486,77 @@
         "supplier_economics_limit": "No named incremental GPU vendor allocation, Taiwan supplier award, delivered capacity, incremental revenue, project margin or capital-return calculation disclosed. Financing access supports capacity plans, not verified equipment delivery or supplier earnings."
       },
       "status": "current_and_historical_issuer_originals_verified_drawdown_long_term_refinancing_and_delivery_pending_no_article"
+    },
+    {
+      "fingerprint": "maxlinear-q3-2026-optical-infrastructure-margin-and-cash-divergence-20261022",
+      "event_date": "2026-10-22",
+      "discovered_date": "2026-10-23",
+      "instruction_commit_sha": "fa2cfdd7814fa265ccce0649326909113efc2499",
+      "companies": [
+        "MaxLinear"
+      ],
+      "type": "issuer_optical_infrastructure_growth_next_quarter_outlook_and_cash_conversion_divergence",
+      "sources": [
+        "https://investors.maxlinear.com/press-releases/detail/629/maxlinear-inc-announces-third-quarter-2026-financial",
+        "https://investors.maxlinear.com/all-sec-filings/content/0001288469-26-000061/mxl-20260930.htm",
+        "https://investors.maxlinear.com/press-releases/detail/617/maxlinear-inc-announces-second-quarter-2026-financial",
+        "https://www.investors.com/news/technology/maxlinear-stock-mxl-q3-2026-earnings/"
+      ],
+      "facts": {
+        "source_publication_time": "Issuer index October22,2026 16:05EDT; quarter endedSeptember30,2026.",
+        "currency": "USD",
+        "unit": "million except per-share amounts and percentages",
+        "q3": {
+          "revenue": 218.057,
+          "revenue_qoq_reported_pct": 29,
+          "revenue_yoy_reported_pct": 72,
+          "infrastructure_revenue": 124.907,
+          "infrastructure_revenue_yoy_reported_pct": 210,
+          "infrastructure_share_of_revenue_reported_pct": 57,
+          "gaap_gross_margin_pct": 58.7,
+          "gaap_operating_income": 30.227,
+          "gaap_operating_margin_pct": 13.9,
+          "non_gaap_operating_income": 64.29,
+          "non_gaap_operating_margin_pct": 29.5,
+          "non_gaap_eps": 0.62,
+          "operating_cash_flow": -13.59,
+          "purchases_of_property_and_equipment": 5.94,
+          "purchases_of_intangible_assets": 3.708
+        },
+        "q2_comparison": {
+          "revenue": 168.847,
+          "infrastructure_revenue_yoy_reported_pct": 145,
+          "gaap_operating_income": -4.185,
+          "gaap_operating_margin_pct": -2.5,
+          "non_gaap_operating_margin_pct": 22.3,
+          "operating_cash_flow": 4.809,
+          "prior_q3_revenue_guidance": [
+            210,
+            220
+          ],
+          "scope": "Q3 realised revenue stayed within July issuer guidance; year-on-year growth alone was not an unanticipated revision."
+        },
+        "q4_guidance": {
+          "revenue": [
+            240,
+            260
+          ],
+          "gaap_gross_margin_pct": [
+            58,
+            61
+          ],
+          "non_gaap_gross_margin_pct": [
+            59,
+            62
+          ],
+          "consensus_context": "IBD original reporting attributesUSD226.6m revenue consensus to WallStreet after describing FactSet poll; original provider survey/sample unavailable.USD250m guidance midpoint is10.33% above this attributed figure. Not a directly retrieved consensus dataset."
+        },
+        "demand_relationship": "Issuer attributes optical momentum to Keystone PAM4 DSP volume ramp and customer activity around Rushmore/Annapurna1.6T optical/electrical families. Product activity is not a disclosed named hyperscaler order or competitor share transfer.",
+        "cash_context": "10-Q says nine-month operatingcashflow-17.653m versus+9.213m prior-year, with workingcapital outflow approximately137.6m primarily wafer prepayments and inventory purchases supporting data-center demand. This explanation is nine-month scope, not a quantified standaloneQ3 cause allocation. Temporary growth funding and weaker cash conversion remain competing explanations.",
+        "credit_context": "October22release discloses October16amendment increasing existing revolving commitments byUSD70m toUSD200m; notUSD200m of newcash. 10-Q reports liquidity-covenant threshold reducedUSD80m toUSD60m.",
+        "limits": "Infrastructure includes optical data-center, high-performance analog and wireless-backhaul products; not all AI revenue. Companywide margins not optical-only profitability. No named Taiwan supplier allocation or achieved1.6T volume inferred. GAAP/non-GAAP and realised/forecast periods kept separate."
+      },
+      "status": "issuer_q3_release_10q_and_prior_guidance_verified_product_cash_and_customer_followup_pending_no_article"
     }
   ],
   "articles": [],
@@ -6603,14 +6674,14 @@
     ],
     "current_run_screening": {
       "date": "2026-10-23",
-      "checked_at": "2026-10-22 20:21:06 UTC",
-      "instruction_commit_sha": "71b92785f48279a1ba8ba3bab862889442d58d75",
-      "status": "98_name_grouped_discovery_six_core_indices_and_new_nebius_short_term_facility_verified",
+      "checked_at": "2026-10-22 21:24:27 UTC",
+      "instruction_commit_sha": "fa2cfdd7814fa265ccce0649326909113efc2499",
+      "status": "98_name_grouped_discovery_five_core_indices_and_new_maxlinear_profit_cash_event_verified",
       "company_count": 98,
       "grouped_query_count": 14,
       "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All98 active names included in14 fresh grouped discovery queries; six mandatory core issuer indices read. Outside-universe Nebius financing followed to current and historical issuer originals. No watchlist edit.",
+      "scope": "All98 active names included in fresh14 grouped discovery queries. TSMC/MediaTek/NVIDIA/AMD/Marvell issuer indices read; Broadcom homepage unavailable, partial quarterly-result-index fallback read. MaxLinear is outside the active Taiwan universe and adds no active-company primary count. Watchlist unchanged.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
@@ -6618,19 +6689,20 @@
         "https://ir.amd.com/news-events/press-releases",
         "https://investors.broadcom.com/",
         "https://investor.marvell.com/news-events/press-releases",
-        "https://nebius.com/newsroom/nebius-secures-3-5-billion-financing-facility-with-citi",
-        "https://nebius.com/newsroom/nebius-raises-775-million-in-first-secured-debt-financing-to-accelerate-global-buildout",
-        "https://www.reuters.com/technology/nebius-gets-35-billion-citi-facility-data-center-growth-2026-10-22/",
-        "https://www.businessinsider.com/ai-infrastructure-stocks-to-buy-hyperscaler-spending-capex-2026-10",
-        "https://ec.ltn.com.tw/amp/article/breakingnews/5614560"
+        "https://investors.broadcom.com/financial-information/quarterly-results",
+        "https://investors.maxlinear.com/press-releases/detail/629/maxlinear-inc-announces-third-quarter-2026-financial",
+        "https://investors.maxlinear.com/all-sec-filings/content/0001288469-26-000061/mxl-20260930.htm",
+        "https://investors.maxlinear.com/press-releases/detail/617/maxlinear-inc-announces-second-quarter-2026-financial",
+        "https://www.investors.com/news/technology/maxlinear-stock-mxl-q3-2026-earnings/"
       ],
       "source_limits": [
-        "Same-commit mandatory instructions/specifications fetched in full; unchanged blob versions confirmed. Full ledger parsed, three related articles freshly fetched and reviewed for source/duplicate comparison.",
-        "All98 names appeared in discovery queries; returned many historical, quotation and broad sector pages. This is not98 individually verified current filings. Existing company-economics validation gaps remain.",
-        "Core issuer indices retain prior registered baselines. No new primary-confirmed MediaTek TPUv9/v10 award, yield-driven redesign, purchasing split, NRE or mass-production terms authenticated.",
-        "October22 MediaTek risk and upbeat broker reporting remain attributed, conflicting and without a newly obtained issuer or institution original; prior research candidates retained. Morgan Stanley selection article attributes October15 note and is already registered, not a new revision.",
-        "Nebius new364-day facility and July2030-maturity asset facility are separate financing populations; no drawn amount, all-in fixed rate or named new supplier earnings assumed.",
-        "Only public source facts and research completion stages appended. No quotations, valuations, holdings, institutional trading data, private market-structure checks or investment judgment saved. No new article or website-publication claim."
+        "Mandatory same-commit instructions/specifications fetched in full with unchanged blob versions. Full ledger parsed; three recent related articles freshly fetched, matched unchanged versions and reviewed for duplicate scope.",
+        "Grouped discovery returned many historical, theme and quotation pages. Inclusion of98 names is not98 fresh individually verified current filings; existing company-economics validation gaps remain.",
+        "TSMC latest index retainsOctober15 Q3 release; MediaTek latest index retainsSeptember30 release. No new primary-confirmed TPU NRE, customer procurement allocation, design award or revised production terms established. NVIDIA/AMD/Marvell indices retain previously registered baselines.",
+        "Broadcom homepage failed and retry returned403; alternate news path returned404. Quarterly-result index readable but incomplete/stale versus previously registered releases. No fresh all-release completion or no-change conclusion asserted for Broadcom.",
+        "MaxLinear Q3issuer release and10-Q provide new optical demand/profitability and cash-consumption facts. Q3revenue within Julyguidance; attributed Q4consensus is not independently retrievedFactSet. Infrastructure revenues are not exclusivelyAI.",
+        "Full-current-filings review of all global suppliers not claimed. Issuer IRcall deck failed; authenticated release and10-Q numerical bodies were available. No call-transcript completion claimed.",
+        "Only public sources, reported results, guidance and research stages appended. No current quotations, valuations, holdings, private fund flows, trading conditions or investment judgment saved. No new article or website-publication claim."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -15453,6 +15525,39 @@
           "Nebius new364-day facility and July2030-maturity asset facility are separate financing populations; no drawn amount, all-in fixed rate or named new supplier earnings assumed.",
           "Only public source facts and research completion stages appended. No quotations, valuations, holdings, institutional trading data, private market-structure checks or investment judgment saved. No new article or website-publication claim."
         ]
+      },
+      {
+        "date": "2026-10-23",
+        "checked_at": "2026-10-22 21:24:27 UTC",
+        "instruction_commit_sha": "fa2cfdd7814fa265ccce0649326909113efc2499",
+        "status": "98_name_grouped_discovery_five_core_indices_and_new_maxlinear_profit_cash_event_verified",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All98 active names included in fresh14 grouped discovery queries. TSMC/MediaTek/NVIDIA/AMD/Marvell issuer indices read; Broadcom homepage unavailable, partial quarterly-result-index fallback read. MaxLinear is outside the active Taiwan universe and adds no active-company primary count. Watchlist unchanged.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/quarterly-results",
+          "https://investors.maxlinear.com/press-releases/detail/629/maxlinear-inc-announces-third-quarter-2026-financial",
+          "https://investors.maxlinear.com/all-sec-filings/content/0001288469-26-000061/mxl-20260930.htm",
+          "https://investors.maxlinear.com/press-releases/detail/617/maxlinear-inc-announces-second-quarter-2026-financial",
+          "https://www.investors.com/news/technology/maxlinear-stock-mxl-q3-2026-earnings/"
+        ],
+        "source_limits": [
+          "Mandatory same-commit instructions/specifications fetched in full with unchanged blob versions. Full ledger parsed; three recent related articles freshly fetched, matched unchanged versions and reviewed for duplicate scope.",
+          "Grouped discovery returned many historical, theme and quotation pages. Inclusion of98 names is not98 fresh individually verified current filings; existing company-economics validation gaps remain.",
+          "TSMC latest index retainsOctober15 Q3 release; MediaTek latest index retainsSeptember30 release. No new primary-confirmed TPU NRE, customer procurement allocation, design award or revised production terms established. NVIDIA/AMD/Marvell indices retain previously registered baselines.",
+          "Broadcom homepage failed and retry returned403; alternate news path returned404. Quarterly-result index readable but incomplete/stale versus previously registered releases. No fresh all-release completion or no-change conclusion asserted for Broadcom.",
+          "MaxLinear Q3issuer release and10-Q provide new optical demand/profitability and cash-consumption facts. Q3revenue within Julyguidance; attributed Q4consensus is not independently retrievedFactSet. Infrastructure revenues are not exclusivelyAI.",
+          "Full-current-filings review of all global suppliers not claimed. Issuer IRcall deck failed; authenticated release and10-Q numerical bodies were available. No call-transcript completion claimed.",
+          "Only public sources, reported results, guidance and research stages appended. No current quotations, valuations, holdings, private fund flows, trading conditions or investment judgment saved. No new article or website-publication claim."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -23953,6 +24058,27 @@
         "Trace actual proceeds to accepted capacity, paid utilisation, supplier payments and cash returns."
       ],
       "publication_status": "event_and_research_candidate_only_no_article"
+    },
+    {
+      "key": "maxlinear-optical-dsp-growth-to-wafer-prepayment-recovery-and-cash-20261023",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "fa2cfdd7814fa265ccce0649326909113efc2499",
+      "companies": [
+        "MaxLinear"
+      ],
+      "related_public_event": "maxlinear-q3-2026-optical-infrastructure-margin-and-cash-divergence-20261022",
+      "stage": "quarterly_profit_and_outlook_change_verified_cash_consumption_and_product_mix_followup_pending",
+      "sources": [
+        "https://investors.maxlinear.com/press-releases/detail/629/maxlinear-inc-announces-third-quarter-2026-financial",
+        "https://investors.maxlinear.com/all-sec-filings/content/0001288469-26-000061/mxl-20260930.htm",
+        "https://investors.maxlinear.com/press-releases/detail/617/maxlinear-inc-announces-second-quarter-2026-financial"
+      ],
+      "questions": [
+        "Reconcile wafer prepayments and inventory commitments with capacity deliveries, refunds, accepted customer shipments and receivable collection.",
+        "Separate Keystone800G realised volume from1.6T Rushmore/Annapurna customer activity, qualification and future production.",
+        "Check Q4 guidance delivery, sustained GAAP margin, recurring equity compensation and operatingcashflow before attributing durable supplier economics."
+      ],
+      "publication_status": "event_and_candidate_only_no_article"
     }
   ],
   "blockers": [
@@ -23972,7 +24098,7 @@
     }
   ],
   "last_research_date": "2026-10-23",
-  "instruction_commit_sha": "71b92785f48279a1ba8ba3bab862889442d58d75",
+  "instruction_commit_sha": "fa2cfdd7814fa265ccce0649326909113efc2499",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
