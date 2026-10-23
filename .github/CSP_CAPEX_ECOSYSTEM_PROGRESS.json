@@ -16640,6 +16640,36 @@
           "Four stronger discovery queries and targeted primary-source follow-ups supplemented 14 grouped queries. Grouped discovery is not 98 individually audited current filings. Historical revenue and primary coverage retained with outstanding order, margin and cash-flow gaps.",
           "Ledger-only source/research-stage update. No article drafted or published. Public business facts only; no equity prices, valuation, holdings or private fundflow analysis."
         ]
+      },
+      {
+        "date": "2026-10-24",
+        "checked_at": "2026-10-23 21:15:00 UTC",
+        "instruction_commit_sha": "d1a4f553307ec1ae656ee40072a244d9aa294edd",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "5ce5b91f268319bb516e7c229f0baa07dbba8d63",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "active_universe_grouped_discovery_six_core_indices_and_openai_workload_resumption_checked",
+        "scope": "Complete same-commit mandatory instructions, specifications, progress blob and three related article bodies retrieved. Unchanged instruction/article hashes match previously fully read content. All98 active names included in14 fresh grouped discovery queries; current individual-filing and financial-economics audit remains partial.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://openai.com/index/securing-our-frontier-model-training-environment/",
+          "https://www.reuters.com/business/openai-resumes-frontier-ai-training-with-enhanced-security-no-internet-access-2026-10-23/"
+        ],
+        "source_limits": [
+          "All six core issuer news indices retrieved this time. Broadcom financial-news availability recovered from the preceding403; latest visible entry remains October21 Arcot. This is an index check, not a fresh full regulatory-filing audit.",
+          "Latest visible core index dates: TSMC October15; MediaTek September30; NVIDIA dated latest news October22 with older featured stories; AMD October12; Broadcom October21; Marvell October13. Current ASIC commercial allocations, NRE and profit terms are not inferred from product announcements.",
+          "Nine stronger discovery queries supplemented14 grouped queries; original OpenAI disclosure checked. October23 publication describes October1 resumption; no quantified change in purchases, supplier earnings or customer payments authenticated.",
+          "Sinbon Q3, supplier capacity reservations, MediaTek broker commentary, PCB material forecasts and other prior financial disclosures match existing sources/candidates. Original broker models and comparable old/new estimates remain unavailable; targets and price moves are not evidence of earnings revisions.",
+          "StocksDownUnder financing article returned403; Zacks and TechStartups commentary opens failed. Their headline claims were not promoted into verified primary facts.",
+          "Grouped discovery does not establish98 individually audited current filings. Historical primary revenue and relationship coverage retained; outstanding company-specific order, margin and cash-conversion gaps remain.",
+          "Ledger-only source/research-stage update; no article drafted or published. No equity prices, valuation, holdings or private fundflow analysis."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -25885,6 +25915,28 @@
         "Verify deployment location, purchased versus rented capacity and incremental procurement volumes.",
         "Measure migration cost and utilisation with workload-matched customer economics rather than transferring isolated vendor benchmark results.",
         "Authenticate any MediaTek design responsibility, NRE or volume-profit change and Broadcom/Marvell allocation before attributing this adoption to specific chip suppliers."
+      ],
+      "publication_status": "research_candidate_only_not_drafted"
+    },
+    {
+      "key": "openai-oct23-disclosure-oct1-frontier-rl-resumption-versus-compute-demand-20261024",
+      "date": "2026-10-24",
+      "source_date": "2026-10-23",
+      "event_date": "2026-10-01",
+      "instruction_commit_sha": "d1a4f553307ec1ae656ee40072a244d9aa294edd",
+      "companies": [
+        "OpenAI",
+        "cloud infrastructure providers"
+      ],
+      "stage": "primary operational disclosure authenticated; procurement and economics unquantified",
+      "sources": [
+        "https://openai.com/index/securing-our-frontier-model-training-environment/",
+        "https://www.reuters.com/business/openai-resumes-frontier-ai-training-with-enhanced-security-no-internet-access-2026-10-23/"
+      ],
+      "facts": "OpenAI's October23 original says a September20 containment incident prompted a pause in its most capable training/evaluation; frontier RL training and internal inference resumed October1 after stronger controls. Frontier RL uses an offline environment. This authenticates workload resumption, not an October23 restart, all-training halt, new hardware purchase, or cloud-spending revision. Compute volume, paid utilization, incremental supplier revenue and cash effects are not disclosed. Reuters gives a different September incident date; retain the issuer date with the discrepancy unresolved.",
+      "questions": [
+        "Do subsequent CSP or supplier disclosures quantify changed compute utilization, orders, delivery schedules or payment commitments?",
+        "Does containment work add sustained compute demand or reduce productive training utilization after accounting for red-team workloads?"
       ],
       "publication_status": "research_candidate_only_not_drafted"
     }
