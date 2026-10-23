@@ -16052,6 +16052,36 @@
           "Grouped discovery mostly historical revenue/expansion, conference schedules and repeated supply-reservation news. This is not98 individually checked current filings.",
           "No new longformarticle or websitepublication claim. Only public source facts and researchstages appended; no currentquotes,valuation,holdings,privatefundflows orinvestmentjudgment."
         ]
+      },
+      {
+        "date": "2026-10-23",
+        "checked_at": "2026-10-23 05:45:56 UTC",
+        "instruction_commit_sha": "1b5301c2b5a78cec2f48e1705559ed704d047539",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "abeae02d771d45d7957cf0157909f5a80b865fd9",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "active_universe_grouped_discovery_six_core_indices_and_cooling_power_baselines_checked",
+        "scope": "All mandatory same-commit files, complete ledger and related articles retrieved; unchanged immutable blobs match previously read versions. All 98 active names included in 14 fresh grouped discovery queries. Carrier and Oracle/Vantage supplemental research does not change the watchlist. Individual current-filings audit remains partial.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.carrier.com/us/en/news/corporate/2026/carrierto-invest-more-than-600-million-to-expand-advanced-us-manufacturing-and-engineering-capacity/",
+          "https://ir.carrier.com/news/news-details/2025/Carrier-Announces-Additional-1-Billion-Investment-in-U-S--Manufacturing-Footprint-Advanced-Cutting-Edge-RD-and-Workforce-Expansion/default.aspx",
+          "https://ir.carrier.com/news/news-details/2026/Carrier-Reports-Second-Quarter-2026-Results/default.aspx",
+          "https://www.wsj.com/business/carrier-plans-600-million-texas-plant-to-make-cooling-gear-for-ai-data-centers-01c1a1dc",
+          "https://www.aterio.io/blog/oracle-project-lighthouse-power-delays"
+        ],
+        "source_limits": [
+          "Grouped discovery is not 98 individually checked current filings. Historical September monthly-revenue coverage retained; current orders/margins/cash audit partial.",
+          "Core issuer indices checked; no new authenticated TSMC / MediaTek design award, procurement terms or financial revision identified in retrieved material.",
+          "Carrier expansion plan retained for order/ramp/cash validation; historical investment budgets not added together. Oracle research datedSeptember 29 does not authenticate a freshOctober delay.",
+          "No new long-form article or publication claim. Public ledger contains source facts and research stages only; no current quotes,valuation,private holdings or fund flows."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -24878,6 +24908,51 @@
         "Customer funding, permits, gas supply, equipment delivery and acceptance; maintenance activation and retained service economics."
       ],
       "publication_status": "candidate_only_no_article"
+    },
+    {
+      "key": "carrier-fort-worth-chiller-capacity-investment-to-order-margin-and-cash-20261023",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "1b5301c2b5a78cec2f48e1705559ed704d047539",
+      "companies": [
+        "Carrier"
+      ],
+      "stage": "issuer_expansion_plan_and_prior_factory_cost_baseline_read_order_conversion_pending",
+      "sources": [
+        "https://www.carrier.com/us/en/news/corporate/2026/carrierto-invest-more-than-600-million-to-expand-advanced-us-manufacturing-and-engineering-capacity/",
+        "https://ir.carrier.com/news/news-details/2025/Carrier-Announces-Additional-1-Billion-Investment-in-U-S--Manufacturing-Footprint-Advanced-Cutting-Edge-RD-and-Workforce-Expansion/default.aspx",
+        "https://ir.carrier.com/news/news-details/2026/Carrier-Reports-Second-Quarter-2026-Results/default.aspx",
+        "https://www.wsj.com/business/carrier-plans-600-million-texas-plant-to-make-cooling-gear-for-ai-data-centers-01c1a1dc"
+      ],
+      "facts": {
+        "announcement": "October 22 issuer plans >USD 600 m over three years for >1 m-square-foot Fort Worth manufacturing/engineering site; operations expected 2027,1500 jobs. Air/water-cooled commercial chillers serve data centers and multiple other sectors.",
+        "baseline": "May 2025 issuer announced USD 1 bn five-year manufacturing/R&D/workforce program. October release does not reconcile overlap; do not sum programs. July 2026 guidance already included combined NORESCO exit/new U.S. factory EPS costs; no new guidance revision established here.",
+        "original_reporting": "October 22 WSJ reports potential commercial-chiller capacity >2 x current NC/Mexico capacity and 3000 annual air-cooled units. Factoryplan is not realised production or customer acceptance.",
+        "limits": "Named incremental customer orders, committed utilisation, margin/cash bridge and net incremental capex remain unverified. Data-center sales outlook mentioned in media requires comparison with July baseline; not treated as October guidance increase."
+      },
+      "questions": [
+        "Reconcile Fort Worth spend with prior investment plans and July factory cost guidance.",
+        "Verify contracted demand, equipment qualification,2027 ramp and incremental sales/margin/cash after start-up costs."
+      ],
+      "publication_status": "candidate_only_no_article"
+    },
+    {
+      "key": "oracle-lighthouse-historical-power-delay-research-to-current-psc-status-gap-20261023",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "1b5301c2b5a78cec2f48e1705559ed704d047539",
+      "companies": [
+        "Oracle",
+        "Vantage Data Centers"
+      ],
+      "stage": "historical_original_research_read_current_regulatory_decision_unverified",
+      "sources": [
+        "https://www.aterio.io/blog/oracle-project-lighthouse-power-delays"
+      ],
+      "facts": "Aterio report published September 29 uses filings through September 24. It distinguishes 902 MW critical IT from 1.3 GW campus electrical demand. October 19 completeness is an assumed review milestone, not an observed decision. Its energisation dates are scenarios, not issuer commitments. No fresh October delay or current PSC decision authenticated; construction progress alone does not establish powered capacity.",
+      "questions": [
+        "Read latest PSC docket and utility schedule before describing a new delay.",
+        "Reconcile partial-power, full-energisation and tenant-delivery milestones with issuer disclosures."
+      ],
+      "publication_status": "historical_candidate_only_no_article"
     }
   ],
   "blockers": [
