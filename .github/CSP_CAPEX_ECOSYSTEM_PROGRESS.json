@@ -16484,6 +16484,41 @@
           "C SUN preview-page dates conflict with a historical syndicated version; it is not treated as a fresh operating update. Previously recorded Meta, Vicor, NextDC, Solidigm and other financial events deduplicated.",
           "No article publication or new material-event alert. Public source facts and research stages only; no current stock prices, valuations, private holdings, fundflows or trading conditions."
         ]
+      },
+      {
+        "date": "2026-10-24",
+        "checked_at": "2026-10-23 16:09:37 UTC",
+        "instruction_commit_sha": "60588dce69f995951b9ac74b0659d9549714b9bf",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "5ce5b91f268319bb516e7c229f0baa07dbba8d63",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "active_universe_grouped_discovery_six_core_indices_and_funding_demand_provenance_checked",
+        "scope": "Complete mandatory same-commit instructions, full ledger blob and three related article bodies retrieved. Unchanged instruction and article blobs match already-read full content. All 98 active names included in 14 fresh grouped discovery queries; individual current-filing audit remains partial.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.rystadenergy.com/news/data-center-fuel-cell-power-demand",
+          "https://www.ajot.com/news/fuel-cell-investment-by-data-centers-set-to-grow-tenfold-reaching-30-billion-by-2030",
+          "https://www.reuters.com/business/energy/why-ai-data-centers-are-powering-boom-fuel-cell-demand-2026-10-23/",
+          "https://www.sec.gov/Archives/edgar/data/886128/000110465926104498/fcel-20260902xex99d2.htm",
+          "https://www.ft.com/content/bb564eb1-79d4-4694-aa24-1155202a9abc",
+          "https://www.reuters.com/world/openai-seeks-accelerate-fundraising-ahead-anthropic-ipo-sources-say-2026-10-19/",
+          "https://www.reuters.com/technology/artificial-intelligence/why-anthropic-is-turning-away-some-users-2026-10-22/",
+          "https://www.theinformation.com/articles/anthropics-rapid-slowing-growth-weigh-ipo-valuation"
+        ],
+        "source_limits": [
+          "Six core issuer indices remain TSMC October15, MediaTek September30, NVIDIA October22, AMD October12, Broadcom October21 and Marvell October13. No newly authenticated core AI award, NRE, procurement split or production-profit revision established.",
+          "All active names received grouped discovery screening, not 98 individually audited current filings. Historical primary and monthly-revenue coverage retained without overwriting outstanding economics gaps.",
+          "Fuel-cell market projections trace to June25; October23 articles do not create a new forecast revision. Framework capacity, awards, firm orders, manufacturing output and energised installations remain distinct.",
+          "Funding discussions and attributed revenue-quality estimates retained as source-qualified candidates. FT full article is subscription-blocked, issuer closing confirmation absent, and model-provider source revenue percentages lack independently audited reconciliation.",
+          "Oracle/BlueOwl project-delay story is dated September24, not a new October24 incident. Existing Meta, Vicor, Bloom, NextDC, Solidigm, Google/Voltus, MediaTek/Citi and related events deduplicated. Storm sports-event cancellation does not establish fab disruption.",
+          "No article publication or new material-event alert. Public source facts and research stages only; no current stock prices, valuations, holdings, private fundflows or trading conditions."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -25583,6 +25618,54 @@
         "Reconcile the 100-MW annual baseline, additional 1,070-MW wording and rounded headline; verify PJM accreditation, actual enrolment and dispatch milestones.",
         "Obtain contract payments, participant economics, equipment procurement and cash conversion before assigning incremental earnings to resource or control vendors.",
         "Test whether flexible-capacity procurement improves actual interconnection and utilisation; no assumed substitution for round-the-clock energy or transmission investment."
+      ],
+      "publication_status": "research_candidate_only_no_material_investment_alert_or_article"
+    },
+    {
+      "key": "fuel-cell-demand-forecast-historical-provenance-and-backlog-scope-20261024",
+      "date": "2026-10-24",
+      "instruction_commit_sha": "60588dce69f995951b9ac74b0659d9549714b9bf",
+      "companies": [
+        "Rystad Energy",
+        "Bloom Energy",
+        "FuelCell Energy"
+      ],
+      "stage": "june25_original_research_and_september2_issuer_backlog_definitions_checked_october23_reporting_deduplicated",
+      "sources": [
+        "https://www.rystadenergy.com/news/data-center-fuel-cell-power-demand",
+        "https://www.ajot.com/news/fuel-cell-investment-by-data-centers-set-to-grow-tenfold-reaching-30-billion-by-2030",
+        "https://www.reuters.com/business/energy/why-ai-data-centers-are-powering-boom-fuel-cell-demand-2026-10-23/",
+        "https://www.sec.gov/Archives/edgar/data/886128/000110465926104498/fcel-20260902xex99d2.htm"
+      ],
+      "facts": "Rystad's forecast cited in October 23 reporting dates to June 25, not a new October revision. The original describes fuel-cell market revenue approaching USD30bn in 2030 from USD2.8bn in 2025; its roughly 9GW book includes framework agreements. Its 40% assumption concerns dedicated onsite power of multiple types, not solely fuel-cell penetration. Planned manufacturing output differs from commissioned customer capacity. September 2 FuelCell Energy material distinguishes executed non-cancelable backlog from awards and reservations awaiting definitive agreements. These historical sources clarify conversion risk; no fresh completed equipment order or financial guidance revision established.",
+      "questions": [
+        "Obtain updated model assumptions and firm-order reconciliation rather than treating the June forecast as a new October demand increase.",
+        "Verify manufacturer output, site readiness, fuel supply, acceptance and collections against agreed contract terms.",
+        "Validate delivered-system costs and material sourcing; historical modelling does not establish current supplier earnings."
+      ],
+      "publication_status": "historical_source_provenance_candidate_only_no_material_alert_or_article"
+    },
+    {
+      "key": "frontier-model-provider-financing-and-paid-demand-quality-original-report-leads-20261024",
+      "date": "2026-10-24",
+      "instruction_commit_sha": "60588dce69f995951b9ac74b0659d9549714b9bf",
+      "companies": [
+        "OpenAI",
+        "Anthropic",
+        "AI cloud infrastructure suppliers"
+      ],
+      "stage": "original_reporting_leads_read_closed_financing_and_primary_demand_quality_economics_pending",
+      "sources": [
+        "https://www.ft.com/content/bb564eb1-79d4-4694-aa24-1155202a9abc",
+        "https://www.reuters.com/world/openai-seeks-accelerate-fundraising-ahead-anthropic-ipo-sources-say-2026-10-19/",
+        "https://www.reuters.com/technology/artificial-intelligence/why-anthropic-is-turning-away-some-users-2026-10-22/",
+        "https://www.theinformation.com/articles/anthropics-rapid-slowing-growth-weigh-ipo-valuation"
+      ],
+      "facts": "FT search extraction describes an OpenAI fundraising process with weaker investor demand; direct article opening exposes a subscription wall, and no closing or cash receipt is verified. Reuters's October 22 report attributes to meeting participants that Anthropic blocked customers representing 5%-7% of first-nine-month revenue over alleged model distillation. A similar revenue-share estimate appeared in The Information on October 14. These are reporting-level funding and demand-quality leads, not verified new cloud-order cancellations or a current-period revenue forecast cut. No private-company valuation figures are retained here.",
+      "questions": [
+        "Obtain executed financing, actual proceeds and timing relative to cloud payment commitments; distinguish fundraising discussions from available cash.",
+        "Verify the affected revenue denominator, timing, legitimate-customer retention and compute redeployment before inferring net demand loss.",
+        "Authenticate supplier procurement or earnings changes before propagating model-provider funding or customer restrictions to specific hardware companies."
       ],
       "publication_status": "research_candidate_only_no_material_investment_alert_or_article"
     }
