@@ -15917,6 +15917,32 @@
           "Current order,margin,cash-flow audits remain partial; historical monthly revenue baseline retained.",
           "Solidigm financing lead retained as candidate with issuer-original statement and expenditure consequences pending. No article, individual-stock quotes or valuation, holdings or private market-structure data appended."
         ]
+      },
+      {
+        "date": "2026-10-23",
+        "checked_at": "2026-10-23 02:11:28 UTC",
+        "instruction_commit_sha": "6cc1d4ca44d6f04ed9b0131a484deb9c5a68ada6",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "613546e71a43168b92315eb85b7ad89b4100497b",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "full_active_universe_grouped_discovery_and_core_indices_checked_no_new_material_alert",
+        "scope": "Fresh same-commit mandatory files, complete JSON ledger, current universe and three related articles retrieved. Their immutable blobs match previously fully read versions. Fourteen grouped queries cover all98 names; six core issuer news indices plus broader CSP/TPU/power/cooling research. Grouped search is not98 individual current-filings audits.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-schedules-third-quarter-2026-earnings-release-and"
+        ],
+        "source_limits": [
+          "No new authenticated core-company TPU design responsibility, NRE, mass-production economics or procurement split established. Supplier expansions and capex reports largely match registered events.",
+          "Dover prior-guidance evidence completed and CBRE cash-definition/infrastructure scope retained as research candidates. Current orders,margins,cash-flow validation across98 companies remains partial.",
+          "Digital Realty issuer schedules Q3 releaseOctober29; third-party October22 estimates not treated as released results. Dover current-call PDF returned403; only accessible issuer releases used.",
+          "No article, current individual-stock quotes, valuation, holdings or private Taiwan fund-flow data appended."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -24556,6 +24582,95 @@
       "questions": [
         "Obtain issuer statement and quantify replacement funding, project timing and changes to actual capital spending.",
         "Verify any resulting equipment or NAND/SSD supply change; IPO decision alone does not establish cancelled procurement."
+      ],
+      "publication_status": "candidate_only_no_article"
+    },
+    {
+      "key": "dover-july-guidance-baseline-source-completion-20261023",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "6cc1d4ca44d6f04ed9b0131a484deb9c5a68ada6",
+      "companies": [
+        "Dover"
+      ],
+      "related_candidate": "dover-q3-2026-liquid-cooling-exposure-and-historical-capacity-baseline-20261023",
+      "stage": "prior_guidance_gap_resolved_primary_july_release_compared_no_article",
+      "sources": [
+        "https://investors.dovercorporation.com/news-releases/news-release-details/dover-reports-second-quarter-2026-results",
+        "https://investors.dovercorporation.com/static-files/5c58f85b-786b-4425-a7f6-af5ee24c49fd"
+      ],
+      "facts": {
+        "period": "FY2026 management guidance; July23 versus October22 releases",
+        "prior_adjusted_eps_usd": [
+          10.55,
+          10.75
+        ],
+        "current_adjusted_eps_usd": [
+          10.6,
+          10.75
+        ],
+        "prior_revenue_growth_pct": [
+          6,
+          8
+        ],
+        "current_revenue_growth_pct": [
+          7,
+          8
+        ],
+        "prior_organic_revenue_growth_pct": [
+          4,
+          6
+        ],
+        "current_organic_revenue_growth_pct": [
+          5,
+          6
+        ],
+        "scope": "Companywide continuing operations; not liquid-cooling-only economics. Adjusted EPS midpoint increases approximately0.235%; upper bound unchanged."
+      },
+      "questions": [
+        "Separate liquid-cooling product margin and order conversion from food-retail recovery.",
+        "Verify commissioned expansion and order cancellations."
+      ],
+      "publication_status": "candidate_source_completion_only_no_article"
+    },
+    {
+      "key": "cbre-q3-2026-infrastructure-growth-cash-definition-and-acquisition-scope-20261023",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "6cc1d4ca44d6f04ed9b0131a484deb9c5a68ada6",
+      "companies": [
+        "CBRE"
+      ],
+      "stage": "current_and_prior_issuer_release_read_organic_infrastructure_profit_and_outlook_pending",
+      "sources": [
+        "https://ir.cbre.com/press-releases/detail/271/cbre-group-inc-reports-financial-results-for-q3-2026",
+        "https://ir.cbre.com/press-releases/detail/268/cbre-group-inc-reports-financial-results-for-q2-2026"
+      ],
+      "facts": {
+        "period": "Q3 versus Q2 2026; USD million except EPS and percentages",
+        "q3_core_eps": 2.05,
+        "q3_core_eps_yoy_pct": 28.1,
+        "q2_core_eps_yoy_pct": 30,
+        "critical_infrastructure_revenue_local_currency_yoy_pct": {
+          "q2": 66,
+          "q3": 80
+        },
+        "scope": "Infrastructure growth includes acquired Pearce; BOE profit is broader than data-center services.",
+        "q3_cash": {
+          "operating_cash_flow": 869,
+          "capital_expenditure": 126,
+          "real_estate_disposition_gain": 184,
+          "issuer_free_cash_flow": 927
+        },
+        "prior_year_q3_cash": {
+          "operating_cash_flow": 827,
+          "capital_expenditure": 84,
+          "real_estate_disposition_gain": 36,
+          "issuer_free_cash_flow": 779
+        },
+        "definition": "Issuer FCF adds real-estate disposition gains to OCF less capex; OCF less capex equals743 in both periods. Not a pure recurring infrastructure cash-flow measure."
+      },
+      "questions": [
+        "Obtain current issuer outlook or call transcript; distinguish organic data-center service profits from acquisition contribution and land monetisation.",
+        "Verify recurring margins and working-capital conversion after the Onnec transaction closes."
       ],
       "publication_status": "candidate_only_no_article"
     }
