@@ -15943,6 +15943,31 @@
           "Digital Realty issuer schedules Q3 releaseOctober29; third-party October22 estimates not treated as released results. Dover current-call PDF returned403; only accessible issuer releases used.",
           "No article, current individual-stock quotes, valuation, holdings or private Taiwan fund-flow data appended."
         ]
+      },
+      {
+        "date": "2026-10-23",
+        "checked_at": "2026-10-23 03:10:38 UTC",
+        "instruction_commit_sha": "11716e7faa02f233a9edb19582361579f6162037",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "abeae02d771d45d7957cf0157909f5a80b865fd9",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "active_universe_grouped_discovery_and_six_core_indices_checked_no_new_material_alert",
+        "scope": "Fresh same-commit mandatory instructions, specifications, complete ledger and three related article bodies retrieved. Immutable instruction/article blobs match previously fully read versions. Fourteen grouped discovery queries cover all98 active names; six core issuer indices and additional TPU/sovereign-compute/storage searches checked. This is not98 individual current-filings audits.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases"
+        ],
+        "source_limits": [
+          "Alpha-quant default head advanced toabeae02d771d45d7957cf0157909f5a80b865fd9; universe blob unchanged. No watchlist modification.",
+          "TSMC latest release remainsOctober15; MediaTek latest press-room releaseSeptember30. No new authenticated TPU award,NRE,volume economics or procurement split established.",
+          "F22 construction-stop andNEXTDC guidance reports matched existing candidates/events. Kazakhstan vendor counts and rare-earth original-report completion retained as candidates without a new alert or article.",
+          "Historical monthly-revenue baseline retained; current order,margin,cash-flow validation across98companies remains partial. No individual-stock quotes,valuation,holdings or private market/fund-flow data appended."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -24673,6 +24698,51 @@
         "Verify recurring margins and working-capital conversion after the Onnec transaction closes."
       ],
       "publication_status": "candidate_only_no_article"
+    },
+    {
+      "key": "nvidia-kazakhtelecom-existing-deployment-versus-2027-rubin-plan-20261023",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "11716e7faa02f233a9edb19582361579f6162037",
+      "companies": [
+        "NVIDIA",
+        "Kazakhtelecom"
+      ],
+      "stage": "issuer_blog_deployment_counts_read_customer_funding_delivery_and_economics_pending",
+      "sources": [
+        "https://blogs.nvidia.com/blog/kazakhstan-ai-compute-ecosystem/"
+      ],
+      "facts": {
+        "publication_date": "2026-10-22",
+        "issuer_reported_existing_gpus": {
+          "H200": 400,
+          "B300": 480
+        },
+        "planned_2027": "More than1,000 GPUs at DataCenterValley and more than1,000 VeraRubin GPUs inEkibastuz. Existing deployments and future plans are distinct.",
+        "scope": "Vendor statement; no disclosed binding order value, financing completion, supplier-specific margin or cash receipts. Broader sovereign-compute plans are not substituted for signed procurement."
+      },
+      "questions": [
+        "Obtain customer financing, delivery, power and acceptance milestones.",
+        "Identify actual equipment procurement and retained economics before extrapolating to Taiwan suppliers."
+      ],
+      "publication_status": "candidate_only_no_article"
+    },
+    {
+      "key": "tsmc-rare-earth-equipment-survey-original-report-source-completion-20261023",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "11716e7faa02f233a9edb19582361579f6162037",
+      "companies": [
+        "TSMC"
+      ],
+      "related_candidate": "tsmc-reported-rare-earth-free-fab-automation-survey-20261022",
+      "stage": "original_reporting_read_issuer_and_procurement_confirmation_pending",
+      "sources": [
+        "https://www.reuters.com/world/china/tsmc-seeks-factory-equipment-alternatives-thwart-chinas-rare-earths-grip-sources-2026-10-22/"
+      ],
+      "facts": "October22 Reuters original attributes supplier surveys about rare-earth-free factory-automation motors to three sources. Discussions are early, broad deployment has not occurred, and TSMC declined comment. No supplier award, quantified disruption or revised production guidance established.",
+      "questions": [
+        "Verify named equipment qualification, procurement and production consequences."
+      ],
+      "publication_status": "source_completion_only_no_article"
     }
   ],
   "blockers": [
