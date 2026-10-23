@@ -16305,6 +16305,35 @@
           "VicorSeptemberlicence/guidanceraises distinctfromOctober20realisedfinancials. Thirdpartycalltranscript contains numericalerrors;officialresulttables takeprecedence andnodetailedcash-flowauditclaim.",
           "Noarticle/sitepublicationclaim. Onlypublicfacts,sources,researchstagesappended;nocurrentstockquotes,valuation,privateholdings orfundflows."
         ]
+      },
+      {
+        "date": "2026-10-23",
+        "checked_at": "2026-10-23 09:57:10 UTC",
+        "instruction_commit_sha": "25cdedb6b68296d3e83c7a8c6716731ae3a1e75d",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "abeae02d771d45d7957cf0157909f5a80b865fd9",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "active_universe_grouped_discovery_six_core_indices_and_historical_forecast_provenance_checked",
+        "scope": "Mandatory same-commit instructions, progress ledger and three related article bodies retrieved. All 98 active names included in 14 fresh grouped discovery queries. Current individual filing audit remains partial.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://counterpointresearch.com/en/insights/MediaTek-to-Contribute-1-in-4-AI-ASIC-Server-Compute-Shipments-in-2028",
+          "https://www.sigurd.com.tw/investors/news-center/news"
+        ],
+        "source_limits": [
+          "Six core issuer indices retrieved: TSMC latest release October 15; MediaTek September 30; NVIDIA October 22; AMD October 12; Broadcom October 21; Marvell October 13. No newly authenticated core AI award, procurement split, NRE or production-economics revision established.",
+          "Grouped discovery mostly returned historical revenue, repeated expansions, broker recasts and future earnings calendars. This does not establish 98 individually audited current filings; existing coverage history is preserved.",
+          "Counterpoint source date verified as April 29, not a new October update. Its forecast is kept as historical provenance; subscriber detail and current contract confirmation unavailable.",
+          "Sigurd official news index surfaced in discovery, but direct opening returned an internal retrieval error. Current announcement dates and full text not established; no fresh capacity or order claim made.",
+          "ABB and Nexans reports, Meta commitments, Vicor financial realisation and NVIDIA Minerva match previously recorded evidence and are deduplicated.",
+          "Only public source facts and research stages appended. No new event alert, longform article or website-publication claim; no current quotes, valuation, holdings, private fundflows or trading conditions recorded."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -25264,6 +25293,29 @@
         "Verify fab output,utilisation and returns against expansioncost; do not count September site purchase as newOctoberaward."
       ],
       "publication_status": "event_source_recorded_no_longform_article"
+    },
+    {
+      "key": "counterpoint-mediatek-2028-asic-shipment-forecast-historical-provenance-20260429",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "25cdedb6b68296d3e83c7a8c6716731ae3a1e75d",
+      "companies": [
+        "MediaTek",
+        "Google",
+        "TSMC",
+        "Intel",
+        "Broadcom",
+        "Marvell"
+      ],
+      "stage": "historical_research_forecast_provenance_verified_current_awards_and_terms_unconfirmed",
+      "sources": [
+        "https://counterpointresearch.com/en/insights/MediaTek-to-Contribute-1-in-4-AI-ASIC-Server-Compute-Shipments-in-2028"
+      ],
+      "facts": "Counterpoint's April 29, 2026 public summary forecasts MediaTek at approximately 26% of 2028 AI ASIC server compute shipments, conditional on advanced packaging availability and yields. It excludes potential Meta MTIA wins. The summary labels Humufish TPU v8e and discusses a proposed EMIB-T design-in/qualification path; later reports use different generation labels. This is historical researcher analysis, not an October forecast revision or issuer-confirmed design award.",
+      "questions": [
+        "Reconcile generation names and production timing using issuer disclosures before treating historical and recent reports as the same programme.",
+        "Obtain a dated old/new forecast bridge and evidence for procurement responsibility, realised shipments and MediaTek economics; the subscriber report and current commercial terms remain unavailable."
+      ],
+      "publication_status": "historical_source_candidate_recorded_no_new_event_or_article"
     }
   ],
   "blockers": [
