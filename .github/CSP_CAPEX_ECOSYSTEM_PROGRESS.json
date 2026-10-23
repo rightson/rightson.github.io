@@ -6961,6 +6961,63 @@
         "limits": "Product/royalty and cash realisation strengthen economic evidence beyond prior regulatory-risk baseline. Do not annualise66.613mroyalties or68.3%margin; fullcash-flowstatement/current10Q notobtained. Broadindustrial,ATE,aerospace/defensebusiness included. No quantifiednewTaiwansupplierprofitrevision."
       },
       "status": "current_and_prior_issuer_tables_and_september_guidance_verified_third_party_call_limits_recorded_no_article"
+    },
+    {
+      "fingerprint": "iteq-september-2026-self-reported-profit-conversion-and-recurring-cash-gap-20261023",
+      "event_date": "2026-10-23",
+      "discovered_date": "2026-10-24",
+      "instruction_commit_sha": "a3c4a4ce8ff9d302511109bd29f83dd05303cc9e",
+      "companies": [
+        "ITEQ / 聯茂"
+      ],
+      "type": "monthly_self_reported_profit_disclosure_with_issuer_quarterly_baseline",
+      "sources": [
+        "https://news.cnyes.com/news/id/6636724",
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=58662314-ccc8-4d61-b16b-b8d028df3ffc",
+        "https://www.iteqcorp.com/wp-content/uploads/2026/08/2026Q2.pdf",
+        "https://www.iteqcorp.com/investor-relations/monthly-revenues/"
+      ],
+      "facts": {
+        "period": "September2026 monthly self-reported versus Q2 2026 full quarter; not like-for-like sequential periods.",
+        "disclosure_time": "2026-10-23 17:59:51 Asia/Taipei, UTC+8, per reproduced issuer notice",
+        "currency": "TWD",
+        "unit": "million except EPS and percentages",
+        "september": {
+          "revenue_rounded": 5824,
+          "pretax_profit": 1918,
+          "net_income": 1286,
+          "eps": 3.54,
+          "revenue_yoy_pct_notice": 110.71,
+          "net_income_yoy_pct": 1069.09
+        },
+        "q2_issuer": {
+          "revenue": 11530,
+          "gross_profit": 2539,
+          "operating_income": 1848,
+          "non_operating_income": -14,
+          "pretax_profit": 1834,
+          "net_income_attributable": 1279,
+          "eps": 3.52,
+          "net_margin_pct": 11.1
+        },
+        "derived": {
+          "september_net_income_divided_by_revenue_pct": 22.081,
+          "q2_net_income_divided_by_revenue_pct": 11.093,
+          "note": "Simple calculations using rounded notice figures; not gross or operating margin, not annualized earnings."
+        },
+        "primary_monthly_table": {
+          "unit": "TWD thousand",
+          "september": 5824212,
+          "august": 5044034,
+          "september_yoy_pct": 110.74,
+          "ytd_september": 36290498,
+          "derived_monthly_growth_pct": 15.4673
+        },
+        "source_reconciliation": "Issuer September monthly table now populated. Notice rounded revenue/yoy differs slightly from monthly table; retain each source's precision. Some media YTD revenue and H1-plus-August/September EPS totals are inconsistent or omit July; do not adopt them as full nine-month reported results.",
+        "scope": "Issuer Q2 presentation establishes server/AI PCB material relationship; net-income improvement does not isolate AI-only gross profit or establish current named CSP orders.",
+        "limits": "MOPS direct original returned empty shell/timeout. The full same issuer notice was read on Cnyes and MoneyDJ; these reproduce one disclosure, not two independent confirmations. September is unreviewed self-report, compared with a reviewed full-quarter baseline. September operating/non-operating profit split, Q3 cash flow and attributable profit bridge not obtained; no current margin persistence, consensus upgrade or yearly EPS established."
+      },
+      "status": "issuer_notice_reproductions_and_primary_q2_monthly_baselines_reconciled_no_article"
     }
   ],
   "articles": [],
@@ -16670,6 +16727,37 @@
           "Grouped discovery does not establish98 individually audited current filings. Historical primary revenue and relationship coverage retained; outstanding company-specific order, margin and cash-conversion gaps remain.",
           "Ledger-only source/research-stage update; no article drafted or published. No equity prices, valuation, holdings or private fundflow analysis."
         ]
+      },
+      {
+        "date": "2026-10-24",
+        "checked_at": "2026-10-23 22:18:38 UTC",
+        "instruction_commit_sha": "a3c4a4ce8ff9d302511109bd29f83dd05303cc9e",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "5ce5b91f268319bb516e7c229f0baa07dbba8d63",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "active_universe_grouped_discovery_core_indices_and_new_iteq_profit_disclosure_reconciled",
+        "scope": "Fresh same-commit mandatory instructions, supporting specifications, full progress blob and three related article bodies retrieved completely; instruction/article hashes unchanged from previously read bodies. All98 active names included in14 fresh grouped discovery queries, supplemented by targeted fresh discovery and primary-source follow-up. Individual current-filing/economics audit remains partial.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://news.cnyes.com/news/id/6636724",
+          "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=58662314-ccc8-4d61-b16b-b8d028df3ffc",
+          "https://www.iteqcorp.com/wp-content/uploads/2026/08/2026Q2.pdf",
+          "https://www.iteqcorp.com/investor-relations/monthly-revenues/"
+        ],
+        "source_limits": [
+          "All six core issuer news indices retrieved; latest visible dates unchanged: TSMC October15,MediaTek September30,NVIDIA latest dated news October22,AMD October12,Broadcom October21,Marvell October13. Index checks do not imply a fresh full regulatory-filing audit.",
+          "New ITEQ September profit notice fully read through two reproductions of the same issuer disclosure. Direct MOPS original unavailable; original Q2 financial presentation table read and visually checked, September issuer monthly revenue authenticated. Notice versus monthly-table rounding and erroneous media cumulative totals kept separate.",
+          "Longwide is outside active universe. Its full reproduced issuer notice and reported ABF-equipment relation are discovery evidence; direct original, margin composition, recurring profit and cash remain pending.",
+          "Earlier Meta commitments, chip financing, Micron strike, supplier capacity reservations, broker commentary and product stories deduplicated. A new page/update timestamp alone is not a new business event.",
+          "Grouped discovery is not98 individually audited current filings; historical primary coverage retained, with company-specific order,margin and cash-conversion gaps.",
+          "Ledger-only public source/research-stage update. No article drafted or published; no equity prices, valuation, holdings or private fundflow analysis."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -25937,6 +26025,26 @@
       "questions": [
         "Do subsequent CSP or supplier disclosures quantify changed compute utilization, orders, delivery schedules or payment commitments?",
         "Does containment work add sustained compute demand or reduce productive training utilization after accounting for red-team workloads?"
+      ],
+      "publication_status": "research_candidate_only_not_drafted"
+    },
+    {
+      "key": "longwide-september-self-reported-profit-versus-acceptance-and-cash-20261023",
+      "date": "2026-10-24",
+      "source_date": "2026-10-23",
+      "instruction_commit_sha": "a3c4a4ce8ff9d302511109bd29f83dd05303cc9e",
+      "companies": [
+        "Longwide / 長廣"
+      ],
+      "stage": "outside_universe_issuer_notice_reproduction_read_primary_and_cash_followup_pending",
+      "sources": [
+        "https://finance.biggo.com.tw/news/twse_major_7795_1151023_163750",
+        "https://money.udn.com/money/story/5710/9833909"
+      ],
+      "facts": "Reproduced October23 issuer notice reports September unreviewed revenue TWD364m, pretax profit122m, parent net profit68m and EPS0.86, versus Q2 full-quarter revenue472m, parent net53m and EPS0.67. Low prior-year profit and different monthly/quarterly periods amplify comparisons. Original reporting identifies ABF-substrate equipment and customer-factory installation/acceptance timing; no named CSP award or durable monthly run-rate established.",
+      "questions": [
+        "Obtain issuer-hosted disclosure and separate operating profit, non-operating items and tax/minority effects.",
+        "Check equipment acceptance schedules, order conversion and cash receipts rather than annualizing one month."
       ],
       "publication_status": "research_candidate_only_not_drafted"
     }
