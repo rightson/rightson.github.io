@@ -6895,6 +6895,72 @@
         "limits": "No disclosed named supplier allocation, accepted deployment, unit economics, incremental supplier earnings or exact gross commitment additions. Existing Q3 FCF/capex-floor/ClassC event remains separate; this is new footnote/payment-schedule evidence."
       },
       "status": "current_and_prior_sec_footnotes_verified_no_article"
+    },
+    {
+      "fingerprint": "vicor-q3-2026-vpd-royalty-profit-and-cash-realisation-20261020",
+      "event_date": "2026-10-20",
+      "discovered_date": "2026-10-23",
+      "instruction_commit_sha": "1758f4042a027bfdd160bdd1a0ef0971379a7ce3",
+      "companies": [
+        "Vicor"
+      ],
+      "type": "issuer_results_vpd_royalty_profit_and_operating_cash_realisation",
+      "sources": [
+        "https://vicorcorporation.gcs-web.com/news-releases/news-release-details/vicor-corporation-reports-results-third-quarter-ended-16",
+        "https://vicorcorporation.gcs-web.com/news-releases/news-release-details/vicor-corporation-reports-results-second-quarter-ended-june-15",
+        "https://vicorcorporation.gcs-web.com/news-releases/news-release-details/vicor-corporation-raises-q3-2026-revenue-guidance-0",
+        "https://vicorcorporation.gcs-web.com/news-releases/news-release-details/vicor-licenses-vpd-leading-ai-oem",
+        "https://www.fool.com/earnings/call-transcripts/2026/10/20/vicor-vicr-q3-2026-earnings-call-transcript/"
+      ],
+      "facts": {
+        "currency": "USD",
+        "unit": "million except percentages",
+        "issuer_release_time": "2026-10-20 07:00 EDT (UTC-4)",
+        "period_end": "2026-09-30",
+        "q3": {
+          "total_revenue": 197.114,
+          "product_revenue": 130.501,
+          "royalty_revenue": 66.613,
+          "gross_profit": 134.68,
+          "gross_margin_pct": 68.3,
+          "operating_expenses": 62.532,
+          "operating_income": 72.148,
+          "net_income_attributable": 63.321,
+          "diluted_eps_usd": 1.33,
+          "operating_cash_flow_rounded": 69.7,
+          "capex_rounded": 16.1,
+          "backlog_rounded": 406
+        },
+        "q2": {
+          "total_revenue": 143.352,
+          "product_revenue": 112.926,
+          "royalty_revenue": 30.426,
+          "gross_profit": 83.12,
+          "gross_margin_pct": 58,
+          "operating_income": 34.878,
+          "operating_cash_flow_rounded": 34,
+          "capex_rounded": 11.2,
+          "backlog_rounded": 380
+        },
+        "derived": {
+          "reported_rounded_gross_margin_qoq_pp": 10.3,
+          "royalty_growth_qoq_pct": 118.9345,
+          "royalty_share_q3_total_revenue_pct": 33.7941,
+          "royalty_increase_share_of_gross_profit_increase_pct": 70.1843,
+          "operating_cash_flow_less_capex_q3_rounded": 53.6,
+          "operating_cash_flow_less_capex_q2_rounded": 22.8,
+          "scope": "Simple calculations from issuer tables and rounded quarterly cash figures; not issuer-defined FCF or recurring earnings guidance."
+        },
+        "historical_baseline": "September16 issuer announced first non-exclusive AI OEM VPD licence allowing procurement from unlicensed global suppliers. September21 guidance was raised from nearly10%sequentialgrowth to>20%,then September30 to>30%. Q3 actual37.5%is realised result,not a newly discovered guidance raise or proven consensus surprise. Site acquisitions and almost5x plannedcapacity also predate this results release.",
+        "licensing_scope": "Licence terms permit OEMs to source from other suppliers while paying Vicor; customer remains unnamed. October20 describes Stage2royalty rate. No identified Taiwan payer or allocation of indemnity costs established. Existing USITC investigation remains an unresolved proceeding,not adjudicated liability or granted exclusion.",
+        "call_transcript_scope": {
+          "source_nature": "Third-party MotleyFool transcript of October20 managementremarks; issuer audio not independently listened to.",
+          "reported_management_expectations": "Q4 productrevenue+10%sequentially;atleast43mroyaltiesassumingnoadditionallicences.",
+          "counter_evidence": "Management says part of Q3 initiallicencepayments nonrecurring and streamstilllumpy;legalcosts expectednear20%ofroyalties. Transcript contains numeric transcription errors elsewhere; reported issuer financialtables takeprecedence. No exact recurring/nonrecurring Q3royaltybridge."
+        },
+        "limits": "Product/royalty and cash realisation strengthen economic evidence beyond prior regulatory-risk baseline. Do not annualise66.613mroyalties or68.3%margin; fullcash-flowstatement/current10Q notobtained. Broadindustrial,ATE,aerospace/defensebusiness included. No quantifiednewTaiwansupplierprofitrevision."
+      },
+      "status": "current_and_prior_issuer_tables_and_september_guidance_verified_third_party_call_limits_recorded_no_article"
     }
   ],
   "articles": [],
@@ -16204,6 +16270,41 @@
           "Meta Q3/Q2 SEC footnotes now directly verified; media aggregation reconciled with contingent cloud ceiling and previously disclosed July leases. Besi managementASMLcomplementarity story matches existing candidate.",
           "No longform article or website-publication claim. Public facts,sources and research stages only; no current stockquotes,valuation,privateholdings or fundflows."
         ]
+      },
+      {
+        "date": "2026-10-23",
+        "checked_at": "2026-10-23 08:43:43 UTC",
+        "instruction_commit_sha": "1758f4042a027bfdd160bdd1a0ef0971379a7ce3",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "abeae02d771d45d7957cf0157909f5a80b865fd9",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "active_universe_grouped_discovery_core_indices_and_vicor_comparative_financials_verified",
+        "scope": "Complete mandatory samecommitdocuments,largeledgerblob and three relatedarticlebodies retrieved. Activeuniverse98names included in14fresh groupeddiscoveryqueries; individualcurrentfilingcoverage partial.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://vicorcorporation.gcs-web.com/news-releases/news-release-details/vicor-corporation-reports-results-third-quarter-ended-16",
+          "https://vicorcorporation.gcs-web.com/news-releases/news-release-details/vicor-corporation-reports-results-second-quarter-ended-june-15",
+          "https://vicorcorporation.gcs-web.com/news-releases/news-release-details/vicor-corporation-raises-q3-2026-revenue-guidance-0",
+          "https://vicorcorporation.gcs-web.com/news-releases/news-release-details/vicor-licenses-vpd-leading-ai-oem",
+          "https://www.fool.com/earnings/call-transcripts/2026/10/20/vicor-vicr-q3-2026-earnings-call-transcript/",
+          "https://www.trendforce.com/news/2026/10/19/news-mediateks-google-tpu-v9-shipments-may-slip-to-1q28-asic-race-heats-up-as-taiwan-firms-eye-new-opportunities/",
+          "https://investor.lamresearch.com/events?item=105"
+        ],
+        "source_limits": [
+          "Sixcoreissuerindices available thisrun;Broadcom IRhomepage accessrecovered andlatestlistedOctober21Arcot,not newAIaward. TSMCindexlatestOctober15,MediaTekSeptember30,NVIDIAOctober22,AMDOctober12,MarvellOctober13.",
+          "Groupeddiscovery mostlyhistoricalmonthlyrevenue,brokerrecasts,expansionrepeats. No98companycurrentfiling-completion claim.",
+          "October19TrendForceTPUv9storyattributesCommercialTimesinstitutionalsources,notissuerconfirmation;early2028matchesexistingJuly31issuersecondASICbaseline. Existingpackagingrumours remainunconfirmed;no verifiednewNRE/procurement/marginrevision.",
+          "LamOctober21officialeventpageoffersfulltranscript,butclickredirecttofilecache.investorroom.comfailednonretryably;primarycallbodyunread,nomaterialnewquantifiedsupplyconstraintclaimfrommediaalone.",
+          "Metafootnotecommitments andpreviouslynotifiedNokia,Nexans,JCET,AtlasCopco,Nebius,MXL,WDC,TTM,FIX,Bloom,INNIOeventsretainedanddeduplicated.",
+          "VicorSeptemberlicence/guidanceraises distinctfromOctober20realisedfinancials. Thirdpartycalltranscript contains numericalerrors;officialresulttables takeprecedence andnodetailedcash-flowauditclaim.",
+          "Noarticle/sitepublicationclaim. Onlypublicfacts,sources,researchstagesappended;nocurrentstockquotes,valuation,privateholdings orfundflows."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -25140,6 +25241,29 @@
         "Reconcile gross new signings,leasecommencements,cancellations and scope changes before interpreting all outstanding-balance increase as fresh demand."
       ],
       "publication_status": "source_event_recorded_no_longform_article"
+    },
+    {
+      "key": "vicor-q3-2026-vpd-royalty-profit-and-cash-realisation-20261020",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "1758f4042a027bfdd160bdd1a0ef0971379a7ce3",
+      "companies": [
+        "Vicor"
+      ],
+      "stage": "issuer_financial_realisation_verified_recurring_licence_economics_pending",
+      "sources": [
+        "https://vicorcorporation.gcs-web.com/news-releases/news-release-details/vicor-corporation-reports-results-third-quarter-ended-16",
+        "https://vicorcorporation.gcs-web.com/news-releases/news-release-details/vicor-corporation-reports-results-second-quarter-ended-june-15",
+        "https://vicorcorporation.gcs-web.com/news-releases/news-release-details/vicor-corporation-raises-q3-2026-revenue-guidance-0",
+        "https://vicorcorporation.gcs-web.com/news-releases/news-release-details/vicor-licenses-vpd-leading-ai-oem",
+        "https://www.fool.com/earnings/call-transcripts/2026/10/20/vicor-vicr-q3-2026-earnings-call-transcript/"
+      ],
+      "facts": "Q3royaltyrevenue66.613mvs30.426mQ2;GM68.3%vs58.0%;OCF69.7mvs34.0m. Licenceallowsprocurementfromothersuppliers,creating a possible IP-based valuecapturechannel. This isnewlyverifiedOctober20results evidence,not an October23announcement or newSeptemberlicence.",
+      "questions": [
+        "Separate catch-up royalties from continuing payments and verify Q4cashcollection against royaltybaseline.",
+        "Verify licence renewal,payerrisk,costallocation and legalexpense after newagreements; do not infer merits from investigation institution.",
+        "Verify fab output,utilisation and returns against expansioncost; do not count September site purchase as newOctoberaward."
+      ],
+      "publication_status": "event_source_recorded_no_longform_article"
     }
   ],
   "blockers": [
