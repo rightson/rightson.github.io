@@ -16334,6 +16334,35 @@
           "ABB and Nexans reports, Meta commitments, Vicor financial realisation and NVIDIA Minerva match previously recorded evidence and are deduplicated.",
           "Only public source facts and research stages appended. No new event alert, longform article or website-publication claim; no current quotes, valuation, holdings, private fundflows or trading conditions recorded."
         ]
+      },
+      {
+        "date": "2026-10-23",
+        "checked_at": "2026-10-23 11:14:09 UTC",
+        "instruction_commit_sha": "f659383fafc5b1a4876f2635120ca391d677bc5c",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "abeae02d771d45d7957cf0157909f5a80b865fd9",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "active_universe_grouped_discovery_six_core_indices_and_lam_source_gap_rechecked",
+        "scope": "Same-commit mandatory instructions, complete ledger blob and three related article bodies retrieved. All 98 active names screened in 14 fresh grouped queries; individual current filings remain partially verified.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://investor.lamresearch.com/events?item=105",
+          "https://www.intc.com/news-events/press-releases/detail/1782/intel-to-report-third-quarter-2026-financial-results"
+        ],
+        "source_limits": [
+          "Core issuer index latest releases: TSMC October 15, MediaTek September 30, NVIDIA October 22, AMD October 12, Broadcom October 21, Marvell October 13. No newly verified TPU design award, NRE, procurement allocation or volume-profit terms established.",
+          "Grouped discovery returned mostly historical monthly revenue, repeated expansions, broker commentary and earnings calendars. This is not an audit of 98 current issuer filings; existing primary-coverage records remain unchanged.",
+          "Lam October 21 financial results, 2027 WFE presentation and reported call comments already exist in the ledger. Fresh sell-off articles add no authenticated new operating forecast. Official event page lists transcript, but its PDF redirects to inaccessible filecache.investorroom.com and remains unread; no issuer-certified call-completion claim.",
+          "Intel October 6 issuer notice confirms results are scheduled October 29; historical July results and third-party calendar pages are not new October 23 earnings.",
+          "Previously recorded Meta, Tesla, Vicor and other financial events retained without repeat notification. No new public event or longform article established.",
+          "Append-only public research coverage and sources; no current quotes, valuation, holdings, private fundflows or trading conditions."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
