@@ -16578,6 +16578,37 @@
           "AOL's Marvell competitive commentary full body was inaccessible. Search excerpt is not authenticated procurement allocation or design responsibility evidence. Earlier TPU forecasts, supplier capacity plans, funding leads and repeated financial results deduplicated.",
           "Grouped discovery is not 98 independently audited current filings. Historical revenue and primary-source baseline preserved; unresolved order, margin and cash-flow gaps remain open. No article drafted or published. Public research-stage facts only."
         ]
+      },
+      {
+        "date": "2026-10-24",
+        "checked_at": "2026-10-23 18:34:39 UTC",
+        "instruction_commit_sha": "28845290e7aa43e464f0ad1c01121659692d9fbe",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "5ce5b91f268319bb516e7c229f0baa07dbba8d63",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "active_universe_grouped_discovery_six_core_indices_and_chip_financing_provenance_checked",
+        "scope": "Mandatory same-commit instructions, research specifications, full progress blob and three related article bodies retrieved completely. Instruction/article hashes match already-read full content. All 98 active names included in 14 fresh grouped discovery queries; individual current-filings audit remains partial.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.advisorperspectives.com/articles/2026/10/23/blackstone-bet-chips-drove-debt-boom-upending-credit",
+          "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm",
+          "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000054/avgo-20260503.htm",
+          "https://www.reuters.com/business/retail-consumer/bytedance-alibaba-tencent-place-over-35-billion-worth-nvidia-chip-orders-2026-10-20/"
+        ],
+        "source_limits": [
+          "Six core issuer indices freshly checked; latest dated items remain unchanged. Featured NVIDIA fab-software and RTX Spark releases retain their October14 and October16 dates and existing fingerprints.",
+          "Date-constrained grouped discovery returned sparse issuer evidence and many aggregate/social pages; these were not accepted as primary business facts. Four stronger discovery queries supplemented screening. Historical primary and monthly-revenue coverage retained; outstanding economics gaps remain unresolved.",
+          "Chip-financing reporting was traced to Bloomberg syndication and reconciled with historical filings. Projected platform debt, proposed financing, vendor guarantees and conditional notes remain distinct. No authenticated new signed exposure change.",
+          "China RTX PRO5500 purchase-demand reporting traces to October20 and the existing allocation-constraint event. Aggregator current-page timestamps do not make it a new order report. Hon Hai October23 equity funding and prior financial-result events deduplicated.",
+          "Slicast opening timed out. First syndicated article opening failed; retry by retrieved source reference succeeded and full article text was read. No claim that these access changes alter business facts.",
+          "Ledger-only source/research-stage update. No article drafted or published. Public facts only; no current equity prices, valuation, holdings or private market-structure data."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -25768,6 +25799,34 @@
         "Reconcile subsidiary equity funding with actual external plant spending and cash transfers.",
         "Obtain site capacity, accepted customer orders, delivery and profit contribution before attributing an earnings revision.",
         "Assess utilisation and duplication against existing European manufacturing plans."
+      ],
+      "publication_status": "research_candidate_only_not_drafted"
+    },
+    {
+      "key": "broadcom-ai-xpv-oct23-credit-report-versus-historical-sec-backstop-20261024",
+      "date": "2026-10-24",
+      "instruction_commit_sha": "28845290e7aa43e464f0ad1c01121659692d9fbe",
+      "companies": [
+        "Broadcom",
+        "NVIDIA",
+        "Anthropic",
+        "AI infrastructure financing counterparties"
+      ],
+      "stage": "october23_original_reporting_syndication_and_prior_two_sec_backstop_disclosures_read_no_new_executed_exposure_reconciled",
+      "sources": [
+        "https://www.advisorperspectives.com/articles/2026/10/23/blackstone-bet-chips-drove-debt-boom-upending-credit",
+        "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm",
+        "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000054/avgo-20260503.htm"
+      ],
+      "facts": {
+        "historical_primary": "Broadcom's May3-quarter subsequent-event disclosure and August2-quarter filing both describe approximately USD29bn maximum lease backstop exposure. The latter specifies five-year terms, 85% of outstanding covered obligations less equipment sale value, no backstop payments, and conditional customer convertible notes up to USD42bn with none issued as of August2. These are historical disclosures, not October23 newly signed liabilities.",
+        "reporting": "Bloomberg's October23 article, read through Advisor Perspectives syndication, describes a USD60bn financing being arranged and an earlier USD35bn AI XPV transaction. Its attributed BofA USD235bn by mid2029 is a platform-scale projection, not a disclosed present Broadcom liability. Reported Big Sky senior5.75% and junior8.5% terms are not comparable to the separate proposed junior financing previously tracked.",
+        "limits": "No new executed guarantee amount, current drawdown, default payment or procurement reallocation authenticated. Do not add conditional notes and guarantees without reconciling overlap."
+      },
+      "questions": [
+        "Authenticate dates, executed agreements, tranche overlap and current outstanding guarantees.",
+        "Reconcile modelled platform borrowing with actual vendor backstops, collateral recovery and customer cash generation.",
+        "Verify any financing change in delivery, utilisation or supplier cash conversion before propagating to company earnings."
       ],
       "publication_status": "research_candidate_only_not_drafted"
     }
