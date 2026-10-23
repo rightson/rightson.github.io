@@ -16082,6 +16082,35 @@
           "Carrier expansion plan retained for order/ramp/cash validation; historical investment budgets not added together. Oracle research datedSeptember 29 does not authenticate a freshOctober delay.",
           "No new long-form article or publication claim. Public ledger contains source facts and research stages only; no current quotes,valuation,private holdings or fund flows."
         ]
+      },
+      {
+        "date": "2026-10-23",
+        "checked_at": "2026-10-23 06:40:13 UTC",
+        "instruction_commit_sha": "2b2d611992629c4b6c7ec9a4d109d76b9b5718bf",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "abeae02d771d45d7957cf0157909f5a80b865fd9",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "active_universe_grouped_discovery_core_issuer_indices_and_memory_roadmap_source_checked",
+        "scope": "Complete same-commit mandatory files, ledger and three related article bodies retrieved. Instruction/article blobs unchanged from preceding verified versions. All98 active names included in14 fresh grouped discovery queries. Supplemental Micron/NVIDIA product sources read; no watchlist changes.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://investors.micron.com/events-and-presentations/event-details/2026/Technology-and-product-webinar/default.aspx",
+          "https://s25.q4cdn.com/621799436/files/doc_downloads/2026/10/MU-TP-Webinar.pdf",
+          "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/"
+        ],
+        "source_limits": [
+          "Grouped discovery mostly returned historical monthly revenue, repeated expansions and market summaries; not98 individually checked current financial filings. Historical revenue coverage retained; current order/margin/cash audit partial.",
+          "TSMC latest indexed issuer release October15, MediaTek September30; no new authenticated TPU NRE, design award, procurement allocation or production economics in retrieved sources.",
+          "Meta earnings/capital structure, Texas permit pause and reported community-dividend remarks match existing event/candidate baselines; new market commentary alone does not establish a new issuer revision.",
+          "Micron roadmap confirms strategic process choice and targets; no demonstrated change in realised bit supply, cost or financial guidance. Minerva paid economics and measured yield improvement remain undisclosed.",
+          "No longform article or website-publication claim. Only public facts, sources and research stages appended; no current stockquotes, valuation, private holdings or fund flows."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -24953,6 +24982,51 @@
         "Reconcile partial-power, full-energisation and tenant-delivery milestones with issuer disclosures."
       ],
       "publication_status": "historical_candidate_only_no_article"
+    },
+    {
+      "key": "micron-oct21-technology-roadmap-6f2-3d-dram-g11-to-realized-cost-and-supply-20261023",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "2b2d611992629c4b6c7ec9a4d109d76b9b5718bf",
+      "companies": [
+        "Micron"
+      ],
+      "stage": "public_issuer_webinar_deck_text_read_process_targets_not_financial_revision",
+      "sources": [
+        "https://investors.micron.com/events-and-presentations/event-details/2026/Technology-and-product-webinar/default.aspx",
+        "https://s25.q4cdn.com/621799436/files/doc_downloads/2026/10/MU-TP-Webinar.pdf"
+      ],
+      "facts": {
+        "source": "October21 issuer webinar; public IR event page links the33-page presentation. Pages16,17,23 text checked.",
+        "roadmap": "Issuer extends6F² and develops3D DRAM, rejects4F² for complexity/cost. 1δ targets H2 2027 ramp and mid-20s% bit-density gain versus1γ. G11 targets >400 layers, wafer bonding, H2 2027 ramp and roughly2x G9 bit density.",
+        "limits": "Roadmap targets, not realised output, yield or cost per good bit. 3D DRAM slide gives no dates. No new production cut, customer order, price or earnings-guidance revision established; competitor supply cannot be inferred from Micron's architecture preference. PDF text obtained; screenshot calls returned text placeholders without inspectable images."
+      },
+      "questions": [
+        "Compare qualified yields, die cost, capex and actual node mix with prior roadmap before inferring supply or profit changes.",
+        "Verify customer qualification, ramp and competitor output; distinguish theoretical cell area from realised cost per good bit."
+      ],
+      "publication_status": "candidate_only_no_article"
+    },
+    {
+      "key": "nvidia-minerva-ai-factory-observability-to-measured-yield-and-recurring-economics-20261023",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "2b2d611992629c4b6c7ec9a4d109d76b9b5718bf",
+      "companies": [
+        "NVIDIA",
+        "IREN",
+        "Dell Technologies",
+        "Lenovo",
+        "Supermicro"
+      ],
+      "stage": "issuer_launch_and_named_usage_verified_economics_pending",
+      "sources": [
+        "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/"
+      ],
+      "facts": "October22 issuer introduces Minerva AIOps integrating infrastructure and workload telemetry. NVIDIA names IREN as using it; other operators plan adoption, and Dell/Lenovo/Supermicro will offer it. These are different adoption stages. No customer pricing, contracted recurring revenue, independently measured goodput gain or supplier margin disclosed.",
+      "questions": [
+        "Obtain measured useful GPU-hours/goodput, failure recovery and operating costs at named customer.",
+        "Verify paid deployment, pricing and recurring economics before inferring incremental earnings."
+      ],
+      "publication_status": "candidate_only_no_article"
     }
   ],
   "blockers": [
