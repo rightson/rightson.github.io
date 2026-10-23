@@ -15968,6 +15968,33 @@
           "F22 construction-stop andNEXTDC guidance reports matched existing candidates/events. Kazakhstan vendor counts and rare-earth original-report completion retained as candidates without a new alert or article.",
           "Historical monthly-revenue baseline retained; current order,margin,cash-flow validation across98companies remains partial. No individual-stock quotes,valuation,holdings or private market/fund-flow data appended."
         ]
+      },
+      {
+        "date": "2026-10-23",
+        "checked_at": "2026-10-23 03:33:51 UTC",
+        "instruction_commit_sha": "2616674e0d1ee6d8b07d8a17dc44883f1c7f5522",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "abeae02d771d45d7957cf0157909f5a80b865fd9",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "active_universe_grouped_discovery_five_core_indices_and_broadcom_fallback_checked_no_new_material_alert",
+        "scope": "Same-commit mandatory instructions, taxonomy, series specifications, full ledger and three related article blobs retrieved. Fourteen grouped discovery queries include all98 active names. Five core issuer indices read; Broadcom homepage403 with selected issuer-release and quarterly-index fallback. No watchlist modification; not98 individual current-filings audits.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/quarterly-results",
+          "https://investors.broadcom.com/news-releases/news-release-details/broadcom-launches-arcot-scam-defense-block-social-engineering"
+        ],
+        "source_limits": [
+          "Instruction and related article blobs match previously fully read versions. Empty Contents ledger wrapper resolved using complete immutable blob; JSON parsed. All historical records retained.",
+          "TSMC latest indexOctober15; MediaTekSeptember30; NVIDIA Kazakhstan plan already retained as candidate. No newly authenticated TPU design responsibility,NRE,volume economics or procurement split.",
+          "Broadcom current homepage returned403. October21 Arcot original body readable but payment-security product is not new AI equipment procurement. Quarterly index incomplete versus prior registered reports; no complete current-news no-change claim.",
+          "Sinbon Q3 reporting retained as candidate; original issuer numerical filing/cash-flow unavailable. Ardentec headline matches previously registered results candidate and preview comparison. NVIDIA supply-reservation and PCB expansion news match existing entries.",
+          "Historical98-company monthly-revenue baseline retained; current order,margin,earnings and cash audits remain partial. No new article, current quotes, valuation, holdings, private fund flows or investment judgment appended."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -24743,6 +24770,38 @@
         "Verify named equipment qualification, procurement and production consequences."
       ],
       "publication_status": "source_completion_only_no_article"
+    },
+    {
+      "key": "sinbon-q3-2026-reported-growth-versus-rack-mix-margin-and-cash-gap-20261023",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "2616674e0d1ee6d8b07d8a17dc44883f1c7f5522",
+      "companies": [
+        "SINBON"
+      ],
+      "stage": "original_news_agency_reporting_read_via_licensed_reproduction_issuer_filing_and_cash_pending",
+      "sources": [
+        "https://www.cna.com.tw/news/afe/202610220223.aspx",
+        "https://money.udn.com/money/story/5612/9831431?from=edn_newest_index",
+        "https://www.sinbon.com/"
+      ],
+      "facts": {
+        "period": "Q3 2026; reported October22. TWD million except EPS and percentages.",
+        "revenue": 9696,
+        "revenue_qoq_pct": 7.51,
+        "net_profit": 911,
+        "net_profit_qoq_pct": 0.8,
+        "net_profit_yoy_pct": 24.41,
+        "eps": 3.79,
+        "gross_margin_pct": 23.77,
+        "gross_margin_qoq_change_percentage_points": -0.77,
+        "reported_explanation": "CNA attributes gross-margin dilution to increased rack assembly, lower-margin automotive shipments and consumer mix; operating expenses also rose for samples and shipping.",
+        "limits": "Full original issuer financial statements/cash-flow not obtained; issuer homepage requires JavaScript. CNA original URL opens navigation without relevant body; licensed UDN reproduction contains dated report. Companywide growth is not AI-only profit or a market-consensus surprise. No new named CSP order or forward earnings revision authenticated."
+      },
+      "questions": [
+        "Obtain issuer/MOPS reviewed Q3 financials, operating cash flow and inventory/receivables bridge.",
+        "Separate rack assembly contribution and profitability from other end markets; compare with prior outlook and realised margins."
+      ],
+      "publication_status": "candidate_only_no_article"
     }
   ],
   "blockers": [
