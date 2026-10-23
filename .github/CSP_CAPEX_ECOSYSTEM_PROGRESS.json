@@ -16393,6 +16393,34 @@
           "Ardentec reported Q3 profit/margin matches existing October 22 candidate; new report is not a new revision. Meta financing, Marvell Google warrants and historical core platform reports deduplicated.",
           "No new public event or article. Public sources and research stages only; no current stock quotes, valuation, holdings, private fundflows or trading conditions."
         ]
+      },
+      {
+        "date": "2026-10-23",
+        "checked_at": "2026-10-23 12:47:20 UTC",
+        "instruction_commit_sha": "e805b1d95b86a0ce3bd615ded1ee160ef0cdc54b",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "abeae02d771d45d7957cf0157909f5a80b865fd9",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "active_universe_grouped_discovery_six_core_indices_and_nextdc_original_asx_source_completion",
+        "scope": "Required same-commit files and full ledger blob retrieved; unchanged instruction and related article blobs matched already-read bodies. All 98 active names screened in 14 fresh grouped queries; current individual filing coverage remains partial.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://asx.api.cmfyapp.com/asx-research/1.0/file/2924-03150896-2A1705181&v=undefined",
+          "https://www.reuters.com/commentary/breakingviews/data-centres-fail-ai-pick-and-shovel-trade-2026-10-23/"
+        ],
+        "source_limits": [
+          "Latest six core index releases remain TSMC October 15, MediaTek September 30, NVIDIA October 22, AMD October 12, Broadcom October 21 and Marvell October 13. No new authenticated core design win, NRE, procurement split or profit revision.",
+          "Grouped screening is not 98 individually verified current filings. Historical monthly-revenue baseline and unresolved order/margin/cash gaps retained.",
+          "Original NextDC ASX PDF became accessible via link in Reuters. Figures and delivery risks match the October 21 issuer disclosure already recorded via EQS; source access improvement does not create a new operating event.",
+          "Later data-centre commentary repeats recorded NextDC, Nscale and financing-delay risks. AIC and Compal candidates remain pending quantified orders and financial conversion. No repeat alert.",
+          "No new public event or article. Append-only public source and research-stage records; no current stock quotes, valuation, holdings, private fundflows or trading conditions."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -25421,6 +25449,26 @@
         "Check margin after local manufacturing costs and customer financing; no company earnings upgrade inferred from the partnership alone."
       ],
       "publication_status": "candidate_only_no_new_event_alert_or_longform_article"
+    },
+    {
+      "key": "nextdc-oct21-original-asx-pdf-source-completion-and-covenant-scope-20261023",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "e805b1d95b86a0ce3bd615ded1ee160ef0cdc54b",
+      "companies": [
+        "NEXTDC"
+      ],
+      "related_public_event": "nextdc-m3-power-delay-fy27-guidance-like-for-like-capex-cut-20261021",
+      "stage": "original_asx_pdf_read_same_guidance_event_debt_definition_clarified_no_new_forecast",
+      "sources": [
+        "https://asx.api.cmfyapp.com/asx-research/1.0/file/2924-03150896-2A1705181&v=undefined",
+        "https://www.reuters.com/commentary/breakingviews/data-centres-fail-ai-pick-and-shovel-trade-2026-10-23/"
+      ],
+      "facts": "The original October 21 ASX release confirms the already-recorded FY27 M3 guidance, capitalised-interest bridge and conditional liquidity. Senior maintenance covenants require gearing no higher than 60% and interest cover at least 1.5x; cover permits annualised EBITDA from new contracts expected to bill within 24 months. The last test was June 30; December 31 compliance is management expectation. Subordinated instruments have different covenant scope. October 23 commentary is not a new forecast revision or confirmed customer cancellation.",
+      "questions": [
+        "Track power milestones and customer rights against the existing guidance, not the later commentary date.",
+        "Verify subsequent borrowing availability, expected billing profiles and covenant calculations; permitted annualisation does not mean cash has already been collected."
+      ],
+      "publication_status": "source_completion_only_no_repeat_event_alert_or_article"
     }
   ],
   "blockers": [
