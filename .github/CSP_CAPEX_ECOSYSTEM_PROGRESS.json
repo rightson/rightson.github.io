@@ -6831,6 +6831,70 @@
         "limits": "Customer unnamed. Contract value, margin, cancellation terms, funding and620MWdelivery schedule undisclosed. Orders are not commissioned power, cash receipts or an issuer earnings-guidance increase."
       },
       "status": "issuer_distributed_original_and_historical_baselines_verified_no_article"
+    },
+    {
+      "fingerprint": "meta-q3-2026-contractual-commitments-2027-payment-burden-and-contingency-bridge-20261022",
+      "event_date": "2026-10-22",
+      "discovered_date": "2026-10-23",
+      "instruction_commit_sha": "5b8057d8615db5f0ded1b567ee4f2debeb8c807d",
+      "companies": [
+        "Meta Platforms"
+      ],
+      "type": "sec_quarterly_contractual_commitment_and_payment_schedule_revision",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm",
+        "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+      ],
+      "facts": {
+        "currency": "USD",
+        "unit": "billion",
+        "primary_locations": "Q3 Note10 and MD&A Leases and Contractual Commitments; Q2 Note9 and corresponding MD&A.",
+        "as_of_dates": [
+          "2026-09-30",
+          "2026-06-30"
+        ],
+        "non_cancelable_contractual_commitments": {
+          "q3": 454.52,
+          "q2": 349.31,
+          "derived_change": 105.21,
+          "derived_change_pct": 30.1194,
+          "scope": "Third-party cloud capacity, servers/network infrastructure, data-center energy service agreements and RealityLabs consumer hardware; not exclusively AI."
+        },
+        "contractual_commitments_due_2027": {
+          "q3": 121.41,
+          "q2": 81.65,
+          "derived_change": 39.76,
+          "derived_change_pct": 48.6957
+        },
+        "uncommenced_leases": {
+          "q3": 355.73,
+          "q2": 278.99,
+          "derived_change": 76.74,
+          "scope": "Q3 adds energy-related infrastructure to data centers,colocations and network infrastructure; commencement through2036 and terms over1to30years.",
+          "previously_disclosed_july_subsequent_event": 68,
+          "limits": "July68bn was already disclosed in Q2 filing. Do not call all76.74bn a new surprise since July or add July68bn to the Q3 outstanding balance. Balance changes also reflect commencements and other movements; gross signing bridge not disclosed."
+        },
+        "contingent_cloud_capacity": {
+          "q3_maximum": 14.72,
+          "q2_maximum": 14.72,
+          "period_years": 5,
+          "condition": "May reduce if provider sells capacity to other customers; unchanged ceiling, not unconditional procurement."
+        },
+        "derived_aggregation": {
+          "q3_leases_plus_non_cancelable_contracts": 810.25,
+          "q2_same_two_lines": 628.3,
+          "q2_plus_july_disclosure": 696.3,
+          "q3_including_full_contingent_ceiling": 824.97,
+          "limits": "Aggregations of disclosed undiscounted obligations across different horizons, not annual capex, recognized debt, fresh cash spending or supplier revenue. 824.97 includes contingent ceiling; media approximately825bn must preserve this distinction."
+        },
+        "escrow": {
+          "restricted_cash_equivalents": 10.8,
+          "prior_q2_same": 10.8,
+          "limits": "Unchanged; not new Q3 liquidity restriction."
+        },
+        "limits": "No disclosed named supplier allocation, accepted deployment, unit economics, incremental supplier earnings or exact gross commitment additions. Existing Q3 FCF/capex-floor/ClassC event remains separate; this is new footnote/payment-schedule evidence."
+      },
+      "status": "current_and_prior_sec_footnotes_verified_no_article"
     }
   ],
   "articles": [],
@@ -16111,6 +16175,35 @@
           "Micron roadmap confirms strategic process choice and targets; no demonstrated change in realised bit supply, cost or financial guidance. Minerva paid economics and measured yield improvement remain undisclosed.",
           "No longform article or website-publication claim. Only public facts, sources and research stages appended; no current stockquotes, valuation, private holdings or fund flows."
         ]
+      },
+      {
+        "date": "2026-10-23",
+        "checked_at": "2026-10-23 07:58:26 UTC",
+        "instruction_commit_sha": "5b8057d8615db5f0ded1b567ee4f2debeb8c807d",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "abeae02d771d45d7957cf0157909f5a80b865fd9",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "active_universe_grouped_discovery_core_indices_and_comparative_meta_sec_footnotes_checked",
+        "scope": "Same-commit mandatory files,ledger and three related article bodies retrieved; instruction/article blobs unchanged. All98 active names included in14 fresh grouped discovery queries; individual current-filing audit remains partial.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm",
+          "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
+          "https://www.globenewswire.com/news-release/2026/10/21/3385584/0/en/broadcom-launches-arcot-scam-defense-to-block-social-engineering-fraud.html"
+        ],
+        "source_limits": [
+          "TSMC latest indexed issuer releaseOctober15; MediaTekSeptember30; NVIDIAOctober22Minerva/Kazakhstan previously known; AMDlatestOctober12; MarvellOctober13. No newly verified core design award,NRE,procurement allocation or production economics.",
+          "Broadcom IR home and financial-news endpoint returned403; corporate-news wrapper exposed an iframe without release body. Discovery foundOctober21Arcotpayments-fraud release,not new AI supply-chain economics. Primary IR index freshness not established.",
+          "Grouped discovery mostly surfaced historical revenue,quotations,repeated capacity expansion and event calendars; not98 individually audited current filings.",
+          "Meta Q3/Q2 SEC footnotes now directly verified; media aggregation reconciled with contingent cloud ceiling and previously disclosed July leases. Besi managementASMLcomplementarity story matches existing candidate.",
+          "No longform article or website-publication claim. Public facts,sources and research stages only; no current stockquotes,valuation,privateholdings or fundflows."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -25027,6 +25120,26 @@
         "Verify paid deployment, pricing and recurring economics before inferring incremental earnings."
       ],
       "publication_status": "candidate_only_no_article"
+    },
+    {
+      "key": "meta-q3-2026-contractual-commitments-2027-payment-burden-and-contingency-bridge-20261022",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "5b8057d8615db5f0ded1b567ee4f2debeb8c807d",
+      "companies": [
+        "Meta Platforms"
+      ],
+      "stage": "comparative_sec_payment_schedule_verified_supplier_profit_conversion_pending",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm",
+        "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+      ],
+      "facts": "Contractual commitments rise30.12%quarter-on-quarter and2027due amount48.70%. Approximately825bn includes unchanged14.72bncontingentcapacity; same two lease/contract lines810.25bn. July68bnleases already disclosed in Q2, so distinguish quarter-end balance comparison from information already public in July.",
+      "questions": [
+        "Verify financing proceeds,2027spending and payment schedule against operating cash generation.",
+        "Verify counterparties,capacitydelivery,utilisation and retained supplier cash margins; avoid assigning an unnamed procurement pool to Taiwan suppliers.",
+        "Reconcile gross new signings,leasecommencements,cancellations and scope changes before interpreting all outstanding-balance increase as fresh demand."
+      ],
+      "publication_status": "source_event_recorded_no_longform_article"
     }
   ],
   "blockers": [
