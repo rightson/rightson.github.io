@@ -16609,6 +16609,37 @@
           "Slicast opening timed out. First syndicated article opening failed; retry by retrieved source reference succeeded and full article text was read. No claim that these access changes alter business facts.",
           "Ledger-only source/research-stage update. No article drafted or published. Public facts only; no current equity prices, valuation, holdings or private market-structure data."
         ]
+      },
+      {
+        "date": "2026-10-24",
+        "checked_at": "2026-10-23 20:24:29 UTC",
+        "instruction_commit_sha": "e8514fce46f916dd9bd519fc1a80e04d28124915",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "5ce5b91f268319bb516e7c229f0baa07dbba8d63",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "active_universe_grouped_discovery_core_issuer_indices_and_tpu_production_adoption_checked",
+        "scope": "All mandatory same-commit instructions, supporting specifications, full progress blob and three related article bodies retrieved completely. Unchanged instruction/article hashes match already-read full content. All 98 active companies included in 14 fresh grouped discovery queries. Individual current-filing and economics audit remains partial.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investors.broadcom.com/taxonomy/term/3886",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://developers.googleblog.com/announcing-new-vllm-and-sglang-inference-engines-on-tpu/",
+          "https://www.lmsys.org/blog/2026-10-20-sglang-torchtpu/"
+        ],
+        "source_limits": [
+          "TSMC, MediaTek, NVIDIA, AMD and Marvell primary indices retrieved. Latest visible dates unchanged from prior check. NVIDIA featured items retain October14/16 original dates. Core current commercial terms and allocation are not inferred from product announcements.",
+          "Broadcom main IR and financial-news pages returned403 after retry; alternate news-releases path returned404. Its general taxonomy page was retrievable but shows a two-day-old crawl, while indexed official results show October21 Arcot and October8 OCP releases. This is partial source availability, not a fully refreshed Broadcom filing audit or proof of no new event.",
+          "Google and joint developer originals authenticate the October20 production-use claim. Hardware ownership, physical placement, procurement split and incremental supplier profit remain unverified. Secondary headlines claiming Meta-owned data centers exceed what these originals establish.",
+          "Supermicro preliminary outlook story matches the existing October20 event; later headlines are not another guidance raise. Earlier financial results, TPU forecasts, Nscale power delays, BofA aggregate forecast and chip-financing reports deduplicated.",
+          "Four stronger discovery queries and targeted primary-source follow-ups supplemented 14 grouped queries. Grouped discovery is not 98 individually audited current filings. Historical revenue and primary coverage retained with outstanding order, margin and cash-flow gaps.",
+          "Ledger-only source/research-stage update. No article drafted or published. Public business facts only; no equity prices, valuation, holdings or private fundflow analysis."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -25827,6 +25858,33 @@
         "Authenticate dates, executed agreements, tranche overlap and current outstanding guarantees.",
         "Reconcile modelled platform borrowing with actual vendor backstops, collateral recovery and customer cash generation.",
         "Verify any financing change in delivery, utilisation or supplier cash conversion before propagating to company earnings."
+      ],
+      "publication_status": "research_candidate_only_not_drafted"
+    },
+    {
+      "key": "google-meta-sglang-torchtpu-production-adoption-to-procurement-economics-20261020",
+      "date": "2026-10-24",
+      "source_date": "2026-10-20",
+      "instruction_commit_sha": "e8514fce46f916dd9bd519fc1a80e04d28124915",
+      "companies": [
+        "Alphabet/Google",
+        "Meta",
+        "RadixArk",
+        "MediaTek",
+        "Broadcom",
+        "Marvell"
+      ],
+      "stage": "october20_google_and_joint_developer_production_claims_read_deployment_location_procurement_and_supplier_economics_pending",
+      "sources": [
+        "https://developers.googleblog.com/announcing-new-vllm-and-sglang-inference-engines-on-tpu/",
+        "https://www.lmsys.org/blog/2026-10-20-sglang-torchtpu/",
+        "https://cloud.google.com/blog/topics/ai-infrastructure/torchtpu-is-now-open-source-run-native-pytorch-on-tpus/"
+      ],
+      "facts": "Google's October20 release and the joint RadixArk/Google/Meta engineering post state that SGLang-TorchTPU is already used in production at Meta. Native PyTorch TPU backends retain existing serving-framework components with TPU-specific implementations. This is a dated production-use claim rather than a new October24 launch. The posts do not establish Meta-owned on-premises TPU location, purchase-versus-cloud-rental terms, capacity volumes, chip generation, supplier allocation, NRE or recognised supplier revenue. Some features and RL work remain experimental or preview.",
+      "questions": [
+        "Verify deployment location, purchased versus rented capacity and incremental procurement volumes.",
+        "Measure migration cost and utilisation with workload-matched customer economics rather than transferring isolated vendor benchmark results.",
+        "Authenticate any MediaTek design responsibility, NRE or volume-profit change and Broadcom/Marvell allocation before attributing this adoption to specific chip suppliers."
       ],
       "publication_status": "research_candidate_only_not_drafted"
     }
