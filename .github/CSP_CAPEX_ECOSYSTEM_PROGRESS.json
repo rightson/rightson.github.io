@@ -15893,6 +15893,30 @@
           "Existing 98-company September monthly-revenue baseline retained. Current order,margin,earnings and cash-conversion validation remains partial.",
           "Meta issuer capex floor and cash-flow figures match registeredOctober21 event. Market-only changes are not stored in this public ledger. No new article,valuation,quotes,private holdings or Taiwan fund-flow data."
         ]
+      },
+      {
+        "date": "2026-10-23",
+        "checked_at": "2026-10-23 00:48:09 UTC",
+        "instruction_commit_sha": "a61898a38d6f8bc56d016615aa9408382b004e2f",
+        "status": "98_name_grouped_discovery_and_six_core_indices_checked_no_new_material_alert",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "613546e71a43168b92315eb85b7ad89b4100497b",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases"
+        ],
+        "scope": "Same-commit mandatory documents and three related article bodies read. All98 active names included in14 grouped discovery queries; six issuer indices and broader CSP/TPU news checked. Discovery coverage is not98 individual current-financial-statement audits.",
+        "source_limits": [
+          "No new core issuer TPU design responsibility, NRE, procurement allocation or volume economics established. Supplier capacity reports matched existing events.",
+          "Current order,margin,cash-flow audits remain partial; historical monthly revenue baseline retained.",
+          "Solidigm financing lead retained as candidate with issuer-original statement and expenditure consequences pending. No article, individual-stock quotes or valuation, holdings or private market-structure data appended."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -24515,6 +24539,25 @@
         "Reconcile subsequent2026 guidance delivery and product/service returns with site fuel/permit milestones."
       ],
       "publication_status": "event_and_candidate_only_no_article"
+    },
+    {
+      "key": "solidigm-ipo-funding-route-change-primary-statement-pending-20261023",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "a61898a38d6f8bc56d016615aa9408382b004e2f",
+      "companies": [
+        "SK hynix",
+        "Solidigm"
+      ],
+      "stage": "reliable_original_report_read_primary_statement_and_capex_consequence_pending",
+      "sources": [
+        "https://www.reuters.com/world/asia-pacific/sk-hynix-drops-us-ipo-plan-solidigm-newspaper-reports-2026-10-22/"
+      ],
+      "facts": "Reuters reports the company withdrew its US IPO route due to market volatility while maintaining growth and investment needs. Financing alternatives and expansion timing remain under review.",
+      "questions": [
+        "Obtain issuer statement and quantify replacement funding, project timing and changes to actual capital spending.",
+        "Verify any resulting equipment or NAND/SSD supply change; IPO decision alone does not establish cancelled procurement."
+      ],
+      "publication_status": "candidate_only_no_article"
     }
   ],
   "blockers": [
