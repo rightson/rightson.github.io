@@ -16758,6 +16758,36 @@
           "Grouped discovery is not98 individually audited current filings; historical primary coverage retained, with company-specific order,margin and cash-conversion gaps.",
           "Ledger-only public source/research-stage update. No article drafted or published; no equity prices, valuation, holdings or private fundflow analysis."
         ]
+      },
+      {
+        "date": "2026-10-24",
+        "checked_at": "2026-10-23 22:34:46 UTC",
+        "instruction_commit_sha": "65fde6c187b6f4f88890584c05d030ff4194c3ce",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "5ce5b91f268319bb516e7c229f0baa07dbba8d63",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "active_universe_grouped_discovery_six_core_indices_read_no_new_material_event_verified",
+        "scope": "All98 activeTaiwan names submitted in14fresh grouped discoveryqueries; sixcoreissuerindices and targetedglobalCSP/supplierdiscovery checked. No newpublicevent/article registered. Currentindividualfiling/economicscoverage remainspartial.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.aboutamazon.com/news",
+          "https://money.udn.com/money/story/5612/9832175"
+        ],
+        "source_limits": [
+          "Samecommit mandatoryinstructions,config,taxonomy,series,specification andlegacyresearch read. Full1.85MBledger retrieved/parsed via exactblob aftercontentswrapper emptyresponse; transientRemoteProtocolError onprewrite rawroute resolved by blobread. Three recentrelated ai-industryarticlebodies read.",
+          "alpha-quant latestmain5ce5b91f268319bb516e7c229f0baa07dbba8d63 contains unchanged98-active CSVblob88422949d38165d4757a1e24c27f8662bede14c1. Groupedsearch isdiscovery,not98individuallyaudited latestfilings. Historicalmonthlybaseline preserved; currentorder,marginandcashflowcoverage incomplete.",
+          "Allsixissuerindices readable. Latestvisible dates:TSMCOct15,MediaTekSep30,NVIDIAOct22,AMDOct12,BroadcomOct21,MarvellOct13. No newlyauthenticatedMediaTekTPUaward,NRE,Googleprocurementallocation/volumeeconomics orTSMCcapacity/pricingrevision established. Indexread isnot exhaustivefilingaudit.",
+          "ExistingITEQprofit,Metacommitments,Vicorroyalties,Nebiusfinancing,WDC/TTM/FIX/BE/INNIOevents deduplicated. Broker summaries/legacycapacityclaims lacked newlyobtainedoriginalestimates orfreshquantifiedeconomics; no repeatnotification registered.",
+          "October22reporting saysHannStarBoard/GlobalBrandsManufacture Oct23investormeetings deferredtoOct28. Calendarlead only,not earningsresults orconfirmedproductiondisruption. Search/update datesnot substitutedforeventdates.",
+          "Globaldiscoveryreturned olderGoogleTPU/Suncatcher,pastfinancing/earnings andAIcapexcommentary ratherthannewlyverifiedprocurement/economicchange. No wholemarket absence-of-news claim.",
+          "OnlyA-topic publicsourcecoverage appended. Noquotes,valuation,holdings,currentinstitutionalflows,tradingconditions orprivateBanalysis stored. Noarticlelint/build/deploy/public-content claim."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
