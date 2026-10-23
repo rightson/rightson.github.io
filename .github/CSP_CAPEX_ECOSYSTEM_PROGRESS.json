@@ -15865,6 +15865,34 @@
           "Bloomissuer newsroomlink openedcurrent numericalbody where earlierdirectpaths andIRindices hadfailed. Q3current/priorfinancialtables andJulyguidance verified. Priorretrievalfailure retainedashistory. Call/full10-Qnotcompleted.",
           "Three related ai-industry articleblobs reread. No independentlongformarticle created. Publicledger contains onlysourcefacts,researchcoverage andstages; no currentquotes,valuation,holdings,fundflows,tradingconditions orprivatejudgment."
         ]
+      },
+      {
+        "date": "2026-10-23",
+        "checked_at": "2026-10-23 00:18:37 UTC",
+        "instruction_commit_sha": "3f26fde7f14859fb57dec83b9e41dade9647136b",
+        "status": "98_name_grouped_discovery_and_six_core_issuer_indices_checked_no_new_material_event",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "613546e71a43168b92315eb85b7ad89b4100497b",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "scope": "All 98 active names included in 14 grouped discovery queries. Six core issuer news indices read; current and prior public ledger and three related ai-industry article bodies checked. This is discovery coverage, not 98 individual current-filings, order, margin or cash-flow audits.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx"
+        ],
+        "source_limits": [
+          "Full same-commit mandatory instructions and research specifications fetched. AGENTS display truncation resolved with bounded reads. Progress Contents wrapper returned empty body; immutable Git blob yielded complete JSON parsed successfully.",
+          "Universe default branch advanced to613546e71a43168b92315eb85b7ad89b4100497b; CSV blob unchanged88422949d38165d4757a1e24c27f8662bede14c1. No watchlist modification.",
+          "TSMC latest index entry remainsOctober15 Q3 results; MediaTek latest index entrySeptember30. No new authenticated TPU award,NRE,production economics or Google procurement split established.",
+          "NVIDIA supplier capacity reservations and reported TPU schedule risks matched existing fingerprints. Other discovery results were historical revenue/product/expansion items, scheduled conferences or thematic reporting; no new material event registered.",
+          "Existing 98-company September monthly-revenue baseline retained. Current order,margin,earnings and cash-conversion validation remains partial.",
+          "Meta issuer capex floor and cash-flow figures match registeredOctober21 event. Market-only changes are not stored in this public ledger. No new article,valuation,quotes,private holdings or Taiwan fund-flow data."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
