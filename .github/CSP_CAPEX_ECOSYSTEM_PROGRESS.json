@@ -16548,6 +16548,36 @@
           "Grouped discovery is not 98 individually verified current filings. Existing monthly-revenue and historical primary-source coverage retained without treating unresolved order, margin or cash-flow gaps as completed.",
           "Ledger-only research-stage update. No article drafted or published; existing events and source-access completions deduplicated. Public source facts only."
         ]
+      },
+      {
+        "date": "2026-10-24",
+        "checked_at": "2026-10-23 18:10:36 UTC",
+        "instruction_commit_sha": "1861aa24615782e8d7518abff5c1f67dc4d03a2c",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "5ce5b91f268319bb516e7c229f0baa07dbba8d63",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "active_universe_grouped_discovery_six_core_indices_and_subsidiary_funding_checked",
+        "scope": "All mandatory instructions and supporting research specifications retrieved at one commit. Full ledger blob and three related article bodies retrieved; unchanged instruction and article hashes match already-read content. All 98 active companies included in 14 grouped discovery queries. Individual current-filing and economics audits remain partial.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://nvidianews.nvidia.com/news/nvidia-and-semiconductor-leaders-advance-ai-across-chip-design-and-manufacturing-for-ai-defined-labs",
+          "https://www.investegate.co.uk/announcement/rns/hon-hai-precision-industry-co-ltd--hhpd/obtaining-shares-in-subsidiaries/9838635",
+          "https://www.digitimes.com/news/a20261023PD239/strike-taiwan-micron-management-2026.html",
+          "https://ec.ltn.com.tw/article/breakingnews/5616347"
+        ],
+        "source_limits": [
+          "Six core issuer indices rechecked: TSMC latest listed October15, MediaTek September30, NVIDIA latest-news section October22, AMD October12, Broadcom October21 and Marvell October13. NVIDIA's newly featured fab-software release is dated October14 and matches the existing CUDA-X candidate; no new commercial revision authenticated.",
+          "The subsidiary transactions are retained as one qualified candidate. Company-level deployment, orders and earnings evidence remains pending.",
+          "October23 Micron labour follow-up search excerpts describe the warning action ending and talks moving to October27; full DIGITIMES and Liberty article opening failed. No verified production loss, industry-wide output change or new pricing consequence established. Existing union-plan and eleven-official action candidates retained.",
+          "AOL's Marvell competitive commentary full body was inaccessible. Search excerpt is not authenticated procurement allocation or design responsibility evidence. Earlier TPU forecasts, supplier capacity plans, funding leads and repeated financial results deduplicated.",
+          "Grouped discovery is not 98 independently audited current filings. Historical revenue and primary-source baseline preserved; unresolved order, margin and cash-flow gaps remain open. No article drafted or published. Public research-stage facts only."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -25714,6 +25744,30 @@
         "Obtain the dated original note, comparable prior forecast and market definition before measuring an upgrade.",
         "Reconcile construction and IT spending scope, installed capacity, equipment pricing and deployment timing against issuer disclosures.",
         "Trace supplier-specific orders, delivery, margins and cash conversion before attributing the aggregate forecast to company earnings."
+      ],
+      "publication_status": "research_candidate_only_not_drafted"
+    },
+    {
+      "key": "hon-hai-oct23-subsidiary-equity-funding-versus-ai-capacity-orders-20261024",
+      "date": "2026-10-24",
+      "instruction_commit_sha": "1861aa24615782e8d7518abff5c1f67dc4d03a2c",
+      "companies": [
+        "Hon Hai",
+        "eCMMS Precision Singapore Pte. Ltd.",
+        "Foxconn AI Solution (FR) SAS",
+        "Foxconn European Manufacturing Services s.r.o."
+      ],
+      "stage": "october23_issuer_rns_transaction_text_verified_specific_capacity_and_customer_economics_pending",
+      "sources": [
+        "https://www.investegate.co.uk/announcement/rns/hon-hai-precision-industry-co-ltd--hhpd/obtaining-shares-in-subsidiaries/9838635",
+        "https://money.udn.com/money/story/5612/9833610",
+        "https://money.udn.com/money/story/5612/9833576"
+      ],
+      "facts": "Hon Hai's October 23 RNS transaction text lists USD 1.101bn for eCMMS Singapore shares, USD 58m for Foxconn AI Solution (FR) SAS and USD 44m for European Manufacturing Services shares: USD 1.203bn combined. Purpose is long-term investment. These are subsidiary equity transactions, not demonstrated external customer orders or consolidated equipment capex. Media links the European transactions to AI server expansion, explicitly as inference. No quantified capacity, commissioning schedule, customer allocation, margin or cash-conversion effect is disclosed.",
+      "questions": [
+        "Reconcile subsidiary equity funding with actual external plant spending and cash transfers.",
+        "Obtain site capacity, accepted customer orders, delivery and profit contribution before attributing an earnings revision.",
+        "Assess utilisation and duplication against existing European manufacturing plans."
       ],
       "publication_status": "research_candidate_only_not_drafted"
     }
