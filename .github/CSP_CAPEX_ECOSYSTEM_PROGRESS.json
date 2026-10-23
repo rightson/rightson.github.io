@@ -6803,6 +6803,34 @@
         "limits": "No newly named Taiwan supplier award, project-level return, or full current10-Q/call audit. Guidance is prospective."
       },
       "status": "current_and_prior_issuer_financial_tables_verified_no_article"
+    },
+    {
+      "fingerprint": "innio-620mw-follow-on-order-and-500mw-maintenance-agreement-20261022",
+      "event_date": "2026-10-22",
+      "discovered_date": "2026-10-23",
+      "instruction_commit_sha": "b9ec03db5447447d966ef5a7829cfa37ecb96521",
+      "companies": [
+        "INNIO"
+      ],
+      "type": "issuer_data_center_onsite_generation_equipment_order_and_recurring_maintenance",
+      "sources": [
+        "https://www.businesswire.com/news/home/20261022191376/en/Follow-on-Order-Brings-Orders-from-INNIO-Data-Center-Customer-to-1.72-GW-Further-Strengthening-INNIOs-Data-Center-Backlog-and-Revenue-Visibility",
+        "https://www.innio.com/en/news-media/press-releases/innio-wins-1-1-gigawatt-gas-engine-order-for-major-data-center-campus/",
+        "https://investors.innio.com/news-releases/news-release-details/innio-secures-450-mw-order-power-next-generation-data-centers"
+      ],
+      "facts": {
+        "new_order_mw": 620,
+        "booked_period": "September2026",
+        "same_customer_prior_order_mw": 1100,
+        "same_customer_cumulative_order_mw": 1720,
+        "increment_vs_prior_customer_order_pct": 56.3636,
+        "service_agreement_mw": 500,
+        "service_scope": "Previously ordered capacity; spares and labour through a major overhaul. Not an additional500MW equipment order.",
+        "product": "Containerised JenbacherJ624 gas engines",
+        "prior_baselines": "July28 issuer release:1.1GW,Q2booking,phased deliveries. September17 separate customer450MWQ3order has2028expecteddelivery; this deadline is not assigned to the620MW follow-on.",
+        "limits": "Customer unnamed. Contract value, margin, cancellation terms, funding and620MWdelivery schedule undisclosed. Orders are not commissioned power, cash receipts or an issuer earnings-guidance increase."
+      },
+      "status": "issuer_distributed_original_and_historical_baselines_verified_no_article"
     }
   ],
   "articles": [],
@@ -15995,6 +16023,35 @@
           "Sinbon Q3 reporting retained as candidate; original issuer numerical filing/cash-flow unavailable. Ardentec headline matches previously registered results candidate and preview comparison. NVIDIA supply-reservation and PCB expansion news match existing entries.",
           "Historical98-company monthly-revenue baseline retained; current order,margin,earnings and cash audits remain partial. No new article, current quotes, valuation, holdings, private fund flows or investment judgment appended."
         ]
+      },
+      {
+        "date": "2026-10-23",
+        "checked_at": "2026-10-23 04:43:44 UTC",
+        "instruction_commit_sha": "b9ec03db5447447d966ef5a7829cfa37ecb96521",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "abeae02d771d45d7957cf0157909f5a80b865fd9",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "active_universe_grouped_discovery_six_core_indices_and_innio_order_primary_verified",
+        "scope": "Full same-commit mandatory files, ledger and three related article bodies retrieved; immutable instruction and article blobs match previously read versions. All98 active names included in14 fresh grouped discovery queries. INNIO is outside the active Taiwan universe; no watchlist change. Current individual financial-filings audit remains partial.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.businesswire.com/news/home/20261022191376/en/Follow-on-Order-Brings-Orders-from-INNIO-Data-Center-Customer-to-1.72-GW-Further-Strengthening-INNIOs-Data-Center-Backlog-and-Revenue-Visibility",
+          "https://www.innio.com/en/news-media/press-releases/innio-wins-1-1-gigawatt-gas-engine-order-for-major-data-center-campus/",
+          "https://investors.innio.com/news-releases/news-release-details/innio-secures-450-mw-order-power-next-generation-data-centers"
+        ],
+        "source_limits": [
+          "Empty Contents ledger body resolved using complete immutableblob and successfulJSON parse. Historical records preserved.",
+          "TSMC index latestOctober15 andMediaTekSeptember30. No new primary-confirmed TPUdesignaward,NRE,production economics or procurement allocation. Other coreindices retain priorreleasebaselines.",
+          "Broadcomhomepage readable thisround; preceding403 preserved as history. INNIOIRnewsindex unavailable but currentissuerrelease obtained throughBusinessWire original; July andSeptember baselines read.",
+          "Grouped discovery mostly historical revenue/expansion, conference schedules and repeated supply-reservation news. This is not98 individually checked current filings.",
+          "No new longformarticle or websitepublication claim. Only public source facts and researchstages appended; no currentquotes,valuation,holdings,privatefundflows orinvestmentjudgment."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -24800,6 +24857,25 @@
       "questions": [
         "Obtain issuer/MOPS reviewed Q3 financials, operating cash flow and inventory/receivables bridge.",
         "Separate rack assembly contribution and profitability from other end markets; compare with prior outlook and realised margins."
+      ],
+      "publication_status": "candidate_only_no_article"
+    },
+    {
+      "key": "innio-data-center-repeat-order-to-service-revenue-and-cash-conversion-20261023",
+      "date": "2026-10-23",
+      "instruction_commit_sha": "b9ec03db5447447d966ef5a7829cfa37ecb96521",
+      "companies": [
+        "INNIO"
+      ],
+      "stage": "issuer_order_and_service_agreement_verified_delivery_profit_and_cash_pending",
+      "sources": [
+        "https://www.businesswire.com/news/home/20261022191376/en/Follow-on-Order-Brings-Orders-from-INNIO-Data-Center-Customer-to-1.72-GW-Further-Strengthening-INNIOs-Data-Center-Backlog-and-Revenue-Visibility",
+        "https://www.innio.com/en/news-media/press-releases/innio-wins-1-1-gigawatt-gas-engine-order-for-major-data-center-campus/",
+        "https://investors.innio.com/news-releases/news-release-details/innio-secures-450-mw-order-power-next-generation-data-centers"
+      ],
+      "questions": [
+        "October27 results: order conversion, margin, working capital and cash generation.",
+        "Customer funding, permits, gas supply, equipment delivery and acceptance; maintenance activation and retained service economics."
       ],
       "publication_status": "candidate_only_no_article"
     }
