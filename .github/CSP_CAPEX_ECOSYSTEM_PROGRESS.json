@@ -16996,6 +16996,33 @@
           "Qingding notice is annual cumulative procurement,with original issuer/exchange verification pending;Voltronic article has inconsistent profit-period statements and unnamed broker forecast. Both retained as candidates,not new economic revisions.",
           "Public ledger records only A-topic sources and research stages.No prices,valuations,holdings,private fundflows or trading conditions appended.No article created and no build/deploy/publication claim."
         ]
+      },
+      {
+        "date": "2026-10-24",
+        "checked_at": "2026-10-24T06:42:12Z",
+        "instruction_commit_sha": "f8c722190d474a289a70766897172ad7345d539c",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "3085b6f40a0a1c61dee6fed8ae0cb8965a58b2d9",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_and_six_core_indices_checked_no_new_material_event_verified",
+        "scope": "All98 active names included in14 fresh grouped discovery queries;six core news indices checked and6 supplemental global/core/source queries completed. Existing events,candidates and available notification baseline compared. Current individual-filing and supplier-economics verification remains partial.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases"
+        ],
+        "source_limits": [
+          "Latest default-branch metadata and full samecommit instructions,config,taxonomy,series,specifications,progress JSON and three related article blobs retrieved. Instruction/specification/article hashes unchanged from fully read preceding turn;display-truncated AGENTS middle section reread separately. No mandatory retrieval failure.",
+          "Latest visible core news dates unchanged:TSMC October15,MediaTek September30,NVIDIA October22,AMD October12,Broadcom October21,Marvell October13. No newly authenticated MediaTek TPU award,NRE,Google procurement allocation,TSMC capacity/pricing or core earnings revision established. Index checking is not a complete regulatory-filing audit.",
+          "Latest alpha-quant defaultbranch and full98active CSV retrieved;universe blob unchanged. Grouped discovery does not equal98 current filings individually verified. Historical primary monthly revenue baseline retained;current orders,margins and cash conversion remain partial.",
+          "Search returned existing substrate funding estimates,PCB shortage commentary,older Marvell/Google agreement and TPU timing reports,Meta TPU production-use coverage,Nscale Loughton cancellation,Amazon early rack delivery and registered earnings events. Original dates retained;reposts,stock moves and unnamed forecasts not promoted to new purchase commitments or consensus revisions.",
+          "Prior Qingding cumulative procurement and Voltronic inconsistent financial-period/source gaps remain open. No new source resolution claimed;no independent longform increment established.",
+          "Only A-topic public source coverage/research stage appended.No equity prices,valuations,holdings,private fundflows,trading conditions or B-topic data stored.No new article,lint/build/deploy or public-content claim."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -26561,7 +26588,7 @@
     }
   ],
   "last_research_date": "2026-10-24",
-  "instruction_commit_sha": "ee037f6a4a0a46dd0634d5723699ed533ac65ff2",
+  "instruction_commit_sha": "f8c722190d474a289a70766897172ad7345d539c",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
