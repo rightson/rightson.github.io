@@ -16878,6 +16878,36 @@
           "SB Energyreport located at originaloutlet and secondaryreport. Possible IPOtiming extends existingfinancing-delay candidate;no issuerconfirmation orprocurement cancellation verified. Biggo openingfailed. Previouslyregistered earnings,Meta,Vicor,ITEQ andSigurd events deduplicated.",
           "OnlyA-topic publicsourcefacts and researchstages appended. No currentquotes,valuations,holdings,privatefundflows ortradingconditions stored. Noarticlelint/build/deploy/publication claim."
         ]
+      },
+      {
+        "date": "2026-10-24",
+        "checked_at": "2026-10-24T03:12:01Z",
+        "instruction_commit_sha": "5ac0d4a069335bdb36b119e4e8193928e9ebce66",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "6c452257b219017e83ca5246703c2257c9c54c7a",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_and_substrate_funding_scope_reconciled",
+        "scope": "All98 active names included in14fresh grouped discovery queries;7targeted global/source queries supplemented screening. Six coreissuer indices read. Existing publicevents and accessible prior notifications used fordeduplication. Individual latestfiling/economicscoverage partial.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://money.udn.com/money/story/5612/9834192",
+          "https://money.udn.com/money/story/5612/9833629"
+        ],
+        "source_limits": [
+          "Latest defaultbranch metadata and samecommit mandatoryinstructions,config,taxonomy,series,specifications,fullprogressblob andthree recentrelatedarticlebodies retrieved. AGENTS displaytruncation resolved withbounded middle read;opticalarticle read insegments. No instruction retrievalfailure.",
+          "Allsixcoreindices readable;latestvisible dates unchanged:TSMC October15,MediaTek September30,NVIDIA October22,AMD October12,Broadcom October21,Marvell October13. No authenticated newMediaTek TPUaward,NRE/procurementallocation orTSMC capacity/pricingrevision established. Indexcheck isnot fullregulatoryfilingaudit.",
+          "alpha-quant latestmain and full98active CSV retrieved;unchanged blob. Groupedsearch is discovery,not98individuallyverified currentfilings. Historical98monthlyrevenuebaselines retained;currentorder,margin andcashconversion remainpartial.",
+          "October24 substrateheadline reconciled to estimate/speculation language in originalbody. Existing NVIDIA capacityreservations not counted twice. New paiddeposit total not promoted to verifiedbusiness fact.",
+          "Co-Tech October23article describes October20interview;Penang/GP999 expansion alreadyregistered. Forwardmix ambition and undeterminedfunding separated from production,revenue andcash. Issuer original and old/new comparable guidance remainpending.",
+          "Previouslyregistered INNIO,Bloom,Meta,Vicor,ITEQ andother earnings deduplicated. Currentmarket pages andlaternews timestamps do not establish newfinancialguidance. Yahoo overseas-selloff article returned429twice;no fullbody orno-cancellation conclusion claimed. IEKreplication failed;EconomicDaily originalbody read.",
+          "OnlyA publicsources/researchstages appended. Noequityprices,valuation,holdings,privatefundflows ortradingconditions stored. No newarticle,lint/build/deploy orpublic-content claim."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -26309,6 +26339,50 @@
       "publication_status": "source_update_only_not_drafted",
       "date": "2026-10-24",
       "instruction_commit_sha": "42be6086a6b23b395641c0bc52cb941372aabb4d"
+    },
+    {
+      "key": "substrate-three-customer-prepayment-headline-versus-estimated-allocation-20261024",
+      "companies": [
+        "Intel",
+        "NVIDIA",
+        "AMD",
+        "Unimicron",
+        "Kinsus",
+        "Nan Ya PCB"
+      ],
+      "source_date": "2026-10-24",
+      "stage": "original_media_body_read_aggregate_estimate_not_verified_paid_deposits",
+      "sources": [
+        "https://money.udn.com/money/story/5612/9834192"
+      ],
+      "facts": "October24 Economic Daily headline describes paid substrate deposits;body attributes allocations of approximately USD3bn/1bn/1bn to analyst/industry estimates and speculation. Suppliers decline single-customer comment. No independently authenticated payment receipt,customer-by-supplier allocation,refund terms or new budget amendment established. Prior NVIDIA capacity-reservation primary event retained separately;estimated aggregate not added to confirmed prepayments.",
+      "questions": [
+        "Obtain customer/supplier filing confirming payment timing,scope and noncancelable minimum purchases.",
+        "Reconcile capacity funding with prior agreements before inferring incremental orders or revenue."
+      ],
+      "publication_status": "source_quality_reconciliation_only_not_drafted",
+      "date": "2026-10-24",
+      "instruction_commit_sha": "5ac0d4a069335bdb36b119e4e8193928e9ebce66"
+    },
+    {
+      "key": "co-tech-oct20-interview-hvlp-mix-outlook-source-comparison-20261024",
+      "companies": [
+        "Co-Tech / 金居"
+      ],
+      "source_date": "2026-10-23",
+      "related_public_event": "co-tech-penang-hvlp4-capacity-timetable-and-financing-scope-20261020",
+      "stage": "later_interview_republication_read_forward_mix_and_funding_pending",
+      "sources": [
+        "https://money.udn.com/money/story/5612/9833629"
+      ],
+      "facts": "October23 Wealth magazine republication attributes to October20 interview a Q4 2027 HVLP revenue-mix ambition of35–40%,versus currently15–20%,with HVLP4 above half of high-end mix. Thirdplant production targets lateQ1 2027 and later ramp. Existing Penang/GP999 plans repeated;Q1 2027 convertible funding discussed without final size. This is a forward product-mix ambition,not realized margin or a newly signed customer order. Direct issuer outlook and comparable prior guidance not authenticated.",
+      "questions": [
+        "Reconcile HVLP definition and previous guidance;verify qualification and plant ramp.",
+        "Check recurring product margin,cash conversion and financing completion."
+      ],
+      "publication_status": "research_source_update_only_not_drafted",
+      "date": "2026-10-24",
+      "instruction_commit_sha": "5ac0d4a069335bdb36b119e4e8193928e9ebce66"
     }
   ],
   "blockers": [
@@ -26328,7 +26402,7 @@
     }
   ],
   "last_research_date": "2026-10-24",
-  "instruction_commit_sha": "42be6086a6b23b395641c0bc52cb941372aabb4d",
+  "instruction_commit_sha": "5ac0d4a069335bdb36b119e4e8193928e9ebce66",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
