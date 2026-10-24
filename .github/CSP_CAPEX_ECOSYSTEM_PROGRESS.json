@@ -17491,6 +17491,36 @@
           "SPIL/Acter complete indexed notice reproduction and Liding selected indexed terms add project research leads.Direct issuer/exchange originals not obtained;MoneyDJ original body inaccessible.Contract overlap and cumulative purchase periods require reconciliation before combining figures.No supplier profit,AI-only capacity or cash improvement inferred.",
           "Public update limited to A-topic sources,coverage and research stage.No equity prices,valuations,target prices,holdings,private flows or trading conditions written.No article drafted;no lint,build,deploy or public-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-25",
+        "checked_at": "2026-10-24 22:53:24 UTC",
+        "instruction_commit_sha": "0ed800239fbb5f0227acf38aeabf6b73ae2303f0",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "0b422e07621ace1e8c7fd3c596eebb690750b687",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_checked_no_material_increment",
+        "scope": "All98 active names included in14 fresh grouped discovery queries;six core official news indices and three supplemental global/core searches checked.Three source/date followups compared with154 existing public events,370 candidates and accessible notifications.No new candidate,event or article.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.trendforce.com/presscenter/news/20261014-13269.html",
+          "https://www.reuters.com/business/top-hyperscalers-likely-have-more-ai-linked-debt-than-now-known-sp-global-warns-2026-10-19/",
+          "https://money.udn.com/money/story/5607/9833413"
+        ],
+        "source_limits": [
+          "Mandatory instructions,specifications,config,taxonomy,series,complete ledger and three recent related article blobs retrieved by immutable same-commit SHAs;no required retrieval failure.Latest head and target blob checked before update.",
+          "Full active98 CSV retrieved at latest alpha-quant main;blob and universe unchanged.Grouped discovery does not verify98 individual current filings.Historical monthly revenue baseline retained;current orders,margins and cash-conversion coverage remains partial.",
+          "Core indices did not establish a newly authenticated TPU award,NRE,Google procurement split or earnings guidance revision.Index checks do not constitute complete filings coverage.",
+          "Grouped results primarily historical earnings,capacity plans,market commentary,social posts and footer dates.Repeated ITEQ expansion,PCB shortage forecasts,optical roadmap and memory cycle commentary add no independently authenticated economics revision.",
+          "TrendForce October14 original confirms existing nine-CSP forecast and prepayment/pricing drivers;already recorded event,not new actual supplier orders.S&P October19 warning and PCB October23 reporting match existing research candidates.Direct Reuters and UDN followup bodies inaccessible this round;no upgrade of source confidence or fresh rating/order conclusion.",
+          "Public update limited to A-topic sources,coverage and research stage.No equity prices,valuations,target prices,holdings,private flows or trading conditions included.No article drafted;no lint,build,deploy or public-content completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -27315,7 +27345,7 @@
     }
   ],
   "last_research_date": "2026-10-25",
-  "instruction_commit_sha": "a7055839ef7a51d0949b14cc3d2643a86c097f3f",
+  "instruction_commit_sha": "0ed800239fbb5f0227acf38aeabf6b73ae2303f0",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
