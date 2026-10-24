@@ -17347,6 +17347,35 @@
           "Infosys discovery snippets disagree on revised growth range;original current release was not obtained or adopted. IT-services commentary alone did not establish a hardware procurement change. Repeated TPU partner allocation and capacity statements were not treated as newly authenticated contracts.",
           "Public update limited to A-topic sources,coverage and research stage. No equity prices,valuation,target prices,holdings,private flows or trading conditions written. No article drafted;no lint/build/deploy/public-content success claimed."
         ]
+      },
+      {
+        "date": "2026-10-25",
+        "checked_at": "2026-10-24 17:47:11 UTC",
+        "instruction_commit_sha": "72330b8d0d3fed0cbfdcf8fb4fba3c144da928b9",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "0b422e07621ace1e8c7fd3c596eebb690750b687",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_checked_no_new_material_event_verified",
+        "scope": "All 98 active names included in 14 fresh grouped discovery queries. Six core official news indices, three supplemental global/core queries and two targeted grid-demand/date followup queries checked. Compared 154 public events, 367 research candidates and accessible notification baseline. No new material event, candidate or independent article established.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.techradar.com/pro/how-do-you-know-whats-real-us-utilities-are-making-ai-data-centers-prove-they-exist-before-handing-over-power-connections-as-50-percent-of-planned-buildouts-are-currently-being-delayed-stalled-or-canceled",
+          "https://www.woodmac.com/news/opinion/us-data-centre-developers-prioritise-existing-project-pipelines-as-new-pipeline-capacity-grows/"
+        ],
+        "source_limits": [
+          "Latest default-branch metadata and full same-commit mandatory instruction, specification, classification/configuration, complete progress and three recent related article blobs retrieved. Immutable instruction/specification/article hashes match preceding fully read versions. Latest head and target blob rechecked before write.",
+          "Full latest alpha-quant active 98 CSV retrieved; universe blob unchanged. Grouped discovery is not 98 individually verified current filings. Historical monthly revenue coverage retained; current individual orders, margins, profit retention and cash-conversion coverage remains partial.",
+          "Core indices retain latest dates TSMC October 15, MediaTek September 30, NVIDIA October 22, AMD October 12, Broadcom October 21 and Marvell October 13. TSMC and Broadcom dates reconfirmed through indexed page text. No newly authenticated TPU award, NRE, procurement allocation or core guidance revision verified; index checks are not all-filings coverage.",
+          "Date-constrained grouped search returned historical reports, aggregations, social commentary and date-footer matches. No fresh supplier order or comparable old/new earnings revision authenticated. Nscale Loughton, Gartner impairment forecast and Heatmap proposed-project cancellation survey match existing candidates; financing-position outcomes alone were not treated as new procurement changes.",
+          "TechRadar grid-request coverage explicitly traces the 1,066 GW/28% Wood Mackenzie estimate to August 2026 reporting. Followup search also located July 21 Wood Mackenzie Q1 pipeline commentary. These are historical project-pipeline context, not a newly verified October cancellation of contracted capacity. Underlying current model, project deduplication and supplier-order transmission not obtained; no 72% cancellation-rate inference adopted.",
+          "Public update limited to A-topic sources, coverage and research stage. No equity prices, valuations, target prices, holdings, private flows or trading conditions written. No article drafted; no lint, build, deploy or public-content completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -27096,7 +27125,7 @@
     }
   ],
   "last_research_date": "2026-10-25",
-  "instruction_commit_sha": "e3018473cea403e1486949e16d20ec05b446cc5b",
+  "instruction_commit_sha": "72330b8d0d3fed0cbfdcf8fb4fba3c144da928b9",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
