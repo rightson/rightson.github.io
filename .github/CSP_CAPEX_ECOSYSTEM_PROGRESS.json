@@ -17462,6 +17462,35 @@
           "Power-shortfall followup located Reuters October5 indexed original reporting,which attributes a model estimate to Morgan Stanley;this is historical context,not a newly announced October24 deployment cancellation.Underlying brokerage model and actual supplier order transmission remain unverified.Virginia appeal discovery remains secondary historical reporting;no current court ruling or payment change verified.No missing-source result treated as proof of stable demand.",
           "Public update limited to A-topic sources,coverage and research stage.No equity prices,valuations,target prices,holdings,private flows or trading conditions written.No article drafted;no lint,build,deploy or public-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-25",
+        "checked_at": "2026-10-24 22:13:42 UTC",
+        "instruction_commit_sha": "a7055839ef7a51d0949b14cc3d2643a86c097f3f",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "0b422e07621ace1e8c7fd3c596eebb690750b687",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_checked_two_source_limited_candidates_no_material_alert",
+        "scope": "All98 active names included in14 fresh grouped discovery queries;six core official news indices,three supplemental global/core searches and four targeted facility/equipment followup queries checked.Deduplicated154 public events,368 prior candidates and accessible notifications.Two source-limited candidates added;no new public event or article.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.ttv.com.tw/finance/view/10202622200543A263C5A1BF468D8834086F1BC1E6F6BB05/587",
+          "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3d7f8700-0179-4d08-a83f-c3aebe53a5e3"
+        ],
+        "source_limits": [
+          "All mandatory same-commit instructions,specifications,config,taxonomy,series,complete ledger and three recent related article blobs retrieved successfully.Immutable instruction/specification/article hashes match preceding fully read versions.Latest head and target blob checked before update.",
+          "Full latest alpha-quant active98 CSV retrieved;universe blob unchanged.Grouped discovery is not98 individually verified current filings.Historical monthly revenue coverage retained;current individual orders,margins,profit-retention and cash-conversion audit remains partial.",
+          "Core index dates unchanged:TSMC October15,MediaTek September30,NVIDIA October22,AMD October12,Broadcom October21,Marvell October13.No newly authenticated TPU award,NRE,Google procurement split or core guidance revision verified.Index checks are not all-filings coverage.",
+          "Grouped discovery returned historical reports,aggregation,social commentary and date-footer matches.WinWay October6 issuer revenue page timed out;historical candidate retained without new inference.Repeated ITEQ expansion,PCB forecasts,Marvell partnership and CSP financing commentary did not establish fresh earnings revision.",
+          "SPIL/Acter complete indexed notice reproduction and Liding selected indexed terms add project research leads.Direct issuer/exchange originals not obtained;MoneyDJ original body inaccessible.Contract overlap and cumulative purchase periods require reconciliation before combining figures.No supplier profit,AI-only capacity or cash improvement inferred.",
+          "Public update limited to A-topic sources,coverage and research stage.No equity prices,valuations,target prices,holdings,private flows or trading conditions written.No article drafted;no lint,build,deploy or public-content completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -27219,6 +27248,54 @@
         "Reconcile incremental monthly disclosure against already announced Q3 totals and distinguish recurring operating profit from investment recognition."
       ],
       "publication_status": "not_drafted_no_material_alert"
+    },
+    {
+      "key": "spil-acter-october22-facility-contract-to-2028-reproduction-20261025",
+      "date": "2026-10-25",
+      "event_date": "2026-10-22",
+      "instruction_commit_sha": "a7055839ef7a51d0949b14cc3d2643a86c097f3f",
+      "companies": [
+        "ASE Technology",
+        "SPIL",
+        "Acter"
+      ],
+      "sources": [
+        "https://www.ttv.com.tw/finance/view/10202622200543A263C5A1BF468D8834086F1BC1E6F6BB05/587"
+      ],
+      "stage": "complete_indexed_notice_reproduction_read_direct_original_and_contract_overlap_reconciliation_pending",
+      "facts": {
+        "scope": "October21–22 facility-engineering transaction,NTD1,168,215,000;contract period October21,2026 through December31,2028;production/operations use,non-related counterparty.",
+        "limits": "Distinct date/amount from recorded October21 NTD805,995,000 notice;do not add totals before project/contract reconciliation.Issuer/exchange original not retrieved.No AI-specific capacity,margin,payment milestones or completed acceptance established."
+      },
+      "questions": [
+        "Retrieve issuer/exchange original and map project/contract identities against prior facility notices.",
+        "Verify incremental order backlog,recognition timing,engineering margin and cash collection."
+      ],
+      "publication_status": "not_drafted_no_material_alert"
+    },
+    {
+      "key": "zdt-liding-october22-cumulative-equipment-acquisition-20261025",
+      "date": "2026-10-25",
+      "event_date": "2026-10-22",
+      "instruction_commit_sha": "a7055839ef7a51d0949b14cc3d2643a86c097f3f",
+      "companies": [
+        "Zhen Ding Technology",
+        "Liding Semiconductor Technology Shenzhen",
+        "TAKEWIN INTERNATIONAL(HK)LIMITED"
+      ],
+      "sources": [
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3d7f8700-0179-4d08-a83f-c3aebe53a5e3"
+      ],
+      "stage": "indexed_notice_reproduction_selected_terms_read_direct_original_and_full_body_pending",
+      "facts": {
+        "scope": "August25–October22 cumulative equipment acquisition;reported transaction total NTD1,450,224,150;one batch and non-related counterparty.",
+        "limits": "Direct MoneyDJ body inaccessible;issuer/exchange original not retrieved.Cumulative acquisition is not an October22 single-day order;customer mix,AI allocation,incremental capacity and profit/cash effects not disclosed in retrieved passage."
+      },
+      "questions": [
+        "Obtain original notice and compare full-year capex plan and earlier cumulative purchase periods.",
+        "Verify equipment delivery,commissioning,utilization,customer qualification and cash conversion."
+      ],
+      "publication_status": "not_drafted_no_material_alert"
     }
   ],
   "blockers": [
@@ -27238,7 +27315,7 @@
     }
   ],
   "last_research_date": "2026-10-25",
-  "instruction_commit_sha": "68e988fc973e6980c690e579378cfcbe113b2995",
+  "instruction_commit_sha": "a7055839ef7a51d0949b14cc3d2643a86c097f3f",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
