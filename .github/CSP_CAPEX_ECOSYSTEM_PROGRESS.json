@@ -17318,6 +17318,35 @@
           "Loudoun original verifies tentative site-specific terms,not a finalized regional capacity or supplier-order reduction. Seaport forecast original and methodology remain unavailable;Yahoo429 is a transient retrieval failure. Neither establishes a new material ecosystem judgment.",
           "Public update contains only A-topic sources and research stage. No prices,valuations,target prices,holdings,private flows or trading conditions written;no article or build/deploy/public-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-25",
+        "checked_at": "2026-10-24 16:35:39 UTC",
+        "instruction_commit_sha": "e3018473cea403e1486949e16d20ec05b446cc5b",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "0b422e07621ace1e8c7fd3c596eebb690750b687",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_checked_no_new_material_event_verified",
+        "scope": "All98 active names included in14 fresh grouped discovery queries. Six core official indices,three supplemental global/core searches and two targeted date/estimate followup queries checked. Compared154 public events,367 research candidates and accessible notification baseline. No new candidate,public event or article established.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://ec.ltn.com.tw/article/paper/1751571",
+          "https://ec.ltn.com.tw/topic/%E7%9F%BD%E6%99%BA%E8%B2%A1"
+        ],
+        "source_limits": [
+          "All required same-commit instruction,specification,classification/configuration,complete ledger and three recent related article blobs retrieved successfully. Instruction/specification/article hashes match preceding fully read versions. Latest head and target blob checked again before update.",
+          "Latest alpha-quant active98 CSV retrieved fully;blob unchanged. Grouped discovery is not98 individually verified current filings. Historical monthly revenue coverage retained;current individual orders,profit retention and cash-conversion coverage remains partial.",
+          "Core index latest dates unchanged:TSMC October15,MediaTek September30,NVIDIA October22,AMD October12,Broadcom October21,Marvell October13. No newly verified TPU design award,NRE or Google procurement allocation revision. Index retrieval does not constitute all-filings coverage.",
+          "Grouped and supplemental search returned historical supplier outlooks,aggregation and social commentary. LTN ASIC-demand weekly feature is April20,2026 per original index,not new October guidance. Bloom,Supermicro and3M results match existing recorded candidates/events. No new named supplier order or verified capex reduction established.",
+          "Infosys discovery snippets disagree on revised growth range;original current release was not obtained or adopted. IT-services commentary alone did not establish a hardware procurement change. Repeated TPU partner allocation and capacity statements were not treated as newly authenticated contracts.",
+          "Public update limited to A-topic sources,coverage and research stage. No equity prices,valuation,target prices,holdings,private flows or trading conditions written. No article drafted;no lint/build/deploy/public-content success claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -27066,8 +27095,8 @@
       "impact": "Search hits and reposted notices have not been individually checked against company or exchange originals."
     }
   ],
-  "last_research_date": "2026-10-24",
-  "instruction_commit_sha": "b9871e5bd2ce1bb3cb2f0bf32e90546954aad4f3",
+  "last_research_date": "2026-10-25",
+  "instruction_commit_sha": "e3018473cea403e1486949e16d20ec05b446cc5b",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
