@@ -16966,6 +16966,36 @@
           "CNBC original interview remains blocked by robots/restricted access; targeted lookup did not resolve the existing source gap. Primary indices and other research sources remain usable. This limitation is not evidence of stable supply/demand.",
           "Only A-topic public source coverage and research stage appended. No equity prices, valuations, holdings, private fundflows or trading conditions stored. No new article, lint/build/deploy or public-content claim."
         ]
+      },
+      {
+        "date": "2026-10-24",
+        "checked_at": "2026-10-24T06:13:47Z",
+        "instruction_commit_sha": "ee037f6a4a0a46dd0634d5723699ed533ac65ff2",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "6c452257b219017e83ca5246703c2257c9c54c7a",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_and_two_source_candidates_checked_no_new_material_event_verified",
+        "scope": "All98 active names included in14 fresh grouped discovery queries;six core issuer indices checked,eight additional industry/source queries and selected article/notice bodies read. Current individual filing and economics validation remains partial.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://money.udn.com/money/story/5607/9834900",
+          "https://tcfhcsec.moneydj.com/z/zf/zfz/zfz_B2BB89DF-C11E-4635-A3E4-A25CB3E8B647.djhtm",
+          "https://money.udn.com/money/story/5710/9834046"
+        ],
+        "source_limits": [
+          "Samecommit mandatory instructions,supporting specifications,config,taxonomy,series,full progress JSON and three recent related article blobs retrieved completely;AGENTS and long article display truncation resolved with bounded reads.",
+          "Latest visible core index dates unchanged:TSMC October15,MediaTek September30,NVIDIA October22,AMD October12,Broadcom October21,Marvell October13. No newly authenticated TPU award,NRE,Google procurement split or core earnings/capacity revision. Index checks are not all-filings audits.",
+          "Latest alpha-quant default-branch CSV retrieved;98active names unchanged. Grouped discovery does not establish98 individually verified current filings;existing primary monthly revenue baseline retained,current orders,margins and cash coverage partial.",
+          "October24 PCB20% shortage forecast repeats October23 unnamed research commentary;original model,population and revision bridge unavailable. No consensus or realised supply shortfall inferred. Existing estimated substrate prepayments,Foxconn subsidiary equity funding,Meta TPU production claim,SLB earnings and notified events deduplicated.",
+          "Qingding notice is annual cumulative procurement,with original issuer/exchange verification pending;Voltronic article has inconsistent profit-period statements and unnamed broker forecast. Both retained as candidates,not new economic revisions.",
+          "Public ledger records only A-topic sources and research stages.No prices,valuations,holdings,private fundflows or trading conditions appended.No article created and no build/deploy/publication claim."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -26471,6 +26501,47 @@
         "Compare actual memory orders,qualification,bit supply,contract pricing and cash returns against both shortage and oversupply scenarios."
       ],
       "publication_status": "research_candidate_only_not_drafted"
+    },
+    {
+      "key": "zdt-qingding-accutech-cumulative-equipment-notice-20261023",
+      "companies": [
+        "Zhen Ding / 臻鼎-KY",
+        "Qing Ding Precision Electronics (Huai'an)",
+        "ACCUTECH (SHENZHEN) CO., LTD."
+      ],
+      "source_date": "2026-10-23",
+      "stage": "full_notice_reproduction_read_direct_issuer_original_and_incremental_capacity_economics_pending",
+      "sources": [
+        "https://tcfhcsec.moneydj.com/z/zf/zfz/zfz_B2BB89DF-C11E-4635-A3E4-A25CB3E8B647.djhtm"
+      ],
+      "facts": "Reproduced issuer notice discloses TWD1,022,129,557 equipment acquisitions covering October24,2025–October23,2026,approved by general manager October23. Business use,payment per procurement agreement;counterparty not related. This is cumulative procurement over one year,not a newly raised capital budget or single October23 purchase. No specified AI customer,qualified capacity,utilisation,margin or cash return. Yahoo reproduction open failed;MoneyDJ full text readable;direct issuer/exchange original not obtained.",
+      "questions": [
+        "Reconcile original notice and prior purchases with approved capital budget to avoid double counting.",
+        "Verify installation,customer qualification,utilisation and cash conversion before attributing earnings."
+      ],
+      "publication_status": "research_candidate_only_not_drafted",
+      "date": "2026-10-24",
+      "instruction_commit_sha": "ee037f6a4a0a46dd0634d5723699ed533ac65ff2"
+    },
+    {
+      "key": "voltronic-oct24-ups-hvdc-outlook-and-inconsistent-profit-reporting-20261024",
+      "companies": [
+        "Voltronic Power / 旭隼"
+      ],
+      "source_date": "2026-10-24",
+      "stage": "original_media_body_read_inconsistent_financial_periods_and_unnamed_broker_forecast_pending",
+      "sources": [
+        "https://money.udn.com/money/story/5710/9834046"
+      ],
+      "facts": "October24 original reporting discusses UPS outsourcing and800VDC samples with possible second-half2027 shipments. It attributes28%2027 profit growth to unnamed foreign analysts;issuer declines comment. Headline and introductory nine-month profit expectation conflict with the final paragraph's stated nine-month net profit TWD1.103bn,down53%,EPS12.58. Period/source reconciliation and issuer financial statements not obtained. No actual HVDC volume shipment,new named customer award or verified earnings revision established.",
+      "questions": [
+        "Obtain issuer financial statements and correct period before using any profit comparison.",
+        "Authenticate dated broker original and comparable old/new estimates.",
+        "Verify800VDC customer qualification,commercial orders and realised margins and cash."
+      ],
+      "publication_status": "source_quality_gap_only_not_drafted",
+      "date": "2026-10-24",
+      "instruction_commit_sha": "ee037f6a4a0a46dd0634d5723699ed533ac65ff2"
     }
   ],
   "blockers": [
@@ -26490,7 +26561,7 @@
     }
   ],
   "last_research_date": "2026-10-24",
-  "instruction_commit_sha": "30aebd96f979b2e2e25f8ff6c7adeb53559c13cb",
+  "instruction_commit_sha": "ee037f6a4a0a46dd0634d5723699ed533ac65ff2",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
