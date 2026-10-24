@@ -17079,6 +17079,35 @@
           "Clarification of the preceding screening's awkward TPCA monetary notation:the republication's Unimicron budget was NT$340億元(34.0bn),compared with the later registered NT$537億元(53.7bn). These are different report baselines,not evidence of a fresh budget reduction. Historical record preserved.",
           "Public ledger records only A-topic public sources,coverage and research stage.No current equity prices,valuation,holdings,private flows or trading conditions appended.No new article and no lint/build/deploy/public-content success claim."
         ]
+      },
+      {
+        "date": "2026-10-24",
+        "checked_at": "2026-10-24 09:56:04 UTC",
+        "instruction_commit_sha": "baa86e0dd06fafe8d024d13ddb4ad5610f9f2234",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "a9c2a5e7bd6590bef0e07bc3a39eed4c57865a3f",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_issuer_indices_checked_one_mou_candidate_added_no_new_material_event_verified",
+        "scope": "All98 active universe names included in14 fresh grouped discovery queries;six core official indices and supplemental global and targeted research checked.Existing153 public events,359 prior candidates and accessible notification baseline compared. Grouped discovery is not98 individually verified current filings.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.hitachi.com/content/dam/hitachi/global/en/press/files/2026/10/261019.pdf",
+          "https://www.goldmansachs.com/insights/the-markets/why-investors-are-reducing-ai-exposure"
+        ],
+        "source_limits": [
+          "Latest defaultbranch metadata and samecommit full mandatory instruction,specification,config,taxonomy,series,progress and three related article blobs retrieved. Immutable instruction and related article hashes unchanged. Instruction commit recorded;latest head and target blob reread before update.",
+          "Core issuer index dates unchanged:TSMC October15,MediaTek September30,NVIDIA October22,AMD October12,Broadcom October21,Marvell October13. No newly authenticated ASIC/TPU award,NRE,Google procurement allocation or core issuer guidance revision established by these checks.Index checks do not constitute all-filings coverage.",
+          "Latest alpha-quant defaultbranch and complete98active CSV fetched;universe blob unchanged.Grouped queries returned many old reports,automated stock pages and secondary summaries.Current individual order,margin and cash-conversion audit remains partial;historical primary monthly revenue baseline retained.",
+          "Hitachi October19 issuer original reconciles October23 distribution date;MoU and due diligence stage recorded as one research candidate rather than customer orders or financial revision.Nokia,SLB and fuel-cell news match registered events or candidates.No duplicate notification or article.",
+          "Goldman Sachs October23 official podcast page and October22 recording transcript retrieved. It is speaker commentary rather than a new issuer financial disclosure;no current positioning or private market analysis copied into this public ledger.",
+          "Public change limited to A-topic sources,coverage and research stage.No equity prices,valuation,holdings,private funds-flow or trading conditions written.No new article;no lint,build,deploy or public-content completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -26625,6 +26654,28 @@
       "publication_status": "source_quality_gap_only_not_drafted",
       "date": "2026-10-24",
       "instruction_commit_sha": "ee037f6a4a0a46dd0634d5723699ed533ac65ff2"
+    },
+    {
+      "key": "hitachi-brookfield-hartree-tokyo-gas-green-datacenter-mou-original-date-20261019",
+      "companies": [
+        "Hitachi",
+        "Brookfield Japan",
+        "Hartree Partners Singapore",
+        "Tokyo Gas"
+      ],
+      "source_date": "2026-10-19",
+      "stage": "issuer_original_mou_and_project_planning_scope_verified_binding_orders_and_economics_pending",
+      "sources": [
+        "https://www.hitachi.com/content/dam/hitachi/global/en/press/files/2026/10/261019.pdf"
+      ],
+      "facts": "Hitachi's October19 original release says the four parties signed a September30 MoU,adding Tokyo Gas to the collaboration announced in July2025. Initial Kanto and Kyushu projects remain at due diligence and development-plan formulation,including facility configuration and business model. The contemplated model combines on-site generation,storage and grid supply,with standardized facilities and redundant cooling and power distribution. No project capacity,investment amount,binding customer order,completion date or project profit disclosed. October23 distributed headlines are later publication of this earlier issuer announcement.",
+      "questions": [
+        "Verify site selection,permits,committed financing and binding customer contracts.",
+        "Identify equipment awards,delivery schedules and project margin and cash conversion."
+      ],
+      "publication_status": "research_candidate_only_not_drafted",
+      "date": "2026-10-24",
+      "instruction_commit_sha": "baa86e0dd06fafe8d024d13ddb4ad5610f9f2234"
     }
   ],
   "blockers": [
@@ -26644,7 +26695,7 @@
     }
   ],
   "last_research_date": "2026-10-24",
-  "instruction_commit_sha": "815572a10f52e505525b43c30e99b45a7413b61e",
+  "instruction_commit_sha": "baa86e0dd06fafe8d024d13ddb4ad5610f9f2234",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
