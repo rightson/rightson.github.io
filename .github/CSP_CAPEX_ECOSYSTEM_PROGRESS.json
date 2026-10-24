@@ -16816,6 +16816,34 @@
           "SLB primarydata-centerrevenue growthauthenticated butstandaloneprofit/cash unreported andprojectrampcosts reducecombinedsegmentprofit. NISTsourceisOctober22conditionalR&DLOI,notOctober23finalaward orcommercialprocurement.",
           "ExistingITEQprofit,Metacommitments,Vicorroyalties,financing andrecentearnings deduplicated againstledger andaccessible notifications. No currentprices,valuation,holdings,privatefundflows ortradingconditions stored. No watchlist edit orarticlepublication."
         ]
+      },
+      {
+        "date": "2026-10-24",
+        "checked_at": "2026-10-24T01:05:03Z",
+        "instruction_commit_sha": "f5cde188f44922ef08a2468511b914ce0d7b28ef",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "6c452257b219017e83ca5246703c2257c9c54c7a",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_core_indices_and_cumulative_equipment_notice_checked",
+        "scope": "All98 active names included in14fresh grouped discovery queries; sixcoreissuernewsindices and targetedglobaldiscovery checked. Universe CSVblob unchanged. No new publicevent/article registered. Individual latestfiling/economicscoverage partial.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.ttv.com.tw/finance/view/10202622162818AFE959A0A747BFA1D3A7387BB46CD33EB6/587"
+        ],
+        "source_limits": [
+          "Mandatory instructions and supporting specification/config/taxonomy/series retrieved at samecommit; AGENTS display truncation resolved by bounded reads. Fullprogressblob retrieved and parsed; event fingerprints,latestresearchcandidates andcoverage read. Recentthree ai-industry article bodies retrieved and compared with accessible prior bodies.",
+          "Sixcoreindices readable; latest visible dates unchanged:TSMCOct15,MediaTekSep30,NVIDIAOct22,AMDOct12,BroadcomOct21,MarvellOct13. No newlyauthenticatedMediaTek TPUdesignaward,NRE,procurementallocation orTSMC capacity/pricingrevision established. Indexchecks are not fullregulatoryfilingaudits.",
+          "Groupedsearch yields historicalstories,marketcommentary andaggregators; search/update datesnot substituted foreventdates.98historicalmonthlybaselines preserved,not98current economicsaudits.",
+          "Sigurd equipment notice is cumulativeFeb13–Oct22 procurement,not a new single-day order. Reproducedfullnotice read;issuer/exchangeoriginal and AI-specific economic effects remainunverified.",
+          "SLB,NIST,ITEQ,Meta,Vicor,recentfinancing/earnings andBofAforecaststories deduplicated. Infineon/NVIDIA GaN cooperation discoverylead lacks issueroriginal in thisround;noquantifiedsupplyallocation orprofitrevision inferred.",
+          "OnlypublicA-source/researchstage appended. Noquotes,valuations,holdings,fundflows,tradingconditions orprivateBanalysis stored; noarticlelint/build/deploy/publication claim."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -26166,6 +26194,26 @@
         "Authenticate customer qualification,production yield and commercial orders before attributing supplier economics."
       ],
       "publication_status": "research_candidate_only_not_drafted"
+    },
+    {
+      "key": "sigurd-advantest-cumulative-equipment-purchase-notice-20261022",
+      "date": "2026-10-24",
+      "source_date": "2026-10-22",
+      "instruction_commit_sha": "f5cde188f44922ef08a2468511b914ce0d7b28ef",
+      "companies": [
+        "Sigurd / 矽格",
+        "Advantest"
+      ],
+      "stage": "full_notice_reproduction_read_primary_original_and_incremental_capacity_economics_pending",
+      "sources": [
+        "https://www.ttv.com.tw/finance/view/10202622162818AFE959A0A747BFA1D3A7387BB46CD33EB6/587"
+      ],
+      "facts": "Reproduced issuer material notice discloses equipment and spare-parts acquisitions from Advantest,10 batches,etc,total approximately TWD708m,covering February13–October22,2026;chairman approval October22,payment per orders,purpose business use. It is cumulative supplier procurement over months,not a single newly placed October22 order or proved incremental capex guidance. No specificAI/customer allocation,commissioning,utilization,margin or cash-return disclosure. Direct issuer/exchange original not retrieved.",
+      "questions": [
+        "Obtain original notice and reconcile purchases with prior disclosures and capital budget to avoid double counting.",
+        "Verify commissioning,AI-test allocation,utilization and cash conversion before changing earnings assumptions."
+      ],
+      "publication_status": "research_candidate_only_not_drafted"
     }
   ],
   "blockers": [
@@ -26185,7 +26233,7 @@
     }
   ],
   "last_research_date": "2026-10-24",
-  "instruction_commit_sha": "cc30a67cc4d4211f5fab24527c64c88c16f770a8",
+  "instruction_commit_sha": "f5cde188f44922ef08a2468511b914ce0d7b28ef",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
