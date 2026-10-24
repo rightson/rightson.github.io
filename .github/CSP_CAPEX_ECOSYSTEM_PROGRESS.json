@@ -16938,6 +16938,34 @@
           "Existing substrateprepaymentestimate,Co-Techmix,NVIDIAcapacityreservations,Meta,Vicor,ITEQ,Bloom,INNIO andotherfinancialevents deduplicated. ReutersOctober23marketarticle openingfailed;no claimthat fullbody wasread orthat no newcancellationexists.",
           "OnlyA publicsources/researchstages appended. Noequityprices,valuations,holdings,privatefundflows ortradingconditions stored. Noarticlelint/build/deploy/publicationclaim."
         ]
+      },
+      {
+        "date": "2026-10-24",
+        "checked_at": "2026-10-24T04:42:29Z",
+        "instruction_commit_sha": "30aebd96f979b2e2e25f8ff6c7adeb53559c13cb",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "6c452257b219017e83ca5246703c2257c9c54c7a",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_and_six_core_indices_checked_no_new_material_event_verified",
+        "scope": "All 98 active names submitted in 14 fresh grouped discovery queries, supplemented by 6 targeted global/source queries. Six core issuer news indices checked. Existing public events, candidates and accessible notification baseline used for deduplication. Individual latest-filing and economics audit remains partial.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases"
+        ],
+        "source_limits": [
+          "Latest default-branch metadata and same-commit mandatory instructions, supporting specifications, taxonomy/config/series, full progress blob and three recent related article bodies retrieved completely. Immutable instruction and article hashes match content fully read in preceding turns. No required-instruction retrieval failure.",
+          "Latest visible core news dates unchanged: TSMC October15, MediaTek September30, NVIDIA October22, AMD October12, Broadcom October21, Marvell October13. No newly authenticated MediaTek TPU award, NRE/Google procurement allocation or TSMC capacity/pricing revision established. News-index checking is not a full regulatory-filing audit.",
+          "Latest alpha-quant default branch and complete 98-active CSV fetched; universe blob unchanged. Grouped search is discovery, not 98 individually verified current filings. Historical primary monthly-revenue baseline preserved; current orders, margins and cash conversion remain partially validated.",
+          "Fresh discovery mostly returned older business events, issuer indices, reposted notices and market commentary. Original event dates retained. Current page timestamps, secondary targets and social claims were not treated as new guidance, orders or consensus estimates.",
+          "Existing Sigurd/Macronix cumulative procurement, supplier capacity reservations, substrate estimated funding, Co-Tech mix, memory demand interview, Solidigm funding change, SLB and previously notified earnings/financing events deduplicated. No new confirmed supplier cancellation or economic revision authenticated; no whole-market absence-of-news claim.",
+          "CNBC original interview remains blocked by robots/restricted access; targeted lookup did not resolve the existing source gap. Primary indices and other research sources remain usable. This limitation is not evidence of stable supply/demand.",
+          "Only A-topic public source coverage and research stage appended. No equity prices, valuations, holdings, private fundflows or trading conditions stored. No new article, lint/build/deploy or public-content claim."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -26462,7 +26490,7 @@
     }
   ],
   "last_research_date": "2026-10-24",
-  "instruction_commit_sha": "785406bf46a346c242cd9894de413109771b9270",
+  "instruction_commit_sha": "30aebd96f979b2e2e25f8ff6c7adeb53559c13cb",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
