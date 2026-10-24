@@ -17376,6 +17376,35 @@
           "TechRadar grid-request coverage explicitly traces the 1,066 GW/28% Wood Mackenzie estimate to August 2026 reporting. Followup search also located July 21 Wood Mackenzie Q1 pipeline commentary. These are historical project-pipeline context, not a newly verified October cancellation of contracted capacity. Underlying current model, project deduplication and supplier-order transmission not obtained; no 72% cancellation-rate inference adopted.",
           "Public update limited to A-topic sources, coverage and research stage. No equity prices, valuations, target prices, holdings, private flows or trading conditions written. No article drafted; no lint, build, deploy or public-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-25",
+        "checked_at": "2026-10-24 19:22:30 UTC",
+        "instruction_commit_sha": "80fa66a0f1c6669bf545f724b99303da3249b97c",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "0b422e07621ace1e8c7fd3c596eebb690750b687",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_checked_one_source_limited_candidate_no_material_alert",
+        "scope": "All98 active names included in14 fresh grouped discovery queries. Six core official news indices,three supplemental global/core queries,two PCB/material followup queries and three issuer/announcement queries checked. Deduplicated154 public events,367 prior candidates and accessible notifications. One source-limited outside-universe research candidate added;no new public event or article.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://udn.com/news/story/7251/9833413",
+          "https://news.ustv.com.tw/newsdetail/20261022A001024"
+        ],
+        "source_limits": [
+          "All mandatory same-commit instructions,specifications,config,taxonomy,series,complete ledger and three recent related article blobs retrieved successfully. Immutable instruction/specification/article hashes match preceding fully read versions. Latest head and target blob rechecked before update.",
+          "Latest alpha-quant active98 CSV retrieved fully;blob unchanged.Grouped discovery is not98 individually verified current filings.Historical monthly-revenue coverage retained;current individual order,margin,profit-retention and cash-conversion audit remains partial.",
+          "Core official indices retain latest dates TSMC October15,MediaTek September30,NVIDIA October22,AMD October12,Broadcom October21,Marvell October13.No newly authenticated TPU design award,NRE,Google procurement allocation or core earnings revision verified.Index checks are not all-filings coverage.",
+          "Search precision limited by old reports,social commentary,aggregators and date-footer matches.Repeated Meta/TorchTPU and historical leasing headlines did not establish new procurement changes.October23 PCB feature contains unnamed institutional forecasts,not a newly authenticated order or earnings revision;related materials candidates already exist.",
+          "Nan Ya Plastics monthly-profit and qualification-rumor leads separated from fresh quarterly earnings revisions.Original issuer/MOPS and full announcement reproduction unavailable;indexed reproduction and reporting recorded with explicit limits.September investment recognition may explain concentration of quarterly profit.No annualization or named supplier allocation inferred.",
+          "Public update limited to A-topic sources,coverage and research stage.No prices,valuations,target prices,holdings,private flows or trading conditions written.No article drafted;no lint,build,deploy or public-content completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -27106,6 +27135,33 @@
         "Reconcile announced, permitted, energized and equipped MW with official project milestones."
       ],
       "publication_status": "research_candidate_only_no_material_alert_or_article"
+    },
+    {
+      "key": "nan-ya-plastics-september-profit-recognition-and-m9-rumor-clarification-20261025",
+      "date": "2026-10-25",
+      "instruction_commit_sha": "80fa66a0f1c6669bf545f724b99303da3249b97c",
+      "companies": [
+        "Nan Ya Plastics",
+        "Nanya Technology"
+      ],
+      "sources": [
+        "https://finance.biggo.com.tw/news/twse_major_1303_1151022_155607",
+        "https://finance.biggo.com.tw/news/twse_major_1303_1151022_143442",
+        "https://money.udn.com/money/story/5710/9832259",
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=41ddcde2-8900-4ace-b294-cb1d169ebb9b"
+      ],
+      "stage": "indexed_announcement_reproduction_and_original_reporting_discovery_direct_issuer_and_full_reproduction_pending",
+      "facts": {
+        "scope": "Outside active98 universe; documented high-end CCL/materials exposure supports further research, not an automatic watchlist change.",
+        "evidence": "October22 indexed announcement reproduction says September profit includes quarterly equity-method investment income. Reporting gives September EPS4.42 and Q3 EPS4.90; quarterly results were already reported October12. Separate indexed clarification denies the claimed M9 qualification failure and says high-end CCL operations progress as planned.",
+        "limits": "Issuer/MOPS original not retrieved. Direct BigGo reproduction bodies inaccessible; Yahoo October12 announcement body returned404. No new quarterly earnings revision, new qualification win, customer order or AI-only profit established. Monthly EPS must not be annualized or attributed wholly to CCL."
+      },
+      "questions": [
+        "Obtain issuer quarterly statement, October22 original clarification and reconciled equity-method recognition schedule.",
+        "Verify high-end material customer qualification, actual shipments, margins and cash collection before supplier profit attribution.",
+        "Reconcile incremental monthly disclosure against already announced Q3 totals and distinguish recurring operating profit from investment recognition."
+      ],
+      "publication_status": "not_drafted_no_material_alert"
     }
   ],
   "blockers": [
@@ -27125,7 +27181,7 @@
     }
   ],
   "last_research_date": "2026-10-25",
-  "instruction_commit_sha": "72330b8d0d3fed0cbfdcf8fb4fba3c144da928b9",
+  "instruction_commit_sha": "80fa66a0f1c6669bf545f724b99303da3249b97c",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
