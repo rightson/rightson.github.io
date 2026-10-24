@@ -17168,6 +17168,33 @@
           "A discovered Bloom/Jefferies followup body was inaccessible;broker original and comparable earnings revision not authenticated.No conclusion from a target-price headline or missing project update.No fresh cancellation or issuer guidance cut verified.",
           "Only public A-topic sources,coverage and research stage appended.No current equity prices,valuation,target prices,holdings,private flows or trading conditions written.No article drafted;no lint/build/deploy/public-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-24",
+        "checked_at": "2026-10-24 13:16:16 UTC",
+        "instruction_commit_sha": "c6add0f351d265d94399e8fe8e035aae37bc40cb",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "2570f2e20c142cc1e80df436a14da18208ff4178",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_checked_no_new_material_event_verified",
+        "scope": "All98 active names included in14 fresh grouped discovery queries;six core official news indices,three supplemental global/core queries and three targeted followup queries checked.Compared153 public events,364 research candidates and accessible notification baseline.No new candidate or independent article established.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.reuters.com/world/asia-pacific/sk-hynix-drops-us-ipo-plan-solidigm-newspaper-reports-2026-10-22/"
+        ],
+        "source_limits": [
+          "Latest defaultbranch metadata and full samecommit mandatory instructions,config,taxonomy,series,research specifications,complete progress JSON and three related article blobs retrieved.All mandatory reads succeeded;immutable instruction/specification/article hashes unchanged from fully read preceding versions.Instruction commit recorded;latest head and target blob checked again before update.",
+          "Fresh alpha-quant defaultbranch advanced to2570f2e20c142cc1e80df436a14da18208ff4178;full active98 CSV blob remains88422949d38165d4757a1e24c27f8662bede14c1.Grouped discovery is not98 individually verified current filings.Historical monthly revenue coverage retained;current individual orders,margins and cash-conversion audit remains partial.",
+          "Core issuer indices retain latest dates:TSMC October15,MediaTek September30,NVIDIA October22,AMD October12,Broadcom October21,Marvell October13.No newly authenticated TPU award,NRE,Google procurement split or core issuer guidance revision verified.Index checks are not all-filings coverage.",
+          "Search principally returned historical monthly revenue,automated stock pages,old equipment outlooks and repeated memory/PCB commentary.Solidigm IPO suspension and OpenAI reported financing coverage match prior recorded funding-route research;no new confirmed financing closing,capex cut or delivery revision authenticated.No inference from unattributed expert-call capacity estimates or aggregation headlines.",
+          "Public change limited to A-topic sources,coverage and research stage.No equity prices,valuation,target prices,holdings,private flows or trading conditions written.No article drafted;no lint/build/deploy/public-content success claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -26839,7 +26866,7 @@
     }
   ],
   "last_research_date": "2026-10-24",
-  "instruction_commit_sha": "7f9e329705efa7478a25f21ce4e8615e69321b00",
+  "instruction_commit_sha": "c6add0f351d265d94399e8fe8e035aae37bc40cb",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
