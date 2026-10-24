@@ -17139,6 +17139,35 @@
           "CNBC TikTok original was restricted;aVenture reproduction inaccessible.Bernstein original and comparable old/new financial estimates not obtained. Oracle issuer-distributed release read and four-year partner-program scope separated from immediate hardware capex.",
           "Only public A-topic sources,coverage and research stage appended.No equity prices,valuation,target prices,holdings,private flow analysis or trading conditions written.No article drafted or lint/build/deploy/public-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-24",
+        "checked_at": "2026-10-24 12:06:47 UTC",
+        "instruction_commit_sha": "7f9e329705efa7478a25f21ce4e8615e69321b00",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "20707f40bffc98ba2a37f1881703a995cbaf75a4",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_and_historical_sec_baseline_checked_no_new_material_event_verified",
+        "scope": "All98 active names included in14 fresh grouped discovery queries;six core official indices,three supplemental global/core queries and targeted source followups checked.Compared153 public events,363 prior candidates and accessible notification baseline.One historical SEC baseline added;not a new October financial revision.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+          "https://www.stocktitan.net/articles/nvidia-279-billion-ai-bet-suppliers"
+        ],
+        "source_limits": [
+          "Fresh defaultbranch metadata and full samecommit mandatory instructions,config,taxonomy,series,research specifications,progress and three related article blobs retrieved;immutable instruction and article hashes unchanged from preceding fully read versions.An initial MTK legacy blob response did not expose storable content;immediate retry returned the complete1486-character document.No unresolved mandatory instruction retrieval failure.",
+          "Fresh alpha-quant defaultbranch20707f40bffc98ba2a37f1881703a995cbaf75a4 and full active98 CSV checked;universe blob unchanged.Grouped discovery is not98 individually verified current filings.Current order,margin and cash-conversion audit remains partial;historical monthly revenue baseline retained.",
+          "Core issuer index dates unchanged:TSMC October15,MediaTek September30,NVIDIA October22,AMD October12,Broadcom October21,Marvell October13.No newly authenticated TPU award,NRE,Google procurement allocation or core earnings revision established by these checks.",
+          "October supplier-capacity coverage reconciled with the registered NVIDIA October21 event.SEC Note10 confirms the USD119bn-to279bn change belongs to the July26 reporting period.NiSource/Microsoft October16 agreement,Nokia,SLB,fuel-cell forecasts,PCB industry commentary and HonHai subsidiary funding deduplicated.",
+          "A discovered Bloom/Jefferies followup body was inaccessible;broker original and comparable earnings revision not authenticated.No conclusion from a target-price headline or missing project update.No fresh cancellation or issuer guidance cut verified.",
+          "Only public A-topic sources,coverage and research stage appended.No current equity prices,valuation,target prices,holdings,private flows or trading conditions written.No article drafted;no lint/build/deploy/public-content completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -26770,6 +26799,27 @@
       "publication_status": "research_candidate_only_not_drafted",
       "date": "2026-10-24",
       "instruction_commit_sha": "56462ef29259397e1b556785522413c42c9c56fb"
+    },
+    {
+      "key": "nvidia-july26-supply-capacity-commitments-historical-sec-baseline-20261024",
+      "companies": [
+        "NVIDIA"
+      ],
+      "source_date": "2026-07-26",
+      "source_date_scope": "Fiscal2027Q2 reporting period end;not October announcement date",
+      "stage": "historical_sec_note10_verified_october_republication_not_new_commitment_revision",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+        "https://www.stocktitan.net/articles/nvidia-279-billion-ai-bet-suppliers"
+      ],
+      "facts": "SEC Note10 for quarter ended July26,2026 records USD279bn supply/capacity commitments versus USD119bn in the preceding quarter,mainly memory and manufacturing capacity. Scheduled amounts are USD92bn in remainingFY2027,87bn inFY2028,88bn inFY2029,and13bn later. Some supplier arrangements may be changed before firm orders,with possible costs. Separate cloud-service,lease,equity and capital-expenditure categories must not be merged into supplier orders. October coverage combines this historical baseline with already registered October21 supplier-capacity plans;no new October USD160bn commitment increase established.",
+      "questions": [
+        "Compare the next comparable SEC filing with the July26 baseline and reconcile firm versus adjustable commitments.",
+        "Verify supplier delivery,payments and customer utilization without double counting October21 advances."
+      ],
+      "publication_status": "historical_source_baseline_only_not_drafted",
+      "date": "2026-10-24",
+      "instruction_commit_sha": "7f9e329705efa7478a25f21ce4e8615e69321b00"
     }
   ],
   "blockers": [
@@ -26789,7 +26839,7 @@
     }
   ],
   "last_research_date": "2026-10-24",
-  "instruction_commit_sha": "56462ef29259397e1b556785522413c42c9c56fb",
+  "instruction_commit_sha": "7f9e329705efa7478a25f21ce4e8615e69321b00",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
