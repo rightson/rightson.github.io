@@ -17434,6 +17434,34 @@
           "AP community-pledge original and Wearn supplier article bodies inaccessible on direct retrieval.Indexed AP/syndication context suggests permitting/community commitments,not newly authenticated equipment orders;historical October2 AWS pledge is not a fresh capex revision.Sigurd October22 equipment-notice reproduction matches existing cumulative-purchase candidate;no incremental AI-only utilization or margin fact established.",
           "Public update limited to A-topic sources,coverage and research stage.No equity prices,valuations,target prices,holdings,private flows or trading conditions written.No article drafted;no lint,build,deploy or public-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-25",
+        "checked_at": "2026-10-24 20:56:10 UTC",
+        "instruction_commit_sha": "68e988fc973e6980c690e579378cfcbe113b2995",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "0b422e07621ace1e8c7fd3c596eebb690750b687",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_checked_no_new_material_event_verified",
+        "scope": "All98 active names included in14 fresh grouped discovery queries;six core official news indices,three supplemental global/core queries and two targeted power-risk/source-age followup queries checked.Compared154 public events,368 candidates and accessible notifications.No new candidate,public event or article established.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.reuters.com/business/nvidia-broadcom-shielded-ai-power-crunch-hits-chip-supply-chain-says-morgan-2026-10-05/"
+        ],
+        "source_limits": [
+          "Full same-commit mandatory instruction,specification,config,taxonomy,series,complete progress and three recent related article blobs retrieved successfully.Immutable instruction/specification/article hashes match preceding fully read versions.Latest head and target blob checked again before update.",
+          "Latest alpha-quant active98 CSV retrieved fully;universe blob unchanged.Grouped discovery is not98 individually verified current filings.Historical monthly revenue coverage retained;current individual orders,margins,profit retention and cash-conversion audit remains partial.",
+          "Core official index latest dates unchanged:TSMC October15,MediaTek September30,NVIDIA October22,AMD October12,Broadcom October21,Marvell October13.Marvell page date reconfirmed by targeted find.No newly authenticated TPU award,NRE,Google procurement split or core guidance revision verified.Index checks are not all-filings coverage.",
+          "Grouped discovery returned many old reports,aggregations,social commentary and date-footer matches.Repeated PCB/material/ODM outlooks and Google-Marvell historical partnership do not establish fresh orders or earnings revisions.No current broker original or comparable old/new consensus population authenticated.",
+          "Power-shortfall followup located Reuters October5 indexed original reporting,which attributes a model estimate to Morgan Stanley;this is historical context,not a newly announced October24 deployment cancellation.Underlying brokerage model and actual supplier order transmission remain unverified.Virginia appeal discovery remains secondary historical reporting;no current court ruling or payment change verified.No missing-source result treated as proof of stable demand.",
+          "Public update limited to A-topic sources,coverage and research stage.No equity prices,valuations,target prices,holdings,private flows or trading conditions written.No article drafted;no lint,build,deploy or public-content completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -27210,7 +27238,7 @@
     }
   ],
   "last_research_date": "2026-10-25",
-  "instruction_commit_sha": "72986688829df4c776d758574beea30688a30016",
+  "instruction_commit_sha": "68e988fc973e6980c690e579378cfcbe113b2995",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
