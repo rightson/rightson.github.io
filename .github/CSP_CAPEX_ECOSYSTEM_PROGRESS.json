@@ -7018,6 +7018,42 @@
         "limits": "MOPS direct original returned empty shell/timeout. The full same issuer notice was read on Cnyes and MoneyDJ; these reproduce one disclosure, not two independent confirmations. September is unreviewed self-report, compared with a reviewed full-quarter baseline. September operating/non-operating profit split, Q3 cash flow and attributable profit bridge not obtained; no current margin persistence, consensus upgrade or yearly EPS established."
       },
       "status": "issuer_notice_reproductions_and_primary_q2_monthly_baselines_reconciled_no_article"
+    },
+    {
+      "fingerprint": "psmc-q3-2026-unaudited-operating-profit-conversion-20261021",
+      "event_date": "2026-10-21",
+      "discovered_date": "2026-10-24",
+      "instruction_commit_sha": "5b73537b9b5cb5c4f3085424aea44b076adec577",
+      "companies": [
+        "PSMC (6770)"
+      ],
+      "type": "issuer_preliminary_quarterly_operating_profit_conversion",
+      "sources": [
+        "https://www.powerchip.com/en-global/financials/quarterlyincome",
+        "https://ec.ltn.com.tw/article/paper/1775524",
+        "https://www.taipeitimes.com/News/biz/archives/2026/10/22/2003866383"
+      ],
+      "facts": {
+        "period": "2026 Q3 versus Q2",
+        "currency": "TWD",
+        "unit": "thousand",
+        "q3_revenue": 21342792,
+        "q2_revenue": 17290184,
+        "q3_operating_income": 7830361,
+        "q2_operating_income": 3684085,
+        "q3_pretax_income": 8140470,
+        "q2_pretax_income": 3887979,
+        "q3_eps_twd": 1.38,
+        "q2_eps_twd": 0.76,
+        "derived_revenue_qoq_pct": 23.44,
+        "derived_operating_income_qoq_pct": 112.55,
+        "derived_operating_margin_q3_pct": 36.69,
+        "derived_operating_margin_q2_pct": 21.31,
+        "source_nature": "Issuer preliminary consolidated self-assessed table; explicitly not CPA-reviewed/audited. October21 event date corroborated by October22 original reporting and dated slides index.",
+        "management_outlook_attributed_to_reporting": "October22 original reports attribute Q4 double-digit sequential revenue growth and ongoing 2027 price negotiations of 10-20% to management. New advanced-packaging site and customer funding are plans/targets, not completed investments or executed funding.",
+        "limits": "Issuer table supplies revenue, operating and pretax income and EPS, not a full Q3 cash-flow statement. No AI-only profit attribution. Detailed presentation PDF retrieval unsuccessful; source reporting differs on precise ASP changes, so no precise ASP uplift adopted as primary fact."
+      },
+      "status": "issuer_numeric_self_assessed_table_verified_new_profit_baseline_no_article"
     }
   ],
   "articles": [],
@@ -17225,6 +17261,34 @@
           "Date-constrained grouped search had limited precision and returned historical reports, unrelated pages and date-footer matches. The LTN equipment-order article is September 4, 2026, rather than an October 24 guidance update. October 24 Japan data-center feature leads refer back to an October 1 JERA/Dell/RHAELM memorandum and October 13 NTT/Anthropic final-stage talks; no new signed order, financing closing or delivery confirmation verified. Reuters October 1 discovery was search-result evidence, not a full original-document read; NTT/Anthropic talks remain the previously recorded candidate. Repeated fuel-cell forecasts, SLB/Nokia, Meta and TPU commentary did not establish independent material evidence.",
           "Public change limited to A-topic sources, coverage and research stage. No equity prices, valuation, target prices, holdings, private flows or trading conditions written. No article drafted; no lint/build/deploy/public-content success claimed."
         ]
+      },
+      {
+        "date": "2026-10-24",
+        "checked_at": "2026-10-24 14:37:07 UTC",
+        "instruction_commit_sha": "5b73537b9b5cb5c4f3085424aea44b076adec577",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "0b422e07621ace1e8c7fd3c596eebb690750b687",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_checked_psmc_profit_increment_verified",
+        "scope": "All 98 active names included in 14 grouped discovery queries; six core official indices and three supplemental global/core searches checked. Two targeted initial searches, two PSMC verification queries and three PSMC price/primary searches followed. Deduplicated 153 prior public events, 364 candidates and accessible notifications. Added one PSMC public event and one research candidate; no article.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.powerchip.com/en-global/financials/quarterlyincome",
+          "https://ec.ltn.com.tw/article/paper/1775524"
+        ],
+        "source_limits": [
+          "Full same-commit mandatory blobs, complete ledger, three recent related articles and latest alpha-quant active98 CSV retrieved. Mandatory hashes unchanged; latest head and target blob checked before write.",
+          "Grouped search returned many historical reports and unrelated/date-indexed pages; this is discovery coverage, not 98 individually verified current filings. Historical monthly revenue coverage retained; current economic audit remains partial.",
+          "Core official indices show no newly verified issuer update relative to preceding check. No new TPU design award, NRE allocation or Google procurement split authenticated.",
+          "BofA spending forecast already recorded; Reuters original body unavailable on this retrieval. G2C equipment coverage overlaps existing equipment candidates; no new primary profit revision established there. PSMC followup produced a new issuer numeric quarterly-profit baseline.",
+          "No prices, valuations, target prices, holdings, private flows or trading conditions written publicly. No article, lint, build, deploy or public-content verification claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -26877,6 +26941,34 @@
       "publication_status": "historical_source_baseline_only_not_drafted",
       "date": "2026-10-24",
       "instruction_commit_sha": "7f9e329705efa7478a25f21ce4e8615e69321b00"
+    },
+    {
+      "key": "psmc-q3-profit-improvement-cash-conversion-and-3d-ai-expansion-20261024",
+      "companies": [
+        "PSMC (6770)"
+      ],
+      "date": "2026-10-24",
+      "instruction_commit_sha": "5b73537b9b5cb5c4f3085424aea44b076adec577",
+      "sources": [
+        "https://www.powerchip.com/en-global/financials/quarterlyincome",
+        "https://www.powerchip.com/en-global/financials/quarterly",
+        "https://ec.ltn.com.tw/article/paper/1775524",
+        "https://www.taipeitimes.com/News/biz/archives/2026/10/22/2003866383"
+      ],
+      "stage": "q3_self_assessed_profit_table_verified_full_cash_flow_and_executed_expansion_funding_pending",
+      "increment": "Previous recorded issuer baseline was September revenue. Q3 operating-profit conversion now independently verified from issuer numeric table.",
+      "mechanism": "Higher utilization, pricing and mix can expand earnings faster than revenue; mature-memory supply reallocation and advanced-packaging services are distinct demand routes. Management pricing and expansion plans remain conditional.",
+      "limits": [
+        "Full reviewed Q3 statement and cash conversion not obtained; quarterly-results index currently exposes Q1/Q2 files.",
+        "Original reporting attributes pricing, utilization and advanced-packaging plans to management; official recording/presentation not fully retrieved.",
+        "Group-wide improvement includes legacy memory and non-AI logic; no AI-specific incremental margin or new named equipment award established."
+      ],
+      "next_verification": [
+        "Q4 realized revenue and margins versus guidance, and executed customer price agreements.",
+        "Reviewed cash flow, receivables and capital spending, separating asset disposal effects from recurring operations.",
+        "Named expansion site, committed customer funding and actual IPD/PWF deployment."
+      ],
+      "publication_status": "public_event_and_research_stage_only_no_article_drafted"
     }
   ],
   "blockers": [
@@ -26896,7 +26988,7 @@
     }
   ],
   "last_research_date": "2026-10-24",
-  "instruction_commit_sha": "f52ad3379adacf77a84955ecf45e1baa95da84ae",
+  "instruction_commit_sha": "5b73537b9b5cb5c4f3085424aea44b076adec577",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
