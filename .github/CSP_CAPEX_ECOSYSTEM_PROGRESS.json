@@ -16908,6 +16908,36 @@
           "Previouslyregistered INNIO,Bloom,Meta,Vicor,ITEQ andother earnings deduplicated. Currentmarket pages andlaternews timestamps do not establish newfinancialguidance. Yahoo overseas-selloff article returned429twice;no fullbody orno-cancellation conclusion claimed. IEKreplication failed;EconomicDaily originalbody read.",
           "OnlyA publicsources/researchstages appended. Noequityprices,valuation,holdings,privatefundflows ortradingconditions stored. No newarticle,lint/build/deploy orpublic-content claim."
         ]
+      },
+      {
+        "date": "2026-10-24",
+        "checked_at": "2026-10-24T03:56:20Z",
+        "instruction_commit_sha": "785406bf46a346c242cd9894de413109771b9270",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "6c452257b219017e83ca5246703c2257c9c54c7a",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_and_memory_interview_provenance_checked",
+        "scope": "All98active names included in14fresh groupeddiscoveryqueries,supplemented by6targetedglobal/sourcequeries. Sixcoreissuerindices read. No newpublicevent orarticle registered. Individual currentfiling/economicscoverage remains partial.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://money.udn.com/money/story/5612/9834169",
+          "https://www.sammyfans.com/2026/10/23/nvidia-huang-denies-memory-oversupply-by-2029/",
+          "https://www.cnbc.com/2026/10/22/jensen-huang-nvidia-memory-selloff-shortage.html"
+        ],
+        "source_limits": [
+          "Latestdefaultbranch metadata andsamecommit requiredinstructions,supportingconfig/taxonomy/series/specifications,fullprogressblob andthree relatedarticlebodies retrievedcompletely. Immutableinstruction/articlehashes match previouslyfullyreadcontent. Eventfingerprints,latestcandidates andscreeninghistory read;no oldbranch schedule inferred.",
+          "Latestvisible sixcoreindexdates unchanged:TSMC October15,MediaTek September30,NVIDIA October22,AMD October12,Broadcom October21,Marvell October13. No authenticatednewMediaTek TPUaward,NRE/Googleprocurementsplit orTSMC capacity/pricingrevision established. Coreindexscreening isnot complete regulatoryfilingaudit.",
+          "Fullactiveuniverse CSV fetched at latestalpha-quant main;98active count andunchangedblob retained. Dateconstrainedgroupeddiscovery yields sparseoriginalbusinessfacts,manyolderstories andsocialpages. Search/update datesnot substitutedforeventdates. Historical98companymonthlybaseline retained;currentorder,margin andcashvalidation remainpartial.",
+          "Memorydemandcoverage traces toOctober22interview;October24articleis laterreporting. OriginalCNBC hyperlink located,butfetchrestricted. No quantifiedeconomicupgrade ornewnamedsupplierallocation inferred. Wholememorydemand view not treatedas guaranteedprofitforallsuppliers.",
+          "Existing substrateprepaymentestimate,Co-Techmix,NVIDIAcapacityreservations,Meta,Vicor,ITEQ,Bloom,INNIO andotherfinancialevents deduplicated. ReutersOctober23marketarticle openingfailed;no claimthat fullbody wasread orthat no newcancellationexists.",
+          "OnlyA publicsources/researchstages appended. Noequityprices,valuations,holdings,privatefundflows ortradingconditions stored. Noarticlelint/build/deploy/publicationclaim."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -16918,6 +16948,14 @@
         "recorded_count": 28,
         "correct_count": 32,
         "reason": "Clerical total corrected:3+2+3+3+2+3+3+3+4+3+3 targeted queries;14 grouped discovery queries excluded.Historical screening entry retained."
+      },
+      {
+        "checked_at": "2026-10-24T03:56:20Z",
+        "instruction_commit_sha": "785406bf46a346c242cd9894de413109771b9270",
+        "recorded_instruction_commit_sha": "5ac0d4a069335bdb36b119e4e8193928e9ebce66",
+        "recorded_count": 7,
+        "correct_count": 9,
+        "reason": "Prior screening scope counted4global plus3followup queries but omitted2copper/source queries.14groupedqueries andcalendar excluded;historical entry retained."
       }
     ],
     "primary_baseline_coverage_updates": [
@@ -26383,6 +26421,28 @@
       "publication_status": "research_source_update_only_not_drafted",
       "date": "2026-10-24",
       "instruction_commit_sha": "5ac0d4a069335bdb36b119e4e8193928e9ebce66"
+    },
+    {
+      "key": "huang-oct22-memory-oversupply-outlook-original-interview-access-gap-20261024",
+      "date": "2026-10-24",
+      "source_date": "2026-10-22",
+      "instruction_commit_sha": "785406bf46a346c242cd9894de413109771b9270",
+      "companies": [
+        "NVIDIA",
+        "Memory suppliers"
+      ],
+      "stage": "reported_executive_outlook_original_interview_located_but_unreadable",
+      "sources": [
+        "https://money.udn.com/money/story/5612/9834169",
+        "https://www.sammyfans.com/2026/10/23/nvidia-huang-denies-memory-oversupply-by-2029/",
+        "https://www.cnbc.com/2026/10/22/jensen-huang-nvidia-memory-selloff-shortage.html"
+      ],
+      "facts": "October24 Economic Daily and October23 tradepress describe Huang's October22 Berlin interview disputing memory oversupply before2029 and discussing continued HBM/LPDDR use. Linked CNBC interview original was located but returned restrictedURL. This is a reported executive demand outlook,not quantified purchase commitments,contract repricing or a demonstrated supply-demand forecast. Prior Nanya results and Winbond capacity commentary remain separate historical facts;no named Taiwanese supplier award inferred.",
+      "questions": [
+        "Authenticate full interview wording and scope.",
+        "Compare actual memory orders,qualification,bit supply,contract pricing and cash returns against both shortage and oversupply scenarios."
+      ],
+      "publication_status": "research_candidate_only_not_drafted"
     }
   ],
   "blockers": [
@@ -26402,7 +26462,7 @@
     }
   ],
   "last_research_date": "2026-10-24",
-  "instruction_commit_sha": "5ac0d4a069335bdb36b119e4e8193928e9ebce66",
+  "instruction_commit_sha": "785406bf46a346c242cd9894de413109771b9270",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
