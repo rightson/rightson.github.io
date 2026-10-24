@@ -17289,6 +17289,35 @@
           "BofA spending forecast already recorded; Reuters original body unavailable on this retrieval. G2C equipment coverage overlaps existing equipment candidates; no new primary profit revision established there. PSMC followup produced a new issuer numeric quarterly-profit baseline.",
           "No prices, valuations, target prices, holdings, private flows or trading conditions written publicly. No article, lint, build, deploy or public-content verification claimed."
         ]
+      },
+      {
+        "date": "2026-10-24",
+        "checked_at": "2026-10-24 15:45:13 UTC",
+        "instruction_commit_sha": "b9871e5bd2ce1bb3cb2f0bf32e90546954aad4f3",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "0b422e07621ace1e8c7fd3c596eebb690750b687",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_checked_two_candidates_no_material_alert",
+        "scope": "All98 active names included in14 grouped discovery queries. Six core official news indices,three global/core queries,two initial followup queries,two local-project queries and one official-title query checked. Deduplicated154 public events,365 existing candidates and accessible notification baseline. Added two source-limited research candidates;no new public event or article.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.loudoun.gov/m/newsflash/Home/Detail/10944",
+          "https://www.barrons.com/articles/nvidia-stock-price-sell-analyst-64e607bf"
+        ],
+        "source_limits": [
+          "All mandatory same-commit instructions,specifications,classification/configuration files,complete ledger and three recent related article blobs retrieved successfully. Immutable hashes match preceding fully read versions. Latest head and target blob rechecked before write.",
+          "Latest alpha-quant active98 CSV unchanged. Grouped discovery is not98 individually verified current filings;historical monthly revenue coverage retained and current economic coverage remains partial.",
+          "Date-constrained search returned many historical,unrelated and footer-indexed hits. Six core indices retain dates TSMC Oct15,MediaTek Sep30,NVIDIA Oct22,AMD Oct12,Broadcom Oct21,Marvell Oct13;no new authenticated TPU award,NRE or procurement allocation revision.",
+          "Google/Meta TorchTPU reports match recorded October20 production-use candidate;October22 article itself says deployment location unclear. No new Meta-owned on-premises purchase or supplier allocation inferred. Keystone monthly-profit item is September21 historical reporting for August,not a new October revision. NVIDIA supplier commitments and financing-risk commentary overlap recorded baselines.",
+          "Loudoun original verifies tentative site-specific terms,not a finalized regional capacity or supplier-order reduction. Seaport forecast original and methodology remain unavailable;Yahoo429 is a transient retrieval failure. Neither establishes a new material ecosystem judgment.",
+          "Public update contains only A-topic sources and research stage. No prices,valuations,target prices,holdings,private flows or trading conditions written;no article or build/deploy/public-content completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -26969,6 +26998,56 @@
         "Named expansion site, committed customer funding and actual IPD/PWF deployment."
       ],
       "publication_status": "public_event_and_research_stage_only_no_article_drafted"
+    },
+    {
+      "key": "amazon-loudoun-gwu-campus-preliminary-land-use-agreement-20261020",
+      "date": "2026-10-24",
+      "source_date": "2026-10-22",
+      "event_date": "2026-10-20",
+      "instruction_commit_sha": "b9871e5bd2ce1bb3cb2f0bf32e90546954aad4f3",
+      "companies": [
+        "Amazon / AWS"
+      ],
+      "stage": "county_original_preliminary_agreement_read_capacity_and_procurement_effects_unknown",
+      "sources": [
+        "https://www.loudoun.gov/m/newsflash/Home/Detail/10944",
+        "https://www.tomshardware.com/tech-industry/data-centers/amazon-bows-to-local-backlash-over-ai-data-centers-scraps-plans-to-build-four-new-facilities-in-northern-virginia-site-to-be-repurposed-for-mixed-use-and-residential-development"
+      ],
+      "facts": "October22 county release reports October20 preliminary terms: AWS intends to withdraw the GWU-site data-center application, convey about25 acres and pursue housing/mixed use on the remaining97 acres. Final agreements remain under negotiation. October23 secondary reporting describes four proposed facilities.",
+      "limits": [
+        "Site-specific land-use agreement; MW, committed equipment orders, deployed capacity and replacement sites not disclosed.",
+        "No verified AWS-wide budget reduction, named supplier cancellation or realized earnings revision. Existing university use continues; no operating data center shutdown inferred."
+      ],
+      "questions": [
+        "Verify final agreement, actual application withdrawal and rezoning.",
+        "Establish planned MW, procurement stage and any relocation or equipment cancellation before assessing supply-chain effects."
+      ],
+      "publication_status": "local_project_negative_candidate_below_material_ecosystem_alert_threshold_no_article"
+    },
+    {
+      "key": "seaport-attributed-2027-ai-datacenter-buildability-forecast-original-note-pending-20261023",
+      "date": "2026-10-24",
+      "source_date": "2026-10-23",
+      "instruction_commit_sha": "b9871e5bd2ce1bb3cb2f0bf32e90546954aad4f3",
+      "companies": [
+        "NVIDIA",
+        "AI infrastructure developers"
+      ],
+      "stage": "media_attributed_forecast_discovered_broker_original_and_project_methodology_unavailable",
+      "sources": [
+        "https://www.barrons.com/articles/nvidia-stock-price-sell-analyst-64e607bf",
+        "https://finance.yahoo.com/technology/ai/articles/nvidia-analyst-warns-45-ai-164708977.html"
+      ],
+      "facts": "October23 reporting attributes to Seaport analyst Jay Goldberg a2027 buildability estimate of about30GW against55GW announced, citing construction and power constraints. This is a broker forecast, not verified cancellations.",
+      "limits": [
+        "Barron's accessible page exposes introduction, not full underlying analysis; Yahoo followup returned429. Search-result attribution only; original broker note, project sample, definitions and prior comparable estimate not obtained.",
+        "No extrapolation to named customer orders or supplier revenue. Existing financing and construction risk research remains the comparison baseline."
+      ],
+      "questions": [
+        "Obtain original note and project-by-project assumptions.",
+        "Reconcile announced, permitted, energized and equipped MW with official project milestones."
+      ],
+      "publication_status": "research_candidate_only_no_material_alert_or_article"
     }
   ],
   "blockers": [
@@ -26988,7 +27067,7 @@
     }
   ],
   "last_research_date": "2026-10-24",
-  "instruction_commit_sha": "5b73537b9b5cb5c4f3085424aea44b076adec577",
+  "instruction_commit_sha": "b9871e5bd2ce1bb3cb2f0bf32e90546954aad4f3",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
