@@ -17052,6 +17052,33 @@
           "TPCA-hosted industry-news republication attributes source to Commercial Times;its older Unimicron340bn-TWD-tenths budget basis differs from later registered537hundred-million-TWD budget. Undated republication does not establish a new capex reduction or fresh issuer guidance. No arithmetic combination of different investment periods adopted.",
           "Public ledger contains only A-topic public sources,coverage and research stages.No prices,valuation,holdings,private market flows or trading conditions added.No article created or lint/build/deploy/public-content success claimed."
         ]
+      },
+      {
+        "date": "2026-10-24",
+        "checked_at": "2026-10-24 08:36:20 UTC",
+        "instruction_commit_sha": "815572a10f52e505525b43c30e99b45a7413b61e",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "a9c2a5e7bd6590bef0e07bc3a39eed4c57865a3f",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_issuer_indices_checked_no_new_material_event_verified",
+        "scope": "All98 active names included in14 fresh grouped discovery queries;six core issuer indices checked and3 supplemental global/core queries completed. Existing public events,candidates and accessible notification baseline used for deduplication. Individual current-filing and financial-transmission audit remains partial.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases"
+        ],
+        "source_limits": [
+          "Latest defaultbranch metadata and full samecommit mandatory instructions,config,taxonomy,series,research specifications,complete progress JSON and three related article blobs retrieved;immutable instruction/specification/article hashes match fully read earlier versions. No mandatory instruction retrieval failure.",
+          "Latest visible core news dates unchanged:TSMC October15,MediaTek September30,NVIDIA October22,AMD October12,Broadcom homepage October21,Marvell October13. No newly authenticated TPU design win,NRE,Google procurement split,TSMC capacity/pricing or core earnings revision. Index checks do not constitute an all-filings audit.",
+          "Latest alpha-quant defaultbranch and full98active CSV fetched,universe blob unchanged. Grouped search is discovery rather than98 current filings individually verified. Historical primary monthlyrevenue baseline retained;current order,margin and cash-conversion audit remains partial.",
+          "Search results principally repeated registered PCB shortage commentary,equipment purchases,Meta financing/capex and older TPU/Marvell reports. Stock moves,automated commentary and anonymous broker summaries were not treated as issuer guidance or consensus revisions. Existing source gaps retained;no whole-market absence-of-news claim.",
+          "Clarification of the preceding screening's awkward TPCA monetary notation:the republication's Unimicron budget was NT$340億元(34.0bn),compared with the later registered NT$537億元(53.7bn). These are different report baselines,not evidence of a fresh budget reduction. Historical record preserved.",
+          "Public ledger records only A-topic public sources,coverage and research stage.No current equity prices,valuation,holdings,private flows or trading conditions appended.No new article and no lint/build/deploy/public-content success claim."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -26617,7 +26644,7 @@
     }
   ],
   "last_research_date": "2026-10-24",
-  "instruction_commit_sha": "49debf49d8125b16bdef586b451bbc8cd19a5eef",
+  "instruction_commit_sha": "815572a10f52e505525b43c30e99b45a7413b61e",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
