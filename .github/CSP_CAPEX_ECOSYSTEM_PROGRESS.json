@@ -17023,6 +17023,35 @@
           "Prior Qingding cumulative procurement and Voltronic inconsistent financial-period/source gaps remain open. No new source resolution claimed;no independent longform increment established.",
           "Only A-topic public source coverage/research stage appended.No equity prices,valuations,holdings,private fundflows,trading conditions or B-topic data stored.No new article,lint/build/deploy or public-content claim."
         ]
+      },
+      {
+        "date": "2026-10-24",
+        "checked_at": "2026-10-24T07:55:40Z",
+        "instruction_commit_sha": "49debf49d8125b16bdef586b451bbc8cd19a5eef",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "3085b6f40a0a1c61dee6fed8ae0cb8965a58b2d9",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_and_six_core_issuer_indices_checked_no_new_material_event_verified",
+        "scope": "All98 active names included in14 fresh grouped discovery queries;six core issuer news entries checked,with Broadcom official homepage fallback,and5 supplemental global/core queries. Selected trade association republication read for source-age comparison. Individual current-filing and economic validation remains partial.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://www.tpca.org.tw/web/news_detail.php?menu_no=183&mod_no=3&news_no=28626"
+        ],
+        "source_limits": [
+          "Latest default-branch metadata and full samecommit mandatory instructions,config,taxonomy,series,research specifications,complete progress JSON and three recent related article blobs retrieved. Required instruction/specification/article hashes match fully read prior-turn versions. No mandatory instruction read failure.",
+          "Latest visible news dates retained:TSMC October15,MediaTek September30,NVIDIA October22,AMD October12,Marvell October13. Broadcom news-list path returned403;official investor homepage succeeded,showing October21/20/19 releases and no newer listed release. This resolves transport for homepage scope,not a full filing audit.",
+          "Latest alpha-quant defaultbranch and full98active CSV fetched;universe blob unchanged. Grouped search is discovery rather than98 individually verified current filings;historical monthly revenue primary baseline retained,orders,margins and cash-conversion validation partial.",
+          "Current search principally returned previously registered equipment purchases,substrate budgets,PCB forecasts,Meta financing,SLB results and older TPU/Marvell timing coverage. No new authenticated TPU design award,NRE,Google supplier allocation,core guidance revision or supplier cancellation established. Social/automated market commentary not promoted to issuer facts.",
+          "TPCA-hosted industry-news republication attributes source to Commercial Times;its older Unimicron340bn-TWD-tenths budget basis differs from later registered537hundred-million-TWD budget. Undated republication does not establish a new capex reduction or fresh issuer guidance. No arithmetic combination of different investment periods adopted.",
+          "Public ledger contains only A-topic public sources,coverage and research stages.No prices,valuation,holdings,private market flows or trading conditions added.No article created or lint/build/deploy/public-content success claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -26588,7 +26617,7 @@
     }
   ],
   "last_research_date": "2026-10-24",
-  "instruction_commit_sha": "f8c722190d474a289a70766897172ad7345d539c",
+  "instruction_commit_sha": "49debf49d8125b16bdef586b451bbc8cd19a5eef",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
