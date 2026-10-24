@@ -203,3 +203,12 @@
 - 24–72 小時去重：Synopsys 10 月 22 日的[官方訪談整理](https://www.synopsys.com/blogs/chip-design/sassine-ghazi-future-engineering-ai.html)重述從 outcome 出發、協調 task agents／既有工具並由工程師最終 signoff 的 long-horizon 方向，但沒有新增產品狀態、具名客戶、受控 benchmark 或 acceptance schema，不重報為新能力。10 月 23 日 cs.AR recent 未見新的 Agentic EDA 方法；NeMo Gym 的 CVDP 指定路徑自 10 月 21 日起沒有新提交，通用 runtime 變更不外推為具名 EDA 成果。
 - 本次不建立公開文章：VHDLBench 足以修正評測分母與硬體驗收的解讀，但方法本身不是 Agentic Design，且缺固定程式版本與同分母端到端結果；另發短評會與 AD005 主線高度重疊。未執行新 LLM／EDA 實驗，未做文章 lint、build、deploy 或正式頁核驗；AD004／AD005 完成狀態及其他候選狀態保留。
 
+## 2026-10-25 雷達查核與接續
+
+- instruction commit：`5019302fd4d7dde2d142e2b2e2e519a4696b5df1`；研究識別 `agentic-design-radar｜2026-10-25`，事件識別 `nokia-aurastack-m2000-on-premises-deployment-20261021`。同一 commit 的 AGENTS、共用／指定主題、分類、series、roadmap 與近期三篇成果已完整讀取；本次只追加一項先前未收錄的具名客戶部署證據，不設定或改動 scheduler。
+- [Cadence 10 月 21 日官方公告](https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2026/cadence-ai-super-agents-enable-nokia-to-accelerate-electronic.html)顯示 Nokia 正在自有環境部署 AuraStack AI Super Agent 與 Millennium M2000，讓 agent 協調 schematic capture、placement、routing、multi-objective optimization，並串接 power integrity、thermal、electromagnetic、circuit simulation 等既有工程工具；平台採用 NVIDIA Nemotron open models、Blackwell 與 CUDA-X。這補上 10 月 17 日僅有 AuraStack 工作流說明的成熟度缺口：已有具名系統公司、on-premises 平台與平行工作負載，而非只有產品能力敘事。
+- Cadence 公告並引述 Nokia SoC Development 負責人，稱指定設計與分析工作流加速 **5×**，可把部分週期由月縮到日；但沒有公開 task mix、設計規模、before／after wall time、人工介入、PPA／signoff 品質、失敗率，亦未拆分 agent、GPU hardware 與各 simulation engine 的貢獻。故成熟度記為 **具名客戶部署／vendor-and-customer-reported result**，不視為獨立 benchmark、production tapeout 證明或 AuraStack 單獨帶來 5×。
+- 相對 10 月 20 日 AD005，本次新增的不是另一個小型研究評分，而是企業內部署時的資料邊界與運算拓撲：模型、agent、EDA／SDA 工具與加速運算被綁在同一個可擴充、保留 IP 的環境。這可接續 AD001、AD003、AD005、AD007、AD008；下一步優先取得可重現的 workflow manifest、artifact／版本綁定、取消與恢復紀錄，以及以同品質輸出計算的 tool-hours、人工核准與 cost per accepted artifact。
+- 24–72 小時去重：SiliCAD EDA_MCP、Konnect、SpiceXplorer release 與 NeMo Gym `resources_servers/cvdp` 自 10 月 22 日 UTC 起未見新 commit；AMBU-CovAgent 的 10 月 22 日 README／citation 變更已在 10 月 23 日紀錄，不重報為新程式或結果。NeMo Gym 10 月 23–24 日的通用 runtime、benchmark 與 verifier 修正未包含具名 EDA task／result，不外推為設計流程成果；本次可取得的 Cadence、Synopsys、Siemens 與 arXiv 一手來源亦未提供第二項同等強度的新產品、方法或驗收資料。
+- 本次採對話短報與 roadmap 更新，不建立公開文章：5× 為單一官方公告中的供應商／客戶自報，缺少可比較基準與同份產物驗收，另發文章會超出證據強度。未執行新 LLM／EDA 實驗，未做文章 lint、build、deploy 或正式頁核驗；AD004／AD005 完成狀態及其他候選狀態保留。
+
