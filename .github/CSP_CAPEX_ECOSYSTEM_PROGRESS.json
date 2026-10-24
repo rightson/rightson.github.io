@@ -17195,6 +17195,36 @@
           "Search principally returned historical monthly revenue,automated stock pages,old equipment outlooks and repeated memory/PCB commentary.Solidigm IPO suspension and OpenAI reported financing coverage match prior recorded funding-route research;no new confirmed financing closing,capex cut or delivery revision authenticated.No inference from unattributed expert-call capacity estimates or aggregation headlines.",
           "Public change limited to A-topic sources,coverage and research stage.No equity prices,valuation,target prices,holdings,private flows or trading conditions written.No article drafted;no lint/build/deploy/public-content success claimed."
         ]
+      },
+      {
+        "date": "2026-10-24",
+        "checked_at": "2026-10-24 14:24:17 UTC",
+        "instruction_commit_sha": "f52ad3379adacf77a84955ecf45e1baa95da84ae",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "0b422e07621ace1e8c7fd3c596eebb690750b687",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_checked_no_new_material_event_verified",
+        "scope": "All 98 active names included in 14 fresh grouped discovery queries; six core official news indices, three supplemental global/core queries and two targeted followup queries checked. Compared 153 public events, 364 research candidates and accessible notification baseline. No new candidate or independent article established.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://ec.ltn.com.tw/article/paper/1769263",
+          "https://www.barrons.com/articles/japan-data-centers-stocks-425a99bc",
+          "https://www.datacenterdynamics.com/en/news/ntt-to-build-63bn-data-center-for-anthropic-in-japan-report/",
+          "https://www.reuters.com/business/energy/jera-teams-up-with-dell-rhaelm-ai-infrastructure-development-japan-2026-10-01/"
+        ],
+        "source_limits": [
+          "Latest default-branch metadata and full same-commit mandatory instructions, config, taxonomy, series, research specifications, complete progress JSON and three related article blobs retrieved. All mandatory reads succeeded; immutable instruction/specification/article hashes unchanged from fully read preceding versions. Instruction commit recorded; latest head and target blob checked again before update.",
+          "Fresh alpha-quant default branch is 0b422e07621ace1e8c7fd3c596eebb690750b687; complete active 98 CSV blob remains 88422949d38165d4757a1e24c27f8662bede14c1. Grouped discovery is not 98 individually verified current filings. Historical monthly revenue coverage retained; current individual orders, margins and cash-conversion audit remains partial.",
+          "Core issuer indices retain latest dates: TSMC October 15, MediaTek September 30, NVIDIA October 22, AMD October 12, Broadcom October 21, Marvell October 13. No newly authenticated TPU award, NRE, Google procurement split or core issuer guidance revision verified. Index checks are not all-filings coverage.",
+          "Date-constrained grouped search had limited precision and returned historical reports, unrelated pages and date-footer matches. The LTN equipment-order article is September 4, 2026, rather than an October 24 guidance update. October 24 Japan data-center feature leads refer back to an October 1 JERA/Dell/RHAELM memorandum and October 13 NTT/Anthropic final-stage talks; no new signed order, financing closing or delivery confirmation verified. Reuters October 1 discovery was search-result evidence, not a full original-document read; NTT/Anthropic talks remain the previously recorded candidate. Repeated fuel-cell forecasts, SLB/Nokia, Meta and TPU commentary did not establish independent material evidence.",
+          "Public change limited to A-topic sources, coverage and research stage. No equity prices, valuation, target prices, holdings, private flows or trading conditions written. No article drafted; no lint/build/deploy/public-content success claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -26866,7 +26896,7 @@
     }
   ],
   "last_research_date": "2026-10-24",
-  "instruction_commit_sha": "c6add0f351d265d94399e8fe8e035aae37bc40cb",
+  "instruction_commit_sha": "f52ad3379adacf77a84955ecf45e1baa95da84ae",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
