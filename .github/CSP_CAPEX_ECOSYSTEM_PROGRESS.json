@@ -16844,6 +16844,40 @@
           "SLB,NIST,ITEQ,Meta,Vicor,recentfinancing/earnings andBofAforecaststories deduplicated. Infineon/NVIDIA GaN cooperation discoverylead lacks issueroriginal in thisround;noquantifiedsupplyallocation orprofitrevision inferred.",
           "OnlypublicA-source/researchstage appended. Noquotes,valuations,holdings,fundflows,tradingconditions orprivateBanalysis stored; noarticlelint/build/deploy/publication claim."
         ]
+      },
+      {
+        "date": "2026-10-24",
+        "checked_at": "2026-10-24T02:12:03Z",
+        "instruction_commit_sha": "42be6086a6b23b395641c0bc52cb941372aabb4d",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "6c452257b219017e83ca5246703c2257c9c54c7a",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_and_primary_gan_cooperation_source_checked",
+        "scope": "All98active names included in14fresh grouped discovery queries,supplemented by8targeted/global queries. Six coreissuer indices read;outside-universe power-conversion original authenticated. No newpublicevent orarticle registered. Individual latestfiling/economicscoverage remains partial.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.infineon.com/press-release/2026/infpr202610-012",
+          "https://www.ttv.com.tw/finance/view/102026230753393DC068AB244A4D93E4F77B0CDF80E505ED/588",
+          "https://www.theinformation.com/articles/sb-energy-considers-waiting-december-later-ipo",
+          "https://en.sedaily.com/international/2026/10/23/softbank-unit-sb-energy-weighs-delaying-ipo-to-next-year",
+          "https://money.udn.com/money/story/5607/9833413"
+        ],
+        "source_limits": [
+          "Complete samecommit mandatoryinstructions,specifications,configuration,taxonomy,series and three relatedarticlebodies retrieved;unchanged hashes match previously read bodies. Fullprogressblob parsed and latestevents,candidates andcoverage inspected. Output truncation avoided or resolved with bounded reads;source retrieval itself complete.",
+          "Allsixcoreindices readable;latestvisible dates unchanged:TSMC October15,MediaTek September30,NVIDIA October22,AMD October12,Broadcom October21,Marvell October13. No newlyauthenticatedMediaTek TPUaward,NRE,Google procurementallocation orTSMC capacity/pricingrevision established. Indexchecks are not fullregulatoryfilingaudits.",
+          "Fresh grouped discovery returned many historicalstories,aggregators and marketcommentary;currentcrawl/update timestamps do not change eventdates. Historical98company monthlyrevenuebaselines preserved. Currentcompanyorder,margin andcash conversioncoverage partial.",
+          "Infineon October21original resolves prior discoverylead. Cooperation andvendor capability claims verified;no quantified procurement,productionshipment orincrementalprofit established. October23tradepress is later coverage of the same event.",
+          "Macronix reproduced fullnotice covers cumulativeApril20–October22purchases under earlier budgets,not a new guidanceincrease. Directissuer original not retrieved. Yahooannouncement consentwall prevented opening;TTVreproduction was fullyread.",
+          "PCB13company article opened through retrievedreference afterdirectURLfailure. Forecast attributed to unnamed domesticbroker;originalmodel,comparableold/new estimates and margins unavailable. Not accepted as namedissuer guidance orverifiedconsensus revision.",
+          "SB Energyreport located at originaloutlet and secondaryreport. Possible IPOtiming extends existingfinancing-delay candidate;no issuerconfirmation orprocurement cancellation verified. Biggo openingfailed. Previouslyregistered earnings,Meta,Vicor,ITEQ andSigurd events deduplicated.",
+          "OnlyA-topic publicsourcefacts and researchstages appended. No currentquotes,valuations,holdings,privatefundflows ortradingconditions stored. Noarticlelint/build/deploy/publication claim."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -26214,6 +26248,67 @@
         "Verify commissioning,AI-test allocation,utilization and cash conversion before changing earnings assumptions."
       ],
       "publication_status": "research_candidate_only_not_drafted"
+    },
+    {
+      "key": "infineon-nvidia-800vdc-gan-ibc-primary-source-completion-20261021",
+      "source_date": "2026-10-21",
+      "companies": [
+        "Infineon",
+        "NVIDIA"
+      ],
+      "stage": "issuer_original_read_cooperation_verified_commercial_economics_pending",
+      "sources": [
+        "https://www.infineon.com/press-release/2026/infpr202610-012"
+      ],
+      "facts": "October21 issuer release confirms continued collaboration on800VDC high-voltage intermediate-bus conversion,building on May/October2025 work. Vendor describes GaN switching up to1MHz and800V-to50V/12V/6V conversion options,with PSoC controlC3 and EiceDRIVER. These are disclosed technology/portfolio capabilities,not independently measured deployment results. No quantified customer purchase,production shipment,value allocation,incremental revenue or margin guidance disclosed.",
+      "questions": [
+        "Authenticate qualified production deployment,converter supplier/customer allocation and shipment schedule.",
+        "Reconcile resulting content,ASP and margin with existing power products before inferring incremental earnings."
+      ],
+      "publication_status": "research_candidate_only_not_drafted",
+      "date": "2026-10-24",
+      "instruction_commit_sha": "42be6086a6b23b395641c0bc52cb941372aabb4d"
+    },
+    {
+      "key": "macronix-applied-materials-cumulative-equipment-notice-20261022",
+      "source_date": "2026-10-22",
+      "companies": [
+        "Macronix / 旺宏",
+        "Applied Materials"
+      ],
+      "stage": "full_notice_reproduction_read_original_and_incremental_budget_economics_pending",
+      "sources": [
+        "https://www.ttv.com.tw/finance/view/102026230753393DC068AB244A4D93E4F77B0CDF80E505ED/588"
+      ],
+      "facts": "Reproduced issuer notice states TWD1,823,623,120 equipment purchases covering April20–October22,2026,from Applied Materials South East Asia. Production-use budget references July27,2021 and July28,2026 board approvals;payment follows purchase orders. Cumulative transaction disclosure does not establish a newly increased capital budget or a single October22 order. Direct issuer/exchange original,commissioning,product allocation and cash returns remain unverified.",
+      "questions": [
+        "Reconcile original notice with existing capital budget and prior supplier purchases.",
+        "Verify tool installation,AI/NOR/NAND allocation and resulting utilization/yield before attributing earnings."
+      ],
+      "publication_status": "research_candidate_only_not_drafted",
+      "date": "2026-10-24",
+      "instruction_commit_sha": "42be6086a6b23b395641c0bc52cb941372aabb4d"
+    },
+    {
+      "key": "sb-energy-ipo-reported-timing-update-20261022",
+      "source_date": "2026-10-22",
+      "companies": [
+        "SB Energy",
+        "SoftBank"
+      ],
+      "related_candidate": "ai-datacenter-equity-fundraising-delays-and-asset-sale-alternatives",
+      "stage": "original_reporting_located_timing_report_not_issuer_confirmed_project_change",
+      "sources": [
+        "https://www.theinformation.com/articles/sb-energy-considers-waiting-december-later-ipo",
+        "https://en.sedaily.com/international/2026/10/23/softbank-unit-sb-energy-weighs-delaying-ipo-to-next-year"
+      ],
+      "facts": "October22 reporting discusses a possible December-or-later IPO. No issuer-confirmed procurement cancellation established. Existing financing-delay research retained.",
+      "questions": [
+        "Obtain issuer filing or statement confirming financing completion and construction/procurement implications."
+      ],
+      "publication_status": "source_update_only_not_drafted",
+      "date": "2026-10-24",
+      "instruction_commit_sha": "42be6086a6b23b395641c0bc52cb941372aabb4d"
     }
   ],
   "blockers": [
@@ -26233,7 +26328,7 @@
     }
   ],
   "last_research_date": "2026-10-24",
-  "instruction_commit_sha": "f5cde188f44922ef08a2468511b914ce0d7b28ef",
+  "instruction_commit_sha": "42be6086a6b23b395641c0bc52cb941372aabb4d",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
