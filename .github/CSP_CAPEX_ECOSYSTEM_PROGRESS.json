@@ -17521,6 +17521,39 @@
           "TrendForce October14 original confirms existing nine-CSP forecast and prepayment/pricing drivers;already recorded event,not new actual supplier orders.S&P October19 warning and PCB October23 reporting match existing research candidates.Direct Reuters and UDN followup bodies inaccessible this round;no upgrade of source confidence or fresh rating/order conclusion.",
           "Public update limited to A-topic sources,coverage and research stage.No equity prices,valuations,target prices,holdings,private flows or trading conditions included.No article drafted;no lint,build,deploy or public-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-25",
+        "checked_at": "2026-10-25 00:28:36 UTC",
+        "instruction_commit_sha": "dcddc365a7baa6f16029c74c13cd5758aba93223",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "62f1a8a178580521b2b9ec389ae4758f1da2d335",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_checked_no_material_increment",
+        "scope": "All 98 active names included in 14 fresh grouped discovery queries; six core official news indices and three supplemental global/core queries checked. Five source/date followups compared with 154 existing public events, 370 candidates and accessible notifications. No new event, candidate or article.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.winwayglobal.com/zh-TW/news-detail/qCRukyOSg2SuII21",
+          "https://www.reuters.com/business/finance/investors-temper-anthropic-ipo-valuation-expectations-over-revenue-growth-2026-10-15/",
+          "https://www.reuters.com/commentary/breakingviews/global-markets-breakingviews-2026-10-24/",
+          "https://www.reuters.com/commentary/breakingviews/nscale-setback-lights-up-weak-spots-ai-rollout-2026-10-19/",
+          "https://www.reuters.com/commentary/breakingviews/data-centres-fail-ai-pick-and-shovel-trade-2026-10-23/"
+        ],
+        "source_limits": [
+          "Mandatory same-commit instructions, specifications, config, taxonomy, series, full progress blob and three related article blobs retrieved. Latest head and target blob checked before writing.",
+          "Fresh alpha-quant default branch metadata and full active 98 CSV retrieved. Universe blob unchanged. Grouped discovery is not 98 individual current-filings verification; current order, margin and cash-conversion validation remains partial.",
+          "Core official index latest dates unchanged: TSMC October 15, MediaTek September 30, NVIDIA October 22, AMD October 12, Broadcom October 21, Marvell October 13. No newly authenticated TPU award, NRE, Google procurement split or core guidance revision. Index checks are not all-filings coverage.",
+          "Grouped results largely historical reports, commentary, social posts and footer matches. October 23 PCB forecast and ITEQ capacity plan match existing leads. No new original comparable institution earnings revision established.",
+          "WinWay October 6 original revenue release successfully read this round; historical company candidate already contains this source and baseline. Retrieval recovery is not a new revenue revision.",
+          "Reuters October 15 financing-expectation reporting is historical context; no executed cloud-order cancellation or CSP capex cut established. October 24 Breakingviews is commentary synthesizing already recorded Nscale and NextDC project/financing events. October 19 and October 23 linked originals checked; no fresh supplier economics revision inferred.",
+          "Public update contains A-topic sources, coverage and research stage only. No equity prices, valuations, targets, holdings, private flows or trading conditions. No article drafted; no lint, build, deploy or public-content completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -27345,7 +27378,7 @@
     }
   ],
   "last_research_date": "2026-10-25",
-  "instruction_commit_sha": "0ed800239fbb5f0227acf38aeabf6b73ae2303f0",
+  "instruction_commit_sha": "dcddc365a7baa6f16029c74c13cd5758aba93223",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
