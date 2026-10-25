@@ -17850,6 +17850,37 @@
           "Outside-universe/global discovery repeats STL/HFCL,Nokia,Supermicro,Nscale and financing sources already tracked. MediaTek newsletter is datedApril11 and paywalled beyond unrelated introduction;not a new October TPUaward. No current commercial terms inferred from old or social reports.",
           "Public update contains A-topic sources/research stages only;no equity prices,valuations,targets,holdings,private market flows or trading conditions. No article,lint,build,deploy or public-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-25",
+        "checked_at": "2026-10-25 08:46:07 UTC",
+        "instruction_commit_sha": "0d53d69ff341005c3ea7b06274054cadf7597503",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "188cb481a496eb0ff7625d1dfb4f0655e8d744aa",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_checked_funding_source_candidate_added",
+        "scope": "All98 active names included in14 fresh grouped queries;six official core indices and three global/core supplemental queries checked. Targeted followups traced Google/Voltus and SEMCO customer-funding leads. Compared155 events,374 prior candidates and available notices;one reported-funding candidate added,no material event or article.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.voltus.co/press/google-voltus-1gw",
+          "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/demand-response-data-center-milestone/",
+          "https://www.reuters.com/business/autos-transportation/samsung-electro-mechanics-gets-28-billion-chip-investment-tesla-nvidia-report-2026-10-22/"
+        ],
+        "source_limits": [
+          "Complete fresh same-commit mandatory instruction/specification/config/taxonomy/series/progress and three related article blobs retrieved;hashes unchanged from fully read versions. Fresh alpha-quant metadata/head/full CSV retrieved;active98 universe unchanged.",
+          "Grouped discovery covers98 query names,not98 individual latest-filings validations. Results primarily indices,historical notices,repeated reporting and social/valuation pages. Date filters do not authenticate source freshness;issuer economics validation remains partial.",
+          "Core official latest dates unchanged:TSMC October15,MediaTek September30,NVIDIA October22,AMD October12,Broadcom October21,Marvell October13. No newly authenticated TPU award,NRE,current procurement split or guidance revision.",
+          "Voltus October22 issuer body reread:expanded flexible-capacity agreement matches existing candidate. Rounded headline and additional1070MW wording still require reconciliation;not continuously supplied energy or completed data-center capacity. Google's linked demand-response milestone is datedMarch19,not October;related-link text must not change its publication date.",
+          "SEMCO reported customer-funding amount traced to one October22 Maeil report repeated byReuters/others. Reuters direct body unavailable;issuer funding amount,legal form and cash receipt unconfirmed. Existing NVIDIA partnership/capacity event preserved separately;candidate only,no new alert.",
+          "Auras warrant commentary,PCB forecasts and cumulative supplier equipment notices repeat existing candidates. Global/outside-universe leads repeat STL/HFCL,Nokia,SLB and existing financing evidence;no current standalone margin/cash or named Taiwan allocation added.",
+          "Public update contains A-topic sources/research stages only;no equity prices,valuations,targets,holdings,private market flows or trading conditions. No article,lint,build,deploy or public-content completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -27750,6 +27781,29 @@
         "Authenticate liquid-cooling mix,utilization,gross profit and cash using issuer data;broker projections and warrant copy are not actual results."
       ],
       "publication_status": "candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "semco-tesla-nvidia-reported-customer-funding-amount-primary-terms-pending-20261022",
+      "date": "2026-10-25",
+      "source_date": "2026-10-22",
+      "instruction_commit_sha": "0d53d69ff341005c3ea7b06274054cadf7597503",
+      "companies": [
+        "Samsung Electro-Mechanics",
+        "NVIDIA",
+        "Tesla"
+      ],
+      "stage": "single_newspaper_funding_amount_report_discovered_issuer_and_contract_confirmation_pending",
+      "sources": [
+        "https://www.reuters.com/business/autos-transportation/samsung-electro-mechanics-gets-28-billion-chip-investment-tesla-nvidia-report-2026-10-22/",
+        "https://www.aol.com/articles/samsung-electro-mechanics-gets-2-072401000.html"
+      ],
+      "facts": "October22 Reuters indexed report attributes KRW3.7trillion (aboutUSD2.8bn) of Tesla/NVIDIA funding for Sejong FC-BGA facilities to Maeil industry sources. Direct Reuters body unavailable;other coverage repeats the same newspaper. Amount,legal form,receipt,refund conditions and incremental capacity not issuer-authenticated. Existing October21 NVIDIA partner-capacity event already includes SEMCO;do not add the reported amount to confirmed customer advances or infer Taiwan supplier losses.",
+      "questions": [
+        "Obtain original Maeil report,issuer filing and executed funding terms.",
+        "Separate equity,capacity advances and supply contracts;verify cash receipts and capex overlap.",
+        "Reconcile allocated capacity,qualification,margin and delivery with the existing NVIDIA partnership."
+      ],
+      "publication_status": "candidate_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -27769,7 +27823,7 @@
     }
   ],
   "last_research_date": "2026-10-25",
-  "instruction_commit_sha": "19b84146146fa6ce137f9a6007fdcbc631111256",
+  "instruction_commit_sha": "0d53d69ff341005c3ea7b06274054cadf7597503",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
