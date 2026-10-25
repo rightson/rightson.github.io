@@ -17995,6 +17995,35 @@
           "MoneyDJ index and indexed syndications identify October21 subsidiary right-of-use-asset lease and October19 cumulative packaging-equipment purchase leads for Ardentec/Powertech. Direct Yahoo notice bodies returned404. Full terms,incremental capex,AI/customer allocation,commissioning and profit effect not verified;no material conclusion or new event recorded.",
           "Public update contains A-topic source/research stages only;no equity quotes,valuations,targets,holdings,private market flows or trading conditions. No article,lint,build,deploy or public-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-25",
+        "checked_at": "2026-10-25 14:21:04 UTC",
+        "instruction_commit_sha": "326750156aaaad5757aec5f3a0e29c630578382e",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "188cb481a496eb0ff7625d1dfb4f0655e8d744aa",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_checked_two_historical_execution_candidates_added",
+        "scope": "All98 active names included in14 fresh grouped queries;six official core indices and three global/core supplemental queries checked. IREN campus original and Chroma financing notice provenance followed up. Compared155 events,378 prior candidates and accessible notices;two historical-stage candidates added,no material event or article.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://iren.gcs-web.com/static-files/1c72624b-c8f0-4866-afd4-06ae0de59654",
+          "https://news.cnyes.com/news/id/6634432"
+        ],
+        "source_limits": [
+          "Fresh default metadata/head and complete same-commit required instruction,specification,configuration,taxonomy,series,progress and three related article blobs retrieved;instruction/article hashes unchanged. Fresh alpha-quant full CSV retains98 active names. Grouped queries do not validate98 individual latest issuer filings;primary economic coverage remains partial.",
+          "Six accessible official core indices latest dates unchanged:TSMC October15,MediaTek September30,NVIDIA October22,AMD October12,Broadcom October21,Marvell October13. No authenticated new TPU award,NRE,procurement allocation or guidance revision.",
+          "Search output primarily historical announcement indices,prior PCB/Auras forecasts,August NVIDIA roundup and valuation/social material. Global output repeats existing STL/HFCL,M&B,Asarco,Meta and storage evidence;earnings-concentration forecasts and forum statements are not new actual results.",
+          "IREN October21 original confirms a permit-stage milestone for planned2028 capacity,not accepted IT capacity or a named customer contract. Historical May7 announcement and June acquisition closing were separated from October news;no capex financing or profit attribution validated.",
+          "Chroma October20 notice reproduction read and August plan compared;actual price/proceeds unconfirmed. Yahoo quote-announcement path redirected to consent. Final issuer/exchange original,issuance and cash receipt remain gaps. No stock-price-derived funding estimate used.",
+          "Public update contains A-topic sources/research stages only;no equity quotes,valuations,targets,holdings,private market flows or trading conditions. No article,lint,build,deploy or public-content completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -27985,6 +28014,51 @@
         "Trace actual customer contracts,copper availability and realized supplier margins before attributing AI-related earnings effects."
       ],
       "publication_status": "candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "iren-badajoz-civil-works-license-versus-financed-accepted-ai-capacity-20261021",
+      "date": "2026-10-25",
+      "source_date": "2026-10-21",
+      "instruction_commit_sha": "326750156aaaad5757aec5f3a0e29c630578382e",
+      "companies": [
+        "IREN",
+        "NVIDIA",
+        "Mirantis"
+      ],
+      "stage": "issuer_original_civil_license_and_planned_campus_verified_historical_acquisition_baseline_compared",
+      "sources": [
+        "https://iren.gcs-web.com/static-files/1c72624b-c8f0-4866-afd4-06ae0de59654",
+        "https://iren.com/resources/news/nostrum-announcement",
+        "https://iren.com/data-centers/badajoz"
+      ],
+      "facts": "October21 issuer release confirms Badajoz civil-works license,secured grid-connected power and planned300MW campus,targeting initial2028 operations. DSX compatibility and managed AI services remain design/intention. May7 acquisition agreement already introduced Spain power assets;October release says Nostrum acquisition completed June. Site page labels2028+. No signed campus customer,financed capex,equipment award,accepted IT load or incremental profit disclosed. Newly recorded source milestone,not a new October25 order.",
+      "questions": [
+        "Verify project-specific remaining approvals,power delivery and construction schedule.",
+        "Obtain financed capex,customer contracts and accepted/billable IT capacity rather than adding plannedMW to delivered load.",
+        "Measure cloud revenue,utilization,margin and cash conversion independently of portfolio power capacity."
+      ],
+      "publication_status": "candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "chroma-october20-gdr-authorization-versus-priced-raised-funding-20261020",
+      "date": "2026-10-25",
+      "source_date": "2026-10-20",
+      "instruction_commit_sha": "326750156aaaad5757aec5f3a0e29c630578382e",
+      "companies": [
+        "Chroma"
+      ],
+      "stage": "issuer_notice_reproduction_read_historical_august_plan_compared_pricing_and_cash_receipt_pending",
+      "sources": [
+        "https://news.cnyes.com/news/id/6634432",
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=86eef79f-ce6a-4871-8d12-2747707b41ba"
+      ],
+      "facts": "October20 reproduced board notice proposes10.88–13.60million new common shares for GDR issuance,with10% reserved for employees;use is foreign-currency materials procurement and overseas subsidiaries. Amount depends on actual pricing and units. August26 reporting already described up-to13.60million-share plan. Authorization is not priced issuance,received cash or a customer order. Direct issuer/exchange original and final proceeds not verified;historical planning milestone only.",
+      "questions": [
+        "Retrieve issuer/exchange original and final regulatory,pricing,share-count and receipt notices.",
+        "Separate funding use from specific AI customer commitments,actual procurement and capacity commissioning.",
+        "Reconcile realized operating returns and cash generation with the new capital."
+      ],
+      "publication_status": "candidate_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -28004,7 +28078,7 @@
     }
   ],
   "last_research_date": "2026-10-25",
-  "instruction_commit_sha": "b73570fedbaa9e17b6ed2f35c00631540ccd917e",
+  "instruction_commit_sha": "326750156aaaad5757aec5f3a0e29c630578382e",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
