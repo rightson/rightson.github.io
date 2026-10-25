@@ -18163,6 +18163,37 @@
           "Epoch AI methodology is an original researcher model,not issuer shipment disclosure. Readable sections explicitly describe estimated TPU spending/BOM/margins with uncertainty and focus on2024-2025 TPU sales;NVIDIA revenue model throughOctober2025. Retrieval freshness does not make it a current2026 procurement-allocation change. No MediaTek loss or new Broadcom award inferred from a historical model.",
           "Only A-topic public source/research stages appended;no equity quotes,valuation,targets,holdings,private market-flow data or trading conditions. No article,lint,build,deploy or public-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-26",
+        "checked_at": "2026-10-25 19:38:41 UTC",
+        "instruction_commit_sha": "562dd46391ccdc581e69c83d1bc170fb8f45d213",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "0ed6c23ff4531ce587364fe32f3bed159e34b30e",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_and_aws_capacity_historical_comparison_completed_no_material_increment",
+        "scope": "All98 active names included in14 fresh grouped discovery queries;six official core indices and4 supplemental CSP/core/Taiwan queries checked. New AWS October23interview reporting compared with July30historical call and issuer results;155 public events,382 prior candidates and accessible prior notices compared. One source-comparison candidate added;no new material event or article.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.reuters.com/business/retail-consumer/amazon-cloud-capacity-sold-out-through-2027-ceo-jassy-says-2026-10-23/",
+          "https://english.aawsat.com/technology/5333016-ceo-amazon-cloud-capacity-sold-out-through-2027",
+          "https://www.youtube.com/watch?v=-YMMRQ1qscI",
+          "https://www.investing.com/news/stock-market-news/amazon-beats-estimates-for-quarterly-cloud-revenue-growth-4826048",
+          "https://www.investing.com/news/transcripts/earnings-call-transcript-amazon-tops-q2-2026-estimates-as-aws-growth-accelerates-93CH-4826442",
+          "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx"
+        ],
+        "source_limits": [
+          "Fresh metadata/default head and complete same-commit required instructions,specifications,configuration,taxonomy,series,progress and three related article blobs retrieved. Fresh full alpha-quant CSV retains98 active names and unchanged blob. Grouped search inclusion is not98 individual current-filing validations;primary economic coverage remains partial.",
+          "Six official indices accessible;latest dates remain TSMC October15,MediaTek September30,NVIDIA October22,AMD October12,Broadcom October21,Marvell October13. No authenticated new TPU design award,NRE,Google procurement split or guidance change found in retrieved material.",
+          "Fresh grouped search output largely historical financial summaries,encyclopedia and theme pages;recall and freshness limited. AWS capacity wording initially appeared new to this ledger;July30call/reporting supplies substantially equivalent2027/2028 reservation statements. No quantified increment,formal new capex increase or named-supplier earnings revision established.",
+          "Only A-topic public source/research stages appended;no equity quotes,valuation,targets,holdings,private market-flow data or trading conditions. No article,lint,build,deploy or public-content completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -28254,6 +28285,36 @@
         "Verify repeatable economics across clusters and any named procurement or storage-supplier mix change."
       ],
       "publication_status": "research_candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "amazon-jassy-a16z-capacity-booking-restatement-versus-july30-baseline-20261023",
+      "date": "2026-10-26",
+      "event_date": "2026-10-23",
+      "instruction_commit_sha": "562dd46391ccdc581e69c83d1bc170fb8f45d213",
+      "companies": [
+        "Amazon / AWS"
+      ],
+      "sources": [
+        "https://www.reuters.com/business/retail-consumer/amazon-cloud-capacity-sold-out-through-2027-ceo-jassy-says-2026-10-23/",
+        "https://english.aawsat.com/technology/5333016-ceo-amazon-cloud-capacity-sold-out-through-2027",
+        "https://www.youtube.com/watch?v=-YMMRQ1qscI",
+        "https://www.investing.com/news/stock-market-news/amazon-beats-estimates-for-quarterly-cloud-revenue-growth-4826048",
+        "https://www.investing.com/news/transcripts/earnings-call-transcript-amazon-tops-q2-2026-estimates-as-aws-growth-accelerates-93CH-4826442",
+        "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx"
+      ],
+      "stage": "october23_interview_reporting_compared_with_july30_call_no_quantified_booking_increment",
+      "facts": {
+        "october23": "Reuters attributes to Amazon CEO Andy Jassy's a16z interview:2026 capacity sold out,2027 largely sold out,and a substantial portion of2028 sold,with capacity reserved for on-demand Bedrock/EC2. No booking amount,capacity denominator,cancellation terms or incremental supplier allocation disclosed.",
+        "historical_comparison": "July30 Reuters original reporting and the readable Q2 call transcript already attributed largely reserved2027 capacity and significant2028 reservations to Jassy. July30 call also already described approximatelyUSD220bn2026cashcapex,up fromUSD200bn. October wording alone does not establish additional bookings or a formal spending revision.",
+        "issuer_baseline": "July30 issuer Q2 release verifies AWS growth36.7% and trailing12-month free-cash outflowUSD7.6bn;both historical,not new October results. AI/chip annualized revenue figures also already disclosed in July.",
+        "source_limits": "Reuters original indexed body and full syndicated copy retrieved;syndications count as one reporting source. Official YouTube episode title located but full original audiovisual/transcript retrieval unavailable;third-party transcript used only as attributed corroboration. No claim that the complete interview was independently heard. New-to-ledger source comparison is not necessarily new-to-market information.",
+        "limits": "Capacity reservations are distinct from energization,deployment,utilization,recognized revenue and cash collection. No named Taiwan supplier design win,procurement split,margin change or earnings revision verified."
+      },
+      "questions": [
+        "Obtain comparable subsequent issuer backlog,capacity additions,contract cancellations and cash-conversion disclosures.",
+        "Verify named equipment orders and delivery/energization before attributing supplier earnings changes."
+      ],
+      "publication_status": "research_candidate_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -28273,7 +28334,7 @@
     }
   ],
   "last_research_date": "2026-10-26",
-  "instruction_commit_sha": "5e8dd6d03c7e2f180019feb22a90157069a48637",
+  "instruction_commit_sha": "562dd46391ccdc581e69c83d1bc170fb8f45d213",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
