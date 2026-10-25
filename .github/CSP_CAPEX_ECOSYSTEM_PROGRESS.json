@@ -17723,6 +17723,37 @@
           "Global discovery repeats previously recorded financing concerns, TPU reporting, STL/HFCL story and prospective earnings-week previews. Prior notices,155 events and371 existing candidates compared; no new notification-level evidence. HFCL source gap remains unresolved.",
           "Only A-topic sources/research stages recorded; no equity prices, valuations, targets, holdings, private flows or trading conditions. No article, lint/build/deploy/public-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-25",
+        "checked_at": "2026-10-25 04:36:44 UTC",
+        "instruction_commit_sha": "12872a7100937b8850543999ce3ebdecf171b8ae",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "e52a6ed3d7b1e2f9f5002e8c80f0a7c1a97745e4",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_checked_no_material_increment",
+        "scope": "All98 active names included in14 fresh date-restricted grouped discovery queries; six core official indices and three global/core supplemental queries checked. Four source/date followups covered TSMC latest index, PCB material forecast, substrate prepayment report and an outside-universe equipment lead. Compared with155 events,372 candidates and accessible notices; no new event, candidate or article.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://money.udn.com/money/story/5607/9834900",
+          "https://money.udn.com/money/story/5612/9834192",
+          "https://readmo.cmoney.tw/article/d6d90b15-47ad-4e4a-a8ba-2184b621a76c"
+        ],
+        "source_limits": [
+          "Full same-commit mandatory instructions, specifications, taxonomy, series, config, progress and three related article blobs retrieved; hashes of instructions/specifications/articles unchanged from fully read versions. Fresh alpha-quant metadata, head and full active98 CSV retrieved; universe unchanged.",
+          "Grouped discovery returned primarily historical notices, issuer indices, commentary and valuation/social pages. Date restriction is a search aid, not proof of source freshness. No claim of98 individual latest-filings verification; retained issuer economics coverage remains partial.",
+          "Core official latest dates unchanged: TSMC October15, MediaTek September30, NVIDIA October22, AMD October12, Broadcom October21, Marvell October13. No newly authenticated TPU award, NRE, procurement split or core guidance revision.",
+          "October24 PCB report9834900 repeats the forecast20%2027 materials gap already covered by October23 reporting. No newly obtained institutional model, realized supply deficit or supplier margin revision established.",
+          "October24 substrate prepayment original9834192 reread. Existing candidate distinguishes headline from analyst/industry estimates; suppliers decline single-customer comment. No new authenticated receipt, cancellation/refund terms or current budget amendment. Prior NVIDIA capacity-reservation primary event retained separately.",
+          "Outside-universe equipment page did not supply verifiable current issuer award/economic terms; product/topic discussion is not a confirmed CSP customer relationship. Global search mostly repeated historical forecasts, Nscale/Amazon/financing concerns and TPU reports. No new long-form article increment.",
+          "Public update contains A-topic sources and research stage only; no equity prices, valuations, targets, holdings, private flows or trading conditions. No article, lint/build/deploy/public-content completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -27594,7 +27625,7 @@
     }
   ],
   "last_research_date": "2026-10-25",
-  "instruction_commit_sha": "190282f4447b0dea8b5430e3f43526265824ad8e",
+  "instruction_commit_sha": "12872a7100937b8850543999ce3ebdecf171b8ae",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
