@@ -17628,6 +17628,39 @@
           "Public event records issuer sources and reported operating facts only. Contract economics and customer-specific profitability remain undisclosed; insufficient independent cost/contract evidence for a complete long-form industry argument. No article, lint, build, deploy or public-content completion claimed.",
           "Public update contains A-topic sources and research stages only; no equity prices, valuations, targets, holdings, private flows or trading conditions."
         ]
+      },
+      {
+        "date": "2026-10-25",
+        "checked_at": "2026-10-25 02:18:11 UTC",
+        "instruction_commit_sha": "4d933f921c6c2d5c837196850a6b315d3db17a3a",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "62f1a8a178580521b2b9ec389ae4758f1da2d335",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_checked_no_material_increment",
+        "scope": "All98 active names included in14 fresh grouped discovery queries; six core official indices, three supplemental global/core queries and six source/date followups checked. Compared with155 public events,371 candidates and accessible notifications. No new event, candidate or article.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.businessinsider.com/amazon-220-billion-ai-bet-data-centers-spending-challenges-2026-10",
+          "https://www.hfcl.com/investors/announcements",
+          "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=52bcff6e-34cb-4d4b-88ca-a59046342f27.pdf",
+          "https://money.udn.com/money/story/5607/9833413",
+          "https://money.udn.com/money/story/123398/9835542"
+        ],
+        "source_limits": [
+          "Full same-commit instructions, specifications, taxonomy, config, series, progress and three related article blobs retrieved. Fresh alpha-quant metadata, head and active98 CSV retrieved; universe blob unchanged. Grouped discovery is not98 individual current-filings verification; source and company economics coverage remains partial.",
+          "Core official index latest dates unchanged: TSMC October15, MediaTek September30, NVIDIA October22, AMD October12, Broadcom October21, Marvell October13. No new authenticated TPU award, NRE, Google procurement split or core guidance revision.",
+          "Grouped discovery mainly historical news, commentary and social posts. October23 PCB original was reread and matches previously tracked research coverage; no original comparable broker model or new issuer economics revision established.",
+          "Amazon Early Rack Receipt article appeared again in fresh search; existing public event already records timing of payment versus energization. Direct original remains inaccessible. Re-indexing does not establish a new capex cut, rack cancellation or named-supplier profit revision.",
+          "HFCL issuer announcement index unchanged; linked earnings document and BSE original still inaccessible. Existing source-limited candidate remains incomplete; failure is not evidence of stable economics. Prior STL primary event and notice were not repeated.",
+          "October24 23:21 UDN translation of IPO commentary checked: describes a possible Anthropic delay and hypothetical financing effects, not an announced postponement, completed offering or executed cloud-order cancellation. Existing financing/demand-quality candidates retained.",
+          "Public update contains A-topic sources and research completion stages only. No equity prices, valuations, targets, holdings, private flows or trading conditions. No article drafted; no lint/build/deploy/public-content completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -27475,7 +27508,7 @@
     }
   ],
   "last_research_date": "2026-10-25",
-  "instruction_commit_sha": "7e261c247ecfae2b8861b49c3b571f3aa325f1eb",
+  "instruction_commit_sha": "4d933f921c6c2d5c837196850a6b315d3db17a3a",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
