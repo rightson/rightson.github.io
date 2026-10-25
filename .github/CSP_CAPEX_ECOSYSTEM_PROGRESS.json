@@ -7054,6 +7054,48 @@
         "limits": "Issuer table supplies revenue, operating and pretax income and EPS, not a full Q3 cash-flow statement. No AI-only profit attribution. Detailed presentation PDF retrieval unsuccessful; source reporting differs on precise ASP changes, so no precise ASP uplift adopted as primary fact."
       },
       "status": "issuer_numeric_self_assessed_table_verified_new_profit_baseline_no_article"
+    },
+    {
+      "fingerprint": "stl-q2-fy27-optical-connectivity-orders-operating-conversion-20261023",
+      "event_date": "2026-10-23",
+      "discovered_date": "2026-10-25",
+      "instruction_commit_sha": "7e261c247ecfae2b8861b49c3b571f3aa325f1eb",
+      "companies": [
+        "Sterlite Technologies"
+      ],
+      "type": "issuer_quarterly_order_and_operating_conversion",
+      "sources": [
+        "https://stl.tech/wp-content/uploads/2026/10/Q2FY27%20-%20Earnings%20Call%20Presentation.pdf",
+        "https://stl.tech/wp-content/uploads/2026/10/Result%20Sheet%20Q2%20FY%2027_SignedF.pdf",
+        "https://stl.tech/press-release/stls-subsidiary-announces-supply-agreement-valued-over-dollar1bn-with-a-hyperscaler-for-ai-ready-data-center-build-outs/"
+      ],
+      "facts": {
+        "period": "Q2 FY27 ended September 30, 2026; H1 FY27 where specified",
+        "currency": "INR",
+        "unit": "crore",
+        "q2_revenue": 2529,
+        "q2_revenue_yoy_growth_pct_approx": 145,
+        "operational_ebitda": 685,
+        "operational_ebitda_margin_pct": 27.1,
+        "operational_ebitda_margin_qoq_increase_bps": 624,
+        "q2_reported_ebitda": 846,
+        "one_time_us_tariff_refund_gain": 161,
+        "h1_end_backlog": 35274,
+        "fy26_end_backlog": 7687,
+        "q3_fy27_backlog_schedule": 3021,
+        "new_hyperscaler_lta_usd_bn": 1.2,
+        "lta_calendar_years": "2026–2030",
+        "separate_hyperscaler_product_award_letter_usd_bn": 1.11,
+        "award_fiscal_years": "FY27–FY29",
+        "h1_operating_cashflow": 692,
+        "prior_year_h1_operating_cashflow": 268,
+        "h1_trade_receivables_cash_absorption": 568,
+        "h1_ppe_cash_outflow": 257,
+        "h1_net_equity_issuance_proceeds": 1477,
+        "evidence_nature": "Issuer October23 presentation and consolidated limited-review results. Operational EBITDA excludes tariff refund. Backlog schedule is not revenue guidance; Product Award Letter and long-term agreement have different maturity. May22 original already disclosed a greater-than-USD1bn Product Award Letter; not counted again as a fresh October order.",
+        "limits": "Customers unnamed; cancellation/minimum-take/pricing terms undisclosed. Higher connectivity mix and scale accompany margin improvement; causal contribution not separately quantified. New outside-universe issuer baseline, not a revision to a previously recorded issuer forecast."
+      },
+      "status": "issuer_primary_order_operating_and_cashflow_baseline_verified_no_article"
     }
   ],
   "articles": [],
@@ -17554,6 +17596,38 @@
           "Reuters October 15 financing-expectation reporting is historical context; no executed cloud-order cancellation or CSP capex cut established. October 24 Breakingviews is commentary synthesizing already recorded Nscale and NextDC project/financing events. October 19 and October 23 linked originals checked; no fresh supplier economics revision inferred.",
           "Public update contains A-topic sources, coverage and research stage only. No equity prices, valuations, targets, holdings, private flows or trading conditions. No article drafted; no lint, build, deploy or public-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-25",
+        "checked_at": "2026-10-25 01:13:19 UTC",
+        "instruction_commit_sha": "7e261c247ecfae2b8861b49c3b571f3aa325f1eb",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "62f1a8a178580521b2b9ec389ae4758f1da2d335",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_checked_one_new_primary_optical_event",
+        "scope": "All98 active names included in14 fresh grouped discovery queries, six official core indices and three supplemental queries. Outside-universe discovery followed to issuer documents. One new STL event and one source-limited HFCL candidate; no article.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.financialexpress.com/market/stock-insights/massive-rs-64000-cr-order-books-2-indian-stocks-cashing-in-on-ais-hunger-for-fibre/4368816/",
+          "https://www.hfcl.com/investors/announcements",
+          "https://stl.tech/download/",
+          "https://stl.tech/wp-content/uploads/2026/10/Q2FY27%20-%20Earnings%20Call%20Presentation.pdf",
+          "https://stl.tech/wp-content/uploads/2026/10/Result%20Sheet%20Q2%20FY%2027_SignedF.pdf",
+          "https://stl.tech/press-release/stls-subsidiary-announces-supply-agreement-valued-over-dollar1bn-with-a-hyperscaler-for-ai-ready-data-center-build-outs/"
+        ],
+        "source_limits": [
+          "Full same-commit mandatory instructions, specifications, taxonomy, series, progress and three related articles retrieved. Fresh universe metadata and active98 CSV checked; CSV unchanged.",
+          "Grouped discovery is not98 individual current-filings verification. Core indices latest dates unchanged: TSMC October15, MediaTek September30, NVIDIA October22, AMD October12, Broadcom October21, Marvell October13. No newly authenticated TPU award, NRE, procurement split or core guidance revision.",
+          "STL and HFCL are outside the active98 list. Demand relationship established by STL issuer hyperscaler agreement/award disclosures; no watchlist modification. HFCL primary-document failure retained as a candidate, not a verified operating event.",
+          "Public event records issuer sources and reported operating facts only. Contract economics and customer-specific profitability remain undisclosed; insufficient independent cost/contract evidence for a complete long-form industry argument. No article, lint, build, deploy or public-content completion claimed.",
+          "Public update contains A-topic sources and research stages only; no equity prices, valuations, targets, holdings, private flows or trading conditions."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -27359,6 +27433,29 @@
         "Verify equipment delivery,commissioning,utilization,customer qualification and cash conversion."
       ],
       "publication_status": "not_drafted_no_material_alert"
+    },
+    {
+      "key": "hfcl-q2-fy27-hyperscaler-mix-guidance-primary-completion-20261025",
+      "date": "2026-10-25",
+      "event_date": "2026-10-19",
+      "instruction_commit_sha": "7e261c247ecfae2b8861b49c3b571f3aa325f1eb",
+      "companies": [
+        "HFCL"
+      ],
+      "sources": [
+        "https://www.financialexpress.com/market/stock-insights/massive-rs-64000-cr-order-books-2-indian-stocks-cashing-in-on-ais-hunger-for-fibre/4368816/",
+        "https://www.hfcl.com/investors/announcements",
+        "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=52bcff6e-34cb-4d4b-88ca-a59046342f27.pdf"
+      ],
+      "stage": "new_outside_universe_original_feature_read_primary_results_document_unavailable",
+      "facts": {
+        "reported": "October25 feature reports FY27 revenue growth expectation raised to at least80%, Q2 revenue INR2541.8crore, EBITDA margin25.9% and backlog INR28911crore; linked to hyperscaler cable/connectivity demand.",
+        "limits": "Issuer announcement index confirms October19 results releases, but linked earnings document failed and BSE original returned403. Numeric operating/mix claims remain secondary-source leads; no primary cash-flow conversion verified."
+      },
+      "questions": [
+        "Retrieve complete issuer presentation and limited-review results, including cash flow and guidance sequence.",
+        "Verify hyperscaler exposure, backlog delivery/cancellation terms and preform investment funding before full economic comparison."
+      ]
     }
   ],
   "blockers": [
@@ -27378,7 +27475,7 @@
     }
   ],
   "last_research_date": "2026-10-25",
-  "instruction_commit_sha": "dcddc365a7baa6f16029c74c13cd5758aba93223",
+  "instruction_commit_sha": "7e261c247ecfae2b8861b49c3b571f3aa325f1eb",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
