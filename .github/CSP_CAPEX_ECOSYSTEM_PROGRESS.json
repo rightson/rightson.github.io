@@ -17661,6 +17661,37 @@
           "October24 23:21 UDN translation of IPO commentary checked: describes a possible Anthropic delay and hypothetical financing effects, not an announced postponement, completed offering or executed cloud-order cancellation. Existing financing/demand-quality candidates retained.",
           "Public update contains A-topic sources and research completion stages only. No equity prices, valuations, targets, holdings, private flows or trading conditions. No article drafted; no lint/build/deploy/public-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-25",
+        "checked_at": "2026-10-25 03:23:42 UTC",
+        "instruction_commit_sha": "cbd527995223a3632afaa98eb5685665fb6cbc63",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "e52a6ed3d7b1e2f9f5002e8c80f0a7c1a97745e4",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_checked_no_material_increment",
+        "scope": "All98 active names included in14 fresh grouped discovery queries; six core official indices and three global/core supplemental queries checked. Four followups addressed TSMC index date, WNC issuer index, rack/chassis announcement search and a historical financing-newsletter lead. Compared with155 public events,371 candidates and accessible notifications; no new event, candidate or article.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.wnc.com.tw/investors/announcement",
+          "https://tw.finance.yahoo.com/quote/3013/announcement",
+          "https://www.ft.com/content/5970614a-b1f7-4b4e-b1e5-6038e1dde654"
+        ],
+        "source_limits": [
+          "Mandatory instructions, specifications, full progress blob, taxonomy, config, series and three related article blobs retrieved at the instruction commit. Instruction/specification/article blob SHAs unchanged from previously fully read versions.",
+          "Fresh alpha-quant default-branch head advanced to e52a6ed3d7b1e2f9f5002e8c80f0a7c1a97745e4; full active98 universe CSV retrieved and blob unchanged. No watchlist modification. Grouped discovery is not98 individual latest-filings verification; current issuer economics coverage remains partial.",
+          "Six core official index latest dates unchanged: TSMC October15, MediaTek September30, NVIDIA October22, AMD October12, Broadcom October21 and Marvell October13. No newly authenticated TPU award, NRE, Google procurement split or core earnings-guidance revision.",
+          "Grouped results mainly historical earnings, forecasts, commentary and social posts. WNC original announcement index latest entry October8 revenue; rack/chassis announcement search shows historical October8 revenue but direct Yahoo body unavailable. No fresh customer award or operating conversion inferred.",
+          "Supplemental results repeat recorded Nscale/NextDC, Amazon payment-versus-energization, S&P disclosure concerns, prior TPU reports and PCB forecasts. New earnings-week preview is prospective. Historical FT financing newsletter is indexed but original inaccessible; no new executed borrowing terms, defaults, cancellations or supplier revision verified.",
+          "Previously notified STL event and other accessible notices compared without repetition. HFCL existing primary-source gap retained; no new evidence this round. No independent long-form article increment established.",
+          "Public update contains only A-topic sources and research completion stages; no equity prices, valuations, targets, holdings, private flows or trading conditions. No article, lint, build, deploy or public-content completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -27508,7 +27539,7 @@
     }
   ],
   "last_research_date": "2026-10-25",
-  "instruction_commit_sha": "4d933f921c6c2d5c837196850a6b315d3db17a3a",
+  "instruction_commit_sha": "cbd527995223a3632afaa98eb5685665fb6cbc63",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
