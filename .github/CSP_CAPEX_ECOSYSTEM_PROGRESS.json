@@ -17816,6 +17816,40 @@
           "LS Materials October13 order matches existing primary event and candidate;no new delivery,margin or cash evidence. STL/HFCL feature,CSP financing reports and MediaTek TPU reports repeat existing or historical sources. Ardentec commentary page inaccessible;no new claim adopted.",
           "Public update contains A-topic sources/research stages only;no equity prices,valuation,targets,holdings,private market flows or trading conditions. No article,lint,build,deploy or public-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-25",
+        "checked_at": "2026-10-25 07:35:35 UTC",
+        "instruction_commit_sha": "19b84146146fa6ce137f9a6007fdcbc631111256",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "188cb481a496eb0ff7625d1dfb4f0655e8d744aa",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_checked_source_reconciliation_candidate_added",
+        "scope": "All98 active names included in14 fresh grouped discovery queries. Six official core indices and three global/core supplemental queries checked. Followups covered Auras historical delivery timing and source discrepancy,Sigurd/Macronix cumulative equipment disclosures and a historical MediaTek newsletter.155 events and373 prior candidates compared;one source-reconciliation candidate added,no new material event or article.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://money.udn.com/money/story/5739/9835369",
+          "https://money.udn.com/money/story/5607/9801243",
+          "https://www.ttv.com.tw/finance/view/1020262211003B9B017F7F2244B8810409DE41030869329A/587",
+          "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ef0fc4c4-fdaa-4f3b-b06c-561e77fc2164",
+          "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=da4b620b-3491-431e-b8e7-a2610a2a60d7",
+          "https://cwnewsroom.substack.com/p/mediatek-ai-asic-reakout-award-winning-research-help-secure-new-google-tpu-orders"
+        ],
+        "source_limits": [
+          "Complete fresh immutable required instruction/specification/config/taxonomy/series/progress and three related article blobs retrieved;hashes unchanged from previously fully read versions. Fresh alpha-quant metadata/head/full CSV retrieved;active98 universe unchanged.",
+          "Grouped discovery covers98 names inqueries,not98 individual latest-filings validations. Results predominantly indices,historical notices,forecasts,commentary and social/valuation pages. Date restrictions are not proof of publication freshness;issuer economics validation remains partial.",
+          "Core official latest dates unchanged:TSMC October15,MediaTek September30,NVIDIA October22,AMD October12,Broadcom October21,Marvell October13. No authenticated new TPU award,NRE,procurement allocation or guidance revision.",
+          "Auras October25 warrant lead is a re-presentation of older delivery/flood issues. October8 UDN and October22 MoneyDJ republication have conflictingQ3 revenue totals;issuer original and realized margins/cash not obtained. Broker-hosted source inaccessible. Candidate retains reconciliation questions,no material alert.",
+          "Sigurd Advantest TWD708m February13–October22 and Macronix Applied Materials TWD1.823623120bn April20–October22 match existing candidates. Cumulative purchases are not single-day new orders or new capital-budget revisions.",
+          "Outside-universe/global discovery repeats STL/HFCL,Nokia,Supermicro,Nscale and financing sources already tracked. MediaTek newsletter is datedApril11 and paywalled beyond unrelated introduction;not a new October TPUaward. No current commercial terms inferred from old or social reports.",
+          "Public update contains A-topic sources/research stages only;no equity prices,valuations,targets,holdings,private market flows or trading conditions. No article,lint,build,deploy or public-content completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -27694,6 +27728,28 @@
         "Check for authenticated customer delivery changes; keep issuance timing separate from demand."
       ],
       "publication_status": "candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "auras-thailand-delivery-delay-and-liquid-cooling-mix-source-reconciliation-20261025",
+      "date": "2026-10-25",
+      "source_date": "2026-10-08 to 2026-10-25",
+      "instruction_commit_sha": "19b84146146fa6ce137f9a6007fdcbc631111256",
+      "companies": [
+        "Auras / 雙鴻"
+      ],
+      "sources": [
+        "https://money.udn.com/money/story/5607/9801243",
+        "https://www.ttv.com.tw/finance/view/1020262211003B9B017F7F2244B8810409DE41030869329A/587",
+        "https://money.udn.com/money/story/5739/9835369"
+      ],
+      "stage": "historical_media_delivery_timing_and_mix_lead_read_issuer_reconciliation_pending",
+      "facts": "October8 reporting already describes late-September Thailand flooding and customer pickup delays intoQ4. October22 MoneyDJ republication discusses delayed ASIC cooling projects and future manifold output;October25 warrant commentary repeats delivery/mix assumptions. Reports conflict onQ3 revenue:UDN9.229bn versusMoneyDJ9.791bn TWD. Current issuer totals,mix,actual production and realized margin not authenticated;no numeric baseline upgraded. This is a historical delivery-timing lead,not newly confirmed cancellation or current-quarter profit revision.",
+      "questions": [
+        "Reconcile original issuer monthly totals andQ3 reporting before adopting conflicting secondary revenue figures.",
+        "Verify delayed deliveries actually recognized and distinguish flood-related timing from weaker demand.",
+        "Authenticate liquid-cooling mix,utilization,gross profit and cash using issuer data;broker projections and warrant copy are not actual results."
+      ],
+      "publication_status": "candidate_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -27713,7 +27769,7 @@
     }
   ],
   "last_research_date": "2026-10-25",
-  "instruction_commit_sha": "464130d975312dd7deb19981440f165e26c34436",
+  "instruction_commit_sha": "19b84146146fa6ce137f9a6007fdcbc631111256",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
