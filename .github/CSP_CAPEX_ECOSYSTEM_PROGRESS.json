@@ -18223,6 +18223,34 @@
           "October25EconomicDaily DSX POD report describes a reference design and planned early2027delivery. Related Vertiv DSX source/model baseline was previously recorded,but the specific NVIDIA POD release was not reopened this round. Reported deployment-speed and efficiency figures remain attributed vendor claims,not accepted customer installations or supplier profit revisions. October23PCB story direct retrieval unsuccessful;discovery-only commentary not adopted as a new numeric earnings revision.",
           "Only A-topic public source/research stages appended;no equity quotes,valuation,targets,holdings,private market-flow data or trading conditions. No article,lint,build,deploy or public-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-26",
+        "checked_at": "2026-10-25 21:40:47 UTC",
+        "instruction_commit_sha": "aa2c8043c9c38573ee154e179fb852c269a787f6",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "0ed6c23ff4531ce587364fe32f3bed159e34b30e",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_core_indices_and_broadcom_official_fallback_checked_no_material_increment",
+        "scope": "All98 active names included in14 fresh grouped discovery queries;6official core index URLs attempted and3stronger global/core supplemental discovery queries checked. Broadcom financial-news index403 was supplemented with readable official investor homepage.155public events,383candidates and accessible prior notices compared;no new material event,candidate or article.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://money.udn.com/rank/newest/1001/5590sub_8044"
+        ],
+        "source_limits": [
+          "Fresh repository metadata/default heads and complete same-commit mandatory instructions,configuration,taxonomy,series,specifications,progress and3related article blobs retrieved. Instruction/spec/article hashes unchanged from previously read versions. Fresh full alpha-quant CSV retains98active names and unchanged blob;grouped discovery is not98individually verified current issuer filings.",
+          "TSMC official index latestOctober15,MediaTek September30,NVIDIA October22,AMD October12,Marvell October13. Broadcom financial-news index403 this round;official investor homepage accessible and listsOctober21Arcot,October20FedEx,October19DOCOMO,October13HyperArmor andOctober8OCP. Fallback confirms visible current headlines,not complete coverage of all release bodies.",
+          "Most fresh discovery returns were historical company notices,monthly-revenue summaries,commentary or thematic tables. No newly authenticated TPU design award,NRE,Google procurement allocation or core issuer guidance revision established. Hyperscaler financing and capex stories returned with July/August/earlier dates cannot be treated as new October disclosures.",
+          "October23LongwideSeptember self-assessed profit item already matches existing candidate longwide-september-self-reported-profit-versus-acceptance-and-cash-20261023;different monthly/quarterly periods and equipment acceptance timing remain unresolved. No duplicate alert. PCB thematic commentary and recycled JPC headline do not add an authenticated earnings revision.",
+          "Only A-topic public sources,research coverage and stages appended;no equity quotes,valuation,targets,holdings,private market flows or trading conditions. No article,lint,build,deploy or public-content completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -28363,7 +28391,7 @@
     }
   ],
   "last_research_date": "2026-10-26",
-  "instruction_commit_sha": "b6f652890532b632d8d8c9738308c4b981095928",
+  "instruction_commit_sha": "aa2c8043c9c38573ee154e179fb852c269a787f6",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
