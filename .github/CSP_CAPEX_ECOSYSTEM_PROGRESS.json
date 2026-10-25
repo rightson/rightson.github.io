@@ -17881,6 +17881,34 @@
           "Auras warrant commentary,PCB forecasts and cumulative supplier equipment notices repeat existing candidates. Global/outside-universe leads repeat STL/HFCL,Nokia,SLB and existing financing evidence;no current standalone margin/cash or named Taiwan allocation added.",
           "Public update contains A-topic sources/research stages only;no equity prices,valuations,targets,holdings,private market flows or trading conditions. No article,lint,build,deploy or public-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-25",
+        "checked_at": "2026-10-25 10:06:45 UTC",
+        "instruction_commit_sha": "fd70d2b58d22b7399ffbe8feaa219fe2df024f3c",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "188cb481a496eb0ff7625d1dfb4f0655e8d744aa",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_core_index_check_with_broadcom_access_gap_historical_steel_candidate_added",
+        "scope": "All98 active names included in14 fresh grouped discovery queries;five core official indices read,Broadcom direct access failed with indexed fallback only. Three global/core supplemental queries and targeted source followups completed. Compared155 events,375 prior candidates and accessible notices;one historical outside-universe research lead added,no material event or article.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.mbel.in/investors",
+          "https://financialfilings.com/filings/m-b-engineering-limited/interim-quarterly-report/2026/55127233/"
+        ],
+        "source_limits": [
+          "Fresh same-commit mandatory instructions,configuration,taxonomy,series,research specifications,full ledger and three related article blobs retrieved. Fresh alpha-quant metadata/head/full CSV retained98 active names. Grouped discovery does not validate98 individual latest filings;primary economics coverage remains partial.",
+          "Five accessible core indices show latest dates TSMC October15,MediaTek September30,NVIDIA October22,AMD October12,Marvell October13. Broadcom direct index returned403 on repeated open;indexed fallback shows October21,not a complete current official-index verification. No authenticated new TPU award,NRE,procurement split or guidance revision found in available material.",
+          "Grouped results repeat prior PCB forecasts,Auras commentary,cumulative equipment notices and existing optical/test sources. Hon Hai subsidiary equity transactions match an existing candidate. Global results repeat STL/HFCL,financing concerns and Oracle force-majeure reporting;the latter traces to September24 rather than a new October notice.",
+          "M&B October25 feature available through indexed text only;issuer index read but linked June2026 presentation and results PDFs failed. August10 filing reproduction establishes historical expansion rationale,not a current confirmed data-center contract. Operating and reported EBITDA definitions require primary-source reconciliation.",
+          "Public ledger update contains A-topic source and research stages only;no equity prices,valuations,targets,holdings,private market flows or trading conditions. No article,lint,build,deploy or public-content completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -27804,6 +27832,28 @@
         "Reconcile allocated capacity,qualification,margin and delivery with the existing NVIDIA partnership."
       ],
       "publication_status": "candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "mb-engineering-heavy-structural-steel-datacenter-expansion-historical-baseline-20261025",
+      "date": "2026-10-25",
+      "source_date": "2026-08-10",
+      "instruction_commit_sha": "fd70d2b58d22b7399ffbe8feaa219fe2df024f3c",
+      "companies": [
+        "M&B Engineering"
+      ],
+      "stage": "outside_universe_media_discovery_historical_filing_reproduction_found_issuer_pdf_unavailable",
+      "sources": [
+        "https://www.financialexpress.com/market/stock-insights/rs-1053-cr-order-book-22-9-roce-an-under-the-radar-smallcap-eyes-the-data-centre-boom/4368847/",
+        "https://www.mbel.in/investors",
+        "https://financialfilings.com/filings/m-b-engineering-limited/interim-quarterly-report/2026/55127233/"
+      ],
+      "facts": "October25 indexed feature points to August10 Q1FY27 materials. Filing reproduction links INR30crore Sanand heavy-structural-steel expansion from12000 to22000tonnes/year to data centers alongside high-rise/other projects,planned Q1FY28. Issuer investor page confirms June2026 presentation/results links;both PDFs inaccessible. No current named CSP order,data-center backlog share,commissioning confirmation or incremental profit validated. Historical capacity plan is a research lead,not a new October order.",
+      "questions": [
+        "Obtain issuer or exchange originals and reconcile reported versus operating EBITDA definitions.",
+        "Verify named data-center contracts,project economics and delivery dates independently of addressable-market estimates.",
+        "Check Sanand commissioning,utilization,working-capital absorption and cash conversion."
+      ],
+      "publication_status": "candidate_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -27823,7 +27873,7 @@
     }
   ],
   "last_research_date": "2026-10-25",
-  "instruction_commit_sha": "0d53d69ff341005c3ea7b06274054cadf7597503",
+  "instruction_commit_sha": "fd70d2b58d22b7399ffbe8feaa219fe2df024f3c",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
