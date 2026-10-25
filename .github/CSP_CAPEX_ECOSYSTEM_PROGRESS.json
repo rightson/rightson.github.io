@@ -17754,6 +17754,38 @@
           "Outside-universe equipment page did not supply verifiable current issuer award/economic terms; product/topic discussion is not a confirmed CSP customer relationship. Global search mostly repeated historical forecasts, Nscale/Amazon/financing concerns and TPU reports. No new long-form article increment.",
           "Public update contains A-topic sources and research stage only; no equity prices, valuations, targets, holdings, private flows or trading conditions. No article, lint/build/deploy/public-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-25",
+        "checked_at": "2026-10-25 06:25:40 UTC",
+        "instruction_commit_sha": "d2fc9a95a1e58889321016867dac8d4191db16da",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "188cb481a496eb0ff7625d1dfb4f0655e8d744aa",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_checked_no_material_increment",
+        "scope": "All98 active names included in14 fresh date-restricted grouped discovery queries. Six official core indices plus six global/core supplemental queries and targeted SLB/Humufish followups checked. Compared with155 events,372 candidates and available notices; no material new event,candidate or article established.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://investorcenter.slb.com/news-releases/news-release-details/slb-announces-third-quarter-2026-results",
+          "https://www.slb.com/newsroom/press-release/2026/pr-2026-1023-q3-2026-earnings-results",
+          "https://www.reuters.com/commentary/breakingviews/global-markets-breakingviews-2026-10-24/",
+          "https://www.financialexpress.com/market/stock-insights/massive-rs-64000-cr-order-books-2-indian-stocks-cashing-in-on-ais-hunger-for-fibre/4368816/"
+        ],
+        "source_limits": [
+          "Full immutable mandatory instructions,specifications,config,taxonomy,series,progress and three related article blobs retrieved and read; required hashes unchanged. Fresh alpha-quant metadata/head and full CSV retrieved;98 active names unchanged.",
+          "Grouped discovery primarily returned issuer/announcement indices,historical reporting,commentary and social/valuation pages. Search date filters do not authenticate publication freshness. This is not98 individual latest-filings verification; issuer economics coverage remains partial.",
+          "Core official latest dates unchanged:TSMC October15,MediaTek September30,NVIDIA October22,AMD October12,Broadcom October21,Marvell October13. No newly authenticated TPU award,NRE,procurement split or core guidance revision.",
+          "SLB October23 data-center growth lead matches existing slb-q3-2026-data-center-revenue-ramp-versus-project-costs-20261023 candidate. Fresh indexed issuer search supports previously recorded revenue; direct investor release returned403 and alternate issuer release failed. No new standalone margin,cash or named order confirmation; not upgraded or re-alerted.",
+          "STL/HFCL feature and Bernstein preview repeat existing notices/candidates. Humufish timing/yield reports trace to existing single-institution/unidentified-source estimates; no new issuer-confirmed timetable or economics obtained.",
+          "October24 Reuters Breakingviews roundup discovered through search; direct body inaccessible. Commentary summary supplies no authenticated new issuer spending amendment,cancellation or supplier profit revision. Older Microsoft accounting-based capex reduction headlines remain distinct from physical spending cuts.",
+          "No independent long-form article increment established. Public update contains A-topic sources/research stage only; no equity prices,valuation,targets,holdings,private flows or trading conditions. No article,lint,build,deploy or public-content completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -27625,7 +27657,7 @@
     }
   ],
   "last_research_date": "2026-10-25",
-  "instruction_commit_sha": "12872a7100937b8850543999ce3ebdecf171b8ae",
+  "instruction_commit_sha": "d2fc9a95a1e58889321016867dac8d4191db16da",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
