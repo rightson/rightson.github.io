@@ -17939,6 +17939,35 @@
           "STM July23 issuer script and results read as a new historical research baseline,not an October earnings revision. Datacenter revenue ambitions remain conditional;broader RFOC margin and group cash flow do not establish standalone AI economics. October29 Q3 report remains pending.",
           "Public update contains A-topic sources and research stages only;no equity quotes,valuations,targets,holdings,private market flows or trading conditions. No article,lint,build,deploy or public-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-25",
+        "checked_at": "2026-10-25 12:09:09 UTC",
+        "instruction_commit_sha": "2940c83e9ac0b2ad8835df9169e4f871658fae12",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "188cb481a496eb0ff7625d1dfb4f0655e8d744aa",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_official_indices_checked_reported_copper_execution_candidate_added",
+        "scope": "All98 active universe names included in14 fresh grouped queries;six official core news indices and three global/core supplemental queries checked. Targeted MediaTek provenance and outside-universe copper-supply followups completed. Compared155 public events,377 prior candidates and accessible notices;one reported project-stage candidate added,no material event or article.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.miningweekly.com/article/grupo-mexico-to-press-ahead-with-major-us-copper-projects-after-output-dip-2026-10-23/page%3A2",
+          "https://mexico-now.com/grupo-mexico-plans-to-spend-us6-billion-in-asarco/"
+        ],
+        "source_limits": [
+          "Fresh metadata/default head and full same-commit mandatory instruction,specification,configuration,taxonomy,series,ledger and three recent related article blobs retrieved;instruction/article hashes unchanged. Fresh alpha-quant full CSV retains98 active names. Grouped discovery is not98 individual latest-filings validation;primary company-economic coverage remains partial.",
+          "Six official core indices accessible and latest dates unchanged:TSMC October15,MediaTek September30,NVIDIA October22,AMD October12,Broadcom October21,Marvell October13. Broadcom financial-news path used. No newly authenticated TPU award,NRE,procurement split or issuer guidance revision found.",
+          "Grouped output mainly historical announcement indices,prior PCB forecasts,Auras warrant commentary and valuation/social material. Sigurd cumulative equipment notice is already tracked. Date filters do not authenticate publication freshness. Global output repeats STL/HFCL,M&B,Meta cash-flow and existing supplier results;social comments are not evidence of new earnings.",
+          "MediaTek October25 Citi commentary repeats existing October22 attribution candidate;old/new forecast bridge,broker original and current customer terms remain unavailable. August AMD/TPU competition stories are not October25 developments.",
+          "Asarco October22 reporting read through Reuters reproduction and MEXICONOW,not issuer originals. USD4–6bn plan matches earlier floated scale;feasibility,restart and physical delivery remain distinct. Direct Reuters unavailable and historical Yahoo source429;not new confirmed copper supply or a named AI customer award.",
+          "Public update includes A-topic sources/research stages only;no equity quotes,valuations,targets,holdings,private market flows or trading conditions. No new article or lint/build/deploy/public-content completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -27906,6 +27935,29 @@
         "Check capex commissioning,utilization,working capital and cash conversion;named customer allocation remains unverified."
       ],
       "publication_status": "historical_baseline_candidate_no_material_alert_no_article"
+    },
+    {
+      "key": "grupo-mexico-asarco-copper-expansion-reported-stage-versus-ai-supply-relief-20261022",
+      "date": "2026-10-25",
+      "source_date": "2026-10-22",
+      "instruction_commit_sha": "2940c83e9ac0b2ad8835df9169e4f871658fae12",
+      "companies": [
+        "Grupo Mexico",
+        "Asarco"
+      ],
+      "stage": "outside_universe_original_reporting_reproduction_read_prior_plan_and_feasibility_limits_identified_primary_execution_pending",
+      "sources": [
+        "https://www.reuters.com/world/americas/grupo-mexico-press-ahead-with-major-us-copper-projects-after-output-dip-2026-10-22/",
+        "https://www.miningweekly.com/article/grupo-mexico-to-press-ahead-with-major-us-copper-projects-after-output-dip-2026-10-23/page%3A2",
+        "https://mexico-now.com/grupo-mexico-plans-to-spend-us6-billion-in-asarco/"
+      ],
+      "facts": "October22 reporting reproduced by MiningWeekly attributes USD4–6bn of Asarco spending over three years to management. It says scale matches previously floated US plans. Ray expansion,Silver Bell feasibility and potential Hayden restart remain separate execution stages. Concentrate-processing capacity is not delivered refined copper. Copper is an input to grid/data-center electrical infrastructure;no named CSP supply contract or near-term procurement-cost relief established. Direct Reuters unavailable;issuer filing,permits,funding and production schedule unverified.",
+      "questions": [
+        "Obtain issuer quarterly materials,approved project scope and old/new budget bridge.",
+        "Verify permits,funding,restart schedule and net incremental refined output without double-counting concentrate throughput.",
+        "Trace actual customer contracts,copper availability and realized supplier margins before attributing AI-related earnings effects."
+      ],
+      "publication_status": "candidate_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -27925,7 +27977,7 @@
     }
   ],
   "last_research_date": "2026-10-25",
-  "instruction_commit_sha": "ef413b359f05a4b991cb33e3974d48022a8efcd6",
+  "instruction_commit_sha": "2940c83e9ac0b2ad8835df9169e4f871658fae12",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
