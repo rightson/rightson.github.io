@@ -1,0 +1,67 @@
+{
+  "source": "Marvell WISH 2025 public runtime table",
+  "reported_job_accounting": {
+    "tier2": {
+      "jobs": {
+        "TOPO": {
+          "hours": 1.5,
+          "cores": 48,
+          "core_hours": 72.0
+        },
+        "LDL": {
+          "hours": 1.6,
+          "cores": 48,
+          "core_hours": 76.8
+        },
+        "CD": {
+          "hours": 1.8,
+          "cores": 48,
+          "core_hours": 86.4
+        },
+        "P2P": {
+          "hours": 41.0,
+          "cores": 240,
+          "core_hours": 9840.0
+        }
+      },
+      "critical_path_hours_if_serial": 45.9,
+      "total_core_hours": 10075.2,
+      "p2p_core_hour_share": 0.9767
+    },
+    "tier1_kgs": {
+      "jobs": {
+        "TOPO": {
+          "hours": 2.9,
+          "cores": 48,
+          "core_hours": 139.2
+        },
+        "LDL": {
+          "hours": 2.5,
+          "cores": 48,
+          "core_hours": 120.0
+        },
+        "CD": {
+          "hours": 6.2,
+          "cores": 16,
+          "core_hours": 99.2
+        },
+        "P2P": {
+          "hours": 6.5,
+          "cores": 240,
+          "core_hours": 1560.0
+        }
+      },
+      "critical_path_hours_if_serial": 18.1,
+      "total_core_hours": 1918.4,
+      "p2p_core_hour_share": 0.8132
+    }
+  },
+  "what_if": {
+    "iterations": 5,
+    "all_iterations_full_core_hours": 9592.0,
+    "four_lightweight_plus_one_full_core_hours": 2955.2,
+    "core_hours_reduced": 6636.8,
+    "reduction_fraction": 0.6919,
+    "assumption": "Early iterations run TOPO and LDL only; the final iteration runs TOPO, LDL, CD, and P2P. This is a scheduling illustration and does not replace signoff requirements."
+  }
+}

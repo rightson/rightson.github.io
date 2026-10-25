@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 900" role="img" aria-labelledby="title desc">
+  <title id="title">Marvell 公開 runtime 的 core-hour 組成與五次迭代假設</title>
+  <desc id="desc">Tier1 KGS 的 P2P 佔 81.3% core-hours。若五次迭代都跑完整工作為 9592 core-hours，前四次只跑 TOPO 與 LDL、最後一次跑完整工作為 2955.2 core-hours；後者是排程假設。</desc>
+  <style>
+    :root { color-scheme: light dark; }
+    .bg { fill:#f8fafc; }
+    .text { fill:#0f172a; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC",sans-serif; font-size:19px; }
+    .small { fill:#334155; font-size:15px; }
+    .axis { stroke:#64748b; stroke-width:2; }
+    .grid { stroke:#cbd5e1; stroke-width:1; }
+    .topo { fill:#38bdf8; }
+    .ldl { fill:#818cf8; }
+    .cd { fill:#34d399; }
+    .p2p { fill:#f59e0b; }
+    .full { fill:#fb923c; }
+    .staged { fill:#14b8a6; }
+    .sig { fill:#64748b; font-size:10px; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill:#0f172a; }
+      .text { fill:#f1f5f9; }
+      .small { fill:#cbd5e1; }
+      .axis { stroke:#94a3b8; }
+      .grid { stroke:#334155; }
+      .sig { fill:#94a3b8; }
+    }
+  </style>
+  <rect class="bg" width="640" height="900"/>
+  <text class="text" x="320" y="45" text-anchor="middle" font-size="26" font-weight="700">P2P 支配完整堆疊的計算預算</text>
+  <text class="small" x="45" y="82">Marvell Tier1 KGS 公開工作（core-hours）</text>
+
+  <line class="axis" x1="90" y1="360" x2="590" y2="360"/>
+  <line class="axis" x1="90" y1="115" x2="90" y2="360"/>
+  <line class="grid" x1="90" y1="300" x2="590" y2="300"/>
+  <line class="grid" x1="90" y1="240" x2="590" y2="240"/>
+  <line class="grid" x1="90" y1="180" x2="590" y2="180"/>
+  <line class="grid" x1="90" y1="120" x2="590" y2="120"/>
+  <text class="small" x="78" y="365" text-anchor="end">0</text>
+  <text class="small" x="78" y="305" text-anchor="end">500</text>
+  <text class="small" x="78" y="245" text-anchor="end">1000</text>
+  <text class="small" x="78" y="185" text-anchor="end">1500</text>
+  <text class="small" x="78" y="125" text-anchor="end">2000</text>
+
+  <rect class="topo" x="130" y="343" width="80" height="17"/>
+  <rect class="ldl" x="245" y="346" width="80" height="14"/>
+  <rect class="cd" x="360" y="348" width="80" height="12"/>
+  <rect class="p2p" x="475" y="173" width="80" height="187"/>
+  <text class="small" x="170" y="335" text-anchor="middle">139.2</text>
+  <text class="small" x="285" y="338" text-anchor="middle">120.0</text>
+  <text class="small" x="400" y="340" text-anchor="middle">99.2</text>
+  <text class="small" x="515" y="165" text-anchor="middle">1560.0</text>
+  <text class="small" x="170" y="388" text-anchor="middle">TOPO</text>
+  <text class="small" x="285" y="388" text-anchor="middle">LDL</text>
+  <text class="small" x="400" y="388" text-anchor="middle">CD</text>
+  <text class="small" x="515" y="388" text-anchor="middle">P2P</text>
+  <text class="text" x="320" y="432" text-anchor="middle" font-weight="700">P2P 佔總 core-hours 的 81.3%</text>
+
+  <text class="small" x="45" y="495">五次整合迭代的假設算例（core-hours）</text>
+  <line class="axis" x1="90" y1="775" x2="590" y2="775"/>
+  <line class="axis" x1="90" y1="535" x2="90" y2="775"/>
+  <line class="grid" x1="90" y1="655" x2="590" y2="655"/>
+  <line class="grid" x1="90" y1="535" x2="590" y2="535"/>
+  <text class="small" x="78" y="780" text-anchor="end">0</text>
+  <text class="small" x="78" y="660" text-anchor="end">5000</text>
+  <text class="small" x="78" y="540" text-anchor="end">10000</text>
+
+  <rect class="full" x="165" y="545" width="120" height="230"/>
+  <rect class="staged" x="365" y="704" width="120" height="71"/>
+  <text class="text" x="225" y="530" text-anchor="middle" font-weight="700">9592.0</text>
+  <text class="text" x="425" y="690" text-anchor="middle" font-weight="700">2955.2</text>
+  <text class="small" x="225" y="812" text-anchor="middle">每次完整</text>
+  <text class="small" x="425" y="812" text-anchor="middle">4 次輕量 + 1 次完整</text>
+  <text class="small" x="320" y="850" text-anchor="middle">輕量迭代只含 TOPO 與 LDL；最終仍執行 CD 與 P2P</text>
+  <text class="sig" x="620" y="886" text-anchor="end">Scott Yo-Ru Chen · 2026-10-26</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}.bg{fill:#1a2026}.text{fill:#d1d7e6}.small{fill:#c6ccd5}.axis{stroke:#929eb0}.grid{stroke:#2e333a}.topo{fill:#82cced}.ldl{fill:#828ced}.cd{fill:#8ae6c4}.p2p{fill:#edc582}.full{fill:#edb282}.staged{fill:#63e9da}.sig{fill:#929eb0}.bg{fill:#d1d7e6}.text{fill:#1d2329}.small{fill:#2e333a}.axis{stroke:#5b6f8a}.grid{stroke:#c6ccd5}.sig{fill:#5b6f8a}}</style>
+</svg>

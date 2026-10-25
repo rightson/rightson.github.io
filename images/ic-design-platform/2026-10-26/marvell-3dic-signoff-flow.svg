@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 900" role="img" aria-labelledby="title desc">
+  <title id="title">Marvell 3DIC 實體 signoff 的三層交付</title>
+  <desc id="desc">個別 die、interposer 與 substrate 先各自完成檢查，再以 3Dblox 與系統 netlist 組裝完整堆疊，執行跨 die 連接、對位與 ESD 路徑檢查。</desc>
+  <style>
+    :root { color-scheme: light dark; }
+    .bg { fill:#f8fafc; }
+    .box { fill:#ffffff; stroke:#334155; stroke-width:2; rx:14; }
+    .accent { fill:#e0f2fe; stroke:#0369a1; stroke-width:2; rx:14; }
+    .deliver { fill:#ecfdf5; stroke:#047857; stroke-width:2; rx:14; }
+    .text { fill:#0f172a; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC",sans-serif; font-size:20px; }
+    .small { fill:#334155; font-size:16px; }
+    .label { fill:#075985; font-size:16px; font-weight:700; }
+    .arrow { stroke:#475569; stroke-width:3; fill:none; marker-end:url(#arrow); }
+    .sig { fill:#64748b; font-size:10px; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill:#0f172a; }
+      .box { fill:#111827; stroke:#94a3b8; }
+      .accent { fill:#0c4a6e; stroke:#7dd3fc; }
+      .deliver { fill:#064e3b; stroke:#6ee7b7; }
+      .text { fill:#f1f5f9; }
+      .small { fill:#cbd5e1; }
+      .label { fill:#bae6fd; }
+      .arrow { stroke:#cbd5e1; }
+      .sig { fill:#94a3b8; }
+    }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#475569"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="640" height="900"/>
+  <text class="text" x="320" y="45" text-anchor="middle" font-size="27" font-weight="700">從單顆 die 到完整 3D 堆疊</text>
+
+  <text class="label" x="44" y="92">1　各自完成實體檢查</text>
+  <rect class="box" x="40" y="110" width="170" height="150"/>
+  <text class="text" x="125" y="145" text-anchor="middle" font-weight="700">SoC / HBM</text>
+  <text class="small" x="125" y="180" text-anchor="middle">multi-DRC</text>
+  <text class="small" x="125" y="207" text-anchor="middle">LVS / antenna</text>
+  <text class="small" x="125" y="234" text-anchor="middle">die ESD</text>
+
+  <rect class="box" x="235" y="110" width="170" height="150"/>
+  <text class="text" x="320" y="145" text-anchor="middle" font-weight="700">Interposer</text>
+  <text class="small" x="320" y="180" text-anchor="middle">routing / bump</text>
+  <text class="small" x="320" y="207" text-anchor="middle">尺寸與設計規則</text>
+  <text class="small" x="320" y="234" text-anchor="middle">連接資料</text>
+
+  <rect class="box" x="430" y="110" width="170" height="150"/>
+  <text class="text" x="515" y="145" text-anchor="middle" font-weight="700">Substrate</text>
+  <text class="small" x="515" y="180" text-anchor="middle">BGA / C4</text>
+  <text class="small" x="515" y="207" text-anchor="middle">封裝走線</text>
+  <text class="small" x="515" y="234" text-anchor="middle">substrate checks</text>
+
+  <path class="arrow" d="M125 260 V315 H260"/>
+  <path class="arrow" d="M320 260 V315"/>
+  <path class="arrow" d="M515 260 V315 H380"/>
+
+  <text class="label" x="44" y="350">2　建立系統描述</text>
+  <rect class="accent" x="70" y="370" width="500" height="145"/>
+  <text class="text" x="320" y="410" text-anchor="middle" font-weight="700">3Dblox assembly + system netlist</text>
+  <text class="small" x="320" y="447" text-anchor="middle">die 位置、方向、介面與連接</text>
+  <text class="small" x="320" y="478" text-anchor="middle">layout assembly 對照 logical connectivity</text>
+
+  <path class="arrow" d="M320 515 V570"/>
+
+  <text class="label" x="44" y="605">3　跨層 signoff</text>
+  <rect class="box" x="40" y="625" width="170" height="145"/>
+  <text class="text" x="125" y="664" text-anchor="middle" font-weight="700">幾何</text>
+  <text class="small" x="125" y="702" text-anchor="middle">hybrid bond 對位</text>
+  <text class="small" x="125" y="732" text-anchor="middle">跨 die DRC</text>
+
+  <rect class="box" x="235" y="625" width="170" height="145"/>
+  <text class="text" x="320" y="664" text-anchor="middle" font-weight="700">連接</text>
+  <text class="small" x="320" y="702" text-anchor="middle">opens / shorts</text>
+  <text class="small" x="320" y="732" text-anchor="middle">stack LVS</text>
+
+  <rect class="box" x="430" y="625" width="170" height="145"/>
+  <text class="text" x="515" y="664" text-anchor="middle" font-weight="700">可靠度</text>
+  <text class="small" x="515" y="702" text-anchor="middle">BGA → clamp</text>
+  <text class="small" x="515" y="732" text-anchor="middle">TOPO / P2P / CD</text>
+
+  <path class="arrow" d="M125 770 V815 H260"/>
+  <path class="arrow" d="M320 770 V815"/>
+  <path class="arrow" d="M515 770 V815 H380"/>
+  <rect class="deliver" x="180" y="815" width="280" height="52"/>
+  <text class="text" x="320" y="848" text-anchor="middle" font-weight="700">完整堆疊 signoff 結果</text>
+  <text class="sig" x="620" y="886" text-anchor="end">Scott Yo-Ru Chen · 2026-10-26</text>
+<style>/* auto dark mode */@media (prefers-color-scheme: dark){svg:not([fill]){fill:#e4e6e7}[fill="#475569" i]{fill:#c0c6cd}.bg{fill:#1a2026}.box{fill:#1b1f20;stroke:#c6ccd5}.accent{fill:#162936;stroke:#44abe4}.deliver{fill:#163024;stroke:#44e4b7}.text{fill:#d1d7e6}.small{fill:#c6ccd5}.label{fill:#44ace4}.arrow{stroke:#c0c6cd}.sig{fill:#929eb0}.bg{fill:#d1d7e6}.box{fill:#d3d9e4;stroke:#5b6f8a}.accent{fill:#44a9e4;stroke:#82cbed}.deliver{fill:#c2ebe1;stroke:#84ebc2}.text{fill:#1d2329}.small{fill:#2e333a}.label{fill:#1c3746}.arrow{stroke:#2e333a}.sig{fill:#5b6f8a}}</style>
+</svg>
