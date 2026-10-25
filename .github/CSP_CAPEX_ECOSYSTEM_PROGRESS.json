@@ -17692,6 +17692,37 @@
           "Previously notified STL event and other accessible notices compared without repetition. HFCL existing primary-source gap retained; no new evidence this round. No independent long-form article increment established.",
           "Public update contains only A-topic sources and research completion stages; no equity prices, valuations, targets, holdings, private flows or trading conditions. No article, lint, build, deploy or public-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-25",
+        "checked_at": "2026-10-25 04:18:32 UTC",
+        "instruction_commit_sha": "190282f4447b0dea8b5430e3f43526265824ad8e",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "e52a6ed3d7b1e2f9f5002e8c80f0a7c1a97745e4",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_checked_no_new_notification_event",
+        "scope": "All98 active names included in14 date-restricted fresh grouped discovery queries; six official core indices, three global/core supplemental queries and one targeted original-note search. Four source/date followups. One historical institutional-model source-gap candidate added; no new public event or article.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://finance.biggo.com/news/931470d5-0cd8-417a-9650-34b82fe9b585",
+          "https://money.udn.com/money/story/5607/9824250",
+          "https://www.goldmansachs.com/insights/articles/tracking-trillions-the-assumptions-shaping-scale-of-the-ai-build-out"
+        ],
+        "source_limits": [
+          "Mandatory same-commit instructions, specifications, taxonomy, series, config, full progress and three related article blobs retrieved. Instruction/spec/article hashes unchanged from fully read versions. Fresh alpha-quant metadata and active98 CSV retrieved; head and CSV unchanged.",
+          "Grouped date restriction returned mostly issuer indices, historical monthly results and older reporting; it is not98 individual latest-filings verification. No blank monthly field filled or unchanged index equated with complete absence of events.",
+          "Core latest index dates unchanged: TSMC October15, MediaTek September30, NVIDIA October22, AMD October12, Broadcom October21, Marvell October13. No new authenticated TPU award, NRE, Google procurement split or core guidance revision.",
+          "BigGo spending-brakes synthesis read: its own body describes historical Microsoft accounting presentation and unchanged underlying infrastructure plan; Meta range narrowing is not evidence of an announced physical procurement cut. Original current issuer revision not authenticated; no cancellation or supplier-profit downgrade inferred from headline.",
+          "October19 Goldman server-TAM report is historical research attributed by original news, not new October25 issuer guidance. Original institutional model unavailable; candidate retained. May1 Goldman article is a separate historical analysis and cannot authenticate October forecast changes.",
+          "Global discovery repeats previously recorded financing concerns, TPU reporting, STL/HFCL story and prospective earnings-week previews. Prior notices,155 events and371 existing candidates compared; no new notification-level evidence. HFCL source gap remains unresolved.",
+          "Only A-topic sources/research stages recorded; no equity prices, valuations, targets, holdings, private flows or trading conditions. No article, lint/build/deploy/public-content completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -27520,6 +27551,30 @@
         "Retrieve complete issuer presentation and limited-review results, including cash flow and guidance sequence.",
         "Verify hyperscaler exposure, backlog delivery/cancellation terms and preform investment funding before full economic comparison."
       ]
+    },
+    {
+      "key": "goldman-october-server-tam-revision-original-model-pending-20261025",
+      "date": "2026-10-25",
+      "event_date": "2026-10-19",
+      "instruction_commit_sha": "190282f4447b0dea8b5430e3f43526265824ad8e",
+      "companies": [
+        "Goldman Sachs",
+        "Hon Hai",
+        "Wiwynn",
+        "Wistron"
+      ],
+      "sources": [
+        "https://money.udn.com/money/story/5607/9824250"
+      ],
+      "stage": "historical_original_news_read_institutional_note_and_comparable_model_pending",
+      "facts": {
+        "reported": "October19 Economic Daily original attributes 2027/2028 global server TAM increases of31%/45% to Goldman and forecasts 2028 AI rack market aboveUSD1trillion. Forecast period, not actual supplier orders.",
+        "limits": "Original institutional note, prior model and unit/ASP/mix reconciliation not retrieved. Targeted search surfaced summaries; May1 Goldman AI-buildout article is a different dated publication. No named-supplier earnings revision or market-consensus surprise authenticated."
+      },
+      "questions": [
+        "Obtain the original note and comparable prior forecast; separate units, ASP, rack mix and memory inflation.",
+        "Reconcile any named-supplier earnings changes with delivery, margin and cash assumptions before treating aggregate TAM as profit growth."
+      ]
     }
   ],
   "blockers": [
@@ -27539,7 +27594,7 @@
     }
   ],
   "last_research_date": "2026-10-25",
-  "instruction_commit_sha": "cbd527995223a3632afaa98eb5685665fb6cbc63",
+  "instruction_commit_sha": "190282f4447b0dea8b5430e3f43526265824ad8e",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
