@@ -7096,6 +7096,32 @@
         "limits": "Customers unnamed; cancellation/minimum-take/pricing terms undisclosed. Higher connectivity mix and scale accompany margin improvement; causal contribution not separately quantified. New outside-universe issuer baseline, not a revision to a previously recorded issuer forecast."
       },
       "status": "issuer_primary_order_operating_and_cashflow_baseline_verified_no_article"
+    },
+    {
+      "fingerprint": "spacex-reported-40bn-gpu-debt-close-versus-talks-20261025",
+      "event_date": "2026-10-25",
+      "discovered_date": "2026-10-26",
+      "instruction_commit_sha": "cb6e8a10f0b5296a5048086f8d9f671fc75aa926",
+      "companies": [
+        "SpaceX"
+      ],
+      "type": "reliable_original_reporting_of_management_gpu_financing_completion_claim",
+      "sources": [
+        "https://www.reuters.com/business/media-telecom/musk-says-spacex-raised-40-billion-debt-gpus-2026-10-25/",
+        "https://www.channelnewsasia.com/business/musk-says-spacex-raised-40-billion-in-debt-deal-predicts-neocloud-shakeout-6491471",
+        "https://www.reuters.com/business/media-telecom/spacex-seeks-40-billion-buy-nvidia-chips-ft-reports-2026-10-06/"
+      ],
+      "facts": {
+        "currency": "USD",
+        "reported_financing_bn": 40,
+        "historical_baseline": "October6 Reuters original reports financing discussions for GPU purchases; prior registered October20 Q4 capex guidance remains unchanged.",
+        "new_source": "October25 20:05 UTC Reuters report attributes a statement to Musk that financing is closed; full licensed Reuters reproduction on CNA read. Syndications count as one report.",
+        "maturity": "Management completion claim reported by Reuters; not independently authenticated settled financing or received cash. Reuters explicitly says meaning of closed and investor pricing agreement unclear.",
+        "timing": "Musk says primarily callable debt for GPU purchases arriving Q1/Q2 and not a major factor this quarter. Year is not explicit in quoted sentence; next-year timing is contextual,not an independently verified delivery schedule.",
+        "terms_gap": "Interest,covenants,collateral,maturity,drawn amount and definitive closing documents not obtained. No matching new issuer IR/SEC financing document located in targeted search.",
+        "limits": "Does not establish new supplier award,incremental procurement beyond the earlier package,accepted deployment,utilization,profit or payment receipt. Musk's prediction of neocloud failures is his opinion,not an independently established sector-wide credit shutdown;prior Nebius bank facility evidence remains relevant counterevidence. No quotation,valuation,holdings or private trade conditions stored."
+      },
+      "status": "original_report_and_licensed_reproduction_compared_with_prior_original_terms_and_funding_pending_no_article"
     }
   ],
   "articles": [],
@@ -18251,6 +18277,35 @@
           "October23LongwideSeptember self-assessed profit item already matches existing candidate longwide-september-self-reported-profit-versus-acceptance-and-cash-20261023;different monthly/quarterly periods and equipment acceptance timing remain unresolved. No duplicate alert. PCB thematic commentary and recycled JPC headline do not add an authenticated earnings revision.",
           "Only A-topic public sources,research coverage and stages appended;no equity quotes,valuation,targets,holdings,private market flows or trading conditions. No article,lint,build,deploy or public-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-26",
+        "checked_at": "2026-10-25 23:27:42 UTC",
+        "instruction_commit_sha": "cb6e8a10f0b5296a5048086f8d9f671fc75aa926",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "0ed6c23ff4531ce587364fe32f3bed159e34b30e",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_and_new_spacex_financing_reporting_checked",
+        "scope": "All98active names included in14fresh grouped queries. Six official core indices read,3stronger global/core queries and targeted SpaceX financing/source checks completed. No watchlist change.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.reuters.com/business/media-telecom/musk-says-spacex-raised-40-billion-debt-gpus-2026-10-25/",
+          "https://www.channelnewsasia.com/business/musk-says-spacex-raised-40-billion-in-debt-deal-predicts-neocloud-shakeout-6491471",
+          "https://www.reuters.com/business/media-telecom/spacex-seeks-40-billion-buy-nvidia-chips-ft-reports-2026-10-06/"
+        ],
+        "source_limits": [
+          "Contents API returned empty content for2MBledger;exactblob retrieved and JSON parsed successfully. Same-commit instructions/specifications/config/taxonomy/series/legacy and related articles retrieved;instruction SHA recorded.",
+          "Fresh alpha-quant metadata/main and full CSV retain98active names and unchanged universe blob. Grouped discovery is not98individually verified current filings;existing September revenue baseline retained,order/margin/cash economics remainpartial.",
+          "TSMC andMediaTek official indices retainOctober15andSeptember30latestentries. No newauthenticated TPU award,NRE,Googleprocurement allocation orcoreissuerfinancialrevision. Other visiblecoreindices retainprevious dates. Mostgroupedreturns historicalnotices,monthlyreports andcommentary.",
+          "SpaceX financingclaim is new relative toOctober6talks andprior Q4capexbaseline. Reutersdirect currentpage failed;indexed original andfull CNA reproduction read;single reportingchain,notindependent lender confirmation. No officialdebtterms orfundsreceipt verified.",
+          "OnlyA-topicpublicsources/researchstages appended. No B-topic calendar,marketflow,holdings,prices,valuation orprivatejudgment saved. No article,lint,build,deploy orpubliccontentcompletion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -28372,6 +28427,27 @@
         "Verify named equipment orders and delivery/energization before attributing supplier earnings changes."
       ],
       "publication_status": "research_candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "spacex-reported-40bn-gpu-debt-close-versus-talks-20261025",
+      "date": "2026-10-26",
+      "event_date": "2026-10-25",
+      "instruction_commit_sha": "cb6e8a10f0b5296a5048086f8d9f671fc75aa926",
+      "companies": [
+        "SpaceX"
+      ],
+      "sources": [
+        "https://www.reuters.com/business/media-telecom/musk-says-spacex-raised-40-billion-debt-gpus-2026-10-25/",
+        "https://www.channelnewsasia.com/business/musk-says-spacex-raised-40-billion-in-debt-deal-predicts-neocloud-shakeout-6491471",
+        "https://www.reuters.com/business/media-telecom/spacex-seeks-40-billion-buy-nvidia-chips-ft-reports-2026-10-06/"
+      ],
+      "stage": "reported_management_completion_claim_registered_definitive_financing_terms_and_supplier_acceptance_pending",
+      "questions": [
+        "Obtain definitive financing documents,pricing,drawdown and cash receipt.",
+        "Verify GPU delivery/acceptance and project power readiness against billing and cash generation.",
+        "Separate firm-funded procurement from commitments;do not infer all neocloud credit access from one management prediction."
+      ],
+      "publication_status": "event_registered_no_article"
     }
   ],
   "blockers": [
@@ -28391,7 +28467,7 @@
     }
   ],
   "last_research_date": "2026-10-26",
-  "instruction_commit_sha": "aa2c8043c9c38573ee154e179fb852c269a787f6",
+  "instruction_commit_sha": "cb6e8a10f0b5296a5048086f8d9f671fc75aa926",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
