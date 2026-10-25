@@ -17968,6 +17968,33 @@
           "Asarco October22 reporting read through Reuters reproduction and MEXICONOW,not issuer originals. USD4–6bn plan matches earlier floated scale;feasibility,restart and physical delivery remain distinct. Direct Reuters unavailable and historical Yahoo source429;not new confirmed copper supply or a named AI customer award.",
           "Public update includes A-topic sources/research stages only;no equity quotes,valuations,targets,holdings,private market flows or trading conditions. No new article or lint/build/deploy/public-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-25",
+        "checked_at": "2026-10-25 13:15:20 UTC",
+        "instruction_commit_sha": "b73570fedbaa9e17b6ed2f35c00631540ccd917e",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "188cb481a496eb0ff7625d1dfb4f0655e8d744aa",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_official_indices_checked_no_material_increment_notice_bodies_unavailable",
+        "scope": "All98 active names included in14 fresh grouped queries;six official core indices and three global/core supplemental queries checked. Targeted historical OSAT lease/equipment title followups attempted. Compared155 events,378 candidates and available notification baseline;no new candidate,event or article.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://6480.moneydj.com/z/zh/ZHF/ZHF_C023201_E_1_EBC9230000.djhtm"
+        ],
+        "source_limits": [
+          "Fresh metadata/default head and complete same-commit mandatory instruction,configuration,taxonomy,series,research specifications,progress ledger and three related article blobs retrieved. Instruction and article hashes unchanged. Fresh alpha-quant metadata/head/full CSV retains98 active names. Grouped discovery is not98 individual latest-filings validation;primary issuer-economic coverage remains partial.",
+          "Six accessible official core indices latest dates unchanged:TSMC October15,MediaTek September30,NVIDIA October22,AMD October12,Broadcom October21,Marvell October13. No authenticated new TPU award,NRE,current procurement allocation or issuer guidance revision found.",
+          "Search filters returned historical notices,prior PCB/Auras forecasts,August NVIDIA roundup and valuation/social content. Publication metadata was checked where exposed;search recency alone does not establish a new event. Global sources repeat STL/HFCL,M&B and existing financing themes. New earnings-concentration commentary is forecast aggregation,not a verified new supplier earnings release or Taiwan market-structure finding.",
+          "MoneyDJ index and indexed syndications identify October21 subsidiary right-of-use-asset lease and October19 cumulative packaging-equipment purchase leads for Ardentec/Powertech. Direct Yahoo notice bodies returned404. Full terms,incremental capex,AI/customer allocation,commissioning and profit effect not verified;no material conclusion or new event recorded.",
+          "Public update contains A-topic source/research stages only;no equity quotes,valuations,targets,holdings,private market flows or trading conditions. No article,lint,build,deploy or public-content completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -27977,7 +28004,7 @@
     }
   ],
   "last_research_date": "2026-10-25",
-  "instruction_commit_sha": "2940c83e9ac0b2ad8835df9169e4f871658fae12",
+  "instruction_commit_sha": "b73570fedbaa9e17b6ed2f35c00631540ccd917e",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
