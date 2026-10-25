@@ -17909,6 +17909,36 @@
           "M&B October25 feature available through indexed text only;issuer index read but linked June2026 presentation and results PDFs failed. August10 filing reproduction establishes historical expansion rationale,not a current confirmed data-center contract. Operating and reported EBITDA definitions require primary-source reconciliation.",
           "Public ledger update contains A-topic source and research stages only;no equity prices,valuations,targets,holdings,private market flows or trading conditions. No article,lint,build,deploy or public-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-25",
+        "checked_at": "2026-10-25 11:23:11 UTC",
+        "instruction_commit_sha": "ef413b359f05a4b991cb33e3974d48022a8efcd6",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "188cb481a496eb0ff7625d1dfb4f0655e8d744aa",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_official_indices_checked_historical_stm_baseline_added",
+        "scope": "All98 active names included in14 fresh grouped discovery queries. Six core official news indices checked using Broadcom financial-news fallback. Three global/core supplemental queries and source-provenance followups completed. Compared155 events,376 prior candidates and accessible notifications;one historical outside-universe baseline added,no material event or article.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://investors.st.com/financials/quarterly-results",
+          "https://technews.tw/2026/10/22/ai-asic-sector-strong-momentum-citi-sets-mediatek-6800-target-price/",
+          "https://www.trendforce.com/news/2026/10/19/news-mediateks-google-tpu-v9-shipments-may-slip-to-1q28-asic-race-heats-up-as-taiwan-firms-eye-new-opportunities/"
+        ],
+        "source_limits": [
+          "Fresh default metadata/head and same-commit full mandatory instructions,configuration,taxonomy,series,specifications,ledger and three related article blobs retrieved;hashes unchanged except ledger. Fresh alpha-quant full CSV has98 active names. Grouped query inclusion is not98 individual latest-filings validation;primary issuer-economic coverage remains partial.",
+          "Core accessible latest dates unchanged:TSMC October15,MediaTek September30,NVIDIA October22,AMD October12,Broadcom October21,Marvell October13. Broadcom homepage403 resolved for news-index scope via financial-news page. No newly authenticated TPU award,NRE,customer split or guidance revision.",
+          "October25 Citi-attributed MediaTek commentary traces to matching October22 reporting and existing candidate;broker original,dated old/new forecast bridge and current issuer confirmation unavailable. Direct EBC/TechNews bodies failed;indexed snippets only. October25 KYEC preview repeats reserved-capacity and monthly-revenue evidence already tracked. Media headline identifying MediaTek Q3 revenue as profit must not change accounting classification.",
+          "TrendForce October19 Humufish delay article remains secondary institutional attribution matching existing timing candidates;not issuer confirmation. Global results repeat STL/HFCL,M&B and historical cash-flow commentary. Search recency filters returned historical and social/valuation content,not authenticated fresh disclosures.",
+          "STM July23 issuer script and results read as a new historical research baseline,not an October earnings revision. Datacenter revenue ambitions remain conditional;broader RFOC margin and group cash flow do not establish standalone AI economics. October29 Q3 report remains pending.",
+          "Public update contains A-topic sources and research stages only;no equity quotes,valuations,targets,holdings,private market flows or trading conditions. No article,lint,build,deploy or public-content completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -27854,6 +27884,28 @@
         "Check Sanand commissioning,utilization,working-capital absorption and cash conversion."
       ],
       "publication_status": "candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "stmicroelectronics-datacenter-optical-power-growth-historical-q2-baseline-20260723",
+      "date": "2026-10-25",
+      "source_date": "2026-07-23",
+      "instruction_commit_sha": "ef413b359f05a4b991cb33e3974d48022a8efcd6",
+      "companies": [
+        "STMicroelectronics"
+      ],
+      "stage": "outside_universe_historical_issuer_results_and_ceo_script_verified_current_q3_conversion_pending",
+      "sources": [
+        "https://investors.st.com/financials/quarterly-results",
+        "https://investors.st.com/static-files/ae0e3f49-924c-4f9d-8462-4a9739e282d6",
+        "https://investors.st.com/static-files/bdacd978-231f-4e8c-bfde-f5cc6c53250d"
+      ],
+      "facts": "October25 preview led to historical July23 issuer materials. Management links data-center exposure to optical connectivity,silicon-photonics ICs,MCUs and power products;2026 revenue ambition aboveUSD1bn and2027 well aboveUSD2bn is conditional. Q2 RFOC revenue grew32%YoY;non-US-GAAP segment operating margin21.2%. Group FCF wasUSD75m and net capex outlook at high endUSD2.0–2.2bn. Group cash flow and broader segment margin are not standalone AI profitability. Official index schedules Q3 results October29;no Q3 report validated.",
+      "questions": [
+        "Verify Q3 actual data-center sales,order conversion and updated outlook rather than repeating July targets.",
+        "Separate optical and power economics from other RFOC products and acquisition/restructuring effects.",
+        "Check capex commissioning,utilization,working capital and cash conversion;named customer allocation remains unverified."
+      ],
+      "publication_status": "historical_baseline_candidate_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -27873,7 +27925,7 @@
     }
   ],
   "last_research_date": "2026-10-25",
-  "instruction_commit_sha": "fd70d2b58d22b7399ffbe8feaa219fe2df024f3c",
+  "instruction_commit_sha": "ef413b359f05a4b991cb33e3974d48022a8efcd6",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
