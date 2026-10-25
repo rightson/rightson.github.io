@@ -18135,6 +18135,34 @@
           "TaiSounds October13 10:44 original article re-read at /79/293686;source matches existing gf-securities-humufish-design-tapeout-schedule-risk-20261013 event despite different URL category. Single institution forecast,not company-confirmed new shipment delay or independently corroborated procurement allocation. Existing event distinguishes production-version tapeout from volume production;no duplicate event created.",
           "Only A-topic public source and research-stage record appended;no equity quote,valuation,target,holding,private market-flow data or trading conditions. No article,lint,build,deploy or public-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-26",
+        "checked_at": "2026-10-25 19:22:22 UTC",
+        "instruction_commit_sha": "5e8dd6d03c7e2f180019feb22a90157069a48637",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "0ed6c23ff4531ce587364fe32f3bed159e34b30e",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_and_historical_methodology_checked_no_material_increment",
+        "scope": "All98 active names included in14 fresh grouped discovery queries;six official core indices and3 global/core supplemental queries checked. Epoch AI original methodology and dated-data scope examined;155 public events,382 candidates and accessible prior notices compared. No material event,new candidate or article.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://epoch.ai/data/ai-chip-sales-documentation/methodology",
+          "https://epoch.ai/data/ai-chip-sales-documentation/changelog"
+        ],
+        "source_limits": [
+          "Fresh metadata/default head and complete same-commit required instructions,specifications,configuration,taxonomy,series,progress and three related article blobs retrieved. Instruction/spec/article hashes unchanged. Fresh full alpha-quant CSV retains98 active names and unchanged blob. Grouped search inclusion is not98 individual current-filing validations;primary economic coverage remains partial.",
+          "Six official indices accessible;latest dates remain TSMC October15,MediaTek September30,NVIDIA October22,AMD October12,Broadcom October21,Marvell October13. No authenticated new TPU design award,NRE,Google procurement split or guidance change found in retrieved material.",
+          "Search output largely historical financial/valuation summaries,encyclopedia and market-theme pages;freshness/recall limited. Third-party updated aggregate financing/revenue trackers do not themselves establish a new named-CSP funding action or realised supplier earnings revision.",
+          "Epoch AI methodology is an original researcher model,not issuer shipment disclosure. Readable sections explicitly describe estimated TPU spending/BOM/margins with uncertainty and focus on2024-2025 TPU sales;NVIDIA revenue model throughOctober2025. Retrieval freshness does not make it a current2026 procurement-allocation change. No MediaTek loss or new Broadcom award inferred from a historical model.",
+          "Only A-topic public source/research stages appended;no equity quotes,valuation,targets,holdings,private market-flow data or trading conditions. No article,lint,build,deploy or public-content completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -28245,7 +28273,7 @@
     }
   ],
   "last_research_date": "2026-10-26",
-  "instruction_commit_sha": "9732004cfa31e4979d0450a0a03ed9a323ae64d9",
+  "instruction_commit_sha": "5e8dd6d03c7e2f180019feb22a90157069a48637",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
