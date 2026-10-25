@@ -18024,6 +18024,35 @@
           "Chroma October20 notice reproduction read and August plan compared;actual price/proceeds unconfirmed. Yahoo quote-announcement path redirected to consent. Final issuer/exchange original,issuance and cash receipt remain gaps. No stock-price-derived funding estimate used.",
           "Public update contains A-topic sources/research stages only;no equity quotes,valuations,targets,holdings,private market flows or trading conditions. No article,lint,build,deploy or public-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-25",
+        "checked_at": "2026-10-25 14:53:54 UTC",
+        "instruction_commit_sha": "996ed243c9d85880a21437e3ad1528feebb78b2c",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "188cb481a496eb0ff7625d1dfb4f0655e8d744aa",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_checked_one_forecast_source_gap_candidate_added",
+        "scope": "All98 active names included in14 fresh grouped queries; six official core indices and3 global/core supplemental queries checked. Wiwynn attributed forecast followed up with targeted provenance searches and issuer historical accounting baseline. Deduplicated against155 public events and380 prior candidates;one research-stage candidate added,no material event or article.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://money.udn.com/money/story/5607/9836689",
+          "https://www.ftnn.com.tw/news/581059",
+          "https://www.wiwynn.com/zh/investors"
+        ],
+        "source_limits": [
+          "Fresh repository metadata/head and complete same-commit required instruction,specification,configuration,taxonomy,series,progress and three related article blobs retrieved. Instruction/article hashes unchanged. Fresh alpha-quant full CSV retains98 active names. Grouped discovery does not validate98 individual latest issuer filings;primary economic coverage remains partial.",
+          "Six official indices latest dates remain TSMC October15,MediaTek September30,NVIDIA October22,AMD October12,Broadcom October21,Marvell October13. No authenticated new TPU award,NRE,procurement split or guidance revision.",
+          "Grouped results mainly historical announcement indices,existing PCB material-gap forecasts,August NVIDIA roundup,Auras forecasts and social/valuation pages. Global results repeat existing STL/HFCL,M&B,Asarco,Meta and storage records;earnings concentration and infrastructure commentary are not new actual supplier results.",
+          "Wiwynn October25 news indexed text obtained, direct Economic Daily/UDN body access failed. September22 FTNN historical body and issuer Q2 financial page read. Original Goldman report and comparable model changes not obtained; new customer and earnings revision unconfirmed. Historical capex unit typo in secondary report not adopted.",
+          "Public update contains A-topic source facts and research stages only;no equity quotes,valuation,targets,holdings,private market-flow data or trading conditions. No article,lint,build,deploy or public-content completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -28059,6 +28088,34 @@
         "Reconcile realized operating returns and cash generation with the new capital."
       ],
       "publication_status": "candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "wiwynn-attributed-goldman-q4-revenue-forecast-original-model-gap-20261025",
+      "date": "2026-10-25",
+      "instruction_commit_sha": "996ed243c9d85880a21437e3ad1528feebb78b2c",
+      "companies": [
+        "Wiwynn",
+        "Goldman Sachs"
+      ],
+      "sources": [
+        "https://money.udn.com/money/story/5607/9836689",
+        "https://www.ftnn.com.tw/news/581059",
+        "https://www.wiwynn.com/zh/investors"
+      ],
+      "stage": "current_news_indexed_text_and_historical_secondary_comparison_original_broker_note_pending",
+      "facts": {
+        "media_publication": "Economic Daily October25 21:55:17 Asia/Taipei; indexed article text retrieved, direct article reads inaccessible.",
+        "forecast_period": "2026-Q4",
+        "attributed_forecast": "Goldman expects Q4 revenue growth above60%YoY and8%QoQ; September sales reportedly19%above its estimate. Described drivers are ASIC ramp, general-server demand, GPU racks and potential new ASIC customers.",
+        "historical_comparison": "September22 FTNN reproduction attributes Q4 growth70%YoY/22%QoQ to Goldman. This is a different dated secondary report; original notes, comparable absolute forecasts and model changes not obtained. Do not infer an earnings upgrade or downgrade from unmatched growth comparisons.",
+        "issuer_cross_check": "Issuer Q2 historical page reconfirms April agency accounting for selected memory procurement and higher new-product NRE. These affect revenue/margin comparability; no newly confirmed customer allocation or recurring margin/cash revision established.",
+        "limits": "Broker original publication date, old/new EPS and revenue bridge, consensus and new-customer award remain unverified. Neither a target-price change nor a potential customer is evidence of realised earnings or orders. No stock quote, target or valuation stored."
+      },
+      "questions": [
+        "Obtain original dated broker note and comparable old/new revenue and EPS estimates.",
+        "Reconcile sales growth with memory agency accounting, recurring NRE, product mix and cash conversion; validate named customer deployment."
+      ],
+      "publication_status": "research_candidate_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -28078,7 +28135,7 @@
     }
   ],
   "last_research_date": "2026-10-25",
-  "instruction_commit_sha": "326750156aaaad5757aec5f3a0e29c630578382e",
+  "instruction_commit_sha": "996ed243c9d85880a21437e3ad1528feebb78b2c",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
