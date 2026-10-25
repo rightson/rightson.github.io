@@ -18194,6 +18194,35 @@
           "Fresh grouped search output largely historical financial summaries,encyclopedia and theme pages;recall and freshness limited. AWS capacity wording initially appeared new to this ledger;July30call/reporting supplies substantially equivalent2027/2028 reservation statements. No quantified increment,formal new capex increase or named-supplier earnings revision established.",
           "Only A-topic public source/research stages appended;no equity quotes,valuation,targets,holdings,private market-flow data or trading conditions. No article,lint,build,deploy or public-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-26",
+        "checked_at": "2026-10-25 20:34:33 UTC",
+        "instruction_commit_sha": "b6f652890532b632d8d8c9738308c4b981095928",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "0ed6c23ff4531ce587364fe32f3bed159e34b30e",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_and_original_publication_dates_checked_no_material_increment",
+        "scope": "All98 active names included in14 fresh grouped discovery queries;six official core indices,3 stronger global/core supplemental queries and2 broad discovery queries checked. JPC original September2report compared with aggregator October24label;October25DSX POD original reporting compared with existing research.155public events,383candidates and accessible prior notices used for deduplication. No new material event,candidate or article.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://ec.ltn.com.tw/article/paper/1768990",
+          "https://toalpha.tw/rotation",
+          "https://money.udn.com/money/story/5612/9835504"
+        ],
+        "source_limits": [
+          "Fresh metadata/default head and complete same-commit mandatory instructions,configuration,taxonomy,series,specifications,progress and three related article blobs retrieved. Required source hashes unchanged. Fresh full alpha-quant CSV retains98 active names and unchanged blob. Grouped discovery inclusion is not98 individually verified current filings;primary economic coverage remains partial.",
+          "All six core indices accessible. Latest visible entries remain TSMC October15,MediaTek September30,NVIDIA October22,AMD October12,Broadcom October21,Marvell October13. No authenticated new MediaTek TPU design award,NRE,Google procurement split or guidance change established.",
+          "Many search returns were historical market tables,commentary and aggregators rather than new issuer disclosures. JPC article direct original is datedSeptember2,not aggregatorOctober24;four US1.6T loopback customers and2028visibility are historical attributed management statements,not new October contracts or current revenue revisions. Product certification/shipments and Thailand future certification target remain distinct. No named-CSP incremental order value,realized margin or cash improvement established.",
+          "October25EconomicDaily DSX POD report restates previously recorded reference-design and planned early2027 delivery scope;deployment-speed and efficiency figures remain vendor claims rather than accepted customer installations or supplier profit revisions. October23PCB story direct retrieval unsuccessful;discovery-only commentary not adopted as a new numeric earnings revision.",
+          "Only A-topic public source/research stages appended;no equity quotes,valuation,targets,holdings,private market-flow data or trading conditions. No article,lint,build,deploy or public-content completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -28334,7 +28363,7 @@
     }
   ],
   "last_research_date": "2026-10-26",
-  "instruction_commit_sha": "562dd46391ccdc581e69c83d1bc170fb8f45d213",
+  "instruction_commit_sha": "b6f652890532b632d8d8c9738308c4b981095928",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
