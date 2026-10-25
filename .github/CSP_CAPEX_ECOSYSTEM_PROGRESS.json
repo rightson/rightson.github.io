@@ -18053,6 +18053,34 @@
           "Wiwynn October25 news indexed text obtained, direct Economic Daily/UDN body access failed. September22 FTNN historical body and issuer Q2 financial page read. Original Goldman report and comparable model changes not obtained; new customer and earnings revision unconfirmed. Historical capex unit typo in secondary report not adopted.",
           "Public update contains A-topic source facts and research stages only;no equity quotes,valuation,targets,holdings,private market-flow data or trading conditions. No article,lint,build,deploy or public-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-25",
+        "checked_at": "2026-10-25 15:41:31 UTC",
+        "instruction_commit_sha": "6a94f2f0fbdc764a6c3e15f000681c3894b69f8e",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "188cb481a496eb0ff7625d1dfb4f0655e8d744aa",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_checked_historical_inference_economics_candidate_added",
+        "scope": "All98 active names included in14 fresh grouped discovery queries;six official core indices and3 global/core supplemental queries checked. DeepInfer original provenance followed up;155 events,381 prior candidates and accessible notifications compared. One historical research candidate added,no material event or article.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://github.com/deepseek-ai/DeepInfer/blob/774ce244b87cc0eb8d4b94ab9f5de2ab22049f01/doc/inference_deployment_qa.md",
+          "https://github.com/deepseek-ai/DeepInfer/blob/main/README.md"
+        ],
+        "source_limits": [
+          "Fresh default metadata/head and complete same-commit required instructions,specifications,configuration,taxonomy,series,progress and three related article blobs retrieved. Required instruction and article blob hashes match previously read versions;no truncation in fetched content. Fresh full alpha-quant CSV contains98 active names. Grouped search does not validate98 individual latest filings;primary economic coverage remains partial.",
+          "Core latest-index dates remain TSMC October15,MediaTek September30,NVIDIA October22,AMD October12,Broadcom October21,Marvell October13;no authenticated new TPU award,NRE,procurement split or guidance revision.",
+          "Discovery results mainly historical announcement indices,existing PCB forecasts,monthly sales,social/valuation pages and the already recorded Wiwynn broker forecast. One new discovery relates to historical October20 DeepSeek unit-revenue/storage disclosures;current commentary is not a new realised earnings event.",
+          "DeepInfer original full Q&A retrieved and matched to immutable October20 commit. Company-reported revenue and deployment scale lack audited profit/cash and named component procurement;no supplier earnings change inferred. FourWeekMBA direct pages inaccessible;source claims traced to original GitHub document. USDA/Oglethorpe lead deduplicated against existing October18 candidate and its unproven CSP allocation.",
+          "Only A-topic public sources and research stages appended;no stock quotes,valuation,targets,holdings,private market flows or trading conditions. No article,lint,build,deploy or public-content completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -28116,6 +28144,34 @@
         "Reconcile sales growth with memory agency accounting, recurring NRE, product mix and cash conversion; validate named customer deployment."
       ],
       "publication_status": "research_candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "deepseek-deepinfer-self-reported-inference-revenue-and-ssd-cache-baseline-20261020",
+      "date": "2026-10-25",
+      "event_date": "2026-10-20",
+      "instruction_commit_sha": "6a94f2f0fbdc764a6c3e15f000681c3894b69f8e",
+      "companies": [
+        "DeepSeek",
+        "NVIDIA",
+        "Huawei"
+      ],
+      "sources": [
+        "https://github.com/deepseek-ai/DeepInfer/blob/774ce244b87cc0eb8d4b94ab9f5de2ab22049f01/doc/inference_deployment_qa.md",
+        "https://github.com/deepseek-ai/DeepInfer/blob/main/README.md"
+      ],
+      "stage": "historical_original_deployment_qa_pinned_to_october20_commit_vendor_report_not_audited_profit",
+      "facts": {
+        "original_commit": "774ce244b87cc0eb8d4b94ab9f5de2ab22049f01;2026-10-20T11:03:13Z;current Q&A content matches immutable version.",
+        "reported_economics": "DeepSeek states one V4.1 Flash cluster serves155 trillion tokens/day and yieldsUSD38/GPU-hour revenue at valley pricing. This is vendor-reported revenue,not profit,cash collection or rental price.",
+        "reported_storage": "Dedicated KV cache storage approximately100PiB SSD,3-day agent/7-day chatbot TTL;logical storage/GPU about14.4TB with larger required physical capacity. Recommended cache server20x30.73TB SSD with minimum40GB/s read/5GB/s write. These are deployment facts/recommendations,not a new supplier purchase award.",
+        "demand_transmission": "Prefix reuse can trade repeated prefill compute for SSD capacity,storage bandwidth and network traffic. README supports NVIDIA SM100 and Huawei Ascend950;actual revenue-cluster chip composition,utilization and complete costs undisclosed.",
+        "limits": "Do not subtract an unrelated market GPU rental quote from revenue to infer margin. Total tokens are not all freshly generated output;input/output/cache mix and denominator need reconciliation. KV management and load balancing not fully open-sourced;no named SSD supplier,order allocation,incremental CSPcapex or supplier earnings revision confirmed. October25 commentary does not make October20 disclosure a new event."
+      },
+      "questions": [
+        "Reconcile billed tokens,cache hits,GPU-hour denominator,realized collections and full storage/network/power/depreciation costs.",
+        "Verify repeatable economics across clusters and any named procurement or storage-supplier mix change."
+      ],
+      "publication_status": "research_candidate_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -28135,7 +28191,7 @@
     }
   ],
   "last_research_date": "2026-10-25",
-  "instruction_commit_sha": "996ed243c9d85880a21437e3ad1528feebb78b2c",
+  "instruction_commit_sha": "6a94f2f0fbdc764a6c3e15f000681c3894b69f8e",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
