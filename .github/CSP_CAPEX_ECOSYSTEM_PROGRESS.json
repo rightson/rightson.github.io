@@ -18081,6 +18081,33 @@
           "DeepInfer original full Q&A retrieved and matched to immutable October20 commit. Company-reported revenue and deployment scale lack audited profit/cash and named component procurement;no supplier earnings change inferred. FourWeekMBA direct pages inaccessible;source claims traced to original GitHub document. USDA/Oglethorpe lead deduplicated against existing October18 candidate and its unproven CSP allocation.",
           "Only A-topic public sources and research stages appended;no stock quotes,valuation,targets,holdings,private market flows or trading conditions. No article,lint,build,deploy or public-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-26",
+        "checked_at": "2026-10-25 16:49:37 UTC",
+        "instruction_commit_sha": "1043f1d3193860cb9887072f58d67856404cfc61",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "0ed6c23ff4531ce587364fe32f3bed159e34b30e",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_five_core_indices_and_broadcom_partial_fallback_checked_no_material_increment",
+        "scope": "All98 active names included in14 fresh grouped discovery queries; six core companies screened through5 current official indices and Broadcom official-news search/direct historical-release fallback. Three global/core supplemental queries plus Broadcom source recovery performed. Compared155 events,382 candidates and accessible prior notifications;no new event,candidate or article.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://investors.broadcom.com/news-releases/news-release-details/broadcom-advance-ntt-docomos-private-cloud-vmware-cloud"
+        ],
+        "source_limits": [
+          "Fresh repository metadata/default head and complete same-commit mandatory instruction,specification,configuration,taxonomy,series,progress and three related article blobs retrieved. Instruction/spec/article hashes unchanged. Alpha-quant head changed but full active-universe CSV blob unchanged with98 names;no watchlist modification. Grouped discovery does not constitute98 individual latest-filing validations;primary economic coverage remains partial.",
+          "Current accessible official indices latest dates:TSMC October15,MediaTek September30,NVIDIA October22,AMD October12,Marvell October13. Broadcom full financial-news index returned403 and alternate news-list path404;official-domain search and historical DOCOMO release body retrieved. Current Broadcom index completeness remains unverified,not interpreted as unchanged news.",
+          "Grouped results mainly historical announcements,September revenue summaries,forecast/valuation pages and old news. Existing Wiwynn,PCB,STMicro,USDA/Oglethorpe,DeepInfer,Bernstein and DOCOMO records deduplicated. A commentary estimating datacenter build cost excluding chip-vendor margins lacks a validated comparable supplier-earnings revision;no earnings or purchase award inferred.",
+          "No new authenticated MediaTek TPU award,NRE,Google procurement allocation or Marvell competitive-contract revision found in retrieved material;source limitations remain. Search silence is not evidence of no event.",
+          "Only A-topic public source/research-stage record appended;no equity quotes,valuation,targets,holdings,private market flows or trading conditions. No article,lint,build,deploy or public-content completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -28190,8 +28217,8 @@
       "impact": "Search hits and reposted notices have not been individually checked against company or exchange originals."
     }
   ],
-  "last_research_date": "2026-10-25",
-  "instruction_commit_sha": "6a94f2f0fbdc764a6c3e15f000681c3894b69f8e",
+  "last_research_date": "2026-10-26",
+  "instruction_commit_sha": "1043f1d3193860cb9887072f58d67856404cfc61",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
