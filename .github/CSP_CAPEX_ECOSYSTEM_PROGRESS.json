@@ -17786,6 +17786,36 @@
           "October24 Reuters Breakingviews roundup discovered through search; direct body inaccessible. Commentary summary supplies no authenticated new issuer spending amendment,cancellation or supplier profit revision. Older Microsoft accounting-based capex reduction headlines remain distinct from physical spending cuts.",
           "No independent long-form article increment established. Public update contains A-topic sources/research stage only; no equity prices,valuation,targets,holdings,private flows or trading conditions. No article,lint,build,deploy or public-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-25",
+        "checked_at": "2026-10-25 07:06:17 UTC",
+        "instruction_commit_sha": "464130d975312dd7deb19981440f165e26c34436",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "188cb481a496eb0ff7625d1dfb4f0655e8d744aa",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_six_core_indices_checked_candidate_added_no_material_alert",
+        "scope": "All98 active names included in14 fresh date-restricted grouped queries. Six core official indices and three global/core supplemental queries checked; targeted followups covered EZconn financing notice,LS Materials repeat order and an Ardentec discovery lead.155 events and372 prior candidates compared;one financing-stage candidate added,no new event or article.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://news.cnyes.com/news/id/6635805",
+          "https://passive-components.eu/ls-materials-wins-51-5m-ai-data-center-supercapacitor-order/",
+          "https://readmo.cmoney.tw/article/f30df3a8-bf04-4b6b-adda-726db8e71b98"
+        ],
+        "source_limits": [
+          "Fresh complete same-commit mandatory instructions,specifications,config,taxonomy,series,progress and three related article blobs retrieved; hashes unchanged from fully read versions. Fresh alpha-quant metadata,head and full CSV retrieved;98 active names unchanged.",
+          "Grouped discovery includes all98 names but is not individual latest-filings validation; results primarily historical indices,commentary,social/valuation pages and repeated forecasts. Date filters do not authenticate source freshness; issuer economics coverage remains partial.",
+          "Core official latest dates unchanged:TSMC October15,MediaTek September30,NVIDIA October22,AMD October12,Broadcom October21,Marvell October13. No newly authenticated award,NRE,procurement split or guidance revision.",
+          "EZconn October22 notice read in full through republication. Three-month fundraising extension application retained as candidate; no authenticated regulator approval,cash receipt,capacity delay,customer cancellation or profit revision. Direct MOPS redirected to error.",
+          "LS Materials October13 order matches existing primary event and candidate;no new delivery,margin or cash evidence. STL/HFCL feature,CSP financing reports and MediaTek TPU reports repeat existing or historical sources. Ardentec commentary page inaccessible;no new claim adopted.",
+          "Public update contains A-topic sources/research stages only;no equity prices,valuation,targets,holdings,private market flows or trading conditions. No article,lint,build,deploy or public-content completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -27638,6 +27668,32 @@
         "Obtain the original note and comparable prior forecast; separate units, ASP, rack mix and memory inflation.",
         "Reconcile any named-supplier earnings changes with delivery, margin and cash assumptions before treating aggregate TAM as profit growth."
       ]
+    },
+    {
+      "key": "ezconn-gdr-fundraising-period-extension-application-20261022",
+      "date": "2026-10-25",
+      "source_date": "2026-10-22",
+      "instruction_commit_sha": "464130d975312dd7deb19981440f165e26c34436",
+      "companies": [
+        "EZconn"
+      ],
+      "stage": "issuer_notice_republication_read_direct_mops_and_operating_impact_pending",
+      "sources": [
+        "https://news.cnyes.com/news/id/6635805",
+        "https://ww2.money-link.com.tw/realtimenews/NewsContent.aspx?PU=1002&SN=2434606002"
+      ],
+      "facts": {
+        "notice_time": "2026-10-22 13:37:20 Asia/Taipei",
+        "notice": "Issuer-notice republication states application on October22 to extend by three months the fundraising period for new shares participating in a GDR offering. Previous effectiveness approval was August11; notice cites June3 board decision.",
+        "stated_reason": "Capital-market volatility,underwriting schedule and seeking a suitable issuance time.",
+        "limits": "Application is not authenticated regulator approval or completed fundraising. Notice does not establish cancelled customer orders,delayed factory commissioning,liquidity shortfall or an earnings revision. Direct MOPS endpoint redirected to error; republications are the same underlying notice,not independent evidence."
+      },
+      "questions": [
+        "Obtain direct regulator/issuer filing and extension approval status.",
+        "Reconcile actual proceeds,available financing and expansion payment schedule before inferring a capacity or earnings impact.",
+        "Check for authenticated customer delivery changes; keep issuance timing separate from demand."
+      ],
+      "publication_status": "candidate_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -27657,7 +27713,7 @@
     }
   ],
   "last_research_date": "2026-10-25",
-  "instruction_commit_sha": "d2fc9a95a1e58889321016867dac8d4191db16da",
+  "instruction_commit_sha": "464130d975312dd7deb19981440f165e26c34436",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
