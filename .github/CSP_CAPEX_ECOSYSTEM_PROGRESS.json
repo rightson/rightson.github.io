@@ -18746,6 +18746,41 @@
           "Mandatory instruction files and specifications retrieved at same commit; unchanged hashes match fully read versions in current conversation. Full ledger blob retrieved and parsed; three recent ai-industry article blobs fetched at instruction commit. No new article or publication verification.",
           "OnlyApublic research sources,coverage andstage appended; noBmarket data,prices,valuation,holdings ortrading conditions stored."
         ]
+      },
+      {
+        "date": "2026-10-27",
+        "checked_at": "2026-10-26 23:39:27 UTC",
+        "instruction_commit_sha": "3019b4025f1a4d7101912d34d5b7d5a010d92583",
+        "company_count": 98,
+        "grouped_query_count": 7,
+        "universe_commit_sha": "4d3515bb702b99d29f4235d4f30d72d1e35a9c71",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_core_csp_indices_checked_rambus_first_primary_baseline_candidate",
+        "scope": "All98active companies in7grouped queries, six core andfiveCSP official indices attempted; broader global infrastructure/TPU/financing discovery and Rambus primary financial follow-up.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://press.aboutamazon.com/",
+          "https://news.microsoft.com/source/",
+          "https://cloud.google.com/blog/",
+          "https://investor.atmeta.com/investor-news/",
+          "https://www.oracle.com/news/",
+          "https://investor.rambus.com/press-releases/press-release-details/2026/Rambus-Reports-Third-Quarter-2026-Financial-Results/default.aspx",
+          "https://www.rambus.com/second-quarter-2026-financial-results/",
+          "https://www.sec.gov/Archives/edgar/data/917273/000119312526431941/rmbs-20260930.htm",
+          "https://s202.q4cdn.com/680194126/files/content_files/Earnings-Call-Webcast-Deck-2026Q3-v-final.pdf"
+        ],
+        "source_limits": [
+          "Grouped discovery mostly returned old monthly revenues, reposts and existing events; not98individual latest-filings/order/margin/cashflow audits. TWSEdaily-material endpoint inaccessible andTPExdaily-material endpoint403 thisround; no exchange-wide current-filing completeness claimed.",
+          "Metaindex returned navigation only; no absence-of-change inference from missing release body. Known financing/Cadence events retained without duplicate alerts. Anthropic fullS1 remains previously recorded size-limit gap; no new financial totals adopted.",
+          "Mandatory instructions retrieved atsamecommit; AGENTS585lines fully displayed in3boundedsections. Ledgerfullblob parsed;3recent ai-industry articles fetched with unchanged hashes against previously fullyread versions.",
+          "Rambus issuer release and original10-Q financial/revenue/cash sections establish an outside-universe firstbaseline. Productrevenue withinpriorguidance and nine-monthcashflow decline temper single-quartergrowth interpretation. No fullarticle orPagespublication.",
+          "Public record contains onlyApublicsourcefacts,coverage andstages. No prices,valuations,holdings,fundflows,tradeconditions orBmarketanalysis stored."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -29186,6 +29221,100 @@
         "Verify milestone satisfaction,cash timing and ultimate compute deployment versus supplier revenue."
       ],
       "publication_status": "source_candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "rambus-q3-2026-memory-interface-growth-prior-guidance-and-cash-baseline-20261026",
+      "date": "2026-10-27",
+      "event_date": "2026-10-26",
+      "instruction_commit_sha": "3019b4025f1a4d7101912d34d5b7d5a010d92583",
+      "companies": [
+        "Rambus"
+      ],
+      "stage": "first_primary_financial_baseline_q3_release_prior_guidance_and_selected_10q_sections_verified",
+      "sources": [
+        "https://investor.rambus.com/press-releases/press-release-details/2026/Rambus-Reports-Third-Quarter-2026-Financial-Results/default.aspx",
+        "https://www.rambus.com/second-quarter-2026-financial-results/",
+        "https://www.sec.gov/Archives/edgar/data/917273/000119312526431941/rmbs-20260930.htm",
+        "https://s202.q4cdn.com/680194126/files/content_files/Earnings-Call-Webcast-Deck-2026Q3-v-final.pdf"
+      ],
+      "facts": {
+        "currency": "USD",
+        "unit": "million except EPS and percentages",
+        "source_scope": "Issuer Q3 release including numerical tables, July27 issuer Q2 results and Q3 guidance, original Q3 10-Q selected revenue/customer/cashflow/risk sections, and Q3 issuer deck obtained. No claim of full 10-Q audit or call-transcript verification.",
+        "q3_2026": {
+          "total_revenue": 218.3,
+          "product_revenue": 114.3,
+          "royalties_revenue": 77,
+          "contract_other_revenue": 27,
+          "gaap_eps": 0.69,
+          "non_gaap_eps": 0.84,
+          "reported_gaap_operating_margin_pct": 38,
+          "operating_cash_flow": 102.5
+        },
+        "q2_2026": {
+          "total_revenue": 207.4,
+          "product_revenue": 99.2,
+          "royalties_revenue": 84.2,
+          "contract_other_revenue": 24,
+          "operating_cash_flow": 61.2
+        },
+        "prior_q3_guidance": {
+          "total_revenue": [
+            210,
+            216
+          ],
+          "product_revenue": [
+            110,
+            116
+          ],
+          "royalties_revenue": [
+            69,
+            75
+          ],
+          "contract_other_revenue": [
+            25,
+            31
+          ],
+          "non_gaap_eps": [
+            0.75,
+            0.82
+          ]
+        },
+        "q4_2026_guidance": {
+          "total_revenue": [
+            227,
+            233
+          ],
+          "product_revenue": [
+            127,
+            133
+          ],
+          "royalties_revenue": [
+            68,
+            74
+          ],
+          "contract_other_revenue": [
+            26,
+            32
+          ],
+          "non_gaap_eps": [
+            0.84,
+            0.92
+          ]
+        },
+        "nine_month_ocf_2026": 246.938,
+        "nine_month_ocf_2025": 260.202,
+        "verified_relationship": "Original 10-Q says product revenue primarily consists of memory interface chips sold to Micron, Samsung, SK hynix and directly to system manufacturers and cloud providers for server/client memory modules. Product revenue share52% inQ3. Royalty licenses have different economics; companywide results are not all AI revenue.",
+        "baseline_comparison": "First Rambus baseline in this ledger, not a retrospective prior thesis. Q3 total revenue exceeded July guidance; product revenue remained within110–116 range while royalties77 exceeded69–75. Product growth alone is not a new unanticipated order surge. Q4 product midpoint130 implies13.7% sequential growth versusQ3; royalties midpoint71 implies7.8% decline. No original consensus dataset obtained or quantified consensus revision claimed.",
+        "cash_and_limits": "Q3 cashflow improved sequentially, but nine-month cashflow remains below prior year. Original10-Q describes working-capital effects from inventories, receivables, deferred revenue and payables; top5customers64% ofQ3revenue. Neither sustained cash-conversion acceleration nor new named hyperscaler design win established. Financial table rounding differs from headline GAAP operating income; no conclusion depends on that rounding.",
+        "scope": "Outside98-nameTaiwanuniverse research discovery. No watchlist edit, named Taiwan supplier order allocation or inferred supplier earnings revision."
+      },
+      "questions": [
+        "Verify Q4 product revenue127–133 delivery, customer qualification and revenue by memory-interface generation, rather than treating announced PMIC/security products as shipped volume.",
+        "Track operating cashflow versus profit, inventories and receivables over several quarters; Q3 record cash alone does not establish sustained improvement.",
+        "Separate royalty/licensing timing and product profitability before evaluating durable earnings power; obtain primary demand/mix and competitive-share evidence."
+      ],
+      "publication_status": "source_baseline_candidate_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
