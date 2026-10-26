@@ -7190,6 +7190,32 @@
         "limits": "No completed funding,net proceeds,new equipment award,procurement allocation or supplier earnings revision established. No private quotes,valuation,holdings or market flows stored."
       },
       "status": "issuer_distribution_and_reuters_checked_pricing_cash_receipt_and_procurement_conversion_pending_no_article"
+    },
+    {
+      "fingerprint": "spacex-apollo-binding-gpu-lease-commitment-terms-versus-closed-claim-20261026",
+      "event_date": "2026-10-24",
+      "discovered_date": "2026-10-26",
+      "instruction_commit_sha": "0421e3fba0b6c19ff972f825fb4d4c0d0f7713b7",
+      "companies": [
+        "SpaceX",
+        "Apollo Global Management"
+      ],
+      "type": "issuer_sec_8k_binding_commitment_for_gpu_finance_lease",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1181412/000110465926118614/tm2628247d1_8k.htm",
+        "https://www.reuters.com/business/media-telecom/spacex-enters-40-billion-deal-with-apollo-ai-chip-financing-2026-10-26/"
+      ],
+      "facts": {
+        "filing_date": "2026-10-26",
+        "currency": "USD",
+        "expected_aggregate_lease_principal_bn": 40,
+        "primary_scope": "Full original SEC8-K obtained. October24binding commitment letter contemplates Apollo-managed lessor purchasing GPU pods/equipment for SpaceX.",
+        "terms": "Tranches run approximately5–5.25years;quarterly advance rent generally includes1/20financed cost plus interest and expenses. Fixed annual rate to be set before master-lease entry.",
+        "maturity": "Master lease remains subject to closing conditions,expected before2026year-end;delivery-based lease commencement expectedH1 2027. Not authenticated as settled cash funding.",
+        "comparison": "October25Musk completion claim already registered. Original filing now clarifies lease structure,counterparty,conditions and cash timing. Forty-billion figure is aggregate principal across lease terms,not immediate issuer cash.",
+        "limits": "No final pricing,executed definitive lease,accepted equipment,new Taiwan supplier allocation or realised supplier earnings verified. No private quotes,valuation,holdings or market flows stored."
+      },
+      "status": "original_sec_document_verified_financing_terms_clarified_closing_and_delivery_pending_no_article"
     }
   ],
   "articles": [],
@@ -18453,6 +18479,28 @@
           "Core official visible indices retain prior dates. Meta issuer IR index has no readable release list;direct new issuer URL and PRNewswire URL inaccessible,but complete company-issued distribution obtained. No separate SEC prospectus authenticated.",
           "Only A public source facts and research stages appended. No B data or private investment data saved. No article,lint,build,deploy or public-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-26",
+        "checked_at": "2026-10-26 13:30:42 UTC",
+        "instruction_commit_sha": "0421e3fba0b6c19ff972f825fb4d4c0d0f7713b7",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "41d50ff9364741a6342204e6d5560810adddc7e3",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_core_csp_indices_and_new_spacex_sec_terms_checked",
+        "scope": "All98active names included in14fresh grouped discovery queries. Six coreissuer indices checked,including Broadcom financial-news fallback;CSP sources and global/core discovery checked. No watchlist change.",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1181412/000110465926118614/tm2628247d1_8k.htm",
+          "https://www.reuters.com/business/media-telecom/spacex-enters-40-billion-deal-with-apollo-ai-chip-financing-2026-10-26/"
+        ],
+        "source_limits": [
+          "Same-commit required instructions,specifications,config,taxonomy,series,progress and3related article files retrieved;large ledger parsed from exactblob.",
+          "Grouped discovery is not98individually validated current filings;historical revenue baseline retained,current order,margin and cash economics remainpartial.",
+          "Broadcom homepage403;official financial-news release index readable. Core indices retain prior visible release dates;no newly authenticated MediaTek TPU award,NRE,Google procurement split or coreissuer guidance revision established.",
+          "Meta offering and ASMPT bidding reports match prior registered records. SpaceX SEC original supplies a distinct clarification of previously reported financing;40bn is not an additional funding package.",
+          "OnlyA-topic source facts/research stages appended. NoBdata,quotes,valuation,holdings or trading conditions. Noarticle,lint,build,deploy orpubliccontent completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -28738,6 +28786,26 @@
         "Reconcile actual equipment acceptance,utilisation and cash generation against previously registered commitments."
       ],
       "publication_status": "source_event_registered_no_article"
+    },
+    {
+      "key": "spacex-apollo-binding-gpu-lease-commitment-terms-versus-closed-claim-20261026",
+      "date": "2026-10-26",
+      "instruction_commit_sha": "0421e3fba0b6c19ff972f825fb4d4c0d0f7713b7",
+      "companies": [
+        "SpaceX",
+        "Apollo Global Management"
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1181412/000110465926118614/tm2628247d1_8k.htm",
+        "https://www.reuters.com/business/media-telecom/spacex-enters-40-billion-deal-with-apollo-ai-chip-financing-2026-10-26/"
+      ],
+      "stage": "binding_commitment_and_lease_cash_structure_verified_final_terms_closing_delivery_pending",
+      "questions": [
+        "Verify final master-lease execution,pricing,conditions and closing.",
+        "Reconcile equipment delivery,lease commencement and actual payments.",
+        "Verify deployment/utilisation and cash returns against fixed lease obligations."
+      ],
+      "publication_status": "public_source_event_registered_no_article"
     }
   ],
   "blockers": [
