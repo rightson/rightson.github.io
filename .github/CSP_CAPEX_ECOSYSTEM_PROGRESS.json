@@ -18306,6 +18306,34 @@
           "SpaceX financingclaim is new relative toOctober6talks andprior Q4capexbaseline. Reutersdirect currentpage failed;indexed original andfull CNA reproduction read;single reportingchain,notindependent lender confirmation. No officialdebtterms orfundsreceipt verified.",
           "OnlyA-topicpublicsources/researchstages appended. No B-topic calendar,marketflow,holdings,prices,valuation orprivatejudgment saved. No article,lint,build,deploy orpubliccontentcompletion claimed."
         ]
+      },
+      {
+        "date": "2026-10-26",
+        "checked_at": "2026-10-26 00:15:08 UTC",
+        "instruction_commit_sha": "a131cdf95139ddc419b90a8b48b0f2bea0e1d93a",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "465b4b16c8ea78073b88fe5d956f664c1a9df43c",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_core_indices_and_helium_policy_primary_checked_no_material_alert",
+        "scope": "All98active names included in14fresh grouped discovery queries;6coreissuer indices attempted with supplementary strong discovery. No universe modification.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/",
+          "https://www.broadcom.com/company/news/releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.energy.gov/articles/energy-department-designates-helium-critical-material-strengthen-american-manufacturing"
+        ],
+        "source_limits": [
+          "Complete ledger retrieved via exact blob after Contents wrapper returned empty for2MBfile. Instruction/config/taxonomy/series/spec/legacy and3related article blobs read at samecommit.",
+          "Grouped discovery is not98individually verified currentfilings. Prior September primary revenue baseline retained;current order,margin,cash economics remainpartial.",
+          "TSMC,MediaTek,NVIDIA,AMD,Marvell visibleindices retainedpreviousbaseline dates. BroadcomIR403;corporateindexreturnedemptybody,indexed officialheadline snippets providedpartialfallback. No complete Broadcom release-bodyaudit.",
+          "MediaTekCiti positive Q4preview matchesexistingOctober22candidate;originalnote,old/newforecast andissuercontracteconomics stillunverified. SpaceXfinancingalreadyregistered;no repeatedevent.",
+          "DOEheliumdesignation verified inofficialannouncement andnotice;no authenticated exportban orcompanyproductionrevision. Candidateonly. PublicentrycontainsnoBtopicdata,quotes,valuation,holdings,marketflows orprivatejudgment. Noarticlepublished."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -28448,6 +28476,27 @@
         "Separate firm-funded procurement from commitments;do not infer all neocloud credit access from one management prediction."
       ],
       "publication_status": "event_registered_no_article"
+    },
+    {
+      "key": "doe-helium-critical-material-designation-versus-chip-output-impact-20261023",
+      "date": "2026-10-26",
+      "event_date": "2026-10-23",
+      "instruction_commit_sha": "a131cdf95139ddc419b90a8b48b0f2bea0e1d93a",
+      "companies": [],
+      "sources": [
+        "https://www.energy.gov/articles/energy-department-designates-helium-critical-material-strengthen-american-manufacturing",
+        "https://www.energy.gov/documents/fed-register-notice-heliumpdf"
+      ],
+      "stage": "official_designation_and_notice_verified_company_allocation_and_output_impact_pending",
+      "facts": {
+        "official": "DOE added helium to its Critical Material List under the Energy Act of 2020 on October23. Official notice identifies semiconductor manufacturing and datacenter supply chains; DOE says limited refining capacity and lengthy permitting constrain production.",
+        "limits": "Designation is not an export restriction or evidence of a new chip-fab shutdown. No current issuer allocation,inventory exhaustion,wafer-output reduction,incremental gas pricing or supplier earnings revision authenticated. Media quota claims not promoted to verified issuer facts."
+      },
+      "questions": [
+        "Verify dated gas-supplier allocation notices and affected customer production.",
+        "Obtain company-specific inventories,recovery capacity,pricing and realized cost/output impact before inferring semiconductor earnings change."
+      ],
+      "publication_status": "candidate_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
@@ -28467,7 +28516,7 @@
     }
   ],
   "last_research_date": "2026-10-26",
-  "instruction_commit_sha": "cb6e8a10f0b5296a5048086f8d9f671fc75aa926",
+  "instruction_commit_sha": "a131cdf95139ddc419b90a8b48b0f2bea0e1d93a",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
