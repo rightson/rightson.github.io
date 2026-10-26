@@ -18716,6 +18716,36 @@
           "Mandatory files retrieved in full at sameinstructioncommit; instruction/spec/recentarticle hashes unchanged from preceding read versions. FullJSON ledger parsed and old historical records retained.",
           "OnlyApublicsources and researchstages appended. NoBdata,prices,valuation,holdings,tradingconditions,article,lint,build,deploy orpubliccontentcompletion recorded."
         ]
+      },
+      {
+        "date": "2026-10-27",
+        "checked_at": "2026-10-26 22:46:23 UTC",
+        "instruction_commit_sha": "d9c9f77a31d24439a248321f54a420b77ac27450",
+        "company_count": 98,
+        "grouped_query_count": 7,
+        "universe_commit_sha": "4d3515bb702b99d29f4235d4f30d72d1e35a9c71",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_core_csp_indices_checked_conditional_financing_source_candidate_only",
+        "scope": "All98 active Taiwan names included in7 fresh grouped company-name queries; six core issuer indices and five CSP indices read. Additional global infrastructure,TSMC/MediaTek/TPU,and financing discovery queries followed. Broadcom financing,Cadence earnings/Maestro,Meta andSpaceX remain registered baselines without duplicate alerts.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://press.aboutamazon.com/",
+          "https://news.microsoft.com/source/",
+          "https://cloud.google.com/blog/",
+          "https://investor.atmeta.com/investor-news/",
+          "https://www.oracle.com/news/"
+        ],
+        "source_limits": [
+          "Grouped discovery returned mostly historical/reposted content; it is not98individual current-announcement,order,margin orcashflow audits. Existing monthly-revenue baseline remains historical.",
+          "Meta index returns navigation without release bodies; SEC full Anthropic S1 exceeds retrieval-size limit. Failed retrieval does not establish no change. WSJ conditional financing evidence retained as unconfirmed-primary candidate,no funding or earnings conclusion.",
+          "Mandatory instruction files and specifications retrieved at same commit; unchanged hashes match fully read versions in current conversation. Full ledger blob retrieved and parsed; three recent ai-industry article blobs fetched at instruction commit. No new article or publication verification.",
+          "OnlyApublic research sources,coverage andstage appended; noBmarket data,prices,valuation,holdings ortrading conditions stored."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -29129,6 +29159,33 @@
         "Reconcile financing to actual deployment and supplier revenue without double-counting."
       ],
       "publication_status": "source_gap_candidate_only_no_article"
+    },
+    {
+      "key": "anthropic-conditional-77bn-financing-offers-s1-reconciliation-20261026",
+      "date": "2026-10-27",
+      "event_date": "2026-10-26",
+      "instruction_commit_sha": "d9c9f77a31d24439a248321f54a420b77ac27450",
+      "companies": [
+        "Anthropic",
+        "Google",
+        "Amazon",
+        "Broadcom"
+      ],
+      "stage": "original_reporting_conditions_read_primary_prospectus_unavailable_reconciliation_pending",
+      "sources": [
+        "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-10-26-2026/card/google-amazon-broadcom-offer-anthropic-77-billion-in-financing-76f40AQ4RVRfwstLv0Xr",
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm"
+      ],
+      "facts": {
+        "reported": "WSJ October26 original card reports USD77bn additional financing lined up across Google,Amazon,Broadcom. Amazon agreement tied to compute-capacity milestones; Google's USD20bn commitment partly contingent on revenue targets.",
+        "limits": "Original reporting only; full S1 retrieval rejected for content length4194305+. No original agreement clauses,drawn cash,incremental commitments or reconciliation with historical Broadcom convertible-note commitment and October26 USD63bn SPV verified. Amounts not added; no new supplier earnings or procurement allocation inferred."
+      },
+      "questions": [
+        "Obtain readable original prospectus contract notes and distinguish offer,commitment,eligibility,issuance and cash draw.",
+        "Reconcile counterparty amounts and conditions to previous equity,debt,SPV and cloud purchase commitments without double-counting.",
+        "Verify milestone satisfaction,cash timing and ultimate compute deployment versus supplier revenue."
+      ],
+      "publication_status": "source_candidate_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
