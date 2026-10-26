@@ -7159,6 +7159,37 @@
         "limits": "New guidance is forward-looking,not audited realised full-year profit. Q3 cashflow,customer concentration,backlog margin and individual Taiwan supplier allocation undisclosed. No latest quotation,valuation,holdings or private trade conditions stored."
       },
       "status": "rns_source_and_historical_cash_counterevidence_verified_no_article"
+    },
+    {
+      "fingerprint": "meta-equity-offering-launch-forward-cash-timing-and-chip-vendor-interest-20261026",
+      "event_date": "2026-10-26",
+      "discovered_date": "2026-10-26",
+      "instruction_commit_sha": "38f256027fad41224b677571cf9b3a268bd6d217",
+      "companies": [
+        "Meta Platforms",
+        "NVIDIA",
+        "AMD",
+        "Broadcom"
+      ],
+      "type": "issuer_distributed_equity_offering_launch_with_forward_sale_cash_timing",
+      "sources": [
+        "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Announces-Launch-of-Offering-of-Depositary-Shares-Representing-Series-A-Mandatory-Convertible-Preferred-Stock-and-Offering-of-Class-A-Common-Stock-in-Connection-with-Forward-Sale-Agreements/default.aspx",
+        "https://finviz.com/news/407538/meta-announces-launch-of-offering-of-depositary-shares-representing-series-a-mandatory-convertible-preferred-stock-and-offering-of-class-a-common-stock-in-connection-with-forward-sale-agreements",
+        "https://www.reuters.com/legal/transactional/meta-launches-35-billion-stock-offering-fund-ai-expansion-2026-10-26/"
+      ],
+      "facts": {
+        "source_scope": "Company-issued PRNewswire text read through Finviz and StreetInsider;direct issuer and PRNewswire URLs inaccessible. Reuters original corroborates launch,not completion.",
+        "currency": "USD",
+        "launch_bn": 35,
+        "common_stock_forward_bn": 22.5,
+        "mandatory_convertible_depositary_bn": 12.5,
+        "cash_timing": "No initial issuer proceeds from common-stock forward sales;future settlement on or before November19,2027. Preferred pricing and conversion terms pending.",
+        "future_atm": "Separate planned up-to60bn ClassC ATM,expected no earlier thanQ1 2027;no agreement yet and terms undetermined.",
+        "vendor_interest": "NVIDIA,AMD and Broadcom indicate aggregate up-to5bn interest;explicitly nonbinding and not additional to the offering.",
+        "baseline": "October21 share-class/capex announcement already registered. October26 launch is a distinct funding step;2026capex135–145bn unchanged here.",
+        "limits": "No completed funding,net proceeds,new equipment award,procurement allocation or supplier earnings revision established. No private quotes,valuation,holdings or market flows stored."
+      },
+      "status": "issuer_distribution_and_reuters_checked_pricing_cash_receipt_and_procurement_conversion_pending_no_article"
     }
   ],
   "articles": [],
@@ -18401,6 +18432,27 @@
           "Computacenter,Tata and SpaceX reports match existing records. Optical procurement headline traces to October5historical reporting. ASMPT adds an uncompleted transaction candidate only;no new material event or article.",
           "Only A-topic public sources and research stages appended. No private prices,valuation,holdings,market flows or trading conditions. No article,lint,build,deploy or public-content completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-26",
+        "checked_at": "2026-10-26 11:43:53 UTC",
+        "instruction_commit_sha": "38f256027fad41224b677571cf9b3a268bd6d217",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "41d50ff9364741a6342204e6d5560810adddc7e3",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "fresh_discovery_core_csp_checks_and_new_meta_equity_launch_source_verified",
+        "scope": "98active names in14grouped queries;six coreissuer indices and main CSP sources checked. Meta launch compared with existing share-class and commitment baselines. No watchlist change.",
+        "sources": [
+          "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Announces-Launch-of-Offering-of-Depositary-Shares-Representing-Series-A-Mandatory-Convertible-Preferred-Stock-and-Offering-of-Class-A-Common-Stock-in-Connection-with-Forward-Sale-Agreements/default.aspx",
+          "https://finviz.com/news/407538/meta-announces-launch-of-offering-of-depositary-shares-representing-series-a-mandatory-convertible-preferred-stock-and-offering-of-class-a-common-stock-in-connection-with-forward-sale-agreements",
+          "https://www.reuters.com/legal/transactional/meta-launches-35-billion-stock-offering-fund-ai-expansion-2026-10-26/"
+        ],
+        "source_limits": [
+          "Complete same-commit required files and large ledger exact blob retrieved. Grouped discovery is not98current issuer-filing audits;current order,margin and cash evidence remains partial.",
+          "Core official visible indices retain prior dates. Meta issuer IR index has no readable release list;direct new issuer URL and PRNewswire URL inaccessible,but complete company-issued distribution obtained. No separate SEC prospectus authenticated.",
+          "Only A public source facts and research stages appended. No B data or private investment data saved. No article,lint,build,deploy or public-content completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -28663,6 +28715,29 @@
         "Separate any disposal gain and financing effect from continuing operating profit,cash conversion and customer delivery."
       ],
       "publication_status": "outside_universe_source_candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "meta-equity-offering-launch-forward-cash-timing-and-chip-vendor-interest-20261026",
+      "date": "2026-10-26",
+      "instruction_commit_sha": "38f256027fad41224b677571cf9b3a268bd6d217",
+      "companies": [
+        "Meta Platforms",
+        "NVIDIA",
+        "AMD",
+        "Broadcom"
+      ],
+      "sources": [
+        "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Announces-Launch-of-Offering-of-Depositary-Shares-Representing-Series-A-Mandatory-Convertible-Preferred-Stock-and-Offering-of-Class-A-Common-Stock-in-Connection-with-Forward-Sale-Agreements/default.aspx",
+        "https://finviz.com/news/407538/meta-announces-launch-of-offering-of-depositary-shares-representing-series-a-mandatory-convertible-preferred-stock-and-offering-of-class-a-common-stock-in-connection-with-forward-sale-agreements",
+        "https://www.reuters.com/legal/transactional/meta-launches-35-billion-stock-offering-fund-ai-expansion-2026-10-26/"
+      ],
+      "stage": "offering_launch_terms_read_forward_settlement_and_cash_conversion_pending",
+      "questions": [
+        "Verify final price,preferred dividend/conversion terms,net proceeds and actual forward settlement.",
+        "Verify whether supplier interest becomes a completed subscription and whether any procurement linkage is disclosed.",
+        "Reconcile actual equipment acceptance,utilisation and cash generation against previously registered commitments."
+      ],
+      "publication_status": "source_event_registered_no_article"
     }
   ],
   "blockers": [
