@@ -7272,6 +7272,36 @@
         "limits": "Issuer attributes broad product-category growth to AI-driven designs; no separate Maestro revenue or profit attribution. Annual EPS revision is management guidance, not independently authenticated consensus change. Margin compression and unchanged next-12-month RPO revenue temper extrapolation. No price, valuation, holdings or trading conditions recorded."
       },
       "status": "earnings_revision_and_prior_guidance_primary_baseline_compared_no_article"
+    },
+    {
+      "fingerprint": "broadcom-anthropic-63bn-committed-spv-financing-and-residual-value-support-20261026",
+      "event_date": "2026-10-26",
+      "discovered_date": "2026-10-27",
+      "instruction_commit_sha": "008053fdb5035de655450531af66113377a2f94c",
+      "companies": [
+        "Broadcom",
+        "Anthropic",
+        "Bank of America",
+        "Blackstone",
+        "Citi",
+        "Morgan Stanley"
+      ],
+      "type": "financial_partner_primary_committed_spv_financing_terms_and_residual_value_support",
+      "sources": [
+        "https://www.blackstone.com/news/press/bank-of-america-blackstone-citi-and-morgan-stanley-announce-landmark-63-billion-financing-structure-to-enable-ai-compute/",
+        "https://www.reuters.com/legal/transactional/wall-street-banks-blackstone-line-up-63-billion-finance-broadcom-chips-anthropic-2026-10-26/"
+      ],
+      "facts": {
+        "primary_scope": "Full Blackstone-hosted joint announcement read; Reuters original separately read. This resolves the prior title-only issuer-index retrieval gap.",
+        "currency": "USD",
+        "announced_transaction_bn": 63,
+        "structure": "New SPV with committed financing purchases Broadcom XPU accelerators and networking solutions and leases them to Anthropic. BofA,Citi and Morgan Stanley arrange first lien; Blackstone provides committed second lien.",
+        "support": "Broadcom supplies residual-value support equal to the first-lien portion. Announcement does not quantify that portion or disclose full support triggers.",
+        "timing": "Expected deliveries begin calendar2027 under a previously announced strategic compute agreement.",
+        "comparison": "Advances prior reported approximately60bn financing talks and October26 title-only evidence to identified financial-partner commitments. Not assumed incremental to prior35bn platform or historical backstop/conditional-note disclosures.",
+        "limits": "No authenticated drawdown, completed cash settlement, final interest rate, first-lien amount, full recourse or delivery acceptance established. Financing amount is not recognized Broadcom revenue or a new Taiwan supplier allocation. No supplier earnings revision inferred."
+      },
+      "status": "full_financial_partner_primary_terms_verified_funding_delivery_and_exposure_reconciliation_pending_no_article"
     }
   ],
   "articles": [],
@@ -18661,6 +18691,30 @@
           "Meta IR index provides no readable releasebody. Broadcomnewfinancingbody inaccessible; titleonly and termsunverified. CadenceQ3 directissuerpage inaccessible; company-issued distribution version read, not classified as independently corroborated by retransmissions.",
           "Allmandatory files retrieved in full at oneinstructioncommit; instruction/spec/article hashes unchanged from preceding read versions. JSONledger parsed and full historical arrays retained.",
           "OnlyApublic sources and researchstages appended. NoBdata,quotes,valuation,holdings,tradingconditions,article,lint,build,deploy orpubliccontentcompletion recorded."
+        ]
+      },
+      {
+        "date": "2026-10-27",
+        "checked_at": "2026-10-26 21:34:04 UTC",
+        "instruction_commit_sha": "008053fdb5035de655450531af66113377a2f94c",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "4d3515bb702b99d29f4235d4f30d72d1e35a9c71",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_core_csp_indices_broadcom_financing_primary_terms_verified",
+        "scope": "All98 active names included in14fresh grouped discovery queries; sixcore issuer andfiveCSP indices checked. BroadcomOctober26 financing followed to Blackstone jointannouncement andReuters. Prior Cadence earnings,Meta launch,SpaceX commitment andVerizon framework retained as baselines without duplicate events.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.blackstone.com/news/press/bank-of-america-blackstone-citi-and-morgan-stanley-announce-landmark-63-billion-financing-structure-to-enable-ai-compute/",
+          "https://www.reuters.com/legal/transactional/wall-street-banks-blackstone-line-up-63-billion-finance-broadcom-chips-anthropic-2026-10-26/"
+        ],
+        "source_limits": [
+          "Grouped discovery is not98individual currentfiling audits. Current order,margin,cashflow and procurement-allocation coverage remainspartial; historical monthlyrevenue records retained as historical.",
+          "Meta IR index has no readable releasebody. Broadcom IR releasebody still inaccessible; Blackstone jointannouncement supplies full primaryterms. Retransmitted jointrelease versions are oneoriginal disclosure.",
+          "Mandatory files retrieved in full at sameinstructioncommit; instruction/spec/recentarticle hashes unchanged from preceding read versions. FullJSON ledger parsed and old historical records retained.",
+          "OnlyApublicsources and researchstages appended. NoBdata,prices,valuation,holdings,tradingconditions,article,lint,build,deploy orpubliccontentcompletion recorded."
         ]
       }
     ],
