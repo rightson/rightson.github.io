@@ -28497,6 +28497,30 @@
         "Obtain company-specific inventories,recovery capacity,pricing and realized cost/output impact before inferring semiconductor earnings change."
       ],
       "publication_status": "candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "koh-young-china-ai-server-inspection-order-report-versus-disclosed-economics-20261021",
+      "date": "2026-10-26",
+      "event_date": "2026-10-21",
+      "instruction_commit_sha": "4b15b201ed35ad71aaed4e4a6c37ddaae0aa670b",
+      "companies": [
+        "Koh Young Technology"
+      ],
+      "stage": "original_media_order_report_and_official_product_role_read_customer_terms_and_financial_conversion_pending",
+      "sources": [
+        "https://biz.chosun.com/en/en-it/2026/10/21/WJJ7E2JWWVBTXM7Z7EDYQQY2PU/",
+        "https://kohyoung.com/en/koh-young-to-unveil-next-generation-inspection-and-smart-ai-solutions-at-nepcon-asia-2026/"
+      ],
+      "facts": {
+        "reported": "October21 ChosunBiz attributes increased Q3 China AI-server customer count and new supply-chain orders to a company official. English article is explicitly machine-translated.",
+        "primary_role": "Issuer NEPCON page describes solder-paste,assembly,dispensing and semiconductor inspection products; exhibition scheduled October27-29. Page does not provide order economics or a visible publication date.",
+        "limits": "Customers,order amount,delivery/acceptance,payment,cancellation terms and AI-specific margin not authenticated. Official product exhibition is not independent confirmation of the reported contract. No named Taiwan supplier or CSP procurement allocation inferred."
+      },
+      "questions": [
+        "Obtain an issuer filing or original-language order confirmation with contract scope and timing.",
+        "Reconcile accepted deliveries with AI-server revenue,margins,receivables and operating cashflow."
+      ],
+      "publication_status": "outside_universe_source_candidate_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
