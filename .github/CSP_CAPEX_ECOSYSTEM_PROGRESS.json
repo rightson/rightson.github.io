@@ -7216,6 +7216,62 @@
         "limits": "No final pricing,executed definitive lease,accepted equipment,new Taiwan supplier allocation or realised supplier earnings verified. No private quotes,valuation,holdings or market flows stored."
       },
       "status": "original_sec_document_verified_financing_terms_clarified_closing_and_delivery_pending_no_article"
+    },
+    {
+      "fingerprint": "cadence-q3-2026-guidance-revision-recurring-revenue-and-margin-divergence-20261026",
+      "event_date": "2026-10-26",
+      "discovered_date": "2026-10-27",
+      "instruction_commit_sha": "bd1066ce4f73ad3ac8df5b96325802be377f70a5",
+      "companies": [
+        "Cadence"
+      ],
+      "type": "issuer_distributed_q3_results_and_2026_guidance_revision",
+      "sources": [
+        "https://www.stocktitan.net/news/CDNS/cadence-reports-third-quarter-2026-financial-h0q5a27erq44.html",
+        "https://newsroom.cadence.com/press-releases/press-release-details/2026/Cadence-Reports-Second-Quarter-2026-Financial-Results/default.aspx"
+      ],
+      "facts": {
+        "source_scope": "Q3 company-issued Business Wire release read through StockTitan, including guidance and financial tables; direct Q3 issuer page unavailable. Q2 original issuer release read as the July27 baseline.",
+        "currency": "USD",
+        "period": "Q3 and FY2026",
+        "fy_revenue_bn_old": [
+          6.26,
+          6.34
+        ],
+        "fy_revenue_bn_new": [
+          6.387,
+          6.417
+        ],
+        "fy_revenue_midpoint_revision_percent": 1.619047619,
+        "fy_non_gaap_eps_old": [
+          8.05,
+          8.15
+        ],
+        "fy_non_gaap_eps_new": [
+          8.37,
+          8.43
+        ],
+        "fy_non_gaap_eps_midpoint_revision_percent": 3.703703704,
+        "recurring_revenue_yoy_percent": 18,
+        "backlog_bn_q2": 8.1,
+        "backlog_bn_q3": 8.2,
+        "next_12_month_rpo_revenue_bn_q2": 4.2,
+        "next_12_month_rpo_revenue_bn_q3": 4.2,
+        "q3_non_gaap_operating_margin_percent": 44.1,
+        "q3_prior_year_non_gaap_operating_margin_percent": 47.6,
+        "fy_non_gaap_operating_margin_old": [
+          43.75,
+          44.75
+        ],
+        "fy_non_gaap_operating_margin_new": [
+          44.2,
+          45.2
+        ],
+        "nine_month_ocf_million_2026": 1414.436,
+        "nine_month_ocf_million_2025": 1175.286,
+        "limits": "Issuer attributes broad product-category growth to AI-driven designs; no separate Maestro revenue or profit attribution. Annual EPS revision is management guidance, not independently authenticated consensus change. Margin compression and unchanged next-12-month RPO revenue temper extrapolation. No price, valuation, holdings or trading conditions recorded."
+      },
+      "status": "earnings_revision_and_prior_guidance_primary_baseline_compared_no_article"
     }
   ],
   "articles": [],
@@ -18582,6 +18638,30 @@
           "Vietnam 2027 trial-production delay reporting concerns a developing fab, not a verified cancellation of a CSP supply-chain order. No supplier earnings impact inferred.",
           "Only public A sources and research completion stages appended. No prices, valuation, holdings, trading conditions or B-market data added. No article, lint, build, deploy or public-content verification claimed."
         ]
+      },
+      {
+        "date": "2026-10-27",
+        "checked_at": "2026-10-26 20:34:52 UTC",
+        "instruction_commit_sha": "bd1066ce4f73ad3ac8df5b96325802be377f70a5",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "4d3515bb702b99d29f4235d4f30d72d1e35a9c71",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_core_csp_indices_cadence_earnings_revision_and_broadcom_index_lead_checked",
+        "scope": "All98 active names included in14fresh grouped discovery queries; sixcore issuer andfiveCSP indices checked. CadenceQ3 issuer-distributed results andQ2 original guidance compared. BroadcomOctober26 financing index lead followed butfullbody blocked.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://www.stocktitan.net/news/CDNS/cadence-reports-third-quarter-2026-financial-h0q5a27erq44.html",
+          "https://newsroom.cadence.com/press-releases/press-release-details/2026/Cadence-Reports-Second-Quarter-2026-Financial-Results/default.aspx"
+        ],
+        "source_limits": [
+          "Grouped discovery is not98individual currentfiling audits. Current order,margin,cashflow and procurement-allocation coverage remainspartial.",
+          "Meta IR index provides no readable releasebody. Broadcomnewfinancingbody inaccessible; titleonly and termsunverified. CadenceQ3 directissuerpage inaccessible; company-issued distribution version read, not classified as independently corroborated by retransmissions.",
+          "Allmandatory files retrieved in full at oneinstructioncommit; instruction/spec/article hashes unchanged from preceding read versions. JSONledger parsed and full historical arrays retained.",
+          "OnlyApublic sources and researchstages appended. NoBdata,quotes,valuation,holdings,tradingconditions,article,lint,build,deploy orpubliccontentcompletion recorded."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -28967,6 +29047,34 @@
         "Separate existing agent customer deployments from actual Maestro rollout and quantify who retains efficiency savings."
       ],
       "publication_status": "outside_universe_source_candidate_only_no_article"
+    },
+    {
+      "key": "broadcom-63bn-financing-issuer-index-title-full-terms-retrieval-20261026",
+      "date": "2026-10-27",
+      "event_date": "2026-10-26",
+      "instruction_commit_sha": "bd1066ce4f73ad3ac8df5b96325802be377f70a5",
+      "companies": [
+        "Broadcom",
+        "Bank of America",
+        "Blackstone",
+        "Citi",
+        "Morgan Stanley"
+      ],
+      "stage": "issuer_index_dated_title_verified_full_release_inaccessible",
+      "sources": [
+        "https://investors.broadcom.com/financial-information/financial-news-releases",
+        "https://investors.broadcom.com/news-releases/news-release-details/bank-america-blackstone-citi-and-morgan-stanley-announce"
+      ],
+      "facts": {
+        "verified_scope": "Broadcom issuer index newly lists an October26 announcement naming these institutions and a USD63billion AI compute financing structure. Full linked release returns403/inaccessible across attempts.",
+        "limits": "Only dated index title authenticated. No financing close, committed or funded amount, borrower, debt tiers, guarantees, rate, conditions, equipment delivery or incremental supplier earnings inferred. Prior reported Broadcom financing events remain separate baselines; headline amount not added to them."
+      },
+      "questions": [
+        "Obtain full issuer or bank announcement and reconcile with earlier reported financing packages.",
+        "Verify signed versus closed versus drawn amounts, recourse and guarantees, customer and purchase purpose.",
+        "Reconcile financing to actual deployment and supplier revenue without double-counting."
+      ],
+      "publication_status": "source_gap_candidate_only_no_article"
     }
   ],
   "blockers": [
