@@ -18501,6 +18501,32 @@
           "Meta offering and ASMPT bidding reports match prior registered records. SpaceX SEC original supplies a distinct clarification of previously reported financing;40bn is not an additional funding package.",
           "OnlyA-topic source facts/research stages appended. NoBdata,quotes,valuation,holdings or trading conditions. Noarticle,lint,build,deploy orpubliccontent completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-26",
+        "checked_at": "2026-10-26 15:08:32 UTC",
+        "instruction_commit_sha": "e3a97bf0c75eec34c511f53e4dee7a45acde6119",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "41d50ff9364741a6342204e6d5560810adddc7e3",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_core_csp_indices_and_anthropic_issuer_filing_stage_checked_no_material_alert",
+        "scope": "All98active names in14fresh grouped queries;sixcoreissuer andfiveCSP indices checked. Supplemental discovery compared Meta,SpaceX,Computacenter and existing reportedAnthropicfinancial baselines. No watchlist change.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.anthropic.com/news/s1-sec"
+        ],
+        "source_limits": [
+          "Mandatory same-commit files and largeledger exactblob retrieved;requiredinstruction/spec/article hashes unchanged from precedingread versions.",
+          "Grouped discovery is not98currentfiling audits. Historical monthlyrevenue baseline retained;current order,margin and cash economics remainpartial. Core visible indices retain earlierrelease dates;no newly authenticated TPUaward,NRE,Googleprocurement split orcoreissuer earningsrevision established.",
+          "MetaissuerIRindex has no readable newsbody;prioroffering not reassessed as completed. SpaceXlease reporting matches existingoriginalSEC event,not additional400bn or40bn funding. Anthropiccompanyannouncement verifies submission only;fullS1economic reconciliation incomplete.",
+          "OnlyApublicsources and researchstages appended. NoBdata,quotes,valuation,holdings ortradingconditions. Noarticle,lint,build,deploy orpubliccontent completion claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -28806,6 +28832,31 @@
         "Verify deployment/utilisation and cash returns against fixed lease obligations."
       ],
       "publication_status": "public_source_event_registered_no_article"
+    },
+    {
+      "key": "anthropic-public-s1-issuer-confirmation-and-financial-reconciliation-20261026",
+      "date": "2026-10-26",
+      "event_date": "2026-10-26",
+      "instruction_commit_sha": "e3a97bf0c75eec34c511f53e4dee7a45acde6119",
+      "companies": [
+        "Anthropic"
+      ],
+      "stage": "issuer_public_s1_submission_confirmed_full_prospectus_financial_and_contract_reconciliation_pending",
+      "sources": [
+        "https://www.anthropic.com/news/s1-sec",
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm"
+      ],
+      "facts": {
+        "primary": "October26companyannouncement confirms publicS1submission and proposedNasdaqANT listing. Sharecount and price range undetermined;registration not yet effective.",
+        "baseline": "October20reported draft-prospectus financial event already registered. Public filing is a disclosure-stage advance,not completed funding or an additional CSP procurement commitment.",
+        "limits": "SECfullHTML retrieval failed. Media-reported financial figures and cloud-commitment totals not adopted as newly authenticated revisions. No realised supplier profit,procurement allocation or public trading price inferred."
+      },
+      "questions": [
+        "Obtain readable original financial statements and separate operating loss,cashflow and noncash funding-instrument charges.",
+        "Reconcile noncancellable compute commitments by counterparty,maturity,termination and previously reported scope.",
+        "Verify effectiveness,offerprice,primary-versus-secondary shares and actual net proceeds."
+      ],
+      "publication_status": "outside_universe_source_candidate_only_no_material_alert_no_article"
     }
   ],
   "blockers": [
