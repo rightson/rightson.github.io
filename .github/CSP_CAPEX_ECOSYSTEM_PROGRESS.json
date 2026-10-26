@@ -18527,6 +18527,33 @@
           "MetaissuerIRindex has no readable newsbody;prioroffering not reassessed as completed. SpaceXlease reporting matches existingoriginalSEC event,not additional400bn or40bn funding. Anthropiccompanyannouncement verifies submission only;fullS1economic reconciliation incomplete.",
           "OnlyApublicsources and researchstages appended. NoBdata,quotes,valuation,holdings ortradingconditions. Noarticle,lint,build,deploy orpubliccontent completion claimed."
         ]
+      },
+      {
+        "date": "2026-10-27",
+        "checked_at": "2026-10-26 18:20:56 UTC",
+        "instruction_commit_sha": "e588c7e83499fe470229ef9e9101b4a5e0285796",
+        "company_count": 98,
+        "grouped_query_count": 14,
+        "universe_commit_sha": "4d3515bb702b99d29f4235d4f30d72d1e35a9c71",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_core_csp_indices_and_verizon_aws_framework_sources_checked",
+        "scope": "All 98 active names included in 14 fresh grouped discovery queries; six core issuer and five CSP public indices inspected. Verizon/AWS agreement followed to issuer and SEC earnings releases. Existing Meta, SpaceX, Anthropic, Computacenter and Nokia events checked for duplicate evidence. No watchlist changes.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.sec.gov/Archives/edgar/data/732712/000073271226000049/a2026q3exhibit99.htm",
+          "https://www.verizon.com/about/news/verizon-delivers-another-record-breaking-quarter"
+        ],
+        "source_limits": [
+          "Grouped discovery is not 98 individual current-filing audits. Current order, margin and cash-flow coverage remains partial; historical revenue baselines were not relabeled as fresh filings.",
+          "Visible core-company indices retained earlier release dates. No new authenticated TSMC or MediaTek earnings revision, Google procurement allocation or TPU commercial award established in the reviewed material.",
+          "Meta IR index did not provide a readable announcement body. Verizon company and SEC releases originate from the same issuer disclosure and are not independent confirmations of contract economics.",
+          "Only public A-event sources and research stages appended. No prices, valuation, holdings, trading conditions or B-market analysis added. No article, lint, build, deployment or public-page verification claimed."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -28857,6 +28884,32 @@
         "Verify effectiveness,offerprice,primary-versus-secondary shares and actual net proceeds."
       ],
       "publication_status": "outside_universe_source_candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "verizon-aws-ai-infrastructure-framework-to-revenue-margin-and-cash-20261026",
+      "date": "2026-10-27",
+      "event_date": "2026-10-26",
+      "instruction_commit_sha": "e588c7e83499fe470229ef9e9101b4a5e0285796",
+      "companies": [
+        "Verizon",
+        "Amazon Web Services"
+      ],
+      "stage": "issuer_and_sec_earnings_release_framework_verified_contract_economics_pending",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/732712/000073271226000049/a2026q3exhibit99.htm",
+        "https://www.verizon.com/about/news/verizon-delivers-another-record-breaking-quarter"
+      ],
+      "facts": {
+        "primary": "Verizon's October 26, 2026 earnings release reports a signed agreement valued at more than USD 2.0 billion with AWS, establishing a commercial framework to scale distributed compute for agentic and generative AI workloads.",
+        "relationship": "The issuer associates technology-provider demand with its fiber network and AI Connect infrastructure. This supports a named AWS-to-network infrastructure relationship; no allocation to individual equipment suppliers is disclosed in the reviewed release.",
+        "limits": "The reviewed release does not specify the contract duration, guaranteed minimum purchases, cancellation rights, revenue-recognition schedule or contract gross margin. Framework value is not treated as recognized revenue, cash received or a separately verified AWS capex addition. Consolidated earnings and cash-flow improvements are not attributed to this agreement."
+      },
+      "questions": [
+        "Verify committed minimum spending, contract duration, cancellation conditions and distinction between framework capacity and enforceable purchases.",
+        "Trace deployment, billings, recognized service revenue, incremental capex and project cash returns.",
+        "Identify disclosed equipment suppliers and separate incremental fiber/connectivity economics from the issuer's broader mobility and broadband performance."
+      ],
+      "publication_status": "outside_universe_source_candidate_only_no_article"
     }
   ],
   "blockers": [
