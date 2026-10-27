@@ -7325,6 +7325,37 @@
         "limits": "No precise old/new rate, incremental support amount or authenticated covenant amendment. Greater lender comfort is not proof of expanded guarantee scope. Borrower/SPV cost is not automatically Broadcom interest expense; no supplier earnings revision, financing cancellation, default, cash draw or Taiwan order allocation established."
       },
       "status": "reported_pricing_concession_registered_final_contract_and_cash_conversion_pending_no_article"
+    },
+    {
+      "fingerprint": "meta-equity-offering-pricing-upsized-common-forward-and-preferred-dividend-20261027",
+      "event_date": "2026-10-26",
+      "discovered_date": "2026-10-27",
+      "instruction_commit_sha": "9c59a429a37387e3d5158b78a9afb84fef00e7f4",
+      "companies": [
+        "Meta"
+      ],
+      "type": "issuer_distributed_equity_pricing_and_upsizing",
+      "sources": [
+        "https://www.prnewswire.com/news-releases/meta-announces-pricing-of-offering-of-depositary-shares-representing-series-a-mandatory-convertible-preferred-stock-and-offering-of-class-a-common-stock-in-connection-with-forward-sale-agreements-302920247.html"
+      ],
+      "facts": {
+        "source_scope": "Complete company-issued PRNewswire pricing release read,including financing terms and closing conditions.",
+        "publication_time": "PRNewswire header2026-10-27 01:01ET;issuer datelineOctober26.",
+        "currency": "USD",
+        "common_forward_bn_old": 22.5,
+        "common_forward_bn_priced": 25,
+        "common_forward_shares": 40000000,
+        "public_offering_price_per_share": 625,
+        "preferred_gross_bn": 12.5,
+        "preferred_dividend_rate_percent": 6.5,
+        "preferred_dividend_payment": "Cash or shares subject to terms and declaration.",
+        "preferred_mandatory_conversion": "AboutAugust15,2029;ClassAorconditionalClassC settlement.",
+        "expected_offering_close": "2026-10-29,subject to conditions",
+        "cash_timing": "No initial common-forward issuer proceeds;settlement expected byNovember19,2027.",
+        "comparison": "October26launchbaseline35bn advances topriced37.5bn excludingoptions;not cashreceived.",
+        "limits": "Issueprice is an issuance term,not live market quote. No authenticated closing,cashreceipt,completedchipvendorinvestment,newprocurementallocation orsupplierprofitrevision. Separateplanned60bnATMnot added asfundedcapital."
+      },
+      "status": "issuer_pricing_and_upsizing_verified_closing_cash_and_delivery_pending_no_article"
     }
   ],
   "articles": [],
@@ -18903,6 +18934,38 @@
           "Complete NVIDIApartnercase now obtained forpriorFoxconncandidate; process metrics andunquantified economics separated. Known Broadcomnegotiation/Meta/SpaceX/Cadence events deduplicated.",
           "Mandatoryinstructions,specs,config,taxonomy,series,legacyresearch and3recentai-industryarticles fetched atsamecommit,with unchangedhashes versus fullyread versions inconversation. Fullledgerblob parsed. No article orPagespublication.",
           "OnlyApublicsources andstages appended; no prices,valuations,holdings,fundflows,tradingconditions orBanalysis stored."
+        ]
+      },
+      {
+        "date": "2026-10-27",
+        "checked_at": "2026-10-27 05:06:52 UTC",
+        "instruction_commit_sha": "9c59a429a37387e3d5158b78a9afb84fef00e7f4",
+        "company_count": 98,
+        "grouped_query_count": 7,
+        "universe_commit_sha": "fe69b78967b86268c53b0a2d88654c50a6c1edfa",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_core_csp_indices_checked_meta_pricing_primary_increment",
+        "scope": "All98activeTaiwannames included in7groupedqueries; sixcore andfiveCSPindices attempted,plus targetedTPU,globalinfrastructureandfinancing searches.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://press.aboutamazon.com/",
+          "https://news.microsoft.com/source/",
+          "https://cloud.google.com/blog/",
+          "https://investor.atmeta.com/investor-news/",
+          "https://www.oracle.com/news/",
+          "https://www.prnewswire.com/news-releases/meta-announces-pricing-of-offering-of-depositary-shares-representing-series-a-mandatory-convertible-preferred-stock-and-offering-of-class-a-common-stock-in-connection-with-forward-sale-agreements-302920247.html"
+        ],
+        "source_limits": [
+          "Grouped discoverymostlyreturnedhistoricalrevenues,aggregatorsandreposts;not98individualcurrentfiling,order,marginorcashflowaudits.",
+          "TSMC/MediaTekindexedbaselines unchanged; no newauthenticatedTPUaward,NREorGoogleprocurementsplit. Metaindexnavigationonly,butdirectissuerdistributedpricingrelease obtainedinfull.",
+          "KnownBroadcomnegotiation,SpaceX,CadenceandFoxconncaseevents deduplicated. NewMetatermsareissuance-stageadvance,notcompletedfunding.",
+          "Mandatoryinstructions,config,taxonomy,series,specification,legacyresearchand3recentai-industryarticlesfetchedatsamecommit; hashesmatchfullyreadversionsinconversation. Fullledgerblobparsed. NoarticleorPagespublication.",
+          "OnlyApublicfacts,coverageandstagesappended; no livequotes,valuations,holdings,fundflows,tradeconditionsorBanalysisstored."
         ]
       }
     ],
