@@ -18842,7 +18842,7 @@
       },
       {
         "date": "2026-10-27",
-        "checked_at": "2026-10-27 02:44 UTC",
+        "checked_at": "2026-10-27 02:43:04 UTC",
         "instruction_commit_sha": "cf6f0c5ea7e8a45b149f68969e90c90d94e33524",
         "company_count": 98,
         "grouped_query_count": 7,
