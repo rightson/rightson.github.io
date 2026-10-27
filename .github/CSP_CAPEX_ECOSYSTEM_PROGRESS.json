@@ -7546,6 +7546,56 @@
         "limits": "Multi-gigawatt expansion is a plan,not delivered/powered capacity. No incremental order value,payment receipt,utilization,commercialmargin or Taiwan supplier allocation authenticated. Oracle TPU2027 announcement coexists with NVIDIA availability and does not prove GPU displacement."
       },
       "status": "issuer_ga_and_announced_deployment_stage_verified_scale_and_cash_validation_pending_no_article"
+    },
+    {
+      "fingerprint": "celestica-investor-day-hyperscaler-cpo-jdm-award-and-2027-fcf-use-20261027",
+      "event_date": "2026-10-27",
+      "discovered_date": "2026-10-28",
+      "instruction_commit_sha": "ec068cf395a7c02103d03e30c0b1fb9ed17d98a9",
+      "companies": [
+        "Celestica",
+        "Broadcom"
+      ],
+      "outside_active_universe": true,
+      "type": "issuer_investor_day_customer_award_and_cash_flow_outlook",
+      "sources": [
+        "https://corporate.celestica.com/node/17896/html",
+        "https://corporate.celestica.com/static-files/eae1cdfa-c5fe-40df-84d4-fa8f145491aa",
+        "https://cdn.kscope.io/74ad7ab819c9f6630f292acd96e05184-tm2628147d1_ex99-1img035.jpg",
+        "https://cdn.kscope.io/74ad7ab819c9f6630f292acd96e05184-tm2628147d1_ex99-1img049.jpg"
+      ],
+      "facts": {
+        "source_authentication": "Issuer-hosted October27 Form8K includes Exhibit99.1 investor presentation. All65 linked slide images obtained and OCR processed; key slides34,35,40,49 visually verified. PDF endpoint retrieval failed; linked original exhibit images used.",
+        "cpo_award": {
+          "slide": 35,
+          "customer": "Unnamed hyperscaler",
+          "stage": "Issuer-confirmed JDM award for1.6T Ethernet CPO switch;not current production or recognized revenue",
+          "solution": "Co-designed using Celestica HPS IP;integrated rack-scale solution",
+          "production_expected": "Late2027",
+          "prior_candidate": "celestica-ds6005-cpo-switch-product-to-paid-deployment-and-profit",
+          "increment": "Advances October12 product introduction to issuer-confirmed customer award with production timing;customer name,order value,volume,ASP and margin undisclosed."
+        },
+        "optics_adoption_view": {
+          "slide": 34,
+          "nature": "Issuer management expectation",
+          "broader_cpo_adoption": "At3.2T",
+          "coexistence": "Pluggables and integrated optics expected to coexist long term;CPO manufacturing described as highly complex."
+        },
+        "cash_flow_outlook": {
+          "slide": 49,
+          "year": 2027,
+          "metric": "Non-GAAP free cash flow",
+          "direction": "Net use of funds",
+          "amount": "Not quantified",
+          "reason": "Working capital investment and capex supporting growth",
+          "liquidity_usd_bn": 5.7,
+          "cash_and_equivalents_usd_bn_rounded": 4,
+          "liquidity_basis": "Cash and cash equivalents as ofSeptember30,2026 plus total availability under credit agreement"
+        },
+        "comparison": "October26 earnings release had2026FCFoutlook460millionUSD and2027capex1.5-2.0billionUSD;October27slide49 explicitly indicates2027negativeFCF. Do not characterize as a cut from a prior quantified2027FCFforecast.2027revenue40billionUSD,adjustedEPS21.50 andmargin9% unchanged.",
+        "limits": "Issuer forward-looking statements,not independent customer confirmation or paidbacklog. Customer award does not establish mass deployment. No named Taiwan allocation,CPO-specific revenue/profit,return forecasts,market quote orvaluation stored. Strong liquidity mitigates funding risk;cash use need not indicate demand weakness."
+      },
+      "status": "issuer_exhibit_key_slides_visually_verified_new_customer_adoption_and_cashflow_stage_no_article"
     }
   ],
   "articles": [],
