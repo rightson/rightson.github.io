@@ -18872,6 +18872,38 @@
           "Samecommit mandatoryinstructions,config,taxonomy,series,specification,legacyresearch and3recentai-industryarticlecontents fetched. Fullledgerblob parsed; unchangedinstruction andarticlehashes compared to fullyread versions inconversation. No article orPagespublication.",
           "OnlyApublic sourcefacts,coverage andresearchstage appended. No privateprices,valuations,holdings,fundflows,tradingconditions orBanalysis stored."
         ]
+      },
+      {
+        "date": "2026-10-27",
+        "checked_at": "2026-10-27 04:31:11 UTC",
+        "instruction_commit_sha": "8f18ccadc60b330f5e0e1b4253e10e6fcd677fbd",
+        "company_count": 98,
+        "grouped_query_count": 7,
+        "universe_commit_sha": "fe69b78967b86268c53b0a2d88654c50a6c1edfa",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_core_csp_indices_attempted_foxconn_primary_case_baseline",
+        "scope": "All98active names included in7freshgroupedqueries; sixcoreandfiveCSPofficialindices attempted; targetedTPU,financing andoutside-universe discovery searches followed.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://press.aboutamazon.com/",
+          "https://news.microsoft.com/source/",
+          "https://cloud.google.com/blog/",
+          "https://investor.atmeta.com/investor-news/",
+          "https://www.oracle.com/news/",
+          "https://www.nvidia.com/en-us/case-studies/foxconn-ai-factory-manufacturing/"
+        ],
+        "source_limits": [
+          "Grouped discovery mostly returned historical revenues,aggregators andreposts; not98individual currentannouncements,orders,margin orcashflow audits. Existing monthlybaseline retained.",
+          "Coreindexed baselines unchanged; no new authenticated TPUaward,NREorGoogleprocurement allocation. Metaindex navigationonly; unavailablebody doesnot establish nochange.",
+          "Complete NVIDIApartnercase now obtained forpriorFoxconncandidate; process metrics andunquantified economics separated. Known Broadcomnegotiation/Meta/SpaceX/Cadence events deduplicated.",
+          "Mandatoryinstructions,specs,config,taxonomy,series,legacyresearch and3recentai-industryarticles fetched atsamecommit,with unchangedhashes versus fullyread versions inconversation. Fullledgerblob parsed. No article orPagespublication.",
+          "OnlyApublicsources andstages appended; no prices,valuations,holdings,fundflows,tradingconditions orBanalysis stored."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -29469,6 +29501,40 @@
         "Obtain complete dated issuer release and distinguish internal manufacturing capability from external AI infrastructure orders."
       ],
       "publication_status": "retrieval_candidate_only_no_article"
+    },
+    {
+      "key": "foxconn-ai-factory-nvidia-primary-case-process-productivity-baseline-20261027",
+      "date": "2026-10-27",
+      "instruction_commit_sha": "8f18ccadc60b330f5e0e1b4253e10e6fcd677fbd",
+      "companies": [
+        "Foxconn",
+        "NVIDIA"
+      ],
+      "stage": "full_technology_vendor_primary_customer_case_read_process_productivity_baseline",
+      "sources": [
+        "https://www.nvidia.com/en-us/case-studies/foxconn-ai-factory-manufacturing/"
+      ],
+      "facts": {
+        "publication_date": "Not shown in obtained primary page; search-index age is not treated as publication date. Related Foxconn indexed title datedOctober26 remains a separate retrieval history.",
+        "source_scope": "Complete NVIDIA-hosted customer case obtained, including footnotes; customer/vendor-reported operational measurements,not independent audit.",
+        "reported_results": {
+          "training_speedup": 2.48,
+          "training_model_parameters_billion": 120,
+          "training_baseline": "Prior H100-based solutions",
+          "tokens_trillion": 1,
+          "training_days": 12,
+          "plant_scheduling_labor_hours_reduction_percent": 25,
+          "injection_molding_process_changeover_engineering_workload_reduction_percent": 50
+        },
+        "relationship": "Foxconn uses DGX SuperPOD and NVIDIA software for FoxBrain/Genesis manufacturing applications. Case identifies VisionBay.ai as a subsidiary/NVIDIA Cloud Partner providing AI-as-a-service.",
+        "comparison": "Advances the prior same-title search-index-only candidate to a complete partner-hosted primary case. Does not establish a newly signed CSP equipment contract.",
+        "limits": "Training metrics are Foxconn-measured; cited405BMLPerfcomparison is a different workload,not independent120Bvalidation. Process-specific savings do not imply companywide labor savings,margin uplift orcashflow. No equipmentprice,GPUquantity,capex,totalcost,paidexternalcustomer,incremental revenue or consolidated profit contribution quantified. Deployment capability across200+facilities is not a site-by-site utilization audit."
+      },
+      "questions": [
+        "Verify scope,measurement period,baseline and realized cost savings of manufacturing deployments.",
+        "Separate internal use from external paying contracts; obtain revenue,pricing,utilization and costs before attributing durable supplier profit."
+      ],
+      "publication_status": "primary_source_baseline_only_no_article"
     }
   ],
   "blockers": [
