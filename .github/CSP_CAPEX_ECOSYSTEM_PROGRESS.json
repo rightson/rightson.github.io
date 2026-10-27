@@ -7356,6 +7356,27 @@
         "limits": "Issueprice is an issuance term,not live market quote. No authenticated closing,cashreceipt,completedchipvendorinvestment,newprocurementallocation orsupplierprofitrevision. Separateplanned60bnATMnot added asfundedcapital."
       },
       "status": "issuer_pricing_and_upsizing_verified_closing_cash_and_delivery_pending_no_article"
+    },
+    {
+      "fingerprint": "nvidia-meta-muse-partnership-and-announced-3bn-equity-investment-20261027",
+      "event_date": "2026-10-26",
+      "discovered_date": "2026-10-27",
+      "instruction_commit_sha": "09ea74aa09c799519e7a79541c7081ba0964fed3",
+      "companies": [
+        "NVIDIA",
+        "Meta"
+      ],
+      "type": "issuer_announced_investment_and_infrastructure_deployment_intent",
+      "sources": [
+        "https://nvidianews.nvidia.com/news/nvidia-and-meta-to-expand-collaboration-on-muse-and-muse-family-of-models-amid-robust-growth",
+        "https://www.reuters.com/technology/nvidia-meta-partner-muse-agent-nvidia-invests-3-billion-2026-10-27/"
+      ],
+      "facts": {
+        "date_scope": "Issuer page dated October26; Reuters October27 06:08UTC.",
+        "increment": "NVIDIA announces USD3bn investment in Meta's equity offering and expanded Vera Rubin,Vera CPU,Spectrum-X and BlueField-4 deployment plans,advancing the prior aggregate nonbinding chipmaker-interest baseline.",
+        "limits": "Proposed investment remains forward-looking with completion/closing conditions. No completed cash transfer,equipment quantity,order value,delivery date,utilization,TCO or supplier profit revision disclosed. OpenShell/Sentry collaboration is under consideration. Investment is not added to Meta's offering total."
+      },
+      "status": "full_issuer_release_read_announced_investment_and_deployment_intent_registered_cash_and_delivery_pending_no_article"
     }
   ],
   "articles": [],
@@ -18966,6 +18987,36 @@
           "KnownBroadcomnegotiation,SpaceX,CadenceandFoxconncaseevents deduplicated. NewMetatermsareissuance-stageadvance,notcompletedfunding.",
           "Mandatoryinstructions,config,taxonomy,series,specification,legacyresearchand3recentai-industryarticlesfetchedatsamecommit; hashesmatchfullyreadversionsinconversation. Fullledgerblobparsed. NoarticleorPagespublication.",
           "OnlyApublicfacts,coverageandstagesappended; no livequotes,valuations,holdings,fundflows,tradeconditionsorBanalysisstored."
+        ]
+      },
+      {
+        "date": "2026-10-27",
+        "checked_at": "2026-10-27 06:34:12 UTC",
+        "instruction_commit_sha": "09ea74aa09c799519e7a79541c7081ba0964fed3",
+        "company_count": 98,
+        "grouped_query_count": 7,
+        "universe_commit_sha": "fe69b78967b86268c53b0a2d88654c50a6c1edfa",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_core_csp_indices_checked_nvidia_meta_primary_increment",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://press.aboutamazon.com/",
+          "https://news.microsoft.com/source/",
+          "https://cloud.google.com/blog/",
+          "https://investor.atmeta.com/investor-news/",
+          "https://www.oracle.com/news/",
+          "https://nvidianews.nvidia.com/news/nvidia-and-meta-to-expand-collaboration-on-muse-and-muse-family-of-models-amid-robust-growth"
+        ],
+        "source_limits": [
+          "All98activeTaiwannames included in7groupedqueries; results mostly historical monthly revenues,aggregators and reposts,not98individual current filings,orders or financial audits.",
+          "Sixcore andfiveCSPindices checked; Meta index exposes navigation only. Targeted original-news searches supplement indices. No authenticated new MediaTek TPU NRE,award or procurement allocation found.",
+          "Mandatory same-commit instructions,config,taxonomy,series,specification,legacy research andthree recent articles retrieved; blob hashes match complete text read in conversation. Fullprogressblob parsed and existing publicevents/candidates compared.",
+          "No article or Pages publication. Public append contains source facts and coverage only; no live quotes,private valuations,holdings,fundflows or Banalysis."
         ]
       }
     ],
