@@ -234,3 +234,24 @@
 - 開源去重：SiliCAD EDA_MCP 自 10 月 25 日 UTC 起可見提交仍是前次已記錄的 `!word`、固定工作目錄與大型 SKILL／SCP 合併；Konnect-EDA releases 仍為空，10 月 25 日的公開文件同步沒有新 binary；NeMo Gym `resources_servers/cvdp` 與 AMBU-CovAgent 在同一窗口未見新 commit。這些查核不外推為完整市場稽核，也不重報為新 Agentic EDA 能力。
 - 本次採對話短報與 roadmap 更新，不建立公開文章：Maestro 改變了模型／工具／solver 的產品架構方向，但現階段只有供應商公告、限定 early access 與缺條件的最高值；另發短評會超過可核對的效能證據。未執行新 LLM／EDA 實驗，未做文章 lint、build、deploy 或正式頁驗證；所有候選完成狀態保留。
 
+
+
+## 2026-10-28 雷達查核與接續
+
+- instruction commit：`0e81cc75ea87b7c9afcbeee5dc3bbe0cebb176ae`；研究識別 `agentic-design-radar｜2026-10-28`。同一 commit 的 AGENTS、共用／指定主題、分類、series、完整 Agentic roadmap、EDA 平台 roadmap／出版佇列與近期 BTTF、AD004、AD005、Marvell 平台成果已讀。只執行本主題；歷史佇列的日期分工不作主題選擇依據。本次追加兩項近期增量及補讀基線，保留全部候選完成狀態。
+
+- 事件識別 `chipagents-ic-star-digital-analog-domain-model-routing-20261027`。[ChipAgents 2026-10-27 原始公告](https://chipagents.ai/newsroom/chipagents-ic-star-full-stack-agentic-ai)描述 IC-star 的四部分：IC Design Ontology 保存設計知識、計畫、skills 與客戶方法；Reasoning Core 協調長程工具工作；Multiphysics-Aware Models 在生成階段預測 timing、PPA、DRC、DFT 與 analog physical design，半導體專用 Renoir LLM 位於此層；Design-Driven Model Navigator 再按任務在不同模型間選擇，平衡 QoR、完成時間與成本。數位路徑涵蓋 RTL／驗證／debug／coverage／PPA，類比路徑涵蓋 schematic／simulation／behavioral model／layout／physical verification；工程師保有 requirements 與 signoff。這是供應商產品架構公告，未取得逐功能發售／版本矩陣、公開 tool schema 或全流程實際交付紀錄。
+
+- 相對最新 AD005 的同份產物 grader，以及前次 Maestro 的 solver-feedback post-training 方向，IC-star 新增的是另一個供應商明示將「組織設計知識、物理預測與依任務選模型」接在共同執行層。公告另稱正與 NVIDIA 擴大合作、post-train Nemotron，初步公開 benchmark 表現可與 frontier models 競爭；沒有具體 benchmark 名稱、樣本、分數、模型／harness 版本或全成本，故不建立排名，也不把 Renoir 與該 Nemotron checkpoint 當成同一模型。物理預測是候選選擇訊號，最後工具檢查的權威不因預測而轉移；這一點是工程推論，未宣稱取得供應商內部實作。
+
+- IC-star 的成熟度保留為「產品擴展公告、具名客戶引文與供應商自報採用」。Ambiq 引文談數位 PPA／RTL／測試／root cause；Analog Devices 描述過去一年的合作基礎；Rambus 描述正在採用，皆未提供此次 IC-star analog end-to-end 的固定版本 benchmark。公告的 200+ enterprise deployments、Andes／eMemory 案例並非新的部署成長證據：[10 月 20 日既有公告](https://chipagents.ai/newsroom/chipagents-inc-power-partner-award)已列 200+ 與相關效益。Rambus 合作的[原公司公告](https://www.rambus.com/rambus-and-chipagents-collaborate-to-accelerate-chip-design-with-agentic-ai/)標 10 月 22 日，後續轉載不能當作 10 月 26–27 日新簽約。10 月 29 日技術 webinar 尚未發生；未聲稱觀看。AD001／AD004／AD005／AD007／AD008 接續問題為：ontology 與 RTL／constraint／tool revision 的綁定、Renoir／通用模型／router 的分開消融、routing 決策與失敗重跑成本，以及 customer-specific knowledge 更新後的隔離與撤回。
+
+- 事件識別 `spicexplorer-root-noncommercial-license-clarification-20261026`。[SpiceXplorer 10 月 26 日 commit `7932a92`](https://github.com/MacAnalog/spicexplorer-release/commit/7932a92ff0b8ebe8b341271cdd7549fb378efeb3)新增根目錄 [PolyForm Noncommercial 1.0.0 LICENSE](https://github.com/MacAnalog/spicexplorer-release/blob/7932a92ff0b8ebe8b341271cdd7549fb378efeb3/LICENSE)與 README License 段落，並將 LPF example pin 從 `cc24b6d` 更新到 `5f1d9cc`；[example commit](https://github.com/MacAnalog/dn-003-afe-lpf-250hz-ihp130/commit/5f1d9cc87531b85c0e9335cc90bf64e9083db78f)本身只增加 LICENSE。已比較前次固定 release `f6f3f92` 到本次：僅一個 commit，三個路徑改動，沒有新的電路、PVT／THD 結果或 agent 演算法。這是授權明示與重現入口更新，不能重報為 LPF 品質改善，亦不據此推論歷史版本曾允許自由商用。
+
+- [固定版本 README](https://github.com/MacAnalog/spicexplorer-release/blob/7932a92ff0b8ebe8b341271cdd7549fb378efeb3/README.md#license)明列非商業用途、非 OSI-approved open source，並將企業內部 R&D／evaluation 列入不允許的商業用途；商業授權需另向權利人洽詢。第三方電路、corpora 與 PDK 保留各自授權。對 AD006／AD008 的新增問題是研究可重現性與企業採用權利要分別核對，根 repository、component、submodule 與 PDK 也需各有版本／授權對照；保留前次 LPF 的 16／45 PVT 與未完成重現限制。本次未安裝、執行或聯絡權利人，不對未讀取之歷史 component 授權作追溯結論。
+
+- 補讀基線另記，未冒充近期新發表：(1) [Siemens 10 月 21 日 3DIC electrothermal 公告](https://news.siemens.com/en-us/siemens-nvidia-gtc-3d-ic-thermal-ai/)已公開 Fuse 編排七工具、九步驟，8–10 小時、200–500+ design points 的供應商自報案例；缺完整 benchmark 與逐功能 GA 證明。接續 AD003／AD007 的跨 solver 執行與昂貴工作分配，但 10 月 26 日轉載不算新事件。(2) [TACS-RF v1](https://arxiv.org/html/2610.31882v1)提交日為 10 月 22 日 20:23:05 UTC；本次完整補讀，作者讓 agent 串接 Virtuoso／Spectre、EMX、HFSS 與 Calibre，仍由人提供 transistor layout library、做 top-level integration 與 final verification。資料是 post-extraction simulation，未見 silicon measurement 或同預算比較；不把預期一天完成或圖說的完整自動化外推為實測無人全流程。接續 AD007／AD008，另待公開程式、固定版本與各階段人力／tool-hours 後才深掘。
+
+- 去重與覆蓋範圍：SiliCAD EDA_MCP 10 月 25 日起的可見變更仍是已登錄的大型 SKILL／SCP、固定目錄、history expansion 及既有 optional argument 修正；AMBU-CovAgent 與 NeMo Gym CVDP 指定路徑無新提交；Konnect-EDA releases 仍空。Cadence 10 月 27 日 podcast 導讀重述既有 Level-5／40× 宣稱，未提供新的受控實驗；沒有宣稱已聽完節目。fJscaler 的 EIC／PIC 共設計案例未揭露 agent 閉環，留在相鄰平台線，不因標示 AI 就列為新 Agentic 能力。arXiv cs.AR recent、Synopsys 與廠商／論文搜尋已查核；Whole-Route Planning 與 PaFeDSE 摘要呈現確定性／ML 最佳化，未據此當作 agent 系統。索引與指定路徑查詢不是全市場或完整客戶部署稽核。
+
+- 本次採對話短報與 roadmap 更新，不建立公開短評：IC-star 提供架構方向與具名引文，但缺可比較的固定版本結果；授權明示則直接改變企業重現的可行條件，尚不構成另一篇完整技術論證。未執行新 LLM／EDA／PDK 實驗，未進行文章 lint、build、deploy 或正式頁驗證。AD004／AD005 歷史完成狀態及其餘候選狀態保留。
