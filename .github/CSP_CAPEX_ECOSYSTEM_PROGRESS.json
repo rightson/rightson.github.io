@@ -7675,6 +7675,184 @@
         "limits": "No namedCSPcustomer,AI-onlyorder/marginallocation orcompletecurrent10Kaudit;no latestconsensuspopulation authenticated. Sourcefinancials distinguish continuing/discontinuedoperations andGAAP/nonGAAP. No individualmarketquote,valuation,targetprice ortrading instruction included."
       },
       "status": "issuer_original_release_and_cashflow_reconciliation_verified_outside_universe_new_baseline_no_article"
+    },
+    {
+      "fingerprint": "seagate-fy2027-q1-margin-cash-and-initial-q2-guidance-20261027",
+      "companies": [
+        "Seagate Technology"
+      ],
+      "outside_active_universe": true,
+      "type": "issuer_actual_quarterly_results_and_initial_next_quarter_guidance",
+      "sources": [
+        "https://investors.seagate.com/news/news-details/2026/Seagate-Technology-Reports-Fiscal-First-Quarter-2027-Financial-Results/default.aspx",
+        "https://www.businesswire.com/news/home/20261027450936/en/"
+      ],
+      "facts": {
+        "source_authentication": "Full issuer-distributed BusinessWire release retrieved by direct public HTTP; issuer IR indexed financial table corroborates. Reproductions are one original source.",
+        "period_end": "2026-10-02",
+        "currency": "USD",
+        "unit": "million except per share and percentages",
+        "fq1_2027": {
+          "revenue": 4233,
+          "prior_year_revenue": 2629,
+          "gaap_gross_margin_percent": 57.3,
+          "prior_year_gaap_gross_margin_percent": 39.4,
+          "non_gaap_gross_margin_percent": 57.8,
+          "prior_year_non_gaap_gross_margin_percent": 40.1,
+          "gaap_eps": 7.59,
+          "non_gaap_eps": 7.68,
+          "prior_year_non_gaap_eps": 2.61,
+          "operating_cash_flow": 1690,
+          "prior_year_operating_cash_flow": 532,
+          "capex": 211,
+          "prior_year_capex": 105,
+          "free_cash_flow": 1479,
+          "prior_year_free_cash_flow": 427
+        },
+        "initial_fq2_2027_guidance": {
+          "revenue": [
+            4700,
+            4900
+          ],
+          "non_gaap_eps": [
+            9,
+            9.4
+          ],
+          "scope": "Initial next-quarter management guidance,not a revision against an authenticated earlier FQ2 consensus."
+        },
+        "relationship": "Issuer mass-capacity storage serves hyperscale cloud and enterprise workloads; management links demand visibility, HAMR areal density, supply discipline and value-based pricing. No Taiwan supplier allocation inferred.",
+        "cash_quality": "Receivables used283 and inventories129; payables added101 and accrued expenses/income taxes/warranty272. FCF improvement is reconciled to OCF less capex,not assumed all permanent.",
+        "limits": "Unaudited quarterly release; no authenticated current consensus population or named incremental CSP contract. Management long-term visibility not a noncancelable volume commitment."
+      },
+      "event_date": "2026-10-27",
+      "discovered_date": "2026-10-28",
+      "instruction_commit_sha": "02f7ced15ea990a755a3505de4926dc529c21db7",
+      "status": "primary_facts_verified_economic_limits_recorded_no_article"
+    },
+    {
+      "fingerprint": "faraday-2nm-gaa-cloud-ai-design-win-and-q3-mix-20261027",
+      "companies": [
+        "Faraday Technology (3035)"
+      ],
+      "type": "issuer_design_win_and_quarterly_financial_results",
+      "sources": [
+        "https://www.faraday-tech.com/resources/PDFFile/IR/QuarterlyResultsFiles/3Q26_FaradayReport_EN.pdf"
+      ],
+      "facts": {
+        "source_authentication": "Full original issuer PDF retrieved and all text/tables read.",
+        "period": "2026-Q3",
+        "currency": "TWD",
+        "unit": "million except percentages and EPS",
+        "revenue": 3664,
+        "prior_quarter_revenue": 3314,
+        "gross_margin_percent": 42.5,
+        "prior_quarter_gross_margin_percent": 45.2,
+        "operating_income": 214,
+        "prior_quarter_operating_income": 271,
+        "operating_income_qoq_percent": -20.8,
+        "nonoperating_items": 266,
+        "prior_quarter_nonoperating_items": 111,
+        "parent_net_income": 279,
+        "prior_quarter_parent_net_income": 198,
+        "eps": 1.07,
+        "prior_quarter_eps": 0.76,
+        "nre_revenue": 309,
+        "nre_revenue_qoq_percent": -31,
+        "nre_revenue_yoy_percent": -37,
+        "mass_production_revenue": 2907,
+        "mass_production_revenue_qoq_percent": 20,
+        "design_win": "Issuer confirms new international-customer 2nm GAA large-scale cloud AI project,records in process node,complexity,NRE contract value and advanced packaging. Amount,customer,foundry,recognition schedule and production economics undisclosed.",
+        "limits": "Actual quarterly NRE and operating profit fell sequentially. EPS improvement includes nonoperating contribution. Project award not mass-production revenue; no attribution to Google,MediaTek,TSMC or Intel without disclosed relationship.",
+        "balance_sheet": "Inventories2032 versus1508 atJune30; cash9043 versus9488; complete operating cash-flow reconciliation not included."
+      },
+      "event_date": "2026-10-27",
+      "discovered_date": "2026-10-28",
+      "instruction_commit_sha": "02f7ced15ea990a755a3505de4926dc529c21db7",
+      "status": "primary_facts_verified_economic_limits_recorded_no_article"
+    },
+    {
+      "fingerprint": "unimicron-additional-long-lead-equipment-authorization-and-restructuring-20261027",
+      "companies": [
+        "Unimicron (3037)"
+      ],
+      "type": "exchange_original_board_authorization_financials_and_restructuring",
+      "sources": [
+        "https://mops.twse.com.tw/mops/#/web/t05st01"
+      ],
+      "facts": {
+        "source_authentication": "TWSE original listed-company material-notice snapshot generated1151028,statements1151027; issuer3037 announcements18:01:51,18:45:19,18:49:37,18:57:57,19:06:07,19:27:56 Asia/Taipei.",
+        "additional_equipment_preorder_authorization_twd": 50900000000,
+        "financing": "Own funds and bank financing",
+        "purpose": "New plants and process capability to meet operating needs",
+        "execution_conditions": "Procurement adjusts to customer demand and market conditions; actual payments depend on execution progress and payment terms. Not paid annual capex or confirmed incremental customer revenue.",
+        "nine_months": {
+          "revenue_twd_thousand": 132986108,
+          "operating_income_twd_thousand": 19935519,
+          "pretax_income_twd_thousand": 35037876,
+          "parent_net_income_twd_thousand": 28209851,
+          "eps_twd": 17.85
+        },
+        "restructuring": {
+          "germany_capital_injection_eur": 35000000,
+          "germany_purpose": "Complete existing orders,severance,debt repayment and liquidation costs of planned Germany subsidiary dissolution; parent/holding/subsidiary notices are same funding chain,not additive independent investment.",
+          "japan_injection_jpy": 7420000000,
+          "japan_purpose": "Repay existing intercompany and bank debt",
+          "japan_disposal": "Board authorizes letter of intent with MEIKO for all Japan subsidiary equity; conditions and formal contract require later negotiation and board resolutions,not closed disposal."
+        },
+        "limits": "No verified prior total equipment ceiling,incremental capacity output,customer allocation,execution date or investment return. Pretax profit materially exceeds operating income; do not annualize EPS as operating earnings."
+      },
+      "event_date": "2026-10-27",
+      "discovered_date": "2026-10-28",
+      "instruction_commit_sha": "02f7ced15ea990a755a3505de4926dc529c21db7",
+      "status": "primary_facts_verified_economic_limits_recorded_no_article"
+    },
+    {
+      "fingerprint": "esmt-q3-profit-conversion-primary-cumulative-reconciliation-20261027",
+      "companies": [
+        "Elite Semiconductor Microelectronics Technology (3006)"
+      ],
+      "type": "exchange_quarterly_financial_notice_and_issuer_h1_baseline_reconciliation",
+      "sources": [
+        "https://mops.twse.com.tw/mops/#/web/t05st01",
+        "https://www.esmt.com.tw/en/press-room/2026073001?category=company-news"
+      ],
+      "facts": {
+        "source_authentication": "Original TWSE issuer3006 notice2026-10-27 16:12:34 Asia/Taipei; full original July30 issuer H1 notice read. Q3 values derived by subtracting H1 from nine-month totals,not subtracting cumulative EPS.",
+        "currency": "TWD",
+        "unit": "thousand unless percentages",
+        "nine_months": {
+          "revenue": 43363345,
+          "gross_profit": 30187981,
+          "operating_income": 22577424,
+          "parent_net_income": 18730635,
+          "eps_twd": 64.54
+        },
+        "h1": {
+          "revenue": 21213118,
+          "gross_profit": 13034062,
+          "operating_income": 9427597,
+          "parent_net_income": 7971616,
+          "eps_twd": 27.58
+        },
+        "derived_q3": {
+          "revenue": 22150227,
+          "gross_profit": 17153919,
+          "operating_income": 13149827,
+          "parent_net_income": 10759019,
+          "gross_margin_percent": 77.4435359
+        },
+        "comparison": {
+          "h1_gross_margin_percent": 61.443405,
+          "q3_minus_h1_gross_margin_percentage_points": 16.0001309,
+          "scope": "Q3 standalone quarter compared with cumulative first-half margin,not Q2 sequential change."
+        },
+        "relationship": "Active universe classifies issuer as enabling specialty DRAM/memory-cycle supplier. Current financial notice verifies profit conversion,not a named CSP or HBM customer award.",
+        "limits": "Cashflow,inventory-cost layers,pricing/volume mix and durability not yet reconciled; peak-cycle margin not assumed permanent or annualized."
+      },
+      "event_date": "2026-10-27",
+      "discovered_date": "2026-10-28",
+      "instruction_commit_sha": "02f7ced15ea990a755a3505de4926dc529c21db7",
+      "status": "primary_facts_verified_economic_limits_recorded_no_article"
     }
   ],
   "articles": [],
@@ -7791,32 +7969,34 @@
       "2375"
     ],
     "current_run_screening": {
-      "date": "2026-10-23",
-      "checked_at": "2026-10-22 23:21:44 UTC",
-      "instruction_commit_sha": "184526c600151db94aa65dfbd6f66126b663d88f",
-      "status": "98_name_grouped_discovery_six_core_indices_and_bloom_primary_results_verified",
+      "date": "2026-10-28",
+      "instruction_commit_sha": "02f7ced15ea990a755a3505de4926dc529c21db7",
       "company_count": 98,
-      "grouped_query_count": 14,
-      "universe_commit_sha": "d9159c1d63adb6da9e1c6c1ec614575de642d536",
+      "grouped_query_count": 7,
+      "universe_commit_sha": "0f18d6e38b50208ba69df8281c60ef0d2dd84bb8",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "scope": "All98 activeTaiwan names included in grouped discovery; six coreissuer indices read. Outside-universeBloom release and July baseline read. No watchlist modification.",
+      "status": "four_primary_event_increments_grouped_discovery_and_selected_exchange_notices",
+      "scope": "98 active names in7fresh groupedqueries; sixcore andfiveCSPindices attempted. TWSE137notice snapshot datedOctober28 contains38active-universe notices; headings screened and selected economic notices read. Not38fullfinancial audits.",
       "sources": [
         "https://pr.tsmc.com/english/latest-news",
         "https://www.mediatek.com/press-room",
-        "https://nvidianews.nvidia.com/",
+        "https://nvidianews.nvidia.com/news",
         "https://ir.amd.com/news-events/press-releases",
-        "https://investors.broadcom.com/",
+        "https://www.broadcom.com/company/news/releases",
         "https://investor.marvell.com/news-events/press-releases",
-        "https://www.bloomenergy.com/news/bloom-energy-reports-record-third-quarter-2026-financial-results-and-raises-full-year-2026-guidance/",
-        "https://investor.bloomenergy.com/press-releases/press-release-details/2026/Bloom-Energy-Reports-Record-Second-Quarter-2026-Financial-Results-and-Raises-Full-Year-2026-Guidance/default.aspx"
+        "https://www.oracle.com/news/",
+        "https://aws.amazon.com/blogs/aws/",
+        "https://news.microsoft.com/source/",
+        "https://abc.xyz/investor/",
+        "https://investor.atmeta.com/investor-news/default.aspx",
+        "https://mops.twse.com.tw/mops/#/web/t05st01"
       ],
       "source_limits": [
-        "Samecommit mandatoryinstructions,config,taxonomy,series,specification andlegacyresearch read. AGENTS displaytruncation resolved by boundedreads. Contentswrapper returned emptyledger; exactblob returned fullJSON, parsed withouttruncation.",
-        "Groupeddiscovery is not98 individuallyverified currentfilings. Existing98company monthlyrevenuebaseline retained; currentorder,margin andcash economics remainpartial.",
-        "TSMCindex latestOctober15Q3 andMediaTekSeptember30release. No newlyauthenticated TPUdesignaward,NRE,Googleprocurement split orvolume terms established. Othercoreindices retainregisteredbaselines.",
-        "Broadcomhomepage became readable,showingOctober21Arcot,October20FedEx andOctober19DOCOMO releases; resolves thisround's indextransport,not acompleteallrelease audit.",
-        "Bloomissuer newsroomlink openedcurrent numericalbody where earlierdirectpaths andIRindices hadfailed. Q3current/priorfinancialtables andJulyguidance verified. Priorretrievalfailure retainedashistory. Call/full10-Qnotcompleted.",
-        "Three related ai-industry articleblobs reread. No independentlongformarticle created. Publicledger contains onlysourcefacts,researchcoverage andstages; no currentquotes,valuation,holdings,fundflows,tradingconditions orprivatejudgment."
+        "Grouped queries mostly return old reports,aggregators and social commentary;not98individual currentfiling,order,margin orcashflow audits.",
+        "Broadcom index iframeonly; Alphabet andMeta largelynavigation. TSMC latestindexedOctober15Q3,MediaTekSeptember30. No authenticated newTPUprocurement,NREallocation orfoundry assignment.",
+        "Seagate issuer-distributed fullrelease fetched despite webreader failure. Faraday issueroriginalPDF read. ESMT currentquarter computed from comparable cumulative notices. TPEx latest notices not refreshed thisrun;no whole-market completeness claim.",
+        "Samecommit instructions,specs,taxonomy,config,series,legacyresearch,fullprogress andthree recentai-industry articles retrieved. Instruction/article blobhashes match complete versions read in thisconversation.",
+        "OnlyApublic facts andcoverage recorded;no quotes,valuations,holdings,fundflows,privateinvestment judgments orBanalysis. No article orPages publication."
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -19348,6 +19528,37 @@
           "Known NVIDIA-Meta announcedinvestment,Metaoffering pricing,Broadcomfinancing andrecent earnings baselines compared; no additional realization inferred. Original MoneyDJ SoIC fullbody retrieved through direct public HTTP; website search reader errors do not imply issuer confirmation.",
           "Only candidate andscreeninghistory appended; no article,Pages publication,individual currentquotes,valuation,holdings,marketfundflows orprivate analysis included."
         ]
+      },
+      {
+        "date": "2026-10-28",
+        "instruction_commit_sha": "02f7ced15ea990a755a3505de4926dc529c21db7",
+        "company_count": 98,
+        "grouped_query_count": 7,
+        "universe_commit_sha": "0f18d6e38b50208ba69df8281c60ef0d2dd84bb8",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "four_primary_event_increments_grouped_discovery_and_selected_exchange_notices",
+        "scope": "98 active names in7fresh groupedqueries; sixcore andfiveCSPindices attempted. TWSE137notice snapshot datedOctober28 contains38active-universe notices; headings screened and selected economic notices read. Not38fullfinancial audits.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/news",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://www.broadcom.com/company/news/releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://www.oracle.com/news/",
+          "https://aws.amazon.com/blogs/aws/",
+          "https://news.microsoft.com/source/",
+          "https://abc.xyz/investor/",
+          "https://investor.atmeta.com/investor-news/default.aspx",
+          "https://mops.twse.com.tw/mops/#/web/t05st01"
+        ],
+        "source_limits": [
+          "Grouped queries mostly return old reports,aggregators and social commentary;not98individual currentfiling,order,margin orcashflow audits.",
+          "Broadcom index iframeonly; Alphabet andMeta largelynavigation. TSMC latestindexedOctober15Q3,MediaTekSeptember30. No authenticated newTPUprocurement,NREallocation orfoundry assignment.",
+          "Seagate issuer-distributed fullrelease fetched despite webreader failure. Faraday issueroriginalPDF read. ESMT currentquarter computed from comparable cumulative notices. TPEx latest notices not refreshed thisrun;no whole-market completeness claim.",
+          "Samecommit instructions,specs,taxonomy,config,series,legacyresearch,fullprogress andthree recentai-industry articles retrieved. Instruction/article blobhashes match complete versions read in thisconversation.",
+          "OnlyApublic facts andcoverage recorded;no quotes,valuations,holdings,fundflows,privateinvestment judgments orBanalysis. No article orPages publication."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -30067,8 +30278,8 @@
       "impact": "Search hits and reposted notices have not been individually checked against company or exchange originals."
     }
   ],
-  "last_research_date": "2026-10-26",
-  "instruction_commit_sha": "a131cdf95139ddc419b90a8b48b0f2bea0e1d93a",
+  "last_research_date": "2026-10-28",
+  "instruction_commit_sha": "02f7ced15ea990a755a3505de4926dc529c21db7",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
