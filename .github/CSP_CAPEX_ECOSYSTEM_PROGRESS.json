@@ -7505,6 +7505,47 @@
         "limits": "Notauditedfinancialstatementsorconsensusearningsbeat. Consolidatednetincomeisnotparentattributableincome. SimplifiedpresentationdoesnotestablishfullquarterlyoperatingcashfloworprojectROIC. NoacceleratedFOPLPtarget,verifiedCPOpaidorder,customerspecificprocurementallocationorquantifiedprojectprofitregistered. Noindividualsecurityquote,valuationortradinginstruction."
       },
       "status": "issuer_original_pdfs_and_financial_table_verified_customer_economics_and_cash_validation_pending_no_article"
+    },
+    {
+      "fingerprint": "oracle-google-tpu-first-external-hyperscaler-availability-20261027",
+      "event_date": "2026-10-27",
+      "instruction_commit_sha": "55428e5a02ec254c80014e1457c731e5ad57d406",
+      "companies": [
+        "Oracle",
+        "Google"
+      ],
+      "type": "issuer_announced_external_tpu_cloud_distribution",
+      "sources": [
+        "https://www.oracle.com/news/announcement/ai-world-oracle-brings-google-tpus-to-oracle-cloud-infrastructure-2026-10-27/"
+      ],
+      "facts": {
+        "increment": "Oracle and Google announce OCI as first hyperscaler outside Google to offer Google TPUs. Calendar2027 availability followed by multiyear ramp; OCI supplies power,cooling and datacenter networking.",
+        "maturity": "Announced future service,not current TPU general availability. Release discusses TPU8t/8i portfolio but does not allocate OCI procurement volumes by chip generation.",
+        "comparison": "Extends Google's TPU route to an additional hyperscale cloud operator; prior TPU customer/ASIC ecosystem research did not establish this OCI channel.",
+        "limits": "No chip quantity,contract value,incremental versus transferred workload,margins,payment terms or supplier design/production allocation. No MediaTek/Broadcom/Marvell design win,NRE,volume share or TSMC order amount inferred."
+      },
+      "status": "full_issuer_release_verified_2027_service_and_supplier_economics_pending_no_article"
+    },
+    {
+      "fingerprint": "nvidia-oracle-vera-rubin-and-vera-cpu-ga-versus-multigigawatt-expansion-20261027",
+      "event_date": "2026-10-27",
+      "instruction_commit_sha": "55428e5a02ec254c80014e1457c731e5ad57d406",
+      "companies": [
+        "NVIDIA",
+        "Oracle"
+      ],
+      "type": "issuer_cloud_product_ga_and_forward_expansion_plan",
+      "sources": [
+        "https://nvidianews.nvidia.com/news/nvidia-and-oracle-expand-nvidia-vera-rubin-to-multi-gigawatt-scale-and-bring-nvidia-vera-cpu-to-oracle-cloud-infrastructure",
+        "https://www.oracle.com/news/announcement/ai-world-nvidia-and-oracle-expand-nvidia-vera-rubin-to-multi-gigawatt-scale-2026-10-27/"
+      ],
+      "facts": {
+        "increment": "Issuer announces Vera Rubin NVL72 and Vera CPU general availability on OCI,with planned multi-gigawatt Supercluster expansion. HGX Rubin NVL8 introduction remains planned.",
+        "deployment_scope": "Issuer cites existing Abilene OCI use of more than100000Blackwell GPUs for OpenAI training/serving; this is Blackwell evidence,not a count of Rubin or additional October purchases. OpenAI says it is bringing Vera CPU into production.",
+        "product_scope": "NVL72 pairs with Spectrum-X Spectrum6 and BlueField4. CPU and GPU resources can scale independently; efficiency improvement is vendor claim,not measured customer ROI.",
+        "limits": "Multi-gigawatt expansion is a plan,not delivered/powered capacity. No incremental order value,payment receipt,utilization,commercialmargin or Taiwan supplier allocation authenticated. Oracle TPU2027 announcement coexists with NVIDIA availability and does not prove GPU displacement."
+      },
+      "status": "issuer_ga_and_announced_deployment_stage_verified_scale_and_cash_validation_pending_no_article"
     }
   ],
   "articles": [],
@@ -29858,6 +29899,25 @@
       "questions": [
         "ObtainissuerOctober27slides,officialreplayororiginalquarterlyfinancialstoauthenticatefigures.",
         "SeparatememorypricingandconventionalpackageutilizationfromnewFOPLP/CPOeconomiccontribution;reconcilecashandexpansioncosts."
+      ],
+      "publication_status": "candidate_only_no_article"
+    },
+    {
+      "key": "tsmc-cowos-reported-10-to20pct-price-discussion-original-access-gap-20261027",
+      "date": "2026-10-28",
+      "instruction_commit_sha": "55428e5a02ec254c80014e1457c731e5ad57d406",
+      "companies": [
+        "TSMC"
+      ],
+      "stage": "secondary_report_read_original_media_unavailable",
+      "sources": [
+        "https://www.trendforce.com/news/2026/10/27/news-tsmc-reportedly-eyes-20-cowos-price-hike-skips-equipment-price-renegotiations-amid-ai-demand-surge/",
+        "https://www.ctee.com.tw/news/20261027700053-439901"
+      ],
+      "facts": "TrendForceNewsOctober27curatesCommercialTimessupplychainsources:10-20%CoWoSpricediscussions,equipmentleadtime6-8monthsversus3-6. DirectCommercialTimesreadrestricted. NotTrendForceresearchforecastorissuerconfirmation;noexecutedpricelist,effectivedate,customermixorprofitrevisionverified. Reproductionscountasonemediaorigin.",
+      "questions": [
+        "Retrieveoriginalreportanddatedpriorpricebaseline.",
+        "Verifyissuer/customerrealizedpricing,capacitymix,costpass-throughandmarginbeforeearningsinference."
       ],
       "publication_status": "candidate_only_no_article"
     }
