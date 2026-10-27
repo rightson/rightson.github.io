@@ -7377,6 +7377,89 @@
         "limits": "Proposed investment remains forward-looking with completion/closing conditions. No completed cash transfer,equipment quantity,order value,delivery date,utilization,TCO or supplier profit revision disclosed. OpenShell/Sentry collaboration is under consideration. Investment is not added to Meta's offering total."
       },
       "status": "full_issuer_release_read_announced_investment_and_deployment_intent_registered_cash_and_delivery_pending_no_article"
+    },
+    {
+      "fingerprint": "celestica-q3-2026-beat-fy-guidance-revision-and-initial-2027-outlook-20261026",
+      "event_date": "2026-10-26",
+      "discovered_date": "2026-10-27",
+      "instruction_commit_sha": "5ceb361ba340682fe43d7a6acd5eae38c1f90f09",
+      "companies": [
+        "Celestica"
+      ],
+      "outside_active_universe": true,
+      "type": "issuer_quarterly_results_and_guidance_revision",
+      "sources": [
+        "https://celestica.gcs-web.com/news-releases/news-release-details/celestica-announces-third-quarter-2026-financial-results-and"
+      ],
+      "facts": {
+        "publication_time": "October26,2026 16:17EDT",
+        "report_period_end": "2026-09-30",
+        "currency": "USD",
+        "revenue_q3_bn": 5.83,
+        "prior_q3_revenue_guidance_bn": [
+          5.25,
+          5.55
+        ],
+        "adjusted_eps_q3": 3.3,
+        "prior_q3_adjusted_eps_guidance": [
+          2.88,
+          3.08
+        ],
+        "gaap_operating_margin_pct": 7.9,
+        "gaap_operating_margin_prior_year_pct": 10.2,
+        "adjusted_operating_margin_pct": 8.5,
+        "adjusted_operating_margin_prior_year_pct": 7.6,
+        "ccs_revenue_bn": 4.87,
+        "ccs_revenue_yoy_pct": 102,
+        "ccs_margin_pct": 8.9,
+        "ccs_margin_prior_year_pct": 8.3,
+        "fy2026_revenue_outlook_bn_old": 20.5,
+        "fy2026_revenue_outlook_bn_new": 21,
+        "fy2026_adjusted_eps_outlook_old": 11.3,
+        "fy2026_adjusted_eps_outlook_new": 11.55,
+        "fy2026_fcf_outlook_million_old": 600,
+        "fy2026_fcf_outlook_million_new": 460,
+        "fy2026_adjusted_operating_margin_outlook_pct_unchanged": 8.4,
+        "fcf_reason": "Issuer attributes reduction primarily to working capital investments supporting2027growth.",
+        "initial_fy2027_outlook": {
+          "revenue_bn": 40,
+          "adjusted_eps": 21.5,
+          "adjusted_operating_margin_pct": 9,
+          "capex_bn": [
+            1.5,
+            2
+          ]
+        },
+        "cashflow_q3_million": 389.7,
+        "pp_and_e_purchases_q3_million": 274.1,
+        "relationship": "Issuer serves hyperscalers and frontierAI labs via networking,AI compute,storage and platform solutions; previously registered DS6005/Broadcom relationship is separate product evidence.",
+        "comparison": "Advances previous product-level DS6005 candidate to issuer-reported revenue,profit and dated guidance. FY2027 is initial guidance,not an upward revision against a prior2027issuer forecast.",
+        "limits": "2027/2028customer forecasts are not unconditional paid backlog. No supplier-by-supplier Taiwan allocations or CPO-specific revenue inferred. NonGAAPandGAAPmargins differ materially; favorable tax mix/discrete benefit also helped adjustedEPS. This record contains no market quote,valuation or trading instruction."
+      },
+      "status": "issuer_results_and_guidance_tables_verified_cash_conversion_and_customer_forecast_validation_pending_no_article"
+    },
+    {
+      "fingerprint": "amd-meta-helios-testing-muse-epyc-and-announced-1bn-equity-investment-20261027",
+      "event_date": "2026-10-27",
+      "instruction_commit_sha": "5ceb361ba340682fe43d7a6acd5eae38c1f90f09",
+      "companies": [
+        "AMD",
+        "Meta"
+      ],
+      "type": "issuer_partnership_deployment_stage_and_equity_investment_announcement",
+      "sources": [
+        "https://ir.amd.com/news-events/press-releases/detail/1302/amd-and-meta-advance-strategic-partnership-to-power-metas-superintelligence-infrastructure"
+      ],
+      "facts": {
+        "publication_time": "October27,2026 09:20EDT per issuer index",
+        "announced_investment_usd_bn": 1,
+        "helios_stage": "Initial Helios rackscale systems are installed and being tested at Meta on path to broader deployment. Headline running does not establish fullproductionacceptance.",
+        "epyc_scope": "EPYC powers dedicated Muse environments; issuer says Meta has deployed millions ofEPYCacross multiple historicalgenerations.",
+        "instinct_scope": "Instinct in production for training,ranking,recommendations; future customGPUandMI500roadmap collaboration remains forward-looking.",
+        "comparison": "Advances the prior aggregate chip-vendor nonbinding interest to an individually named AMD investment announcement and specific Helios test-stage evidence. Separate NVIDIA3bn announcement alreadyregistered; AMD1bn is withinMetaoffering,notaddedtoissuersgrossproceeds.",
+        "limits": "No completed subscription cashsettlement,equipmentquantity,incrementalorderamount,Heliosproductionutilization orsupplierprofitrevision authenticated. Gigawattscale wording not converted to measured installedGW;historicalmillionsofEPYCnotneworders."
+      },
+      "status": "full_issuer_release_read_announced_investment_and_test_stage_verified_cash_and_scale_pending_no_article"
     }
   ],
   "articles": [],
@@ -29712,6 +29795,26 @@
         "Verify named equipment orders,qualification,delivery/acceptance and customer deposits before attributing incremental revenue or margins."
       ],
       "publication_status": "research_candidate_only_no_article"
+    },
+    {
+      "key": "powertech-q3-2026-call-reported-margin-and-foplp-ramp-original-document-gap-20261027",
+      "date": "2026-10-27",
+      "instruction_commit_sha": "5ceb361ba340682fe43d7a6acd5eae38c1f90f09",
+      "companies": [
+        "Powertech Technology"
+      ],
+      "stage": "fresh_secondary_call_reports_discovered_primary_slide_and_financial_validation_pending",
+      "sources": [
+        "https://www.alphamemo.ai/free-transcripts/b3bb334a-a2c6-4529-83a5-ae9b4d1c6ab0",
+        "https://finmoconf.diveinvest.net/company/6239",
+        "https://www.pti.com.tw/zh/ir/news/qa"
+      ],
+      "facts": "October27callindexedsecondaryreports includeQ3marginimprovementandFOPLP/CPOoutlook. ThirdpartyconferenceindexhasOctober27audio butnopresentationPDF;issuerIRpagesobtaineddonotprovidevalidatedOctober27financialtablesinretrievedtext. AI-generated summaries are not accepted as issuer financial confirmation. No eventalert,supplierorder orprofitrevisionderivedfromthesealone.",
+      "questions": [
+        "ObtainissuerOctober27slides,officialreplayororiginalquarterlyfinancialstoauthenticatefigures.",
+        "SeparatememorypricingandconventionalpackageutilizationfromnewFOPLP/CPOeconomiccontribution;reconcilecashandexpansioncosts."
+      ],
+      "publication_status": "candidate_only_no_article"
     }
   ],
   "blockers": [
