@@ -7596,6 +7596,85 @@
         "limits": "Issuer forward-looking statements,not independent customer confirmation or paidbacklog. Customer award does not establish mass deployment. No named Taiwan allocation,CPO-specific revenue/profit,return forecasts,market quote orvaluation stored. Strong liquidity mitigates funding risk;cash use need not indicate demand weakness."
       },
       "status": "issuer_exhibit_key_slides_visually_verified_new_customer_adoption_and_cashflow_stage_no_article"
+    },
+    {
+      "fingerprint": "johnson-controls-fy2026-q4-backlog-margin-cash-and-initial-fy2027-outlook-20261027",
+      "event_date": "2026-10-27",
+      "discovered_date": "2026-10-28",
+      "instruction_commit_sha": "4ec3dd72c4432a39d0a9cadb92f072d8d976e9af",
+      "companies": [
+        "Johnson Controls"
+      ],
+      "outside_active_universe": true,
+      "type": "issuer_quarterly_results_and_initial_next_fiscal_year_guidance",
+      "sources": [
+        "https://www.johnsoncontrols.com/media-center/news/press-releases/2026/10/27/johnson-controls-reports-strong-q4-results",
+        "https://s21.q4cdn.com/502874060/files/doc_news/Johnson-Controls-Reports-Q4-and-FY26-Results-Initiates-FY27-Guidance-2026.pdf"
+      ],
+      "facts": {
+        "source_authentication": "Issuerhomepage links toOctober27release,redirecting toQ4CDNoriginalPDF. PDFdownloaded;text financial tables read and page2 segment/backlog/definition caveat visually verified. Unaudited release.",
+        "period_end": "2026-09-30",
+        "currency": "USD",
+        "unit": "million unless stated",
+        "q4": {
+          "revenue": 7113,
+          "prior_year_revenue": 6442,
+          "reported_revenue_growth_percent": 10,
+          "organic_revenue_growth_percent": 12,
+          "gaap_continuing_eps": 1.6,
+          "adjusted_continuing_eps": 1.66,
+          "prior_year_adjusted_continuing_eps": 1.26,
+          "continuing_operating_cash_flow": 1300,
+          "prior_year_continuing_operating_cash_flow": 968,
+          "capex": 222,
+          "prior_year_capex": 130,
+          "free_cash_flow": 1078,
+          "prior_year_free_cash_flow": 838,
+          "adjusted_free_cash_flow": 1096,
+          "prior_year_adjusted_free_cash_flow": 710
+        },
+        "americas": {
+          "revenue": 4930,
+          "prior_year_revenue": 4325,
+          "segment_ebit_margin_percent": 20.1,
+          "prior_year_segment_ebit_margin_percent": 17.6,
+          "adjusted_segment_ebita_margin_percent": 22,
+          "prior_year_adjusted_segment_ebita_margin_percent": 19.9,
+          "backlog": 17800,
+          "backlog_organic_yoy_percent": 54,
+          "reported_order_organic_yoy_percent": 58,
+          "driver": "Issuer attributes order/backlog strength to sustained data-center demand;higher revenue and favorable mix support segment margin."
+        },
+        "company_backlog": {
+          "value": 23000,
+          "organic_yoy_percent": 43,
+          "reported_order_organic_yoy_percent": 44,
+          "scope": "Solutions and Services businesses,not all company revenue or AI-only orders",
+          "comparability": "Orders priorQ1FY2026 excluded certain equipment-only sales for longer-cycle projects;backlog has been restated to include category. Reported order growth is not assumed fully comparable pure demand growth."
+        },
+        "fy2026": {
+          "adjusted_continuing_eps": 5.16,
+          "free_cash_flow": 3407,
+          "adjusted_free_cash_flow": 3229,
+          "adjusted_free_cash_flow_conversion_percent": 103
+        },
+        "initial_fy2027_outlook": {
+          "organic_sales_growth_percent": [
+            11,
+            12
+          ],
+          "adjusted_continuing_eps": [
+            6.15,
+            6.3
+          ],
+          "adjusted_free_cash_flow_conversion_percent": 95,
+          "scope": "Initial FY2027 guidance,not an upward revision from a verified priorFY2027forecast."
+        },
+        "relationship": "AppliedHVAC,thermalmanagement,controls andlifecycle services connectdatacenter construction toissuerorders,installedsystems andservicecashflow. No identifiedTaiwan supplieraward.",
+        "cash_quality_limits": "Q4cash benefits include951million increaseinpayables/accruedliabilitiesand474million accruedtaxes;receivablesused339million. StrongheadlineFCFisnot proofeveryprojecthascollectedcash. Quarterend timing,productivity,restructuringandmix alsoaffectprofit.",
+        "limits": "No namedCSPcustomer,AI-onlyorder/marginallocation orcompletecurrent10Kaudit;no latestconsensuspopulation authenticated. Sourcefinancials distinguish continuing/discontinuedoperations andGAAP/nonGAAP. No individualmarketquote,valuation,targetprice ortrading instruction included."
+      },
+      "status": "issuer_original_release_and_cashflow_reconciliation_verified_outside_universe_new_baseline_no_article"
     }
   ],
   "articles": [],
