@@ -7302,6 +7302,29 @@
         "limits": "No authenticated drawdown, completed cash settlement, final interest rate, first-lien amount, full recourse or delivery acceptance established. Financing amount is not recognized Broadcom revenue or a new Taiwan supplier allocation. No supplier earnings revision inferred."
       },
       "status": "full_financial_partner_primary_terms_verified_funding_delivery_and_exposure_reconciliation_pending_no_article"
+    },
+    {
+      "fingerprint": "broadcom-anthropic-north-star-reported-pricing-concession-for-bank-commitments-20261027",
+      "event_date": "2026-10-26",
+      "discovered_date": "2026-10-27",
+      "instruction_commit_sha": "cf6f0c5ea7e8a45b149f68969e90c90d94e33524",
+      "companies": [
+        "Broadcom",
+        "Anthropic"
+      ],
+      "type": "original_reporting_financing_negotiation_pricing_followup",
+      "sources": [
+        "https://www.wsj.com/finance/broadcom-ceo-intervened-to-seal-63-billion-anthropic-debt-deal-c807754f",
+        "https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/10/bank-of-america--blackstone--citi-and-morgan-stanley-announce-la.html"
+      ],
+      "facts": {
+        "source_publication_time": "2026-10-27 01:09 UTC",
+        "reporting": "WSJ cites unnamed sources describing higher loan rates to secure bank commitments and greater lender comfort on guarantees.",
+        "source_scope": "Direct WSJ page exposes opening only; complete original reporting text retrieved in search result. Bank-hosted joint announcement separately read.",
+        "comparison": "Previously registered announcement confirms USD63bn committed SPV financing and residual support equal to senior financing, with expected2027deliveries. New reporting concerns negotiation and pricing, not an additional transaction.",
+        "limits": "No precise old/new rate, incremental support amount or authenticated covenant amendment. Greater lender comfort is not proof of expanded guarantee scope. Borrower/SPV cost is not automatically Broadcom interest expense; no supplier earnings revision, financing cancellation, default, cash draw or Taiwan order allocation established."
+      },
+      "status": "reported_pricing_concession_registered_final_contract_and_cash_conversion_pending_no_article"
     }
   ],
   "articles": [],
@@ -18815,6 +18838,39 @@
           "Foxconn October26 title/summary obtained through issuer searchindex butfullbody redirected; no order orprofit inference. CMoney packaging story lacks identified new primary contract; existing interposer andDTCcandidates retained.",
           "Mandatory instructions,config,taxonomy,series,specification,legacy research andthree recent ai-industry articles fetched atsameinstructioncommit. Instruction hashes unchanged versus fullyread versions; fullledger blob parsed. No new article orPages publication.",
           "Public additions contain onlyApublicsources,coverage andresearch stages. No quotes,valuations,holdings,trading conditions orBmarketanalysis stored."
+        ]
+      },
+      {
+        "date": "2026-10-27",
+        "checked_at": "2026-10-27 02:44 UTC",
+        "instruction_commit_sha": "cf6f0c5ea7e8a45b149f68969e90c90d94e33524",
+        "company_count": 98,
+        "grouped_query_count": 7,
+        "universe_commit_sha": "fe69b78967b86268c53b0a2d88654c50a6c1edfa",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_core_csp_indices_checked_new_financing_negotiation_reporting",
+        "scope": "All98activeTaiwan names included in7freshgroupedqueries; sixcoreandfiveCSPindices attempted. Additional current globalinfrastructure,TPUandfinancingsearches performed.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://press.aboutamazon.com/",
+          "https://news.microsoft.com/source/",
+          "https://cloud.google.com/blog/",
+          "https://investor.atmeta.com/investor-news/",
+          "https://www.oracle.com/news/",
+          "https://www.wsj.com/finance/broadcom-ceo-intervened-to-seal-63-billion-anthropic-debt-deal-c807754f",
+          "https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/10/bank-of-america--blackstone--citi-and-morgan-stanley-announce-la.html"
+        ],
+        "source_limits": [
+          "Grouped discovery returned mostly historical revenues,reposts and aggregator pages; not98individual latestfiling,order,margin orcashflow audits. No completeness claim from search silence.",
+          "TSMC latestindexedOctober15Q3,MediaTekSeptember30release andMarvellOctober13products retain priorbaselines. No new authenticated TPUaward,NREorGoogleprocurementsplit.",
+          "Metaindex returned navigationonly. Fresh originalWSJreport obtained insearchresult while directpage exposes opening; anonymousattribution and unquantified pricing retained. Jointannouncement is strong counterevidence to cancellation inference.",
+          "Samecommit mandatoryinstructions,config,taxonomy,series,specification,legacyresearch and3recentai-industryarticlecontents fetched. Fullledgerblob parsed; unchangedinstruction andarticlehashes compared to fullyread versions inconversation. No article orPagespublication.",
+          "OnlyApublic sourcefacts,coverage andresearchstage appended. No privateprices,valuations,holdings,fundflows,tradingconditions orBanalysis stored."
         ]
       }
     ],
