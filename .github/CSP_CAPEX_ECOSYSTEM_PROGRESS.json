@@ -18781,6 +18781,41 @@
           "Rambus issuer release and original10-Q financial/revenue/cash sections establish an outside-universe firstbaseline. Productrevenue withinpriorguidance and nine-monthcashflow decline temper single-quartergrowth interpretation. No fullarticle orPagespublication.",
           "Public record contains onlyApublicsourcefacts,coverage andstages. No prices,valuations,holdings,fundflows,tradeconditions orBmarketanalysis stored."
         ]
+      },
+      {
+        "date": "2026-10-27",
+        "checked_at": "2026-10-27 00:57:05 UTC",
+        "instruction_commit_sha": "ffb5ca7d3299265f398ef01bf12e66fdb0f90763",
+        "company_count": 98,
+        "grouped_query_count": 7,
+        "universe_commit_sha": "fe69b78967b86268c53b0a2d88654c50a6c1edfa",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_core_csp_indices_attempted_financing_tranche_source_clarification",
+        "scope": "All98active Taiwan names included in7fresh grouped discovery queries. Six coreissuer andfiveCSPindices attempted; broader infrastructure,TPU andfinancing searches followed. No watchlist edits.",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://press.aboutamazon.com/",
+          "https://news.microsoft.com/source/",
+          "https://cloud.google.com/blog/",
+          "https://investor.atmeta.com/investor-news/",
+          "https://www.oracle.com/news/",
+          "https://www.reuters.com/legal/transactional/wall-street-banks-blackstone-line-up-63-billion-finance-broadcom-chips-anthropic-2026-10-26/",
+          "https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/10/bank-of-america--blackstone--citi-and-morgan-stanley-announce-la.html",
+          "https://www.prnewswire.com/news-releases/bank-of-america-blackstone-citi-and-morgan-stanley-announce-landmark-63-billion-financing-structure-to-enable-ai-compute-capacity-in-partnership-with-broadcom-302919849.html"
+        ],
+        "source_limits": [
+          "Grouped discovery is not98individual current filings,orders,margins orcashflow audits. Mostly historical/reposted content returned; existing monthly-revenue baseline retained without extending its data period.",
+          "TSMC andMediaTek indexed baselines retained; no authenticated new TPUaward,NRE,Googleprocurement split orsupplier profit revision. Meta index navigation doesnot establish absence of new releases.",
+          "Reuters original first-lien numerical detail retained with anonymous-source attribution. Joint announcement freshly read atbank andissuer-distribution sources; source copies are one announcement,not independent confirmations. Historical Bloomberg search-index tranche evidence retained as limited comparison; fullbody inaccessible.",
+          "Foxconn October26 title/summary obtained through issuer searchindex butfullbody redirected; no order orprofit inference. CMoney packaging story lacks identified new primary contract; existing interposer andDTCcandidates retained.",
+          "Mandatory instructions,config,taxonomy,series,specification,legacy research andthree recent ai-industry articles fetched atsameinstructioncommit. Instruction hashes unchanged versus fullyread versions; fullledger blob parsed. No new article orPages publication.",
+          "Public additions contain onlyApublicsources,coverage andresearch stages. No quotes,valuations,holdings,trading conditions orBmarketanalysis stored."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -29315,6 +29350,69 @@
         "Separate royalty/licensing timing and product profitability before evaluating durable earnings power; obtain primary demand/mix and competitive-share evidence."
       ],
       "publication_status": "source_baseline_candidate_only_no_material_alert_no_article"
+    },
+    {
+      "key": "broadcom-anthropic-first-lien-reported-435bn-and-historical-tranche-comparison-20261026",
+      "date": "2026-10-27",
+      "event_date": "2026-10-26",
+      "instruction_commit_sha": "ffb5ca7d3299265f398ef01bf12e66fdb0f90763",
+      "companies": [
+        "Broadcom",
+        "Anthropic",
+        "Bank of America",
+        "Blackstone",
+        "Citi",
+        "Morgan Stanley"
+      ],
+      "stage": "original_reuters_tranche_report_read_joint_announcement_reverified_primary_amount_and_contract_reconciliation_pending",
+      "sources": [
+        "https://www.reuters.com/legal/transactional/wall-street-banks-blackstone-line-up-63-billion-finance-broadcom-chips-anthropic-2026-10-26/",
+        "https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/10/bank-of-america--blackstone--citi-and-morgan-stanley-announce-la.html",
+        "https://www.prnewswire.com/news-releases/bank-of-america-blackstone-citi-and-morgan-stanley-announce-landmark-63-billion-financing-structure-to-enable-ai-compute-capacity-in-partnership-with-broadcom-302919849.html",
+        "https://bloomberg.com/news/articles/2026-10-02/broadcom-starts-amassing-60-billion-to-fund-chips-for-anthropic"
+      ],
+      "facts": {
+        "currency": "USD",
+        "original_reporting": {
+          "publication_time": "2026-10-26 20:32 UTC",
+          "first_lien_bn": 43.5,
+          "reported_share_percent": 69,
+          "attribution": "Reuters cites two sources familiar with the matter. Original article body read; release gives no breakdown and Broadcom did not respond."
+        },
+        "primary_scope": "Bank of America-hosted joint announcement and Broadcom-issued PRNewswire release read. They confirm USD63bn SPV financing, Broadcom residual-value support equal to first-lien financing, and expected2027 deliveries, but do not quantify first lien.",
+        "historical_comparison": "October2 Bloomberg indexed report described USD42bn senior tranche; full article unavailable.",
+        "comparison_limits": "Historical indexed evidence limits novelty. Neither same-facility comparability nor a newly executed USD1.5bn support increase is authenticated. Conditional convertible-note financing, prior USD35bn platform and historical USD29bn backstop are separate reconciliation items, not amounts to sum.",
+        "limits": "Reported first-lien amount is not issuer-confirmed support liability, cash paid, drawn financing, realized loss or supplier revenue. Full support triggers, collateral recovery, recourse, final interest cost and actual delivery acceptance remain unverified. No named Taiwan supplier allocation or earnings revision inferred."
+      },
+      "questions": [
+        "Obtain issuer-filed tranche amounts and executed residual-value support provisions, including triggers, cap, recovery and recourse.",
+        "Reconcile October2 reported senior tranche, October26 financing and historical guarantees/conditional notes without assuming incremental or nonoverlapping exposure.",
+        "Verify cash draw, delivery acceptance and customer lease collections before attributing supplier revenue or cash conversion."
+      ],
+      "publication_status": "source_clarification_candidate_only_no_article"
+    },
+    {
+      "key": "foxconn-industrializes-intelligence-ai-factories-indexed-title-20261026",
+      "date": "2026-10-27",
+      "event_date": "2026-10-26",
+      "instruction_commit_sha": "ffb5ca7d3299265f398ef01bf12e66fdb0f90763",
+      "companies": [
+        "Foxconn"
+      ],
+      "stage": "issuer_search_index_title_and_summary_only_full_release_redirected",
+      "sources": [
+        "https://www.foxconn.com/en-us/press-center/press-releases/latest-news/2129",
+        "https://www.foxconn.com/en-us/press-center/press-releases/latest-news?category=3plus3"
+      ],
+      "facts": {
+        "indexed_title": "Foxconn Industrializes Intelligence and Scales the Future With AI Factories",
+        "scope": "Issuer search index dates title October26 and describes industrial-data/self-learning manufacturing. Direct release redirects to generic index; complete body not retrieved.",
+        "limits": "Title and indexed summary do not establish an incremental CSP customer, signed hardware order, capacity, revenue, margin or cash-flow revision."
+      },
+      "questions": [
+        "Obtain complete dated issuer release and distinguish internal manufacturing capability from external AI infrastructure orders."
+      ],
+      "publication_status": "retrieval_candidate_only_no_article"
     }
   ],
   "blockers": [
