@@ -7460,6 +7460,51 @@
         "limits": "No completed subscription cashsettlement,equipmentquantity,incrementalorderamount,Heliosproductionutilization orsupplierprofitrevision authenticated. Gigawattscale wording not converted to measured installedGW;historicalmillionsofEPYCnotneworders."
       },
       "status": "full_issuer_release_read_announced_investment_and_test_stage_verified_cash_and_scale_pending_no_article"
+    },
+    {
+      "fingerprint": "powertech-q3-2026-primary-margin-results-fcbga-production-and-foplp-target-20261027",
+      "event_date": "2026-10-27",
+      "instruction_commit_sha": "81285758ea2e78f4e6e7aa1d563aaeedcfb82583",
+      "companies": [
+        "Powertech Technology"
+      ],
+      "type": "issuer_conference_primary_unaudited_results_and_packaging_stage",
+      "sources": [
+        "https://www.pti.com.tw/zh/ir/news",
+        "https://www.pti.com.tw/Handlers/ConferenceDownload.ashx?col=briefing&lang=zh&id=4759fd98-e514-490c-89fe-53c007e745e3",
+        "https://www.pti.com.tw/Handlers/ConferenceDownload.ashx?col=briefing&lang=zh&id=a9c72472-574a-49a7-ab9c-f5b553a7df29"
+      ],
+      "facts": {
+        "source_verification": "Issuer HTML revealed public conference data route. First page0 provided exact October27andJuly28briefinglinks. Both originalPDFs downloaded and text extracted; Q3financialtable page5 visually rendered and inspected. Q3has28pages,Q2has29.",
+        "q3_pdf_sha256": "d67add67b0eb746c6429a738b10504ceee372bad38e63c218ec95b800f05b724",
+        "q2_pdf_sha256": "a3fecadec18d7b3657fbbc1c5b046761e7344fd3f44a1de12617394d1e29e4b7",
+        "basis": "Company-reported unaudited consolidated quarterly data; amountsTWDmillion exceptEPS",
+        "revenue_q3_million": 25334,
+        "revenue_q2_million": 23116,
+        "revenue_qoq_pct": 9.6,
+        "gross_profit_q3_million": 6085,
+        "gross_margin_q3_pct": 24,
+        "gross_margin_q2_pct": 21.8,
+        "operating_income_q3_million": 4472,
+        "operating_margin_q3_pct": 17.7,
+        "operating_margin_q2_pct": 15.3,
+        "eps_q3_twd": 3.55,
+        "eps_q2_twd": 3,
+        "consolidated_net_income_q3_million": 3565,
+        "parent_attributable_net_income_q3_million": 2612,
+        "parent_attributable_net_income_q2_million": 2219,
+        "parent_attributable_net_income_qoq_pct": 17.7,
+        "noncontrolling_net_income_q3_million": 953,
+        "noncontrolling_net_income_qoq_pct": 51,
+        "total_liabilities_to_assets_q3_pct": 49.7,
+        "total_liabilities_to_assets_q2_pct": 44.9,
+        "fc_bga_stage": "Q3page25confirms large-die1xreticle75x78packagingenteredproduction,advancing July28plannedQ3production. Larger78x88packageintegratingSoCandDRAMisaQ4outlook;unnamedAIclient,noorderamountormargin.",
+        "foplp_stage": "Productvalidationcontinues;2027massproductiontargetremainsunchangedversusJuly28slide23. IncreasedNPIandlarger-packagingR&Darenotcurrentmassproductionrevenue.",
+        "economic_scope": "Issuer links AIserver/eSSDdemand,tightmemorysupply,utilization,productmixandgradualmaterial-costpass-throughwithrevenueandprofit;doesnotseparatelyquantifytheirindividualgrossprofitcontribution.",
+        "comparison": "Resolvespriorpowertech-q3-2026-call-reported-margin-and-foplp-ramp-original-document-gap-20261027secondary-onlycandidatewithissuerPDFtablesandoriginalpriorquartercomparison.",
+        "limits": "Notauditedfinancialstatementsorconsensusearningsbeat. Consolidatednetincomeisnotparentattributableincome. SimplifiedpresentationdoesnotestablishfullquarterlyoperatingcashfloworprojectROIC. NoacceleratedFOPLPtarget,verifiedCPOpaidorder,customerspecificprocurementallocationorquantifiedprojectprofitregistered. Noindividualsecurityquote,valuationortradinginstruction."
+      },
+      "status": "issuer_original_pdfs_and_financial_table_verified_customer_economics_and_cash_validation_pending_no_article"
     }
   ],
   "articles": [],
