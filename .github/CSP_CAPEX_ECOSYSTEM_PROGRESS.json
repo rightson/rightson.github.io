@@ -19018,6 +19018,38 @@
           "Mandatory same-commit instructions,config,taxonomy,series,specification,legacy research andthree recent articles retrieved; blob hashes match complete text read in conversation. Fullprogressblob parsed and existing publicevents/candidates compared.",
           "No article or Pages publication. Public append contains source facts and coverage only; no live quotes,private valuations,holdings,fundflows or Banalysis."
         ]
+      },
+      {
+        "date": "2026-10-27",
+        "checked_at": "2026-10-27 10:36:16 UTC",
+        "instruction_commit_sha": "f8243377f9c3677d2208025a46315d071e0c2596",
+        "company_count": 98,
+        "grouped_query_count": 7,
+        "universe_commit_sha": "0f18d6e38b50208ba69df8281c60ef0d2dd84bb8",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "98_name_grouped_discovery_core_csp_indices_rechecked_soic_media_candidate",
+        "sources": [
+          "https://pr.tsmc.com/english/latest-news",
+          "https://www.mediatek.com/press-room",
+          "https://nvidianews.nvidia.com/",
+          "https://ir.amd.com/news-events/press-releases",
+          "https://investors.broadcom.com/financial-information/financial-news-releases",
+          "https://investor.marvell.com/news-events/press-releases",
+          "https://press.aboutamazon.com/",
+          "https://news.microsoft.com/source/",
+          "https://cloud.google.com/blog/",
+          "https://investor.atmeta.com/investor-news/",
+          "https://www.oracle.com/news/",
+          "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c7764515-a007-4351-a247-354821f29b77",
+          "https://gfemobile.cnyes.com/news/id/6606599"
+        ],
+        "source_limits": [
+          "Mandatory instructions,config,taxonomy,series,specification,legacy research,progress andthree recent articles obtained at the same instruction commit. Complete text already read at matching blobs; full2167069-character progress blob parsed. Default branch and target blob rechecked before write.",
+          "All98active names included in7groupeddiscovery queries. Broad groupedsearch mostly returns old monthlyrevenues,aggregators and reposts; this is not98individual currentfinancial,order,margin orcashflow audits.",
+          "Sixcore issuer andfiveCSP indices retrieved; Meta index exposes navigation only. Broadcom andGoogle indices readable this round. TSMC latest indexed financial release October15, MediaTek latest September30. No authenticated new TPU design responsibility,NRE,Google procurement allocation or commercial terms established.",
+          "Known NVIDIA-Meta announcedinvestment,Metaoffering pricing,Broadcomfinancing andrecent earnings baselines compared; no additional realization inferred. Original MoneyDJ SoIC fullbody retrieved through direct public HTTP; website search reader errors do not imply issuer confirmation.",
+          "Only candidate andscreeninghistory appended; no article,Pages publication,individual currentquotes,valuation,holdings,marketfundflows orprivate analysis included."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -29649,6 +29681,37 @@
         "Separate internal use from external paying contracts; obtain revenue,pricing,utilization and costs before attributing durable supplier profit."
       ],
       "publication_status": "primary_source_baseline_only_no_article"
+    },
+    {
+      "key": "tsmc-soic-2027-capacity-media-baseline-equipment-order-gap-20261027",
+      "date": "2026-10-27",
+      "instruction_commit_sha": "f8243377f9c3677d2208025a46315d071e0c2596",
+      "companies": [
+        "TSMC",
+        "弘塑",
+        "辛耘",
+        "萬潤",
+        "志聖",
+        "均華"
+      ],
+      "stage": "original_media_full_text_read_capacity_estimate_not_issuer_confirmation",
+      "sources": [
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c7764515-a007-4351-a247-354821f29b77",
+        "https://gfemobile.cnyes.com/news/id/6606599",
+        "https://pr.tsmc.com/english/latest-news"
+      ],
+      "facts": {
+        "publication_time": "MoneyDJ October27,2026 09:31:39; September15,2026 10:30 comparison article is a Uanalyze-authorized republication.",
+        "reported_capacity": "October27 MoneyDJ cites unnamed supply-chain sources for SoIC capacity of more than10000wafers/month in2026 and more than30000in2027, with ChiayiAP7 driving additions.",
+        "comparison": "September15 media already cited an approximately32000wafer/month2027year-end estimate, reduced from an earlier40000estimate. The periods and unnamed forecast populations are not reconciled; October27 headline is not demonstrated to be a fresh upward revision.",
+        "equipment_scope": "MoneyDJ discusses wet-processing/cleaning,dispensing,thermal processes and automation suppliers. It explicitly makes realization dependent on process exposure,customer qualification and equipment delivery.",
+        "limits": "No issuer-authenticated exact SoIC capacity,incremental equipment award,value,delivery/acceptance date,revenue recognition,margin or cashflow verified. Two October27 MoneyDJ articles/republications count as one origin. No extrapolation of reported wafer growth into supplier earnings."
+      },
+      "questions": [
+        "Reconcile capacity definition,2027average versus year-end basis,and AP7phase allocation with issuer documentation.",
+        "Verify named equipment orders,qualification,delivery/acceptance and customer deposits before attributing incremental revenue or margins."
+      ],
+      "publication_status": "research_candidate_only_no_article"
     }
   ],
   "blockers": [
