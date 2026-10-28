@@ -8278,6 +8278,36 @@
         "limits": "Reported management outlook, not realized revenue, signed-contract verification, quantified minimum purchases or authenticated institution earnings-estimate revision. Customer identities, cancellation/take-or-pay terms, price protections and project allocations undisclosed. No AI-only profit, utilization or cashflow quantified. Issuer results page exposes webcast registration and a video, but no obtained full transcript validates added details. Capacity counts in the article lack explicit per-month/per-year denominator and are not normalized. Prior July delivery/expansion and October28 USD3.2b approval are not treated as new achievements in this supplement."
       },
       "status": "original_reports_full_text_verified_call_audio_contract_terms_and_segment_financials_pending_no_article"
+    },
+    {
+      "fingerprint": "hannstar-gbm-pcb-partial-cost-pass-through-and-2027-capex-reported-call-20261028",
+      "event_date": "2026-10-28",
+      "discovered_date": "2026-10-28",
+      "instruction_commit_sha": "953c4feefa169e473ab6cbc067f21299daa581db",
+      "companies": [
+        "HannStar Board (5469)",
+        "Global Brands Manufacture (6191)"
+      ],
+      "type": "original_reported_management_call_cost_pass_through_and_capacity_outlook",
+      "sources": [
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e62559d0-93b3-4654-9ae8-75f39318103d",
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=d7bf7720-baf5-46e1-b44a-cc660bb45332",
+        "https://www.ttv.com.tw/finance/view/10202628155108E71E01CD48452FBABC68B8E86BF64B69B1/587"
+      ],
+      "facts": {
+        "source_nature": "Two MoneyDJ original bylined reports by Wan Hui-wen published October28 at15:31:03 and15:51:11 Asia/Taipei read in full as publisher HTML. TTV is a republication of the same15:51 report, not independent confirmation. Full official call audio, slides and Q3 financial statements not authenticated.",
+        "baseline": "Existing monthly-revenue baseline established sales growth but no issuer-authenticated cost-pass-through rate. Prior general expansion reports are not treated as a new design win or numerical capex forecast revision.",
+        "reported_cost_pass_through": "HannStar management reportedly says material prices have risen every1–2months since2025Q4 while customer repricing is quarterly. Current negotiations pass through approximately50–70% of material cost increases; AI/high-end PCB customers accept adjustments faster and more fully than consumer customers. This is a cost-increase recovery rate, not a50–70% product price rise or margin.",
+        "reported_operating_context": "HannStar Q3 revenue reportedly rose20.3% sequentially but margin improvement was constrained by timing and incomplete cost recovery. AI orders remain strong; consumer demand/material availability weaker. No exact new gross-margin figure or AI-only earnings quantified.",
+        "reported_group_capex_TWD_billion": {
+          "2025": 5.984,
+          "2026_plan": 12.199,
+          "2027_outlook": "more than15"
+        },
+        "reported_capacity_schedule": "GBM/Lincstech PenangE2 HLC/HDI additions planned2026Q4; E1 HLC phases2027Q2/Q4; Singapore additions2027Q4 targeting AI ASIC/high-speed switch applications. Planned deployment is not completed output, paid capex or guaranteed utilization.",
+        "limits": "Group capex includes parent/subsidiaries, not incremental amounts to add across companies. No signed customer minimum orders, realized new-capacity margin, working-capital reconciliation, FCF or authenticated institution forecast revision. Merger-driven revenue expansion not treated as organic AI growth. Do not use unreliable AI transcript summaries mixingQ2/H1andQ3 periods."
+      },
+      "status": "original_report_full_text_verified_primary_call_financial_and_cash_validation_pending_no_article"
     }
   ],
   "articles": [],
