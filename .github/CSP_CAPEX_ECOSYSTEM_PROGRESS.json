@@ -8308,6 +8308,65 @@
         "limits": "Group capex includes parent/subsidiaries, not incremental amounts to add across companies. No signed customer minimum orders, realized new-capacity margin, working-capital reconciliation, FCF or authenticated institution forecast revision. Merger-driven revenue expansion not treated as organic AI growth. Do not use unreliable AI transcript summaries mixingQ2/H1andQ3 periods."
       },
       "status": "original_report_full_text_verified_primary_call_financial_and_cash_validation_pending_no_article"
+    },
+    {
+      "fingerprint": "tuc-q3-2026-margin-profit-conversion-and-cash-divergence-primary-20261028",
+      "event_date": "2026-10-28",
+      "discovered_date": "2026-10-28",
+      "instruction_commit_sha": "38b51f4286242b6e6dbea2b983a341a9eeb07749",
+      "companies": [
+        "Taiwan Union Technology (6274)"
+      ],
+      "type": "issuer_quarterly_results_profit_and_cash_conversion",
+      "sources": [
+        "https://www.tuc.com.tw/en-us/corporate/id/133",
+        "https://www.tuc.com.tw/_run.php?file=d611c53276c5965b6e4e8e646bfb84a3104c9df2.pdf&name=TUC+2026Q3.pdf&work=down"
+      ],
+      "facts": {
+        "source_nature": "Issuer six-page October28 2026Q3 earnings presentation retrieved in full. Four image-based financial/product pages rendered and visually read; legacy embedded PDF title says2021 but cover and financial columns explicitly2026Q3. Issuer slides supersede reported-result discovery; no full reviewed financial report or call transcript obtained.",
+        "baseline": "Existing September monthly revenue baseline established sales growth. Increment is issuer-confirmed quarterly margin, profit, technology mix, receivables and cash conversion.",
+        "period": "2026-Q3",
+        "currency": "TWD",
+        "unit": "million unless EPS, percentages or days",
+        "issuer_q3": {
+          "revenue": 17949,
+          "revenue_qoq_percent": 25.5,
+          "revenue_yoy_percent": 122.6,
+          "gross_margin_percent": 36.9,
+          "previous_quarter_gross_margin_percent": 29.7,
+          "operating_margin_percent": 31,
+          "previous_quarter_operating_margin_percent": 23.5,
+          "net_income": 3857,
+          "net_income_qoq_percent": 64.7,
+          "net_income_yoy_percent": 284.7,
+          "basic_eps": 12.88,
+          "previous_quarter_basic_eps": 8.02,
+          "nonoperating_items": 26,
+          "cash_from_operations": 1380,
+          "previous_quarter_cash_from_operations": -716,
+          "capital_expenditures_cash_outflow": 2189,
+          "previous_quarter_capex_cash_outflow": 940,
+          "issuer_free_cash_flow": -809,
+          "previous_quarter_free_cash_flow": -1656,
+          "accounts_receivable": 25863,
+          "previous_quarter_accounts_receivable": 20857,
+          "ar_turnover_days": 128,
+          "previous_quarter_ar_turnover_days": 130,
+          "inventory_turnover_days": 87,
+          "previous_quarter_inventory_turnover_days": 91,
+          "short_term_loan_cash_inflow": 687,
+          "investments_and_others_cash_flow": 4039
+        },
+        "technology_mix": {
+          "q3_ELL_SLL_percent": 38,
+          "q2_ELL_SLL_percent": 39,
+          "q3_VLL_LL_percent": 28,
+          "q2_VLL_LL_percent": 31,
+          "note": "Slide labels technology categories, not AI-only revenue. ELL/SLL share declined1percentage point sequentially despite higher consolidated margins; no claim of a verified higher high-end mix or named CSP purchase."
+        },
+        "limits": "Quarterly margin expansion is realized issuer data, not authenticated institution forecast revision or proof of a higher sustainable valuation multiple. Operating cash flow turned positive but remains below net income; capex exceeds operating cash. Accounts receivable rose with revenue while collection days improved slightly. Cash balance growth includes financing/investments-and-others, not wholly operating cash. Product ASP, materials pass-through, customer minimum purchases, product-specific gross margins and detailed working-capital reconciliation not disclosed in slides. Do not infer AI-only earnings, guaranteed expansion ROIC or permanent pricing power."
+      },
+      "status": "issuer_slides_profit_mix_and_cash_verified_ledger_only_no_article"
     }
   ],
   "articles": [],
