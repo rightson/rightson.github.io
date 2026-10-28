@@ -8999,6 +8999,107 @@
         "limits": "Consolidatedmarginimprovementincludesutilization,seasonalityandproductmix;lowerdepreciationalsocontributes. Equitymethodincomehelpsnetprofit. Opticalshare10–15%unchangedroundedrange,noAI-onlyrevenue/profit,namedCSPaward,qualificationvolumes,executedpricingorcurrentconsensusrevisionverified. Cashbalance6608versus5320 andinventory8162versus7584 do notsubstituteforoperatingcashflow;completequartercashflowandFCFnotobtained."
       },
       "status": "issuer_preliminary_financials_mix_and_release_verified_reported_qa_timing_separate_ledger_only_no_article"
+    },
+    {
+      "fingerprint": "microsoft-fy2027-q1-azure-growth-and-cash-capex-fcf-divergence-20261028",
+      "event_date": "2026-10-28",
+      "period_end": "2026-09-30",
+      "discovered_date": "2026-10-29",
+      "instruction_commit_sha": "d9d12550e401bf0d87fbbabe0bac9d3022ea3a4d",
+      "companies": [
+        "Microsoft"
+      ],
+      "type": "issuer_quarter_results_cloud_monetization_and_cashflow",
+      "sources": [
+        "https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast"
+      ],
+      "facts": {
+        "source_authentication": "Issuer full406line release body,comparative financial,cashflow,restatedsegment andproducttables read through webreader. LocalHTTPtimeout; metricsroute404. UnauditedFY2027Q1,notcalendar2027Q1; call scheduledOctober28 17:30Eastern,notcompletedatverification.",
+        "currency": "USD",
+        "unit": "million unless percentages orEPS",
+        "current": {
+          "revenue": 92279,
+          "operating_income": 45915,
+          "net_income_gaap": 36629,
+          "net_income_ex_OpenAI": 36422,
+          "eps_gaap": 4.92,
+          "eps_ex_OpenAI": 4.89,
+          "Azure_revenue": 33165,
+          "Azure_growth_reported_percent": 48,
+          "Azure_growth_constant_currency_percent": 48,
+          "Microsoft_Cloud_revenue": 63900,
+          "commercial_RPO": 677000,
+          "operating_cash_flow": 58000,
+          "cash_additions_to_PPE": 39367
+        },
+        "prior_year": {
+          "revenue": 77673,
+          "operating_income": 37961,
+          "net_income_gaap": 27747,
+          "net_income_ex_OpenAI": 30833,
+          "Azure_revenue": 22384,
+          "operating_cash_flow": 45057,
+          "cash_additions_to_PPE": 19394
+        },
+        "derived_cashflow": {
+          "definition": "OperatingcashflowminuscashadditionstoPPE;arithmeticalproxy,notexpandedlease-inclusiveinvestmentmeasure",
+          "current": 18633,
+          "prior_year": 25663,
+          "yoy_percent": -27.39352375014612
+        },
+        "profit_quality": "OpenAIinvestmentnetgain207currentyearversusnetloss3086prior;issuerex-OpenAInetincomegrowth18%versusGAAP32%. Receivablescontribute17104toOCFversus16490prior;timingnotallrecurringcashgrowth.",
+        "segment_scope": "FY27restatedAgentsandInfrarevenue76795operatingprofit40558versus61672and32718prior. Azureproductrevenueisseparate,Azure-onlyoperatingprofitnotprovided.",
+        "comparison": "FreshquarterlyactualsadvancepriorhistoricalCSPspendingbaseline. No unverified analystconsensus sample orfull next-quartermanagementguidance used.",
+        "limits": "CashPPE39.367bn isnotlease-inclusivecapex;priorover50bnguidanceincludesleaseaccountingimpact,so notlabelledspendingcutormiss. AzureandCloudarenotallAI;nocustomer/supplierallocation,Taiwanorderaward,AI-onlyROI,utilizationororiginalcurrentfull10Qverified. RPOisnotcashreceived. Pendingcallguidanceandmetricscannotbeguessed."
+      },
+      "status": "issuer_release_financial_tables_verified_ledger_only_no_article"
+    },
+    {
+      "fingerprint": "oracle-investor-day-fy30-growth-fy28-cashflow-and-additional-funding-framework-20261028",
+      "event_date": "2026-10-28",
+      "source_publication_time": "2026-10-28 14:21 ET",
+      "discovered_date": "2026-10-29",
+      "instruction_commit_sha": "d9d12550e401bf0d87fbbabe0bac9d3022ea3a4d",
+      "companies": [
+        "Oracle"
+      ],
+      "type": "issuer_long_term_outlook_and_funding_framework",
+      "sources": [
+        "https://www.prnewswire.com/news-releases/oracle-investor-day-2026-accelerating-value-creation-302922564.html",
+        "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Investor-Day-2026-Accelerating-Value-Creation/default.aspx"
+      ],
+      "facts": {
+        "source_authentication": "Completeissuer-distributedPRNewswireannouncementretrievedinsearchresult,includingfinancialframeworkandfootnote. DirectissuerHTML195bytesnotusable;directPRreaderfailed. Searchresultprimarydistributedbodyobtained;notclaimedfullInvestorDaydeckorwebcast/8Kaudit.",
+        "currency": "USD",
+        "outlook": {
+          "FY2030_revenue_bn_minimum": 225,
+          "FY2026_to2030_revenue_CAGR_percent_greater_than": 35,
+          "FY2030_nongaap_operating_margin_percent_minimum": 40,
+          "FY2030_nongaap_EPS_minimum": 21,
+          "FCF_positive_target": "SecondhalfFY2028",
+          "FY2029_FCF_bn_minimum": 30,
+          "capex_peak_period": "FY2027–FY2028",
+          "capex_stepdown_expected": "FY2029"
+        },
+        "funding": {
+          "additional_capital_market_raises_through_FY2030_limit_bn": 20,
+          "expected_equity_bn": 10,
+          "expected_gross_debt_bn": 10,
+          "excludes": "Refinancingexistingdebt",
+          "historical_FY2027Q1_ATM_equity_raise_completed_bn": 20,
+          "bridge": "Vendorfinancing,customer-providedhardwareandcustomerprepaymentsexpectedtoreduceupfrontcashrequirements",
+          "growth_self_funded_target": "FY2029",
+          "FY2029_net_debt_adjusted_EBITDA_target_less_than": 3.5,
+          "net_debt_definition": "Borrowings,vendorfinancing,andoperatingandfinancelease liabilities lesscashandmarketablesecurities"
+        },
+        "FY2027_reaffirmed_not_raised": {
+          "revenue_bn_minimum": 90,
+          "nongaap_EPS": 8.1
+        },
+        "comparison": "Newdatedmedium-termfunding/cashflowframework;notdemonstratedincreaseagainstauthenticatedpriorFY2030forecastsandnotnewFY2027guidanceraise.",
+        "limits": "Long-termmanagementtargetsnotrealizedprofit,completedadditionalfundraising,paidordersorindependentfinancingguarantee. Historicalcompleted20bnATMseparatefromfuture20bnframework. Reducedcashcapexcanreflectcustomerhardware/vendorfinancingratherthanlessphysicalcapacity. Suppliercreditterms,prepaymentamounts,actualfundingavailability,customerROIandnamedTaiwansupplierallocationsnotdisclosed."
+      },
+      "status": "issuer_distributed_full_release_verified_forward_targets_only_no_article"
     }
   ],
   "articles": [],
@@ -9116,27 +9217,26 @@
     ],
     "current_run_screening": {
       "date": "2026-10-29",
-      "checked_at_utc": "2026-10-28T18:41:00Z",
-      "instruction_commit_sha": "865fc4a79ac4b9face6e963abf5dc0d5c4d8d632",
-      "company_count": 98,
-      "grouped_query_count": 7,
+      "checked_at_utc": "2026-10-28T20:07:00Z",
+      "instruction_commit_sha": "d9d12550e401bf0d87fbbabe0bac9d3022ea3a4d",
       "universe_commit_sha": "0f18d6e38b50208ba69df8281c60ef0d2dd84bb8",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "status": "two_primary_disclosure_increments_full_universe_grouped_screening_current_filings_partial",
-      "scope": "98active namescoveredin7freshgroupeddiscoveryqueries;not98individualcurrentfiling/financialaudits. CoreTSMC,MediaTek,NVIDIA,AMD,Broadcom,MarvellandfiveCSPsourcescheckedorattempted.",
+      "company_count": 98,
+      "grouped_query_count": 7,
+      "status": "two_CSP_primary_disclosure_increments_grouped_universe_screening",
+      "scope": "Freshsamecommitcompleteinstruction/spec/taxonomy/config/series/recentbodiesretrieved;unchangedblobhashesmatchfullversionsread. Largeprogressrecoveredinfullthroughfetch_blob. Active98namesgroupeddiscoverydoesnotconstitute98individualfinancialaudits.",
       "source_results": [
-        "TSMCofficialnews latestOctober15Q3; MediaTekpressroomdatedrowsunchangedlatestSeptember30; currentDataCentersolutionpageread,noissuer-confirmednewTPUallocation,NREorprocurementterms.",
-        "NVIDIAandMarvellofficialindexbytesunchanged;AMDtextunchangedlatestOctober27alreadyrecordedpartnership. Broadcomdirectindex404,issuerSEC8KrouteprovidedcompleteOctober27filing.",
-        "FreshTWSE137andTPEx60noticesidenticaltoprior0152snapshot;outputdateOctober28butissuer speechdatesOctober27,notnewOctober28disclosures. RestoredTWSEbatchdoesnotestablishcurrentfilingcompleteness.",
-        "AlphabetandMetadynamicIRindicesunchanged;Microsoftcurrentearnings-eventpagehasnoobtainedresultnumbers;directearningsrelease403. Amazonnewsreleasepathnavigationonly,overviewalsodynamic. OracleIR195bytesinsufficient;officialnewsindexlatestOctober27announcementsalreadyrecorded.",
-        "WINoutsideuniverse:issuer3pageQ3releaseand14pageslidesretrievedcompletely,keymix/financialtablesvisuallyverified;preliminarynumbersandreportedQAseparated.",
-        "Groupedresultsmostlyoldreports,calendars,aggregatorsandreposts;sourcefailureisnotabsenceofcompanynews."
+        "TWSE137andTPEx60noticesfreshlyfetched,identicalpriorbatch;issuer speechdatesOctober27despiteOctober28outputdate.",
+        "TSMCnewsandMediaTekpressroomread;latestdatedrowsunchanged,noverifiednewTPUNRE,procurementallocationorCoWoScontractterms.",
+        "NVIDIA,AMD,Marvellcurrentindicesunchanged;Broadcomindex404buttargetedfreshsearchfoundnoadditionalmaterialincrementoverregistered8K.",
+        "Microsoftfreshquarterlyreleasefullbodyandfinancialtablesreadusingwebreader;localtimeout. Earningsmetrics404andcallnotcompleted;notinferred.",
+        "AlphabetdynamicIRvisibletextunchanged,noauthenticatednewQ3resultnumbersobtained. Metaunchanged;Amazonnavigationonly. OracleIRindexinsufficient,butnewissuer-distributedInvestorDayreleasefullbodyretrievedviaPRNewswireserachresult.",
+        "Noarticleorwebsitepublication;publicledgerfactsandcoverageonly."
       ],
       "new_event_fingerprints": [
-        "broadcom-ai-rack-residual-support-43bn-ceiling-and-lease-loss-formula-primary-20261027",
-        "win-semiconductors-q3-2026-margin-utilization-and-optical-revenue-primary-20261028"
-      ],
-      "publication_stage": "Publiceventledgeronly;noarticleorwebsitecontentpublication"
+        "microsoft-fy2027-q1-azure-growth-and-cash-capex-fcf-divergence-20261028",
+        "oracle-investor-day-fy30-growth-fy28-cashflow-and-additional-funding-framework-20261028"
+      ]
     },
     "primary_regulator_company_fact_checked_count": 3,
     "screening_history": [
@@ -20763,6 +20863,29 @@
           "win-semiconductors-q3-2026-margin-utilization-and-optical-revenue-primary-20261028"
         ],
         "publication_stage": "Publiceventledgeronly;noarticleorwebsitecontentpublication"
+      },
+      {
+        "date": "2026-10-29",
+        "checked_at_utc": "2026-10-28T20:07:00Z",
+        "instruction_commit_sha": "d9d12550e401bf0d87fbbabe0bac9d3022ea3a4d",
+        "universe_commit_sha": "0f18d6e38b50208ba69df8281c60ef0d2dd84bb8",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "company_count": 98,
+        "grouped_query_count": 7,
+        "status": "two_CSP_primary_disclosure_increments_grouped_universe_screening",
+        "scope": "Freshsamecommitcompleteinstruction/spec/taxonomy/config/series/recentbodiesretrieved;unchangedblobhashesmatchfullversionsread. Largeprogressrecoveredinfullthroughfetch_blob. Active98namesgroupeddiscoverydoesnotconstitute98individualfinancialaudits.",
+        "source_results": [
+          "TWSE137andTPEx60noticesfreshlyfetched,identicalpriorbatch;issuer speechdatesOctober27despiteOctober28outputdate.",
+          "TSMCnewsandMediaTekpressroomread;latestdatedrowsunchanged,noverifiednewTPUNRE,procurementallocationorCoWoScontractterms.",
+          "NVIDIA,AMD,Marvellcurrentindicesunchanged;Broadcomindex404buttargetedfreshsearchfoundnoadditionalmaterialincrementoverregistered8K.",
+          "Microsoftfreshquarterlyreleasefullbodyandfinancialtablesreadusingwebreader;localtimeout. Earningsmetrics404andcallnotcompleted;notinferred.",
+          "AlphabetdynamicIRvisibletextunchanged,noauthenticatednewQ3resultnumbersobtained. Metaunchanged;Amazonnavigationonly. OracleIRindexinsufficient,butnewissuer-distributedInvestorDayreleasefullbodyretrievedviaPRNewswireserachresult.",
+          "Noarticleorwebsitepublication;publicledgerfactsandcoverageonly."
+        ],
+        "new_event_fingerprints": [
+          "microsoft-fy2027-q1-azure-growth-and-cash-capex-fcf-divergence-20261028",
+          "oracle-investor-day-fy30-growth-fy28-cashflow-and-additional-funding-framework-20261028"
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -31483,7 +31606,7 @@
     }
   ],
   "last_research_date": "2026-10-29",
-  "instruction_commit_sha": "865fc4a79ac4b9face6e963abf5dc0d5c4d8d632",
+  "instruction_commit_sha": "d9d12550e401bf0d87fbbabe0bac9d3022ea3a4d",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
