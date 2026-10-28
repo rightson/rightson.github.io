@@ -7906,6 +7906,88 @@
         "limits": "No namedCSPcustomer,incremental supplycontract,datacenter-onlyrevenue/margin,currentconsensusrevision ornewQ4numericguidanceauthenticated. PricingandexpansiontimetableinmediaQ&Aarenotindependentlyaudioverified. Notannualizingpeakmargin orEPS. Consolidatedrelease NAND47%vsparentpresentationroundedcomposition differ;notcombined asidenticalscope."
       },
       "status": "primary_release_and_presentation_verified_new_financial_baseline_no_article"
+    },
+    {
+      "fingerprint": "faraday-2nm-project-reported-foundry-contract-scale-recognition-supplement-20261027",
+      "companies": [
+        "Faraday Technology (3035)",
+        "Samsung",
+        "UMC"
+      ],
+      "type": "original_management_call_reporting_supplement",
+      "event_date": "2026-10-27",
+      "discovered_date": "2026-10-28",
+      "instruction_commit_sha": "962117aa1bb88017443d3ca994d6ec7c5555a88b",
+      "sources": [
+        "https://www.cna.com.tw/news/afe/202610270179.aspx",
+        "https://www.faraday-tech.com/resources/PDFFile/IR/QuarterlyResultsFiles/3Q26_FaradayReport_EN.pdf"
+      ],
+      "facts": {
+        "baseline_fingerprint": "faraday-2nm-gaa-cloud-ai-design-win-and-q3-mix-20261027",
+        "source_nature": "CNA reporter Chang Chien-chung original reporting, published October 27 2026 at 15:58 Taiwan time, attributes additional details to CEO Wang Kuo-yung at the earnings call. Issuer PDF independently confirms award but does not disclose these additional commercial details. Audio and signed contract not independently verified.",
+        "reported_details": {
+          "customer_region": "United States; customer unnamed",
+          "project_scale": "tens of millions of US dollars; no exact value",
+          "foundry": "Samsung; UMC and memory suppliers also cooperate, roles and allocations not disclosed",
+          "recognition": "Management expects first revenue in first half of 2027, subsequent recognition by project progress",
+          "node_change": "Customer changed original 4nm plan to 2nm for product life-cycle considerations"
+        },
+        "limits": "Award is not production revenue or evidence of present-period profit contribution. No named CSP customer, minimum production volume, production margin, cash-payment milestones or future foundry-share displacement established."
+      },
+      "status": "original_reporting_supplement_verified_primary_contract_and_audio_not_verified_no_article"
+    },
+    {
+      "fingerprint": "chpt-q3-2026-hpc-mix-profit-and-cash-divergence-primary-20261027",
+      "companies": [
+        "Chunghwa Precision Test Tech (6510)"
+      ],
+      "type": "issuer_quarterly_results_and_public_ir_presentation",
+      "event_date": "2026-10-27",
+      "discovered_date": "2026-10-28",
+      "instruction_commit_sha": "962117aa1bb88017443d3ca994d6ec7c5555a88b",
+      "sources": [
+        "https://www.cht-pt.com.tw/xmeventsnews/cont?sid=0Q300669379269508945&xsmsid=0G328584354524406609",
+        "https://www.cht-pt.com.tw/xccompdoc?xsmsid=0G328557247962808262",
+        "https://www.cht-pt.com.tw/files/file_pool/1/0Q300668627103599361/%E3%80%90%E6%A9%9F%E5%AF%86%E3%80%9126Q3%20%E6%B3%95%E8%AA%AA%E6%9C%83_CN.pdf"
+      ],
+      "facts": {
+        "source_authentication": "Issuer October 27 public results release and public IR-page linked 21-page presentation dated October 28 2026 read. Presentation was publicly accessible before the scheduled October 28 14:30 Taiwan-time call; no claim that call completed or Q&A verified.",
+        "period": "2026-Q3",
+        "currency": "TWD",
+        "unit": "million except EPS, percentages and explicitly stated billions",
+        "q3": {
+          "revenue": 1905,
+          "revenue_qoq_percent": 16.2,
+          "revenue_yoy_percent": 53.4,
+          "gross_margin_percent": 57.3,
+          "operating_margin_percent_rounded": 35,
+          "parent_net_income": 551,
+          "parent_net_income_qoq_percent": 11.5,
+          "parent_net_income_yoy_percent": 100,
+          "basic_eps": 16.75,
+          "operating_cash_flow": 163,
+          "capex": 167,
+          "free_cash_flow": -4
+        },
+        "q2": {
+          "revenue": 1640,
+          "gross_margin_percent": 57.5,
+          "operating_margin_percent_rounded": 35,
+          "parent_net_income": 494,
+          "basic_eps": 15.02,
+          "free_cash_flow": 168
+        },
+        "prior_year_quarter": {
+          "revenue": 1242,
+          "gross_margin_percent": 56.3,
+          "basic_eps": 8.41,
+          "free_cash_flow": 234
+        },
+        "cash_reconciliation": "Issuer slide 14 defines free cash flow as operating cash inflow minus capex. Slide 18 reports Q3 operating inflow TWD 163 million, capex TWD 167 million and FCF negative TWD 4 million. Do not conflate the slide's cash/other-financial-assets chart with pure cash and cash equivalents.",
+        "relationship": "Issuer identifies rising AI/HPC testing complexity and demand for probe cards, high-power burn-in, load boards and system-level test boards. Presentation slide 11 reports cumulative 2026 Q1-Q3 HPC application revenue share of 57%; HPC is broader than AI and is not a named-CSP allocation.",
+        "limits": "Release and presentation financial totals rounded. Full quarterly cash-flow working-capital reconciliation, detailed capacity return, customer contracts and Q4 call Q&A not verified. Strong reported profit does not establish corresponding cash conversion. No new numerical Q4 guidance or market-consensus revision authenticated."
+      },
+      "status": "primary_financial_and_cash_conversion_baseline_verified_no_article"
     }
   ],
   "articles": [],
