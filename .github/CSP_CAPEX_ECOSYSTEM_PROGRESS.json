@@ -8076,6 +8076,49 @@
         "limits": "Forecast is not completed revenue, committed product allocation or guaranteed EPS. Report has no explanation resolving previously recorded Q3 operating-cash-flow/net-income divergence. No verified new cash-flow guidance, market-consensus revision or signed customer contracts."
       },
       "status": "reported_numerical_outlook_and_product_attribution_recorded_primary_audio_pending_no_article"
+    },
+    {
+      "fingerprint": "landmark-q3-2026-profit-1p6t-production-and-six-month-orders-reported-call-20261028",
+      "companies": [
+        "LandMark Optoelectronics (3081)"
+      ],
+      "type": "original_report_of_quarterly_results_and_management_call",
+      "event_date": "2026-10-28",
+      "discovered_date": "2026-10-28",
+      "instruction_commit_sha": "bc82e69361b66bde07849164c99efbacaff067b0",
+      "sources": [
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7003c5f1-cec3-4501-9a80-01e3f1e9810e",
+        "https://ww2.money-link.com.tw/realtimenews/NewsContent.aspx?PU=0009&SN=2435601002",
+        "https://www.lmoc.com.tw/index.php?id=29&index=1&lang=cht&option=module&task=showlist",
+        "https://www.lmoc.com.tw/index.php?id=308&index=5&lang=cht&option=module&task=showlist"
+      ],
+      "facts": {
+        "source_nature": "Full bylined MoneyDJ original October28 14:24:50 report by Huang Li-an retrieved from publisher HTML. Quarterly financials and call statements below remain reported, not independently verified issuer full-report figures. Separately indexed financial-notice reproduction supports cumulative totals but is not an independent demand source. Issuer financial and conference pages currently expose Q2, not obtained Q3 report/slides/audio.",
+        "baseline": "Previously recorded issuer monthly revenue and data-center epiwafer product exposure established sales growth only; no quarterly margin/cash conversion was authenticated in that candidate.",
+        "period": "2026-Q3",
+        "currency": "TWD",
+        "unit": "million unless EPS or percentage",
+        "reported_q3": {
+          "revenue": 1562,
+          "revenue_qoq_percent": 28,
+          "revenue_yoy_percent": 183,
+          "gross_margin_rounded_percent": 59,
+          "operating_margin_rounded_percent": 49,
+          "parent_net_income": 621,
+          "parent_net_income_qoq_percent": 33,
+          "basic_eps": 6.12
+        },
+        "reported_ytd": {
+          "revenue": 3688,
+          "parent_net_income": 1407,
+          "basic_eps": 13.88
+        },
+        "outlook_and_orders": "Management reportedly expects Q4 revenue sequential growth near prior-yearQ4's16%; major customers have begun placing orders longer than six months. Not a verified upward forecast revision. Product-specific quantities, take-or-pay/cancellation terms, prices and customer names are not disclosed.",
+        "product_maturity": "Reported1.6T silicon-photonics products have begun mass production. Higher-power3.2T/NPO/CPO products remain in joint development/qualification; no claim these are already mass-produced.",
+        "expansion": "Report expects more new capacity to open in2027Q1, including issuer and downstream foundry expansion; actual utilization and investment returns not verified.",
+        "rounding_and_limits": "Report uses rounded margins and approximate QoQchanges. Do not use rounded59%-57% as an exact2pp margin change; underlying full statements not obtained. Official monthly issuer totals differ from exchange baseline by TWD2thousand, so no exact quarterly recomputation from mixed tables. Operating cash flow, capex, free cash flow, realized new-product margins and contract protections unavailable. Growth may partly reflect prior low base and scale; no market-consensus forecast sample obtained."
+      },
+      "status": "original_report_verified_issuer_full_report_cash_and_contract_validation_pending_no_article"
     }
   ],
   "articles": [],
