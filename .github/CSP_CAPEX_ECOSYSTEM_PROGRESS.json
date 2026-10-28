@@ -8242,6 +8242,42 @@
         "limits": "Demand recovery spans multiple end markets. Consolidated operating leverage cannot be attributed wholly to AI/SiPh/packaging. New capacity conversion is disclosed by management, not independently measured wafer output. No signed customer allocation, segment cash flow, achieved expansion ROIC or institution forecast revision established."
       },
       "status": "issuer_primary_results_and_capacity_statement_verified_ledger_only_no_article"
+    },
+    {
+      "fingerprint": "umc-2027-blended-asp-and-three-year-ai-mix-long-contract-reported-call-supplement-20261028",
+      "event_date": "2026-10-28",
+      "discovered_date": "2026-10-28",
+      "instruction_commit_sha": "2fc8cbde90902c48613c20c79325a4f0f9aff615",
+      "companies": [
+        "United Microelectronics (2303; UMC)"
+      ],
+      "type": "original_management_call_reporting_supplement",
+      "sources": [
+        "https://news.cnyes.com/news/id/6639582",
+        "https://news.cnyes.com/news/id/6639659",
+        "https://www.umc.com/en/Download/quarterly_results/QuarterlyResultsDetail/2026/2026Q3"
+      ],
+      "facts": {
+        "baseline_fingerprint": "umc-q3-2026-silicon-photonics-advanced-packaging-capacity-conversion-and-expansion-budget-20261028",
+        "source_nature": "Two original Anue/Cnyes reports by Wu Cheng-ti, October28 at18:17 and18:26 Asia/Taipei, attribute statements to UMC management at today's call. These supplement already verified issuer Q3 figures; underlying full audio/transcript not independently reviewed.",
+        "reported_management_outlook": {
+          "period": "2027",
+          "blended_average_selling_price_yoy_growth_percent_approximately": 10,
+          "asp_explanation": "22nm share gains and higher-value product/customer mix, with raw material inflation and depreciation costs also discussed. Blended ASP forecast is not a claim that every wafer product has a uniform10% price rise.",
+          "ai_revenue_baseline_usd_million_approximately": 300,
+          "ai_revenue_target_share_percent": 25,
+          "ai_target_horizon": "Within three years as phrased by reporter, not silently assigned an exact fiscal quarter",
+          "growth_businesses": [
+            "silicon photonics",
+            "advanced packaging"
+          ],
+          "expansion_contract_statement": "Report attributes to CEO the statement that all expansion projects have customer long-term-contract support and expansion pace still lags demand.",
+          "specialty_margin_statement": "New specialty-process products reportedly have gross margins significantly above company average; no numeric product margin or segment cash flow provided.",
+          "cost_counterpoint": "CFO reportedly expects depreciation and raw-material pressure over next1–2years as capacity expands."
+        },
+        "limits": "Reported management outlook, not realized revenue, signed-contract verification, quantified minimum purchases or authenticated institution earnings-estimate revision. Customer identities, cancellation/take-or-pay terms, price protections and project allocations undisclosed. No AI-only profit, utilization or cashflow quantified. Issuer results page exposes webcast registration and a video, but no obtained full transcript validates added details. Capacity counts in the article lack explicit per-month/per-year denominator and are not normalized. Prior July delivery/expansion and October28 USD3.2b approval are not treated as new achievements in this supplement."
+      },
+      "status": "original_reports_full_text_verified_call_audio_contract_terms_and_segment_financials_pending_no_article"
     }
   ],
   "articles": [],
