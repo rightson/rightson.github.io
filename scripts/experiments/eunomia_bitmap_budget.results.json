@@ -1,0 +1,203 @@
+{
+  "model": {
+    "static_bitmap_bytes_per_qp": 32,
+    "static_metadata_bytes_per_qp": 9,
+    "dynamic_base_DBA_bytes_per_qp": 4,
+    "dynamic_metadata_bytes_per_reordered_qp": 48,
+    "block_bits": 16,
+    "block_bytes": 2,
+    "note": "Hypothetical accounting derived from the paper's 256-bit/16-bit-block example; excludes allocator alignment, packet buffers, timers, and all RNIC state outside Eunomia."
+  },
+  "break_even_reordered_fraction": {
+    "16": 0.74,
+    "64": 0.660714,
+    "256": 0.4625
+  },
+  "header_overhead": [
+    {
+      "payload_bytes": 256,
+      "extra_header_bits": 33,
+      "extra_header_bytes_equivalent": 4.125,
+      "payload_ratio_percent": 1.6113
+    },
+    {
+      "payload_bytes": 1024,
+      "extra_header_bits": 33,
+      "extra_header_bytes_equivalent": 4.125,
+      "payload_ratio_percent": 0.4028
+    },
+    {
+      "payload_bytes": 4096,
+      "extra_header_bits": 33,
+      "extra_header_bytes_equivalent": 4.125,
+      "payload_ratio_percent": 0.1007
+    }
+  ],
+  "scenarios": [
+    {
+      "qps": 1000000,
+      "reordered_fraction": 0.01,
+      "span_packets": 16,
+      "reordered_qps": 10000,
+      "static_bytes": 41000000,
+      "dynamic_bytes": 4500000,
+      "static_MB_decimal": 41.0,
+      "dynamic_MB_decimal": 4.5,
+      "saving_percent": 89.02
+    },
+    {
+      "qps": 1000000,
+      "reordered_fraction": 0.05,
+      "span_packets": 16,
+      "reordered_qps": 50000,
+      "static_bytes": 41000000,
+      "dynamic_bytes": 6500000,
+      "static_MB_decimal": 41.0,
+      "dynamic_MB_decimal": 6.5,
+      "saving_percent": 84.15
+    },
+    {
+      "qps": 1000000,
+      "reordered_fraction": 0.2,
+      "span_packets": 16,
+      "reordered_qps": 200000,
+      "static_bytes": 41000000,
+      "dynamic_bytes": 14000000,
+      "static_MB_decimal": 41.0,
+      "dynamic_MB_decimal": 14.0,
+      "saving_percent": 65.85
+    },
+    {
+      "qps": 1000000,
+      "reordered_fraction": 0.6,
+      "span_packets": 16,
+      "reordered_qps": 600000,
+      "static_bytes": 41000000,
+      "dynamic_bytes": 34000000,
+      "static_MB_decimal": 41.0,
+      "dynamic_MB_decimal": 34.0,
+      "saving_percent": 17.07
+    },
+    {
+      "qps": 1000000,
+      "reordered_fraction": 1.0,
+      "span_packets": 16,
+      "reordered_qps": 1000000,
+      "static_bytes": 41000000,
+      "dynamic_bytes": 54000000,
+      "static_MB_decimal": 41.0,
+      "dynamic_MB_decimal": 54.0,
+      "saving_percent": -31.71
+    },
+    {
+      "qps": 1000000,
+      "reordered_fraction": 0.01,
+      "span_packets": 64,
+      "reordered_qps": 10000,
+      "static_bytes": 41000000,
+      "dynamic_bytes": 4560000,
+      "static_MB_decimal": 41.0,
+      "dynamic_MB_decimal": 4.56,
+      "saving_percent": 88.88
+    },
+    {
+      "qps": 1000000,
+      "reordered_fraction": 0.05,
+      "span_packets": 64,
+      "reordered_qps": 50000,
+      "static_bytes": 41000000,
+      "dynamic_bytes": 6800000,
+      "static_MB_decimal": 41.0,
+      "dynamic_MB_decimal": 6.8,
+      "saving_percent": 83.41
+    },
+    {
+      "qps": 1000000,
+      "reordered_fraction": 0.2,
+      "span_packets": 64,
+      "reordered_qps": 200000,
+      "static_bytes": 41000000,
+      "dynamic_bytes": 15200000,
+      "static_MB_decimal": 41.0,
+      "dynamic_MB_decimal": 15.2,
+      "saving_percent": 62.93
+    },
+    {
+      "qps": 1000000,
+      "reordered_fraction": 0.6,
+      "span_packets": 64,
+      "reordered_qps": 600000,
+      "static_bytes": 41000000,
+      "dynamic_bytes": 37600000,
+      "static_MB_decimal": 41.0,
+      "dynamic_MB_decimal": 37.6,
+      "saving_percent": 8.29
+    },
+    {
+      "qps": 1000000,
+      "reordered_fraction": 1.0,
+      "span_packets": 64,
+      "reordered_qps": 1000000,
+      "static_bytes": 41000000,
+      "dynamic_bytes": 60000000,
+      "static_MB_decimal": 41.0,
+      "dynamic_MB_decimal": 60.0,
+      "saving_percent": -46.34
+    },
+    {
+      "qps": 1000000,
+      "reordered_fraction": 0.01,
+      "span_packets": 256,
+      "reordered_qps": 10000,
+      "static_bytes": 41000000,
+      "dynamic_bytes": 4800000,
+      "static_MB_decimal": 41.0,
+      "dynamic_MB_decimal": 4.8,
+      "saving_percent": 88.29
+    },
+    {
+      "qps": 1000000,
+      "reordered_fraction": 0.05,
+      "span_packets": 256,
+      "reordered_qps": 50000,
+      "static_bytes": 41000000,
+      "dynamic_bytes": 8000000,
+      "static_MB_decimal": 41.0,
+      "dynamic_MB_decimal": 8.0,
+      "saving_percent": 80.49
+    },
+    {
+      "qps": 1000000,
+      "reordered_fraction": 0.2,
+      "span_packets": 256,
+      "reordered_qps": 200000,
+      "static_bytes": 41000000,
+      "dynamic_bytes": 20000000,
+      "static_MB_decimal": 41.0,
+      "dynamic_MB_decimal": 20.0,
+      "saving_percent": 51.22
+    },
+    {
+      "qps": 1000000,
+      "reordered_fraction": 0.6,
+      "span_packets": 256,
+      "reordered_qps": 600000,
+      "static_bytes": 41000000,
+      "dynamic_bytes": 52000000,
+      "static_MB_decimal": 41.0,
+      "dynamic_MB_decimal": 52.0,
+      "saving_percent": -26.83
+    },
+    {
+      "qps": 1000000,
+      "reordered_fraction": 1.0,
+      "span_packets": 256,
+      "reordered_qps": 1000000,
+      "static_bytes": 41000000,
+      "dynamic_bytes": 84000000,
+      "static_MB_decimal": 41.0,
+      "dynamic_MB_decimal": 84.0,
+      "saving_percent": -104.88
+    }
+  ]
+}
