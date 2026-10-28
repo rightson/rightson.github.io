@@ -9100,6 +9100,72 @@
         "limits": "Long-termmanagementtargetsnotrealizedprofit,completedadditionalfundraising,paidordersorindependentfinancingguarantee. Historicalcompleted20bnATMseparatefromfuture20bnframework. Reducedcashcapexcanreflectcustomerhardware/vendorfinancingratherthanlessphysicalcapacity. Suppliercreditterms,prepaymentamounts,actualfundingavailability,customerROIandnamedTaiwansupplierallocationsnotdisclosed."
       },
       "status": "issuer_distributed_full_release_verified_forward_targets_only_no_article"
+    },
+    {
+      "fingerprint": "alphabet-q3-2026-tpu-system-sales-cloud-profit-and-negative-fcf-primary-20261028",
+      "event_date": "2026-10-28",
+      "period_end": "2026-09-30",
+      "discovered_date": "2026-10-29",
+      "instruction_commit_sha": "deb60aa1d16a77bdda88970289bf304614b5d954",
+      "companies": [
+        "Alphabet / Google Cloud"
+      ],
+      "type": "issuer_quarterly_results_TPU_system_revenue_and_cash_conversion",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/goog-20261028.htm",
+        "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
+        "https://www.marketscreener.com/news/alphabet-2026-q3-earnings-press-release-ce785cd3d981f42c"
+      ],
+      "facts": {
+        "source_authentication": "FreshSECsubmissionsJSONresolvedOctober28Form8Kaccession0001652044-26-000080;original8KHTMLobtainedandexhibitlinkfollowed.Complete370590byteEX99.1HTML24498charactertextretrievedandreadusingHTTP;webreaderSECfailed.Companydistributedrepublicationindependentlyreadforlayout/crosscheck,sameoriginnotindependentcompanyevidence.Unauditedquarter;full10Q/callaudionotverified.",
+        "currency": "USD",
+        "unit": "million unlessEPS/percent",
+        "q3_2026": {
+          "revenue": 127577,
+          "operating_income": 40576,
+          "Google_Cloud_revenue": 30709,
+          "Google_Cloud_operating_income": 11121,
+          "net_income": 26468,
+          "net_income_available_common": 26170,
+          "diluted_eps": 2.12,
+          "operating_cashflow": 42290,
+          "PPE_purchases": 51355,
+          "issuer_FCF": -9065,
+          "equity_securities_loss": 8664,
+          "interest_expense": 967
+        },
+        "q3_2025": {
+          "Google_Cloud_revenue": 15157,
+          "Google_Cloud_operating_income": 3594,
+          "operating_cashflow": 48414,
+          "PPE_purchases": 23953,
+          "interest_expense": 143
+        },
+        "q2_2026_cash_comparison": {
+          "operating_cashflow": 39069,
+          "PPE_purchases": 44924,
+          "issuer_FCF": -5855
+        },
+        "derived_Cloud_operating_margin_percent": {
+          "q3_2026": 36.21413917743983,
+          "q3_2025": 23.71181632249126
+        },
+        "TPU_commercial_increment": "IssuerexplicitlystatesTPUsystemssalesmeaningfullycontributedtoCloudgrowth;segmentpolicydefinesCloudproductrevenuesprimarilyfromTPUsystemsales.Cloudservicesconsumption/subscriptionandhardwaresystemsalesaredifferentbusinessmodels.Notall103%growthtreatedasrecurringserviceorTPUrevenue.",
+        "profit_scope": "CloudsegmentprofitexcludessomeAlphabet-levelsharedAIresearchanddevelopmentcosts;Alphabetlevelactivityloss7655versus4467prior. EquitysecuritieslossdecreasedEPSby0.55perissuer;notconstruedasClouddemandweakness.",
+        "financing": {
+          "Q3_senior_unsecured_notes_net_proceeds_rounded_bn": 28.7,
+          "Q3_common_share_net_proceeds_cashflow": 12371,
+          "Q3_common_share_issuance_million_shares": {
+            "ClassA": 12,
+            "ClassC": 24
+          },
+          "ATM_remaining_authorization_bn": 27.6,
+          "scope": "Noteissuanceforgeneralcorporatepurposes;ATMremainingceilingnotcompletedcash.Financingnotadditionaloperatingcashflow."
+        },
+        "cash_limits": "Q3negativeFCFwidenedfromQ2;workingcapitalincludesinventory3220andotherassets7807cashuses.Risingcapexcanreflectcapacityinvestment,notalonepoorROI. No completecurrentannualcapexrevisionorlease-inclusiveinvestmenttotalverified.",
+        "supplier_limits": "NoTPUsystemgeneration/customerquantities,MediaTek/Broadcom/Marvellallocation,NRE,newdesignwin,foundry/packagingawardorTPU-onlymarginauthenticated.ExternalhardwaregrowthnotmappedtoanyspecificTaiwanearningsrevision."
+      },
+      "status": "original_SEC_exhibit_full_body_and_financial_tables_verified_ledger_only_no_article"
     }
   ],
   "articles": [],
@@ -9217,25 +9283,23 @@
     ],
     "current_run_screening": {
       "date": "2026-10-29",
-      "checked_at_utc": "2026-10-28T20:07:00Z",
-      "instruction_commit_sha": "d9d12550e401bf0d87fbbabe0bac9d3022ea3a4d",
-      "universe_commit_sha": "0f18d6e38b50208ba69df8281c60ef0d2dd84bb8",
-      "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+      "checked_at_utc": "2026-10-28 20:43:59 UTC",
+      "instruction_commit_sha": "deb60aa1d16a77bdda88970289bf304614b5d954",
       "company_count": 98,
       "grouped_query_count": 7,
-      "status": "two_CSP_primary_disclosure_increments_grouped_universe_screening",
-      "scope": "Freshsamecommitcompleteinstruction/spec/taxonomy/config/series/recentbodiesretrieved;unchangedblobhashesmatchfullversionsread. Largeprogressrecoveredinfullthroughfetch_blob. Active98namesgroupeddiscoverydoesnotconstitute98individualfinancialaudits.",
+      "universe_commit_sha": "0f18d6e38b50208ba69df8281c60ef0d2dd84bb8",
+      "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+      "status": "Alphabet_primary_quarter_increment_grouped_universe_current_filings_partial",
+      "scope": "Freshsamecommitrequiredinstruction/config/taxonomy/series/spec/legacy/recentarticlefullbodiesretrieved;stablehashesmatchfullversionsalreadyread.Largeprogressrecoveredfullviafetch_blob.98activeuniversequeriedin7groups,not98individualfinancialaudits.",
       "source_results": [
-        "TWSE137andTPEx60noticesfreshlyfetched,identicalpriorbatch;issuer speechdatesOctober27despiteOctober28outputdate.",
-        "TSMCnewsandMediaTekpressroomread;latestdatedrowsunchanged,noverifiednewTPUNRE,procurementallocationorCoWoScontractterms.",
-        "NVIDIA,AMD,Marvellcurrentindicesunchanged;Broadcomindex404buttargetedfreshsearchfoundnoadditionalmaterialincrementoverregistered8K.",
-        "Microsoftfreshquarterlyreleasefullbodyandfinancialtablesreadusingwebreader;localtimeout. Earningsmetrics404andcallnotcompleted;notinferred.",
-        "AlphabetdynamicIRvisibletextunchanged,noauthenticatednewQ3resultnumbersobtained. Metaunchanged;Amazonnavigationonly. OracleIRindexinsufficient,butnewissuer-distributedInvestorDayreleasefullbodyretrievedviaPRNewswireserachresult.",
-        "Noarticleorwebsitepublication;publicledgerfactsandcoverageonly."
+        "FreshTWSE137andTPEx60noticesunchangedpriorbatch;outputOctober28butissuerannouncementsOctober27,notproofcurrent-dayfilingcompleteness.",
+        "TSMCofficialnewsandMediaTekpressroomread,latestdatedrowsunchanged.NoauthenticatednewTPUNREorprocurementallocation.",
+        "NVIDIA/AMD/Marvellindicesunchanged;Broadcomindex404,targetedfreshsearchdidnotauthenticateadditionalmaterialincrement.Metaunchanged,Amazonnavigation-only,OracleIR195bytesinsufficient;lastMicrosoftandOracleeventsnotreannounced.",
+        "AlphabetIRdynamicnavigationnotusable;SECsubmissionsJSONresolvednew8K,original8Kandexhibit99.1fullfinancialsretrievedviaHTTP.MarketScreenerissuerrepublicationcrosschecked,notindependentsource.Fullcurrent10Qandearningsaudio/guidanceunverified.",
+        "Onlypubliceventfactsandcoveragewritten,noarticleorwebsitepublication."
       ],
       "new_event_fingerprints": [
-        "microsoft-fy2027-q1-azure-growth-and-cash-capex-fcf-divergence-20261028",
-        "oracle-investor-day-fy30-growth-fy28-cashflow-and-additional-funding-framework-20261028"
+        "alphabet-q3-2026-tpu-system-sales-cloud-profit-and-negative-fcf-primary-20261028"
       ]
     },
     "primary_regulator_company_fact_checked_count": 3,
@@ -20886,6 +20950,27 @@
           "microsoft-fy2027-q1-azure-growth-and-cash-capex-fcf-divergence-20261028",
           "oracle-investor-day-fy30-growth-fy28-cashflow-and-additional-funding-framework-20261028"
         ]
+      },
+      {
+        "date": "2026-10-29",
+        "checked_at_utc": "2026-10-28 20:43:59 UTC",
+        "instruction_commit_sha": "deb60aa1d16a77bdda88970289bf304614b5d954",
+        "company_count": 98,
+        "grouped_query_count": 7,
+        "universe_commit_sha": "0f18d6e38b50208ba69df8281c60ef0d2dd84bb8",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "Alphabet_primary_quarter_increment_grouped_universe_current_filings_partial",
+        "scope": "Freshsamecommitrequiredinstruction/config/taxonomy/series/spec/legacy/recentarticlefullbodiesretrieved;stablehashesmatchfullversionsalreadyread.Largeprogressrecoveredfullviafetch_blob.98activeuniversequeriedin7groups,not98individualfinancialaudits.",
+        "source_results": [
+          "FreshTWSE137andTPEx60noticesunchangedpriorbatch;outputOctober28butissuerannouncementsOctober27,notproofcurrent-dayfilingcompleteness.",
+          "TSMCofficialnewsandMediaTekpressroomread,latestdatedrowsunchanged.NoauthenticatednewTPUNREorprocurementallocation.",
+          "NVIDIA/AMD/Marvellindicesunchanged;Broadcomindex404,targetedfreshsearchdidnotauthenticateadditionalmaterialincrement.Metaunchanged,Amazonnavigation-only,OracleIR195bytesinsufficient;lastMicrosoftandOracleeventsnotreannounced.",
+          "AlphabetIRdynamicnavigationnotusable;SECsubmissionsJSONresolvednew8K,original8Kandexhibit99.1fullfinancialsretrievedviaHTTP.MarketScreenerissuerrepublicationcrosschecked,notindependentsource.Fullcurrent10Qandearningsaudio/guidanceunverified.",
+          "Onlypubliceventfactsandcoveragewritten,noarticleorwebsitepublication."
+        ],
+        "new_event_fingerprints": [
+          "alphabet-q3-2026-tpu-system-sales-cloud-profit-and-negative-fcf-primary-20261028"
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -31606,7 +31691,7 @@
     }
   ],
   "last_research_date": "2026-10-29",
-  "instruction_commit_sha": "d9d12550e401bf0d87fbbabe0bac9d3022ea3a4d",
+  "instruction_commit_sha": "deb60aa1d16a77bdda88970289bf304614b5d954",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
