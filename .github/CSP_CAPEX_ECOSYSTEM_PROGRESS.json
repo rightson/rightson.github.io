@@ -8915,6 +8915,90 @@
         "limits": "Axiom separationremainsplanned andsubjecttoapprovals; projectedbenefits,costs,timing andcustomerrelationshipsuncertain. September25quarterendedbeforeOctober14EPCclose,sohistoricalquarterearningscannotattributecontributiontoEPC. Growthincapacity,workingcapital andacquisitionfinancingcanabsorbprofit; FCFexcludesacquisitionpurchaseprice. CompanywidequarterresultsnotCPI-onlyAIearnings. No full segment-quarterprofit bridge ororiginalinstitutionconsensusverified. Do not reannounce alreadyrecordeddebt asnewfinancing."
       },
       "status": "issuer_release_body_guidance_and_selected_financial_tables_verified_ledger_only_no_article"
+    },
+    {
+      "fingerprint": "broadcom-ai-rack-residual-support-43bn-ceiling-and-lease-loss-formula-primary-20261027",
+      "event_date": "2026-10-26",
+      "source_filing_date": "2026-10-27",
+      "discovered_date": "2026-10-29",
+      "instruction_commit_sha": "865fc4a79ac4b9face6e963abf5dc0d5c4d8d632",
+      "companies": [
+        "Broadcom"
+      ],
+      "type": "issuer_8k_residual_value_support_terms",
+      "sources": [
+        "https://investors.broadcom.com/sec-filings/sec-filing/8-k/0001193125-26-434271",
+        "https://investors.broadcom.com/node/64801/html",
+        "https://investors.broadcom.com/static-files/0ee4f6b7-4a23-4de0-8f3e-48f147ae30d3"
+      ],
+      "facts": {
+        "source_authentication": "Complete issuer-hosted October27 Form8K accession0001193125-26-434271 read in HTML and3pagePDF; Item2.03 PDFpage2 visually verified. Earliest eventOctober26; filing signedOctober27.",
+        "baseline": "October26 joint announcement verified USD63bn committed SPV financing and residual support equal to first-lien financing without amount orfull triggers. October26 Reuters USD43.5bn senior-tranche report remained unconfirmed. This filing supplies issuer-confirmed support ceiling and mechanics; not proof of an increase versus comparable prior support.",
+        "currency": "USD",
+        "maximum_potential_liability_undiscounted_bn": 43,
+        "maximum_basis": "Upon deployment of the AI racks,not liability currently paid orrecognized loss.",
+        "support_mechanics": "Backstop increases as AI racks are delivered/deployed and decreases as customer makes lease payments. On lease default,potential liability equals the difference between72.5% of outstanding lease amounts and value recovered from AIrack asset sale.",
+        "remedies": "Assume applicable lease,resell racks to seller at fixed price under certain conditions,or arrange rack sale.",
+        "issuer_risk_view": "Company believes triggering probability is low,based on expected customer profitability and sustaining asset value. This is management expectation,not independently measured default probability.",
+        "limits": "Filing does not name customer,lenders,fee orfull underlying contractual conditions. It does not independently reconcile USD43bn ceiling to USD63bn announced financing orreportedUSD43.5bn tranche. These amounts are not added. No currently drawn balance,expected loss,recovery valuation,actual default,incremental supplier revenue orTaiwan allocation established."
+      },
+      "status": "issuer_8k_full_text_and_key_page_verified_ledger_only_no_article"
+    },
+    {
+      "fingerprint": "win-semiconductors-q3-2026-margin-utilization-and-optical-revenue-primary-20261028",
+      "event_date": "2026-10-28",
+      "discovered_date": "2026-10-29",
+      "instruction_commit_sha": "865fc4a79ac4b9face6e963abf5dc0d5c4d8d632",
+      "companies": [
+        "WIN Semiconductors (3105)"
+      ],
+      "type": "issuer_preliminary_quarter_results_profit_mix_and_outlook",
+      "sources": [
+        "https://www.winfoundry.com/zh-TW/Invest/invest_news_content/8601",
+        "https://www.winfoundry.com/zh-TW/Invest/invest_quarter_reports?year=2026",
+        "https://www.winfoundry.com/zh-TW/Base/DownLoadFile/538?TargetTable=QuarterlyAttachment",
+        "https://www.winfoundry.com/zh-TW/Base/DownLoadFile/541?TargetTable=QuarterlyAttachment",
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6b77657b-ddc6-4935-9b71-31dc7126cb74"
+      ],
+      "facts": {
+        "source_authentication": "Issuer October28 release,complete3page releasePDF and14page presentation retrieved from public issuer quarterly-results page. Key slides7(productmix) and10(financialtable) visually verified. Preliminary self-assessed quarter,not accountant-reviewed. MoneyDJ October28 15:38:12 original full report separately read;full call audio not verified.",
+        "baseline": "Prior candidate authenticated September aggregate sales and undated opticalfoundry capability only; now issuer authenticates profitability and DataCenter opticalreceiver production/sales increase. Outside98active Taiwan names;no watchlist edit.",
+        "period": "2026Q3",
+        "currency": "TWD",
+        "unit": "million unless EPS,percent orotherwise stated",
+        "q3": {
+          "revenue": 5859,
+          "gross_profit": 2191,
+          "gross_margin_percent": 37.4,
+          "operating_profit": 1416,
+          "operating_margin_percent": 24.2,
+          "parent_net_profit": 1930,
+          "eps": 4.55,
+          "equivalent_utilization_percent": 75,
+          "depreciation": 706,
+          "capex": 445,
+          "nonoperating_net": 698,
+          "equity_method_income": 684
+        },
+        "q2": {
+          "revenue": 5257,
+          "gross_profit": 1485,
+          "gross_margin_percent": 28.2,
+          "operating_profit": 742,
+          "operating_margin_percent": 14.1,
+          "parent_net_profit": 977,
+          "eps": 2.3,
+          "equivalent_utilization_percent": 65,
+          "depreciation": 760,
+          "capex": 129
+        },
+        "product_mix": "Slide7 Optical10–15% inbothQ2andQ3;Infrastructure30–35%→35–40%;Cellular30–35%→25–30%;WiFi10–15%→15–20%. Managementrelease saysInfrastructure+Opticalcombinedmorethanhalf;roundedcategoryrangesare not exactpoint-estimate sums.",
+        "relationship": "Issuer saysDataCenteropticalreceivercomponentcapacityopenedinstagesandincreasedproductionandsalesinQ3. Aerospace/satelliteinfrastructurehadlargestsequentialgrowth. ListsVCSEL,CWlaser,EMLandInPPICsolutions forAIDataCenter;catalog breadthdoesnotproveallproductsatmassproduction.",
+        "q4_management_outlook": "Consolidatedrevenue expectedlow-single-digitsequentialgrowth;consolidatedgrossmarginhigh-thirties.",
+        "reported_product_timing": "MoneyDJoriginalreportattributesPDcurrentearlyproductionandramp,morecontribution2027;CWLaserandEMLstillreliabilitytesting/qualification,small2027contributionandlargerscale2028. ReportedQ&A,notindependentlyaudioverified.",
+        "limits": "Consolidatedmarginimprovementincludesutilization,seasonalityandproductmix;lowerdepreciationalsocontributes. Equitymethodincomehelpsnetprofit. Opticalshare10–15%unchangedroundedrange,noAI-onlyrevenue/profit,namedCSPaward,qualificationvolumes,executedpricingorcurrentconsensusrevisionverified. Cashbalance6608versus5320 andinventory8162versus7584 do notsubstituteforoperatingcashflow;completequartercashflowandFCFnotobtained."
+      },
+      "status": "issuer_preliminary_financials_mix_and_release_verified_reported_qa_timing_separate_ledger_only_no_article"
     }
   ],
   "articles": [],
@@ -9031,35 +9115,28 @@
       "2375"
     ],
     "current_run_screening": {
-      "date": "2026-10-28",
-      "instruction_commit_sha": "02f7ced15ea990a755a3505de4926dc529c21db7",
+      "date": "2026-10-29",
+      "checked_at_utc": "2026-10-28T18:41:00Z",
+      "instruction_commit_sha": "865fc4a79ac4b9face6e963abf5dc0d5c4d8d632",
       "company_count": 98,
       "grouped_query_count": 7,
       "universe_commit_sha": "0f18d6e38b50208ba69df8281c60ef0d2dd84bb8",
       "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
-      "status": "four_primary_event_increments_grouped_discovery_and_selected_exchange_notices",
-      "scope": "98 active names in7fresh groupedqueries; sixcore andfiveCSPindices attempted. TWSE137notice snapshot datedOctober28 contains38active-universe notices; headings screened and selected economic notices read. Not38fullfinancial audits.",
-      "sources": [
-        "https://pr.tsmc.com/english/latest-news",
-        "https://www.mediatek.com/press-room",
-        "https://nvidianews.nvidia.com/news",
-        "https://ir.amd.com/news-events/press-releases",
-        "https://www.broadcom.com/company/news/releases",
-        "https://investor.marvell.com/news-events/press-releases",
-        "https://www.oracle.com/news/",
-        "https://aws.amazon.com/blogs/aws/",
-        "https://news.microsoft.com/source/",
-        "https://abc.xyz/investor/",
-        "https://investor.atmeta.com/investor-news/default.aspx",
-        "https://mops.twse.com.tw/mops/#/web/t05st01"
+      "status": "two_primary_disclosure_increments_full_universe_grouped_screening_current_filings_partial",
+      "scope": "98active namescoveredin7freshgroupeddiscoveryqueries;not98individualcurrentfiling/financialaudits. CoreTSMC,MediaTek,NVIDIA,AMD,Broadcom,MarvellandfiveCSPsourcescheckedorattempted.",
+      "source_results": [
+        "TSMCofficialnews latestOctober15Q3; MediaTekpressroomdatedrowsunchangedlatestSeptember30; currentDataCentersolutionpageread,noissuer-confirmednewTPUallocation,NREorprocurementterms.",
+        "NVIDIAandMarvellofficialindexbytesunchanged;AMDtextunchangedlatestOctober27alreadyrecordedpartnership. Broadcomdirectindex404,issuerSEC8KrouteprovidedcompleteOctober27filing.",
+        "FreshTWSE137andTPEx60noticesidenticaltoprior0152snapshot;outputdateOctober28butissuer speechdatesOctober27,notnewOctober28disclosures. RestoredTWSEbatchdoesnotestablishcurrentfilingcompleteness.",
+        "AlphabetandMetadynamicIRindicesunchanged;Microsoftcurrentearnings-eventpagehasnoobtainedresultnumbers;directearningsrelease403. Amazonnewsreleasepathnavigationonly,overviewalsodynamic. OracleIR195bytesinsufficient;officialnewsindexlatestOctober27announcementsalreadyrecorded.",
+        "WINoutsideuniverse:issuer3pageQ3releaseand14pageslidesretrievedcompletely,keymix/financialtablesvisuallyverified;preliminarynumbersandreportedQAseparated.",
+        "Groupedresultsmostlyoldreports,calendars,aggregatorsandreposts;sourcefailureisnotabsenceofcompanynews."
       ],
-      "source_limits": [
-        "Grouped queries mostly return old reports,aggregators and social commentary;not98individual currentfiling,order,margin orcashflow audits.",
-        "Broadcom index iframeonly; Alphabet andMeta largelynavigation. TSMC latestindexedOctober15Q3,MediaTekSeptember30. No authenticated newTPUprocurement,NREallocation orfoundry assignment.",
-        "Seagate issuer-distributed fullrelease fetched despite webreader failure. Faraday issueroriginalPDF read. ESMT currentquarter computed from comparable cumulative notices. TPEx latest notices not refreshed thisrun;no whole-market completeness claim.",
-        "Samecommit instructions,specs,taxonomy,config,series,legacyresearch,fullprogress andthree recentai-industry articles retrieved. Instruction/article blobhashes match complete versions read in thisconversation.",
-        "OnlyApublic facts andcoverage recorded;no quotes,valuations,holdings,fundflows,privateinvestment judgments orBanalysis. No article orPages publication."
-      ]
+      "new_event_fingerprints": [
+        "broadcom-ai-rack-residual-support-43bn-ceiling-and-lease-loss-formula-primary-20261027",
+        "win-semiconductors-q3-2026-margin-utilization-and-optical-revenue-primary-20261028"
+      ],
+      "publication_stage": "Publiceventledgeronly;noarticleorwebsitecontentpublication"
     },
     "primary_regulator_company_fact_checked_count": 3,
     "screening_history": [
@@ -20662,6 +20739,30 @@
           "NVIDIA/AMD/Marvellindicesunchanged; Broadcomnavigationonly; Alphabet/Meta/AmazonIRunchangeddynamicrowsinsufficient; MicrosoftHTTP403butwebreaderupcomingearnings; Oracledirect195bytesinsufficient.",
           "No quotes,privatevaluations,holdings,fundflowsorprivateinvestmentjudgments included. Noarticle."
         ]
+      },
+      {
+        "date": "2026-10-29",
+        "checked_at_utc": "2026-10-28T18:41:00Z",
+        "instruction_commit_sha": "865fc4a79ac4b9face6e963abf5dc0d5c4d8d632",
+        "company_count": 98,
+        "grouped_query_count": 7,
+        "universe_commit_sha": "0f18d6e38b50208ba69df8281c60ef0d2dd84bb8",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "two_primary_disclosure_increments_full_universe_grouped_screening_current_filings_partial",
+        "scope": "98active namescoveredin7freshgroupeddiscoveryqueries;not98individualcurrentfiling/financialaudits. CoreTSMC,MediaTek,NVIDIA,AMD,Broadcom,MarvellandfiveCSPsourcescheckedorattempted.",
+        "source_results": [
+          "TSMCofficialnews latestOctober15Q3; MediaTekpressroomdatedrowsunchangedlatestSeptember30; currentDataCentersolutionpageread,noissuer-confirmednewTPUallocation,NREorprocurementterms.",
+          "NVIDIAandMarvellofficialindexbytesunchanged;AMDtextunchangedlatestOctober27alreadyrecordedpartnership. Broadcomdirectindex404,issuerSEC8KrouteprovidedcompleteOctober27filing.",
+          "FreshTWSE137andTPEx60noticesidenticaltoprior0152snapshot;outputdateOctober28butissuer speechdatesOctober27,notnewOctober28disclosures. RestoredTWSEbatchdoesnotestablishcurrentfilingcompleteness.",
+          "AlphabetandMetadynamicIRindicesunchanged;Microsoftcurrentearnings-eventpagehasnoobtainedresultnumbers;directearningsrelease403. Amazonnewsreleasepathnavigationonly,overviewalsodynamic. OracleIR195bytesinsufficient;officialnewsindexlatestOctober27announcementsalreadyrecorded.",
+          "WINoutsideuniverse:issuer3pageQ3releaseand14pageslidesretrievedcompletely,keymix/financialtablesvisuallyverified;preliminarynumbersandreportedQAseparated.",
+          "Groupedresultsmostlyoldreports,calendars,aggregatorsandreposts;sourcefailureisnotabsenceofcompanynews."
+        ],
+        "new_event_fingerprints": [
+          "broadcom-ai-rack-residual-support-43bn-ceiling-and-lease-loss-formula-primary-20261027",
+          "win-semiconductors-q3-2026-margin-utilization-and-optical-revenue-primary-20261028"
+        ],
+        "publication_stage": "Publiceventledgeronly;noarticleorwebsitecontentpublication"
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -31382,7 +31483,7 @@
     }
   ],
   "last_research_date": "2026-10-29",
-  "instruction_commit_sha": "ef0f651408dee5d2b02d99e264b92d9e3a4131d6",
+  "instruction_commit_sha": "865fc4a79ac4b9face6e963abf5dc0d5c4d8d632",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
