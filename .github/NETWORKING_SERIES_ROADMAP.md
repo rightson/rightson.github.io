@@ -49,12 +49,28 @@ series: networking-deep-dive，domain/categories: networking。每次先讀最�
 - Public content：2026-10-21 19:13:05 +0800 以正式頁面核對標題、正文、121→66 包數值、證據範圍、內部連結與四張公開 SVG；現行 site.js 顯示約 12 分鐘閱讀。
 - 歷史文章未修改日期、URL、分類或篇號。本條僅記錄已成立的發布與算例階段。
 
+## 已核驗完成記錄
+
+### Eunomia 讓 RDMA 用動態 bitmap 承受常態多路徑失序
+
+- 文章：[Eunomia 讓 RDMA 用動態 bitmap 承受常態多路徑失序](https://rightson.github.io/networking/2026/10/28/eunomia-dynamic-bitmap-rdma-reordering.html)。
+- 原稿：`_posts/2026-10-28-eunomia-dynamic-bitmap-rdma-reordering.md`；series／domain：networking-deep-dive／networking。
+- Instruction commit：`280232b80671ae343c374717e2e796ecd4d29c88`；文章、四張 SVG、試算程式與結果同 commit：`14920be23f98005d83a4a594c71c1eb130217f89`。
+- 原始依據：Eunomia preprint（2024-12-11）與 APNet 2025 官方議程；MP-RDMA（NSDI 2018）；ConWeave（SIGCOMM 2023）；IRN extended paper（2018-06-21）。
+- 新增理解：Hybrid Dynamic bitmap 以 circular／linear 區段避免擴張時重排舊 bits；第一個 OOO packet 才配置 48-byte metadata 與 2-byte blocks；ACK／SACK ordering feedback 與 DCQCN 分工；SEND／RECV completion gating 與 WRITE 末包增加一個 RTT；allocator exhaustion、QP generation、metadata 更新順序及 fallback 故障路徑。
+- 量化階段：已執行 `scripts/experiments/eunomia_bitmap_budget.py`，結果在相鄰 `.results.json`。一百萬 QP、64-bit active bitmap 的明示假設下，固定配置 41 MB；動態配置在 5%／20%／60%／100% active ratio 為 6.8／15.2／37.6／60 MB，交會點約 66.1%。這是 deterministic memory accounting，不是論文量測、RTL synthesis 或實體 RNIC 實驗。
+- 靜態檢查：本地文章 lint 通過；GitHub Post lint gate run [40677952843](https://github.com/rightson/rightson.github.io/actions/runs/40677952843) 成功；四張 SVG 的 XML、深淺色、日期簽名與正式頁面載入均通過。本地環境沒有 Bundler／Jekyll 執行器，因此未宣稱本地 build。
+- Source：七個新增檔案依文章 commit 完整回讀，內容及 blob SHA 全部相符。
+- Build／deploy：GitHub Pages run [40677951913](https://github.com/rightson/rightson.github.io/actions/runs/40677951913) 對應文章 commit，建置與部署成功。
+- Public content：2026-10-28 19:12:44 +0800 以正式頁面核對標題、15 分鐘閱讀時間、正文、66.1% 交會點、證據範圍、內部連結與四張公開 SVG；四張圖均完成載入且有非零 natural dimensions。
+- 歷史文章未修改日期、URL、分類或篇號。本條僅記錄已成立的發布、算例與公開驗收階段。
+
 ## 接續候選
 
-### Eunomia 如何讓 RDMA 承受多路徑造成的大範圍失序
+### Commodity RNIC 如何用 in-network support 承受 packet spraying
 
-- 原始日期／來源：2024-12-11，[Orderly Management of Packets in RDMA by Eunomia](https://arxiv.org/abs/2412.08540)，後收錄 APNet 2025。
-- 主要問題：當失序不是偶發丟包的副作用，而是 packet spraying、fine-grained load balancing 或 expander topology 的常態，hybrid-dynamic bitmap 如何控制 on-chip memory 與 reordering window。
-- 先備：IRN 的 SACK／arrival bitmap、BDP-FC、OOO placement 與 completion gating；ECMP／flowlet／packet spraying 的 path-level 失序來源。
-- 相關文章：本次 IRN 長文、RoCE PFC／ECN、ConWeave 與 topology mapping。
-- 尚缺：Eunomia bitmap expansion／reclamation、memory controller 與 ACK/SACK data path 的逐步推導；FPGA 與 simulation 假設核對；與 IRN 固定 BDP-sized bitmap、in-network reordering 及現代 RNIC context cache 的量化比較。當前僅完成選材。
+- 原始日期／來源：2025-08-07，APNet 2025 Reinventing RDMA session 的〈Enabling Packet Spraying over Commodity RNICs with In-Network Support〉。
+- 主要問題：若不能修改 RNIC，交換器要保存哪些失序資訊、在何處恢復順序，才能讓 packet spraying 不觸發 commodity RNIC 的 go-back-N。
+- 先備：Eunomia 的 endpoint bitmap／completion gate、ConWeave 的目的 ToR reorder state、IRN 的 fixed BDP bitmap。
+- 相關文章：本次 Eunomia 長文、IRN selective retransmission、RoCE PFC／ECN、ConWeave。
+- 尚缺：交換器資料路徑與 state lifecycle 的逐步推導；buffer／ACK／failure 成本；與 endpoint reorder、flowlet switching 及現代 RNIC context cache 的量化比較。當前僅完成選材。
