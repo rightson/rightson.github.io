@@ -7853,6 +7853,59 @@
       "discovered_date": "2026-10-28",
       "instruction_commit_sha": "02f7ced15ea990a755a3505de4926dc529c21db7",
       "status": "primary_facts_verified_economic_limits_recorded_no_article"
+    },
+    {
+      "fingerprint": "macronix-q3-2026-margin-cash-conversion-and-datacenter-nor-primary-20261027",
+      "companies": [
+        "Macronix International (2337)"
+      ],
+      "type": "issuer_reviewed_quarterly_results_and_primary_presentation",
+      "event_date": "2026-10-27",
+      "discovered_date": "2026-10-28",
+      "instruction_commit_sha": "ad63803f3e7fa1fa33215345adda0a7c90363929",
+      "sources": [
+        "https://www.mxic.com.tw/en-us/about/investor-relations/Pages/quarterly-results.aspx",
+        "https://www.mxic.com.tw/Lists/QuarterlyResults/Attachments/662/2026q3_release_en.pdf",
+        "https://www.mxic.com.tw/Lists/QuarterlyResults/Attachments/662/2026q3%20webcast_ppt_en.pdf"
+      ],
+      "facts": {
+        "source_authentication": "Issuer quarterly-results public JavaScript and its public data endpoint resolved attachment662. Complete3page release and24page presentation retrieved from issuer HTTPS and text extracted. Release identifies reviewed TIFRS consolidated financials; no full financial-report or audio audit claimed.",
+        "currency": "TWD",
+        "unit": "million except EPS and percentages",
+        "period": "2026-Q3",
+        "q3": {
+          "revenue": 24237,
+          "gross_profit": 17086,
+          "gross_margin_percent": 70.5,
+          "operating_income": 12932,
+          "operating_margin_percent": 53.4,
+          "net_income": 10951,
+          "basic_eps": 5.52,
+          "operating_cash_flow": 13392,
+          "capex": 4354,
+          "free_cash_flow": 9038,
+          "cash": 29564,
+          "inventory": 11537
+        },
+        "q2": {
+          "revenue": 19125,
+          "gross_profit": 12320,
+          "gross_margin_percent": 64.4,
+          "operating_income": 8968,
+          "operating_margin_percent": 46.9,
+          "net_income": 7736,
+          "basic_eps": 3.91,
+          "operating_cash_flow": 7839,
+          "capex": 479,
+          "free_cash_flow": 7360,
+          "cash": 22295,
+          "inventory": 9756
+        },
+        "relationship": "Issuer slides17–18 explicitly identify strong high-densityNOR demand driven bydatacenters andcrowding outothersegments. Slides21–22describe structural SLC NAND/eMMCshortage;NAND applicationsarecommunication52%,consumer23%,industrial/medical/aerospace13%,computer10%,auto2%;companywidegrowthnotallAI.",
+        "cash_reconciliation": "Issuer slide13definesFCF=operatingcashflow-capex;13392-4354=9038vs7839-479=7360. Inventory11537vs9756andcapex4354vs479requirefurtherworkingcapitalandcapacityreturnreview.",
+        "limits": "No namedCSPcustomer,incremental supplycontract,datacenter-onlyrevenue/margin,currentconsensusrevision ornewQ4numericguidanceauthenticated. PricingandexpansiontimetableinmediaQ&Aarenotindependentlyaudioverified. Notannualizingpeakmargin orEPS. Consolidatedrelease NAND47%vsparentpresentationroundedcomposition differ;notcombined asidenticalscope."
+      },
+      "status": "primary_release_and_presentation_verified_new_financial_baseline_no_article"
     }
   ],
   "articles": [],
