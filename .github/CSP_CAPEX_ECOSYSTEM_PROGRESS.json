@@ -8509,6 +8509,290 @@
         "limits": "C&I covers more than data centers and consolidated cashflow includes residential; no AI-only grossmargin, FCF or future contractedprofit quantified. Backlog delivery timing beyond stated Amazon expectation, customer allocation, minimum purchases and cancellation protections undisclosed. Issuer explicitly flags data-center cancellation rights, delivery requirements and performance liability. Expansion requires equipment/labor/capital and could delay fulfillment. Historical Amazon agreement is not new; do not label an8b warrant-payment threshold a confirmed purchase commitment. No underlying September8K/warrant terms independently checked thisrun. Current company release not an independently audited report."
       },
       "status": "issuer_results_backlog_segment_margin_cash_and_guidance_verified_out_of_universe_candidate_no_article"
+    },
+    {
+      "fingerprint": "vertiv-q3-2026-orders-margin-cash-and-guidance-conversion-20261028",
+      "event_date": "2026-10-28",
+      "discovered_date": "2026-10-29",
+      "instruction_commit_sha": "c2f9d0b8851ca08e0a421312f9951e70f0e0b176",
+      "companies": [
+        "Vertiv (VRT)"
+      ],
+      "type": "issuer_quarterly_results_orders_profit_cash_and_guidance",
+      "sources": [
+        "https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-Third-Quarter-2026-with-Net-Sales-Growth-of-61-Organic-Orders-Growth-over-100-and-Diluted-EPS-Growth-of-91-Adjusted-Diluted-EPS-Growth-of-78-Raises-Full-Year-2026-Guidance-Across-All-Key-Metrics/default.aspx"
+      ],
+      "facts": {
+        "source_nature": "Issuer October28 release body and selected financial/cashflow/non-GAAP tables verified. Unaudited quarter endedSeptember30. Full management call and independently audited current results not obtained.",
+        "baseline": "Prior ledger established CapitaLand30MW cooling deployment and Polar41MW initial phase/reference timing. This update adds companywide financial conversion, not a reannouncement of those projects or project-specific earnings.",
+        "universe_scope": "Outside98active Taiwan names; no watchlist modification or inference of a named Taiwan supplier award.",
+        "q3": {
+          "currency": "USD",
+          "unit": "million unless percentages/EPS",
+          "net_sales": 4312.8,
+          "previous_year_net_sales": 2675.8,
+          "reported_sales_yoy_percent": 61,
+          "organic_sales_yoy_percent": 55,
+          "acquisition_growth_contribution_percent_approximately": 6,
+          "organic_orders_yoy_percent": "more than100",
+          "gaap_operating_profit": 983.8,
+          "previous_year_gaap_operating_profit": 516.7,
+          "adjusted_operating_profit_approximately": 1087,
+          "adjusted_operating_margin_percent": 25.2,
+          "adjusted_operating_margin_yoy_change_basis_points": 290,
+          "gaap_diluted_eps": 1.95,
+          "adjusted_diluted_eps": 2.21,
+          "operating_cashflow": 794,
+          "previous_year_operating_cashflow": 482.7,
+          "capital_expenditures_cash_outflow": 139.1,
+          "capitalized_software_cash_outflow": 2.7,
+          "issuer_adjusted_free_cashflow": 652.2,
+          "previous_year_issuer_adjusted_free_cashflow": 436,
+          "total_operating_working_capital_cash_change": -138.3,
+          "receivables_cash_change": -631.9,
+          "inventory_cash_change": -766.9,
+          "payables_cash_change": 723.7,
+          "deferred_revenue_cash_change": 490.2
+        },
+        "management_explanation": "Higher-sales operating leverage and manufacturing productivity increased adjusted margin, partly offset by mix and growth investments. Company supplies data-center power/cooling/IT infrastructure and services; not all revenue or profit is AI-only.",
+        "guidance_2026": {
+          "currency": "USD",
+          "unit": "million unless percentages/EPS",
+          "net_sales": [
+            14450,
+            14850
+          ],
+          "midpoint": 14650,
+          "issuer_stated_midpoint_increase": 650,
+          "organic_sales_growth_percent": [
+            37,
+            39
+          ],
+          "adjusted_operating_margin_percent": [
+            23.5,
+            24.5
+          ],
+          "adjusted_diluted_eps": [
+            7.1,
+            7.2
+          ],
+          "adjusted_free_cashflow": [
+            2600,
+            2800
+          ],
+          "capital_expenditures_percent_revenue_approximately": 4
+        },
+        "q4_guidance": {
+          "net_sales_USD_million": [
+            4313,
+            4513
+          ],
+          "organic_growth_percent": [
+            49,
+            51
+          ],
+          "adjusted_operating_margin_percent": [
+            25.3,
+            26.3
+          ],
+          "adjusted_diluted_eps": [
+            2.22,
+            2.28
+          ]
+        },
+        "limits": "Orders and backlog can be delayed/cancelled; no customer-specific minimum purchases or realized project ROIC authenticated. Adjusted profitability/FCF definitions differ across companies. Working-capital cash outflow increased despite positive deferred revenue/payables; capacity and supplier execution remain constraints. No original institutional consensus revision verified."
+      },
+      "status": "issuer_body_and_selected_financial_tables_verified_ledger_only_no_article"
+    },
+    {
+      "fingerprint": "ge-vernova-q3-2026-margin-guidance-and-customer-advance-cash-quality-20261028",
+      "event_date": "2026-10-28",
+      "discovered_date": "2026-10-29",
+      "instruction_commit_sha": "c2f9d0b8851ca08e0a421312f9951e70f0e0b176",
+      "companies": [
+        "GE Vernova (GEV)"
+      ],
+      "type": "issuer_quarterly_results_guidance_and_10q_customer_advance_cashflow",
+      "sources": [
+        "https://www.gevernova.com/news/articles/ge-vernova-releases-third-quarter-2026-financial-results-announces-agreement-acquire",
+        "https://www.gevernova.com/investors/events/3rd-quarter-2026-earnings-webcast",
+        "https://www.gevernova.com/sites/default/files/gev_webcast_pressrelease_10282026.pdf",
+        "https://www.gevernova.com/sites/default/files/gev_webcast_10q_10282026.pdf"
+      ],
+      "facts": {
+        "source_nature": "Issuer October28 newsletter, ten-page earnings-release PDF financial highlights/segment/reconciliation sections and selected cashflow/contract-liability/MD&A sections of40-page10-Q verified. Full40-page filing audit, extended call audio and executed customer contracts not completed.",
+        "baseline": "First sourced GE Vernova quarterly financial baseline in this ledger; prior Venture Global framework is separate and not treated as a newly booked full-capacity AI order.",
+        "universe_scope": "Outside98active Taiwan names. Issuer explicitly serves utility and data-center customers with gas-power and grid infrastructure; no allcompany-AI revenue claim, named Taiwan supplier allocation or watchlist edit.",
+        "q3": {
+          "currency": "USD",
+          "unit": "million unless percentages/EPS/GW",
+          "orders_approximately": 29300,
+          "orders_organic_yoy_percent": 96,
+          "revenue": 12642,
+          "previous_year_revenue": 9969,
+          "organic_revenue_yoy_percent": 18,
+          "net_income": 1289,
+          "gaap_diluted_eps": 4.81,
+          "adjusted_ebitda": 1943,
+          "adjusted_ebitda_margin_percent": 15.4,
+          "previous_year_adjusted_ebitda_margin_percent": 8.1,
+          "operating_cashflow": 6057,
+          "previous_year_operating_cashflow": 980,
+          "issuer_free_cashflow": 5409,
+          "previous_year_issuer_free_cashflow": 732,
+          "power_revenue": 6067,
+          "power_segment_ebitda_margin_percent": 21.4,
+          "previous_year_power_margin_percent": 13.4,
+          "electrification_organic_orders_yoy_percent": -9,
+          "electrification_revenue": 3862,
+          "electrification_organic_revenue_yoy_percent": 16,
+          "electrification_segment_ebitda_margin_percent": 19.1,
+          "previous_year_electrification_margin_percent": 15.1
+        },
+        "gas_equipment": {
+          "combined_backlog_and_slot_reservation_GW_previous": 116,
+          "current": 122,
+          "current_backlog_GW": 64,
+          "current_slot_reservation_GW": 58,
+          "new_contracts_GW": 11,
+          "new_contracts_split": "8GW slot reservations plus3GW orders",
+          "existing_slot_reservations_converted_to_orders_GW": 13,
+          "equipment_shipped_GW": 5,
+          "year_end_combined_target_GW_at_least": 130,
+          "limits": "Slot reservation and firm equipment order stages differ. Conversion13GW is not additional demand to add again to11GW new contracts. Combined stock rose6GW after shipments; not122GW completed AI deployment."
+        },
+        "guidance_2026": {
+          "currency": "USD",
+          "unit": "billion unless percentages",
+          "revenue_new": [
+            46.5,
+            47.5
+          ],
+          "revenue_prior": [
+            45.5,
+            46.5
+          ],
+          "adjusted_ebitda_margin_percent_new": [
+            13.5,
+            14.5
+          ],
+          "prior": [
+            12,
+            14
+          ],
+          "free_cashflow_new": [
+            16,
+            17
+          ],
+          "free_cashflow_prior": [
+            11.5,
+            12.5
+          ],
+          "power_segment_ebitda_margin_percent_new": [
+            19,
+            21
+          ],
+          "power_segment_margin_prior": [
+            17,
+            19
+          ],
+          "wind_segment_loss_new_USD_million": [
+            400,
+            500
+          ],
+          "wind_segment_loss_prior_USD_million_approximately": 400
+        },
+        "nine_month_cash_quality": {
+          "currency": "USD",
+          "unit": "million",
+          "operating_cashflow": 16737,
+          "prior_year": 2508,
+          "working_capital_cash_inflow_approximately": 17000,
+          "contract_liabilities_and_current_deferred_income_cash_inflow": 19511,
+          "prior_year_contract_liabilities_cash_inflow": 2419,
+          "payables_cash_inflow": 1522,
+          "inventory_cash_change_approximately": -2100,
+          "receivables_cash_change_approximately": -1700,
+          "issuer_explanation": "Customer down payments on Power orders and slot reservation agreements and Electrification down payments are major cash sources. Contract liabilities primarily represent cash received before equipment delivery or servicing. Future fulfillment costs remain.",
+          "limits": "Nine-month cashflow-driver amounts are not quarter-only profit or recurring annual cash earnings. Do not mechanically subtract contract liabilities to invent an adjusted valuation metric; timing affects both future receipts and future costs."
+        },
+        "acquisition": "Signed Trench Group acquisition atUSD9bn-equivalent, expectedlate2027 close subject to approvals; not closed output or current-quarter cash payment. Proposed acquisition economics kept separate from current organic performance.",
+        "limits": "Grid demand/utility investment, pricing, productivity and acquisitions coexist with AI demand. Electrical organic orders fell9% from a high prior-year comparator, and Wind projected losses widened; no uniform demand acceleration inferred. Backlog recognized over multiple years, contracts can change; no AI-only revenue, margin or customer allocations established."
+      },
+      "status": "issuer_results_and_selected_10q_cash_quality_verified_ledger_only_no_article"
+    },
+    {
+      "fingerprint": "amphenol-q3-2026-organic-interconnect-profit-cash-and-commscope-outlook-20261028",
+      "event_date": "2026-10-28",
+      "discovered_date": "2026-10-29",
+      "instruction_commit_sha": "c2f9d0b8851ca08e0a421312f9951e70f0e0b176",
+      "companies": [
+        "Amphenol (APH)"
+      ],
+      "type": "issuer_quarterly_results_organic_growth_segment_profit_and_cash",
+      "sources": [
+        "https://investors.amphenol.com/news-and-events/news-details/2026/Amphenol-Reports-Record-Third-Quarter-2026-Results-and-Announces-Dividend-Increase-and-New-Stock-Repurchase-Program/default.aspx"
+      ],
+      "facts": {
+        "source_nature": "Full issuer HTML obtained with release body and selected consolidated/segment/cashflow/non-GAAP tables read. BusinessWire copy crosschecked. Unaudited quarter endedSeptember30; October28call scheduled13:00EDT, not yet occurred at retrieval; no claim of call verification.",
+        "baseline": "First sourced Amphenol baseline in this ledger, not a fabricated prior investment view. Issuer says sales/EPS exceeded its guidance. Only explicit CommScope prior/current outlook comparison quantified here; no original consensus revision claimed.",
+        "universe_scope": "Outside98active names. Issuer explicitly identifies exceptional organic IT datacom demand in its high-speed electrical/fiber-optic interconnect and cable business; no named Taiwan supplier order or watchlist modification.",
+        "q3": {
+          "currency": "USD",
+          "unit": "million unless percentages/EPS/ratio",
+          "sales": 10229.7,
+          "previous_year_sales": 6194.4,
+          "sales_yoy_percent": 65,
+          "organic_sales_yoy_percent": 37,
+          "acquisition_growth_contribution_percent": 28,
+          "orders_approximately": 12200,
+          "book_to_bill": 1.19,
+          "gaap_diluted_eps": 0.79,
+          "adjusted_diluted_eps": 0.8,
+          "gaap_operating_margin_percent": 29.5,
+          "previous_year_gaap_operating_margin_percent": 27.5,
+          "adjusted_operating_margin_percent": 29.7,
+          "operating_cashflow": 2078.5,
+          "previous_year_operating_cashflow": 1470.8,
+          "capex_cash_outflow": 457.2,
+          "pp_and_e_disposal_proceeds": 1.4,
+          "issuer_free_cashflow": 1622.7,
+          "previous_year_issuer_free_cashflow": 1215.5,
+          "working_capital_cash_change": -415.9,
+          "previous_year_working_capital_cash_change": -60.9,
+          "communications_solutions_sales": 6583,
+          "previous_year_communications_sales": 3309.5,
+          "communications_organic_growth_percent": 51,
+          "communications_acquisition_contribution_percent": 48,
+          "communications_operating_margin_percent": 33.1,
+          "previous_year_communications_operating_margin_percent": 32.7
+        },
+        "guidance": {
+          "q4_sales_USD_billion": [
+            10.3,
+            10.5
+          ],
+          "q4_adjusted_diluted_eps": [
+            0.81,
+            0.83
+          ],
+          "full_year_sales_USD_billion": [
+            36.9,
+            37.1
+          ],
+          "full_year_adjusted_diluted_eps": [
+            2.82,
+            2.84
+          ],
+          "commscope_full_year_sales_USD_billion_new": 5.1,
+          "commscope_prior": 4.6,
+          "commscope_adjusted_eps_accretion_new": 0.18,
+          "commscope_prior_accretion": 0.15,
+          "limits": "Forecast excludes acquisitions not yet closed; CommScope expectations are component outlook revisions, not additive amounts above company guidance."
+        },
+        "capital_and_limits": "Q3 and prior EPS/share data already reflect September2026 two-for-one split. Organic growth excludes acquisitions/FX; total sales growth not all organic or AI. Communications segment spans more than AI data centers. Cashflow remains positive after capex but working-capital use increased; FCF excludes acquisition purchase prices, includingUSD11.056bn nine-month acquisitions net of cash acquired. Pending approximatelyUSD1.6bn combined four-deal program includes one closed company and three conditional deals serving multiple endmarkets; not all AI acquisitions. No guaranteed durable margin, independent customer contract or institutional forecast authenticated."
+      },
+      "status": "issuer_body_and_selected_financial_tables_verified_out_of_universe_candidate_no_article"
     }
   ],
   "articles": [],
@@ -20215,6 +20499,30 @@
           "Samecommit instructions,specs,taxonomy,config,series,legacyresearch,fullprogress andthree recentai-industry articles retrieved. Instruction/article blobhashes match complete versions read in thisconversation.",
           "OnlyApublic facts andcoverage recorded;no quotes,valuations,holdings,fundflows,privateinvestment judgments orBanalysis. No article orPages publication."
         ]
+      },
+      {
+        "date": "2026-10-29",
+        "checked_at_utc": "2026-10-28 16:06:40 UTC",
+        "instruction_commit_sha": "c2f9d0b8851ca08e0a421312f9951e70f0e0b176",
+        "universe_commit_sha": "0f18d6e38b50208ba69df8281c60ef0d2dd84bb8",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "active_count": 98,
+        "grouped_search_queries": 7,
+        "status": "three_new_issuer_quarterly_event_increments_selected_primary_validation_partial_universe_discovery",
+        "scope": "Fresh grouped discovery queries include all98active names; selected exchange notices and sixcore/fiveCSPindices checked or attempted. Not98individual currentfiling orfinancial audits.",
+        "verified_increment_fingerprints": [
+          "vertiv-q3-2026-orders-margin-cash-and-guidance-conversion-20261028",
+          "ge-vernova-q3-2026-margin-guidance-and-customer-advance-cash-quality-20261028",
+          "amphenol-q3-2026-organic-interconnect-profit-cash-and-commscope-outlook-20261028"
+        ],
+        "source_limits": [
+          "TWSE currentmajor-notice endpoint remains503; TPEx60notice snapshot unchanged versus priorrun,11active-universe matches. No absence-of-news inference from failed listed-source retrieval.",
+          "TSMC latestnewsOctober15quarterlyresults; MediaTek latestreleaseSeptember30. No newly authenticated TPUdesignwin,foundryallocation,NREorcontractterms.",
+          "NVIDIA October28laptopsoftware/productupdate is distinct from newCSPprocurement. AMDOctober27partnership,MarvellOctober13productreleases and OracleOctober27infrastructure announcements deduplicated.",
+          "Broadcomindex retrieves33characters; Alphabet,Meta,Amazon IR dynamicindices insufficient currentrows. Microsoft directHTTP403 butwebreader confirms FY27Q1 upcomingOctober28; no prematurequarterlyresult claim. Oracle directHTML61characters butwebreader index available.",
+          "IssuerVertiv/AmphenolHTML andGEVten-page release/40page10Q obtained; only releasebody and selected relevant financial/contract/cashflowsections verified. Fullcallaudio notverified. Newcompanies outside98,not added towatchlist orprimarycoveragecounts."
+        ],
+        "publication_stage": "Three factual publiceventrecords only; no newarticle. Quotes,valuation,holdings andprivatejudgments excluded."
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -30934,8 +31242,8 @@
       "impact": "Search hits and reposted notices have not been individually checked against company or exchange originals."
     }
   ],
-  "last_research_date": "2026-10-28",
-  "instruction_commit_sha": "02f7ced15ea990a755a3505de4926dc529c21db7",
+  "last_research_date": "2026-10-29",
+  "instruction_commit_sha": "c2f9d0b8851ca08e0a421312f9951e70f0e0b176",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
