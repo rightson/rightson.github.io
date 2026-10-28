@@ -8367,6 +8367,84 @@
         "limits": "Quarterly margin expansion is realized issuer data, not authenticated institution forecast revision or proof of a higher sustainable valuation multiple. Operating cash flow turned positive but remains below net income; capex exceeds operating cash. Accounts receivable rose with revenue while collection days improved slightly. Cash balance growth includes financing/investments-and-others, not wholly operating cash. Product ASP, materials pass-through, customer minimum purchases, product-specific gross margins and detailed working-capital reconciliation not disclosed in slides. Do not infer AI-only earnings, guaranteed expansion ROIC or permanent pricing power."
       },
       "status": "issuer_slides_profit_mix_and_cash_verified_ledger_only_no_article"
+    },
+    {
+      "fingerprint": "delta-q3-2026-consolidated-margin-and-thailand-inventory-cost-conversion-20261028",
+      "event_date": "2026-10-28",
+      "discovered_date": "2026-10-28",
+      "instruction_commit_sha": "62c9d59387e6e9742dfe38e9e036551fb4386c4c",
+      "companies": [
+        "Delta Electronics (2308)",
+        "Delta Electronics (Thailand), subsidiary"
+      ],
+      "type": "reported_parent_quarterly_results_and_primary_subsidiary_operating_analysis",
+      "sources": [
+        "https://ec.ltn.com.tw/article/breakingnews/5621906",
+        "https://udn.com/news/story/7252/9842932",
+        "https://www.deltathailand.com/imgadmins/investor/setnews_pdf/setnews_en20261027183410.pdf",
+        "https://www.deltaww.com/en-US/investors/analyst-meeting"
+      ],
+      "facts": {
+        "baseline": "Existing record covered technology availability, September revenue and VPD investigation. New quarterly profit-conversion and working-capital data are separate from those milestones. No numerical institution forecast revision is established.",
+        "parent_source_nature": "October28 original reports by LibertyTimes FangWeiChieh20:14 and CNA TsengJenKai19:11 read in full. Parent financials URL exposed navigation only; direct fetched HTML redirected to homepage material. Full parent reviewed statements, cashflow and management call not obtained. October29 call has not occurred.",
+        "reported_parent_q3": {
+          "currency": "TWD",
+          "unit": "million unless EPS or percentage",
+          "revenue": 197058.804,
+          "revenue_yoy_percent": 31,
+          "gross_margin_percent": 34.08,
+          "gross_margin_qoq_change_percentage_points": -1.52,
+          "operating_profit": 32620,
+          "operating_profit_qoq_percent_approximately": 6.5,
+          "operating_margin_percent": 16.55,
+          "operating_margin_qoq_change_percentage_points": -0.15,
+          "parent_net_income": 23495,
+          "parent_net_income_qoq_percent": -6.54,
+          "parent_net_income_yoy_percent": 26.28,
+          "basic_eps": 9.04,
+          "previous_quarter_basic_eps": 9.68
+        },
+        "subsidiary_source_nature": "Issuer October27 four-page Management Discussion and Analysis based on reviewed Q3 statements, downloaded and full text read. Firstpage table visually verified. Parent and subsidiary scopes/currencies are separate; no addition of their revenue/profits.",
+        "subsidiary_q3": {
+          "currency": "THB",
+          "unit": "million unless percentages",
+          "revenue": 75801,
+          "revenue_yoy_percent": 42.4,
+          "revenue_qoq_percent": 16.3,
+          "gross_profit": 20697,
+          "gross_margin_percent": 27.3,
+          "previous_quarter_gross_margin_percent": 26.8,
+          "previous_year_gross_margin_percent": 28.3,
+          "operating_profit": 7851,
+          "operating_profit_yoy_percent": 4.7,
+          "operating_profit_qoq_percent": 28.4,
+          "operating_margin_percent": 10.4,
+          "previous_year_operating_margin_percent": 14.1,
+          "previous_quarter_operating_margin_percent": 9.4,
+          "net_profit": 7757,
+          "net_profit_yoy_percent": 4.3,
+          "net_profit_qoq_percent": 27.7,
+          "topup_tax": 1363
+        },
+        "subsidiary_balance_sheet": {
+          "date": "2026-09-30",
+          "comparison_date": "2025-12-31",
+          "currency": "THB",
+          "unit": "million",
+          "cash_and_equivalents": 8078,
+          "previous_cash_and_equivalents": 20328,
+          "receivables": 67507,
+          "previous_receivables": 45966,
+          "inventories": 68950,
+          "previous_inventories": 34731,
+          "inventory_change_percent": 98.5,
+          "trade_and_other_payables": 83574,
+          "previous_trade_and_other_payables": 45230
+        },
+        "subsidiary_management_explanation": "Data-center power and thermal demand support growth; two new Bangpoo buildings ramping since prior quarter increased deliveries, with substantial backlog still awaiting fulfillment. Material constraints eased but elevated inventory provisions/precautionary procurement, materials, freight/logistics, R&D and US duties affected conversion. SG&A includes higher royalty paid for Taiwan-parent technology. Customer mutual reimbursement arrangements cover specified duties; revenue recognition follows IFRS. Management expects challenges gradually ease nextquarter.",
+        "limits": "Do not repeat unverified27.5% or portray subsidiary grossmargin as falling sequentially: issuer27.3% versus26.8% improved. Subsidiary royalty payable to parent is not automatically incremental consolidated-group expense; eliminations and minor interests matter. Quarter netprofit includes taxes, FX, impairment and other income; no claim that AI-only margin declined or demand reversed. Inventory rise is nine-month stock comparison, not quarter flow; strategic procurement can explain it and no allinventoryobsolescence inference is made. Cash decline also reflects investing and dividends, not proof of operating-cash burn. Full parent cashflow and quantified marginbridge remain pending; no realized fullgroup FCF/ROIC calculated. Issuer has not authenticated reported broker old/new margin guidance."
+      },
+      "status": "subsidiary_primary_cost_and_inventory_verified_parent_results_reported_full_parent_cashflow_and_marginbridge_pending_no_article"
     }
   ],
   "articles": [],
