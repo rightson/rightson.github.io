@@ -8119,6 +8119,56 @@
         "rounding_and_limits": "Report uses rounded margins and approximate QoQchanges. Do not use rounded59%-57% as an exact2pp margin change; underlying full statements not obtained. Official monthly issuer totals differ from exchange baseline by TWD2thousand, so no exact quarterly recomputation from mixed tables. Operating cash flow, capex, free cash flow, realized new-product margins and contract protections unavailable. Growth may partly reflect prior low base and scale; no market-consensus forecast sample obtained."
       },
       "status": "original_report_verified_issuer_full_report_cash_and_contract_validation_pending_no_article"
+    },
+    {
+      "fingerprint": "elite-material-q3-2026-margin-profit-and-2027-2030-expansion-reported-results-20261028",
+      "companies": [
+        "Elite Material (2383)"
+      ],
+      "type": "original_report_of_quarterly_results_and_board_expansion",
+      "event_date": "2026-10-28",
+      "discovered_date": "2026-10-28",
+      "instruction_commit_sha": "efd7e45e87f323eb1b25524d8da98a359d5f4050",
+      "sources": [
+        "https://money.udn.com/money/story/5612/9842382",
+        "https://www.emctw.com/en-global/investors_news/index/1",
+        "https://www.emctw.com/zh-TW/financial_calendar/index"
+      ],
+      "facts": {
+        "source_nature": "Full original EconomicDaily report by Yin Hui-chung published October28 15:30:52 Asia/Taipei retrieved as publisher HTML. Financial and board-expansion figures below remain reported results. Issuer calendar confirms today'sQ3 release date, but retrieved issuer-news index and TWSE/TPEx daily-notice snapshots have not exposed new originalQ3financials. No originalQ3reviewed report/slide/cash-flow statement obtained.",
+        "baseline": "September/Q3revenue growth and October20M9/M10/capacity outlook were already recorded. Today's increment is reported margin/profit conversion and a further board-expansion program, not fresh monthly sales.",
+        "period": "2026-Q3",
+        "currency": "TWD",
+        "unit": "million unless EPS or percentages",
+        "reported_q3": {
+          "revenue": 60880,
+          "revenue_qoq_percent": 28.8,
+          "revenue_yoy_percent": 142,
+          "gross_margin_percent": 37.7,
+          "gross_margin_qoq_change_percentage_points": 3.8,
+          "gross_margin_yoy_change_percentage_points": 7.6,
+          "net_income": 14500,
+          "net_income_qoq_percent": 46.9,
+          "net_income_yoy_percent": 265.7,
+          "basic_eps": 40.46
+        },
+        "reported_transmission": "Article attributes strong high-end AI-material demand and full utilization to the quarter. Profit rising faster than revenue supports realized mix/operating-leverage conversion; product-specific ASP, AI-only margin, raw-material pass-through and customer allocations not separately disclosed.",
+        "reported_expansion": {
+          "period": "2027-2030",
+          "sites": [
+            "Taoyuan",
+            "Kunshan",
+            "Zhongshan",
+            "Huangshi",
+            "Penang"
+          ],
+          "additional_capacity_sheets": 9400000,
+          "total_after_completion_sheets": 15250000,
+          "basis_limit": "Article reports sheets of capacity without an explicit production-time denominator in the obtained text. No monthly/annual normalization or capacity-growth calculation performed. Planned capacity is not completed output, paid capex or guaranteed utilization."
+        },
+        "limits": "No operatingcashflow, capex, freecashflow or working-capital reconciliation obtained. No authenticated institution old/new EPS estimates or consensus sample establishes an earnings-forecast revision. Full utilization nextyear is management outlook. Productmix, pricing/costpass-through and capacity ramp may explain current profits; sustainability after competing capacity opens remains unverified."
+      },
+      "status": "original_report_verified_issuer_q3_financial_cashflow_and_capex_details_pending_no_article"
     }
   ],
   "articles": [],
