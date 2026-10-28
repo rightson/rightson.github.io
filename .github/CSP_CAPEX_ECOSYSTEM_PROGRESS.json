@@ -8445,6 +8445,70 @@
         "limits": "Do not repeat unverified27.5% or portray subsidiary grossmargin as falling sequentially: issuer27.3% versus26.8% improved. Subsidiary royalty payable to parent is not automatically incremental consolidated-group expense; eliminations and minor interests matter. Quarter netprofit includes taxes, FX, impairment and other income; no claim that AI-only margin declined or demand reversed. Inventory rise is nine-month stock comparison, not quarter flow; strategic procurement can explain it and no allinventoryobsolescence inference is made. Cash decline also reflects investing and dividends, not proof of operating-cash burn. Full parent cashflow and quantified marginbridge remain pending; no realized fullgroup FCF/ROIC calculated. Issuer has not authenticated reported broker old/new margin guidance."
       },
       "status": "subsidiary_primary_cost_and_inventory_verified_parent_results_reported_full_parent_cashflow_and_marginbridge_pending_no_article"
+    },
+    {
+      "fingerprint": "generac-q3-2026-data-center-backlog-ci-margin-and-cash-conversion-20261028",
+      "event_date": "2026-10-28",
+      "discovered_date": "2026-10-28",
+      "instruction_commit_sha": "d6491bb15e2823938386f73641d321a101271135",
+      "companies": [
+        "Generac Holdings (GNRC)",
+        "Amazon"
+      ],
+      "type": "issuer_quarterly_results_data_center_backlog_and_margin_guidance",
+      "sources": [
+        "https://investors.generac.com/news-releases/news-release-details/generac-reports-third-quarter-2026-results"
+      ],
+      "facts": {
+        "source_nature": "Full issuer October28 earnings release, financial statements, segment tables and non-GAAP reconciliation read. Unaudited figures for quarter endedSeptember30. Full call audio and underlying customer contracts not independently obtained.",
+        "universe_scope": "Generac is outside the current98active alpha-quant names. Backup generators for Amazon data centers and explicit global data-center revenue establish demand transmission. No watchlist change or increase in98-name validation counts.",
+        "baseline": "First sourced Generac baseline in this ledger. September Amazon agreement is historical, explicitly described as previously disclosed in current issuer release; not represented as a new October28 customer win. Today's incremental evidence is current aggregated data-center backlog, quarterly segment profit conversion, cashflow and revised margin-range lower bound.",
+        "data_center_backlog_usd_billion_approximately": 4.5,
+        "backlog_scope": "Company says Amazon agreement plus wins from new/existing customers. Not all Amazon, not revenue already recognized, and no obtained comparable previous backlog establishes an exact increase.",
+        "amazon_initial_deliveries": {
+          "expected_2027_2028_combined_usd_billion": 2.4,
+          "classification": "Management expected deliveries under previously disclosed supply agreement; not booked quarterly revenue, independently confirmed take-or-pay or newOctober28contract. Do not add2.4to4.5as separate demand."
+        },
+        "q3": {
+          "currency": "USD",
+          "unit": "million unless EPS/percent",
+          "net_sales": 1294.779,
+          "net_sales_yoy_percent_approximately": 16,
+          "gaap_parent_net_income": 109.224,
+          "previous_year_gaap_parent_net_income": 66.161,
+          "gaap_diluted_eps": 1.83,
+          "previous_year_gaap_diluted_eps": 1.12,
+          "adjusted_diluted_eps": 2.54,
+          "previous_year_adjusted_diluted_eps": 1.83,
+          "gross_margin_percent": 39.9,
+          "previous_year_gross_margin_percent": 38.3,
+          "ci_external_sales": 552.124,
+          "ci_total_sales": 552.989,
+          "previous_year_ci_total_sales": 432.432,
+          "ci_total_sales_yoy_percent_approximately": 28,
+          "ci_non_gaap_adjusted_ebitda": 69.292,
+          "previous_year_ci_adjusted_ebitda": 43.767,
+          "ci_adjusted_ebitda_margin_percent": 12.5,
+          "previous_year_ci_adjusted_ebitda_margin_percent": 10.1,
+          "ci_acquisitions_divestitures_fx_favorable_growth_effect_percent_approximately": 4,
+          "cash_from_operations": 170.989,
+          "previous_year_cash_from_operations": 118.378,
+          "pp_and_e_cash_expenditures": 39.25,
+          "previous_year_pp_and_e_cash_expenditures": 21.881,
+          "issuer_free_cash_flow": 131.739,
+          "previous_year_issuer_free_cash_flow": 96.497
+        },
+        "management_explanation": "C&I core growth primarily driven by ramping global data-center product revenue; segment margin expansion attributed to shipment operating leverage and acquisitions/divestitures. Consolidated grossmargin benefited from price/cost including lower tariffs, partially offset by unfavorable salesmix; residential rebound also important.",
+        "guidance_2026": {
+          "sales_growth": "Mid-to-high teens percent maintained",
+          "net_income_margin_before_nci_percent": "9.0–10.0 maintained",
+          "non_gaap_adjusted_ebitda_margin_before_nci_percent_new": "20.5–21.0",
+          "previous": "20.0–21.0",
+          "classification": "Raises lower bound0.5percentage point; upper bound unchanged. Not a realized future margin or authenticated consensus EPS revision."
+        },
+        "limits": "C&I covers more than data centers and consolidated cashflow includes residential; no AI-only grossmargin, FCF or future contractedprofit quantified. Backlog delivery timing beyond stated Amazon expectation, customer allocation, minimum purchases and cancellation protections undisclosed. Issuer explicitly flags data-center cancellation rights, delivery requirements and performance liability. Expansion requires equipment/labor/capital and could delay fulfillment. Historical Amazon agreement is not new; do not label an8b warrant-payment threshold a confirmed purchase commitment. No underlying September8K/warrant terms independently checked thisrun. Current company release not an independently audited report."
+      },
+      "status": "issuer_results_backlog_segment_margin_cash_and_guidance_verified_out_of_universe_candidate_no_article"
     }
   ],
   "articles": [],
