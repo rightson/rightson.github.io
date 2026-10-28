@@ -7988,6 +7988,52 @@
         "limits": "Release and presentation financial totals rounded. Full quarterly cash-flow working-capital reconciliation, detailed capacity return, customer contracts and Q4 call Q&A not verified. Strong reported profit does not establish corresponding cash conversion. No new numerical Q4 guidance or market-consensus revision authenticated."
       },
       "status": "primary_financial_and_cash_conversion_baseline_verified_no_article"
+    },
+    {
+      "fingerprint": "sk-hynix-q3-2026-csp-lta-capacity-price-range-and-hbm4-ramp-20261028",
+      "companies": [
+        "SK hynix"
+      ],
+      "type": "issuer_preliminary_quarterly_financials_and_lta_disclosure",
+      "event_date": "2026-10-28",
+      "discovered_date": "2026-10-28",
+      "instruction_commit_sha": "f34f52a156c5f918b00031977fefc55260b21801",
+      "sources": [
+        "https://news.skhynix.com/en/q3-2026-business-results/"
+      ],
+      "facts": {
+        "source_nature": "Official issuer October28 preliminary consolidated K-IFRS earnings release. Full release and financial table read; independent review not finalized. No signed customer contracts, earnings-call audio or full financial-report audit claimed.",
+        "currency": "KRW",
+        "unit": "billion except ratios and explicit descriptions",
+        "q3": {
+          "revenue": 104615.5,
+          "operating_profit": 83333.8,
+          "operating_margin_rounded_percent": 80,
+          "net_income": 39775.6
+        },
+        "q2": {
+          "revenue": 79318.7,
+          "operating_profit": 60542.6,
+          "operating_margin_rounded_percent": 76,
+          "net_income": 93922.6
+        },
+        "reported_qoq_percent": {
+          "revenue": 32,
+          "operating_profit": 38,
+          "net_income": -58
+        },
+        "lta": {
+          "signed_customer_count": 14,
+          "customer_scope": "Major customers including leading global CSPs; individual customer allocations not named.",
+          "capacity_coverage": "Secured volume exceeds50% of total2027and2028 production capacity; not represented as100% orallHBMcapacity.",
+          "pricing": "Mechanism reflects market conditions within a price range agreed with customers. Actual boundaries, floors, quantities byproduct, prepayments and cancellation remedies not disclosed.",
+          "duration": "Terms typically five years; extensions under discussion, notallcontractsnewlyextended."
+        },
+        "product_and_capacity": "Issuer reports serverDDR5 and321-layerTLCeSSD sales growth, HBM4 shipments ramping. Expects HBM4 volume and revenue to exceed HBM3E inQ4, M15X maximum-capacity ramp byyearend; forecasts significantly higher2027 investment with YonginPhase1 and infrastructure. Expectations are not completed output.",
+        "capital_allocation": "Company discontinued SolidigmIPO review after considering financial marketconditions. ApproximatelyKRW100trillion2026 shareholderreturn plan includes priorAugust repurchase and Kioxia investmentgain returns; notallincremental orrecurring operatingcashflow. Employeecompensation repurchases excluded fromreturntotal.",
+        "limits": "No contractfulltext orindependent review finalized. Shortagethrough2030 ismanagementforecast. Cashbalanceincrease isnotoperatingcashflow. Decliningsequentialnetincome not equated withoperatingdeterioration withoutnonoperating reconciliation. NoTaiwan supplierorderallocation, marketconsensusrevision orpermanent80%marginestablished."
+      },
+      "status": "official_preliminary_results_and_contract_coverage_verified_no_article"
     }
   ],
   "articles": [],
