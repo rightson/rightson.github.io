@@ -255,3 +255,22 @@
 - 去重與覆蓋範圍：SiliCAD EDA_MCP 10 月 25 日起的可見變更仍是已登錄的大型 SKILL／SCP、固定目錄、history expansion 及既有 optional argument 修正；AMBU-CovAgent 與 NeMo Gym CVDP 指定路徑無新提交；Konnect-EDA releases 仍空。Cadence 10 月 27 日 podcast 導讀重述既有 Level-5／40× 宣稱，未提供新的受控實驗；沒有宣稱已聽完節目。fJscaler 的 EIC／PIC 共設計案例未揭露 agent 閉環，留在相鄰平台線，不因標示 AI 就列為新 Agentic 能力。arXiv cs.AR recent、Synopsys 與廠商／論文搜尋已查核；Whole-Route Planning 與 PaFeDSE 摘要呈現確定性／ML 最佳化，未據此當作 agent 系統。索引與指定路徑查詢不是全市場或完整客戶部署稽核。
 
 - 本次採對話短報與 roadmap 更新，不建立公開短評：IC-star 提供架構方向與具名引文，但缺可比較的固定版本結果；授權明示則直接改變企業重現的可行條件，尚不構成另一篇完整技術論證。未執行新 LLM／EDA／PDK 實驗，未進行文章 lint、build、deploy 或正式頁驗證。AD004／AD005 歷史完成狀態及其餘候選狀態保留。
+
+
+## 2026-10-29 雷達查核與接續
+
+- instruction commit：`38801d8432cf59719d5aa99d42b855f4a8c95e36`；研究識別 `agentic-design-radar｜2026-10-29`，事件識別 `analogscout-elite-reuse-analytic-gmid-full-pvt-signoff-gap-20261027`。同一 commit 的 AGENTS、共用／指定主題、分類、series、完整 roadmap 與 BTTF、AD004、AD005 近期成果已完整讀取；本次只追加一項新研究證據，不設定或改動 scheduler。
+
+- [Yichen Long／復旦大學等人的 AnalogScout 預印本](https://arxiv.org/abs/2610.37319v1)原始提交時間為 **2026-10-27 14:33:02 UTC**，10 月 28 日列入 cs.AR recent；日期以 v1 submission 為準。系統輸入 topology、起始 sizes、specifications、PDK 與 simulation budget，由 LLM agent 編輯 Python netlist、從三個最佳可行設計的 elite pool 接續探索，並以 exact-source cache 避免重跑；開發紀錄中 15.5% evaluation requests 與既有 source 完全相同。agent 可為 sub-block 指定 gm/Id、長度與 gm floor，固定 evaluator 以 lookup table 和每 block 至多三次 operating-point simulations 解出合法 geometry，再跑九個 PVT corners；evaluator 不允許由 agent 修改。
+
+- 作者在三個 SKY130 OTA 上為每種方法配置 **16,000 次 SPICE simulations**，以 seeds 1–3 開發方法、seeds 4–8 作 confirmation，每個 OTA 五次搜索；AnalogScout 使用 deepseek-flash，Phase-Explore 為 60 runs、每 run 最多 30 steps。作者自報相對相同預算的 CMA-ES，三個 OTA 平均功耗降低 **43.3%**，並在 **694–1,124 次 simulations**、約 7.0% 預算時追平 CMA-ES 最終功耗；三個 OTA 也都低於 BO。這是作者受控 open-PDK simulation benchmark，不是 silicon、客戶 production flow 或獨立重現。
+
+- 消融顯示主要效率來自重用可行設計，而非每個新組件都同樣貢獻功耗。elite pool 在 8k simulations 下相對 fresh starts 降低 18.1% power；Phase-Localize 只把 4.3% simulations 花在 sizing，simulation-driven local optimizer 為 85.3–96.3%，因此同預算約評估 12× designs。但 Phase-Localize 相對從同一批設計重啟 global search 的功耗差異不顯著（p=0.645）；Phase-Restructure 不改變 median power，Phase-Refine 最多再降低 2.4%。因此新增機制的可採信增量是 simulation budget 分配與可行設計重用，不能把所有 phase 都解讀成已證明的品質改善。
+
+- 最終可交付率仍顯著低於 loop 內的 full-PVT-feasible 數字。獨立 scripts 重測 156 個 reference cases 時有 **46 個失敗**；其中 AnalogScout 29/111、CMA-ES 3/12、BO 2/11、兩個 LLM baselines 合計 14/31。40 個失敗只差全角落 50 mV saturation margin，其餘 6 個 specification miss 不超過 0.5%。三個 SKY130 最佳設計中，只有 Miller OTA 完成作者定義的 sign-off；folded-cascode 未通過 re-measurement 且 mismatch yield 為 **91.4%**（目標 95%），NMC 在一個 corner 的 170 ns settling 規格差 **0.15%**。GF180 Miller 的 99.8% mismatch yield 是單一 topology 的 test-only PDK 結果。
+
+- 相對 AD005，本次新增的是「重用已驗證候選＋解析式 local sizing」如何減少昂貴的多角落 simulations；同時也提供一個新的 acceptance funnel 反例：loop 內可行、獨立重測與最終 Monte Carlo／corner sign-off 是不同分母。後續 AD005／AD007 應分別保存每 phase 的 simulation budget、候選 lineage、獨立 re-measurement 與最終 accepted-artifact 數，再比較 CMA-ES、BO、LLM-only 與混合方法的 power／tool-hours。還需測未見過 topology、更多 PDK、all-corner saturation 進入 loop 後的成本，以及 elite／lessons 是否對固定 seeds 過度擬合。
+
+- 論文明列 code 與 open-PDK data 將來才釋出；本次未取得固定 repository commit、完整 netlists、testbenches、raw runs 或全部 reference scripts，也未執行 ngspice、LLM 或 PDK 重跑。成熟度記為 **研究預印本／作者自報 open-PDK simulation**；沒有 silicon measurement、第三方重現或商用流程部署。SiliCAD EDA_MCP、Konnect-EDA、AMBU-CovAgent、SpiceXplorer release 與 NeMo Gym CVDP 自前次窗口後未見新提交，Konnect-EDA releases 仍空；NeMo Gym 10 月 28 日可見變更只涉及 SWE-Together transport 與通用 equivalence-judge budget，未含具名 EDA task／result，不外推為設計流程成果。
+
+- 本次採對話短報與 roadmap 更新，不建立公開文章：AnalogScout 足以更新 AD005／AD007 的 simulation-efficiency 與最終接受分母，但公開材料仍是五頁 preprint，程式與資料尚未釋出，另發短評會與最新 AD005 主線高度重疊。未執行新 LLM／EDA／PDK 實驗，未做文章 lint、build、deploy 或正式頁驗證；AD004／AD005 歷史完成狀態及其餘候選狀態保留。
