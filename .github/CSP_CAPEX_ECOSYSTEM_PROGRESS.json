@@ -8169,6 +8169,79 @@
         "limits": "No operatingcashflow, capex, freecashflow or working-capital reconciliation obtained. No authenticated institution old/new EPS estimates or consensus sample establishes an earnings-forecast revision. Full utilization nextyear is management outlook. Productmix, pricing/costpass-through and capacity ramp may explain current profits; sustainability after competing capacity opens remains unverified."
       },
       "status": "original_report_verified_issuer_q3_financial_cashflow_and_capex_details_pending_no_article"
+    },
+    {
+      "fingerprint": "umc-q3-2026-silicon-photonics-advanced-packaging-capacity-conversion-and-expansion-budget-20261028",
+      "companies": [
+        "United Microelectronics (2303; UMC)"
+      ],
+      "type": "issuer_quarterly_results_capacity_conversion_and_board_budget",
+      "event_date": "2026-10-28",
+      "discovered_date": "2026-10-28",
+      "instruction_commit_sha": "6db05a8f43d36bb1fa779845906d8adefe306836",
+      "sources": [
+        "https://www.umc.com/en/Download/quarterly_results/QuarterlyResultsDetail/2026/2026Q3",
+        "https://www.umc.com/upload/media/08_Investors/Financials/Quarterly_Results/Quarterly_2020-2029_English_pdf/2026/Q3_2026/UMC26Q3_report.pdf",
+        "https://www.umc.com/upload/media/08_Investors/Financials/Quarterly_Results/Quarterly_2020-2029_English_pdf/2026/Q3_2026/UMC26Q3_financial_presentation-E.pdf",
+        "https://www.umc.com/upload/media/08_Investors/Financials/Quarterly_Results/Quarterly_2020-2029_English_pdf/2026/Q3_2026/UMC26Q3_financial_statements-E.pdf",
+        "https://www.umc.com/zh-TW/News/press_release/Content/investor/20260729"
+      ],
+      "facts": {
+        "source_nature": "Issuer October28 Q3 results package, including 12-page report, presentation and condensed financial statements. Management business outlook and board budget are distinguished from realized results.",
+        "baseline": "July29 issuer statement already disclosed first 12-inch silicon-photonics production-wafer delivery, phased Singapore P4/Tainan expansion and 2026 cash-capex guidance of USD2.0 billion. Those milestones are not new October28 achievements.",
+        "period": "2026-Q3",
+        "currency": "TWD",
+        "unit": "million unless stated otherwise",
+        "reported_q3": {
+          "revenue": 74239,
+          "revenue_qoq_percent": 8,
+          "gross_margin_percent": 34,
+          "previous_quarter_gross_margin_percent": 32.5,
+          "operating_income": 18643,
+          "operating_income_qoq_percent": 24.7,
+          "operating_margin_percent": 25.1,
+          "parent_net_income": 16434,
+          "parent_net_income_qoq_percent": -61.1,
+          "basic_eps": 1.32,
+          "previous_quarter_basic_eps": 3.39,
+          "nonoperating_income": 1268,
+          "previous_quarter_nonoperating_income": 30236,
+          "net_investment_gain": 1159,
+          "previous_quarter_net_investment_gain": 30045,
+          "utilization_percent": 92,
+          "previous_quarter_utilization_percent": 85,
+          "wafer_shipments_thousand_12inch_equivalents": 1212,
+          "wafer_shipments_qoq_percent": 7.3,
+          "nm22_share_percent": 18.3,
+          "nm22_28_combined_share_percent": 35,
+          "previous_quarter_nm22_28_combined_share_percent": 37,
+          "cash_from_operations": 30016,
+          "previous_quarter_cash_from_operations": 33698,
+          "issuer_reported_capital_expenditures": 11930,
+          "issuer_reported_free_cash_flow": 18090,
+          "cash_pp_and_e_acquisition": 11260,
+          "cash_intangible_acquisition": 790,
+          "cash_flow_definition_limit": "Reported free cash flow uses the issuer capex definition in the narrative; cash-flow-statement PP&E and intangible acquisitions are separately disclosed and not silently substituted."
+        },
+        "management_capacity_statement": "Significant demand increase for advanced packaging and silicon photonics; converting some existing capacity to address near-term unfulfilled demand. Existing-project ramp and new tape-outs expected to add growth over coming quarters. No segment-specific volume, revenue, margin or named CSP purchase commitment quantified.",
+        "board_budget": {
+          "additional_approved_budget_usd_billion": 3.2,
+          "purpose": "Accelerate Singapore and Tainan expansion schedule while aligning product roadmaps with customers",
+          "annual_payment_schedule": "Not specified in obtained report; approval is not cash already spent",
+          "cash_capex_2026_guidance_usd_billion": 2,
+          "cash_capex_q3_usd_million": 373,
+          "classification": "Additional project authorization and unchanged 2026 cash-based capex guidance are separate measures; not summed into a USD5.2 billion 2026 spending claim."
+        },
+        "q4_management_guidance": {
+          "wafer_shipments": "Low-single-digit sequential increase",
+          "asp_usd": "Remain firm",
+          "gross_margin": "Comparable to preceding quarter",
+          "utilization": "Low-90% range",
+          "cash_capex_2026_usd_billion": 2
+        },
+        "limits": "Demand recovery spans multiple end markets. Consolidated operating leverage cannot be attributed wholly to AI/SiPh/packaging. New capacity conversion is disclosed by management, not independently measured wafer output. No signed customer allocation, segment cash flow, achieved expansion ROIC or institution forecast revision established."
+      },
+      "status": "issuer_primary_results_and_capacity_statement_verified_ledger_only_no_article"
     }
   ],
   "articles": [],
