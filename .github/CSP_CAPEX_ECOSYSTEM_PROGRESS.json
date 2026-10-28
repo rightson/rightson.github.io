@@ -8034,6 +8034,48 @@
         "limits": "No contractfulltext orindependent review finalized. Shortagethrough2030 ismanagementforecast. Cashbalanceincrease isnotoperatingcashflow. Decliningsequentialnetincome not equated withoperatingdeterioration withoutnonoperating reconciliation. NoTaiwan supplierorderallocation, marketconsensusrevision orpermanent80%marginestablished."
       },
       "status": "official_preliminary_results_and_contract_coverage_verified_no_article"
+    },
+    {
+      "fingerprint": "chpt-2027-revenue-growth-outlook-and-tpu-test-board-commercialization-reported-call-20261028",
+      "companies": [
+        "Chunghwa Precision Test Tech (6510)"
+      ],
+      "type": "reported_management_call_outlook_and_product_revenue_supplement",
+      "event_date": "2026-10-28",
+      "discovered_date": "2026-10-28",
+      "instruction_commit_sha": "bc82e69361b66bde07849164c99efbacaff067b0",
+      "sources": [
+        "https://www.mirrordaily.news/story/94302",
+        "https://www.cht-pt.com.tw/xccompdoc?xsmsid=0G328557247962808262",
+        "https://www.cht-pt.com.tw/files/file_pool/1/0Q300668627103599361/%E3%80%90%E6%A9%9F%E5%AF%86%E3%80%9126Q3%20%E6%B3%95%E8%AA%AA%E6%9C%83_CN.pdf",
+        "https://ec.ltn.com.tw/article/breakingnews/5560544"
+      ],
+      "facts": {
+        "source_nature": "October28 14:58 MirrorDaily original bylined report by Hsieh Cheng-hsueh read in full from publisher HTML. It attributes numerical outlook and product statements to general manager Huang Shui-ko at today's 14:30 call. Issuer-linked21-page presentation separately read. Original call audio/Q&A and contracts not independently authenticated.",
+        "outlook": {
+          "period": "2027",
+          "revenue_growth": "Management reportedly sees opportunity for close to50% year-over-year revenue growth based on currently understood orders.",
+          "eps": "Management reportedly expects EPS growth to exceed revenue growth as scale increases; no numerical EPS target disclosed.",
+          "comparison": "Prior September2 management commentary already expected2027 growth to exceed2026 and planned capacity expansion. This report supplies a numerical growth expectation; no authenticated prior numerical2027 forecast or consensus sample establishes an upward forecast revision."
+        },
+        "product_conversion": "Reporter attributes Q3 IC-test-board share expansion to GPU/ASIC test boards plus TPU high-power burn-in and system-level-test boards beginning revenue contribution. Customer identities, board-level sales, margins and contract terms undisclosed. Attribution is reported management commentary, not independent end-customer confirmation.",
+        "presentation_cross_check": {
+          "period": "2026-Q3 versus2026-Q2",
+          "hpc_revenue_share_percent": {
+            "q3": 65.9,
+            "q2": 56.3,
+            "prior_year_q3": 31.2
+          },
+          "ic_test_board_revenue_share_percent": {
+            "q3": 28,
+            "q2": 18
+          },
+          "ytd_hpc_revenue_share_percent": 57,
+          "scope": "Issuer slide10/11 independently supports product/application shares; these were already publicly available before the call and are supplementary context, not a new post-call financial release. HPC is broader than AI."
+        },
+        "limits": "Forecast is not completed revenue, committed product allocation or guaranteed EPS. Report has no explanation resolving previously recorded Q3 operating-cash-flow/net-income divergence. No verified new cash-flow guidance, market-consensus revision or signed customer contracts."
+      },
+      "status": "reported_numerical_outlook_and_product_attribution_recorded_primary_audio_pending_no_article"
     }
   ],
   "articles": [],
