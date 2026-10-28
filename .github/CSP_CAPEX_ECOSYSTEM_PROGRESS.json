@@ -9166,6 +9166,87 @@
         "supplier_limits": "NoTPUsystemgeneration/customerquantities,MediaTek/Broadcom/Marvellallocation,NRE,newdesignwin,foundry/packagingawardorTPU-onlymarginauthenticated.ExternalhardwaregrowthnotmappedtoanyspecificTaiwanearningsrevision."
       },
       "status": "original_SEC_exhibit_full_body_and_financial_tables_verified_ledger_only_no_article"
+    },
+    {
+      "fingerprint": "elite-material-board-capex-986yi-and-syndicated-credit-350yi-primary-20261028",
+      "event_date": "2026-10-28",
+      "discovered_date": "2026-10-29",
+      "instruction_commit_sha": "222b67fb0a4cc8449848113146111375193e7d0d",
+      "companies": [
+        "Elite Material / 台光電 2383"
+      ],
+      "type": "primary_board_capital_budget_and_credit_framework",
+      "sources": [
+        "https://mops.twse.com.tw/mops/#/web/t05st01",
+        "https://www.twse.com.tw/zh/announcement/notice.html"
+      ],
+      "facts": {
+        "source_authentication": "Original TWSE t187ap04_L table newly refreshed to160notices,output1151029,issuerdates1151028. Fullissuer2383statements at15:16:22,17:25:42,and17:26:14AsiaTaipei read. Reproductions corroborate but do not constitute independent economic evidence.",
+        "baseline_fingerprint": "elite-material-q3-2026-margin-profit-and-2027-2030-expansion-reported-results-20261028",
+        "increment": "Earlier originalreport established quarterlyprofit/margin and plannedcapacity; this increment authenticates board investment amounts and separately identifies syndicatedcredit terms. No repeat quarterly-profit alert.",
+        "capital_budget": {
+          "currency": "TWD",
+          "total_100million": 986,
+          "components": [
+            {
+              "entity": "Taiwan parent",
+              "currency": "TWD",
+              "amount_100million": 14
+            },
+            {
+              "entity": "Zhongshan",
+              "currency": "CNY",
+              "amount_100million": 90
+            },
+            {
+              "entity": "Kunshan",
+              "currency": "CNY",
+              "amount_100million": 49
+            },
+            {
+              "entity": "Huangshi",
+              "currency": "CNY",
+              "amount_100million": 11
+            },
+            {
+              "entity": "Penang",
+              "currency": "MYR",
+              "amount_100million": 33
+            }
+          ],
+          "timing": "Successiveinvestmentfollowingboardapproval; originalnoticeprovidesnofixedannualcashschedule",
+          "funding": "Ownfundsorbankfinancing",
+          "purpose": "Factoryexpansion"
+        },
+        "syndicated_credit": {
+          "currency": "TWD",
+          "proposed_limit_100million": 350,
+          "possible_total_adjustment_percent": 20,
+          "final_limit": "Determinedatsigning",
+          "term": "Fiveyearsfromfirstdrawdown",
+          "purpose": "Workingcapital",
+          "banks": [
+            "BankofTaiwan",
+            "FirstCommercialBank",
+            "TaipeiFubonBank"
+          ],
+          "stage": "Boardapprovedentryintoagreement;notverifiedsignedfacilityordrawdown"
+        },
+        "nine_month_statement": {
+          "currency": "TWD",
+          "unit": "thousand",
+          "revenue": 141226994,
+          "gross_profit": 48682931,
+          "operating_profit": 38548717,
+          "attributable_net_profit": 29713011,
+          "total_assets": 193742980,
+          "total_liabilities": 120298788,
+          "attributable_equity": 73468253,
+          "basic_EPS_TWD": 82.92
+        },
+        "limits": "Capitalbudgetisnotpaidcapexorone-yearguidance; creditlimitnotcashreceivedandnotautomaticallyearmarkedforfactoryinvestment. Do notadd986and350orcalculatefundinggapfromthem. Subsidiaryloan/investmentnoticescanoverlapgroupfunding. Nooriginalquarterlycashflow,utilizationguarantee,customerallocation,pricingcontractorROIverified; reviewedfullfinancialreportnotobtained."
+      },
+      "status": "primary_exchange_full_notice_verified_ledger_only_no_article"
     }
   ],
   "articles": [],
@@ -20971,6 +21052,28 @@
         "new_event_fingerprints": [
           "alphabet-q3-2026-tpu-system-sales-cloud-profit-and-negative-fcf-primary-20261028"
         ]
+      },
+      {
+        "date": "2026-10-29",
+        "instruction_commit_sha": "222b67fb0a4cc8449848113146111375193e7d0d",
+        "company_count": 98,
+        "grouped_query_count": 7,
+        "universe_commit_sha": "0f18d6e38b50208ba69df8281c60ef0d2dd84bb8",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "status": "new_primary_board_capital_and_credit_terms_selected_notice_validation",
+        "scope": "All98activeuniverseincludedin7groupedsearches;not98individualcurrentfinancialaudits. Freshfullrequiredsamecommitbodiesretrieved;emptylargeprogresscontentsrecoveredwithcompleteblob.",
+        "source_results": [
+          "TWSEbatchnew160rowsdatedOctober29,issuerOctober28;46rowsmatch12activecompanies,headingsscreenedandselectedeconomicnoticesread. TPEx60rowsunchanged;noabsence-of-newsinference.",
+          "TSMCdatednewsunchangedOctober15;MediaTekpressroomdatedreleasesunchangedSeptember30. NoauthenticatednewTPU,NREorGoogleallocation.",
+          "NVIDIAnewOctober28earnings-calendarnoticeisnotneweconomics;AMDcosmeticHTMLandMarvellunchanged;Broadcom404supplementedtargetedsearch.",
+          "Microsoftquarterlyreleaseaccessrestored;priorfinancialeventdeduplicated. Currentcallpagehasnoobtainedtranscript;noextrapolationfromJulyFY26Q4remarks.",
+          "Alphabet/Meta/AmazonIR403;GooglecurrentCEOremarksdiscovered,priorquarterlyeventdeduplicated;MetaOctober21SECresultsold. AWSofficialpressarchivechecked,noquantifiednewhardwareorderincrement.OracleIR195bytebodyinsufficient;priorInvestorDayframeworkdeduplicated.",
+          "OriginalTaiwanboardnoticeprovides986yiTWDcapitalbudgetand350yiTWDworkingcapitalfacilityframework;paidcashandROIunverified."
+        ],
+        "new_event_fingerprints": [
+          "elite-material-board-capex-986yi-and-syndicated-credit-350yi-primary-20261028"
+        ],
+        "publication_stage": "Publicfactsledgeronly;noarticle,quotes,valuations,fundflows,holdingsorBanalysis"
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -31691,7 +31794,7 @@
     }
   ],
   "last_research_date": "2026-10-29",
-  "instruction_commit_sha": "deb60aa1d16a77bdda88970289bf304614b5d954",
+  "instruction_commit_sha": "222b67fb0a4cc8449848113146111375193e7d0d",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
