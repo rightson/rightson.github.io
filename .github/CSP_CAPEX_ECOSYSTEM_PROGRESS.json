@@ -8793,6 +8793,128 @@
         "capital_and_limits": "Q3 and prior EPS/share data already reflect September2026 two-for-one split. Organic growth excludes acquisitions/FX; total sales growth not all organic or AI. Communications segment spans more than AI data centers. Cashflow remains positive after capex but working-capital use increased; FCF excludes acquisition purchase prices, includingUSD11.056bn nine-month acquisitions net of cash acquired. Pending approximatelyUSD1.6bn combined four-deal program includes one closed company and three conditional deals serving multiple endmarkets; not all AI acquisitions. No guaranteed durable margin, independent customer contract or institutional forecast authenticated."
       },
       "status": "issuer_body_and_selected_financial_tables_verified_out_of_universe_candidate_no_article"
+    },
+    {
+      "fingerprint": "flex-fy2027-q2-profit-guidance-revision-and-free-cashflow-divergence-20261028",
+      "event_date": "2026-10-28",
+      "discovered_date": "2026-10-29",
+      "instruction_commit_sha": "ef0f651408dee5d2b02d99e264b92d9e3a4131d6",
+      "companies": [
+        "Flex (FLEX)",
+        "Cloud and Power Infrastructure / planned Axiom",
+        "EPC Power"
+      ],
+      "type": "issuer_quarterly_financial_results_and_full_year_guidance_revision",
+      "sources": [
+        "https://investors.flex.com/news/news-details/2026/FLEX-REPORTS-SECOND-QUARTER-FISCAL-2027-RESULTS/default.aspx"
+      ],
+      "facts": {
+        "source_nature": "Issuer October28 release body, financial statements, non-GAAP reconciliations, guidance table and relevant ScheduleV notes read via webreader. Direct localHTTP403; webreader returned684lines. Unaudited quarter endedSeptember25,2026. Full earnings-call recording, underlying customer contracts and independent audited currentquarter report not obtained.",
+        "baseline": "Prior public event recordedOctober14EPCPoweracquisitionclose,borrowings and conditionalpreferredfinancing. This is a separate companywide financial-result/guidance increment; not another acquisition-close announcement or verification that conditionalpreferredinvestment hasclosed.",
+        "universe_scope": "Outside98active Taiwan names; issuer explicitly links data-centerdeployment to power,heat andscalableITinfrastructure. No watchlist edit, named Taiwan supplier allocation orAI-onlycashflow attribution.",
+        "fiscal_period": "FY2027Q2 ended2026-09-25; not calendar2026Q2",
+        "q2": {
+          "currency": "USD",
+          "unit": "million unless EPS/percent",
+          "net_sales": 8491,
+          "previous_year_net_sales": 6804,
+          "reported_sales_yoy_percent": 25,
+          "gaap_operating_income": 414,
+          "previous_year_gaap_operating_income": 296,
+          "gaap_operating_margin_percent": 4.9,
+          "previous_year_gaap_operating_margin_percent": 4.4,
+          "adjusted_operating_income": 607,
+          "previous_year_adjusted_operating_income": 409,
+          "adjusted_operating_margin_percent": 7.1,
+          "previous_year_adjusted_operating_margin_percent": 6,
+          "gaap_net_income": 263,
+          "previous_year_gaap_net_income": 199,
+          "gaap_eps": 0.7,
+          "previous_year_gaap_eps": 0.52,
+          "adjusted_eps": 1.18,
+          "previous_year_adjusted_eps": 0.79,
+          "cash_from_operations": 501,
+          "previous_year_cash_from_operations": 453,
+          "ppe_purchases": 241,
+          "previous_year_ppe_purchases": 150,
+          "ppe_disposal_proceeds": 1,
+          "previous_year_ppe_disposal_proceeds": 2,
+          "issuer_free_cashflow": 261,
+          "previous_year_issuer_free_cashflow": 305,
+          "spinoff_separation_cost_cash_burden": 61,
+          "legal_and_other_nongaap_operating_adjustment": 110,
+          "legal_and_other_adjustment_components": "approximately91separation and19acquisition-related costs; accountingexpense not same as61cashoutflow"
+        },
+        "six_month_cashflow": {
+          "currency": "USD",
+          "unit": "million",
+          "operating_cashflow": 777,
+          "previous_year": 852,
+          "issuer_free_cashflow": 302,
+          "previous_year_free_cashflow": 573,
+          "spinoff_separation_cost_cash_burden": 85,
+          "limits": "Quartercashflow remainspositive butlowerFCFreflectshighercapex andseparationcosts; sixmonthcashflowalsolower. No claim that weakerFCFalone establishescoreAIdemanddecline orunadjustedcashqualityimprovement."
+        },
+        "FY2027_guidance": {
+          "sales_USD_billion_prior": [
+            33.7,
+            35.2
+          ],
+          "sales_new": [
+            34.9,
+            35.9
+          ],
+          "adjusted_operating_margin_percent_prior": [
+            7,
+            7.2
+          ],
+          "adjusted_operating_margin_new": [
+            7.6,
+            7.8
+          ],
+          "adjusted_eps_prior": [
+            4.42,
+            4.74
+          ],
+          "adjusted_eps_new": [
+            4.84,
+            5.16
+          ],
+          "CPI_sales_growth_percent_current": [
+            75,
+            85
+          ],
+          "CPI_adjusted_operating_margin_percent": [
+            11.5,
+            11.7
+          ],
+          "RMS_ITS_sales_growth_percent": [
+            8,
+            11
+          ],
+          "RMS_ITS_adjusted_margin_percent": [
+            5.9,
+            6.1
+          ],
+          "scope": "Issuer footnote includes recentacquisitions closedafterSeptember25,includingEPCPower; fullfiscalyear outlook doesnotgiveeffecttoplannedCPIspin-off. Growthnotallorganic; no authenticatedpreviousCPIgrowthrangeorconsensusforecastrevisionclaimed."
+        },
+        "q3_guidance": {
+          "sales_USD_billion": [
+            8.87,
+            9.17
+          ],
+          "adjusted_operating_income_USD_million": [
+            685,
+            715
+          ],
+          "adjusted_eps": [
+            1.19,
+            1.25
+          ]
+        },
+        "limits": "Axiom separationremainsplanned andsubjecttoapprovals; projectedbenefits,costs,timing andcustomerrelationshipsuncertain. September25quarterendedbeforeOctober14EPCclose,sohistoricalquarterearningscannotattributecontributiontoEPC. Growthincapacity,workingcapital andacquisitionfinancingcanabsorbprofit; FCFexcludesacquisitionpurchaseprice. CompanywidequarterresultsnotCPI-onlyAIearnings. No full segment-quarterprofit bridge ororiginalinstitutionconsensusverified. Do not reannounce alreadyrecordeddebt asnewfinancing."
+      },
+      "status": "issuer_release_body_guidance_and_selected_financial_tables_verified_ledger_only_no_article"
     }
   ],
   "articles": [],
@@ -20523,6 +20645,23 @@
           "IssuerVertiv/AmphenolHTML andGEVten-page release/40page10Q obtained; only releasebody and selected relevant financial/contract/cashflowsections verified. Fullcallaudio notverified. Newcompanies outside98,not added towatchlist orprimarycoveragecounts."
         ],
         "publication_stage": "Three factual publiceventrecords only; no newarticle. Quotes,valuation,holdings andprivatejudgments excluded."
+      },
+      {
+        "date": "2026-10-29",
+        "instruction_commit_sha": "ef0f651408dee5d2b02d99e264b92d9e3a4131d6",
+        "status": "one_new_issuer_financial_increment_full_universe_grouped_discovery_partial_primary_coverage",
+        "universe_commit_sha": "0f18d6e38b50208ba69df8281c60ef0d2dd84bb8",
+        "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+        "active_count": 98,
+        "grouped_query_count": 7,
+        "increment_fingerprint": "flex-fy2027-q2-profit-guidance-revision-and-free-cashflow-divergence-20261028",
+        "limits": [
+          "98namesincludedingroupedqueries,not98individualfilingorfinancialaudits.",
+          "TWSEmajorannouncement503; TPEx60rowsunchangedversuspriorrun. Officialcalendarretrieved.",
+          "TSMCindexOctober15 andMediaTekSeptember30latest; noauthenticatednewTPUallocation/designwin/NREterms.",
+          "NVIDIA/AMD/Marvellindicesunchanged; Broadcomnavigationonly; Alphabet/Meta/AmazonIRunchangeddynamicrowsinsufficient; MicrosoftHTTP403butwebreaderupcomingearnings; Oracledirect195bytesinsufficient.",
+          "No quotes,privatevaluations,holdings,fundflowsorprivateinvestmentjudgments included. Noarticle."
+        ]
       }
     ],
     "primary_product_platform_company_fact_checked_count": 16,
@@ -31243,7 +31382,7 @@
     }
   ],
   "last_research_date": "2026-10-29",
-  "instruction_commit_sha": "c2f9d0b8851ca08e0a421312f9951e70f0e0b176",
+  "instruction_commit_sha": "ef0f651408dee5d2b02d99e264b92d9e3a4131d6",
   "csp_baseline": {
     "status": "partial",
     "verified_sources": [
