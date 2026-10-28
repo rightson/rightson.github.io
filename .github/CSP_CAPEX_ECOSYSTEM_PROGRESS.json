@@ -11,6 +11,127 @@
   ],
   "public_events": [
     {
+      "fingerprint": "equinix-q3-2026-bookings-affo-guidance-and-expansion-cash-divergence-20261028",
+      "event_date": "2026-10-28",
+      "discovered_date": "2026-10-29",
+      "instruction_commit_sha": "bec8ce4d36f3870eddf507523a614e4959ef729d",
+      "companies": [
+        "Equinix (EQIX)"
+      ],
+      "type": "issuer_quarterly_results_bookings_affo_guidance_and_cashflow",
+      "sources": [
+        "https://newsroom.equinix.com/2026-10-28-Equinix-Reports-Third-Quarter-Results-and-Raises-2026-Guidance"
+      ],
+      "facts": {
+        "source_authentication": "Issuer October28 release body,guidance table,selected income/cashflow/debt and nonGAAP tables read via webreader. Unaudited September30quarter. Full current10Q and call audio not verified.",
+        "baseline": "First sourced Equinix financial baseline in this ledger; no fabricated prior stock view. Issuer table provides explicit prior/current FY2026 guidance. Outside98active Taiwan universe,no watchlist change or named Taiwan supplier award.",
+        "q3": {
+          "currency": "USD",
+          "unit": "million unless per-share or percentage",
+          "revenue": 2571,
+          "revenue_yoy_percent": 11,
+          "operating_income": 600,
+          "operating_income_yoy_percent": 27,
+          "adjusted_EBITDA": 1321,
+          "adjusted_EBITDA_yoy_percent": 15,
+          "AFFO": 1156,
+          "AFFO_yoy_percent": 20,
+          "AFFO_normalized_constant_currency_growth_ex_atNorth_fee_percent": 14,
+          "AFFO_per_share": 11.64,
+          "annualized_gross_bookings": 533,
+          "bookings_yoy_percent": 35,
+          "net_interconnections_added": 6900,
+          "interconnection_revenue_growth_percent": 10,
+          "Fabric_revenue_growth_percent": 24
+        },
+        "FY2026_guidance": {
+          "currency": "USD",
+          "unit": "million unless per-share",
+          "revenue_prior": [
+            10205,
+            10285
+          ],
+          "revenue_new": [
+            10325,
+            10365
+          ],
+          "revenue_underlying_adjustment": 84,
+          "revenue_FX_adjustment": 16,
+          "adjusted_EBITDA_prior": [
+            5210,
+            5270
+          ],
+          "adjusted_EBITDA_new": [
+            5290,
+            5330
+          ],
+          "AFFO_prior": [
+            4240,
+            4300
+          ],
+          "AFFO_new": [
+            4340,
+            4380
+          ],
+          "AFFO_underlying_adjustment": 52,
+          "AFFO_atNorth_fee_adjustment": 31,
+          "AFFO_FX_adjustment": 7,
+          "AFFO_per_share_prior": [
+            42.69,
+            43.29
+          ],
+          "AFFO_per_share_new": [
+            43.71,
+            44.11
+          ],
+          "recurring_capex_unchanged": [
+            290,
+            310
+          ],
+          "nonrecurring_capex_ex_xScale_realestate_unchanged": [
+            4710,
+            5690
+          ],
+          "total_capex": [
+            5000,
+            6000
+          ]
+        },
+        "nine_month_cashflow": {
+          "currency": "USD",
+          "unit": "million",
+          "OCF": 3027,
+          "prior_OCF": 2767,
+          "purchases_other_PPE": 4392,
+          "prior_PPE": 2875,
+          "realestate_acquisitions": 234,
+          "prior_realestate": 391,
+          "issuer_FCF": -801,
+          "prior_FCF": -970,
+          "issuer_adjusted_FCF": -567,
+          "prior_adjusted_FCF": -397,
+          "debt_principal_September30": 25217,
+          "debt_principal_December31": 21417
+        },
+        "transmission": "Recurring colocation and interconnection demand,pricing and accelerated capacity delivery support operations. Issuer targets nearly40%more2026cabinet deliveries than initially anticipated; this is a management delivery plan,not all delivered capacity. AWS/GoogleCloud named FabricOne integration partners; NVIDIA/TogetherAI named InferenceExchange collaborators. These announcements do not establish material AI-only revenue or new supplier allocations.",
+        "limits": "Annualized gross bookings are not recognized quarterly revenue or net backlog. AFFO is not free cashflow; yearly guidance uplift includes one-time31m atNorth JV fee and FX. Expansion and equity investments absorb cash; issuer FCF definitions differ from OCFminusPPE,and should not be combined with other issuers without adjustment. Capacity,pricing and cash assumptions remain subject to demand,power availability and execution. No authenticated analyst consensus revision,AI-only margin or project ROI.",
+        "screening_scope": {
+          "checked_at_utc": "2026-10-28 22:37:56 UTC",
+          "universe_commit": "0f18d6e38b50208ba69df8281c60ef0d2dd84bb8",
+          "active_count": 98,
+          "grouped_queries": 7,
+          "TWSE_notices": 160,
+          "TWSE_matches": 46,
+          "TWSE_matched_companies": 12,
+          "TPEx_notices": 60,
+          "TPEx_matches": 11,
+          "TPEx_matched_companies": 5,
+          "limits": "TWSEsnapshotoutputOct29issuerOct28;TPExsnapshotoutputOct28issuerOct27. Headings screened across matches,not all filing bodies or98companyfinancials audited. TSMC latestnews/MediaTekpressroom checked; no authenticated new procurement allocation. Microsoftcall page lacks transcript; future guidance not guessed."
+        }
+      },
+      "status": "issuer_financial_and_guidance_increment_verified_ledger_only_no_article"
+    },
+    {
       "fingerprint": "tsmc-monthly-sales-2026-09-20261008",
       "event_date": "2026-10-08",
       "companies": [
