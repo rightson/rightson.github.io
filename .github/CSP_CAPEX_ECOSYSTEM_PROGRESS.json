@@ -11,6 +11,78 @@
   ],
   "public_events": [
     {
+      "fingerprint": "samsung-sdi-q3-2026-ess-bbu-profit-ampc-reclassification-and-spe-lfp-production-20261029",
+      "event_date": "2026-10-29",
+      "discovered_date": "2026-10-29",
+      "instruction_commit_sha": "e2778d205d2a8424527dffe7d8c96de97f778559",
+      "companies": [
+        "Samsung SDI"
+      ],
+      "type": "issuer_quarterly_results_ESS_orders_and_US_LFP_production",
+      "sources": [
+        "https://www.samsungsdi.com/sdi-now/sdi-news/5066.html",
+        "https://samsungsdi.com/upload/download/ir/2026.3Q_IR_Final_En.pdf",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029800053",
+        "https://dart.fss.or.kr/report/viewer.do?rcpNo=20261029800053&dcmNo=11631980&eleId=0&offset=0&length=0&dtd=HTML",
+        "https://news.samsungsdi.com/global/articleView?seq=440",
+        "https://en.edaily.co.kr/news/eda202610295284/",
+        "https://stockanalysis.com/quote/krx/006400/transcripts/719129-q3-2026/"
+      ],
+      "facts": {
+        "authentication": "Complete issuer English October29 release, official Q3 eight-page deck and DART preliminary consolidated filing retrieved by standard HTTPS. Deck pages3/5/6 visually checked; DART body decoded EUC-KR. External accounting review not complete. Third-party call transcript and Edaily call reporting are separately qualified below.",
+        "baseline": "First sourced Samsung SDI financial baseline in this ledger; Samsung Electronics is a different issuer. July30 Q2 release already disclosed profitability recovery, AI-linked ESS/UPS/BBU demand and planned US LFP production. Current increment is higher quarterly profit, current cumulative ESS order quantity and realized October LFP mass production, not first-ever AI demand or first profitable quarter.",
+        "currency": "KRW",
+        "unit": "billion unless otherwise stated",
+        "Q3": {
+          "revenue_and_other_income_including_AMPC": 4685.6,
+          "operating_profit": 407.8,
+          "battery_revenue": 4409.9,
+          "battery_operating_profit": 361.9,
+          "electronic_materials_revenue": 275.7,
+          "electronic_materials_operating_profit": 45.9,
+          "AMPC": 122.5,
+          "operating_profit_minus_AMPC_calculated": 285.3,
+          "net_income": 342.2
+        },
+        "Q2_same_basis": {
+          "revenue_and_other_income_including_AMPC": 3876.5,
+          "operating_profit": 203.8,
+          "net_income": 471.6
+        },
+        "comparisons": {
+          "revenue_yoy_percent": 52.6,
+          "revenue_qoq_percent": 20.9,
+          "operating_profit_qoq_percent": 100.1,
+          "net_income_qoq_percent": -27.4,
+          "prior_year_operating_profit": -591.3
+        },
+        "accounting": "DART and deck explicitly reclassify AMPC into revenue and other income and restate comparative revenue on the same basis. July Q2 release's3.77trn is not directly comparable with current deck's3.877trn; this is explained by presentation change, not a new revision to operating profit. Excluding AMPC alone does not remove customer compensation or establish recurring profit.",
+        "demand_and_production": "Issuer attributes battery growth to ESS/BBU sales amid AI data-center expansion as well as power-tool/EV cylindrical battery sales. More than60GWh ESS orders secured year to date; no disclosed customer-specific AI share, contract price or cancellation terms. Official deck confirms first US SPE LFP ESS-cell mass production in October. Cylindrical LFP BBU product was unveiled in September and is not established here as mass production. SynergyCells ESS hub and phased expansion remain plans.",
+        "forward_stage": "Issuer aims to finalize utility ESS/UPS long-term supply agreements by year-end; negotiations are not executed incremental contracts. Q4 profitability continuation is qualitative management outlook. Existing global CSP customers unnamed; no Taiwan supplier-specific award or profit allocation verified.",
+        "cash_and_balance_sheet": {
+          "deck_Q2_cash_equivalents": 1506,
+          "deck_Q3_cash_equivalents": 2357,
+          "deck_Q2_total_debt": 12111,
+          "deck_Q3_total_debt": 8521,
+          "qualification": "Rounded deck amounts. Cash-balance increase and debt reduction are not operating cash flow or FCF. Current deck lacks cashflow statement. Liabilities20.786→16.582trn must not be mislabeled total debt."
+        },
+        "call_reporting_limits": "StockAnalysis third-party transcript attributes some battery earnings to customer compensation and balance-sheet changes to Samsung Display stake disposal, partial debt repayment and FX translation; amounts and issuer-hosted Q&A/audio not independently authenticated. Edaily October29 10:25KST call report says cells began shipping midOctober, finished SBB deliveries planned December, and two additional lines phased from2027H1. These remain attributed management statements, not accepted end-customer revenue or independently verified cash receipts.",
+        "limits": "ESS order quantity is broader than direct AI data-center demand. No separately disclosed ESS/BBU segment profit, organic recurring profit bridge, Q3 OCF/FCF, named CSP orders or original current analyst estimate revisions obtained. Mixed EV/tool demand, AMPC, compensation and asset/FX changes constrain attribution.",
+        "screening": {
+          "active_universe_count": 98,
+          "grouped_search_queries": 7,
+          "universe_commit_sha": "0f18d6e38b50208ba69df8281c60ef0d2dd84bb8",
+          "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+          "scope": "All98active names included in grouped event discovery, not98individual current financial audits. Samsung SDI is outside that universe; issuer's disclosed ESS/BBU and existing CSP relationship supplies inclusion evidence. Other-repo watchlist not modified.",
+          "official_indexes": "TSMC,MediaTek,NVIDIA,AMD,Broadcom,Marvell checked; some dynamic CSP indexes and issuer call frames incomplete.",
+          "notices": "TWSE160notices and TPEx60notices byte-identical to preceding12:24 batch. Last established heading matches46/12companies and11/5companies respectively; issuer datesOct28/Oct27. No new issuer body inferred from output date.",
+          "unresolved_media_candidate": "October29 anonymous-bank MediaTek ASIC/TPU preview has no original bank note or issuer confirmation; not treated as confirmed orders or authenticated consensus revision.",
+          "dedup": "Previously registered Samsung Electronics,LMOC,Microsoft,CSP earnings and other supplier events not repeated without material new evidence."
+        }
+      },
+      "status": "issuer_primary_results_and_production_verified_cashflow_and_profit_quality_followup_pending_ledger_only_no_article"
+    },
+    {
       "fingerprint": "samsung-q3-call-2027-hbm-price-volume-soldout-and-memory-lta-customer-coverage-reported-20261029",
       "event_date": "2026-10-29",
       "discovered_date": "2026-10-29",
