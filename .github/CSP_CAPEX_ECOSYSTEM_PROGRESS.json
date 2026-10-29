@@ -11,6 +11,65 @@
   ],
   "public_events": [
     {
+      "fingerprint": "chroma-q3-2026-operating-profit-photonics-mix-and-cpo-volume-equipment-orders-reported-call-20261029",
+      "event_date": "2026-10-29",
+      "discovered_date": "2026-10-29",
+      "instruction_commit_sha": "fbedcb7490a3fb91f1df956441ff6766ac456a7b",
+      "companies": [
+        "Chroma ATE (2360)"
+      ],
+      "type": "primary_quarterly_results_and_reported_management_call_order_and_delivery_outlook",
+      "sources": [
+        "https://www.chromaate.com/en/investors/quarterly_results",
+        "https://www.chromaate.com/downloads/investors/pdf/quarterly_reports/2026/20261029_Q3_quarterly_reports_presentation_en.pdf",
+        "https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=6297f520-3c2e-4240-af30-498922d53fea"
+      ],
+      "facts": {
+        "primary_results": {
+          "period": "2026 Q3; company presentation dated 2026-10-29; amounts in NTD million unless stated",
+          "consolidated_sales": 17926,
+          "consolidated_sales_qoq_pct": 33,
+          "consolidated_sales_yoy_pct": 180,
+          "testing_equipment_business_sales": 17589,
+          "testing_equipment_sales_yoy_pct": 186,
+          "gross_profit": 10308,
+          "gross_margin_pct_rounded": 58,
+          "prior_quarter_gross_margin_pct_rounded": 61,
+          "operating_income": 7167,
+          "prior_quarter_operating_income": 5242,
+          "operating_income_qoq_pct": 37,
+          "operating_margin_pct_rounded": 40,
+          "net_income_consolidated": 5780,
+          "net_income_attributable_to_parent": 5647,
+          "parent_net_income_qoq_pct": 10,
+          "parent_net_income_yoy_pct": 11,
+          "basic_eps_ntd": 13.34,
+          "parent_company_semiconductor_photonics_sales": 6056,
+          "parent_company_semiconductor_photonics_sales_qoq_pct": 38,
+          "parent_company_semiconductor_photonics_sales_yoy_pct": 189,
+          "parent_company_semiconductor_photonics_share_pct": 42,
+          "scope_note": "Product mix percentages use parent-company sales of NTD 14,335 million, not consolidated sales. 186% YoY refers to testing-equipment business, not total consolidated sales; consolidated net income and parent-attributable income have different growth rates.",
+          "nine_month_operating_cash_flow": 6206,
+          "nine_month_net_income_consolidated": 14958,
+          "september_inventory": 13805,
+          "december_2025_inventory": 7919,
+          "company_defined_nine_month_free_cash_flow": 6810,
+          "free_cash_flow_definition": "Company defines FCF as operating cash flow plus net investing cash flow; not necessarily operating cash flow minus capital expenditures.",
+          "prior_property_disposal_gain": "Presentation lists 2026 Q2 NTD 444 million and 2025 Q3 NTD 3,185 million disposal gains."
+        },
+        "reported_call": {
+          "original_report": "MoneyDJ, reporter Chou Pei-yu, published 2026-10-29 15:41:10 Asia/Taipei; full original body read; TTV syndication is the same report, not independent confirmation.",
+          "cpo_orders": "Management reported receipt of equipment orders for 2027 Q1 volume production; customer plans indicate 2027 Insertion 3 volume-production equipment units at least 4-5 times 2026 pilot-stage units.",
+          "marvell_schedule": "Management reportedly said Marvell plans pilot work in 2027 Q1-Q3 and volume production in Q4; outlook, not completed deployment.",
+          "atc_handler": "Management reportedly said HPC and CSP customers have certified the ATC handler and placed orders, with revenue contribution expected in 2027.",
+          "battery_project": "About 30% of battery-project orders reportedly deferred from Q4 into 2027 Q1 due to customer factory progress; Q3 mix pressured gross margin.",
+          "limits": "The company presentation corroborates financial results and product mix but does not contain the detailed CPO/ATC order statements. Those remain attributed original-call reporting; order values, contract cancellation terms, exact equipment ASPs and customer deployment are not independently verified. A 4-5x equipment-unit scenario is not a 4-5x company-revenue forecast."
+        },
+        "comparison": "Quarterly revenue had already been available in September monthly filings. Increment is profit/product-mix disclosure and the reported move from CPO pilot activity to volume-equipment orders, not a new revenue surprise."
+      },
+      "status": "primary_financial_results_verified_reported_call_order_details_attributed_no_article"
+    },
+    {
       "fingerprint": "yageo-q3-2026-profit-margin-conversion-reported-results-20261029",
       "event_date": "2026-10-29",
       "discovered_date": "2026-10-29",
