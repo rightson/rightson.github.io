@@ -10239,6 +10239,52 @@
         "limits": "Capitalbudgetisnotpaidcapexorone-yearguidance; creditlimitnotcashreceivedandnotautomaticallyearmarkedforfactoryinvestment. Do notadd986and350orcalculatefundinggapfromthem. Subsidiaryloan/investmentnoticescanoverlapgroupfunding. Nooriginalquarterlycashflow,utilizationguarantee,customerallocation,pricingcontractorROIverified; reviewedfullfinancialreportnotobtained."
       },
       "status": "primary_exchange_full_notice_verified_ledger_only_no_article"
+    },
+    {
+      "fingerprint": "amazon-trainium-external-chip-sales-late2027-timing-and-chip-commitments-reported-call-20261029",
+      "event_date": "2026-10-29",
+      "discovered_date": "2026-10-30",
+      "instruction_commit_sha": "bb55095ee4d05691fcf0b3a22129412b86ad989d",
+      "companies": [
+        "Amazon / AWS"
+      ],
+      "type": "reported_earnings_call_external_silicon_commercialization_timing",
+      "sources": [
+        "https://www.marketwatch.com/livecoverage/amazon-earnings-stock-results-amzn-q3/card/amazon-plans-to-broaden-access-to-its-popular-ai-chips-pP3XAtlWJelCVuSjitz2",
+        "https://www.benzinga.com/news/26/10/62724825/amazoncom-q3-2026-earnings-call-transcript",
+        "https://www.fool.com/earnings/call-transcripts/2026/08/07/amazon-amzn-q2-2026-earnings-call-transcript/"
+      ],
+      "facts": {
+        "baseline": "Q2 call described exploring external Trainium sales without a start date; Q3 financial release already recorded separately.",
+        "reported_increment": "Jassy now plans Trainium availability outside AWS in late 2027. MarketWatch original live reporting and attributed call transcription agree. Trainium and Graviton revenue commitments each grew over twentyfold YoY; commitments are not recognized revenue.",
+        "commercial_tradeoff": "Management describes allocating scarce chips between external sales and multiyear cloud service monetization. Customer allocation, volume, pricing and supplier awards remain undisclosed.",
+        "counterevidence": "CFO says AI margins remain below core cloud margins and growing AI mix pressures AWS margin. No AWS margin guidance supplied.",
+        "source_limits": "Benzinga is automated third-party transcription; issuer audio not independently authenticated. Transcription contains unrelated numeric inconsistencies against issuer release, so no disputed values used. External sales timing is forward-looking; no signed external customer or completed shipment established."
+      },
+      "status": "original_call_reporting_crosschecked_with_attributed_transcript_ledger_only_no_article"
+    },
+    {
+      "fingerprint": "microsoft-oct29-2026-notes-offering-preliminary-prospectus-and-reported-25bn-pricing",
+      "event_date": "2026-10-29",
+      "discovered_date": "2026-10-30",
+      "instruction_commit_sha": "bb55095ee4d05691fcf0b3a22129412b86ad989d",
+      "companies": [
+        "Microsoft"
+      ],
+      "type": "primary_preliminary_notes_offering_and_reported_pricing",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526437008/d150456d424b2.htm",
+        "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-10-29-2026/card/microsoft-preps-first-bond-sale-since-2017-TPDyJojfR9kjGxwE35EK",
+        "https://www.reuters.com/business/finance/microsoft-expects-raise-25-billion-us-bond-sale-source-says-2026-10-29/"
+      ],
+      "facts": {
+        "baseline_fingerprint": "microsoft-cy2026-capex-175-to170bn-thirdparty-gpu-delivery-delay-reported-call-20261028",
+        "primary_authentication": "Fresh SEC submissions identifies October29 Form424B2 accession0001193125-26-437008. Complete505171byte primary HTML retrieved; title, preliminary terms and Use of Proceeds section read.",
+        "primary_stage": "Preliminary ten-series offering; principal amounts, coupons and maturities remain blank. Net proceeds for general corporate purposes including working capital, capex, repurchases, acquisitions and debt repayment.",
+        "reported_pricing": "WSJ original reporter Sam Goldfarb reports terms finalized on USD25billion bond sale October29 afternoon, citing investors. Earlier Reuters described proposed amount, not completed funding.",
+        "limits": "Final executed terms, settlement and net cash receipt not authenticated. Do not assign entire proceeds to AI capex, add to capex guidance, or infer equipment orders. Offering and reported pricing advance prior optional-funding statement; no new cashflow guidance verified."
+      },
+      "status": "primary_preliminary_prospectus_verified_final_pricing_attributed_to_original_reporting_settlement_unverified_ledger_only_no_article"
     }
   ],
   "articles": [],
