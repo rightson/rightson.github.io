@@ -11,6 +11,57 @@
   ],
   "public_events": [
     {
+      "fingerprint": "microsoft-cy2026-capex-175-to170bn-thirdparty-gpu-delivery-delay-reported-call-20261028",
+      "event_date": "2026-10-28",
+      "discovered_date": "2026-10-29",
+      "instruction_commit_sha": "902a857a765f263883a3164723df198a467df68c",
+      "companies": [
+        "Microsoft"
+      ],
+      "type": "original_reporting_of_management_capex_revision_and_capacity_timing",
+      "sources": [
+        "https://www.businessinsider.com/microsoft-trims-ai-spending-plans-to-170b-as-azure-revenue-surges-2026-10",
+        "https://www.geekwire.com/2026/microsoft-azure-revenue-surges-48-to-33-2b-beating-expectations-as-cloud-and-ai-demand-grows/",
+        "https://www.businessinsider.com/microsoft-ai-capex-unchanged-data-centers-spending-tech-giants-2026-7",
+        "https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast"
+      ],
+      "facts": {
+        "source_authentication": "BusinessInsider original AshleyStewart article dated2026-10-28T22:58:41.672Z body read; independently authored GeekWire ToddBishop report and3:05pm callupdate read. July29 originalBI baselinebody also read. Microsoft release body independently read but provides no numeric forwardguidance. Official currentcall page webreader DisabledError/local403; no authenticated official full transcript or audio replay obtained. Secondary transcripts discovery only.",
+        "baseline": "Earlier issuer-release event verified Azure and cashPPE actuals but explicitly left call guidance pending; current event adds reported management delivery/capex timing rather than repeat prioractuals.",
+        "currency": "USD",
+        "unit": "billion unless percentage",
+        "calendar_2026_capex_prior_same_post_accounting_change_basis": 175,
+        "calendar_2026_capex_new_reported": 170,
+        "calendar_2026_change": -5,
+        "calendar_2026_change_percent": -2.8571428571,
+        "period_rule": "Calendar2026,notFY2027. July baseline changed from190to175dueaccounting,notrealspendingcut;current175to170comparessamepublishedbasis. Do not compare leaseinclusivecapex45.2withcashPPE39.367asaguidancemiss.",
+        "reported_management_reason": "Some thirdparty GPU-as-a-Service capacity deliveries shifted to secondhalfFY2027,roughlyJanuary-June2027; management expects spending to accelerate then. No cancelledorder ornamedprovider established.",
+        "reported_next_quarter_Azure_constant_currency_growth_percent": [
+          49,
+          50
+        ],
+        "reported_next_quarter_capex_over": 50,
+        "reported_FY2027_cashflow": "Management expects to remain freecashflowpositive; additionalfunding may be accessed ifattractive,notannouncedissuance.",
+        "transmission": "Thirdpartycomputeanddatacenterdeliverytiming can defer deployment,lease recognition and supplierrevenue/cashconversion evenwhileclouddemandgrows. NamedTaiwanprocurementallocation,cancelledGPUorders,quantifiedsuppliersalesimpact and specificpower/permittingcause not verified.",
+        "counterevidence": "IssuerAzureQ1growth48%alreadyverified; reportedQ2constantcurrency49-50% and demandexceedingavailablecapacity support deferral explanation. ExistingCPU/GPUfleetefficiency also contributes,so revenueriseisnotpurecapacityvolume.",
+        "limits": "Reportedcallguidance,notprimarytranscriptconfirmation. Reportsmislabeling170bnFY2027werenotadopted. Noassumedconsensusrevision,AI-onlyROI,cashcost savings ornewborrowingamount.",
+        "coverage": {
+          "active_universe_count": 98,
+          "grouped_search_queries": 7,
+          "universe_commit_sha": "0f18d6e38b50208ba69df8281c60ef0d2dd84bb8",
+          "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+          "TWSE_notices": 160,
+          "TWSE_matches": 46,
+          "TWSE_companies": 12,
+          "TPEx_notices": 60,
+          "TPEx_matches": 11,
+          "TPEx_companies": 5,
+          "scope": "Freshbatchesidenticalto07:41snapshot;headingspreviouslyscreened,not98individualfinancialaudits. TWSEoutputOct29issuerOct28,TPExoutputOct28issuerOct27. TSMC/MediaTek/NVIDIA/AMD/Broadcom/Marvellofficialindexeschecked;partialdynamicCSPindexesnotabsenceofnews. SamsungonlyOctober8guidancefound,nofabricatedOctober29results."
+        }
+      },
+      "status": "original_reports_verified_official_call_confirmation_pending_ledger_only_no_article"
+    },
+    {
       "fingerprint": "equinix-q3-2026-bookings-affo-guidance-and-expansion-cash-divergence-20261028",
       "event_date": "2026-10-28",
       "discovered_date": "2026-10-29",
