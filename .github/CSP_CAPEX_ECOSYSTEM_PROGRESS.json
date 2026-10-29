@@ -11,6 +11,41 @@
   ],
   "public_events": [
     {
+      "fingerprint": "marvell-lumentum-advanced-acquisition-talks-reuters-independent-source-and-bloomberg-20261028",
+      "event_date": "2026-10-28",
+      "discovered_date": "2026-10-29",
+      "instruction_commit_sha": "f12b1002067cb9862a68cf3e3c8685b7249333af",
+      "companies": [
+        "Marvell",
+        "Lumentum"
+      ],
+      "type": "original_reporting_of_advanced_acquisition_talks_not_signed_transaction",
+      "sources": [
+        "https://www.reuters.com/business/marvell-advanced-talks-buy-lumentum-bloomberg-news-reports-2026-10-28/",
+        "https://uk.marketscreener.com/news/marvell-in-advanced-talks-to-buy-lumentum-bloomberg-news-reports-ce785cd3db8af523",
+        "https://news.bloomberglaw.com/mergers-and-acquisitions/marvell-is-said-to-near-megadeal-for-lumentum-in-ai-push-2",
+        "https://www.marvell.com/company/newsroom/marvell-lumentum-optical-circuit-switching-ai-scale-up-infrastructure.html",
+        "https://www.marvell.com/company/newsroom.html",
+        "https://investor.lumentum.com/financial-news-releases/"
+      ],
+      "facts": {
+        "source_authentication": "Full Reuters syndicated article obtained from MarketScreener, attributed to Milana Vinn and Prathik Jayaprakash. Reuters separately cites a source familiar with the matter, beyond relaying Bloomberg. Syndicated page publishedOct28 21:57GMT,modifiedOct29 02:32GMT. Bloomberg original accessible opening separately read,Oct29 05:04UTC revision; remainder paywalled. No claim of full Bloomberg body access.",
+        "reported_stage": "Advanced talks for Marvell to acquire Lumentum; announcement possible as early as next week. Timing is anonymous-source reporting,not issuer timetable. No definitive agreement,agreed purchase price,payment mix,financing commitment,board/regulatory approval or closing authenticated. Companies did not immediately respond to Reuters.",
+        "baseline": "No previous acquisition-talk event in current203-event ledger. Public March16 joint OFC demonstration already established cooperation,not ownership. Reported talks add a distinct corporate-control and transaction-execution issue; older revenue guidance is not presented as a new revision.",
+        "primary_relationship": "March16,2026 issuer release describes Marvell Aquila1.6T/Ara1.6T DSP and COLORZ800 modules interoperating with Lumentum R300 optical circuit switching in a planned rack-level demonstration. This supports a specific AI interconnect relationship,not demonstration-to-commercial-volume extrapolation.",
+        "issuer_check": "Marvell newsroom latest displayedOctober13; Lumentum IR news page returned dynamic controls without substantive listings. Targeted official-domain search did not produce a definitive agreement. Limited index retrieval is not proof that no new filing exists.",
+        "limits": "No deal economics,incremental recurring earnings,cash returns,integration savings,customer procurement shift or Taiwan supplier allocation verified. Reported market capitalizations are not acquisition consideration. No assumption of exclusive laser supply,loss of customer neutrality,completed transfer of IP or customer orders. Potential transaction can fail or change materially.",
+        "coverage": {
+          "active_universe_count": 98,
+          "grouped_queries": 7,
+          "universe_commit_sha": "0f18d6e38b50208ba69df8281c60ef0d2dd84bb8",
+          "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+          "scope": "All98active names included in grouped event discovery,not98individual financial audits. Outside-universe Marvell/Lumentum discovery linked to official joint AI optical demonstration. TSMC/MediaTek/NVIDIA/AMD/Marvell official indexes and Broadcom retrieval attempted; Broadcom returned403. Some CSP/current-IR coverage limited; no absence-of-news inference. Delta/ASE afternoon calls only scheduled or starting at lookup,not marked complete. Other-repo watchlist untouched."
+        }
+      },
+      "status": "original_reported_talks_cross_checked_primary_relationship_verified_definitive_agreement_and_economics_pending_ledger_only_no_article"
+    },
+    {
       "fingerprint": "samsung-sdi-q3-2026-ess-bbu-profit-ampc-reclassification-and-spe-lfp-production-20261029",
       "event_date": "2026-10-29",
       "discovered_date": "2026-10-29",
