@@ -11,6 +11,70 @@
   ],
   "public_events": [
     {
+      "fingerprint": "kyec-aeternz-texas-property-and-equipment-board-acquisitions-primary-20261029",
+      "event_date": "2026-10-29",
+      "discovered_date": "2026-10-30",
+      "instruction_commit_sha": "a1f6e9c220b85442d4c4b167350a5491660c19f7",
+      "companies": [
+        "KYEC / 京元電子 2449",
+        "AeternZ Semiconductor Testing Corporation"
+      ],
+      "type": "issuer_board_approved_property_facility_and_machine_acquisitions",
+      "sources": [
+        "https://mops.twse.com.tw/mops/#/web/t05st01",
+        "https://www.cna.com.tw/news/afe/202610130188.aspx",
+        "https://money.udn.com/money/story/5612/9845479",
+        "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout"
+      ],
+      "facts": {
+        "source_authentication": "Full five issuer notices retrieved from TWSE original listed-company material-announcement feed t187ap04_L, output1151030, issuer2449 event1151029 times162017/162111/162137/162204/162230. Same filings reproduced by news services; not independent economic evidence.",
+        "baseline": "October13 named NVIDIA prepayment agreement and October21 NVIDIA USD1.1b reservation advance and April2027 HVM target already recorded; not a new customer or incremental announced program total.",
+        "board_date": "2026-10-28",
+        "currency": "USD",
+        "property": {
+          "location": "201&273 W.Everman Parkway, Fort Worth, Tarrant County, Texas",
+          "land_sq_ft": 1179700,
+          "building_sq_ft": 489494,
+          "amount": 79350000,
+          "counterparty": "EVERMAN FORT WORTH BUILDING 2&3 SPE, LLC",
+          "purpose": "business use",
+          "payment": "per sale contract"
+        },
+        "equipment": [
+          {
+            "counterparty": "TRANTEK INC.",
+            "quantity": "one batch",
+            "amount": 348589487,
+            "purpose": "production facility equipment"
+          },
+          {
+            "counterparty": "Hon.Precision,Inc.",
+            "quantity_sets": 200,
+            "unit_price": 754232,
+            "amount": 150846400
+          },
+          {
+            "counterparty": "EO Technics Co., Ltd.",
+            "quantity_sets": 15,
+            "unit_price": 612000,
+            "amount": 9180000
+          },
+          {
+            "counterparty": "KLA Corporation",
+            "quantity_sets": 30,
+            "unit_price": 865000,
+            "amount": 25950000
+          }
+        ],
+        "equipment_total_derived": 534565887,
+        "property_and_equipment_total_derived": 613915887,
+        "equipment_payment": "per purchase-order terms",
+        "stage": "Board-approved acquisitions with specified amounts and counterparties; full payment, title transfer, equipment delivery/acceptance, installation and production commencement not independently verified.",
+        "limits": "Not added to the existing USD1.1b customer advance as incremental revenue or capex; no inference that advance was received or covers these exact invoices. No changed HVM target, customer minimum utilization, pricing, margins, depreciation, cancellation/refund protection or supplier revenue recognition authenticated. This advances publicly documented buildout specificity, not proof of profitable production."
+      },
+      "status": "five_primary_issuer_notices_and_arithmetic_verified_ledger_only_delivery_cash_and_utilization_followup_pending_no_article"
+    },
+    {
       "fingerprint": "apacer-q3-2026-sequential-margin-and-operating-profit-contraction-reported-financials-20261029",
       "event_date": "2026-10-29",
       "discovered_date": "2026-10-30",
