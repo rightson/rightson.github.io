@@ -11,6 +11,147 @@
   ],
   "public_events": [
     {
+      "fingerprint": "delta-q3-2026-parent-segment-and-nonoperating-bridge-call-delivery-cost-pass-through-20261029",
+      "event_date": "2026-10-29",
+      "discovered_date": "2026-10-29",
+      "instruction_commit_sha": "76598908fdcae9725dafb5a0ddec3f823d877336",
+      "companies": [
+        "Delta Electronics"
+      ],
+      "type": "primary_parent_financial_deck_and_original_call_reporting_increment",
+      "sources": [
+        "https://www.deltaww.com/zh-TW/investors/analyst-meeting",
+        "https://filecenter.deltaww.com/ir/download/calendar/3Q26_Analyst%20Meeting.pdf",
+        "https://news.nextapple.com/finance/20261029/5A17B250C6748F580ED2FBC9FE261205",
+        "https://www.taisounds.com/news/content/76/296639"
+      ],
+      "facts": {
+        "baseline": "October28 consolidated headline earnings and Thailand subsidiary MD&A were already recorded. This entry adds October29 parent presentation segment/non-operating detail and original afternoon call reporting; prior headline numbers are not a new earnings revision.",
+        "source_authentication": "Official public IR page links the 20-page parent 3Q26 presentation; entire PDF read and pages6-7 visually checked. Full original Nextapple report by Lu Cheng-che,October29 16:07 Asia/Taipei,and TaiSounds report by Chen Li-fen,15:27,read directly. Call statements remain attributed reporting; no authenticated full call transcript.",
+        "primary_deck_currency_unit": "TWD million",
+        "segment_results": {
+          "power_electronics": {
+            "revenue": 105930,
+            "revenue_QoQ_percent": 10,
+            "segment_profit": 19920,
+            "segment_profit_QoQ_percent": -1
+          },
+          "infrastructure": {
+            "revenue": 65880,
+            "revenue_QoQ_percent": 5,
+            "segment_profit": 12068,
+            "segment_profit_QoQ_percent": 7
+          }
+        },
+        "nonoperating_profit": {
+          "Q2_2026": 4429,
+          "Q3_2026": 1046
+        },
+        "reported_management_statements": "Customer data-center construction delays and mismatched component availability contributed to inventory build-up; management expects progressive Q4 clearance. Materials costs reportedly rose about2% year-to-date; price adjustments are being negotiated,part potentially reflectedQ4 and remainderQ1 2027. Reported strong order visibility coexists with volatile delivery timing. These are conditional management statements,not completed shipments or realized cost recovery.",
+        "counterevidence": "Consolidated operating profit grew about6.5% sequentially while non-operating income fell3383millionTWD; the previously reported EPS decline is not wholly attributable to operating demand. Infrastructure segment profit grew7%QoQ even as Power Electronics profit fell1%.",
+        "limits": "Parent operating cash flow/free cash flow and quantified affected orders/customer concentration not authenticated in this deck. No evidence links these delayed orders to a named CSP. Original reports give inconsistent inventory charge amount/percentage; no charge amount adopted. Thailand subsidiary figures are not substituted for parent consolidated margins. SOFC2027 production remains management outlook,not current production revenue.",
+        "coverage": {
+          "active_universe_count": 98,
+          "universe_commit_sha": "0f18d6e38b50208ba69df8281c60ef0d2dd84bb8",
+          "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+          "scope": "All 98 active companies included in seven grouped current-event discovery queries. This is event discovery, not 98 individual issuer financial audits. Deep source checks completed for Delta, ASE and TSMC candidates. MediaTek, NVIDIA, AMD and Marvell official indexes checked; Broadcom IR failed. CSP indexes partly dynamic or inaccessible; no inference of absence of news. Other-repo watchlist unchanged."
+        }
+      },
+      "status": "primary_deck_and_original_reporting_verified_call_transcript_and_cash_conversion_pending_ledger_only_no_article"
+    },
+    {
+      "fingerprint": "ase-q3-2026-atm-margin-operating-profit-and-capital-cash-outflow-primary-results-20261029",
+      "event_date": "2026-10-29",
+      "discovered_date": "2026-10-29",
+      "instruction_commit_sha": "76598908fdcae9725dafb5a0ddec3f823d877336",
+      "companies": [
+        "ASE Technology Holding"
+      ],
+      "type": "issuer_unaudited_quarterly_results_and_cash_flow",
+      "sources": [
+        "https://www.prnewswire.com/news-releases/ase-technology-holding-co-ltd-reports-its-unaudited-consolidated-financial-results-for-the-third-quarter-of-2026-302923021.html",
+        "https://www.cna.com.tw/news/afe/202607300236.aspx"
+      ],
+      "facts": {
+        "source_authentication": "Full issuer-provided PRNewswire release,October29 02:45ET,including consolidated segment,balance-sheet and quarterly cash-flow tables and footnotes read directly. Financials are issuer unaudited Taiwan-IFRS data. Q2 cash-flow/balance-sheet comparatives are retrospectively adjusted in this release.",
+        "baseline": "September monthly sales and earlier capacity/LEAP outlook were already available. New incremental evidence is quarterly profitability and capital/cash conversion. July30 CNA original call report records Q3 consolidated GPM20.5-21.5%,OPM11.5-12.5%,ATM GPM28-29%,underUSD/TWD31.9 assumption. This is company guidance reported by CNA,not analyst consensus. Prior2027LEAP doubling/105亿美元 estimated annual capex are not new October29 revisions.",
+        "currency_unit": "TWD million unless stated",
+        "Q3_2026": {
+          "revenue": 244161,
+          "parent_net_income": 26996,
+          "basic_EPS_TWD": 6.13,
+          "diluted_EPS_TWD": 5.84,
+          "consolidated_GPM_percent": 22.1,
+          "consolidated_OPM_percent": 13.6,
+          "ATM_revenue": 151485,
+          "ATM_GPM_percent": 30.6,
+          "ATM_OPM_percent": 20,
+          "EMS_revenue": 93469,
+          "EMS_GPM_percent": 8.3,
+          "EMS_OPM_percent": 3.3,
+          "OCF": 50462,
+          "net_PPE_cash_payments": 125852,
+          "net_borrowing_and_bond_proceeds": 100925,
+          "equipment_capex_USD_million": 2104,
+          "net_debt_to_equity": 0.66
+        },
+        "Q2_2026_comparison": {
+          "basic_EPS_TWD": 4.8,
+          "parent_net_income": 21065,
+          "consolidated_GPM_percent": 21,
+          "consolidated_OPM_percent": 11.1,
+          "ATM_GPM_percent": 27.3,
+          "ATM_OPM_percent": 15.7,
+          "EMS_GPM_percent": 8.9,
+          "OCF": 47014,
+          "net_PPE_cash_payments": 79849,
+          "net_debt_to_equity": 0.47
+        },
+        "arithmetic": "OCF less net PPE cash payments equals negative75390millionTWD inQ3 versus negative32835millionTWD inQ2. This is an explicitly defined cash-flow subtraction,not a company-reported adjusted FCF metric. USD equipment-capex disclosure and TWD PPE cash-payment line have different scope/timing; neither is substituted for the other.",
+        "concentration": "ATM top-five customer share46%vs44%Q2;top10 share63%vs60%. EMS top-five70%vs58%. Customer identities and incremental AI-customer economics undisclosed.",
+        "limits": "No authenticated full October29 call/Q4 guidance or newLEAP forecast in this release. Actual profitability exceeded the reported July margin ranges,with FX/seasonality/mix as possible contributors; AI-only margins and price effects are not isolated. No extrapolation of consolidated growth to any specific Taiwan supplier order.",
+        "coverage": {
+          "active_universe_count": 98,
+          "universe_commit_sha": "0f18d6e38b50208ba69df8281c60ef0d2dd84bb8",
+          "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+          "scope": "All 98 active companies included in seven grouped current-event discovery queries. This is event discovery, not 98 individual issuer financial audits. Deep source checks completed for Delta, ASE and TSMC candidates. MediaTek, NVIDIA, AMD and Marvell official indexes checked; Broadcom IR failed. CSP indexes partly dynamic or inaccessible; no inference of absence of news. Other-repo watchlist unchanged."
+        }
+      },
+      "status": "issuer_unaudited_financial_and_cash_flow_tables_verified_call_and_expansion_returns_pending_ledger_only_no_article"
+    },
+    {
+      "fingerprint": "tsmc-auo-taichung-factory-and-cleanroom-acquisition-notice-38800million-20261029",
+      "event_date": "2026-10-29",
+      "discovered_date": "2026-10-29",
+      "instruction_commit_sha": "76598908fdcae9725dafb5a0ddec3f823d877336",
+      "companies": [
+        "TSMC",
+        "AUO"
+      ],
+      "type": "bilateral_issuer_material_notice_reproductions_transaction_purpose_limited",
+      "sources": [
+        "https://tachansec.moneydj.com/z/zf/zfz/zfz_5D8FA45D-AA2D-45BA-A09A-D403007899F6.djhtm",
+        "https://tachansec.moneydj.com/z/zf/zfz/zfz_3F74DE07-B04F-4380-9608-0142C07B6601.djhtm",
+        "https://udn.com/news/story/7240/9844803"
+      ],
+      "facts": {
+        "source_authentication": "Full31-field TSMC and AUO material-announcement reproductions attributed to MOPS,displayedOctober29 14:14:13 and14:28:23 Asia/Taipei,read and cross-checked. Direct TWSE OpenAPI response fetched this run only containedOctober28 announcements;October29 direct exchange original not obtained. This is reproduced issuer-notice evidence,not direct-MOPS completion.",
+        "acquisition_price_TWD_million_ex_tax": 38800,
+        "registered_building_area_square_meters": 429030,
+        "assets": "Nine building registrations in Taichung Xitun Anlin section,including buildings,cleanrooms and related utilities facilities.",
+        "disclosed_buyer_purpose": "Operations and production use. Approval follows TSMC delegated authority; seller board approvedOctober29. Delivery/payment per real-estate contract; seller says installments. Closing and payment completion not verified.",
+        "baseline": "Earlier press reports described negotiations; matching buyer/seller notices now disclose agreed asset scope and amount. No prior ledger event for this transaction found.",
+        "limits": "Specific process,advanced-packaging technology,equipment fit-out,capacity,commissioning schedule,incremental earnings and customer commitments undisclosed. Existing factory purchase is not commissioned semiconductor capacity. Seller disposal gain is not recurring TSMC operating profit.",
+        "coverage": {
+          "active_universe_count": 98,
+          "universe_commit_sha": "0f18d6e38b50208ba69df8281c60ef0d2dd84bb8",
+          "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+          "scope": "All 98 active companies included in seven grouped current-event discovery queries. This is event discovery, not 98 individual issuer financial audits. Deep source checks completed for Delta, ASE and TSMC candidates. MediaTek, NVIDIA, AMD and Marvell official indexes checked; Broadcom IR failed. CSP indexes partly dynamic or inaccessible; no inference of absence of news. Other-repo watchlist unchanged."
+        }
+      },
+      "status": "matching_issuer_notice_reproductions_verified_direct_exchange_original_and_capacity_plan_pending_ledger_only_no_article"
+    },
+    {
       "fingerprint": "marvell-lumentum-advanced-acquisition-talks-reuters-independent-source-and-bloomberg-20261028",
       "event_date": "2026-10-28",
       "discovered_date": "2026-10-29",
