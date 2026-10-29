@@ -11,6 +11,61 @@
   ],
   "public_events": [
     {
+      "fingerprint": "apacer-q3-2026-sequential-margin-and-operating-profit-contraction-reported-financials-20261029",
+      "event_date": "2026-10-29",
+      "discovered_date": "2026-10-30",
+      "instruction_commit_sha": "55c03fd43361ac742c005eb2e6fa5d359e2d068d",
+      "companies": [
+        "Apacer / 宇瞻 8271"
+      ],
+      "type": "issuer_cumulative_announcement_and_reproduced_quarterly_financial_comparison",
+      "sources": [
+        "https://mops.twse.com.tw/mops/#/web/t05st01",
+        "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7BC535B0D6-5841-4C71-96F1-BB8461683C61%7D",
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f70ff2df-17ee-4093-b399-ddc5f64271ef",
+        "https://m.moneydj.com/f1a.aspx?a=123ca0d8-9fed-4d0d-b8cd-861a20438f87&c=MB00",
+        "https://www.apacer.com/zh-tw/normaldownload/investor-conference"
+      ],
+      "facts": {
+        "source_authentication": "TWSE original listed-company material-announcement table asof1151030 contains Apacer October29 18:26:03 board-approved January1–September30 cumulative results. Q3 standalone income statement read in full broker-hosted MoneyDJ reproduction; Q2 comparison read in full MoneyDJ July23 reproduction. Reproductions are same underlying company financial source,not independent corroboration. Original quarterly report PDF,notes and current call not obtained.",
+        "currency": "TWD",
+        "unit": "thousand unless percentages",
+        "Q3": {
+          "revenue": 8581904,
+          "gross_profit": 3439466,
+          "reported_gross_margin_percent": 40.08,
+          "operating_profit": 2615861,
+          "reported_operating_margin_percent": 30.48,
+          "total_net_profit": 2074844
+        },
+        "Q2": {
+          "revenue": 9676150,
+          "gross_profit": 4959214,
+          "reported_gross_margin_percent": 51.25,
+          "operating_profit": 3493638,
+          "reported_operating_margin_percent": 36.11,
+          "total_net_profit": 2778500
+        },
+        "derived": {
+          "revenue_qoq_percent": -11.308691990099373,
+          "operating_profit_qoq_percent": -25.125012952114666,
+          "gross_margin_qoq_percentage_points": -11.17,
+          "operating_margin_qoq_percentage_points": -5.63
+        },
+        "original_nine_months": {
+          "revenue": 25300238,
+          "gross_profit": 11868032,
+          "operating_profit": 8422516,
+          "parent_net_profit": 6564029,
+          "basic_eps": 50.83
+        },
+        "reconciliation": "Nine-month revenue/grossprofit/operatingprofit less reproduced firsthalf values16718334/8428566/5806655 equals reproduced standaloneQ3 values. Parentprofit and totalnetprofit differ; no EPS comparison used because reproduced15.34 differs from simple cumulative subtraction50.83-35.51=15.32.",
+        "counterevidence": "Q3 grossmargin40.08% and operatingmargin30.48% remain far above yearago18.40%/8.30%; operatingprofit2615861 versus267758 yearago. Sequential contraction doesnot byitself prove CSP or endcustomer demand contraction.",
+        "limits": "No AI-only revenue or margin split,inventory-layer cost/ASP bridge,current customer allocation,forward guidance ororiginal consensus authenticated. Cashflow reproduction discovered but not reconciled against complete issuer statement; no cashconversion conclusion. Not generalized to memory manufacturers or entire AI supply chain."
+      },
+      "status": "original_cumulative_notice_and_reproduced_quarter_arithmetic_verified_ledger_only_original_pdf_and_cash_followup_pending_no_article"
+    },
+    {
       "fingerprint": "amazon-q3-2026-aws-growth-and-quarterly-cash-capex-fcf-divergence-primary-20261029",
       "event_date": "2026-10-29",
       "discovered_date": "2026-10-30",
