@@ -11,6 +11,75 @@
   ],
   "public_events": [
     {
+      "fingerprint": "ibiden-fy2026-h1-ai-substrate-profit-guidance-and-fy2029-capacity-investment-primary-20261029",
+      "event_date": "2026-10-29",
+      "discovered_date": "2026-10-29",
+      "instruction_commit_sha": "a293241a3f018ed601f8af0f8b43f3bd10bd1797",
+      "companies": [
+        "IBIDEN / 揖斐電 4062"
+      ],
+      "type": "issuer_financial_results_guidance_revision_and_board_capital_investment",
+      "sources": [
+        "https://www.ibiden.com/ir/items/gyousekishuusei2026Q2.pdf",
+        "https://www.ibiden.com/ir/items/koteishisansyutoku2026Q2.pdf",
+        "https://www.ibiden.com/ir/items/tannshinn2026Q2.pdf"
+      ],
+      "facts": {
+        "source_authentication": "IssuerIRindex and complete1pageinvestment,2pageguidancerevision and14pagefinancialresults PDFs downloaded/read; keyrevision,investment andcashflowpages visuallychecked. Englishtranslations referenceJapaneseoriginal;unauditedinterimresults. IRindexhasSeptember29typobutactualPDFperiodendsSeptember30.",
+        "scope": "Outside98activeTaiwannames;explicitissuerAIserverCPUandswitchICsubstraterelationship. No watchlist modification or namedTaiwansupplierallocation.",
+        "fiscal_period": "FY2026interimApril1–September30,2026;notstandalonecalendarQ3. Full-yearendsMarch31,2027.",
+        "currency": "JPY",
+        "unit": "million unlessotherwise stated",
+        "full_year_guidance_revision": {
+          "baseline_date": "2026-08-04",
+          "net_sales_prior": 550000,
+          "net_sales_new": 565000,
+          "operating_profit_prior": 127000,
+          "operating_profit_new": 133000,
+          "parent_net_profit_prior": 84000,
+          "parent_net_profit_new": 89000,
+          "reported_revision_percent": {
+            "sales": 2.7,
+            "operating_profit": 4.7,
+            "parent_net_profit": 6
+          },
+          "reason": "Higher-than-expectedhighvalueAIserverproductorders andimprovedmix;weaker yenalsocontributes. ManagementexpectsrobustAI/generalserverandswitchICdemand;no independentconsensuscomparison."
+        },
+        "interim_results": {
+          "sales": 262546,
+          "operating_profit": 60116,
+          "parent_net_profit": 38574,
+          "electronics_external_sales": 172540,
+          "electronics_segment_profit": 50028,
+          "prior_year_electronics_external_sales": 113547,
+          "prior_year_electronics_profit": 25429,
+          "electronics_scope": "NotallAIorABF;segmentprofitexcludes1669inactiveassetdepreciationclassifiednonoperating."
+        },
+        "cashflow": {
+          "operating_cashflow": 193178,
+          "prior_year_operating_cashflow": 36697,
+          "PPE_cash_purchases": 48310,
+          "advance_receipts_increase": 118796,
+          "advance_receipts_balance": 199746,
+          "prior_fiscal_year_end_advance_balance": 80950,
+          "inventory_cash_use": 12018,
+          "receivable_cash_use": 9283,
+          "derived_cash_after_PPE": 144868,
+          "limits": "Advance-receiptsincreaseisabout61.5%ofOCF. CashafterPPEisarithmeticproxy,notrecurringFCFguarantee;prepaymentterms,customeridentities/refundclausesandAI-onlycashallocationnotdisclosed."
+        },
+        "new_board_investment": {
+          "planned_amount": 151000,
+          "sites": "GamaCell6andotheroverseasplants",
+          "purpose": "ExpandhighperformanceICpackagesubstratesprimarilyAIserverCPUs asAIprogressesfromtrainingtoinference/agenticapplications.",
+          "planned_mass_production_start": "FY2029 sequentially",
+          "current_year_earnings_effect": "Issuerexpectsimmaterial",
+          "limits": "Approvedinvestmentplan,notcompletedcapacity,newordersorcurrentyearprofit. No capacityquantity,customerpricing/commitments/utilizationorincrementalTaiwanordersdisclosed. Futurecompetitivecapacitynotassumedimmediateshortagesolution."
+        },
+        "limits": "No newCSPcapexorverifiedTaiwancompanyearningsraise inferred. SharecountandEPSadjustedforJanuaryandOctober2026splits;notcomparedonmixedbasis. Full-yearrevisioniscompanyguidance,notachievedresult."
+      },
+      "status": "issuer_full_documents_financial_cashflow_and_guidance_verified_ledger_only_no_article"
+    },
+    {
       "fingerprint": "adata-q3-2026-profit-growth-and-sequential-margin-compression-reported-results-20261029",
       "event_date": "2026-10-29",
       "discovered_date": "2026-10-29",
