@@ -11,6 +11,90 @@
   ],
   "public_events": [
     {
+      "fingerprint": "amazon-q3-2026-aws-growth-and-quarterly-cash-capex-fcf-divergence-primary-20261029",
+      "event_date": "2026-10-29",
+      "discovered_date": "2026-10-30",
+      "instruction_commit_sha": "6e37842f8cc1dd5614e353988a4f2284314502af",
+      "companies": [
+        "Amazon / AWS"
+      ],
+      "type": "issuer_quarterly_results_cashflow_and_forward_outlook",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20261029.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm",
+        "https://www.marketscreener.com/news/amazon-com-announces-third-quarter-results-ce785fdadd8efe25"
+      ],
+      "facts": {
+        "source_authentication": "SEC submissions API identifies October29 8-K accession0001018724-26-000038. Full8-K and Exhibit99.1 HTML downloaded directly from SEC; cashflow, AWS segment and supplemental six-quarter tables and guidance read and arithmetic reconciled. BusinessWire issuer-release reproduction independently matches headline numbers; same issuer economic source, not independent corroborating demand source. Conference call not yet obtained.",
+        "period": "Quarter ended September30,2026; prior-quarter and prior-year comparatives from same issuer release",
+        "currency": "USD",
+        "unit": "million unless stated otherwise",
+        "baseline": "Prior event amazon-early-rack-receipt-cash-versus-energization-reported-20261019 recorded JulyQ2 trailing12month FCFoutflow7604 and AWSgrowth37%; current release adds actualQ3 and refreshed rolling window, not repetition of early rack receipt report.",
+        "Q3_results": {
+          "group_sales": 201944,
+          "group_operating_income": 28076,
+          "net_income": 20685,
+          "diluted_EPS": 1.89,
+          "AWS_sales": 45984,
+          "prior_year_AWS_sales": 33006,
+          "prior_quarter_AWS_sales": 42232,
+          "AWS_sales_yoy_exact_percent": 39.32012361388839,
+          "AWS_operating_income": 17773,
+          "prior_year_AWS_operating_income": 11434,
+          "prior_quarter_AWS_operating_income": 16621,
+          "AWS_operating_income_yoy_exact_percent": 55.439916039881055,
+          "AWS_reported_margin_percent": 38.7,
+          "prior_quarter_AWS_reported_margin_percent": 39.4,
+          "prior_year_AWS_reported_margin_percent": 34.6,
+          "limits": "AWS revenue includes traditional cloud and AI; no AI-only revenue/margin, supplier allocation or incremental Taiwan earnings revision disclosed. Margin rises YoY but declines0.7pp QoQ using rounded reported values."
+        },
+        "quarterly_cashflow": {
+          "operating_cashflow": 42422,
+          "prior_year_operating_cashflow": 35525,
+          "PPE_cash_purchases": 77259,
+          "PPE_sale_proceeds_and_incentives": 1381,
+          "derived_net_PPE_cash_spend": 75878,
+          "derived_FCF": -33456,
+          "prior_year_derived_FCF": 1297,
+          "long_term_debt_proceeds": 48102,
+          "cash_cash_equivalents_and_restricted_cash_beginning": 80927,
+          "cash_cash_equivalents_and_restricted_cash_end": 58714,
+          "limits": "FCF arithmetic follows issuer OCF less PPE purchases net of proceeds/incentives; whole-company cashflow, not AWS-only or AI project ROIC. Acquisition/nonmarketable investment cash use23986 excluded from this FCF definition; debt proceeds not operating cashflow."
+        },
+        "trailing12months": {
+          "OCF": 168300,
+          "prior_quarter_rolling_OCF": 161403,
+          "prior_year_rolling_OCF": 130691,
+          "net_PPE_cash_spend": 210657,
+          "prior_quarter_rolling_net_PPE_cash_spend": 169007,
+          "prior_year_rolling_net_PPE_cash_spend": 115903,
+          "FCF": -42357,
+          "prior_quarter_rolling_FCF": -7604,
+          "prior_year_rolling_FCF": 14788,
+          "derived_change_versus_prior_quarter_rolling_FCF": -34753,
+          "limits": "Overlapping rolling12month windows, not standalone-quarter figures; stand-alone Q3 FCF is -33456. Net PPE spending increases94754 YoY; issuer attributes increase primarily to AI investments."
+        },
+        "outlook": {
+          "full_year_2026_cash_capex_billion": 220,
+          "capex_status": "Maintained, not cut or raised in this release; not all AI spending or named supplier orders.",
+          "CEO_AWS_revenue_growth_projection_2027_and_2028_percent": "over40% each year",
+          "projection_status": "Forward-looking management statement in release, not achieved growth, booked orders or numeric2027capexbudget.",
+          "Q4_group_sales_range": [
+            240000,
+            247000
+          ],
+          "Q4_group_operating_income_range": [
+            28500,
+            33500
+          ],
+          "prior_year_Q4_operating_income": 24977
+        },
+        "earnings_bridge": "Issuer explains net income YoY decline primarily by prior-year9500 pre-tax Anthropic investment gain; not evidence AWS operating profit declined. Prime Day moved from Q3 to Q2 in most major countries; group retail comparisons affected.",
+        "limits": "No new capacity energization/utilization breakdown, customer contract cancellation terms, actual rack acceptance reconciliation, AI-only margins or authenticated current call Q&A obtained. No inferred equipment cancellations, supplier design wins, allocation shifts or projected share returns."
+      },
+      "status": "primary_8k_exhibit_financial_tables_and_cashflow_reconciled_ledger_only_call_and_deployment_followup_pending_no_article"
+    },
+    {
       "fingerprint": "alphabet-q3-2026-10q-tpu-repurchase-guarantees-and-cash-commitment-disclosure-20261029",
       "event_date": "2026-10-29",
       "discovered_date": "2026-10-30",
