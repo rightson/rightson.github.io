@@ -11,6 +11,75 @@
   ],
   "public_events": [
     {
+      "fingerprint": "samsung-q3-2026-ds-profit-hbm4-sales-2027-supply-outlook-and-cash-conversion-20261029",
+      "event_date": "2026-10-29",
+      "discovered_date": "2026-10-29",
+      "instruction_commit_sha": "db103e547a7797e052fe74da8d5711f604f9fa84",
+      "companies": [
+        "Samsung Electronics"
+      ],
+      "type": "issuer_quarterly_segment_results_memory_supply_outlook_and_cash_conversion",
+      "sources": [
+        "https://news.samsung.com/global/samsung-electronics-announces-third-quarter-2026-results",
+        "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2026_3Q_conference_eng.pdf",
+        "https://news.samsungsemiconductor.com/global/samsung-electronics-announces-earnings-guidance-for-third-quarter-2026/",
+        "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2026_2Q_conference_eng.pdf"
+      ],
+      "facts": {
+        "source_authentication": "Issuer October29 newsroom complete body retrieved through standard HTTPS after webreader failures; current official Q3 deck text read and memory/cashflow pages visually checked; October8 issuer guidance and prior Q2 official deck compared. Q3 deck says external review not yet complete, amounts rounded.",
+        "baseline": "First sourced Samsung quarterly segment/cash baseline in this ledger. October8 already forecast consolidated revenue195trn and operating profit107.4trn; current195.3/107.4 is confirmation,not a newly authenticated earnings surprise. Q2 already disclosed HBM4 sales ramp and advanced-node engagements; not treated as first-ever commercialization.",
+        "currency": "KRW",
+        "unit": "trillion unless percentage",
+        "Q3": {
+          "consolidated_revenue": 195.3,
+          "operating_profit": 107.4,
+          "DS_revenue": 147.1,
+          "DS_operating_profit": 106.5,
+          "memory_revenue": 140.7,
+          "DX_operating_profit": -0.8
+        },
+        "Q2_comparison": {
+          "DS_revenue": 127.5,
+          "DS_operating_profit": 89.2,
+          "memory_revenue": 120.8
+        },
+        "cash_comparison": {
+          "Q3_OCF": 98.6,
+          "Q2_OCF": 105.1,
+          "Q3_cash_PPE_purchase": 26.9,
+          "Q2_cash_PPE_purchase": 14.1,
+          "Q3_OCF_minus_cash_PPE_calculated": 71.7,
+          "Q2_OCF_minus_cash_PPE_calculated": 91,
+          "scope": "Calculated cash-investment proxy,not issuer defined FCF or AI-only cashflow; Q3 reported capex29 differs from cashPPE26.9. Cash balance shown on deck also includes shortterm financial instruments and assets,not only cash equivalents."
+        },
+        "capex": {
+          "Q3": 29,
+          "Q2_implied_from_issuer_QoQ_change": 16.8,
+          "nine_month": 56.9,
+          "FY2026_plan": 84.4,
+          "DS_FY2026_plan": 76.8,
+          "limits": "Plan not actual full-year cash paid; no authenticated prior same-basis full-year guidance revision claimed."
+        },
+        "product_and_outlook": "Issuer attributes memory record profitability to product mix,price and constrained capacity,with further HBM4 sales growth and serverSSD demand. 2027 stronger supply shortage versus2026 is management forecast; long-term contracts described as strategy,not quantified signed coverage or customer-specific guaranteed capacity. Foundry cites HBMbase-die/advanced-node improvement and hyperscaler2nm HPC wins without customer names or contract economics.",
+        "transmission": "Adds segment profit and cash data to AI memory demand thesis and supports equipment/packaging followup,without assigning contracts or earnings to any Taiwan supplier. Commodity DRAM/NAND pricing and AI mix both contribute; separate foundry/Memory profit and AI-only returns unavailable.",
+        "limits": "Consolidated profit matches October8 guidance; expansion and price/mix can explain cash/earnings divergence. No original market consensus revision,HBM yield/price/volume,customer qualification audit or individual Taiwan award verified. Do not infer all shipments are AI or that new fabs prevent future oversupply.",
+        "screening": {
+          "active_universe_count": 98,
+          "grouped_queries": 7,
+          "universe_commit": "0f18d6e38b50208ba69df8281c60ef0d2dd84bb8",
+          "universe_blob": "88422949d38165d4757a1e24c27f8662bede14c1",
+          "TWSE_notices": 160,
+          "TWSE_matches": 46,
+          "TWSE_companies": 12,
+          "TPEx_notices": 60,
+          "TPEx_matches": 11,
+          "TPEx_companies": 5,
+          "limits": "Snapshots byte-identical to preceding08:40 batch; TWSEoutputOct29issuerOct28 and TPExoutputOct28issuerOct27. Groupsearch and notice heading screening,not98fullfinancialaudits. TSMC/MediaTek/NVIDIA/AMD/Broadcom/Marvell official indexes checked; dynamic CSP pages incomplete and Microsoft call frame lacks full transcript. Already registered LMOC quarterly reports not repeated."
+        }
+      },
+      "status": "issuer_primary_segment_and_cashflow_increment_verified_ledger_only_no_article"
+    },
+    {
       "fingerprint": "microsoft-cy2026-capex-175-to170bn-thirdparty-gpu-delivery-delay-reported-call-20261028",
       "event_date": "2026-10-28",
       "discovered_date": "2026-10-29",
