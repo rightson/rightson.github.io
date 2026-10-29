@@ -11,6 +11,56 @@
   ],
   "public_events": [
     {
+      "fingerprint": "samsung-q3-call-2027-hbm-price-volume-soldout-and-memory-lta-customer-coverage-reported-20261029",
+      "event_date": "2026-10-29",
+      "discovered_date": "2026-10-29",
+      "instruction_commit_sha": "75f28207398cd938183af734ee63f8be95661a6a",
+      "companies": [
+        "Samsung Electronics"
+      ],
+      "type": "original_reporting_of_management_HBM_price_volume_negotiations_and_memory_long_term_agreements",
+      "sources": [
+        "https://www.asiae.co.kr/en/article/2026102912145271008",
+        "https://mbiz.heraldcorp.com/article/10918805",
+        "https://biz.chosun.com/en/en-it/2026/10/29/LVZYSXSHQNF35DU3AGFBG3AOSA/?outputType=amp",
+        "https://news.samsung.com/global/samsung-electronics-announces-third-quarter-2026-results",
+        "https://www.samsung.com/global/ir/"
+      ],
+      "facts": {
+        "authentication": "Full original AsiaBusinessDaily October29 12:14KST report,KwonHyeonji,and HeraldBusiness full article retrieved by standard HTTPS after webreader failures. Both separately attribute2027HBMnegotiations/soldout to companycall. ChosunBiz full original body separately reports supply outlook. Englisharticles are translated reporting,not issuer transcript. IssuerIR links October29call10:00KST, but webcast frame returned no readable transcript/audio; primary Q&A not authenticated.",
+        "baseline": "Prior Samsung release/deck event verified quarterly segment profits and qualitative longtermcontract strategy but explicitly lacked quantified signed coverage. This event adds reported completed2027price/volume negotiations and signedcustomer count,not another repeat of107.4trnconsolidatedprofit or84.4trncapex.",
+        "HBM_reported_call": {
+          "period": "2027",
+          "supply_negotiations": "Completed at company target prices; existing allocation described as sold out,with requests for additional supply from key customers.",
+          "price_or_volume_amount": "Undisclosed. No verified YoY price increase or fixed capacity quantity.",
+          "HBM4_Q3_revenue_sequential_growth": "more than threefold",
+          "HBM4_share_of_HBM_revenue_percent_approx": 60,
+          "qualification": "HBM4 execution relative to earlierQ2target,not a newly raised numerical guidance. HBM4E initial customer evaluation remains sample stage,not production."
+        },
+        "memory_LTA_reported_call": {
+          "signed_large_customer_count": 10,
+          "additional_customers_under_negotiation": 10,
+          "long_term_capacity_coverage_target_percent": [
+            60,
+            70
+          ],
+          "target_year": 2030,
+          "scope": "MemoryLTAs,not all explicitlyHBM;60-70%is2030target,not achievedcurrentcoverage. Additionaltennegotiations are not signedcontracts."
+        },
+        "supply_outlook": "ChosunBiz attributes shortage through2028 to management,because construction/equipmentleadtime,largerHBM4E/HBM5dies and moreprocesssteps constrain outputgrowth evenif2027capexrises. This is managementforecast,not independently measuredindustrybalance.",
+        "transmission": "Reported agreedvolume/pricing adds visibility beyond genericdemandgrowth. HBMmix/yield andcontractperformance determine durable earnings. No named Taiwan procurementallocation,customer list,guaranteedmargin orincremental cashreceipt established.",
+        "limits": "Contract originals,takeorpay,cancellation/renegotiationclauses,prepayment,absoluteprices,HBMquantities andqualifiedcapacity notobtained. Soldout isnot deliveredrevenue orirrevocablecash. Prior cashconversionweakness remains valid; no authenticated analystconsensusrevision. No inference ofTaiwancompanyearnings.",
+        "coverage": {
+          "active_universe_count": 98,
+          "grouped_search_queries": 7,
+          "universe_commit_sha": "0f18d6e38b50208ba69df8281c60ef0d2dd84bb8",
+          "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+          "scope": "All98includedingroupsearch;not98individualfinancialaudits. OfficialTSMC/MediaTek/NVIDIA/AMD/Broadcom/Marvellindexeschecked. DynamicCSPindexes/Microsoftcallframeincomplete,notabsenceofnews. ExistingLMOClongcontractalreadyannouncedAugust26,notnewOctober28contract."
+        }
+      },
+      "status": "original_reports_verified_primary_QA_and_executed_contracts_pending_ledger_only_no_article"
+    },
+    {
       "fingerprint": "samsung-q3-2026-ds-profit-hbm4-sales-2027-supply-outlook-and-cash-conversion-20261029",
       "event_date": "2026-10-29",
       "discovered_date": "2026-10-29",
