@@ -11,6 +11,46 @@
   ],
   "public_events": [
     {
+      "fingerprint": "yageo-q3-2026-profit-margin-conversion-reported-results-20261029",
+      "event_date": "2026-10-29",
+      "discovered_date": "2026-10-29",
+      "instruction_commit_sha": "5b8f8037a1d1f03417742169377cc9c1f08a82ad",
+      "companies": [
+        "YAGEO / 國巨 2327"
+      ],
+      "type": "reported_quarterly_profit_and_margin_conversion",
+      "sources": [
+        "https://news.nextapple.com/finance/20261029/C3527F8B22B14EB4F37CAFA6675B9843",
+        "https://stock.capital.com.tw/z/zf/zfz/zfz_E0C14D50-D263-493C-8016-46A8BC478909.djhtm"
+      ],
+      "facts": {
+        "source_authentication": "Full original Nextapple article by Lu Cheng-Che, dated 2026-10-29 16:24 Asia/Taipei, read. One original reporting source; no second independent confirmation. Issuer IR page fetched but returned a dynamic product/site framework, no authenticated Q3 PDF/transcript. Exchange notice snapshot still issuer-date October28. Treat as reported results pending issuer reconciliation.",
+        "currency": "TWD",
+        "unit": "100 million except EPS/percent",
+        "q3_2026": {
+          "revenue": 495.32,
+          "gross_profit": 203.08,
+          "gross_margin_percent": 41,
+          "operating_profit": 146.03,
+          "operating_margin_percent": 29.5,
+          "attributable_net_profit": 119.81,
+          "EPS_TWD": 5.83
+        },
+        "reported_qoq": {
+          "revenue_percent": 11.4,
+          "gross_profit_percent": 18.6,
+          "gross_margin_pp": 2.5,
+          "operating_profit_percent": 24.3,
+          "operating_margin_pp": 3.1,
+          "net_profit_percent": 27.2
+        },
+        "baseline": "October7 issuer monthly revenue notice already disclosed Q3 unaudited revenue495.31 and +11.4% QoQ; revenue is not a new earnings surprise. New information is reported quarterly profit/margin conversion.",
+        "reported_company_comment": "AI-related demand supports sales; standard and specialty components both grew; customer inventories described as healthy. Qualitative attribution, not AI-only revenue/profit segmentation.",
+        "limits": "No primary Q3 cashflow/FCF reconciliation, product/organic versus acquisition mix, realized price/cost bridge, contracted backlog, consensus population or full official Q&A verified. Report does not establish recurring growth or isolate AI contribution."
+      },
+      "status": "original_media_full_results_read_primary_financial_reconciliation_pending_ledger_only_no_article"
+    },
+    {
       "fingerprint": "ase-q3-call-leap-2026-sales-and-capex-raised-cpo-fullprocess-2027-negative-fcf-outlook-reported-20261029",
       "event_date": "2026-10-29",
       "discovered_date": "2026-10-29",
