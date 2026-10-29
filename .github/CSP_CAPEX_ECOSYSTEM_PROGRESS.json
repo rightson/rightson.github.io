@@ -11,6 +11,76 @@
   ],
   "public_events": [
     {
+      "fingerprint": "alphabet-q3-2026-10q-tpu-repurchase-guarantees-and-cash-commitment-disclosure-20261029",
+      "event_date": "2026-10-29",
+      "discovered_date": "2026-10-30",
+      "instruction_commit_sha": "089633c24a8d1466235684d94cef364d8c72f2ae",
+      "companies": [
+        "Alphabet / Google"
+      ],
+      "type": "issuer_10q_revenue_policy_contingent_guarantee_and_cash_commitment_disclosure",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+        "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm",
+        "https://www.fool.com/earnings/call-transcripts/2026/10/29/alphabet-googl-q3-2026-earnings-call-transcript/"
+      ],
+      "facts": {
+        "source_authentication": "SEC submissions API identifies October 29 10-Q accession 0001652044-26-000084; current and June 30 10-Q full HTML downloaded directly from SEC and relevant Notes 1, 4, 10, MD&A and risk-factor text compared. Call remarks use attributed third-party transcription, not independently authenticated issuer audio.",
+        "period": "Quarter ended September 30, 2026; comparison June 30, 2026",
+        "currency": "USD",
+        "unit": "billion unless otherwise stated",
+        "baseline_fingerprint": "alphabet-q3-2026-tpu-system-sales-cloud-profit-and-negative-fcf-primary-20261028",
+        "tpu_repurchase": {
+          "maximum_potential_payments": 6.6,
+          "conditions": "Certain previously sold TPU hardware and embedded software may have to be repurchased under specified conditions, with assets returned in working order.",
+          "revenue_policy": "Preset-price multiyear repurchase options generally accounted for as rights of return. Assignment to another party while original customer retains put right is accounted for as financial guarantee. Hardware/software revenue recognized upon control transfer net of estimated returns; installation/support/warranty ratably or as performed.",
+          "prior_disclosure": "June 30 Note 1 already disclosed customer options as rights of return. September filing adds explicit preset repurchase mechanics, assignment/guarantee treatment and quantified 6.6 maximum; absence of the quantified exposure in June is not proof June exposure was zero.",
+          "issuer_counterevidence": "Fair value of guarantee obligations not material. Management believes discount on repurchase and other factors mean counterparties have no economic incentive to exercise.",
+          "limits": "Maximum contingent payments, not realized loss, liability fair value, returns forecast, total TPU sales, or all TPU sales carrying guarantees. Customers, exercising thresholds, depreciation schedules and supplier allocations not disclosed."
+        },
+        "commitments": {
+          "purchase_total": 924.4,
+          "multi_year_included_in_total": 802.1,
+          "due_within_12_months": 213.4,
+          "prior_reported_purchase_total": 811,
+          "prior_short_term": 200.7,
+          "comparability_limit": "June Note 10 reports 707.0 expected fixed/guaranteed commitments and variable agreements minimums; September Note 10 uses maximum contractual price/volume limits and includes 4.5 standby letters of credit within 802.1. Do not present 924.4 versus 811.0 or 802.1 versus 707.0 as a clean like-for-like organic spending growth rate. Amounts include energy/content/inventory and are not all AI capex or recognized supplier revenues.",
+          "uncommenced_leases": 130.5,
+          "prior_uncommenced_leases": 85.2,
+          "prior_additional_short_term_lease": 5.8,
+          "lease_comparison_limit": "June separately disclosed 5.8 short-term lease commencing Q3. 130.5 versus 85.2 is disclosed uncommenced lease line comparison, not net new signed commitments or additions to annual capex.",
+          "equity_investment_funding": 21.9,
+          "backstops_total": 75.7,
+          "executed_credit_derivatives_included": 48,
+          "future_backstops_included": 27.7,
+          "crux_related_party_included_in_future": 10,
+          "financial_guarantees_total": 22.8,
+          "energy_equipment_guarantees_included": 16.2,
+          "tpu_guarantees_included": 6.6,
+          "limits": "802.1 included in 924.4; 48+27.7=75.7; 16.2+6.6=22.8. Contingent obligations separate from future cash commitments; no combined annual expenditure total. Disclosed commitments subject to performance, variable pricing/volumes and timing; power contracts without fixed/minimum commitment excluded."
+        },
+        "cashflow_bridge": {
+          "q3_reported_operating_cashflow": 42.29,
+          "q3_PPE_cash_spend": 51.355,
+          "q3_reported_FCF": -9.065,
+          "july_android_ec_fine_and_interest_cash_payment": 5.2,
+          "prior_accrual": "2018 antitrust fine previously accrued, appeal denied July 2026; payment is Q3 cash use, not a fresh Q3 earnings charge or direct evidence of AI demand decline.",
+          "arithmetic_FCF_excluding_only_payment": -3.865,
+          "limits": "Arithmetic counterfactual, not issuer adjusted FCF, recurring run rate or normalized cashflow; TPU inventory and other working-capital/capex effects remain."
+        },
+        "attributed_call_guidance": {
+          "cloud_margin": "36.2% Q3 reported margin; third-party bridging capacity only came online near quarter end, management expects Q4 usage ramp and near-term margin headwinds.",
+          "capex_2026_unchanged_range": [
+            195,
+            205
+          ],
+          "capex_2027": "Management expects significant increase; no numeric range supplied.",
+          "limits": "Forward-looking remarks transcribed by third party; no supplier-specific purchase allocation, price or earnings revision established."
+        }
+      },
+      "status": "primary_10q_full_source_and_prior_period_comparison_verified_ledger_only_no_article"
+    },
+    {
       "fingerprint": "ibiden-fy2026-h1-ai-substrate-profit-guidance-and-fy2029-capacity-investment-primary-20261029",
       "event_date": "2026-10-29",
       "discovered_date": "2026-10-29",
