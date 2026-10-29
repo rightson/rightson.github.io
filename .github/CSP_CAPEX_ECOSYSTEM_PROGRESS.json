@@ -11,6 +11,47 @@
   ],
   "public_events": [
     {
+      "fingerprint": "ase-q3-call-leap-2026-sales-and-capex-raised-cpo-fullprocess-2027-negative-fcf-outlook-reported-20261029",
+      "event_date": "2026-10-29",
+      "discovered_date": "2026-10-29",
+      "instruction_commit_sha": "15cdabad5a2eb476a82482ad1be153d69c62b3c7",
+      "companies": [
+        "ASE Technology Holding"
+      ],
+      "type": "original_call_reporting_guidance_revision_and_capacity_cash_outlook",
+      "sources": [
+        "https://money.udn.com/money/story/5612/9845055",
+        "https://www.mirrordaily.news/story/94559",
+        "https://ir.aseglobal.com/html/ir_results.php"
+      ],
+      "facts": {
+        "authentication": "Full CNA report by Chung Jung-feng syndicated by Economic Daily News,October29 16:30:39 Asia/Taipei,and separate Mirror Daily original by Hsieh Cheng-hsueh,published16:50 and updated16:50:18,read directly. Official ASE IR earnings-results page returned403; issuer-hosted Q&A/audio/full transcript not authenticated. All forward figures below remain attributed management outlook,not actual deliveries.",
+        "baseline": "Immediately preceding ledger entry authenticated Q3 results and cash flow but explicitly lacked October29 call/Q4 and new LEAP outlook. July2027LEAP doubling aim already existed; it is not presented as a newly introduced doubling objective. Current call provides higher2026 revenue baseline,new capital-spending revision and specific2027 product/cash outlook.",
+        "reported_guidance_USD_billion": {
+          "LEAP_2026_prior": 3.7,
+          "LEAP_2026_revised": 4,
+          "capex_2026_prior": 10.5,
+          "capex_2026_revised": 11.5,
+          "full_process_2026_unchanged_target": 0.3,
+          "full_process_2027_target_greater_than": 1,
+          "CPO_2027_target_greater_than": 0.5
+        },
+        "reconciliation": "CNA says2026LEAP raised to4.0billionUSD; Mirror says more than4.0billion. Common supported revision is approximately4.0billion from3.7billion,about8.1%higher. Capex rises1.0billion,about9.5%.2027LEAP aim remains doubling from revised current-year base; no independent explicit precise2027contracted revenue adopted.",
+        "investment_composition": "Both reports split incremental1.0billionUSD capital expenditure roughly equally between facilities and equipment; Mirror specifies60%of equipment allocation toLEAP and40%to advanced mainstream processes. Not60%of all incremental capex.",
+        "product_scope": "Full-process CoWoS,wafer test andCPO are described asLEAP growth contributors. Full-process andCPO figures are not added on top ofLEAP total. No named incremental Taiwan supplier award or procurement allocation inferred.",
+        "additional_Mirror_call_attribution": "Q4 ATM revenue expected+11-13%QoQ and gross margin+1-2percentage points. Report says CPO mass production startedQ4 and2027CPO revenue expectedabove0.5billionUSD; production stage is management-reported,not independently verified shipments. Full-process yields reportedly at volume-shipment standard,but capacity/facility space constrains supply.2027capex expectedabove2026level and2027free cash flow expectedto remain negative. Company's comments on financing availability do not establish debt funding already received.",
+        "limits": "Q4guidance,production/yield and2027cash-flow statements outside CNA's narrower report rely on one original Mirror call account. No full primary transcript,new contract terms,customer concentration bridge,realizedCPOASP,product margin or paid/accepted shipment data obtained. Different definitions of free cash flow not reconciled to an issuer calculation. Management outlook can change; no analyst-consensus upgrade or stock valuation assertion.",
+        "coverage": {
+          "active_universe_count": 98,
+          "grouped_discovery_queries": 7,
+          "universe_commit_sha": "0f18d6e38b50208ba69df8281c60ef0d2dd84bb8",
+          "universe_blob_sha": "88422949d38165d4757a1e24c27f8662bede14c1",
+          "scope": "All98active names included in grouped current-event discovery,not98individual company financial audits. Core TSMC/MediaTek andNVIDIA/AMD/Broadcom/Marvell official indexes checked. Broadcom results index lagged;some CSP indexes returned dynamic frames. TWSE notice snapshot160rows datedOctober28;TPEx70rows datedOctober28. No absence-of-news inference from limited indexes or delayed snapshots. Other-repo watchlist unchanged."
+        }
+      },
+      "status": "two_original_call_reports_cross_checked_core_revision_primary_transcript_and_realized_returns_pending_ledger_only_no_article"
+    },
+    {
       "fingerprint": "delta-q3-2026-parent-segment-and-nonoperating-bridge-call-delivery-cost-pass-through-20261029",
       "event_date": "2026-10-29",
       "discovered_date": "2026-10-29",
