@@ -11,6 +11,47 @@
   ],
   "public_events": [
     {
+      "fingerprint": "yageo-q3-call-ai-mix-lta-agreements-and-2027-capacity-expansion-20261029",
+      "event_date": "2026-10-29",
+      "discovered_date": "2026-10-29",
+      "instruction_commit_sha": "081864c2522172f74b6b7e0dc3cccf3d115b055d",
+      "companies": [
+        "Yageo (2327)"
+      ],
+      "type": "reported_management_call_product_mix_order_coverage_and_capacity_outlook",
+      "sources": [
+        "https://www.cna.com.tw/news/afe/202610290288.aspx",
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=07ffa72c-e26b-4bfe-8a11-2ba21639e523"
+      ],
+      "facts": {
+        "comparison_with_previous_event": "Previous 16:24 original report supported reported Q3 profit/margin conversion only and lacked AI segmentation, contracted order visibility and capacity schedule. This entry adds later call reporting; it does not repeat a quarterly revenue or profit surprise.",
+        "source_authentication": "MoneyDJ original report by Liu Chiung-wen, published 2026-10-29 17:27:45 Asia/Taipei, full body read. CNA original report by Chung Jung-feng, 2026-10-29 17:45, complete text available in search retrieval; direct page fetch403. Independent original reporting, not syndications of one report. Official complete Q&A and contract documents not obtained.",
+        "ai_revenue_share": {
+          "q2_percent": 16,
+          "q3_percent": 19.8,
+          "change_percentage_points": 3.8,
+          "source_scope": "MoneyDJ exact19.8; CNA near20. Cross-product AI application classification, not an additional product-revenue category."
+        },
+        "product_mix": {
+          "mlcc_q2_percent": 19.1,
+          "mlcc_q3_percent": 21.5,
+          "resistor_q2_percent": 14.3,
+          "resistor_q3_percent": 15.3
+        },
+        "reported_management_outlook": {
+          "q4_revenue": "Modest sequential growth expected despite customary seasonality; standard and specialty products both expected to grow.",
+          "q4_gross_and_operating_margins": "Expected slightly above Q3; management outlook, not realized result.",
+          "q3_utilization": "Standard and specialty products near95%.",
+          "q4_utilization": "Both expected above95%.",
+          "q3_book_to_bill": "Quarter average near2; do not compare as acceleration against June month-end2.2, since periods differ.",
+          "long_term_agreements": "CNA reports agreements reached with several major customers, with customers seeking2027supply; no counterparties, volume, price, duration or cancellation clauses disclosed.",
+          "capacity": "CNA reports planned expansion of about10-15% versus current capacity, with some capacity due2027Q2 and other portions2027H2; plan, not commissioned production."
+        },
+        "limits": "No official full financial cashflow reconciliation, full call Q&A, product profitability split, signed LTA documents or named customer allocation verified. AI application share overlaps product mix and cannot be added to MLCC/resistor shares. Near2 book-to-bill does not guarantee noncancellable backlog. Capacity expansion can reduce scarcity if qualified output exceeds demand; realization requires delivery, utilization and cash conversion."
+      },
+      "status": "later_call_reporting_cross_checked_new_ai_mix_lta_and_capacity_outlook_no_article"
+    },
+    {
       "fingerprint": "chroma-q3-2026-operating-profit-photonics-mix-and-cpo-volume-equipment-orders-reported-call-20261029",
       "event_date": "2026-10-29",
       "discovered_date": "2026-10-29",
