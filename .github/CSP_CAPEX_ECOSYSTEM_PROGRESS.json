@@ -11,6 +11,55 @@
   ],
   "public_events": [
     {
+      "fingerprint": "adata-q3-2026-profit-growth-and-sequential-margin-compression-reported-results-20261029",
+      "event_date": "2026-10-29",
+      "discovered_date": "2026-10-29",
+      "instruction_commit_sha": "4e2dd72d992d2f8e4110f34d632193edf3a16697",
+      "companies": [
+        "ADATA / 威剛 3260"
+      ],
+      "type": "quarterly_reported_profit_and_margin_reconciliation",
+      "sources": [
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=1fae5898-3e7d-449e-bd78-d04a34a1da65",
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5491765b-0b87-4343-807d-c9209d819ea1",
+        "https://news.cnyes.com/news/id/6640617"
+      ],
+      "facts": {
+        "source_authentication": "Full MoneyDJ reproduced October29 board-result notice and August6 Q2 income-statement table read; full October29 16:22 original Cnyes report by Chen Yu-ching read. Current issuer IR403 and TPEx notice snapshot stillOctober28; not represented as issuer-original financial-statement audit. Media reports of the same issuer statement are one economic origin.",
+        "baseline": "October6 monthly-sales baseline already established approximatelyTWD53.03bnQ3revenue. New increment is Q3profit/margins,not newly discovered sales growth. No earlier ADATA quarterly-profit event in this ledger.",
+        "currency": "TWD",
+        "unit": "thousand unless EPS/percentage",
+        "Q3_reconstructed_from_reported_YTD_less_Q2_YTD": {
+          "revenue": 52993139,
+          "gross_profit_before_unrealized_sales_adjustment": 19016185,
+          "operating_profit": 15313642,
+          "consolidated_net_profit": 12905357,
+          "parent_net_profit": 12609468
+        },
+        "Q3_reported": {
+          "gross_margin_percent": 35.88,
+          "EPS": 38.69,
+          "operating_profit_qoq_percent": 19.96,
+          "revenue_qoq_percent": 38.93,
+          "parent_net_profit_qoq_percent": 21.22
+        },
+        "Q2_reproduced_financial_table": {
+          "revenue": 38143164,
+          "gross_profit": 16061263,
+          "net_gross_profit": 16062430,
+          "gross_margin_percent": 42.11,
+          "operating_profit": 12765283,
+          "operating_margin_percent": 33.47,
+          "parent_net_profit": 10402425,
+          "EPS": 32.39
+        },
+        "derived_comparison": "Q3grossmargin35.88% versus42.11%Q2,down6.23percentagepoints. Q3operatingmarginabout28.90% versus33.47%Q2,downabout4.57points. Absoluteprofitgrewslowerthansales; reportedrecordEPSdoesnotestablishcontinuedmarginexpansion. Q3grossfigureandnetgrossbasiskeptdistinct;tinyunrealized-salesadjustmentnotinvented.",
+        "management_outlook": "Originalreportattributes stronger2027DRAMshortage expectation and approximately70%CSP/50%PC-mobile supply-fulfillment estimates to chairman. No sample ormethodology supplied;not independently measured market-wide supply statistics or newly executed customer orders. TRUSTA/eSSD mix improvement is management strategy,not quantified realized AIprofit.",
+        "limits": "Current original fullcashflow,inventory,cost-layer/mix bridge and contract pricing unverified. No AI-onlysegmentprofit,HBMmanufacturingrevenue,new namedCSPaward,current institutional consensusrevision or EPSannualization inferred. MonthlyreportedQ3approximately53.03bn differs from quarterlyfinancial52.993139bn; do not relabel as new sales raise."
+      },
+      "status": "reproduced_financial_tables_and_original_reporting_reconciled_full_primary_cashflow_pending_ledger_only_no_article"
+    },
+    {
       "fingerprint": "yageo-q3-call-ai-mix-lta-agreements-and-2027-capacity-expansion-20261029",
       "event_date": "2026-10-29",
       "discovered_date": "2026-10-29",
