@@ -11,6 +11,106 @@
   ],
   "public_events": [
     {
+      "fingerprint": "kingslide-chuan-yi-plants3and5-19712m-capex-and-convertible-bond-funding-board-authorization-primary-20261030",
+      "event_date": "2026-10-30",
+      "discovered_date": "2026-10-31",
+      "instruction_commit_sha": "012e8a94328c3468521ce343acc6a2e5c84b4292",
+      "companies": [
+        "King Slide",
+        "Chuan Yi Technology"
+      ],
+      "type": "board_authorized_capacity_budget_and_proposed_financing_not_signed_customer_order",
+      "sources": [
+        "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+        "https://stock.pchome.com.tw/m/news/cat2/20261030/9700002059202610302.html",
+        "https://www.cna.com.tw/news/afe/202610300255.aspx"
+      ],
+      "facts": {
+        "primary_notice_identity": {
+          "issuer_code": "2059",
+          "publication_date": "2026-10-30",
+          "publication_timezone": "Asia/Taipei",
+          "notice_times": [
+            "16:27:23",
+            "16:27:41",
+            "16:28:05",
+            "16:28:22",
+            "16:28:44",
+            "17:59:28"
+          ],
+          "feed_output_date": "2026-10-31"
+        },
+        "capex_authorization_twd_billion": 19.712,
+        "scope": "Chuan Yi plants 3 and 5 construction and equipment; board authorizes chairman to execute in installments according to construction and equipment procurement progress.",
+        "stated_demand_relationship": "Announcement explicitly cites cloud service providers' expansion of computing capacity as the purpose of the rail-factory project.",
+        "construction_estimate_twd_billion": 11.733,
+        "construction_limit": "Counterparty remains to be determined; actual construction consideration depends on market conditions, negotiation and signed agreement. Construction estimate is part of the project scope, not additive to the capex authorization.",
+        "parent_subscription_plan_twd_billion": 10.5,
+        "subsidiary_ownership": "Parent says it intends to subscribe all new common shares to preserve its 100% ownership.",
+        "proposed_convertible_bonds": [
+          {
+            "issue": "third domestic unsecured convertible bond",
+            "face_value_limit_twd_billion": 9,
+            "tenor_years": 5,
+            "coupon_percent": 0,
+            "issue_price_percent_of_face": [
+              100,
+              105
+            ]
+          },
+          {
+            "issue": "fourth domestic unsecured convertible bond",
+            "face_value_limit_twd_billion": 1,
+            "tenor_years": 5,
+            "coupon_percent": 0,
+            "auction_floor_percent_of_face": 105
+          }
+        ],
+        "funding_limits": "Bond face-value authorization totals TWD10bn and is distinct from planned TWD10.5bn subsidiary equity subscription and TWD19.712bn project budget. Bond terms and conversion/dilution details remain to be agreed and become effective through required procedures; no completed issuance or receipt of proceeds established.",
+        "other_limits": [
+          "The primary announcements do not disclose accepted customer orders, new customer identity, incremental sellable unit capacity, commissioning date, utilization, project margin, cash collection or return on invested capital.",
+          "An earlier proposal to expand plants is not a new discovery; the newly verified evidence here is the October 30 quantified board authorization and proposed funding structure. No percent increase over a comparable prior full-project budget is calculated.",
+          "No private prices, valuation, holdings, institutional flows or trading conditions stored."
+        ]
+      },
+      "status": "primary_notices_verified_public_event_only_no_article_published"
+    },
+    {
+      "fingerprint": "kinsus-59800m-new-project-capex-board-authorization-primary-20261030",
+      "event_date": "2026-10-30",
+      "discovered_date": "2026-10-31",
+      "instruction_commit_sha": "012e8a94328c3468521ce343acc6a2e5c84b4292",
+      "companies": [
+        "Kinsus"
+      ],
+      "type": "new_project_capex_budget_board_authorization_not_annual_cash_spending_forecast",
+      "sources": [
+        "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+        "https://money.udn.com/money/story/5710/9847874"
+      ],
+      "facts": {
+        "primary_notice_identity": {
+          "issuer_code": "3189",
+          "publication_date": "2026-10-30",
+          "publication_time": "19:09:47",
+          "publication_timezone": "Asia/Taipei",
+          "feed_output_date": "2026-10-31"
+        },
+        "board_approved_new_project_capex_budget_twd_billion": 59.8,
+        "purpose_as_disclosed": "Expansion needed for operations.",
+        "funding_as_disclosed": "Own funds or bank financing and other methods.",
+        "execution_condition": "Execution will be adjusted flexibly according to customer demand and market conditions; actual cash payments depend on execution progress and payment terms.",
+        "timing_as_disclosed": "The expected investment date field is not applicable; no annual or multi-year spending schedule is specified.",
+        "limits": [
+          "This is a new project budget authorization, not evidence that TWD59.8bn is spent, a disclosed 2026/2027 cash capex total, an unconditional purchase order, a named AI/ABF project or an earnings forecast revision.",
+          "The notice does not identify product mix, customer commitment, new capacity, start-up date, utilization, project economics, depreciation or financing terms. No completed bank borrowing or expenditure established.",
+          "No comparable prior same-scope project budget verified; do not calculate an uplift versus an unrelated annual capex amount.",
+          "No private prices, valuation, holdings, institutional flows or trading conditions stored."
+        ]
+      },
+      "status": "primary_notice_verified_project_details_pending_public_event_only_no_article_published"
+    },
+    {
       "fingerprint": "meta-sp-global-negative-outlook-capex-and-free-operating-cashflow-assumption-revision-20261030",
       "event_date": "2026-10-30",
       "discovered_date": "2026-10-31",
