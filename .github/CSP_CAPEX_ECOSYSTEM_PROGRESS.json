@@ -11,6 +11,59 @@
   ],
   "public_events": [
     {
+      "fingerprint": "mediatek-q3-call-q4-asic-ramp-guidance-and-second-customer-reported-20261030",
+      "event_date": "2026-10-30",
+      "companies": [
+        "MediaTek"
+      ],
+      "type": "independent_media_reports_of_live_earnings_call_not_yet_primary_transcript_verified",
+      "instruction_commit_sha": "f18ea76185a08c9d8099f23b86ecbe25a11317eb",
+      "facts": {
+        "source_nature": "Mirror Daily original report by Hsieh Cheng-hsueh, published 15:50 and updated 15:53:01 Asia/Taipei; complete article body retrieved directly by HTTPS. NextApple original report by Lu Cheng-che, 15:23, independently attributes Q4 guidance and first-ASIC shipment to the same company earnings call. These are two reporting sources about one company event, not independent confirmations of customer execution.",
+        "previous_company_guidance": "First AI accelerator ASIC planned for Q4 2026 production; second ASIC planned for early 2028. Existing official June/September corporate sources and July Q2 transcript are preserved in earlier ledger events.",
+        "q4_2026_initial_revenue_guidance_twd_billion": [
+          210.1,
+          221.8
+        ],
+        "q4_2026_revenue_change_qoq_percent": [
+          25,
+          32
+        ],
+        "q4_2026_revenue_change_yoy_percent": [
+          40,
+          48
+        ],
+        "q4_2026_gross_margin_percent": {
+          "midpoint": 45,
+          "plus_minus_percentage_points": 1.5
+        },
+        "q4_2026_operating_expense_ratio_percent": {
+          "midpoint": 26,
+          "plus_minus_percentage_points": 2
+        },
+        "reported_first_asic_delivery": "Small-volume shipments began September 2026; company cooperating with supply-chain partners to secure additional capacity.",
+        "reported_second_asic_customer": "Mirror Daily says management confirmed a second AI ASIC customer, with the new program expected to contribute revenue from 2028. Customer identity, contract terms, NRE and margin are not disclosed in the obtained report.",
+        "reported_second_asic_production": "Q1 2028; continued execution toward the existing early-2028 target, not treated as an additional timing upgrade.",
+        "reported_margin_mechanism": "Mirror Daily attributes to CFO David Ku that data-center gross margin remains below corporate average, while ASIC operating margin is expected above corporate average beginning Q4 as business scales. Directional management expectation, not reported segment results.",
+        "comparison_limit": "Q4 is a new initial forecast rather than a revision to an earlier Q4 company forecast. Pre-call broker estimates are not a verified consensus sample.",
+        "limits": [
+          "Official Q3 page still links presentation, operating report and financial statements; no Q3 transcript/replay was available in the freshly retrieved page.",
+          "2027 numerical revenue figures are not accepted here: NextApple headline/lead says USD16bn but a body heading says USD15bn. Mirror Daily reports approaching the pre-existing target upper end. No new 2027 target range is inferred from conflicting secondary wording.",
+          "Second customer is not identified as ByteDance or any other named company, and is not assumed to be the second-generation ASIC for the original customer.",
+          "No disclosed change to Google procurement split, Broadcom/Marvell displacement, foundry/packaging allocation, order quantity or project unit economics is inferred.",
+          "The previously recorded Q3 inventory and negative operating cash flow remain separate facts; new guidance does not establish cash collection or explain all inventory.",
+          "Public event excludes quotes, valuation, institutional flows, positions and trading conditions."
+        ]
+      },
+      "sources": [
+        "https://www.mirrordaily.news/story/94751",
+        "https://news.nextapple.com/finance/20261030/307635496E52514E6CD6A235AFE647FF",
+        "https://www.mediatek.com/zh-tw/investor-relations/financial-information"
+      ],
+      "status": "reported_call_increment_registered_primary_transcript_customer_identity_and_cash_conversion_pending",
+      "research_stage": "two_original_reports_compared_direct_mirror_body_verified_no_article_published"
+    },
+    {
       "fingerprint": "mediatek-q3-2026-operating-profit-inventory-and-financing-cash-divergence-primary-20261030",
       "event_date": "2026-10-30",
       "discovered_date": "2026-10-30",
