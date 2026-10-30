@@ -11,6 +11,58 @@
   ],
   "public_events": [
     {
+      "fingerprint": "digital-realty-q3-2026-ledger-core-ffo-nominal-versus-constant-currency-correction-20261030",
+      "event_date": "2026-10-29",
+      "correction_date": "2026-10-30",
+      "instruction_commit_sha": "6232b5360b9a476bdf2c10d0763f243f32473d36",
+      "companies": [
+        "Digital Realty / DLR"
+      ],
+      "type": "append_only_public_fact_record_correction",
+      "corrects_fingerprint": "digital-realty-q3-2026-bookings-core-ffo-guidance-and-lease-commencement-lag-primary-20261029",
+      "facts": {
+        "source_authentication": "Issuer-hosted October29 Q3 release and July23 Q2 release re-read. Q3 Outlook paragraph and guidance table separately identify nominal and constant-currency Core FFO. This is a correction of the ledger transcription, not an issuer restatement or new guidance revision.",
+        "forecast_period": "2026 full year",
+        "currency": "USD per diluted share",
+        "measure": "Core FFO per share excluding net promote; issuer non-GAAP measure",
+        "nominal_core_FFO": {
+          "prior_guidance_date": "2026-07-23",
+          "old": [
+            8.15,
+            8.2
+          ],
+          "new_guidance_date": "2026-10-29",
+          "new": [
+            8.3,
+            8.35
+          ]
+        },
+        "constant_currency_core_FFO": {
+          "prior_guidance_date": "2026-07-23",
+          "old": [
+            8.1,
+            8.15
+          ],
+          "new_guidance_date": "2026-10-29",
+          "new": [
+            8.25,
+            8.3
+          ]
+        },
+        "correction_scope": "The prior event's facts.guidance.new [8.25,8.30] belongs to constant-currency Core FFO and must not be used as nominal Core FFO. The original event is retained as historical record; this later correction governs interpretation. Other prior facts are not changed.",
+        "limits": [
+          "Not a new forecast increase on October30, an authenticated analyst-consensus revision, or a realized result.",
+          "Core FFO and constant-currency Core FFO are distinct non-GAAP measures; neither is GAAP operating or free cash flow.",
+          "No private quote,valuation,flows,holdings or trading conditions recorded."
+        ]
+      },
+      "sources": [
+        "https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-reports-third-quarter-2026-results",
+        "https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-reports-second-quarter-2026-results"
+      ],
+      "status": "primary_source_reconciliation_verified_append_only_correction_no_article"
+    },
+    {
       "fingerprint": "nvent-q3-2026-organic-growth-profit-and-full-year-guidance-upgrade-primary-20261030",
       "event_date": "2026-10-30",
       "instruction_commit_sha": "20c89ee82b79e94a8a79cde6df13cc7c9c716f73",
