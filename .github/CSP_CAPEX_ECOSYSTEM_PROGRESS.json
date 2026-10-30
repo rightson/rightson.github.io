@@ -11,6 +11,67 @@
   ],
   "public_events": [
     {
+      "fingerprint": "ingersoll-rand-q3-2026-195m-data-center-backup-power-order-and-profit-quality-primary-release-reported-call-20261030",
+      "event_date": "2026-10-30",
+      "discovered_date": "2026-10-31",
+      "instruction_commit_sha": "8a411b7e48d1752b45676b0e4f2bf57cf5c0e313",
+      "companies": [
+        "Ingersoll Rand"
+      ],
+      "type": "new_end_market_order_with_ramp_margin_and_cash_quality_limits",
+      "sources": [
+        "https://investors.irco.com/news/news-details/2026/Ingersoll-Rand-Reports-Third-Quarter-2026-Results/default.aspx",
+        "https://www.nasdaq.com/press-release/ingersoll-rand-reports-third-quarter-2026-results-2026-10-29",
+        "https://stockanalysis.com/stocks/ir/transcripts/721344-q3-2026/"
+      ],
+      "facts": {
+        "authentication": "Complete issuer release obtained directly over HTTPS and corroborated with issuer-distributed Business Wire release on Nasdaq, published October29 16:10EDT. October30 call text read on StockAnalysis; original audio not reviewed. Call-specific statements retained as third-party-hosted management transcript, not independently authenticated issuer audio.",
+        "baseline": "First Ingersoll Rand event in this ledger. Newly sourced order and end-market exposure, not a revision to a previously quantified company data-center forecast. No authenticated consensus or comparable prior order established.",
+        "currency": "USD",
+        "unit": "million unless stated",
+        "release_primary": {
+          "orders": 2345,
+          "orders_yoy_percent": 21,
+          "organic_orders_yoy_percent": 18,
+          "revenue": 2065,
+          "engineered_to_order_infrastructure_award_approx": 195,
+          "ITS_book_to_bill": 1.17,
+          "adjusted_EBITDA": 584,
+          "adjusted_EBITDA_excluding_IEEPA_tariff_refunds": 552,
+          "ex_refund_adjusted_EBITDA_yoy_percent": 1,
+          "ex_refund_adjusted_EBITDA_margin_percent": 26.7,
+          "ITS_ex_refund_margin_percent": 27.8,
+          "ITS_ex_refund_margin_yoy_basis_points": -120,
+          "operating_cashflow": 648,
+          "PPE_cash_spend": 25,
+          "issuer_defined_FCF": 623,
+          "prior_year_FCF": 326,
+          "Q3_ILC_Dover_transaction_recoveries_collected": 162.5,
+          "full_year_FCF_conversion_excluding_recoveries_percent": 95
+        },
+        "reported_call": {
+          "order_scope": "Approximately195m for engineered-to-order integrated backup power plus differentiated customer-specific filtration for mission-critical data centers.",
+          "revenue_timing": "Most meaningful conversion expected2027; not current recognized revenue.",
+          "ramp_economics": "Management describes initial margins below company average while dedicated capacity, engineering and supplier qualification are funded; order accretive to EBITDA dollars/EPS, not initially margin-accretive.",
+          "order_pattern": "Management expects further orders to be lumpy and says market entry occurred within prior12months. No customer name or executed contract terms disclosed.",
+          "status": "Third-party-hosted transcript; issuer release independently confirms195m award but describes it generically as mission-critical infrastructure."
+        },
+        "limits": [
+          "No named CSP, accepted delivery, order cash deposit, cancellation terms, recurring service revenue or Taiwan supplier allocation authenticated.",
+          "Q3 earnings include32m tariff refund in adjusted EBITDA; ex-refund EBITDA grew1%,so headlineEPS does not measure AI-only profit growth.",
+          "FCF includes162.5m settlement collections; not all sustainable operating cash generation. No own adjusted FCF substituted for issuer metric.",
+          "No current valuation,target price,private institutional flows,holdings or trading conditions stored."
+        ],
+        "coverage": "98 active Taiwan symbols read at alpha-quant64349d5f4961ec95fbb767b185b5e79181a2880e,blob88422949d38165d4757a1e24c27f8662bede14c1. Fresh complete TWSE170-record feed now coversOctober30,with50notices across17active companies. TPEx74-record feed remainsOctober29,with6notices across2active companies. Local matching only; no private-watchlist-name external searches. This is announcement screening,not complete all-company current financial/news verification. TSMC official news and MediaTek financial pages rechecked; known events deduplicated. Core/public and generic-sector news discovery performed. Dynamic official-page and company-level coverage gaps remain."
+      },
+      "next_verification": [
+        "Obtain original call replay or issuer presentation linking order to backup power/filtration and quantify contract delivery and collection.",
+        "Verify2027revenue recognition,ramp costs and realized order margin; separate tariff refunds,tax and settlement recoveries.",
+        "Verify repeat orders,customer concentration,cancellation protections and service economics before treating this as durable earnings expansion."
+      ],
+      "publication_status": "public_event_record_only_no_article_no_new_supplier_allocation"
+    },
+    {
       "fingerprint": "kingslide-chuan-yi-plants3and5-19712m-capex-and-convertible-bond-funding-board-authorization-primary-20261030",
       "event_date": "2026-10-30",
       "discovered_date": "2026-10-31",
