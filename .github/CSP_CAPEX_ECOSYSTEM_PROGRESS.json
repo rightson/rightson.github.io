@@ -11,6 +11,88 @@
   ],
   "public_events": [
     {
+      "fingerprint": "guc-q3-2026-turnkey-operating-profit-conversion-and-working-capital-cash-divergence-primary-20261029",
+      "event_date": "2026-10-29",
+      "discovered_date": "2026-10-30",
+      "instruction_commit_sha": "32b00736267ac085dd7343e4a1daea8cdfbe081e",
+      "companies": [
+        "Global Unichip / GUC / 創意"
+      ],
+      "type": "issuer_quarterly_results_business_mix_operating_profit_and_cash_conversion",
+      "sources": [
+        "https://www.guc-asic.com/tw/investor/financial",
+        "https://www.guc-asic.com/upload/2026_10_29/8_202610291536128v7jgiLQk5.pdf",
+        "https://www.guc-asic.com/upload/2026_10_29/8_20261029153531wijwms4UF2.pdf",
+        "https://www.guc-asic.com/upload/2026_10_29/8_20261029153531sbbvk4GnK3.pdf",
+        "https://www.guc-asic.com/upload/2026_07_30/8_20260730150614srxuwnBHf5.pdf"
+      ],
+      "facts": {
+        "source_authentication": "IssuerOctober29financialpage linked currentQ3 reviewedconsolidated financialstatements,18pageearningsslides and5pageoperatingreport. Fulltext obtained;incomeandcashstatement pagesvisually checked. OriginalTWSEOctober29 16:31:12 cumulativefinancialannouncement reconcilesnine-monthfigures. Currentreport andJuly30Q2report compared. Originalaudio not reviewed. Financialstatementexactincomevaluesprioritizedoverroundedslides/report;smallpresentationdifferencesretainednotforcedtoreconcile.",
+        "period": "Q3 July1–September30,2026 versusQ2 April1–June30,2026; nine-monthperiod kept separate. TWDmillion unlessEPS,percent orspecified.",
+        "quarter": {
+          "revenue": 18754.5,
+          "gross_profit": 3860.335,
+          "operating_expenses": 1309.172,
+          "operating_profit": 2551.163,
+          "net_income": 2271.948,
+          "EPS_TWD": 16.95,
+          "issuer_rounded_gross_margin_percent": 20.6,
+          "issuer_rounded_operating_margin_percent": 13.6,
+          "issuer_rounded_operating_profit_sequential_growth_percent": 52
+        },
+        "prior_quarter_issuer_report_rounded": {
+          "revenue": 13896,
+          "operating_profit": 1676,
+          "net_income": 1555,
+          "EPS_TWD": 11.61,
+          "gross_margin_percent": 21.5,
+          "operating_margin_percent": 12.1
+        },
+        "business_mix": {
+          "NRE_and_IP": 2084,
+          "prior_quarter_NRE_and_IP": 2310,
+          "NRE_and_IP_sequential_percent": -10,
+          "wafer_products": 16671,
+          "prior_quarter_wafer_products": 11586,
+          "wafer_products_sequential_percent": 44,
+          "cloud_application_share_percent": 86,
+          "prior_quarter_cloud_share_percent": 79,
+          "scope": "Cloudclassification includesCPU,AIacceleratorsandBMC,notAI-only. Lower-marginwaferproductmixdilutesgrossmargin;expenses approximatelyflat while revenuegrew35%,raisingoperatingmargin. NRErecognitiondependsprojectdesignprogress;declineisnotproofdesignwincancellation. No newnamedcustomeraward or supplierallocationauthenticated."
+        },
+        "quarter_cash_and_working_capital_issuer_report_rounded": {
+          "operating_cashflow": -972,
+          "prior_quarter_OCF": 3477,
+          "year_ago_OCF": -576,
+          "inventory": 20542,
+          "prior_quarter_inventory": 14540,
+          "receivables_net": 7731,
+          "prior_quarter_receivables": 3933,
+          "DSO_days": 28,
+          "prior_quarter_DSO": 29,
+          "inventory_days": 107,
+          "prior_quarter_inventory_days": 119,
+          "cash": 8947,
+          "prior_quarter_cash": 10034,
+          "limits": "Issuerattributesinventoryincrease tofuture shipments. Quartercashnegative alongsideimprovedaverageturnover;notproofuncollectiblereceivablesorcancelledAIorders. QuarterreportroundedOCF-972versusprose-971 roundingdifference preserved;notforcedtoagree."
+        },
+        "nine_month_financial_statement": {
+          "OCF": 4251.192,
+          "prior_year_OCF": -825.315,
+          "inventory_cash_use": 10393.914,
+          "receivables_cash_use_including_related_parties": 4313.421,
+          "contract_liability_cash_increase": 8145.743,
+          "payables_cash_increase_including_related_parties": 6181.941,
+          "PPE_purchases": 900.562,
+          "intangible_purchases": 364.806,
+          "ending_contract_liability": 15484.63,
+          "previous_year_end_contract_liability": 7338.887,
+          "limits": "Nine-monthpositiveOCFincludesrisingcustomercontractliabilitiesandpayablesfinancingworkingcapital.NotQ3cashcomponentsorAI-onlycash;noFCFcalculatedfromnetinvestingcashflow."
+        },
+        "baseline_and_limits": "SeptemberrevenuealreadydisclosedOctober5andcoveredinledger;freshOctober29incrementisprofit/expenses/mix/cashconfirmation,notnewrevenueorder. FirstGUCquarterlyeconomicsbaselineinthisledger. Nooriginalconsensuspopulation,EPSrevisionorclaimthatcurrentpricemisvaluesresults. Futuremarginandcashconversionrequirequarterfollowup."
+      },
+      "status": "primary_issuer_reports_financial_tables_and_quarter_comparison_verified_ledger_only_no_article"
+    },
+    {
       "fingerprint": "intel-q3-2026-dcai-profit-conversion-q4-margin-outlook-and-adjusted-cash-primary-20261029",
       "event_date": "2026-10-29",
       "discovered_date": "2026-10-30",
