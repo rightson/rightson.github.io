@@ -11,6 +11,44 @@
   ],
   "public_events": [
     {
+      "fingerprint": "meta-sp-global-negative-outlook-capex-and-free-operating-cashflow-assumption-revision-20261030",
+      "event_date": "2026-10-30",
+      "discovered_date": "2026-10-31",
+      "instruction_commit_sha": "3287f124ffe1a55ed6b51441ad65d9546873abe6",
+      "companies": [
+        "Meta Platforms"
+      ],
+      "type": "rating_agency_public_outlook_action_and_attributed_forecast_revision",
+      "sources": [
+        "https://www.spglobal.com/ratings/en/regulatory/press-releases",
+        "https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3652897",
+        "https://in.investing.com/news/stock-market-news/sp-cuts-meta-outlook-to-negative-amid-capex-concerns-5669180",
+        "https://www.nasdaq.com/press-release/meta-reports-third-quarter-2026-results-2026-10-21"
+      ],
+      "facts": {
+        "baseline": "October21 issuer results, lease commitments and October26 financing events already registered. This increment is the October30 S&P Global Ratings negative-outlook action and reported changes in agency assumptions, not another issuer capex announcement or confirmed equipment cancellation.",
+        "primary_authentication": "Fresh standard HTTPS download of official S&P press-release index lists October30 17:03EDT: Meta Platforms Inc. Outlook Revised To Negative On Significant Uncertainty Around Capex And Free Operating Cash Flow, linked to article3652897. Official detail HTML returned a title-only shell; full agency text and rating-level details not authenticated. Web reader's index copy lagged the directly downloaded issuer index.",
+        "reported_source": "Complete original Investing.com report by Vlad Schepkov, published2026-10-30T21:12:09Z, read. This is one news source, not Reuters reporting merely because its illustration is credited Reuters.",
+        "outlook_change": "Stable to negative according to original reporting; official index independently confirms negative-outlook revision. No credit-rating downgrade or confirmed funding-market closure asserted.",
+        "agency_forecasts_reported_USD_billion": {
+          "capex_2026": 140,
+          "capex_2027_new": "over225",
+          "capex_2027_prior": 163,
+          "capex_2028_new": 252,
+          "capex_2028_prior": 178,
+          "free_operating_cashflow_2026": -22,
+          "free_operating_cashflow_2027": -71,
+          "free_operating_cashflow_2028": -39,
+          "prior_2028_cashflow_outlook": "positive",
+          "qualification": "Attributed agency forecasts from Investing.com; full S&P original and its definitions not obtained. Not Meta guidance, an achieved result, or authenticated market consensus. No exact percentage revision computed from an open-ended forecast."
+        },
+        "issuer_counterevidence": "October21 company release confirms Q3 revenueUSD64.601bn,up26%,OCF32.79bn,cash/equivalents/marketable securities82.45bn,capex34.91bn and issuer-defined FCFminus2.12bn. Advertising monetization and liquidity remain substantial. FY2026capex135–145bn was already disclosed, not newly raised today. FY2027budget remained under development.",
+        "transmission_and_limits": "A formal negative-outlook action adds credit-risk evidence to already known external-funding needs. Subsequent funding cost, financing terms, delivered equipment and supplier revenue require independent verification. No observed incremental Taiwan supplier order cancellation, specific profit revision or causal after-hours price attribution established.",
+        "coverage": "Fresh core official pages and nine US SEC submission indexes show no new filings versus preceding run. Public/core and generic-sector discovery performed. All98active Taiwan symbols locally compared against complete exchange feeds; feeds remain October29,with182TWSErecords/45matches and74TPExrecords/6matches. This is not complete current individual-company primary verification. No external private-watchlist-name queries or other-repo changes."
+      },
+      "status": "official_index_outlook_verified_reported_forecast_changes_qualified_full_agency_text_pending_ledger_only_no_article"
+    },
+    {
       "fingerprint": "tokyo-electron-fy2027-h1-profit-conversion-initial-full-year-outlook-and-advanced-process-adoption-primary-20261030",
       "event_date": "2026-10-30",
       "discovered_date": "2026-10-31",
