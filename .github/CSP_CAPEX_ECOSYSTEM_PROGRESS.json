@@ -11,6 +11,152 @@
   ],
   "public_events": [
     {
+      "fingerprint": "mediatek-q3-2026-operating-profit-inventory-and-financing-cash-divergence-primary-20261030",
+      "event_date": "2026-10-30",
+      "discovered_date": "2026-10-30",
+      "companies": [
+        "MediaTek"
+      ],
+      "type": "company_primary_unaudited_quarterly_results_and_nine_month_cash_flow",
+      "instruction_commit_sha": "5bd0cbc2b831a0b461160cf36d8fee88bcc686ff",
+      "facts": {
+        "source_nature": "Official 2026-Q3 investor presentation, operating report pages 1-6 and financial statements pages 1-4, dated October 30, 2026. Self-reported unaudited TIFRS figures; not an audited AI ASIC segment result.",
+        "currency": "TWD",
+        "unit": "million unless otherwise stated",
+        "quarterly_periods": [
+          "2026-Q3",
+          "2026-Q2",
+          "2025-Q3"
+        ],
+        "revenue": [
+          168058,
+          152183,
+          142097
+        ],
+        "gross_margin_percent": [
+          46.3,
+          46.2,
+          46.5
+        ],
+        "operating_profit": [
+          27102,
+          22868,
+          22188
+        ],
+        "operating_margin_percent": [
+          16.1,
+          15,
+          15.6
+        ],
+        "parent_net_profit": [
+          27882,
+          24335,
+          25221
+        ],
+        "basic_eps_twd": [
+          17.5,
+          15.28,
+          15.84
+        ],
+        "revenue_change_qoq_percent": 10.4,
+        "operating_profit_change_qoq_percent": 18.5,
+        "management_revenue_explanation": "Several new smart-device-platform projects entered mass production, and TV SoC revenue reflected higher DRAM prices. The documents do not quantify AI ASIC revenue or profit contribution.",
+        "inventory": [
+          153531,
+          98421,
+          56964
+        ],
+        "inventory_days": [
+          127,
+          102,
+          68
+        ],
+        "receivables_days": [
+          43,
+          47,
+          44
+        ],
+        "operating_cash_flow": [
+          -4256,
+          24251,
+          39181
+        ],
+        "investing_cash_flow": [
+          -23417,
+          -19590,
+          -3370
+        ],
+        "financing_cash_flow": [
+          107703,
+          -12,
+          -31020
+        ],
+        "ending_cash_and_cash_equivalents": [
+          269058,
+          189001,
+          197770
+        ],
+        "cash_and_current_financial_assets": [
+          278320,
+          198403,
+          210604
+        ],
+        "nine_month_periods": [
+          "2026-01-01 to 2026-09-30",
+          "2025-01-01 to 2025-09-30"
+        ],
+        "nine_month_operating_cash_flow": [
+          2338,
+          98273
+        ],
+        "nine_month_cash_flow_change_in_operating_assets_and_liabilities": [
+          -90555,
+          -12196
+        ],
+        "nine_month_bond_issuance_cash_proceeds": [
+          122795,
+          0
+        ],
+        "nine_month_cash_acquisition_of_ppe": [
+          21846,
+          10417
+        ],
+        "nine_month_cash_acquisition_of_intangibles": [
+          12189,
+          9431
+        ],
+        "nine_month_net_profit": [
+          77180,
+          83044
+        ],
+        "verified_change": "Quarterly operating profit and operating margin improved while inventory and inventory days rose and operating cash flow turned negative. Higher quarter-end cash accompanied a large financing inflow; it does not establish improved operating cash conversion.",
+        "strongest_alternative_explanation": "Inventory can precede planned mass-production deliveries. Receivables days improved from 47 to 43, and corporate gross margin remained stable. Product-level inventory, customer advance coverage and subsequent delivery/cash collection are not separately quantified.",
+        "evidence_limits": [
+          "No validated 2026-Q3 earnings-call transcript or replay was available in the retrieved official Q3 materials at this checkpoint; no new Q4 outlook, AI ASIC volume allocation or 2027 revenue guidance is asserted.",
+          "The financial statements do not assign the inventory build or operating cash outflow specifically to Google TPU, AI ASIC, a packaging issue or an order cancellation.",
+          "Nine-month cash flow and bond issuance are explicitly cumulative, not third-quarter-only figures.",
+          "No private valuation, current share quote, institutional flow, holdings or trading conditions are stored in this public event."
+        ]
+      },
+      "sources": [
+        "https://www.mediatek.com/zh-tw/investor-relations/financial-information",
+        "https://www.mediatek.com/hubfs/MediaTek-Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q3/%5B%E6%B3%95%E8%AA%AA%E6%9C%83%E8%B3%87%E6%96%99%5DQ3%E7%B0%A1%E5%A0%B1%E8%B3%87%E6%96%99.pdf",
+        "https://www.mediatek.com/hubfs/MediaTek-Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q3/%5B%E6%B3%95%E8%AA%AA%E6%9C%83%E8%B3%87%E6%96%99%5DQ3%E7%87%9F%E9%81%8B%E5%A0%B1%E5%91%8A.pdf",
+        "https://www.mediatek.com/hubfs/MediaTek-Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q3/%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8.pdf"
+      ],
+      "verification": {
+        "method": "Downloaded all three original linked PDFs from the current official financial-information page; extracted complete text; visually checked operating-report pages 2 and 5 for period, unit, sign, inventory days and cash-flow classifications.",
+        "materials_read_in_full": true,
+        "original_pdf_page_counts": {
+          "investor_presentation": 18,
+          "operating_report": 6,
+          "financial_statements": 4
+        }
+      },
+      "research_stage": "primary_financial_results_and_cash_flow_verified_call_outlook_and_product_attribution_pending",
+      "status": "primary_results_increment_recorded_no_article_published"
+    },
+    {
       "fingerprint": "guc-q3-2026-turnkey-operating-profit-conversion-and-working-capital-cash-divergence-primary-20261029",
       "event_date": "2026-10-29",
       "discovered_date": "2026-10-30",
