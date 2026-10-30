@@ -11,6 +11,84 @@
   ],
   "public_events": [
     {
+      "fingerprint": "intel-q3-2026-dcai-profit-conversion-q4-margin-outlook-and-adjusted-cash-primary-20261029",
+      "event_date": "2026-10-29",
+      "discovered_date": "2026-10-30",
+      "instruction_commit_sha": "ca8df6dd80f3207b6074c12bd6aecd256c94f21e",
+      "companies": [
+        "Intel / INTC"
+      ],
+      "type": "issuer_quarterly_results_segment_divergence_and_initial_next_quarter_guidance",
+      "sources": [
+        "https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results",
+        "https://www.intc.com/news-events/ir-calendar/detail/20261029-q3-2026-intel-corporation-earnings-conference-call"
+      ],
+      "facts": {
+        "source_authentication": "Issuer October29 16:01EDT release, financial statements, segment results and nonGAAP/cash reconciliation checked. Event page confirms current earnings call; original audio/transcript not reviewed. One issuer disclosure, not independent economic confirmation.",
+        "scope": "Outside98 active Taiwan names; Xeon CPU supplier and Oracle OCI planned multiyear collaboration disclosed by issuer. No new Taiwan supplier allocation authenticated and no watchlist change.",
+        "period": "Q3 endedSeptember26,2026; year-ago quarter endedSeptember27,2025. USD million except per-share,percent and stated billions.",
+        "quarter": {
+          "revenue": 16513,
+          "year_ago": 13653,
+          "GAAP_gross_margin_percent": 43,
+          "nonGAAP_gross_margin_percent": 44.1,
+          "GAAP_operating_income": 2522,
+          "nonGAAP_operating_income": 3234,
+          "GAAP_net_income_attributable": 3320,
+          "nonGAAP_net_income_attributable": 2756,
+          "GAAP_EPS": 0.6,
+          "nonGAAP_EPS": 0.52,
+          "DCAI_revenue": 7318,
+          "year_ago_DCAI_revenue": 4117,
+          "DCAI_operating_income": 3039,
+          "year_ago_DCAI_operating_income": 964,
+          "DCAI_operating_margin_derived_percent": 41.52773981962285,
+          "year_ago_DCAI_margin_derived_percent": 23.415108088413895,
+          "CCPG_revenue": 8097,
+          "year_ago_CCPG": 8535,
+          "CCPG_operating_income": 2285,
+          "year_ago_CCPG_operating_income": 2694,
+          "Foundry_revenue": 6697,
+          "Foundry_operating_loss": -1853,
+          "intersegment_revenue_eliminations": -6291,
+          "limits": "Foundry revenue includes internal sales; not treated as external foundry design wins. DCAI not an AI-only profit measure; segment growth does not prove broad GPU/ASIC demand or competitor share loss."
+        },
+        "management_statements": {
+          "CPU": "Priority to unlock additional supply for extraordinary Xeon demand; claim not a quantified incremental order or shipment allocation.",
+          "PC": "CFO expects PC slowdown to continue at least through first half of2027; forecast not an achieved result.",
+          "financing": "CompletedUSD23b public equity offering; nine-month cash flow statement reportsUSD22617m net proceeds from public offering. Financing proceeds not operating earnings or customer revenue."
+        },
+        "Q4_initial_guidance": {
+          "revenue_low": 15000,
+          "revenue_high": 16000,
+          "midpoint_vs_Q3_derived_percent": -6.134560649185494,
+          "GAAP_gross_margin_percent": 37.1,
+          "nonGAAP_gross_margin_percent": 38,
+          "nonGAAP_margin_vs_Q3_percentage_points": -6.100000000000001,
+          "GAAP_EPS": 0.1,
+          "nonGAAP_EPS": 0.25,
+          "status": "Management initial Q4 forecast compared with achieved Q3, not downward revision from prior Q4 guidance or authenticated institutional consensus."
+        },
+        "cash_reconciliation": {
+          "Q3_OCF": 5082,
+          "gross_PPE_additions": 4219,
+          "government_capital_incentives": 48,
+          "net_partner_contributions": 847,
+          "finance_lease_payments": 119,
+          "issuer_adjusted_FCF": 1639,
+          "year_ago_OCF": 2546,
+          "year_ago_gross_PPE": 2956,
+          "year_ago_incentives": 54,
+          "year_ago_net_partner_contributions": 1346,
+          "year_ago_lease_payments": 94,
+          "year_ago_adjusted_FCF": 896,
+          "arithmetic": "5082-4219+48+847-119=1639. Excluding government incentives and partner contributions from that defined bridge:5082-4219-119=744; not a GAAP FCF measure.",
+          "limits": "AdjustedFCF issuer-defined nonGAAP includes partner funding and government incentives. Not equated to segment cash generation or AI return. Fullcurrent10Q and original call not reviewed; no supplier EPS or current consensus inferred."
+        }
+      },
+      "status": "primary_issuer_release_segment_results_guidance_and_cash_bridge_verified_ledger_only_no_article"
+    },
+    {
       "fingerprint": "digital-realty-q3-2026-bookings-core-ffo-guidance-and-lease-commencement-lag-primary-20261029",
       "event_date": "2026-10-29",
       "discovered_date": "2026-10-30",
