@@ -11,6 +11,48 @@
   ],
   "public_events": [
     {
+      "fingerprint": "amazon-q3-2026-10q-up-to80bn-secured-supplier-financing-facility-2027-2028-primary-20261030",
+      "event_date": "2026-10-30",
+      "instruction_commit_sha": "fed6a9b601796408d15d1fa06f170d69f7b1b4c7",
+      "companies": [
+        "Amazon / AWS"
+      ],
+      "type": "primary_disclosure_of_secured_technology_infrastructure_supplier_financing",
+      "baseline_fingerprints": [
+        "amazon-q3-2026-10q-2027-committed-purchases-and-lease-payment-expansion-primary-20261030",
+        "amazon-q3-2026-aws-growth-and-quarterly-cash-capex-fcf-divergence-primary-20261029"
+      ],
+      "facts": {
+        "authentication": "October30 10-Q accession0001018724-26-000040 identified by fresh SEC submissions. Full original HTML retrieved again; Note5 Debt facility paragraph read including draw window,variable size,interest,maturity,security and accounting classification. July31 Q2 10-Q contains no matching supplier-financing paragraph; this establishes the comparison of disclosed information,not a guaranteed contract inception date.",
+        "currency": "USD",
+        "facility_limit_approx_billion": 80,
+        "draw_window": "Q1 2027 through Q3 2028",
+        "borrowing_discretion": "Amazon discretion; size subject to extent/timing of purchase orders and pricing terms",
+        "eligible_assets": "Certain technology infrastructure assets purchased under supplier-financing arrangements; not disclosed as exclusively AI or a named vendor's products",
+        "interest": "Variable rates; full benchmark/spread and lender identities not provided in this paragraph",
+        "maturity": "Five years from each borrowing date",
+        "security": "Security interest in certain purchased assets",
+        "accounting": {
+          "outstanding_balances": "Long-term debt on consolidated balance sheets",
+          "principal_payments": "Repayments of long-term debt on consolidated cashflow statements; financing activity rather than purchases of PPE"
+        },
+        "comparison": "Prior ledger established operating cashflow/cash-PPE divergence and2027 purchase commitments. This adds a distinct mechanism for funding technology assets and future debt service. The facility ceiling is neither an additional cash-capex budget nor a current drawn-debt balance.",
+        "limits": [
+          "Up to approximately80bn is conditional/variable financing capacity,not80bn cash received or fully drawn debt.",
+          "No date of facility signing,full lender allocation or underlying named supplier orders authenticated; no inferred Taiwan allocation.",
+          "The future draw window and five-year individual maturities distinguish near-term liquidity flexibility from later interest and principal obligations.",
+          "Debt principal classification does not establish that all equipment purchases bypass investing cashflow,or quantify an adjustment to current FCF. Future analysis must reconcile cash purchases,noncash asset additions,borrowings and repayments without double counting.",
+          "No primary evidence that financing changes current capital-expenditure guidance,utilization,AI profitability or customer collections.",
+          "No private prices,valuation,institutional flows,holdings or trading conditions recorded."
+        ]
+      },
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+      ],
+      "status": "primary_debt_note_funding_terms_and_accounting_classification_verified_ledger_only_no_article"
+    },
+    {
       "fingerprint": "amazon-q3-2026-10q-2027-committed-purchases-and-lease-payment-expansion-primary-20261030",
       "event_date": "2026-10-30",
       "instruction_commit_sha": "1bed5b99836bfde70cd2ed545efbb852aaaee293",
