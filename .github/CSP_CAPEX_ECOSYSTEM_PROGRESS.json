@@ -11,6 +11,54 @@
   ],
   "public_events": [
     {
+      "fingerprint": "amazon-q3-2026-10q-2027-committed-purchases-and-lease-payment-expansion-primary-20261030",
+      "event_date": "2026-10-30",
+      "instruction_commit_sha": "1bed5b99836bfde70cd2ed545efbb852aaaee293",
+      "companies": [
+        "Amazon / AWS"
+      ],
+      "type": "primary_quarterly_filing_contractual_commitments_and_capital_outlook",
+      "baseline_fingerprint": "amazon-q3-2026-aws-growth-and-quarterly-cash-capex-fcf-divergence-primary-20261029",
+      "facts": {
+        "authentication": "Fresh SEC submissions identifies October30 10-Q accession0001018724-26-000040. Note4 contractual-commitment table, all four footnotes, Note3 lease scope and liquidity/capital-spending discussion read. Original July31 Q2 10-Q Note4 and liquidity discussion compared; numeric table cells independently parsed from HTML.",
+        "period": "Balance at September30,2026 versus June30,2026; specifically compare payments scheduled for calendar2027, not unlike remaining2026 periods.",
+        "currency": "USD",
+        "unit": "million",
+        "purchase_commitment_scope_reconciliation": {
+          "prior_2027_unconditional_purchase_obligations_including_PPE_energy_content_software": 33026,
+          "current_2027_separately_disclosed_PPE_purchase_obligations": 63900,
+          "current_2027_other_unconditional_purchase_obligations": 10152,
+          "current_2027_combined_comparable_categories": 74052,
+          "derived_increase_in_2027_scheduled_payments": 41026,
+          "derived_percent_increase": 124.22333918730698,
+          "prior_total_unconditional_purchase_obligations_all_periods": 130065,
+          "current_combined_total_all_periods": 254399,
+          "scope": "Q3 separates PPE obligations previously included with energy,digital content and software. Recombine both Q3 rows for comparison. Do not call the entire newly separate159640 PPE balance a newly signed order, or compare63900 directly with33026."
+        },
+        "leases_not_yet_commenced": {
+          "prior_total": 137214,
+          "current_total": 164922,
+          "prior_2027_payments": 11732,
+          "current_2027_payments": 12448,
+          "scope": "Uncommenced operating/finance leases across fulfillment,data centers,offices,stores,equipment and other assets; not exclusively AI/data-center capacity."
+        },
+        "forward_capital_statement": "Q3 liquidity discussion says cash capital expenditures expected to meaningfully increase in2027, primarily driven by technology infrastructure. This is directional management expectation, not a numeric2027budget or verified new supplier allocation.",
+        "limits": [
+          "Contractual commitment balances are scheduled future obligations, not cash already paid, current recognized revenue or gross new orders signed duringQ3.",
+          "Normal generally cancellable purchase orders excluded. Variable terms generally included only at minimum pricing/quantity or termination amounts; scope is not total expected spending.",
+          "Combined purchasing categories include energy,digital media and software besides equipment. Neither incremental balance nor2027payment increase can be entirely attributed to AI.",
+          "Lease timing and obligation balance changes reflect new agreements,payments,commencements and potential remeasurements; no exact gross-additions bridge is disclosed here.",
+          "Previously reported strong AWS growth/operating profit is counterevidence to assuming demand failure. No newly verified customer cancellation,capacity utilization/ROI or Taiwan vendor allocation.",
+          "No private prices,valuation,institutional flows,holdings or trading conditions recorded."
+        ]
+      },
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+      ],
+      "status": "primary_commitment_tables_footnotes_and_scope_reconciliation_verified_ledger_only_no_article"
+    },
+    {
       "fingerprint": "digital-realty-q3-2026-ledger-core-ffo-nominal-versus-constant-currency-correction-20261030",
       "event_date": "2026-10-29",
       "correction_date": "2026-10-30",
