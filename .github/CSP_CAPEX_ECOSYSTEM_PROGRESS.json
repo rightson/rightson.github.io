@@ -11,6 +11,68 @@
   ],
   "public_events": [
     {
+      "fingerprint": "mediatek-q3-prepared-remarks-primary-2027-first-asic-upper-range-and-q4-delivery-20261030",
+      "event_date": "2026-10-30",
+      "companies": [
+        "MediaTek"
+      ],
+      "instruction_commit_sha": "1352e2c86403b691e085dcc09861c828e9998b21",
+      "type": "official_prepared_remarks_primary_confirmation_of_prior_reported_call",
+      "facts": {
+        "source_nature": "Official six-page bilingual prepared remarks, October 30 2026, not complete Q&A transcript.",
+        "first_asic_initial_shipments": "September 2026",
+        "first_asic_q4_2026_revenue_expectation_usd_billion": 2.5,
+        "first_asic_2027_revenue_expectation_usd_billion": 16,
+        "scope": "First AI accelerator program in 2027, at high end of prior revenue target range, approximately 20% of total AI accelerator ASIC market. Not a new increase in the range, total corporate revenue or recognized revenue.",
+        "supply_qualification": "Management cites solid supply outlook and cooperation with partners to secure additional capacity.",
+        "second_asic_project": "Development progressing toward high-volume production in Q1 2028; existing timing reaffirmed.",
+        "q4_2026_revenue_guidance_twd_billion": [
+          210.1,
+          221.8
+        ],
+        "q4_2026_revenue_change_qoq_percent": [
+          25,
+          32
+        ],
+        "q4_fx_assumption_twd_per_usd": 31.7,
+        "q4_gross_margin_percent": {
+          "midpoint": 45,
+          "plus_minus_percentage_points": 1.5
+        },
+        "q4_operating_expense_ratio_percent": {
+          "midpoint": 26,
+          "plus_minus_percentage_points": 2
+        },
+        "full_year_2026_usd_revenue_growth": "Expected to exceed prior high-single-digit percentage target; no precise new rate provided.",
+        "completed_q3_convertible_bond_offering_usd_billion": 3.9,
+        "bond_participants_named_by_company": [
+          "NVIDIA",
+          "Alphabet"
+        ],
+        "bond_purpose": "Support securing critical-component capacity for expansion.",
+        "resolved_gap": "Official English and Chinese prepared remarks agree on approximately USD16bn in 2027 for the first accelerator, resolving previously excluded USD15bn/USD16bn secondary wording discrepancy.",
+        "limits": [
+          "Prepared remarks do not explicitly confirm second ASIC customer, its identity or nationality; prior media report retains separate attribution. Second project is not conflated with second customer.",
+          "Reported Q&A statements on above-20% 2027 corporate operating margin and packaging yields are outside this document and are not upgraded to primary-confirmed facts.",
+          "Guidance does not resolve Q3 inventory buildup and negative operating cash flow, demonstrate cash collection, establish project margins or disclose procurement allocation.",
+          "No private quote, valuation, holdings, flows or trading conditions stored."
+        ]
+      },
+      "sources": [
+        "https://www.mediatek.com/zh-tw/investor-relations/financial-information",
+        "https://www.mediatek.com/hubfs/MediaTek-Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q3/%E5%85%AC%E5%8F%B8%E8%AC%9B%E7%A8%BF.pdf"
+      ],
+      "verification": {
+        "official_link_observed": true,
+        "full_pdf_downloaded": true,
+        "pages": 6,
+        "full_bilingual_text_read": true,
+        "critical_page_visually_verified": 5
+      },
+      "status": "primary_prepared_remarks_verified_prior_numeric_gap_resolved_qa_and_cash_conversion_pending",
+      "research_stage": "primary_evidence_upgrade_recorded_no_article_published"
+    },
+    {
       "fingerprint": "mediatek-q3-call-q4-asic-ramp-guidance-and-second-customer-reported-20261030",
       "event_date": "2026-10-30",
       "companies": [
