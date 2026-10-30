@@ -11,6 +11,142 @@
   ],
   "public_events": [
     {
+      "fingerprint": "murata-fy2026-h1-datacenter-demand-profit-forecast-roic-and-capex-revision-primary-20261030",
+      "event_date": "2026-10-30",
+      "instruction_commit_sha": "2cde77c6c6b086827b317c6293184260e828739c",
+      "companies": [
+        "Murata"
+      ],
+      "type": "issuer_primary_half_year_results_and_upward_full_year_forecast_revision",
+      "facts": {
+        "period": "April 1 to September 30 2026; FY2026 ending March 31 2027",
+        "unit": "JPY million",
+        "forecast_comparison": "July31 2026 forecast versus October30 revision",
+        "full_year_revenue_old_new": [
+          2110000,
+          2260000
+        ],
+        "full_year_operating_profit_old_new": [
+          430000,
+          520000
+        ],
+        "full_year_parent_profit_old_new": [
+          338000,
+          396000
+        ],
+        "full_year_post_tax_roic_percent_old_new": [
+          13.9,
+          16.6
+        ],
+        "full_year_capex_old_new": [
+          255000,
+          270000
+        ],
+        "forecast_fx": "JPY155 per USD fromQ3 unchanged from previous forecast",
+        "revision_reasons": "Further growth in data-center-related demand, higher operation rate from increased output and improved product mix.",
+        "half_year_revenue": 1090764,
+        "half_year_operating_profit": 245907,
+        "half_year_operating_profit_yoy_percent": 48.9,
+        "half_year_operating_cash_flow_prior_current": [
+          167733,
+          215455
+        ],
+        "half_year_cash_purchase_ppe_prior_current": [
+          88317,
+          97649
+        ],
+        "half_year_cash_purchase_intangibles_prior_current": [
+          5037,
+          5964
+        ],
+        "half_year_trade_receivables_cash_use_prior_current": [
+          36660,
+          66137
+        ],
+        "limits": [
+          "Historical profit growth includes weaker-yen effects; current forecast FX assumption is unchanged.",
+          "Historical profits also face falling product selling prices and higher fixed costs. Corporate cash flow is not a separately disclosed AI-data-center segment return.",
+          "Five-year JPY1trillion MLCC investment and data-center revenue doubling in media reports were not authenticated in this obtained document and are excluded.",
+          "Murata is outside98Taiwan active names; primary document establishes direct data-center component demand exposure, not any new Taiwan customer order or allocation.",
+          "No private quotes, valuation, institutional flows, holdings or trading conditions stored."
+        ]
+      },
+      "sources": [
+        "https://corporate.murata.com/en-global/ir/library/results",
+        "https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/1030/26q2-e-fls.ashx?la=en&cvid=20261030011056000000"
+      ],
+      "status": "primary_results_revision_and_cashflow_verified_no_article_published"
+    },
+    {
+      "fingerprint": "sumitomo-electric-fy2026-h1-optical-profit-full-year-upgrade-and-cash-conversion-divergence-primary-20261030",
+      "event_date": "2026-10-30",
+      "instruction_commit_sha": "2cde77c6c6b086827b317c6293184260e828739c",
+      "companies": [
+        "Sumitomo Electric Industries"
+      ],
+      "type": "issuer_primary_half_year_results_and_full_year_forecast_revision",
+      "facts": {
+        "period": "April1 toSeptember30 2026;FY2026 endingMarch31 2027",
+        "unit": "JPY million unless explicitly billion",
+        "forecast_comparison": "July2026 previous forecast versus October30 revision",
+        "full_year_revenue_old_new": [
+          5400000,
+          5750000
+        ],
+        "full_year_operating_profit_old_new": [
+          450000,
+          500000
+        ],
+        "full_year_infocommunications_revenue_old_new": [
+          500000,
+          510000
+        ],
+        "full_year_infocommunications_operating_profit_old_new": [
+          133000,
+          156000
+        ],
+        "half_year_infocommunications_sales_including_intersegment_prior_current": [
+          135423,
+          201459
+        ],
+        "half_year_infocommunications_operating_profit_prior_current": [
+          22075,
+          61237
+        ],
+        "segment_profit_reconciles_to_operating_profit": true,
+        "segment_growth_reason": "Increased volume of optical devices and connectors for data centers due to expansion of generative AI.",
+        "half_year_company_operating_cash_flow_prior_current": [
+          251944,
+          139394
+        ],
+        "half_year_company_investing_cash_flow_prior_current": [
+          -118100,
+          -122235
+        ],
+        "company_defined_free_cash_flow_rounded_jpy_billion_prior_current": [
+          133.8,
+          17.2
+        ],
+        "half_year_inventory_cash_use_prior_current": [
+          23931,
+          213517
+        ],
+        "limits": [
+          "Group forecast upgrade includes industrial materials/carbide products and other divisions, not entirely AI optical demand.",
+          "Operating cash flow and inventory are corporate totals, not separate optical-segment cash conversion. Large working-capital use does not establish optical customer cancellations.",
+          "Previous plan and current forecast are guidance, not realized full-year revenue or profits.",
+          "Outside98Taiwan active names; primary optical-device and data-center connector volume evidence establishes inclusion relevance. No Taiwan procurement allocation or generic optical-sector profit upgrade inferred.",
+          "No private quotes, valuation, institutional flows, holdings or trading conditions stored."
+        ]
+      },
+      "sources": [
+        "https://sumitomoelectric.com/ir/library",
+        "https://sumitomoelectric.com/sites/default/files/2026-10/download_documents/2026_2m.pdf",
+        "https://sumitomoelectric.com/sites/default/files/2026-10/download_documents/2026_2_hosokum.pdf"
+      ],
+      "status": "primary_segment_profit_forecast_and_cashflow_verified_no_article_published"
+    },
+    {
       "fingerprint": "liteon-q3-2026-ai-power-production-2027-mix-capex-and-prebuild-order-dependency-20261030",
       "event_date": "2026-10-30",
       "instruction_commit_sha": "7f35648ce6e051915fa3e25e8be05ada635b5d55",
