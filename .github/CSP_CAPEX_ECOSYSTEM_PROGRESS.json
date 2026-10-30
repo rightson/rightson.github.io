@@ -11,6 +11,85 @@
   ],
   "public_events": [
     {
+      "fingerprint": "tokyo-electron-fy2027-h1-profit-conversion-initial-full-year-outlook-and-advanced-process-adoption-primary-20261030",
+      "event_date": "2026-10-30",
+      "discovered_date": "2026-10-31",
+      "instruction_commit_sha": "9426147e156aa33c2f0ece8b6eab73915c474ec2",
+      "companies": [
+        "Tokyo Electron / 東京威力科創 8035"
+      ],
+      "type": "issuer_interim_results_initial_full_year_guidance_and_advanced_process_equipment_adoption",
+      "sources": [
+        "https://www.tel.com/ir/library/report/",
+        "https://www.tel.com/ir/library/report/i61j9u00000000gf-att/fy27q2tanshin-e.pdf",
+        "https://www.tel.com/ir/library/report/i61j9u00000000gf-att/fy27q2presentations-e2.pdf",
+        "https://www.tel.com/ir/library/report/i61j9u00000000gf-att/fy27q2transcript-e.pdf",
+        "https://www.tel.com/ir/library/report/i242su0000000goz-att/fy27q1tanshin-e.pdf",
+        "https://www.tel.com/ir/library/report/i242su0000000goz-att/fy27q1presentations-e.pdf"
+      ],
+      "facts": {
+        "authentication": "Issuer IR index and original October30 financial summary, presentation and prepared presentation transcript retrieved. July30 summary and relevant presentation sections compared. Financial summary pages4/11 and presentation page15 visually checked. Transcript is prepared remarks, not a complete analyst Q&A.",
+        "baseline": "First sourced Tokyo Electron financial baseline in this ledger, outside the 98 active Taiwan companies. July30 disclosed H1 guidance only; full-year outlook was undetermined. October30 FY2027 full-year forecast is initial numerical guidance, not an 87.1% revision of an earlier full-year estimate. No authenticated analyst consensus obtained.",
+        "relationship": "Issuer explicitly links AI data-center server demand to semiconductor production equipment investment. Public process adoption and advanced-packaging/test products establish an upstream economic relationship; no named CSP allocation or incremental Taiwan supplier award established.",
+        "fiscal_period": "FY2027 ends March31,2027; H1 April1–September30,2026; Q2 July–September2026.",
+        "currency": "JPY",
+        "unit": "million unless percentages or otherwise specified",
+        "initial_full_year_guidance": {
+          "net_sales": 3700000,
+          "prior_year_net_sales": 2443533,
+          "operating_income": 1169000,
+          "prior_year_operating_income": 624936,
+          "operating_income_yoy_percent": 87.1,
+          "operating_margin_percent": 31.6,
+          "prior_year_operating_margin_percent": 25.6,
+          "parent_net_income": 865000,
+          "status": "Management forecast, not realized full-year profit."
+        },
+        "H1_results": {
+          "net_sales": 1667455,
+          "net_sales_yoy_percent": 41.3,
+          "operating_income": 506776,
+          "prior_year_operating_income": 303153,
+          "operating_income_yoy_percent": 67.2,
+          "July30_H1_operating_income_forecast": 458000,
+          "operating_income_vs_forecast_reported_percent": 10.6,
+          "parent_net_income": 376929
+        },
+        "Q2_reported_billion_yen": {
+          "net_sales": 935,
+          "prior_quarter_net_sales": 732.3,
+          "operating_income": 295.3,
+          "prior_quarter_operating_income": 211.4,
+          "gross_margin_percent": 47.8,
+          "prior_quarter_gross_margin_percent": 46.8,
+          "operating_margin_percent": 31.6,
+          "prior_quarter_operating_margin_percent": 28.9,
+          "mechanism": "Issuer attributes gross-margin expansion to lower fixed-cost-to-sales ratio as sales rise; not separately quantified AI-only profit."
+        },
+        "cashflow_H1": {
+          "operating_cashflow": 469934,
+          "prior_year_operating_cashflow": 250848,
+          "advance_receipts_cash_increase": 82862,
+          "prior_year_advance_receipts_cash_change": -33752,
+          "receivables_and_contract_assets_cash_use": 91421,
+          "inventory_cash_use": 31099,
+          "PPE_cash_purchases": 70182,
+          "prior_year_PPE_cash_purchases": 135392,
+          "limits": "Customer advances and lower PPE cash spending contribute to cash improvement; not all recurring operating profitability. OCF minus PPE is not substituted for issuer-defined FCF."
+        },
+        "process_and_product_progress": {
+          "DRAM": "First conductor-etch POR for capacitor mask etch disclosed in prepared remarks; POR is adoption in customer process, not quantified incremental revenue.",
+          "NAND": "Orders for cryogenic channel-hole etch in volume-production lines progressing; additional inquiries for2027/2028 remain inquiries.",
+          "advanced_packaging": "High-k batch ALD for deep-trench capacitors expected to ship over200units in each of FY2027 and FY2028; management shipment outlook, not completed shipments.",
+          "test": "Prober shipments expected approximately60% higher YoY; silicon-photonics integrated optical/electrical wafer testing POR and production ramp described. No product-specific margin or named customer amount disclosed."
+        },
+        "market_forecast_comparison": "Issuer WFE outlook CY2026 July$150bn+ to October approximately$160bn; CY2027 $190bn+ to $210bn+. Company market estimates, not independently measured orders; no exact growth rate computed between open-ended bounds.",
+        "counterevidence_and_limits": "Kumamoto earthquake recovery contributes to coating/developing and cleaning performance. China sales share rises30.4% to36.4% QoQ, while Taiwan sales fall186.1 to180.4billion yen; geographic sales are not customer AI allocation. Future delivery pull-ins may shift timing. Full-year capex190billion and R&D335billion were already July plans, not new increases. Summary is outside external auditor review. Five-for-one split October1 requires consistent per-share basis.",
+        "coverage": "Fresh core issuer pages and nine US SEC submission indexes checked; no new accessions versus preceding run. All98 active Taiwan symbols locally matched against full public exchange announcement feeds, without transmitting private watchlist names in external search queries. TWSE182records/45matchedrecords across18companies and TPEx74records/6matchedrecords across2companies remain October29 disclosures, not complete latest company news verification. Public/core and generic-sector news discovery restored; dynamic CSP pages and other company-level primary gaps remain. No other-repo watchlist modified."
+      },
+      "status": "primary_financial_guidance_cashflow_and_process_adoption_verified_ledger_only_no_article"
+    },
+    {
       "fingerprint": "amazon-q3-2026-10q-up-to80bn-secured-supplier-financing-facility-2027-2028-primary-20261030",
       "event_date": "2026-10-30",
       "instruction_commit_sha": "fed6a9b601796408d15d1fa06f170d69f7b1b4c7",
