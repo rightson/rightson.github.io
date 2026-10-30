@@ -11,6 +11,88 @@
   ],
   "public_events": [
     {
+      "fingerprint": "sandisk-fy2027-q1-datacenter-growth-margin-and-adjusted-cash-conversion-primary-20261029",
+      "event_date": "2026-10-29",
+      "discovered_date": "2026-10-30",
+      "instruction_commit_sha": "5837601245472e06d8af8705b81ae34fc5e215ce",
+      "companies": [
+        "Sandisk / SNDK"
+      ],
+      "type": "issuer_quarterly_results_datacenter_mix_and_cashflow_reconciliation",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068243/sndk-20261029.htm",
+        "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068243/sndkq1-27ex991xpressrelease.htm",
+        "https://investor.sandisk.com/news-releases/news-release-details/sandisk-reports-fiscal-first-quarter-2027-financial-results"
+      ],
+      "facts": {
+        "source_authentication": "SEC8KandExhibit99.1andissuerIRfinancialrelease reviewed,includingfinancialhighlights,endmarkets,balance sheet,income,cashflowandnonGAAPreconciliation.Sameissuerdisclosure,nottwoindependenteconomicsources.",
+        "period": "FiscalQ1FY2027three monthsendedOctober2,2026;comparisonFY2026Q4endedJuly3,2026;notcalendarQ3label.",
+        "currency": "USD",
+        "unit": "million unless percentages or per-share",
+        "scope": "Outside98activeTaiwannames;issueridentifiesverticallyintegratedNANDandenterpriseSSDforAIinfrastructure.No watchlist change.",
+        "quarter": {
+          "revenue": 11031,
+          "prior": 8965,
+          "datacenter_revenue": 4802,
+          "prior_datacenter": 2977,
+          "datacenter_qoq_reported_percent": 61,
+          "datacenter_share_derived_percent": 43.53186474481008,
+          "prior_datacenter_share_derived_percent": 33.2069157836029,
+          "edge_revenue": 5832,
+          "consumer_revenue": 397,
+          "consumer_qoq_reported_percent": -29,
+          "GAAP_gross_margin_percent": 85,
+          "prior_GAAP_gross_margin_percent": 84.6,
+          "GAAP_operating_income": 8780,
+          "prior_GAAP_operating_income": 7037,
+          "GAAP_net_income": 8101,
+          "GAAP_equity_securities_gain": 513,
+          "nonGAAP_net_income": 7624,
+          "nonGAAP_diluted_EPS_presplit": 49.51
+        },
+        "cash": {
+          "OCF": 6363,
+          "prior_OCF": 7126,
+          "PPE_cash_purchases": 54,
+          "prior_PPE_cash_purchases": 43,
+          "reported_FCF": 6309,
+          "prior_reported_FCF": 7083,
+          "Flash_Ventures_net_cash_activity": 148,
+          "prior_Flash_Ventures": 110,
+          "NBM_prepayments_and_deposits_adjustment": 465,
+          "prior_NBM_adjustment": 1938,
+          "issuer_adjusted_FCF": 5696,
+          "prior_adjusted_FCF": 5035,
+          "adjusted_FCF_qoq_derived_percent": 13.128103277060577,
+          "adjusted_FCF_margin_percent": 51.6,
+          "prior_adjusted_FCF_margin_percent": 56.2,
+          "reconciliation": "6363-54=6309;6309-148-465=5696.Prior7083-110-1938=5035.AdjustedFCFisissuerdefinednonGAAP,notGAAPcashflow andnotproofpermanentprofitability.",
+          "AR_balance": 6585,
+          "prior_AR_balance": 4708,
+          "AR_increase_derived_percent": 39.868309260832625,
+          "inventory": 3016,
+          "prior_inventory": 2698,
+          "repurchases": 5000,
+          "cash_balance": 5136,
+          "prior_cash_balance": 4762
+        },
+        "next_quarter_guidance": {
+          "revenue_low": 12200,
+          "revenue_high": 12600,
+          "nonGAAP_GM_low_percent": 84.5,
+          "nonGAAP_GM_high_percent": 85.5,
+          "nonGAAP_EPS_presplit_range": [
+            55,
+            57
+          ],
+          "status": "InitialmanagementFY2027Q2guidance,notrevisionagainstauthenticatedconsensusorachievedresult."
+        },
+        "split": "Eight-for-oneplannedissuanceafterNovember19close;postsplittradingexpectedNovember20.AllreleaseEPSpre-split;splitdoesnotcreateprofit.",
+        "limits": "Reportedunreviewedquarterlyrelease,full10Qandcurrentcallnotobtained.NoAI-onlyprofit,ASPorbitvolume bridge,customerallocation,minimumtake/refundtermsorindependentconsensusverified.DatacentergrowthandmarginretentionnotgeneralizedtoTaiwanmodulevendors;receivablesgrowfasterthansales andOCF/FCFdeclineQoQwhileadjustedFCFrisesafterprepaymentadjustment."
+      },
+      "status": "primary_release_results_and_cash_reconciliation_verified_ledger_only_no_article"
+    },
+    {
       "fingerprint": "kyec-aeternz-texas-property-and-equipment-board-acquisitions-primary-20261029",
       "event_date": "2026-10-29",
       "discovered_date": "2026-10-30",
