@@ -11,6 +11,131 @@
   ],
   "public_events": [
     {
+      "fingerprint": "nvent-q3-2026-organic-growth-profit-and-full-year-guidance-upgrade-primary-20261030",
+      "event_date": "2026-10-30",
+      "instruction_commit_sha": "20c89ee82b79e94a8a79cde6df13cc7c9c716f73",
+      "companies": [
+        "nVent"
+      ],
+      "type": "issuer_sec_furnished_quarterly_results_and_full_year_guidance_revision",
+      "facts": {
+        "authentication": "SEC submissions API identifies October30 8-K accession0001628280-26-068391; original8-K links Exhibit99.1 q32026nvtpressrelease.htm. Full original release including income,cashflow,organic-sales and non-GAAP reconciliation tables read; July31 originalQ2 release and prior guidance compared.",
+        "period": "Quarter endedSeptember30,2026;year-ago comparison; all headline results continuing operations unless specified.",
+        "currency": "USD",
+        "unit": "million except EPS and percent",
+        "q3": {
+          "sales": 1514.9,
+          "organic_sales_yoy_percent": 43.9,
+          "reported_sales_yoy_percent": 43.7,
+          "gaap_operating_income": 282.3,
+          "prior_year_gaap_operating_income": 166.3,
+          "gaap_operating_margin_percent": [
+            15.8,
+            18.6
+          ],
+          "adjusted_operating_income": 335.4,
+          "prior_year_adjusted_operating_income": 213.3,
+          "adjusted_operating_margin_percent": [
+            20.2,
+            22.1
+          ],
+          "gaap_continuing_eps": [
+            0.73,
+            1.23
+          ],
+          "adjusted_continuing_eps": [
+            0.91,
+            1.52
+          ],
+          "continuing_operating_cashflow": [
+            271.7,
+            303.2
+          ],
+          "capex": [
+            18.6,
+            37
+          ],
+          "company_defined_fcf": [
+            253.2,
+            267.9
+          ]
+        },
+        "full_year_2026_guidance": {
+          "prior_date": "2026-07-31",
+          "new_date": "2026-10-30",
+          "organic_sales_growth_percent_old": [
+            32,
+            34
+          ],
+          "organic_sales_growth_percent_new": [
+            38,
+            39
+          ],
+          "reported_sales_growth_percent_old": [
+            37,
+            39
+          ],
+          "reported_sales_growth_percent_new": [
+            48,
+            49
+          ],
+          "gaap_eps_old": [
+            4.29,
+            4.39
+          ],
+          "gaap_eps_new": [
+            4.54,
+            4.57
+          ],
+          "adjusted_eps_old": [
+            5,
+            5.1
+          ],
+          "adjusted_eps_new": [
+            5.36,
+            5.39
+          ],
+          "forecast_acquisition_sales_contribution_percentage_points": 10
+        },
+        "q4_initial_guidance": {
+          "organic_sales_growth_percent": [
+            26,
+            29
+          ],
+          "reported_sales_growth_percent": [
+            45,
+            48
+          ],
+          "forecast_acquisition_sales_contribution_percentage_points": 19,
+          "gaap_eps": [
+            1.13,
+            1.16
+          ],
+          "adjusted_eps": [
+            1.3,
+            1.33
+          ]
+        },
+        "relationship": "Existing October13 nVent/AMD Helios rear-door-cooling candidate established platform exposure. July31 issuerQ2 release explicitly describes data-center growth and liquid-cooling manufacturing expansion. October30 release says Maverick Power closed October1,adding data-center power-distribution platform. No newly named CSP order inferred.",
+        "limits": [
+          "This upgrades the earlier product-collaboration-only candidate to first verified quarterly financial and forecast baseline; no prior financial thesis or consensus is invented.",
+          "Companywide sales,profits,cashflow and guidance are not separately disclosed AI/data-center/liquid-cooling results. Acquisition-related growth kept separate from organic growth.",
+          "Maverick acquisition closed after quarter-end; Q3 balance-sheet cash/debt do not represent post-closing acquisition funding. Full-year andQ4 reported growth include acquisition contribution.",
+          "Q3 free cashflow growth of about5.8% trails adjustedEPS growth67%; higher capital spending contributes. Not evidence of an outright cashflow decline.",
+          "Q4 organic growth26–29% is belowQ3 approximately44%; initial guidance not a same-quarter downgrade. Deceleration can reflect base/composition and is not by itself an order cancellation.",
+          "Full9amET earnings-call discussion and quantified future platform margins not obtained at this checkpoint.",
+          "No named Taiwan procurement allocation,private prices,valuation,flows,holdings or trading conditions stored."
+        ]
+      },
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1720635/000162828026068391/nvt-20261030.htm",
+        "https://www.sec.gov/Archives/edgar/data/1720635/000162828026068391/q32026nvtpressrelease.htm",
+        "https://www.sec.gov/Archives/edgar/data/1720635/000162828026051203/q22026nvtpressrelease.htm",
+        "https://investors.nvent.com/press-releases/press-release-details/2026/nVent-Electric-plc-Third-Quarter-2026-Financial-Results-Available-on-Companys-Website/default.aspx"
+      ],
+      "status": "primary_results_prior_guidance_and_cash_reconciliations_verified_full_call_pending_no_article"
+    },
+    {
       "fingerprint": "belden-2027-100m-datacenter-fiber-agreement-and-q3-cashflow-primary-20261029",
       "event_date": "2026-10-29",
       "discovered_date": "2026-10-30",
