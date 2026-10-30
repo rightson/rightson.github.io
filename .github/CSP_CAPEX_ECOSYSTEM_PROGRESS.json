@@ -11,6 +11,123 @@
   ],
   "public_events": [
     {
+      "fingerprint": "digital-realty-q3-2026-bookings-core-ffo-guidance-and-lease-commencement-lag-primary-20261029",
+      "event_date": "2026-10-29",
+      "discovered_date": "2026-10-30",
+      "instruction_commit_sha": "aa6e6bdead1604dd318231cae2c46879e2527037",
+      "companies": [
+        "Digital Realty / DLR"
+      ],
+      "type": "issuer_quarterly_results_bookings_guidance_and_capital_conversion",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1297996/000110465926120212/dlr-20261029x8k.htm",
+        "https://www.sec.gov/Archives/edgar/data/1297996/000110465926120212/dlr-ex99d1.htm",
+        "https://digitalrealtytrust.gcs-web.com/news-releases/news-release-details/digital-realty-reports-third-quarter-2026-results",
+        "https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-reports-second-quarter-2026-results"
+      ],
+      "facts": {
+        "source_authentication": "SEC 8-K confirms October29 earnings release and financial supplement Exhibit99.1; issuer Q3 and July23 Q2 releases checked. These are same-issuer disclosures, not independent economic sources.",
+        "scope": "Outside the 98-name Taiwan active universe. Issuer owns/develops/operates cloud and carrier-neutral data centers and colocation/interconnection facilities. No watchlist change or newly authenticated Taiwan vendor allocation.",
+        "period": "Three months ended September30,2026, compared with June30,2026; USD million except per-share dollars, months, percentages and ratios.",
+        "leasing": {
+          "new_bookings_annualized_GAAP_base_rent_DLR_share": 626.604,
+          "prior_Q2_DLR_share_rounded": 208,
+          "new_bookings_100percent_share": 855.275,
+          "DLR_share_MW": 184.8,
+          "full_share_MW": 267.2,
+          "prior_disclosure": "July23 Q2 release had already disclosed two July hyperscale leases of USD410m annualized base rent at100% share, USD205m atDLR share. Q3 aggregate is not all newly discovered incremental contracts.",
+          "backlog_DLR_share_rounded": 1800,
+          "prior_backlog_DLR_share_rounded": 1400,
+          "backlog_100percent_share_rounded": 2500,
+          "prior_backlog_100percent_share_rounded": 1900,
+          "weighted_average_signed_to_contractual_commencement_months": 17,
+          "prior_months": 9,
+          "renewals_cash_rent_increase_percent": 11.8,
+          "prior_percent": 25.4,
+          "renewals_GAAP_rent_increase_percent": 17,
+          "prior_percent_GAAP": 32,
+          "limits": "Annualized rent metrics are not cash receipts or total contract values. Longer weighted commencement lag compares different signed lease cohorts and is not proof that an existing lease was delayed or customer demand cancelled."
+        },
+        "earnings": {
+          "revenue": 1902.418,
+          "prior_revenue": 1924.04,
+          "prior_promote_revenue_rounded": 201,
+          "adjusted_EBITDA": 977.702,
+          "prior_adjusted_EBITDA": 977.589,
+          "core_FFO_ex_net_promote": 795.263,
+          "prior_core_FFO_ex_net_promote": 767.885,
+          "diluted_core_FFO_ex_net_promote_per_share": 2.1,
+          "prior_per_share": 2.13,
+          "year_ago_per_share": 1.89,
+          "core_FFO_diluted_shares_million": 378.77,
+          "prior_shares_million": 360.648,
+          "AFFO": 686.025,
+          "prior_AFFO": 889.056,
+          "AFFO_per_diluted_share": 1.81,
+          "prior_AFFO_per_share": 2.47,
+          "prior_net_promote_in_core_FFO": 187.871,
+          "prior_insurance_business_interruption_recovery_rounded": 27,
+          "limits": "FFO/CoreFFO/AFFO are issuer-defined nonGAAP and not GAAP operating/free cash flow. Q2 includes net promote and business-interruption insurance recoveries; unadjusted sequential AFFO decline is not a clean recurring-business comparison. Full current10Q operating cash flow statement and current original call not obtained."
+        },
+        "guidance": {
+          "prior_date": "2026-07-23",
+          "new_date": "2026-10-29",
+          "forecast_period": "2026 full year",
+          "core_FFO_per_share_ex_net_promote_old": [
+            8.15,
+            8.2
+          ],
+          "new": [
+            8.25,
+            8.3
+          ],
+          "constant_currency_core_FFO_per_share_old": [
+            8.1,
+            8.15
+          ],
+          "revenue_ex_promote_old": [
+            6850,
+            6950
+          ],
+          "revenue_new": [
+            7050,
+            7125
+          ],
+          "same_capital_cash_NOI_growth_old_percent": [
+            4.25,
+            5.25
+          ],
+          "new_percent": [
+            5.25,
+            5.75
+          ],
+          "development_capex_net_partner_contributions_unchanged": [
+            4250,
+            4750
+          ],
+          "capex_scope": "Development outlook excludes land acquisitions, includes DLR share of JV/fund contributions, net partner contributions. Not like-for-like with consolidated historical spending table.",
+          "limits": "Management guidance revision, not authenticated analyst consensus revision or achieved result."
+        },
+        "capital": {
+          "total_debt": 19494.615,
+          "prior_total_debt": 18635.349,
+          "net_debt_to_adjusted_EBITDA": 5.2,
+          "prior_ratio": 4.7,
+          "fixed_charge_coverage": 4.8,
+          "prior_fixed_charge_coverage": 5.2,
+          "quarter_ATM_net_proceeds_rounded": 450,
+          "quarter_ATM_shares_million_rounded": 2.4,
+          "land_acquisitions_rounded": 742,
+          "subsequent_perpetual_strategy_cornerstone_equity_commitments_closed_rounded": 1400,
+          "consolidated_development_capex": 1154.527,
+          "prior": 914.191,
+          "consolidated_total_improvements_and_advances_for_real_estate": 1381.983,
+          "scope": "Historical development includes100% consolidated project spend before contribution toJVs/fund and excludes land acquisition costs. Not the same scope as DLR-share net partner outlook; not subtracted from AFFO to invent GAAP FCF."
+        }
+      },
+      "status": "primary_issuer_results_guidance_reconciliation_and_prior_disclosure_checked_ledger_only_no_article"
+    },
+    {
       "fingerprint": "sandisk-fy2027-q1-datacenter-growth-margin-and-adjusted-cash-conversion-primary-20261029",
       "event_date": "2026-10-29",
       "discovered_date": "2026-10-30",
