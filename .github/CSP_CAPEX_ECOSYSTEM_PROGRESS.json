@@ -11,6 +11,84 @@
   ],
   "public_events": [
     {
+      "fingerprint": "belden-2027-100m-datacenter-fiber-agreement-and-q3-cashflow-primary-20261029",
+      "event_date": "2026-10-29",
+      "discovered_date": "2026-10-30",
+      "instruction_commit_sha": "c8e8a718ce0ba74c7d2a75462aeddd624fb358d3",
+      "companies": [
+        "Belden"
+      ],
+      "type": "issuer_primary_signed_datacenter_fiber_agreement_and_quarterly_results",
+      "facts": {
+        "source_nature": "Issuer-hosted October29 release and unaudited quarterly financial tables including non-GAAP reconciliations read. FiscalQ3 endedSeptember27,2026.",
+        "currency": "USD",
+        "unit": "million except EPS and percentages",
+        "signed_agreement": {
+          "supply_year": 2027,
+          "value": 100,
+          "product": "fiber assemblies / fiber solutions",
+          "customer": "Major US data center customer, unnamed in release",
+          "revenue_maturity": "Signed supply agreement, not delivered or collected revenue"
+        },
+        "management_datacenter_growth_2027": "More than50% expected next year; release does not disclose a reconciled prior-year comparable segment revenue base.",
+        "q3": {
+          "revenue": 965.954,
+          "revenue_yoy_percent": 38,
+          "organic_revenue_growth_percent": 11,
+          "orders": 1017,
+          "orders_yoy_percent": 46,
+          "organic_orders_yoy_percent": 16,
+          "book_to_bill": 1.05,
+          "gaap_eps": -0.29,
+          "adjusted_eps": 2.26,
+          "adjusted_eps_yoy_percent": 15,
+          "gaap_operating_income": 16.764,
+          "prior_year_gaap_operating_income": 76.288,
+          "net_interest_expense": 41.802,
+          "prior_year_net_interest_expense": 11.562,
+          "operating_cashflow": 129.642,
+          "prior_year_operating_cashflow": 105.006,
+          "company_defined_free_cashflow": 81.932,
+          "prior_year_company_defined_free_cashflow": 65.378
+        },
+        "nine_months": {
+          "operating_cashflow": 240.2,
+          "prior_year_operating_cashflow": 194.476,
+          "capex": 132.863,
+          "prior_year_capex": 97.034,
+          "company_defined_free_cashflow": 107.444,
+          "prior_year_company_defined_free_cashflow": 97.61
+        },
+        "q4_initial_guidance": {
+          "revenue": [
+            960,
+            980
+          ],
+          "gaap_eps": [
+            0.24,
+            0.39
+          ],
+          "adjusted_eps": [
+            2.2,
+            2.35
+          ]
+        },
+        "limits": [
+          "First Belden sourced baseline in this ledger; no invented past thesis or analyst consensus revision.",
+          "Overall revenue growth includes acquisitions and copper pass-through. Organic revenue growth11% is distinct from headline38%; group results are not AI-only results.",
+          "Ruckus purchase accounting includes noncash inventory fair-value and amortization charges. GAAP loss and higher financing costs remain material; adjusted EPS and cash flow are not equivalent to recurring net earnings.",
+          "Fiber-agreement margin, pricing, payment/cancellation conditions, customer identity and program-level cash returns are undisclosed. No cash collection or named Taiwan supplier allocation inferred.",
+          "Company-defined FCF excludes acquisition expenditure; it is not total cash movement after acquisitions.",
+          "Outside98-nameTaiwanuniverse; signed majorUSdatacenter fiber agreement establishes direct demand-transmission relationship. Watchlist unchanged.",
+          "No private quote,valuation,institutional flows,holdings or trading conditions stored."
+        ]
+      },
+      "sources": [
+        "https://investor.belden.com/news/news-details/2026/Belden-Reports-Record-Third-Quarter-2026-Results-and-Announces-100-Million-Data-Center-Agreement-for-2027/default.aspx"
+      ],
+      "status": "primary_signed_agreement_and_financial_tables_verified_program_margin_and_cash_collection_pending_no_article"
+    },
+    {
       "fingerprint": "murata-fy2026-h1-datacenter-demand-profit-forecast-roic-and-capex-revision-primary-20261030",
       "event_date": "2026-10-30",
       "instruction_commit_sha": "2cde77c6c6b086827b317c6293184260e828739c",
