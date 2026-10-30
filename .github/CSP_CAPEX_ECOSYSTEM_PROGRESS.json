@@ -11,6 +11,71 @@
   ],
   "public_events": [
     {
+      "fingerprint": "liteon-q3-2026-ai-power-production-2027-mix-capex-and-prebuild-order-dependency-20261030",
+      "event_date": "2026-10-30",
+      "instruction_commit_sha": "7f35648ce6e051915fa3e25e8be05ada635b5d55",
+      "companies": [
+        "LITEON"
+      ],
+      "type": "official_indexed_quarterly_release_and_original_report_of_earnings_call",
+      "facts": {
+        "official_release": {
+          "quarter": "2026-Q3",
+          "revenue_twd_billion": 57.4,
+          "revenue_qoq_percent": 9,
+          "revenue_yoy_percent": 28,
+          "gross_margin_percent": 25.9,
+          "operating_margin_percent": 15.1,
+          "net_profit_twd_billion": 7.4,
+          "eps_twd": 3.27,
+          "first_nine_months_cloud_related_revenue_yoy_percent": 80,
+          "first_nine_months_ai_revenue_share": "above 30%",
+          "q4_core_business_outlook": "year-on-year and quarter-on-quarter growth expected",
+          "volume_production_products": [
+            "8.5kW ASIC PSU",
+            "BBU",
+            "VR 110kW",
+            "Helios 42-inch Power Shelf"
+          ],
+          "power_rack_800VDC": "Q4 prototype shipments, distinct from volume production"
+        },
+        "previous_q2_official_release": {
+          "gross_margin_percent": 27.2,
+          "operating_margin_percent": 15.6
+        },
+        "original_call_report": {
+          "source": "Anue/Cnyes original reporter Wu Cheng-ti, October 30 2026 17:49 Asia/Taipei; full article body obtained directly by HTTPS",
+          "capex_2026_twd_billion_old": 18,
+          "capex_2026_twd_billion_new": 19.7,
+          "capex_2027": "expected above 2026; no precise total disclosed",
+          "ai_revenue_share_target_2027_percent": [
+            40,
+            50
+          ],
+          "rack_800V_validation": "first sample for product validation, November second sample for system-integration validation; both must pass before expected Q1 2027 shipments",
+          "capacity_before_orders": "Management says server customers require capacity to be built before placing orders",
+          "Vietnam_QuangNinh_new_line_investment": "above TWD10bn, additional to 2026 TWD19.7bn; expected to start being spent Q1 2027 and partly extend into 2028",
+          "Texas_McKinney": "expected operations Q2 2027",
+          "research_expense_ratio": "about 5% currently; first target 6%, then move toward 7%-8%",
+          "deployment_qualification": "actual 800V ramp depends on customer data-center implementation"
+        },
+        "limits": [
+          "2027 mix, capex and validation timing are management expectations reported by an original journalist, not a signed order or recognized revenue. No full official Q&A transcript was obtained.",
+          "Official Q3 and Q2 release contents were available via search-indexed issuer pages; direct origin returned HTTP503. Original Cnyes report full body was downloaded independently.",
+          "Do not conflate 800V prototype samples with volume shipments or newly awarded customer orders; forecast improvements do not establish order conversion, cash collection or ROIC.",
+          "Quarterly operating cash-flow, project margin and future customer procurement volumes remain unverified. Q3 gross and operating margins are below Q2, despite year-on-year gains.",
+          "No private prices, valuation, institutional flows, holdings or trading conditions stored."
+        ]
+      },
+      "sources": [
+        "https://www.liteon.com/en/news/press-center/content/quarterly-third-eps-2026",
+        "https://www.liteon.com/zh-tw/news/press-center/content/quarterly-second-eps-2026",
+        "https://news.cnyes.com/news/id/6641944"
+      ],
+      "status": "reported_call_increment_and_issuer_indexed_results_verified_direct_issuer_origin_and_cash_conversion_pending",
+      "research_stage": "public_event_only_no_article_published"
+    },
+    {
       "fingerprint": "mediatek-q3-prepared-remarks-primary-2027-first-asic-upper-range-and-q4-delivery-20261030",
       "event_date": "2026-10-30",
       "companies": [
