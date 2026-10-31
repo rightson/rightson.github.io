@@ -11,6 +11,66 @@
   ],
   "public_events": [
     {
+      "fingerprint": "te-connectivity-fy2026-ddn-order-growth-cash-conversion-and-fy2027-growth-outlook-primary-20261028",
+      "event_date": "2026-10-28",
+      "discovered_date": "2026-10-31",
+      "instruction_commit_sha": "e257e3d1d5d15ef77f4f72ebf41828c2875823ae",
+      "companies": [
+        "TE Connectivity"
+      ],
+      "type": "new_company_baseline_primary_results_and_reported_management_ddn_outlook",
+      "sources": [
+        "https://s25.q4cdn.com/722218489/files/content_files/Q4FY26-Earning-Slides-FINAL.pdf",
+        "https://teconnectivity.mediaroom.com/2026-10-28-TE-Connectivity-delivers-12-sales-increase-and-over-20-EPS-growth-in-fiscal-fourth-quarter",
+        "https://www.marketbeat.com/instant-alerts/transcript-what-te-connectivity-tel-said-on-its-q4-earnings-call-2026-10-29/"
+      ],
+      "facts": {
+        "baseline": "First TE Connectivity event in the239-event ledger; newly researched company baseline, not an October31 company announcement or a revision to a previously established TEL forecast.",
+        "period": "Fiscal year and quarter ended September25,2026; release and issuer deck October28,2026.",
+        "primary_issuer_results": {
+          "currency": "USD",
+          "unit": "million except percentages and ratios",
+          "Q4_DDN_sales": 949,
+          "Q4_DDN_organic_growth_percent": 34.4,
+          "FY26_DDN_order_growth_approx_percent": 70,
+          "Q4_total_orders": 6055,
+          "Q4_book_to_bill": 1.14,
+          "Q4_industrial_adjusted_operating_margin_percent": 22.4,
+          "prior_Q4_industrial_adjusted_operating_margin_percent": 22,
+          "FY26_OCF": 4525,
+          "FY25_OCF": 4139,
+          "FY26_net_capex": 1113,
+          "FY25_net_capex": 925,
+          "FY26_issuer_FCF": 3412,
+          "FY25_issuer_FCF": 3214,
+          "FY26_FCF_conversion_percent": 100,
+          "FY26_adjusted_EPS_growth_percent": 24,
+          "FY26_DSO_days": 65,
+          "FY25_DSO_days": 65,
+          "FY26_DIO_days": 77,
+          "FY25_DIO_days": 78,
+          "FY26_payable_days": 65,
+          "FY25_payable_days": 59
+        },
+        "primary_guidance": "FY27 organic sales growth expected similar to FY26's12%; Q1FY27 sales approximately5350m and adjustedEPS3.30. Forward-looking, not signed customer revenue.",
+        "reported_call": "MarketBeat original call reporting says FY27 DDN revenue addition exceedsUSD1bn, mostlyAI, with more than half in fiscalH2; approximately30% of DDN is power connectivity, expected to outgrow overallDDN. RAM Photonics remains customer engineering validation. Original call audio not reviewed; reported details not independently authenticated issuer transcript.",
+        "relationship": "Issuer links DDN growth toAI and Energy growth togrid hardening/data-center buildout. Data/power connectivity is explicit demand transmission; namedCSP orders and Taiwan supplier allocation not established.",
+        "limits": [
+          "DDN-only margin andAI-onlycashflow are not separately disclosed; Industrial segment includes otherendmarkets.",
+          "FY26FCF3412versus3214 grew6.2%,below24%adjustedEPSgrowth;netcapex1113versus925grew20.3%,andpayabledaysincreased59to65.100%FCFconversion usesadjustednetincome,notGAAPnetincome.",
+          "Q4total sales include87mtariffrefundstobereturnedtocustomers;deckreportsEPSimpact0.01. Do not count refunds as recurringAIprofit.",
+          "Noauthenticatedconsensus,market-pricinggap,cancellationterms or customerconcentration established. No valuation,prices,holdings,tradingconditions orprivateBdata stored."
+        ]
+      },
+      "next_verification": [
+        "Confirm FY27 DDN ramp and the reportedUSD1bn addition in issuer-authenticated call material and laterrecognizedsales.",
+        "Track Industrialmargin,netcapex,FCFandpayable/revenuecollection to distinguish operatinggrowthfromworking-capitaltiming.",
+        "Verify power/opticalcustomerqualification andrepeatorders;reassessifDDNrampdelays,booktobillweakensormargins/cashconversiondeteriorate."
+      ],
+      "coverage": "98active Taiwan symbols read from alpha-quant64349d5f4961ec95fbb767b185b5e79181a2880e,blob88422949d38165d4757a1e24c27f8662bede14c1. Fresh local matching:TWSE170notices datedOct30,50matches across17companies;TPEx74notices stillOct29,6matches across2companies. Announcement screening only,notlatestall98financial/newsverification. TSMC,MediaTek,NVIDIA,AMD,Marvellofficialindexeschecked;Broadcom403;severalCSPindexesdynamic/incomplete. Freshcoreandgenericsectornewssearchperformed. No privatewatchlistnamesexternallysearched.",
+      "publication_status": "public_event_record_only_no_article_no_new_supplier_allocation"
+    },
+    {
       "fingerprint": "ingersoll-rand-q3-2026-195m-data-center-backup-power-order-and-profit-quality-primary-release-reported-call-20261030",
       "event_date": "2026-10-30",
       "discovered_date": "2026-10-31",
