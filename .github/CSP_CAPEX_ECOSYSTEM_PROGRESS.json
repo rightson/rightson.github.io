@@ -11,6 +11,63 @@
   ],
   "public_events": [
     {
+      "fingerprint": "kioxia-fy2026-q2-profit-cash-conversion-and-q3-near-flat-growth-outlook-primary-20261030",
+      "event_date": "2026-10-30",
+      "discovered_date": "2026-10-31",
+      "instruction_commit_sha": "bdbe3c75ab43818a993fe6b1649c6ee60c246e07",
+      "companies": [
+        "Kioxia Holdings"
+      ],
+      "type": "initial_primary_nand_earnings_and_next_quarter_growth_deceleration_evidence",
+      "sources": [
+        "https://ssl4.eir-parts.net/doc/285A/tdnet/2902678/00.pdf",
+        "https://www.kioxia-holdings.com/en-jp/ir/news.html",
+        "https://www.kioxia-holdings.com/en-jp/ir/library/presentation.html"
+      ],
+      "facts": {
+        "period": "Issuer FY2026 Q2 is July-September2026; FY2026 Q3 outlook is October-December2026. First company-specific tracked financial baseline,not an established prior Kioxia investment judgment.",
+        "unit": "JPY billion except percentages; source front summary and financial statements also use JPY million.",
+        "q2": {
+          "revenue": 2480,
+          "prior_quarter_revenue": 1767.1,
+          "operating_profit": 1994.7,
+          "prior_quarter_operating_profit": 1270,
+          "non_gaap_operating_profit": 1988.3,
+          "prior_quarter_non_gaap_operating_profit": 1326.2,
+          "parent_profit": 1355.7
+        },
+        "q3_outlook": {
+          "revenue": 2500,
+          "revenue_qoq_percent": 0.8,
+          "operating_profit": 1995,
+          "operating_profit_qoq_percent": 0,
+          "non_gaap_operating_profit": 2000,
+          "non_gaap_operating_profit_qoq_percent": 0.6,
+          "parent_profit": 1360,
+          "parent_profit_qoq_percent": 0.3,
+          "usd_jpy_assumption": 157,
+          "prior_quarter_usd_jpy": 161
+        },
+        "primary_explanation": "Issuer states data-center demand expected to remain strong,but currency headwinds and other factors leave revenue/profit broadly flat sequentially. July-September revenue growth attributed to higher ASP and bit shipments from generative-AI data-center demand. SSD & Storage covers PCs,data centers and enterprise,not pure AI revenue.",
+        "half_year_cashflow": {
+          "operating_cashflow": 2379.6,
+          "prior_year_operating_cashflow": 175.2,
+          "purchase_ppe": 135.3,
+          "prior_year_purchase_ppe": 143.1,
+          "receivables_cash_use": 1014.4,
+          "ending_cash": 1397.3
+        },
+        "limits": "No authenticated market-consensus population or prior October-December issuer guidance; no estimate-cut percentage versus consensus adopted. Non-GAAP measures unaudited/unreviewed; issuer interim financial results state not subject to review. Full original earnings presentation/Q&A not obtained: external accounts of bit shipment pull-forward,long-lead-time mix and ASP acceleration/deceleration remain excluded from confirmed primary facts. Company-specific yen growth slowdown does not prove industry-wide NAND price peak,demand decline or supplier order cuts. Ordinary-quarter growth calculation does not remove currency and mix effects. October1 3-for-1 split requires per-share comparability; no valuation stored.",
+        "source_validation": "Official IR index linked October30 nineteen-page financial release. Quarterly actual and outlook tables visually checked on PDF pages6 and10; operating-cashflow and PPE cash purchase checked in source text. IFRS and non-GAAP profit kept distinct."
+      },
+      "next_verification": [
+        "Original issuer presentation and Q&A to separate currency,like-for-like ASP,product mix and shipment timing.",
+        "October-December realized sales,profit and subsequent January-March guidance;test whether delayed data-center shipments recover.",
+        "Receivables collection and operating cashflow relative to investment;check whether current high profitability persists."
+      ],
+      "publication_status": "factual_event_source_record_only_no_article"
+    },
+    {
       "fingerprint": "tong-hsing-q3-2026-results-q4-growth-guidance-and-reported-fau-automation-acceptance-20261030",
       "event_date": "2026-10-30",
       "discovered_date": "2026-10-31",
