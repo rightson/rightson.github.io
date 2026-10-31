@@ -11,6 +11,34 @@
   ],
   "public_events": [
     {
+      "fingerprint": "nebius-reported-high-yield-offering-abandoned-and-asset-backed-access-dispute-wsj-20261031",
+      "event_date": "2026-10-31",
+      "discovered_date": "2026-10-31",
+      "instruction_commit_sha": "9dfce45f9e4f3f969166f79d3075d4c148282d43",
+      "companies": [
+        "Nebius"
+      ],
+      "type": "original_reporting_funding_channel_constraint_with_issuer_counterevidence",
+      "sources": [
+        "https://www.wsj.com/finance/the-new-bottleneck-in-americas-ai-build-out-a-shortage-of-cheap-money-0c14c84d",
+        "https://nebius.com/newsroom/nebius-secures-3-5-billion-financing-facility-with-citi"
+      ],
+      "facts": {
+        "comparison_fingerprint": "nebius-citi-senior-secured-364-day-facility-20261022",
+        "reported_increment": "WSJ October31 01:00UTC reports Nebius abandoned a high-yield offering. COO says asset-backed markets remain open; debt issuance depends on terms. Amount and decision date undisclosed.",
+        "primary_counterevidence": "October22 issuer release confirms USD3.5bn senior secured facility,364-day maturity,initial Term SOFR+275bp rising to350bp. This is the existing baseline,not new funding today.",
+        "source_scope": "Current WSJ search extraction obtained; direct page exposes only introduction. No issuer filing confirming abandoned offering or actual financing shortfall obtained.",
+        "limits": "Channel-specific constraints do not establish all funding closed,default,capex cuts,equipment cancellation or supplier earnings revision. No private quotes,valuation,institutional flows,holdings or B data stored."
+      },
+      "next_verification": [
+        "Longer-term committed funding,draws and collateral terms versus near-term maturities.",
+        "Customer advances received,accepted capacity and operating cash collection.",
+        "Documented delivery or procurement changes before supplier impact attribution."
+      ],
+      "coverage": "98active Taiwan symbols read at alpha-quant64349d5f4961ec95fbb767b185b5e79181a2880e,blob88422949d38165d4757a1e24c27f8662bede14c1. Fresh local matching:TWSE170notices datedOct30,50matches17companies;TPEx74notices datedOct29,6matches2companies. Announcement screening only,not complete all98 latest news/financial verification. Core official indexes and generic public-sector news searched;private watchlist not externally searched. Nine core US issuer SEC submissions indexes checked.",
+      "publication_status": "public_event_record_only_no_article_reported_channel_constraint_not_sectorwide_funding_shutdown"
+    },
+    {
       "fingerprint": "openai-latest-round-target-30-to20bn-reported-ft-20261031",
       "event_date": "2026-10-31",
       "discovered_date": "2026-10-31",
