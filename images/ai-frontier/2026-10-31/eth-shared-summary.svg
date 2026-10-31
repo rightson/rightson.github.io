@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="660" viewBox="0 0 540 660" role="img" aria-labelledby="ttl dsc">
+<style>
+  text{font-family:"Noto Sans CJK TC","PingFang TC",sans-serif}
+  .bg{fill:#f7fafc}.cell{fill:#ffffff;stroke:#b6cbdd;stroke-width:1.6}.cap{fill:#e9f3fb;stroke:#6b9bbd;stroke-width:1.6}.accent{fill:#eaf7f3;stroke:#55a58c;stroke-width:1.6}
+  .ink{fill:#17324a}.muted{fill:#526a7d}.arrow{stroke:#7192a8;stroke-width:2;fill:none}.tag{fill:#235e82}
+  @media (prefers-color-scheme:dark){.bg{fill:#101923}.cell{fill:#182937;stroke:#58718a}.cap{fill:#17384f;stroke:#5b9ec3}.accent{fill:#184037;stroke:#55b69f}.ink{fill:#eef5fb}.muted{fill:#b0c3d2}.arrow{stroke:#9bb7c9}.tag{fill:#8fc5ef}}
+</style>
+<title id="ttl">變數分群與摘要的直覺</title>
+<desc id="dsc">布林條件 G 的中間項連接左群和右群；透過固定 b 或取得摘要，拆分為局部計數再合併。</desc>
+<rect width="540" height="660" rx="16" class="bg"/>
+<text x="26" y="37" class="ink" font-size="19" font-weight="700">跨群連結使直接相乘失效</text>
+<text x="26" y="60" class="muted" font-size="13">G = (a∨b) ∧ (b∨c) ∧ (c∨d)</text>
+<rect x="24" y="97" width="210" height="130" rx="12" class="cap"/>
+<rect x="306" y="97" width="210" height="130" rx="12" class="accent"/>
+<text x="42" y="128" class="ink" font-size="17" font-weight="700">左群</text>
+<text x="42" y="156" class="ink" font-size="14">變數 a, b</text>
+<text x="42" y="185" class="muted" font-size="13">局部子句 (a∨b)</text>
+<text x="324" y="128" class="ink" font-size="17" font-weight="700">右群</text>
+<text x="324" y="156" class="ink" font-size="14">變數 c, d</text>
+<text x="324" y="185" class="muted" font-size="13">局部子句 (c∨d)</text>
+<path d="M234 153 L306 153" class="arrow"/>
+<rect x="218" y="205" width="104" height="35" rx="8" class="cell"/>
+<text x="270" y="227" text-anchor="middle" class="ink" font-size="13">橋接 b∨c</text>
+<path d="M270 240 L270 278" class="arrow"/><path d="M263 270 L270 278 L277 270" class="arrow"/>
+<rect x="24" y="285" width="492" height="96" rx="12" class="cell"/>
+<text x="42" y="324" class="ink" font-size="16" font-weight="700">先固定連接兩群的狀態 b，再分別計數</text>
+<rect x="24" y="402" width="492" height="118" rx="12" class="accent"/>
+<text x="42" y="433" class="ink" font-size="17" font-weight="700">正確逐項計算</text>
+<text x="42" y="461" class="ink" font-size="14">b=0 ⇒ c=1，a=1，d 任意：2 組</text>
+<text x="42" y="487" class="ink" font-size="14">b=1 ⇒ c,d 需滿足 c∨d，a 任意：6 組</text>
+<text x="42" y="507" class="tag" font-size="16" font-weight="700">合計 #G = 2 + 6 = 8 組</text>
+<text x="26" y="553" class="muted" font-size="13">論文的一般化思路：用可重用的摘要取代大量逐一固定。</text>
+<text x="26" y="581" class="muted" font-size="13">本圖是教學用假設算例；它不是論文的實際演算法。</text>
+<text x="514" y="641" text-anchor="end" class="muted" font-size="10">Scott Yo-Ru Chen · 2026-10-31</text></svg>
