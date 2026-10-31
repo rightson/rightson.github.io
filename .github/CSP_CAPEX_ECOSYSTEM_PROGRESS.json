@@ -11,6 +11,38 @@
   ],
   "public_events": [
     {
+      "fingerprint": "tong-hsing-q3-2026-results-q4-growth-guidance-and-reported-fau-automation-acceptance-20261030",
+      "event_date": "2026-10-30",
+      "discovered_date": "2026-10-31",
+      "instruction_commit_sha": "ccef304f8806dec9ba440187361b2d162896b6c5",
+      "companies": [
+        "Tong Hsing Electronic Industries",
+        "同欣電子"
+      ],
+      "type": "issuer_results_and_guidance_with_separately_attributed_optical_interconnect_execution_report",
+      "sources": [
+        "https://www.theil.com/en/investor_conference.php",
+        "https://www.theil.com/data/conference/files/1793344916592043606.pptx",
+        "https://www.theil.com/data/conference/files/1785922853950527478.pptx",
+        "https://www.theil.com/zh-tw/information.php?act=view&id=255",
+        "https://ieknet.iek.org.tw/ieknews/news_open.aspx/news_more.aspx?actiontype=ieknews&indu_idno=1&nsl_id=a8b683bd05f04d158e17547f002cb507"
+      ],
+      "facts": {
+        "primary_quarterly_results": "October30 issuer Q3 presentation, slides4-5: Q3 revenue TWD3492.331m,+10.8% QoQ,+22.5% YoY; gross margin33.7% versus31.1% inQ2; operating income TWD723.885m,+26.6% QoQ; net income758.413m,+45.5% QoQ; after-tax EPS3.62 versus2.49. Monetary statement columns use NTD thousands, converted here to millions.",
+        "primary_prior_guidance_and_outlook": "August5 Q2 presentation slide17 guided Q3 revenue growth in mid-single digits. October30 Q3 presentation slide18 expects revenue to continue growing inQ4,at a more moderate pace thanQ3. No numerical Q4 growth rate or verified consensus revision inferred.",
+        "reported_execution": "October31 Commercial Times report by Chang Jui-yi,syndicated by IEK,attributes to the October30 conference: FAU business has one production customer; initial automated active-alignment machines arrived inAugust and obtained customer acceptance inlateOctober; additional equipment planned. TIA/driver packaging and PCBA are additional optical-communications businesses. These conference details are reported management statements,not independently recovered from original audio.",
+        "reported_maturity_limit": "Same report says1.6T EIC/PIC flip-chip remains in customer qualification,with end2027 development timing unchanged and a different customer from existing800G products. No new named customer,contract value,shipment volume or1.6T production award verified.",
+        "primary_financial_counterevidence": "Slide4 non-operating income TWD167.694m versus80.014m QoQ; net-income growth therefore exceeds operating-income growth. Slide7 inventory TWD2235.845m versus1545.067m at September30,2025,about44.7% higher,while Q3 revenue grew22.5% YoY. Inventory composition/aging and optical-specific margin not established.",
+        "evidence_scope": "Issuer Q2/Q3 PPTX packages downloaded from HTML base-resolved official links; financial table EMF images rendered and inspected; issuer October29 cumulative nine-month financial announcement read. Latest Q3 full financial report and original conference audio not obtained. Company optical segment/customer revenue and cash-conversion attribution remain incomplete."
+      },
+      "next_verification": [
+        "Q4 monthly revenue and subsequent issuer guidance against the stated sequential-growth outlook.",
+        "FAU equipment throughput,yield,additional customer qualification and optical revenue contribution.",
+        "Operating-margin persistence,inventory turnover and operating cash conversion;retain1.6T as qualification-stage until issuer confirms production."
+      ],
+      "publication_status": "factual_event_source_record_only_no_article"
+    },
+    {
       "fingerprint": "alliant-q3-2026-data-center-contracted-load-capex-and-cash-conversion-primary-baseline-20261029",
       "event_date": "2026-10-29",
       "discovered_date": "2026-10-31",
