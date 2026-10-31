@@ -11,6 +11,34 @@
   ],
   "public_events": [
     {
+      "fingerprint": "mediatek-q3-2026-full-official-transcript-primary-qa-source-completion-20261030",
+      "event_date": "2026-10-30",
+      "discovered_date": "2026-10-31",
+      "instruction_commit_sha": "ed9dcf50ae31f72d28562a96acbeec5c0a544666",
+      "companies": [
+        "MediaTek"
+      ],
+      "type": "primary_qa_source_completion_not_new_guidance_or_customer_award",
+      "sources": [
+        "https://www.mediatek.com/zh-tw/investor-relations/financial-information",
+        "https://www.mediatek.com/hubfs/MediaTek-Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q3/%E8%AA%AA%E6%98%8E%E6%9C%83%E9%80%90%E5%AD%97%E7%A8%BF.pdf"
+      ],
+      "facts": {
+        "source_scope": "Newly obtainable official15-page complete October30 earnings-call transcript,including Q&A,fully extracted/read. Earlier prepared-remarks and media-source records retained unchanged. Document publication/upload timestamp absent; discovery time is not announcement time.",
+        "primary_confirmations": "CFO confirms a distinct second customer,not from China;engineering work underway,first revenue expected2028. This is distinct from second-generation ASIC for existing customer. Q4 data-center gross margin remains below corporate average;operating margin described as accretive. CFO expects2027 full-year corporate operating margin above20%,without a quantified individual ASIC margin. Analyst suggestion of10percentage-points higher segment margin is not endorsed.",
+        "packaging": "CEO says US IDM packaging is current top priority;work with IDM and substrate suppliers focuses on yield,key defects and fixes. High confidence in rapid improvement is a management expectation,not a disclosed achieved yield. Multiple dies already taped out;larger complex die takes2-3weeks longer than other dies;Q1 2028 production target reaffirmed. TSMC described as most important partner. No exclusive packaging/front-end commitment or guaranteed supply established.",
+        "additional_scope": "CFO says vendor financing could be considered if market requires and customer is appropriate;not an approved facility,contracted support obligation or current balance-sheet exposure. NVLink Fusion discussions with several potential customers remain discussions;no new named design win disclosed. Third-generation definition is in progress;448G PAM6 SerDes taped out,measurement/interoperability work remains;not mass-production verification.",
+        "comparison": "Primary original resolves earlier Q&A access gap for already reported October30 event. It confirms prior directional margin/customer/packaging accounts;no fresh revenue-guidance revision,executed financing,identified second customer,new procurement allocation or independently measured yield verified. No repeat material-change notification or article on source availability alone.",
+        "limits": "Management forward guidance and competitive claims are not realized segment economics,independent benchmarks or cash-collection evidence. Prior Q3 inventory and negative operating-cashflow facts remain relevant. No private valuation,current price,holdings,flows or transaction conditions stored."
+      },
+      "next_verification": [
+        "Q4 shipments and operating cash conversion versus elevated inventory.",
+        "2027 corporate operating-margin delivery;obtain actual segment economics rather than analyst-assumed spread.",
+        "Measured packaging yields,qualified supply and customer awards;any vendor-financing agreement requires separate terms verification."
+      ],
+      "publication_status": "primary_source_completion_only_no_repeat_material_alert_no_article"
+    },
+    {
       "fingerprint": "baker-hughes-1p1gw-ai-power-q3-booked-order-q4-chart-cooling-and-q3-earnings-primary-20261027",
       "event_date": "2026-10-27",
       "discovered_date": "2026-10-31",
