@@ -11,6 +11,53 @@
   ],
   "public_events": [
     {
+      "fingerprint": "baker-hughes-1p1gw-ai-power-q3-booked-order-q4-chart-cooling-and-q3-earnings-primary-20261027",
+      "event_date": "2026-10-27",
+      "discovered_date": "2026-10-31",
+      "instruction_commit_sha": "3d35ee2c501aa2c8ca6ada381dc6e10e88a48a10",
+      "companies": [
+        "Baker Hughes",
+        "Chart Industries"
+      ],
+      "type": "outside_universe_firm_ai_power_and_cooling_order_with_first_quarterly_economics_baseline",
+      "sources": [
+        "https://investors.bakerhughes.com/news/press-releases/news-details/2026/Major-U-S--Technology-Company-Selects-Baker-Hughes-Power-Generation-and-Cooling-Solutions-to-Scale-High-density-AI-Compute/default.aspx",
+        "https://investors.bakerhughes.com/news/press-releases/news-details/2026/Baker-Hughes-Announces-Third-Quarter-2026-Results/default.aspx",
+        "https://www.sec.gov/Archives/edgar/data/1701605/000170160526000035/bkr-20260930.htm",
+        "https://investors.bakerhughes.com/news/press-releases/news-details/2026/Baker-Hughes-Announces-Second-Quarter-2026-Results/default.aspx"
+      ],
+      "facts": {
+        "comparison": "First tracked Baker Hughes quarterly financial baseline. Previously recorded October15 Venture Global framework is a distinct LNG/potential adjacent-data-center project; these orders are not claimed as conversion of that framework. October31 media republication is discovery,not announcement date. July26 Q2 release already described an initial1GW Kodiak award and up-to1.8GW framework; company AI power exposure is not new in general.",
+        "firm_order": "October27 issuer release identifies approximately1.1GW integrated power award for an unnamed major U.S. technology company:34 Frame5 and9 NovaLT16 turbines,BRUSH generators and gears. Power order booked Q3; substantial Chart dry-cooler order booked Q4. Cooling supports closed-loop high-density AI computing; award is not delivered/energized capacity.",
+        "additional_order": "Q3 release separately reports approximately500MW,18 Frame5 generator packages for AI data-center projects of an unnamed U.S. energy company. Contract value,delivery schedule and project identity undisclosed; no cumulative cross-announcement GW total or customer allocation inferred.",
+        "financial_unit": "USD million,except margins and GW",
+        "q3_iet": {
+          "orders": 5886,
+          "orders_qoq_percent": -17,
+          "orders_yoy_percent": 42,
+          "revenue": 3477,
+          "revenue_yoy_percent": 3,
+          "segment_ebitda": 685,
+          "segment_ebitda_yoy_percent": 8,
+          "ebitda_margin_percent": 19.7,
+          "prior_quarter_ebitda_margin_percent": 20.6,
+          "prior_year_ebitda_margin_percent": 18.8,
+          "rpo": 39400,
+          "rpo_sequential_increase": 2300
+        },
+        "outlook": "Issuer raises full-year IET order guidance and2026-2028 Horizon2 IET order outlook to aboveUSD50bn; prior numeric target not authenticated here,no percentage revision calculated. Outlook includes LNG,gas,space and other markets,not all AI orders.",
+        "profit_and_cash_counterevidence": "Consolidated revenue8025,+14%YoY,but Chart contributes888 of1015 increase. Attributable GAAP net income411,-33%YoY; adjusted net income695,+2%YoY. Q3 OCF1005 versus1345 prior quarter; issuer nonGAAP FCF769 versus1109. Nine-month OCF2850 versus2148 includes350 working-capital cash generation primarily from progress collections. Progress/deferred collections8037 versus5904 at prior year-end are not all AI customer cash. Acquisition affects comparisons.",
+        "balance_sheet": "September30 long-term debt17476 versus5398 at prior year-end; issuer links new debt/term loans and cash to July16 Chart acquisition. Current debt788,cash4068. No AI project-specific financing or standalone project return established.",
+        "limits": "Order bookings strengthen explicit demand relationship but do not establish contract margins,delivery acceptance,recurring service revenue,realized project cashflow or companywide earnings acceleration. Full original conference Q&A not obtained. No named Taiwan supplier allocation inferred. Public record excludes stock quotes,current valuation,positions,institutional flows and trading conditions."
+      },
+      "next_verification": [
+        "Reconcile1.1GW power Q3 booking and Chart cooling Q4 booking with delivery,acceptance and collection milestones;avoid duplicate order/revenue counting.",
+        "Track IET margin and organic growth alongside backlog conversion;separate Chart acquisition,LNG and AI exposure.",
+        "Obtain contract economics,cancellation/deferral terms and service attachment;verify cash conversion and debt reduction."
+      ],
+      "publication_status": "factual_event_source_record_only_no_article"
+    },
+    {
       "fingerprint": "kioxia-fy2026-q2-profit-cash-conversion-and-q3-near-flat-growth-outlook-primary-20261030",
       "event_date": "2026-10-30",
       "discovered_date": "2026-10-31",
