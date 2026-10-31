@@ -11,6 +11,34 @@
   ],
   "public_events": [
     {
+      "fingerprint": "alliant-q3-2026-data-center-contracted-load-capex-and-cash-conversion-primary-baseline-20261029",
+      "event_date": "2026-10-29",
+      "discovered_date": "2026-10-31",
+      "instruction_commit_sha": "4fad76dd3ffcafe77ab9c1e9237837ed15cf2541",
+      "companies": [
+        "Alliant Energy",
+        "Interstate Power and Light",
+        "Wisconsin Power and Light"
+      ],
+      "type": "out_of_universe_primary_financial_and_data_center_demand_research_baseline",
+      "sources": [
+        "https://investors.alliantenergy.com/News--Presentations/news/news-details/2026/Alliant-Energy-Announces-Third-Quarter-2026-Results-and-2027-Guidance/default.aspx"
+      ],
+      "facts": {
+        "relationship": "Issuer reports 3.4GW contracted data-center demand across IPL/WPL; individual customers not assigned here.",
+        "guidance": "2027-2030 capex forecast USD15.9bn,+19%. FY2026 ongoing EPS USD3.41-3.46 versus3.36-3.46; FY2027 USD3.63-3.73,8% above original2026 midpoint.",
+        "cashflow": "Nine-month OCF USD909m versus900m; construction/acquisition cash outlays USD1806m versus1648m. Cash26m versus556m at2025year-end; commercial paper704m versus88m; other short-term debt400m versuszero.",
+        "limits": "Quarterly profit includes income-tax timing expected to reverse by year-end. Guidance assumes authorized returns,financing and timely project service. Contracted MW is not energized load or recognized revenue. Proposed additional1GW is not included as signed demand.",
+        "source_scope": "Issuer earnings release guidance,capital plan,balance sheet and cash-flow tables read;first tracked company baseline,not a newOctober31 announcement."
+      },
+      "next_verification": [
+        "Regulatory cost recovery,customer tariff protections and binding service timing.",
+        "Financing mix and cash generation relative to construction spending.",
+        "Incremental contracted demand and actual delivered electricity."
+      ],
+      "publication_status": "research_baseline_only_no_material_judgment_change_alert_no_article"
+    },
+    {
       "fingerprint": "nvidia-nscale-west-virginia-power-construction-credit-support-reported-unsigned-20261029",
       "event_date": "2026-10-29",
       "discovered_date": "2026-10-31",
