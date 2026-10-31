@@ -11,6 +11,61 @@
   ],
   "public_events": [
     {
+      "fingerprint": "aixtron-q3-2026-full-results-customer-advance-cashflow-bridge-primary-20261029",
+      "event_date": "2026-10-29",
+      "discovered_date": "2026-10-31",
+      "instruction_commit_sha": "f5325fd9ee620e9c4a0b23b07e05a4f39370ce0e",
+      "companies": [
+        "AIXTRON SE"
+      ],
+      "type": "primary_full_quarter_report_followup_resolving_preliminary_cashflow_gap",
+      "sources": [
+        "https://www.aixtron.com/investoren/publikationen/2026/englisch/9-Months-Report-2026.pdf",
+        "https://aixtron.com/en/investors/news/ad-hoc-news/AI-driven%20demand%20fuels%20strong%20order%20momentum_n6508801"
+      ],
+      "facts": {
+        "baseline_fingerprint": "aixtron-q3-preliminary-orders-above-company-consensus-and-mix-profitability-20261015",
+        "comparison": "October15 preliminary order and profit figures already recorded. October29 full quarterly report confirms them and supplies cash-flow composition; not a new guidance increase.",
+        "currency": "EUR",
+        "unit": "million",
+        "Q3": {
+          "orders": 274.9,
+          "revenue": 183.613,
+          "EBIT": 56.7,
+          "OCF": 138.4,
+          "FCF": 127.8
+        },
+        "nine_month_cashflow": {
+          "OCF": 311.072,
+          "prior_OCF": 128.479,
+          "advance_payment_cashflow_effect": 261.671,
+          "prior_advance_payment_cashflow_effect": -7.761,
+          "PPE_purchases": 18.559,
+          "intangible_purchases": 3.297,
+          "fixed_asset_disposal_proceeds": 0.665,
+          "issuer_FCF_rounded": 289.9
+        },
+        "balance_sheet": {
+          "date": "2026-09-30",
+          "comparison": "2025-12-31",
+          "advance_contract_liabilities": 309.044,
+          "prior": 44.457,
+          "cash": 250.438,
+          "other_current_financial_assets": 694.387,
+          "convertible_bond_liability_component": 353.93
+        },
+        "source_scope": "Issuer full report income statement,balance sheet,cash-flow table and management cash commentary read; release is same issuer chain,not independent corroboration.",
+        "limits": "Management attributes cash strength primarily to customer advances. Advance balance change is not identical to cash-flow effect. FCF is not cash earned solely from accepted deliveries; liquid assets also reflect convertible financing. Customer-level refund rights,AI-only margin and2027 quantified guidance remain unverified. FY2026 outlook unchanged."
+      },
+      "next_verification": [
+        "Advance-funded backlog conversion to accepted shipments and revenue.",
+        "Repeat order intake and cash collection after advance timing normalizes.",
+        "Customer cancellation/refund terms and capacity ramp costs."
+      ],
+      "publication_status": "public_source_followup_only_no_repeat_preliminary_results_alert_no_article",
+      "coverage": "98active Taiwan universe refreshed; local official announcement matching TWSE170Oct30notices,50matches17companies;TPEx74Oct29notices,6matches2companies. Announcement screening doesnot establish all98 latest news and financial verification. Core official indexes and public sector searches reviewed."
+    },
+    {
       "fingerprint": "nebius-reported-high-yield-offering-abandoned-and-asset-backed-access-dispute-wsj-20261031",
       "event_date": "2026-10-31",
       "discovered_date": "2026-10-31",
