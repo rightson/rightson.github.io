@@ -11,6 +11,65 @@
   ],
   "public_events": [
     {
+      "fingerprint": "microsoft-25bn-senior-notes-priced-primary-terms-and-unsettled-proceeds-20261029",
+      "event_date": "2026-10-29",
+      "discovered_date": "2026-10-31",
+      "instruction_commit_sha": "596701d3522e1aa7081fc52db3d651004d302bec",
+      "companies": [
+        "Microsoft"
+      ],
+      "type": "issuer_and_sec_primary_debt_pricing_terms",
+      "sources": [
+        "https://news.microsoft.com/source/2026/10/29/microsoft-announces-debt-offerings-7/",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526439794/d799291dfwp.htm"
+      ],
+      "facts": {
+        "currency": "USD",
+        "aggregate_principal_bn": 25,
+        "stage": "Priced October29;expected settlement November4,2026. Cash receipt not established.",
+        "structure": "Ten senior unsecured tranches:2bn floating and23bn fixed;2028-2066 maturities. Fixed coupons4.85%-6.35%.",
+        "use": "General corporate purposes may include working capital,capex,repurchases,acquisitions and debt repayment;not earmarked entirely to AI.",
+        "source_scope": "Complete issuer release and SEC Rule433 pricing sheet read. Fixed coupons are issuance terms,not current market yields.",
+        "comparison": "Earlier capex/delivery event left additional financing conditional;this adds a priced transaction,not a new equipment order or deployment."
+      },
+      "next_verification": [
+        "Verify settlement and net cash received after November4.",
+        "Match subsequent capex and capacity delivery to cash deployment;no named supplier allocation established."
+      ],
+      "publication_status": "primary_financing_stage_verified_ledger_only_no_article"
+    },
+    {
+      "fingerprint": "iren-wingspire-363m-deployed-equipment-refinancing-closed-primary-20261028",
+      "event_date": "2026-10-28",
+      "discovered_date": "2026-10-31",
+      "instruction_commit_sha": "596701d3522e1aa7081fc52db3d651004d302bec",
+      "companies": [
+        "IREN",
+        "Wingspire Equipment Finance",
+        "Eldridge Capital Management",
+        "Silver Point Capital"
+      ],
+      "type": "company_distributed_primary_closed_equipment_refinancing",
+      "sources": [
+        "https://www.businesswire.com/news/home/20261028683272/en/IREN-and-Wingspire-Equipment-Finance-Complete-%24363-Million-Financing-for-High-Density-AI-Compute-Assets"
+      ],
+      "facts": {
+        "currency": "USD",
+        "transaction_million": 363,
+        "stage": "Company-distributed release confirms closed refinancing of recently acquired,revenue-generating GPU servers and networking equipment already deployed.",
+        "lenders": "Six-lender group,with major Eldridge and Silver Point commitments.",
+        "security": "Principally financed equipment,supported by multiyear customer contracts.",
+        "cash_scope": "Returns part of prior equipment investment as liquidity;not an additional363m equipment purchase or new deployment.",
+        "limits": "Rate,maturity,advance ratio,customer identity and net unrestricted proceeds undisclosed. No supplier earnings revision established. Outside current active Taiwan universe;watchlist unchanged.",
+        "source_scope": "Full BusinessWire release body read;separate lender site did not provide a readable current body."
+      },
+      "next_verification": [
+        "Obtain contractual borrowing terms and distinguish incremental liquidity from refinancing liabilities.",
+        "Check whether released capital funds subsequent delivered equipment and revenue."
+      ],
+      "publication_status": "primary_closed_refinancing_baseline_verified_ledger_only_no_article"
+    },
+    {
       "fingerprint": "mediatek-q3-2026-full-official-transcript-primary-qa-source-completion-20261030",
       "event_date": "2026-10-30",
       "discovered_date": "2026-10-31",
