@@ -11,6 +11,38 @@
   ],
   "public_events": [
     {
+      "fingerprint": "nvidia-nscale-west-virginia-power-construction-credit-support-reported-unsigned-20261029",
+      "event_date": "2026-10-29",
+      "discovered_date": "2026-10-31",
+      "instruction_commit_sha": "e0e6624d755e456ff596a611d851055bc2a27e62",
+      "companies": [
+        "NVIDIA",
+        "Nscale",
+        "Anthropic"
+      ],
+      "type": "reported_unsigned_project_credit_support_separate_from_existing_convertible_investment",
+      "sources": [
+        "https://www.channelnewsasia.com/business/nvidia-in-talks-give-credit-support-nscales-deal-anthropic-information-reports-6505526",
+        "https://au.finance.yahoo.com/news/nvidia-talks-offer-credit-support-235953113.html",
+        "https://www.theinformation.com/articles/nvidia-talks-provide-billions-credit-support-cloud-providers-45-billion-anthropic-deal",
+        "https://www.nscale.com/press-releases/pre-ipo-convertible-financing"
+      ],
+      "facts": {
+        "baseline": "Existing Nscale delivery and financing risks and unsigned second Monarch building talks already recorded; no signed new second-building contract established.",
+        "reported_increment": "Reuters/CNA relays The Information: NVIDIA is discussing billions of dollars in credit guarantees for West Virginia power infrastructure and construction serving Anthropic. Arrangement unsigned, terms may change; companies did not respond. Bloomberg syndication separately attributes project credit-support discussions to a person familiar, not a company announcement.",
+        "publication_timing": "Bloomberg syndication dated October29 19:59 EDT=October29 23:59UTC; Reuters result dated October30 01:26UTC. Discovery October31 is not a new October31 agreement.",
+        "existing_primary_financing": "Nscale September25 issuer release describes USD3.36bn convertible financing: USD2.36bn initial closing tranche plus USD1bn NVIDIA commitment expected mid-November. This is distinct from proposed construction credit guarantees; no current funding receipt inferred.",
+        "verification_scope": "Reuters syndication body read; Bloomberg syndication text obtained in fresh search, direct Yahoo open returned429. The Information direct page subscription-gated; indexed residual-value mechanics and estimated guarantee size not treated as signed terms.",
+        "limits": "No executed guarantee, exact size, lender terms, drawdown, cancellation of GPU orders or supplier earnings revision verified. Proposed credit support does not establish funded construction, completed power delivery or accepted compute."
+      },
+      "next_verification": [
+        "Executed issuer/SEC financing documents specifying guarantee ceiling, trigger and project scope.",
+        "Construction financing close, permits, energized capacity and Anthropic acceptance milestones.",
+        "Receipt of separately committed mid-November convertible tranche."
+      ],
+      "publication_status": "research_source_record_only_unsigned_financing_followup_no_alert_no_article"
+    },
+    {
       "fingerprint": "aixtron-q3-2026-full-results-customer-advance-cashflow-bridge-primary-20261029",
       "event_date": "2026-10-29",
       "discovered_date": "2026-10-31",
