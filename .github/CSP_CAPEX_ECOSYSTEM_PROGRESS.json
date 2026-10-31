@@ -11,6 +11,45 @@
   ],
   "public_events": [
     {
+      "fingerprint": "openai-latest-round-target-30-to20bn-reported-ft-20261031",
+      "event_date": "2026-10-31",
+      "discovered_date": "2026-10-31",
+      "instruction_commit_sha": "3fcc902e373def6f139c894e816749c4ba4dad59",
+      "companies": [
+        "OpenAI"
+      ],
+      "type": "original_reporting_funding_target_reduction_not_closed_proceeds_or_compute_order_cut",
+      "sources": [
+        "https://www.ft.com/content/7a3ad950-1b3b-4d9e-8c15-65a61ae6180f",
+        "https://www.reuters.com/business/openai-cuts-funding-target-by-10-billion-ft-reports-2026-10-31/",
+        "https://www.ft.com/content/bb564eb1-79d4-4694-aa24-1155202a9abc"
+      ],
+      "facts": {
+        "source_scope": "FT original article search extraction dated2026-10-31 00:05:08UTC obtained;directpage subscription-gated. Reuters fullshortarticle dated00:17UTC attributes toFT,notindependentconfirmation. Noissuerannouncement,executedtermssheetorbankreceiptverified.",
+        "comparison": "October24researchcandidate alreadyrecorded weakerinvestorappetite anduncertainclosing. Thenewreportednumericalevidence isthisroundtarget30bntoapproximately20bn,notanewdiscoveryofearliervaluationchanges.",
+        "currency": "USD",
+        "unit": "billion",
+        "previous_reported_round_target": 30,
+        "new_reported_round_target_approx": 20,
+        "target_reduction": 10,
+        "target_reduction_percent_rounded": 33.3,
+        "reported_first_close": "FT saysfirstcloseexpectedbelow20bn aftersomebackersreducedallocations;subsequentretailofferingcouldbringroundtoaround20bn. Expectations,notverifiedfinalproceeds.",
+        "reported_counterevidence": "FT saysOpenAIraised122bninMarch2026 andfundraisingremainsongoing. Amountofavailableunrestrictedcash,otherfinancingandactualfinalproceedsnotverified.",
+        "limits": [
+          "A reducedfundingtargetdoesnotestablish10bnlesscashthananexecutedcommitment,insolvency,customerpaymentdefault,cancelledcomputeorderorCSPcapexcut.",
+          "FTandReutersreportingcountasoneFT-originchain. Noindependentlyauthenticatedsupplierallocation,revenuerevision,deliverydelayormarginimpactidentified.",
+          "No privatecompanyvaluation,currentstockquote,holdings,institutionalflows,tradingconditionsorprivateBdatastored."
+        ]
+      },
+      "next_verification": [
+        "Verifyinitial/finalclose,actualcashreceiptsandbindingcommitmentsversustarget.",
+        "Reconcileavailableliquidityandfundingdateswithcomputepaymentanddeliveryobligations.",
+        "Checkactualcloudreservation,datacenterconstructionandhardwaredeliverychangesbeforepropagatingsupplierprofitcuts."
+      ],
+      "coverage": "98activeTaiwanuniverse readat64349d5f4961ec95fbb767b185b5e79181a2880e,blob88422949d38165d4757a1e24c27f8662bede14c1. Freshlocalexchangeannouncementmatching:TWSE170recordsdatedOct30,50matches17companies;TPEx74recordsdatedOct29,6matches2companies. Thisisscreening,notcompleteall98companylatestnews/financialverification. Coreofficialindexesandgenericpublicnewschecked;Broadcom403anddynamicCSPsourcegapsremain.",
+      "publication_status": "public_event_ledger_only_no_article_no_supplier_earnings_revision"
+    },
+    {
       "fingerprint": "te-connectivity-fy2026-ddn-order-growth-cash-conversion-and-fy2027-growth-outlook-primary-20261028",
       "event_date": "2026-10-28",
       "discovered_date": "2026-10-31",
